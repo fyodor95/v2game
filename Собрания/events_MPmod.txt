@@ -1,0 +1,8129 @@
+
+c:\victoria 2\mod\mpmod\events\CivilizationAndGunBoats.txt
+************************************************************************
+#Wind of Westernization
+country_event = {
+	id = 13000
+	title = "EVTNAME13000"
+	desc = "EVTDESC13000"
+	news = yes
+	news_desc_long = "EVTDESC13000_NEWS_LONG"
+	news_desc_medium = "EVTDESC13000_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC13000_NEWS_SHORT"
+	picture = "Western"
+
+	trigger = {
+		civilized = no
+		is_independant = yes
+		#part_of_sphere = no
+		NOT = {
+			has_country_modifier = western_influences
+			has_country_modifier = uncivilized_isolationism
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 360
+	}
+
+	option = {
+		name = "EVTOPTA13000"
+		add_country_modifier = {
+			name = "western_influences"
+			duration = -1
+		}
+		ai_chance = {
+			factor = 0.75
+		}
+	}
+	option = {
+		name = "EVTOPTB13000"
+		add_country_modifier = {
+			name = "uncivilized_isolationism"
+			duration = -1
+		}
+		ai_chance = {
+			factor = 0.25
+		}
+	}
+}
+
+#Western Approaches
+province_event = {
+	id = 13010
+	title = "EVTNAME13010"
+	desc = "EVTDESC13010"
+
+	trigger = {
+		NOT = {
+			has_province_modifier = western_presence
+		}
+		owner = {
+			has_country_modifier = western_influences
+			is_greater_power = no
+			civilized = no
+			war = no
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 0.9
+			is_coastal = yes
+		}
+		modifier = {
+			factor = 0.7
+			is_capital = yes
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 10
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 15
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 20
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 25
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 30
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 35
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 40
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA13010"
+		add_province_modifier = {
+			name = "western_presence"
+			duration = -1
+		}
+	}
+	option = {
+		name = "EVTOPTB13010"
+		random_country = {
+			limit = {
+				is_greater_power = yes
+			}
+			country_event = { id=13015 days=0 }
+		}
+	}
+}
+
+#Insult
+country_event = {
+	id = 13015
+	title = "EVTNAME13015"
+	desc = "EVTDESC13015"
+	picture = "Outside_influences"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA13015"
+		casus_belli = {
+			target = FROM
+			type = cut_down_to_size
+			months = 12
+		}
+		relation = {
+			who = FROM
+			value = -50
+		}
+	}
+
+	option = {
+		name = "EVTOPTB13015"
+		relation = {
+			who = FROM
+			value = 20
+		}
+		prestige = -5
+		any_pop = {
+			scaled_militancy = {
+				issue = jingoism
+				factor = 4
+			}
+			scaled_militancy = {
+				issue = pro_military
+				factor = 3
+			}
+		}
+		ai_chance = {
+			factor = 0.05
+		}
+	}
+}
+
+#Shipwrecked Sailors
+province_event = {
+	id = 13020
+	title = "EVTNAME13020"
+	desc = "EVTDESC13020"
+
+	trigger = {
+		is_coastal = yes
+		owner = {
+			has_country_modifier = uncivilized_isolationism
+		}
+	}
+	mean_time_to_happen = {
+		months = 5000
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 1.1
+			NOT = {
+				average_consciousness = 5
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_ports = 10
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_ports = 15
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_ports = 20
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_ports = 25
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_ports = 30
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_ports = 35
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_ports = 40
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA13020"
+		owner = {
+			remove_country_modifier = uncivilized_isolationism
+			add_country_modifier = {
+				name = "western_influences"
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB13020"
+		add_province_modifier = {
+			name = "western_presence"
+			duration = -1
+		}
+	}
+}
+
+#Foreign Smugglers
+province_event = {
+	id = 13030
+	title = "EVTNAME13030"
+	desc = "EVTDESC13030"
+
+	trigger = {
+		is_coastal = yes
+		owner = {
+			has_country_modifier = uncivilized_isolationism
+			NOT = { has_country_modifier = foreign_smugglers }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.9
+			owner = {
+				NOT = {
+					economic_policy = laissez_faire
+				}
+			}
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 3
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 3
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_ports = 10
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_ports = 15
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_ports = 20
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_ports = 25
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_ports = 30
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_ports = 35
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_ports = 40
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA13030"
+		owner = {
+			add_country_modifier = {
+				name = "foreign_smugglers"
+				duration = 3650
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB13030"
+		any_pop = {
+			militancy = 4
+		}
+		owner = { treasury = 5000 }
+	}
+}
+
+#Point of Trade
+province_event = {
+	id = 13040
+	title = "EVTNAME13040"
+	desc = "EVTDESC13040"
+
+	trigger = {
+		is_coastal = yes
+		owner = {
+			has_country_modifier = uncivilized_isolationism
+			NOT = { has_country_modifier = foreign_trading_post }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 250
+		modifier = {
+			factor = 0.8
+			NOT = {
+				poor_strata_life_needs = 0.8
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				middle_strata_everyday_needs = 0.8
+			}
+		}
+		modifier = {
+			factor = 1.5
+			poor_strata_life_needs = 0.9
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				total_num_of_ports = 10
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				total_num_of_ports = 15
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				total_num_of_ports = 20
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				total_num_of_ports = 25
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				total_num_of_ports = 30
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				total_num_of_ports = 35
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				total_num_of_ports = 40
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA13040"
+		owner = {
+			add_country_modifier = {
+				name = foreign_trading_post
+				duration = 3650
+			}
+		}
+		any_pop = {
+			consciousness = 1
+		}
+	}
+	option = {
+		name = "EVTOPTB13040"
+		any_pop = {
+			consciousness = 3
+			militancy = 3
+		}
+	}
+}
+
+#Point of Trade sells Opium
+province_event = {
+	id = 13050
+	title = "EVTNAME13050"
+	desc = "EVTDESC13050"
+
+	trigger = {
+		owner = {
+			has_country_modifier = foreign_trading_post
+		}
+		NOT = {
+			has_province_modifier = local_opium_habit
+			owner = {
+				has_country_modifier = trade_restrictions
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = "EVTOPTA13050"
+		add_province_modifier = {
+			name = "local_opium_habit"
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "EVTOPTB13050"
+		owner = {
+			add_country_modifier = {
+				name = "trade_restrictions"
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTC13050"
+		owner = {
+			remove_country_modifier = foreign_trading_post
+		}
+		random_country = {
+			limit = {
+				civilized = yes
+				is_greater_power = yes
+			}
+			relation = {
+				who = THIS
+				value = -40
+			}
+		}
+	}
+}
+
+#Opium addiction spreads to coastal province
+province_event = {
+	id = 13055
+	title = "EVTNAME13055"
+	desc = "EVTDESC13055"
+
+	trigger = {
+		is_coastal = yes
+		owner = {
+			civilized = no
+		}
+		any_neighbor_province = {
+			has_province_modifier = local_opium_habit
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 1.4
+			owner = {
+				has_country_modifier = trade_restrictions
+			}
+		}
+		modifier = {
+			factor = 0.8
+			has_country_modifier = foreign_smugglers
+		}
+	}
+
+	option = {
+		name = "EVTOPTA13055"
+		add_province_modifier = {
+			name = local_opium_habit
+			duration = -1
+		}
+	}
+}
+
+#Opium addiction spreads inland
+province_event = {
+	id = 13060
+	title = "EVTNAME13060"
+	desc = "EVTDESC13060"
+
+	trigger = {
+		is_coastal = no
+		owner = {
+			civilized = no
+		}
+		any_neighbor_province = {
+			has_province_modifier = local_opium_habit
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 1.5
+			owner = {
+				has_country_modifier = trade_restrictions
+			}
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 5
+			average_militancy = 5
+		}
+	}
+
+	option = {
+		name = "EVTOPTA13060"
+		add_province_modifier = {
+			name = "local_opium_habit"
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "EVTOPTB13060"
+		random_country = {
+			limit = {
+				civilized = yes
+				is_greater_power = yes
+			}
+			relation = {
+				who = THIS
+				value = -40
+			}
+		}
+	}
+}
+
+#Local governor protests opium use
+province_event = {
+	id = 13065
+	title = "EVTNAME13065"
+	desc = "EVTDESC13065"
+
+	trigger = {
+		has_province_modifier = local_opium_habit
+	}
+
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 3
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				average_militancy = 5
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA13065"
+		remove_province_modifier = local_opium_habit
+		random_country = {
+			limit = {
+				is_greater_power = yes
+			}
+			relation = {
+				who = THIS
+				value = -40
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB13065"
+		owner = {
+			prestige = -5
+		}
+	}
+}
+
+#Sayings of The Dutch
+province_event = {
+	id = 13070
+	title = "EVTNAME13070"
+	desc = "EVTDESC13070"
+
+	trigger = {
+		owner = {
+			has_country_modifier = foreign_trading_post
+			NOT = {
+				has_country_modifier = sayings_of_the_dutch
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 300
+
+		modifier = {
+			factor = 0.9
+			owner = {
+				plurality = 5
+			}
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 1.5
+			average_militancy = 5
+		}
+	}
+
+	option = {
+		name = "EVTOPTA13070"
+		owner = {
+			add_country_modifier = {
+				name = sayings_of_the_dutch
+				duration = 730
+			}
+		}
+	}
+}
+
+#Local aristocrat insulted
+province_event = {
+	id = 13080
+	title = "EVTNAME13080"
+	desc = "EVTDESC13080"
+
+	trigger = {
+		has_province_modifier = western_presence
+		owner = {
+			government = absolute_monarchy
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 400
+		modifier = {
+			factor = 0.9
+			NOT = {
+				owner = {
+					prestige = 30
+				}
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				owner = {
+					prestige = 25
+				}
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				owner = {
+					prestige = 20
+				}
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				owner = {
+					prestige = 15
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA13080"
+		state_scope = {
+			any_pop = {
+				limit = {
+					type = aristocrats
+				}
+				consciousness = 1
+				militancy = 2
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB13080"
+		owner = {
+			treasury = -50
+		}
+	}
+
+	option = {
+		name = "EVTOPTC13080"
+		remove_province_modifier = western_presence
+	}
+}
+
+#Microscope imported
+province_event = {
+	id = 13090
+	title = "EVTNAME13090"
+	desc = "EVTDESC13090"
+
+	trigger = {
+		owner = {
+			has_country_modifier = foreign_trading_post
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 500
+		modifier = {
+			factor = 0.9
+			average_consciousness = 3
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 1.1
+			average_militancy = 3
+		}
+		modifier = {
+			factor = 1.1
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 1.1
+			average_militancy = 5
+		}
+	}
+
+	option = {
+		name = "EVTOPTA13090"
+		owner = {
+			years_of_research = 0.05
+		}
+	}
+}
+
+#Anti-foreign revolt
+province_event = {
+	id = 13100
+	title = "EVTNAME13100"
+	desc = "EVTDESC13100"
+	news = yes
+	news_desc_long = "EVTDESC13100_NEWS_LONG"
+	news_desc_medium = "EVTDESC13100_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC13100_NEWS_SHORT"
+
+	trigger = {
+		average_militancy = 3
+		owner = {
+				has_country_modifier = foreign_trading_post
+		}
+	}
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.9
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 3
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 6
+		}
+		modifier = {
+			factor = 1.4
+			owner = {
+				prestige = 30
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA13100"
+		state_scope = {
+			any_pop = {
+				militancy = 5
+			}
+			any_owned = {
+				remove_province_modifier = foreign_trading_post
+				remove_province_modifier = western_presence
+				remove_province_modifier = european_military_mission
+			}
+		}
+		owner = { remove_country_modifier = foreign_trading_post }
+	}
+}
+
+#Princes recieve foreign education
+country_event = {
+	id = 13110
+	title = "EVTNAME13110"
+	desc = "EVTDESC13110"
+	picture = "Western_education"
+
+	trigger = {
+		has_country_modifier = western_influences
+		OR = {
+			government = hms_government
+			government = absolute_monarchy
+ 			government = prussian_constitutionalism
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 0.9
+			average_consciousness = 3
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 0.9
+			prestige = 25
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				prestige = 20
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA13110"
+		set_country_flag = princes_recieve_foreign_education
+		years_of_research = 0.01
+		any_pop = {
+			consciousness = 2
+		}
+	}
+
+	option = {
+		name = "EVTOPTB13110"
+		remove_country_modifier = western_influences
+		add_country_modifier = {
+			name = uncivilized_isolationism
+			duration = -1
+		}
+	}
+}
+
+#Foreign governant
+country_event = {
+	id = 13120
+	title = "EVTNAME13120"
+	desc = "EVTDESC13120"
+	news = yes
+	news_desc_long = "EVTDESC13120_NEWS_LONG"
+	news_desc_medium = "EVTDESC13120_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC13120_NEWS_SHORT"
+	picture = "Western_education"
+
+	trigger = {
+		has_country_flag = princes_recieve_foreign_education
+		OR = {
+			government = hms_government
+			government = absolute_monarchy
+		}
+		slavery = yes_slavery
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA13120"
+		years_of_research = 0.01
+	}
+
+	option = {
+		name = "EVTOPTB13120"
+		political_reform = no_slavery
+		prestige = 5
+		any_pop = {
+			militancy = 3
+		}
+	}
+}
+
+#Military Mission
+province_event = {
+	id = 13130
+	title = "EVTNAME13130"
+	desc = "EVTDESC13130"
+
+	trigger = {
+		owner = {
+			has_country_modifier = western_influences
+		}
+		NOT = {
+			has_province_modifier = european_military_mission
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.9
+			average_consciousness = 3
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 1.1
+			average_militancy = 3
+		}
+		modifier = {
+			factor = 1.1
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 1.1
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.9
+			owner = {
+				prestige = 30
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA13130"
+		add_province_modifier = {
+			name = european_military_mission
+			duration = 1825
+		}
+	}
+
+	option = {
+		name = "EVTOPTB13130"
+		random_country = {
+			limit = {
+				civilized = yes
+				is_greater_power = yes
+			}
+			relation = {
+				who = THIS
+				value = -50
+			}
+		}
+	}
+}
+
+#Military Intelligence Spreads
+province_event = {
+	id = 13140
+	title = "EVTNAME13140"
+	desc = "EVTDESC13140"
+
+	trigger = {
+		has_province_modifier = european_military_mission
+		owner = {
+			war = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+		modifier = {
+			factor = 0.9
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				average_consciousness = 3
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA13140"
+		remove_province_modifier = european_military_mission
+		owner = {
+			war_exhaustion = 2
+		}
+	}
+}
+
+#Europeans Harrassed
+province_event = {
+	id = 13150
+	title = "EVTNAME13150"
+	desc = "EVTDESC13150"
+
+	trigger = {
+		OR = {
+			has_province_modifier = european_military_mission
+			has_province_modifier = western_presence
+			owner = {
+				OR = {
+					has_country_modifier = foreign_trading_post
+					has_country_modifier = foreign_smugglers
+				}
+			}
+		}
+		average_militancy = 4
+	}
+
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 0.9
+			average_militancy = 3
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 3
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				average_consciousness = 3
+			}
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				average_militancy = 3
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA13150"
+		remove_province_modifier = european_military_mission
+		remove_province_modifier = western_presence
+		owner = {
+			remove_country_modifier = foreign_trading_post
+			remove_country_modifier = foreign_smugglers
+			}
+		random_country = {
+			limit = {
+				is_greater_power = yes
+			}
+			relation = {
+				who = THIS
+				value = -50
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB13150"
+		any_pop = {
+			limit = {
+				militancy = 4
+			}
+			reduce_pop = 0.95
+		}
+	}
+}
+
+#Drunken Sailor
+province_event = {
+	id = 13160
+	title = "EVTNAME13160"
+	desc = "EVTDESC13160"
+
+	trigger = {
+		OR = {
+			has_province_modifier = european_military_mission
+			has_province_modifier = western_presence
+			owner = {
+				OR = {
+					has_country_modifier = foreign_trading_post
+					has_country_modifier = foreign_smugglers
+				}
+			}
+		}
+		is_coastal = yes
+		owner = {
+			NOT = { has_country_modifier = extraterritoriality_granted }
+			is_greater_power = no
+			civilized = no
+			}
+	}
+
+	mean_time_to_happen = {
+		months = 3000
+		modifier = {
+			factor = 0.9
+			NOT = {
+				owner = {
+					prestige = 25
+				}
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				owner = {
+					prestige = 20
+				}
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				owner = {
+					prestige = 15
+				}
+			}
+		}
+		modifier = {
+			factor = 1.4
+			owner = {
+				prestige = 25
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA13160"
+		owner = {
+			add_country_modifier = {
+				name = extraterritoriality_granted
+				duration = -1
+			}
+		}
+		random_country = {
+			limit = {
+				is_greater_power = yes
+				NOT = { tag = THIS }
+			}
+			country_event = { id=13180 days=0 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTB13160"
+		random_country = {
+			limit = {
+				is_greater_power = yes
+				NOT = { tag = THIS }
+			}
+			country_event = { id=13170 days=0 }
+		}
+		ai_chance = {
+			factor = 0.05
+		}
+	}
+}
+
+#Sailor Executed
+country_event = {
+	id = 13170
+	title = "EVTNAME13170"
+	desc = "EVTDESC13170"
+	picture = "Outside_influences"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA13170"
+		prestige = 5
+		casus_belli = {
+			target = FROM
+			type = cut_down_to_size
+			months = 12
+		}
+	}
+
+	option = {
+		name = "DIPLO_CALL_ALLIES"
+		prestige = 5
+		casus_belli = {
+			target = FROM
+			type = cut_down_to_size
+			months = 12
+		}
+		war = {
+			target = FROM
+			call_ally = yes
+			attacker_goal = {
+				casus_belli = cut_down_to_size
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB13170"
+		prestige = -5
+	}
+}
+
+#Extraterritoriality Granted
+country_event = {
+	id = 13180
+	title = "EVTNAME13180"
+	desc = "EVTDESC13180"
+	picture = "Outside_influences"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA13180"
+		prestige = 5
+	}
+}
+
+#Military Reform
+country_event = {
+	id = 13190
+	title = "EVTNAME13190"
+	desc = "EVTDESC13190"
+	picture = "Military_reform"
+
+	trigger = {
+		has_country_modifier = western_influences
+	}
+
+	mean_time_to_happen = {
+		months = 5000
+		modifier = {
+			factor = 0.05
+			any_owned_province = {
+				has_province_modifier = european_military_mission
+			}
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 3
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 1.4
+			average_militancy = 4
+		}
+	}
+
+	option = {
+		name = "EVTOPTA13190"
+		add_country_modifier = {
+			name = military_reform
+			duration = 730
+		}
+		any_pop = {
+			militancy = 1
+		}
+	}
+
+	option = {
+		name = "EVTOPTB13190"
+		prestige = 30
+	}
+}
+
+#Our Master's Voice
+country_event = {
+	id = 13200
+	title = "EVTNAME13200"
+	desc = "EVTDESC13200"
+	picture = "Military_reform"
+
+	trigger = {
+		has_country_modifier = uncivilized_isolationism
+		civilized = no
+		part_of_sphere = yes
+		sphere_owner = {
+				NOT = {
+				truce_with = THIS
+				}
+			}
+	}
+
+	mean_time_to_happen = {
+		months = 5
+	}
+
+	option = {
+		name = "EVTOPTA13200"
+		remove_country_modifier = uncivilized_isolationism
+		remove_country_modifier = trade_restrictions
+		add_country_modifier = {
+			name = western_influences
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "EVTOPTB13200"
+		sphere_owner = {
+			country_event = { id=13201 days=0 }
+		}
+	}
+}
+
+#Notify from event 13200
+country_event = {
+	id = 13201
+	title = "EVTNAME13201"
+	desc = "EVTDESC13201"
+	picture = "Outside_influences"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA13201"
+		diplomatic_influence = {
+			who = FROM
+			value = -200
+		}
+		casus_belli = {
+			target = FROM
+			type = add_to_sphere
+			months = 12
+		}
+		war = {
+			target = FROM
+			attacker_goal = {
+				casus_belli = add_to_sphere
+			}
+		}
+	}
+
+	option = {
+		name = "DIPLO_CALL_ALLIES"
+		diplomatic_influence = {
+			who = FROM
+			value = -100
+		}
+		casus_belli = {
+			target = FROM
+			type = cut_down_to_size
+			months = 12
+		}
+		war = {
+			target = FROM
+			call_ally = yes
+			attacker_goal = {
+				casus_belli = cut_down_to_size
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB13201"
+		diplomatic_influence = {
+			who = FROM
+			value = -100
+		}
+		prestige = -20
+	}
+}
+
+#Educational Reform
+country_event = {
+	id = 13210
+	title = "EVTNAME13210"
+	desc = "EVTDESC13210"
+	picture = "Western_education"
+
+	trigger = {
+		has_country_modifier = western_influences
+		NOT = { has_country_modifier = educational_reform }
+	}
+
+	mean_time_to_happen = {
+		months = 400
+	}
+
+	option = {
+		name = "EVTOPTA13210"
+		add_country_modifier = {
+			name = educational_reform
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "EVTOPTB13210"
+		prestige = 5
+	}
+}
+
+#Legation Quarter
+province_event = {
+	id = 13220
+	title = "EVTNAME13220"
+	desc = "EVTDESC13220"
+
+	trigger = {
+		NOT = {
+			has_province_modifier = legation_quarter
+		}
+		is_capital = yes
+		owner = {
+			has_country_modifier = western_influences
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 170
+		modifier = {
+			factor = 0.9
+			owner = {
+				prestige = 10
+			}
+		}
+		modifier = {
+			factor = 0.9
+			owner = {
+				prestige = 15
+			}
+		}
+		modifier = {
+			factor = 0.9
+			owner = {
+				prestige = 20
+			}
+		}
+		modifier = {
+			factor = 1.1
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 1.1
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 1.1
+			average_militancy = 6
+		}
+	}
+
+	option = {
+		name = "EVTOPTA13220"		#Set up a legation quarter
+		add_province_modifier = {
+			name = legation_quarter
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = "EVTOPTB13220"		#The foreigners have nothing to offer
+		random_country = {
+			limit = {
+				is_greater_power = yes
+			}
+			relation = {
+				who = THIS
+				value = -30
+			}
+			casus_belli = {
+				target = THIS
+				type = humiliate
+				months = 12
+			}
+		}
+		owner = {
+			badboy = 2
+			prestige = 2
+		}
+	}
+}
+
+#Foreign Diplomat killed
+province_event = {
+	id = 13230
+	title = "EVTNAME13230"
+	desc = "EVTDESC13230"
+	news = yes
+	news_desc_long = "EVTDESC13230_NEWS_LONG"
+	news_desc_medium = "EVTDESC13230_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC13230_NEWS_SHORT"
+
+	trigger = {
+		has_province_modifier = legation_quarter
+	}
+
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 0.9
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 3
+		}
+		modifier = {
+			factor = 1.2
+			NOT = {
+				average_consciousness = 3
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA13230"
+		add_province_modifier = {
+			name = kettler_denkmal
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "EVTOPTB13230"
+		random_country = {
+			limit = {
+				is_greater_power = yes
+			}
+			relation = {
+				who = THIS
+				value = -40
+			}
+		}
+		owner = {
+			prestige = -5
+		}
+	}
+
+	option = {
+		name = "EVTOPTC13230"
+		random_country = {
+			limit = {
+				is_greater_power = yes
+			}
+			relation = {
+				who = THIS
+				value = -80
+			}
+		}
+		owner = {
+			prestige = -5
+		}
+	}
+}
+
+#A ship on our shores
+province_event = {
+	id = 13240
+	title = "EVTNAME13240"
+	desc = "EVTDESC13240"
+	trigger = {
+		is_coastal = yes
+		owner = {
+			has_country_modifier = trade_restrictions
+			is_greater_power = no
+			civilized = no
+		}
+		NOT = {
+			has_province_modifier = local_opium_habit
+		}
+
+	}
+
+	mean_time_to_happen = {
+		months = 900
+	}
+
+	option = {
+		name = "EVTOPTA13240"
+		random_country = {
+			limit = {
+				is_greater_power = yes
+			}
+			relation = {
+				who = THIS
+				value = -5
+			}
+			country_event = { id=13250 days=0 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTB13240"
+		add_province_modifier = {
+			name = local_opium_habit
+			duration = -1
+		}
+	}
+}
+
+# Our ship turned away
+country_event = {
+	id = 13250
+	title = "EVTNAME13250"
+	desc = "EVTDESC13250"
+	picture = "Opium"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA13250"
+		FROM = {
+			relation = {
+				who = THIS
+				value = -5
+			}
+			country_event = { id=13260 days=0 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTB13250"
+		prestige = -5
+	}
+}
+
+#Foreigners demand a lifting of import restrictions
+country_event = {
+	id = 13260
+	title = "EVTNAME13260"
+	desc = "EVTDESC13260"
+	picture = "Outside_influences"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA13260"
+		remove_country_modifier = trade_restrictions
+	}
+
+	option = {
+		name = "EVTOPTB13260"
+		FROM = {
+			relation = {
+				who = THIS
+				value = -5
+			}
+			country_event = { id=13270 days=0 }
+		}
+	}
+}
+
+#The Opium War
+country_event = {
+	id = 13270
+	title = "EVTNAME13270"
+	desc = "EVTDESC13270"
+	news = yes
+	news_desc_long = "EVTDESC13270_NEWS_LONG"
+	news_desc_medium = "EVTDESC13270_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC13270_NEWS_SHORT"
+	picture = "Opiumwar"
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA13270"
+		prestige = -5
+		casus_belli = {
+			target = FROM
+			type = cut_down_to_size
+			months = 12
+		}
+	}
+}
+
+
+#Angered aristocracy
+province_event = {
+	id = 13280
+	title = "EVTNAME13280"
+	desc = "EVTDESC13280"
+
+	trigger = {
+		owner = {
+			has_country_modifier = western_influences
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 900
+	}
+
+	option = {
+		name = "EVTOPTA13280"
+		state_scope = {
+			aristocrats = {
+				consciousness = 2
+				militancy = 3
+			}
+		}
+	}
+}
+
+#100 days of reform
+country_event = {
+	id = 13290
+	title = "EVTNAME13290"
+	desc = "EVTDESC13290"
+	picture = "Opiumwar"
+
+	trigger = {
+		has_country_modifier = uncivilized_isolationism
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 0.9
+			average_consciousness = 3
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 1.5
+			average_militancy = 4
+		}
+	}
+
+	option = {
+		name = "EVTOPTA13290"
+		years_of_research = 0.4
+		bureaucrats = {
+			militancy = 1
+		}
+		aristocrats = {
+			militancy = 1
+		}
+		farmers = {
+			militancy = 1
+		}
+	}
+
+	option = {
+		name = "EVTOPTB13290"
+		years_of_research = 0.2
+	}
+}
+
+### UNCIV FLAVOR ###
+# SIA -- An Elephant for America?
+country_event = {
+	id = 13350
+	title = "EVTNAME13350"
+	desc = "EVTDESC13350"
+	picture = "elephant"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA13350"
+		relation = {
+			who = FROM
+			value = 30
+		}
+	}
+}
+
+#CHI -- Torching of The Summer Palace
+country_event = {
+	id = 13355
+	title = "EVTNAME13355"
+	desc = "EVTDESC13355"
+	news = yes
+	news_desc_long = "EVTDESC13355_NEWS_LONG"
+	news_desc_medium = "EVTDESC13355_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC13355_NEWS_SHORT"
+	major = yes
+	picture = "cityfire"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA13355"
+		prestige = -25
+		war_exhaustion = 5
+	}
+}
+
+#Boxers Burn something
+country_event = {
+	id = 13356
+	title = "EVTNAME13356"
+	desc = "EVTDESC13356"
+	news = yes
+	news_desc_long = "EVTDESC13356_NEWS_LONG"
+	news_desc_medium = "EVTDESC13356_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC13356_NEWS_SHORT"
+	picture = "Rebellion"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA13356"
+		prestige = -5
+		casus_belli = {
+			target = FROM
+			type = cut_down_to_size_boxer
+			months = 12
+		}
+	}
+}
+
+#Doctrine of Lapse 1/2
+country_event = {
+	id = 13357
+	title = "EVTNAME13357"
+	desc = "EVTDESC13357"
+
+	picture = "Rebellion"
+
+	trigger = {
+		ENG = {
+			NOT = {
+				has_country_flag = empress_of_india
+			}
+		}
+		vassal_of = ENG
+		ai = yes
+		civilized = no
+		NOT = {
+			prestige = 15
+		}
+		OR = {
+			primary_culture = assamese
+			primary_culture = bengali
+			primary_culture = bihari
+			primary_culture = manipuri
+			primary_culture = nepali
+			primary_culture = oriya
+			primary_culture = sinhala
+			primary_culture = avadhi
+			primary_culture = kanauji
+			primary_culture = panjabi
+			primary_culture = kashmiri
+			primary_culture = gujarati
+			primary_culture = marathi
+			primary_culture = sindi
+			primary_culture = rajput
+			primary_culture = kannada
+			primary_culture = malayalam
+			primary_culture = tamil
+			primary_culture = telegu
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 500
+		modifier = {
+			factor = 0.9
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				prestige = 10
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				prestige = 5
+			}
+		}
+		modifier = {
+			factor = 0.1
+			NOT = {
+				government = absolute_monarchy
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA13357"
+		any_pop = {
+			militancy = 4
+			consciousness = 1
+		}
+		ENG = {
+			country_event = { id=13358 days=0 }
+		}
+	}
+}
+
+# Doctrine of Lapse 2/2
+country_event = {
+	id = 13358
+	title = "EVTNAME13358"
+	desc = "EVTDESC13358"
+	news = yes
+	news_desc_long = "EVTDESC13358_NEWS_LONG"
+	news_desc_medium = "EVTDESC13358_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC13358_NEWS_SHORT"
+
+	picture = "Rebellion"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA13358"
+		prestige = 4
+		inherit = FROM
+		any_owned = {
+			limit = {
+				is_core = HND
+			}
+			any_pop = {
+				militancy = 3
+				consciousness = 1
+			}
+		}
+		set_global_flag = doctrine_of_lapse_has_been_used
+	}
+
+	option = {
+		name = "EVTOPTB13358"
+		prestige = -2
+	}
+}
+
+country_event = {
+	title = "westernize_nation_title"
+	desc = "westernize_nation_desc"
+	news = yes
+	news_desc_long = "westernize_nation_desc_NEWS_LONG"
+	news_desc_medium = "westernize_nation_desc_NEWS_MEDIUM"
+	news_desc_short = "westernize_nation_desc_NEWS_SHORT"
+	picture = "Prosper"
+
+	id = 90910
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { tag = CHI }
+		NOT = { tag = GXI }
+		NOT = { tag = MCK }
+		NOT = { tag = XIN }
+		NOT = { tag = YNN }
+		NOT = { tag = XBI }
+		NOT = { tag = MGL }
+		}
+
+	option = {				
+		name = "EVTOPTA90910"
+
+		prestige = 10
+			remove_country_modifier = educational_reform
+			remove_country_modifier = military_reform
+			remove_country_modifier = western_influences
+			remove_country_modifier = uncivilized_isolationism
+			remove_country_modifier = trade_restrictions
+			remove_country_modifier = sayings_of_the_dutch
+			remove_country_modifier = extraterritoriality_granted
+			remove_country_modifier = meiji_restoration_boost
+			any_owned = {
+				remove_province_modifier = western_presence
+				remove_province_modifier = foreign_smugglers
+				remove_province_modifier = foreign_trading_post
+				remove_province_modifier = local_opium_habit
+				remove_province_modifier = european_military_mission
+				remove_province_modifier = legation_quarter
+				remove_province_modifier = kettler_denkmal
+			}
+	}
+}
+
+country_event = {
+	title = "EVTNAME90950"
+	desc = "EVTDESC90950"
+	picture = "Prosper"
+
+	id = 90950
+
+	is_triggered_only = yes
+	
+	trigger = {
+		#
+		}
+
+	option = {				
+		name = "EVTOPTA90950"
+		casus_belli = {
+			target = FROM
+			type = make_puppet
+			months = 12
+		}
+		
+		relation = {
+			who = FROM
+			value = -100
+		}
+		
+	}
+	
+	option = {				
+		name = "EVTOPTB90950"
+
+		relation = {
+			who = FROM
+			value = 100
+		}
+		
+	}
+
+}
+
+
+c:\victoria 2\mod\mpmod\events\Diseases.txt
+************************************************************************
+# Tuberculosis
+country_event = {
+	id = 21000
+	title = "EVTNAME21000"
+	desc = "EVTDESC21000"
+	picture = "disease"
+	
+	trigger = {
+		NOT = {
+			poor_strata_everyday_needs = 0.8
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 800
+		
+		modifier = {
+			factor = 0.9
+			NOT = {
+				poor_strata_life_needs = 0.9
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				poor_strata_everyday_needs = 0.7
+			}
+		}
+		modifier = {
+			factor = 1.5
+			organic_chemistry = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA21000"
+		random_state = {
+			any_pop = {
+				reduce_pop = 0.96
+				militancy = -0.5
+			}
+		}
+	}
+}
+
+#Famine!
+country_event = {
+	id = 21010
+	title = "EVTNAME21010"
+	desc = "EVTDESC21010"
+	picture = "starving"
+	
+	trigger = {
+		NOT = {
+			poor_strata_life_needs = 0.8
+			}
+		NOT = {
+			government = democracy
+		}
+	}
+		
+	mean_time_to_happen = {
+		months = 800
+		modifier = {
+			factor = 0.9
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 1.5
+			government = hms_government
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA21010"
+		random_state = {
+			poor_strata = {
+				reduce_pop = 0.96
+			}
+		}
+		add_tax_relative_income	= -5
+		#treasury = -1500
+	}
+	
+	option = {
+		name = "EVTOPTB21010"
+		random_state = {
+			poor_strata = {
+				reduce_pop = 0.9
+				militancy = 1
+			}
+		}
+	}
+}
+
+#Typhoid Fever
+country_event = {
+	id = 21020
+	title = "EVTNAME21020"
+	desc = "EVTDESC21020"
+	picture = "disease"
+	
+	trigger = {
+		NOT = {
+			poor_strata_everyday_needs = 0.90
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 800
+		modifier = {
+			factor = 0.9
+			NOT = {
+				poor_strata_everyday_needs = 0.8
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				poor_strata_life_needs = 0.9
+			}
+		}
+		modifier = {
+			factor = 1.5
+			organic_chemistry = 1
+		}
+		modifier = {
+			factor = 1.5
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 1.1
+			year = 1850
+		}
+		modifier = {
+			factor = 1.1
+			year = 1870
+		}
+		modifier = {
+			factor = 1.1
+			year = 1890
+		}
+		modifier = {
+			factor = 1.1
+			year = 1910
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA21020"
+		random_state = {
+			any_pop = {
+				reduce_pop = 0.9
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB21020"
+		random_state = {
+			any_pop = {
+				reduce_pop = 0.96
+				militancy = 2
+			}
+		}
+	}
+}
+
+#Strange Influenza
+country_event = {
+	id = 21030
+	title = "EVTNAME21030"
+	desc = "EVTDESC21030"
+	picture = "disease"
+	
+	trigger = {
+		NOT = {
+			poor_strata_life_needs = 0.9
+		}
+		
+		NOT = {
+			has_country_modifier = pandemic_influenza
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3000
+		modifier = {
+			factor = 0.9
+			NOT = { poor_strata_everyday_needs = 0.9 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { poor_strata_life_needs = 0.8 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				organic_chemistry = 1
+			}
+		}
+		modifier = {
+			factor = 1.5
+			organic_chemistry = 1
+		}
+		modifier = {
+			factor = 0.01
+			any_neighbor_country = {
+				has_country_modifier = pandemic_influenza
+			}
+		}
+		modifier = {
+			factor = -1
+			health_care = trinket_health_care
+		}
+		modifier = {
+			factor = -2
+			health_care = low_health_care
+		}
+		modifier = {
+			factor = -3
+			health_care = acceptable_health_care
+		}
+		modifier = {
+			factor = -4
+			health_care = good_health_care
+		}
+		
+	}
+	
+	option = {
+		name = "EVTOPTA21030"
+		add_country_modifier = {
+			name = pandemic_influenza
+			duration = 365
+		}
+		add_tax_relative_income	= -5
+	}
+	
+	option = {
+		name = "EVTOPTB21030"
+		add_country_modifier = {
+			name = pandemic_influenza
+			duration = 480
+		}
+	}
+}
+
+#Smallpox
+country_event = {
+	id = 21040
+	title = "EVTNAME21040"
+	desc = "EVTDESC21040"
+	picture = "smallpox"
+	
+	trigger = {
+		NOT = {
+			poor_strata_everyday_needs = 0.5
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 800
+		modifier = {
+			factor = 0.9
+			NOT = {
+				poor_strata_life_needs = 0.9
+			}
+		}
+#		modifier = {
+#			factor = 0.9
+#			NOT = {
+#				luxury_needs = 0.9
+#			}
+#		}
+		modifier = {
+			factor = 1.5
+			organic_chemistry = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA21040"
+		random_state = {
+			any_pop = {
+				reduce_pop = 0.9
+				consciousness = 2
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB21040"
+		random_state = {
+			any_pop = {
+				reduce_pop = 0.85
+				militancy = -1
+			}
+		}
+	}
+}
+
+
+c:\victoria 2\mod\mpmod\events\Goods.txt
+************************************************************************
+#############################
+#        GOLD EVENTS        #
+#############################
+province_event = {
+	
+	id = 1100
+
+	trigger = {
+		year = 1836
+		or = {
+			province_id = 1				# Sitka
+			province_id = 2				# Yakutat
+			province_id = 766			# Sassari
+			province_id = 769			# Postojna
+			province_id = 773			# Karlovac
+			province_id = 1387			# Kuala Lumpur
+			province_id = 1390			# Kuantan
+			province_id = 1422			# Muraleve
+			province_id = 1440			# Sumbawa
+			province_id = 1564			# Caozhou
+			province_id = 1884			# Freetown
+			province_id = 2501			# Kimberley
+			province_id = 2153			# Durango
+			province_id = 2157			# Culiacan
+			province_id = 2179			# Acapulco
+			province_id = 2295			# Lima
+			province_id = 2323			# La Serena
+			province_id = 2500			# Kalgoorlie
+			province_id = 2503			# Wiluna
+			province_id = 2575			# Ipoh
+			province_id = 2601			# Sandy Desert
+			province_id = 2605			# Gibson's Desert
+			province_id = 1659			# Kobe
+			province_id = 2142			# Chihuahua
+			province_id = 2255			# Barranquilla
+			province_id = 457			# FRA
+			province_id = 303			# ENG
+			province_id = 320			# SWE
+			province_id = 2672			# RUS
+			province_id = 1071			# RUS
+			province_id = 2668			# RUS
+			province_id = 2643			# RUS
+			province_id = 896			# TUR
+		}
+		not = { trade_goods = precious_metal }
+	}
+
+	mean_time_to_happen =  {
+		months = 12
+
+	}
+
+	title = "EVTNAME1100"
+	desc = "EVTDESC1100"
+
+	option = {
+		name = "EVTOPTA1100"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+	}
+}
+
+province_event = {
+	
+	id = 1101
+
+	trigger = {
+		year = 1848
+		or = {
+			province_id = 88			# Mariposa
+			province_id = 695			# Kцnigsberg
+		}
+		not = { trade_goods = precious_metal }
+	}
+
+	mean_time_to_happen =  {
+		months = 12
+
+	}
+
+	title = "EVTNAME1100"
+	desc = "EVTDESC1100"
+	picture = ""
+
+	option = {
+		name = "EVTOPTA1100"
+		trade_goods = precious_metal
+		# life_rating = 5
+	}
+}
+
+
+province_event = {
+	
+	id = 1102
+
+	trigger = {
+		year = 1850
+		province_id = 1084				# Utchan
+		not = { trade_goods = precious_metal }
+	}
+
+	mean_time_to_happen =  {
+		months = 12
+
+	}
+
+	title = "EVTNAME1100"
+	desc = "EVTDESC1100"
+
+	option = {
+		name = "EVTOPTA1100"
+		trade_goods = precious_metal
+		# life_rating = 5
+	}
+}
+
+province_event = {
+	
+	id = 1103
+
+	trigger = {
+		year = 1861
+		province_id = 93			# Pocatello
+		not = { trade_goods = precious_metal }
+	}
+
+	mean_time_to_happen =  {
+		months = 12
+
+	}
+
+	title = "EVTNAME1100"
+	desc = "EVTDESC1100"
+
+	option = {
+		name = "EVTOPTA1100"
+		trade_goods = precious_metal
+		# life_rating = 5
+	}
+}
+
+#Witwatersrand Gold Rush
+province_event = {
+	id = 1139
+	
+	trigger = {
+		year = 1886
+		province_id = 2106
+		NOT = {
+			trade_goods = precious_metal
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	title = "EVTNAME1139"
+	desc = "EVTDESC1139"
+	
+	option = {
+		name = "EVTOPTA1139"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 5475
+		}
+		change_province_name = "Йоханнесбург"
+		owner = {
+			add_country_modifier = {
+				name = witwatersrand_gold_rush
+				duration = 1460
+			}
+		}
+	}
+}
+
+# Gold in The Black Hills
+country_event = {
+	id = 1140
+	title = "EVTNAME1140"
+	desc = "EVTDESC1140"
+	news = yes
+    news_desc_long = "EVTDESC1140_NEWS_LONG"
+	news_desc_medium = "EVTDESC1140_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC1140_NEWS_SHORT"
+	picture = "goldrush"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		year = 1874
+		has_country_flag = custers_expedition_sent
+	}
+	
+	mean_time_to_happen = {
+		months = 5
+	}
+	
+	option  ={
+		name = "EVTOPTA1140"
+		122 = {
+			trade_goods = precious_metal
+			add_province_modifier = {
+				name = gold_rush
+				duration = 3650
+			}
+		}
+	}
+}
+
+province_event = {
+	
+	id = 1104
+
+	trigger = {
+		year = 1896
+		or = {
+			province_id = 6			# Whitehorse
+			province_id = 7			# Dawson
+			province_id = 2599		# Fairbanks
+			province_id = 2630		# Cordova
+		}
+		not = { trade_goods = precious_metal }
+	}
+
+	mean_time_to_happen =  {
+		months = 12
+
+	}
+
+	title = "EVTNAME1100"
+	desc = "EVTDESC1100"
+	picture = ""
+
+	option = {
+		name = "EVTOPTA1100"
+		trade_goods = precious_metal
+		# life_rating = 5
+	}
+}
+
+################################
+#        DIAMOND EVENTS        #
+################################
+province_event = {
+	
+	id = 1105
+
+	trigger = {
+		year = 1836
+		or = {
+			province_id = 2084			# Angra Pequeсa
+			province_id = 2091			# Mossel Bay
+			province_id = 2092			# Beaufort
+			province_id = 1697			# Figuig
+			province_id = 2108			# Mosega
+			province_id = 2107			# Klerksdorp
+			province_id = 2068			# Salisbury
+		}
+		not = { trade_goods = precious_metal }
+	}
+
+	mean_time_to_happen =  {
+		months = 12
+
+	}
+
+	title = "EVTNAME1105"
+	desc = "EVTDESC1105"
+	picture = ""
+
+	option = {
+		name = "EVTOPTA1105"
+		trade_goods = precious_metal
+		# life_rating = 5
+	}
+}
+
+province_event = {
+	
+	id = 1106
+
+	trigger = {
+		year = 1867
+		or = {
+			province_id = 2097			# Graaf Reinet
+			province_id = 1849			# Massawa
+		}
+		not = { trade_goods = precious_metal }
+	}
+
+	mean_time_to_happen =  {
+		months = 12
+
+	}
+
+	title = "EVTNAME1105"
+	desc = "EVTDESC1105"
+
+	option = {
+		name = "EVTOPTA1105"
+		trade_goods = precious_metal
+		# life_rating = 5
+	}
+}
+
+###############################
+#        RUBBER EVENTS        #
+###############################
+province_event = {
+	
+	id = 1107
+
+	trigger = {
+		year = 1880
+		or = {
+			province_id = 1354
+			province_id = 1364
+			province_id = 1367
+			province_id = 1382
+			province_id = 1384
+			province_id = 1385
+			province_id = 1386
+			province_id = 1389
+			province_id = 1402
+			province_id = 1404
+			province_id = 1827
+			province_id = 1829
+			province_id = 1833
+			province_id = 1836
+			province_id = 1837
+			province_id = 1848
+			province_id = 1850
+			province_id = 1890
+			province_id = 1891
+			province_id = 1923
+			province_id = 1321
+			province_id = 1398
+			province_id = 1421
+			province_id = 1985
+			province_id = 1406
+			province_id = 1318
+			province_id = 2057
+			province_id = 1426
+			province_id = 2058
+			province_id = 977
+			province_id = 1978
+			province_id = 1980
+			province_id = 1981
+			province_id = 2624
+		}
+		not = { trade_goods = rubber }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+					}
+			}
+			year = 1900
+		}
+	}
+
+	mean_time_to_happen =  {
+		months = 36
+
+	}
+
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+		# life_rating = 5
+	}
+}
+
+province_event = {
+	
+	id = 1108
+
+	trigger = {
+		year = 1890
+		or = {
+			province_id = 1926
+			province_id = 1929
+			province_id = 1931
+			province_id = 1932
+			province_id = 1957
+			province_id = 1986
+			province_id = 1988
+			province_id = 1989
+			province_id = 1996
+			province_id = 2192
+			province_id = 2317
+			province_id = 2318
+			province_id = 2319
+			province_id = 2321
+			province_id = 2402
+			province_id = 2404
+			province_id = 2405
+			province_id = 2549
+			province_id = 2550
+			province_id = 2600
+		}
+		not = { trade_goods = rubber }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+					}
+			}
+			year = 1900
+		}
+	}
+
+	mean_time_to_happen =  {
+		months = 36
+
+	}
+
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+		# life_rating = 5
+	}
+}
+
+############################
+#        OIL EVENTS        #
+############################
+province_event = {
+
+	id = 1109
+
+	trigger = {
+		year = 1870
+		or = {
+			province_id = 1102		# Baku
+			province_id = 1205		# Kizil Arvat
+			province_id = 1164
+			province_id = 1132
+			province_id = 1136
+			province_id = 1142
+			province_id = 1145
+			province_id = 900
+			province_id = 2567
+			province_id = 1725
+			province_id = 400
+			province_id = 543
+			province_id = 502
+			province_id = 1680
+			province_id = 1853
+			province_id = 2344
+			province_id = 2463
+			province_id = 270
+			province_id = 311
+			province_id = 1637
+			province_id = 989
+			province_id = 1121
+			province_id = 1209
+			province_id = 1234
+			province_id = 1312
+			
+		}
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1110
+
+	trigger = {
+		year = 1871
+		province_id = 1104		# Sheki
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1111
+
+	trigger = {
+		year = 1872
+		province_id = 1186		# Alma Ata
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1112
+
+	trigger = {
+		year = 1873
+		province_id = 1202		# Kokand
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1113
+
+	trigger = {
+		year = 1874
+		province_id = 1107		# Lankaran
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1114
+
+	trigger = {
+		year = 1875
+		province_id = 132		# Houston
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1115
+
+	trigger = {
+		year = 1876
+		province_id = 667		# Tirgoviste
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1116
+
+	trigger = {
+		year = 1877
+		province_id = 672		# Bacau
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1117
+
+	trigger = {
+		year = 1879
+		province_id = 1168		# Dubai
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1118
+
+	trigger = {
+		year = 1881
+		province_id = 110		# Cheyenne
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1119
+
+	trigger = {
+		year = 1882
+		or = {
+			province_id = 89		# Los Angeles
+			province_id = 133		# Austin
+			province_id = 126		# Topeka
+			province_id = 2557
+			province_id = 375
+			province_id = 2113
+			province_id = 2035
+			#province_id = 2295
+			province_id = 2264
+		}
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1120
+
+	trigger = {
+		year = 1883
+		or = {
+			province_id = 1399		# Palembang
+			province_id = 1055		# Grozny
+			province_id = 932
+			province_id = 935
+			province_id = 1644
+			province_id = 2562
+			province_id = 1581
+			province_id = 1504
+		}
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1121
+
+	trigger = {
+		year = 1885
+		or = {
+			province_id = 1393		# Brunei
+			province_id = 1401		# Siak
+			province_id = 1425		# Tarakan
+			province_id = 1432		# Mamuju
+		}
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+
+province_event = {
+
+	id = 1122
+
+	trigger = {
+		year = 1886
+		or = {
+			province_id = 1335		# Kyaukse
+			province_id = 134		# Dallas
+			province_id = 705		# Przemysl
+		}
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1123
+
+	trigger = {
+		year = 1889
+		province_id = 1260		# Dibrugarh
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1124
+
+	trigger = {
+		year = 1892
+		province_id = 1086		# Pogobi
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1125
+
+	trigger = {
+		year = 1893
+		or = {
+			province_id = 129		# Oklahoma City
+			province_id = 1680		# Fez
+		}
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1126
+
+	trigger = {
+		year = 1894
+		province_id = 2173		# Queretaro
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1127
+
+	trigger = {
+		year = 1896
+		or = {
+			province_id = 87		# Monterey
+			province_id = 2162		# Veracruz
+			province_id = 2163		# Tampico
+			province_id = 702		# Lvov
+			province_id = 1157
+		}
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1128
+
+	trigger = {
+		year = 1897
+		province_id = 1397		# Sandakan
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1129
+
+	trigger = {
+		year = 1902
+		province_id = 2237		# Trinidad
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1130
+
+	trigger = {
+		year = 1907
+		province_id = 2396		# Rawson
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1131
+
+	trigger = {
+		year = 1908
+		province_id = 1131		# Ahvaz
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1132
+
+	trigger = {
+		year = 1910
+		or = {
+			province_id = 1732		# Ghayran
+			province_id = 1720		# Timimoun
+			province_id = 1167		# Abu Dhabi
+			province_id = 1163		# Qatif
+			province_id = 2270		# Maracaibo
+			province_id = 1170		# Nizwa 
+		}
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1133
+
+	trigger = {
+		year = 1912
+		province_id = 1132		# Abadan
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1134
+
+	trigger = {
+		year = 1913
+		province_id = 26		# Calgary
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1135
+
+	trigger = {
+		year = 1915
+		province_id = 2291		# Piura
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1136
+
+	trigger = {
+		year = 1917
+		province_id = 849		# Tirana
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1137
+
+	trigger = {
+		year = 1923
+		province_id = 928		# Mendeli
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+province_event = {
+
+	id = 1138
+
+	trigger = {
+		year = 1927
+		province_id = 923		# Mosul
+		not = { trade_goods = oil }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+		# life_rate = 5
+	}
+}
+
+
+
+c:\victoria 2\mod\mpmod\events\LiberalRevolutions.txt
+************************************************************************
+# An Age of Liberalism
+country_event = {
+	id = 10001
+	title = "EVTNAME10001"
+	desc = "EVTDESC10001"
+		picture = "Administration"
+
+	trigger = {
+		civilized = yes
+		literacy = 0.3
+		NOT = {
+			OR = {
+				has_country_flag = liberal_revolution_in_progress
+				has_country_flag = liberal_revolution_fired
+				has_country_flag = had_liberal_revolution
+			}
+			is_ideology_enabled = socialist
+			vote_franschise = universal_weighted_voting
+			vote_franschise = universal_voting
+		}
+		NOT = {
+			has_global_flag = liberal_revolutions_should_now_fire
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.1
+			has_global_flag = liberal_revolution_somewhere
+		}
+	}
+
+	option = {
+		name = "EVTOPTA10001"
+		add_country_modifier = {
+			name = global_liberal_agitation
+			duration = -1
+		}
+		any_pop = {
+			limit = {
+				location = {
+					is_colonial = no
+				}
+			}
+			ideology = {
+				value = liberal
+				factor = 0.05
+			}
+			consciousness = 1
+		}
+		set_global_flag = liberal_revolution_somewhere
+		set_country_flag = liberal_revolution_in_progress
+	}
+}
+
+#Springtime of Nations
+country_event = {
+	id = 10000
+	title = "EVTNAME10000"
+	desc = "EVTDESC10000"
+	picture = "Revolution"
+
+	trigger = {
+		has_country_flag = liberal_revolution_in_progress
+		OR = {
+			liberal = 10
+			any_owned_province = {
+				has_province_modifier = liberal_agitation
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.04
+			has_global_flag = liberal_revolutions_should_now_fire
+		}
+		modifier = {
+			factor = 0.9
+			liberal = 5
+		}
+		modifier = {
+			factor = 0.9
+			liberal = 10
+		}
+		modifier = {
+			factor = 0.9
+			liberal = 15
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.9
+			political_reform_want = 0.07
+		}
+		modifier = {
+			factor = 0.9
+			political_reform_want = 0.09
+		}
+		modifier = {
+			factor = 0.9
+			num_of_revolts = 1
+		}
+		modifier = {
+			factor = 0.8
+			num_of_revolts = 5
+		}
+		modifier = {
+			factor = 0.8
+			num_of_revolts = 10
+		}
+		modifier = {
+			factor = 0.4
+			num_of_revolts = 15
+		}
+		modifier = {
+			factor = 1.1
+			prestige = 40
+		}
+		modifier = {
+			factor = 1.1
+			prestige = 50
+		}
+		modifier = {
+			factor = 1.1
+			has_country_modifier = anti_jacobin_tract
+		}
+		modifier = {
+			factor = 1.1
+			not = {
+				political_reform_want = 0.05
+			}
+		}
+		modifier = {
+			factor = 0.1
+			year = 1848
+		}
+	}
+	option = {
+		name = "EVTOPTA10000"
+		remove_country_modifier = global_liberal_agitation
+		add_country_modifier = {
+			name = springtime_of_nations
+			duration = 365
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					has_province_modifier = liberal_agitation
+					liberal = 20
+					average_consciousness = 4
+				}
+			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = liberal
+					factor = 6
+				}
+			}
+			remove_province_modifier = liberal_agitation
+		}
+		set_global_flag = liberal_revolutions_should_now_fire
+		clr_country_flag = liberal_revolution_in_progress
+		set_country_flag = liberal_revolution_fired
+	}
+}
+
+
+
+
+#End of The Liberal Revolution
+country_event = {
+	title = "EVTNAME10050"
+	desc = "EVTDESC10050"
+	picture = "Riot"
+
+	id = 10051
+
+	trigger = {
+		has_country_flag = liberal_revolution_in_progress
+		OR = {
+			vote_franschise = universal_weighted_voting
+			vote_franschise = universal_voting
+		}
+		NOT = {
+			num_of_revolts = 1
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "EVTOPTA10050"
+		any_owned = {
+			limit = {
+				is_colonial = no
+			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = liberal
+					factor = -4
+				}
+				scaled_consciousness = {
+					ideology = liberal
+					factor = -4
+				}
+			}
+		}
+		remove_country_modifier = global_liberal_agitation
+		clr_country_flag = liberal_revolution_in_progress
+		set_country_flag = had_liberal_revolution
+		prestige = 5
+	}
+}
+
+
+#End of The Liberal Revolution Part 2
+country_event = {
+	title = "EVTNAME10050"
+	desc = "EVTDESC10050"
+	picture = "Riot"
+
+	id = 10050
+
+	trigger = {
+		NOT = {
+			has_country_flag = had_liberal_revolution
+		}
+		OR = {
+			AND = {
+				NOT = {
+					has_country_modifier = springtime_of_nations
+				}
+				has_country_flag = liberal_revolution_fired
+				NOT = {
+					num_of_revolts = 1
+				}
+			}
+			AND = {
+				OR = {
+					has_country_flag = liberal_revolution_in_progress
+					has_country_flag = liberal_revolution_fired
+				}
+				OR = {
+					vote_franschise = universal_weighted_voting
+					vote_franschise = universal_voting
+				}
+				NOT = {
+					num_of_revolts = 1
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "EVTOPTA10050"
+		any_owned = {
+			limit = {
+				is_colonial = no
+			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = liberal
+					factor = -4
+				}
+				scaled_consciousness = {
+					ideology = liberal
+					factor = -4
+				}
+			}
+		}
+		remove_country_modifier = global_liberal_agitation
+		clr_country_flag = liberal_revolution_fired
+		clr_country_flag = liberal_revolution_in_progress
+		set_country_flag = had_liberal_revolution
+		prestige = 15
+	}
+}
+
+
+
+#Potato Blight
+country_event = {
+	title = "EVTNAME10100"
+	desc = "EVTDESC10100"
+	id = 10100
+	picture = "Demonstration"
+	
+	trigger = {
+		continent = europe
+		civilized = yes
+		NOT = { inorganic_chemistry = 1 }
+		
+	}
+	
+	mean_time_to_happen = {
+		months = 250
+		modifier = {
+			factor = 0.8
+			any_owned_province = {
+				has_province_modifier = potato_blight
+			}
+		}
+		modifier = {
+			factor = 0.9
+				NOT = {
+					medicine = 1
+				}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				poor_strata_life_needs = 0.8
+			}
+		}
+		modifier = {
+			factor = 1.5
+			poor_strata_life_needs = 0.95
+		}
+		modifier = {
+			factor = -0.3
+			health_care = trinket_health_care
+		}
+		modifier = {
+			factor = -0.6
+			health_care = low_health_care
+		}
+		modifier = {
+			factor = -0.9
+			health_care = acceptable_health_care
+		}
+		modifier = {
+			factor = -1.2
+			health_care = good_health_care
+		}
+		
+	}
+	option = {
+		name = "EVTOPTB10100"
+		
+		random_owned = { 
+			limit = {
+				is_colonial = no
+				NOT = {
+					has_province_modifier = potato_blight
+					poor_strata_everyday_needs = 0.9
+				}
+			}
+		
+			add_province_modifier = {
+				name = potato_blight
+				duration = 180
+				}
+			state_scope = {
+				any_pop = {
+					consciousness = 3
+				}
+			}
+		}
+			prestige = -2
+
+	}
+	option = {
+		name = "EVTOPTA10100"
+			random_owned = { 
+				limit = {
+					is_colonial = no
+					NOT = {
+						has_province_modifier = potato_blight
+						poor_strata_everyday_needs = 0.9
+					}
+				}
+			state_scope = {
+				any_owned = {
+					add_province_modifier = {
+						name = potato_blight
+						duration = 365
+					}
+				}
+			}
+		}
+	}
+}
+
+#Potato Famine Debated
+country_event = {
+	title = "EVTNAME10105"
+	desc = "EVTDESC10105"
+	id = 10105
+	picture = "Metis"
+
+	trigger = {
+		has_country_flag = liberal_revolution_in_progress
+		any_owned_province = {
+			has_province_modifier = potato_blight
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.9
+			political_reform_want = 0.02
+		}
+		modifier = {
+			factor = 0.9
+			political_reform_want = 0.03
+		}
+		modifier = {
+			factor = 0.9
+			political_reform_want = 0.04
+		}
+		modifier = {
+			factor = 0.9
+			liberal = 5
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				average_consciousness = 5
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA10105"
+		random_state = {
+			limit = {
+				is_colonial = no
+			}
+			any_owned = {
+				add_province_modifier = {
+					name = liberal_agitation
+					duration = 730
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB10105"
+		any_pop = {
+			limit = {
+				location = {
+					is_colonial = no
+				}
+			}
+			ideology = {
+				value = liberal
+				factor = 0.02
+			}
+			consciousness = 0.5
+		}
+	}
+}
+
+#Nationalist Poet
+country_event = {
+	title = "EVTNAME10110"
+	desc = "EVTDESC10110"
+	id = 10110
+	picture = "Demonstration"
+
+	trigger = {
+		has_country_flag = liberal_revolution_in_progress
+		average_consciousness = 3
+	}
+
+	mean_time_to_happen = {
+		months = 25
+		modifier = {
+			factor = 0.8
+			liberal = 5
+		}
+		modifier = {
+			factor = 0.9
+			liberal = 10
+		}
+		modifier = {
+			factor = 0.9
+			liberal = 15
+		}
+		modifier = {
+			factor = 0.9
+			political_reform_want = 0.05
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				average_consciousness = 5
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA10110"
+		random_state = {
+			limit = {
+				is_colonial = no
+			}
+			any_owned = {
+				add_province_modifier = {
+					name = liberal_agitation
+					duration = 730
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB10110"
+		any_pop = {
+			ideology = {
+				value = liberal
+				factor = 0.03
+			}
+			militancy = 1
+		}
+	}
+}
+
+#Liberal Newspaper
+country_event = {
+	title = "EVTNAME10120"
+	desc = "EVTDESC10120"
+	id = 10120	
+	picture = "Liberator"
+	
+	trigger = {
+			has_country_flag = liberal_revolution_in_progress
+			NOT = {
+				press_rights = free_press
+			}
+		
+	}
+	mean_time_to_happen = {
+		months = 100
+		modifier = {
+			factor = 0.9
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 0.9
+			liberal = 10
+		}
+		modifier = {
+			factor = 0.9
+			liberal = 15
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				average_consciousness = 4
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA10120"
+		random_owned = { 
+				limit = {
+					is_colonial = no
+					liberal = 5
+					NOT = {
+						has_province_modifier = liberal_agitation
+					}
+				}
+		
+		add_province_modifier = {
+			name = liberal_agitation
+			duration = 730
+			}
+		}
+		
+		random_owned = { 
+				limit = {
+					is_colonial = no
+					liberal = 5
+					NOT = {
+						has_province_modifier = liberal_agitation
+					}
+				}
+		
+		add_province_modifier = {
+			name = liberal_agitation
+			duration = 730
+			}
+		}
+		
+		random_owned = { 
+				limit = {
+					is_colonial = no
+					liberal = 5
+					NOT = {
+						has_province_modifier = liberal_agitation
+					}
+				}
+		
+		add_province_modifier = {
+			name = liberal_agitation
+			duration = 730
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB10120"
+		any_pop = {
+			ideology = {
+				value = liberal
+				factor = 0.1
+			}
+			consciousness = 0.5
+		}
+	}
+}
+
+#Chartist Society
+province_event = {
+	title = "EVTNAME10130"
+	desc = "EVTDESC10130"
+	id = 10130
+	
+	#is_triggered_only = yes
+	
+	trigger = {
+		owner = {
+			has_country_flag = liberal_revolution_in_progress
+		}
+		NOT = {
+			has_province_modifier = liberal_agitation
+		}
+		is_colonial = no
+		average_consciousness = 4
+	}
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.9
+			owner = {
+				political_reform_want = 0.05
+			}
+		}
+		modifier = {
+			factor = 0.9
+			liberal = 5
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				average_consciousness = 5
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 10
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 15
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 20
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 25
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 30
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 35
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 40
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA10130"
+		add_province_modifier = {
+			name = liberal_agitation
+			duration = 730
+		}
+	}
+	option = {
+		name = "EVTOPTB10130"
+		any_pop = {
+			ideology = {
+				value = liberal
+				factor = 0.04
+			}
+			consciousness = 0.5
+			militancy = 0.5
+		}
+	}
+}
+
+#Secret Society
+province_event = {
+	title = "EVTNAME10140"
+	desc = "EVTDESC10140"
+	id = 10140
+
+	#is_triggered_only = yes
+	
+	trigger = {
+		owner = {
+			has_country_flag = liberal_revolution_in_progress
+		}
+		NOT = {
+			has_province_modifier = liberal_agitation
+		}
+		is_colonial = no
+		liberal = 5
+	}
+	mean_time_to_happen = {
+		months = 90
+		modifier = {
+			factor = 0.9
+			liberal = 10
+		}
+		modifier = {
+			factor = 0.9
+			liberal = 15
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				average_consciousness = 5
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 10
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 15
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 20
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 25
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 30
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 35
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 40
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA10140"
+		add_province_modifier = {
+			name = liberal_agitation
+			duration = 730
+		}
+	}
+
+	option = {
+		name = "EVTOPTB10140"
+		any_pop = {
+			ideology = {
+				value = liberal
+				factor = 0.3
+			}
+		}
+	}
+}
+
+#Luddite Mob
+province_event = {
+	title = "EVTNAME10150"
+	desc = "EVTDESC10150"
+	id = 10150
+	
+	#is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_province_modifier = liberal_agitation
+		}
+		owner = {
+			has_country_flag = liberal_revolution_in_progress
+		}
+		state_scope = {
+			has_building = factory
+		}
+		is_colonial = no
+	}
+	mean_time_to_happen = {
+		months = 1200
+		modifier = {
+			factor = 0.9
+			NOT = {
+				poor_strata_life_needs = 0.9
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				poor_strata_everyday_needs = 0.9
+			}
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				average_militancy = 4
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA10150"
+		poor_strata = {
+			militancy = 6
+		}
+	}
+	option = {
+		name = "EVTOPTB10150"
+		add_province_modifier = {
+			name = liberal_agitation
+			duration = 730
+		}
+	}
+}
+
+#Banquet Campaign
+province_event = {
+	title = "EVTNAME10160"
+	desc = "EVTDESC10160"
+	id = 10160
+	
+	#is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_country_flag = liberal_revolution_in_progress
+			public_meetings = no_meeting
+		}
+		is_colonial = no
+	}
+	mean_time_to_happen = {
+		months = 90
+		modifier = {
+			factor = 0.9
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 0.9
+			liberal = 5
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 3
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				average_consciousness = 4
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA10160"
+		state_scope = {
+			any_pop = {
+				militancy = 2
+				consciousness = 1
+				ideology = {
+					factor = 0.05
+					value = liberal
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB10160"
+		state_scope = {
+			any_owned = {
+				add_province_modifier = {
+					name = liberal_agitation
+					duration = 730
+				}
+			}
+		}
+	}
+}
+
+#Liberal Agitation Spreads
+province_event = {
+	title = "EVTNAME10170"
+	desc = "EVTDESC10170"
+	id = 10170
+
+	trigger = {
+		owner = {
+			has_country_flag = liberal_revolution_in_progress
+		}
+		is_colonial = no
+		NOT = {
+			has_province_modifier = liberal_agitation
+		}
+		any_neighbor_province = {
+			has_province_modifier = liberal_agitation
+		}
+	}
+	mean_time_to_happen = {
+		months = 40
+		modifier = {
+			factor = 0.9
+			liberal = 5
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				liberal = 5
+			}
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 3
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 3
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 10
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 15
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 20
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 25
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 30
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 35
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				num_of_cities = 40
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA10170"
+		add_province_modifier = {
+			name = liberal_agitation
+			duration = 730
+		}
+	}
+}
+
+#Anti-Jacobin tract
+country_event = {
+	title = "EVTNAME10180"
+	desc = "EVTDESC10180"
+	picture = "Anti-Jacobin"
+	id = 10180
+
+	trigger = {
+		NOT = {
+			has_country_modifier = anti_jacobin_tract
+		}
+		any_owned_province = {
+			has_province_modifier = liberal_agitation
+		}
+	}
+	mean_time_to_happen = {
+		months = 150
+		modifier = {
+			factor = 0.9
+			conservative = 15
+		}
+		modifier = {
+			factor = 0.9
+			conservative = 20
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				average_consciousness = 3
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				average_militancy = 4
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				average_consciousness = 2
+			}
+		}
+		modifier = {
+			factor = 0.9
+			religious_policy = moralism
+		}
+		modifier = {
+			factor = 1.5
+			liberal = 15
+		}
+	}
+
+	option = {
+		name = "EVTOPTA10180"
+		add_country_modifier = {
+			name = anti_jacobin_tract
+			duration = 365
+		}
+	}
+}
+
+#Fiery Sermon
+province_event = {
+	title = "EVTNAME10190"
+	desc = "EVTDESC10190"
+	id = 10190
+	
+	#is_triggered_only = yes
+
+	trigger = {
+		has_province_modifier = liberal_agitation
+	}
+	mean_time_to_happen = {
+		months = 30
+		modifier = {
+			factor = 0.9
+			conservative = 15
+		}
+		modifier = {
+			factor = 0.9
+			conservative = 20
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				average_consciousness = 3
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				average_militancy = 4
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				average_consciousness = 2
+			}
+		}
+		modifier = {
+			factor = 0.9
+			owner = {
+				religious_policy = moralism
+			}
+		}
+		modifier = {
+			factor = 1.5
+			liberal = 15
+		}
+	}
+
+	option = {
+		name = "EVTOPTA10190"
+		remove_province_modifier = liberal_agitation
+	}
+}
+
+#Insurrection
+province_event = {
+	title = "EVTNAME10200"
+	desc = "EVTDESC10200"
+	id = 10200
+	
+	#is_triggered_only = yes
+
+	trigger = {
+		has_province_modifier = liberal_agitation
+		owner = {
+			OR = {
+				government = hms_government
+				government = prussian_constitutionalism
+				government = absolute_monarchy
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 18
+		modifier = {
+			factor = 0.9
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 0.9
+			owner = {
+				NOT = {
+					prestige = 20
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				prestige = 20
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA10200"
+		any_pop = {
+			militancy = 2
+			consciousness = 1
+		}
+		random_pop = {
+			reduce_pop = 0.90
+		}
+	}
+	option = {
+		name = "EVTOPTB10200"
+		any_pop = {
+			consciousness = 3
+		}
+	}
+}
+
+#Revolt
+province_event = {
+	title = "EVTNAME10210"
+	desc = "EVTDESC10210"
+	id = 10210
+	
+	#is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_country_modifier = global_liberal_agitation
+		}
+	}
+	mean_time_to_happen = {
+		months = 400
+		modifier = {
+			factor = 1.5
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 1
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 2
+		}
+	}
+
+	option = {
+		name = "EVTOPTA10210"
+		any_pop = {
+			militancy = 4
+		}
+	}
+}
+
+#Agitation dies down
+province_event = {
+	title = "EVTNAME10220"
+	desc = "EVTDESC10220"
+	id = 10220
+
+	trigger = {
+		has_province_modifier = liberal_agitation
+	}
+
+	mean_time_to_happen = {
+		months = 36
+		modifier = {
+			factor = 0.8
+			has_country_modifier = anti_jacobin_tract
+		}
+		modifier = {
+			factor = 0.9
+			conservative = 20
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				average_consciousness = 4
+			}
+		}
+		modifier = {
+			factor = 1.5
+			liberal = 20
+		}
+		modifier = {
+			factor = 1.5
+			average_militancy = 4
+		}
+	}
+
+	option = {
+		name = "EVTOPTA10220"
+		remove_province_modifier = liberal_agitation
+	}
+}
+
+#Cholera Epedemic!
+country_event = {
+	title = "EVTNAME10230"
+	desc = "EVTDESC10230"
+	picture = "Cholera"
+
+	id = 10230
+
+	trigger = {
+		NOT = {
+			poor_strata_everyday_needs = 0.95
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 250
+		modifier = {
+			factor = 0.9
+			NOT = {
+				poor_strata_life_needs = 0.9
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				poor_strata_life_needs = 0.85
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				poor_strata_everyday_needs = 0.9
+			}
+		}
+		modifier = {
+			factor = 3
+			medicine = 1
+		}
+		modifier = {
+			factor = 2
+			electricity = 1
+		}
+		modifier = {
+			factor = 1.5
+			num_of_cities = 10
+		}
+		modifier = {
+			factor = 1.5
+			num_of_cities = 15
+		}
+		modifier = {
+			factor = 1.5
+			num_of_cities = 20
+		}
+		modifier = {
+			factor = 1.5
+			num_of_cities = 25
+		}
+		modifier = {
+			factor = 1.5
+			num_of_cities = 30
+		}
+		modifier = {
+			factor = 1.5
+			num_of_cities = 35
+		}
+		modifier = {
+			factor = 1.5
+			num_of_cities = 40
+		}
+		modifier = {
+			factor = -1
+			health_care = trinket_health_care
+		}
+		modifier = {
+			factor = -2
+			health_care = low_health_care
+		}
+		modifier = {
+			factor = -3
+			health_care = acceptable_health_care
+		}
+		modifier = {
+			factor = -4
+			health_care = good_health_care
+		}
+	}
+
+	option = {
+		name = "EVTOPTA10230"
+		random_province = {
+			add_province_modifier = {
+				name = cholera_epidemic_small
+				duration = 180
+			}
+			any_pop = {
+				consciousness = 2
+				militancy = -1
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB10230"
+		random_province = {
+			add_province_modifier = {
+				name = cholera_epidemic_big
+				duration = 365
+			}
+			any_pop = {
+				consciousness = -2
+			}
+		}
+	}
+}
+
+#Cholera Spreads
+province_event = {
+	title = "EVTNAME10240"
+	desc = "EVTDESC10240"
+	id = 10240
+
+	trigger = {
+		any_neighbor_province = {
+			OR = {
+				has_province_modifier = cholera_epidemic_small
+				has_province_modifier = cholera_epidemic_big
+			}
+		}
+		NOT = {
+			has_province_modifier = cholera_epidemic_small
+			has_province_modifier = cholera_epidemic_big
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 100
+		modifier = {
+			factor = 0.9
+			NOT = {
+				poor_strata_life_needs = 0.9
+			}
+		}
+
+		modifier = {
+			factor = 4
+			owner = {
+				medicine = 1
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				electricity = 1
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				poor_strata_everyday_needs = 0.9
+			}
+		}
+		modifier = {
+			factor = -1
+			health_care = trinket_health_care
+		}
+		modifier = {
+			factor = -2
+			health_care = low_health_care
+		}
+		modifier = {
+			factor = -3
+			health_care = acceptable_health_care
+		}
+		modifier = {
+			factor = -4
+			health_care = good_health_care
+		}
+	}
+
+	option = {
+		name = "EVTOPTA10240"
+		random_list = {
+			10 = {
+				add_province_modifier = {
+					name = cholera_epidemic_big
+					duration = 730
+				}
+			}
+			10 = {
+				add_province_modifier = {
+					name = cholera_epidemic_small
+					duration = 365
+				}
+			}
+		}
+	}
+}
+
+#Liberals capitalise on the Cholera Epidemic
+country_event = {
+	title = "EVTNAME10250"
+	desc = "EVTDESC10250"
+	id = 10250
+	picture = "Cholera"
+
+	trigger = {
+		has_country_flag = liberal_revolution_in_progress
+		any_owned_province = {
+			has_province_modifier = cholera_epidemic_big
+			has_province_modifier = cholera_epidemic_small
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.9
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 0.9
+			liberal = 20
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.9
+			political_reform_want = 0.05
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				liberal = 10
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA10250"
+		random_state = {
+			limit = {
+				is_colonial = no
+			}
+			any_owned = {
+				add_province_modifier = {
+					name = liberal_agitation
+					duration = 730
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB10250"
+		any_pop = {
+			ideology = {
+				value = liberal
+				factor = 0.05
+			}
+			consciousness = 0.5
+		}
+	}
+}
+
+#Liberal Agitation Suppressed
+province_event = {
+	id = 10260
+	title = "EVTNAME10260"
+	desc = "EVTDESC10260"
+
+	trigger = {
+		has_province_modifier = liberal_agitation
+		units_in_province = 1
+	}
+
+	mean_time_to_happen = {
+		months = 3
+		modifier = {
+			factor = 0.9
+			NOT = {
+				liberal = 25
+			}
+		}
+		modifier = {
+			factor = 0.9
+			owner = {
+				prestige = 45
+			}
+		}
+		modifier = {
+			factor = 1.5
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 1.5
+			average_militancy = 5
+		}
+	}
+
+	option = {
+		name = "EVTOPTA10260"
+		remove_province_modifier = liberal_agitation
+	}
+}
+
+# Student Association
+country_event = {
+	id = 10270
+	title = "EVTNAME10270"
+	desc = "EVTDESC10270"
+	picture = "Revolution"
+
+	trigger = {
+		has_country_flag = liberal_revolution_in_progress
+	}
+
+	mean_time_to_happen = {
+		months = 36
+
+		modifier = {
+			factor = 0.9
+			average_consciousness = 3
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 0.9
+			liberal = 5
+		}
+		modifier = {
+			factor = 0.9
+			liberal = 10
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				liberal = 5
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA10270"
+		random_state = {
+			limit = {
+				is_colonial = no
+			}
+			any_owned = {
+				add_province_modifier = {
+					name = liberal_agitation
+					duration = 730
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB10270"
+		random_state = {
+			limit = {
+				is_colonial = no
+			}
+			any_pop = {
+				consciousness = 1
+				militancy = 2
+				ideology = {
+					value = liberal
+					factor = 0.05
+				}
+			}
+		}
+	}
+}
+
+# Classics Rediscovered
+country_event = {
+	id = 10280
+	title = "EVTNAME10280"
+	desc = "EVTDESC10280"
+	picture = "Finepeople"
+
+	trigger = {
+		literacy = 0.4
+		civilized = yes
+		romanticism = 1
+	}
+
+	mean_time_to_happen = {
+		months = 480
+		modifier = {
+			factor = 0.9
+			average_consciousness = 3
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.3
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.4
+		}
+		modifier = {
+			factor = 0.9
+			liberal = 15
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = liberal_revolution_in_progress
+		}
+		modifier = {
+			factor = 1.2
+			NOT = {
+				liberal = 10
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA10280"
+		prestige = -4
+		rich_strata = {
+			militancy = 1
+		}
+	}
+
+	option = {
+		name = "EVTOPTB10280"
+		rich_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.05
+			}
+			consciousness = 1
+		}
+	}
+}
+
+# Liberal Author
+country_event = {
+	id = 10290
+	title = "EVTNAME10290"
+	desc = "EVTDESC10290"
+	picture = "publishers"
+
+	trigger = {
+		literacy = 0.3
+		civilized = yes
+		average_consciousness = 3
+		NOT = {
+			press_rights = free_press
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 400
+		modifier = {
+			factor = 0.1
+			has_country_flag = liberal_revolution_in_progress
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.4
+		}
+		modifier = {
+			factor = 0.9
+			liberal = 20
+		}
+		modifier = {
+			factor = 1.2
+			NOT = {
+				liberal = 10
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA10290"
+		random_state = {
+			any_pop = {
+				ideology = {
+					value = liberal
+					factor = 0.15
+				}
+				consciousness = 1
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB10290"
+		middle_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.03
+			}
+			consciousness = 0.5
+		}
+	}
+}
+
+# Chamber of Commerce Protests
+country_event = {
+	id = 10300
+	title = "EVTNAME10300"
+	desc = "EVTDESC10300"
+	picture = "Upperhouse"
+
+	trigger = {
+		NOT = {
+			economic_policy = laissez_faire
+			government = proletarian_dictatorship
+		}
+		has_pop_type = capitalists
+		average_consciousness = 2
+	}
+
+	mean_time_to_happen = {
+		months = 480
+
+		modifier = {
+			factor = 0.1
+			has_country_flag = liberal_revolution_in_progress
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 3
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 0.9
+			liberal = 5
+		}
+		modifier = {
+			factor = 0.9
+			liberal = 20
+		}
+		modifier = {
+			factor = 1.1
+			NOT = {
+				liberal = 10
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA10300"
+		random_state = {
+			any_pop = {
+				ideology = {
+					value = liberal
+					factor = 0.05
+				}
+				consciousness = 1
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB10300"
+		capitalists = {
+			militancy = 1
+			ideology = {
+				value = liberal
+				factor = 0.1
+			}
+			consciousness = 1
+		}
+	}
+}
+
+#A Treatise on Economics
+country_event = {
+	id = 10310
+	title = "EVTNAME10320"
+	desc = "EVTDESC10320"
+	picture = "Demonstration"
+
+	trigger = {
+		freedom_of_trade = 1
+		civilized = yes
+		NOT = {
+			press_rights = state_press
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 480
+		modifier = {
+			factor = 0.1
+			has_country_flag = liberal_revolution_in_progress
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 1.4
+			is_ideology_enabled = socialist
+		}
+		modifier = {
+			factor = 1.4
+			market_regulations = 1
+		}
+	}
+
+	option = {
+		name = "EVTOPTA10320"
+		middle_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.1
+			}
+			militancy = 1
+		}
+		prestige = 5
+	}
+
+	option = {
+		name = "EVTOPTB10320"
+		poor_strata = {
+			militancy = -1
+			consciousness = 1
+		}
+	}
+}
+
+# Chartist Rallies
+country_event = {
+	id = 10330
+	title = "EVTNAME10330"
+	desc = "EVTDESC10330"
+	picture = "Demonstration"
+
+	trigger = {
+		NOT = {
+			OR = {
+				vote_franschise = universal_weighted_voting
+				vote_franschise = universal_voting
+			}
+		}
+		civilized = yes
+	}
+
+	mean_time_to_happen = {
+		months = 480
+		modifier = {
+			factor = 0.2
+			has_country_flag = liberal_revolution_in_progress
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 3
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 3
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.9
+			liberal = 15
+		}
+		modifier = {
+			factor = 2
+			public_meetings = no_meeting
+		}
+		modifier = {
+			factor = 1.4
+			NOT = {
+				liberal = 15
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA10330"
+		random_state = {
+			limit = {
+				is_colonial = no
+			}
+			any_pop = {
+				ideology = {
+					value = liberal
+					factor = 0.1
+				}
+				militancy = 1
+				consciousness = 1
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB10330"
+		random_state = {
+			limit = {
+				is_colonial = no
+			}
+			any_pop = {
+				reduce_pop = 0.99
+				militancy = 4
+			}
+		}
+	}
+}
+
+
+c:\victoria 2\mod\mpmod\events\MPmarket.txt
+************************************************************************
+country_event = {
+	title = "EVTNAME3470333"
+	desc = "EVTDESC3470333"
+	picture = "greatpowers"
+	
+	id = 3470333
+	trigger = {
+        year = 2055
+    }
+
+	option = {
+		name = "EVTOPTA3470333"
+		THIS = {
+				country_event = { id=3470101 days=0 }
+			}
+		ai_chance = {
+            factor = 0
+        }
+	}
+	option = {
+		name = "EVTOPTB3470333"
+		THIS = {
+				country_event = { id=3470201 days=0 }
+			}
+		ai_chance = {
+            factor = 0
+        }
+	}
+	option = {
+		name = "EVTOPTC3470333"
+		THIS = {
+				country_event = { id=3470301 days=0 }
+			}
+		ai_chance = {
+            factor = 0
+        }
+	}
+	option = {
+		name = "EVTOPTD3470333"
+		THIS = {
+				country_event = { id=3470401 days=0 }
+			}
+		ai_chance = {
+            factor = 0
+        }
+	}
+	option = {
+		name = "EVTOPTE3470333"
+		money = -100
+		ai_chance = {
+            factor = 1
+        }
+	}
+}
+country_event = {
+	title = "EVTNAME3470001"
+	desc = "EVTDESC3470001"
+	picture = "greatpowers"
+
+	id = 3470101
+	trigger = {
+        year = 2055
+    }
+	
+	option = {
+		name = "EVTOPTA3470001"
+		ENG = {
+			money = 200000
+		}
+		money = -200000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTB3470001"
+		FRA = {
+			money = 200000
+		}
+		money = -200000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTC3470001"
+		SPA = {
+			money = 200000
+		}
+		money = -200000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTD3470001"
+		ITA = {
+			money = 200000
+		}
+		money = -200000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTP3470001"
+		NET = {
+			money = 200000
+		}
+		money = -200000
+		ai_chance = {	factor = 50	}
+	}
+}
+country_event = {
+	title = "EVTNAME3470001"
+	desc = "EVTDESC3470001"
+	picture = "greatpowers"
+
+	id = 3470201
+	trigger = {
+        year = 2055
+    }
+	
+	option = {
+		name = "EVTOPTE3470001"
+		GER = {
+			money = 200000
+		}
+		money = -200000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTF3470001"
+		KUK = {
+			money = 200000
+		}
+		money = -200000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTG3470001"
+		RUS = {
+			money = 200000
+		}
+		money = -200000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTH3470001"
+		TUR = {
+			money = 200000
+		}
+		money = -200000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTT3470001"
+		SCA = {
+			money = 200000
+		}
+		money = -200000
+		ai_chance = {	factor = 50	}
+	}
+}
+country_event = {
+	title = "EVTNAME3470001"
+	desc = "EVTDESC3470001"
+	picture = "greatpowers"
+
+	id = 3470301
+	trigger = {
+        year = 2055
+    }
+	
+	option = {
+		name = "EVTOPTI3470001"
+		USA = {
+			money = 200000
+		}
+		money = -200000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTJ3470001"
+		BRZ = {
+			money = 200000
+		}
+		money = -200000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTK3470001"
+		JAP = {
+			money = 200000
+		}
+		money = -200000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTQ3470001"
+		HND = {
+			money = 200000
+		}
+		money = -200000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTR3470001"
+		CHI = {
+			money = 200000
+		}
+		money = -200000
+		ai_chance = {	factor = 50	}
+	}
+}
+country_event = {
+	title = "EVTNAME3470001"
+	desc = "EVTDESC3470001"
+	picture = "greatpowers"
+
+	id = 3470401
+	trigger = {
+        year = 2055
+    }
+	
+	option = {
+		name = "EVTOPTL3470001"
+		PRU = {
+			money = 200000
+		}
+		money = -200000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTM3470001"
+		NGF = {
+			money = 200000
+		}
+		money = -200000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTN3470001"
+		AUS = {
+			money = 200000
+		}
+		money = -200000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTO3470001"
+		SWE = {
+			money = 200000
+		}
+		money = -200000
+		ai_chance = {	factor = 50	}
+	}
+}
+
+#----------------------------------------------------- Ресурсы -------------------------------------------------
+country_event = {
+	title = "EVTNAME3470333"
+	desc = "EVTDESC3470333"
+	picture = "greatpowers"
+	
+	id = 3471333
+	trigger = {
+        year = 2055
+    }
+
+	option = {
+		name = "EVTOPTA3470333"
+		THIS = {
+				country_event = { id=3471101 days=0 }
+			}
+		ai_chance = {
+            factor = 0
+        }
+	}
+	option = {
+		name = "EVTOPTB3470333"
+		THIS = {
+				country_event = { id=3471201 days=0 }
+			}
+		ai_chance = {
+            factor = 0
+        }
+	}
+	option = {
+		name = "EVTOPTC3470333"
+		THIS = {
+				country_event = { id=3471301 days=0 }
+			}
+		ai_chance = {
+            factor = 0
+        }
+	}
+	option = {
+		name = "EVTOPTD3470333"
+		THIS = {
+				country_event = { id=3471401 days=0 }
+			}
+		ai_chance = {
+            factor = 0
+        }
+	}
+	option = {
+		name = "EVTOPTE3470333"
+		money = -100
+		ai_chance = {
+            factor = 1
+        }
+	}
+}
+country_event = {
+	title = "EVTNAME3470001"
+	desc = "EVTDESC3470001"
+	picture = "greatpowers"
+
+	id = 3471101
+	trigger = {
+        year = 2055
+    }
+	
+	option = {
+		name = "EVTOPTA3470001"
+		ENG = {
+			money = 1000000
+		}
+		money = -1000000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTB3470001"
+		FRA = {
+			money = 1000000
+		}
+		money = -1000000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTC3470001"
+		SPA = {
+			money = 1000000
+		}
+		money = -1000000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTD3470001"
+		ITA = {
+			money = 1000000
+		}
+		money = -1000000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTP3470001"
+		NET = {
+			money = 1000000
+		}
+		money = -1000000
+		ai_chance = {	factor = 50	}
+	}
+}
+country_event = {
+	title = "EVTNAME3470001"
+	desc = "EVTDESC3470001"
+	picture = "greatpowers"
+
+	id = 3471201
+	trigger = {
+        year = 2055
+    }
+	
+	option = {
+		name = "EVTOPTE3470001"
+		GER = {
+			money = 1000000
+		}
+		money = -1000000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTF3470001"
+		KUK = {
+			money = 1000000
+		}
+		money = -1000000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTG3470001"
+		RUS = {
+			money = 1000000
+		}
+		money = -1000000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTH3470001"
+		TUR = {
+			money = 1000000
+		}
+		money = -1000000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTT3470001"
+		SCA = {
+			money = 1000000
+		}
+		money = -1000000
+		ai_chance = {	factor = 50	}
+	}
+}
+country_event = {
+	title = "EVTNAME3470001"
+	desc = "EVTDESC3470001"
+	picture = "greatpowers"
+
+	id = 3471301
+	trigger = {
+        year = 2055
+    }
+	
+	option = {
+		name = "EVTOPTI3470001"
+		USA = {
+			money = 1000000
+		}
+		money = -1000000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTJ3470001"
+		BRZ = {
+			money = 1000000
+		}
+		money = -1000000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTK3470001"
+		JAP = {
+			money = 1000000
+		}
+		money = -1000000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTQ3470001"
+		HND = {
+			money = 1000000
+		}
+		money = -1000000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTR3470001"
+		CHI = {
+			money = 1000000
+		}
+		money = -1000000
+		ai_chance = {	factor = 50	}
+	}
+}
+country_event = {
+	title = "EVTNAME3470001"
+	desc = "EVTDESC3470001"
+	picture = "greatpowers"
+
+	id = 3471401
+	trigger = {
+        year = 2055
+    }
+	
+	option = {
+		name = "EVTOPTL3470001"
+		PRU = {
+			money = 1000000
+		}
+		money = -1000000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTM3470001"
+		NGF = {
+			money = 1000000
+		}
+		money = -1000000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTN3470001"
+		AUS = {
+			money = 1000000
+		}
+		money = -1000000
+		ai_chance = {	factor = 50	}
+	}
+	option = {
+		name = "EVTOPTO3470001"
+		SWE = {
+			money = 1000000
+		}
+		money = -1000000
+		ai_chance = {	factor = 50	}
+	}
+}
+
+
+c:\victoria 2\mod\mpmod\events\MPmod.txt
+************************************************************************
+country_event = {
+	id = 777701
+	trigger = {
+        tag = PRU
+        year = 1840
+        #war = no
+    }
+	mean_time_to_happen =  {        # этот блок регулирует вероятность срабатывания евента
+        months = 3
+
+    }
+	title = "EVTNAME777701"
+	desc = "EVTDESC777701"
+	picture = "greatpowers"
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA777701"
+		inherit	= LIP	
+		inherit	= BRA
+		inherit	= ANH
+		inherit	= BRE
+		inherit	= COB
+		inherit	= FRM
+		inherit	= HAM
+		inherit	= HEK
+		inherit	= HES
+		inherit	= LUB
+		inherit	= MEC
+		inherit	= MEI
+		inherit	= NAS
+		inherit	= OLD
+		inherit	= WEI
+		prestige = 10
+		badboy = 4
+		ai_chance = {
+            factor = 99
+        }
+	}
+
+	option = {
+		name = "EVTOPTB777701"
+		prestige = -5
+		ai_chance = {
+            factor = 1
+        }
+	}
+}
+country_event = {
+	id = 777702
+	trigger = {
+        tag = PRU
+        year = 1848
+        #war = no
+    }
+	mean_time_to_happen =  {        # этот блок регулирует вероятность срабатывания евента
+        months = 3
+
+    }
+	title = "EVTNAME777702"
+	desc = "EVTDESC777702"
+	picture = "greatpowers"
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA777702"
+		inherit	= HAN	
+		inherit	= HOL
+		prestige = 10
+		badboy = 4
+		ai_chance = {
+            factor = 99
+        }
+	}
+
+	option = {
+		name = "EVTOPTB777702"
+		prestige = -15
+		ai_chance = {
+            factor = 1
+        }
+	}
+}
+country_event = {
+	id = 777703
+	trigger = {
+		OR = {
+			tag = PRU
+			tag = NGF			
+		}
+		NOT = {
+				exists = GER
+			}
+        year = 1860
+        #war = no
+    }
+	mean_time_to_happen =  {        # этот блок регулирует вероятность срабатывания евента
+        months = 2
+
+    }
+	title = "EVTNAME777703"
+	desc = "EVTDESC777703"
+	picture = "greatpowers"
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA777703"
+		change_tag = GER
+		add_accepted_culture = north_german
+		add_accepted_culture = south_german
+		prestige = 5
+		badboy = 5
+		ai_chance = {
+            factor = 99
+        }
+	}
+
+	option = {
+		name = "EVTOPTB777703"
+		prestige = -55
+		ai_chance = {
+            factor = 1
+        }
+	}
+}
+country_event = {
+	id = 777705
+	trigger = {
+		OR = {
+			tag = FRA
+			tag = PRU
+			tag = NGF
+			tag = GER
+			tag = BEL
+			tag = NET
+		}
+        year = 1838
+        war = no
+		exists = LUX
+		LUX = {
+				all_core = {
+					owner = {
+							in_sphere = THIS
+						}
+				}
+			}
+    }
+	mean_time_to_happen =  {        # этот блок регулирует вероятность срабатывания евента
+        months = 5
+
+    }
+	title = "EVTNAME777705"
+	desc = "EVTDESC777705"
+	picture = "greatpowers"
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA777705"
+		inherit	= LUX	
+		prestige = 15
+		badboy = 1
+		ai_chance = {
+            factor = 99
+        }
+	}
+
+	option = {
+		name = "EVTOPTB777705"
+		prestige = -15
+		ai_chance = {
+            factor = 1
+        }
+	}
+}
+country_event = {
+	id = 777704
+	trigger = {
+		OR = {
+			tag = AUS
+			tag = RUS
+			tag = PRU
+			tag = NGF
+			tag = GER
+		}
+        year = 1838
+        war = no
+		exists = KRA
+		KRA = {
+				all_core = {
+					owner = {
+							in_sphere = THIS
+						}
+				}
+			}
+    }
+	mean_time_to_happen =  {        # этот блок регулирует вероятность срабатывания евента
+        months = 5
+
+    }
+	title = "EVTNAME777704"
+	desc = "EVTDESC777704"
+	picture = "greatpowers"
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA777704"
+		inherit	= KRA	
+		prestige = 15
+		badboy = 1
+		ai_chance = {
+            factor = 99
+        }
+	}
+
+	option = {
+		name = "EVTOPTB777704"
+		prestige = -15
+		ai_chance = {
+            factor = 1
+        }
+	}
+}
+country_event = {
+	id = 777706
+	trigger = {
+		OR = {
+			tag = AUS
+			tag = TUR
+		}
+        year = 1838
+        war = no
+		exists = MON
+		MON = {
+				all_core = {
+					owner = {
+							in_sphere = THIS
+						}
+				}
+			}
+    }
+	mean_time_to_happen =  {        # этот блок регулирует вероятность срабатывания евента
+        months = 5
+
+    }
+	title = "EVTNAME777706"
+	desc = "EVTDESC777706"
+	picture = "greatpowers"
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA777706"
+		inherit	= MON	
+		prestige = 15
+		badboy = 1
+		ai_chance = {
+            factor = 99
+        }
+	}
+
+	option = {
+		name = "EVTOPTB777706"
+		prestige = -15
+		ai_chance = {
+            factor = 1
+        }
+	}
+}
+country_event = {
+	id = 777707
+	trigger = {
+		tag = TUR
+        year = 1838
+        war = no
+		exists = GRE
+		GRE = {
+				all_core = {
+					owner = {
+							in_sphere = THIS
+						}
+				}
+			}
+    }
+	mean_time_to_happen =  {        # этот блок регулирует вероятность срабатывания евента
+        months = 5
+
+    }
+	title = "EVTNAME777707"
+	desc = "EVTDESC777707"
+	picture = "greatpowers"
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA777707"
+		inherit	= GRE
+		prestige = 15
+		badboy = 1
+		ai_chance = {
+            factor = 99
+        }
+	}
+
+	option = {
+		name = "EVTOPTB777707"
+		prestige = -15
+		badboy = -1
+		ai_chance = {
+            factor = 1
+        }
+	}
+}
+country_event = {
+	id = 347001
+	trigger = {
+		civilized = yes
+		health_care = no_health_care
+		has_country_flag = dip_med
+		
+    }
+	mean_time_to_happen =  {        # этот блок регулирует вероятность срабатывания евента
+        months = 5
+
+    }
+	title = "EVTNAME347001"
+	desc = "EVTDESC347001"
+	picture = "greatpowers"
+
+	#fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA347001"
+		social_reform = trinket_health_care	
+		ai_chance = {
+            factor = 99
+        }
+	}
+}
+country_event = {
+	id = 347002
+	trigger = {
+		civilized = yes
+		health_care = trinket_health_care
+		has_country_flag = dip_med
+		
+    }
+	mean_time_to_happen =  {        # этот блок регулирует вероятность срабатывания евента
+        months = 5
+
+    }
+	title = "EVTNAME347001"
+	desc = "EVTDESC347001"
+	picture = "greatpowers"
+
+	#fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA347002"
+		social_reform = low_health_care	
+		ai_chance = {
+            factor = 99
+        }
+	}
+}
+country_event = {
+	id = 347003
+	trigger = {
+		civilized = yes
+		health_care = low_health_care
+		has_country_flag = dip_med
+		
+    }
+	mean_time_to_happen =  {        # этот блок регулирует вероятность срабатывания евента
+        months = 5
+
+    }
+	title = "EVTNAME347001"
+	desc = "EVTDESC347001"
+	picture = "greatpowers"
+
+	#fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA347003"
+		social_reform = acceptable_health_care	
+		ai_chance = {
+            factor = 99
+        }
+	}
+}
+country_event = {
+	id = 347004
+	trigger = {
+		civilized = yes
+		health_care = acceptable_health_care
+		has_country_flag = dip_med
+		
+    }
+	mean_time_to_happen =  {        # этот блок регулирует вероятность срабатывания евента
+        months = 5
+
+    }
+	title = "EVTNAME347001"
+	desc = "EVTDESC347001"
+	picture = "greatpowers"
+
+	#fire_only_once = yes
+
+	option = {
+		name = "EVTOPTB347003"
+		social_reform = good_health_care	
+		ai_chance = {
+            factor = 99
+        }
+	}
+}
+country_event = {
+	id = 347005
+	trigger = {
+		civilized = yes
+		year = 1905
+		literacy = 0.8
+		militancy = 2
+		consciousness = 4
+		mass_politics = 1
+    }
+	mean_time_to_happen =  {        # этот блок регулирует вероятность срабатывания евента
+        months = 24
+
+    }
+	title = "EVTNAME347005"
+	desc = "EVTDESC347005"
+	picture = "greatpowers"
+
+	#fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA347005"
+		government = democracy
+		ai_chance = {
+            factor = 99
+        }
+	}
+	option = {
+		name = "EVTOPTB347005"
+		government = proletarian_dictatorship
+		ai_chance = {
+            factor = 99
+        }
+	}
+	option = {
+		name = "EVTOPTC347005"
+		government = fascist_dictatorship	
+		ai_chance = {
+            factor = 99
+        }
+	}
+	option = {
+		name = "EVTOPTA34700555"
+		any_pop	= {
+			consciousness = -2
+			militancy = -1
+		}
+		#government = fascist_dictatorship	
+		ai_chance = {
+            factor = 99
+        }
+	}
+}
+# ----------------------------------------------------- Китай ------------------------------------------------------------
+country_event = {
+	id = 347006
+	trigger = {
+        tag = CHI
+        year = 1850
+        war = no
+    }
+	mean_time_to_happen =  {        # этот блок регулирует вероятность срабатывания евента
+        months = 36
+
+    }
+	title = "EVTNAME347006"
+	desc = "EVTDESC347006"
+	picture = "greatpowers"
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA347006"
+		inherit	= MGL	
+		inherit	= XBI
+		inherit	= XIN
+		inherit	= TIB
+		inherit	= YNN
+		inherit	= GXI
+		inherit	= MCK
+		prestige = 10
+		badboy = 10
+		ai_chance = {
+            factor = 1
+        }
+	}
+
+	option = {
+		name = "EVTOPTB347006"
+		prestige = 25
+		ai_chance = {
+            factor = 0
+        }
+	}
+}
+
+
+
+c:\victoria 2\mod\mpmod\events\NationalUnification.txt
+************************************************************************
+# Pan-Nationalist
+country_event = {
+	title = "EVTNAME11100"
+	desc = "EVTDESC11100"
+	picture = "Celebration"
+
+	id = 11100
+
+	is_triggered_only = yes
+
+	option = {				# Accept inheritance
+		name = "EVTOPTA11100"
+		change_tag = culture
+		any_country = {
+			limit = {
+				NOT = {
+					tag = THIS
+				}
+				is_culture_group = THIS
+				is_greater_power = no
+				OR = {
+					in_sphere = THIS
+					AND = {
+						part_of_sphere = no
+						NOT = {
+							OR = {
+								tag = AUS
+								tag = KUK
+								}
+							}
+						}
+					tag = WAL
+					tag = MOL
+					tag = MON
+					tag = BOS
+					tag = SER
+					tag = SLO
+					AND = {
+						OR = {
+							tag = AUS
+							tag = KUK
+						}
+						exists = HUN
+						part_of_sphere = no
+					}
+				}
+				num_of_cities = 1
+			}
+			country_event = { id=11101 days=0 }
+		}
+		political_reform = wealth_voting
+		political_reform = population_equal_weight
+		political_reform = yes_meeting
+		political_reform = free_press
+		political_reform = non_socialist
+		political_reform = secret_ballots
+		government = hms_government
+		add_accepted_culture = union
+		prestige = -15
+		badboy = 10
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 200
+				OR = {
+					tag = MOL
+					tag = WAL
+				}
+			}
+			modifier = {
+				factor = 5
+				government = hms_government
+			}
+			modifier = {
+				factor = 10
+				government = democracy
+			}
+			modifier = {
+				factor = 2
+				ruling_party_ideology = liberal
+			}
+			modifier = {
+				factor = 3
+				upper_house = {
+					ideology = liberal
+					value = 0.5
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB11100"
+		prestige = 2
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 1.5
+				government = absolute_monarchy
+			}
+		}
+		any_pop = {
+			militancy = 1
+		}
+	}
+}
+
+# Event to Inherit
+country_event = {
+	id = 11101
+	title = "EVTNAME11101"
+	desc = "EVTDESC11101"
+	picture = "Celebration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA11101"
+		FROM = {
+			inherit = THIS
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+
+	option = {
+		name = "EVTOPTB11101"
+		prestige = 1
+		relation = {
+			who = FROM
+			value = -100
+		}
+		any_pop = {
+			militancy = 3
+			consciousness = 2
+		}
+	}
+}
+
+#Italian Red Shirt Unification
+country_event = {
+	title = "EVTNAME11103"
+	desc = "EVTDESC11103"
+	picture = "Celebration"
+
+	id = 11103
+
+	is_triggered_only = yes
+
+	option = {				# Accept inheritance
+		name = "EVTOPTA11103"
+		change_tag = culture
+		add_accepted_culture = north_italian
+		add_accepted_culture = south_italian
+		any_country = {
+			limit = {
+				NOT = {
+					tag = THIS
+				}
+				is_culture_group = THIS
+				is_greater_power = no
+				num_of_cities = 1
+			}
+			country_event = { id=11101 days=0 }
+		}
+		prestige = 10
+		ai_chance = {
+			factor = 95
+		}
+	}
+
+	option = {
+		name = "EVTOPTB11103"
+		prestige = 5
+		set_country_flag = does_not_want_to_be_unified
+		ai_chance = {
+			factor = 5
+		}
+		any_pop = {
+			militancy = 2
+		}
+	}
+}
+#SPAIN + PORTUGAL
+country_event = {
+	title = "EVTNAME3471001"
+	desc = "EVTDESC3471001"
+	picture = "Celebration"
+
+	id = 3471001
+
+	is_triggered_only = yes
+
+	option = {				# Accept inheritance
+		name = "EVTOPTA3471001"
+		
+		POR_1999 = {
+			secede_province = D02
+		}
+		POR_2003 = {
+			secede_province = D02
+		}
+		POR_2060 = {
+			secede_province = D01
+		}
+		POR_2053 = {
+			secede_province = D01
+		}
+		POR_2049 = {
+			secede_province = D01
+		}
+		SPA = {
+			inherit = POR
+			#add_accepted_culture = portuguese
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "EVTOPTB3471001"
+		prestige = 5
+		ai_chance = {
+			factor = 0
+		}
+		any_pop = {
+			militancy = 2
+		}
+	}
+}
+
+
+c:\victoria 2\mod\mpmod\events\RUSFlavor.txt
+************************************************************************
+country_event = {
+
+	id = 32500
+	news = yes
+	news_desc_long = "EVTDESC32500_NEWS_LONG"
+	news_desc_medium = "EVTDESC32500_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC32500_NEWS_SHORT"
+
+	trigger = {
+		tag = RUS
+		year = 1837
+		war = no
+		NOT = {
+			year = 1840
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1838
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1839
+		}
+	}
+
+	title = "EVTNAME32500"
+	desc = "EVTDESC32500"
+	picture = "Pushkin"
+
+	option = {
+		name = "EVTOPTA32500" 
+		prestige = 3
+	}
+}
+
+country_event = {
+
+	id = 32502
+
+	trigger = {
+		tag = RUS
+		year = 1849
+		war = no
+		NOT = {
+			year = 1852
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1850
+		}
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1851
+		}
+	}
+
+	title = "EVTNAME32502"
+	desc = "EVTDESC32502"
+	picture = "Execution"
+
+	option = {
+		name = "EVTOPTA32502"
+		plurality = -2 
+		capitalists = {
+			consciousness = -1
+		}	
+		aristocrats = {
+			consciousness = -1
+		}	
+		bureaucrats = {
+			consciousness = -1
+		}	
+	}
+}
+
+country_event = {
+
+	id = 32503
+
+	trigger = {
+		tag = RUS
+		year = 1852
+		NOT = {
+			year = 1855
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1853
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1854
+		}
+	}
+
+	title = "EVTNAME32503"
+	desc = "EVTDESC32503"
+	picture = "hermitage"
+
+	option = {
+		name = "EVTOPTA32503" 
+		prestige = 5
+	}
+}
+
+country_event = {
+
+	id = 32504
+
+	trigger = {
+		tag = RUS
+		year = 1874
+		NOT = {
+			year = 1877
+			}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1875
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1876
+		}
+	}
+
+	title = "EVTNAME32504"
+	desc = "EVTDESC32504"
+	picture = "Godunov"
+
+	option = {
+		name = "EVTOPTA32504" 
+		prestige = 5
+		any_pop = {
+			limit = { has_pop_culture = russian }
+			consciousness = 1
+		}	
+	}
+}
+
+country_event = {
+
+	id = 32505
+	news = yes
+	news_desc_long = "EVTDESC32505_NEWS_LONG"
+	news_desc_medium = "EVTDESC32505_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC32505_NEWS_SHORT"
+
+	trigger = {
+		tag = RUS
+		year = 1880
+		NOT = {
+			year = 1883
+			}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1881
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1882
+		}
+	}
+
+	title = "EVTNAME32505"
+	desc = "EVTDESC32505"
+	picture = "Dostoevsky"
+
+	option = {
+		name = "EVTOPTA32505" 
+		prestige = 5
+		any_pop = {
+			limit = { has_pop_culture = russian }
+			consciousness = 1
+		}	
+	}
+}
+
+country_event = {
+
+	id = 32506
+	trigger = {
+		tag = RUS
+		year = 1837
+		experimental_railroad = 1
+		994 = {
+			has_building = railroad
+		}
+		NOT = {
+			year = 1850
+		}
+		
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1839
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1842
+		}
+	}
+
+	title = "EVTNAME32506"
+	desc = "EVTDESC32506"
+	picture = "train"
+
+	option = {
+		name = "EVTOPTA32506" 
+		prestige = 2
+	}
+}
+
+country_event = {
+
+	id = 32507
+
+	trigger = {
+		tag = RUS
+		year = 1855
+		owns = 1072 #Okhotsk
+		NOT = {
+			year = 1858
+			war_with = JAP
+			JAP = {
+				part_of_sphere = no
+				is_independant = yes
+			}
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1856
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1857
+		}
+	}
+
+	title = "EVTNAME32507"
+	desc = "EVTDESC32507"
+	picture = "kurils"
+
+	option = {
+		name = "EVTOPTA32506" 
+		relation = { who = JAP value = 50 }
+	}
+}
+
+country_event = {
+
+	id = 32508
+
+	trigger = {
+		tag = RUS
+		year = 1899
+		NOT = {
+			year = 1902
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1900
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1901
+		}
+	}
+
+	title = "EVTNAME32508"
+	desc = "EVTDESC32508"
+	picture = "theatre"
+
+	option = {
+		name = "EVTOPTA32508" 
+		prestige = 5
+	}
+}
+
+# Alaska Purchase 1/3
+country_event = {
+	id = 32509
+	title = "EVTNAME32509"
+	desc = "EVTDESC32509"
+	picture = "alaska"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA32509"
+		USA = {
+			country_event = { id=32510 days=0 }
+		}
+		USA_1 = {
+			secede_province = USA
+			remove_core = RUS
+		}
+		any_owned = {
+			limit = {
+				continent = north_america
+			}
+			secede_province = USA
+			remove_core = RUS
+		}
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB32509"
+		USA = {
+			set_country_flag = you_did_try
+			country_event = { id=32511 days=0 }
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+# Alaska Purchase 2/3 Russia Accepts 
+country_event = {
+	id = 32510
+	title = "EVTNAME32510"
+	desc = "EVTDESC32510"
+	picture = "alaska"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA32510"
+		money = -1500000
+		any_pop = {
+				consciousness = -1
+		}
+		RUS = {
+			money = 1500000
+		}
+	}
+}
+
+# Alaska Purchase 3/3 Russia Denies
+country_event = {
+	id = 32511
+	title = "EVTNAME32511"
+	desc = "EVTDESC32511"
+	picture = "alaska"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA32511"
+		relation = {
+			who = FROM
+			value = -100
+		}
+	}
+}
+
+# Convention of Peking
+country_event = {
+	id = 80000
+	title = "EVTNAME80000"
+	desc = "EVTDESC80000"
+	picture = "expansion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA80000"
+		CHI_1082 = {
+			secede_province = RUS
+		}
+		
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB80000"
+		RUS = {
+			country_event = { id=80001 days=0 }
+		}
+		add_casus_belli = {
+				target = RUS
+				type = acquire_core_state
+				months = 60
+		}		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# China refuses
+country_event = {
+	id = 80001
+	title = "EVTNAME80001"
+	desc = "EVTDESC80000"
+	picture = "expansion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA80001"
+		relation = { who = CHI value = -200 }
+		release_vassal = CHI
+		diplomatic_influence = {
+			who = CHI
+			value = -200
+		}
+	}
+}
+

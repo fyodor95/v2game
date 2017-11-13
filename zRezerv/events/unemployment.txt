@@ -1,0 +1,96 @@
+province_event = {
+
+	id = 1260
+
+	trigger = {
+		has_pop_type = farmers
+		unemployment_by_type = {
+			type = farmers
+			value = 0.7
+		}
+		NOT = {
+			trade_goods = grain
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.8
+			unemployment_by_type = {
+				type = farmers
+				value = 0.8
+			}
+		}
+		modifier = {
+			factor = 0.8
+			unemployment_by_type = {
+				type = farmers
+				value = 0.9
+			}
+		}
+		modifier = {
+			factor = 0.3
+			unemployment_by_type = {
+				type = farmers
+				value = 0.98
+			}
+		}
+	}
+
+	title = "EVTNAME1260"
+	desc = "EVTDESC1260"
+
+	option = {
+		name = "EVTOPTA1260"
+		trade_goods = grain
+	}
+}
+province_event = {
+
+	id = 1261
+
+	trigger = {
+		has_pop_type = labourers
+		unemployment_by_type = {
+			type = labourers
+			value = 0.7
+		}
+		NOT = {
+			trade_goods = grain
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.8
+			unemployment_by_type = {
+				type = labourers
+				value = 0.8
+			}
+		}
+		modifier = {
+			factor = 0.8
+			unemployment_by_type = {
+				type = labourers
+				value = 0.9
+			}
+		}
+		modifier = {
+			factor = 0.3
+			unemployment_by_type = {
+				type = labourers
+				value = 0.98
+			}
+		}
+	}
+
+	title = "EVTNAME1261"
+	desc = "EVTDESC1261"
+
+	option = {
+		name = "EVTOPTA1261"
+		trade_goods = grain
+	}
+}

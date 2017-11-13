@@ -1,0 +1,183 @@
+province_event = {
+	id = 530001
+	trigger = {
+		controlled_by = owner
+		has_building = naval_base
+		owner = {
+			AI = yes
+			is_disarmed = no
+			invention = monitors
+			blue_and_brown_water_schools = 1
+			NOT = {
+				AND = {
+					invention = protected_cruisers
+					high_sea_battle_fleet = 1
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.4
+			is_overseas = yes
+		}
+	}
+	title = "EVTNAME"
+	desc = "EVTDESC"
+	option = {
+		name = "EVTOPTA"
+		sub_unit = {
+			type = monitor
+			value = current
+		}
+	}
+}
+province_event = {
+	id = 530002
+	trigger = {
+		controlled_by = owner
+		has_building = naval_base
+		owner = {
+			AI = yes
+			is_disarmed = no
+			invention = protected_cruisers
+			high_sea_battle_fleet = 1
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.4
+			is_overseas = yes
+		}
+	}
+	title = "EVTNAME"
+	desc = "EVTDESC"
+	option = {
+		name = "EVTOPTA"
+		sub_unit = {
+			type = cruiser
+			value = current
+		}
+	}
+}
+province_event = {
+	id = 530003
+	trigger = {
+		controlled_by = owner
+		has_building = naval_base
+		is_overseas = no
+		owner = {
+			AI = yes
+			is_disarmed = no
+			invention = ironclads
+			blue_and_brown_water_schools = 1
+			NOT = {
+				AND = {
+					invention = pre_dreadnought
+					high_sea_battle_fleet = 1
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	title = "EVTNAME"
+	desc = "EVTDESC"
+	option = {
+		name = "EVTOPTA"
+		sub_unit = {
+			type = ironclad
+			value = current
+		}
+	}
+}
+province_event = {
+	id = 530004
+	trigger = {
+		controlled_by = owner
+		has_building = naval_base
+		is_overseas = no
+		owner = {
+			AI = yes
+			is_disarmed = no
+			invention = pre_dreadnought
+			high_sea_battle_fleet = 1
+			NOT = {
+				AND = {
+					invention = dreadnoughts
+					modern_naval_doctrine = 1
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	title = "EVTNAME"
+	desc = "EVTDESC"
+	option = {
+		name = "EVTOPTA"
+		sub_unit = {
+			type = battleship
+			value = current
+		}
+	}
+}
+province_event = {
+	id = 530005
+	trigger = {
+		controlled_by = owner
+		has_building = naval_base
+		is_overseas = no
+		owner = {
+			AI = yes
+			is_disarmed = no
+			invention = dreadnoughts
+			modern_naval_doctrine = 1
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	title = "EVTNAME"
+	desc = "EVTDESC"
+	option = {
+		name = "EVTOPTA"
+		sub_unit = {
+			type = dreadnought
+			value = current
+		}
+	}
+}
+province_event = {
+	id = 530006
+	trigger = {
+		controlled_by = owner
+		has_building = naval_base
+		owner = {
+			AI = yes
+			is_disarmed = no
+			invention = steamer_transports
+			battleship_column_doctrine = 1
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.4
+			is_overseas = yes
+		}
+	}
+	title = "EVTNAME"
+	desc = "EVTDESC"
+	option = {
+		name = "EVTOPTA"
+		sub_unit = {
+			type = steam_transport
+			value = current
+		}
+	}
+}

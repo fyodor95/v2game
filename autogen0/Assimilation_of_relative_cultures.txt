@@ -1,0 +1,219 @@
+province_event = {
+
+	id = 1260
+
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		any_neighbor_province = {
+			owned_by = THIS
+			is_primary_culture = yes
+		}
+		OR = {
+			AND = {
+				owned_by = GER
+				OR = {
+					culture = north_german
+					culture = south_german
+					culture = ashkenazi
+				}
+			}
+			AND = {
+				owned_by = SCA
+				OR = {
+					culture = swedish
+					culture = danish
+					culture = norwegian
+					culture = icelandic
+					culture = finnish
+					culture = sami
+				}
+			}
+			AND = {
+				owned_by = ENG
+				OR = {
+					culture = british
+					culture = scottish
+					culture = irish
+				}
+			}
+			AND = {
+				owned_by = ITA
+				OR = {
+					culture = north_italian
+					culture = south_italian
+					culture = maltese
+				}
+			}
+			AND = {
+				owned_by = YUG
+				OR = {
+					culture = croat
+					culture = serb
+					culture = bulgarian
+					culture = albanian
+					culture = slovene
+					culture = bosniak
+				}
+			}
+			AND = {
+				owned_by = RUS
+				OR = {
+					culture = russian
+					culture = byelorussian
+					culture = ukrainian
+					culture = ugrian
+				}
+			}
+			AND = {
+				owned_by = ARA
+				OR = {
+					culture = maghrebi
+					culture = misri
+					culture = mashriqi
+					culture = bedouin
+					culture = berber
+				}
+			}
+			AND = {
+				owned_by = HND
+				OR = {
+					culture = assamese
+					culture = bengali
+					culture = bihari
+					culture = manipuri
+					culture = nepali
+					culture = oriya
+					culture = sinhala
+					culture = avadhi
+					culture = kanauji
+					culture = panjabi
+					culture = kashmiri
+					culture = gujarati
+					culture = marathi
+					culture = sindi
+					culture = rajput
+					culture = kannada
+					culture = malayalam
+					culture = tamil
+					culture = telegu
+				}
+			}
+			AND = {
+				owned_by = CHI
+				OR = {
+					culture = manchu
+					culture = beifaren
+					culture = nanfaren
+					culture = tibetan
+				}
+			}
+			AND = {
+				owned_by = USA
+				OR = {
+					culture = yankee
+					culture = dixie
+					culture = texan
+				}
+			}
+			AND = {
+				owned_by = LAF
+				OR = {
+					culture = north_andean
+					culture = south_andean
+					culture = platinean
+					culture = brazilian
+					culture = afro_brazilian
+					culture = guarani
+					culture = aimara
+					culture = amazonian
+					culture = patagonian
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1800
+		modifier = {
+			factor = 1.26
+			total_pops = 100000
+		}
+		modifier = {
+			factor = 1.26
+			total_pops = 200000
+		}
+		modifier = {
+			factor = 1.26
+			total_pops = 400000
+		}
+		modifier = {
+			factor = 2
+			total_pops = 800000
+		}
+		modifier = {
+			factor = 2
+			total_pops = 1600000
+		}
+		modifier = {
+			factor = 4
+			total_pops = 3200000
+		}
+		modifier = {
+			factor = 0.9
+			any_neighbor_province = {
+				owned_by = THIS
+				is_primary_culture = yes
+				total_pops = 100000
+			}
+		}
+		modifier = {
+			factor = 0.9
+			any_neighbor_province = {
+				owned_by = THIS
+				is_primary_culture = yes
+				total_pops = 200000
+			}
+		}
+		modifier = {
+			factor = 0.9
+			any_neighbor_province = {
+				owned_by = THIS
+				is_primary_culture = yes
+				total_pops = 400000
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				owned_by = THIS
+				is_primary_culture = yes
+				total_pops = 800000
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				owned_by = THIS
+				is_primary_culture = yes
+				total_pops = 1600000
+			}
+		}
+		modifier = {
+			factor = 0.6
+			any_neighbor_province = {
+				owned_by = THIS
+				is_primary_culture = yes
+				total_pops = 3200000
+			}
+		}
+	}
+
+	title = "EVTNAME1260"
+	desc = "EVTDESC1260"
+
+	option = {
+		name = "EVTOPTA1260"
+		assimilate = yes
+	}
+}

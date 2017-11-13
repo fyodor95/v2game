@@ -1,0 +1,428 @@
+yakut
+	YAK
+tatar
+	TTT
+tajik
+	TAJ
+hausa
+	SOK
+thai
+	SIA
+filipino
+	PHI
+new_zelandian
+	NZL
+boer
+	ORA
+	TRN
+	NAL
+metis
+	MTC
+mongol
+	MGL
+mexican
+	MEX
+malagasy
+	MAD
+lao
+	WIA
+	LUA
+kurdish
+	KRD
+anglo_african
+	SAF
+	RHO
+korean
+	KOR
+javan
+	JAV
+polynesian
+	HAW
+zulu
+	ZUL
+afro_antillean
+	HAI
+georgian
+	GEO
+amhara
+	ETH
+assamese
+	HND
+bedouin
+	OMA
+	ABU
+	NEJ
+	ARA
+kirgiz
+	KYR
+	KOK
+catalan
+	CAT
+berber
+	ARA
+ugrian
+	RUS
+oriya
+	ORI
+	HND
+sindi
+	SIN
+	HND
+ukrainian
+	UKR
+	RUT
+	RUS
+north_italian
+	TUS
+	TRE
+	SAR
+	PAR
+	VEN
+	ITA
+	LOM
+	MOD
+	LUC
+greek
+	BYZ
+	ION
+	CRE
+	GRE
+	CYP
+pashtun
+	AFG
+slovak
+	SLV
+	CZH
+platinean
+	URU
+	PRG
+	ARG
+	LAF
+kashmiri
+	KAS
+	HND
+kazak
+	KAZ
+hungarian
+	SIE
+	HUN
+french
+	FRA
+manchu
+	MCK
+	CHI
+persian
+	PER
+romanian
+	MOL
+	WAL
+	ROM
+norwegian
+	NOR
+	JAN
+	SCA
+marathi
+	NAG
+	HND
+	IND
+	BHO
+	GWA
+polar_bears
+	SCA
+bengali
+	HND
+russian
+	RUS
+flemish
+	FLA
+	BEL
+irish
+	IRE
+	ENG
+estonian
+	EST
+	UBD
+lithuanian
+	LIT
+	PLC
+nanfaren
+	YNN
+	TPG
+	CHI
+south_german
+	SGF
+	KUK
+	WUR
+	GER
+	AUS
+	BAD
+	BAV
+latvian
+	LAT
+	UBD
+maltese
+	ITA
+caribeno
+	DOM
+wallonian
+	WLL
+	BEL
+bulgarian
+	BUL
+	YUG
+dutch
+	NET
+ashkenazi
+	ISR
+	GER
+bakongo
+	CNG
+mashriqi
+	ARA
+	BAB
+	YEM
+	HDJ
+	IRQ
+swiss
+	SWI
+byelorussian
+	BYE
+	RUS
+yankee
+	NEN
+	USA
+	CAL
+	DES
+	MAN
+spanish
+	SPA
+maghrebi
+	ARA
+	ALD
+	MOR
+	TUN
+	TRI
+portuguese
+	POR
+baluchi
+	MAK
+	KAL
+burmese
+	BUR
+bosniak
+	BOS
+	YUG
+turkmen
+	TKM
+afro_brazilian
+	LAF
+polish
+	KRA
+	POL
+	PLC
+bihari
+	HND
+gujarati
+	KUT
+	BER
+	HND
+south_italian
+	SIC
+	PAP
+	ITA
+serb
+	SER
+	MON
+	YUG
+beifaren
+	XBI
+	SXI
+	XIN
+	CHI
+albanian
+	ALB
+	YUG
+turkish
+	TUR
+finnish
+	FIN
+	SCA
+czech
+	BOH
+	CZH
+anglo_canadian
+	NEW
+	COL
+	CAN
+slovene
+	SLO
+	YUG
+nepali
+	SIK
+	SHI
+	NEP
+	HND
+japanese
+	JAP
+danish
+	SCH
+	DEN
+	SCA
+sinhala
+	HND
+cubans
+	CUB
+afro_american
+	LIB
+kalmyk
+	KMK
+swedish
+	SWE
+	SCA
+avadhi
+	HYD
+	AWA
+	HND
+sami
+	SCA
+kanauji
+	BUN
+	HND
+swahili
+	ZAN
+guarani
+	LAF
+tuvan
+	TNT
+north_german
+	NGF
+	DZG
+	FRM
+	GER
+	COB
+	ANH
+	HEK
+	HAM
+	HAN
+	WEI
+	MEC
+	HES
+	MEI
+	NAS
+	BRA
+	BRE
+	HOL
+	LUB
+	LIP
+	LUX
+	OLD
+	PRU
+	SAX
+croat
+	CRO
+	YUG
+armenian
+	ARM
+uzbek
+	KHI
+	BUK
+	UZB
+rajput
+	MEW
+	JOD
+	BIK
+	HND
+	JAS
+	JAI
+misri
+	EGY
+	ARA
+icelandic
+	ICL
+	SCA
+azerbaijani
+	AZB
+kannada
+	MYS
+	HND
+brazilian
+	BRZ
+	LAF
+malayalam
+	TRA
+	HND
+scottish
+	SCO
+	ENG
+tamil
+	HND
+british
+	ENG
+telegu
+	BAS
+	HND
+australian
+	AST
+malay
+	JOH
+	MLY
+	ATJ
+	BAL
+	BRU
+tibetan
+	LAD
+	BHU
+	TIB
+	CHI
+french_canadian
+	QUE
+	CAN
+north_andean
+	VNZ
+	LAF
+	GCO
+	CLM
+	ECU
+dixie
+	CSA
+	USA
+texan
+	TEX
+	USA
+zhuang
+	GXI
+central_american
+	HON
+	UCA
+	PNM
+	COS
+	GUA
+	NIC
+	ELS
+khmer
+	CAM
+south_andean
+	PEU
+	CHL
+	BOL
+	LAF
+manipuri
+	HND
+aimara
+	LAF
+amazonian
+	LAF
+panjabi
+	PAN
+	MUG
+	HND
+buryat
+	BMG
+patagonian
+	LAF
+cherokee
+	CHE
+crimean_tatar
+	CRI
+vietnamese
+	DAI

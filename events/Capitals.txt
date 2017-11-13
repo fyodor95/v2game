@@ -1,0 +1,428 @@
+country_event = {
+	id = 1472049
+	title = "100000"
+	desc = "100000"
+	picture = "greatpowers"
+	trigger = {
+		AI = yes
+		any_greater_power = {
+			industrial_score = 100
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 100
+			NOT = {
+				rank = 100
+			}
+		}
+	}
+	immediate = {
+		any_country = {
+			any_owned = {
+				remove_province_modifier = our_capital
+			}
+		}
+	}
+	option = {
+		name = "100000"
+		any_greater_power = {
+			limit = {
+				industrial_score = 100
+			}
+			capital_scope = {
+				add_province_modifier = {
+					name = our_capital
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 1472057
+	title = "100000"
+	desc = "100000"
+	picture = "greatpowers"
+	trigger = {
+		NOT = { has_global_flag = LAF_cores_seted }
+		LAF = { exists = no }
+		rank = 32
+		NOT = { rank = 31 }
+		AI = yes
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 3600
+		modifier = {
+			factor = 0.5
+			OR = {
+				BRZ = {
+					rank = 16
+					capital_scope = { continent = south_america }
+				}
+				CLM = {
+					rank = 16
+					capital_scope = { continent = south_america }
+				}
+				BOL = {
+					rank = 16
+					capital_scope = { continent = south_america }
+				}
+				ARG = {
+					rank = 16
+					capital_scope = { continent = south_america }
+				}
+				PEU = {
+					rank = 16
+					capital_scope = { continent = south_america }
+				}
+				GCO = {
+					rank = 16
+					capital_scope = { continent = south_america }
+				}
+				BRZ = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 16
+						capital_scope = { continent = south_america }
+					}
+				}
+				CLM = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 16
+						capital_scope = { continent = south_america }
+					}
+				}
+				BOL = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 16
+						capital_scope = { continent = south_america }
+					}
+				}
+				ARG = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 16
+						capital_scope = { continent = south_america }
+					}
+				}
+				PEU = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 16
+						capital_scope = { continent = south_america }
+					}
+				}
+				GCO = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 16
+						capital_scope = { continent = south_america }
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.3
+			OR = {
+				BRZ = {
+					rank = 8
+					capital_scope = { continent = south_america }
+				}
+				CLM = {
+					rank = 8
+					capital_scope = { continent = south_america }
+				}
+				BOL = {
+					rank = 8
+					capital_scope = { continent = south_america }
+				}
+				ARG = {
+					rank = 8
+					capital_scope = { continent = south_america }
+				}
+				PEU = {
+					rank = 8
+					capital_scope = { continent = south_america }
+				}
+				GCO = {
+					rank = 8
+					capital_scope = { continent = south_america }
+				}
+				BRZ = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 8
+						capital_scope = { continent = south_america }
+					}
+				}
+				CLM = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 8
+						capital_scope = { continent = south_america }
+					}
+				}
+				BOL = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 8
+						capital_scope = { continent = south_america }
+					}
+				}
+				ARG = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 8
+						capital_scope = { continent = south_america }
+					}
+				}
+				PEU = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 8
+						capital_scope = { continent = south_america }
+					}
+				}
+				GCO = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 8
+						capital_scope = { continent = south_america }
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.3
+			OR = {
+				BRZ = {
+					rank = 4
+					capital_scope = { continent = south_america }
+				}
+				CLM = {
+					rank = 4
+					capital_scope = { continent = south_america }
+				}
+				BOL = {
+					rank = 4
+					capital_scope = { continent = south_america }
+				}
+				ARG = {
+					rank = 4
+					capital_scope = { continent = south_america }
+				}
+				PEU = {
+					rank = 4
+					capital_scope = { continent = south_america }
+				}
+				GCO = {
+					rank = 4
+					capital_scope = { continent = south_america }
+				}
+				BRZ = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 4
+						capital_scope = { continent = south_america }
+					}
+				}
+				CLM = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 4
+						capital_scope = { continent = south_america }
+					}
+				}
+				BOL = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 4
+						capital_scope = { continent = south_america }
+					}
+				}
+				ARG = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 4
+						capital_scope = { continent = south_america }
+					}
+				}
+				PEU = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 4
+						capital_scope = { continent = south_america }
+					}
+				}
+				GCO = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 4
+						capital_scope = { continent = south_america }
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.3
+			OR = {
+				BRZ = {
+					rank = 2
+					capital_scope = { continent = south_america }
+				}
+				CLM = {
+					rank = 2
+					capital_scope = { continent = south_america }
+				}
+				BOL = {
+					rank = 2
+					capital_scope = { continent = south_america }
+				}
+				ARG = {
+					rank = 2
+					capital_scope = { continent = south_america }
+				}
+				PEU = {
+					rank = 2
+					capital_scope = { continent = south_america }
+				}
+				GCO = {
+					rank = 2
+					capital_scope = { continent = south_america }
+				}
+				BRZ = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 2
+						capital_scope = { continent = south_america }
+					}
+				}
+				CLM = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 2
+						capital_scope = { continent = south_america }
+					}
+				}
+				BOL = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 2
+						capital_scope = { continent = south_america }
+					}
+				}
+				ARG = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 2
+						capital_scope = { continent = south_america }
+					}
+				}
+				PEU = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 2
+						capital_scope = { continent = south_america }
+					}
+				}
+				GCO = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 2
+						capital_scope = { continent = south_america }
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.3
+			OR = {
+				BRZ = {
+					rank = 1
+					capital_scope = { continent = south_america }
+				}
+				CLM = {
+					rank = 1
+					capital_scope = { continent = south_america }
+				}
+				BOL = {
+					rank = 1
+					capital_scope = { continent = south_america }
+				}
+				ARG = {
+					rank = 1
+					capital_scope = { continent = south_america }
+				}
+				PEU = {
+					rank = 1
+					capital_scope = { continent = south_america }
+				}
+				GCO = {
+					rank = 1
+					capital_scope = { continent = south_america }
+				}
+				BRZ = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 1
+						capital_scope = { continent = south_america }
+					}
+				}
+				CLM = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 1
+						capital_scope = { continent = south_america }
+					}
+				}
+				BOL = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 1
+						capital_scope = { continent = south_america }
+					}
+				}
+				ARG = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 1
+						capital_scope = { continent = south_america }
+					}
+				}
+				PEU = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 1
+						capital_scope = { continent = south_america }
+					}
+				}
+				GCO = {
+					exists = yes
+					any_neighbor_country = {
+						rank = 1
+						capital_scope = { continent = south_america }
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "100000"
+		any_country = {
+			any_owned = {
+				limit = {
+					continent = south_america
+					NOT = { is_core = LAF }
+				}
+				add_core = LAF
+			}
+		}
+		set_global_flag = LAF_cores_seted
+	}
+}

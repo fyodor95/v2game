@@ -1,0 +1,21 @@
+country_event = {
+	id = 17042001
+	title = "0"
+	desc = "0"
+	picture = "greatpowers"
+	trigger = {
+		NOT = { has_global_flag = kozelam_net }
+		AI = yes
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "0"
+		set_global_flag = kozelam_net
+		any_country = {
+			limit = { AI = no }
+			set_country_flag = not_ai
+		}
+	}
+}

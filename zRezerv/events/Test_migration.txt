@@ -1,0 +1,41 @@
+country_event = {
+	id = 1472047
+	title = "100000"
+	desc = "100000"
+	picture = "greatpowers"
+	trigger = {
+		tag = RUS
+		AI = yes
+		NOT = {
+			has_country_flag = ura_ok
+		}
+	}
+	mean_time_to_happen = {
+		months = 0.1
+	}
+	option = {
+		name = "100000"
+		994 = {
+			add_province_modifier = {
+				name = great_capital
+				duration = -1
+			}
+		}
+		549 = {
+			add_province_modifier = {
+				name = boloto
+				duration = -1
+			}
+		}
+		1008 = {
+			life_rating = 15
+		}
+		FRA = {
+			add_country_modifier = {
+				name = tolpi
+				duration = -1
+			}
+		}
+		set_country_flag = ura_ok
+	}
+}

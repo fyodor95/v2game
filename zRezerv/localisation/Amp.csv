@@ -1,0 +1,105 @@
+MODIFIER_GLOBAL_IMMIGRANT_ATTRACT;Привлечение иммигрантов;X
+MODIFIER_LOCAL_RULING_PARTY_SUPPORT;Поддержка правящей партии;X
+reform_cutoff;Нерф медреформ;X
+reform_trinket_cutoff_10;Нерф медреформ - 10;X
+reform_trinket_cutoff_15;Нерф медреформ - 15;X
+reform_trinket_cutoff_20;Нерф медреформ - 20;X
+reform_trinket_cutoff_25;Нерф медреформ - 25;X
+reform_trinket_cutoff_30;Нерф медреформ - 30;X
+reform_trinket_cutoff_32;Нерф медреформ - 32;X
+reform_trinket_cutoff_35;Нерф медреформ - 35;X
+reform_low_cutoff_10;Нерф медреформ - 10;X
+reform_low_cutoff_15;Нерф медреформ - 15;X
+reform_low_cutoff_20;Нерф медреформ - 20;X
+reform_low_cutoff_25;Нерф медреформ - 25;X
+reform_low_cutoff_30;Нерф медреформ - 30;X
+reform_low_cutoff_32;Нерф медреформ - 32;X
+reform_low_cutoff_35;Нерф медреформ - 35;X
+reform_acceptable_cutoff_10;Нерф медреформ - 10;X
+reform_acceptable_cutoff_15;Нерф медреформ - 15;X
+reform_acceptable_cutoff_20;Нерф медреформ - 20;X
+reform_acceptable_cutoff_25;Нерф медреформ - 25;X
+reform_acceptable_cutoff_30;Нерф медреформ - 30;X
+reform_acceptable_cutoff_32;Нерф медреформ - 32;X
+reform_acceptable_cutoff_35;Нерф медреформ - 35;X
+reform_good_cutoff_10;Нерф медреформ - 10;X
+reform_good_cutoff_15;Нерф медреформ - 15;X
+reform_good_cutoff_20;Нерф медреформ - 20;X
+reform_good_cutoff_25;Нерф медреформ - 25;X
+reform_good_cutoff_30;Нерф медреформ - 30;X
+reform_good_cutoff_32;Нерф медреформ - 32;X
+reform_good_cutoff_35;Нерф медреформ - 35;X
+extremely_low_immigration;Бедное население;X
+lower_immigration;Бедное население;X
+low_immigration;Бедное население;X
+medium_immigration;Население среднего достатка;X
+high_immigration;Зажиточное население;X
+higher_immigration;Зажиточное население;X
+extremely_high_immigration;Зажиточное население;X
+highest_immigration;Зажиточное население;X
+social_reformed_nation;Социалистическое государство;X
+extremely_low_cost_of_production;Бедное население;X
+lowest_cost_of_production;Бедное население;X
+lower_cost_of_production;Бедное население;X
+low_cost_of_production;Бедное население;X
+medium_cost_of_production;Население среднего достатка;X
+high_cost_of_production;Зажиточное население;X
+higher_cost_of_production;Зажиточное население;X
+veryhigh_cost_of_production;Зажиточное население;X
+highest_cost_of_production;Зажиточное население;X
+extremely_high_cost_of_production;Богатое население;X
+our_capital;Столица нашей великой Державы;X
+consumption_boost_1;Рост размера добывающих предприятий;X
+consumption_boost_2;Очередной рост размера добывающих предприятий;X
+consumption_boost_3;Очередной рост размера добывающих предприятий;X
+consumption_boost_4;Очередной рост размера добывающих предприятий;X
+consumption_boost_5;Очередной рост размера добывающих предприятий;X
+consumption_boost_6;Очередной рост размера добывающих предприятий;X
+consumption_boost_7;Очередной рост размера добывающих предприятий;X
+consumption_boost_8;Очередной рост размера добывающих предприятий;X
+consumption_boost_9;Очередной рост размера добывающих предприятий;X
+consumption_boost_10;Очередной рост размера добывающих предприятий;X
+consumption_boost_11;Очередной рост размера добывающих предприятий;X
+consumption_boost_12;Очередной рост размера добывающих предприятий;X
+consumption_boost_13;Очередной рост размера добывающих предприятий;X
+consumption_boost_14;Очередной рост размера добывающих предприятий;X
+consumption_boost_15;Очередной рост размера добывающих предприятий;X
+consumption_boost_16;Очередной рост размера добывающих предприятий;X
+consumption_boost_17;Очередной рост размера добывающих предприятий;X
+consumption_boost_18;Очередной рост размера добывающих предприятий;X
+consumption_boost_19;Очередной рост размера добывающих предприятий;X
+consumption_boost_20;Очередной рост размера добывающих предприятий;X
+consumption_boost_21;Очередной рост размера добывающих предприятий;X
+consumption_boost_22;Очередной рост размера добывающих предприятий;X
+consumption_boost_23;Очередной рост размера добывающих предприятий;X
+consumption_boost_24;Очередной рост размера добывающих предприятий;X
+consumption_boost_25;Очередной рост размера добывающих предприятий;X
+consumption_boost_26;Очередной рост размера добывающих предприятий;X
+consumption_boost_27;Очередной рост размера добывающих предприятий;X
+consumption_boost_28;Очередной рост размера добывающих предприятий;X
+consumption_boost_29;Очередной рост размера добывающих предприятий;X
+consumption_boost_30;Очередной рост размера добывающих предприятий;X
+consumption_boost_31;Очередной рост размера добывающих предприятий;X
+consumption_boost_32;Очередной рост размера добывающих предприятий;X
+jitnica_rossii;Привлечение немецких колонистов;X
+all_migr_to_russia;Привлечение немецких колонистов;X
+from_other_no_migr;Краткосрочный приток иммигрантов;X
+migr_from_germany;Эмиграция немцев в Россию;X
+no_migr_to_new_world;Краткосрочный запрет иммиграции;X
+EVTNAME1250;Культивирование хлопка в пров. $PROVINCENAME$;X
+EVTDESC1250;Наши верные подданные сумели культивировать хлопок в провинции $PROVINCENAME$!;X
+EVTOPTA1250;Молодцы!;X
+EVTNAME1472054;Набег на русские земли;X
+EVTDESC1472054;Наши верные подданные хотят устроить набег на несносных северных завоевателей.;X
+EVTOPTA1472054;Правильно! Так им и надо!;X
+EVTOPTB1472054;Нет, это может для нас плохо кончиться.;X
+EVTNAME1472055;Набег кочевников в провинции $PROVINCENAME$;X
+EVTDESC1472055;Кочевники из державы $FROMCOUNTRY$ устроили набег на наши земли!;X
+EVTOPTA1472055;Мерзавцы!;X
+EVTOPTB1472055;Пора с этим покончить раз и навсегда!;X
+EVTNAME1251;Уголь в пров. $PROVINCENAME$;X
+EVTDESC1251;Наши подданные обнаружили залежи угля в провинции $PROVINCENAME$!;X
+EVTOPTA1251;Молодцы!;X
+EVTNAME1252;Железо в пров. $PROVINCENAME$;X
+EVTDESC1252;Наши подданные обнаружили залежи железной руды в провинции $PROVINCENAME$!;X
+EVTOPTA1252;Молодцы!;X

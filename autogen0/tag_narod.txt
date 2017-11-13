@@ -1,0 +1,526 @@
+ZUL:
+	zulu
+YNN:
+	nanfaren
+XIN:
+	beifaren
+WUR:
+	south_german
+WAL:
+	romanian
+VNZ:
+	north_andean
+VEN:
+	north_italian
+URU:
+	platinean
+UKR:
+	ukrainian
+TUR:
+	turkish
+TUN:
+	maghrebi
+TRN:
+	boer
+TRE:
+	north_italian
+TRA:
+	malayalam
+TPG:
+	nanfaren
+TKM:
+	turkmen
+TIB:
+	tibetan
+TAJ:
+	tajik
+SWI:
+	swiss
+SWE:
+	swedish
+SPA:
+	spanish
+HAN:
+	north_german
+ECU:
+	north_andean
+HAI:
+	afro_antillean
+ALD:
+	maghrebi
+GWA:
+	marathi
+GUA:
+	central_american
+FLA:
+	flemish
+EGY:
+	misri
+MUG:
+	panjabi
+CUB:
+	cubans
+SLV:
+	slovak
+CSA:
+	dixie
+CRI:
+	crimean_tatar
+COS:
+	central_american
+ANH:
+	north_german
+CNG:
+	bakongo
+EST:
+	estonian
+JAP:
+	japanese
+ARA:
+	berber
+	maghrebi
+	misri
+	bedouin
+	mashriqi
+CHL:
+	south_andean
+DOM:
+	caribeno
+YEM:
+	mashriqi
+BAS:
+	telegu
+CAL:
+	yankee
+BUN:
+	kanauji
+XBI:
+	beifaren
+BUR:
+	burmese
+CRO:
+	croat
+RUT:
+	ukrainian
+BRZ:
+	brazilian
+BOS:
+	bosniak
+CAT:
+	catalan
+LAT:
+	latvian
+LAF:
+	amazonian
+	guarani
+	north_andean
+	afro_brazilian
+	south_andean
+	patagonian
+	aimara
+	platinean
+	brazilian
+GEO:
+	georgian
+HND:
+	telegu
+	malayalam
+	kannada
+	sindi
+	gujarati
+	kashmiri
+	manipuri
+	bengali
+	rajput
+	bihari
+	panjabi
+	assamese
+	nepali
+	oriya
+	tamil
+	sinhala
+	avadhi
+	marathi
+	kanauji
+ENG:
+	irish
+	scottish
+	british
+UZB:
+	uzbek
+GCO:
+	north_andean
+UCA:
+	central_american
+CAM:
+	khmer
+BRE:
+	north_german
+SCA:
+	polar_bears
+	sami
+	finnish
+	swedish
+	danish
+	norwegian
+	icelandic
+LUA:
+	lao
+HUN:
+	hungarian
+MON:
+	serb
+BUL:
+	bulgarian
+HAM:
+	north_german
+BER:
+	gujarati
+KRA:
+	polish
+CZH:
+	slovak
+	czech
+UBD:
+	estonian
+	latvian
+MLY:
+	malay
+HAW:
+	polynesian
+MEC:
+	north_german
+COB:
+	north_german
+YUG:
+	bosniak
+	slovene
+	croat
+	albanian
+	serb
+	bulgarian
+KUK:
+	south_german
+MEI:
+	north_german
+AFG:
+	pashtun
+CRE:
+	greek
+JAS:
+	rajput
+COL:
+	anglo_canadian
+GER:
+	ashkenazi
+	south_german
+	north_german
+FRM:
+	north_german
+LAD:
+	tibetan
+NEW:
+	anglo_canadian
+ITA:
+	maltese
+	south_italian
+	north_italian
+PLC:
+	lithuanian
+	polish
+BOL:
+	south_andean
+USA:
+	texan
+	dixie
+	yankee
+LUC:
+	north_italian
+ROM:
+	romanian
+DAI:
+	vietnamese
+KAS:
+	kashmiri
+BUK:
+	uzbek
+ELS:
+	central_american
+LIP:
+	north_german
+FIN:
+	finnish
+BOH:
+	czech
+BRU:
+	malay
+DEN:
+	danish
+DES:
+	yankee
+BIK:
+	rajput
+BAD:
+	south_german
+TNT:
+	tuvan
+RUS:
+	ugrian
+	byelorussian
+	ukrainian
+	russian
+AZB:
+	azerbaijani
+RHO:
+	anglo_african
+YAK:
+	yakut
+TUS:
+	north_italian
+ARG:
+	platinean
+SLO:
+	slovene
+AST:
+	australian
+ATJ:
+	malay
+AWA:
+	avadhi
+BEL:
+	wallonian
+	flemish
+CAN:
+	french_canadian
+	anglo_canadian
+JOH:
+	malay
+BAB:
+	mashriqi
+MAK:
+	baluchi
+PRG:
+	platinean
+ORI:
+	oriya
+BAV:
+	south_german
+BRA:
+	north_german
+IRE:
+	irish
+ARM:
+	armenian
+SGF:
+	south_german
+WIA:
+	lao
+ETH:
+	amhara
+BHO:
+	marathi
+CYP:
+	greek
+TEX:
+	texan
+BMG:
+	buryat
+SXI:
+	beifaren
+OLD:
+	north_german
+GRE:
+	greek
+AUS:
+	south_german
+HDJ:
+	mashriqi
+KHI:
+	uzbek
+HEK:
+	north_german
+WLL:
+	wallonian
+HON:
+	central_american
+SOK:
+	hausa
+HYD:
+	avadhi
+MEX:
+	mexican
+ICL:
+	icelandic
+MYS:
+	kannada
+IRQ:
+	mashriqi
+ISR:
+	ashkenazi
+ABU:
+	bedouin
+JAI:
+	rajput
+JAN:
+	norwegian
+ZAN:
+	swahili
+TRI:
+	maghrebi
+JAV:
+	javan
+JOD:
+	rajput
+KAL:
+	baluchi
+KUT:
+	gujarati
+BYE:
+	byelorussian
+HOL:
+	north_german
+KMK:
+	kalmyk
+PRU:
+	north_german
+KOK:
+	kirgiz
+KRD:
+	kurdish
+NEN:
+	yankee
+KOR:
+	korean
+SIA:
+	thai
+CHE:
+	cherokee
+KYR:
+	kirgiz
+LIB:
+	afro_american
+MTC:
+	metis
+LOM:
+	north_italian
+LUB:
+	north_german
+SAR:
+	north_italian
+SIN:
+	sindi
+LUX:
+	north_german
+MAD:
+	malagasy
+SIK:
+	nepali
+MAN:
+	yankee
+IND:
+	marathi
+MCK:
+	manchu
+MEW:
+	rajput
+MOR:
+	maghrebi
+NET:
+	dutch
+KAZ:
+	kazak
+MGL:
+	mongol
+CLM:
+	north_andean
+MOD:
+	north_italian
+MOL:
+	romanian
+NAG:
+	marathi
+NAL:
+	boer
+NAS:
+	north_german
+SHI:
+	nepali
+NEJ:
+	bedouin
+NEP:
+	nepali
+FRA:
+	french
+PER:
+	persian
+GXI:
+	zhuang
+NGF:
+	north_german
+NIC:
+	central_american
+NOR:
+	norwegian
+NZL:
+	new_zelandian
+BAL:
+	malay
+OMA:
+	bedouin
+PAN:
+	panjabi
+WEI:
+	north_german
+DZG:
+	north_german
+PAP:
+	south_italian
+ALB:
+	albanian
+PAR:
+	north_italian
+PHI:
+	filipino
+PEU:
+	south_andean
+PNM:
+	central_american
+ION:
+	greek
+BHU:
+	tibetan
+POL:
+	polish
+ORA:
+	boer
+POR:
+	portuguese
+QUE:
+	french_canadian
+BYZ:
+	greek
+SAF:
+	anglo_african
+SAX:
+	north_german
+TTT:
+	tatar
+SCH:
+	danish
+SCO:
+	scottish
+SER:
+	serb
+SIC:
+	south_italian
+CHI:
+	tibetan
+	nanfaren
+	beifaren
+	manchu
+HES:
+	north_german
+LIT:
+	lithuanian
+SIE:
+	hungarian

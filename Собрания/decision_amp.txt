@@ -1,0 +1,6450 @@
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\ACW.txt
+************************************************************************
+political_decisions = {
+# North-American Minors
+	apply_for_USA_statehood = {
+		potential = {	
+			exists = USA
+			OR = {
+				tag = TEX
+				tag = DES
+				tag = CAL
+			}
+		}
+		allow = {
+			war = no
+			USA = {
+				war = no
+			}
+		NOT = {
+				has_country_flag = usstatehood_we_have_applied
+			}
+			relation = {
+				who = USA
+				value = 175
+			}
+			OR = {
+				AND = {
+					USA = {
+						slavery = yes_slavery
+					}
+					slavery = yes_slavery
+				}
+				AND = {
+					USA = {
+						slavery = no_slavery
+					}
+					slavery = no_slavery
+				}
+			}
+		}
+		effect = {
+		set_country_flag = usstatehood_we_have_applied
+			USA = {
+				country_event = { id=16400 days=0 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+# CSA
+	king_cotton = {
+		potential = {
+			tag = CSA
+			war_with = USA
+			not = {
+				has_country_flag = haskingcotton
+			}
+		}
+		
+		allow = {
+			cotton = 500
+		}
+		
+		effect = {
+			set_country_flag = haskingcotton
+			prestige = 5
+			cotton = -500
+			any_greater_power = {
+				limit = {
+					NOT = {
+						tag = USA
+					}
+				}
+				casus_belli = {
+					target = USA
+					type = cut_down_to_size
+					months = 24
+				}
+			}
+		}
+	}
+	
+# USA	
+	trail_of_tears = {
+		potential = {
+			tag = USA
+			NOT = {
+				has_global_flag = marching_on_the_trail_of_tears
+			}
+		}
+		
+		allow = {
+			owns = 129
+			owns = 130
+			owns = 131
+			average_consciousness = 3
+		}
+		
+		effect = {
+			any_pop = {
+				limit = {
+					has_pop_culture = cherokee
+					NOT = {
+						location = {
+							OR = {
+								province_id = 130
+								province_id = 131
+								province_id = 129
+							}
+						}
+					}
+				}
+				reduce_pop = 0.80
+				consciousness = 2
+				militancy = -1
+				move_pop = 130
+			}
+			130 = {
+				add_core = CHE
+			}
+			131 = {
+				add_core = CHE
+			}
+			129 = {
+				add_core = CHE
+			}
+			145 = {
+				remove_core = CHE
+			}
+			143 = {
+				remove_core = CHE
+			}
+			add_accepted_culture = cherokee
+			set_global_flag = marching_on_the_trail_of_tears
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	custers_expedition = {
+		potential = {
+			tag = USA
+			NOT = {
+				has_country_flag = custers_expedition_sent
+			}
+			owns = 122
+			year = 1874
+		}
+		
+		allow = {
+			122 = {
+				units_in_province = 1
+			}
+		}
+		
+		effect = {
+			prestige = 1
+			set_country_flag = custers_expedition_sent
+		}
+	}
+	
+	enact_the_homestead_act = {
+		potential = {
+			tag = USA
+			government = democracy
+			NOT = {
+				has_country_modifier = the_homestead_act
+			}
+			year = 1862
+		}
+		
+		allow = {
+			prestige = 40
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = the_homestead_act
+				duration = -1
+			}
+		}
+	}
+			
+	bixby_letter = {
+		potential = {
+			tag = USA
+			not = {
+				has_country_flag = bixby_letter_sent
+			}
+			war_with = CSA
+		}
+		
+		allow = {
+			war_exhaustion = 6
+		}
+		
+		effect = {
+			set_country_flag = bixby_letter_sent
+			war_exhaustion = -2
+		}
+	}
+	
+	enact_anaconda_plan = {
+		potential = {
+			tag = USA
+			war_with = CSA
+			NOT = {
+				has_global_flag = anaconda_plan_active
+			}
+		}
+		
+		allow = {
+			CSA = {
+				blockade = 0.8
+			}
+		}
+		
+		effect = {
+			CSA = {
+				add_country_modifier = {
+					name = anaconda_plan
+					duration = -1
+				}
+			}
+			set_global_flag = anaconda_plan_active
+		}
+	}
+	
+	shermans_march_to_the_sea = {
+		potential = {
+			tag = USA
+			war_with = CSA
+			NOT = {
+				has_country_flag = sherman_marched_to_the_sea
+			}
+		}		
+		allow = {
+			controls = 201
+			controls = 2555
+			controls = 204
+		}
+		
+		effect = {
+			set_country_flag = sherman_marched_to_the_sea
+			201 = {
+				any_pop = {
+					reduce_pop = 0.70
+				}
+			}
+			2555 = {
+				any_pop = {
+					reduce_pop = 0.90
+				}
+			}
+			204 = {
+				any_pop = {
+					reduce_pop = 0.90
+				}
+			}
+			CSA = {
+				war_exhaustion = 4
+			}
+		}
+	}
+
+	emancipation_proclamation = {
+		potential = {
+			tag = USA
+			NOT = {
+				has_country_flag = emancipation
+			}
+			OR = {
+				war_with = CSA
+				AND = {
+					NOT = {
+						exists = CSA
+					}
+					has_global_flag = american_civil_war_has_happened
+				}
+			}
+		}
+		allow = {
+			OR = {
+				CSA = {
+					national_provinces_occupied = 0.40
+				}
+				NOT = {
+					exists = CSA
+				}
+			}
+			prestige = 35
+		}
+		effect = {
+			set_country_flag = emancipation
+			prestige = 5
+			add_accepted_culture = afro_american
+			political_reform = no_slavery
+			any_pop = {
+				limit = {
+					has_pop_culture = yankee
+				}
+				consciousness = -5
+				militancy = -5
+			}
+			any_greater_power = {
+				relation = {
+					who = USA
+					value = 30
+				}
+			}
+		}
+	}		
+	manifest_destiny = {
+		potential = {
+			tag = USA
+			NOT = {
+				has_country_flag = hasmanifestdestiny
+			}
+		}
+		allow = {
+			romanticism = 1
+			prestige = 50
+		}
+		effect = {
+			prestige = -30
+			set_country_flag = hasmanifestdestiny
+			diplomatic_influence = {
+				who = MEX
+				value = -500
+			}
+			relation = {
+				who = MEX
+				value = -250
+			}
+			any_pop = {
+				consciousness = 2
+			}
+			82 = {
+				add_core = USA
+			}
+			83 = {
+				add_core = USA
+			}
+			84 = {
+				add_core = USA
+			}
+			85 = {
+				add_core = USA
+			}
+			86 = {
+				add_core = USA
+			}
+			87 = {
+				add_core = USA
+			}
+			88 = {
+				add_core = USA
+			}
+			89 = {
+				add_core = USA
+			}
+			90 = {
+				add_core = USA
+			}
+			94 = {
+				add_core = USA
+			}
+			95 = {
+				add_core = USA
+			}
+			96 = {
+				add_core = USA
+			}
+			97 = {
+				add_core = USA
+			}
+			98 = {
+				add_core = USA
+			}
+			99 = {
+				add_core = USA
+			}
+			100 = {
+				add_core = USA
+			}
+			101 = {
+				add_core = USA
+			}
+			102 = {
+				add_core = USA
+			}
+			103 = {
+				add_core = USA
+			}
+			104 = {
+				add_core = USA
+			}
+			105 = {
+				add_core = USA
+			}
+			106 = {
+				add_core = USA
+			}
+			107 = {
+				add_core = USA
+			}
+			108 = {
+				add_core = USA
+			}
+			109 = {
+				add_core = USA
+			}
+			136 = {
+				add_core = USA
+			}
+			138 = {
+				add_core = USA
+			}
+			129 = {
+				add_core = USA
+			}
+			130 = {
+				add_core = USA
+			}
+			131 = {
+				add_core = USA
+			}
+			132 = {
+				add_core = USA
+			}
+			133 = {
+				add_core = USA
+			}
+			134 = {
+				add_core = USA
+			}
+			135 = {
+				add_core = USA
+			}
+			137 = {
+				add_core = USA
+			}
+	
+		}
+	}
+	gag_rule = {
+		potential = {
+			tag = USA
+			average_consciousness = 1
+			slavery = yes_slavery
+			NOT = {
+				has_country_flag = house_gag_rule_enacted
+				has_global_flag = american_civil_war_has_happened
+			}
+		}
+		
+		allow = {
+			average_consciousness = 3
+		}
+		
+		effect = {
+			any_pop = {
+				consciousness = -1
+			}
+			set_country_flag = house_gag_rule_enacted
+		}
+	}
+
+	clay_and_douglas_draft = {
+		
+		potential = {
+			tag = USA
+			average_consciousness = 3
+			slavery = yes_slavery
+			NOT = {
+				has_country_flag = clay_and_douglas_draft_enacted
+				has_global_flag = american_civil_war_has_happened
+			}
+		}
+		
+		allow = {
+			average_consciousness = 4
+		}
+		
+		effect = {
+			any_pop = {
+				consciousness = -2
+			}
+			set_country_flag = clay_and_douglas_draft_enacted
+		}
+	}
+	
+	corwin_amendment = {
+		
+		potential = {
+			tag = USA
+			average_consciousness = 4
+			slavery = yes_slavery
+			NOT = {
+				has_country_flag = corwin_amendment_enacted
+				has_global_flag = american_civil_war_has_happened
+			}
+		}
+		
+		allow = {
+			average_consciousness = 7
+		}
+		
+		effect = {
+			any_pop = {
+				consciousness = -2
+			}
+			set_country_flag = corwin_amendment_enacted
+		}
+	}
+	
+	fugitive_slave_act = {
+		potential = {
+			tag = USA
+			average_consciousness = 4
+			slavery = yes_slavery
+			NOT = {
+				has_country_flag = fugitive_slave_act_enacted
+				has_global_flag = american_civil_war_has_happened
+			}
+		}
+		
+		allow = {
+			average_consciousness = 5
+		}
+		
+		effect = {
+			any_state = {
+				limit = {
+					is_slave = yes
+				}
+				any_pop = {
+					consciousness = -2
+				}
+			}
+			set_country_flag = fugitive_slave_act_enacted
+		}
+	}
+	
+	nashville_convention = {
+		potential = {
+			tag = USA
+			average_consciousness = 5
+			slavery = yes_slavery
+			NOT = {
+				has_country_flag = nashville_convention_held
+				has_global_flag = american_civil_war_has_happened
+			}
+		}
+		
+		allow = {
+			average_consciousness = 6
+		}
+		
+		effect = {
+			any_state = {
+				limit = {
+					is_slave = yes
+				}
+				any_pop = {
+					consciousness = -3
+				}
+			}
+			set_country_flag = nashville_convention_held
+		}
+	}
+	
+	ostend_manifesto = {
+		potential = {
+			tag = USA
+			average_consciousness = 4
+			slavery = yes_slavery
+			2209 = {
+				is_slave = yes
+			}
+			NOT = {
+				has_country_flag = ostend_manifesto_published
+				has_global_flag = american_civil_war_has_happened
+			}
+		}
+		
+		allow = {
+			average_consciousness = 5
+		}
+		
+		effect = {
+			prestige = -30
+			badboy = 6
+			any_greater_power = {
+				relation = {
+					who = USA
+					value = -150
+				}
+			}
+			2209 = {
+				add_core = USA
+			}
+			2210 = {
+				add_core = USA
+			}
+			2211 = {
+				add_core = USA
+			}
+			2212 = {
+				add_core = USA
+			}
+			any_state = {
+				limit = {
+					is_slave = yes
+				}
+				any_pop = {
+					consciousness = -1
+				}
+			}
+			set_country_flag = ostend_manifesto_published
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				prestige = 25
+			}
+		}
+	}
+	
+	kansas_nebraska_act = {
+		potential = {
+			tag = USA
+			average_consciousness = 1
+			slavery = yes_slavery
+			NOT = {
+				has_country_flag = kansas_nebraska_act_acting
+				has_global_flag = american_civil_war_has_happened
+			}
+		}
+		
+		allow = {
+			average_consciousness = 3
+		}
+		
+		effect = {
+			any_state = {
+				limit = {
+					is_slave = yes
+				}
+				any_pop = { consciousness = -2 }
+			}
+			any_state = {
+				limit = {
+					is_slave = no
+				}
+				any_pop = { consciousness = 1 }
+			}
+			set_country_flag = kansas_nebraska_act_acting
+		}
+	}
+	
+	wilmot_proviso = {
+		potential = {
+			tag = USA
+			average_consciousness = 1
+			slavery = yes_slavery
+			NOT = {
+				has_country_flag = wilmot_proviso_providing
+				has_global_flag = american_civil_war_has_happened
+			}
+		}
+		
+		allow = {
+			average_consciousness = 4
+			owns = 103
+			owns = 104
+			owns = 105
+			owns = 108
+			owns = 107
+			owns = 84
+			owns = 87
+			owns  = 89
+		}
+		
+		effect = {
+			any_state = {
+				limit = {
+					is_slave = no
+				}
+				any_pop = {
+					consciousness = -2
+				}
+			}
+			any_state = {
+				limit = {
+					is_slave = yes
+				}
+				any_pop = {
+					consciousness = 1
+				}
+			}
+			set_country_flag = wilmot_proviso_providing
+		}
+	}
+	
+	form_kellys_irish_brigade = {
+		potential = {
+			tag = CSA
+			war_with = USA
+			NOT = {
+				has_country_flag = kellys_irish_brigade
+			}
+		}
+		
+		allow = {
+			war_exhaustion = 4
+		}
+		
+		effect = {
+			random_pop = {
+				limit = {
+					pop_type = farmers
+					has_pop_culture = dixie
+				}
+				pop_type = soldiers
+			}
+			war_exhaustion = -1
+			set_country_flag = kellys_irish_brigade
+		}
+	}
+	
+	raise_the_bonnie_blue_flag = {
+		potential = {
+			tag = CSA
+			NOT = {
+				OR = {
+					has_country_flag = bonnie_blue_flag
+					has_country_flag = 1861CSAstart
+					}
+			}
+		}
+		
+		allow = {
+			war_with = USA
+		}
+		
+		effect = {
+
+			define_general = {
+				name = "Robert E.Lee"
+				personality = audacious
+				background = war_college
+			}
+
+			define_general = {
+				name = "Thomas Jackson"
+				personality = coolminded
+				background = school_of_defense
+			}
+			
+			add_country_modifier = {
+				name = the_bonnie_blue_flag
+				duration = 365
+			}
+			
+			set_country_flag = bonnie_blue_flag
+		}
+	}
+
+	enact_radical_reconstruction = {
+		potential = {
+			tag = USA
+			war = no
+			has_global_flag = american_civil_war_has_happened
+			owns = 211
+			owns = 195
+			owns = 139
+			NOT = {
+				exists = CSA
+				has_country_flag = has_used_radical_reconstruction
+			}
+		}
+		
+		allow = {
+			NOT = {
+				average_militancy = 4
+			}
+		}
+		effect = {
+			war_exhaustion = -3
+			any_pop = {
+				limit = {
+					has_pop_culture = dixie
+				}
+				consciousness = -5
+				militancy = -5
+			}
+			set_country_flag = has_used_radical_reconstruction
+		}
+	}
+	
+	annex_hawaii = {
+		potential = {
+			NOT = {
+				has_country_flag = hawaii_annexed
+			}
+			exists = HAW
+			tag = USA
+			is_sphere_leader_of = HAW
+			HAW = { ai = yes }
+		}
+		
+		allow = {
+			nationalism_n_imperialism = 1
+			is_sphere_leader_of = HAW
+		}
+		
+		effect = {
+			658 = {
+				add_core = USA
+			}
+			prestige = -15
+			inherit = HAW
+			set_country_flag = hawaii_annexed
+		}
+	}
+	
+	alaskan_purchase = {
+		potential = {
+			war = no
+			OR = {
+				has_global_flag = american_civil_war_has_happened
+				year = 1870
+			}
+			NOT = {
+				has_country_flag = you_did_try
+			}
+			tag = USA
+			RUS = {
+				OR = {
+					owns = 1
+					owns = 2
+					owns = 3 
+					owns = 4 
+					owns = 5 
+					owns = 2599 
+					owns = 2630 
+					owns = 2631
+				}
+			}
+		}
+		
+		allow = {
+			prestige = 1
+			nationalism_n_imperialism = 1
+			money = 72000
+		}
+		
+		effect = {
+			RUS = {
+				country_event = { id=32509 days=0 }
+			}
+			set_country_flag = you_did_try
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	webster_ashburton_treaty = {
+		potential = {
+			tag = ENG
+			owns = 250
+			NOT = {
+				has_country_flag = webster_ashburton_signed
+			}
+			
+		}
+		
+		allow = {
+			NOT = {
+				war_with = USA
+			}
+		}
+		
+		effect = {
+			relation = {
+				who = USA
+				value = 100
+			}
+			250 = {
+				secede_province = USA
+			}
+			badboy = -2
+			prestige = 20
+			set_country_flag = webster_ashburton_signed
+			250 = {				#Caribou
+				remove_core = CAN
+			}
+			249 = {				#Bangor
+				remove_core = CAN
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					badboy = 0.2
+				}
+			}
+		}
+	
+	}
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\AdminTools.txt
+************************************************************************
+political_decisions = {
+   Claim_AdminTools = { 
+		alert = no 
+		potential = { 
+			not = { has_country_flag = admintools_claimed }
+		} 
+		allow = { 
+			ai = no
+		} 
+		effect = { 
+			set_country_flag = admintools_claimed
+			any_country = {
+				clr_country_flag = admintools_claimed
+			}
+		} 
+	}
+
+
+	
+   AdminTools_on = { 
+	alert = no 
+	potential = { 
+		not = { has_country_flag = admintools }	
+		has_country_flag = admintools_claimed
+		} 
+	allow = { 
+		ai = no
+		} 
+	effect = { 
+		set_country_flag = admintools 
+		} 
+	}
+   AdminTools_off = {
+	alert = no 
+	potential = { 
+		has_country_flag = admintools 
+		} 
+	allow = { 
+		ai = no
+		} 
+	effect = { 
+		clr_country_flag = admintools
+		clr_country_flag = admintools_penalty
+		clr_country_flag = admintools_bonus
+		clr_country_flag = admintools_rp
+		} 
+	}
+	
+	trade_reboot = {
+		alert = no 
+		potential = {
+			has_country_flag = admintools 
+		}
+		allow = { 
+			ai = no 
+		}
+		effect = {
+			clr_country_flag = ammo_trade
+			clr_country_flag = arty_trade
+			clr_country_flag = rifels_trade
+			clr_country_flag = food_trade
+			clr_country_flag = steamer_trade
+			clr_country_flag = clippers_trade
+			clr_country_flag = parts_trade
+			clr_country_flag = uniform_trade
+			clr_country_flag = fuel_trade
+			clr_country_flag = iron_trade
+			clr_country_flag = 500_trade
+			clr_country_flag = 1000_trade
+			clr_country_flag = 5000_trade
+			clr_country_flag = onetime_trade
+			clr_country_flag = pool_1_export
+			clr_country_flag = pool_1_import
+			clr_country_flag = pool_2_export
+			clr_country_flag = pool_2_import
+			clr_country_flag = pool_3_export
+			clr_country_flag = pool_3_import
+			clr_country_flag = pool_4_export
+			clr_country_flag = pool_4_import
+			clr_country_flag = stop_flow
+			clr_country_flag = trading
+			any_country = {
+				clr_country_flag = ammo_trade
+			clr_country_flag = arty_trade
+			clr_country_flag = rifels_trade
+			clr_country_flag = food_trade
+			clr_country_flag = steamer_trade
+			clr_country_flag = clippers_trade
+			clr_country_flag = parts_trade
+			clr_country_flag = uniform_trade
+			clr_country_flag = fuel_trade
+			clr_country_flag = iron_trade
+			clr_country_flag = 500_trade
+			clr_country_flag = 1000_trade
+			clr_country_flag = 5000_trade
+			clr_country_flag = onetime_trade
+			clr_country_flag = pool_1_export
+			clr_country_flag = pool_1_import
+			clr_country_flag = pool_2_export
+			clr_country_flag = pool_2_import
+			clr_country_flag = pool_3_export
+			clr_country_flag = pool_3_import
+			clr_country_flag = pool_4_export
+			clr_country_flag = pool_4_import
+			clr_country_flag = stop_flow
+			clr_country_flag = trading
+			}
+		}
+	}
+	
+	AdminTools_penalty_on = { 
+	alert = no 
+	potential = { 
+		has_country_flag = admintools 
+		not = { has_country_flag = admintools_penalty }
+		} 
+	allow = { 
+		ai = no
+		} 
+	effect = { set_country_flag = admintools_penalty } 
+	}
+	
+	AdminTools_penalty_off = { 
+	alert = no 
+	potential = { 
+		has_country_flag = admintools 
+		has_country_flag = admintools_penalty
+		} 
+	allow = { 
+		ai = no
+		} 
+	effect = { clr_country_flag = admintools_penalty } 
+	}
+	
+	
+	
+	AdminTools_bonus_on = { 
+	alert = no 
+	potential = { 
+		has_country_flag = admintools 
+		not = { has_country_flag = admintools_bonus }
+		} 
+	allow = { 
+		ai = no
+		} 
+	effect = { set_country_flag = admintools_bonus } 
+	}
+	
+	AdminTools_bonus_off = { 
+	alert = no 
+	potential = { 
+		has_country_flag = admintools 
+		has_country_flag = admintools_bonus
+		} 
+	allow = { 
+		ai = no
+		} 
+	effect = { clr_country_flag = admintools_bonus } 
+	}
+	
+	
+	
+	AdminTools_rp_on = { 
+	alert = no 
+	potential = { 
+		has_country_flag = admintools 
+		not = { has_country_flag = admintools_rp }
+		} 
+	allow = { 
+		ai = no
+		} 
+	effect = { set_country_flag = admintools_rp } 
+	}
+	
+	AdminTools_rp_off = { 
+	alert = no 
+	potential = { 
+		has_country_flag = admintools 
+		has_country_flag = admintools_rp
+		} 
+	allow = { 
+		ai = no
+		} 
+	effect = { clr_country_flag = admintools_rp } 
+	}
+	
+	admintools_penalty_ENG = { alert = no potential = { has_country_flag = admintools_penalty exists = ENG } effect = { ENG = {prestige = -10}  } }
+	admintools_penalty_RUS = { alert = no potential = { has_country_flag = admintools_penalty exists = RUS } effect = { RUS = {prestige = -10}  } }
+	admintools_penalty_FRA = { alert = no potential = { has_country_flag = admintools_penalty exists = FRA } effect = { FRA = {prestige = -10}  } }
+	admintools_penalty_PRU = { alert = no potential = { has_country_flag = admintools_penalty exists = PRU } effect = { PRU = {prestige = -10}  } }
+	admintools_penalty_NGF = { alert = no potential = { has_country_flag = admintools_penalty exists = NGF } effect = { NGF = {prestige = -10}  } }
+	admintools_penalty_GER = { alert = no potential = { has_country_flag = admintools_penalty exists = GER } effect = { GER = {prestige = -10}  } }
+	admintools_penalty_AUS = { alert = no potential = { has_country_flag = admintools_penalty exists = AUS } effect = { AUS = {prestige = -10}  } }
+	admintools_penalty_KUK = { alert = no potential = { has_country_flag = admintools_penalty exists = KUK } effect = { KUK = {prestige = -10}  } }
+	admintools_penalty_SGF = { alert = no potential = { has_country_flag = admintools_penalty exists = SGF } effect = { SGF = {prestige = -10}  } }
+	admintools_penalty_USA = { alert = no potential = { has_country_flag = admintools_penalty exists = USA } effect = { USA = {prestige = -10}  } }
+	admintools_penalty_CSA = { alert = no potential = { has_country_flag = admintools_penalty exists = USA } effect = { CSA = {prestige = -10}  } }
+	admintools_penalty_JAP = { alert = no potential = { has_country_flag = admintools_penalty exists = JAP } effect = { JAP = {prestige = -10}  } }
+	admintools_penalty_ITA = { alert = no potential = { has_country_flag = admintools_penalty exists = ITA } effect = { ITA = {prestige = -10}  } }
+	admintools_penalty_SWE = { alert = no potential = { has_country_flag = admintools_penalty exists = SWE } effect = { SWE = {prestige = -10}  } }
+	admintools_penalty_SCA = { alert = no potential = { has_country_flag = admintools_penalty exists = SCA } effect = { SCA = {prestige = -10}  } }
+	admintools_penalty_BEL = { alert = no potential = { has_country_flag = admintools_penalty exists = BEL } effect = { BEL = {prestige = -10}  } }
+	admintools_penalty_NET = { alert = no potential = { has_country_flag = admintools_penalty exists = NET } effect = { NET = {prestige = -10}  } }
+	admintools_penalty_SPA = { alert = no potential = { has_country_flag = admintools_penalty exists = SPA } effect = { SPA = {prestige = -10}  } }
+	admintools_penalty_SIC = { alert = no potential = { has_country_flag = admintools_penalty exists = SIC } effect = { SIC = {prestige = -10}  } }
+	admintools_penalty_TUR = { alert = no potential = { has_country_flag = admintools_penalty exists = TUR } effect = { TUR = {prestige = -10}  } }
+	admintools_penalty_CAN = { alert = no potential = { has_country_flag = admintools_penalty exists = CAN } effect = { CAN = {prestige = -10}  } }
+	admintools_penalty_COL = { alert = no potential = { has_country_flag = admintools_penalty exists = COL } effect = { COL = {prestige = -10}  } }
+	admintools_penalty_QUE = { alert = no potential = { has_country_flag = admintools_penalty exists = QUE } effect = { QUE = {prestige = -10}  } }
+	admintools_penalty_CLM = { alert = no potential = { has_country_flag = admintools_penalty exists = CLM } effect = { CLM = {prestige = -10}  } }
+	admintools_penalty_ANU = { alert = no potential = { has_country_flag = admintools_penalty exists = ANU } effect = { ANU = {prestige = -10}  } }
+	admintools_penalty_LAF = { alert = no potential = { has_country_flag = admintools_penalty exists = LAF } effect = { LAF = {prestige = -10}  } }
+	admintools_penalty_AST = { alert = no potential = { has_country_flag = admintools_penalty exists = AST } effect = { AST = {prestige = -10}  } }
+	admintools_penalty_NZL = { alert = no potential = { has_country_flag = admintools_penalty exists = NZL } effect = { NZL = {prestige = -10}  } }
+	admintools_penalty_GCO = { alert = no potential = { has_country_flag = admintools_penalty exists = GCO } effect = { GCO = {prestige = -10}  } }
+	admintools_penalty_SAR = { alert = no potential = { has_country_flag = admintools_penalty exists = SAR } effect = { SAR = {prestige = -10}  } }
+	admintools_penalty_CHI = { alert = no potential = { has_country_flag = admintools_penalty exists = CHI } effect = { CHI = {prestige = -10}  } }
+	
+	admintools_bonus_ENG = { alert = no potential = { has_country_flag = admintools_bonus exists = ENG } effect = { ENG = {prestige = 10}  } }
+	admintools_bonus_RUS = { alert = no potential = { has_country_flag = admintools_bonus exists = RUS } effect = { RUS = {prestige = 10}  } }
+	admintools_bonus_FRA = { alert = no potential = { has_country_flag = admintools_bonus exists = FRA } effect = { FRA = {prestige = 10}  } }
+	admintools_bonus_PRU = { alert = no potential = { has_country_flag = admintools_bonus exists = PRU } effect = { PRU = {prestige = 10}  } }
+	admintools_bonus_NGF = { alert = no potential = { has_country_flag = admintools_bonus exists = NGF } effect = { NGF = {prestige = 10}  } }
+	admintools_bonus_GER = { alert = no potential = { has_country_flag = admintools_bonus exists = GER } effect = { GER = {prestige = 10}  } }
+	admintools_bonus_AUS = { alert = no potential = { has_country_flag = admintools_bonus exists = AUS } effect = { AUS = {prestige = 10}  } }
+	admintools_bonus_KUK = { alert = no potential = { has_country_flag = admintools_bonus exists = KUK } effect = { KUK = {prestige = 10}  } }
+	admintools_bonus_SGF = { alert = no potential = { has_country_flag = admintools_bonus exists = SGF } effect = { SGF = {prestige = 10}  } }
+	admintools_bonus_USA = { alert = no potential = { has_country_flag = admintools_bonus exists = USA } effect = { USA = {prestige = 10}  } }
+	admintools_bonus_CSA = { alert = no potential = { has_country_flag = admintools_bonus exists = USA } effect = { CSA = {prestige = 10}  } }
+	admintools_bonus_JAP = { alert = no potential = { has_country_flag = admintools_bonus exists = JAP } effect = { JAP = {prestige = 10}  } }
+	admintools_bonus_ITA = { alert = no potential = { has_country_flag = admintools_bonus exists = ITA } effect = { ITA = {prestige = 10}  } }
+	admintools_bonus_SWE = { alert = no potential = { has_country_flag = admintools_bonus exists = SWE } effect = { SWE = {prestige = 10}  } }
+	admintools_bonus_SCA = { alert = no potential = { has_country_flag = admintools_bonus exists = SCA } effect = { SCA = {prestige = 10}  } }
+	admintools_bonus_BEL = { alert = no potential = { has_country_flag = admintools_bonus exists = BEL } effect = { BEL = {prestige = 10}  } }
+	admintools_bonus_NET = { alert = no potential = { has_country_flag = admintools_bonus exists = NET } effect = { NET = {prestige = 10}  } }
+	admintools_bonus_SPA = { alert = no potential = { has_country_flag = admintools_bonus exists = SPA } effect = { SPA = {prestige = 10}  } }
+	admintools_bonus_SIC = { alert = no potential = { has_country_flag = admintools_bonus exists = SIC } effect = { SIC = {prestige = 10}  } }
+	admintools_bonus_TUR = { alert = no potential = { has_country_flag = admintools_bonus exists = TUR } effect = { TUR = {prestige = 10}  } }
+	admintools_bonus_CAN = { alert = no potential = { has_country_flag = admintools_bonus exists = CAN } effect = { CAN = {prestige = 10}  } }
+	admintools_bonus_COL = { alert = no potential = { has_country_flag = admintools_bonus exists = COL } effect = { COL = {prestige = 10}  } }
+	admintools_bonus_QUE = { alert = no potential = { has_country_flag = admintools_bonus exists = QUE } effect = { QUE = {prestige = 10}  } }
+	admintools_bonus_CLM = { alert = no potential = { has_country_flag = admintools_bonus exists = CLM } effect = { CLM = {prestige = 10}  } }
+	admintools_bonus_ANU = { alert = no potential = { has_country_flag = admintools_bonus exists = ANU } effect = { ANU = {prestige = 10}  } }
+	admintools_bonus_LAF = { alert = no potential = { has_country_flag = admintools_bonus exists = LAF } effect = { LAF = {prestige = 10}  } }
+	admintools_bonus_AST = { alert = no potential = { has_country_flag = admintools_bonus exists = AST } effect = { AST = {prestige = 10}  } }
+	admintools_bonus_NZL = { alert = no potential = { has_country_flag = admintools_bonus exists = NZL } effect = { NZL = {prestige = 10}  } }
+	admintools_bonus_GCO = { alert = no potential = { has_country_flag = admintools_bonus exists = GCO } effect = { GCO = {prestige = 10}  } }
+	admintools_bonus_SAR = { alert = no potential = { has_country_flag = admintools_bonus exists = SAR } effect = { SAR = {prestige = 10}  } }
+	admintools_bonus_CHI = { alert = no potential = { has_country_flag = admintools_bonus exists = CHI } effect = { CHI = {prestige = 10}  } }
+	
+	admintools_rp_ENG = { alert = no potential = { has_country_flag = admintools_rp exists = ENG } effect = { ENG = {years_of_research = 0.33}  } }
+	admintools_rp_RUS = { alert = no potential = { has_country_flag = admintools_rp exists = RUS } effect = { RUS = {years_of_research = 0.28}  } }
+	admintools_rp_FRA = { alert = no potential = { has_country_flag = admintools_rp exists = FRA } effect = { FRA = {years_of_research = 0.28}  } }
+	admintools_rp_PRU = { alert = no potential = { has_country_flag = admintools_rp exists = PRU } effect = { PRU = {years_of_research = 0.28}  } }
+	admintools_rp_NGF = { alert = no potential = { has_country_flag = admintools_rp exists = NGF } effect = { NGF = {years_of_research = 0.28}  } }
+	admintools_rp_GER = { alert = no potential = { has_country_flag = admintools_rp exists = GER } effect = { GER = {years_of_research = 0.28}  } }
+	admintools_rp_AUS = { alert = no potential = { has_country_flag = admintools_rp exists = AUS } effect = { AUS = {years_of_research = 0.28}  } }
+	admintools_rp_KUK = { alert = no potential = { has_country_flag = admintools_rp exists = KUK } effect = { KUK = {years_of_research = 0.28}  } }
+	admintools_rp_SGF = { alert = no potential = { has_country_flag = admintools_rp exists = SGF } effect = { SGF = {years_of_research = 0.28}  } }
+	admintools_rp_USA = { alert = no potential = { has_country_flag = admintools_rp exists = USA } effect = { USA = {years_of_research = 0.28}  } }
+	admintools_rp_CSA = { alert = no potential = { has_country_flag = admintools_rp exists = USA } effect = { CSA = {years_of_research = 0.28}  } }
+	admintools_rp_JAP = { alert = no potential = { has_country_flag = admintools_rp exists = JAP } effect = { JAP = {years_of_research = 0.28}  } }
+	admintools_rp_ITA = { alert = no potential = { has_country_flag = admintools_rp exists = ITA } effect = { ITA = {years_of_research = 0.28}  } }
+	admintools_rp_SWE = { alert = no potential = { has_country_flag = admintools_rp exists = SWE } effect = { SWE = {years_of_research = 0.28}  } }
+	admintools_rp_SCA = { alert = no potential = { has_country_flag = admintools_rp exists = SCA } effect = { SCA = {years_of_research = 0.28}  } }
+	admintools_rp_BEL = { alert = no potential = { has_country_flag = admintools_rp exists = BEL } effect = { BEL = {years_of_research = 0.28}  } }
+	admintools_rp_NET = { alert = no potential = { has_country_flag = admintools_rp exists = NET } effect = { NET = {years_of_research = 0.28}  } }
+	admintools_rp_SPA = { alert = no potential = { has_country_flag = admintools_rp exists = SPA } effect = { SPA = {years_of_research = 0.28}  } }
+	admintools_rp_SIC = { alert = no potential = { has_country_flag = admintools_rp exists = SIC } effect = { SIC = {years_of_research = 0.28}  } }
+	admintools_rp_TUR = { alert = no potential = { has_country_flag = admintools_rp exists = TUR } effect = { TUR = {years_of_research = 0.28}  } }
+	admintools_rp_CAN = { alert = no potential = { has_country_flag = admintools_rp exists = CAN } effect = { CAN = {years_of_research = 0.28}  } }
+	admintools_rp_COL = { alert = no potential = { has_country_flag = admintools_rp exists = COL } effect = { COL = {years_of_research = 0.28}  } }
+	admintools_rp_QUE = { alert = no potential = { has_country_flag = admintools_rp exists = QUE } effect = { QUE = {years_of_research = 0.28}  } }
+	admintools_rp_CLM = { alert = no potential = { has_country_flag = admintools_rp exists = CLM } effect = { CLM = {years_of_research = 0.28}  } }
+	admintools_rp_ANU = { alert = no potential = { has_country_flag = admintools_rp exists = ANU } effect = { ANU = {years_of_research = 0.28}  } }
+	admintools_rp_LAF = { alert = no potential = { has_country_flag = admintools_rp exists = LAF } effect = { LAF = {years_of_research = 0.28}  } }
+	admintools_rp_AST = { alert = no potential = { has_country_flag = admintools_rp exists = AST } effect = { AST = {years_of_research = 0.28}  } }
+	admintools_rp_NZL = { alert = no potential = { has_country_flag = admintools_rp exists = NZL } effect = { NZL = {years_of_research = 0.28}  } }
+	admintools_rp_GCO = { alert = no potential = { has_country_flag = admintools_rp exists = GCO } effect = { GCO = {years_of_research = 0.28}  } }
+	admintools_rp_SAR = { alert = no potential = { has_country_flag = admintools_rp exists = SAR } effect = { SAR = {years_of_research = 0.28}  } }
+	admintools_rp_CHI = { alert = no potential = { has_country_flag = admintools_rp exists = CHI } effect = { CHI = {years_of_research = 0.28}  } }
+	
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\AMP_conscription.txt
+************************************************************************
+political_decisions = {
+conscription_back_1year = {
+	alert = no 
+	potential = {
+		AI = no
+		conscription = no_draft
+	}
+	allow = {
+		war = yes
+	}
+	effect = {
+		political_reform = 1_years_draft
+		militancy = 0.35
+	}
+}
+conscription_back_4years = {
+	alert = no 
+	potential = {
+		AI = no
+		conscription = 1_years_draft
+	}
+	allow = {
+		war = yes
+	}
+	effect = {
+		political_reform = 4_years_draft
+		militancy = 0.35
+	}
+}
+conscription_back_7years = {
+	alert = no 
+	potential = {
+		AI = no
+		conscription = 4_years_draft
+	}
+	allow = {
+		war = yes
+	}
+	effect = {
+		political_reform = 7_years_draft
+		militancy = 0.35
+	}
+}
+conscription_back_10years = {
+	alert = no 
+	potential = {
+		AI = no
+		conscription = 7_years_draft
+	}
+	allow = {
+		war = yes
+	}
+	effect = {
+		political_reform = 10_years_draft
+		militancy = 0.35
+	}
+}
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\AMP_polices.txt
+************************************************************************
+political_decisions = {
+currency_issue_start = {
+	alert = no 
+	potential = {
+		AI = no
+		central_bank_money_bill_printing = 1
+		NOT = {
+			has_country_flag = currency_reforming
+		}
+	}
+	allow = {
+		NOT = {
+			has_country_flag = currency_reforming
+		}
+	}
+	effect = {
+		set_country_flag = currency_reforming
+		country_event = {
+			id = 100100
+			days = 1
+		}
+	}
+}
+currency_devaluation_start = {
+	alert = no 
+	potential = {
+		AI = no
+		central_bank_money_bill_printing = 1
+		NOT = {
+			has_country_flag = currency_reforming
+		}
+	}
+	allow = {
+		NOT = {
+			has_country_flag = currency_reforming
+		}
+	}
+	effect = {
+		set_country_flag = currency_reforming
+		country_event = {
+			id = 100101
+			days = 1
+		}
+	}
+}
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\arabian formation.txt
+************************************************************************
+
+political_decisions = {
+
+	form_arabia = {
+
+		potential = {
+			ARA = { exists = no }
+			is_culture_group = arab
+		}
+		
+		allow = {
+			OR = { 
+				AND = { 
+					is_greater_power = yes
+					any_neighbor_country = {
+						in_sphere = this
+						is_culture_group = arab
+						relation = { who = THIS value = 100 }
+					}
+				}
+				AND = {
+					tag = NEJ
+					HDJ = { 
+						all_core = { 
+							owned_by = THIS 
+						} 
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 20
+			all_core = {
+				limit = {
+					owned_by = THIS
+				}
+				remove_core = THIS 
+				add_core = ARA
+			}
+			change_tag = ARA
+			random_country = {
+				limit = {
+					is_culture_group = THIS
+					in_sphere = THIS
+					OR = {
+						is_vassal = no
+						vassal_of = THIS
+					}
+				}
+				country_event = 111011928
+			}
+			add_accepted_culture = union
+			any_country = {
+				limit = {
+					is_culture_group = THIS
+				}
+				all_core = {
+					add_core = ARA
+				}
+			}
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+}
+
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\AUS.txt
+************************************************************************
+political_decisions = {
+	enact_dual_monarchy = {
+		potential = {
+			tag = AUS
+			war = no
+			OR = {
+				government = absolute_monarchy
+				government = hms_government
+				government = prussian_constitutionalism
+			}
+			any_owned_province = {
+				is_core = HUN
+			}
+			NOT = {
+				has_country_flag = dual_monarchy_done
+			}
+		}
+	
+		allow = {
+			OR = {
+				AND = {
+					exists = ITA
+					exists = GER
+				}
+				year = 1855
+			}
+			NOT = {
+				OR = {
+					exists = HUN
+					exists = KUK
+					average_militancy = 5
+				}
+			}
+			nationalism_n_imperialism = 1
+		}
+	
+		effect = {
+			all_core = {
+				add_core = KUK
+			}
+			all_core = {
+				remove_core = AUS
+			}
+			any_pop = {
+				limit = {
+					culture = hungarian
+				}
+				militancy = -2
+			}
+			any_pop = {
+				limit = {
+					NOT = {
+						OR = {
+							culture = hungarian
+							culture = south_german
+						}
+					}
+				}
+				militancy = 2
+			}
+						
+			add_accepted_culture = hungarian
+			change_tag = KUK
+			set_country_flag = dual_monarchy_done
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	the_grunderzeit = {
+		potential = {
+			OR = {
+				tag = AUS
+				tag = KUK
+				tag = SGF
+				tag = HAB
+			}
+			owns = 619
+			NOT = {
+				has_country_flag = grunderzeit_we_have_done
+			}
+		}
+		allow = {
+			iron_railroad = 1
+			cheap_iron = 1
+		}
+		effect = {
+			619 = {
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.2
+					}
+				}
+				life_rating = 5
+			}
+			prestige = 10
+			set_country_flag = grunderzeit_we_have_done
+		}
+	}
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\BEL.txt
+************************************************************************
+political_decisions = {
+	rename_the_congo = {
+		potential = {
+			tag = BEL
+			exists = CNG
+			CNG = {
+				vassal_of = THIS
+			}
+			NOT = {
+				has_global_flag = congo_renamed
+			}
+		}
+		
+		allow = {
+			invention = mission_to_civilize
+		}
+		
+		effect = {
+			1987 = {
+				change_province_name = "Элизабетвиль"
+			}		
+			1982 = {
+				change_province_name = "Леопольдвиль"
+			}
+			1996 = {
+				change_province_name = "Стенливиль"
+			}
+			prestige = 10
+			set_global_flag = congo_renamed
+		}
+	}
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\BoerWar.txt
+************************************************************************
+political_decisions = {
+	die_groot_trek = {
+		potential = {
+			OR = {
+				tag = ORA
+				tag = TRN
+			}
+			NOT = {
+				has_global_flag = the_great_trek
+			}
+		}
+		
+		allow = {
+			prestige = 2
+		}
+		
+		effect = {
+			set_global_flag = the_great_trek
+			any_owned = {
+				add_province_modifier = {
+					name = trek_boers
+					duration = 3650
+				}
+			}
+			ENG = {
+				any_owned = {
+					limit = {	
+						has_pop_culture = boer
+					}
+					any_pop = {
+						limit = {
+							culture = boer
+						}
+						consciousness = 6
+					}
+					add_province_modifier = {
+							name = boer_exodus
+							duration = 3650
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	attack_the_laagers = {
+		potential = {
+			tag = ZUL
+			NOT = {
+				has_global_flag = piet_retief_massacre
+			}
+			has_global_flag = the_great_trek
+			OR = {
+				exists = ORA
+				exists = TRN
+			}
+		}
+		allow = {
+			OR = {
+				NOT = {
+					relation = {
+						who = ORA
+						value = 100
+					}
+				}
+				NOT = {
+					relation = {
+						who = TRN
+						value = 100
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 5
+			badboy = 5
+			set_global_flag = piet_retief_massacre
+			2111 = {
+				any_pop = {
+					limit = {
+						culture = boer
+					}
+					reduce_pop = 0.6
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	sand_river_convention = {
+		potential = {
+			tag = TRN
+			NOT = {
+				has_country_flag = had_sand_river_convention
+				any_owned_province = {
+					is_core = ENG
+				}
+			}
+		}
+		allow = {
+			relation = {
+				who = ENG
+				value = 75
+			}
+			prestige = 10
+			state_n_government = 1
+		}
+		effect = {
+			political_reform = no_slavery
+			set_country_flag = had_sand_river_convention
+			relation = {
+				who = ENG
+				value = 25
+			}
+		}
+	}
+	
+	orange_river_convention = {
+		potential = {
+			tag = ORA
+			NOT = {
+				has_country_flag = had_orange_river_convention
+				any_owned_province = {
+					is_core = ENG
+				}
+			}
+		}
+		
+		allow = {
+			relation = {
+				who = ENG
+				value = 75
+			}
+			prestige = 10
+			state_n_government = 1
+		}
+		
+		effect = {
+			political_reform = no_slavery
+			set_country_flag = had_orange_river_convention
+			relation = {
+				who = ENG
+				value = 25
+			}
+		}
+	}
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\Canals.txt
+************************************************************************
+political_decisions = {
+	build_kiel_canal = {
+		news = yes
+		news_desc_long = "kiel_canal_NEWS_LONG"
+		news_desc_medium = "kiel_canal_NEWS_MEDIUM"
+		news_desc_short = "kiel_canal_NEWS_SHORT"
+		
+		potential = {
+			NOT = { is_canal_enabled = 1 }
+			owns = 369
+			is_greater_power = yes
+			mechanical_production = 1
+		}
+		allow = {
+			invention = machine_tools
+			invention = nitroglycerin
+			iron_steamers = 1
+			money = 400000
+		}
+		effect = {
+			enable_canal = 1
+			369 = { set_province_flag = kiel_canal }
+			prestige = 5
+			money = -500000
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
+	
+	build_suez_canal = {
+		news = yes
+		news_desc_long = "suez_canal_NEWS_LONG"
+		news_desc_medium = "suez_canal_NEWS_MEDIUM"
+		news_desc_short = "suez_canal_NEWS_SHORT"
+		
+		picture = suezcanal
+		potential = {
+			NOT = { is_canal_enabled = 2 }
+			is_greater_power = yes
+			mechanical_production = 1
+		}
+		allow = {
+			OR = {
+				1755 = { owner = { in_sphere = THIS } }
+				owns = 1755
+			}
+			invention = machine_tools
+			invention = nitroglycerin		
+			iron_steamers = 1
+			money = 900000
+		}
+		effect = {
+			1755 = { secede_province = THIS }
+			enable_canal = 2
+			1755 = { set_province_flag = suez_canal }
+			prestige = 10
+			set_global_flag = suez_canal_built
+			money = -1000000
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
+
+	build_panama_canal = {
+		news = yes
+		news_desc_long = "panama_canal_NEWS_LONG"
+		news_desc_medium = "panama_canal_NEWS_MEDIUM"
+		news_desc_short = "panama_canal_NEWS_SHORT"
+		potential = {
+			NOT = { is_canal_enabled = 3 }
+			is_greater_power = yes
+			mechanical_production = 1
+		}
+		allow = {
+			OR = {
+				1723 = { owner = { in_sphere = THIS } }
+				owns = 1723
+			}
+			invention = machine_tools
+			invention = nitroglycerin
+			iron_steamers = 1
+			invention = prophylaxis_against_malaria
+			money = 1900000
+		}
+		effect = {
+			1723 = { secede_province = THIS }
+			enable_canal = 3
+			1723 = { set_province_flag = panama_canal }
+			prestige = 10
+			money = -2000000
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}	
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\DEN.txt
+************************************************************************
+political_decisions = {
+	danmarks_riges_grundlov = {
+		potential = {
+			tag = DEN
+			government = absolute_monarchy
+			NOT = {
+				has_country_flag = danish_constitutionalism
+			}
+		}
+		
+		allow = {
+			state_n_government = 1
+			NOT = {
+				average_militancy = 3
+			}
+		}
+		
+		effect = {
+			political_reform = landed_voting
+			government = hms_government
+			prestige = 5
+			set_country_flag = danish_constitutionalism
+		}
+	}
+}
+
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\ENG.txt
+************************************************************************
+political_decisions = {
+	repeal_the_corn_laws = {
+		alert = no 
+		potential = {
+			tag = ENG
+			NOT = {
+				has_country_flag = corn_laws_repealed_flag
+			}
+		}
+		allow = {
+			average_militancy = 2
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = corn_laws_repealed
+				duration = 3650
+			}
+			any_pop = {
+				militancy = -1
+				consciousness = 1
+			}
+			set_country_flag = corn_laws_repealed_flag
+		}
+	}
+	crown_empress_of_india = {
+		alert = yes
+		news = yes
+		news_desc_long = "empress_of_india_NEWS_LONG"
+		news_desc_medium = "empress_of_india_NEWS_MEDIUM"
+		news_desc_short = "empress_of_india_NEWS_SHORT"
+		potential = {
+			tag = ENG
+			NOT = {
+				has_country_flag = empress_of_india
+			}
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			OST = {
+				OR = {
+					vassal_of = THIS
+					in_sphere = THIS
+				}
+			}
+		}
+		effect = {
+			prestige = 20
+			any_pop = {
+				militancy = -1
+			}
+			set_country_flag = empress_of_india
+			any_country = {
+				limit = {
+					OR = {
+					primary_culture = assamese
+					primary_culture = bengali
+					primary_culture = bihari
+					primary_culture = manipuri
+					primary_culture = nepali
+					primary_culture = oriya
+					primary_culture = sinhala
+					primary_culture = avadhi
+					primary_culture = kanauji
+					primary_culture = panjabi
+					primary_culture = kashmiri
+					primary_culture = gujarati
+					primary_culture = marathi
+					primary_culture = sindi
+					primary_culture = rajput
+					primary_culture = kannada
+					primary_culture = malayalam
+					primary_culture = tamil
+					primary_culture = telegu
+					tag = OST
+					NOT = { tag = SIK }
+					}
+					vassal_of = THIS
+				}
+				annex_to = THIS
+			}
+		}
+	}
+
+	found_the_bbc = {
+		potential = {
+			tag = ENG
+			year = 1900
+			NOT = {
+				has_country_flag = we_are_live_from_london
+			}
+		}
+
+		allow = {
+			invention = national_radio_networks
+		}
+
+		effect = {
+			any_country = {
+				relation = {
+					who = THIS
+					value = 5
+				}
+			}
+			any_pop = {
+				militancy = -0.5
+			}
+			prestige = 10
+			set_country_flag = we_are_live_from_london
+		}
+	}
+	the_scotland_yard = {
+		potential = {
+			tag = ENG
+			NOT = {
+				has_country_flag = elementary_my_dear_watson # I know, he never says it in the books, yadiyadi.
+			}
+		}
+
+		allow = {
+			realism = 1
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = the_yard
+				duration = -1
+			}
+			set_country_flag = elementary_my_dear_watson
+		}
+	}
+
+	ionian_islands_question = {
+		potential = {
+			tag = ENG
+			ION = {
+				vassal_of = ENG
+			}
+			ION = { ai = yes }
+			NOT = {
+				truce_with = GRE
+			}			
+		}
+
+		allow = {
+			nationalism_n_imperialism = 1
+			war = no
+		}
+
+		effect = {
+			relation = {
+				who = GRE
+				value = 50
+			}
+			diplomatic_influence = {
+				who = GRE
+				value = 50
+			}
+			prestige = 10
+			badboy = -4
+			GRE = {
+				inherit = ION
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					AND = {
+						year = 1864 
+						month = 4
+					}
+				}
+			}
+			modifier = {
+				factor = 1			
+				relation = {
+					who = GRE
+					value = 0
+				}
+			}
+		}
+	}
+
+	rhodesia_charter = {
+		potential = {
+			tag = ENG
+			owns = 2068
+			owns = 2069
+			owns = 2070
+			owns = 2071
+			owns = 2072
+			owns = 2073
+			owns = 2635
+			NOT = {
+				has_country_flag = ian_would_be_proud
+			}
+		}
+
+		allow = {
+			invention = mission_to_civilize
+		}
+
+		effect = {
+			prestige = 10
+			2068 = {
+				change_province_name = "Солсбери"
+				state_scope = {
+					change_region_name = "Южная Родезия"
+					any_owned = {
+						add_core = RHO
+					}
+				}
+			}
+			set_country_flag = ian_would_be_proud
+		}
+	}
+}
+
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\France.txt
+************************************************************************
+political_decisions = {
+	liberty_enlightening_the_world = {
+		potential = {
+			NOT = {
+				has_global_flag = statue_of_liberty_has_been_built
+			}
+			tag = USA
+			USA = {
+				government = democracy
+				owns = 232
+			}
+			year = 1870
+		}
+	
+		allow = {
+			cheap_steel = 1
+		}
+	
+		effect = {
+			set_global_flag = statue_of_liberty_has_been_built
+			any_pop = {
+				militancy = -0.5
+			}
+			USA = {
+				country_event = { id=19300 days=0 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					relation = {
+						who = USA
+						value = 50
+					}
+				}
+			}
+		}
+	}
+	support_french_foreign_legion = {
+		potential = {
+			tag = FRA
+			owns = 1700
+			NOT = {
+				has_country_flag = french_foreign_legion_supported
+			}
+		}
+		allow = {
+			army_professionalism = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = the_french_foreign_legion
+				duration = -1
+			}
+			set_country_flag = french_foreign_legion_supported
+		}
+	}
+	
+	french_military_mission_to_japan = {
+		potential = {
+			tag = FRA
+			exists = JAP
+			JAP = {
+				civilized = no
+			}
+			NOT = {
+				has_country_flag = military_mission_in_japan
+			}
+		}
+		
+		allow = {
+			naval_statistics = 1
+			relation = {
+				who = JAP
+				value = 120
+			}
+		}
+		
+		effect = {
+			relation = {
+				who = JAP
+				value = 40
+			}
+			JAP = {
+				years_of_research = 0.5
+			}
+			prestige = 20
+			set_country_flag = military_mission_in_japan
+		}
+	}
+	
+	palais_garnier = {
+		potential = {
+			NOT = {
+				has_country_flag = palais_garnier_built
+			}
+			tag = FRA
+			owns = 425
+		}
+		
+		allow = {
+			expressionism = 1
+		}
+		
+		effect = {
+			prestige = 10
+			set_country_flag = palais_garnier_built
+		}
+	}
+	
+	the_lambert_charter = {
+		potential = {
+			NOT = {
+				has_country_flag = lambert_has_been_chartered
+			}
+			tag = FRA
+			exists = MAD
+		}
+		
+		allow = {
+			is_greater_power = yes
+			ideological_thought = 1
+			MAD = {
+				civilized = no
+				OR = {
+					in_sphere = FRA
+					NOT = { part_of_sphere = yes }
+				}
+			}
+		}
+		
+		effect = {
+			diplomatic_influence = {
+				who = MAD
+				value = 150
+			}
+			set_country_flag = lambert_has_been_chartered
+		}
+	}
+	
+	end_the_merina_monarchy = {
+		potential = {
+			OR = {
+				has_country_flag = lambert_has_been_chartered
+				MAD = {
+					in_sphere = FRA
+					civilized = no
+			}
+				}
+			NOT = {
+				has_country_flag = merina_monarchy_is_over
+			}
+			exists = MAD
+			MAD = {AI = yes}
+			tag = FRA
+		}
+		
+		allow = {
+			MAD = {
+				in_sphere = FRA
+				civilized = no
+				war = no
+			}
+			invention = mission_to_civilize
+			invention = expansionism
+			war = no
+		}
+		
+		effect = {
+			inherit = MAD
+			set_country_flag = merina_monarchy_is_over
+		}
+	}
+	
+	brazzas_expedition = {
+		potential = {
+			tag = FRA
+			owns = 1977
+			NOT = {
+				has_global_flag = brazzaville_formed
+			}
+		}
+		
+		allow = {
+			invention = mission_to_civilize
+		}
+		
+		effect = {
+			1977 = {
+				change_province_name = "Браззавиль"
+			}
+			prestige = 5
+			set_global_flag = brazzaville_formed
+		}
+	}
+	
+	the_rhine_crisis = {
+		potential = {
+			tag = FRA
+			exists = PRU
+			PRU = {
+				owns = 572
+				owns = 575
+			}
+			NOT = {
+				has_country_flag = crisis_on_the_rhine
+			}
+		}
+		
+		allow = {
+			ideological_thought = 1
+		}
+		
+		effect = {
+			any_country = {
+				limit = {
+					OR = {
+						primary_culture = north_german
+						primary_culture = south_german
+					}
+				}
+				relation = {
+					who = THIS
+					value = -100
+				}
+			}
+			casus_belli = {
+				target = PRU
+				type = acquire_state
+				months = 1
+			}
+			prestige = 10
+			badboy = 4
+			set_country_flag = crisis_on_the_rhine
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					badboy = 0.5
+				}
+			}
+		}
+	}
+	
+	build_the_eiffel_tower = {
+		potential = {
+			tag = FRA
+			NOT = {
+				has_country_flag = the_eiffel_tower_was_built
+			}
+			has_country_flag = world_fair_planner
+		}
+		
+		allow = {
+			cheap_steel = 1
+		}
+		
+		effect = {
+			425 = {
+				add_province_modifier = {
+					name = the_eiffel_tower
+					duration = -1
+				}
+			}
+			prestige = 20
+			set_country_flag = the_eiffel_tower_was_built
+		}
+	}
+	
+	haussmanns_renovations = {
+		potential = {
+			tag = FRA
+			owns = 425
+			NOT = {
+				has_country_flag = extreme_home_makeover
+			}
+			OR = {
+				realism = 1
+				early_railroad = 1
+			}
+		}
+		
+		allow = {
+			impressionism = 1
+			iron_railroad = 1
+			business_banks = 1
+		}
+		
+		effect = {
+			425 = {
+				life_rating = 5
+			}
+			prestige = 10
+			set_country_flag = extreme_home_makeover
+		}
+	}
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\Germany.txt
+************************************************************************
+political_decisions = {
+	ems_dispatch = {
+		potential = {
+			NOT = {
+				has_country_flag = ems_dispatch_sent
+			}
+			OR = {
+				tag = PRU
+				tag = NGF
+			}
+			exists = FRA
+			government = absolute_monarchy
+			owns = 570
+		}
+		
+		allow = {
+			prestige = 30
+			steel_breech_loaded_artillery = 1
+			NOT = {
+				relation = {
+					who = FRA
+					value = 0
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 5
+			FRA = {
+				country_event = { id=19200 days=0 }
+			}
+			set_country_flag = ems_dispatch_sent
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					war_exhaustion = 1
+				}
+			}
+		}
+	}
+	
+	construct_germania_werft = {
+		potential = {
+			NOT = {
+				has_global_flag = germania_werft_has_been_built
+			}
+			OR = {
+				tag = PRU
+				tag = GER
+				tag = NGF
+			}
+			owns = 369
+		}
+		
+		allow = {
+			steel_steamers = 1
+		}
+		
+		effect = {
+			set_global_flag = germania_werft_has_been_built
+			prestige = 1
+			369 = {
+				add_province_modifier = {
+					name = germania_werft
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	support_ruhr_industrialism = {
+		potential = {
+			has_global_flag = ruhr_boom_has_happened
+			OR = {
+				tag = PRU
+				tag = GER
+				tag = NGF
+			}
+			NOT = {
+				tech_school = prussian_tech_school
+			}
+		}
+		
+		allow = {
+			cheap_steel = 1
+			iron_breech_loaded_artillery = 1
+			state_n_government = 1
+			industrial_score = 500
+			owns = 577
+			owns = 578
+			owns = 2561
+			owns = 576
+			owns = 575
+			575 = {
+				state_scope = {
+					has_building = steel_factory
+				}
+			}
+		}
+		
+		effect = {
+			tech_school = prussian_tech_school
+			prestige = 5
+		}
+	}	
+	
+	die_wacht_am_rhein = {
+		potential = {
+			OR = {
+				tag = GER
+				tag = NGF
+				tag = PRU
+			}
+			exists = FRA
+			FRA = {
+				has_country_flag = crisis_on_the_rhine
+			}
+			NOT = {
+				has_country_flag = watching_the_rhine
+			}
+		}
+		allow = {
+			NOT = {
+				relation = {
+					who = FRA
+					value = -50
+				}
+			}
+		}
+		effect = {
+			prestige = 5
+			badboy = -1
+			set_country_flag = watching_the_rhine
+		}
+	}
+	
+	niederwald_denkmal = {
+		potential = {
+			tag = GER
+			has_country_flag = watching_the_rhine
+			war = no
+			NOT = {
+				has_country_flag = niederwald_denkmal
+			}
+		}
+		
+		allow = {
+			is_greater_power = yes
+			nationalism_n_imperialism = 1
+		}
+		
+		effect = {
+			any_pop = {
+				militancy = -1
+			}
+			badboy = -3
+			set_country_flag = niederwald_denkmal
+		}
+	}
+	
+	schwabing_circles = {
+		potential = {
+			OR = {
+				tag = BAV
+				tag = SGF
+				tag = GER
+			}
+			owns = 599
+			NOT = {
+				has_country_flag = schwabing_encircled
+			}
+		}
+		allow = {
+			expressionism = 1
+		}
+		effect = {
+			prestige = 20
+			set_country_flag = schwabing_encircled
+		}
+	}
+	
+	support_biesterfelds = {
+		potential = {
+			tag = LIP
+			year = 1880
+			NOT = {
+				has_country_flag = lippe_dispute_solved
+			}
+			exists = PRU
+		}
+		
+		allow = {
+			is_independant = yes
+		}
+		
+		effect = {
+			prestige = 10
+			set_country_flag = lippe_dispute_solved
+		}
+	}
+	
+	support_schaumburgs = {
+		potential = {
+			tag = LIP
+			year = 1880
+			NOT = {
+				has_country_flag = lippe_dispute_solved
+			}
+			exists = PRU
+		}
+		
+		allow = {
+			is_independant = yes
+		}
+		
+		effect = {
+			relation = {
+				who = PRU
+				value = 50
+			}
+			set_country_flag = lippe_dispute_solved
+		}
+		
+	}
+	
+	das_zivilgesetzbuch = {
+		potential = {
+			tag = HES
+			NOT = {
+				has_country_flag = code_of_laws
+			}
+		}
+		
+		allow = {
+			ideological_thought = 1
+		}
+		
+		effect = {
+			prestige = 5
+			years_of_research = 0.05
+			any_pop = {
+				militancy = -1
+			}
+			set_country_flag = code_of_laws
+		}
+	}
+	
+	kaiser_wilhelms_land = {
+		potential = {
+			tag = GER
+			owns = 1531
+			owns = 2530
+			owns = 2531
+			owns = 2537
+			owns = 2539
+			NOT = {
+				has_country_flag = wir_wollen_unseren_alten_kaiser_wilhelm_wiederhaben
+			}
+		}
+		
+		allow = {
+			invention = mission_to_civilize
+		}
+		
+		effect = {
+			prestige = 10
+			2531 = {
+				change_province_name = "Фридрих-Вильгельмсхафен"
+				state_scope = {
+					change_region_name = "Земля Кайзера Вильгельма"
+				}
+			}
+			set_country_flag = wir_wollen_unseren_alten_kaiser_wilhelm_wiederhaben
+		}
+	}
+	
+	the_heligoland_question = {
+		potential = {
+			tag = GER
+			NOT = {
+				has_country_flag = has_questioned_heligoland
+			}
+		}
+		
+		allow = {
+			OR = {
+				is_greater_power = yes
+				invention = national_fraternity
+			}
+		}
+		
+		effect = {
+			533 = {
+				add_core = GER # Heligoland is my last territorial demand!
+			}
+			set_country_flag = has_questioned_heligoland
+		}
+	}
+	
+	construct_the_walhalla = {
+		potential = {
+			OR = {
+				tag = BAV
+				tag = SGF
+				tag = GER
+			}
+			owns = 602
+			NOT = {
+				has_global_flag = the_walhalla_is_built
+			}
+		}
+		
+		allow = {
+			romanticism = 1
+		}
+		
+		effect = {
+			602 = {
+				add_province_modifier = {
+					name = the_walhalla
+					duration = -1
+				}
+			}
+			set_global_flag = the_walhalla_is_built
+		}
+	}
+	
+	introduce_the_presbyteries = {
+		potential = {
+			tag = HAN
+			NOT = {
+				has_country_flag = presbyteries_introduced
+			}
+		}
+		allow = {
+			average_militancy = 3
+			NOT = {
+				vassal_of = ENG
+			}
+		}
+		
+		effect = {
+			any_pop = {
+				limit = {
+					has_pop_religion = protestant
+				}
+				militancy = -1
+			}
+			set_country_flag = presbyteries_introduced
+		}
+	}
+	
+	von_moltkes_staff_reforms = {
+		potential = {
+			OR = {
+				tag = PRU
+				tag = GER
+				tag = NGF
+			}
+			NOT = {
+				has_country_flag = von_moltke
+			}
+		}
+		allow = {
+			army_decision_making = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = prussian_general_staff
+				duration = 10950
+			}
+			prestige = 5
+			set_country_flag = von_moltke
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = no
+			}
+		}
+	}
+	
+	the_ruhr_boom = {
+		potential = {
+			OR = {
+				tag = PRU
+				tag = GER
+				tag = NGF
+			}
+			owns = 578
+			owns = 2561
+			owns = 575
+			NOT = {
+				has_global_flag = ruhr_boom_has_happened
+			}
+		}
+		
+		allow = {
+			market_structure = 1
+			organized_factories = 1
+			early_railroad = 1
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = ruhr_boom
+				duration = 3650
+			}
+			set_global_flag = ruhr_boom_has_happened
+		}
+	}
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\GRE.txt
+************************************************************************
+political_decisions = {
+	hellenic_parliament = {
+		potential = {
+			tag = GRE
+			government = absolute_monarchy
+			NOT = {
+				has_country_flag = voule_ton_ellinon
+			}
+		}
+	
+		allow = {
+			plurality = 3
+			prestige = 1
+		}
+		
+		effect = {
+			set_country_flag = voule_ton_ellinon
+			political_reform = wealth_weighted_voting
+			government = hms_government
+			any_pop = {
+				militancy = -2
+			}
+		}
+	}
+	
+	megali_idea = {
+		potential = {
+			tag = GRE
+			NOT = {
+				has_country_flag = greece_has_got_a_brand_new_bag
+			}
+		}
+		
+		allow = {
+			invention = national_fraternity
+			owns = 832
+			owns = 831
+			owns = 833
+			owns = 825
+			owns = 824
+			owns = 820
+			owns = 819
+			owns = 821
+			owns = 805
+			owns = 822
+			owns = 823
+			owns = 829
+			owns = 830
+			owns = 844
+			owns = 843
+			owns = 846
+		}
+		
+		effect = {
+			prestige = 20
+			badboy = -5
+			828 = {
+				add_core = GRE
+			}
+			858 = {
+				add_core = GRE
+			}
+			859 = {
+				add_core = GRE
+			}
+			860 = {
+				add_core = GRE
+			}
+			861 = {
+				add_core = GRE
+			}
+			862 = {
+				add_core = GRE
+			}
+			863 = {
+				add_core = GRE
+			}
+			864 = {
+				add_core = GRE
+			}
+			865 = {
+				add_core = GRE
+			}
+			869 = {
+				add_core = GRE
+			}
+			870 = {
+				add_core = GRE
+			}
+			872 = {
+				add_core = GRE
+			}
+			
+			set_country_flag = greece_has_got_a_brand_new_bag
+		}
+	}
+	
+	form_byzantine_empire = {
+		potential = {
+			tag = GRE
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+			is_greater_power = yes			
+		}
+		
+		allow = {
+			owns = 825
+			owns = 828
+			owns = 829
+			owns = 830
+			owns = 831
+			owns = 832
+			owns = 833
+			owns = 834
+			owns = 835
+			owns = 836
+			owns = 837
+			owns = 838
+			owns = 839
+			owns = 840
+			owns = 841
+			owns = 842
+			owns = 843
+			owns = 844
+			owns = 845
+			owns = 846
+			owns = 847
+			owns = 848
+			owns = 858
+			owns = 859
+			owns = 860	# Constantinople
+			owns = 861
+			owns = 862
+			owns = 863
+			owns = 864
+			owns = 865
+			owns = 866
+			owns = 867
+			owns = 868
+			owns = 869
+			owns = 870
+			owns = 871
+			owns = 872
+			owns = 873
+			owns = 874
+			owns = 875			
+		}
+		
+		effect = {
+			change_tag = BYZ
+			capital = 860
+			860 = {
+				change_province_name = "Константинополь"
+			}
+			any_owned = {
+				limit = {
+					is_colonial = no
+					OR = {
+						culture = greek
+						culture = turkish
+					}
+				}
+				add_core = BYZ
+			}
+			prestige = 40
+			badboy = -10
+		}
+	}
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\GreatPowers.txt
+************************************************************************
+political_decisions = {
+	egyptological_excavations = {
+		potential = {
+			civilized = yes
+			is_greater_power = yes
+			nationalism_n_imperialism = 1
+			exists = EGY
+			1767 = {
+				owned_by = EGY
+			}
+			NOT = {
+				tag = EGY
+				has_global_flag = tutankhamun_found
+				has_country_modifier = egyptian_excavations
+				has_country_modifier = international_negotiations
+			}
+		}
+
+		allow = {
+			prestige = 25
+		}
+
+		effect = {
+			EGY = {
+				country_event = { id=19040 days=0 }
+			}
+			add_country_modifier = {
+				name = international_negotiations
+				duration = 730
+			}
+		}
+	}
+
+	forced_egyptological_excavations = {
+		potential = {
+			civilized = yes
+			nationalism_n_imperialism = 1
+			OR = {
+				owns = 1767
+				1767 = {
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			NOT = {
+				has_global_flag = tutankhamun_found
+				has_country_modifier = egyptian_excavations
+			}
+		}
+
+		allow = {
+			civilized = yes
+			owns = 1767
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = egyptian_excavations
+				duration = -1
+			}
+		}
+	}
+
+
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\Italy.txt
+************************************************************************
+political_decisions = {
+	cavours_diplomacy = {
+		potential = {
+			OR = {
+				AND = { 
+					tag = ITA
+					NOT = { exists = SAR }
+				}
+				AND = { 
+					tag = SAR
+					NOT = { exists = ITA }
+				}
+			}
+			NOT = {
+				has_country_flag = cavour_has_done_his
+			}
+			owns = 465
+			owns = 466
+			owns = 472
+			FRA = {
+				exists = yes
+				is_greater_power = yes
+			}
+		}
+		allow = {
+			relation = {
+				who = FRA
+				value = 150
+			}
+			FRA = {
+				alliance_with = THIS
+			}
+		}
+		
+		effect = {
+			prestige = 20
+			badboy = -10
+			relation = {
+				who = FRA
+				value = 50
+			}
+			726 = {
+				add_core = SAR
+			}
+			727 = {
+				add_core = SAR
+			}
+			728 = {
+				add_core = SAR
+			}
+			729 = {
+				add_core = ITA
+			}
+			730 = {
+				add_core = ITA
+			}
+			731 = {
+				add_core = ITA
+			}
+			732 = {
+				add_core = ITA
+			}
+			733 = {
+				add_core = ITA
+			}
+			465 = {
+				remove_core = ITA
+				remove_core = SAR
+				add_core = FRA
+				secede_province = FRA
+			}
+			466 = {
+				remove_core = ITA
+				remove_core = SAR
+				add_core = FRA
+				secede_province = FRA
+			}
+			472 = {
+				remove_core = ITA
+				remove_core = SAR
+				add_core = FRA
+				secede_province = FRA
+			}
+			set_country_flag = cavour_has_done_his
+		}
+	}
+	
+	award_order_of_st_francis = {
+		potential = {
+			tag = SIC
+			government = absolute_monarchy
+			NOT = {
+				has_country_flag = order_awarded
+			}
+		}
+		
+		allow = {
+			prestige = 25
+		}
+		
+		effect = {
+			years_of_research = 0.1
+			prestige = 2
+			set_country_flag = order_awarded
+		}
+	}
+	
+	statuto_albertino = {
+		potential = {
+			tag = SAR
+			government = absolute_monarchy
+			NOT = {
+				has_country_flag = get_your_statuto_albertino_here
+			}
+		}
+		
+		allow = {
+			average_militancy = 3
+		}
+		
+		effect = {
+			any_pop = {
+				militancy = -2
+			}
+			prestige = 5
+			set_country_flag = get_your_statuto_albertino_here
+		}
+	}
+	build_vittoriano = {
+		potential = {
+			tag = ITA
+			government = absolute_monarchy
+			NOT = {
+				has_country_flag = vittoriano_built
+			}
+		}
+		
+		allow = {
+			realism = 1
+		}
+		
+		effect = {
+			prestige = 5
+			any_pop = {
+				militancy = -1
+			}
+			set_country_flag = vittoriano_built
+		}
+	}
+	the_case_of_edgardo_mortara = {
+		potential = {
+			tag = PAP
+			government = absolute_monarchy
+			NOT = {
+				has_country_flag = edgardo_mortara
+			}
+			year = 1858
+			owns = 741
+		}
+		allow = {
+			idealism = 1
+		}
+		effect = {
+			prestige = 15
+			badboy = 1
+			any_greater_power = {
+				relation = {
+					value = -20
+					who = THIS
+				}
+			}
+			set_country_flag = edgardo_mortara
+		}
+	}
+	
+	the_first_vatican_council = {
+		potential = {
+			tag = PAP
+			government = absolute_monarchy
+			NOT = {
+				has_country_flag = first_vatican_council_held
+			}
+		}
+		
+		allow = {
+			empiricism = 1
+		}
+		
+		effect = {
+			prestige = 10
+			badboy = 1
+			any_country = {
+				limit = {
+					religion = catholic
+				}
+				relation = {
+					who = THIS
+					value = 10
+				}
+			}
+			set_country_flag = first_vatican_council_held
+		}
+	}
+	
+	law_of_guarantees = {
+		potential = {
+			tag = ITA
+			NOT = {
+				capital = 749
+			}
+		}
+		
+		allow = {
+			owns = 749
+		}
+		
+		effect = {
+			capital = 749
+			prestige = 5
+			badboy = -2
+		}
+	}
+	
+	italia_irredenta = {
+		potential = {
+			tag = ITA
+			NOT = {
+				has_country_flag = italia_ulterior
+			}
+		}
+		
+		allow = {
+			OR = {
+				invention = national_fraternity
+				is_greater_power = yes
+			}
+		}
+		
+		effect = {
+			set_country_flag = italia_ulterior
+			729 = {
+				add_core = ITA
+			}
+			730 = {
+				add_core = ITA
+			}
+			731 = {
+				add_core = ITA
+			}
+			732 = {
+				add_core = ITA
+			}
+			733 = {
+				add_core = ITA
+			}
+			734 = {
+				add_core = ITA
+			}
+			735 = {
+				add_core = ITA
+			}
+			736 = {
+				add_core = ITA
+			}
+			737 = {
+				add_core = ITA
+			}
+			769 = {
+				add_core = ITA
+			}
+			770 = {
+				add_core = ITA
+			}
+			778 = {
+				add_core = ITA
+			}
+			780 = {
+				add_core = ITA
+			}
+			781 = {
+				add_core = ITA
+			}
+			782 = {
+				add_core = ITA
+			}
+			2582 = {
+				add_core = ITA
+			}
+		}
+	}
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\LAF.txt
+************************************************************************
+political_decisions = {
+	united_andes = {
+		potential = {
+			primary_culture = north_andean
+			NOT = {
+				exists = ANU
+				exists = LAF
+			}
+		}
+		allow = {
+			war = no
+			ANU = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							OR = {
+								vassal_of = THIS
+								in_sphere = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 15
+			add_accepted_culture = south_andean
+			change_tag = ANU
+			any_country = {
+				limit = {
+					OR = {
+						primary_culture = north_andean
+						primary_culture = south_andean
+					}
+					OR = {
+						vassal_of = THIS
+						in_sphere = THIS
+						}
+					NOT = {
+						tag = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			any_owned = {
+				limit = {
+					continent = south_america
+				}
+				add_core = ANU
+			}
+		}
+	}
+	
+	united_south_america = {
+		potential = {
+			tag = ANU
+		}
+		allow = {
+		}
+		effect = {
+			prestige = 5
+			change_tag = LAF
+			set_global_flag = latin_war
+			add_accepted_culture = platinean
+			add_accepted_culture = brazilian
+			country_event = 100003
+			country_event = { id = 99999 days = 3 }
+			any_country = {
+				limit = {
+					capital_scope = {
+						continent = south_america
+					}
+				}
+				any_owned = {
+					add_core = LAF
+				}
+				create_alliance = BRZ
+				create_alliance = ARG
+				create_alliance = URU
+				create_alliance = PRG
+				country_event = 100003
+			}
+			any_owned = {
+				add_core = LAF
+			}
+		}
+	}
+	
+	
+	
+	laf_cores = {
+		potential = {
+			tag = LAF
+			NOT = {
+				has_country_flag = laf_cores
+			}
+		}
+		
+		allow = {
+			is_greater_power = yes
+		}
+		
+		effect = {
+			prestige = 10
+			set_country_flag = laf_cores
+			1979 = {
+				add_core = LAF
+			}
+			2131 = {
+				add_core = LAF
+			}
+			2239 = {
+				add_core = LAF
+			}
+			1979 = {
+				add_core = LAF
+			}
+			2240 = {
+				add_core = LAF
+			}
+			2241 = {
+				add_core = LAF
+			}
+			2242 = {
+				add_core = LAF
+			}
+			2243 = {
+				add_core = LAF
+			}
+			2245 = {
+				add_core = LAF
+			}
+			2246 = {
+				add_core = LAF
+			}
+		}
+	}
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\LIB.txt
+************************************************************************
+political_decisions = {
+	liberate_liberia = {
+   		 potential = {
+		 	tag = LIB
+		 	civilized = no
+		 	NOT = {
+				has_country_flag = liberia_liberated
+				}
+    		}
+
+    		allow = { 
+				war = no
+				vassal_of = USA 
+				USA = {
+					state_n_government = 1
+					money = 5000
+				}
+    		}
+
+    		effect = {
+        		USA = {
+		    		diplomatic_influence = { 
+					who = LIB 
+					value = 300   # So Liberia can be liberated but still fall under US protection/exploitation
+				}
+			release_vassal = LIB
+			prestige = 10
+			money = -5000
+			}
+			add_country_modifier = {
+				name = liberian_research_boost
+				duration = -1
+			}
+			set_country_flag = liberia_liberated
+			money = 5000
+			prestige = 5
+			years_of_research = 3
+			any_pop = {
+				ideology = {
+					value = liberal
+					factor = 0.05
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+    	}
+
+	liberian_constitution = {
+		potential = {
+			tag = LIB
+			has_country_flag = liberia_liberated
+			NOT = {
+				has_country_flag = liberian_constitution_enacted
+			}
+		}
+
+		allow = {
+			civilized = yes
+		}
+
+		effect = {
+			set_country_flag = liberian_constitution_enacted
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+			prestige = 5
+			any_pop = {
+				consciousness = 2
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\MEX.txt
+************************************************************************
+political_decisions = {
+	restore_mexican_empire = {
+		potential = {
+			tag = MEX
+			government = democracy
+			liberal = 20
+			NOT = {
+				has_country_flag = we_have_tried_this_once
+			}
+		}
+		allow = {
+			OR = {
+				ruling_party_ideology = conservative
+				ruling_party_ideology = reactionary
+			}
+			conservative = 40
+			average_militancy = 4
+		}
+		effect = {
+			government = hms_government
+			any_pop = {
+				scaled_militancy = {
+					ideology = liberal
+					factor = 8
+				}
+			}
+			set_country_flag = we_have_tried_this_once
+		}
+	}
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\MostlyHarmless.txt
+************************************************************************
+political_decisions = {
+	miskatonic_university = {
+		potential = {
+			tag = NEN
+			owns = 245
+			NOT = {
+				has_country_flag = miskatonic_u_class_of_1836
+			}
+		}
+		
+		allow = {
+			invention = romanticist_literature
+		}
+		
+		effect = {
+			245 = {
+				change_province_name = "Аркхам"
+				add_province_modifier = {
+					name = miskatonic_campus
+					duration = -1
+				}
+			}
+			set_country_flag = miskatonic_u_class_of_1836
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}		
+	}
+}
+
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\mp_mod.txt
+************************************************************************
+political_decisions = {
+   givemoney_on = { 
+	alert = no potential = { not = { has_country_flag = givemoney } } 
+	allow = { ai = no } 
+	effect = { set_country_flag = givemoney } 
+	}
+   givemoney_off = {
+	alert = no potential = { has_country_flag = givemoney } 
+	allow = { ai = no } 
+	effect = { clr_country_flag = givemoney } 
+	}
+	
+	givemoney_ENG = { alert = no potential = { has_country_flag = givemoney ENG = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 ENG = {money = 225000}  } }
+	givemoney_RUS = { alert = no potential = { has_country_flag = givemoney RUS = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 RUS = {money = 225000}  } }
+	givemoney_FRA = { alert = no potential = { has_country_flag = givemoney FRA = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 FRA = {money = 225000}  } }
+	givemoney_PRU = { alert = no potential = { has_country_flag = givemoney PRU = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 PRU = {money = 225000}  } }
+	givemoney_NGF = { alert = no potential = { has_country_flag = givemoney NGF = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 NGF = {money = 225000}  } }
+	givemoney_GER = { alert = no potential = { has_country_flag = givemoney GER = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 GER = {money = 225000}  } }
+	givemoney_AUS = { alert = no potential = { has_country_flag = givemoney AUS = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 AUS = {money = 225000}  } }
+	givemoney_KUK = { alert = no potential = { has_country_flag = givemoney KUK = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 KUK = {money = 225000}  } }
+	givemoney_SGF = { alert = no potential = { has_country_flag = givemoney SGF = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 SGF = {money = 225000}  } }
+	givemoney_USA = { alert = no potential = { has_country_flag = givemoney USA = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 USA = {money = 225000}  } }
+	givemoney_CSA = { alert = no potential = { has_country_flag = givemoney CSA = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 CSA = {money = 225000}  } }
+	givemoney_JAP = { alert = no potential = { has_country_flag = givemoney JAP = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 JAP = {money = 225000}  } }
+	givemoney_ITA = { alert = no potential = { has_country_flag = givemoney ITA = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 ITA = {money = 225000}  } }
+	givemoney_SWE = { alert = no potential = { has_country_flag = givemoney SWE = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 SWE = {money = 225000}  } }
+	givemoney_SCA = { alert = no potential = { has_country_flag = givemoney SCA = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 SCA = {money = 225000}  } }
+	givemoney_BEL = { alert = no potential = { has_country_flag = givemoney BEL = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 BEL = {money = 225000}  } }
+	givemoney_NET = { alert = no potential = { has_country_flag = givemoney NET = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 NET = {money = 225000}  } }
+	givemoney_SPA = { alert = no potential = { has_country_flag = givemoney SPA = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 SPA = {money = 225000}  } }
+	givemoney_SIC = { alert = no potential = { has_country_flag = givemoney SIC = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 SIC = {money = 225000}  } }
+	givemoney_TUR = { alert = no potential = { has_country_flag = givemoney TUR = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 TUR = {money = 225000}  } }
+	givemoney_CAN = { alert = no potential = { has_country_flag = givemoney CAN = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 CAN = {money = 225000}  } }
+	givemoney_COL = { alert = no potential = { has_country_flag = givemoney COL = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 COL = {money = 225000}  } }
+	givemoney_QUE = { alert = no potential = { has_country_flag = givemoney QUE = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 QUE = {money = 225000}  } }
+	givemoney_CLM = { alert = no potential = { has_country_flag = givemoney CLM = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 CLM = {money = 225000}  } }
+	givemoney_ANU = { alert = no potential = { has_country_flag = givemoney ANU = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 ANU = {money = 225000}  } }
+	givemoney_LAF = { alert = no potential = { has_country_flag = givemoney LAF = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 LAF = {money = 225000}  } }
+	givemoney_AST = { alert = no potential = { has_country_flag = givemoney AST = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 AST = {money = 225000}  } }
+	givemoney_NZL = { alert = no potential = { has_country_flag = givemoney NZL = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 NZL = {money = 225000}  } }
+	givemoney_GCO = { alert = no potential = { has_country_flag = givemoney GCO = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 GCO = {money = 225000}  } }
+	givemoney_SAR = { alert = no potential = { has_country_flag = givemoney SAR = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 SAR = {money = 225000}  } }
+	givemoney_CHI = { alert = no potential = { has_country_flag = givemoney CHI = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 CHI = {money = 225000}  } }
+	givemoney_PER = { alert = no potential = { has_country_flag = givemoney PER = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 PER = {money = 225000}  } }
+	givemoney_BRZ = { alert = no potential = { has_country_flag = givemoney BRZ = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 BRZ = {money = 225000}  } }
+	givemoney_GRE = { alert = no potential = { has_country_flag = givemoney GRE = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 GRE = {money = 225000}  } }
+	givemoney_SER = { alert = no potential = { has_country_flag = givemoney SER = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 SER = {money = 225000}  } }
+	givemoney_YUG = { alert = no potential = { has_country_flag = givemoney YUG = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 YUG = {money = 225000}  } }
+	givemoney_EGY = { alert = no potential = { has_country_flag = givemoney EGY = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 EGY = {money = 225000}  } }
+	givemoney_HND = { alert = no potential = { has_country_flag = givemoney HND = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 HND = {money = 225000}  } }
+	givemoney_POL = { alert = no potential = { has_country_flag = givemoney POL = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 POL = {money = 225000}  } }
+	givemoney_EST = { alert = no potential = { has_country_flag = givemoney EST = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 EST = {money = 225000}  } }
+	givemoney_LIT = { alert = no potential = { has_country_flag = givemoney LIT = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 LIT = {money = 225000}  } }
+	givemoney_LAT = { alert = no potential = { has_country_flag = givemoney LAT = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 LAT = {money = 225000}  } }
+	givemoney_UKR = { alert = no potential = { has_country_flag = givemoney UKR = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 UKR = {money = 225000}  } }
+	givemoney_BYE = { alert = no potential = { has_country_flag = givemoney BYE = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 BYE = {money = 225000}  } }
+	givemoney_PLC = { alert = no potential = { has_country_flag = givemoney PLC = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 PLC = {money = 225000}  } }
+	givemoney_UBD = { alert = no potential = { has_country_flag = givemoney UBD = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 UBD = {money = 225000}  } }
+	givemoney_FIN = { alert = no potential = { has_country_flag = givemoney FIN = { exists = yes} } allow = { ai = no money = 250000 } effect = { money = -250000 FIN = {money = 225000}  } }
+
+concede_elsass = {
+	potential = {
+		tag = NGF
+		NOT = {
+			has_country_flag = conceded_elsass
+			}
+		}
+	allow = {
+		prestige = 75
+		war = no
+		year = 1871
+	}
+	effect = {
+		410 = {
+			remove_core = GER
+		}
+		409 = {
+			remove_core = GER
+		}
+		412 = {
+			remove_core = GER
+		}
+		prestige = -75
+		any_pop = {
+			militancy = 3
+			}
+		set_country_flag = conceded_elsass
+		}
+	ai_will_do = {
+		factor = 0
+		modifier = {
+			factor = 1
+			AND = {
+				prestige = 300
+			}
+		}
+	}
+	}
+	
+	russia_rename_sakhalin = {
+		potential = {
+			tag = RUS
+			NOT = {
+				has_global_flag = russia_has_renamed_sakhalin
+			}
+			owns = 1086
+			owns = 1087
+		}
+		allow = {
+		}
+		effect = {
+			1087 = {
+				change_province_name = "Корсаков"
+			}
+			prestige = 5
+			set_global_flag = russia_has_renamed_sakhalin
+			clr_global_flag = japan_has_renamed_sakhalin
+		}
+	}
+	
+	japan_rename_sakhalin = {
+		potential = {
+			tag = JAP
+			NOT = {
+				has_global_flag = japan_has_renamed_sakhalin
+			}
+			owns = 1086
+			owns = 1087
+		}
+		allow = {
+		}
+		effect = {
+			1087 = {
+				change_province_name = "Отомари"
+			}
+			prestige = 5
+			set_global_flag = japan_has_renamed_sakhalin
+			clr_global_flag = russia_has_renamed_sakhalin
+		}
+	}
+	
+	russia_rename_kuriles = {
+		potential = {
+			tag = RUS
+			NOT = {
+				has_global_flag = russia_has_renamed_kuriles
+			}
+			owns = 1088
+			owns = 1089
+		}
+		allow = {
+		}
+		effect = {
+			1088 = {
+				change_province_name = "Парамушир"
+			}
+			1089 = {
+				change_province_name = "Итуруп"
+			}
+			prestige = 5
+			set_global_flag = russia_has_renamed_kuriles
+			clr_global_flag = japan_has_renamed_kuriles
+		}
+	}
+	
+	japan_rename_kuriles = {
+		potential = {
+			tag = JAP
+			NOT = {
+				has_global_flag = japan_has_renamed_kuriles
+			}
+			owns = 1088
+			owns = 1089
+		}
+		allow = {
+		}
+		effect = {
+			1088 = {
+				change_province_name = "Парамуширо-то"
+			}
+			1089 = {
+				change_province_name = "Эторофу"
+			}
+			prestige = 5
+			set_global_flag = japan_has_renamed_kuriles
+			clr_global_flag = russia_has_renamed_kuriles
+		}
+	}
+	
+	
+	
+	move_capital_to_tokyo = {
+		potential = {
+			tag = JAP
+			owns = 1649 
+			capital = 1657
+		}
+		
+		allow = {
+			civilized = yes
+		}
+		
+		effect = {
+			capital = 1649
+			prestige = 5
+			1649 = {
+				change_province_name = "Токио"
+				life_rating = 10
+			}
+			any_pop = {
+				limit = {
+					is_primary_culture = yes
+				}
+				consciousness = 3
+				militancy = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\NationalUnification.txt
+************************************************************************
+political_decisions = {
+	form_south_german_confederation = {
+		potential = {
+			is_greater_power = yes
+			primary_culture = south_german
+			NOT = {
+				exists = SGF
+				exists = GER
+				tag = AUS
+				tag = KUK
+			}
+		}	
+		allow = {
+			war = no
+			GER = {
+				all_core = {
+					OR = {
+						OR = {
+							owned_by = THIS
+							province_id = 370
+							province_id = 371
+							province_id = 410
+							province_id = 409
+							province_id = 412
+							owner = {
+								in_sphere = THIS
+							}
+						}
+						NOT = {
+							culture = south_german
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			any_country = {
+				limit = {
+					primary_culture = south_german
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			any_owned = {
+				limit = {
+					is_core = GER
+				}
+				add_core = SGF
+			}
+			change_tag = SGF
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	austrian_form_south_german_confederation = {
+		potential = {
+			OR = {
+				tag = AUS
+			}
+			is_greater_power = yes
+			primary_culture = south_german
+			NOT = {
+				exists = SGF
+			}
+		}	
+		allow = {
+			war = no
+			GER = {
+				all_core = {
+					OR = {
+						OR = {
+							province_id = 370 # Ignore Schleswig
+							province_id = 371 # Ignore Schleswig
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+						NOT = {
+							culture = south_german
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			any_country = {
+				limit = {
+					primary_culture = south_german
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			any_owned = {
+				limit = {
+					is_core = GER
+				}
+				add_core = SGF
+			}
+			change_tag = SGF
+			add_accepted_culture = czech
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	form_north_german_confederation = {
+		potential = {
+			is_greater_power = yes
+			primary_culture = north_german
+			NOT = {
+				exists = GER
+				exists = NGF
+			}
+		}	
+		allow = {
+			war = no
+			GER = {
+				all_core = {
+					OR = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+						NOT = {
+							culture = north_german
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 15
+			any_country = {
+				limit = {
+					OR = {
+						primary_culture = north_german
+						tag = SCH 
+					}
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			any_owned = {
+				limit = {
+					is_core = GER
+				}
+				add_core = NGF
+			}			
+			change_tag = NGF
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	form_union_nation = {
+		potential = {
+			culture_has_union_tag = yes
+			NOT = {
+				OR = {
+					cultural_union = { exists = yes }
+					is_culture_group = germanic
+					is_culture_group = scandinavian
+					is_culture_group = italian
+					is_culture_group = arab
+					is_culture_group = andean_american_cultures
+					tag = ECU
+					tag = CLM
+					tag = VNZ
+				}
+			}
+		}
+		
+		allow = {
+			prestige = 45
+			war = no
+			cultural_union = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 20
+			change_tag = culture
+			any_country = {
+				limit = {
+					NOT = {
+						is_greater_power = yes
+						tag = AUS
+						tag = KUK
+					}
+					is_culture_group = THIS
+					in_sphere = THIS
+				}
+				country_event = { id=11101 days=0 }
+			}
+			add_accepted_culture = union
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+		
+	form_germany = {
+		news = yes
+		news_desc_long = "form_germany_NEWS_LONG"
+		news_desc_medium = "form_germany_NEWS_MEDIUM"
+		news_desc_short = "form_germany_NEWS_SHORT"
+		potential = {
+			is_culture_group = germanic
+			NOT = {
+				exists = GER
+				tag = ISR
+			}
+		}
+		
+		allow = {
+			is_greater_power = yes
+			prestige = 45
+			war = no
+			GER = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 20
+			change_tag = GER
+			add_accepted_culture = north_german
+			add_accepted_culture = south_german
+			any_country = {
+				limit = {
+					is_culture_group = germanic
+					in_sphere = THIS
+				}
+				country_event = { id=11101 days=0 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_italy = {
+		news = yes
+		news_desc_long = "form_italy_NEWS_LONG"
+		news_desc_medium = "form_italy_NEWS_MEDIUM"
+		news_desc_short = "form_italy_NEWS_SHORT"
+		potential = {
+			is_culture_group = italian
+			
+			NOT = {
+				exists = ITA
+			}
+		}
+		
+		allow = {
+			is_greater_power = yes
+			prestige = 45
+			war = no
+			ITA = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 20
+			change_tag = ITA
+			capital = 749
+			add_accepted_culture = north_italian
+			add_accepted_culture = south_italian
+			any_country = {
+				limit = {
+					is_culture_group = italian
+					in_sphere = THIS
+				}
+				country_event = { id=11101 days=0 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_scandinavia = {
+		news = yes
+		news_desc_long = "form_scandinavia_NEWS_LONG"
+		news_desc_medium = "form_scandinavia_NEWS_MEDIUM"
+		news_desc_short = "form_scandinavia_NEWS_SHORT"
+		potential = {
+			OR = {
+				is_culture_group = scandinavian
+				is_culture_group = bears
+			}
+			NOT = {
+				exists = SCA
+			}
+		}
+		
+		allow = {
+			prestige = 45
+			war = no
+			SCA = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							OR = {
+								in_sphere = THIS
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 20
+			change_tag = SCA
+			add_accepted_culture = swedish
+			add_accepted_culture = danish
+			add_accepted_culture = norwegian
+			add_accepted_culture = finnish
+			add_accepted_culture = icelandic
+			add_accepted_culture = sami
+			any_country = {
+				limit = {
+					NOT = {
+						is_greater_power = yes
+					}
+					is_culture_group = scandinavian
+							OR = {
+								in_sphere = THIS
+								vassal_of = THIS
+							}
+				}
+				annex_to = THIS
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	concede_finland = {
+		potential = {
+			tag = SWE
+			NOT = {
+				has_country_flag = Conceded_Finland
+			}
+		}
+		
+		allow = {
+			NOT = {
+				prestige = 40
+			}
+			average_consciousness = 4
+		}
+		
+		effect = {
+			RUS_336 = {
+				remove_core = SWE
+			}
+			RUS_340 = {
+				remove_core = SWE
+			}
+			prestige = 20
+			any_pop = {
+				militancy = -1
+			}
+			set_country_flag = Conceded_Finland
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					average_militancy = 4
+				}
+			}
+		}
+	}
+	
+	reichsland_elsass = {
+		potential = {
+			OR = {
+				tag = PRU
+				tag = GER
+				tag = NGF
+			}
+			owns = 410
+			owns = 409
+			owns = 412
+			NOT = {
+				has_global_flag = germany_has_renamed_elsass
+			}
+		}
+		
+		allow = {
+			prestige = 10
+		}
+		
+		effect = {
+			410 = {
+				change_province_name = "Кольмар"
+			}
+			409 = {
+				change_province_name = "Штрассбург"
+				state_scope = {
+					change_region_name = "Эльзас-Лотаринген"
+				}
+			}
+			prestige = 5
+			set_global_flag = germany_has_renamed_elsass
+		}
+	}
+	
+	restore_alsace = {
+		potential = {
+			tag = FRA
+			has_global_flag = germany_has_renamed_elsass
+			owns = 410
+			owns = 409
+			owns = 412
+		}
+		
+		allow = {
+			prestige = 10
+		}
+		
+		effect = {
+			410 = {
+				change_province_name = "Кольмар"
+			}
+			409 = {
+				change_province_name = "Страсбур"
+				state_scope = {
+					change_region_name = "Эльзас-Лотарингия"
+				}
+			}
+			prestige = 10
+			clr_global_flag = germany_has_renamed_elsass
+		}
+	}
+	
+	form_gran_colombia = {
+		potential = {
+			OR = {
+				tag = ECU
+				tag = CLM
+				tag = VNZ
+			}
+			NOT = {
+				exists = GCO
+			}
+		}	
+		allow = {
+			war = no
+			GCO = {
+				all_core = {
+					owner = {
+						OR = {
+							tag = THIS
+							in_sphere = THIS
+							vassal_of = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 25
+			badboy = -20
+			any_country = {
+				limit = {
+					OR = {
+						vassal_of = THIS
+						in_sphere = THIS
+						}
+					primary_culture = north_andean
+				}
+				annex_to = THIS
+			}
+			any_owned = {
+				limit = {
+					continent = south_america
+				}
+				add_core = ANU
+			}
+			2242 = { add_core = GCO } # Mahdia, prev VNZ core
+			
+			# some early claims we can roll with for future colombian lebensraum
+			2200 = { add_core = GCO }
+			2201 = { add_core = GCO }
+			2202 = { add_core = GCO }
+			2203 = { add_core = GCO }
+
+			change_tag = GCO
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+
+unite_moldavia_wallachia = {
+		potential = {
+			OR = {
+				tag = WAL
+				tag = MOL
+			}
+			exists = WAL
+			exists = MOL
+			NOT = { exists = ROM }
+		}
+
+		allow = {
+			OR = {
+				state_n_government = 1
+				is_vassal = no
+			}
+			WAL = {
+				war = no
+				is_vassal = no
+			}
+			MOL = {
+				war = no
+				is_vassal = no
+			}
+		}
+
+		effect = {
+			prestige = 10
+			change_tag = ROM
+			random_country = {
+				limit = {
+					tag = WAL
+					exists = yes
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = MOL
+					exists = yes
+				}
+				country_event = 11101
+			}
+			capital = 664
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	form_yugoslavia = {
+		potential = {
+			is_culture_group = south_slavic
+			NOT = { exists = YUG }
+			NOT = { has_global_flag = yugoslavia_formed }
+		}
+
+		allow = {
+			war = no
+			SER = {
+				OR = {
+					AND = {
+						exists = yes
+						OR = {
+							part_of_sphere = no
+							in_sphere = THIS
+							sphere_owner = { is_sphere_leader_of = THIS }
+						}
+					}
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+							owner = {
+								is_culture_group = south_slavic
+								relation = { who = THIS value = 100 }
+							}
+						}
+					}
+				}
+			}
+			BOS = {
+				OR = {
+					AND = {
+						exists = yes
+						OR = {
+							part_of_sphere = no
+							in_sphere = THIS
+							sphere_owner = { is_sphere_leader_of = THIS }
+						}
+					}
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+							owner = {
+								is_culture_group = south_slavic
+								relation = { who = THIS value = 100 }
+							}
+						}
+					}
+				}
+			}
+			CRO = {
+				OR = {
+					AND = {
+						exists = yes
+						OR = {
+							part_of_sphere = no
+							in_sphere = THIS
+							sphere_owner = { is_sphere_leader_of = THIS }
+						}
+					}
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+							owner = {
+								is_culture_group = south_slavic
+								relation = { who = THIS value = 100 }
+							}
+						}
+					}
+				}
+			}
+		}
+
+		effect = {
+			set_global_flag = yugoslavia_formed
+			prestige = 20
+			all_core = { add_core = YUG }
+			SER = { all_core = { add_core = YUG } }
+			MON = { all_core = { add_core = YUG } }
+			CRO = { all_core = { add_core = YUG } }
+			BOS = { all_core = { add_core = YUG } }
+			SLO = { all_core = { add_core = YUG } }
+			add_accepted_culture = serb
+			add_accepted_culture = bosniak
+			add_accepted_culture = croat
+			change_tag = YUG
+			any_country = {
+				limit = {
+					NOT = { is_culture_group = south_slavic }
+					in_sphere = THIS
+					war = no
+					any_owned_province = {
+						OR = {
+							is_core = SER
+							is_core = BOS
+							is_core = CRO
+						}
+					}
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							is_core = SER
+							is_core = BOS
+							is_core = CRO
+						}
+					}
+					secede_province = THIS
+				}
+			}
+			any_country = {
+				limit = {
+					war = no
+					is_culture_group = south_slavic
+					NOT = { tag = ALB }
+					OR = {
+						in_sphere = THIS
+						sphere_owner = { is_sphere_leader_of = THIS }
+						relation = { who = THIS value = 50 }
+					}
+				}
+				country_event = 11108
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
+
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\NET.txt
+************************************************************************
+political_decisions = {
+	sign_treaty_of_london = {
+		potential = {
+			tag = NET
+			exists = BEL
+			NOT = {
+				has_country_flag = signed_treay_of_london
+			}
+		}
+		allow = {
+			OR = { 
+				relation = {
+					who = ENG
+					value = 100
+				}
+				ENG = { 
+					diplomatic_influence = {
+						who = THIS
+						value = 50
+					}
+				}
+				ideological_thought = 1
+			}		
+		}
+		effect = {
+			remove_core = 387
+			remove_core = 388
+			remove_core = 389
+			remove_core = 390
+			remove_core = 391
+			remove_core = 392
+			remove_core = 393
+			remove_core = 394
+			remove_core = 395
+			remove_core = 396
+			remove_core = 398
+			prestige = 20
+			any_greater_power = {
+				limit = { 
+					NOT = { 
+						OR = {
+							tag = FRA
+							tag = ENG
+						}
+					}
+				}	
+				relation = {
+					who = THIS
+					value = 20
+				}
+			}
+			ENG = {
+				relation = {
+					who = THIS
+					value = 150
+				}
+			}
+			FRA = {
+				relation = {
+					who = THIS
+					value = 150
+				}
+			}
+			BEL = {
+				relation = {
+					who = THIS
+					value = 25
+				}
+			}
+			set_country_flag = signed_treay_of_london
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					year = 1850
+				}
+			}
+			modifier = {
+				factor = 0
+				war = yes
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					owns = 387
+					owns = 388
+					owns = 389
+					owns = 390
+					owns = 391
+					owns = 392
+					owns = 393
+					owns = 394
+					owns = 395
+					owns = 396
+					owns = 398
+				}
+			}
+		}
+	}
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\Political.txt
+************************************************************************
+political_decisions = {
+	enact_liquor_prohibition = {
+		potential = {
+			social_science = 1
+			has_country_modifier = temperance_league
+			NOT = {
+				OR = {
+					has_country_modifier = liquor_prohibition
+					has_country_flag = prohibition_repealed
+				}
+			}
+		}
+		allow = {
+			OR = {
+				moralism = 30
+				liberal = 60
+				government = proletarian_dictatorship
+				government = fascist_dictatorship
+				government = bourgeois_dictatorship
+				government = presidential_dictatorship
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = liquor_prohibition
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						moralism = 30
+						liberal = 60
+					}
+				}
+			}		
+		}
+	}
+	abolish_prohibition = {
+		potential = {
+			has_country_modifier = liquor_prohibition
+		}
+		allow = {
+				OR = {
+					government = proletarian_dictatorship
+					government = fascist_dictatorship
+					government = bourgeois_dictatorship
+					government = presidential_dictatorship
+					NOT = {	
+						liberal = 50 
+					}
+					NOT = { 
+						moralism = 20
+					}
+				}
+		}
+		effect = {
+			remove_country_modifier = liquor_prohibition
+			set_country_flag = prohibition_repealed
+
+		}
+	}
+	institute_central_bank = {
+		alert = no 
+		potential = {
+			NOT = {
+				has_country_modifier = central_bank_established
+			}
+			central_bank_money_bill_printing = 1
+		}
+		
+		allow = {
+			prestige = 1
+			modern_central_bank_system = 1
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = central_bank_established
+				duration = -1
+			}
+		}
+	}
+	
+	enact_female_suffrage = {
+		alert = no 
+		potential = {
+			year = 1870
+			civilized = yes
+			NOT = { has_country_modifier = female_suffrage }
+			OR = {
+				government = prussian_constitutionalism
+				government = hms_government
+				government = democracy
+			}
+			OR = {
+				vote_franschise = universal_weighted_voting
+				vote_franschise = universal_voting
+			}	
+		}
+		
+		allow = {
+			social_science = 1
+			revolution_n_counterrevolution = 1
+			OR = {
+				upper_house = {
+					ideology = socialist
+					value = 0.3
+				}
+				upper_house = {
+					ideology = liberal
+					value = 0.3
+				}
+			}
+			OR = {
+				political_reform_want = 0.15
+				vote_franschise = universal_voting
+			}
+			average_consciousness = 4
+		}
+		
+		effect = {
+			war_exhaustion = -2
+			add_country_modifier = {
+				name = female_suffrage
+				duration = -1
+			}
+		}
+	}
+	westernize_nation = {
+		potential = {
+			civilized = no
+			civilized = yes #impossible trigger so it does not show
+			NOT = {
+				tag = JAP
+			}
+		}
+		allow = {
+			war = no
+			enlightenment_thought = 1
+			publishing_industry = 1
+			freedom_of_trade = 1
+			private_banks = 1
+			post_napoleonic_thought = 1
+			military_score = 50
+			prestige = 40
+		}
+		effect = {
+			civilized = yes
+			prestige = 5
+			remove_country_modifier = educational_reform
+			remove_country_modifier = military_reform
+			remove_country_modifier = western_influences
+			remove_country_modifier = uncivilized_isolationism
+			remove_country_modifier = trade_restrictions
+			remove_country_modifier = sayings_of_the_dutch
+			remove_country_modifier = extraterritoriality_granted
+			remove_country_modifier = liberian_research_boost
+			any_owned = {
+				remove_province_modifier = western_presence
+				remove_province_modifier = foreign_smugglers
+				remove_province_modifier = foreign_trading_post
+				remove_province_modifier = local_opium_habit
+				remove_province_modifier = european_military_mission
+				remove_province_modifier = legation_quarter
+				remove_province_modifier = kettler_denkmal
+			}
+		}
+	}
+	the_meiji_restoration = {
+		potential = {
+			civilized = no
+			tag = JAP
+			not = { has_country_modifier = meiji_restoration_boost }
+		}
+		allow = {
+			war = no
+			part_of_sphere = yes
+		}
+		effect = {
+			years_of_research = 5
+			prestige = 10
+			add_country_modifier = {
+				name = meiji_restoration_boost
+				duration = -1
+			}
+		}
+	}
+	
+	the_meiji_restoration2 = {
+		potential = {
+			civilized = no
+			tag = JAP
+			not = { has_country_modifier = meiji_restoration_boost }
+		}
+		allow = {
+			war = no
+			part_of_sphere = no
+		}
+		effect = {
+			years_of_research = 5
+			prestige = 10
+			add_country_modifier = {
+				name = meiji_restoration_boost
+				duration = -1
+			}
+			economic_reform = yes_land_reform
+			any_pop = {
+				scaled_militancy = {
+					ideology = liberal
+					factor = 0.5
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = 7
+				}
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 9
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						AND = {
+							pop_majority_ideology = liberal 
+							year = 1855
+						}
+					year = 1875		
+					}
+				}
+			}
+		}
+	}
+	
+	leave_soi = {
+		alert = no
+		potential = {
+			part_of_sphere = yes
+			
+		}
+		allow = {
+			is_secondary_power = yes
+			sphere_owner = {
+				NOT = { relation = {
+					who = THIS
+					value = 0
+					}
+				truce_with = THIS
+				}
+			}
+		}
+		effect = {
+			sphere_owner = {
+				diplomatic_influence = {
+				who = THIS
+				value = -200
+				}
+			country_event = { id=13201 days=0 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			# Ai will do, if sphere owner has LESS than thrice our brigades.
+			modifier = {
+				factor = 0
+				sphere_owner = {
+						# Factor = (sphere_owner regiments) / (our regiments).
+						# Returns true if( factor >= x ).
+						# Use NOT statement to check if( factor < x )
+						brigades_compare = 3
+				}
+			}
+		}
+	}
+	
+	nationalize = {
+		alert = no
+			
+		potential = {
+			can_nationalize = yes 
+		}
+		allow = {
+			NOT = { part_of_sphere = yes }
+		}
+		effect = {
+			nationalize = yes
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\RUS.txt
+************************************************************************
+political_decisions = {
+	abolish_serfdom = {
+		potential = {
+			tag = RUS
+			has_country_flag = serfdom_not_abolished
+			#government = absolute_monarchy
+		}
+		allow = {
+			OR = {
+				AND = {
+					upper_house = {
+						ideology = liberal
+						value = 0.3
+					}
+					average_consciousness = 4
+				}	
+				AND = {
+					ruling_party_ideology = liberal
+					average_consciousness = 5
+				}
+				average_militancy = 5
+				year = 1865
+			}
+		}
+		effect = {
+			farmers = {
+				militancy = -2
+				consciousness = 1
+			}
+			labourers = {
+				militancy = -2
+				consciousness = 1
+			}
+			badboy = -4
+			years_of_research = 0.5
+			clr_country_flag = serfdom_not_abolished
+		}
+	}
+
+	manifesto_on_unshakable_autocracy = {
+		potential = {
+			tag = RUS
+			government = absolute_monarchy
+			NOT = {
+				has_country_flag = the_manifesto
+			}
+			nationalism_n_imperialism = 1
+		}
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+		}
+		
+		effect = {
+			prestige = 5
+			badboy = 3
+			any_pop = {
+				consciousness = -2
+				militancy = -6
+			}
+			set_country_flag = the_manifesto
+		}
+	}
+	
+	promulgate_the_ems_ukaz = {
+		potential = {
+			tag = RUS
+			NOT = {
+				has_country_flag = ems_ukaz_dispatched
+			}
+			government = absolute_monarchy
+			owns = 958
+			phenomenalism = 1
+			exists = GER
+			GER = {
+				owns = 570
+			}
+		}
+		
+		allow = {
+			biologism = 1
+		}
+		
+		effect = {
+			any_pop = {
+				limit = {
+					has_pop_culture = ukrainian
+				}
+				militancy = 3
+				consciousness = -2
+			}
+			set_country_flag = ems_ukaz_dispatched
+		}
+	}
+
+	protect_eastern_christians = {
+		potential = {
+			tag = RUS
+			is_greater_power = yes
+			government = absolute_monarchy
+			NOT = {
+				has_country_flag = eastern_christians_up_in_here_yall
+			}
+			exists = TUR
+			TUR = {
+				government = absolute_monarchy
+				is_greater_power = no
+			}
+		}
+		
+		allow = {
+			NOT = {
+				relation = {
+					who = TUR
+					value = 0
+				}
+			}
+			TUR = {
+				average_militancy = 3
+			}
+		}
+		
+		effect = {
+			set_country_flag = eastern_christians_up_in_here_yall
+			add_country_modifier = {
+				name = protector_of_eastern_christendom
+				duration = -1
+			}
+			any_greater_power = {
+				limit = {
+					NOT = {
+						tag = TUR
+					}
+					capital_scope = {
+						continent = europe
+					}
+				}
+				country_event = { id=19030 days=0 }
+			}
+		}
+	}
+	
+	peking_convention = {
+		potential = {
+			tag = RUS
+			MCK = {
+					owns = 3259 }
+			NOT = {
+				has_country_flag = peking_convention
+				war_with = MCK
+			}
+			OR = {
+				is_sphere_leader_of = MCK
+				has_global_flag = summer_palace_torched
+			}
+		}
+		
+		allow = {
+			is_greater_power = yes
+		}
+		
+		effect = {
+			1082 = {
+				add_core = RUS
+				remove_core = CHI
+				remove_core = MCK
+			}
+			1083 = {
+				add_core = RUS
+				remove_core = CHI
+				remove_core = MCK
+			}
+			1084 = {
+				add_core = RUS
+				remove_core = CHI
+				remove_core = MCK
+			}
+			1085 = {
+				add_core = RUS
+				remove_core = CHI
+				remove_core = MCK
+			}
+			2617 = {
+				add_core = RUS
+				remove_core = CHI
+				remove_core = MCK
+			}
+			3259 = {
+				add_core = RUS
+				remove_core = CHI
+				remove_core = MCK
+			}
+			3260 = {
+				add_core = RUS
+				remove_core = CHI
+				remove_core = MCK
+			}
+			3253 = {
+				add_core = RUS
+				remove_core = CHI
+				remove_core = MCK
+			}
+			3254 = {
+				add_core = RUS
+				remove_core = CHI
+				remove_core = MCK
+			}
+			3255 = {
+				add_core = RUS
+				remove_core = CHI
+				remove_core = MCK
+			}
+			3252 = {
+				add_core = RUS
+				remove_core = CHI
+				remove_core = MCK
+			}
+			3251 = {
+				add_core = RUS
+				remove_core = CHI
+				remove_core = MCK
+			}
+			3250 = {
+				add_core = RUS
+				remove_core = CHI
+				remove_core = MCK
+			}
+			3249 = {
+				add_core = RUS
+				remove_core = CHI
+				remove_core = MCK
+			}
+			
+			
+			set_country_flag = peking_convention			
+			MCK = {
+				country_event = { id=80000 days=0 }
+			}
+			prestige = 2
+		}
+	}
+
+	russian_vladivostok = {
+		potential = {
+		tag = RUS
+		owns = 1085
+		owns = 1084
+		owns = 2617
+		owns = 1083
+        owns = 1082
+		owns = 3249
+		owns = 3253
+		NOT = {
+				has_global_flag = russian_vladivostok
+			}
+		}
+		
+		allow = {
+			prestige = 10
+		}
+		
+		effect = {
+			3249 = {
+				life_rating = 10
+			}
+			3253 = {
+				life_rating = 10
+			}
+			prestige = 5
+			set_global_flag = russian_vladivostok
+		}
+	}
+	
+	move_capital_to_moscow = {
+		potential = {
+			tag = RUS
+			NOT = { owns = 339 } # Viipuri
+			owns = 1008 # Moscow
+			capital = 994
+		}
+		
+		allow = {
+			owns = 1008 # Moscow
+		}
+		
+		effect = {
+			capital = 1008
+			prestige = 5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\SAF.txt
+************************************************************************
+political_decisions = {
+	adopt_die_stem = {
+		potential = {
+			tag = SAF
+			NOT = {
+				has_country_flag = has_die_stem
+			}
+		}
+		
+		allow = {
+			mass_culture_n_the_avant_garde = 1
+		}
+		
+		effect = {
+			prestige = 5
+			set_country_flag = has_die_stem
+		}
+	}
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\SouthAmerica.txt
+************************************************************************
+political_decisions = {
+	fatherland_volunteers = {
+		potential = {
+			tag = BRZ
+			government = hms_government
+			NOT = {
+				has_country_flag = pedro_said_it_best
+			}
+		}
+		allow = {
+			army_decision_making = 1
+			war = yes
+		}
+		effect = {
+			war_exhaustion = -1
+			prestige = 10
+			set_country_flag = pedro_said_it_best
+		}
+	}
+	
+	law_1420_of_general_common_education = {
+		potential = {
+			tag = ARG
+			NOT = {
+				has_country_flag = 1420_passed
+			}
+		}
+		allow = {
+			social_science = 1
+			ruling_party_ideology = conservative
+		}
+		effect = {
+			years_of_research = 0.2
+			set_country_flag = 1420_passed
+		}
+	}		
+}
+
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\SPA.txt
+************************************************************************
+political_decisions = {
+	establish_la_guardia_civil = {
+		potential = {
+			tag = SPA
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+			NOT = {
+				has_country_flag = guardia_civil_established
+			}
+		}
+		allow = {
+			NOT = {
+				num_of_revolts = 1
+			}
+			OR = {
+				average_militancy = 3
+				average_consciousness = 4
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = la_guardia_civil
+				duration = -1
+			}
+			any_pop = {
+				consciousness = 2
+			}
+			set_country_flag = guardia_civil_established
+		}
+	}
+
+	confiscations_of_mendizabal = {
+		potential = {
+			tag = SPA
+			NOT = {
+				has_country_flag = mendizabal_confiscated
+			}
+		}
+
+		allow = {
+			ideological_thought = 1
+		}
+
+		effect = {
+			treasury = 500000
+			prestige = 10
+			relation = {
+				who = PAP
+				value = -50
+			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = conservative
+					factor = 4
+				}
+				dominant_issue = {
+					value = pro_atheism
+					factor = 0.45
+				}
+			}
+			any_pop = {
+				consciousness = 5
+			}
+			set_country_flag = mendizabal_confiscated
+		}
+	}
+}
+
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\SWE.txt
+************************************************************************
+political_decisions = {
+	svenska_pansarbats_foreningen = {
+		potential = {
+			OR = {
+				tag = SWE
+				AND = {
+					tag = SCA
+					primary_culture = swedish
+				}
+			}
+			owns = 329
+			NOT = {
+				has_country_flag = hms_sverige_built
+			}
+			any_neighbor_country = {
+				invention = protected_cruisers
+			}
+		}
+		
+		allow = {
+			NOT = {
+				average_militancy = 3
+			}
+			steel_steamers = 1
+		}
+		
+		effect = {
+			any_pop = {
+				money = -0.1
+			}
+			329 = {
+				sub_unit = {
+					type = cruiser
+					value = current
+				}
+			}
+			set_country_flag = hms_sverige_built
+		}
+	}
+	pass_folkskolereformen = {
+		potential = {
+			OR = {
+				tag = SWE
+				AND = {
+					tag = SCA
+					primary_culture = swedish
+				}
+			}
+			NOT = {
+				has_country_modifier = folkis_educates
+			}
+		}
+		
+		allow = {
+			ideological_thought = 1
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = folkis_educates
+				duration = -1
+			}
+		}
+	}
+	
+	the_vega_expedition = {
+		potential = {
+			OR = {
+				tag = SWE
+				AND = {
+					tag = SCA
+					primary_culture = swedish
+				}
+			}
+			has_global_flag = suez_canal_built
+			NOT = {
+				has_country_flag = the_vega_expedition_went
+			}
+		}
+		
+		allow = {
+			biologism = 1
+			iron_steamers = 1
+		}
+		
+		effect = {
+			prestige = 5
+			years_of_research = 0.05
+			badboy = -1
+			set_country_flag = the_vega_expedition_went
+		}
+	}
+	
+	expand_motala_verkstad = {
+		potential = {
+			OR = {
+				tag = SWE
+				AND = {
+					tag = SCA
+					primary_culture = swedish
+				}
+			}
+			owns = 325
+			NOT = {
+				has_global_flag = motala_verkstad_expanded
+			}
+		}
+		
+		allow = {
+			mechanical_production = 1
+			325 = {
+				state_scope = {
+					has_building = machine_parts_factory
+				}
+			}
+		}
+		
+		effect = {
+			325 = {
+				add_province_modifier = {
+					name = motala_verkstad
+					duration = -1
+				}
+			}
+			prestige = 5
+			set_global_flag = motala_verkstad_expanded
+		}
+	}
+	
+	court_yard_speech = {
+		potential = {
+			OR = {
+				tag = SWE
+				AND = {
+					tag = SCA
+					primary_culture = swedish
+				}
+			}
+			government = hms_government
+			OR = {
+				vote_franschise = wealth_weighted_voting
+				vote_franschise = wealth_voting
+			}
+			NOT = {
+				has_country_flag = court_yard_speech_held
+			}
+		}
+		
+		allow = {
+			OR = {
+				war_policy = pacifism
+				war_policy = anti_military
+			}
+			OR = {
+				pro_military = 10
+				jingoism = 10
+			}
+		}
+		
+		effect = {
+			ruling_party_ideology = conservative
+			any_pop = {
+				militancy = -0.5
+				
+			}
+			set_country_flag = court_yard_speech_held
+		}
+	}
+}
+
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\SWI.txt
+************************************************************************
+political_decisions = {
+	declare_republic_of_neuchatel = {
+		potential = {
+			tag = SWI
+			owns = 608
+			608 = {
+				is_core = PRU
+			}
+		}
+		allow = {
+			prestige = 1
+			romanticism = 1
+		}
+		effect = {
+			prestige = 5
+			608 = {
+				remove_core = PRU
+				remove_core = NGF
+				remove_core = GER
+			}
+			relation = {
+				who = PRU
+				value = 20
+			}
+		}
+	}
+	call_geneva_convention = {
+		potential = {
+			tag = SWI
+			owns = 607
+			NOT = {
+				has_global_flag = geneva_convention_held
+			}
+		}
+		
+		allow = {
+			any_greater_power = {
+				war_exhaustion = 5
+			}
+			empiricism = 1
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = signed_the_geneva_convention
+				duration = -1
+			}
+			set_global_flag = geneva_convention_held
+			prestige = 10
+		}
+	}
+	
+	sign_the_geneva_convention = {
+		alert = no 
+		potential = {
+			civilized = yes
+			has_global_flag = geneva_convention_held
+			NOT = {
+				has_country_modifier = signed_the_geneva_convention
+			}
+		}
+		
+		allow = {
+			NOT = {
+				badboy = 1
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = signed_the_geneva_convention
+				duration = -1
+			}
+			badboy = -1
+		}
+	}
+	
+	build_gotthard_tunnel = {
+		potential = {
+			tag = SWI
+			owns = 606
+			NOT = {
+				has_country_flag = gotthard_tunnel_built
+			}
+		}
+		
+		allow = {
+			invention = machine_tools
+		}
+		
+		effect = {
+			606 = {
+				infrastructure = 4
+			}
+			prestige = 5
+			set_country_flag = gotthard_tunnel_built
+		}
+	}
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\Tech_School_Changes.txt
+************************************************************************
+political_decisions = {
+	switch_to_army_tech = {
+		alert = no
+		potential = {
+			civilized = yes
+			tech_school = traditional_academic
+			OR = {
+				ruling_party_ideology = conservative
+				ruling_party_ideology = reactionary
+				ruling_party_ideology = fascist
+			}
+			NOT = {
+				tech_school = prussian_tech_school
+				has_country_modifier = academic_confusion
+			}
+		}
+		allow = {
+			prestige = 10
+			military_score = 50
+		}
+		effect = {
+			prestige = -10
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 1080
+			}
+			tech_school = army_tech_school
+		}
+	}
+	switch_to_navy_tech = {
+		alert = no
+		potential = {
+			civilized = yes
+			colonial_nation = yes
+			tech_school = traditional_academic
+			OR = {
+				ruling_party_ideology = conservative
+				ruling_party_ideology = liberal
+				ruling_party_ideology = anarcho_liberal
+			}
+			NOT = {
+				tech_school = prussian_tech_school
+				has_country_modifier = academic_confusion
+			}
+		}
+		allow = {
+			prestige = 10
+			military_score = 50
+		}
+		effect = {
+			prestige = -10
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 1080
+			}
+			tech_school = naval_tech_school
+		}
+	}
+	switch_to_culture_tech = {
+		alert = no
+		potential = {
+			civilized = yes
+			tech_school = traditional_academic
+			OR = {
+				ruling_party_ideology = liberal
+				ruling_party_ideology = fascist
+				ruling_party_ideology = communist
+			}
+			NOT = {
+				tech_school = prussian_tech_school
+				has_country_modifier = academic_confusion
+			}
+		}
+		allow = {
+			prestige = 10
+			average_consciousness = 2
+		}
+		effect = {
+			prestige = -10
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 1080
+			}
+			tech_school = culture_tech_school
+		}
+	}
+	switch_to_trade_tech = {
+		alert = no
+		potential = {
+			civilized = yes
+			tech_school = traditional_academic
+			OR = {
+				ruling_party_ideology = liberal
+				ruling_party_ideology = anarcho_liberal
+			}
+			NOT = {
+				tech_school = prussian_tech_school
+				has_country_modifier = academic_confusion
+			}
+		}
+		allow = {
+			prestige = 10
+			industrial_score = 50
+		}
+		effect = {
+			prestige = -10
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 1080
+			}
+			tech_school = commerce_tech_school
+		}
+	}
+	switch_to_industry_tech = {
+		alert = no
+		potential = {
+			civilized = yes
+			tech_school = traditional_academic
+			OR = {
+				ruling_party_ideology = conservative
+				ruling_party_ideology = socialist
+				ruling_party_ideology = communist
+			}
+			NOT = {
+				tech_school = prussian_tech_school
+				has_country_modifier = academic_confusion
+			}
+		}
+		allow = {
+			prestige = 10
+			industrial_score = 50
+		}
+		effect = {
+			prestige = -10
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 1080
+			}
+			tech_school = industrial_tech_school
+		}
+	}
+	switch_to_traditional_academic = {
+		alert = no
+		potential = {
+			NOT = {
+				tech_school = traditional_academic
+				has_country_modifier = academic_confusion
+			}
+			civilized = yes
+		}
+		
+		allow = {
+			prestige = 10
+		}
+		effect = {
+			prestige = -10
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 1080
+			}
+			tech_school = traditional_academic
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		#news = yes
+		#news_title = "SOME_TEXT_TITLE"
+		#news_desc_long = "SOME_TEXT_LONG"
+		#news_desc_medium = "SOME_TEXT_MEDIUM"
+		#news_desc_short = "SOME_TEXT_SHORT"
+	}
+	switch_to_japanese_tech = {
+		alert = no
+		potential = {
+			civilized = yes
+			tech_school = traditional_academic
+			tag = JAP
+			NOT = {
+				tech_school = japanese_tech_school
+				has_country_modifier = academic_confusion
+			}
+		}
+		allow = {
+			prestige = 10
+		}
+		effect = {
+			prestige = -10
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 1080
+			}
+			tech_school = japanese_tech_school
+		}
+	}
+	switch_to_german_tech = {
+		alert = no
+		potential = {
+			has_global_flag = ruhr_boom_has_happened
+			civilized = yes
+			tech_school = traditional_academic
+			OR = {
+				tag = PRU
+				tag = GER
+				tag = NGF
+			}
+			NOT = {
+				tech_school = prussian_tech_school
+				has_country_modifier = academic_confusion
+			}
+		}
+		allow = {
+			prestige = 10
+			cheap_steel = 1
+			iron_breech_loaded_artillery = 1
+			state_n_government = 1
+			industrial_score = 500
+		}
+		effect = {
+			prestige = -10
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 1080
+			}
+			tech_school = prussian_tech_school
+		}
+	}
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\Trade.txt
+************************************************************************
+political_decisions = {
+
+	trade_on = {
+		alert = no 
+		potential = {
+			not = { 
+				has_country_flag = trading
+			} 
+		} 
+		allow = {
+			ai = no 
+		} 
+		effect = {
+			country_event = {
+				id = 93000
+			}
+			set_country_flag = trading
+		}
+	}
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\TUR.txt
+************************************************************************
+political_decisions = {
+	tanzimat_reforms = {
+		potential = {
+			tag = TUR
+			NOT = {
+				has_country_flag = tanzimat_reforms_enacted
+			}
+			government = absolute_monarchy
+		}
+		
+		allow = {
+			average_militancy = 3
+			average_consciousness = 4
+		}
+		
+		effect = {
+			any_pop = {
+				limit = {
+					NOT = {
+						has_pop_culture = turkish
+					}
+				}
+				militancy = -3
+				consciousness = 1
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = turkish
+				}
+				militancy = -3
+				consciousness = 5
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = turkish
+					ideology = conservative
+				}
+				militancy = 5
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = turkish
+					ideology = reactionary
+				}
+				militancy = 7
+			}
+			set_country_flag = tanzimat_reforms_enacted
+			political_reform = universal_weighted_voting
+		}
+	}
+	
+	kanun_i_esasi = {
+		potential = {
+			tag = TUR
+			NOT = {
+				has_country_flag = kanun_i_esasi_here
+			}
+		}
+		
+		allow = {
+			nationalism_n_imperialism = 1
+		}
+		
+		effect = {
+			any_pop = {
+				militancy = -3
+				consciousness = 2
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = turkish
+				}
+				militancy = 2
+			}
+			prestige = 5
+			set_country_flag = kanun_i_esasi_here
+			political_reform = bankruptcy
+			political_reform = same_rules
+			political_reform = all_strata_migration
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					average_militancy = 1
+				}
+			}
+		}
+	}
+	
+	form_israel = {
+		potential = {
+			civilized = yes
+			NOT = {
+				has_global_flag = israel_has_her_cores
+			}
+			916 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			917 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			918 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			919 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			920 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			921 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+		allow = {
+			is_greater_power = yes
+			revolution_n_counterrevolution = 1
+		}
+		effect = {
+			921 = {
+				add_core = ISR 
+			}
+			916 = {
+				add_core = ISR 
+			}
+			917 = {
+				add_core = ISR 
+			}
+			918 = {
+				add_core = ISR 
+			}
+			919 = {
+				add_core = ISR 
+			}
+			920 = {
+				add_core = ISR 
+			}
+			prestige = 10
+			set_global_flag = israel_has_her_cores
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					tag = ENG
+				}
+			}
+		}
+	}
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\UncivFlavor.txt
+************************************************************************
+political_decisions = {
+	an_elephant_for_america = {
+		potential = {
+			tag = SIA
+			year = 1861
+			exists = USA
+			NOT = {
+				has_country_flag = sent_an_elephant_to_america
+			}
+		}
+		allow = {
+			relation = {
+				who = USA
+				value = 0
+			}
+		}
+		effect = {
+			USA = {
+				country_event = { id=13350 days=0 }
+			}
+			set_country_flag = sent_an_elephant_to_america
+		}
+	}
+	torching_of_the_summer_palace = {
+		potential = {
+			NOT = {
+				tag = CHI
+			}
+			CHI = {
+				owns = 1612
+			}
+			civilized = yes
+			is_greater_power = yes
+			nationalism_n_imperialism = 1
+			war_with = CHI
+			NOT = {
+				has_global_flag = summer_palace_torched
+			}
+		}
+		allow = {
+			controls = 1612
+		}
+		effect = {
+			badboy = 3
+			CHI = {
+				country_event = { id=13355 days=0 }
+			}
+			set_global_flag = summer_palace_torched
+		}
+	}
+	
+	clear_out_the_manchu_elite = {
+		potential = {
+			tag = CHI
+			government = absolute_monarchy
+			is_greater_power = no
+			civilized = no
+			year = 1860
+			NOT = {
+				has_country_flag = manchu_elite_cleared_out
+			}
+		}
+		allow = {
+			average_consciousness = 3
+		}
+		effect = {
+			years_of_research = 0.1
+			any_pop = {
+				limit = {
+					has_pop_culture = manchu
+				}
+				militancy = 2
+				consciousness = 1
+			}
+			set_country_flag = manchu_elite_cleared_out
+		}
+	}
+	
+	support_boxers = {
+		potential = {
+			tag = CHI
+			NOT = {
+				has_country_flag = supported_boxers
+			}
+			government = absolute_monarchy
+			is_greater_power = no
+			civilized = no
+			year = 1860
+			is_independant = no
+			any_owned_province = {
+				OR = {
+					has_province_modifier = western_presence
+					has_province_modifier = foreign_smugglers
+					has_province_modifier = foreign_trading_post
+					has_province_modifier = local_opium_habit
+					has_province_modifier = european_military_mission
+				}
+			}
+		}
+		allow = {
+			is_independant = no
+		}
+		effect = {
+			any_owned = {
+				limit = {
+					OR = {
+						has_province_modifier = western_presence
+						has_province_modifier = foreign_smugglers
+						has_province_modifier = foreign_trading_post
+						has_province_modifier = local_opium_habit
+						has_province_modifier = european_military_mission
+					}
+				}
+				any_pop = {
+					militancy = 8
+					ideology = {
+						value = reactionary
+						factor = 0.3
+					}
+				}
+			}
+			prestige = 5
+			set_country_flag = supported_boxers
+		}
+	}
+	
+	enact_muhammad_alis_reforms = {
+		potential = {
+			tag = EGY
+			civilized = no
+			NOT = {
+				has_country_flag = muhammad_alis_reforms_enacted
+			}
+		}
+		allow = {
+			prestige = 5
+			average_consciousness = 2
+		}
+		effect = {
+			add_country_modifier = {
+				name = muhammad_alis_reforms
+				duration = 3650
+			}
+			set_country_flag = muhammad_alis_reforms_enacted
+		}
+	}
+	
+	establish_the_dar_al_funun = {
+		potential = {
+			tag = PER
+			civilized = no
+			NOT = {
+				has_country_flag = dar_al_funun_built
+			}
+		}
+		allow = {
+			literacy = 0.1
+		}
+		effect = {
+			years_of_research = 2
+			any_pop = {
+				consciousness = 0.5
+			}
+			set_country_flag = dar_al_funun_built
+			add_country_modifier = {
+				name = dar_al_funun
+				duration = -1
+			}
+		}
+	}
+	annals_of_the_fulani_jihad = {
+		potential = {
+			tag = SOK
+			NOT = {
+				has_country_flag = that_book_written
+			}
+		}
+		allow = {
+			literacy = 0.04
+		}
+		effect = {
+			set_country_flag = that_book_written
+			prestige = 2
+		}
+	}
+	become_negusa_nagast = {
+		potential = {
+			tag = ETH
+			government = absolute_monarchy
+			NOT = {
+				has_country_flag = is_negusa_nagast
+			}
+		}
+		
+		allow = {
+			prestige = 5
+			NOT = {
+				average_militancy = 2
+			}
+		}
+		
+		effect = {
+			set_country_flag = is_negusa_nagast
+			any_pop = {
+				militancy = -1
+			}
+			prestige = 2
+			years_of_research = 0.02
+			1848 = {
+				add_core = ETH
+			}
+			1849 = {
+				add_core = ETH
+			}
+			1850 = {
+				add_core = ETH
+			}
+			1851 = {
+				add_core = ETH
+			}
+			1875 = {
+				add_core = ETH
+			}
+		}
+	}
+	
+	
+	build_the_tower_of_babylon = {
+		potential = {
+			tag = IRQ
+			is_greater_power = yes
+		}
+		
+		allow = {
+			advanced_metallurgy = 1
+			the_historical_theory = 1
+		}
+		
+		effect = {
+			IRQ = {
+				all_core = {
+					add_core = BAB
+				}
+			}
+			926 = {
+				change_province_name = "Вавилон"
+			}
+			change_tag = BAB
+			prestige = 20
+		}
+	}
+}
+
+
+c:\users\фёдор\downloads\amp_13.04.16\victoria ii amp\decisions\USCA.txt
+************************************************************************
+political_decisions = {
+	become_guatemala = {
+		potential = {
+			tag = UCA
+			NOT = {
+				exists = GUA
+			}
+		} 
+
+		allow = {
+			NOT = {
+				owns = 2191
+				owns = 2193
+				owns = 2199
+				owns = 2201
+			}
+		}
+
+		effect = {
+			prestige = 30
+			change_tag_no_core_switch = GUA
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}	
+
+
+

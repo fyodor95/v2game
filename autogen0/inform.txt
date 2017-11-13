@@ -1,0 +1,314 @@
+yakut
+	YAK
+tatar
+	TTT
+tajik
+	TAJ
+hausa
+	SOK
+thai
+	SIA
+filipino
+	PHI
+new_zelandian
+	NZL
+boer
+	SAF
+metis
+	MTC
+mongol
+	MGL
+mexican
+	MEX
+malagasy
+	MAD
+lao
+	LUA
+kurdish
+	KRD
+anglo_african
+	SAF
+korean
+	KOR
+javan
+	JAV
+polynesian
+	HAW
+zulu
+	ZUL
+afro_antillean
+	HAI
+georgian
+	GEO
+amhara
+	ETH
+assamese
+	ASM
+	HND
+bedouin
+	ARA
+kirgiz
+	KYR
+catalan
+	CAT
+berber
+	ARA
+ugrian
+	RUS
+oriya
+	ORI
+	HND
+sindi
+	SIN
+	HND
+ukrainian
+	UKR
+	RUS
+north_italian
+	ITA
+greek
+	GRE
+pashtun
+	AFG
+slovak
+	SLV
+	CZH
+platinean
+	LAF
+kashmiri
+	KAS
+	HND
+kazak
+	KAZ
+hungarian
+	HUN
+french
+	FRA
+manchu
+	MCK
+	CHI
+persian
+	PER
+romanian
+	ROM
+norwegian
+	NOR
+	SCA
+marathi
+	HND
+polar_bears
+	SCA
+bengali
+	HND
+	BNG
+russian
+	RUS
+flemish
+	FLA
+	BEL
+irish
+	IRE
+	ENG
+estonian
+	EST
+	UBD
+lithuanian
+	LIT
+	PLC
+nanfaren
+	CHI
+south_german
+	GER
+latvian
+	LAT
+	UBD
+maltese
+	ITA
+caribeno
+	DOM
+wallonian
+	WLL
+	BEL
+bulgarian
+	BUL
+	YUG
+dutch
+	NET
+ashkenazi
+	ISR
+	GER
+bakongo
+	CNG
+mashriqi
+	ARA
+swiss
+	SWI
+byelorussian
+	BYE
+	RUS
+yankee
+	USA
+spanish
+	SPA
+maghrebi
+	ARA
+portuguese
+	POR
+baluchi
+	KAL
+burmese
+	BUR
+bosniak
+	BOS
+	YUG
+turkmen
+	TKM
+afro_brazilian
+	LAF
+polish
+	POL
+	PLC
+bihari
+	HND
+	BIH
+gujarati
+	HND
+south_italian
+	ITA
+serb
+	SER
+	YUG
+beifaren
+	CHI
+albanian
+	ALB
+turkish
+	TUR
+finnish
+	FIN
+	SCA
+czech
+	BOH
+	CZH
+anglo_canadian
+	CAN
+slovene
+	SLO
+	YUG
+nepali
+	NEP
+	HND
+japanese
+	JAP
+danish
+	DEN
+	SCA
+sinhala
+	HND
+	SRI
+cubans
+	CUB
+afro_american
+	LIB
+kalmyk
+	KMK
+swedish
+	SWE
+	SCA
+avadhi
+	HND
+sami
+	SCA
+kanauji
+	BUN
+	HND
+swahili
+	ZAN
+guarani
+	LAF
+tuvan
+	TNT
+north_german
+	GER
+croat
+	CRO
+	YUG
+armenian
+	ARM
+uzbek
+	UZB
+rajput
+	HND
+misri
+	EGY
+	ARA
+icelandic
+	ICL
+	SCA
+azerbaijani
+	AZB
+kannada
+	MYS
+	HND
+brazilian
+	BRZ
+	LAF
+malayalam
+	TRA
+	HND
+scottish
+	SCO
+	ENG
+tamil
+	HND
+british
+	ENG
+telegu
+	BAS
+	HND
+australian
+	AST
+malay
+	MLY
+tibetan
+	TIB
+	CHI
+french_canadian
+	QUE
+	CAN
+north_andean
+	LAF
+	GCO
+dixie
+	CSA
+	USA
+texan
+	TEX
+	USA
+zhuang
+	GXI
+central_american
+	UCA
+khmer
+	CAM
+south_andean
+	LAF
+manipuri
+	HND
+aimara
+	LAF
+amazonian
+	LAF
+panjabi
+	PAN
+	HND
+buryat
+	BMG
+patagonian
+	LAF
+cherokee
+	CHE
+crimean_tatar
+	CRI
+vietnamese
+	DAI

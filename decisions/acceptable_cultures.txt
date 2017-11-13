@@ -1,0 +1,6993 @@
+political_decisions = {
+
+    acceptance_north_german = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = north_german
+                    primary_culture = north_german
+                }
+            }
+            any_owned_province = {
+                culture = north_german
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = north_german
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = north_german
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_south_german = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = south_german
+                    primary_culture = south_german
+                }
+            }
+            any_owned_province = {
+                culture = south_german
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = south_german
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = south_german
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_ashkenazi = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = ashkenazi
+                    primary_culture = ashkenazi
+                }
+            }
+            any_owned_province = {
+                culture = ashkenazi
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = ashkenazi
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = ashkenazi
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_dutch = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = dutch
+                    primary_culture = dutch
+                }
+            }
+            any_owned_province = {
+                culture = dutch
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = dutch
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = dutch
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_flemish = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = flemish
+                    primary_culture = flemish
+                }
+            }
+            any_owned_province = {
+                culture = flemish
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = flemish
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = flemish
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_swiss = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = swiss
+                    primary_culture = swiss
+                }
+            }
+            any_owned_province = {
+                culture = swiss
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = swiss
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = swiss
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_swedish = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = swedish
+                    primary_culture = swedish
+                }
+            }
+            any_owned_province = {
+                culture = swedish
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = swedish
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = swedish
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_danish = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = danish
+                    primary_culture = danish
+                }
+            }
+            any_owned_province = {
+                culture = danish
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = danish
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = danish
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_norwegian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = norwegian
+                    primary_culture = norwegian
+                }
+            }
+            any_owned_province = {
+                culture = norwegian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = norwegian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = norwegian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_icelandic = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = icelandic
+                    primary_culture = icelandic
+                }
+            }
+            any_owned_province = {
+                culture = icelandic
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = icelandic
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = icelandic
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_finnish = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = finnish
+                    primary_culture = finnish
+                }
+            }
+            any_owned_province = {
+                culture = finnish
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = finnish
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = finnish
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_sami = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = sami
+                    primary_culture = sami
+                }
+            }
+            any_owned_province = {
+                culture = sami
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = sami
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = sami
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_british = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = british
+                    primary_culture = british
+                }
+            }
+            any_owned_province = {
+                culture = british
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = british
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = british
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_irish = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = irish
+                    primary_culture = irish
+                }
+            }
+            any_owned_province = {
+                culture = irish
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = irish
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = irish
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_north_italian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = north_italian
+                    primary_culture = north_italian
+                }
+            }
+            any_owned_province = {
+                culture = north_italian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = north_italian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = north_italian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_south_italian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = south_italian
+                    primary_culture = south_italian
+                }
+            }
+            any_owned_province = {
+                culture = south_italian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = south_italian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = south_italian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_maltese = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = maltese
+                    primary_culture = maltese
+                }
+            }
+            any_owned_province = {
+                culture = maltese
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = maltese
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = maltese
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_basque = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = basque
+                    primary_culture = basque
+                }
+            }
+            any_owned_province = {
+                culture = basque
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = basque
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = basque
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_spanish = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = spanish
+                    primary_culture = spanish
+                }
+            }
+            any_owned_province = {
+                culture = spanish
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = spanish
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = spanish
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_catalan = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = catalan
+                    primary_culture = catalan
+                }
+            }
+            any_owned_province = {
+                culture = catalan
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = catalan
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = catalan
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_portuguese = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = portuguese
+                    primary_culture = portuguese
+                }
+            }
+            any_owned_province = {
+                culture = portuguese
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = portuguese
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = portuguese
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_french = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = french
+                    primary_culture = french
+                }
+            }
+            any_owned_province = {
+                culture = french
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = french
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = french
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_croat = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = croat
+                    primary_culture = croat
+                }
+            }
+            any_owned_province = {
+                culture = croat
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = croat
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = croat
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_serb = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = serb
+                    primary_culture = serb
+                }
+            }
+            any_owned_province = {
+                culture = serb
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = serb
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = serb
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_bulgarian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = bulgarian
+                    primary_culture = bulgarian
+                }
+            }
+            any_owned_province = {
+                culture = bulgarian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = bulgarian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = bulgarian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_albanian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = albanian
+                    primary_culture = albanian
+                }
+            }
+            any_owned_province = {
+                culture = albanian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = albanian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = albanian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_slovene = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = slovene
+                    primary_culture = slovene
+                }
+            }
+            any_owned_province = {
+                culture = slovene
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = slovene
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = slovene
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_bosniak = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = bosniak
+                    primary_culture = bosniak
+                }
+            }
+            any_owned_province = {
+                culture = bosniak
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = bosniak
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = bosniak
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_romanian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = romanian
+                    primary_culture = romanian
+                }
+            }
+            any_owned_province = {
+                culture = romanian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = romanian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = romanian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_hungarian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = hungarian
+                    primary_culture = hungarian
+                }
+            }
+            any_owned_province = {
+                culture = hungarian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = hungarian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = hungarian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_polish = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = polish
+                    primary_culture = polish
+                }
+            }
+            any_owned_province = {
+                culture = polish
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = polish
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = polish
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_lithuanian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = lithuanian
+                    primary_culture = lithuanian
+                }
+            }
+            any_owned_province = {
+                culture = lithuanian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = lithuanian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = lithuanian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_czech = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = czech
+                    primary_culture = czech
+                }
+            }
+            any_owned_province = {
+                culture = czech
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = czech
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = czech
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_slovak = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = slovak
+                    primary_culture = slovak
+                }
+            }
+            any_owned_province = {
+                culture = slovak
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = slovak
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = slovak
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_russian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = russian
+                    primary_culture = russian
+                }
+            }
+            any_owned_province = {
+                culture = russian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = russian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = russian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_byelorussian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = byelorussian
+                    primary_culture = byelorussian
+                }
+            }
+            any_owned_province = {
+                culture = byelorussian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = byelorussian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = byelorussian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_ukrainian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = ukrainian
+                    primary_culture = ukrainian
+                }
+            }
+            any_owned_province = {
+                culture = ukrainian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = ukrainian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = ukrainian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_ugrian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = ugrian
+                    primary_culture = ugrian
+                }
+            }
+            any_owned_province = {
+                culture = ugrian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = ugrian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = ugrian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_latvian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = latvian
+                    primary_culture = latvian
+                }
+            }
+            any_owned_province = {
+                culture = latvian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = latvian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = latvian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_estonian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = estonian
+                    primary_culture = estonian
+                }
+            }
+            any_owned_province = {
+                culture = estonian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = estonian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = estonian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_greek = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = greek
+                    primary_culture = greek
+                }
+            }
+            any_owned_province = {
+                culture = greek
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = greek
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = greek
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_georgian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = georgian
+                    primary_culture = georgian
+                }
+            }
+            any_owned_province = {
+                culture = georgian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = georgian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = georgian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_armenian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = armenian
+                    primary_culture = armenian
+                }
+            }
+            any_owned_province = {
+                culture = armenian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = armenian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = armenian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_sephardic = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = sephardic
+                    primary_culture = sephardic
+                }
+            }
+            any_owned_province = {
+                culture = sephardic
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = sephardic
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = sephardic
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_turkish = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = turkish
+                    primary_culture = turkish
+                }
+            }
+            any_owned_province = {
+                culture = turkish
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = turkish
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = turkish
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_azerbaijani = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = azerbaijani
+                    primary_culture = azerbaijani
+                }
+            }
+            any_owned_province = {
+                culture = azerbaijani
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = azerbaijani
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = azerbaijani
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_north_caucasian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = north_caucasian
+                    primary_culture = north_caucasian
+                }
+            }
+            any_owned_province = {
+                culture = north_caucasian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = north_caucasian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = north_caucasian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_maghrebi = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = maghrebi
+                    primary_culture = maghrebi
+                }
+            }
+            any_owned_province = {
+                culture = maghrebi
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = maghrebi
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = maghrebi
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_misri = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = misri
+                    primary_culture = misri
+                }
+            }
+            any_owned_province = {
+                culture = misri
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = misri
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = misri
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_mashriqi = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = mashriqi
+                    primary_culture = mashriqi
+                }
+            }
+            any_owned_province = {
+                culture = mashriqi
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = mashriqi
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = mashriqi
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_bedouin = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = bedouin
+                    primary_culture = bedouin
+                }
+            }
+            any_owned_province = {
+                culture = bedouin
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = bedouin
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = bedouin
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_berber = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = berber
+                    primary_culture = berber
+                }
+            }
+            any_owned_province = {
+                culture = berber
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = berber
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = berber
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_persian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = persian
+                    primary_culture = persian
+                }
+            }
+            any_owned_province = {
+                culture = persian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = persian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = persian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_uzbek = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = uzbek
+                    primary_culture = uzbek
+                }
+            }
+            any_owned_province = {
+                culture = uzbek
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = uzbek
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = uzbek
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_kazak = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = kazak
+                    primary_culture = kazak
+                }
+            }
+            any_owned_province = {
+                culture = kazak
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = kazak
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = kazak
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_kirgiz = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = kirgiz
+                    primary_culture = kirgiz
+                }
+            }
+            any_owned_province = {
+                culture = kirgiz
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = kirgiz
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = kirgiz
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_tajik = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = tajik
+                    primary_culture = tajik
+                }
+            }
+            any_owned_province = {
+                culture = tajik
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = tajik
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = tajik
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_uighur = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = uighur
+                    primary_culture = uighur
+                }
+            }
+            any_owned_province = {
+                culture = uighur
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = uighur
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = uighur
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_pashtun = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = pashtun
+                    primary_culture = pashtun
+                }
+            }
+            any_owned_province = {
+                culture = pashtun
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = pashtun
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = pashtun
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_baluchi = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = baluchi
+                    primary_culture = baluchi
+                }
+            }
+            any_owned_province = {
+                culture = baluchi
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = baluchi
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = baluchi
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_hazara = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = hazara
+                    primary_culture = hazara
+                }
+            }
+            any_owned_province = {
+                culture = hazara
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = hazara
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = hazara
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_turkmen = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = turkmen
+                    primary_culture = turkmen
+                }
+            }
+            any_owned_province = {
+                culture = turkmen
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = turkmen
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = turkmen
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_kurdish = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = kurdish
+                    primary_culture = kurdish
+                }
+            }
+            any_owned_province = {
+                culture = kurdish
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = kurdish
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = kurdish
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_tatar = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = tatar
+                    primary_culture = tatar
+                }
+            }
+            any_owned_province = {
+                culture = tatar
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = tatar
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = tatar
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_mongol = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = mongol
+                    primary_culture = mongol
+                }
+            }
+            any_owned_province = {
+                culture = mongol
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = mongol
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = mongol
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_siberian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = siberian
+                    primary_culture = siberian
+                }
+            }
+            any_owned_province = {
+                culture = siberian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = siberian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = siberian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_yakut = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = yakut
+                    primary_culture = yakut
+                }
+            }
+            any_owned_province = {
+                culture = yakut
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = yakut
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = yakut
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_tibetan = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = tibetan
+                    primary_culture = tibetan
+                }
+            }
+            any_owned_province = {
+                culture = tibetan
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = tibetan
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = tibetan
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_assamese = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = assamese
+                    primary_culture = assamese
+                }
+            }
+            any_owned_province = {
+                culture = assamese
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = assamese
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = assamese
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_bengali = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = bengali
+                    primary_culture = bengali
+                }
+            }
+            any_owned_province = {
+                culture = bengali
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = bengali
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = bengali
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_bihari = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = bihari
+                    primary_culture = bihari
+                }
+            }
+            any_owned_province = {
+                culture = bihari
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = bihari
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = bihari
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_manipuri = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = manipuri
+                    primary_culture = manipuri
+                }
+            }
+            any_owned_province = {
+                culture = manipuri
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = manipuri
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = manipuri
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_nepali = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = nepali
+                    primary_culture = nepali
+                }
+            }
+            any_owned_province = {
+                culture = nepali
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = nepali
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = nepali
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_oriya = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = oriya
+                    primary_culture = oriya
+                }
+            }
+            any_owned_province = {
+                culture = oriya
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = oriya
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = oriya
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_sinhala = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = sinhala
+                    primary_culture = sinhala
+                }
+            }
+            any_owned_province = {
+                culture = sinhala
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = sinhala
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = sinhala
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_avadhi = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = avadhi
+                    primary_culture = avadhi
+                }
+            }
+            any_owned_province = {
+                culture = avadhi
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = avadhi
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = avadhi
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_kanauji = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = kanauji
+                    primary_culture = kanauji
+                }
+            }
+            any_owned_province = {
+                culture = kanauji
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = kanauji
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = kanauji
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_panjabi = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = panjabi
+                    primary_culture = panjabi
+                }
+            }
+            any_owned_province = {
+                culture = panjabi
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = panjabi
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = panjabi
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_kashmiri = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = kashmiri
+                    primary_culture = kashmiri
+                }
+            }
+            any_owned_province = {
+                culture = kashmiri
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = kashmiri
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = kashmiri
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_gujarati = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = gujarati
+                    primary_culture = gujarati
+                }
+            }
+            any_owned_province = {
+                culture = gujarati
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = gujarati
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = gujarati
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_marathi = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = marathi
+                    primary_culture = marathi
+                }
+            }
+            any_owned_province = {
+                culture = marathi
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = marathi
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = marathi
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_sindi = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = sindi
+                    primary_culture = sindi
+                }
+            }
+            any_owned_province = {
+                culture = sindi
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = sindi
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = sindi
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_rajput = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = rajput
+                    primary_culture = rajput
+                }
+            }
+            any_owned_province = {
+                culture = rajput
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = rajput
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = rajput
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_kannada = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = kannada
+                    primary_culture = kannada
+                }
+            }
+            any_owned_province = {
+                culture = kannada
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = kannada
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = kannada
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_malayalam = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = malayalam
+                    primary_culture = malayalam
+                }
+            }
+            any_owned_province = {
+                culture = malayalam
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = malayalam
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = malayalam
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_tamil = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = tamil
+                    primary_culture = tamil
+                }
+            }
+            any_owned_province = {
+                culture = tamil
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = tamil
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = tamil
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_telegu = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = telegu
+                    primary_culture = telegu
+                }
+            }
+            any_owned_province = {
+                culture = telegu
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = telegu
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = telegu
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_vietnamese = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = vietnamese
+                    primary_culture = vietnamese
+                }
+            }
+            any_owned_province = {
+                culture = vietnamese
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = vietnamese
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = vietnamese
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_khmer = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = khmer
+                    primary_culture = khmer
+                }
+            }
+            any_owned_province = {
+                culture = khmer
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = khmer
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = khmer
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_malay = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = malay
+                    primary_culture = malay
+                }
+            }
+            any_owned_province = {
+                culture = malay
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = malay
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = malay
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_filipino = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = filipino
+                    primary_culture = filipino
+                }
+            }
+            any_owned_province = {
+                culture = filipino
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = filipino
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = filipino
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_javan = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = javan
+                    primary_culture = javan
+                }
+            }
+            any_owned_province = {
+                culture = javan
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = javan
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = javan
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_moluccan = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = moluccan
+                    primary_culture = moluccan
+                }
+            }
+            any_owned_province = {
+                culture = moluccan
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = moluccan
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = moluccan
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_thai = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = thai
+                    primary_culture = thai
+                }
+            }
+            any_owned_province = {
+                culture = thai
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = thai
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = thai
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_lao = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = lao
+                    primary_culture = lao
+                }
+            }
+            any_owned_province = {
+                culture = lao
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = lao
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = lao
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_shan = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = shan
+                    primary_culture = shan
+                }
+            }
+            any_owned_province = {
+                culture = shan
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = shan
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = shan
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_burmese = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = burmese
+                    primary_culture = burmese
+                }
+            }
+            any_owned_province = {
+                culture = burmese
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = burmese
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = burmese
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_asian_minor = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = asian_minor
+                    primary_culture = asian_minor
+                }
+            }
+            any_owned_province = {
+                culture = asian_minor
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = asian_minor
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = asian_minor
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_kachin = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = kachin
+                    primary_culture = kachin
+                }
+            }
+            any_owned_province = {
+                culture = kachin
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = kachin
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = kachin
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_karen = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = karen
+                    primary_culture = karen
+                }
+            }
+            any_owned_province = {
+                culture = karen
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = karen
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = karen
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_japanese = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = japanese
+                    primary_culture = japanese
+                }
+            }
+            any_owned_province = {
+                culture = japanese
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = japanese
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = japanese
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_manchu = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = manchu
+                    primary_culture = manchu
+                }
+            }
+            any_owned_province = {
+                culture = manchu
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = manchu
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = manchu
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_beifaren = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = beifaren
+                    primary_culture = beifaren
+                }
+            }
+            any_owned_province = {
+                culture = beifaren
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = beifaren
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = beifaren
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_nanfaren = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = nanfaren
+                    primary_culture = nanfaren
+                }
+            }
+            any_owned_province = {
+                culture = nanfaren
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = nanfaren
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = nanfaren
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_korean = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = korean
+                    primary_culture = korean
+                }
+            }
+            any_owned_province = {
+                culture = korean
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = korean
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = korean
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_ainu = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = ainu
+                    primary_culture = ainu
+                }
+            }
+            any_owned_province = {
+                culture = ainu
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = ainu
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = ainu
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_hakka = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = hakka
+                    primary_culture = hakka
+                }
+            }
+            any_owned_province = {
+                culture = hakka
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = hakka
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = hakka
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_miao = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = miao
+                    primary_culture = miao
+                }
+            }
+            any_owned_province = {
+                culture = miao
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = miao
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = miao
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_min = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = min
+                    primary_culture = min
+                }
+            }
+            any_owned_province = {
+                culture = min
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = min
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = min
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_zhuang = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = zhuang
+                    primary_culture = zhuang
+                }
+            }
+            any_owned_province = {
+                culture = zhuang
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = zhuang
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = zhuang
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_yi = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = yi
+                    primary_culture = yi
+                }
+            }
+            any_owned_province = {
+                culture = yi
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = yi
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = yi
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_yue = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = yue
+                    primary_culture = yue
+                }
+            }
+            any_owned_province = {
+                culture = yue
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = yue
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = yue
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_polynesian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = polynesian
+                    primary_culture = polynesian
+                }
+            }
+            any_owned_province = {
+                culture = polynesian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = polynesian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = polynesian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_hawaiian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = hawaiian
+                    primary_culture = hawaiian
+                }
+            }
+            any_owned_province = {
+                culture = hawaiian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = hawaiian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = hawaiian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_maori = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = maori
+                    primary_culture = maori
+                }
+            }
+            any_owned_province = {
+                culture = maori
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = maori
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = maori
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_aborigine = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = aborigine
+                    primary_culture = aborigine
+                }
+            }
+            any_owned_province = {
+                culture = aborigine
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = aborigine
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = aborigine
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_melanesian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = melanesian
+                    primary_culture = melanesian
+                }
+            }
+            any_owned_province = {
+                culture = melanesian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = melanesian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = melanesian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_micronesian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = micronesian
+                    primary_culture = micronesian
+                }
+            }
+            any_owned_province = {
+                culture = micronesian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = micronesian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = micronesian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_zapotec = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = zapotec
+                    primary_culture = zapotec
+                }
+            }
+            any_owned_province = {
+                culture = zapotec
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = zapotec
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = zapotec
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_mayan = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = mayan
+                    primary_culture = mayan
+                }
+            }
+            any_owned_province = {
+                culture = mayan
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = mayan
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = mayan
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_nahua = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = nahua
+                    primary_culture = nahua
+                }
+            }
+            any_owned_province = {
+                culture = nahua
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = nahua
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = nahua
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_tarascan = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = tarascan
+                    primary_culture = tarascan
+                }
+            }
+            any_owned_province = {
+                culture = tarascan
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = tarascan
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = tarascan
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_guajiro = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = guajiro
+                    primary_culture = guajiro
+                }
+            }
+            any_owned_province = {
+                culture = guajiro
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = guajiro
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = guajiro
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_tupinamba = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = tupinamba
+                    primary_culture = tupinamba
+                }
+            }
+            any_owned_province = {
+                culture = tupinamba
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = tupinamba
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = tupinamba
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_metis = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = metis
+                    primary_culture = metis
+                }
+            }
+            any_owned_province = {
+                culture = metis
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = metis
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = metis
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_dakota = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = dakota
+                    primary_culture = dakota
+                }
+            }
+            any_owned_province = {
+                culture = dakota
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = dakota
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = dakota
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_cherokee = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = cherokee
+                    primary_culture = cherokee
+                }
+            }
+            any_owned_province = {
+                culture = cherokee
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = cherokee
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = cherokee
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_pueblo = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = pueblo
+                    primary_culture = pueblo
+                }
+            }
+            any_owned_province = {
+                culture = pueblo
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = pueblo
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = pueblo
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_inuit = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = inuit
+                    primary_culture = inuit
+                }
+            }
+            any_owned_province = {
+                culture = inuit
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = inuit
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = inuit
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_cree = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = cree
+                    primary_culture = cree
+                }
+            }
+            any_owned_province = {
+                culture = cree
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = cree
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = cree
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_navajo = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = navajo
+                    primary_culture = navajo
+                }
+            }
+            any_owned_province = {
+                culture = navajo
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = navajo
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = navajo
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_native_american_minor = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = native_american_minor
+                    primary_culture = native_american_minor
+                }
+            }
+            any_owned_province = {
+                culture = native_american_minor
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = native_american_minor
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = native_american_minor
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_yankee = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = yankee
+                    primary_culture = yankee
+                }
+            }
+            any_owned_province = {
+                culture = yankee
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = yankee
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = yankee
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_dixie = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = dixie
+                    primary_culture = dixie
+                }
+            }
+            any_owned_province = {
+                culture = dixie
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = dixie
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = dixie
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_texan = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = texan
+                    primary_culture = texan
+                }
+            }
+            any_owned_province = {
+                culture = texan
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = texan
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = texan
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_boer = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = boer
+                    primary_culture = boer
+                }
+            }
+            any_owned_province = {
+                culture = boer
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = boer
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = boer
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_australian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = australian
+                    primary_culture = australian
+                }
+            }
+            any_owned_province = {
+                culture = australian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = australian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = australian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_anglo_canadian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = anglo_canadian
+                    primary_culture = anglo_canadian
+                }
+            }
+            any_owned_province = {
+                culture = anglo_canadian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = anglo_canadian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = anglo_canadian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_french_canadian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = french_canadian
+                    primary_culture = french_canadian
+                }
+            }
+            any_owned_province = {
+                culture = french_canadian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = french_canadian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = french_canadian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_mexican = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = mexican
+                    primary_culture = mexican
+                }
+            }
+            any_owned_province = {
+                culture = mexican
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = mexican
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = mexican
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_central_american = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = central_american
+                    primary_culture = central_american
+                }
+            }
+            any_owned_province = {
+                culture = central_american
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = central_american
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = central_american
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_caribeno = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = caribeno
+                    primary_culture = caribeno
+                }
+            }
+            any_owned_province = {
+                culture = caribeno
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = caribeno
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = caribeno
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_north_andean = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = north_andean
+                    primary_culture = north_andean
+                }
+            }
+            any_owned_province = {
+                culture = north_andean
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = north_andean
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = north_andean
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_south_andean = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = south_andean
+                    primary_culture = south_andean
+                }
+            }
+            any_owned_province = {
+                culture = south_andean
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = south_andean
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = south_andean
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_platinean = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = platinean
+                    primary_culture = platinean
+                }
+            }
+            any_owned_province = {
+                culture = platinean
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = platinean
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = platinean
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_brazilian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = brazilian
+                    primary_culture = brazilian
+                }
+            }
+            any_owned_province = {
+                culture = brazilian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = brazilian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = brazilian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_afro_brazilian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = afro_brazilian
+                    primary_culture = afro_brazilian
+                }
+            }
+            any_owned_province = {
+                culture = afro_brazilian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = afro_brazilian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = afro_brazilian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_quechua = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = quechua
+                    primary_culture = quechua
+                }
+            }
+            any_owned_province = {
+                culture = quechua
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = quechua
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = quechua
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_guarani = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = guarani
+                    primary_culture = guarani
+                }
+            }
+            any_owned_province = {
+                culture = guarani
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = guarani
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = guarani
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_aimara = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = aimara
+                    primary_culture = aimara
+                }
+            }
+            any_owned_province = {
+                culture = aimara
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = aimara
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = aimara
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_amazonian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = amazonian
+                    primary_culture = amazonian
+                }
+            }
+            any_owned_province = {
+                culture = amazonian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = amazonian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = amazonian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_patagonian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = patagonian
+                    primary_culture = patagonian
+                }
+            }
+            any_owned_province = {
+                culture = patagonian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = patagonian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = patagonian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_afro_american = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = afro_american
+                    primary_culture = afro_american
+                }
+            }
+            any_owned_province = {
+                culture = afro_american
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = afro_american
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = afro_american
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_afro_caribbean = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = afro_caribbean
+                    primary_culture = afro_caribbean
+                }
+            }
+            any_owned_province = {
+                culture = afro_caribbean
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = afro_caribbean
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = afro_caribbean
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_afro_caribeno = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = afro_caribeno
+                    primary_culture = afro_caribeno
+                }
+            }
+            any_owned_province = {
+                culture = afro_caribeno
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = afro_caribeno
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = afro_caribeno
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_afro_antillean = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = afro_antillean
+                    primary_culture = afro_antillean
+                }
+            }
+            any_owned_province = {
+                culture = afro_antillean
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = afro_antillean
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = afro_antillean
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_akan = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = akan
+                    primary_culture = akan
+                }
+            }
+            any_owned_province = {
+                culture = akan
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = akan
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = akan
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_bambara = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = bambara
+                    primary_culture = bambara
+                }
+            }
+            any_owned_province = {
+                culture = bambara
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = bambara
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = bambara
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_dyula = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = dyula
+                    primary_culture = dyula
+                }
+            }
+            any_owned_province = {
+                culture = dyula
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = dyula
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = dyula
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_edo = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = edo
+                    primary_culture = edo
+                }
+            }
+            any_owned_province = {
+                culture = edo
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = edo
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = edo
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_ewe = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = ewe
+                    primary_culture = ewe
+                }
+            }
+            any_owned_province = {
+                culture = ewe
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = ewe
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = ewe
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_fon = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = fon
+                    primary_culture = fon
+                }
+            }
+            any_owned_province = {
+                culture = fon
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = fon
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = fon
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_fulbe = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = fulbe
+                    primary_culture = fulbe
+                }
+            }
+            any_owned_province = {
+                culture = fulbe
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = fulbe
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = fulbe
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_hausa = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = hausa
+                    primary_culture = hausa
+                }
+            }
+            any_owned_province = {
+                culture = hausa
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = hausa
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = hausa
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_ibibio = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = ibibio
+                    primary_culture = ibibio
+                }
+            }
+            any_owned_province = {
+                culture = ibibio
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = ibibio
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = ibibio
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_ibo = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = ibo
+                    primary_culture = ibo
+                }
+            }
+            any_owned_province = {
+                culture = ibo
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = ibo
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = ibo
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_kru = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = kru
+                    primary_culture = kru
+                }
+            }
+            any_owned_province = {
+                culture = kru
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = kru
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = kru
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_mande = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = mande
+                    primary_culture = mande
+                }
+            }
+            any_owned_province = {
+                culture = mande
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = mande
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = mande
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_maures = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = maures
+                    primary_culture = maures
+                }
+            }
+            any_owned_province = {
+                culture = maures
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = maures
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = maures
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_mossi = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = mossi
+                    primary_culture = mossi
+                }
+            }
+            any_owned_province = {
+                culture = mossi
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = mossi
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = mossi
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_senufo = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = senufo
+                    primary_culture = senufo
+                }
+            }
+            any_owned_province = {
+                culture = senufo
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = senufo
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = senufo
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_songhai = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = songhai
+                    primary_culture = songhai
+                }
+            }
+            any_owned_province = {
+                culture = songhai
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = songhai
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = songhai
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_tiv = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = tiv
+                    primary_culture = tiv
+                }
+            }
+            any_owned_province = {
+                culture = tiv
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = tiv
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = tiv
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_tuareg = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = tuareg
+                    primary_culture = tuareg
+                }
+            }
+            any_owned_province = {
+                culture = tuareg
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = tuareg
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = tuareg
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_wolof = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = wolof
+                    primary_culture = wolof
+                }
+            }
+            any_owned_province = {
+                culture = wolof
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = wolof
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = wolof
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_yoruba = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = yoruba
+                    primary_culture = yoruba
+                }
+            }
+            any_owned_province = {
+                culture = yoruba
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = yoruba
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = yoruba
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_bakongo = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = bakongo
+                    primary_culture = bakongo
+                }
+            }
+            any_owned_province = {
+                culture = bakongo
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = bakongo
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = bakongo
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_baguirmi = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = baguirmi
+                    primary_culture = baguirmi
+                }
+            }
+            any_owned_province = {
+                culture = baguirmi
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = baguirmi
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = baguirmi
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_fang = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = fang
+                    primary_culture = fang
+                }
+            }
+            any_owned_province = {
+                culture = fang
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = fang
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = fang
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_kanuri = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = kanuri
+                    primary_culture = kanuri
+                }
+            }
+            any_owned_province = {
+                culture = kanuri
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = kanuri
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = kanuri
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_luba = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = luba
+                    primary_culture = luba
+                }
+            }
+            any_owned_province = {
+                culture = luba
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = luba
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = luba
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_lunda = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = lunda
+                    primary_culture = lunda
+                }
+            }
+            any_owned_province = {
+                culture = lunda
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = lunda
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = lunda
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_mongo = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = mongo
+                    primary_culture = mongo
+                }
+            }
+            any_owned_province = {
+                culture = mongo
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = mongo
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = mongo
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_sara = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = sara
+                    primary_culture = sara
+                }
+            }
+            any_owned_province = {
+                culture = sara
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = sara
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = sara
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_teda = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = teda
+                    primary_culture = teda
+                }
+            }
+            any_owned_province = {
+                culture = teda
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = teda
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = teda
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_african_minor = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = african_minor
+                    primary_culture = african_minor
+                }
+            }
+            any_owned_province = {
+                culture = african_minor
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = african_minor
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = african_minor
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_amhara = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = amhara
+                    primary_culture = amhara
+                }
+            }
+            any_owned_province = {
+                culture = amhara
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = amhara
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = amhara
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_afar = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = afar
+                    primary_culture = afar
+                }
+            }
+            any_owned_province = {
+                culture = afar
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = afar
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = afar
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_azande = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = azande
+                    primary_culture = azande
+                }
+            }
+            any_owned_province = {
+                culture = azande
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = azande
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = azande
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_baganda = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = baganda
+                    primary_culture = baganda
+                }
+            }
+            any_owned_province = {
+                culture = baganda
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = baganda
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = baganda
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_beja = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = beja
+                    primary_culture = beja
+                }
+            }
+            any_owned_province = {
+                culture = beja
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = beja
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = beja
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_dinka = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = dinka
+                    primary_culture = dinka
+                }
+            }
+            any_owned_province = {
+                culture = dinka
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = dinka
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = dinka
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_fur = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = fur
+                    primary_culture = fur
+                }
+            }
+            any_owned_province = {
+                culture = fur
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = fur
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = fur
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_kikuyu = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = kikuyu
+                    primary_culture = kikuyu
+                }
+            }
+            any_owned_province = {
+                culture = kikuyu
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = kikuyu
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = kikuyu
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_luo = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = luo
+                    primary_culture = luo
+                }
+            }
+            any_owned_province = {
+                culture = luo
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = luo
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = luo
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_maasai = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = maasai
+                    primary_culture = maasai
+                }
+            }
+            any_owned_province = {
+                culture = maasai
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = maasai
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = maasai
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_nuer = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = nuer
+                    primary_culture = nuer
+                }
+            }
+            any_owned_province = {
+                culture = nuer
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = nuer
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = nuer
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_nuba = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = nuba
+                    primary_culture = nuba
+                }
+            }
+            any_owned_province = {
+                culture = nuba
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = nuba
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = nuba
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_oromo = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = oromo
+                    primary_culture = oromo
+                }
+            }
+            any_owned_province = {
+                culture = oromo
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = oromo
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = oromo
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_ruanda = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = ruanda
+                    primary_culture = ruanda
+                }
+            }
+            any_owned_province = {
+                culture = ruanda
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = ruanda
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = ruanda
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_rundi = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = rundi
+                    primary_culture = rundi
+                }
+            }
+            any_owned_province = {
+                culture = rundi
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = rundi
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = rundi
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_sidama = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = sidama
+                    primary_culture = sidama
+                }
+            }
+            any_owned_province = {
+                culture = sidama
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = sidama
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = sidama
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_somali = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = somali
+                    primary_culture = somali
+                }
+            }
+            any_owned_province = {
+                culture = somali
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = somali
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = somali
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_sudanese = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = sudanese
+                    primary_culture = sudanese
+                }
+            }
+            any_owned_province = {
+                culture = sudanese
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = sudanese
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = sudanese
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_sukuma = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = sukuma
+                    primary_culture = sukuma
+                }
+            }
+            any_owned_province = {
+                culture = sukuma
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = sukuma
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = sukuma
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_swahili = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = swahili
+                    primary_culture = swahili
+                }
+            }
+            any_owned_province = {
+                culture = swahili
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = swahili
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = swahili
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_tigray = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = tigray
+                    primary_culture = tigray
+                }
+            }
+            any_owned_province = {
+                culture = tigray
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = tigray
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = tigray
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_unyamwezi = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = unyamwezi
+                    primary_culture = unyamwezi
+                }
+            }
+            any_owned_province = {
+                culture = unyamwezi
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = unyamwezi
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = unyamwezi
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_chewa = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = chewa
+                    primary_culture = chewa
+                }
+            }
+            any_owned_province = {
+                culture = chewa
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = chewa
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = chewa
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_herero = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = herero
+                    primary_culture = herero
+                }
+            }
+            any_owned_province = {
+                culture = herero
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = herero
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = herero
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_khoisan = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = khoisan
+                    primary_culture = khoisan
+                }
+            }
+            any_owned_province = {
+                culture = khoisan
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = khoisan
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = khoisan
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_lomwe = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = lomwe
+                    primary_culture = lomwe
+                }
+            }
+            any_owned_province = {
+                culture = lomwe
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = lomwe
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = lomwe
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_makua = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = makua
+                    primary_culture = makua
+                }
+            }
+            any_owned_province = {
+                culture = makua
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = makua
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = makua
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_malagasy = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = malagasy
+                    primary_culture = malagasy
+                }
+            }
+            any_owned_province = {
+                culture = malagasy
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = malagasy
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = malagasy
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_nguni = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = nguni
+                    primary_culture = nguni
+                }
+            }
+            any_owned_province = {
+                culture = nguni
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = nguni
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = nguni
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_ovimbundu = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = ovimbundu
+                    primary_culture = ovimbundu
+                }
+            }
+            any_owned_province = {
+                culture = ovimbundu
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = ovimbundu
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = ovimbundu
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_sena = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = sena
+                    primary_culture = sena
+                }
+            }
+            any_owned_province = {
+                culture = sena
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = sena
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = sena
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_shona = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = shona
+                    primary_culture = shona
+                }
+            }
+            any_owned_province = {
+                culture = shona
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = shona
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = shona
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_sotho = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = sotho
+                    primary_culture = sotho
+                }
+            }
+            any_owned_province = {
+                culture = sotho
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = sotho
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = sotho
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_tonga = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = tonga
+                    primary_culture = tonga
+                }
+            }
+            any_owned_province = {
+                culture = tonga
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = tonga
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = tonga
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_tswana = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = tswana
+                    primary_culture = tswana
+                }
+            }
+            any_owned_province = {
+                culture = tswana
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = tswana
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = tswana
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_xhosa = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = xhosa
+                    primary_culture = xhosa
+                }
+            }
+            any_owned_province = {
+                culture = xhosa
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = xhosa
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = xhosa
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_yao = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = yao
+                    primary_culture = yao
+                }
+            }
+            any_owned_province = {
+                culture = yao
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = yao
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = yao
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_zulu = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = zulu
+                    primary_culture = zulu
+                }
+            }
+            any_owned_province = {
+                culture = zulu
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = zulu
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = zulu
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_polar_bears = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = polar_bears
+                    primary_culture = polar_bears
+                }
+            }
+            any_owned_province = {
+                culture = polar_bears
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = polar_bears
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = polar_bears
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_anglo_african = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = anglo_african
+                    primary_culture = anglo_african
+                }
+            }
+            any_owned_province = {
+                culture = anglo_african
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = anglo_african
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = anglo_african
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_buryat = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = buryat
+                    primary_culture = buryat
+                }
+            }
+            any_owned_province = {
+                culture = buryat
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = buryat
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = buryat
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_kalmyk = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = kalmyk
+                    primary_culture = kalmyk
+                }
+            }
+            any_owned_province = {
+                culture = kalmyk
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = kalmyk
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = kalmyk
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_crimean_tatar = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = crimean_tatar
+                    primary_culture = crimean_tatar
+                }
+            }
+            any_owned_province = {
+                culture = crimean_tatar
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = crimean_tatar
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = crimean_tatar
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_tuvan = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = tuvan
+                    primary_culture = tuvan
+                }
+            }
+            any_owned_province = {
+                culture = tuvan
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = tuvan
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = tuvan
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_cubans = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = cubans
+                    primary_culture = cubans
+                }
+            }
+            any_owned_province = {
+                culture = cubans
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = cubans
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = cubans
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_scottish = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = scottish
+                    primary_culture = scottish
+                }
+            }
+            any_owned_province = {
+                culture = scottish
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = scottish
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = scottish
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    acceptance_new_zelandian = {
+
+        potential = {
+            tag = SOV
+            government = proletarian_dictatorship
+            NOT = {
+                OR = {
+                    accepted_culture = new_zelandian
+                    primary_culture = new_zelandian
+                }
+            }
+            any_owned_province = {
+                culture = new_zelandian
+            }
+        }
+
+        allow = {
+            any_core = {
+                culture = new_zelandian
+                is_colonial = no
+            }
+        }
+        effect = {
+            prestige = 1
+            add_accepted_culture = new_zelandian
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}

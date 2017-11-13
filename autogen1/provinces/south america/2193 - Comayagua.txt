@@ -1,0 +1,2 @@
+owner = UCAcontroller = UCAadd_core = UCAadd_core = HON
+life_rating = 32

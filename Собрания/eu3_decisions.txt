@@ -1,0 +1,9089 @@
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\BritishNation.txt
+************************************************************************
+country_decisions = {
+
+	british_nation = {
+		potential = {
+			NOT = { exists = GBR }
+			NOT = { tag = PAP }
+			NOT = { tag = HRE }
+			OR = {
+				culture_group = british
+				primary_culture = welsh
+			}
+		}
+		allow = 
+		{
+			owns = 236		# London
+			owns = 237		# Oxfordshire
+			owns = 234		# Wessex
+			owns = 248		# Lothian
+			owns = 251		# Aberdeen
+			
+			is_core = 236		# London
+			is_core = 237		# Oxfordshire
+			is_core = 234		# Wessex
+			is_core = 248		# Lothian
+			is_core = 251		# Aberdeen
+			
+			war = no
+		}
+	  effect = {
+			GBR = {
+				add_core = 236		# London
+				add_core = 233		# Cornwall
+				add_core = 234		# Wessex
+				add_core = 235		# Kent
+				add_core = 237		# Oxfordshire
+				add_core = 238		# East Anglia
+				add_core = 239		# Gloucestershire
+				add_core = 240		# Marches
+				add_core = 241		# Glamorgan
+				add_core = 242		# Gwynedd
+				add_core = 243		# Lincoln
+				add_core = 244		# Lancashire
+				add_core = 245		# Yorkshire
+				add_core = 246		# Northumberland
+				add_core = 247		# Cumbria
+				add_core = 248		# Lothian
+				add_core = 249		# Ayrshire
+				add_core = 250		# Fife
+				add_core = 251		# Aberdeen
+				add_core = 252		# Highlands
+				add_core = 253		# Western Isles
+				add_core = 369		# Orkney
+				add_core = 372		# Ulster
+				add_core = 373		# Meath
+				add_core = 374		# Leinster
+				add_core = 375		# Munster
+				add_core = 376		# Connaught
+				add_core = 1860		# Norfolk
+				add_core = 1861		# Derby
+			}	
+			colonists = 1
+			random_owned = {
+				limit = { culture_group = british }
+				base_tax = 1
+			}
+			centralization_decentralization = -2
+			prestige = 0.05
+			change_tag = GBR
+			GBR = {
+				capital = 236
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\burgundy.txt
+************************************************************************
+country_decisions = {
+	establish_golden_fleece = {
+	
+		potential = {
+			tag = BUR
+			NOT = { has_country_modifier = golden_fleece }
+		}
+		allow = {
+			religion = catholic
+			NOT = {  aristocracy_plutocracy = -3 }
+			prestige = 0.70
+			government = feudal_monarchy
+		}
+		effect = {
+			add_country_modifier = {
+				name = "golden_fleece"
+				duration = -1
+			}
+			aristocracy_plutocracy = -1
+			centralization_decentralization = -1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	create_the_compagnies_ordonnance = {
+	
+		potential = {
+			tag = BUR
+			NOT = { has_country_modifier = compagnies_ordonnance }
+		}
+		allow = {
+			MIL = 7
+		}
+		effect = {
+			add_country_modifier = {
+				name = "compagnies_ordonnance"
+				duration = -1
+			}
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\Byzantium.txt
+************************************************************************
+
+country_decisions = {
+	reestablish_the_theme_system = {
+	
+		potential = {
+			tag = BYZ
+			NOT = { has_country_modifier = the_theme_system }
+		}
+		allow = {
+			owns = 149 # Edirne
+			owns = 316 # Bithynia
+			owns = 317 # Bursa
+			owns = 318 # Smyrna
+			owns = 319 # Antalya
+			owns = 322 # Anatolia
+			owns = 323 # Konya
+			owns = 324 # Karaman
+			owns = 325 # Kastamon
+			owns = 326 # Angora
+			owns = 328 # Sinope
+			owns = 329 # Sivas
+			owns = 330 # Trebizon
+			owns = 327 # Adana
+			owns = 1846 # Yazgod
+			owns = 1848 # Hamid
+		}
+		effect = {
+			149 = { change_province_name = Адрианополь  rename_capital = Адрианополь }
+			316 = { change_province_name = Оптиматы }
+			317 = { change_province_name = Опсикий  rename_capital = Никея }
+			318 = { change_province_name = Самос  rename_capital = Смирна }
+			319 = { change_province_name = Кивирреот rename_capital = Этолия }
+			322 = { change_province_name = Анатолик }
+			323 = { change_province_name = Иконий  rename_capital = Иконий }
+			324 = { change_province_name = Селевкия  rename_capital = Селевкия }
+			325 = { change_province_name = Пафлагония  rename_capital = Амастрида }
+			326 = { change_province_name = Каппадокия rename_capital = Поданд }
+			328 = { change_province_name = Армениак }
+			329 = { change_province_name = Себастея  rename_capital = Себастея }
+			330 = { change_province_name = Халдия  rename_capital = Трапезунд }
+			327 = { change_province_name = Киликия  rename_capital = Тарс }
+			1846 = { change_province_name = Букелларий  rename_capital = Анкира }
+			1848 = { change_province_name = Фракиссий  rename_capital = Хоаны }
+			add_country_modifier = {
+				name = "the_theme_system"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\China.txt
+************************************************************************
+cultural_decisions = {
+	support_temple_faction = {
+		potential = {
+			NOT = { faction_in_power = temples }
+			OR = {
+				faction_in_power = bureaucrats
+				faction_in_power = enuchs
+			}			
+		}
+		allow = {
+			officials = 3
+		}
+		effect = {
+			faction_influence = {
+				faction = temples
+				influence = 5
+			}
+			officials = -3
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	support_enuchs_faction = {
+		potential = {
+			NOT = { faction_in_power = enuchs }
+			OR = {
+				faction_in_power = temples
+				faction_in_power = bureaucrats
+			}
+		}
+		allow = {
+			officials = 3
+		}
+		effect = {
+			faction_influence = {
+				faction = enuchs
+				influence = 5
+			}
+			officials = -3
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	support_crats_faction = {
+		potential = {
+			NOT = { faction_in_power = bureaucrats }
+			OR = {
+				faction_in_power = temples
+				faction_in_power = enuchs
+			}
+		}
+		allow = {
+			officials = 3
+		}
+		effect = {
+			faction_influence = {
+				faction = bureaucrats
+				influence = 5
+			}
+			officials = -3
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}		
+}
+
+province_decisions = {
+	reparations_of_the_great_wall = {
+		potential = {
+			not = { has_province_modifier = great_wall_reparations }
+			owner = {
+				or = {
+					tag = MCH
+					tag = MNG
+				}
+				owns = 693
+				owns = 695
+				owns = 696
+				owns = 697
+				owns = 699
+				owns = 700
+				owns = 707
+				owns = 709
+				owns = 1816
+			}
+			or = {
+				province_id = 693
+				province_id = 695
+				province_id = 696
+				province_id = 697
+				province_id = 699
+				province_id = 700
+				province_id = 707
+				province_id = 709
+				province_id = 1816
+			}
+		}
+		allow = {
+			owner = {
+				or = {
+					advisor = army_reformer
+					mil = 7
+				}
+				treasury  = 100
+				officials = 1
+			}
+		}
+		effect = {
+			owner = { 
+				treasury = -50 
+				officials = -1
+			}
+			add_province_modifier = {
+				name = "great_wall_reparations"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { owner = { treasury  = 500 } }
+			}
+		}
+	}
+
+	build_the_forbidden_city = {
+		potential = {
+			OR = {
+				province_id = 1816
+				province_id = 1821
+			}
+			is_capital = yes
+			owner = {
+				OR = {
+					tag = MCH
+					tag = MNG
+				}
+				has_country_flag = no_forbidden_city
+			}
+			NOT = { has_province_modifier = construct_the_forbidden_city }
+			NOT = { has_province_flag = the_forbidden_city }
+		}
+		allow = {
+			owner = {
+				war = no
+				OR = {
+					statesman = 4
+					adm = 7
+				}
+				OR = {
+					faction_in_power = bureaucrats
+					has_factions = no
+					}
+				stability = 1
+				treasury  = 300
+				officials = 3
+			}
+			NOT = {
+				any_neighbor_province = {
+					NOT = { owned_by = THIS }
+					NOT = { controlled_by = THIS }
+				}
+			}
+		}
+		effect = {
+			owner = { 
+				treasury = -300 
+				officials = -3
+			}
+			set_province_flag = construct_the_forbidden_city
+			add_province_modifier = {
+				name = "construct_the_forbidden_city"
+				duration = 1825
+			}
+			owner = { clr_country_flag = no_forbidden_city }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { owner = { treasury  = 600 } }
+			}
+		}
+	}
+
+}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\ChineseNation.txt
+************************************************************************
+country_decisions = {
+
+	chinese_nation = {
+		potential = {
+			tag = MNG
+			year = 1644
+			NOT = { exists = MCH }
+		}
+		allow = {
+			owns = 1816			# Beijing
+			is_core = 1816		# Beijing
+			war = no
+		}
+		effect = {
+			ming_china = { add_core = MCH }
+			random_owned = { base_tax = 1 }
+			centralization_decentralization = -1
+			capital = 1816		# Beijing
+			prestige = 0.02
+			government = despotic_monarchy
+			change_tag = MCH
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\Civic.txt
+************************************************************************
+country_decisions = {
+
+	licensing_of_the_press_act = {
+		potential = {
+			not = { has_country_modifier = the_licensing_of_the_press_act }
+			or = {
+				technology_group = western
+				technology_group = eastern
+			}
+			year = 1439
+			innovative_narrowminded = 1
+
+		}
+		allow = {
+			not = { serfdom_freesubjects = 0 }
+			adm = 7
+		}
+		effect = {
+			innovative_narrowminded = 1
+			serfdom_freesubjects = -1
+			add_country_modifier = {
+				name = "the_licensing_of_the_press_act"
+				duration = -1
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tenures_abolition_act = {
+		potential = {
+			not = { has_country_modifier = the_tenures_abolition_act }
+			government = feudal_monarchy
+		}
+		allow = {
+			government_tech = 8
+			not = { centralization_decentralization = -2 }
+			not = { serfdom_freesubjects = -2 }
+			dip = 7
+		}
+		effect = {
+			serfdom_freesubjects = 2
+			innovative_narrowminded = -1
+			add_country_modifier = {
+				name = "the_tenures_abolition_act"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	dissolution_act = {
+		potential = {
+			not = { has_country_modifier = the_dissolution_act }
+			government = monarchy
+			or = {
+				technology_group = western
+				technology_group = eastern
+			}
+			government_tech = 8
+		}
+		allow = {
+			not = { centralization_decentralization = -2 }
+			dip = 5
+			advisor = statesman
+		}
+		effect = {
+			serfdom_freesubjects = 1
+			badboy = -3
+			add_country_modifier = {
+				name = "the_dissolution_act"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	statue_in_restraint_of_appeals = {
+		potential = {
+			not = { has_country_modifier = the_statue_in_restraint_of_appeals }
+			religion = catholic
+			exists = PAP
+			NOT = { tag = PAP }
+		}
+		allow = {
+			not = { relation = { who = PAP value = 0 } }
+			adm = 5
+			mil = 5
+		}
+		effect = {
+			prestige = 0.1
+			any_neighbor_country = {
+				limit = { religion = catholic }
+				relation = { who = this value = -60 }
+			}
+			PAP = { relation = { who = this value = -100 } }
+			add_country_modifier = {
+				name = "the_statue_in_restraint_of_appeals"
+				duration = -1
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+			# England
+		}
+	}
+	witchcraft_act = {
+		potential = {
+			not = { has_country_modifier = the_witchcraft_act }
+			religion_group = christian
+			idea = church_attendance_duty
+			year = 1500
+			not = { year = 1700 }
+		}
+		allow = {
+			theologian = 5
+			innovative_narrowminded = 2
+		}
+		effect = {
+			innovative_narrowminded = 1
+			add_country_modifier = {
+				name = "the_witchcraft_act"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			# Germany, England
+		}
+	}
+	education_act = {
+		potential = {
+			has_country_modifier = the_school_establishment_act
+			not = { has_country_modifier = the_education_act }
+			religion_group = christian
+			not = { innovative_narrowminded = 0 }
+		}
+		allow = {
+			statesman = 5
+			adm = 7
+		}
+		effect = {
+			innovative_narrowminded = -1
+			add_country_modifier = {
+				name = "the_education_act"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			# England, Scotland
+		}
+	}
+	abolish_slavery_act = {
+		potential = {
+			not = { has_country_modifier = the_abolish_slavery_act }
+			slaves = 1
+			year = 1700
+			government_tech = 30
+		}
+		allow = {
+			dip = 6
+			not = { badboy = 0.1 }
+		}
+		effect = {
+			prestige = 0.05
+			innovative_narrowminded = -1
+			add_country_modifier = {
+				name = "the_abolish_slavery_act"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	judiciary_act = {
+		potential = {
+			not = { has_country_modifier = the_judiciary_act }
+			not = { centralization_decentralization = -2 }
+			government_tech = 20
+		}
+		allow = {
+			adm = 7
+			capital_scope = {
+				has_building = courthouse
+				has_building = constable
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "the_judiciary_act"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	combination_act = {
+		potential = {
+			year = 1750
+			not = { has_country_modifier = the_combination_act }
+			not = { serfdom_freesubjects = -2 }
+			not = { idea = humanist_tolerance }
+		}
+		allow = {
+			innovative_narrowminded = 2
+			adm = 6
+		}
+		effect = {
+			mercantilism_freetrade = -1
+			add_country_modifier = {
+				name = "the_combination_act"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	school_establishment_act = {
+		potential = {
+			not = { has_country_modifier = the_school_establishment_act }
+			government_tech = 16
+		}
+		allow = {
+			not = { innovative_narrowminded = -2 }
+			capital_scope = { has_building = university }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "the_school_establishment_act"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	revoke_restraint_of_appeals = {
+		potential = {
+			has_country_modifier = the_statue_in_restraint_of_appeals
+			not = { has_country_modifier = revocation_of_restraint_of_appeals }
+			religion = catholic
+			exists = PAP
+		}
+		allow = {
+			dip = 7
+			advisor = theologian
+			relation = { who = PAP value = 100 }
+		}
+		effect = {
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			relation = { who = PAP value = 50 }
+			add_country_modifier = {
+				name = "revocation_of_restraint_of_appeals"
+				duration = -1
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.0
+				OR = {
+					NOT = { relation = { who = PAP value = 150 } }
+					num_of_cities = 5
+				}
+			}
+		}
+	}
+}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\colonial.txt
+************************************************************************
+country_decisions = {
+	
+	benign_neglect = {
+		potential = {
+			not = { has_country_modifier = beneficial_neglect }
+			technology_group = western
+			overseas_provinces_percentage = 0.3
+		}
+		allow = {
+			not = { badboy = 0.1 }
+			idea = humanist_tolerance
+		}
+		effect = {
+			add_country_modifier = {
+				name = "beneficial_neglect"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	colonial_expansion = {
+		potential = {
+			not = { has_country_modifier = colonial_expansions }
+			technology_group = western
+			or = {
+				idea = colonial_ventures
+				idea = land_of_opportunity
+			}
+			badboy = 0.3
+		}
+		allow = {
+			adm = 6
+			number_of_colonies = 4
+		}
+		effect = {
+			add_country_modifier = {
+				name = "colonial_expansions"
+				duration = -1
+			}		
+		}
+		ai_will_do = {
+			factor = 1
+			# England
+		}
+	}
+	house_of_trade = {
+		potential = {
+			not = { has_country_modifier = the_house_of_trade }
+			technology_group = western
+			overseas_provinces_percentage = 0.3
+			not = { mercantilism_freetrade = 0 }
+		}
+		allow = {
+			idea = national_trade_policy
+			trade_efficiency = 0.5
+		}
+		effect = {
+			mercantilism_freetrade = -1
+			add_country_modifier = {
+				name = "the_house_of_trade"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			# Spain, Portugal
+		}
+	}
+	colonial_restrictions = {
+		potential = {
+			not = { has_country_modifier = restrictions_for_colonies }
+			overseas_provinces_percentage = 0.2
+			centralization_decentralization = 2
+		}
+		allow =  {
+			adm = 7
+			stability = 2
+		}
+		effect = {
+			add_country_modifier = {
+				name = "restrictions_for_colonies"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+province_decisions = {
+	strategic_defence = {
+		potential = {
+			not = { has_province_modifier = strategic_defenses }
+			not = { any_neighbor_province = { has_province_modifier = strategic_defenses } }
+			owner = { land_tech = 16 }
+			any_neighbor_province = { native_size = 5 }
+			is_core = this
+		}
+		allow = {
+			has_building = fort1
+			owner = {
+				officials = 1
+			}
+		}
+		effect = {
+			add_province_modifier = {
+				name = "strategic_defenses"
+				duration = -1
+			}
+			owner = {
+				officials = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	penal_colony = {
+		potential = {
+			not = { has_province_modifier = penal_colonies }
+			owner = {
+				not = { has_country_flag = has_penal_colonies }
+				not = { serfdom_freesubjects = 0 }
+			}
+			is_overseas = yes
+			is_colony = yes
+			not = { base_tax = 4 }
+		}
+		allow = {
+			owner = {
+				or = {
+					adm = 7
+					advisor = colonial_governor
+				}
+				officials = 2
+			}
+		}
+		effect = {
+			owner = { 
+				set_country_flag = has_penal_colonies 
+				officials = -2
+			}
+			add_province_modifier = {
+				name = "penal_colonies"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\colonial_takeover.txt
+************************************************************************
+province_decisions = {
+
+	assimilate_colony = {
+		potential = {
+			is_overseas = yes
+			religion_group = THIS
+			has_owner_culture = no
+			owner = { 
+				OR = {
+					technology_group = western
+					technology_group = eastern
+					technology_group = ottoman
+					technology_group = muslim
+				}
+				OR = {
+					culture_group = germanic
+					culture_group = scandinavian
+					culture_group = british
+					culture_group = gaelic
+					culture_group = latin
+					culture_group = iberian
+					culture_group = french
+					culture_group = basque_group
+					culture_group = finno_ugric
+					culture_group = south_slavic
+					culture_group = west_slavic
+					culture_group = east_slavic
+					culture_group = baltic
+					culture_group = byzantine
+					culture_group = turko_semitic
+				}
+			}
+			OR = {
+				culture_group = germanic
+				culture_group = scandinavian
+				culture_group = british
+				culture_group = gaelic
+				culture_group = latin
+				culture_group = iberian
+				culture_group = french
+				culture_group = basque_group
+				culture_group = finno_ugric
+				culture_group = south_slavic
+				culture_group = west_slavic
+				culture_group = east_slavic
+				culture_group = baltic
+				culture_group = byzantine
+				culture_group = turko_semitic
+			}
+			NOT = { citysize = 10000 }
+			NOT = { continent = europe } 
+			NOT = { region = north_africa }
+			NOT = { region = middle_east_central_asia }
+		}
+		allow = {
+			#is_core = THIS
+			owner =  {
+				colonists = 1
+				stability = 0
+			}
+			
+		}
+		effect = {
+			owner = { colonists = -1 }
+			culture = THIS
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\Construction.txt
+************************************************************************
+#
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\constructions.txt
+************************************************************************
+province_decisions = {
+	eng_corps_boost = {
+		potential = {
+			owner = { idea =  engineer_corps }
+			NOT = { has_province_modifier = local_fortress }
+			NOT = {has_province_modifier = fort_in_disrepair }
+			has_building = fort1
+		}
+		allow = {
+			owner = { 
+			war = no
+			treasury = 100
+			}
+		}
+		effect = {
+			owner = {
+				treasury = -100
+			}
+			add_province_modifier = {
+				name = "local_fortress"
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+				any_neighbor_province = {
+				owner = {
+					not = { 
+						relation = { who = this value = 0 } 
+						truce_with = THIS
+					}
+				}
+			}
+		}
+	}
+	}
+	eng_corps_repair = {
+		potential = {
+			owner = { idea =  engineer_corps }
+			has_province_modifier = fort_in_disrepair
+			has_building = fort1
+		}
+		allow = {
+			owner = { 
+			war = no
+			treasury = 50
+			}
+		}
+		effect = {
+			owner = {
+				treasury = -50
+			}
+			remove_province_modifier = fort_in_disrepair
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+				any_neighbor_province = {
+				owner = {
+					not = { 
+						relation = { who = this value = 0 } 
+						truce_with = THIS
+					}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\Cultural.txt
+************************************************************************
+country_decisions = {
+
+	cultural_shift = {
+		potential = {
+			capital_scope = {
+				NOT = { culture = THIS }
+			}
+			OR = {
+				NOT = { tag = FRA }
+				AND = {
+					tag = FRA
+					capital_scope = { culture_group = french }  # could have been formed by basque or breton
+				}
+			}
+			OR = {
+				NOT = { tag = GBR }
+				AND = {
+					tag = GBR
+					capital_scope = { culture_group = british }  # could have been formed by welsh
+				}
+			}
+			NOT = { tag = SCA }
+			NOT = { tag = GER }
+			OR = {
+				NOT = { tag = HRE }
+				AND = {
+					tag = HRE
+					capital_scope = { culture_group = germanic }  # could have been formed by any culture
+				}
+			}
+			NOT = { tag = PAP }
+			NOT = { tag = ITA }
+			OR = {
+				NOT = { tag = SPA }
+				AND = {
+					tag = SPA
+					capital_scope = { culture_group = iberian }  # could have been formed by basque
+				}
+			}
+			NOT = { tag = RUS }
+			NOT = { tag = BYZ }
+			OR = {
+				NOT = { tag = PER }
+				AND = {
+					tag = PER
+					capital_scope = { culture_group = iranian }  # could have been formed by azerbadjani
+				}
+			}
+			NOT = { tag = KHA }
+			NOT = { tag = JAP }
+			NOT = { tag = MCH }
+			NOT = { tag = MNG }
+			NOT = { tag = PRU }
+		}
+		allow =  {
+			dominant_culture = CAPITAL
+			stability = 1
+			war = no 
+			is_subject = false
+		}
+	  	effect = {
+			primary_culture = CAPITAL
+			stability = -5
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+province_decisions = {
+	support_local_customs = {
+		potential = {
+			has_national_focus = yes
+			has_owner_culture = no
+			has_owner_religion = yes
+			NOT = { has_province_modifier = local_customs }
+			owner = { 
+				NOT = { 
+					innovative_narrowminded = 0 
+				} 
+			}
+		}
+		allow = {
+			owner = { 
+				dip = 5
+				officials = 4
+			}
+		}
+		effect = {
+			add_province_modifier = {
+				name = "local_customs"
+				duration = -1
+			}
+			owner = {
+				officials = -4
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.0
+				has_owner_culture = yes
+			}
+			modifier = {
+				factor = 0.0
+				has_owner_religion = yes
+			}
+			modifier = {
+				factor = 0.0
+				is_core = THIS
+			}
+			modifier = {
+				factor = 0.0
+				NOT = { revolt_risk = 6 }
+			}
+		}
+	}
+	
+	promote_cultural_unity = {
+		
+		potential = {
+			owner = { culture_group = THIS }
+			has_owner_religion = yes
+			
+			any_core = {
+				exists = no
+	 		}
+		}
+		
+		allow = {
+			has_national_focus = yes
+			NOT = { nationalism = 1 }
+			owner = { 
+				officials = 2
+			}
+		}
+		
+		effect = {
+			any_core = { 
+				limit = { exists = no }
+				remove_core = THIS
+			}
+			
+			owner = {
+				officials = -2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\CulturalDecisions.txt
+************************************************************************
+cultural_decisions = {
+	support_commedia_dellarte = {
+		potential = {
+			technology_group = western
+			year = 1550
+			religion_group = christian
+			not = {
+				year = 1700
+				has_country_modifier = commedia_dellarte
+			}
+		}
+		allow = {
+			years_of_income = 0.1
+			officials = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "commedia_dellarte"
+				duration = 1460
+			}
+			officials = -1
+			years_of_income = -0.1
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				cultural_tradition = 0.2
+			}
+		}
+	}
+			
+	introduce_heir = {
+		potential = {
+			government = monarchy
+			has_heir = yes
+			heir_age = 15
+			not = {
+				heir_age = 18
+				has_country_modifier = heir_introduced
+			}
+		}
+		allow = {
+			years_of_income = 0.1
+			diplomats = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "heir_introduced"
+				duration = 1460
+			}
+			prestige = 0.05
+			years_of_income = -0.1
+			diplomats = -1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+				
+	support_enlightenment_movement = {
+		potential = {
+			NOT = { innovative_narrowminded = -2 }
+			year = 1650
+			technology_group = western
+			NOT = {
+				year = 1800
+				has_country_modifier = enlightenment_movement
+			}
+		}
+		allow = {
+			NOT = { innovative_narrowminded = -4 }
+			officials = 1
+			ADM = 6
+			years_of_income = 1
+			prestige = 0.4
+		}
+		effect = {
+			add_country_modifier = {
+				name = "enlightenment_movement"
+				duration = 7300
+			}
+			officials = -1
+			years_of_income = -1
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				years_of_income = 2
+			}
+		}
+	}
+		
+	commission_epic_to_monarch = {
+		potential = {
+			government = monarchy
+			not = {
+				has_country_modifier = epic_to_monarch
+			}
+			prestige = 0.1
+		}
+		allow = {
+			officials = 1
+			years_of_income = 0.1
+		}
+		effect = {
+			officials = -1
+			years_of_income = -0.1
+			add_country_modifier = {
+				name = "epic_to_monarch"
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				cultural_tradition = 0.2
+			}
+		}
+	}
+
+	court_byzantine_refugees = {
+		potential = {
+			OR = {
+				technology_group = western
+				technology_group = eastern
+			}
+			religion_group = christian
+			NOT = {
+				exists = BYZ
+				year = 1500
+				has_country_flag = received_byzantines
+			}
+			151 = {
+				culture = turkish
+				religion = sunni
+			}
+		}
+		allow = {
+			diplomats = 5
+			officials = 3
+			prestige = 0.3
+			DIP = 7
+		}
+		effect = {
+			add_country_modifier = {
+				name = "byzantine_influx"
+				duration = 10950
+			}
+			set_country_flag = received_byzantines
+			
+			diplomats = -5
+			officials = -3
+			prestige = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		
+	support_florentine_school = {
+		potential = {
+			technology_group = western
+			NOT = {
+				year = 1500
+				has_country_modifier = florentine_school
+			}
+			prestige = 0.25
+		}
+		allow = {
+			officials = 3
+			diplomats = 1
+			years_of_income = 0.4
+		}
+		effect = {
+			add_country_modifier = {
+				name = florentine_school
+				duration = 3650
+			}
+			officials = -3
+			diplomats = -1
+			years_of_income = -0.4
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				cultural_tradition = 0.4
+			}
+		}
+	}
+		
+	hold_the_last_jousting_tournament = {
+		potential = {
+			technology_group = western
+			government = monarchy
+			not = {
+				land_tech = 11
+				has_country_flag = last_jousting_tournament_held
+			}
+		}
+		allow = {
+			army_tradition = 0.15
+			cultural_tradition = 0.05
+			officials = 3
+			years_of_income = 0.2
+		}
+		effect = {
+			set_country_flag = last_jousting_tournament_held
+			add_country_modifier = {
+				name = "the_last_joust"
+				duration = 3650
+			}
+			officials = -3
+			years_of_income = -0.2
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 100
+				war = yes
+			}		
+		}
+		
+	}
+		
+		
+	charter_guild_of_st_luke = {
+		potential = {
+			religion = catholic
+			any_owned_province = {
+				has_building = fine_arts_academy
+			}
+			not = {
+				has_country_modifier = guild_of_st_luke
+			}
+		}
+		allow = {
+			idea = patron_of_art
+			years_of_income = 0.2
+			officials = 1
+		}
+		effect = {
+			years_of_income = -0.2
+			officials = -1
+			add_country_modifier = {
+				name = "guild_of_st_luke"
+				duration = 36500
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				not = {
+					years_of_income = 1
+				}
+			}
+		}
+	}
+	
+	support_dutch_masters = {
+		potential = {
+			97 = {
+				cot = yes
+				religion = reformed
+			}
+			not = {
+				has_country_modifier = dutch_masters
+			}
+			technology_group = western
+			idea = patron_of_art
+		}
+		allow = {
+			years_of_income = 0.6
+			officials = 1
+		}
+		effect = {
+			years_of_income = -0.6
+			officials = -1
+			add_country_modifier = {
+				name = "dutch_masters"
+				duration = 18250
+			}
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		
+	develop_diwani_script = {
+		potential = {
+			religion = sunni
+			government = monarchy
+			not = {
+				has_country_modifier = diwani_script
+			}
+		}
+		allow = {
+			officials = 3
+			artist = 4
+		}
+		effect = {
+			add_country_modifier = {
+				name = "diwani_script"
+				duration = -1
+			}
+			officials = -3
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+			
+	develop_way_of_tea = {
+		potential = {
+			religion = shinto
+			is_daimyo = yes
+			not = {
+				has_country_modifier = way_of_tea
+			}
+		}
+		allow = {
+			NOT = {
+				any_country = {
+					capital_scope = { has_province_modifier = controls_tea_trade }
+				}
+			}
+			cultural_tradition = 0.25
+			advisor = theologian
+			trading_part = {
+				trade_goods = tea
+				value = 0.2
+			}
+		}
+		effect = {
+			any_country = {
+				limit = { has_country_modifier = way_of_tea }
+				remove_country_modifier = way_of_tea
+			}
+			add_country_modifier = {
+				name = "way_of_tea"
+				duration = -1
+			}
+			capital_scope = {
+				add_province_modifier = {
+					name = "controls_tea_trade"
+					duration = 365
+				}			
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	gild_icons = {
+		potential = {
+			OR = {
+				religion = orthodox
+				religion = catholic
+			}
+			any_owned_province = {
+				has_building = temple
+			}
+			idea = church_attendance_duty
+			not = {
+				has_country_modifier = gilded_iconography
+				has_country_modifier = austere_religious_tradition
+			}
+		}
+		allow = {
+			officials = 1
+			years_of_income = 0.5
+		}
+		effect = {
+			officials = -1
+			years_of_income = -0.5
+			add_country_modifier = {
+				name = "gilded_iconography"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					years_of_income = 0.8
+				}
+			}
+		}
+	}
+	commission_medieval_tapestry = {
+		potential = {
+			not = {
+				year = 1450
+			}
+			not = {
+				has_country_modifier = medieval_tapestry
+			}
+		}
+		allow = {
+			officials = 1
+			years_of_income = 0.1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "medieval_tapestry"
+				duration = 7300
+			}
+			officials = -1
+			years_of_income = -0.1
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					years_of_income = -0.4
+				}
+			}
+		}
+	}
+
+	commission_painting = {
+		potential = {
+		}
+		allow = {
+			officials = 1
+		}
+		effect = {
+			cultural_tradition = 0.05
+			officials = -1
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	endorse_culture = {
+		potential = {
+		}
+		allow = {
+			officials = 1
+			prestige = 0.5
+			NOT = { war_exhaustion = 0.1 }
+		}
+		effect = {
+			cultural_tradition = 0.08
+			officials = -1
+			prestige = -0.10
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = 
+			{
+				factor = 0
+				NOT = { officials = 2 }
+			}
+			modifier = {
+				factor = 0.0
+				NOT = { prestige = 0.8 }
+			}
+		}
+	}
+
+	endorse_renaissance_philosophy	= {
+		potential = {
+			year = 1450
+			not = {
+				year = 1600
+				num_of_cities = 6
+				has_country_modifier = blooming_renaissance
+			}
+			technology_group = western
+		}
+		allow = {
+			OR = {
+				advisor = philosopher
+				any_owned_province = {
+					has_building = university
+				}
+			}
+			officials = 3
+			years_of_income = 0.3
+			ADM = 6
+		}
+		effect = {
+			add_country_modifier = {
+				name = blooming_renaissance
+				duration = 3650
+			}
+			years_of_income = -0.3
+			officials = -3
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				not = {
+					years_of_income = 0.8
+				}
+			}
+		}
+	}
+	support_baroque_music = {
+		potential = {
+			year = 1600
+			not = {
+				year = 1750
+				has_country_modifier = the_sound_of_music
+			}
+			technology_group = western
+		}
+		allow = {
+			any_owned_province = {
+				has_building = fine_arts_academy
+			}
+			officials = 1
+			years_of_income = 0.1
+		}
+		effect = {
+			add_country_modifier = {
+				name = the_sound_of_music
+				duration = 3650
+			}
+			officials = -1
+			years_of_income = -0.1
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				not = {
+					treasury = 100
+				}
+			}
+		}
+	}
+	support_south_german_organ_tradition = {
+		potential = {
+			year = 1630
+			NOT = {
+				year = 1720
+				has_country_modifier = south_german_organ_tradition
+			}
+			technology_group = western
+			culture_group = germanic
+			any_owned_province = {
+				has_building = temple
+			}
+		}
+		allow = {
+			officials = 3
+			years_of_income = 0.5
+		}
+		effect = {
+			add_country_modifier = {
+				name = "south_german_organ_tradition"
+				duration = 10950
+			}
+			officials = -3
+			years_of_income = -0.5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+province_decisions = {
+	hold_organ_concert = {
+		potential = {
+			has_building = temple
+			owner = {
+				has_country_modifier = south_german_organ_tradition
+			}
+			has_owner_religion = yes
+			not = { has_province_modifier = organ_concert }
+		}
+		allow = {
+			owner = {
+				officials = 1
+				treasury = 10
+				}
+		}
+		effect = {
+			add_province_modifier = {
+				name = "organ_concert"
+				duration = 1825
+			}
+			owner = { officials = -1
+			treasury = -10
+				}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\denmark.txt
+************************************************************************
+country_decisions = {
+	adopt_vornedskab = {
+	
+		potential = {
+			primary_culture = danish
+			OR = {
+				tag = DAN
+				tag = SCA
+			}
+			NOT = { has_country_modifier = vornedskab }
+		}
+		allow = {
+			NOT = { serfdom_freesubjects = -2 }
+			ADM = 6
+		}
+		effect = {
+			add_country_modifier = {
+				name = "vornedskab"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	sign_den_danske_lov = {
+	
+		potential = {
+			primary_culture = danish
+			OR = {
+				tag = DAN
+				tag = SCA
+			}
+			NOT = { has_country_modifier = den_danske_lov }
+		}
+		allow = {
+			government_tech = 30
+			ADM = 6
+		}
+		effect = {
+			add_country_modifier = {
+				name = "den_danske_lov"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\Dutch.txt
+************************************************************************
+country_decisions = {
+
+	establish_bank_of_amsterdam = {
+		potential = {
+			tag = NED
+			trade_tech = 24	#1609 historical.
+			NOT = { has_country_modifier = bank_of_amsterdam }
+		}
+		allow = {
+			idea = national_bank
+			mercantilism_freetrade = 2
+			ADM = 6
+			owns = 97
+		}
+		effect = {
+			add_country_modifier = {
+				name = "bank_of_amsterdam"
+				duration = -1
+			}		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	found_voc = {
+		potential = {
+			tag = NED
+			NOT = { has_country_modifier = dutch_india_trade_co }
+			NOT = { has_country_flag = trade_company }
+			eastasian_trade_ports = {
+				has_discovered = THIS
+			}			
+		}
+		allow = {
+			num_of_ports = 2
+			naval_tech = 20	
+	
+			eastasian_trade_ports = {
+				owned_by = THIS
+			}			
+		}
+		effect = {
+			set_country_flag = trade_company
+			random_owned = {
+				limit = {
+					continent = europe
+					port = yes
+					NOT = { has_building = shipyard }
+					is_core = this
+				}
+				add_building = grand_shipyard
+			}		
+			add_country_modifier = {
+				name = "dutch_india_trade_co"
+				duration = -1
+			}		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\Economic.txt
+************************************************************************
+country_decisions = {
+
+	liquor_act = {
+		potential = {
+			religion_group = christian
+			not = { has_country_modifier = the_liquor_act }
+		}
+		allow = {
+			adm = 6
+			innovative_narrowminded = 1
+			OR = {
+				advisor = treasurer
+				advisor = collector
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "the_liquor_act"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	joint_stock_companies_act = {
+		potential = {
+			has_country_flag = trade_company
+			year = 1700
+			not = { has_country_modifier = the_joint_stock_companies_act }
+		}
+		allow = {
+			trade_efficiency = 0.5
+			or = {
+				trade_income_percentage = 0.4
+				monthly_income = 100
+			}
+		}
+		effect = {
+			mercantilism_freetrade = -1
+			add_country_modifier = {
+				name = "the_joint_stock_companies_act"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	merchant_shipping_act = {
+		potential = {
+			num_of_ports = 1
+			idea = merchant_adventures
+			not = { has_country_modifier = the_merchant_shipping_act }
+		}
+		allow = {
+			idea = national_trade_policy
+			trade_efficiency = 0.5
+		}
+		effect = {
+			mercantilism_freetrade = -1
+			add_country_modifier = {
+				name = "the_merchant_shipping_act"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	court_of_wards_and_liveries = {
+		potential = {
+			government = feudal_monarchy
+			not = { has_country_modifier = the_court_of_wards_and_liveries }
+		}
+		allow = {
+			adm = 7
+			not = { serfdom_freesubjects = -2 }
+			not = { centralization_decentralization = -2 }
+		}
+		effect = {
+			serfdom_freesubjects = -1
+			add_country_modifier = {
+				name = "the_court_of_wards_and_liveries"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	agricultural_cultivation = {
+		potential = {
+			idea = shrewd_commerce_practise
+			production_tech = 30
+			not = { has_country_modifier = agricultural_cultivations }
+		}
+		allow = {
+			production_efficiency = 0.5
+			OR = {
+				advisor = natural_scientist
+				advisor = alderman
+			}
+			or = {
+				coffee = 2
+				cotton = 2
+				sugar = 2
+				tobacco = 2
+				wine = 2
+				spices = 2
+				grain = 5
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "agricultural_cultivations"
+				duration = -1
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	importation_act = {
+		potential = {
+			or = {
+				idea = national_trade_policy
+				idea = shrewd_commerce_practise
+			}
+			not = { has_country_modifier = the_importation_act }
+		}
+		allow = {
+			num_of_cots = 1
+			or = {
+				idea = national_trade_policy
+				idea = shrewd_commerce_practise
+			}
+			production_efficiency = 0.5
+		}
+		effect = {
+			mercantilism_freetrade = -1
+			add_country_modifier = {
+				name = "the_importation_act"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mining_act = {
+		potential = {
+			not = { mercantilism_freetrade = -1 }
+			or = {
+				copper = 1
+				gold = 1
+				iron = 1
+			}
+			government_tech = 31
+			not = { has_country_modifier = the_mining_act }
+		}
+		allow = {
+			advisor = sheriff
+			tax_assessor = 1
+		}
+		effect = {
+			mercantilism_freetrade = -1
+			add_country_modifier = {
+				name = "the_mining_act"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	implement_gold_standard = {
+		potential = {
+			not = { has_country_modifier = gold_standard }
+			government_tech = 30
+			gold = 1
+		}
+		allow = {
+			NOT = {
+				inflation = 10
+			}
+			advisor = master_of_mint
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "gold_standard"
+				duration = -1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		
+}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\england.txt
+************************************************************************
+country_decisions = {
+	establish_british_merchant_navy = {
+		potential = {
+			OR = {
+				tag = ENG
+				tag = GBR
+			}
+			trade_tech = 30
+			NOT = { has_country_modifier = british_merchant_navy }
+		}
+		allow = {
+			land_naval = 3
+			monthly_income = 60
+			trade_income_percentage = 0.33
+			idea = grand_navy
+			idea = national_trade_policy
+		}
+		effect = {
+			add_country_modifier = {
+				name = "british_merchant_navy"
+				duration = -1
+			}		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	acknowledge_britanna_rules_the_waves = {
+		potential = {
+			OR = {
+				tag = ENG
+				tag = GBR
+			}
+			NOT = { has_country_modifier = britanna_rules_the_waves }
+		}
+		allow = {
+			total_num_of_ports = 30
+			big_ship = 100
+		}
+		effect = {
+			add_country_modifier = {
+				name = "britanna_rules_the_waves"
+				duration = -1
+			}		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	establish_the_wooden_wall = {
+		potential = {
+			OR = {
+				tag = ENG
+				tag = GBR
+			}
+			NOT = { has_country_modifier = the_wooden_wall }
+		}
+		allow = {
+			idea = sea_hawks
+			idea = superior_seamanship
+			NOT = {
+				british_isles = {
+					NOT = { owned_by = THIS }
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "the_wooden_wall"
+				duration = -1
+			}		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+province_decisions = {
+	designate_the_staple_port = {
+		potential = {
+			province_id = 87
+			owner = {
+				tag = ENG
+			}
+			NOT = { has_province_modifier = the_staple_port }
+
+		}
+		allow = {
+			owner = {
+				war = no
+				ADM = 5
+				officials = 4
+			}
+			NOT = {
+				1744 = {
+					owned_by = THIS
+				}
+			}
+			1744 = {
+				cot = yes
+			}
+		
+		}
+		effect = {
+			1744 = {
+				 owner = {
+					relation = { who = ENG value = -150 }
+				}
+			}
+			owner = {
+				mercantilism_freetrade = -1
+				officials = -4
+			}
+			add_province_modifier = {
+				name = "the_staple_port"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\EnglishNation.txt
+************************************************************************
+country_decisions = {
+
+	english_nation = {
+		potential = {
+			NOT = { exists = ENG }
+			NOT = { exists = GBR }
+			NOT = { tag = HRE }
+			NOT = { tag = PAP }
+			primary_culture = english
+		}
+		allow = 
+		{
+			owns = 236		# London
+			owns = 237		# Oxfordshire
+			owns = 234		# Wessex
+			owns = 235		# Kent
+			owns = 238		# East Anglia
+			
+			is_core = 236		# London
+			is_core = 237		# Oxfordshire
+			is_core = 234		# Wessex
+			is_core = 235		# Kent
+			is_core = 238		# East Anglia
+			
+			war = no
+		}
+	  effect = {
+			ENG = {
+				add_core = 233		# Cornwall
+				add_core = 234		# Wessex
+				add_core = 236		# London
+				add_core = 237		# Oxfordshire
+				add_core = 238		# East Anglia
+				add_core = 239		# Gloucestershire
+				add_core = 240		# Marches
+				add_core = 241		# Glamorgan
+				add_core = 243		# Lincoln
+				add_core = 244		# Lancashire
+				add_core = 245		# Yorkshire
+				add_core = 246		# Northumberland
+				add_core = 247		# Cumbria
+				add_core = 1860		# Norfolk
+				add_core = 1861		# Derby
+			}
+			colonists = 1
+			random_owned = {
+				base_tax = 1
+			}
+			centralization_decentralization = -2
+			prestige = 0.05
+			change_tag = ENG
+			ENG = {
+				capital = 236
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\France.txt
+************************************************************************
+province_decisions = {
+	provincial_taxation_system = {
+		potential = {
+			owner = {
+				or = {
+					tag = FRA
+					tag = RFR
+				}
+				government_tech = 31
+			}
+			not = { has_province_modifier = the_provincial_taxation_system }
+			not = { any_neighbor_province = { has_province_modifier = the_provincial_taxation_system } }
+			not = { any_neighbor_province = { is_capital = yes } }
+		}
+		allow = {
+			owner = { 
+				NOT = { 
+					centralization_decentralization = 0 
+				}
+				officials = 1
+			}
+			has_building = treasury_office
+		}
+		effect = {
+			add_province_modifier = {
+				name = "the_provincial_taxation_system"
+				duration = -1
+			}
+			owner = {
+				officials = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	state_controlled_guild = {
+		potential = {
+			owner = {
+				or = {
+					tag = FRA
+					tag = RFR
+				}
+			}
+			not = { has_province_modifier = state_controlled_guilds }
+			not = { any_neighbor_province = { has_province_modifier = state_controlled_guilds } }
+			not = { any_neighbor_province = { is_capital = yes } }
+			has_building = workshop
+		}
+		allow = {
+			owner = { 
+				advisor = master_of_mint
+				officials = 1
+			}
+		}
+		effect = {
+			add_province_modifier = {
+				name = "state_controlled_guilds"
+				duration = -1
+			}
+			owner = {
+				officials = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+religion_decisions = {
+	enact_edict_de_nantes = {
+		potential = {
+			tag = FRA
+			NOT = { has_country_modifier = edict_de_nantes }
+			NOT = { has_country_flag = had_edict_de_nantes }
+			OR = {
+				is_religion_enabled = protestant
+				is_religion_enabled = reformed
+			}
+		}
+		allow = {
+			religion = catholic
+			dominant_religion = catholic
+			NOT = { has_country_modifier = counter_reformation } 
+			OR = {
+				num_of_religion = { religion = protestant value = 3 }
+				num_of_religion = { religion = reformed value = 3 }
+			}	
+		}
+		effect = {
+			set_country_flag = had_edict_de_nantes
+			add_country_modifier = {
+				name = "edict_de_nantes"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				idea = divine_supremacy
+			}
+			modifier = {
+				factor = 0
+				innovative_narrowminded = 3
+			}
+		}
+	}
+	revoke_edict_de_nantes = {
+		potential = {
+			has_country_modifier = edict_de_nantes
+		}
+		allow = {
+			OR = {
+				NOT = { religion = catholic }
+				AND = {
+					NOT = {  num_of_religion = { religion = protestant value = 1 } }
+					NOT = {  num_of_religion = { religion = reformed value = 1 } }
+				}
+				183 = { controlled_by = REB }
+			}	
+		}
+		effect = {
+			remove_country_modifier = edict_de_nantes
+			prestige = 0.1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+}
+
+
+country_decisions = {
+	move_the_court_to_versailles = {
+	
+		potential = {
+			tag = FRA
+			NOT = { has_country_flag = versailles_court }
+			capital = 183
+			government = monarchy
+		}
+		allow = {
+			NOT = {  centralization_decentralization = -3 }
+			government_tech = 32
+		}
+		effect = {
+			set_country_flag = versailles_court
+			aristocracy_plutocracy = -3
+			prestige = 0.33
+			183 = { base_tax = 2 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+
+	
+	say_the_state_is_me = {
+		potential = {
+			tag = FRA
+			government_tech = 25
+			NOT = { has_country_modifier = the_state_is_me }
+			government = monarchy
+		}
+		allow = {
+			ADM = 8
+			monthly_income = 100
+		}
+		effect = {
+			add_country_modifier = {
+				name = "the_state_is_me"
+				duration = -1
+				}
+			government = absolute_monarchy
+			centralization_decentralization = -2
+			
+			}
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+	
+	
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\FrenchNation.txt
+************************************************************************
+country_decisions = {
+
+	french_nation = {
+		potential = {
+			NOT = { tag = SPA }		# Basque is a valid culture for both FRA and SPA
+			NOT = { tag = HRE }
+			NOT = { tag = PAP }
+			NOT = { exists = FRA }
+			NOT = { exists = RFR }
+			OR = {
+				culture_group = french
+				culture_group = basque_group
+				primary_culture = breton
+			}
+		}
+		allow = 
+		{
+			owns = 177	# Maine
+			owns = 179	# Blois
+			owns = 182	# Vermandois
+			owns = 183	# Оle-de-France
+			owns = 184	# Orlйannais
+			owns = 185	# Othe
+			owns = 186	# Champagne
+			
+			is_core = 177	# Maine
+			is_core = 179	# Blois
+			is_core = 182	# Vermandois
+			is_core = 183	# Оle-de-France
+			is_core = 184	# Orlйannais
+			is_core = 185	# Othe
+			is_core = 186	# Champagne
+			
+			war = no
+		}
+	  effect = {
+			FRA = {
+				add_core = 167		# Caux
+				add_core = 168		# Normandie
+				add_core = 173		# Saintonge
+				add_core = 177		# Gascogne
+				add_core = 178		# Anjou
+				add_core = 179		# Blois
+				add_core = 180		# Poitou
+				add_core = 182		# Vermandois
+				add_core = 183		# Ile-de-France
+				add_core = 184		# Orlйannais
+				add_core = 185		# Othe
+				add_core = 186		# Champagna
+				add_core = 190		# Bourbon
+				add_core = 194		# Pйrigord
+				add_core = 195		# Limousin
+				add_core = 196		# Toulouse
+				add_core = 198		# Rouergue
+				add_core = 199		# Auvergne
+				add_core = 200		# Avignon
+				add_core = 1743		# Cambray
+				add_core = 1879		# Alencon
+			}
+			merchants = 1
+			random_owned = {
+				base_tax = 1
+			}
+			centralization_decentralization = -2
+			prestige = 0.05
+			change_tag = FRA
+			FRA = {
+				capital = 183
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\germannation.txt
+************************************************************************
+country_decisions = {
+
+	german_nation = {
+		potential = {
+			NOT = { exists = GER }
+			NOT = { tag = HRE }
+			OR = { 
+				primary_culture = hannoverian
+				primary_culture = pommeranian
+				primary_culture = hessian
+				primary_culture = saxon
+				primary_culture = bavarian
+				primary_culture = prussian
+				primary_culture = rheinlaender
+			}
+		}
+		allow = 
+		{
+			owns = 46	# Mecklenburg
+			owns = 50	# Brandenburg
+			owns = 52	# Altmark
+			owns = 53	# Lьneburg
+			owns = 57	# Hannover
+			owns = 58	# Anhalt
+			owns = 61	# Dresden
+			owns = 62	# Leipzig
+			owns = 63	# Erfurt
+			owns = 67	# Franken
+			
+			is_core = 46	# Mecklenburg
+			is_core = 50	# Brandenburg
+			is_core = 52	# Altmark
+			is_core = 53	# Lьneburg
+			is_core = 57	# Hannover
+			is_core = 58	# Anhalt
+			is_core = 61	# Dresden
+			is_core = 62	# Leipzig
+			is_core = 63	# Erfurt
+			is_core = 67	# Franken
+			
+			war = no
+		}
+	  effect = {
+			GER = {	
+				german_region = {
+					add_core = GER
+					base_tax = 1
+				}
+			}
+			centralization_decentralization = -2
+			merchants = 1
+			prestige = 0.20
+			change_tag = GER
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\Governments.txt
+************************************************************************
+country_decisions = {
+
+	imperial_administration = {
+		potential = {
+			OR = {
+				technology_group = western
+				technology_group = eastern
+				technology_group = ottoman
+				technology_group = muslim
+			}
+			OR = {
+				government = feudal_monarchy
+				government = despotic_monarchy
+			}
+		}
+		allow =  {
+			stability = 1
+			num_of_cities = 30
+			war = no 
+			is_subject = false
+		}
+	  effect = {
+			government = imperial_government
+			stability = -3
+			prestige = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				religion = catholic
+			}
+			modifier = {
+				factor = 0
+				religion = protestant
+			}
+			modifier = {
+				factor = 0
+				religion = reformed
+			}
+		}
+	}
+	
+	plutocratic_administration = {
+		potential = {
+			NOT = { government = merchant_republic }
+			OR = {
+				technology_group = western
+				technology_group = eastern
+				technology_group = ottoman
+				technology_group = muslim
+			}
+			OR = {
+				government = noble_republic
+				government = administrative_republic
+				government = republican_dictatorship
+				tag = HSA
+				tag = GEN
+				tag = VEN
+			}
+		}
+		allow =  {
+			stability = 1
+			placed_merchants = 25
+			capital_scope = {
+					cot = yes
+				}
+			war = no 
+			is_subject = false
+		}
+	  effect = {
+			government = merchant_republic
+			stability = -2
+			merchants = 5
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_cities = 3
+			}
+		}
+	}
+	
+	formalize_separation_of_powers = {
+		potential = {
+			government = constitutional_monarchy
+			NOT = {
+				has_country_modifier = separation_of_powers
+			}
+		}
+		
+		allow = {
+			stability = 2
+			advisor = statesman
+			war = no
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "separation_of_powers"
+				duration = -1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	go_cult_of_reason = {
+		potential = {
+			government = revolutionary_republic
+			NOT = {
+				has_country_modifier = cult_of_reason
+			}
+		}
+		
+		allow = {
+			NOT = {
+				stability = -1
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "cult_of_reason"
+				duration = -1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\habsburg.txt
+************************************************************************
+country_decisions = {
+	establish_habsburg_dominance = {
+		potential = {
+			tag = HAB
+			NOT = { has_country_modifier = habsburg_dominance }
+		}
+		allow = {
+			DIP = 6
+			prestige = 0.1
+			NOT = { exists = TIR }
+			NOT = {	exists = STY }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "habsburg_dominance"
+				duration = -1
+				}
+				
+			}
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+	allow_fuggers = {
+		potential = {
+			tag = HAB
+			has_country_modifier = habsburg_dominance
+			NOT = { has_country_modifier = fugger_banks }
+		}
+		allow = {
+			monthly_income = 40
+			ADM = 6
+		}
+		effect = {
+			add_country_modifier = {
+				name = "fugger_banks"
+				duration = -1
+				}
+				
+			}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	establish_hofkriegsrat = {
+		potential = {
+			tag = HAB
+			NOT = { has_country_modifier = hofkriegsrat }
+		}
+		allow = {
+			army_tradition = 0.7
+			land_tech = 22
+			MIL = 7
+		}
+		effect = {
+			add_country_modifier = {
+				name = "hofkriegsrat"
+				duration = -1
+				}
+				
+			}
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+
+}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\hanseaticleague.txt
+************************************************************************
+# The Hanseatic League
+# Obsolete
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\HindustanNation.txt
+************************************************************************
+country_decisions = {
+
+	hindustan_nation_dravidian = {
+		potential = {
+			NOT = { exists = HIN }
+			NOT = { tag = MUG }
+			NOT = { tag = PAP }
+			NOT = { tag = HRE }
+			culture_group = dravidian
+			NOT = { technology_group = nomad_group }
+		}
+		allow = 
+		{
+			culture_group = dravidian
+			war = no
+			stability = 3
+			
+			owns = 532
+			owns = 535
+			owns = 536
+			owns = 537
+			owns = 538
+			owns = 539
+			owns = 540
+			owns = 541
+			owns = 542
+			owns = 543
+			owns = 547
+			owns = 549
+			owns = 533
+			owns = 534
+			owns = 572
+			owns = 573
+			
+			is_core = 532
+			is_core = 535
+			is_core = 536
+			is_core = 537
+			is_core = 538
+			is_core = 539
+			is_core = 540
+			is_core = 541
+			is_core = 542
+			is_core = 543
+			is_core = 547
+			is_core = 549
+			is_core = 533
+			is_core = 534
+			is_core = 572
+			is_core = 573			
+		}
+		effect = {
+			HIN = {
+				add_core = 536
+				add_core = 537
+				add_core = 538
+				add_core = 539
+				add_core = 540
+				add_core = 541
+				add_core = 533
+				add_core = 534
+				add_core = 535
+				add_core = 572
+				add_core = 573
+				add_core = 503
+				add_core = 504
+				add_core = 505
+				add_core = 518
+				add_core = 525
+				add_core = 519
+				add_core = 520
+				add_core = 512
+				add_core = 513
+				add_core = 514
+				add_core = 528
+				add_core = 517
+				add_core = 516
+				add_core = 515
+				add_core = 527
+				add_core = 532
+				add_core = 543
+				add_core = 544
+				add_core = 530
+				add_core = 529
+				add_core = 545
+				add_core = 546
+				add_core = 550
+				add_core = 526
+				add_core = 524
+				add_core = 523
+				add_core = 522
+				add_core = 521
+				add_core = 511
+				add_core = 506
+				add_core = 578
+				add_core = 507
+				add_core = 510
+				add_core = 740
+				add_core = 556
+				add_core = 555
+				add_core = 551
+				add_core = 560
+				add_core = 561
+				add_core = 564
+				add_core = 563
+				add_core = 562
+				add_core = 568
+				add_core = 558
+				add_core = 559
+				add_core = 552
+				add_core = 553
+				add_core = 548
+				add_core = 531
+				add_core = 542
+				add_core = 547
+				add_core = 549
+				add_core = 557
+				add_core = 554
+				add_core = 1248
+			}	
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			prestige = 0.05
+			change_tag = HIN
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 50
+	}
+
+	hindustan_nation_western_aryan = {
+		potential = {
+			NOT = { exists = HIN }
+			NOT = { tag = MUG }
+			NOT = { tag = PAP }
+			NOT = { tag = HRE }
+			culture_group = western_aryan
+			NOT = { technology_group = nomad_group }
+		}
+		allow = 
+		{
+			culture_group = western_aryan
+			war = no
+			stability = 3
+
+			owns = 503
+			owns = 504
+			owns = 505
+			owns = 512
+			owns = 513
+			owns = 514
+			owns = 515
+			owns = 516
+			owns = 517
+			owns = 518
+			owns = 519
+			owns = 520
+			owns = 525
+			owns = 527
+			owns = 528
+			owns = 529
+			owns = 530
+			owns = 531
+			owns = 544
+			owns = 545
+			owns = 546
+
+			is_core = 503
+			is_core = 504
+			is_core = 505
+			is_core = 512
+			is_core = 513
+			is_core = 514
+			is_core = 515
+			is_core = 516
+			is_core = 517
+			is_core = 518
+			is_core = 519
+			is_core = 520
+			is_core = 525
+			is_core = 527
+			is_core = 528
+			is_core = 529
+			is_core = 530
+			is_core = 531
+			is_core = 544
+			is_core = 545
+			is_core = 546
+		}
+		effect = {
+			HIN = {
+				add_core = 536
+				add_core = 537
+				add_core = 538
+				add_core = 539
+				add_core = 540
+				add_core = 541
+				add_core = 533
+				add_core = 534
+				add_core = 535
+				add_core = 572
+				add_core = 573
+				add_core = 503
+				add_core = 504
+				add_core = 505
+				add_core = 518
+				add_core = 525
+				add_core = 519
+				add_core = 520
+				add_core = 512
+				add_core = 513
+				add_core = 514
+				add_core = 528
+				add_core = 517
+				add_core = 516
+				add_core = 515
+				add_core = 527
+				add_core = 532
+				add_core = 543
+				add_core = 544
+				add_core = 530
+				add_core = 529
+				add_core = 545
+				add_core = 546
+				add_core = 550
+				add_core = 526
+				add_core = 524
+				add_core = 523
+				add_core = 522
+				add_core = 521
+				add_core = 511
+				add_core = 506
+				add_core = 578
+				add_core = 507
+				add_core = 510
+				add_core = 740
+				add_core = 556
+				add_core = 555
+				add_core = 551
+				add_core = 560
+				add_core = 561
+				add_core = 564
+				add_core = 563
+				add_core = 562
+				add_core = 568
+				add_core = 558
+				add_core = 559
+				add_core = 552
+				add_core = 553
+				add_core = 548
+				add_core = 531
+				add_core = 542
+				add_core = 547
+				add_core = 549
+				add_core = 557
+				add_core = 554
+				add_core = 1248
+			}	
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			prestige = 0.05
+			change_tag = HIN
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 50
+	}
+
+	hindustan_nation_hindusthani = {
+		potential = {
+			NOT = { exists = HIN }
+			NOT = { tag = MUG }
+			NOT = { tag = PAP }
+			NOT = { tag = HRE }
+			culture_group = hindusthani
+			NOT = { technology_group = nomad_group }
+		}
+		allow = 
+		{
+			culture_group = hindusthani
+			war = no
+			stability = 3
+
+			owns = 506
+			owns = 507
+			owns = 510
+			owns = 511
+			owns = 521
+			owns = 522
+			owns = 523
+			owns = 524
+			owns = 526
+			owns = 550
+			owns = 551
+			owns = 555
+			owns = 556
+			owns = 578
+			owns = 740
+
+			is_core = 506
+			is_core = 507
+			is_core = 510
+			is_core = 511
+			is_core = 521
+			is_core = 522
+			is_core = 523
+			is_core = 524
+			is_core = 526
+			is_core = 550
+			is_core = 551
+			is_core = 555
+			is_core = 556
+			is_core = 578
+			is_core = 740
+		}
+		effect = {
+			HIN = {
+				add_core = 536
+				add_core = 537
+				add_core = 538
+				add_core = 539
+				add_core = 540
+				add_core = 541
+				add_core = 533
+				add_core = 534
+				add_core = 535
+				add_core = 572
+				add_core = 573
+				add_core = 503
+				add_core = 504
+				add_core = 505
+				add_core = 518
+				add_core = 525
+				add_core = 519
+				add_core = 520
+				add_core = 512
+				add_core = 513
+				add_core = 514
+				add_core = 528
+				add_core = 517
+				add_core = 516
+				add_core = 515
+				add_core = 527
+				add_core = 532
+				add_core = 543
+				add_core = 544
+				add_core = 530
+				add_core = 529
+				add_core = 545
+				add_core = 546
+				add_core = 550
+				add_core = 526
+				add_core = 524
+				add_core = 523
+				add_core = 522
+				add_core = 521
+				add_core = 511
+				add_core = 506
+				add_core = 578
+				add_core = 507
+				add_core = 510
+				add_core = 740
+				add_core = 556
+				add_core = 555
+				add_core = 551
+				add_core = 560
+				add_core = 561
+				add_core = 564
+				add_core = 563
+				add_core = 562
+				add_core = 568
+				add_core = 558
+				add_core = 559
+				add_core = 552
+				add_core = 553
+				add_core = 548
+				add_core = 531
+				add_core = 542
+				add_core = 547
+				add_core = 549
+				add_core = 557
+				add_core = 554
+				add_core = 1248
+			}	
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			prestige = 0.05
+			change_tag = HIN
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 50
+	}
+
+	hindustan_nation_eastern_aryan = {
+		potential = {
+			NOT = { exists = HIN }
+			NOT = { tag = MUG }
+			NOT = { tag = PAP }
+			NOT = { tag = HRE }
+			culture_group = eastern_aryan
+			NOT = { technology_group = nomad_group }
+		}
+		allow = 
+		{
+			culture_group = eastern_aryan
+			war = no
+			stability = 3
+
+			owns = 560
+			owns = 561
+			owns = 564
+			owns = 563
+			owns = 562
+			owns = 568
+			owns = 558
+			owns = 559
+			owns = 552
+			owns = 553
+			owns = 548
+
+			is_core = 560
+			is_core = 561
+			is_core = 564
+			is_core = 563
+			is_core = 562
+			is_core = 568
+			is_core = 558
+			is_core = 559
+			is_core = 552
+			is_core = 553
+			is_core = 548
+		}
+	  effect = {
+			HIN = {
+				add_core = 536
+				add_core = 537
+				add_core = 538
+				add_core = 539
+				add_core = 540
+				add_core = 541
+				add_core = 533
+				add_core = 534
+				add_core = 535
+				add_core = 572
+				add_core = 573
+				add_core = 503
+				add_core = 504
+				add_core = 505
+				add_core = 518
+				add_core = 525
+				add_core = 519
+				add_core = 520
+				add_core = 512
+				add_core = 513
+				add_core = 514
+				add_core = 528
+				add_core = 517
+				add_core = 516
+				add_core = 515
+				add_core = 527
+				add_core = 532
+				add_core = 543
+				add_core = 544
+				add_core = 530
+				add_core = 529
+				add_core = 545
+				add_core = 546
+				add_core = 550
+				add_core = 526
+				add_core = 524
+				add_core = 523
+				add_core = 522
+				add_core = 521
+				add_core = 511
+				add_core = 506
+				add_core = 578
+				add_core = 507
+				add_core = 510
+				add_core = 740
+				add_core = 556
+				add_core = 555
+				add_core = 551
+				add_core = 560
+				add_core = 561
+				add_core = 564
+				add_core = 563
+				add_core = 562
+				add_core = 568
+				add_core = 558
+				add_core = 559
+				add_core = 552
+				add_core = 553
+				add_core = 548
+				add_core = 531
+				add_core = 542
+				add_core = 547
+				add_core = 549
+				add_core = 557
+				add_core = 554
+				add_core = 1248
+			}	
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			prestige = 0.05
+			change_tag = HIN
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 50
+	}
+
+}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\HRE.txt
+************************************************************************
+province_decisions = {
+	
+	join_hre = {
+		potential = {
+			hre = no
+			owner = { is_emperor = no }
+			religion_group = christian
+			owner = {
+				religion_group = christian
+			}
+			any_neighbor_province = {
+				hre = yes
+			}
+		}
+		allow = {
+			emperor = { relation = { who = THIS value = 100 } }
+			owner = {
+				officials = 1
+			}
+			is_core = THIS
+		}
+		effect = {
+			owner = { 
+				prestige = 0.02 
+				officials = -1
+			}
+			emperor = { 
+				country_event = 9493
+#				set_province_flag = asked_join_hre
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				emperor = { ai = no } # Simply do not want to join player-controlled HRE
+#				has_province_flag = asked_join_hre
+#				NOT = {
+#					had_province_flag = { 
+#						flag = asked_join_hre
+#						days = 3650
+#					}
+#				}
+			}
+			modifier = {
+				factor = 0
+				owner = {
+					tag = PAP
+				}
+			}
+			modifier = {
+				factor = 0
+				owner = {
+					NOT = {
+						emperor = {
+							religion = this
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					emperor = {
+						relation = {
+							who = THIS
+							value = 150
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				has_global_flag = Privileges_Revoked
+			}
+			modifier = {
+				factor = 0
+				emperor = {
+					badboy = 8
+				}
+			}
+			modifier = {
+				factor = 0 
+				owner = { num_of_cities = 5 }
+			}
+		}
+	}
+	
+	join_hre_emp = {
+		potential = {
+			hre = no
+			owner = { is_emperor = yes }
+			religion_group = christian
+			owner = {
+				religion_group = christian
+			}
+			any_neighbor_province = {
+				hre = yes
+			}
+		}
+		allow = {
+			owner = {
+				officials = 1
+			}
+			is_core = THIS
+		}
+		effect = {
+			owner = { 
+				prestige = 0.02
+				officials = -1
+				add_imperial_influence = 1
+			}
+			hre = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	leave_hre = {
+		potential = {
+			hre = yes
+			owner = {
+				capital_scope = { hre = no }
+				is_emperor = no
+				elector = no
+			}
+		}
+		allow = {
+			emperor = { 
+				NOT = { relation = { who = THIS value = 0 } }
+			}
+			owner = {
+				officials = 1
+				war = no
+			}
+		}
+		effect = {
+			hre = no
+			owner = { 
+				prestige = -0.01 
+				officials = -1
+			}
+			emperor = { 
+				relation = { who = THIS value = -100 }
+				country_event = 9496
+			}
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	return_unlawful_territory = {
+		potential = {
+			hre = yes
+			NOT = { is_core = THIS }
+			is_capital = no
+			has_province_flag = emperor_nagged_for_it
+			owner = {
+				is_emperor = no
+			}
+			emperor = {
+				exists = yes
+				war = no
+			}
+		}
+		allow = {
+			owner = {
+				war = no
+			}
+		}
+		effect = {
+			clr_province_flag = emperor_nagged_for_it
+			set_province_flag = given_to_the_emperor
+			emperor = {
+				country_event = 9090
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+hre_decisions = {
+
+	vote_on_reichsreform = {
+		potential = {
+			is_emperor = yes
+			NOT = { has_global_flag = reichsreform }
+		}
+		allow = {
+			imperial_influence = 50
+			OR = {
+				NOT = { has_global_flag = Voting } 
+				had_global_flag = { 
+					flag = Voting
+					days = 30
+				}
+			}
+		}
+		effect = {
+			set_global_flag = Voting
+			add_imperial_influence = -50
+			any_country = {
+				limit = {
+					capital_scope = { hre = yes }
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = 9057
+			}
+
+			possible_province_event = 9058
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	vote_on_reichsregiment = {
+		potential = {
+			is_emperor = yes
+			NOT = { has_global_flag = reichsregiment }
+		}
+		allow = {
+			has_global_flag = Reichsreform
+			imperial_influence = 50
+			OR = {
+				NOT = { has_global_flag = Voting } 
+				had_global_flag = { 
+					flag = Voting
+					days = 30
+				}
+			}
+		}
+		effect = {
+			set_global_flag = Voting
+			add_imperial_influence = -50
+			any_country = {
+				limit = {
+					capital_scope = { hre = yes }
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = 9059
+			}
+			possible_province_event = 9060
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	vote_on_hofgericht = {
+		potential = {
+			is_emperor = yes
+			NOT = { has_global_flag = Hofgericht }
+		}
+		allow = {
+			has_global_flag = Reichsregiment
+			imperial_influence = 50
+			OR = {
+				NOT = { has_global_flag = Voting } 
+				had_global_flag = { 
+					flag = Voting
+					days = 30
+				}
+			}
+		}
+		effect = {
+			set_global_flag = Voting
+			add_imperial_influence = -50
+			any_country = {
+				limit = {
+					capital_scope = { hre = yes }
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = 9061
+			}
+			possible_province_event = 9062
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	vote_on_gemeinerpfennig = {
+		potential = {
+			is_emperor = yes
+			NOT = { has_global_flag = Gemeinerpfennig }
+		}
+		allow = {
+			has_global_flag = Hofgericht
+			imperial_influence = 50
+			OR = {
+				NOT = { has_global_flag = Voting } 
+				had_global_flag = { 
+					flag = Voting
+					days = 30
+				}
+			}
+		}
+		effect = {
+			set_global_flag = Voting
+			add_imperial_influence = -50
+			any_country = {
+				limit = {
+					capital_scope = { hre = yes }
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = 9063
+			}
+			possible_province_event = 9064
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	vote_on_landfriede = {
+		potential = {
+			is_emperor = yes
+			NOT = { has_global_flag = Landfriede }
+		}
+		allow = {
+			has_global_flag = Gemeinerpfennig
+			imperial_influence = 50
+			OR = {
+				NOT = { has_global_flag = Voting } 
+				had_global_flag = { 
+					flag = Voting
+					days = 30
+				}
+			}
+		}
+		effect = {
+			set_global_flag = Voting
+			add_imperial_influence = -50
+			any_country = {
+				limit = {
+					capital_scope = { hre = yes }
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = 9065
+			}
+			possible_province_event = 9066
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	vote_on_erbkaisertum = {
+		potential = {
+			is_emperor = yes
+			NOT = { has_global_flag = Erbkaisertum }
+		}
+		allow = {
+			has_global_flag = Landfriede
+			imperial_influence = 50
+			OR = {
+				NOT = { has_global_flag = Voting } 
+				had_global_flag = { 
+					flag = Voting
+					days = 30
+				}
+			}
+		}
+		effect = {
+			set_global_flag = Voting
+			add_imperial_influence = -50
+			any_country = {
+				limit = {
+					capital_scope = { hre = yes }
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = 9069
+			}
+			possible_province_event = 9070
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	vote_on_privilegia_de_non_appelando = {
+		potential = {
+			is_emperor = yes
+			NOT = { has_global_flag = Privileges_Revoked }
+		}
+		allow = {
+			has_global_flag = Erbkaisertum
+			imperial_influence = 50
+			OR = {
+				NOT = { has_global_flag = Voting } 
+				had_global_flag = { 
+					flag = Voting
+					days = 30
+				}
+			}
+		}
+		effect = {
+			set_global_flag = Voting
+			add_imperial_influence = -50
+			any_country = {
+				limit = {
+					capital_scope = { hre = yes }
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = 9067
+			}
+			possible_province_event = 9068
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	vote_on_renovatio = {
+		potential = {
+			is_emperor = yes
+			NOT = { has_global_flag = Renovatio }
+		}
+		allow = {
+			has_global_flag = Privileges_Revoked
+			imperial_influence = 50
+			war = no
+			OR = {
+				NOT = { has_global_flag = Voting } 
+				had_global_flag = { 
+					flag = Voting
+					days = 30
+				}
+			}
+		}
+		effect = {
+			set_global_flag = Voting
+			add_imperial_influence = -50
+			any_country = {
+				limit = {
+					capital_scope = { hre = yes }
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = 9071
+			}
+			possible_province_event = 9072
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\IndianTradeCompany.txt
+************************************************************************
+country_decisions = {
+	indian_trade_company = {
+
+		potential = {
+			NOT = { tag = NED }
+			NOT = { has_country_flag = trade_company }
+			religion_group = christian
+			capital_scope = {
+				continent = europe
+			}
+			eastasian_trade_ports = {
+				has_discovered = THIS
+			}
+			num_of_ports = 2
+		}
+
+		allow = {
+			naval_tech = 20	
+			eastasian_trade_ports = {
+				owned_by = THIS
+			}
+		}
+
+		effect = {
+			set_country_flag = trade_company
+			treasury = 200
+			merchants = 1
+			random_owned = {
+				limit = {
+					continent = europe
+					port = yes
+					NOT = { has_building = grand_shipyard }
+					is_core = this
+				}
+				add_building = grand_shipyard
+			}
+			add_country_modifier = {
+				name = "india_trade_co"
+				duration = -1
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\IrishNation.txt
+************************************************************************
+country_decisions = {
+
+	irish_nation = {
+		potential = {
+			NOT = { exists = IRE }
+			NOT = { tag = HRE }
+			primary_culture = irish
+		}
+		allow = 
+		{
+			owns = 372			# Ulster
+			owns = 373			# Meath
+			owns = 374			# Mьnchen
+			owns = 375			# Leinster
+			owns = 376			# Connaught
+			war = no
+		}
+		effect = {
+			IRE = {
+				add_core = 372		# Ulster
+				add_core = 373		# Meath
+				add_core = 374		# Leinster
+				add_core = 375		# Munster
+				add_core = 376		# Connaught
+			}		
+			centralization_decentralization = -2
+			merchants = 1
+			random_owned = {
+				limit = { culture = irish }
+				base_tax = 1
+			}
+			prestige = 0.05
+			change_tag = IRE
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\ItalianNation.txt
+************************************************************************
+country_decisions = {
+
+	italian_nation = {
+		potential = {
+			NOT = { exists = ITA }
+			NOT = { tag = PAP }
+			NOT = { tag = HRE }
+			culture_group = latin
+		}
+		allow = 
+		{
+			owns = 104	# Lombardia
+			owns = 116	# Firenze
+			owns = 117	# Siena
+			owns = 118	# Roma
+			owns = 119	# Ancona
+			is_core = 104	# Lombardia
+			is_core = 116	# Firenze
+			is_core = 117	# Siena
+			is_core = 118	# Roma
+			is_core = 119	# Ancona
+			war = no
+		}
+	  effect = {
+			ITA = {
+				add_core = 101		# Liguria
+				add_core = 103		# Piedmont
+				add_core = 104		# Lombardia
+				add_core = 105		# Parma
+				add_core = 106		# Modena
+				add_core = 107		# Brescia
+				add_core = 108		# Verona
+				add_core = 109		# Mantua
+				add_core = 111		# Friuli
+				add_core = 112		# Venezia
+				add_core = 113		# Ferrara
+				add_core = 114		# Romagna
+				add_core = 115		# Pisa
+				add_core = 116		# Firenze
+				add_core = 117		# Siena
+				add_core = 118		# Roma
+				add_core = 119		# Ancona
+				add_core = 130		# Istria
+				add_core = 1774		# Treviso
+				add_core = 1862		# Cremona
+				add_core = 1875		# Cuneo
+			}
+			centralization_decentralization = -2
+			missionaries = 1
+			random_owned = {
+				limit = { culture_group = latin }
+				base_tax = 1
+			}
+			prestige = 0.05
+			change_tag = ITA
+			ITA = {
+				capital = 118
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	gods_kingdom = {
+		potential = {
+			NOT = { exists = ITA }
+			tag = PAP
+			NOT = { has_country_modifier = kingdom_of_god }
+		}
+		allow = 
+		{
+			owns = 101		# Liguria
+			owns = 103		# Piedmont
+			owns = 104		# Lombardia
+			owns = 105		# Parma
+			owns = 106		# Modena
+			owns = 107		# Brescia
+			owns = 108		# Verona
+			owns = 109		# Mantua
+			owns = 111		# Friuli
+			owns = 112		# Venezia
+			owns = 113		# Ferrara
+			owns = 114		# Romagna
+			owns = 115		# Pisa
+			owns = 116		# Firenze
+			owns = 117		# Siena
+			owns = 118		# Roma
+			owns = 119		# Ancona
+			owns = 130		# Istria
+			owns = 1774		# Treviso
+			owns = 1862		# Cremona
+			owns = 1875		# Cuneo
+			war = no
+		}
+	  effect = {
+			PAP = {
+				add_core = 101		# Liguria
+				add_core = 103		# Piedmont
+				add_core = 104		# Lombardia
+				add_core = 105		# Parma
+				add_core = 106		# Modena
+				add_core = 107		# Brescia
+				add_core = 108		# Verona
+				add_core = 109		# Mantua
+				add_core = 111		# Friuli
+				add_core = 112		# Venezia
+				add_core = 113		# Ferrara
+				add_core = 114		# Romagna
+				add_core = 115		# Pisa
+				add_core = 116		# Firenze
+				add_core = 117		# Siena
+				add_core = 118		# Roma
+				add_core = 119		# Ancona
+				add_core = 130		# Istria
+				add_core = 1774		# Treviso
+				add_core = 1862		# Cremona
+				add_core = 1875		# Cuneo
+			}
+			culture_group_union = latin
+			118 = { base_tax = 1 }
+			add_country_modifier = {
+				name = "kingdom_of_god"
+				duration = -1
+			}
+			country_event = 2021
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\JapaneseNation.txt
+************************************************************************
+#Unite Japan
+
+shogunate_decisions = {
+
+	unite_japan = {
+		potential = {
+			is_daimyo = yes
+			is_shogun = yes
+			NOT = {
+				has_country_flag = united_daimyos_of_japan
+				tag = JAP
+			}
+		}
+		allow = {
+			war = no
+			NOT = {
+				num_of_daimyos = 2
+			}
+		}
+		effect = {
+			#MIN provinces
+			remove_core = 1017
+			remove_core = 1018
+			remove_core = 1019
+			remove_core = 1823
+			remove_core = 1825
+			remove_core = 1826
+			remove_core = 1827
+			remove_core = 1828
+			remove_core = 1830
+			remove_core = 1831
+			
+			#TAI provinces
+			remove_core = 1021
+			remove_core = 1022
+			remove_core = 1023
+			remove_core = 1029
+			remove_core = 1030
+			remove_core = 1832
+			remove_core = 1834
+			remove_core = 1835
+			remove_core = 1837
+						
+			#FUJ provinces
+			remove_core = 1024
+			remove_core = 1025
+			remove_core = 1026
+			remove_core = 1027
+			remove_core = 1028
+			remove_core = 1031
+			remove_core = 1839
+			remove_core = 1841
+			remove_core = 1842
+			remove_core = 1843
+			remove_core = 1847
+			remove_core = 1852
+			
+			#TAC provinces
+			remove_core = 1012
+			remove_core = 1013
+			remove_core = 1014
+			remove_core = 1016
+			remove_core = 1815
+			remove_core = 1817
+			remove_core = 1818
+			remove_core = 1819
+			remove_core = 1820
+			
+			inherit = JAP
+			change_tag = JAP
+			capital = 1020
+			
+			add_core = 1017
+			add_core = 1018
+			add_core = 1019
+			add_core = 1823
+			add_core = 1825
+			add_core = 1826
+			add_core = 1827
+			add_core = 1828
+			add_core = 1830
+			add_core = 1831
+			add_core = 1021
+			add_core = 1022
+			add_core = 1023
+			add_core = 1029
+			add_core = 1030
+			add_core = 1832
+			add_core = 1834
+			add_core = 1835
+			add_core = 1837
+			add_core = 1024
+			add_core = 1025
+			add_core = 1026
+			add_core = 1027
+			add_core = 1028
+			add_core = 1031
+			add_core = 1839
+			add_core = 1841
+			add_core = 1842
+			add_core = 1843
+			add_core = 1847
+			add_core = 1852
+			add_core = 1012
+			add_core = 1013
+			add_core = 1014
+			add_core = 1016
+			add_core = 1815
+			add_core = 1817
+			add_core = 1818
+			add_core = 1819
+			add_core = 1820
+
+			set_country_flag = united_daimyos_of_japan
+			prestige = 0.15
+			add_country_modifier = {
+				name = united_japan
+				duration = 365
+			}
+			remove_country_modifier = sankin_kotai
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	restore_emperor = {
+		potential = {
+			is_daimyo = yes
+			is_shogun = no
+			NOT = {
+				has_country_flag = united_daimyos_of_japan
+				tag = JAP
+			}
+		}
+		allow = {
+			war = yes
+			NOT = {
+				num_of_daimyos = 3
+			}
+			any_country = {
+				is_shogun = yes
+				war_with = THIS
+				NOT = {
+					any_owned_province = {
+						controlled_by = owner
+					}
+				}
+			}
+		}
+		effect = {
+			#MIN provinces
+			remove_core = 1017
+			remove_core = 1018
+			remove_core = 1019
+			remove_core = 1823
+			remove_core = 1825
+			remove_core = 1826
+			remove_core = 1827
+			remove_core = 1828
+			remove_core = 1830
+			remove_core = 1831
+			
+			#TAI provinces
+			remove_core = 1021
+			remove_core = 1022
+			remove_core = 1023
+			remove_core = 1029
+			remove_core = 1030
+			remove_core = 1832
+			remove_core = 1834
+			remove_core = 1835
+			remove_core = 1837
+						
+			#FUJ provinces
+			remove_core = 1024
+			remove_core = 1025
+			remove_core = 1026
+			remove_core = 1027
+			remove_core = 1028
+			remove_core = 1031
+			remove_core = 1839
+			remove_core = 1841
+			remove_core = 1842
+			remove_core = 1843
+			remove_core = 1847
+			remove_core = 1852
+			
+			#TAC provinces
+			remove_core = 1012
+			remove_core = 1013
+			remove_core = 1014
+			remove_core = 1016
+			remove_core = 1815
+			remove_core = 1817
+			remove_core = 1818
+			remove_core = 1819
+			remove_core = 1820
+			
+			inherit = JAP
+			change_tag = JAP
+			capital = 1020
+
+			inherit = MIN
+			inherit = TAI
+			inherit = FUJ
+			inherit = TAC
+			
+			add_core = 1017
+			add_core = 1018
+			add_core = 1019
+			add_core = 1823
+			add_core = 1825
+			add_core = 1826
+			add_core = 1827
+			add_core = 1828
+			add_core = 1830
+			add_core = 1831
+			add_core = 1021
+			add_core = 1022
+			add_core = 1023
+			add_core = 1029
+			add_core = 1030
+			add_core = 1832
+			add_core = 1834
+			add_core = 1835
+			add_core = 1837
+			add_core = 1024
+			add_core = 1025
+			add_core = 1026
+			add_core = 1027
+			add_core = 1028
+			add_core = 1031
+			add_core = 1839
+			add_core = 1841
+			add_core = 1842
+			add_core = 1843
+			add_core = 1847
+			add_core = 1852
+			add_core = 1012
+			add_core = 1013
+			add_core = 1014
+			add_core = 1016
+			add_core = 1815
+			add_core = 1817
+			add_core = 1818
+			add_core = 1819
+			add_core = 1820
+
+			set_country_flag = united_daimyos_of_japan
+			prestige = 0.2
+			add_country_modifier = {
+				name = united_japan
+				duration = 365
+			}
+			remove_country_modifier = sankin_kotai_daimyo
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Become Kampaku
+		
+	kampaku = {
+		potential = {
+			is_daimyo = yes
+			shogun_exists = no
+			kampaku_exists = no
+		}
+		allow = {
+			prestige = 0.2
+			NOT = { war_exhaustion = 5 }
+			stability = 2
+			legitimacy = 0.7
+			is_subject = no
+		}
+		effect = {
+			become_kampaku = yes
+			any_country = {
+				limit = {
+					is_daimyo = yes
+					NOT = { tag = THIS }
+				}
+				casus_belli = {
+					target = THIS
+					type = jap_civil_war
+					months = 12
+				}
+			}
+			any_country = {
+				limit = {
+					is_daimyo = yes
+					NOT = { tag = THIS }
+					alliance_with = THIS
+				}
+				country_event = 10022
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Sword Hunt
+	
+	sword_hunt = {
+		potential = {
+			is_daimyo = yes
+			NOT = {
+				has_country_modifier = sword_hunter
+				has_country_flag = sword_hunt
+			}
+		}
+		allow = {
+			is_shogun = yes
+			stability = 1
+			shogun_influence = 40
+		}
+		effect = {
+			add_country_modifier = {
+				name = sword_hunter
+				duration = 365
+			}
+			set_country_flag = sword_hunt
+			any_country = {
+				limit = { is_daimyo = yes is_shogun = no }
+				relation = { who = THIS value = -50 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					any_country = {
+						is_daimyo = yes
+						is_shogun = no
+						OR = {
+							NOT = { relation = { who = THIS value = 0 } }
+							relation = { who = THIS value = 170 }
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#Sakoku
+
+	enforce_sakoku_law = {
+		potential = {
+			has_global_flag = japan_has_encountered_the_west
+			NOT = { has_country_modifier = sakoku_law }
+			NOT = { has_country_flag = sakoku_law }
+			is_shogun = yes
+			any_country = {
+				is_daimyo = yes
+				has_country_modifier = "western_trade"
+			}
+		}
+		allow = {
+			shogun_influence = 80
+		}
+		effect = {
+			add_shogun_influence = -40
+			any_country = {
+				limit = { is_daimyo = yes }
+				mercantilism_freetrade = -2
+				remove_country_modifier = "western_trade"
+				add_country_modifier = {
+					name = "sakoku_law"
+					duration = -1
+				}
+			}
+			set_country_flag = sakoku_law
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				mercantilism_freetrade = 0
+			}
+			modifier = {
+				factor = 0
+				missionaries = 1
+			}
+			modifier = {
+				factor = 0
+				has_country_modifier = western_trade
+				NOT = {
+					any_owned_province = {
+						religion = catholic
+						has_missionary = no
+					}
+				}
+			}
+		}
+	}
+
+	#Sankin Kotai
+
+	enforce_sankin_kotai = {
+		potential = {
+			NOT = { has_country_flag = sankin_kotai }
+			is_shogun = yes
+		}
+		allow = {
+			shogun_influence = 80
+			NOT = {
+				has_country_modifier = sankin_kotai
+			}
+		}
+		effect = {
+			add_shogun_influence = -40
+			add_country_modifier = {
+				name = "sankin_kotai"
+				duration = -1
+			}
+			any_country = {
+				limit = { is_daimyo = yes is_shogun = no }
+				relation = { who = THIS value = -50 }
+				add_country_modifier = {
+					name = "sankin_kotai_daimyo"
+					duration = -1
+				}
+			}
+			set_country_flag = sankin_kotai
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+country_decisions = {
+
+	send_western_embassy_mission = {
+		potential = {
+			NOT = {
+				has_global_flag = japan_is_closed
+				has_country_modifier = western_embassy_mission
+			}
+			is_daimyo = yes
+			has_global_flag = japan_has_encountered_the_west
+			any_known_country = {
+				technology_group = western
+			}
+		}
+	
+		allow = {
+			treasury = 200
+			missionaries = 2
+			officials = 3
+		}
+	
+		effect = {
+			add_country_modifier = {
+				name = western_embassy_mission
+				duration = 3650
+			}
+			treasury = -200
+			missionaries = -2
+			officials = -3
+		}
+	}
+	
+	hire_ninjas = {
+		potential = {
+			is_daimyo = yes
+			NOT = { has_country_modifier = ninjas }
+			advisor = spymaster
+			}
+	
+		allow = {
+			treasury = 100
+		}
+	
+		effect = {
+			add_country_modifier = {
+				name = ninjas
+				duration = 1825
+			}
+			treasury = -100
+		}
+	}
+
+}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\Jerusalem.txt
+************************************************************************
+country_decisions = {
+
+
+	kingdom_of_jerusalem = {
+		potential = {
+			NOT = { exists = KOJ }
+			religion = catholic
+			NOT = { government = republic }
+			owns = 379
+			NOT = { is_religion_enabled = protestant }
+		}
+		allow = {
+			war = no
+			379 = { religion = catholic }
+			OR = {
+				AND = {
+					papacy_active = yes
+					papal_influence = 0.1
+				}
+				papacy_active = no
+			}
+		}
+		effect = {
+			prestige = 0.25
+			KOJ = { add_core = 379 }
+			release = KOJ
+			KOJ = { primary_culture = THIS }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\KoreanDecisions.txt
+************************************************************************
+country_decisions = {
+
+	found_hall_of_worthies = {
+		potential = {
+			tag = KOR
+			NOT = { has_country_modifier = hall_of_worthies }
+		}
+		allow = {
+			OR = {
+				advisor = philosopher
+				advisor = natural_scientist
+				advisor = theologian
+				ADM = 7
+			}
+			treasury = 50
+			officials = 3
+		}
+		effect = {
+			add_country_modifier = {
+				name = "hall_of_worthies"
+				duration = -1
+			}
+			treasury = -50
+			officials = -3
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	introduce_hangul_writing_system = {
+		potential = {
+			tag = KOR
+			NOT = { has_country_flag = hangul_introduced }
+		}
+		allow = {
+			OR = {
+				advisor = philosopher
+				advisor = natural_scientist
+				advisor = theologian
+				ADM = 7
+			}
+			has_country_modifier = hall_of_worthies
+			treasury = 50
+			officials = 3
+		}
+		effect = {
+			add_country_modifier = {
+				name = "hangul_writing_system"
+				duration = 3650
+			}
+			set_country_flag = hangul_introduced
+			treasury = -50
+			officials = -3
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+} #End of country decisions
+
+province_decisions = {
+
+	establish_border_patrol = {
+		potential = {
+			owner = { tag = KOR }
+			has_province_flag = nomad_raids
+			any_neighbor_province = {
+				OR = {
+					owned_by = MCH
+					owned_by = MNG
+				}
+				OR = {
+					has_province_modifier = support_nomad_raids
+					has_province_modifier = allow_nomad_raids
+				}
+			}
+			NOT = { has_province_modifier = border_patrol }
+		}
+		allow = {
+			owner = {
+				OR = {
+					advisor = army_organiser
+					advisor = fortification_expert
+					MIL = 4
+				}
+				treasury = 10
+			}
+		}
+		effect = {
+			owner = {
+				treasury = -10
+			}
+			add_province_modifier = {
+				name = "border_patrol"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}		
+	}
+
+	establish_coastal_defense = {
+		potential = {
+			port = yes
+			has_province_flag = wokou_raids
+			NOT = { has_province_modifier = coastal_defense }
+		}
+		allow = {
+			owner = {
+				OR = {
+					advisor = naval_organiser
+					advisor = fortification_expert
+					MIL = 4
+				}
+				treasury = 10
+			}
+		}
+		effect = {
+			owner = {
+				treasury = -10
+			}
+			add_province_modifier = {
+				name = "coastal_defense"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+} #End of province decisions
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\liberumveto.txt
+************************************************************************
+country_decisions = {
+	liberum_veto = {
+
+		potential = {
+			NOT = { has_country_flag = librium_veto }
+			NOT = { overseas_provinces_percentage  = 0.5 }
+			religion_group = christian
+			technology_group = eastern
+			government = monarchy
+		}
+
+		allow = {
+			NOT = { aristocracy_plutocracy = 0 }
+			NOT = { centralization_decentralization = 4 }
+			OR = {
+				war = yes
+				horde_war = yes
+			}
+			war_exhaustion = 8
+			num_of_cities = 6
+		}
+
+		effect = {
+			set_country_flag = librium_veto
+			war_exhaustion = -8
+			army_tradition = 0.1
+			centralization_decentralization = 1
+			aristocracy_plutocracy = -2
+			random_owned = {
+				limit = { controlled_by = THIS  }
+				cavalry = current
+				cavalry = current
+				cavalry = current
+				cavalry = current
+				cavalry = current
+				infantry = current
+				infantry = current
+				infantry = current
+				infantry = current
+				infantry = current
+				infantry = current
+				infantry = current
+				infantry = current
+				infantry = current
+				infantry = current
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\MalayanNation.txt
+************************************************************************
+country_decisions = {
+
+	malayan_nation = {
+		potential = {
+			NOT = { exists = MSA }
+			culture_group = malay
+			NOT = { tag = PAP }
+			NOT = { tag = HRE }
+			NOT = { technology_group = nomad_group }
+		}
+		allow = 
+		{
+			war = no
+			owns = 624
+			owns = 625
+			owns = 629
+			owns = 630
+			OR = {
+				AND = {
+					owns = 595
+					owns = 598
+					owns = 596
+					owns = 597
+					owns = 617
+					owns = 618
+					owns = 619
+					owns = 620
+					owns = 621
+					owns = 622
+					owns = 623
+					owns = 659
+				}
+				AND = {
+					owns = 595
+					owns = 598
+					owns = 596
+					owns = 597
+					owns = 637
+					owns = 636
+					owns = 638
+					owns = 640
+					owns = 639
+				}
+				AND = {
+					owns = 637
+					owns = 636
+					owns = 638
+					owns = 640
+					owns = 639
+					owns = 617
+					owns = 618
+					owns = 619
+					owns = 620
+					owns = 621
+					owns = 622
+					owns = 623
+					owns = 659
+				}
+			}
+		}
+	  effect = {
+			MSA = {
+				add_core = 624
+				add_core = 625
+				add_core = 629
+				add_core = 630
+				add_core = 595
+				add_core = 598
+				add_core = 596
+				add_core = 597
+				add_core = 617
+				add_core = 618
+				add_core = 619
+				add_core = 620
+				add_core = 621
+				add_core = 622
+				add_core = 623
+				add_core = 659
+				add_core = 637
+				add_core = 636
+				add_core = 638
+				add_core = 640
+				add_core = 639
+			}
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			centralization_decentralization = -1
+			prestige = 0.05
+			change_tag = MSA
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\ManuchuDecisions.txt
+************************************************************************
+country_decisions = {
+
+	form_manchu_dynasty = {
+		potential = {
+			tag = MCH
+			owns = 704		# Liaoxi
+			owns = 723		# Xilin Gol
+			owns = 726		# Liaodong			
+			NOT = { has_country_flag = manchu_dynasty_formed }
+		}
+		allow = {
+			owns = 1816		# Beijing
+			war = no
+			is_lesser_in_union = no
+			is_subject = no
+		}
+		effect = {
+			ming_china = { add_core = MCH }
+			random_owned = { base_tax = 1 }
+			centralization_decentralization = -1
+			capital = 1816 # Beijing
+			prestige = 0.02
+			government = despotic_monarchy
+			set_country_flag = manchu_dynasty_formed
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	create_green_standard_army = {
+		potential = {
+			tag = MCH
+			NOT = { has_country_modifier = green_standard_army }
+		}
+		allow = {
+			is_subject = no
+			is_monarch_leader = yes
+			MIL = 7
+			owns = 725		# Hinggan
+			war_with = MNG
+			MNG = {
+				OR = {
+					NOT = { stability = 0 }
+					NOT = { war_score = -10 }
+				}
+			}
+		}
+		effect = {
+			prestige = 0.05
+			relation = { who = MNG value = -100 }
+			badboy = 2
+			MNG = { manpower = -8 }
+			infantry = 725
+			infantry = 725
+			infantry = 725
+			infantry = 725
+			cavalry = 725
+			cavalry = 725
+			cavalry = 725
+			cavalry = 725
+			add_country_modifier = {
+				name = "green_standard_army"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	create_manchu_alphabet = {
+		potential = {
+			tag = MCH
+			NOT = { has_country_flag = manchu_alphabet }
+		}
+		allow = {
+			is_subject = no
+			ADM = 7
+		}
+		effect = {
+			prestige = 0.05
+			add_country_modifier = {
+				name = "manchu_alphabet"
+				duration = 1825
+			}
+			set_country_flag = manchu_alphabet
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	create_eight_banners = {
+		potential = {
+			tag = MCH
+			NOT = { has_country_modifier = eight_banners }
+		}
+		allow = {
+			is_subject = no
+			land_tech = 4
+			MIL = 7
+			is_monarch_leader = yes
+		}
+		effect = {
+			add_country_modifier = {
+				name = "eight_banners"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+} #End of country decisions
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\Military.txt
+************************************************************************
+country_decisions = {
+
+	naval_recruiting_act = {
+		potential = {
+			NOT = { has_country_modifier = the_recruiting_act }
+			land_naval = 2
+			num_of_ports = 1
+		}
+		allow = {
+			not = { innovative_narrowminded = 0 }
+			quality_quantity = 1
+			war = yes
+		}
+		effect = {
+			innovative_narrowminded = -1
+			quality_quantity = 1
+			add_country_modifier = {
+				name = "the_recruiting_act"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	militia_act = {
+		potential = {
+			not = { has_country_modifier = the_military_act }
+			government = monarchy
+		}
+		allow = {
+			not = { centralization_decentralization = -1 }
+			mil = 7
+			is_monarch_leader = yes
+			not = { has_country_modifier = the_military_act }			
+		}
+		effect = {
+			quality_quantity = 1
+			centralization_decentralization = -1
+			add_country_modifier = {
+				name = "the_military_act"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	navigation_act = {
+		potential = {
+			not = { has_country_modifier = the_navigation_act }
+			overseas_provinces_percentage = 0.4
+			not = { mercantilism_freetrade = 0 }
+		}
+		allow = {
+			idea = national_trade_policy
+			advisor = collector
+		}
+		effect = {
+			add_country_modifier = {
+				name = "the_navigation_act"
+				duration = -1
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	enlist_privateers = {
+		potential = {
+			not = { has_country_modifier = hire_privateers }
+			not = { has_country_modifier = the_anti_piracy_act }
+			or = {
+				technology_group = western
+				technology_group = eastern
+				technology_group = ottoman
+				technology_group = muslim
+			}
+			or = {
+				idea = superior_seamanship
+				idea = naval_fighting_instruction
+				idea = sea_hawks
+			}
+			num_of_ports = 1
+			naval_tech = 15
+		}
+		allow = {
+			navy_size_percentage = 0.5
+			advisor = privateer
+			mil = 6
+		}
+		effect = {
+			add_country_modifier = {
+				name = "hire_privateers"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			# England, France, Barbary Coast
+		}
+	}
+	naval_convoy_system = {
+		potential = {
+			not = { has_country_modifier = convoy_system }
+			overseas_provinces_percentage = 0.3
+			year = 1500
+			gold = 2
+		}
+		allow =  {
+			advisor = naval_reformer
+			mil = 7
+		}
+		effect = {
+			inflation = 5
+			add_country_modifier = {
+				name = "convoy_system"
+				duration = -1
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+			# England, France, Barbary Coast
+		}
+	}
+	anti_piracy_act = {
+		potential = {
+			not = { has_country_modifier = the_anti_piracy_act }
+			not = { has_country_modifier = hire_privateers }
+			or = {
+				technology_group = western
+				technology_group = eastern
+				technology_group = ottoman
+				technology_group = muslim
+			}
+			num_of_ports = 1
+			naval_tech = 15
+		}
+		allow = {
+			not = { badboy = 0.15 }
+			war = no
+		}
+		effect = {
+			add_country_modifier = {
+				name = "the_anti_piracy_act"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	land_recruiting_act = {
+		potential = {
+			not = { has_country_modifier = the_land_recruiting_act }
+			not = { land_naval = -1 }
+		}
+		allow = {
+			not = { innovative_narrowminded = 0 }
+			quality_quantity = 1
+			war = yes
+		}
+		effect = {
+			innovative_narrowminded = -1
+			quality_quantity = 1
+			add_country_modifier = {
+				name = "the_land_recruiting_act"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\mughal.txt
+************************************************************************
+country_decisions = {
+	move_capital_to_delhi = {
+		potential = {
+			tag = MUG
+			NOT = { capital = 522 }
+			NOT = { has_country_flag = relocated_capital_delhi }
+		}
+		allow = {
+			owns = 522
+			war = no
+			prestige = 0.2
+		}
+		effect = {
+			set_country_flag = relocated_capital_delhi
+			stability = 1
+			capital = 522
+			prestige = 0.10
+			522 = {
+			 	base_tax = 2
+			 	change_manpower = 1
+			 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\MughalNation.txt
+************************************************************************
+country_decisions = {
+
+	mughal_nation = {
+		potential = {
+			NOT = { exists = MUG }
+			NOT = { tag = PER }
+			NOT = { tag = TUR }
+			NOT = { tag = PAP }
+			NOT = { tag = HRE }
+			OR = {
+				culture_group = altaic
+				culture_group = iranian
+			}
+			is_subject = no
+			NOT = { technology_group = nomad_group }
+		}
+		allow = {
+			owns = 519			# Jaipur
+			owns = 521			# Panipat
+			owns = 522			# Delhi
+			owns = 523			# Lucknow
+			owns = 524			# Agra
+			is_core = 519		# Jaipur
+			is_core = 521		# Panipat
+			is_core = 522		# Delhi
+			is_core = 523		# Lucknow
+			is_core = 524		# Agra
+			MIL = 6
+			war = no
+		}
+		effect = {
+			MUG = {
+				add_core = 448		# Gazni
+				add_core = 450		# Balkh
+				add_core = 451		# Kabulistan
+				add_core = 452		# Badakhshan
+				add_core = 504		# Sind
+				add_core = 505		# Bakkar
+				add_core = 506		# Multan
+				add_core = 507		# Lahore
+				add_core = 510		# Chandigarh
+				add_core = 511		# Sutlej
+				add_core = 512		# Thar
+				add_core = 513		# Jaisalmer
+				add_core = 514		# Jodphur
+				add_core = 519		# Jaipur
+				add_core = 520		# Bikaner
+				add_core = 521		# Panipat
+				add_core = 522		# Delhi
+				add_core = 524		# Agra
+				add_core = 550		# Mandla
+				add_core = 555		# Oudh
+				add_core = 556		# Allahabad
+				add_core = 575		# Balushistan
+				add_core = 576		# Indus
+				add_core = 577		# Quetta
+				add_core = 578		# Kohistan
+				add_core = 740		# Ladakh
+				add_core = 523		# Lucknow
+			}	
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			centralization_decentralization = -2
+			prestige = 0.05
+			government = despotic_monarchy
+			change_tag = MUG
+			MUG = {
+				random_owned = {
+					limit = {
+						owner = {
+							OR = {
+								technology_group = new_world
+								technology_group = sub_saharan
+								technology_group = chinese
+								technology_group = indian
+							}
+						}
+					}
+					owner = { technology_group = muslim }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	mughal_nation_nomad = {
+		potential = {
+			NOT = { exists = MUG }
+			NOT = { tag = PER }
+			NOT = { tag = TUR }
+			OR = {
+				culture_group = altaic
+				culture_group = iranian
+			}
+			is_subject = no
+			technology_group = nomad_group
+		}
+		allow = {
+			government_tech = 4
+			MIL = 6
+			OR = {
+				AND = {
+					controls = 519		# Jaipur
+					controls = 521		# Panipat
+					controls = 522		# Delhi
+					controls = 523		# Lucknow
+					controls = 524		# Agra
+				}
+				AND = {
+					KSH = { vassal_of = THIS }
+					DLH = { vassal_of = THIS }
+					SND = { vassal_of = THIS }
+				}
+			}
+		}
+		effect = {
+			MUG = {
+				add_core = 448		# Gazni
+				add_core = 450		# Balkh
+				add_core = 451		# Kabulistan
+				add_core = 452		# Badakhshan
+				add_core = 504		# Sind
+				add_core = 505		# Bakkar
+				add_core = 506		# Multan
+				add_core = 507		# Lahore
+				add_core = 510		# Chandigarh
+				add_core = 511		# Sutlej
+				add_core = 512		# Thar
+				add_core = 513		# Jaisalmer
+				add_core = 514		# Jodphur
+				add_core = 519		# Jaipur
+				add_core = 520		# Bikaner
+				add_core = 521		# Panipat
+				add_core = 522		# Delhi
+				add_core = 524		# Agra
+				add_core = 550		# Mandla
+				add_core = 555		# Oudh
+				add_core = 556		# Allahabad
+				add_core = 575		# Balushistan
+				add_core = 576		# Indus
+				add_core = 577		# Quetta
+				add_core = 578		# Kohistan
+				add_core = 740		# Ladakh
+			}
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			centralization_decentralization = -1
+			prestige = 0.05
+			government = despotic_monarchy
+			change_tag = MUG
+			MUG = {
+				technology_group = muslim
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\NationalFocusProvince.txt
+************************************************************************
+province_decisions = {
+	enact_settlement_policy = {
+		potential = {
+			not = { 
+				has_province_modifier = settlement_policy
+			}
+			has_owner_culture = no
+			has_national_focus = yes
+		}
+		allow = {
+			owner = {
+				officials = 3
+				colonists = 2
+			}
+		}
+		effect = {
+			owner = {
+				officials = -3
+				colonists = -2
+			}
+			add_province_modifier = {
+				name = "settlement_policy"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				owner = { infamy = 8 }
+			}
+			modifier = {
+				factor = 0
+				cot = no
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					owner = { officials = 3 }
+				}
+			}
+		}
+	}
+	
+	revoke_settlement_policy = {
+		potential = {
+			has_province_modifier = settlement_policy
+		}
+		allow = {}
+		effect = {
+			set_province_flag = revoking_settlement_policy
+			remove_province_modifier = settlement_policy
+			owner = {
+				random_owned = {
+					limit = {
+						has_province_flag = revoking_settlement_policy
+						has_owner_culture = no
+					}
+					owner = { prestige = -0.15 }
+				}
+			}
+			clr_province_flag = revoking_settlement_policy
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	expand_bureaucracy = {
+		potential = {
+			NOT = {
+				owner = {
+					has_country_modifier = expanded_bureaucracy
+				}
+			}
+			is_capital = yes
+			}
+		allow = {
+		has_national_focus = yes
+			owner = {
+				officials = 4
+			}
+		}
+		effect = {
+			owner = {
+				add_country_modifier = {
+					name = "expanded_bureaucracy"
+					duration = -1
+				}
+			
+				officials = -4
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	formalize_measures = {
+		potential = {
+			NOT = {
+				owner = {
+					has_country_modifier = formalized_measures
+				}
+			}
+			is_capital = yes
+		}
+		allow = {
+			owner = {
+				officials = 5
+				government_tech = 10
+			}
+			has_national_focus = yes
+		}
+		effect = {
+			owner = {
+				add_country_modifier = {
+					name = "formalized_measures"
+					duration = -1
+				}
+				
+				officials = -5
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\NetherlandsNation.txt
+************************************************************************
+country_decisions = {
+
+	netherlands_nation = {
+		potential = {
+			NOT = { exists = NED }
+			NOT = { tag = PAP }
+			NOT = { tag = HRE }
+			OR = {
+				primary_culture = dutch
+				primary_culture = flemish
+			}
+		}
+		allow = 
+		{
+			owns = 96 # Zeeland
+			owns = 97 # Holland
+			owns = 98 # Utrecht
+			owns = 100 # Friesland
+			is_core = 96 # Zeeland
+			is_core = 97 # Holland
+			is_core = 98 # Utrecht
+			is_core = 100 # Friesland
+			war = no
+		}
+	  effect = {
+			NED = {
+				add_core = 90		# Vlaanderen
+				add_core = 95		# Breda
+				add_core = 96		# Zeeland
+				add_core = 97		# Holland
+				add_core = 98		# Utrecht
+				add_core = 99		# Gelre
+				add_core = 100		# Friesland
+				add_core = 1742		# Limburg
+				add_core = 1744		# Antwerp
+			}
+			centralization_decentralization = -2
+			merchants = 1
+			random_owned = {
+				limit = {
+					OR = {
+						culture = dutch
+						culture = flemish
+					}
+				}
+				base_tax = 1
+			}
+			prestige = 0.05
+			change_tag = NED
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\Ottoman.txt
+************************************************************************
+
+religion_decisions = {
+
+	enact_ottoman_tolerance = {
+		potential = {
+			tag = TUR
+			NOT = { has_country_modifier = ottoman_tolerance }
+		}
+		allow = {
+			owns = 151
+			ADM = 6
+			capital = 151
+			monthly_income = 40
+		}
+		effect = {
+			add_country_modifier = {
+				name = "ottoman_tolerance"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+country_decisions = {
+
+	make_constantinople_capital = {
+		potential = {
+			tag = TUR
+			owns = 151
+			NOT = { capital = 151 }
+			NOT = { has_country_flag = relocated_capital_constantinople }
+		}
+		allow = {
+			ADM = 6
+			monthly_income = 30
+			controls = 151
+			owns = 149		# Edirne
+			owns = 316		# Bithnyia
+			owns = 317		# Bursa
+			owns = 1764		# Burgas			
+		}
+		effect = {
+			set_country_flag = relocated_capital_constantinople
+			stability = 1
+			capital = 151
+			add_core = 151
+			151 = {
+				culture = turkish 
+				religion = sunni
+				rename_capital = Стамбул
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	provincial_system = {
+		potential = {
+			tag = TUR
+			NOT = { has_country_modifier = the_provincial_system }
+		}
+		allow = {
+			government_tech = 10
+			ADM = 7
+			officials = 3
+		}
+		effect = {
+			add_country_modifier = {
+				name = "the_provincial_system"
+				duration = -1
+			}
+			officials = -3
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
+
+province_decisions = {
+	devshirme_system = {
+		potential = {
+			owner = { tag = TUR }
+			has_owner_religion = no
+			not = { has_province_modifier = the_devshirme_system }
+			not = { any_neighbor_province = { has_province_modifier = the_devshirme_system } }
+		}
+		allow = {
+			has_building = regimental_camp
+			owner = { officials = 2}
+		}
+		effect = {
+			add_province_modifier = {
+				name = "the_devshirme_system"
+				duration = -1
+			}
+			owner = { officials = -2}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\persiannation.txt
+************************************************************************
+country_decisions = {
+
+	persian_nation = {
+		potential = {
+			NOT = { exists = PER }
+			NOT = { tag = MUG }
+			NOT = { tag = PAP }
+			NOT = { tag = HRE }
+			OR = {
+				culture_group = iranian
+				primary_culture = azerbadjani
+			}
+		}
+		allow = 
+		{
+			owns = 413		# Luristan
+			owns = 414		# Hamadan
+			owns = 416		# Azerbaijan	
+			owns = 426		# Mazandaran
+			owns = 429		# Fars
+			owns = 434		# Makran
+			owns = 436		# Khurasan
+			is_core = 413		# Luristan
+			is_core = 414		# Hamadan
+			is_core = 416		# Azerbaijan	
+			is_core = 426		# Mazandaran
+			is_core = 429		# Fars
+			is_core = 434		# Makran
+			is_core = 436		# Khurasan
+			war = no
+		}
+	  effect = {
+			PER = {
+				add_core = 413 # Luristan
+				add_core = 414 # Hamadan
+				add_core = 416 # Azerbaijan
+				add_core = 426 # Mazandaran
+				add_core = 428 # Ajam
+				add_core = 429 # Fars
+				add_core = 412 # Khuzestan
+				add_core = 417 # Gilan
+				add_core = 427 # Gurgan
+				add_core = 432 # Khurasan
+				add_core = 433 # Dash-i-Lut
+				add_core = 434 # Makran
+				add_core = 436 # Kerman
+			}
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			centralization_decentralization = -2
+			prestige = 0.05
+			change_tag = PER
+			PER = {
+				government = theocratic_government
+				random_owned = { limit = { owner = { technology_group = nomad_group } } owner = { technology_group = muslim } }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\polishdecisions.txt
+************************************************************************
+country_decisions = {
+
+	rely_on_polish_hussars = {
+		potential = {
+			tag = POL
+			NOT = { has_country_modifier = polish_hussars }
+			land_tech = 26
+		}
+		allow = {
+			army_tradition = 0.8
+			prestige = 0.1
+			cavalry_fraction = 0.5
+		}
+		effect = {
+			add_country_modifier = {
+				name = "polish_hussars"
+				duration = -1
+			}		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	move_capital_to_warsawa = {
+		potential = {
+			tag = POL
+			owns = 257
+			NOT = { capital = 257 }
+			NOT = { has_country_flag = relocated_capital_warsawa }
+		}
+		allow = {
+			is_core = 257
+			war = no
+		}
+		effect = {
+			set_country_flag = relocated_capital_warsawa
+			stability = 3
+			capital = 257
+			prestige = 0.10
+			257 = {
+				change_province_name = "Варшава"
+			 	base_tax = 1 
+			 	change_manpower = 1
+			 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\portugal.txt
+************************************************************************
+country_decisions = {
+
+
+	establish_afonsine_ordinances = {
+		potential = {
+			tag = POR
+			NOT = { has_country_modifier = afonsine_ordinances }
+		}
+		allow = {
+			ADM = 6
+			government_tech = 4
+		}
+		effect = {
+			stability = -1
+			add_country_modifier = {
+				name = "afonsine_ordinances"
+				duration = -1
+			}		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	remember_the_navigator = {
+		potential = {
+			tag = POR
+			NOT = { has_country_modifier = legacy_of_the_navigator }
+	
+		}
+		allow = {
+			has_discovered = 367
+			has_discovered = 368
+			naval_tech  = 6
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "legacy_of_the_navigator"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+
+}
+
+
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\Prussia.txt
+************************************************************************
+country_decisions = {
+
+	enact_prussian_military_reforms = {
+		potential = {
+			tag = PRU
+			NOT = { tag = HRE }
+			NOT = { tag = GER }
+			NOT = { has_country_modifier = prussian_military_reforms }
+		}
+		allow = {
+			MIL = 7
+			land_tech = 30
+			army_tradition = 0.5
+		}
+		effect = {
+			add_country_modifier = {
+				name = "prussian_military_reforms"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	form_kingdom_of_prussia = {
+		potential = {
+			tag = BRA
+			NOT = { exists = PRU }
+		}
+		allow = {
+			OR = {
+				religion = protestant
+				religion = reformed
+			}
+			owns = 41			# Ostpreussen
+			OR = {
+				owns = 43		#danzig
+				owns = 48		#hinterpommern
+			}
+			DIP = 7
+			prestige = 0.2
+			war = no
+		}
+		effect = {
+			random_owned = {
+				limit = {
+					OR = {
+						culture = pommeranian
+						culture = saxon
+						culture = prussian
+					}
+				}
+				base_tax = 1
+			}
+			centralization_decentralization = -1
+			prestige = 0.05
+			primary_culture = prussian
+			change_tag = PRU
+			PRU = {
+				add_core = 41			# Ostpreussen
+				add_core = 42			# Warmia
+				add_core = 43			# Danzig
+				add_core = 40			# Memel
+				add_core = 39			# Kurland
+				add_core = 271			# Samogitia
+				random_owned = {
+					limit = { 
+						is_capital = no 
+						OR = {
+							culture = saxon
+							culture = pommeranian
+						}
+					} 
+					culture = prussian
+				}
+			}
+			capital_scope = {
+				culture = prussian
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\PrussianNation.txt
+************************************************************************
+country_decisions = {
+
+	prussian_nation = {
+		potential = {
+			tag = TEU
+			NOT = { exists = PRU }
+			NOT = { tag = HRE }
+			NOT = { tag = GER }
+			is_religion_enabled = protestant
+		}
+		allow = 
+		{
+			owns = 41			# Ostpreussen
+			war = no
+		}
+	  effect = {
+			random_owned = {
+				base_tax = 1
+			}
+			centralization_decentralization = -1
+			prestige = 0.03
+			change_tag = PRU
+			PRU = { 
+				government = feudal_monarchy
+				add_core = 41			# Ostpreussen
+				add_core = 42			# Warmia
+				add_core = 43			# Danzig
+				add_core = 40			# Memel
+				add_core = 39			# Kurland
+				add_core = 271			# Samogitia
+				capital = 41 			# Ostpreussen
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	prussian_nation_general = {
+		potential = {
+			is_religion_enabled = protestant
+			OR = {
+				primary_culture = pommeranian
+				primary_culture = saxon
+				primary_culture = prussian
+			}
+			NOT = { tag = GER }
+			NOT = { tag = HRE }
+			NOT = { tag = BRA }
+			NOT = { tag = TEU }
+			NOT = { exists = PRU }
+		}
+		allow = 
+		{
+			owns = 41			# Ostpreussen
+			owns = 42			# Warmia
+			owns = 43			# Danzig
+			is_core = 41		# Ostpreussen
+			is_core = 42		# Warmia
+			is_core = 43		# Danzig
+			war = no
+		}
+	  effect = {
+			random_owned = {
+				base_tax = 1
+			}
+			centralization_decentralization = -1
+			prestige = 0.05
+			primary_culture = prussian
+			change_tag = PRU
+			PRU = {
+				add_core = 41			# Ostpreussen
+				add_core = 42			# Warmia
+				add_core = 43			# Danzig
+				add_core = 40			# Memel
+				add_core = 39			# Kurland
+				add_core = 271			# Samogitia
+				random_owned = {
+					limit = { 
+						is_capital = no 
+						OR = {
+							culture = saxon
+							culture = pommeranian
+						}
+					} 
+					culture = prussian
+				}
+			}
+			capital_scope = {
+				culture = prussian
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\Religion.txt
+************************************************************************
+province_decisions = {
+	support_religious_minorities = {
+		potential = {
+			not = { has_province_modifier = religious_minority_support }
+			not = { any_neighbor_province = { has_province_modifier = religious_minority_support } }	
+			has_owner_religion = no
+			has_owner_culture = yes
+			owner = { idea = humanist_tolerance }
+		}
+		allow = {
+			owner = { not = { innovative_narrowminded = 0 } }
+			owner = { 
+				dip = 5
+				officials = 1
+			}
+		}
+		effect = {
+			add_province_modifier = {
+				name = "religious_minority_support"
+				duration = -1
+			}
+			owner = {
+				officials = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+religion_decisions = {
+
+	send_papal_delegate = {
+		potential = {
+			religion = catholic
+			NOT = { papal_influence = 0.25 }
+			papacy_active = yes
+		}
+		allow = {
+			missionaries = 1
+		}
+		effect = {	
+			add_papal_influence = 0.02
+			missionaries = -1
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { 
+				NOT = { missionaries = 2 }
+				factor = 0
+			}
+		}
+	}
+
+	institute_the_societas_jesu = {
+		potential = {
+			OR = {
+				tag = POR
+				tag = SPA
+			}
+			religion = catholic
+			NOT = { has_country_modifier = the_societas_jesu }
+		}
+		allow = {
+			government_tech = 18
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "the_societas_jesu"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+	advancement_of_true_religion_act = {
+		potential = {
+			not = { has_country_modifier = the_advancement_of_true_religion_act }
+			religion_group = christian
+		}
+		allow = {
+			advisor = theologian
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "the_advancement_of_true_religion_act"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	blasphemy_act = {
+		potential = {
+			not = { has_country_modifier = the_blasphemy_act }
+			religion_group = christian
+		}
+		allow = {
+			adm = 6
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "the_blasphemy_act"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { 
+				NOT = { stability = 2 }
+				factor = 0
+			}
+		}
+	}
+	act_of_uniformity = {
+		potential = {
+			not = { has_country_modifier = the_act_of_uniformity }
+			not = { idea = church_attendance_duty }
+			religion_group = christian
+		}
+		allow = {
+			not = { centralization_decentralization = 0 }
+			government_tech  = 15
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "the_act_of_uniformity"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { 
+				missionaries = 2
+				factor = 0
+			}
+			modifier = { 
+				NOT = { any_owned_province = { has_owner_religion = no } }
+				factor = 0
+			}
+			modifier = { 
+				NOT = { revolt_percentage = 0 }
+				factor = 0 
+			}
+		}
+	}
+	suffragan_bishop_act = {
+		potential = {
+			not = { has_country_modifier = the_suffragan_bishop_act }
+			religion_group = christian
+		}
+		allow = {
+			not = { centralization_decentralization = 0 }
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "the_suffragan_bishop_act"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	church_tax = {
+		potential = {
+			not = { has_country_modifier = church_taxes }
+			religion_group = christian
+			NOT = { tag = PAP }
+		}
+		allow = {
+			# Raises the king to be the legal authority in all religious matters
+			OR = {
+				NOT = { religion = catholic }
+				has_country_modifier = the_statue_in_restraint_of_appeals
+			}
+			
+			advisor = theologian
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "church_taxes"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = { 
+				NOT = { revolt_percentage = 0 }
+				factor = 0 
+			}
+		}
+	}
+	sunday_school = {
+		potential = {
+			not = { has_country_modifier = sunday_schools }
+			religion_group = christian
+			government_tech = 34
+		}
+		allow = {
+			adm = 5
+			stability = 2
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "sunday_schools"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { 
+				NOT = { treasury = 100 }
+				factor = 0
+				}
+			modifier = { 
+				NOT = { 
+					OR = { 
+						revolt_percentage = 5
+						war_exhaustion = 10
+						any_owned_province = { has_owner_religion = no }
+						}
+					}
+				factor = 0
+			}
+		}
+	}
+	conventicle_act = {
+		potential = {
+			not = { has_country_modifier = the_conventicle_act }
+			religion = catholic
+			or = {
+				is_religion_enabled = protestant
+				is_religion_enabled = reformed
+			}
+		}
+		allow = {
+			innovative_narrowminded = 1
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "the_conventicle_act"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { 
+				missionaries = 2
+				factor = 0
+			}
+			modifier = { 
+				NOT = { any_owned_province = { has_owner_religion = no } }
+				factor = 0
+			}
+		}
+	}
+	declaration_of_indulgence = {
+		potential = {
+			not = { has_country_modifier = the_declaration_of_indulgence }
+			not = { has_country_modifier = the_test_act }
+			or = {
+				religion = catholic
+				religion = orthodox
+			}
+		}
+		allow = {
+			not = { innovative_narrowminded = 0 }
+			government_tech  = 15
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "the_declaration_of_indulgence"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { 
+				NOT = { stability = 2 }
+				factor = 0
+			}
+			modifier = { 
+				NOT = { any_owned_province = { has_owner_religion = no } }
+				factor = 0
+			}
+		}
+	}
+	de_heretico_comburendo_act = {
+		potential = {
+			not = { has_country_modifier = de_heretico_comburendo }
+			religion = catholic
+			government_tech = 15
+		}
+		allow = {
+			innovative_narrowminded = 2
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "de_heretico_comburendo"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { 
+				NOT = { stability = 2 }
+				factor = 0
+			}
+			modifier = { 
+				missionaries = 2
+				factor = 0
+			}
+			modifier = { 
+				NOT = { any_owned_province = { has_owner_religion = no } }
+				factor = 0
+			}
+		}
+	}
+	superintendents = {
+		potential = {
+			not = { has_country_modifier = superintendent_office }
+			or = {
+				religion = protestant
+				religion = reformed
+			}
+		}
+		allow = {
+			advisor = theologian
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "superintendent_office"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { 
+				NOT = { stability = 2 }
+				factor = 0
+			}
+		}
+	}
+	test_act = {
+		potential = {
+			not = { has_country_modifier = the_declaration_of_indulgence }
+			not = { has_country_modifier = the_test_act }
+			or = {
+				religion = protestant
+				religion = reformed
+			}
+		}
+		allow = {
+			not = { centralization_decentralization = 0 }
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "the_test_act"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { 
+				missionaries = 2
+				factor = 0
+			}
+			modifier = { 
+				NOT = { any_owned_province = { has_owner_religion = no } }
+				factor = 0
+			}
+		}
+	}
+	dissolution_of_the_monasteries = {
+		potential = {
+			not = { has_country_modifier = the_dissolution_of_the_monasteries }
+			or = {
+				religion = protestant
+				religion = reformed
+				AND = {
+					religion = catholic
+					has_country_modifier = the_statue_in_restraint_of_appeals
+				}
+			}
+		}
+		allow = {
+			# Raises the king to be the legal authority in all religious matters
+			adm = 7
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "the_dissolution_of_the_monasteries"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { 
+				NOT = { stability = 0 }
+				factor = 0
+			}
+		}
+	}
+	popery_act = {
+		potential = {
+			not = { has_country_modifier = the_popery_act }
+			or = {
+				religion = protestant
+				religion = reformed
+			}
+			government_tech = 21	
+		}
+		allow = {
+			mil = 6
+			not = { relation = { who = PAP value = 0 } }
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "the_popery_act"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { 
+				NOT = { treasury = 100 }
+				factor = 0
+			}
+			modifier = { 
+				missionaries = 5
+				factor = 0
+				}
+			modifier = { 
+				NOT = { any_owned_province = { has_owner_religion = no } }
+				factor = 0
+			}
+		}
+	}
+	sheikh_ul_islam = {
+		potential = {
+			not = { has_country_modifier = the_sheikh_ul_islam }
+			religion_group = muslim
+		}
+		allow = {
+			innovative_narrowminded = 1
+			advisor = theologian
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "the_sheikh_ul_islam"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { 
+				missionaries = 5
+				factor = 0
+			}
+		}
+	}
+	the_khalifah = {
+		potential = {
+			not = { has_country_modifier = khalifah }
+			religion = sunni
+		}
+		allow = {
+			prestige = 0.3
+			mil = 5
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "khalifah"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { 
+				NOT = { stability = 2 }
+				factor = 0
+			}
+		}
+	}
+	denouncement_of_sect_practices = {
+		potential = {
+			not = { has_country_modifier = sect_practices }
+			religion_group = muslim
+		}
+		allow = {
+			innovative_narrowminded = 1
+			advisor = theologian
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "sect_practices"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				NOT = { revolt_percentage = 0 }
+				factor = 0
+			}
+			modifier = { 
+				missionaries = 4
+				factor = 0
+			}
+			modifier = { 
+				NOT = { any_owned_province = { has_owner_religion = no } }
+				factor = 0
+			}
+		}
+	}
+	islamic_centre_of_scholarly = {
+		potential = {
+			not = { has_country_modifier = islamic_scholarly_centre }
+			religion_group = muslim
+			government_tech = 15
+		}
+		allow = {
+			capital_scope = {
+				has_building = university
+			}
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "islamic_scholarly_centre"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { 
+				NOT = { 
+					OR = { 
+						revolt_percentage = 5
+						war_exhaustion = 10
+						any_owned_province = { has_owner_religion = no }
+						}
+					}
+				factor = 0
+			}
+		}
+	}
+	jizya_tax = {
+		potential = {
+			not = { has_country_modifier = per_capita_tax }
+			religion_group = muslim
+			any_owned_province = {
+				has_owner_religion = no
+			}
+		}
+		allow = {
+			war = no
+			stability = 1
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "per_capita_tax"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				NOT = { stability = 3 }
+				factor = 0
+			}
+		}
+	}
+	monastic_education = {
+		potential = {
+			not = { has_country_modifier = monastic_education_system }
+			religion = buddhism
+		}
+		allow = {
+			advisor = theologian
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "monastic_education_system"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				NOT = { treasury = 100 }
+				factor = 0
+			}
+		}
+	}
+	anti_christian_edict = {
+		potential = {
+			not = { has_country_modifier = the_anti_christian_edict }
+			religion_group = eastern
+			or = {
+				any_neighbor_country = { religion_group = christian }
+				738 = { owner = { religion_group = christian } }
+				666 = { owner = { religion_group = christian } }
+				668 = { owner = { religion_group = christian } }
+			}
+		}
+		allow = {
+			defender_of_faith = no
+			not = { idea = humanist_tolerance }
+			innovative_narrowminded = 1
+			or = {
+				any_neighbor_country = {
+					religion_group = christian
+					not = { relation = { who = this value = 0 } }
+				}
+				666 = {
+					owner = {
+						religion_group = christian
+						not = { relation = { who = this value = 0 } }
+					}
+				}
+				668 = {
+					owner = {
+						religion_group = christian
+						not = { relation = { who = this value = 0 } }
+					}
+				}
+				738 = {
+					owner = {
+						religion_group = christian
+						not = { relation = { who = this value = 0 } }
+					}
+				}
+			}
+
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "the_anti_christian_edict"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				NOT = { stability = 2 }
+				factor = 0
+			}
+			modifier = { 
+				missionaries = 4
+				factor = 0
+			}
+			modifier = { 
+				NOT = { any_owned_province = { has_owner_religion = no } }
+				factor = 0
+			}
+		}
+	}
+	promote_neo_confucianism = {
+		potential = {
+			not = { has_country_modifier = denounce_taoism }
+			not = { has_country_modifier = neo_confucianism }
+			religion = confucianism
+		}
+		allow = {
+			war = no
+			stability = 1
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "neo_confucianism"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { 
+				NOT = { 
+					OR = {
+						any_owned_province = { has_owner_religion = no } 
+						revolt_percentage = 5
+						war_exhaustion = 10
+					}
+				}
+				factor = 0
+			}
+		}
+	}
+	reject_taoism = {
+		potential = {
+			not = { has_country_modifier = denounce_taoism }
+			not = { has_country_modifier = neo_confucianism }
+			religion = confucianism
+		}
+		allow = {
+			war = no
+			stability = 1
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "denounce_taoism"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				revolt_percentage = 5
+				factor = 0
+			}
+			modifier = {
+				war_exhaustion = 10
+				factor = 0
+			}
+			modifier = {
+				NOT = { any_owned_province = { has_owner_religion = no } }
+				factor = 0
+			}
+			modifier = {
+				missionaries = 4
+				factor = 0
+			}
+		}
+	}
+	ibadat_khana = {
+		potential = {
+			not = { has_country_modifier = house_of_worship }
+			religion_group = muslim
+			any_owned_province = {
+				has_owner_religion = no
+			}
+		}
+		allow = {
+			defender_of_faith = no
+			not = { innovative_narrowminded = 0 }
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "house_of_worship"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				NOT = { stability = 2 }
+				factor = 0
+			}
+			modifier = {
+				NOT = { 
+					OR = {
+						war_exhaustion = 10
+						revolt_percentage = 5
+						}
+					}
+				factor = 0
+			}
+		}
+	}
+	din_i_illahi = {
+		potential = {
+			not = { has_country_modifier = divine_faith }
+			or = {
+				and = {
+					tag = MUG
+					religion = sunni
+					any_owned_province = { religion = hinduism }
+				}
+				and = {
+					religion = hinduism
+					any_owned_province = { religion = sunni }			
+				}
+			}
+		}
+		allow = {
+			defender_of_faith = no
+			advisor = theologian
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "divine_faith"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				NOT = { missionaries = 2 }
+				factor = 0
+			}
+		}
+	}
+	anti_muslim_edict = {
+		potential = {
+			not = { has_country_modifier = muslim_resistance }
+			religion = hinduism
+			not = { any_owned_province = { religion = sunni } }
+			any_neighbor_country = {
+				religion_group = muslim
+			}			
+		}
+		allow = {
+			or = {
+				sergeant_major_general = 3
+				commandant = 3
+				grand_captain = 3
+			}
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "muslim_resistance"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				missionaries = 2
+				factor = 0
+			}
+		}
+	}
+	acceptance_of_religious_sects = {
+		potential = {
+			not = { has_country_modifier = religious_sect_tolerance }
+			religion = hinduism
+			not = { idea = divine_supremacy }
+		}
+		allow = {
+			defender_of_faith = no
+			war = no
+			stability = 1
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "religious_sect_tolerance"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { 
+				NOT = { any_owned_province = { has_owner_religion = no } }
+				factor = 0
+			}
+		}
+	}
+	haridasa_movement = {
+		potential = {
+			not = { has_country_modifier = the_haridasa_movement }	
+			not = { has_country_modifier = the_advaita_movement }
+			religion = hinduism
+			not = { idea = divine_supremacy }
+		}
+		allow = {
+			defender_of_faith = no
+			stability = 1
+			adm = 5
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "the_haridasa_movement"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				NOT = { treasury = 100 }
+				factor = 0
+			}
+			modifier = { 
+				NOT = { any_owned_province = { has_owner_religion = no } }
+				factor = 0
+			}
+		}
+	}
+	advaita_movement = {
+		potential = {
+			not = { has_country_modifier = the_advaita_movement }
+			not = { has_country_modifier = the_haridasa_movement }	
+			religion = hinduism
+			not = { idea = divine_supremacy }
+		}
+		allow = {
+			defender_of_faith = no
+			stability = 1
+			adm = 5
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "the_advaita_movement"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { 
+				missionaries = 2
+				factor = 0
+			}
+			modifier = { 
+				NOT = { any_owned_province = { has_owner_religion = no } }
+				factor = 0
+			}
+			modifier = { 
+				revolt_percentage = 5
+				factor = 0
+			}
+			modifier = { 
+				war_exhaustion = 10
+				factor = 0
+			}
+		}
+	}
+	divination = {
+		potential = {
+			not = { has_country_modifier = godly_inspiration }
+			religion_group = pagan
+		}
+		allow = {
+			war = no
+			stability = 1
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "godly_inspiration"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				NOT = { stability = 2 }
+				factor = 0
+			}
+			modifier = {
+				OR = {
+					revolt_percentage = 5
+					war_exhaustion = 10
+				}
+				factor = 0
+			}
+		}
+	}
+	religious_sacrifice = {
+		potential = {
+			not = { has_country_modifier = religious_sacrifices }
+			religion_group = pagan
+			or = {
+				tag = AZT
+				tag = CHM
+				tag = INC
+				tag = MAY
+				tag = ZAP
+			}
+		}
+		allow = {
+			adm = 6
+			stability = 1
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "religious_sacrifices"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				war_exhaustion = 10
+				factor = 0
+			}
+			modifier = {
+				revolt_percentage = 5
+				factor = 0
+			}
+		}
+	}
+	vision_quest = {
+		potential = {
+			not = { has_country_modifier = rite_of_passage }
+			religion_group = pagan
+		}
+		allow = {
+			advisor = theologian
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "rite_of_passage"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				NOT = { stability = 1 }
+				factor = 0
+			}
+		}
+	}
+	iconoclasm = {
+		potential = {
+			has_country_modifier = gilded_iconography
+		}
+		allow = {
+			advisor = theologian
+			advisor = sheriff
+			stability = 1
+		}
+		effect = {
+			remove_country_modifier = gilded_iconography
+			years_of_income = 1
+			add_country_modifier = {
+				name = "austere_religious_tradition"
+				duration = -1
+			}
+			stability = -3
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
+}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\ReligiousConversion.txt
+************************************************************************
+religion_decisions = {
+	
+	convert_to_catholic = {
+		
+		potential = {
+			OR = {
+				religion = protestant
+				religion = reformed
+			}
+		}
+
+		allow = {
+			defender_of_faith = no
+			force_converted = no
+			war = no
+			stability = 1
+		}
+
+		effect = {
+			religion = catholic
+			stability = -5
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.0
+				NOT = { dominant_religion = catholic }
+			}
+			modifier = {
+				factor = 0.0
+				capital_scope = { NOT = { religion = catholic } }
+			}
+			modifier = {
+				factor = 0.0
+				year = 1700
+			}
+		}
+	}
+	
+	convert_to_protestant = {
+		
+		potential = {
+			NOT = { tag = PAP }
+			NOT = { tag = KNI }
+			is_religion_enabled = protestant
+			religion = catholic
+			NOT = { has_country_flag = "reformation_money" }
+		}
+
+		allow = {
+			defender_of_faith = no
+			force_converted = no
+			war = no
+			stability = 1
+		}
+		effect = {
+			religion = protestant
+			stability = -5
+			remove_country_modifier = counter_reformation
+			years_of_income = 1.0
+			set_country_flag = "reformation_money" 
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.0
+				OR = {
+					culture_group = latin
+					culture_group = iberian
+					has_country_modifier = counter_reformation
+				}
+				NOT = { dominant_religion = protestant }
+			}
+			modifier = {
+				factor = 0
+				has_country_modifier = edict_de_nantes
+				NOT = { dominant_religion = protestant }
+			}
+			modifier = {
+				factor = 0.0
+				NOT = { dominant_religion = protestant }
+				capital_scope = { NOT = { religion = protestant } }
+			}
+			modifier = {
+				factor = 0.0
+				is_emperor = yes
+			}
+		}
+	}
+	convert_to_protestant_again = {
+		
+		potential = {
+			NOT = { tag = PAP }
+			NOT = { tag = KNI }
+			is_religion_enabled = protestant
+			OR = {
+				AND = {
+					religion = catholic
+					has_country_flag = "reformation_money"
+				}
+				religion = reformed
+			}
+		}
+
+		allow = {
+			defender_of_faith = no
+			force_converted = no
+			war = no
+			stability = 1
+		}
+
+		effect = {
+			religion = protestant
+			stability = -5
+			remove_country_modifier = counter_reformation
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.0
+				has_country_modifier = counter_reformation
+				NOT = { dominant_religion = protestant }
+			}
+			modifier = {
+				factor = 0.0
+				NOT = { dominant_religion = protestant }
+			}
+			modifier = {
+				factor = 0.0
+				capital_scope = { NOT = { religion = protestant } }
+			}
+			modifier = {
+				factor = 0.0
+				is_emperor = yes
+			}
+		}
+	}
+	
+	convert_to_reformed = {
+		
+		potential = {
+			NOT = { tag = PAP }
+			NOT = { tag = KNI }
+			is_religion_enabled = reformed
+			religion = catholic
+			NOT = { has_country_flag = "reformation_money" }
+		}
+
+		allow = {
+			defender_of_faith = no
+			force_converted = no
+			war = no
+			stability = 1
+		}
+
+		effect = {
+			religion = reformed
+			stability = -5
+			years_of_income = 1.0
+			set_country_flag = "reformation_money" 
+			remove_country_modifier = counter_reformation
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.0
+				OR = {
+					culture_group = latin
+					culture_group = iberian
+					has_country_modifier = counter_reformation
+				}
+				NOT = { dominant_religion = reformed }
+			}
+			modifier = {
+				factor = 0
+				has_country_modifier = edict_de_nantes
+				NOT = { dominant_religion = reformed }
+			}
+			modifier = {
+				factor = 0.0
+				NOT = { dominant_religion = reformed }
+				capital_scope = { NOT = { religion = reformed } }
+			}
+			modifier = {
+				factor = 0.0
+				is_emperor = yes
+			}
+		}
+	}
+	convert_to_reformed_again = {
+		
+		potential = {
+			NOT = { tag = PAP }
+			NOT = { tag = KNI }
+			is_religion_enabled = reformed
+			OR = {
+				AND = {
+					religion = catholic
+					has_country_flag = "reformation_money"
+				}
+				religion = protestant
+			}
+		}
+
+		allow = {
+			defender_of_faith = no
+			force_converted = no
+			war = no
+			stability = 1
+		}
+
+		effect = {
+			religion = reformed
+			stability = -5
+			remove_country_modifier = counter_reformation
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.0
+				has_country_modifier = counter_reformation
+				NOT = { dominant_religion = reformed }
+			}
+			modifier = {
+				factor = 0.0
+				NOT = { dominant_religion = reformed }
+			}
+			modifier = {
+				factor = 0.0
+				capital_scope = { NOT = { religion = reformed } }
+			}
+			modifier = {
+				factor = 0.0
+				is_emperor = yes
+			}
+		}
+	}
+	
+	
+	join_the_counter_reformation = {
+	
+		potential = {
+			NOT = { has_country_modifier = counter_reformation } 
+			has_global_flag = counter_reformation
+			NOT = { religion_years = { protestant = 130 } }
+			religion = catholic
+		}
+
+		allow = {
+			NOT = { idea = ecumenism }
+			NOT = { idea = liberty_egalite_fraternity }
+			OR = {
+				tag = PAP
+				is_emperor = yes
+				relation = { who = PAP value = -50 }
+			}
+			NOT = { has_country_modifier = edict_de_nantes }
+		}
+
+		effect = {
+			relation = { who = PAP value = 100 }
+			emperor = { relation = { who = THIS value = 50 } }
+			add_country_modifier = {
+				name = "counter_reformation"
+				duration = -1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.0
+				dominant_religion = reformed
+			}
+			modifier = {
+				factor = 0.0
+				dominant_religion = protestant
+			}
+			modifier = {
+				factor = 0.0
+				has_country_flag = protestant_reformation
+			}
+			modifier = {
+				factor = 0.0
+				has_country_flag = calvinist_reformation
+			}
+			modifier = {
+				factor = 0.0
+				NOT = { relation = { who = PAP value = -10 } }
+				NOT = { culture_group = latin }
+				NOT = { culture_group = iberian }
+				is_emperor = no
+			}
+			modifier = {
+				factor = 0.0
+				ADM = 5
+				NOT = { relation = { who = PAP value = 100 } }
+				NOT = { culture_group = latin }
+				NOT = { culture_group = iberian }
+				is_emperor = no
+			}
+		}
+	}
+	
+	christian_daimyo = {
+		potential = {
+			is_daimyo = yes
+			religion = shinto
+			any_owned_province = {
+				religion = catholic
+			}
+		}
+		
+		allow = {
+			NOT = {
+				idea = deus_vult
+			}
+			dominant_religion = catholic
+			stability = 3
+		}
+		
+		effect = {
+			religion = catholic
+			stability = -4
+		}
+	}
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\RestoreByzantineEmpire.txt
+************************************************************************
+country_decisions = {
+
+	restore_byzantine_empire = {
+		potential = {
+			NOT = { exists = BYZ }
+			NOT = { tag = HRE }
+			primary_culture = greek
+			religion = orthodox
+		}
+		allow = 
+		{
+			owns = 151	# Thrace
+			owns = 149	# Edirne
+			owns = 147	# Salonica
+			owns = 148	# Macedonia
+			owns = 146	# Athens
+			owns = 145	# Morea
+			owns = 1773	# Achea
+			owns = 316	# Bithynia
+			owns = 317	# Bursa
+			owns = 318	# Smyrna
+			owns = 1853	# Kozani
+			war = no
+		}
+	  effect = {
+			BYZ = {
+				add_core = 151	# Thrace
+				add_core = 149	# Edirne
+				add_core = 147	# Salonica
+				add_core = 148	# Macedonia
+				add_core = 146	# Athens
+				add_core = 145	# Morea
+				add_core = 1773	# Achea
+				add_core = 316	# Bithynia
+				add_core = 317	# Bursa
+				add_core = 318	# Smyrna
+				add_core = 163	# Crete
+				add_core = 164	# Naxos
+				add_core = 320	# Rhodes
+				add_core = 321	# Cyprus
+				add_core = 322	# Anatolia
+				add_core = 323	# Konya
+				add_core = 319	# Antalya
+				add_core = 324	# Karaman
+				add_core = 325	# Kastamon
+				add_core = 326	# Angora
+				add_core = 327	# Adana
+				add_core = 332	# Mus
+				add_core = 328	# Sinope
+				add_core = 330	# Trebizon
+				add_core = 285	# Kaffa
+				add_core = 142	# Corfu
+				add_core = 143	# Albania
+				add_core = 144	# Janina
+				add_core = 1765	# Nis
+				add_core = 150	# Bulgaria
+				add_core = 1764	# Burgas
+				add_core = 159	# Silistria
+				add_core = 1846	# Yazgod
+				add_core = 1848	# Hamid
+				add_core = 1853	# Kozani
+			}	
+			random_owned = {
+				limit = { culture = greek }
+				base_tax = 1
+			}
+			random_owned = {
+				limit = { culture = greek }
+				base_tax = 1
+			}
+			centralization_decentralization = -2
+			prestige = 0.1
+			change_tag = BYZ
+			BYZ = {
+				capital = 151 # Constantinople
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\RomanianNation.txt
+************************************************************************
+country_decisions = {
+
+	romanian_nation = {
+		potential = {
+			NOT = { tag = HRE }
+			NOT = { tag = PAP }
+			NOT = { exists = RMN }
+			primary_culture = romanian
+		}
+		allow = 
+		{
+			NOT = { exists = BYZ }
+			owns = 158	# Transylvania
+			owns = 159	# Silistria
+			owns = 160	# Oltenia
+			owns = 161	# Wallachia
+			owns = 268	# Bessarabia
+			owns = 1756	# Budjak
+			is_core = 158
+			is_core = 159
+			is_core = 160
+			is_core = 161
+			is_core = 268
+			is_core = 1756
+			war = no
+		}
+		effect = {
+			RMN = {
+				add_core = 158
+				add_core = 159
+				add_core = 160
+				add_core = 161
+				add_core = 268
+				add_core = 1756
+			}
+			merchants = 1
+			random_owned = {
+				base_tax = 1
+			}
+			centralization_decentralization = -2
+			prestige = 0.05
+			change_tag = RMN
+			RMN = {
+				capital = 161
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\RussianDecisions.txt
+************************************************************************
+country_decisions = {
+
+	make_st_petersburg_capital = {
+		potential = {
+			tag = RUS
+			owns = 33
+			NOT = { capital = 33 }
+			NOT = { has_country_flag = relocated_capital_st_petersburg }
+		}
+		allow = {
+			#war = no
+			treasury = 300
+		}
+		effect = {
+			set_country_flag = relocated_capital_st_petersburg
+			stability = 3
+			capital = 33
+			add_core = 33
+			prestige = 0.10
+			treasury = -200
+			33 = {
+				change_province_name = "Санкт-Петербург"
+				rename_capital = "Санкт-Петербург"
+			 	base_tax = 5 
+			 	change_manpower = 2
+				culture = russian
+				citysize = 20000
+				owner = {
+					random_owned = { 
+						limit = { owner = { religion = catholic } }
+						33 = { religion = catholic }
+					}
+					random_owned = { 
+						limit = { owner = { religion = protestant } }
+						33 = { religion = protestant }
+					}
+					random_owned = { 
+						limit = { owner = { religion = reformed } }
+						33 = { religion = reformed }
+					}
+					random_owned = { 
+						limit = { owner = { religion = orthodox } }
+						33 = { religion = orthodox }
+					}
+					random_owned = { 
+						limit = { owner = { religion = sunni } }
+						33 = { religion = sunni }
+					}
+					random_owned = { 
+						limit = { owner = { religion = shiite } }
+						33 = { religion = shiite }
+					}
+					random_owned = { 
+						limit = { owner = { religion = buddhism } }
+						33 = { religion = buddhism }
+					}
+					random_owned = { 
+						limit = { owner = { religion = hinduism } }
+						33 = { religion = hinduism }
+					}
+					random_owned = { 
+						limit = { owner = { religion = confucianism } }
+						33 = { religion = confucianism }
+					}
+					random_owned = { 
+						limit = { owner = { religion = shinto } }
+						33 = { religion = shinto }
+					}
+					random_owned = { 
+						limit = { owner = { religion = animism } }
+						33 = { religion = animism }
+					}
+					random_owned = { 
+						limit = { owner = { religion = shamanism } }
+						33 = { religion = shamanism }
+					}
+				}
+
+			 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	establish_siberian_frontier = {
+		potential = {
+			tag = RUS
+			year = 1500
+			NOT = { conquistador = 1 }
+			NOT = { idea = quest_for_the_new_world }
+			western_siberia = { owned_by = THIS }
+			NOT = { eastern_siberia = { has_discovered = THIS } }
+		}
+		allow = {
+			war = no
+			treasury = 20
+		}
+		effect = {
+			treasury = -10
+			create_conquistador = 5
+			colonists = 1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	establish_russian_patriarchate = {
+		potential = {
+			tag = RUS
+			NOT = { has_country_modifier = russian_patriarchate }
+			religion = orthodox
+		}
+		allow = {
+			war = no
+			NOT = { 151 = { owned_by = BYZ } }
+			prestige = 0.2
+			innovative_narrowminded = 2
+		}
+		effect = {
+			add_country_modifier = {
+				name = "russian_patriarchate"
+				duration = -1
+			}		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\RussianNation.txt
+************************************************************************
+country_decisions = {
+
+	russian_nation = {
+		potential = {
+			NOT = { exists = RUS }
+			NOT = { tag = HRE }
+			primary_culture = russian
+		}
+		allow = 
+		{
+			owns = 295			# Moskva
+			owns = 310			# Novgorod
+			is_core = 295			# Moskva
+			is_core = 310			# Novgorod
+	
+			OR = {
+				AND = {
+					owns = 294		# Tver
+					is_core = 294
+				}
+				AND = {
+					owns = 308		# Yaroslavl	
+					is_core = 308
+				}
+			}
+			OR = {
+				AND = {
+					owns = 289		# Chernigov
+					is_core = 289
+				}
+				AND = {
+					owns = 293		# Smolensk
+					is_core = 293
+				}
+			}
+			OR = {
+				AND = {
+					owns = 306		# Nijni-Novgorod
+					is_core = 306
+				}
+				AND = {
+					owns = 307		# Vladimir	
+					is_core = 307
+				}
+			}
+			war = no
+		}
+		effect = {
+			RUS = {
+				add_core = 32		# Kexholm
+				add_core = 33		# Neva
+				add_core = 34		# Ingermanland
+				add_core = 274		# Pskov
+				add_core = 275		# Polotsk
+				add_core = 288		# Lugansk
+				add_core = 289		# Chernigov
+				add_core = 290		# Poltava
+				add_core = 291		# Kharkov
+				add_core = 292		# Mogilyov
+				add_core = 293		# Smolensk
+				add_core = 294		# Tver
+				add_core = 295		# Moskva
+				add_core = 296		# Kaluga
+				add_core = 297		# Orel
+				add_core = 298		# Kurks
+				add_core = 299		# Voronezh
+				add_core = 300		# Tula
+				add_core = 301		# Novgorod
+				add_core = 302		# Tambow
+				add_core = 303		# Saratow
+				add_core = 304		# Pensa
+				add_core = 305		# Simbirsk
+				add_core = 306		# Nijni-Novgorod
+				add_core = 307		# Vladimir
+				add_core = 308		# Yaroslavl
+				add_core = 309		# Olonets
+				add_core = 310		# Novgorod
+				add_core = 311		# Kholm
+				add_core = 312		# Beloozero
+				add_core = 313		# Archangelsk
+				add_core = 314		# Ustyug
+				add_core = 467		# Bogutjar
+				add_core = 469		# Mordvar
+				add_core = 1077		# Solikamsk
+				add_core = 1079		# Viatka
+				add_core = 1080		# Idnakar
+				add_core = 1081		# Bolgar
+				add_core = 1082		# Kazan
+				add_core = 1083		# Zavolochye
+				add_core = 1752		# Rzhev
+				add_core = 1753		#Kostroma
+				add_core = 1754		#Murom
+				add_core = 1755		#Ustyug
+				add_core = 1778		#Kasimov
+				add_core = 1776		#Karelia
+				add_core = 473 		#Samara
+			}
+			centralization_decentralization = -2
+			merchants = 1
+			random_owned = {
+				limit = { culture = russian }
+				base_tax = 1
+			}
+			prestige = 0.15
+			change_tag = RUS
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\sardinapiedmontnation.txt
+************************************************************************
+country_decisions = {
+
+	sardinia_piedmont_nation = {
+		potential = {
+			NOT = { exists = SPI }
+			government = monarchy
+			OR = {
+				tag = SAV
+				tag = SAR
+			}
+		}
+		allow = {
+			OR = {
+				AND = {
+					tag = SAR
+					NOT = { exists = SAV }
+				}
+				AND = {
+					tag = SAV
+					NOT = { exists = SAR }
+				}
+			}
+			owns = 102		# Nice
+			owns = 103		# Piedmont
+			owns = 127		# Sardinia
+			owns = 205		# Savoie
+			owns = 1875		# Cuneo
+
+			is_core = 102	# Nice
+			is_core = 103	# Piedmont
+			is_core = 127	# Sardinia
+			is_core = 205	# Savoie
+			is_core = 1875	# Cuneo
+			
+			war = no
+		}
+		effect = {
+			prestige = 0.05
+			SPI = {	
+				add_core = 102	# Nice
+				add_core = 103	# Piedmont
+				add_core = 127	# Sardinia
+				add_core = 205	# Savoie
+				add_core = 1875	# Cuneo
+			}
+			change_tag = SPI
+			capital = 103		# Piedmont
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	sardinia_piedmont_nation_inherit = {
+		potential = {
+			NOT = { exists = SPI }
+			government = monarchy
+			OR = {
+				tag = SAV
+				tag = SAR
+			}
+		}
+		allow = {
+			OR = {
+				AND = {
+					war = no
+					tag = SAR
+					DIP = 6
+					ADM = 6
+					owns = 127			# Sardinia
+					is_core = 127		# Sardinia
+					relation = { who = SAV value = 150 }
+					senior_union_with = SAV
+					SAV = {
+						war = no
+						owns = 103		# Piedmont
+						is_core = 103	# Piedmont
+					}
+				}
+				AND = {
+					tag = SAV
+					war = no
+					DIP = 7
+					ADM = 7
+					prestige = 0.1
+					owns = 103			# Piedmont
+					is_core = 103		# Piedmont
+					relation = { who = SAR value = 150 }
+					senior_union_with = SAR
+					SAR = {
+						
+						owns = 127		# Sardinia
+						is_core = 127	# Sardinia
+						war = no
+					}
+				}
+			}
+		}
+		effect = {
+			inherit = SAV
+			inherit = SAR
+			SPI = {	
+				add_core = 102	# Nice
+				add_core = 103	# Piedmont
+				add_core = 127	# Sardinia
+				add_core = 205	# Savoie
+				add_core = 1875	# Cuneo
+			}
+			change_tag = SPI
+			capital = 103	# Piedmont
+			prestige = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = SAV
+				SAR = { ai = no }
+				factor = 0
+			}
+			modifier = {
+				tag = SAR
+				SAV = { ai = no }
+				factor = 0
+			}
+		}
+	}
+
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\ScandinavianNation.txt
+************************************************************************
+country_decisions = {
+
+	scandinavian_nation = {
+		potential = {
+			NOT = { exists = SCA }
+			NOT = { tag = PAP }
+			NOT = { tag = HRE }
+			culture_group = scandinavian
+		}
+		allow = 
+		{
+			owns = 1		# Uppland
+			owns = 6		# Skane
+			owns = 7		# Vastergotland
+			owns = 12		# Sjaelland
+			owns = 15		# Jylland
+			owns = 17		# Akershus
+			is_core = 1		# Uppland
+			is_core = 6		# Skane
+			is_core = 7		# Vastergotland
+			is_core = 12	# Sjaelland
+			is_core = 15	# Jylland
+			is_core = 17	# Akershus
+			war = no
+		}
+	  effect = {
+			SCA = {
+				add_core = 1		# Uppland
+				add_core = 2		# Ostergotland
+				add_core = 3		# Smaland
+				add_core = 4		# Bergslagen
+				add_core = 5		# Varmland
+				add_core = 6		# Skane
+				add_core = 7		# Vastergotland
+				add_core = 8		# Dalaskogen
+				add_core = 9		# Halsingland
+				add_core = 10		# Jamtland
+				add_core = 11		# Vasterbotten
+				add_core = 12		# Sjaelland
+				add_core = 13		# Slesvig
+				add_core = 14		# Fyn
+				add_core = 15		# Jylland
+				add_core = 16		# Bohuslan
+				add_core = 17		# Akershus
+				add_core = 18		# Lappland
+				add_core = 19		# Osterbotten
+				add_core = 20		# Trondelag
+				add_core = 21		# Halogaland
+				add_core = 22		# Eisdiva
+				add_core = 23		# Bergenshus
+				add_core = 24		# Agder
+				add_core = 25		# Gotland
+				add_core = 26		# Halland
+				add_core = 27		# Finland
+				add_core = 28		# Nyland
+				add_core = 29		# Tavastland
+				add_core = 30		# Viborg
+				add_core = 31		# Savolaks
+				add_core = 315		# Finnmark
+				add_core = 369		# Orkney
+				add_core = 370		# Reykjavik
+				add_core = 371		# Akureyri
+				add_core = 1104		# Eiriksfjord
+				add_core = 1105		# Vestbygden
+			}	
+			random_owned = {
+				limit = { 
+					is_capital = no 
+					culture_group = scandinavian
+				}
+				base_tax = 1
+			}
+			capital_scope = {
+				base_tax = 1
+			}
+			centralization_decentralization = -2
+			prestige = 0.05
+			change_tag = SCA
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\Scotland.txt
+************************************************************************
+#moved to triggered_modifier
+#
+#country_decisions = {
+#	use_highland_charge = {
+#		potential = {
+#			tag = SCO
+#			NOT = { has_country_modifier = highland_charge }
+#		}
+#		allow = {
+#			owns = 252	#highlands..
+#			#MIL = 7
+#			#land_tech = 5
+#		}
+#		effect = {	
+#			add_country_modifier = {
+#				name = "highland_charge"
+#				duration = -1
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#	
+#}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\spain.txt
+************************************************************************
+religion_decisions = {
+	establish_spanish_inquisition = {
+		potential = {
+			tag = SPA
+			NOT = { has_country_modifier = spanish_inquisition }
+		}
+		allow = {
+			innovative_narrowminded = 3
+			religion = catholic
+		}
+		effect = {
+			add_country_modifier = {
+				name = "spanish_inquisition"
+				duration = -1
+			}		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+country_decisions = {
+
+	commission_gold_fleet = {
+		potential = {
+			tag = SPA
+			NOT = { has_country_modifier = gold_fleet }
+			any_owned_province = {
+				trade_goods = gold
+				OR = {
+					continent = south_america
+					continent = north_america
+				}
+			}
+		}
+		allow = {
+			land_naval = 1
+			gold = 3
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "gold_fleet"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+
+	
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\SpanishNation.txt
+************************************************************************
+country_decisions = {
+
+	spanish_nation = {
+		potential = {
+			NOT = { tag = FRA }		# Basque is a valid culture for both FRA and SPA
+			NOT = { exists = SPA }
+			NOT = { tag = PAP }
+			NOT = { tag = HRE }
+			OR = {
+				culture_group = iberian
+				primary_culture = basque
+			}
+		}
+		allow = 
+		{
+			owns = 213	# Barcelona
+			owns = 214	# Aragуn
+			owns = 215	# Castilla La Vieja
+			owns = 216	# Salamanca
+			owns = 224	# Andalucia
+			owns = 219	# Toledo
+			owns = 220	# Valencia
+			
+			is_core = 213	# Barcelona
+			is_core = 214	# Aragуn
+			is_core = 215	# Castilla La Vieja
+			is_core = 216	# Salamanca
+			is_core = 224	# Andalucia
+			is_core = 219	# Toledo
+			is_core = 220	# Valencia
+			
+			war = no
+		}
+		effect = {
+			SPA = {
+				add_core = 197		# Roussillon
+				add_core = 206		# Galicia
+				add_core = 207		# Asturias
+				add_core = 208		# Leуn
+				add_core = 209		# Vizcaya
+				add_core = 210		# Navarra
+				add_core = 211		# Pirineo
+				add_core = 212		# Girona
+				add_core = 213		# Barcelona
+				add_core = 214		# Aragon
+				add_core = 215		# Castilla la Vieja
+				add_core = 216		# Salamanca
+				add_core = 217		# Madrid
+				add_core = 218		# Badajoz
+				add_core = 219		# Toledo
+				add_core = 220		# Valencia
+				add_core = 221		# Murcia
+				add_core = 222		# Almeria
+				add_core = 223		# Granada
+				add_core = 224		# Andalucia
+				add_core = 225		# Cуrdoba
+				add_core = 226		# Gibraltar
+				add_core = 333		# The Baleares
+				add_core = 366		# The Canarias
+				add_core = 1745		# Cantabria
+				add_core = 1746		# Burgos
+				add_core = 1747		# Caceres
+				add_core = 1748		# La Mancha
+				add_core = 1749		# Cadiz
+				add_core = 1750		# Alicante
+			}	
+			
+			centralization_decentralization = -2
+			colonists = 1
+			random_owned = {
+				base_tax = 1
+			}
+			prestige = 0.05
+			change_tag = SPA
+			SPA = {
+				any_owned = {
+					limit = { province_id = 217 }
+					owner = { capital = 217 }	# Madrid
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 600
+	}
+	
+}
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\sweden.txt
+************************************************************************
+# Indelningsverket.. +25% manpower, -10% recruit speed.)
+# absolutism = stab_cost - 5%, rr = -1
+# finnish cavalry = cheaper cavalry.
+# swedish_steel
+
+country_decisions = {
+
+	create_indelningsverket = {
+		potential = {
+			primary_culture = swedish
+			OR = {
+				tag = SWE
+				tag = SCA
+			}
+			NOT = { has_country_modifier = indelningsverket }
+		}
+		allow = {
+			is_subject = no
+			OR = {
+				num_of_cities = 21
+				barracks = 5
+			}
+			MIL = 7
+		}
+		effect = {
+			add_country_modifier = {
+				name = "indelningsverket"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	institute_the_absolutism = {
+		potential = {
+			primary_culture = swedish
+			NOT = { has_country_modifier = the_absolutism }
+		}
+		allow = {
+			ADM = 8
+			is_subject = no
+			government = absolute_monarchy
+		}
+		effect = {
+			add_country_modifier = {
+				name = "the_absolutism"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	use_finnish_cavalry = {
+		potential = {
+			primary_culture = swedish
+			OR = {
+				tag = SWE
+				tag = SCA
+			}
+			NOT = { has_country_modifier = finnish_cavalry }
+		}
+		allow = {
+			is_subject = no
+			finland = {
+				owned_by = THIS 
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "finnish_cavalry"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	use_swedish_steel = {
+		potential = {
+			primary_culture = swedish
+			OR = {
+				tag = SWE
+				tag = SCA
+			}
+			NOT = { has_country_modifier = swedish_steel }
+		}
+		allow = {
+			MIL = 7
+			monthly_income = 30
+			is_subject = no
+		}
+		effect = {
+			add_country_modifier = {
+				name = "swedish_steel"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\TheHansa.txt
+************************************************************************
+country_decisions = {
+
+	build_lubeck_krantor = {
+		potential = {	
+			tag = HSA
+			owns = 45
+			government = merchant_republic
+			45 = {
+				cot = yes
+				NOT = { has_province_modifier = "krantor_crane" }
+			}
+		}
+		allow = {
+			total_merchants = 30
+			years_of_income = 1
+			officials = 2
+		}
+		effect = {
+			years_of_income = -1
+			officials = -2
+			45 = {
+				add_province_modifier = {
+					name = "krantor_crane"
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	commission_adler_von_lubeck = {
+		potential = {
+			tag = HSA
+			owns = 45
+			controls = 45
+			NOT = {
+				has_country_flag = adler_built
+			}
+		}
+		allow = {
+			years_of_income = 0.7
+			officials = 3
+			any_neighbor_country = {
+				war = yes
+			}
+		}
+		effect = {
+			years_of_income = -0.7
+			officials = -3
+			45 = {
+				big_ship = current
+			}
+			set_country_flag = adler_built
+			add_country_modifier = {
+				name = "adler_von_lubeck"
+				duration = 10950
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\trade.txt
+************************************************************************
+country_decisions = {
+
+	statute_of_monopolies = {
+		potential = {
+			num_of_cots = 1
+			NOT = { has_country_modifier = the_statute_of_monopolies }
+		}
+		allow = {
+			mercantilism_freetrade = 1
+			not = { mercantilism_freetrade = 5 }
+			trade_efficiency = 0.5
+		}
+		effect = {
+			mercantilism_freetrade = 1
+			add_country_modifier = {
+				name = "the_statute_of_monopolies"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	close_foreign_trade = {
+		potential = {
+			technology_group = chinese
+			any_known_country = {
+				technology_group = western
+				east_asian_cot = {
+					cot = yes
+					placed_merchants = 1
+				}
+			}
+			not = { has_country_modifier = condemn_western_influences }
+		}
+		allow = {
+			any_known_country = {
+				technology_group = western
+				east_asian_cot = {
+					cot = yes
+					placed_merchants = 1
+				}
+				not = { relation = { who = this value = -100 } }
+			}
+			mil = 6
+		}
+		effect = {
+			innovative_narrowminded = 1
+			mercantilism_freetrade = -1
+			add_country_modifier = {
+				name = "condemn_western_influences"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+#province_decisions = {
+#	promote_national_merchants = {
+#		potential = {
+#			cot = yes
+#			owner = { trade_tech = 15 }
+#			not = { has_province_modifier = national_merchants }
+#		}
+#		allow = {
+#			owner = { not = { mercantilism_freetrade = -2 } }
+#		}
+#		effect = {
+#			add_province_modifier = {
+#				name = "national_merchants"
+#				duration = -1
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\TradeLeagues.txt
+************************************************************************
+# Trade Leagues
+#
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\Tribal.txt
+************************************************************************
+country_decisions = {
+	
+	tribal_despotism_reform = {
+		potential = {
+			government = tribal_despotism
+			NOT = { centralization_decentralization = 2 }
+			NOT = { innovative_narrowminded = 2 }
+			OR = {
+				OR = {
+						technology_group = western
+						technology_group = eastern
+						technology_group = ottoman
+						technology_group = muslim
+				}
+				any_neighbor_country = {
+					OR = {
+						technology_group = western
+						technology_group = eastern
+						technology_group = ottoman
+						technology_group = muslim
+					}
+				}
+			}
+		}
+		allow = {
+			ADM = 7
+			legitimacy = 0.7
+			government_tech = 10
+			stability = 2
+			war = no
+		}
+		effect = {
+			government = despotic_monarchy
+			stability = -5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tribal_federation_reform = {
+		potential = {
+			government = tribal_federation
+			NOT = { centralization_decentralization = 2 }
+			NOT = { innovative_narrowminded = 2 }
+			OR = {
+				OR = {
+						technology_group = western
+						technology_group = eastern
+						technology_group = ottoman
+						technology_group = muslim
+				}
+				any_neighbor_country = {
+					OR = {
+						technology_group = western
+						technology_group = eastern
+						technology_group = ottoman
+						technology_group = muslim
+					}
+				}
+			}
+		}
+		allow = {
+			ADM = 7
+			government_tech = 10
+			legitimacy = 0.7
+			stability = 2
+			war = no
+		}
+		effect = {
+			government = feudal_monarchy
+			stability = -5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tribal_democracy_reform = {
+		potential = {
+			government = tribal_democracy
+			NOT = { centralization_decentralization = 2 }
+			NOT = { innovative_narrowminded = 2 }
+			OR = {
+				OR = {
+						technology_group = western
+						technology_group = eastern
+						technology_group = ottoman
+						technology_group = muslim
+				}
+				any_neighbor_country = {
+					OR = {
+						technology_group = western
+						technology_group = eastern
+						technology_group = ottoman
+						technology_group = muslim
+					}
+				}
+			}
+		}
+		allow = {
+			ADM = 7
+			government_tech = 10
+			stability = 2
+			war = no
+		}
+		effect = {
+			government = noble_republic
+			stability = -5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	steppe_horde_reform = {
+		potential = {
+			government = steppe_horde
+		}
+		allow = {
+		NOT = { centralization_decentralization = 2 }
+			NOT = { innovative_narrowminded = 2 }
+			OR = {
+				OR = {
+						technology_group = western
+						technology_group = eastern
+						technology_group = ottoman
+						technology_group = muslim
+				}
+				any_neighbor_country = {
+					OR = {
+						technology_group = western
+						technology_group = eastern
+						technology_group = ottoman
+						technology_group = muslim
+					}
+				}
+			}
+			ADM = 7
+			legitimacy = 0.7
+			government_tech = 10
+			stability = 2
+		}
+		effect = {
+			government = despotic_monarchy
+			stability = -5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\Venice.txt
+************************************************************************
+country_decisions = {
+
+
+	expand_venetian_arsenal = {
+		potential = {
+			tag = VEN
+			NOT = { has_country_modifier = venetian_arsenal }
+			capital = 112
+		}
+		allow = {
+			naval_tech = 10
+			navy_tradition = 0.2
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = "venetian_arsenal"
+				duration = -1
+			}		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	promote_printing_industry = {
+		potential = {
+			tag = VEN
+			NOT = { has_country_modifier = printing_industry }
+		}
+		allow = {
+			war = no
+			trade_tech = 10					
+			NOT = { innovative_narrowminded = -2 	 }
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "printing_industry"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	enact_stato_da_mar = {
+		potential = {
+			tag = VEN
+			NOT = { has_country_modifier = stato_da_mar }
+		}
+		allow = {
+			land_naval = 2
+			total_num_of_ports = 6
+			or = {
+				trade_income_percentage = 0.33
+				monthly_income = 100
+			}
+		}
+		effect = {
+			add_country_modifier = {
+			name = "stato_da_mar"
+			duration = -1
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+		}
+    }
+
+	confirm_thalassocracy = {
+		potential = {
+			OR = {
+				tag = VEN
+				tag = GEN
+				tag = HSA
+				tag = RAG
+			}
+			government = merchant_republic
+			not = { 
+				has_country_modifier = thalassocracy
+			}
+		}
+		allow = {
+			overseas_provinces_percentage = 0.5
+			land_naval = 4
+		}
+		effect = {
+			add_country_modifier = {
+				name = "thalassocracy"
+				duration = -1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+
+c:\users\фёдор\onedrive для бизнеса\eu3\decisions\Westernisation.txt
+************************************************************************
+country_decisions = {
+
+	eastern_westernisation = {
+		potential = {
+			OR = {
+				technology_group = eastern
+				technology_group = ottoman
+			}
+		}
+		allow = {
+			any_neighbor_country = {
+				technology_group = western
+				tech_difference = 20
+			}
+			NOT = { centralization_decentralization = -1 }
+			NOT = { innovative_narrowminded = -2 }
+			stability = 3
+			ADM = 6
+		}
+		effect = {
+			#Set new flag
+			set_country_flag = hidden_tooltip
+			random_owned = {
+				limit = {
+					owner = {
+						has_country_flag = hidden_tooltip
+						technology_group = eastern
+					}
+				}
+				owner = { set_country_flag = western_from_eastern }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						has_country_flag = hidden_tooltip
+						technology_group = ottoman
+					}
+				}
+				owner = { set_country_flag = western_from_ottoman }
+			}
+			clr_country_flag = hidden_tooltip
+			#Remove any old flags
+			clr_country_flag = eastern_from_muslim
+			technology_group = western
+			random_owned = {
+				base_tax = 1
+			}
+			innovative_narrowminded = -1
+			stability = -5
+			add_country_modifier = {
+				name = "western_influences"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	muslim_westernisation = {
+		potential = {
+			technology_group = muslim
+		}
+		allow = {
+			any_neighbor_country = {
+				OR = {
+					technology_group = western
+					technology_group = eastern
+				}
+				tech_difference = 20
+			}
+			NOT = { centralization_decentralization = -1 }
+			NOT = { innovative_narrowminded = -2 }
+			stability = 3
+			ADM = 6
+		}
+		effect = {
+			#Set new flag
+			set_country_flag = eastern_from_muslim
+			#Remove any old flags
+			clr_country_flag = muslim_from_sub_saharan
+			clr_country_flag = muslim_from_new_world
+			clr_country_flag = muslim_from_indian
+			clr_country_flag = muslim_from_chinese
+			clr_country_flag = muslim_from_nomad_group
+			technology_group = eastern
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			innovative_narrowminded = -1
+			stability = -5
+			add_country_modifier = {
+				name = "western_influences"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	rotw_westernisation = {
+		potential = {
+			OR = {
+				technology_group = sub_saharan
+				technology_group = new_world
+				technology_group = indian
+				technology_group = chinese
+				technology_group = nomad_group
+			}
+		}
+		allow = {
+			any_neighbor_country = {
+				OR = {
+					technology_group = western
+					technology_group = eastern
+					technology_group = ottoman
+					technology_group = muslim
+				}
+				tech_difference = 25
+			}
+			NOT = { centralization_decentralization = -1 }
+			NOT = { innovative_narrowminded = -2 }
+			stability = 3
+			ADM = 6
+		}
+		effect = {
+			set_country_flag = hidden_tooltip
+			random_owned = {
+				limit = {
+					owner = {
+						has_country_flag = hidden_tooltip
+						technology_group = sub_saharan
+					}
+				}
+				owner = { set_country_flag = muslim_from_sub_saharan }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						has_country_flag = hidden_tooltip
+						technology_group = new_world
+					}
+				}
+				owner = { set_country_flag = muslim_from_new_world }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						has_country_flag = hidden_tooltip
+						technology_group = indian
+					}
+				}
+				owner = { set_country_flag = muslim_from_indian }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						has_country_flag = hidden_tooltip
+						technology_group = chinese
+					}
+				}
+				owner = { set_country_flag = muslim_from_chinese }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						has_country_flag = hidden_tooltip
+						technology_group = nomad_group
+					}
+				}
+				owner = { set_country_flag = muslim_from_nomad_group }
+			}
+			clr_country_flag = hidden_tooltip
+			technology_group = muslim
+			random_owned = {
+				base_tax = 1
+				change_manpower = 1
+			}
+			innovative_narrowminded = -1
+			stability = -5
+			remove_faction = temples
+			remove_faction = bureaucrats
+			remove_faction = enuchs			
+			add_country_modifier = {
+				name = "western_influences"
+				duration = -1
+			}
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	military_modernization_muslim = {
+		potential = {
+			technology_group = muslim
+			NOT = {
+				OR = {
+					unit_type = muslim
+					unit_type = western
+					unit_type = eastern
+				}
+			}
+		}
+		allow = {
+			stability = 3
+			NOT = { centralization_decentralization = -2 }
+			ADM = 7
+			NOT = { has_country_modifier = resist_western_influences }
+		}
+		effect = {
+			unit_type = muslim
+			stability = -6
+			centralization_decentralization = 2
+			add_country_modifier = {
+				name = "action_and_reaction"
+				duration = 730
+			}
+			remove_country_modifier = "western_influences"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	military_modernization_eastern = {
+		potential = {
+			technology_group = eastern
+			NOT = {
+				OR = {
+					unit_type = eastern
+					unit_type = western
+				}
+			}
+		}
+		allow = {
+			stability = 3
+			NOT = { centralization_decentralization = -3 }
+			ADM = 7
+			NOT = { has_country_modifier = resist_western_influences }
+		}
+		effect = {
+			unit_type = eastern			
+			stability = -6
+			centralization_decentralization = 2
+			add_country_modifier = {
+				name = "action_and_reaction"
+				duration = 1095
+			}
+			remove_country_modifier = "western_influences"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	military_modernization_western = {
+		potential = {
+			technology_group = western
+			NOT = {
+				unit_type = western
+			}
+		}
+		allow = {
+			stability = 3
+			NOT = { centralization_decentralization = -4 }
+			ADM = 7
+			NOT = { has_country_modifier = resist_western_influences }
+		}
+		effect = {
+			unit_type = western
+			stability = -6
+			centralization_decentralization = 2
+			add_country_modifier = {
+				name = "action_and_reaction"
+				duration = 1460
+			}
+			remove_country_modifier = "western_influences"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
+
+

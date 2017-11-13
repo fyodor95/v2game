@@ -1,0 +1,191 @@
+political_decisions = {
+
+    annex_Krakow = {
+    
+        potential = {
+            is_greater_power = yes
+            exists = KRA
+            KRA = {
+                neighbour = THIS
+                in_sphere = THIS
+				NOT = {
+					num_of_cities = 2
+				}
+            }
+        }
+        
+        allow = {
+            war = no
+			KRA = {
+				war = no
+			}
+            703 = {    #Krakow
+                average_consciousness = 5
+            }
+        }
+        
+        effect = {
+            badboy = 7
+            prestige = 10
+            inherit = KRA
+            703 = {
+                any_pop = {
+                    militancy = 5
+                }
+            }
+            relation = {
+                who = ENG
+                value = -40
+            }
+            relation = {
+                who = FRA
+                value = -40
+            }
+            
+        }
+        
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                badboy = 0.1
+            }
+        }
+    }
+	
+	russ_jap_dog = {
+	
+		potential = {
+			tag = RUS
+			NOT = {
+				has_country_flag = you_did_try_japo
+			}
+			owns = 1086
+			owns = 1087
+			owns = 1088
+			owns = 1089
+			owns = 1082
+			JAP = {
+				civilized = yes
+			}
+		}
+		
+		allow = {
+			war = no
+			JAP = {
+				war = no
+			}
+		}
+		
+		effect = {
+			badboy = -10
+			JAP = {
+				country_event = { id=95509 days=0 }
+			}
+			set_country_flag = you_did_try_japo
+		}
+		
+		ai_will_do = {
+            factor = 1
+            modifier = {
+				factor = 0
+				NOT = {
+					JAP = {
+						rank = 4
+					}
+				}
+            }
+        }
+	}
+	
+	Russo_Japanese_War = {
+	
+		potential = {
+			tag = JAP
+			AI = yes
+			NOT = {
+				has_country_flag = we_already_show
+			}
+			exists = RUS
+			NOT = {
+				exists = KOR
+			}
+			RUS = {
+				NOT = {
+					rank = 7
+				}
+				owns = 1086
+				owns = 1087
+				owns = 1088
+				owns = 1089
+			}
+			NOT = {
+				any_greater_power = {
+					limit = {
+						rank = 3
+					}
+					alliance_with = RUS
+				}
+			}
+			rank = 6
+			machine_guns = 1
+			steel_breech_loaded_artillery = 1
+			army_risk_management = 1
+			OR = {
+				RUS = {
+					NOT = {
+						military_directionism = 1
+					}
+				}
+				invention = gas_attack_capability
+			}
+		}
+		
+		allow = {
+			average_consciousness = 2
+		}
+		
+		effect = {
+			set_country_flag = we_already_show
+			war = {
+				target = RUS
+				call_ally = yes
+				attacker_goal = { 
+					casus_belli = acquire_core_state
+					state_province_id = 1086
+				}
+				attacker_goal = { 
+					casus_belli = acquire_core_state
+					state_province_id = 1088 
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	unaccepting_of_russians = {
+	
+		potential = {
+			tag = FIN
+			accepted_culture = russian
+			is_vassal = no
+		}
+		
+		allow = {
+			is_substate = no
+		}
+		
+		effect = {
+			remove_accepted_culture = russian
+			add_accepted_culture = swedish
+			add_accepted_culture = sami
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

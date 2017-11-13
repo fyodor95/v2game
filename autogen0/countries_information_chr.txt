@@ -1,0 +1,504 @@
+lunda:
+	ZAM
+mayan:
+	YUC
+malayalam:
+	TRA
+ewe:
+	TOG
+turkmen:
+	TKM
+texan:
+	TEX
+tajik:
+	TAJ
+hausa:
+	SOK
+slovak:
+	SLV
+slovene:
+	SLO
+sindi:
+	SIN
+thai:
+	SIA
+scottish:
+	SCO
+ukrainian:
+	RUT
+	UKR
+french_canadian:
+	QUE
+south_italian:
+	PAP
+	SIC
+mossi:
+	RHV
+oriya:
+	ORI
+yoruba:
+	NGR
+nepali:
+	NEP
+	SHI
+	SIK
+chechen:
+	NCI
+boer:
+	NAL
+	ORA
+	RHO
+	TRN
+panjabi:
+	MUG
+	PAK
+	PAN
+metis:
+	MTC
+persian:
+	PER
+romanian:
+	MOL
+	ROM
+	WAL
+chewa:
+	MLW
+mongol:
+	MGL
+mexican:
+	MEX
+	RGR
+wolof:
+	SNG
+maures:
+	MAU
+malagasy:
+	MAD
+lithuanian:
+	LIT
+cherokee:
+	CHE
+turkish:
+	TUR
+herero:
+	NAM
+finnish:
+	FIN
+khmer:
+	CAM
+edo:
+	BEN
+spanish:
+	SPA
+maghrebi:
+	ALD
+	MOR
+	TRI
+	TUN
+anglo_canadian:
+	CAN
+	COL
+	NEW
+czech:
+	BOH
+	CZH
+polynesian:
+	HAW
+	TGA
+kashmiri:
+	KAS
+unyamwezi:
+	TNZ
+tibetan:
+	BHU
+	LAD
+	TIB
+north_andean:
+	CLM
+	ECU
+	GCO
+	LAF
+	VNZ
+south_andean:
+	BOL
+	CHL
+	PBC
+	PEU
+marathi:
+	BEN
+	GWA
+	HND
+	IND
+	MAH
+	MRT
+	NAG
+polish:
+	KRA
+	PLC
+	POL
+brazilian:
+	BRZ
+uzbek:
+	BUK
+	KHI
+	TKS
+	UZB
+rajput:
+	BIK
+	JAI
+	JAS
+	JOD
+	MEW
+nguni:
+	MOZ
+akan:
+	GAN
+	IVC
+fang:
+	CMR
+	EQG
+	GAB
+ruanda:
+	RWA
+tigray:
+	ERT
+swiss:
+	SWI
+byelorussian:
+	BYE
+yankee:
+	CAL
+	DES
+	MAN
+	NEN
+	USA
+mashriqi:
+	ARA
+	BAB
+	HDJ
+	HSM
+	IRQ
+	LBN
+	PLS
+	SYR
+	TNT
+	YEM
+welsh:
+	WHA
+assamese:
+	ASM
+bosniak:
+	BOS
+french:
+	FRA
+	IDF
+manchu:
+	ANU
+	CHI
+	MCK
+	ZHI
+albanian:
+	ALB
+filipino:
+	PHI
+african_minor:
+	GBS
+bedouin:
+	ABU
+	BHR
+	DUB
+	FUJ
+	JOR
+	JSH
+	KWT
+	LIV
+	NEJ
+	OMA
+	QAT
+	RAK
+	SAU
+	SHA
+	UAE
+	UAQ
+tswana:
+	TSW
+lao:
+	CHA
+	CHK
+	LUA
+	WIA
+sara:
+	CAR
+	CHD
+kazak:
+	KAZ
+hungarian:
+	HUN
+	SIE
+pashtun:
+	AFG
+greek:
+	BYZ
+	CRE
+	CYP
+	GRE
+	ION
+azerbaijani:
+	AZB
+icelandic:
+	ICL
+misri:
+	EGY
+latvian:
+	LAT
+	UBD
+gujarati:
+	BEN
+	KUT
+bihari:
+	BIH
+sinhala:
+	SRI
+danish:
+	DEN
+	SCH
+japanese:
+	CHO
+	IMP
+	JAP
+	KAG
+	RYU
+	SAT
+	SEN
+	TKG
+	TOS
+	YZW
+ainu:
+	AIN
+platinean:
+	ARG
+	ARG
+	LPL
+	PRG
+	URU
+telegu:
+	BAS
+australian:
+	AST
+kanauji:
+	BUN
+bengali:
+	BNG
+bulgarian:
+	BUL
+	ERM
+wallonian:
+	BEL
+	WLL
+malay:
+	ATJ
+	BAL
+	BRU
+	JOH
+	MLY
+	SUL
+south_german:
+	AUS
+	BAD
+	BAV
+	KUK
+	LIE
+	SGF
+	SIG
+	WUR
+russian:
+	CLR
+	DON
+	RSR
+	RUS
+	SOV
+circassian:
+	CRC
+crimean_tatar:
+	CRI
+north_german:
+	ANH
+	BRA
+	BRE
+	COB
+	DZG
+	FRM
+	GER
+	HAM
+	HAN
+	HEK
+	HES
+	HOL
+	LIP
+	LUB
+	LUX
+	MEC
+	MEI
+	NAS
+	NGF
+	OBO
+	OLD
+	PRU
+	SAX
+	WEI
+armenian:
+	ARM
+croat:
+	CRO
+dixie:
+	CSA
+javan:
+	INO
+	JAV
+caribeno:
+	CUB
+	DOM
+	PUE
+vietnamese:
+	DAI
+afar:
+	DJI
+kannada:
+	MYS
+english:
+	ENG
+	ENL
+	NZL
+	SAF
+estonian:
+	EST
+irish:
+	IRE
+amhara:
+	ETH
+portuguese:
+	POR
+burmese:
+	BUR
+baluchi:
+	KAL
+	MAK
+songhai:
+	NIG
+min:
+	FJN
+	TAI
+flemish:
+	FLA
+zulu:
+	ZUL
+afro_caribbean:
+	ANT
+	ARU
+	BAR
+	CAY
+	COD
+	CUR
+	FWI
+	GRN
+	JAM
+	MSR
+	STK
+	STL
+	STV
+	TDT
+afro_antillean:
+	GDL
+	HAI
+	MAR
+georgian:
+	GEO
+	TCR
+mande:
+	GMB
+	SLE
+baganda:
+	UGA
+serb:
+	MON
+	SER
+	YUG
+beifaren:
+	GMJ
+	SXI
+	XBI
+	XIN
+fulbe:
+	GNE
+	MLI
+yue:
+	GNG
+inuit:
+	GRL
+central_american:
+	COS
+	ELS
+	GUA
+	HON
+	LAL
+	NIC
+	PNM
+	UCA
+zhuang:
+	GXI
+nanfaren:
+	HNN
+	KMT
+	SZC
+	TPG
+	YNN
+dutch:
+	NET
+bakongo:
+	ANG
+	CGO
+	CNG
+ashkenazi:
+	ISR
+rundi:
+	BRD
+north_italian:
+	ITA
+	LOM
+	LUC
+	MOD
+	PAR
+	SAR
+	SMR
+	TRE
+	TUS
+	VEN
+norwegian:
+	JAN
+	NOR
+catalan:
+	ADR
+	CAT
+kirgiz:
+	KOK
+	KYR
+swedish:
+	SCA
+	SWE
+avadhi:
+	AWA
+	HYD
+afro_american:
+	LIB
+somali:
+	SOM
+korean:
+	KOR
+sudanese:
+	SNR
+	SUD
+swahili:
+	KNY
+	ZAN
+karakalpak:
+	KRK

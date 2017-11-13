@@ -1,0 +1,2945 @@
+country_event = {
+	id = 145001
+	title = "100000"
+	desc = "100000"
+	picture = "greatpowers"
+	trigger = {
+		AI = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "10000"
+		any_country = {
+			limit = {
+				tag = ZUL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = zulu }
+				}
+				remove_core = ZUL
+			}
+		}
+		any_country = {
+			limit = {
+				tag = YNN
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = nanfaren }
+				}
+				remove_core = YNN
+			}
+		}
+		any_country = {
+			limit = {
+				tag = XIN
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = beifaren }
+				}
+				remove_core = XIN
+			}
+		}
+		any_country = {
+			limit = {
+				tag = WUR
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = south_german }
+				}
+				remove_core = WUR
+			}
+		}
+		any_country = {
+			limit = {
+				tag = WAL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = romanian }
+				}
+				remove_core = WAL
+			}
+		}
+		any_country = {
+			limit = {
+				tag = VNZ
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_andean }
+				}
+				remove_core = VNZ
+			}
+		}
+		any_country = {
+			limit = {
+				tag = VEN
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_italian }
+				}
+				remove_core = VEN
+			}
+		}
+		any_country = {
+			limit = {
+				tag = URU
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = platinean }
+				}
+				remove_core = URU
+			}
+		}
+		any_country = {
+			limit = {
+				tag = UKR
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = ukrainian }
+				}
+				remove_core = UKR
+			}
+		}
+		any_country = {
+			limit = {
+				tag = TUR
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = turkish }
+				}
+				remove_core = TUR
+			}
+		}
+		any_country = {
+			limit = {
+				tag = TUN
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = maghrebi }
+				}
+				remove_core = TUN
+			}
+		}
+		any_country = {
+			limit = {
+				tag = TRN
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = boer }
+				}
+				remove_core = TRN
+			}
+		}
+		any_country = {
+			limit = {
+				tag = TRE
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_italian }
+				}
+				remove_core = TRE
+			}
+		}
+		any_country = {
+			limit = {
+				tag = TRA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = malayalam }
+				}
+				remove_core = TRA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = TPG
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = nanfaren }
+				}
+				remove_core = TPG
+			}
+		}
+		any_country = {
+			limit = {
+				tag = TKM
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = turkmen }
+				}
+				remove_core = TKM
+			}
+		}
+		any_country = {
+			limit = {
+				tag = TIB
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = tibetan }
+				}
+				remove_core = TIB
+			}
+		}
+		any_country = {
+			limit = {
+				tag = TAJ
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = tajik }
+				}
+				remove_core = TAJ
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SWI
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = swiss }
+				}
+				remove_core = SWI
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SWE
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = swedish }
+				}
+				remove_core = SWE
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SPA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = spanish }
+				}
+				remove_core = SPA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = HAN
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_german }
+				}
+				remove_core = HAN
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ECU
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_andean }
+				}
+				remove_core = ECU
+			}
+		}
+		any_country = {
+			limit = {
+				tag = HAI
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = afro_antillean }
+				}
+				remove_core = HAI
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ALD
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = maghrebi }
+				}
+				remove_core = ALD
+			}
+		}
+		any_country = {
+			limit = {
+				tag = GWA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = marathi }
+				}
+				remove_core = GWA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = GUA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = central_american }
+				}
+				remove_core = GUA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = FLA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = flemish }
+				}
+				remove_core = FLA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = EGY
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = misri }
+				}
+				remove_core = EGY
+			}
+		}
+		any_country = {
+			limit = {
+				tag = MUG
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = panjabi }
+				}
+				remove_core = MUG
+			}
+		}
+		any_country = {
+			limit = {
+				tag = CUB
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = cubans }
+				}
+				remove_core = CUB
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SLV
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = slovak }
+				}
+				remove_core = SLV
+			}
+		}
+		any_country = {
+			limit = {
+				tag = CSA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = dixie }
+				}
+				remove_core = CSA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = CRI
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = crimean_tatar }
+				}
+				remove_core = CRI
+			}
+		}
+		any_country = {
+			limit = {
+				tag = COS
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = central_american }
+				}
+				remove_core = COS
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ANH
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_german }
+				}
+				remove_core = ANH
+			}
+		}
+		any_country = {
+			limit = {
+				tag = CNG
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = bakongo }
+				}
+				remove_core = CNG
+			}
+		}
+		any_country = {
+			limit = {
+				tag = EST
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = estonian }
+				}
+				remove_core = EST
+			}
+		}
+		any_country = {
+			limit = {
+				tag = JAP
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = japanese }
+				}
+				remove_core = JAP
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ARA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = {
+						OR = {
+							culture = berber
+							culture = maghrebi
+							culture = misri
+							culture = bedouin
+							culture = mashriqi
+						}
+					}
+				}
+				remove_core = ARA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = CHL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = south_andean }
+				}
+				remove_core = CHL
+			}
+		}
+		any_country = {
+			limit = {
+				tag = DOM
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = caribeno }
+				}
+				remove_core = DOM
+			}
+		}
+		any_country = {
+			limit = {
+				tag = YEM
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = mashriqi }
+				}
+				remove_core = YEM
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BAS
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = telegu }
+				}
+				remove_core = BAS
+			}
+		}
+		any_country = {
+			limit = {
+				tag = CAL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = yankee }
+				}
+				remove_core = CAL
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BUN
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = kanauji }
+				}
+				remove_core = BUN
+			}
+		}
+		any_country = {
+			limit = {
+				tag = XBI
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = beifaren }
+				}
+				remove_core = XBI
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BUR
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = burmese }
+				}
+				remove_core = BUR
+			}
+		}
+		any_country = {
+			limit = {
+				tag = CRO
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = croat }
+				}
+				remove_core = CRO
+			}
+		}
+		any_country = {
+			limit = {
+				tag = RUT
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = ukrainian }
+				}
+				remove_core = RUT
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BRZ
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = brazilian }
+				}
+				remove_core = BRZ
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BOS
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = bosniak }
+				}
+				remove_core = BOS
+			}
+		}
+		any_country = {
+			limit = {
+				tag = CAT
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = catalan }
+				}
+				remove_core = CAT
+			}
+		}
+		any_country = {
+			limit = {
+				tag = LAT
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = latvian }
+				}
+				remove_core = LAT
+			}
+		}
+		any_country = {
+			limit = {
+				tag = LAF
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = {
+						OR = {
+							culture = amazonian
+							culture = guarani
+							culture = north_andean
+							culture = afro_brazilian
+							culture = south_andean
+							culture = patagonian
+							culture = aimara
+							culture = platinean
+							culture = brazilian
+						}
+					}
+				}
+				remove_core = LAF
+			}
+		}
+		any_country = {
+			limit = {
+				tag = GEO
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = georgian }
+				}
+				remove_core = GEO
+			}
+		}
+		any_country = {
+			limit = {
+				tag = HND
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = {
+						OR = {
+							culture = telegu
+							culture = malayalam
+							culture = kannada
+							culture = sindi
+							culture = gujarati
+							culture = kashmiri
+							culture = manipuri
+							culture = bengali
+							culture = rajput
+							culture = bihari
+							culture = panjabi
+							culture = assamese
+							culture = nepali
+							culture = oriya
+							culture = tamil
+							culture = sinhala
+							culture = avadhi
+							culture = marathi
+							culture = kanauji
+						}
+					}
+				}
+				remove_core = HND
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ENG
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = {
+						OR = {
+							culture = irish
+							culture = scottish
+							culture = british
+						}
+					}
+				}
+				remove_core = ENG
+			}
+		}
+		any_country = {
+			limit = {
+				tag = UZB
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = uzbek }
+				}
+				remove_core = UZB
+			}
+		}
+		any_country = {
+			limit = {
+				tag = GCO
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_andean }
+				}
+				remove_core = GCO
+			}
+		}
+		any_country = {
+			limit = {
+				tag = UCA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = central_american }
+				}
+				remove_core = UCA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = CAM
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = khmer }
+				}
+				remove_core = CAM
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BRE
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_german }
+				}
+				remove_core = BRE
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SCA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = {
+						OR = {
+							culture = polar_bears
+							culture = sami
+							culture = finnish
+							culture = swedish
+							culture = danish
+							culture = norwegian
+							culture = icelandic
+						}
+					}
+				}
+				remove_core = SCA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = LUA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = lao }
+				}
+				remove_core = LUA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = HUN
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = hungarian }
+				}
+				remove_core = HUN
+			}
+		}
+		any_country = {
+			limit = {
+				tag = MON
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = serb }
+				}
+				remove_core = MON
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BUL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = bulgarian }
+				}
+				remove_core = BUL
+			}
+		}
+		any_country = {
+			limit = {
+				tag = HAM
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_german }
+				}
+				remove_core = HAM
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BER
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = gujarati }
+				}
+				remove_core = BER
+			}
+		}
+		any_country = {
+			limit = {
+				tag = KRA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = polish }
+				}
+				remove_core = KRA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = CZH
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = {
+						OR = {
+							culture = slovak
+							culture = czech
+						}
+					}
+				}
+				remove_core = CZH
+			}
+		}
+		any_country = {
+			limit = {
+				tag = UBD
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = {
+						OR = {
+							culture = estonian
+							culture = latvian
+						}
+					}
+				}
+				remove_core = UBD
+			}
+		}
+		any_country = {
+			limit = {
+				tag = MLY
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = malay }
+				}
+				remove_core = MLY
+			}
+		}
+		any_country = {
+			limit = {
+				tag = HAW
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = polynesian }
+				}
+				remove_core = HAW
+			}
+		}
+		any_country = {
+			limit = {
+				tag = MEC
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_german }
+				}
+				remove_core = MEC
+			}
+		}
+		any_country = {
+			limit = {
+				tag = COB
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_german }
+				}
+				remove_core = COB
+			}
+		}
+		any_country = {
+			limit = {
+				tag = YUG
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = {
+						OR = {
+							culture = bosniak
+							culture = slovene
+							culture = croat
+							culture = albanian
+							culture = serb
+							culture = bulgarian
+						}
+					}
+				}
+				remove_core = YUG
+			}
+		}
+		any_country = {
+			limit = {
+				tag = KUK
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = {
+						OR = {
+							culture = hungarian
+							culture = south_german
+						}
+					}
+				}
+				remove_core = KUK
+			}
+		}
+		any_country = {
+			limit = {
+				tag = MEI
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_german }
+				}
+				remove_core = MEI
+			}
+		}
+		any_country = {
+			limit = {
+				tag = AFG
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = pashtun }
+				}
+				remove_core = AFG
+			}
+		}
+		any_country = {
+			limit = {
+				tag = CRE
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = greek }
+				}
+				remove_core = CRE
+			}
+		}
+		any_country = {
+			limit = {
+				tag = JAS
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = rajput }
+				}
+				remove_core = JAS
+			}
+		}
+		any_country = {
+			limit = {
+				tag = COL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = anglo_canadian }
+				}
+				remove_core = COL
+			}
+		}
+		any_country = {
+			limit = {
+				tag = GER
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = {
+						OR = {
+							culture = ashkenazi
+							culture = south_german
+							culture = north_german
+						}
+					}
+				}
+				remove_core = GER
+			}
+		}
+		any_country = {
+			limit = {
+				tag = FRM
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_german }
+				}
+				remove_core = FRM
+			}
+		}
+		any_country = {
+			limit = {
+				tag = LAD
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = tibetan }
+				}
+				remove_core = LAD
+			}
+		}
+		any_country = {
+			limit = {
+				tag = NEW
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = anglo_canadian }
+				}
+				remove_core = NEW
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ITA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = {
+						OR = {
+							culture = maltese
+							culture = south_italian
+							culture = north_italian
+						}
+					}
+				}
+				remove_core = ITA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = PLC
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = {
+						OR = {
+							culture = lithuanian
+							culture = polish
+						}
+					}
+				}
+				remove_core = PLC
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BOL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = south_andean }
+				}
+				remove_core = BOL
+			}
+		}
+		any_country = {
+			limit = {
+				tag = USA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = {
+						OR = {
+							culture = texan
+							culture = dixie
+							culture = yankee
+						}
+					}
+				}
+				remove_core = USA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = LUC
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_italian }
+				}
+				remove_core = LUC
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ROM
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = romanian }
+				}
+				remove_core = ROM
+			}
+		}
+		any_country = {
+			limit = {
+				tag = DAI
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = vietnamese }
+				}
+				remove_core = DAI
+			}
+		}
+		any_country = {
+			limit = {
+				tag = KAS
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = kashmiri }
+				}
+				remove_core = KAS
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BUK
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = uzbek }
+				}
+				remove_core = BUK
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ELS
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = central_american }
+				}
+				remove_core = ELS
+			}
+		}
+		any_country = {
+			limit = {
+				tag = LIP
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_german }
+				}
+				remove_core = LIP
+			}
+		}
+		any_country = {
+			limit = {
+				tag = FIN
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = finnish }
+				}
+				remove_core = FIN
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BOH
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = czech }
+				}
+				remove_core = BOH
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BRU
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = malay }
+				}
+				remove_core = BRU
+			}
+		}
+		any_country = {
+			limit = {
+				tag = DEN
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = danish }
+				}
+				remove_core = DEN
+			}
+		}
+		any_country = {
+			limit = {
+				tag = DES
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = yankee }
+				}
+				remove_core = DES
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BIK
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = rajput }
+				}
+				remove_core = BIK
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BAD
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = south_german }
+				}
+				remove_core = BAD
+			}
+		}
+		any_country = {
+			limit = {
+				tag = TNT
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = tuvan }
+				}
+				remove_core = TNT
+			}
+		}
+		any_country = {
+			limit = {
+				tag = RUS
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = {
+						OR = {
+							culture = ugrian
+							culture = byelorussian
+							culture = ukrainian
+							culture = russian
+						}
+					}
+				}
+				remove_core = RUS
+			}
+		}
+		any_country = {
+			limit = {
+				tag = AZB
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = azerbaijani }
+				}
+				remove_core = AZB
+			}
+		}
+		any_country = {
+			limit = {
+				tag = RHO
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = anglo_african }
+				}
+				remove_core = RHO
+			}
+		}
+		any_country = {
+			limit = {
+				tag = YAK
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = yakut }
+				}
+				remove_core = YAK
+			}
+		}
+		any_country = {
+			limit = {
+				tag = TUS
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_italian }
+				}
+				remove_core = TUS
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ARG
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = platinean }
+				}
+				remove_core = ARG
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SLO
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = slovene }
+				}
+				remove_core = SLO
+			}
+		}
+		any_country = {
+			limit = {
+				tag = AST
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = australian }
+				}
+				remove_core = AST
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ATJ
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = malay }
+				}
+				remove_core = ATJ
+			}
+		}
+		any_country = {
+			limit = {
+				tag = AWA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = avadhi }
+				}
+				remove_core = AWA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BEL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = {
+						OR = {
+							culture = wallonian
+							culture = flemish
+						}
+					}
+				}
+				remove_core = BEL
+			}
+		}
+		any_country = {
+			limit = {
+				tag = CAN
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = {
+						OR = {
+							culture = french_canadian
+							culture = anglo_canadian
+						}
+					}
+				}
+				remove_core = CAN
+			}
+		}
+		any_country = {
+			limit = {
+				tag = JOH
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = malay }
+				}
+				remove_core = JOH
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BAB
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = mashriqi }
+				}
+				remove_core = BAB
+			}
+		}
+		any_country = {
+			limit = {
+				tag = MAK
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = baluchi }
+				}
+				remove_core = MAK
+			}
+		}
+		any_country = {
+			limit = {
+				tag = PRG
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = platinean }
+				}
+				remove_core = PRG
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ORI
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = oriya }
+				}
+				remove_core = ORI
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BAV
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = south_german }
+				}
+				remove_core = BAV
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BRA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_german }
+				}
+				remove_core = BRA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = IRE
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = irish }
+				}
+				remove_core = IRE
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ARM
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = armenian }
+				}
+				remove_core = ARM
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SGF
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = south_german }
+				}
+				remove_core = SGF
+			}
+		}
+		any_country = {
+			limit = {
+				tag = WIA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = lao }
+				}
+				remove_core = WIA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ETH
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = amhara }
+				}
+				remove_core = ETH
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BHO
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = marathi }
+				}
+				remove_core = BHO
+			}
+		}
+		any_country = {
+			limit = {
+				tag = CYP
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = greek }
+				}
+				remove_core = CYP
+			}
+		}
+		any_country = {
+			limit = {
+				tag = TEX
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = texan }
+				}
+				remove_core = TEX
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BMG
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = buryat }
+				}
+				remove_core = BMG
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SXI
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = beifaren }
+				}
+				remove_core = SXI
+			}
+		}
+		any_country = {
+			limit = {
+				tag = OLD
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_german }
+				}
+				remove_core = OLD
+			}
+		}
+		any_country = {
+			limit = {
+				tag = GRE
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = greek }
+				}
+				remove_core = GRE
+			}
+		}
+		any_country = {
+			limit = {
+				tag = AUS
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = south_german }
+				}
+				remove_core = AUS
+			}
+		}
+		any_country = {
+			limit = {
+				tag = HDJ
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = mashriqi }
+				}
+				remove_core = HDJ
+			}
+		}
+		any_country = {
+			limit = {
+				tag = KHI
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = uzbek }
+				}
+				remove_core = KHI
+			}
+		}
+		any_country = {
+			limit = {
+				tag = HEK
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_german }
+				}
+				remove_core = HEK
+			}
+		}
+		any_country = {
+			limit = {
+				tag = WLL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = wallonian }
+				}
+				remove_core = WLL
+			}
+		}
+		any_country = {
+			limit = {
+				tag = HON
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = central_american }
+				}
+				remove_core = HON
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SOK
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = hausa }
+				}
+				remove_core = SOK
+			}
+		}
+		any_country = {
+			limit = {
+				tag = HYD
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = avadhi }
+				}
+				remove_core = HYD
+			}
+		}
+		any_country = {
+			limit = {
+				tag = MEX
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = mexican }
+				}
+				remove_core = MEX
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ICL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = icelandic }
+				}
+				remove_core = ICL
+			}
+		}
+		any_country = {
+			limit = {
+				tag = MYS
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = kannada }
+				}
+				remove_core = MYS
+			}
+		}
+		any_country = {
+			limit = {
+				tag = IRQ
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = mashriqi }
+				}
+				remove_core = IRQ
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ISR
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = ashkenazi }
+				}
+				remove_core = ISR
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ABU
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = bedouin }
+				}
+				remove_core = ABU
+			}
+		}
+		any_country = {
+			limit = {
+				tag = JAI
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = rajput }
+				}
+				remove_core = JAI
+			}
+		}
+		any_country = {
+			limit = {
+				tag = JAN
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = norwegian }
+				}
+				remove_core = JAN
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ZAN
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = swahili }
+				}
+				remove_core = ZAN
+			}
+		}
+		any_country = {
+			limit = {
+				tag = TRI
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = maghrebi }
+				}
+				remove_core = TRI
+			}
+		}
+		any_country = {
+			limit = {
+				tag = JAV
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = javan }
+				}
+				remove_core = JAV
+			}
+		}
+		any_country = {
+			limit = {
+				tag = JOD
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = rajput }
+				}
+				remove_core = JOD
+			}
+		}
+		any_country = {
+			limit = {
+				tag = KAL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = baluchi }
+				}
+				remove_core = KAL
+			}
+		}
+		any_country = {
+			limit = {
+				tag = KUT
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = gujarati }
+				}
+				remove_core = KUT
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BYE
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = byelorussian }
+				}
+				remove_core = BYE
+			}
+		}
+		any_country = {
+			limit = {
+				tag = HOL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_german }
+				}
+				remove_core = HOL
+			}
+		}
+		any_country = {
+			limit = {
+				tag = KMK
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = kalmyk }
+				}
+				remove_core = KMK
+			}
+		}
+		any_country = {
+			limit = {
+				tag = PRU
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_german }
+				}
+				remove_core = PRU
+			}
+		}
+		any_country = {
+			limit = {
+				tag = KOK
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = kirgiz }
+				}
+				remove_core = KOK
+			}
+		}
+		any_country = {
+			limit = {
+				tag = KRD
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = kurdish }
+				}
+				remove_core = KRD
+			}
+		}
+		any_country = {
+			limit = {
+				tag = NEN
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = yankee }
+				}
+				remove_core = NEN
+			}
+		}
+		any_country = {
+			limit = {
+				tag = KOR
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = korean }
+				}
+				remove_core = KOR
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SIA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = thai }
+				}
+				remove_core = SIA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = CHE
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = cherokee }
+				}
+				remove_core = CHE
+			}
+		}
+		any_country = {
+			limit = {
+				tag = KYR
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = kirgiz }
+				}
+				remove_core = KYR
+			}
+		}
+		any_country = {
+			limit = {
+				tag = LIB
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = afro_american }
+				}
+				remove_core = LIB
+			}
+		}
+		any_country = {
+			limit = {
+				tag = MTC
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = metis }
+				}
+				remove_core = MTC
+			}
+		}
+		any_country = {
+			limit = {
+				tag = LOM
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_italian }
+				}
+				remove_core = LOM
+			}
+		}
+		any_country = {
+			limit = {
+				tag = LUB
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_german }
+				}
+				remove_core = LUB
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SAR
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_italian }
+				}
+				remove_core = SAR
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SIN
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = sindi }
+				}
+				remove_core = SIN
+			}
+		}
+		any_country = {
+			limit = {
+				tag = LUX
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_german }
+				}
+				remove_core = LUX
+			}
+		}
+		any_country = {
+			limit = {
+				tag = MAD
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = malagasy }
+				}
+				remove_core = MAD
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SIK
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = nepali }
+				}
+				remove_core = SIK
+			}
+		}
+		any_country = {
+			limit = {
+				tag = MAN
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = yankee }
+				}
+				remove_core = MAN
+			}
+		}
+		any_country = {
+			limit = {
+				tag = IND
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = marathi }
+				}
+				remove_core = IND
+			}
+		}
+		any_country = {
+			limit = {
+				tag = MCK
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = manchu }
+				}
+				remove_core = MCK
+			}
+		}
+		any_country = {
+			limit = {
+				tag = MEW
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = rajput }
+				}
+				remove_core = MEW
+			}
+		}
+		any_country = {
+			limit = {
+				tag = MOR
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = maghrebi }
+				}
+				remove_core = MOR
+			}
+		}
+		any_country = {
+			limit = {
+				tag = NET
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = dutch }
+				}
+				remove_core = NET
+			}
+		}
+		any_country = {
+			limit = {
+				tag = KAZ
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = kazak }
+				}
+				remove_core = KAZ
+			}
+		}
+		any_country = {
+			limit = {
+				tag = MGL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = mongol }
+				}
+				remove_core = MGL
+			}
+		}
+		any_country = {
+			limit = {
+				tag = CLM
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_andean }
+				}
+				remove_core = CLM
+			}
+		}
+		any_country = {
+			limit = {
+				tag = MOD
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_italian }
+				}
+				remove_core = MOD
+			}
+		}
+		any_country = {
+			limit = {
+				tag = MOL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = romanian }
+				}
+				remove_core = MOL
+			}
+		}
+		any_country = {
+			limit = {
+				tag = NAG
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = marathi }
+				}
+				remove_core = NAG
+			}
+		}
+		any_country = {
+			limit = {
+				tag = NAL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = boer }
+				}
+				remove_core = NAL
+			}
+		}
+		any_country = {
+			limit = {
+				tag = NAS
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_german }
+				}
+				remove_core = NAS
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SHI
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = nepali }
+				}
+				remove_core = SHI
+			}
+		}
+		any_country = {
+			limit = {
+				tag = NEJ
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = bedouin }
+				}
+				remove_core = NEJ
+			}
+		}
+		any_country = {
+			limit = {
+				tag = NEP
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = nepali }
+				}
+				remove_core = NEP
+			}
+		}
+		any_country = {
+			limit = {
+				tag = FRA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = french }
+				}
+				remove_core = FRA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = PER
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = persian }
+				}
+				remove_core = PER
+			}
+		}
+		any_country = {
+			limit = {
+				tag = GXI
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = zhuang }
+				}
+				remove_core = GXI
+			}
+		}
+		any_country = {
+			limit = {
+				tag = NGF
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_german }
+				}
+				remove_core = NGF
+			}
+		}
+		any_country = {
+			limit = {
+				tag = NIC
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = central_american }
+				}
+				remove_core = NIC
+			}
+		}
+		any_country = {
+			limit = {
+				tag = NOR
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = norwegian }
+				}
+				remove_core = NOR
+			}
+		}
+		any_country = {
+			limit = {
+				tag = NZL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = new_zelandian }
+				}
+				remove_core = NZL
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BAL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = malay }
+				}
+				remove_core = BAL
+			}
+		}
+		any_country = {
+			limit = {
+				tag = OMA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = bedouin }
+				}
+				remove_core = OMA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = PAN
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = panjabi }
+				}
+				remove_core = PAN
+			}
+		}
+		any_country = {
+			limit = {
+				tag = WEI
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_german }
+				}
+				remove_core = WEI
+			}
+		}
+		any_country = {
+			limit = {
+				tag = DZG
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_german }
+				}
+				remove_core = DZG
+			}
+		}
+		any_country = {
+			limit = {
+				tag = PAP
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = south_italian }
+				}
+				remove_core = PAP
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ALB
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = albanian }
+				}
+				remove_core = ALB
+			}
+		}
+		any_country = {
+			limit = {
+				tag = PAR
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_italian }
+				}
+				remove_core = PAR
+			}
+		}
+		any_country = {
+			limit = {
+				tag = PHI
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = filipino }
+				}
+				remove_core = PHI
+			}
+		}
+		any_country = {
+			limit = {
+				tag = PEU
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = south_andean }
+				}
+				remove_core = PEU
+			}
+		}
+		any_country = {
+			limit = {
+				tag = PNM
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = central_american }
+				}
+				remove_core = PNM
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ION
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = greek }
+				}
+				remove_core = ION
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BHU
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = tibetan }
+				}
+				remove_core = BHU
+			}
+		}
+		any_country = {
+			limit = {
+				tag = POL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = polish }
+				}
+				remove_core = POL
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ORA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = boer }
+				}
+				remove_core = ORA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = POR
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = portuguese }
+				}
+				remove_core = POR
+			}
+		}
+		any_country = {
+			limit = {
+				tag = QUE
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = french_canadian }
+				}
+				remove_core = QUE
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BYZ
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = greek }
+				}
+				remove_core = BYZ
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SAF
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = anglo_african }
+				}
+				remove_core = SAF
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SAX
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_german }
+				}
+				remove_core = SAX
+			}
+		}
+		any_country = {
+			limit = {
+				tag = TTT
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = tatar }
+				}
+				remove_core = TTT
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SCH
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = danish }
+				}
+				remove_core = SCH
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SCO
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = scottish }
+				}
+				remove_core = SCO
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SER
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = serb }
+				}
+				remove_core = SER
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SIC
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = south_italian }
+				}
+				remove_core = SIC
+			}
+		}
+		any_country = {
+			limit = {
+				tag = CHI
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = {
+						OR = {
+							culture = tibetan
+							culture = nanfaren
+							culture = beifaren
+							culture = manchu
+						}
+					}
+				}
+				remove_core = CHI
+			}
+		}
+		any_country = {
+			limit = {
+				tag = HES
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = north_german }
+				}
+				remove_core = HES
+			}
+		}
+		any_country = {
+			limit = {
+				tag = LIT
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = { culture = lithuanian }
+				}
+				remove_core = LIT
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SIE
+				exists = no
+			}
+			all_core = {
+				limit = {
+					NOT = {
+						OR = {
+							culture = romanian
+							culture = hungarian
+						}
+					}
+				}
+				remove_core = SIE
+			}
+		}
+	}
+}

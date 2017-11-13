@@ -1,0 +1,99 @@
+country_event = {
+	id = 1472054
+	title = "EVTNAME1472054"
+	desc = "EVTDESC1472054"
+	picture = "sultan"
+	trigger = {
+		OR = {
+			tag = KHI
+			tag = BUK
+			tag = KOK
+		}
+		NOT = {
+			war_with = RUS
+		}
+		civilized = no
+		neighbour = RUS
+		RUS = { money = 2000 }
+	}
+	mean_time_to_happen = {
+		months = 24
+	}
+	option = {
+		name = "EVTOPTA1472054"
+		RUS = {
+			random_owned = {
+				limit = {
+					any_neighbor_province = {
+						owned_by = THIS
+					}
+					NOT = {
+						has_building = fort
+					}
+				}
+				province_event = { id=1472055 days=0 }
+			}
+		}
+		money = 2000
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = "EVTOPTB1472054"
+		any_pop = {
+			militancy = 0.2
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+province_event = {
+	id = 1472055
+	title = "EVTNAME1472055"
+	desc = "EVTDESC1472055"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA1472055"
+		any_pop = {
+			reduce_pop = 0.95
+		}
+		RUS = { money = -2000 }
+		ai_chance = {
+			factor = 90
+		}
+	}
+	option = {
+		name = "EVTOPTB1472055"
+		any_pop = {
+			reduce_pop = 0.95
+		}
+		RUS = {
+			money = -2000
+			badboy = 5
+			casus_belli = {
+				target = FROM
+				type = conquest
+				months = 12
+			}
+			war = {
+				target = FROM
+				call_ally = no
+				attacker_goal = {
+					casus_belli = conquest
+				}
+			}
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				badboy = 0.6
+			}
+		}
+	}
+}

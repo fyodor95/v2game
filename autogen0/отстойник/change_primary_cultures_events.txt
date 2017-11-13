@@ -1,0 +1,4480 @@
+country_event = {
+    id = 1474001
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = north_german }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = north_german
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474002
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = south_german }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = south_german
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474003
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = ashkenazi }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = ashkenazi
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474004
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = dutch }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = dutch
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474005
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = flemish }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = flemish
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474006
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = swiss }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = swiss
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474007
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = swedish }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = swedish
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474008
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = danish }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = danish
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474009
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = norwegian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = norwegian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474010
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = icelandic }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = icelandic
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474011
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = finnish }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = finnish
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474012
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = sami }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = sami
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474013
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = english }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = english
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474014
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = scottish }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = scottish
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474015
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = welsh }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = welsh
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474016
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = cornish }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = cornish
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474017
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = irish }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = irish
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474018
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = north_italian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = north_italian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474019
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = south_italian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = south_italian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474020
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = maltese }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = maltese
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474021
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = basque }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = basque
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474022
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = spanish }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = spanish
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474023
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = catalan }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = catalan
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474024
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = portuguese }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = portuguese
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474025
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = french }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = french
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474026
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = occitan }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = occitan
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474027
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = breton }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = breton
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474028
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = norman }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = norman
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474029
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = wallonian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = wallonian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474030
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = croat }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = croat
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474031
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = serb }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = serb
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474032
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = bulgarian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = bulgarian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474033
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = albanian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = albanian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474034
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = slovene }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = slovene
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474035
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = bosniak }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = bosniak
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474036
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = romanian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = romanian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474037
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = hungarian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = hungarian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474038
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = polish }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = polish
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474039
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = lithuanian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = lithuanian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474040
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = czech }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = czech
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474041
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = slovak }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = slovak
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474042
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = russian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = russian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474043
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = byelorussian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = byelorussian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474044
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = ukrainian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = ukrainian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474045
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = rusyns }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = rusyns
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474046
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = cossacian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = cossacian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474047
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = karelian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = karelian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474048
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = mari }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = mari
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474049
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = mordva }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = mordva
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474050
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = udmurt }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = udmurt
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474051
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = ugrian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = ugrian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474052
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = khanty }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = khanty
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474053
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = mansi }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = mansi
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474054
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = komi }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = komi
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474055
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = nenets }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = nenets
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474056
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = chuvash }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = chuvash
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474057
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = vepsian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = vepsian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474058
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = latvian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = latvian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474059
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = estonian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = estonian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474060
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = greek }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = greek
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474061
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = georgian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = georgian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474062
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = armenian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = armenian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474063
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = abkhazian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = abkhazian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474064
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = avar }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = avar
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474065
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = balkar }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = balkar
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474066
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = circassian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = circassian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474067
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = tabasaran }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = tabasaran
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474068
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = chechen }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = chechen
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474069
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = dargin }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = dargin
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474070
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = ingush }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = ingush
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474071
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = kabard }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = kabard
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474072
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = kumyk }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = kumyk
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474073
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = lezgian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = lezgian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474074
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = lak }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = lak
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474075
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = nogais }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = nogais
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474076
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = sephardic }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = sephardic
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474077
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = turkish }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = turkish
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474078
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = azerbaijani }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = azerbaijani
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474079
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = north_caucasian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = north_caucasian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474080
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = maghrebi }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = maghrebi
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474081
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = misri }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = misri
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474082
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = mashriqi }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = mashriqi
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474083
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = bedouin }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = bedouin
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474084
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = assirian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = assirian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474085
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = berber }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = berber
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474086
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = persian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = persian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474087
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = ossetians }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = ossetians
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474088
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = uzbek }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = uzbek
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474089
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = karakalpak }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = karakalpak
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474090
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = kazak }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = kazak
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474091
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = kirgiz }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = kirgiz
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474092
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = tajik }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = tajik
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474093
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = uighur }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = uighur
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474094
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = crimean_tatar }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = crimean_tatar
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474095
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = bashkir }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = bashkir
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474096
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = pashtun }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = pashtun
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474097
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = baluchi }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = baluchi
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474098
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = hazara }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = hazara
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474099
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = turkmen }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = turkmen
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474100
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = kurdish }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = kurdish
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474101
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = evenk }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = evenk
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474102
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = koryak }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = koryak
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474103
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = chukchi }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = chukchi
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474104
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = tatar }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = tatar
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474105
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = mongol }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = mongol
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474106
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = kalmyk }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = kalmyk
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474107
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = siberian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = siberian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474108
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = buryat }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = buryat
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474109
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = yakut }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = yakut
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474110
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = altay }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = altay
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474111
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = tibetan }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = tibetan
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474112
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = tuvan }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = tuvan
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474113
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = assamese }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = assamese
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474114
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = bengali }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = bengali
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474115
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = bihari }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = bihari
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474116
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = manipuri }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = manipuri
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474117
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = nepali }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = nepali
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474118
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = oriya }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = oriya
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474119
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = sinhala }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = sinhala
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474120
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = avadhi }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = avadhi
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474121
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = kanauji }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = kanauji
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474122
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = panjabi }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = panjabi
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474123
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = kashmiri }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = kashmiri
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474124
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = gujarati }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = gujarati
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474125
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = marathi }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = marathi
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474126
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = sindi }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = sindi
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474127
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = rajput }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = rajput
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474128
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = kannada }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = kannada
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474129
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = malayalam }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = malayalam
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474130
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = tamil }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = tamil
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474131
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = telegu }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = telegu
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474132
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = urdu }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = urdu
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474133
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = vietnamese }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = vietnamese
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474134
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = khmer }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = khmer
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474135
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = malay }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = malay
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474136
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = filipino }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = filipino
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474137
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = javan }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = javan
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474138
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = moluccan }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = moluccan
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474139
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = thai }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = thai
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474140
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = lao }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = lao
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474141
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = shan }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = shan
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474142
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = burmese }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = burmese
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474143
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = asian_minor }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = asian_minor
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474144
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = kachin }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = kachin
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474145
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = karen }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = karen
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474146
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = jin }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = jin
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474147
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = japanese }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = japanese
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474148
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = manchu }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = manchu
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474149
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = beifaren }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = beifaren
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474150
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = nanfaren }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = nanfaren
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474151
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = korean }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = korean
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474152
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = ainu }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = ainu
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474153
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = hakka }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = hakka
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474154
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = miao }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = miao
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474155
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = wu }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = wu
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474156
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = min }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = min
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474157
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = zhuang }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = zhuang
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474158
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = yi }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = yi
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474159
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = xiang }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = xiang
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474160
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = gan }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = gan
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474161
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = yue }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = yue
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474162
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = polynesian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = polynesian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474163
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = hawaiian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = hawaiian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474164
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = maori }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = maori
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474165
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = aborigine }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = aborigine
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474166
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = melanesian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = melanesian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474167
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = micronesian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = micronesian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474168
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = zapotec }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = zapotec
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474169
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = mayan }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = mayan
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474170
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = nahua }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = nahua
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474171
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = tarascan }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = tarascan
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474172
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = guajiro }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = guajiro
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474173
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = tupinamba }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = tupinamba
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474174
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = metis }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = metis
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474175
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = dakota }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = dakota
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474176
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = cherokee }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = cherokee
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474177
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = pueblo }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = pueblo
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474178
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = inuit }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = inuit
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474179
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = cree }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = cree
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474180
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = navajo }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = navajo
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474181
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = native_american_minor }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = native_american_minor
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474182
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = muskog }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = muskog
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474183
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = salish }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = salish
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474184
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = plato }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = plato
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474185
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = zhe }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = zhe
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474186
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = yankee }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = yankee
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474187
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = dixie }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = dixie
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474188
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = texan }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = texan
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474189
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = boer }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = boer
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474190
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = australian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = australian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474191
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = anglo_canadian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = anglo_canadian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474192
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = french_canadian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = french_canadian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474193
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = louisian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = louisian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474194
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = mexican }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = mexican
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474195
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = central_american }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = central_american
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474196
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = caribeno }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = caribeno
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474197
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = north_andean }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = north_andean
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474198
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = south_andean }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = south_andean
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474199
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = platinean }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = platinean
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474200
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = brazilian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = brazilian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474201
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = samboo }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = samboo
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474202
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = afro_brazilian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = afro_brazilian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474203
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = quechua }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = quechua
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474204
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = guarani }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = guarani
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474205
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = aimara }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = aimara
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474206
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = amazonian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = amazonian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474207
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = patagonian }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = patagonian
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474208
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = afro_american }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = afro_american
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474209
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = afro_caribbean }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = afro_caribbean
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474210
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = afro_caribeno }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = afro_caribeno
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474211
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = afro_antillean }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = afro_antillean
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474212
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = akan }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = akan
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474213
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = bambara }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = bambara
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474214
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = dyula }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = dyula
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474215
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = edo }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = edo
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474216
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = ewe }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = ewe
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474217
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = fon }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = fon
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474218
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = fulbe }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = fulbe
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474219
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = hausa }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = hausa
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474220
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = ibibio }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = ibibio
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474221
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = ibo }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = ibo
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474222
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = kru }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = kru
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474223
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = mande }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = mande
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474224
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = maures }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = maures
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474225
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = mossi }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = mossi
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474226
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = senufo }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = senufo
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474227
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = songhai }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = songhai
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474228
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = tiv }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = tiv
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474229
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = tuareg }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = tuareg
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474230
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = wolof }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = wolof
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474231
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = yoruba }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = yoruba
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474232
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = bakongo }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = bakongo
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474233
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = baguirmi }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = baguirmi
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474234
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = fang }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = fang
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474235
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = kanuri }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = kanuri
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474236
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = luba }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = luba
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474237
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = lunda }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = lunda
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474238
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = mongo }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = mongo
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474239
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = sara }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = sara
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474240
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = teda }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = teda
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474241
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = african_minor }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = african_minor
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474242
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = amhara }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = amhara
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474243
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = afar }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = afar
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474244
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = azande }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = azande
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474245
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = baganda }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = baganda
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474246
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = beja }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = beja
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474247
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = dinka }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = dinka
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474248
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = fur }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = fur
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474249
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = kikuyu }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = kikuyu
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474250
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = luo }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = luo
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474251
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = maasai }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = maasai
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474252
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = nuer }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = nuer
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474253
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = nuba }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = nuba
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474254
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = oromo }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = oromo
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474255
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = ruanda }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = ruanda
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474256
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = rundi }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = rundi
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474257
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = sidama }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = sidama
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474258
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = somali }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = somali
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474259
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = sudanese }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = sudanese
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474260
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = sukuma }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = sukuma
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474261
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = swahili }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = swahili
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474262
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = tigray }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = tigray
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474263
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = unyamwezi }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = unyamwezi
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474264
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = chewa }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = chewa
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474265
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = herero }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = herero
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474266
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = khoisan }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = khoisan
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474267
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = lomwe }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = lomwe
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474268
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = makua }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = makua
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474269
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = malagasy }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = malagasy
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474270
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = nguni }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = nguni
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474271
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = ovimbundu }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = ovimbundu
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474272
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = sena }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = sena
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474273
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = shona }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = shona
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474274
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = sotho }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = sotho
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474275
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = tonga }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = tonga
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474276
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = tswana }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = tswana
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474277
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = xhosa }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = xhosa
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474278
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = yao }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = yao
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474279
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = zulu }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = zulu
+        clr_country_flag = changing_primary_culture
+    }
+}
+country_event = {
+    id = 1474280
+    title = "EVTNAME1474001"
+    desc = "EVTDESC1474001"
+    picture = "Celebration"
+    trigger = {
+        has_country_flag = changing_primary_culture
+        capital_scope = { culture = polar_bears }
+    }
+    mean_time_to_happen =  { months = 3 }
+    option = {
+        name = "EVTOPTA1474001"
+        primary_culture = polar_bears
+        clr_country_flag = changing_primary_culture
+    }
+}

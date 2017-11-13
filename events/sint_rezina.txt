@@ -1,0 +1,139 @@
+province_event = {
+	id = 200
+	trigger = {
+		controlled_by = owner
+		trade_goods = grain
+		owner = {
+			synthetic_polymers = 1
+			OR = {
+				NOT = {
+					any_owned_province = {
+						trade_goods = rubber
+					}
+				}
+				NOT = {
+					any_owned_province = {
+						trade_goods = rubber
+						OR = {
+							has_province_modifier = extremely_low_immigration
+							has_province_modifier = lower_immigration
+							has_province_modifier = low_immigration
+							has_province_modifier = medium_immigration
+						}
+					}
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12000
+		modifier = {
+			factor = 0.5
+			unemployment_by_type = {
+				type = farmers
+				value = 0.5
+			}
+		}
+		modifier = {
+			factor = 0.5
+			unemployment_by_type = {
+				type = farmers
+				value = 0.6
+			}
+		}
+		modifier = {
+			factor = 0.5
+			unemployment_by_type = {
+				type = farmers
+				value = 0.7
+			}
+		}
+		modifier = {
+			factor = 0.5
+			unemployment_by_type = {
+				type = farmers
+				value = 0.8
+			}
+		}
+		modifier = {
+			factor = 0.5
+			unemployment_by_type = {
+				type = farmers
+				value = 0.9
+			}
+		}
+		modifier = {
+			factor = 0.5
+			unemployment_by_type = {
+				type = farmers
+				value = 1
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				freedom_of_trade = 1
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				market_structure = 1
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				business_regulations = 1
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				market_regulations = 1
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				economic_responsibility = 1
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				government_interventionism = 1
+			}
+		}
+		modifier = {
+			factor = 0.25
+			owner = {
+				economic_policy = planned_economy
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				economic_policy = state_capitalism
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				economic_policy = interventionism
+			}
+		}
+		modifier = {
+			factor = 4
+			owner = {
+				economic_policy = laissez_faire
+			}
+		}
+	}
+	title = "EVTNAME200"
+	desc = "EVTDESC200"
+	option = {
+		name = "EVTOPTA200"
+		trade_goods = rubber
+	}
+}

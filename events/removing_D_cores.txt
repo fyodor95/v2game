@@ -1,0 +1,465 @@
+country_event = {
+	id = 145000
+	title = "0"
+	desc = "0"
+	picture = "greatpowers"
+	trigger = {
+		AI = yes
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	option = {
+		name = "0"
+		any_country = {
+			limit = {
+				tag = D01
+				exists = no
+			}
+			all_core = {
+				remove_core = D01
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D02
+				exists = no
+			}
+			all_core = {
+				remove_core = D02
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D03
+				exists = no
+			}
+			all_core = {
+				remove_core = D03
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D04
+				exists = no
+			}
+			all_core = {
+				remove_core = D04
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D05
+				exists = no
+			}
+			all_core = {
+				remove_core = D05
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D06
+				exists = no
+			}
+			all_core = {
+				remove_core = D06
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D07
+				exists = no
+			}
+			all_core = {
+				remove_core = D07
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D08
+				exists = no
+			}
+			all_core = {
+				remove_core = D08
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D09
+				exists = no
+			}
+			all_core = {
+				remove_core = D09
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D10
+				exists = no
+			}
+			all_core = {
+				remove_core = D10
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D11
+				exists = no
+			}
+			all_core = {
+				remove_core = D11
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D12
+				exists = no
+			}
+			all_core = {
+				remove_core = D12
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D13
+				exists = no
+			}
+			all_core = {
+				remove_core = D13
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D14
+				exists = no
+			}
+			all_core = {
+				remove_core = D14
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D15
+				exists = no
+			}
+			all_core = {
+				remove_core = D15
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D16
+				exists = no
+			}
+			all_core = {
+				remove_core = D16
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D17
+				exists = no
+			}
+			all_core = {
+				remove_core = D17
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D18
+				exists = no
+			}
+			all_core = {
+				remove_core = D18
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D19
+				exists = no
+			}
+			all_core = {
+				remove_core = D19
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D20
+				exists = no
+			}
+			all_core = {
+				remove_core = D20
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D21
+				exists = no
+			}
+			all_core = {
+				remove_core = D21
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D22
+				exists = no
+			}
+			all_core = {
+				remove_core = D22
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D23
+				exists = no
+			}
+			all_core = {
+				remove_core = D23
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D24
+				exists = no
+			}
+			all_core = {
+				remove_core = D24
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D25
+				exists = no
+			}
+			all_core = {
+				remove_core = D25
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D26
+				exists = no
+			}
+			all_core = {
+				remove_core = D26
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D27
+				exists = no
+			}
+			all_core = {
+				remove_core = D27
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D28
+				exists = no
+			}
+			all_core = {
+				remove_core = D28
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D29
+				exists = no
+			}
+			all_core = {
+				remove_core = D29
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D30
+				exists = no
+			}
+			all_core = {
+				remove_core = D30
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D31
+				exists = no
+			}
+			all_core = {
+				remove_core = D31
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D32
+				exists = no
+			}
+			all_core = {
+				remove_core = D32
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D33
+				exists = no
+			}
+			all_core = {
+				remove_core = D33
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D34
+				exists = no
+			}
+			all_core = {
+				remove_core = D34
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D35
+				exists = no
+			}
+			all_core = {
+				remove_core = D35
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D36
+				exists = no
+			}
+			all_core = {
+				remove_core = D36
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D37
+				exists = no
+			}
+			all_core = {
+				remove_core = D37
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D38
+				exists = no
+			}
+			all_core = {
+				remove_core = D38
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D39
+				exists = no
+			}
+			all_core = {
+				remove_core = D39
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D40
+				exists = no
+			}
+			all_core = {
+				remove_core = D40
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D41
+				exists = no
+			}
+			all_core = {
+				remove_core = D41
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D42
+				exists = no
+			}
+			all_core = {
+				remove_core = D42
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D43
+				exists = no
+			}
+			all_core = {
+				remove_core = D43
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D44
+				exists = no
+			}
+			all_core = {
+				remove_core = D44
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D45
+				exists = no
+			}
+			all_core = {
+				remove_core = D45
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D46
+				exists = no
+			}
+			all_core = {
+				remove_core = D46
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D47
+				exists = no
+			}
+			all_core = {
+				remove_core = D47
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D48
+				exists = no
+			}
+			all_core = {
+				remove_core = D48
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D49
+				exists = no
+			}
+			all_core = {
+				remove_core = D49
+			}
+		}
+		any_country = {
+			limit = {
+				tag = D50
+				exists = no
+			}
+			all_core = {
+				remove_core = D50
+			}
+		}
+	}
+}

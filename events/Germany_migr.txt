@@ -1,0 +1,246 @@
+country_event = {
+	id = 1472051
+	title = "100000"
+	desc = "100000"
+	picture = "greatpowers"
+	trigger = {
+		AI = yes
+		exists = RUS
+		RUS = {
+			government = absolute_monarchy
+			NOT = {
+				average_militancy = 2
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "100000"
+		any_country = {
+			limit = {
+				OR = {
+					primary_culture = north_german
+					tag = BAV
+					tag = BAD
+					tag = WUR
+				}
+				neighbour = RUS
+				NOT = {
+					war_with = RUS
+				}
+			}
+			any_owned = {
+				limit = {
+					is_core = GER
+					NOT = {
+						OR = {
+							is_core = POL
+							is_core = FRA
+							is_core = DEN
+							is_core = PLC
+							is_core = CZH
+						}
+					}
+				}
+				add_province_modifier = {
+					name = migr_from_germany
+					duration = 3
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				NOT = {
+					OR = {
+						primary_culture = north_german
+						tag = BAV
+						tag = BAD
+						tag = WUR
+						war = yes
+					}
+				}
+				civilized = yes
+			}
+			add_country_modifier = {
+				name = from_other_no_migr
+				duration = 3
+			}
+		}
+		any_country = {
+			limit = {
+				capital_scope = {
+					OR = {
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+				civilized = yes
+			}
+			add_country_modifier = {
+				name = no_migr_to_new_world
+				duration = 3
+			}
+		}
+		RUS = {
+			add_country_modifier = {
+				name = all_migr_to_russia
+				duration = 3
+			}
+			any_owned = {
+				limit = {
+					OR = {
+						is_core = UKR
+						is_core = MOL
+						region = RUS_1037
+						region = RUS_1041
+						region = RUS_977
+						region = RUS_1048
+						region = RUS_1102
+						region = RUS_1052
+						region = RUS_1090
+						region = RUS_994
+					}
+					OR = {
+						trade_goods = grain
+						trade_goods = fruit
+					}
+					NOT = {
+						total_pops = 200000
+					}
+					NOT = {
+						average_militancy = 1
+					}
+				}
+				add_province_modifier = {
+					name = jitnica_rossii
+					duration = 3
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 1472053
+	title = "100000"
+	desc = "100000"
+	picture = "greatpowers"
+	trigger = {
+		AI = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "100000"
+		random_country = {
+			limit = {
+				civilized = yes
+				NOT = {
+					capital_scope = {
+						OR = {
+							continent = north_america
+							continent = south_america
+							continent = oceania
+						}
+					}
+				}
+				war = no
+			}
+			add_country_modifier = {
+				name = all_migr_to_us
+				duration = 3
+			}
+		}
+		any_country = {
+			limit = {
+				war = no
+				civilized = yes
+			}
+			add_country_modifier = {
+				name = from_other_no_migr
+				duration = 3
+			}
+		}
+		any_country = {
+			limit = {
+				capital_scope = {
+					OR = {
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+				civilized = yes
+			}
+			add_country_modifier = {
+				name = no_migr_to_new_world
+				duration = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 1472060
+	title = "100000"
+	desc = "100000"
+	picture = "greatpowers"
+	trigger = {
+		AI = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "100000"
+		random_country = {
+			limit = {
+				civilized = yes
+				war = no
+			}
+			add_country_modifier = {
+				name = big_all_migr_to_us
+				duration = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 1472062
+	title = "100000"
+	desc = "100000"
+	picture = "greatpowers"
+	trigger = {
+		AI = yes
+	}
+	mean_time_to_happen = {
+		months = 30
+	}
+	option = {
+		name = "100000"
+		random_country = {
+			limit = {
+				capital_scope = {
+					OR = {
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+				NOT = { rank = 12 }
+				slavery = no_slavery
+				civilized = yes
+				war = no
+			}
+			add_country_modifier = {
+				name = big_all_migr_to_us
+				duration = 3
+			}
+		}
+	}
+}

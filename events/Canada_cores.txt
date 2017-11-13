@@ -1,0 +1,26 @@
+country_event = {
+	id = 154001
+	title = "100000"
+	desc = "100000"
+	picture = "greatpowers"
+	trigger = {
+		AI = yes
+		exists = ENG
+	}
+	mean_time_to_happen = {
+		months = 24
+	}
+	option = {
+		name = "10000"
+		ENG = {
+			random_owned = {
+				limit = {
+					continent = north_america
+					NOT = { is_core = CAN }
+					any_neighbor_province = { is_core = CAN }
+				}
+				add_core = CAN
+			}
+		}
+	}
+}

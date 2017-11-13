@@ -1,0 +1,266 @@
+country_event = {
+	id = 100005
+	title = "100000"
+	desc = "100000"
+	picture = "greatpowers"
+	trigger = {
+		AI = yes
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	immediate = {
+		any_country = {
+			any_owned = {
+				remove_province_modifier = life_rating_0_14
+				remove_province_modifier = life_rating_15_19
+				remove_province_modifier = life_rating_20_24
+				remove_province_modifier = life_rating_25_29
+				remove_province_modifier = life_rating_41_45
+				remove_province_modifier = life_rating_46_50
+				remove_province_modifier = life_rating_51_55
+				remove_province_modifier = life_rating_56_inf
+			}
+		}
+	}
+	option = {
+		name = "100000"
+		any_country = {
+			any_owned = {
+				limit = {
+					NOT = { life_rating = 15 }
+					total_pops = 100
+				}
+				add_province_modifier = {
+					name = life_rating_0_14
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					NOT = { life_rating = 20 }
+					life_rating = 15
+					total_pops = 100
+				}
+				add_province_modifier = {
+					name = life_rating_15_19
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					NOT = { life_rating = 25 }
+					life_rating = 20
+					total_pops = 100
+				}
+				add_province_modifier = {
+					name = life_rating_20_24
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					NOT = { life_rating = 30 }
+					life_rating = 25
+					total_pops = 100
+				}
+				add_province_modifier = {
+					name = life_rating_25_29
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					NOT = { life_rating = 46 }
+					life_rating = 41
+				}
+				add_province_modifier = {
+					name = life_rating_41_45
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					NOT = { life_rating = 51 }
+					life_rating = 46
+				}
+				add_province_modifier = {
+					name = life_rating_46_50
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					NOT = { life_rating = 56 }
+					life_rating = 51
+				}
+				add_province_modifier = {
+					name = life_rating_51_55
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					life_rating = 56
+				}
+				add_province_modifier = {
+					name = life_rating_56_inf
+					duration = -1
+				}
+			}
+		}
+	}
+}
+province_event = {
+	id = 100006
+	trigger = {
+		NOT = { controlled_by = owner }
+		controlled_by_rebels = no
+		life_rating = 12
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.5
+			average_militancy = 8
+		}
+	}
+	title = "EVTNAME100006"
+	desc = "EVTDESC100006"
+	option = {
+		name = "EVTOPTA100006"
+		life_rating = -2
+	}
+}
+province_event = {
+	id = 100007
+	trigger = {
+		controlled_by_rebels = yes
+		life_rating = 12
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.5
+			average_militancy = 8
+		}
+	}
+	title = "EVTNAME100006"
+	desc = "EVTDESC100007"
+	option = {
+		name = "EVTOPTA100006"
+		life_rating = -2
+	}
+}
+province_event = {
+	id = 100008
+	trigger = {
+		controlled_by = owner
+		unemployment = 0.5
+		life_rating = 12
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.9
+			unemployment = 0.6
+		}
+		modifier = {
+			factor = 0.9
+			unemployment = 0.7
+		}
+		modifier = {
+			factor = 0.8
+			unemployment = 0.8
+		}
+		modifier = {
+			factor = 0.7
+			unemployment = 0.9
+		}
+	}
+	title = "EVTNAME100006"
+	desc = "EVTDESC100008"
+	option = {
+		name = "EVTOPTA100006"
+		life_rating = -2
+	}
+}
+province_event = {
+	id = 100009
+	trigger = {
+		controlled_by = owner
+		unemployment = 0.1
+		life_rating = 11
+	}
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.9
+			unemployment = 0.2
+		}
+		modifier = {
+			factor = 0.8
+			unemployment = 0.3
+		}
+		modifier = {
+			factor = 0.7
+			unemployment = 0.4
+		}
+		modifier = {
+			factor = 0.6
+			unemployment = 0.5
+		}
+	}
+	title = "EVTNAME100006"
+	desc = "EVTDESC100008"
+	option = {
+		name = "EVTOPTA100006"
+		life_rating = -1
+	}
+}
+province_event = {
+	id = 100010
+	trigger = {
+		controlled_by = owner
+		OR = {
+			has_province_modifier = highest_immigration
+			has_province_modifier = extremely_high_immigration
+		}
+		NOT = { unemployment = 0.08 }
+	}
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.5
+			has_province_modifier = highest_immigration
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { unemployment = 0.02 }
+		}
+		modifier = {
+			factor = 0.5
+			year = 1886
+		}
+	}
+	title = "EVTNAME100010"
+	desc = "EVTDESC100010"
+	option = {
+		name = "EVTOPTA100010"
+		life_rating = 2
+	}
+}

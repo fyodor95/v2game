@@ -1,0 +1,160 @@
+province_event = {
+
+	id = 1253
+
+	trigger = {
+		OR = {
+			region = RUS_1074
+			region = RUS_2618
+			region = RUS_1072
+			region = RUS_2668
+			province_id = 85
+			province_id = 86
+			province_id = 1078
+			province_id = 1079
+			province_id = 1081
+			province_id = 2697
+			province_id = 1002
+			province_id = 1467
+			province_id = 2676
+			province_id = 2695
+			province_id = 2650
+			province_id = 1077
+			province_id = 2587
+			province_id = 988
+			province_id = 2658
+			province_id = 1089
+			province_id = 1643
+			province_id = 2661
+			province_id = 2666
+			province_id = 2590
+			province_id = 2634
+			province_id = 1080
+			province_id = 2687
+			province_id = 2689
+			province_id = 1465
+			province_id = 1183
+			province_id = 1				# Sitka
+			province_id = 2				# Yakutat
+			province_id = 766			# Sassari
+			province_id = 769			# Postojna
+			province_id = 773			# Karlovac
+			province_id = 1387			# Kuala Lumpur
+			province_id = 1390			# Kuantan
+			province_id = 1422			# Muraleve
+			province_id = 1440			# Sumbawa
+			province_id = 1564			# Caozhou
+			province_id = 1884			# Freetown
+			province_id = 2501			# Kimberley
+			province_id = 2153			# Durango
+			province_id = 2157			# Culiacan
+			province_id = 2179			# Acapulco
+			province_id = 2295			# Lima
+			province_id = 2323			# La Serena
+			province_id = 2500			# Kalgoorlie
+			province_id = 2503			# Wiluna
+			province_id = 2575			# Ipoh
+			province_id = 2601			# Sandy Desert
+			province_id = 2605			# Gibson's Desert
+			province_id = 1659			# Kobe
+			province_id = 2142			# Chihuahua
+			province_id = 2255			# Barranquilla
+			province_id = 88			# Mariposa
+			province_id = 695			# Konigsberg
+			province_id = 1084			# Utchan
+			province_id = 93			# Pocatello
+			province_id = 2106
+			province_id = 6			# Whitehorse
+			province_id = 7			# Dawson
+			province_id = 2599		# Fairbanks
+			province_id = 2630		# Cordova
+			province_id = 2084			# Angra Pequeсa
+			province_id = 2091			# Mossel Bay
+			province_id = 2092			# Beaufort
+			province_id = 1697			# Figuig
+			province_id = 2108			# Mosega
+			province_id = 2107			# Klerksdorp
+			province_id = 2068			# Salisbury
+			province_id = 2097			# Graaf Reinet
+			province_id = 1849			# Massawa
+		}
+		OR = {
+			trade_goods = grain
+			trade_goods = wool
+			trade_goods = fruit
+			trade_goods = timber
+			trade_goods = fish
+			trade_goods = cattle
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12000
+		modifier = {
+			factor = 0.9
+			any_neighbor_province = {
+				trade_goods = precious_metal
+			}
+		}
+		modifier = {
+			factor = 0.9
+			any_neighbor_province = {
+				has_province_modifier = gold_rush
+			}
+		}
+	}
+
+	title = "EVTNAME1100"
+	desc = "EVTDESC1100"
+
+	option = {
+		name = "EVTOPTA1100"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		owner = {
+			remove_country_modifier = country_gold_rush
+			add_country_modifier = {
+				name = country_gold_rush
+				duration = 730
+			}
+		}
+	}
+}
+
+province_event = {
+
+	id = 1254
+
+	trigger = {
+		trade_goods = precious_metal
+		NOT = {
+			OR = {
+				has_province_modifier = gold_rush
+				province_id = 369
+				province_id = 1755
+				province_id = 1723
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1600
+	}
+
+	title = "EVTNAME1254"
+	desc = "EVTDESC1254"
+
+	option = {
+		name = "EVTOPTA1254"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+	}
+}

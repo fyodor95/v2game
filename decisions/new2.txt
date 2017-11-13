@@ -1,0 +1,30 @@
+political_decisions = {
+	
+	gorod_verniy = {
+		potential = {
+			tag = RUS
+			NOT = {
+				has_global_flag = verniy_was_build
+			}
+			NOT = {
+				1186 = {
+					trade_goods = oil
+				}
+			}
+		}
+		allow = {
+			owns = 1186
+		}
+		effect = {
+			set_global_flag = verniy_was_build
+			1186 = {
+				change_province_name = "Верный"
+				trade_goods = fruit
+			}
+			prestige = 2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

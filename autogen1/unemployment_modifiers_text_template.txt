@@ -1,0 +1,4 @@
+unemployment_modifier_
+;Безработица 
+%;X;
+;Нет безработицы;X;

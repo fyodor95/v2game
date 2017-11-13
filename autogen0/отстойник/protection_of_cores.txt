@@ -1,0 +1,87 @@
+province_event = {
+	id = 148001
+	title = "100000"
+	desc = "100000"
+	trigger = {
+		is_core = ZUL
+		NOT = { culture = zulu }
+		ZUL = { exists = no }
+		any_neighbor_province = {
+			NOT = { is_core = ZUL }
+		}
+		owner = { AI = yes }
+		NOT = { has_province_flag = ZUL_core_remove }
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	immediate = {
+		set_variable = {
+			which = core_counter
+			value = 0
+		}
+		random_neighbor_province = {
+			limit = {
+				is_core = ZUL
+			}
+			set_province_flag = counted
+			change_variable = {
+				which = core_counter
+				value = 1
+			}
+		}
+		random_neighbor_province = {
+			limit = {
+				is_core = ZUL
+				NOT = { has_province_flag = counted }
+			}
+			set_province_flag = counted
+			change_variable = {
+				which = core_counter
+				value = 1
+			}
+		}
+		random_neighbor_province = {
+			limit = {
+				is_core = ZUL
+				NOT = { has_province_flag = counted }
+			}
+			change_variable = {
+				which = core_counter
+				value = 1
+			}
+		}
+		any_neighbor_province = {
+			clr_province_flag = counted
+		}
+	}
+	option = {
+		name = "1"
+		set_province_flag = ZUL_core_remove
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					check_variable = {
+						which = core_counter
+						value = 3
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "2"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = ZUL_core_counter
+					value = 3
+				}
+			}
+		}
+	}
+}

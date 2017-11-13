@@ -1,0 +1,635 @@
+country_event = {
+	id = 5241928
+	title = "EVTNAME5241928"
+	desc = "EVTDESC5241928"
+	picture = "Celebration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA5241928"
+		FROM = {
+			inherit = THIS
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+
+	option = {
+		name = "EVTOPTB5241928"
+		prestige = 1
+		relation = {
+			who = FROM
+			value = -100
+		}
+		any_pop = {
+			militancy = 3
+			consciousness = 2
+		}
+	}
+}
+
+country_event = {
+	id = 95501
+	title = "EVTNAME95501"
+	desc = "EVTDESC95501"
+	picture = "ilich2"
+	
+	trigger = {
+		NOT = {
+			government = proletarian_dictatorship
+			has_country_flag = communist_spies_eliminated
+		}
+		sphere_owner = {
+			government = proletarian_dictatorship
+		}
+		has_global_flag = komintern_is_worked
+	}
+	
+	mean_time_to_happen = {
+		months = 15
+
+		modifier = {
+			factor = 0.5
+			civilized = no
+		}
+		modifier = {
+			factor = 1.2
+			is_secondary_power = yes
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA95501"
+		government = proletarian_dictatorship
+		political_reform = none_voting
+		political_reform = no_meeting
+		political_reform = state_press
+		political_reform = no_trade_unions
+		political_reform = underground_parties
+		political_reform = party_appointed
+		social_reform = eight_hours
+		remove_country_modifier = expert_diplomat
+		remove_country_modifier = successful_industrialist
+		remove_country_modifier = ivory_tower_intellectual
+		remove_country_modifier = man_of_the_people
+		remove_country_modifier = landed_gentleman
+		remove_country_modifier = military_man
+		remove_country_modifier = lord_admiral
+		remove_country_modifier = raving_loon
+		remove_country_modifier = luddite
+		remove_country_modifier = great_statesman
+		remove_country_modifier = backroom_boy
+		remove_country_modifier = great_reformer
+		remove_country_modifier = gauche_buffoon
+		remove_country_modifier = administrative_genius
+		remove_country_modifier = visionary_thinker
+		remove_country_modifier = competent_placeholder
+		remove_country_modifier = imperious_autocrat
+		remove_country_modifier = prince_of_terror
+		remove_country_modifier = efficient_sociopath
+		remove_country_modifier = pig_headed_isolationist
+		remove_country_modifier = ambitious_union_boss
+		remove_country_modifier = dour_economist
+		set_country_flag = communist_revolution_was_happened
+		sphere_owner = { 
+			relation = { who = THIS value = 100 }
+			country_event = 95502
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+	option = {
+		name = "EVTOPTB95501"
+		any_pop = {
+			scaled_militancy = {
+				ideology = communist
+				factor = 2
+			}
+		}
+		sphere_owner = { 
+			country_event = 95503
+		}
+		set_country_flag = communist_spies_eliminated
+		ai_chance = {
+			factor = 75
+		}
+	}
+}
+country_event = {
+	id = 95502
+	title = "EVTNAME95502"
+	desc = "EVTDESC95502"
+	picture = "ilich2"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA95502"
+		prestige = 10
+	}
+}
+country_event = {
+	id = 95503
+	title = "EVTNAME95503"
+	desc = "EVTDESC95503"
+	picture = "Administration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA95503"
+		badboy = 2
+		casus_belli = {
+			target = FROM
+			type = install_communist_gov_cb
+			months = 12
+		}
+		war = {
+			target = FROM
+			call_ally = no
+			attacker_goal = {
+				casus_belli = install_communist_gov_cb
+			}
+		}
+		ai_chance = {
+			factor = 99
+			modifier = {
+				factor = 0
+				OR = {
+					badboy = 0.9
+					AND = {
+						badboy = 0.7
+						NOT = { FROM = { total_pops = 8388608 } }
+					}
+					NOT = { FROM = { total_pops = 1048576 } }
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB95503"
+		prestige = -5
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+#USSR Expansion
+country_event = {
+	id = 95505
+	title = "EVTNAME95505"
+	desc = "EVTDESC95505"
+	picture = "ilich2"
+	
+	trigger = {
+		government = proletarian_dictatorship
+		ai = yes
+		in_sphere = SOV
+		any_neighbor_country = {
+			tag = SOV
+			government = proletarian_dictatorship
+		}
+		has_global_flag = komintern_is_worked
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 50
+
+		modifier = {
+			factor = 0.5
+			civilized = no
+		}
+		modifier = {
+			factor = 2
+			is_secondary_power = yes
+		}
+	}
+	
+	option = {
+		sphere_owner = { 
+			country_event = 95506
+		}
+	}
+	
+}
+country_event = {
+	id = 95506
+	title = "EVTNAME95506"
+	desc = "EVTDESC95506"
+	picture = "ilich2"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA95506"
+		prestige = 5
+		inherit = FROM
+		badboy = 8
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					badboy = 0.6
+					AND = {
+						badboy = 0.5
+						NOT = { FROM = { total_pops = 16777216 } }
+					}
+					AND = {
+						badboy = 0.1
+						NOT = { FROM = { total_pops = 4194304 } }
+					}
+					NOT = { FROM = { total_pops = 1048576 } }
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB95506"
+		any_pop = {
+			militancy = 0.1
+		}
+	}
+}
+country_event = {
+	id = 95507
+	title = "EVTNAME95506"
+	desc = "EVTDESC95506"
+	picture = "ilich2"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA95506"
+        FROM = {
+			all_core = {
+				add_core = SOV
+			}
+		}
+		any_country ={
+			limit = { in_sphere = FROM }
+			country_event = { id=95512 days=0 }
+		}
+		inherit = FROM
+		badboy = 22
+		ai_chance = {
+			factor = 99
+			modifier = {
+				factor = 0
+				OR = {
+					badboy = 0.1
+					NOT = { FROM = { total_pops = 16777216 } }
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB95506"
+		any_pop = {
+			militancy = 5
+		}
+		prestige = -100
+        ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = 95508
+	title = "EVTNAME95508"
+	desc = "EVTDESC95508"
+	picture = "ilich2"
+	
+	trigger = {
+		has_country_flag = we_have_request_USSR
+		NOT = { tag = SOV }
+		has_global_flag = komintern_is_worked
+		AI = yes
+		is_greater_power = yes
+		any_neighbor_country = {
+			tag = SOV
+			government = proletarian_dictatorship
+		}
+		government = proletarian_dictatorship
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "EVTOPTA95508"
+		clr_country_flag = we_have_request_USSR
+	}
+}
+country_event = {
+	id = 95509
+	title = "EVTNAME95509"
+	desc = "EVTDESC95509"
+	picture = "russia"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA95509"
+		RUS = {
+			country_event = { id=95510 days=0 }
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB95509"
+		relation = {
+			who = RUS
+			value = -100
+		}
+		RUS = {
+			country_event = { id=95511 days=0 }
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+country_event = {
+	id = 95510
+	title = "EVTNAME95510"
+	desc = "EVTDESC95510"
+	picture = "russia"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA95510"
+		1088 = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}
+				militancy = 2
+				move_pop = 1086
+			}
+		}
+		1089 = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}
+				militancy = 2
+				move_pop = 1087
+			}
+		}
+		CHI_1086 = {
+			remove_core = JAP
+		}
+		JAP_1088 = {
+			secede_province = JAP
+			remove_core = RUS
+		}
+		relation = {
+			who = JAP
+			value = 100
+		}
+	}
+}
+country_event = {
+	id = 95511
+	title = "EVTNAME95511"
+	desc = "EVTDESC95511"
+	picture = "russia"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA95511"
+	}
+}
+country_event = {
+	id = 95512
+	title = "Готовьтесь к коммунизму!"
+	desc = "Держава, в сферу влияния которой входила наша страна, вошла в состав СССР. Теперь мы в советской сфере влияния."
+	picture = "ilich2"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ничего не поделаешь"
+		SOV = {
+			diplomatic_influence = {
+				who = THIS
+				value = 300
+			}
+		}
+	}
+}
+province_event = {
+	id = 95514
+	title = "Национальное единство"
+	desc = "Граждане нашей страны теперь, как никогда раньше, ощущают единство нашей молодой нации!"
+	#picture = "Celebration"
+	
+	trigger = {
+		owner = { war = yes }
+		OR = {
+			continent = north_america
+			continent = south_america
+			continent = oceania
+		}
+		any_greater_power = { war_with = THIS }
+		owner = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+			}
+		}
+		civilized = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.5
+			any_greater_power = {
+				war_with = THIS
+				rank = 4
+			}
+		}
+		modifier = {
+			factor = 0.5
+			is_primary_culture = yes
+		}
+		modifier = {
+			factor = 1.26
+			total_pops = 100000
+		}
+		modifier = {
+			factor = 1.26
+			total_pops = 200000
+		}
+		modifier = {
+			factor = 1.26
+			total_pops = 400000
+		}
+		modifier = {
+			factor = 2
+			total_pops = 800000
+		}
+		modifier = {
+			factor = 2
+			total_pops = 1600000
+		}
+		modifier = {
+			factor = 4
+			total_pops = 3200000
+		}
+		modifier = {
+			factor = 0.9
+			any_neighbor_province = {
+				owned_by = THIS
+				is_primary_culture = yes
+				total_pops = 100000
+			}
+		}
+		modifier = {
+			factor = 0.9
+			any_neighbor_province = {
+				owned_by = THIS
+				is_primary_culture = yes
+				total_pops = 200000
+			}
+		}
+		modifier = {
+			factor = 0.9
+			any_neighbor_province = {
+				owned_by = THIS
+				is_primary_culture = yes
+				total_pops = 400000
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				owned_by = THIS
+				is_primary_culture = yes
+				total_pops = 800000
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				owned_by = THIS
+				is_primary_culture = yes
+				total_pops = 1600000
+			}
+		}
+		modifier = {
+			factor = 0.6
+			any_neighbor_province = {
+				owned_by = THIS
+				is_primary_culture = yes
+				total_pops = 3200000
+			}
+		}
+	}
+	
+	option = {
+		name = "Ура!"
+		assimilate = yes
+	}
+}
+country_event = {
+
+	id = 96130
+	title = "EVTNAME96130"
+	desc = "EVTDESC96130"
+	picture = "greatpowers"
+
+	trigger = {
+		badboy = 0.8
+		is_disarmed = no
+		NOT = { has_country_modifier = international_pariah }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA96130"
+		add_country_modifier = {
+			name = international_pariah
+			duration = -1
+		}
+	}
+}
+country_event = {
+	
+	id = 96131
+	title = "EVTNAME96131"
+	desc = "EVTDESC96131"
+	picture = "greatpowers"
+
+	trigger = {
+		has_country_modifier = international_pariah
+		NOT = { badboy = 0.8 }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA96131"
+		remove_country_modifier = international_pariah
+	}
+}
+country_event = {
+	id = 145003
+	title = "EVTNAME145003"
+	desc = "EVTDESC145003"
+	picture = "greatpowers"
+
+	trigger = {
+		tag = KUK
+		HUN = {
+			exists = yes
+			is_vassal = no
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = HUN
+			}
+		}
+		war = no
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA145003"
+		all_core = {
+			add_core = AUS
+			remove_core = KUK
+		}
+		remove_accepted_culture = hungarian
+		change_tag = AUS
+	}
+}

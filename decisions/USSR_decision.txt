@@ -1,0 +1,107 @@
+political_decisions = {
+
+	form_USSR = {
+
+		potential = {
+			SOV = { exists = no }
+			government = proletarian_dictatorship
+			war = no
+		}
+		
+		allow = {
+			is_greater_power = yes
+			any_neighbor_country = {
+				in_sphere = THIS
+				government = proletarian_dictatorship
+				is_vassal = no
+				relation = { who = THIS value = 100 }
+			}
+		}
+		effect = {
+			prestige = 20
+			all_core = {
+				add_core = SOV
+				remove_core = THIS
+			}
+			change_tag = SOV
+			any_country = {
+				limit = {
+					government = proletarian_dictatorship
+					in_sphere = THIS
+					OR = {
+						is_vassal = no
+						vassal_of = THIS
+					}
+					war = no
+				}
+				country_event = { id=5241928 days=0 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
+	create_komintern = {
+		potential = {
+			is_greater_power = yes
+			government = proletarian_dictatorship
+			NOT = {
+				has_global_flag = komintern_is_worked
+			}
+			
+		}
+		allow = {
+			mass_politics = 1
+		}
+		effect = {
+			prestige = 20
+			any_country ={
+				limit = {
+					OR = {
+						government = proletarian_dictatorship
+						ruling_party_ideology = communist
+					}
+				}
+				relation = { who = THIS value = -50 }
+			}
+			set_global_flag = komintern_is_worked
+		}
+	}
+    
+	request_USSR_annexation = {
+
+		potential = {
+			NOT = { tag = SOV }
+			NOT = { has_country_flag = we_have_request_USSR }
+			AI = yes
+			has_global_flag = komintern_is_worked
+			is_greater_power = yes
+			any_neighbor_country = {
+				tag = SOV
+				government = proletarian_dictatorship
+				war = no
+			}
+			government = proletarian_dictatorship
+		}
+		
+		allow = {
+			is_greater_power = yes
+			any_neighbor_country = {
+				tag = SOV
+				relation = { who = THIS value = 190 }
+			}
+			war = no
+		}
+		effect = {
+			set_country_flag = we_have_request_USSR
+			SOV = { 
+				country_event = { id=95507 days=0 }
+			}
+			# change_tag_no_core_switch = SOV
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

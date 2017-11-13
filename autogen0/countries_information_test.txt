@@ -1,0 +1,171 @@
+patagonian:
+	LAF
+amazonian:
+	LAF
+aimara:
+	LAF
+south_andean:
+	LAF
+central_american:
+	UCA
+texan:
+	USA
+dixie:
+	USA
+north_andean:
+	LAF
+french_canadian:
+	CAN
+tibetan:
+	CHI
+malay:
+	MLY
+telegu:
+	HND
+tamil:
+	HND
+malayalam:
+	HND
+brazilian:
+	LAF
+kannada:
+	HND
+rajput:
+	HND
+guarani:
+	LAF
+kanauji:
+	HND
+avadhi:
+	HND
+sinhala:
+	HND
+nepali:
+	HND
+manipuri:
+	HND
+slovene:
+	YUG
+anglo_canadian:
+	CAN
+panjabi:
+	HND
+finnish:
+	SCA
+albanian:
+	YUG
+beifaren:
+	CHI
+south_italian:
+	ITA
+gujarati:
+	HND
+polish:
+	PLC
+afro_brazilian:
+	LAF
+serb:
+	YUG
+croat:
+	YUG
+bosniak:
+	YUG
+maghrebi:
+	ARA
+scottish:
+	ENG
+yankee:
+	USA
+mashriqi:
+	ARA
+bulgarian:
+	YUG
+maltese:
+	ITA
+south_german:
+	GER
+nanfaren:
+	CHI
+british:
+	ENG
+lithuanian:
+	PLC
+sami:
+	SCA
+ashkenazi:
+	GER
+estonian:
+	UBD
+irish:
+	ENG
+flemish:
+	BEL
+uzbek:
+	UZB
+north_german:
+	GER
+wallonian:
+	BEL
+russian:
+	RUS
+bengali:
+	HND
+marathi:
+	HND
+danish:
+	SCA
+polar_bears:
+	SCA
+norwegian:
+	SCA
+bihari:
+	HND
+romanian:
+	ROM
+manchu:
+	CHI
+icelandic:
+	SCA
+hungarian:
+	HUN
+kashmiri:
+	HND
+czech:
+	CZH
+platinean:
+	LAF
+slovak:
+	CZH
+byelorussian:
+	RUS
+north_italian:
+	ITA
+ukrainian:
+	RUS
+sindi:
+	HND
+swedish:
+	SCA
+latvian:
+	UBD
+oriya:
+	HND
+ugrian:
+	RUS
+greek:
+	BYZ
+berber:
+	ARA
+is_overseas:
+	LAF
+	ARA
+	USA
+	UZB
+	UCA
+	CAN
+misri:
+	ARA
+bedouin:
+	ARA
+assamese:
+	HND

@@ -1,0 +1,236 @@
+political_decisions = {
+	switch_to_army_tech = {
+		potential = {
+			civilized = yes
+			tech_school = traditional_academic
+			OR = {
+				ruling_party_ideology = conservative
+				ruling_party_ideology = reactionary
+				ruling_party_ideology = fascist
+			}
+			jingoism = 5
+			pro_military = 5
+			NOT = {
+				tech_school = prussian_tech_school
+				has_country_modifier = academic_confusion
+			}
+		}
+		allow = {
+			prestige = 45
+			military_score = 100
+		}
+		effect = {
+			prestige = -15
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = army_tech_school
+		}
+	}
+	switch_to_navy_tech = {
+		potential = {
+			civilized = yes
+			colonial_nation = yes
+			tech_school = traditional_academic
+			OR = {
+				ruling_party_ideology = conservative
+				ruling_party_ideology = liberal
+				ruling_party_ideology = anarcho_liberal
+			}
+			pro_military = 5
+			laissez_faire = 5
+			NOT = {
+				tech_school = prussian_tech_school
+				has_country_modifier = academic_confusion
+			}
+		}
+		allow = {
+			prestige = 45
+			military_score = 100
+			total_amount_of_ships = 30
+		}
+		effect = {
+			prestige = -15
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = naval_tech_school
+		}
+	}
+	switch_to_culture_tech = {
+		potential = {
+			civilized = yes
+			tech_school = traditional_academic
+			OR = {
+				ruling_party_ideology = liberal
+				ruling_party_ideology = fascist
+				ruling_party_ideology = communist
+			}
+			pacifism = 5
+			secularized = 5
+			NOT = {
+				tech_school = prussian_tech_school
+				has_country_modifier = academic_confusion
+			}
+		}
+		allow = {
+			prestige = 45
+			average_consciousness = 4
+		}
+		effect = {
+			prestige = -15
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = culture_tech_school
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	switch_to_trade_tech = {
+		potential = {
+			civilized = yes
+			tech_school = traditional_academic
+			OR = {
+				ruling_party_ideology = liberal
+				ruling_party_ideology = anarcho_liberal
+			}
+			laissez_faire = 5
+			free_trade = 5
+			NOT = {
+				tech_school = prussian_tech_school
+				has_country_modifier = academic_confusion
+			}
+		}
+		allow = {
+			prestige = 45
+			industrial_score = 100
+		}
+		effect = {
+			prestige = -15
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = commerce_tech_school
+		}
+	}
+	switch_to_industry_tech = {
+		potential = {
+			civilized = yes
+			tech_school = traditional_academic
+			OR = {
+				ruling_party_ideology = conservative
+				ruling_party_ideology = socialist
+				ruling_party_ideology = communist
+			}
+			interventionism = 5
+			protectionism = 5
+			NOT = {
+				tech_school = prussian_tech_school
+				has_country_modifier = academic_confusion
+			}
+		}
+		allow = {
+			prestige = 45
+			industrial_score = 100
+		}
+		effect = {
+			prestige = -15
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = industrial_tech_school
+		}
+	}
+	switch_to_traditional_academic = {
+		potential = {
+			NOT = {
+				tech_school = traditional_academic
+				has_country_modifier = academic_confusion
+			}
+			civilized = yes
+		}
+		
+		allow = {
+			prestige = 45
+		}
+		effect = {
+			prestige = -15
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = traditional_academic
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					AND = {
+						tech_school = culture_tech_school
+						OR = {
+							AND = {
+								NOT = {
+									YEAR = 1849
+								}
+								idealism = 1
+								functionalism = 1
+								state_n_government = 1
+							}
+							AND = {
+								NOT = {
+									YEAR = 1859
+								}
+								idealism = 1
+								biologism = 1
+								nationalism_n_imperialism = 1
+							}
+							AND = {
+								NOT = {
+									YEAR = 1869
+								}
+								empiricism = 1
+								biologism = 1
+								nationalism_n_imperialism = 1
+							}
+							AND = {
+								NOT = {
+									YEAR = 1879
+								}
+								analytic_philosophy = 1
+								social_science = 1
+								revolution_n_counterrevolution = 1
+							}
+							AND = {
+								NOT = {
+									YEAR = 1899
+								}
+								phenomenology_n_hermeneutic = 1
+								social_science = 1
+								revolution_n_counterrevolution = 1
+							}
+							AND = {
+								anti__rationalism = 1
+								social_alienation = 1
+								mass_politics = 1
+							}
+						}
+					}
+				}
+			}
+		}
+
+		#news = yes
+		#news_title = "SOME_TEXT_TITLE"
+		#news_desc_long = "SOME_TEXT_LONG"
+		#news_desc_medium = "SOME_TEXT_MEDIUM"
+		#news_desc_short = "SOME_TEXT_SHORT"
+	}
+}

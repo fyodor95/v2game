@@ -1,0 +1,60 @@
+country_event = {
+	id = 1472048
+	title = "100000"
+	desc = "100000"
+	picture = "greatpowers"
+	trigger = {
+		AI = yes
+		NOT = {
+			has_global_flag = all_lish_del
+		}
+	}
+	mean_time_to_happen = {
+		months = 0.1
+	}
+	option = {
+		name = "100000"
+		any_country = {
+			any_owned = {
+				remove_province_modifier = local_tractors
+				remove_province_modifier = local_electricity
+				remove_province_modifier = local_nitroglycerin
+				remove_province_modifier = local_distribution_channels
+				remove_province_modifier = local_machine_tools
+				
+				remove_province_modifier = reform_cutoff
+				
+				remove_province_modifier = reform_trinket_cutoff_10
+				remove_province_modifier = reform_trinket_cutoff_15
+				remove_province_modifier = reform_trinket_cutoff_20
+				remove_province_modifier = reform_trinket_cutoff_25
+				remove_province_modifier = reform_trinket_cutoff_30
+				remove_province_modifier = reform_trinket_cutoff_32
+				remove_province_modifier = reform_trinket_cutoff_35
+				
+				remove_province_modifier = reform_low_cutoff_10
+				remove_province_modifier = reform_low_cutoff_15
+				remove_province_modifier = reform_low_cutoff_20
+				remove_province_modifier = reform_low_cutoff_25
+				remove_province_modifier = reform_low_cutoff_30
+				remove_province_modifier = reform_low_cutoff_32
+				remove_province_modifier = reform_low_cutoff_35
+				
+				remove_province_modifier = reform_acceptable_cutoff_10
+				remove_province_modifier = reform_acceptable_cutoff_15
+				remove_province_modifier = reform_acceptable_cutoff_20
+				remove_province_modifier = reform_acceptable_cutoff_25
+				remove_province_modifier = reform_acceptable_cutoff_30
+				remove_province_modifier = reform_acceptable_cutoff_32
+				
+				remove_province_modifier = reform_good_cutoff_10
+				remove_province_modifier = reform_good_cutoff_15
+				remove_province_modifier = reform_good_cutoff_20
+				remove_province_modifier = reform_good_cutoff_25
+				remove_province_modifier = reform_good_cutoff_30
+				remove_province_modifier = reform_good_cutoff_32
+			}
+		}
+		set_global_flag = all_lish_del
+	}
+}

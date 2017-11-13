@@ -1,0 +1,342 @@
+unemployment_modifier_100 = {
+	trigger = {
+		unemployment = 1
+		civilized = yes
+	}
+	global_immigrant_attract = -3.6
+}
+unemployment_modifier_96 = {
+	trigger = {
+		unemployment = 0.96
+		NOT = { unemployment = 1 }
+		civilized = yes
+	}
+	global_immigrant_attract = -3.5
+}
+unemployment_modifier_92 = {
+	trigger = {
+		unemployment = 0.92
+		NOT = { unemployment = 0.96 }
+		civilized = yes
+	}
+	global_immigrant_attract = -3.4
+}
+unemployment_modifier_88 = {
+	trigger = {
+		unemployment = 0.88
+		NOT = { unemployment = 0.92 }
+		civilized = yes
+	}
+	global_immigrant_attract = -3.3
+}
+unemployment_modifier_84 = {
+	trigger = {
+		unemployment = 0.84
+		NOT = { unemployment = 0.88 }
+		civilized = yes
+	}
+	global_immigrant_attract = -3.2
+}
+unemployment_modifier_80 = {
+	trigger = {
+		unemployment = 0.8
+		NOT = { unemployment = 0.84 }
+		civilized = yes
+	}
+	global_immigrant_attract = -3
+}
+unemployment_modifier_76 = {
+	trigger = {
+		unemployment = 0.76
+		NOT = { unemployment = 0.8 }
+		civilized = yes
+	}
+	global_immigrant_attract = -2.9
+}
+unemployment_modifier_72 = {
+	trigger = {
+		unemployment = 0.72
+		NOT = { unemployment = 0.76 }
+		civilized = yes
+	}
+	global_immigrant_attract = -2.8
+}
+unemployment_modifier_68 = {
+	trigger = {
+		unemployment = 0.68
+		NOT = { unemployment = 0.72 }
+		civilized = yes
+	}
+	global_immigrant_attract = -2.7
+}
+unemployment_modifier_64 = {
+	trigger = {
+		unemployment = 0.64
+		NOT = { unemployment = 0.68 }
+		civilized = yes
+	}
+	global_immigrant_attract = -2.6
+}
+unemployment_modifier_60 = {
+	trigger = {
+		unemployment = 0.6
+		NOT = { unemployment = 0.64 }
+		civilized = yes
+	}
+	global_immigrant_attract = -2.4
+}
+unemployment_modifier_56 = {
+	trigger = {
+		unemployment = 0.56
+		NOT = { unemployment = 0.6 }
+		civilized = yes
+	}
+	global_immigrant_attract = -2.3
+}
+unemployment_modifier_52 = {
+	trigger = {
+		unemployment = 0.52
+		NOT = { unemployment = 0.56 }
+		civilized = yes
+	}
+	global_immigrant_attract = -2.2
+}
+unemployment_modifier_48 = {
+	trigger = {
+		unemployment = 0.48
+		NOT = { unemployment = 0.52 }
+		civilized = yes
+	}
+	global_immigrant_attract = -2.1
+}
+unemployment_modifier_44 = {
+	trigger = {
+		unemployment = 0.44
+		NOT = { unemployment = 0.48 }
+		civilized = yes
+	}
+	global_immigrant_attract = -1.9
+}
+unemployment_modifier_40 = {
+	trigger = {
+		unemployment = 0.4
+		NOT = { unemployment = 0.44 }
+		civilized = yes
+	}
+	global_immigrant_attract = -1.8
+}
+unemployment_modifier_36 = {
+	trigger = {
+		unemployment = 0.36
+		NOT = { unemployment = 0.4 }
+		civilized = yes
+	}
+	global_immigrant_attract = -1.6
+}
+unemployment_modifier_33 = {
+	trigger = {
+		unemployment = 0.33
+		NOT = { unemployment = 0.36 }
+		civilized = yes
+	}
+	global_immigrant_attract = -1.5
+}
+unemployment_modifier_30 = {
+	trigger = {
+		unemployment = 0.3
+		NOT = { unemployment = 0.33 }
+		civilized = yes
+	}
+	global_immigrant_attract = -1.4
+}
+unemployment_modifier_27 = {
+	trigger = {
+		unemployment = 0.27
+		NOT = { unemployment = 0.3 }
+		civilized = yes
+	}
+	global_immigrant_attract = -1.3
+}
+unemployment_modifier_25 = {
+	trigger = {
+		unemployment = 0.25
+		NOT = { unemployment = 0.27 }
+		civilized = yes
+	}
+	global_immigrant_attract = -1.2
+}
+unemployment_modifier_23 = {
+	trigger = {
+		unemployment = 0.23
+		NOT = { unemployment = 0.25 }
+		civilized = yes
+	}
+	global_immigrant_attract = -1.1
+}
+unemployment_modifier_21 = {
+	trigger = {
+		unemployment = 0.21
+		NOT = { unemployment = 0.23 }
+		civilized = yes
+	}
+	global_immigrant_attract = -1
+}
+unemployment_modifier_19 = {
+	trigger = {
+		unemployment = 0.19
+		NOT = { unemployment = 0.21 }
+		civilized = yes
+	}
+	global_immigrant_attract = -0.92
+}
+unemployment_modifier_18 = {
+	trigger = {
+		unemployment = 0.18
+		NOT = { unemployment = 0.19 }
+		civilized = yes
+	}
+	global_immigrant_attract = -0.88
+}
+unemployment_modifier_17 = {
+	trigger = {
+		unemployment = 0.17
+		NOT = { unemployment = 0.18 }
+		civilized = yes
+	}
+	global_immigrant_attract = -0.83
+}
+unemployment_modifier_16 = {
+	trigger = {
+		unemployment = 0.16
+		NOT = { unemployment = 0.17 }
+		civilized = yes
+	}
+	global_immigrant_attract = -0.78
+}
+unemployment_modifier_15 = {
+	trigger = {
+		unemployment = 0.15
+		NOT = { unemployment = 0.16 }
+		civilized = yes
+	}
+	global_immigrant_attract = -0.73
+}
+unemployment_modifier_14 = {
+	trigger = {
+		unemployment = 0.14
+		NOT = { unemployment = 0.15 }
+		civilized = yes
+	}
+	global_immigrant_attract = -0.68
+}
+unemployment_modifier_13 = {
+	trigger = {
+		unemployment = 0.13
+		NOT = { unemployment = 0.14 }
+		civilized = yes
+	}
+	global_immigrant_attract = -0.63
+}
+unemployment_modifier_12 = {
+	trigger = {
+		unemployment = 0.12
+		NOT = { unemployment = 0.13 }
+		civilized = yes
+	}
+	global_immigrant_attract = -0.57
+}
+unemployment_modifier_11 = {
+	trigger = {
+		unemployment = 0.11
+		NOT = { unemployment = 0.12 }
+		civilized = yes
+	}
+	global_immigrant_attract = -0.52
+}
+unemployment_modifier_10 = {
+	trigger = {
+		unemployment = 0.1
+		NOT = { unemployment = 0.11 }
+		civilized = yes
+	}
+	global_immigrant_attract = -0.46
+}
+unemployment_modifier_9 = {
+	trigger = {
+		unemployment = 0.09
+		NOT = { unemployment = 0.1 }
+		civilized = yes
+	}
+	global_immigrant_attract = -0.4
+}
+unemployment_modifier_8 = {
+	trigger = {
+		unemployment = 0.08
+		NOT = { unemployment = 0.09 }
+		civilized = yes
+	}
+	global_immigrant_attract = -0.34
+}
+unemployment_modifier_7 = {
+	trigger = {
+		unemployment = 0.07
+		NOT = { unemployment = 0.08 }
+		civilized = yes
+	}
+	global_immigrant_attract = -0.28
+}
+unemployment_modifier_6 = {
+	trigger = {
+		unemployment = 0.06
+		NOT = { unemployment = 0.07 }
+		civilized = yes
+	}
+	global_immigrant_attract = -0.21
+}
+unemployment_modifier_5 = {
+	trigger = {
+		unemployment = 0.05
+		NOT = { unemployment = 0.06 }
+		civilized = yes
+	}
+	global_immigrant_attract = -0.14
+}
+unemployment_modifier_4 = {
+	trigger = {
+		unemployment = 0.04
+		NOT = { unemployment = 0.05 }
+		civilized = yes
+	}
+	global_immigrant_attract = -0.07
+}
+unemployment_modifier_3 = {
+	trigger = {
+		unemployment = 0.03
+		NOT = { unemployment = 0.04 }
+		civilized = yes
+	}
+	global_immigrant_attract = 0.01
+}
+unemployment_modifier_2 = {
+	trigger = {
+		unemployment = 0.02
+		NOT = { unemployment = 0.03 }
+		civilized = yes
+	}
+	global_immigrant_attract = 0.11
+}
+unemployment_modifier_1 = {
+	trigger = {
+		unemployment = 0.01
+		NOT = { unemployment = 0.02 }
+		civilized = yes
+	}
+	global_immigrant_attract = 0.21
+}
+unemployment_modifier_0 = {
+	trigger = {
+		NOT = { unemployment = 0.01 }
+		civilized = yes
+	}
+	global_immigrant_attract = 0.4
+}
