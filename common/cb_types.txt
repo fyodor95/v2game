@@ -44,6 +44,7 @@ take_from_sphere
 status_quo 
 gunboat 
 conquest 
+conquest_for_all 
 civil_war 
 acquire_core_state 
 annex_core_country
@@ -208,6 +209,46 @@ conquest = {
 	po_annex = yes
 	
 	war_name = WAR_CONQUEST_NAME
+}
+
+# Conquest for all
+conquest_for_all = {
+	sprite_index = 2
+	is_triggered_only = yes
+	months = 12
+	constructing_cb = no
+	crisis = no
+	always = no
+	
+	can_use = {
+		NOT = { is_our_vassal = THIS }
+	}
+
+	badboy_factor = 0
+	prestige_factor = 5
+	peace_cost_factor = 1
+	penalty_factor = 1
+	
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 0
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	po_annex = yes
+	
+	war_name = WAR_CONQUEST_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
 }
 
 # Civil war

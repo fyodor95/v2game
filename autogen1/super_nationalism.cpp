@@ -16,9 +16,9 @@ void FindFiles(std::vector<std::string> &mem, const char *path) {
 }
 
 int main() {
-    std::ofstream out("super_nationalism.txt");
+    std::ofstream out("..\\events\\super_nationalism.txt");
     std::vector<std::string> files;
-    FindFiles(files, "D:\\V2HoD3.03_Rus\\history\\countries\\*");
+    FindFiles(files, "..\\history\\countries\\*");
 	int id = 6000;
     out << "country_event = {\n";
     out << "	id = 5999\n";
@@ -125,7 +125,7 @@ int main() {
     out << "		}\n";
     out << "		casus_belli = {\n";
     out << "			target = HND\n";
-    out << "			type = conquest\n";
+    out << "			type = conquest_for_all\n";
     out << "			months = 12\n";
     out << "		}\n";
     out << "		any_country = {\n";
@@ -253,7 +253,7 @@ int main() {
         out << "		}\n";
         out << "		casus_belli = {\n";
         out << "			target = " << tag << "\n";
-        out << "			type = conquest\n";
+        out << "			type = conquest_for_all\n";
         out << "			months = 12\n";
         out << "		}\n";
         out << "	}\n";

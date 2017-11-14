@@ -5215,7 +5215,8 @@ WARDIALOG_PEACECOST;$VALUE$ цены мира;X
 WARDIALOG_SELECT_COUNTRY;Выберите §Yдержаву§W из списка справа.;X
 WARDIALOG_SELECT_STATE;Выберите §Yрегион§W из списка справа.;X
 status_quo_desc;Попытка вмешательства в войну, дабы не допустить достижения любой из сторон своих §Yвоенных целей§W.;X
-conquest_desc;Присоединение состоящей из одного региона §Yдержавы§W или §Yнецивилизованного государства§W.;X
+conquest_desc;Присоединение §Yдержавы§W.;X
+conquest_for_all_desc;Присоединение §Yдержавы§W.;X
 add_to_sphere_desc;Расширение свой §Yсферы влияния§W на эту державу.;X
 take_from_sphere_desc;Исключение страны из §Yсферы влияния§W другой державы с включением её в нашу сферу.;X
 acquire_core_state_desc;Захват вражеского §Yрегиона§W, в котором находятся наши §Yнациональные провинции§W.;X
@@ -8759,8 +8760,11 @@ po_reduce_prestige;Уменьшение престижа на §R$VALUE$§b.;X
 SELECT_WAR_GOAL;Выберите цель войны;X
 nocasusbelli;Нет достойного оправдания;X
 conquest;Завоевание;X
+conquest_for_all;Завоевание;X
 conquest_setup;Присоединить державу $RECIPIENT$.;X
+conquest_for_all_setup;Присоединить державу $RECIPIENT$.;X
 conquest_short;Присоединение державы $RECIPIENT$;X
+conquest_for_all_short;Присоединение державы $RECIPIENT$;X
 add_to_sphere;Расширение сферы;X
 add_to_sphere_short;Расширение сферы влияния на державу $RECIPIENT$;X
 add_to_sphere_setup;Расширить сферу влияния на державу $RECIPIENT$.;X
