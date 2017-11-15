@@ -2652,6 +2652,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D01 }
+			}
+			any_owned = {
+				remove_core = D01
+			}
+		}
 	}
 }
 country_event = {
@@ -2693,6 +2701,14 @@ country_event = {
 			target = D02
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D02 }
+			}
+			any_owned = {
+				remove_core = D02
+			}
 		}
 	}
 }
@@ -2736,6 +2752,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D03 }
+			}
+			any_owned = {
+				remove_core = D03
+			}
+		}
 	}
 }
 country_event = {
@@ -2777,6 +2801,14 @@ country_event = {
 			target = D04
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D04 }
+			}
+			any_owned = {
+				remove_core = D04
+			}
 		}
 	}
 }
@@ -2820,6 +2852,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D05 }
+			}
+			any_owned = {
+				remove_core = D05
+			}
+		}
 	}
 }
 country_event = {
@@ -2861,6 +2901,14 @@ country_event = {
 			target = D06
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D06 }
+			}
+			any_owned = {
+				remove_core = D06
+			}
 		}
 	}
 }
@@ -2904,6 +2952,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D07 }
+			}
+			any_owned = {
+				remove_core = D07
+			}
+		}
 	}
 }
 country_event = {
@@ -2945,6 +3001,14 @@ country_event = {
 			target = D08
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D08 }
+			}
+			any_owned = {
+				remove_core = D08
+			}
 		}
 	}
 }
@@ -2988,6 +3052,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D09 }
+			}
+			any_owned = {
+				remove_core = D09
+			}
+		}
 	}
 }
 country_event = {
@@ -3029,6 +3101,14 @@ country_event = {
 			target = D10
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D10 }
+			}
+			any_owned = {
+				remove_core = D10
+			}
 		}
 	}
 }
@@ -3072,6 +3152,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D11 }
+			}
+			any_owned = {
+				remove_core = D11
+			}
+		}
 	}
 }
 country_event = {
@@ -3113,6 +3201,14 @@ country_event = {
 			target = D12
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D12 }
+			}
+			any_owned = {
+				remove_core = D12
+			}
 		}
 	}
 }
@@ -3156,6 +3252,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D13 }
+			}
+			any_owned = {
+				remove_core = D13
+			}
+		}
 	}
 }
 country_event = {
@@ -3197,6 +3301,14 @@ country_event = {
 			target = D14
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D14 }
+			}
+			any_owned = {
+				remove_core = D14
+			}
 		}
 	}
 }
@@ -3240,6 +3352,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D15 }
+			}
+			any_owned = {
+				remove_core = D15
+			}
+		}
 	}
 }
 country_event = {
@@ -3281,6 +3401,14 @@ country_event = {
 			target = D16
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D16 }
+			}
+			any_owned = {
+				remove_core = D16
+			}
 		}
 	}
 }
@@ -3324,6 +3452,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D17 }
+			}
+			any_owned = {
+				remove_core = D17
+			}
+		}
 	}
 }
 country_event = {
@@ -3365,6 +3501,14 @@ country_event = {
 			target = D18
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D18 }
+			}
+			any_owned = {
+				remove_core = D18
+			}
 		}
 	}
 }
@@ -3408,6 +3552,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D19 }
+			}
+			any_owned = {
+				remove_core = D19
+			}
+		}
 	}
 }
 country_event = {
@@ -3449,6 +3601,14 @@ country_event = {
 			target = D20
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D20 }
+			}
+			any_owned = {
+				remove_core = D20
+			}
 		}
 	}
 }
@@ -3492,6 +3652,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D21 }
+			}
+			any_owned = {
+				remove_core = D21
+			}
+		}
 	}
 }
 country_event = {
@@ -3533,6 +3701,14 @@ country_event = {
 			target = D22
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D22 }
+			}
+			any_owned = {
+				remove_core = D22
+			}
 		}
 	}
 }
@@ -3576,6 +3752,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D23 }
+			}
+			any_owned = {
+				remove_core = D23
+			}
+		}
 	}
 }
 country_event = {
@@ -3617,6 +3801,14 @@ country_event = {
 			target = D24
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D24 }
+			}
+			any_owned = {
+				remove_core = D24
+			}
 		}
 	}
 }
@@ -3660,6 +3852,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D25 }
+			}
+			any_owned = {
+				remove_core = D25
+			}
+		}
 	}
 }
 country_event = {
@@ -3701,6 +3901,14 @@ country_event = {
 			target = D26
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D26 }
+			}
+			any_owned = {
+				remove_core = D26
+			}
 		}
 	}
 }
@@ -3744,6 +3952,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D27 }
+			}
+			any_owned = {
+				remove_core = D27
+			}
+		}
 	}
 }
 country_event = {
@@ -3785,6 +4001,14 @@ country_event = {
 			target = D28
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D28 }
+			}
+			any_owned = {
+				remove_core = D28
+			}
 		}
 	}
 }
@@ -3828,6 +4052,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D29 }
+			}
+			any_owned = {
+				remove_core = D29
+			}
+		}
 	}
 }
 country_event = {
@@ -3869,6 +4101,14 @@ country_event = {
 			target = D30
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D30 }
+			}
+			any_owned = {
+				remove_core = D30
+			}
 		}
 	}
 }
@@ -3912,6 +4152,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D31 }
+			}
+			any_owned = {
+				remove_core = D31
+			}
+		}
 	}
 }
 country_event = {
@@ -3953,6 +4201,14 @@ country_event = {
 			target = D32
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D32 }
+			}
+			any_owned = {
+				remove_core = D32
+			}
 		}
 	}
 }
@@ -3996,6 +4252,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D33 }
+			}
+			any_owned = {
+				remove_core = D33
+			}
+		}
 	}
 }
 country_event = {
@@ -4037,6 +4301,14 @@ country_event = {
 			target = D34
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D34 }
+			}
+			any_owned = {
+				remove_core = D34
+			}
 		}
 	}
 }
@@ -4080,6 +4352,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D35 }
+			}
+			any_owned = {
+				remove_core = D35
+			}
+		}
 	}
 }
 country_event = {
@@ -4121,6 +4401,14 @@ country_event = {
 			target = D36
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D36 }
+			}
+			any_owned = {
+				remove_core = D36
+			}
 		}
 	}
 }
@@ -4164,6 +4452,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D37 }
+			}
+			any_owned = {
+				remove_core = D37
+			}
+		}
 	}
 }
 country_event = {
@@ -4205,6 +4501,14 @@ country_event = {
 			target = D38
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D38 }
+			}
+			any_owned = {
+				remove_core = D38
+			}
 		}
 	}
 }
@@ -4248,6 +4552,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D39 }
+			}
+			any_owned = {
+				remove_core = D39
+			}
+		}
 	}
 }
 country_event = {
@@ -4289,6 +4601,14 @@ country_event = {
 			target = D40
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D40 }
+			}
+			any_owned = {
+				remove_core = D40
+			}
 		}
 	}
 }
@@ -4332,6 +4652,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D41 }
+			}
+			any_owned = {
+				remove_core = D41
+			}
+		}
 	}
 }
 country_event = {
@@ -4373,6 +4701,14 @@ country_event = {
 			target = D42
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D42 }
+			}
+			any_owned = {
+				remove_core = D42
+			}
 		}
 	}
 }
@@ -4416,6 +4752,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D43 }
+			}
+			any_owned = {
+				remove_core = D43
+			}
+		}
 	}
 }
 country_event = {
@@ -4457,6 +4801,14 @@ country_event = {
 			target = D44
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D44 }
+			}
+			any_owned = {
+				remove_core = D44
+			}
 		}
 	}
 }
@@ -4500,6 +4852,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D45 }
+			}
+			any_owned = {
+				remove_core = D45
+			}
+		}
 	}
 }
 country_event = {
@@ -4541,6 +4901,14 @@ country_event = {
 			target = D46
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D46 }
+			}
+			any_owned = {
+				remove_core = D46
+			}
 		}
 	}
 }
@@ -4584,6 +4952,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D47 }
+			}
+			any_owned = {
+				remove_core = D47
+			}
+		}
 	}
 }
 country_event = {
@@ -4625,6 +5001,14 @@ country_event = {
 			target = D48
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D48 }
+			}
+			any_owned = {
+				remove_core = D48
+			}
 		}
 	}
 }
@@ -4668,6 +5052,14 @@ country_event = {
 			type = conquest_for_all
 			months = 12
 		}
+		any_country = {
+			limit = {
+				NOT = { tag = D49 }
+			}
+			any_owned = {
+				remove_core = D49
+			}
+		}
 	}
 }
 country_event = {
@@ -4709,6 +5101,14 @@ country_event = {
 			target = D50
 			type = conquest_for_all
 			months = 12
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = D50 }
+			}
+			any_owned = {
+				remove_core = D50
+			}
 		}
 	}
 }

@@ -256,6 +256,16 @@ int main() {
         out << "			type = conquest_for_all\n";
         out << "			months = 12\n";
         out << "		}\n";
+        if (tag[0] == 'D' && '0' <= tag[1] && tag[1] <= '9') {
+            out << "		any_country = {\n";
+            out << "			limit = {\n";
+            out << "				NOT = { tag = " << tag << " }\n";
+            out << "			}\n";
+            out << "			any_owned = {\n";
+            out << "				remove_core = " << tag << "\n";
+            out << "			}\n";
+            out << "		}\n";
+        }
         out << "	}\n";
         out << "}\n";
     }
