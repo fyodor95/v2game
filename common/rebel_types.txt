@@ -140,8 +140,8 @@ reactionary_rebels = {
 			is_accepted_culture = yes
 		}
 		modifier = {
-			factor = 0.2
-			country = { government = absolute_monarchy}
+			factor = 0
+			country = { government = absolute_monarchy }
 		}
 		modifier = {
 			factor = 0.2
@@ -308,6 +308,10 @@ fascist_rebels = {
 		modifier = {
 			factor = 0
 			country = { civilized = no }
+		}
+		modifier = {
+			factor = 0
+			country = { government = fascist_dictatorship }
 		}
 		modifier = {
 			factor = 0.01
@@ -2205,6 +2209,10 @@ liberal_rebels = {
 		modifier = {
 			factor = 0
 			country = { civilized = no }
+		}
+		modifier = {
+			factor = 0
+			country = { government = democracy }
 		}
 		modifier = {
 			factor = 0
