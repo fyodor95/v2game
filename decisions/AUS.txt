@@ -73,6 +73,9 @@ political_decisions = {
 					}
 				}
 				any_neighbor_province = {
+					limit = {
+						owned_by = AUS
+					}
 					add_core = HUN
 				}
 			}
@@ -90,6 +93,7 @@ political_decisions = {
 			release_vassal = HUN
 			government = prussian_constitutionalism
 			political_reform = landed_voting
+			badboy = -25
 			HUN = {
 				government = prussian_constitutionalism
 				political_reform = landed_voting
@@ -99,6 +103,10 @@ political_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { badboy = 0.8 }
+			}
 		}
 	}
 	
