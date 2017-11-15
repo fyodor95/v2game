@@ -16,9 +16,9 @@ void FindFiles(std::vector<std::string> &mem, const char *path) {
 }
 
 int main() {
-    std::ofstream out("seting_D_cores.txt");
+    std::ofstream out("..\\events\\seting_D_cores.txt");
     std::vector<std::string> files, d_tags;
-    FindFiles(files, "C:\\V2HoD3.03_Rus\\history\\countries\\*");
+    FindFiles(files, "..\\history\\countries\\*");
 	int id = 300;
     for (int i = 2; i < files.size(); ++i) {
         std::string tag = files[i].substr(0, 3);
@@ -34,13 +34,6 @@ int main() {
         out << "			" << d_tag << " = { exists = no }\n";
         out << "		}\n";
         out << "		controlled_by_rebels = yes\n";
-        out << "		NOT = {\n";
-        out << "			OR = {\n";
-        for (int i = 2; i < files.size(); ++i) {
-            out << "				is_core = " << files[i].substr(0, 3) << "\n";
-        }
-        out << "			}\n";
-        out << "		}\n";
         out << "		OR = {\n";
         out << "			NOT = {\n";
         out << "				owner = {\n";
@@ -56,12 +49,22 @@ int main() {
         out << "		}\n";
         out << "	}\n";
         out << "	mean_time_to_happen = {\n";
-        out << "		months = 30\n";
+        out << "		months = 1200\n";
         out << "		modifier = {\n";
         out << "			factor = 0.001\n";
         out << "			any_neighbor_province = {\n";
         out << "				controlled_by_rebels = yes\n";
         out << "				is_core = " << d_tag << "\n";
+        out << "			}\n";
+        out << "		}\n";
+        out << "		modifier = {\n";
+        out << "			factor = 0.025\n";
+        out << "			NOT = {\n";
+        out << "				OR = {\n";
+        for (int i = 2; i < files.size(); ++i) {
+            out << "					is_core = " << files[i].substr(0, 3) << "\n";
+        }
+        out << "				}\n";
         out << "			}\n";
         out << "		}\n";
         out << "	}\n";
