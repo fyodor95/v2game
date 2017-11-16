@@ -53,27 +53,26 @@ reactionary_rebels = {
 	will_rise = 
 	{
 		factor = 0.5
-		
 		modifier = {
 			war = yes
 			factor = 0.8
 		}
-		
 		modifier = {
 			war_exhaustion = 4
 			factor = 0.95
 		}
-		
 		modifier = {
 			war_exhaustion = 6
 			factor = 0.95
 		}
-		
 		modifier = {
 			war_exhaustion = 8
 			factor = 0.95
 		}
-		
+		modifier = {
+			government = absolute_monarchy
+			factor = 0
+		}
 	}
 	
 	# The rebel type with the highest modifier for this pop gets picked
@@ -252,32 +251,31 @@ fascist_rebels = {
 	will_rise = 
 	{
 		factor = 0.5
-		
 		modifier = {
 			war = yes
 			factor = 0.8
 		}
-		
 		modifier = {
 			war_exhaustion = 4
 			factor = 0.95
 		}
-		
 		modifier = {
 			factor = 0.5
 			country = {
 				has_unclaimed_cores = yes
 			}
 		}
-		
 		modifier = {
 			war_exhaustion = 6
 			factor = 0.95
 		}
-		
 		modifier = {
 			war_exhaustion = 8
 			factor = 0.95
+		}
+		modifier = {
+			government = fascist_dictatorship
+			factor = 0
 		}
 	}
 	
@@ -457,44 +455,41 @@ communist_rebels = {
 	will_rise = 
 	{
 		factor = 0.5
-		
 		modifier = {
 			war = yes
 			factor = 0.8
 		}
-		
 		modifier = {
 			factor = 0
 			NOT = {
 				is_ideology_enabled = communist
 			}
 		}
-		
 		modifier = {
 			factor = 0
 				 political_movement = yes
 		}
-		
 		modifier = {
 			war_exhaustion = 4
 			factor = 0.95
 		}
-		
 		modifier = {
 			war_exhaustion = 6
 			factor = 0.95
 		}
-		
 		modifier = {
 			war_exhaustion = 8
 			factor = 0.95
 		}
-		
 		modifier = {
 			factor = 0.95
 			any_neighbor_country = {
 				government = proletarian_dictatorship
 			}
+		}
+		modifier = {
+			government = proletarian_dictatorship
+			factor = 0
 		}
 	}
 	
@@ -514,7 +509,7 @@ communist_rebels = {
 		}
 		modifier = {
 			factor = 0
-			government = proletarian_dictatorship
+			country = { government = proletarian_dictatorship }
 		}
 		modifier = {
 			factor = 1.015
@@ -669,12 +664,10 @@ anarcho_liberal_rebels = {
 	will_rise = 
 	{
 		factor = 0.5
-		
 		modifier = {
 			war = yes
 			factor = 0.8
 		}
-		
 		modifier = {
 			war_exhaustion = 4
 			factor = 0.95
@@ -700,6 +693,10 @@ anarcho_liberal_rebels = {
 			country = {
 				has_country_modifier = global_liberal_agitation
 			}
+		}
+		modifier = {
+			government = bourgeois_dictatorship
+			factor = 0
 		}
 	}
 	
@@ -2169,22 +2166,18 @@ liberal_rebels = {
 	will_rise = 
 	{
 		factor = 0.5
-		
 		modifier = {
 			war = yes
 			factor = 0.8
 		}
-		
 		modifier = {
 			war_exhaustion = 4
 			factor = 0.95
 		}
-		
 		modifier = {
 			war_exhaustion = 6
 			factor = 0.95
 		}
-		
 		modifier = {
 			war_exhaustion = 8
 			factor = 0.95
@@ -2200,6 +2193,10 @@ liberal_rebels = {
 			country = {
 				has_country_modifier = global_liberal_agitation
 			}
+		}
+		modifier = {
+			government = democracy
+			factor = 0
 		}
 	}
 	
