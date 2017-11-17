@@ -74,6 +74,13 @@ int main() {
         out << "		any_neighbor_province = {\n";
         out << "			add_core = " << d_tag << "\n";
         out << "		}\n";
+        out << "		owner = {\n";
+        out << "			any_country = {\n";
+        out << "				any_owned = {\n";
+        out << "					remove_core = " << d_tag << "\n";
+        out << "				}\n";
+        out << "			}\n";
+        out << "		}\n";
         out << "	}\n";
         out << "}\n";
     }

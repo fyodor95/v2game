@@ -333,6 +333,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D01
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D01
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -669,6 +676,13 @@ province_event = {
 		add_core = D02
 		any_neighbor_province = {
 			add_core = D02
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D02
+				}
+			}
 		}
 	}
 }
@@ -1007,6 +1021,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D03
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D03
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -1343,6 +1364,13 @@ province_event = {
 		add_core = D04
 		any_neighbor_province = {
 			add_core = D04
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D04
+				}
+			}
 		}
 	}
 }
@@ -1681,6 +1709,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D05
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D05
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -2017,6 +2052,13 @@ province_event = {
 		add_core = D06
 		any_neighbor_province = {
 			add_core = D06
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D06
+				}
+			}
 		}
 	}
 }
@@ -2355,6 +2397,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D07
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D07
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -2691,6 +2740,13 @@ province_event = {
 		add_core = D08
 		any_neighbor_province = {
 			add_core = D08
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D08
+				}
+			}
 		}
 	}
 }
@@ -3029,6 +3085,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D09
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D09
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -3365,6 +3428,13 @@ province_event = {
 		add_core = D10
 		any_neighbor_province = {
 			add_core = D10
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D10
+				}
+			}
 		}
 	}
 }
@@ -3703,6 +3773,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D11
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D11
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -4039,6 +4116,13 @@ province_event = {
 		add_core = D12
 		any_neighbor_province = {
 			add_core = D12
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D12
+				}
+			}
 		}
 	}
 }
@@ -4377,6 +4461,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D13
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D13
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -4713,6 +4804,13 @@ province_event = {
 		add_core = D14
 		any_neighbor_province = {
 			add_core = D14
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D14
+				}
+			}
 		}
 	}
 }
@@ -5051,6 +5149,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D15
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D15
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -5387,6 +5492,13 @@ province_event = {
 		add_core = D16
 		any_neighbor_province = {
 			add_core = D16
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D16
+				}
+			}
 		}
 	}
 }
@@ -5725,6 +5837,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D17
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D17
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -6061,6 +6180,13 @@ province_event = {
 		add_core = D18
 		any_neighbor_province = {
 			add_core = D18
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D18
+				}
+			}
 		}
 	}
 }
@@ -6399,6 +6525,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D19
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D19
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -6735,6 +6868,13 @@ province_event = {
 		add_core = D20
 		any_neighbor_province = {
 			add_core = D20
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D20
+				}
+			}
 		}
 	}
 }
@@ -7073,6 +7213,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D21
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D21
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -7409,6 +7556,13 @@ province_event = {
 		add_core = D22
 		any_neighbor_province = {
 			add_core = D22
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D22
+				}
+			}
 		}
 	}
 }
@@ -7747,6 +7901,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D23
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D23
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -8083,6 +8244,13 @@ province_event = {
 		add_core = D24
 		any_neighbor_province = {
 			add_core = D24
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D24
+				}
+			}
 		}
 	}
 }
@@ -8421,6 +8589,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D25
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D25
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -8757,6 +8932,13 @@ province_event = {
 		add_core = D26
 		any_neighbor_province = {
 			add_core = D26
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D26
+				}
+			}
 		}
 	}
 }
@@ -9095,6 +9277,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D27
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D27
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -9431,6 +9620,13 @@ province_event = {
 		add_core = D28
 		any_neighbor_province = {
 			add_core = D28
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D28
+				}
+			}
 		}
 	}
 }
@@ -9769,6 +9965,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D29
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D29
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -10105,6 +10308,13 @@ province_event = {
 		add_core = D30
 		any_neighbor_province = {
 			add_core = D30
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D30
+				}
+			}
 		}
 	}
 }
@@ -10443,6 +10653,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D31
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D31
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -10779,6 +10996,13 @@ province_event = {
 		add_core = D32
 		any_neighbor_province = {
 			add_core = D32
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D32
+				}
+			}
 		}
 	}
 }
@@ -11117,6 +11341,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D33
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D33
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -11453,6 +11684,13 @@ province_event = {
 		add_core = D34
 		any_neighbor_province = {
 			add_core = D34
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D34
+				}
+			}
 		}
 	}
 }
@@ -11791,6 +12029,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D35
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D35
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -12127,6 +12372,13 @@ province_event = {
 		add_core = D36
 		any_neighbor_province = {
 			add_core = D36
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D36
+				}
+			}
 		}
 	}
 }
@@ -12465,6 +12717,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D37
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D37
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -12801,6 +13060,13 @@ province_event = {
 		add_core = D38
 		any_neighbor_province = {
 			add_core = D38
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D38
+				}
+			}
 		}
 	}
 }
@@ -13139,6 +13405,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D39
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D39
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -13475,6 +13748,13 @@ province_event = {
 		add_core = D40
 		any_neighbor_province = {
 			add_core = D40
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D40
+				}
+			}
 		}
 	}
 }
@@ -13813,6 +14093,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D41
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D41
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -14149,6 +14436,13 @@ province_event = {
 		add_core = D42
 		any_neighbor_province = {
 			add_core = D42
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D42
+				}
+			}
 		}
 	}
 }
@@ -14487,6 +14781,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D43
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D43
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -14823,6 +15124,13 @@ province_event = {
 		add_core = D44
 		any_neighbor_province = {
 			add_core = D44
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D44
+				}
+			}
 		}
 	}
 }
@@ -15161,6 +15469,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D45
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D45
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -15497,6 +15812,13 @@ province_event = {
 		add_core = D46
 		any_neighbor_province = {
 			add_core = D46
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D46
+				}
+			}
 		}
 	}
 }
@@ -15835,6 +16157,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D47
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D47
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -16171,6 +16500,13 @@ province_event = {
 		add_core = D48
 		any_neighbor_province = {
 			add_core = D48
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D48
+				}
+			}
 		}
 	}
 }
@@ -16509,6 +16845,13 @@ province_event = {
 		any_neighbor_province = {
 			add_core = D49
 		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D49
+				}
+			}
+		}
 	}
 }
 province_event = {
@@ -16845,6 +17188,13 @@ province_event = {
 		add_core = D50
 		any_neighbor_province = {
 			add_core = D50
+		}
+		owner = {
+			any_country = {
+				any_owned = {
+					remove_core = D50
+				}
+			}
 		}
 	}
 }
