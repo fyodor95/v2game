@@ -227,10 +227,10 @@ party = {
 
 unit_names = {
 	dreadnought = {
-		"Clas Eriksson Fleming" "Axel Nilsson Ryning" "Carl Carlsson Gyllenhielm" "Gustaf Otto Stenbock" "Lorentz Creutz" "Hans Wachtmeister af Johannishus" "Henrik af Trolle" "Carl August Ehrensvдrd" Fredrik Johan "Manligheten" "Dristigheten" "Sverige"
+		"Клас Эрикссон Флеминг" "Аксель Нильссон Рининг" "Карл Карлссон Гилленхильм" "Густав Отто Стенбок" "Лоренц Крейц" "Ганс Вахтмейстер" "Хенрик аф Тролле" "Карл Август Эренсвегд" Фредрик Йохан "Манлигетен" "Дристигетен" "Швеция"
 	}
 	ironclad = {
-		Gцteborg Malmц Uppsala Vдsterеs Цrebro Linkцping Helsingborg Nynдshamn Karlshamn Halmstad Blenda Astrid 
+		Гётеборг Мальмё Уппсала Вестерос Эребру Линчёпинг Хельсингборг Нюнесхамн Карлсхамн Хальмстад Бленда Астрид 
 	}
 	manowar = {
 	"Карл XIII"
@@ -281,7 +281,7 @@ unit_names = {
 	"Тирфинг"
 	"Торден"
 	"Берсерк"
-	"Бьорн"
+	"Бьёрн"
 	"Фольке"
 	"Сельве"
 	"Ульф"
@@ -295,7 +295,7 @@ unit_names = {
 	
 	
 	commerce_raider = {
-	"Бьерн Йернсида"
+	"Бьёрн Йернсида"
 	"Эрик Серегселл"
 	"Гардар Сваварссон"
 	"Бирка"
