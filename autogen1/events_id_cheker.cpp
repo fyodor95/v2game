@@ -21,10 +21,9 @@ void FindFiles(std::vector<std::string> &mem, const char *path) {
 int main() {
     std::ofstream output("report.txt");
     std::set<int> ids;
-    std::string path = "C:\\V2HoD3.03_Rus\\events\\",
-                new_path = "C:\\V2HoD3.03_Rus\\autogen\\";
+    std::string path = "..\\events\\", new_path = "";
     std::vector<std::string> files;
-    FindFiles(files, "C:\\V2HoD3.03_Rus\\events\\*");
+    FindFiles(files, "..\\events\\*");
     for (auto & file : files) std::cout << file << '\n';
     for (int i = 2; i < files.size(); ++i) {
         std::string input_path = path + files[i], string;
@@ -43,7 +42,7 @@ int main() {
                     int id = atoi(string.substr(pos, last - pos).c_str());
                     if (ids.find(id) != ids.end()) {
                         output << "Error: event id " << id << " occurs several times! The file is \""
-                               << files[i] << "\"\n";
+                               << files[i] << "\".\n";
                     } else {
                         ids.insert(id);
                     }

@@ -1,0 +1,7525 @@
+country_event = {
+	id = 100001
+	title = "0"
+	desc = "0"
+	picture = "greatpowers"
+	trigger = {
+		AI = yes
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "0"
+		random_country = {
+			limit = {
+				NOT = { ruling_party_ideology = liberal }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				NOT = { ruling_party_ideology = reactionary }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				NOT = { ruling_party_ideology = conservative }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				is_ideology_enabled = socialist
+				NOT = { ruling_party_ideology = socialist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				is_ideology_enabled = communist
+				NOT = { ruling_party_ideology = communist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				is_ideology_enabled = fascist
+				NOT = { ruling_party_ideology = fascist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				is_ideology_enabled = anarcho_liberal
+				NOT = { ruling_party_ideology = anarcho_liberal }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				ruling_party_ideology = liberal
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				ruling_party_ideology = reactionary
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				ruling_party_ideology = conservative
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				ruling_party_ideology = socialist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				ruling_party_ideology = communist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				ruling_party_ideology = fascist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				ruling_party_ideology = anarcho_liberal
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2
+				NOT = { ruling_party_ideology = liberal }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2
+				NOT = { ruling_party_ideology = reactionary }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2
+				NOT = { ruling_party_ideology = conservative }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2
+				is_ideology_enabled = socialist
+				NOT = { ruling_party_ideology = socialist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2
+				is_ideology_enabled = communist
+				NOT = { ruling_party_ideology = communist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2
+				is_ideology_enabled = fascist
+				NOT = { ruling_party_ideology = fascist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2
+				is_ideology_enabled = anarcho_liberal
+				NOT = { ruling_party_ideology = anarcho_liberal }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2
+				ruling_party_ideology = liberal
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2
+				ruling_party_ideology = reactionary
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2
+				ruling_party_ideology = conservative
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2
+				ruling_party_ideology = socialist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2
+				ruling_party_ideology = communist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2
+				ruling_party_ideology = fascist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2
+				ruling_party_ideology = anarcho_liberal
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 4
+				NOT = { ruling_party_ideology = liberal }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 4
+				NOT = { ruling_party_ideology = reactionary }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 4
+				NOT = { ruling_party_ideology = conservative }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 4
+				is_ideology_enabled = socialist
+				NOT = { ruling_party_ideology = socialist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 4
+				is_ideology_enabled = communist
+				NOT = { ruling_party_ideology = communist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 4
+				is_ideology_enabled = fascist
+				NOT = { ruling_party_ideology = fascist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 4
+				is_ideology_enabled = anarcho_liberal
+				NOT = { ruling_party_ideology = anarcho_liberal }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 4
+				ruling_party_ideology = liberal
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 4
+				ruling_party_ideology = reactionary
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 4
+				ruling_party_ideology = conservative
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 4
+				ruling_party_ideology = socialist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 4
+				ruling_party_ideology = communist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 4
+				ruling_party_ideology = fascist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 4
+				ruling_party_ideology = anarcho_liberal
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 8
+				NOT = { ruling_party_ideology = liberal }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 8
+				NOT = { ruling_party_ideology = reactionary }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 8
+				NOT = { ruling_party_ideology = conservative }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 8
+				is_ideology_enabled = socialist
+				NOT = { ruling_party_ideology = socialist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 8
+				is_ideology_enabled = communist
+				NOT = { ruling_party_ideology = communist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 8
+				is_ideology_enabled = fascist
+				NOT = { ruling_party_ideology = fascist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 8
+				is_ideology_enabled = anarcho_liberal
+				NOT = { ruling_party_ideology = anarcho_liberal }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 8
+				ruling_party_ideology = liberal
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 8
+				ruling_party_ideology = reactionary
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 8
+				ruling_party_ideology = conservative
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 8
+				ruling_party_ideology = socialist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 8
+				ruling_party_ideology = communist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 8
+				ruling_party_ideology = fascist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 8
+				ruling_party_ideology = anarcho_liberal
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 16
+				NOT = { ruling_party_ideology = liberal }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 16
+				NOT = { ruling_party_ideology = reactionary }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 16
+				NOT = { ruling_party_ideology = conservative }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 16
+				is_ideology_enabled = socialist
+				NOT = { ruling_party_ideology = socialist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 16
+				is_ideology_enabled = communist
+				NOT = { ruling_party_ideology = communist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 16
+				is_ideology_enabled = fascist
+				NOT = { ruling_party_ideology = fascist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 16
+				is_ideology_enabled = anarcho_liberal
+				NOT = { ruling_party_ideology = anarcho_liberal }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 16
+				ruling_party_ideology = liberal
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 16
+				ruling_party_ideology = reactionary
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 16
+				ruling_party_ideology = conservative
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 16
+				ruling_party_ideology = socialist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 16
+				ruling_party_ideology = communist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 16
+				ruling_party_ideology = fascist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 16
+				ruling_party_ideology = anarcho_liberal
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 32
+				NOT = { ruling_party_ideology = liberal }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 32
+				NOT = { ruling_party_ideology = reactionary }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 32
+				NOT = { ruling_party_ideology = conservative }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 32
+				is_ideology_enabled = socialist
+				NOT = { ruling_party_ideology = socialist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 32
+				is_ideology_enabled = communist
+				NOT = { ruling_party_ideology = communist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 32
+				is_ideology_enabled = fascist
+				NOT = { ruling_party_ideology = fascist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 32
+				is_ideology_enabled = anarcho_liberal
+				NOT = { ruling_party_ideology = anarcho_liberal }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 32
+				ruling_party_ideology = liberal
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 32
+				ruling_party_ideology = reactionary
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 32
+				ruling_party_ideology = conservative
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 32
+				ruling_party_ideology = socialist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 32
+				ruling_party_ideology = communist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 32
+				ruling_party_ideology = fascist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 32
+				ruling_party_ideology = anarcho_liberal
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 64
+				NOT = { ruling_party_ideology = liberal }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 64
+				NOT = { ruling_party_ideology = reactionary }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 64
+				NOT = { ruling_party_ideology = conservative }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 64
+				is_ideology_enabled = socialist
+				NOT = { ruling_party_ideology = socialist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 64
+				is_ideology_enabled = communist
+				NOT = { ruling_party_ideology = communist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 64
+				is_ideology_enabled = fascist
+				NOT = { ruling_party_ideology = fascist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 64
+				is_ideology_enabled = anarcho_liberal
+				NOT = { ruling_party_ideology = anarcho_liberal }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 64
+				ruling_party_ideology = liberal
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 64
+				ruling_party_ideology = reactionary
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 64
+				ruling_party_ideology = conservative
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 64
+				ruling_party_ideology = socialist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 64
+				ruling_party_ideology = communist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 64
+				ruling_party_ideology = fascist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 64
+				ruling_party_ideology = anarcho_liberal
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 128
+				NOT = { ruling_party_ideology = liberal }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 128
+				NOT = { ruling_party_ideology = reactionary }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 128
+				NOT = { ruling_party_ideology = conservative }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 128
+				is_ideology_enabled = socialist
+				NOT = { ruling_party_ideology = socialist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 128
+				is_ideology_enabled = communist
+				NOT = { ruling_party_ideology = communist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 128
+				is_ideology_enabled = fascist
+				NOT = { ruling_party_ideology = fascist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 128
+				is_ideology_enabled = anarcho_liberal
+				NOT = { ruling_party_ideology = anarcho_liberal }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 128
+				ruling_party_ideology = liberal
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 128
+				ruling_party_ideology = reactionary
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 128
+				ruling_party_ideology = conservative
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 128
+				ruling_party_ideology = socialist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 128
+				ruling_party_ideology = communist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 128
+				ruling_party_ideology = fascist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 128
+				ruling_party_ideology = anarcho_liberal
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 256
+				NOT = { ruling_party_ideology = liberal }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 256
+				NOT = { ruling_party_ideology = reactionary }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 256
+				NOT = { ruling_party_ideology = conservative }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 256
+				is_ideology_enabled = socialist
+				NOT = { ruling_party_ideology = socialist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 256
+				is_ideology_enabled = communist
+				NOT = { ruling_party_ideology = communist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 256
+				is_ideology_enabled = fascist
+				NOT = { ruling_party_ideology = fascist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 256
+				is_ideology_enabled = anarcho_liberal
+				NOT = { ruling_party_ideology = anarcho_liberal }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 256
+				ruling_party_ideology = liberal
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 256
+				ruling_party_ideology = reactionary
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 256
+				ruling_party_ideology = conservative
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 256
+				ruling_party_ideology = socialist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 256
+				ruling_party_ideology = communist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 256
+				ruling_party_ideology = fascist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 256
+				ruling_party_ideology = anarcho_liberal
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 512
+				NOT = { ruling_party_ideology = liberal }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 512
+				NOT = { ruling_party_ideology = reactionary }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 512
+				NOT = { ruling_party_ideology = conservative }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 512
+				is_ideology_enabled = socialist
+				NOT = { ruling_party_ideology = socialist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 512
+				is_ideology_enabled = communist
+				NOT = { ruling_party_ideology = communist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 512
+				is_ideology_enabled = fascist
+				NOT = { ruling_party_ideology = fascist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 512
+				is_ideology_enabled = anarcho_liberal
+				NOT = { ruling_party_ideology = anarcho_liberal }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 512
+				ruling_party_ideology = liberal
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 512
+				ruling_party_ideology = reactionary
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 512
+				ruling_party_ideology = conservative
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 512
+				ruling_party_ideology = socialist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 512
+				ruling_party_ideology = communist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 512
+				ruling_party_ideology = fascist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 512
+				ruling_party_ideology = anarcho_liberal
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 1024
+				NOT = { ruling_party_ideology = liberal }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 1024
+				NOT = { ruling_party_ideology = reactionary }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 1024
+				NOT = { ruling_party_ideology = conservative }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 1024
+				is_ideology_enabled = socialist
+				NOT = { ruling_party_ideology = socialist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 1024
+				is_ideology_enabled = communist
+				NOT = { ruling_party_ideology = communist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 1024
+				is_ideology_enabled = fascist
+				NOT = { ruling_party_ideology = fascist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 1024
+				is_ideology_enabled = anarcho_liberal
+				NOT = { ruling_party_ideology = anarcho_liberal }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 1024
+				ruling_party_ideology = liberal
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 1024
+				ruling_party_ideology = reactionary
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 1024
+				ruling_party_ideology = conservative
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 1024
+				ruling_party_ideology = socialist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 1024
+				ruling_party_ideology = communist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 1024
+				ruling_party_ideology = fascist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 1024
+				ruling_party_ideology = anarcho_liberal
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2048
+				NOT = { ruling_party_ideology = liberal }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2048
+				NOT = { ruling_party_ideology = reactionary }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2048
+				NOT = { ruling_party_ideology = conservative }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2048
+				is_ideology_enabled = socialist
+				NOT = { ruling_party_ideology = socialist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2048
+				is_ideology_enabled = communist
+				NOT = { ruling_party_ideology = communist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2048
+				is_ideology_enabled = fascist
+				NOT = { ruling_party_ideology = fascist }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2048
+				is_ideology_enabled = anarcho_liberal
+				NOT = { ruling_party_ideology = anarcho_liberal }
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0014
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = lower_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.001
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = low_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0005
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2048
+				ruling_party_ideology = liberal
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2048
+				ruling_party_ideology = reactionary
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2048
+				ruling_party_ideology = conservative
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = conservative
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2048
+				ruling_party_ideology = socialist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = socialist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2048
+				ruling_party_ideology = communist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = communist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2048
+				ruling_party_ideology = fascist
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = fascist
+						factor = 0.001
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				num_of_cities = 2048
+				ruling_party_ideology = anarcho_liberal
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0025
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = higher_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.005
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = extremely_high_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.0075
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_province_modifier = highest_immigration
+				}
+				any_pop = {
+					ideology = {
+						value = anarcho_liberal
+						factor = 0.001
+					}
+				}
+			}
+		}
+	}
+}
