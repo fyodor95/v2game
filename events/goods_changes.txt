@@ -556,6 +556,267 @@ province_event = {
 	id = 203
 	trigger = {
 		controlled_by = owner
+		trade_goods = grain
+		unemployment_by_type = {
+			type = farmers
+			value = 0.4
+		}
+	}
+	mean_time_to_happen = {
+		months = 12000
+		modifier = {
+			factor = 0.5
+			unemployment_by_type = {
+				type = farmers
+				value = 0.5
+			}
+		}
+		modifier = {
+			factor = 0.5
+			unemployment_by_type = {
+				type = farmers
+				value = 0.6
+			}
+		}
+		modifier = {
+			factor = 0.5
+			unemployment_by_type = {
+				type = farmers
+				value = 0.7
+			}
+		}
+		modifier = {
+			factor = 0.5
+			unemployment_by_type = {
+				type = farmers
+				value = 0.8
+			}
+		}
+		modifier = {
+			factor = 0.5
+			unemployment_by_type = {
+				type = farmers
+				value = 0.9
+			}
+		}
+		modifier = {
+			factor = 0.5
+			unemployment_by_type = {
+				type = farmers
+				value = 1
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				freedom_of_trade = 1
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				market_structure = 1
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				business_regulations = 1
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				market_regulations = 1
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				economic_responsibility = 1
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				government_interventionism = 1
+			}
+		}
+		modifier = {
+			factor = 4
+			owner = {
+				economic_policy = planned_economy
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				economic_policy = state_capitalism
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				economic_policy = interventionism
+			}
+		}
+		modifier = {
+			factor = 0.25
+			owner = {
+				economic_policy = laissez_faire
+			}
+		}
+		modifier = {
+			factor = 256
+			NOT = {
+				any_neighbor_province = {
+					trade_goods = timber
+				}
+			}
+		}
+		modifier = {
+			factor = 64
+			any_neighbor_province = {
+				trade_goods = timber
+				has_province_modifier = extremely_low_immigration
+			}
+			NOT = {
+				any_neighbor_province = {
+					trade_goods = timber
+					OR = {
+						has_province_modifier = lower_immigration
+						has_province_modifier = low_immigration
+						has_province_modifier = medium_immigration
+						has_province_modifier = high_immigration
+						has_province_modifier = higher_immigration
+						has_province_modifier = extremely_high_immigration
+						has_province_modifier = highest_immigration
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 16
+			any_neighbor_province = {
+				trade_goods = timber
+				has_province_modifier = lower_immigration
+			}
+			NOT = {
+				any_neighbor_province = {
+					trade_goods = timber
+					OR = {
+						has_province_modifier = low_immigration
+						has_province_modifier = medium_immigration
+						has_province_modifier = high_immigration
+						has_province_modifier = higher_immigration
+						has_province_modifier = extremely_high_immigration
+						has_province_modifier = highest_immigration
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 4
+			any_neighbor_province = {
+				trade_goods = timber
+				has_province_modifier = low_immigration
+			}
+			NOT = {
+				any_neighbor_province = {
+					trade_goods = timber
+					OR = {
+						has_province_modifier = medium_immigration
+						has_province_modifier = high_immigration
+						has_province_modifier = higher_immigration
+						has_province_modifier = extremely_high_immigration
+						has_province_modifier = highest_immigration
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			any_neighbor_province = {
+				trade_goods = timber
+				has_province_modifier = medium_immigration
+			}
+			NOT = {
+				any_neighbor_province = {
+					trade_goods = timber
+					OR = {
+						has_province_modifier = high_immigration
+						has_province_modifier = higher_immigration
+						has_province_modifier = extremely_high_immigration
+						has_province_modifier = highest_immigration
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			any_neighbor_province = {
+				trade_goods = timber
+				has_province_modifier = high_immigration
+			}
+			NOT = {
+				any_neighbor_province = {
+					trade_goods = timber
+					OR = {
+						has_province_modifier = higher_immigration
+						has_province_modifier = extremely_high_immigration
+						has_province_modifier = highest_immigration
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.13
+			any_neighbor_province = {
+				trade_goods = timber
+				has_province_modifier = higher_immigration
+			}
+			NOT = {
+				any_neighbor_province = {
+					trade_goods = timber
+					OR = {
+						has_province_modifier = extremely_high_immigration
+						has_province_modifier = highest_immigration
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.06
+			any_neighbor_province = {
+				trade_goods = timber
+				has_province_modifier = extremely_high_immigration
+			}
+			NOT = {
+				any_neighbor_province = {
+					trade_goods = timber
+					has_province_modifier = highest_immigration
+				}
+			}
+		}
+		modifier = {
+			factor = 0.03
+			any_neighbor_province = {
+				trade_goods = timber
+				has_province_modifier = highest_immigration
+			}
+		}
+	}
+	title = "EVTNAME2XX"
+	desc = "EVTDESC2XX"
+	option = {
+		name = "EVTOPTA2XX"
+		trade_goods = timber
+	}
+}
+province_event = {
+	id = 204
+	trigger = {
+		controlled_by = owner
 		OR = {
 			trade_goods = dye
 			trade_goods = silk
@@ -826,7 +1087,7 @@ province_event = {
 	}
 }
 province_event = {
-	id = 204
+	id = 205
 	trigger = {
 		controlled_by = owner
 		is_coastal = yes
@@ -1100,7 +1361,7 @@ province_event = {
 	}
 }
 province_event = {
-	id = 205
+	id = 206
 	trigger = {
 		controlled_by = owner
 		OR = {
@@ -1373,7 +1634,7 @@ province_event = {
 	}
 }
 province_event = {
-	id = 206
+	id = 207
 	trigger = {
 		controlled_by = owner
 		OR = {
@@ -1646,7 +1907,7 @@ province_event = {
 	}
 }
 province_event = {
-	id = 207
+	id = 208
 	trigger = {
 		controlled_by = owner
 		OR = {
@@ -1919,7 +2180,7 @@ province_event = {
 	}
 }
 province_event = {
-	id = 208
+	id = 209
 	trigger = {
 		controlled_by = owner
 		OR = {
@@ -2196,7 +2457,7 @@ province_event = {
 	}
 }
 province_event = {
-	id = 209
+	id = 210
 	trigger = {
 		controlled_by = owner
 		OR = {
@@ -2473,7 +2734,7 @@ province_event = {
 	}
 }
 province_event = {
-	id = 210
+	id = 211
 	trigger = {
 		controlled_by = owner
 		OR = {
@@ -2746,7 +3007,7 @@ province_event = {
 	}
 }
 province_event = {
-	id = 211
+	id = 212
 	trigger = {
 		controlled_by = owner
 		OR = {
@@ -3020,7 +3281,7 @@ province_event = {
 	}
 }
 province_event = {
-	id = 212
+	id = 213
 	trigger = {
 		controlled_by = owner
 		OR = {
@@ -3293,7 +3554,274 @@ province_event = {
 	}
 }
 province_event = {
-	id = 213
+	id = 214
+	trigger = {
+		controlled_by = owner
+		trade_goods = timber
+		unemployment_by_type = {
+			type = labourers
+			value = 0.4
+		}
+	}
+	mean_time_to_happen = {
+		months = 12000
+		modifier = {
+			factor = 0.5
+			unemployment_by_type = {
+				type = labourers
+				value = 0.5
+			}
+		}
+		modifier = {
+			factor = 0.5
+			unemployment_by_type = {
+				type = labourers
+				value = 0.6
+			}
+		}
+		modifier = {
+			factor = 0.5
+			unemployment_by_type = {
+				type = labourers
+				value = 0.7
+			}
+		}
+		modifier = {
+			factor = 0.5
+			unemployment_by_type = {
+				type = labourers
+				value = 0.8
+			}
+		}
+		modifier = {
+			factor = 0.5
+			unemployment_by_type = {
+				type = labourers
+				value = 0.9
+			}
+		}
+		modifier = {
+			factor = 0.5
+			unemployment_by_type = {
+				type = labourers
+				value = 1
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				freedom_of_trade = 1
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				market_structure = 1
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				business_regulations = 1
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				market_regulations = 1
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				economic_responsibility = 1
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				government_interventionism = 1
+			}
+		}
+		modifier = {
+			factor = 4
+			owner = {
+				economic_policy = planned_economy
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				economic_policy = state_capitalism
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				economic_policy = interventionism
+			}
+		}
+		modifier = {
+			factor = 0.25
+			owner = {
+				economic_policy = laissez_faire
+			}
+		}
+		modifier = {
+			factor = 256
+			NOT = {
+				any_neighbor_province = {
+					trade_goods = grain
+				}
+			}
+		}
+		modifier = {
+			factor = 64
+			any_neighbor_province = {
+				trade_goods = grain
+				has_province_modifier = extremely_low_immigration
+			}
+			NOT = {
+				any_neighbor_province = {
+					trade_goods = grain
+					OR = {
+						has_province_modifier = lower_immigration
+						has_province_modifier = low_immigration
+						has_province_modifier = medium_immigration
+						has_province_modifier = high_immigration
+						has_province_modifier = higher_immigration
+						has_province_modifier = extremely_high_immigration
+						has_province_modifier = highest_immigration
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 16
+			any_neighbor_province = {
+				trade_goods = grain
+				has_province_modifier = lower_immigration
+			}
+			NOT = {
+				any_neighbor_province = {
+					trade_goods = grain
+					OR = {
+						has_province_modifier = low_immigration
+						has_province_modifier = medium_immigration
+						has_province_modifier = high_immigration
+						has_province_modifier = higher_immigration
+						has_province_modifier = extremely_high_immigration
+						has_province_modifier = highest_immigration
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 4
+			any_neighbor_province = {
+				trade_goods = grain
+				has_province_modifier = low_immigration
+			}
+			NOT = {
+				any_neighbor_province = {
+					trade_goods = grain
+					OR = {
+						has_province_modifier = medium_immigration
+						has_province_modifier = high_immigration
+						has_province_modifier = higher_immigration
+						has_province_modifier = extremely_high_immigration
+						has_province_modifier = highest_immigration
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			any_neighbor_province = {
+				trade_goods = grain
+				has_province_modifier = medium_immigration
+			}
+			NOT = {
+				any_neighbor_province = {
+					trade_goods = grain
+					OR = {
+						has_province_modifier = high_immigration
+						has_province_modifier = higher_immigration
+						has_province_modifier = extremely_high_immigration
+						has_province_modifier = highest_immigration
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			any_neighbor_province = {
+				trade_goods = grain
+				has_province_modifier = high_immigration
+			}
+			NOT = {
+				any_neighbor_province = {
+					trade_goods = grain
+					OR = {
+						has_province_modifier = higher_immigration
+						has_province_modifier = extremely_high_immigration
+						has_province_modifier = highest_immigration
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.13
+			any_neighbor_province = {
+				trade_goods = grain
+				has_province_modifier = higher_immigration
+			}
+			NOT = {
+				any_neighbor_province = {
+					trade_goods = grain
+					OR = {
+						has_province_modifier = extremely_high_immigration
+						has_province_modifier = highest_immigration
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.06
+			any_neighbor_province = {
+				trade_goods = grain
+				has_province_modifier = extremely_high_immigration
+			}
+			NOT = {
+				any_neighbor_province = {
+					trade_goods = grain
+					has_province_modifier = highest_immigration
+				}
+			}
+		}
+		modifier = {
+			factor = 0.03
+			any_neighbor_province = {
+				trade_goods = grain
+				has_province_modifier = highest_immigration
+			}
+		}
+	}
+	title = "EVTNAME2XX"
+	desc = "EVTDESC2XX"
+	option = {
+		name = "EVTOPTA2XX"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+	}
+}
+province_event = {
+	id = 215
 	trigger = {
 		controlled_by = owner
 		OR = {
@@ -3563,7 +4091,7 @@ province_event = {
 	}
 }
 province_event = {
-	id = 214
+	id = 216
 	trigger = {
 		controlled_by = owner
 		OR = {
@@ -3831,7 +4359,7 @@ province_event = {
 	}
 }
 province_event = {
-	id = 215
+	id = 217
 	trigger = {
 		controlled_by = owner
 		OR = {
@@ -4100,7 +4628,7 @@ province_event = {
 	}
 }
 province_event = {
-	id = 216
+	id = 218
 	trigger = {
 		controlled_by = owner
 		OR = {
@@ -4388,7 +4916,7 @@ province_event = {
 	}
 }
 province_event = {
-	id = 217
+	id = 219
 	trigger = {
 		controlled_by = owner
 		OR = {
@@ -4683,7 +5211,7 @@ province_event = {
 	}
 }
 province_event = {
-	id = 218
+	id = 220
 	trigger = {
 		controlled_by = owner
 		OR = {
@@ -4953,7 +5481,7 @@ province_event = {
 	}
 }
 province_event = {
-	id = 219
+	id = 221
 	trigger = {
 		controlled_by = owner
 		OR = {

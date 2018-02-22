@@ -5,7 +5,7 @@
 #include <vector>
 
 int id = 200;
-std::ofstream out("goods_changes.txt");
+std::ofstream out("..\\events\\goods_changes.txt");
 std::vector<std::string> market_functionality_techs = {
     "freedom_of_trade",
     "market_structure",
@@ -15,8 +15,9 @@ std::vector<std::string> market_functionality_techs = {
     "government_interventionism"
 };
 
-void make(std::unordered_map<std::string, std::unordered_set<std::string>> products, std::string type) {
-    for (auto & current_product : products) {
+void make(const std::unordered_map<std::string, std::unordered_set<std::string>>& products,
+          const std::string& type, const std::string& special_product) {
+    for (const auto& current_product : products) {
         out << "province_event = {\n";
         out << "	id = " << ++id << "\n";
         out << "	trigger = {\n";
@@ -24,13 +25,17 @@ void make(std::unordered_map<std::string, std::unordered_set<std::string>> produ
         if (current_product.first == "fish") {
             out << "		is_coastal = yes\n";
         }
-        out << "		OR = {\n";
-        for (auto & product : products) {
-            if (product != current_product) {
-                out << "			trade_goods = " << product.first << "\n";
+        if (current_product.first != special_product) {
+            out << "		OR = {\n";
+            for (const auto& product : products) {
+                if (product.first != special_product && product.first != current_product.first) {
+                    out << "			trade_goods = " << product.first << "\n";
+                }
             }
+            out << "		}\n";
+        } else {
+            out << "		trade_goods = " << (type == "farmers" ? "grain" : "timber") << "\n";
         }
-        out << "		}\n";
         out << "		unemployment_by_type = {\n";
         out << "			type = " << type << "\n";
         out << "			value = 0.4\n";
@@ -81,7 +86,7 @@ void make(std::unordered_map<std::string, std::unordered_set<std::string>> produ
         }
         if (current_product.second.size()) {
             if (current_product.second.find("not") != current_product.second.end()) {
-                for (auto & continent : current_product.second) {
+                for (const auto& continent : current_product.second) {
                     if (continent != "not") {
                         out << "		NOT = { continent = " << continent << " }\n";
                     }
@@ -90,7 +95,7 @@ void make(std::unordered_map<std::string, std::unordered_set<std::string>> produ
                 out << "		continent = " << *(current_product.second.begin()) << "\n";
             } else {
                 out << "		OR = {\n";
-                for (auto & continent : current_product.second) {
+                for (const auto& continent : current_product.second) {
                     out << "			continent = " << continent << "\n";
                 }
                 out << "		}\n";
@@ -108,7 +113,7 @@ void make(std::unordered_map<std::string, std::unordered_set<std::string>> produ
             out << "			}\n";
             out << "		}\n";
         }
-        for (auto & tech : market_functionality_techs) {
+        for (const auto& tech : market_functionality_techs) {
             out << "		modifier = {\n";
             out << "			factor = 0.5\n";
             out << "			owner = {\n";
@@ -285,6 +290,14 @@ void make(std::unordered_map<std::string, std::unordered_set<std::string>> produ
         out << "	option = {\n";
         out << "		name = \"EVTOPTA2XX\"\n";
         out << "		trade_goods = " << current_product.first << "\n";
+        if (current_product.first == special_product && type == "labourers") {
+            out << "		any_pop = {\n";
+            out << "			limit = {\n";
+            out << "				type = labourers\n";
+            out << "			}\n";
+            out << "			pop_type = farmers\n";
+            out << "		}\n";
+        }
         out << "	}\n";
         out << "}\n";
     }
@@ -305,6 +318,7 @@ int main() {
     farmer_products["wool"] = {};
     farmer_products["silk"] = { "asia", "europe" };
     farmer_products["dye"] = { "asia", "north_america" };
+    farmer_products["timber"] = {};
     labourer_products["oil"] = { "not", "oceania" };
     labourer_products["rubber"] = { "africa", "asia", "south_america" };
     labourer_products["tropical_wood"] = { "not", "europe", "north_america" };
@@ -312,6 +326,7 @@ int main() {
     labourer_products["iron"] = { "not", "oceania" };
     labourer_products["sulphur"] = { "not", "oceania", "africa" };
     labourer_products["coal"] = {};
-    make(farmer_products, "farmers");
-    make(labourer_products, "labourers");
+    labourer_products["grain"] = {};
+    make(farmer_products, "farmers", "timber");
+    make(labourer_products, "labourers", "grain");
 }
