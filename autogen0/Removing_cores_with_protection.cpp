@@ -1,15 +1,21 @@
 #include <bits/stdc++.h>
+#include "rus_countries.h"
 using namespace std;
 int main() {
     ifstream c("hist_countries.txt");
     ifstream cult("cultures.txt");
+    ifstream rus("rus_text4.csv");
     //ofstream f("countries_information.txt");
     //ofstream f_obr("tag_narod.txt");
     //ofstream rc("removing_cores.txt");
-    ofstream pc("removing_cores.txt");
+    ofstream pc("..\\events\\removing_cores.txt");
+    ofstream loc("..\\localisation\\removing_cores.csv");
     //ofstream sc("removing_cores.txt");
     const string prim_cult = "primary_culture", way = "c:", leader = "leader", unit = "unit";
-    string s, s_old, tag, what_prim_cult, cur_cult_gr;
+    string s, s_old, tag, what_prim_cult, cur_cult_gr, loc1, loc2;
+    const unordered_map<string, string> rus_countries = GetRusCountries();
+    getline(rus, loc1);
+    getline(rus, loc2);
     vector<string> init;
     unordered_map<string, unordered_set<string>> dict, tag_narod;
     unordered_map<string, int> dict_sizes;
@@ -89,232 +95,43 @@ int main() {
     for (auto it = tag_narod.begin(); it != tag_narod.end(); ++it) {
 		 pc << "province_event = {\n";
 		 pc << "	id = " << ++id << "\n";
-		 pc << "	title = \"0\"\n";
-		 pc << "	desc = \"0\"\n";
+		 pc << "	title = \"REMOVING_CORE\"\n";
+		 pc << "	desc = \"EV" << id << "\"\n";
 		 pc << "	trigger = {\n";
 		 pc << "		is_core = " << it->first << "\n";
-        if ((it->second).size() == 1) {
-            pc << "\t\tNOT = { culture = " << (*((it->second).begin())) << " }\n";
-        } else {
-            pc << "\t\tNOT = {\n";
-            pc << "\t\t\tOR = {\n";
-            for (auto i = (it->second).begin(); i != (it->second).end(); ++i) {
-                pc << "\t\t\t\tculture = " << (*i) << '\n';
-            }
-            pc << "\t\t\t}\n";
-            pc << "\t\t}\n";
-        }
+		 const auto writeCultures = [&pc, &it](const string& tab) {
+             if ((it->second).size() == 1) {
+                 pc << tab << "NOT = { culture = " << (*((it->second).begin())) << " }\n";
+             } else {
+                 pc << tab << "NOT = {\n";
+                 pc << tab << "\tOR = {\n";
+                 for (auto i = (it->second).begin(); i != (it->second).end(); ++i) {
+                     pc << tab << "\t\tculture = " << (*i) << '\n';
+                 }
+                 pc << tab << "\t}\n";
+                 pc << tab << "}\n";
+             }
+		 };
+		 writeCultures("\t\t");
 		 pc << "		" << it->first << " = { exists = no }\n";
-		 /*pc << "		NOT = { has_province_flag = protected }\n";
-		 pc << "		NOT = {\n";
-		 pc << "			any_neighbor_province = {\n";
-		 pc << "			    has_province_flag = protected\n";
-		 pc << "			}\n";
-		 pc << "		}\n";*/
 		 pc << "		OR = {\n";
+		 pc << "			port = yes\n";
 		 pc << "			any_neighbor_province = {\n";
-		 pc << "				NOT = { is_core = " << it->first << " }\n";
-		 pc << "			}\n";
-		 pc << "			NOT = {\n";
-		 pc << "				any_neighbor_province = {\n";
-        if ((it->second).size() == 1) {
-            pc << "\t\t\t\t\tculture = " << (*((it->second).begin())) << "\n";
-        } else {
-            pc << "\t\t\t\t\tOR = {\n";
-            for (auto i = (it->second).begin(); i != (it->second).end(); ++i) {
-                pc << "\t\t\t\t\t\tculture = " << (*i) << '\n';
-            }
-            pc << "\t\t\t\t\t}\n";
-        }
+		 pc << "				AND = {\n";
+		 pc << "					NOT = { is_core = " << it->first << " }\n";
+		 writeCultures("\t\t\t\t\t");
 		 pc << "				}\n";
 		 pc << "			}\n";
 		 pc << "		}\n";
-		 pc << "		owner = { AI = yes }\n";
 		 pc << "	}\n";
 		 pc << "	mean_time_to_happen = {\n";
-		 pc << "		months = 1\n";
-		 pc << "	}\n";
-		 pc << "	immediate = {\n";
-		 /*pc << "		any_neighbor_province = {\n";
-		 pc << "			set_province_flag = protected\n";
-		 pc << "		}\n";*/
-		 pc << "		random_neighbor_province = {\n";
-		 pc << "			limit = {\n";
-		 pc << "				is_core = " << it->first << "\n";
-		 pc << "			}\n";
-		 pc << "			set_province_flag = " << it->first << "counted\n";
-		 pc << "		}\n";
-		 pc << "		random_neighbor_province = {\n";
-		 pc << "			limit = {\n";
-		 pc << "				is_core = " << it->first << "\n";
-		 pc << "				NOT = { has_province_flag = " << it->first << "counted }\n";
-		 pc << "			}\n";
-		 pc << "			set_province_flag = " << it->first << "counted\n";
-		 pc << "		}\n";
-		 pc << "		random_neighbor_province = {\n";
-		 pc << "			limit = {\n";
-		 pc << "				is_core = " << it->first << "\n";
-		 pc << "				NOT = { has_province_flag = " << it->first << "counted }\n";
-		 pc << "			}\n";
-		 pc << "			set_province_flag = " << it->first << "three_cores\n";
-		 pc << "		}\n";
-		 pc << "		any_neighbor_province = {\n";
-		 pc << "			clr_province_flag = " << it->first << "counted\n";
-		 pc << "		}\n";
+		 pc << "		months = 1200\n";
 		 pc << "	}\n";
 		 pc << "	option = {\n";
-		 pc << "		name = \"1\"\n";
+		 pc << "		name = \"OK\"\n";
 		 pc << "		remove_core = " << it->first << "\n";
-		 pc << "		ai_chance = {\n";
-		 pc << "			factor = 100\n";
-		 pc << "			modifier = {\n";
-		 pc << "				factor = 0.01\n";
-		 pc << "				any_neighbor_province = {\n";
-		 pc << "					has_province_flag = " << it->first << "three_cores\n";
-		 pc << "				}\n";
-		 pc << "			}\n";
-		 pc << "			modifier = {\n";
-		 pc << "				factor = 100\n";
-		 pc << "				NOT = {\n";
-		 pc << "					any_neighbor_province = {\n";
-		 pc << "						is_core = " << it->first << "\n";
-		 pc << "					}\n";
-		 pc << "				}\n";
-		 pc << "			}\n";
-		 pc << "			modifier = {\n";
-		 pc << "				factor = 100\n";
-		 pc << "				NOT = {\n";
-		 pc << "					any_neighbor_province = {\n";
-        if ((it->second).size() == 1) {
-            pc << "\t\t\t\t\t\tculture = " << (*((it->second).begin())) << "\n";
-        } else {
-            pc << "\t\t\t\t\t\tOR = {\n";
-            for (auto i = (it->second).begin(); i != (it->second).end(); ++i) {
-                pc << "\t\t\t\t\t\t\tculture = " << (*i) << '\n';
-            }
-            pc << "\t\t\t\t\t\t}\n";
-        }
-		 pc << "					}\n";
-		 pc << "				}\n";
-		 pc << "			}\n";
-		 pc << "		}\n";
-		 pc << "	}\n";
-		 pc << "	option = {\n";
-		 pc << "		name = \"2\"\n";
-		 pc << "		any_neighbor_province = {\n";
-		 pc << "			clr_province_flag = " << it->first << "three_cores\n";
-		 pc << "		}\n";
-		 pc << "		ai_chance = {\n";
-		 pc << "			factor = 100\n";
-		 pc << "			modifier = {\n";
-		 pc << "				factor = 0.01\n";
-		 pc << "				NOT = {\n";
-		 pc << "					any_neighbor_province = {\n";
-		 pc << "						has_province_flag = " << it->first << "three_cores\n";
-		 pc << "					}\n";
-		 pc << "				}\n";
-		 pc << "			}\n";
-		 pc << "		}\n";
 		 pc << "	}\n";
 		 pc << "}\n";
+		 loc << "EV" << id << ';' << loc1 << "$PROVINCENAME$" << loc2 << rus_countries.at(it->first) << ".;X\n";
     }
-
-    /*char tag[4], musor[100], put[100];
-    int s = 1472073;
-    FILE *f, *c;
-    c = fopen("hist_countries.txt", "r");
-    f = fopen("countries_information.txt", "w");
-
-    while (fgets(tag, 4, c)) {
-
-    fprintf(f, "country_event = {\n");
-    fprintf(f, "	id = %d\n", s);
-    ++s;
-    fprintf(f, "	title = \"0\"\n");
-    fprintf(f, "	desc = \"0\"\n");
-    fprintf(f, "	picture = \"greatpowers\"\n");
-    fprintf(f, "	trigger = {\n");
-    fprintf(f, "		tag = %s\n", tag);
-    fprintf(f, "		AI = yes\n");
-    fprintf(f, "		OR = {\n");
-    fprintf(f, "			total_pops = 1000000\n");
-    fprintf(f, "			AND = {\n");
-    fprintf(f, "				military_score = 1\n");
-    fprintf(f, "				is_independant = yes\n");
-    fprintf(f, "				rank = 100\n");
-    fprintf(f, "			}\n");
-    fprintf(f, "		}\n");
-    fprintf(f, "	}\n");
-    fprintf(f, "	mean_time_to_happen = {\n");
-    fprintf(f, "		months = 1200\n");
-
-    fprintf(f, "		modifier = {\n");
-    fprintf(f, "			factor = 0.9\n");
-    fprintf(f, "			OR = {\n");
-    fprintf(f, "				tag = RUS\n");
-    fprintf(f, "				tag = SOV\n");
-    fprintf(f, "			}\n");
-    fprintf(f, "		}\n");
-
-    fprintf(f, "		modifier = {\n");
-    fprintf(f, "			factor = 0.95\n");
-    fprintf(f, "			civilized = yes\n");
-    fprintf(f, "		}\n");
-
-    fprintf(f, "		modifier = {\n");
-    fprintf(f, "			factor = 0.95\n");
-    fprintf(f, "			rank = 16\n");
-    fprintf(f, "		}\n");
-
-    fprintf(f, "		modifier = {\n");
-    fprintf(f, "			factor = 0.95\n");
-    fprintf(f, "			is_greater_power = yes\n");
-    fprintf(f, "		}\n");
-
-    fprintf(f, "		modifier = {\n");
-    fprintf(f, "			factor = 0.95\n");
-    fprintf(f, "			industrial_score = 100\n");
-    fprintf(f, "		}\n");
-
-    fprintf(f, "		modifier = {\n");
-    fprintf(f, "			factor = 0.95\n");
-    fprintf(f, "			industrial_score = 1000\n");
-    fprintf(f, "		}\n");
-    fprintf(f, "	}\n");
-    fprintf(f, "	option = {\n");
-    fprintf(f, "		name = \"0\"\n");
-    fprintf(f, "		random_country = {\n");
-    fprintf(f, "			limit = {\n");
-    fprintf(f, "				AI = no\n");
-    fprintf(f, "			}\n");
-    fprintf(f, "			country_event = { id=%d days=0 }\n", s);
-    fprintf(f, "		}\n");
-    fprintf(f, "	}\n");
-    fprintf(f, "}\n\n");
-
-
-
-
-    fprintf(f, "country_event = {\n");
-    fprintf(f, "	id = %d\n", s);
-    ++s;
-    fprintf(f, "	title = \"CHANGE_YOUR_WORK\"\n");
-    fprintf(f, "	desc = \"CHANGE_YOUR_WORK_desk\"\n");
-    fprintf(f, "	picture = \"Celebration\"\n");
-
-    fprintf(f, "	is_triggered_only = yes\n");
-
-    fprintf(f, "	option = {\n");
-    fprintf(f, "		name = \"CHANGE_YOUR_WORK_ok\"\n");
-    fprintf(f, "		change_tag_no_core_switch = %s\n", tag);
-    fprintf(f, "	}\n");
-    fprintf(f, "}\n\n");
-
-    fgets(musor, 100, c);
-
-    }
-
-
-
-    fclose(f);*/
 }
