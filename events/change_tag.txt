@@ -45,6 +45,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -144,6 +152,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -245,6 +261,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -344,6 +368,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -445,6 +477,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -544,6 +584,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -645,6 +693,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -744,6 +800,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -845,6 +909,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -944,6 +1016,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -1045,6 +1125,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -1144,6 +1232,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -1245,6 +1341,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -1344,6 +1448,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -1445,6 +1557,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -1544,6 +1664,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -1645,6 +1773,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -1744,6 +1880,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -1845,6 +1989,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -1944,6 +2096,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -2045,6 +2205,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -2144,6 +2312,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -2245,6 +2421,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -2344,6 +2528,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -2445,6 +2637,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -2544,6 +2744,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -2645,6 +2853,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -2744,6 +2960,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -2845,6 +3069,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -2944,6 +3176,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -3045,6 +3285,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -3144,6 +3392,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -3245,6 +3501,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -3344,6 +3608,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -3445,6 +3717,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -3544,6 +3824,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -3645,6 +3933,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -3744,6 +4040,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -3845,6 +4149,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -3944,6 +4256,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -4045,6 +4365,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -4144,6 +4472,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -4245,6 +4581,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -4344,6 +4688,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -4445,6 +4797,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -4544,6 +4904,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -4645,6 +5013,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -4744,6 +5120,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -4845,6 +5229,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -4944,6 +5336,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -5045,6 +5445,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -5144,6 +5552,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -5245,6 +5661,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -5344,6 +5768,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -5445,6 +5877,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -5544,6 +5984,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -5645,6 +6093,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -5744,6 +6200,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -5845,6 +6309,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -5944,6 +6416,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -6045,6 +6525,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -6144,6 +6632,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -6245,6 +6741,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -6344,6 +6848,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -6445,6 +6957,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -6544,6 +7064,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -6645,6 +7173,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -6744,6 +7280,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -6845,6 +7389,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -6944,6 +7496,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -7045,6 +7605,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -7144,6 +7712,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -7245,6 +7821,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -7344,6 +7928,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -7445,6 +8037,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -7544,6 +8144,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -7645,6 +8253,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -7744,6 +8360,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -7845,6 +8469,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -7944,6 +8576,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -8045,6 +8685,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -8144,6 +8792,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -8245,6 +8901,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -8344,6 +9008,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -8445,6 +9117,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -8544,6 +9224,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -8645,6 +9333,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -8744,6 +9440,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -8845,6 +9549,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -8944,6 +9656,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -9045,6 +9765,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -9144,6 +9872,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -9245,6 +9981,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -9344,6 +10088,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -9445,6 +10197,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -9544,6 +10304,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -9645,6 +10413,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -9744,6 +10520,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -9845,6 +10629,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -9944,6 +10736,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -10045,6 +10845,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -10144,6 +10952,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -10245,6 +11061,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -10344,6 +11168,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -10445,6 +11277,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -10544,6 +11384,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -10645,6 +11493,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -10744,6 +11600,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -10845,6 +11709,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -10944,6 +11816,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -11045,6 +11925,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -11144,6 +12032,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -11245,6 +12141,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -11344,6 +12248,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -11445,6 +12357,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -11544,6 +12464,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -11645,6 +12573,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -11744,6 +12680,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -11845,6 +12789,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -11944,6 +12896,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -12045,6 +13005,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -12144,6 +13112,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -12245,6 +13221,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -12344,6 +13328,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -12445,6 +13437,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -12544,6 +13544,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -12645,6 +13653,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -12744,6 +13760,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -12845,6 +13869,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -12944,6 +13976,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -13045,6 +14085,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -13144,6 +14192,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -13245,6 +14301,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -13344,6 +14408,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -13445,6 +14517,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -13544,6 +14624,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -13645,6 +14733,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -13744,6 +14840,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -13845,6 +14949,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -13944,6 +15056,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -14045,6 +15165,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -14144,6 +15272,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -14245,6 +15381,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -14344,6 +15488,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -14445,6 +15597,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -14544,6 +15704,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -14645,6 +15813,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -14744,6 +15920,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -14845,6 +16029,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -14944,6 +16136,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -15045,6 +16245,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -15144,6 +16352,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -15245,6 +16461,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -15344,6 +16568,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -15445,6 +16677,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -15544,6 +16784,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -15645,6 +16893,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -15744,6 +17000,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -15845,6 +17109,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -15944,6 +17216,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -16045,6 +17325,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -16144,6 +17432,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -16245,6 +17541,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -16344,6 +17648,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -16445,6 +17757,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -16544,6 +17864,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -16645,6 +17973,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -16744,6 +18080,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -16845,6 +18189,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -16944,6 +18296,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -17045,6 +18405,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -17144,6 +18512,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -17245,6 +18621,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -17344,6 +18728,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -17445,6 +18837,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -17544,6 +18944,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -17645,6 +19053,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -17744,6 +19160,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -17845,6 +19269,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -17944,6 +19376,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -18045,6 +19485,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -18144,6 +19592,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -18245,6 +19701,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -18344,6 +19808,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -18445,6 +19917,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -18544,6 +20024,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -18645,6 +20133,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -18744,6 +20240,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -18845,6 +20349,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -18944,6 +20456,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -19045,6 +20565,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -19144,6 +20672,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -19245,6 +20781,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -19344,6 +20888,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -19445,6 +20997,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -19544,6 +21104,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -19645,6 +21213,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -19744,6 +21320,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -19845,6 +21429,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -19944,6 +21536,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -20045,6 +21645,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -20144,6 +21752,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -20245,6 +21861,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -20344,6 +21968,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -20445,6 +22077,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -20544,6 +22184,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -20645,6 +22293,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -20744,6 +22400,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -20845,6 +22509,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -20944,6 +22616,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -21045,6 +22725,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -21144,6 +22832,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -21245,6 +22941,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -21344,6 +23048,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -21445,6 +23157,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -21544,6 +23264,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -21645,6 +23373,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -21744,6 +23480,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -21845,6 +23589,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -21944,6 +23696,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -22045,6 +23805,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -22144,6 +23912,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -22245,6 +24021,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -22344,6 +24128,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -22445,6 +24237,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -22544,6 +24344,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -22645,6 +24453,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -22744,6 +24560,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -22845,6 +24669,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -22944,6 +24776,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -23045,6 +24885,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -23144,6 +24992,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -23245,6 +25101,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -23344,6 +25208,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -23445,6 +25317,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -23544,6 +25424,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -23645,6 +25533,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -23744,6 +25640,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -23845,6 +25749,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -23944,6 +25856,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -24045,6 +25965,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -24144,6 +26072,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -24245,6 +26181,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -24344,6 +26288,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -24445,6 +26397,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -24544,6 +26504,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -24645,6 +26613,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -24744,6 +26720,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -24845,6 +26829,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -24944,6 +26936,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -25045,6 +27045,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -25144,6 +27152,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -25245,6 +27261,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -25344,6 +27368,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -25445,6 +27477,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -25544,6 +27584,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -25645,6 +27693,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -25744,6 +27800,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -25845,6 +27909,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -25944,6 +28016,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -26045,6 +28125,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -26144,6 +28232,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -26245,6 +28341,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -26344,6 +28448,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -26445,6 +28557,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -26544,6 +28664,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -26645,6 +28773,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -26744,6 +28880,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -26845,6 +28989,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -26944,6 +29096,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -27045,6 +29205,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -27144,6 +29312,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -27245,6 +29421,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -27344,6 +29528,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -27445,6 +29637,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -27544,6 +29744,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -27645,6 +29853,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -27744,6 +29960,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -27845,6 +30069,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -27944,6 +30176,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -28045,6 +30285,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -28144,6 +30392,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -28245,6 +30501,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -28344,6 +30608,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -28445,6 +30717,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -28544,6 +30824,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {
@@ -28645,6 +30933,14 @@ country_event = {
 			factor = 0.95
 			industrial_score = 1000
 		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
+		}
 	}
 	option = {
 		name = "0"
@@ -28744,6 +31040,14 @@ country_event = {
 		modifier = {
 			factor = 0.95
 			industrial_score = 1000
+		}
+		modifier = {
+			factor = 0.1
+			government = proletarian_dictatorship
+		}
+		modifier = {
+			factor = 10
+			government = fascist_dictatorship
 		}
 	}
 	option = {

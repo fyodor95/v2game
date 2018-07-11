@@ -5,7 +5,7 @@ int main() {
     int s = 1472073;
     FILE *f, *c;
     c = fopen("countries.txt", "r");
-    f = fopen("change_tag.txt", "w");
+    f = fopen("..\\events\\change_tag.txt", "w");
 
     while (fgets(tag, 4, c)) {
 
@@ -62,6 +62,16 @@ int main() {
     fprintf(f, "		modifier = {\n");
     fprintf(f, "			factor = 0.95\n");
     fprintf(f, "			industrial_score = 1000\n");
+    fprintf(f, "		}\n");
+
+    fprintf(f, "		modifier = {\n");
+    fprintf(f, "			factor = 0.1\n");
+    fprintf(f, "			government = proletarian_dictatorship\n");
+    fprintf(f, "		}\n");
+
+    fprintf(f, "		modifier = {\n");
+    fprintf(f, "			factor = 10\n");
+    fprintf(f, "			government = fascist_dictatorship\n");
     fprintf(f, "		}\n");
     fprintf(f, "	}\n");
     fprintf(f, "	option = {\n");
