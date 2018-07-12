@@ -1134,7 +1134,7 @@ ideologies = {
 	}
 
 	socialist = {
-		factor = 1
+		factor = 4
 		modifier = {
 			factor = 1.1
 			nationalvalue = nv_equality
@@ -1225,21 +1225,45 @@ ideologies = {
 			}
 		}
 		modifier = {
-			factor = 1.05
+			factor = 1.4
 			consciousness = 9 
 		}
 		modifier = {
-			factor = 1.05
+			factor = 1.4
 			consciousness = 8
 		}
 		modifier = {
-			factor = 1.05
+			factor = 1.4
 			consciousness = 7
+		}
+		modifier = {
+			factor = 1.4
+			consciousness = 6
+		}
+		modifier = {
+			factor = 1.4
+			consciousness = 5
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { consciousness = 4 }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { consciousness = 3 }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { consciousness = 2 }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { consciousness = 1 }
 		}
 	}
 
 	communist = {
-		factor = 1
+		factor = 4
 		modifier = {
 			factor = 0.1
 			NOT = { militancy = 6 }
@@ -1287,6 +1311,42 @@ ideologies = {
 		modifier = {
 			factor = 1.1
 			social_reform_want = 1
+		}
+		modifier = {
+			factor = 1.4
+			consciousness = 9 
+		}
+		modifier = {
+			factor = 1.4
+			consciousness = 8
+		}
+		modifier = {
+			factor = 1.4
+			consciousness = 7
+		}
+		modifier = {
+			factor = 1.4
+			consciousness = 6
+		}
+		modifier = {
+			factor = 1.4
+			consciousness = 5
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { consciousness = 4 }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { consciousness = 3 }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { consciousness = 2 }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { consciousness = 1 }
 		}
 	}
 	liberal = {
