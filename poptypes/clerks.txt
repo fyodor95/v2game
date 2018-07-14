@@ -1260,6 +1260,14 @@ ideologies = {
 			factor = 0.7
 			NOT = { consciousness = 1 }
 		}
+		modifier = {
+			factor = 2
+			location = { total_pops = 500000 }
+		}
+		modifier = {
+			factor = 2
+			location = { total_pops = 1000000 }
+		}
 	}
 
 	communist = {
@@ -1347,6 +1355,22 @@ ideologies = {
 		modifier = {
 			factor = 0.7
 			NOT = { consciousness = 1 }
+		}
+		modifier = {
+			factor = 2
+			location = { total_pops = 500000 }
+		}
+		modifier = {
+			factor = 2
+			location = { total_pops = 1000000 }
+		}
+		modifier = {
+			factor = 2
+			location = { total_pops = 2000000 }
+		}
+		modifier = {
+			factor = 2
+			location = { total_pops = 4000000 }
 		}
 	}
 	liberal = {
