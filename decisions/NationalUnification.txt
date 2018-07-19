@@ -756,21 +756,33 @@ unite_moldavia_wallachia = {
 			NOT = { tag = SOV }
 			NOT = { tag = NZL }
 			AST = { exists = no }
-			capital_scope = { continent = oceania }
+			capital_scope = {
+				AND = {
+					continent = oceania
+					NOT = {
+						OR = {
+							province_id = 2503
+							province_id = 2505
+							province_id = 2601
+							province_id = 2603
+							province_id = 2507
+							province_id = 2495
+							province_id = 2490
+						}
+					}
+				}
+			}
+			2503 = { empty = no }
+			2505 = { empty = no }
+			2601 = { empty = no }
+			2603 = { empty = no }
+			2507 = { empty = no }
+			2495 = { empty = no }
+			2490 = { empty = no }
 		}
 
 		allow = {
 			war = no
-			NOT = {
-				ENG_2497 = {
-					NOT = { owned_by = THIS }
-				}
-			}
-			NOT = {
-				ENG_2505 = {
-					NOT = { owned_by = THIS }
-				}
-			}
 			NOT = {
 				ENG_2468 = {
 					NOT = { province_id = 2508 }
@@ -780,16 +792,6 @@ unite_moldavia_wallachia = {
 			NOT = {
 				ENG_2476 = {
 					NOT = { province_id = 2482 }
-					NOT = { owned_by = THIS }
-				}
-			}
-			NOT = {
-				ENG_2483 = {
-					NOT = { owned_by = THIS }
-				}
-			}
-			NOT = {
-				ENG_2491 = {
 					NOT = { owned_by = THIS }
 				}
 			}
@@ -825,6 +827,17 @@ unite_moldavia_wallachia = {
 			primary_culture = australian
 			capital_scope = {
 				assimilate = yes
+			}
+			any_neighbor_country = {
+				limit = {
+					capital_scope = { continent = oceania }
+				}
+				inherit = AST
+			}
+			any_owned = {
+				any_neighbor_province = {
+					secede_province = AST
+				}
 			}
 		}
 
