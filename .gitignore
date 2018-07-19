@@ -1,3 +1,4 @@
 autogen?/*.exe
 autogen?/*.o
 Screenshots/
+/autogen1/provinces
