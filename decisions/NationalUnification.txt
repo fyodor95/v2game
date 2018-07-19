@@ -753,6 +753,7 @@ unite_moldavia_wallachia = {
 	}
 	form_Australia = {
 		potential = {
+			NOT = { has_global_flag = australia_was_formed }
 			NOT = { tag = SOV }
 			NOT = { tag = NZL }
 			AST = { exists = no }
@@ -762,7 +763,7 @@ unite_moldavia_wallachia = {
 					NOT = {
 						OR = {
 							province_id = 2503
-							province_id = 2505
+							province_id = 2605
 							province_id = 2601
 							province_id = 2603
 							province_id = 2507
@@ -773,7 +774,7 @@ unite_moldavia_wallachia = {
 				}
 			}
 			2503 = { empty = no }
-			2505 = { empty = no }
+			2605 = { empty = no }
 			2601 = { empty = no }
 			2603 = { empty = no }
 			2507 = { empty = no }
@@ -839,6 +840,62 @@ unite_moldavia_wallachia = {
 					secede_province = AST
 				}
 			}
+			set_global_flag = australia_was_formed
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_Australia2 = {
+		potential = {
+			NOT = { has_global_flag = australia_was_formed }
+			NOT = { tag = SOV }
+			NOT = { tag = NZL }
+			tag = AST
+			2503 = { empty = no }
+			2605 = { empty = no }
+			2601 = { empty = no }
+			2603 = { empty = no }
+			2507 = { empty = no }
+			2495 = { empty = no }
+			2490 = { empty = no }
+		}
+
+		allow = {
+			war = no
+		}
+
+		effect = {
+			prestige = 20
+			ENG_2497 = {
+				add_core = AST
+				secede_province = AST
+			}
+			ENG_2505 = {
+				add_core = AST
+				secede_province = AST
+			}
+			ENG_2468 = {
+				add_core = AST
+				secede_province = AST
+			}
+			ENG_2476 = {
+				add_core = AST
+				secede_province = AST
+			}
+			ENG_2483 = {
+				add_core = AST
+				secede_province = AST
+			}
+			ENG_2491 = {
+				add_core = AST
+				secede_province = AST
+			}
+			capital_scope = {
+				assimilate = yes
+			}
+			set_global_flag = australia_was_formed
 		}
 
 		ai_will_do = {
