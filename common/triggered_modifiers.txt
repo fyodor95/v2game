@@ -122,7 +122,7 @@ extremely_low_cost_of_production = {
 			}
 		}
 	}
-	global_immigrant_attract = -0.2
+	global_immigrant_attract = -2
 }
 ##################### -3 ################################################## -3 #############################
 lowest_cost_of_production = {
@@ -352,7 +352,7 @@ lowest_cost_of_production = {
 			}
 		}
 	}
-	global_immigrant_attract = -0.15
+	global_immigrant_attract = -1.5
 }
 ##################### -2 ################################################## -2 #############################
 lower_cost_of_production = {
@@ -684,7 +684,7 @@ lower_cost_of_production = {
 			}
 		}
 	}
-	global_immigrant_attract = -0.1
+	global_immigrant_attract = -1
 }
 ##################### -1 ################################################## -1 #############################
 low_cost_of_production = {
@@ -1076,7 +1076,7 @@ low_cost_of_production = {
 			}
 		}
 	}
-	global_immigrant_attract = -0.05
+	global_immigrant_attract = -0.5
 }
 ##################### 0 ################################################## 0 #############################
 medium_cost_of_production = {
@@ -1488,7 +1488,7 @@ medium_cost_of_production = {
 			}
 		}
 	}
-	global_immigrant_attract = 0.05
+	global_immigrant_attract = 0.5
 }
 ##################### +1 ################################################## +1 #############################
 high_cost_of_production = {
@@ -1900,7 +1900,7 @@ high_cost_of_production = {
 			}
 		}
 	}
-	global_immigrant_attract = 0.15
+	global_immigrant_attract = 1.5
 }
 ##################### +2 ################################################## +2 #############################
 higher_cost_of_production = {
@@ -2553,7 +2553,7 @@ higher_cost_of_production = {
 			}
 		}
 	}
-	global_immigrant_attract = 0.25
+	global_immigrant_attract = 2.5
 }
 ##################### +3 ################################################## +3 #############################
 ##################### +3 ################################################## +3 #############################
@@ -3607,7 +3607,7 @@ veryhigh_cost_of_production = {
 			}
 		}
 	}
-	global_immigrant_attract = 0.35
+	global_immigrant_attract = 3.5
 }
 ##################### +4 ################################################## +4 #############################
 ##################### +4 ################################################## +4 #############################
@@ -4737,7 +4737,7 @@ highest_cost_of_production = {
 			}
 		}
 	}
-	global_immigrant_attract = 0.5
+	global_immigrant_attract = 5
 }
 ##################### +5 ################################################## +5 #############################
 ##################### +5 ################################################## +5 #############################
@@ -5475,7 +5475,7 @@ extremely_high_cost_of_production = {
 			}
 		}
 	}
-	global_immigrant_attract = 0.75
+	global_immigrant_attract = 7.5
 	global_assimilation_rate = 0.1
 }
 social_reformed_nation = {
@@ -5555,366 +5555,54 @@ num_of_pops_modifier_200 = {
 		total_pops = 20000000
 		civilized = yes
 	}
-	global_immigrant_attract = 0.8
-}
-num_of_pops_modifier_190 = {
-	trigger = {
-		total_pops = 19000000
-		NOT = { total_pops = 20000000 }
-		civilized = yes
-	}
-	global_immigrant_attract = 0.79
-}
-num_of_pops_modifier_180 = {
-	trigger = {
-		total_pops = 18000000
-		NOT = { total_pops = 19000000 }
-		civilized = yes
-	}
-	global_immigrant_attract = 0.78
-}
-num_of_pops_modifier_170 = {
-	trigger = {
-		total_pops = 17000000
-		NOT = { total_pops = 18000000 }
-		civilized = yes
-	}
-	global_immigrant_attract = 0.76
+	global_immigrant_attract = 8
 }
 num_of_pops_modifier_160 = {
 	trigger = {
 		total_pops = 16000000
-		NOT = { total_pops = 17000000 }
+		NOT = { total_pops = 20000000 }
 		civilized = yes
 	}
-	global_immigrant_attract = 0.75
-}
-num_of_pops_modifier_150 = {
-	trigger = {
-		total_pops = 15000000
-		NOT = { total_pops = 16000000 }
-		civilized = yes
-	}
-	global_immigrant_attract = 0.73
-}
-num_of_pops_modifier_140 = {
-	trigger = {
-		total_pops = 14000000
-		NOT = { total_pops = 15000000 }
-		civilized = yes
-	}
-	global_immigrant_attract = 0.71
-}
-num_of_pops_modifier_130 = {
-	trigger = {
-		total_pops = 13000000
-		NOT = { total_pops = 14000000 }
-		civilized = yes
-	}
-	global_immigrant_attract = 0.69
+	global_immigrant_attract = 7.2
 }
 num_of_pops_modifier_120 = {
 	trigger = {
 		total_pops = 12000000
-		NOT = { total_pops = 13000000 }
+		NOT = { total_pops = 16000000 }
 		civilized = yes
 	}
-	global_immigrant_attract = 0.67
-}
-num_of_pops_modifier_110 = {
-	trigger = {
-		total_pops = 11000000
-		NOT = { total_pops = 12000000 }
-		civilized = yes
-	}
-	global_immigrant_attract = 0.64
-}
-num_of_pops_modifier_100 = {
-	trigger = {
-		total_pops = 10000000
-		NOT = { total_pops = 11000000 }
-		civilized = yes
-	}
-	global_immigrant_attract = 0.6
-}
-num_of_pops_modifier_90 = {
-	trigger = {
-		total_pops = 9000000
-		NOT = { total_pops = 10000000 }
-		civilized = yes
-	}
-	global_immigrant_attract = 0.56
+	global_immigrant_attract = 6.4
 }
 num_of_pops_modifier_81 = {
 	trigger = {
 		total_pops = 8100000
-		NOT = { total_pops = 9000000 }
+		NOT = { total_pops = 12000000 }
 		civilized = yes
 	}
-	global_immigrant_attract = 0.51
-}
-num_of_pops_modifier_73 = {
-	trigger = {
-		total_pops = 7300000
-		NOT = { total_pops = 8100000 }
-		civilized = yes
-	}
-	global_immigrant_attract = 0.45
-}
-num_of_pops_modifier_66 = {
-	trigger = {
-		total_pops = 6600000
-		NOT = { total_pops = 7300000 }
-		civilized = yes
-	}
-	global_immigrant_attract = 0.39
-}
-num_of_pops_modifier_60 = {
-	trigger = {
-		total_pops = 6000000
-		NOT = { total_pops = 6600000 }
-		civilized = yes
-	}
-	global_immigrant_attract = 0.33
-}
-num_of_pops_modifier_54 = {
-	trigger = {
-		total_pops = 5400000
-		NOT = { total_pops = 6000000 }
-		civilized = yes
-	}
-	global_immigrant_attract = 0.26
+	global_immigrant_attract = 5.6
 }
 num_of_pops_modifier_49 = {
 	trigger = {
 		total_pops = 4900000
-		NOT = { total_pops = 5400000 }
+		NOT = { total_pops = 8100000 }
 		civilized = yes
 	}
-	global_immigrant_attract = 0.18
-}
-num_of_pops_modifier_45 = {
-	trigger = {
-		total_pops = 4500000
-		NOT = { total_pops = 4900000 }
-		civilized = yes
-	}
-	global_immigrant_attract = 0.11
-}
-num_of_pops_modifier_41 = {
-	trigger = {
-		total_pops = 4100000
-		NOT = { total_pops = 4500000 }
-		civilized = yes
-	}
-	global_immigrant_attract = 0.02
-}
-num_of_pops_modifier_37 = {
-	trigger = {
-		total_pops = 3700000
-		NOT = { total_pops = 4100000 }
-		civilized = yes
-	}
-	global_immigrant_attract = -0.08
-}
-num_of_pops_modifier_34 = {
-	trigger = {
-		total_pops = 3400000
-		NOT = { total_pops = 3700000 }
-		civilized = yes
-	}
-	global_immigrant_attract = -0.18
-}
-num_of_pops_modifier_31 = {
-	trigger = {
-		total_pops = 3100000
-		NOT = { total_pops = 3400000 }
-		civilized = yes
-	}
-	global_immigrant_attract = -0.29
-}
-num_of_pops_modifier_28 = {
-	trigger = {
-		total_pops = 2800000
-		NOT = { total_pops = 3100000 }
-		civilized = yes
-	}
-	global_immigrant_attract = -0.43
-}
-num_of_pops_modifier_26 = {
-	trigger = {
-		total_pops = 2600000
-		NOT = { total_pops = 2800000 }
-		civilized = yes
-	}
-	global_immigrant_attract = -0.54
+	global_immigrant_attract = 5
 }
 num_of_pops_modifier_24 = {
 	trigger = {
 		total_pops = 2400000
-		NOT = { total_pops = 2600000 }
+		NOT = { total_pops = 4900000 }
 		civilized = yes
 	}
-	global_immigrant_attract = -0.67
-}
-num_of_pops_modifier_22 = {
-	trigger = {
-		total_pops = 2200000
-		NOT = { total_pops = 2400000 }
-		civilized = yes
-	}
-	global_immigrant_attract = -0.82
-}
-num_of_pops_modifier_20 = {
-	trigger = {
-		total_pops = 2000000
-		NOT = { total_pops = 2200000 }
-		civilized = yes
-	}
-	global_immigrant_attract = -1
-}
-num_of_pops_modifier_18 = {
-	trigger = {
-		total_pops = 1800000
-		NOT = { total_pops = 2000000 }
-		civilized = yes
-	}
-	global_immigrant_attract = -1.2
-}
-num_of_pops_modifier_17 = {
-	trigger = {
-		total_pops = 1700000
-		NOT = { total_pops = 1800000 }
-		civilized = yes
-	}
-	global_immigrant_attract = -1.4
-}
-num_of_pops_modifier_16 = {
-	trigger = {
-		total_pops = 1600000
-		NOT = { total_pops = 1700000 }
-		civilized = yes
-	}
-	global_immigrant_attract = -1.5
-}
-num_of_pops_modifier_15 = {
-	trigger = {
-		total_pops = 1500000
-		NOT = { total_pops = 1600000 }
-		civilized = yes
-	}
-	global_immigrant_attract = -1.7
-}
-num_of_pops_modifier_14 = {
-	trigger = {
-		total_pops = 1400000
-		NOT = { total_pops = 1500000 }
-		civilized = yes
-	}
-	global_immigrant_attract = -1.9
-}
-num_of_pops_modifier_13 = {
-	trigger = {
-		total_pops = 1300000
-		NOT = { total_pops = 1400000 }
-		civilized = yes
-	}
-	global_immigrant_attract = -2.1
-}
-num_of_pops_modifier_12 = {
-	trigger = {
-		total_pops = 1200000
-		NOT = { total_pops = 1300000 }
-		civilized = yes
-	}
-	global_immigrant_attract = -2.3
-}
-num_of_pops_modifier_11 = {
-	trigger = {
-		total_pops = 1100000
-		NOT = { total_pops = 1200000 }
-		civilized = yes
-	}
-	global_immigrant_attract = -2.6
-}
-num_of_pops_modifier_10 = {
-	trigger = {
-		total_pops = 1000000
-		NOT = { total_pops = 1100000 }
-		civilized = yes
-	}
-	global_immigrant_attract = -3
-}
-num_of_pops_modifier_9 = {
-	trigger = {
-		total_pops = 900000
-		NOT = { total_pops = 1000000 }
-		civilized = yes
-	}
-	global_immigrant_attract = -3.4
-}
-num_of_pops_modifier_8 = {
-	trigger = {
-		total_pops = 800000
-		NOT = { total_pops = 900000 }
-		civilized = yes
-	}
-	global_immigrant_attract = -4
-}
-num_of_pops_modifier_7 = {
-	trigger = {
-		total_pops = 700000
-		NOT = { total_pops = 800000 }
-		civilized = yes
-	}
-	global_immigrant_attract = -4.7
-}
-num_of_pops_modifier_6 = {
-	trigger = {
-		total_pops = 600000
-		NOT = { total_pops = 700000 }
-		civilized = yes
-	}
-	global_immigrant_attract = -5.7
-}
-num_of_pops_modifier_5 = {
-	trigger = {
-		total_pops = 500000
-		NOT = { total_pops = 600000 }
-		civilized = yes
-	}
-	global_immigrant_attract = -7
-}
-num_of_pops_modifier_4 = {
-	trigger = {
-		total_pops = 400000
-		NOT = { total_pops = 500000 }
-		civilized = yes
-	}
-	global_immigrant_attract = -9
-}
-num_of_pops_modifier_3 = {
-	trigger = {
-		total_pops = 300000
-		NOT = { total_pops = 400000 }
-		civilized = yes
-	}
-	global_immigrant_attract = -12
-}
-num_of_pops_modifier_2 = {
-	trigger = {
-		total_pops = 200000
-		NOT = { total_pops = 300000 }
-		civilized = yes
-	}
-	global_immigrant_attract = -19
+	global_immigrant_attract = 4.5
 }
 num_of_pops_modifier_1 = {
 	trigger = {
-		NOT = { total_pops = 200000 }
+		NOT = { total_pops = 2400000 }
 		civilized = yes
 	}
-	global_immigrant_attract = -39
+	global_immigrant_attract = 4
 }
 unemployment_modifier_100 = {
 	trigger = {
