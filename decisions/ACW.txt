@@ -774,9 +774,6 @@ political_decisions = {
 		}
 		
 		effect = {
-			USA_1 = {
-				add_core = USA
-			}
 			RUS = {
 				country_event = { id=32509 days=0 }
 			}

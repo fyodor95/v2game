@@ -355,6 +355,7 @@ country_event = {
 		USA_1 = {
 			secede_province = USA
 			remove_core = RUS
+			add_core = USA
 		}
 		any_owned = {
 			limit = {
