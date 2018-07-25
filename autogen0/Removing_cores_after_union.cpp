@@ -3,12 +3,12 @@ using namespace std;
 int main() {
     ifstream c("hist_countries.txt");
     ifstream cult("cultures.txt");
-    ofstream pc("after_union.txt");
-    ofstream rc("removing_D_cores.txt");
+    ofstream pc("..\\events\\after_union.txt");
+    ofstream rc("..\\events\\removing_D_cores.txt");
     const string prim_cult = "primary_culture", way = "c:", leader = "leader", unit = "unit";
     string s, tag, what_prim_cult;
-    unordered_map<string, unordered_set<string>> dict, tag_narod;
-    unordered_set<string> bad_tags = { "SOV" }, union_tags;
+    map<string, set<string>> dict, tag_narod;
+    set<string> bad_tags = { "SOV" }, union_tags;
     cout << string::npos <<'\n';
     while (getline(cult, s)) {
         if ('a' <= s[0] && s[0] <= 'z') {
@@ -66,6 +66,7 @@ int main() {
                 rc << "\t\t\tall_core = {\n";
                 rc << "\t\t\t\tremove_core = " << tag << "\n";
                 rc << "\t\t\t}\n";
+                rc << "\t\t\tprimary_culture = british\n";
                 rc << "\t\t}\n";
                 continue;
             }

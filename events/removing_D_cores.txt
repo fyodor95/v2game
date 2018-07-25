@@ -19,6 +19,7 @@ country_event = {
 			all_core = {
 				remove_core = D01
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -28,6 +29,7 @@ country_event = {
 			all_core = {
 				remove_core = D02
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -37,6 +39,7 @@ country_event = {
 			all_core = {
 				remove_core = D03
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -46,6 +49,7 @@ country_event = {
 			all_core = {
 				remove_core = D04
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -55,6 +59,7 @@ country_event = {
 			all_core = {
 				remove_core = D05
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -64,6 +69,7 @@ country_event = {
 			all_core = {
 				remove_core = D06
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -73,6 +79,7 @@ country_event = {
 			all_core = {
 				remove_core = D07
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -82,6 +89,7 @@ country_event = {
 			all_core = {
 				remove_core = D08
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -91,6 +99,7 @@ country_event = {
 			all_core = {
 				remove_core = D09
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -100,6 +109,7 @@ country_event = {
 			all_core = {
 				remove_core = D10
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -109,6 +119,7 @@ country_event = {
 			all_core = {
 				remove_core = D11
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -118,6 +129,7 @@ country_event = {
 			all_core = {
 				remove_core = D12
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -127,6 +139,7 @@ country_event = {
 			all_core = {
 				remove_core = D13
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -136,6 +149,7 @@ country_event = {
 			all_core = {
 				remove_core = D14
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -145,6 +159,7 @@ country_event = {
 			all_core = {
 				remove_core = D15
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -154,6 +169,7 @@ country_event = {
 			all_core = {
 				remove_core = D16
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -163,6 +179,7 @@ country_event = {
 			all_core = {
 				remove_core = D17
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -172,6 +189,7 @@ country_event = {
 			all_core = {
 				remove_core = D18
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -181,6 +199,7 @@ country_event = {
 			all_core = {
 				remove_core = D19
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -190,6 +209,7 @@ country_event = {
 			all_core = {
 				remove_core = D20
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -199,6 +219,7 @@ country_event = {
 			all_core = {
 				remove_core = D21
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -208,6 +229,7 @@ country_event = {
 			all_core = {
 				remove_core = D22
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -217,6 +239,7 @@ country_event = {
 			all_core = {
 				remove_core = D23
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -226,6 +249,7 @@ country_event = {
 			all_core = {
 				remove_core = D24
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -235,6 +259,7 @@ country_event = {
 			all_core = {
 				remove_core = D25
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -244,6 +269,7 @@ country_event = {
 			all_core = {
 				remove_core = D26
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -253,6 +279,7 @@ country_event = {
 			all_core = {
 				remove_core = D27
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -262,6 +289,7 @@ country_event = {
 			all_core = {
 				remove_core = D28
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -271,6 +299,7 @@ country_event = {
 			all_core = {
 				remove_core = D29
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -280,6 +309,7 @@ country_event = {
 			all_core = {
 				remove_core = D30
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -289,6 +319,7 @@ country_event = {
 			all_core = {
 				remove_core = D31
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -298,6 +329,7 @@ country_event = {
 			all_core = {
 				remove_core = D32
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -307,6 +339,7 @@ country_event = {
 			all_core = {
 				remove_core = D33
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -316,6 +349,7 @@ country_event = {
 			all_core = {
 				remove_core = D34
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -325,6 +359,7 @@ country_event = {
 			all_core = {
 				remove_core = D35
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -334,6 +369,7 @@ country_event = {
 			all_core = {
 				remove_core = D36
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -343,6 +379,7 @@ country_event = {
 			all_core = {
 				remove_core = D37
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -352,6 +389,7 @@ country_event = {
 			all_core = {
 				remove_core = D38
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -361,6 +399,7 @@ country_event = {
 			all_core = {
 				remove_core = D39
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -370,6 +409,7 @@ country_event = {
 			all_core = {
 				remove_core = D40
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -379,6 +419,7 @@ country_event = {
 			all_core = {
 				remove_core = D41
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -388,6 +429,7 @@ country_event = {
 			all_core = {
 				remove_core = D42
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -397,6 +439,7 @@ country_event = {
 			all_core = {
 				remove_core = D43
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -406,6 +449,7 @@ country_event = {
 			all_core = {
 				remove_core = D44
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -415,6 +459,7 @@ country_event = {
 			all_core = {
 				remove_core = D45
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -424,6 +469,7 @@ country_event = {
 			all_core = {
 				remove_core = D46
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -433,6 +479,7 @@ country_event = {
 			all_core = {
 				remove_core = D47
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -442,6 +489,7 @@ country_event = {
 			all_core = {
 				remove_core = D48
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -451,6 +499,7 @@ country_event = {
 			all_core = {
 				remove_core = D49
 			}
+			primary_culture = british
 		}
 		any_country = {
 			limit = {
@@ -460,6 +509,7 @@ country_event = {
 			all_core = {
 				remove_core = D50
 			}
+			primary_culture = british
 		}
 	}
 }
