@@ -616,6 +616,10 @@ communist_rebels = {
 		political_reform = state_press
 		political_reform = all_trade_unions
 		political_reform = underground_parties
+		social_reform = eight_hours
+		social_reform = good_subsidies
+		social_reform = good_pensions
+		social_reform = good_schools
 		
 		nationalize = yes
 	}
