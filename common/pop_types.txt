@@ -591,13 +591,39 @@ assimilation_chance =
 		has_culture_core = yes
 	}
 	modifier = {
-		factor = 10
+		factor = 1
 		AND = {
 			is_accepted_culture = no
 			OR = { 
 				continent = north_america
 				continent = south_america
 				continent = oceania
+			}
+		}
+	}
+
+	modifier = {
+		factor = -1
+		OR = {
+			AND = {
+				NOT = { literacy = 0.1 }
+				country = { literacy = 0.2 }
+			}
+			AND = {
+				NOT = { literacy = 0.2 }
+				country = { literacy = 0.4 }
+			}
+			AND = {
+				NOT = { literacy = 0.3 }
+				country = { literacy = 0.6 }
+			}
+			AND = {
+				NOT = { literacy = 0.4 }
+				country = { literacy = 0.8 }
+			}
+			AND = {
+				NOT = { literacy = 0.5 }
+				country = { literacy = 0.99 }
 			}
 		}
 	}
