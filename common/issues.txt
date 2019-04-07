@@ -108,16 +108,16 @@ party_issues = {
 	
 	religious_policy = {
 		pro_atheism = {
-			#no effect
+			education_efficiency_modifier = 0.25
 		}
 		secularized = {
 			#no effect
 		}
 		pluralism = {
-			#no effect
+			education_efficiency_modifier = -0.25
 		}
 		moralism = {
-			#no effect
+			education_efficiency_modifier = -0.5
 		}
 	}
 	citizenship_policy = {
