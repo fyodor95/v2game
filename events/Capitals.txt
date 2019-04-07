@@ -1,7 +1,7 @@
 country_event = {
 	id = 1472049
-	title = "100000"
-	desc = "100000"
+	title = "x"
+	desc = "x"
 	picture = "greatpowers"
 	trigger = {
 		AI = yes
@@ -22,11 +22,17 @@ country_event = {
 		any_country = {
 			any_owned = {
 				remove_province_modifier = our_capital
+				remove_province_modifier = prom_center_1
+				remove_province_modifier = prom_center_2
+				remove_province_modifier = prom_center_3
+				remove_province_modifier = prom_center_4
+				remove_province_modifier = prom_center_5
+				remove_province_modifier = prom_center_6
 			}
 		}
 	}
 	option = {
-		name = "100000"
+		name = "x"
 		any_greater_power = {
 			limit = {
 				industrial_score = 100
@@ -38,391 +44,412 @@ country_event = {
 				}
 			}
 		}
-	}
-}
-
-country_event = {
-	id = 1472057
-	title = "100000"
-	desc = "100000"
-	picture = "greatpowers"
-	trigger = {
-		NOT = { has_global_flag = LAF_cores_seted }
-		LAF = { exists = no }
-		rank = 32
-		NOT = { rank = 31 }
-		AI = yes
-	}
-	fire_only_once = yes
-	mean_time_to_happen = {
-		months = 3600
-		modifier = {
-			factor = 0.5
-			OR = {
-				BRZ = {
-					rank = 16
-					capital_scope = { continent = south_america }
-				}
-				CLM = {
-					rank = 16
-					capital_scope = { continent = south_america }
-				}
-				BOL = {
-					rank = 16
-					capital_scope = { continent = south_america }
-				}
-				ARG = {
-					rank = 16
-					capital_scope = { continent = south_america }
-				}
-				PEU = {
-					rank = 16
-					capital_scope = { continent = south_america }
-				}
-				GCO = {
-					rank = 16
-					capital_scope = { continent = south_america }
-				}
-				BRZ = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 16
-						capital_scope = { continent = south_america }
-					}
-				}
-				CLM = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 16
-						capital_scope = { continent = south_america }
-					}
-				}
-				BOL = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 16
-						capital_scope = { continent = south_america }
-					}
-				}
-				ARG = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 16
-						capital_scope = { continent = south_america }
-					}
-				}
-				PEU = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 16
-						capital_scope = { continent = south_america }
-					}
-				}
-				GCO = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 16
-						capital_scope = { continent = south_america }
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.3
-			OR = {
-				BRZ = {
-					rank = 8
-					capital_scope = { continent = south_america }
-				}
-				CLM = {
-					rank = 8
-					capital_scope = { continent = south_america }
-				}
-				BOL = {
-					rank = 8
-					capital_scope = { continent = south_america }
-				}
-				ARG = {
-					rank = 8
-					capital_scope = { continent = south_america }
-				}
-				PEU = {
-					rank = 8
-					capital_scope = { continent = south_america }
-				}
-				GCO = {
-					rank = 8
-					capital_scope = { continent = south_america }
-				}
-				BRZ = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 8
-						capital_scope = { continent = south_america }
-					}
-				}
-				CLM = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 8
-						capital_scope = { continent = south_america }
-					}
-				}
-				BOL = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 8
-						capital_scope = { continent = south_america }
-					}
-				}
-				ARG = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 8
-						capital_scope = { continent = south_america }
-					}
-				}
-				PEU = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 8
-						capital_scope = { continent = south_america }
-					}
-				}
-				GCO = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 8
-						capital_scope = { continent = south_america }
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.3
-			OR = {
-				BRZ = {
-					rank = 4
-					capital_scope = { continent = south_america }
-				}
-				CLM = {
-					rank = 4
-					capital_scope = { continent = south_america }
-				}
-				BOL = {
-					rank = 4
-					capital_scope = { continent = south_america }
-				}
-				ARG = {
-					rank = 4
-					capital_scope = { continent = south_america }
-				}
-				PEU = {
-					rank = 4
-					capital_scope = { continent = south_america }
-				}
-				GCO = {
-					rank = 4
-					capital_scope = { continent = south_america }
-				}
-				BRZ = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 4
-						capital_scope = { continent = south_america }
-					}
-				}
-				CLM = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 4
-						capital_scope = { continent = south_america }
-					}
-				}
-				BOL = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 4
-						capital_scope = { continent = south_america }
-					}
-				}
-				ARG = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 4
-						capital_scope = { continent = south_america }
-					}
-				}
-				PEU = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 4
-						capital_scope = { continent = south_america }
-					}
-				}
-				GCO = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 4
-						capital_scope = { continent = south_america }
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.3
-			OR = {
-				BRZ = {
-					rank = 2
-					capital_scope = { continent = south_america }
-				}
-				CLM = {
-					rank = 2
-					capital_scope = { continent = south_america }
-				}
-				BOL = {
-					rank = 2
-					capital_scope = { continent = south_america }
-				}
-				ARG = {
-					rank = 2
-					capital_scope = { continent = south_america }
-				}
-				PEU = {
-					rank = 2
-					capital_scope = { continent = south_america }
-				}
-				GCO = {
-					rank = 2
-					capital_scope = { continent = south_america }
-				}
-				BRZ = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 2
-						capital_scope = { continent = south_america }
-					}
-				}
-				CLM = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 2
-						capital_scope = { continent = south_america }
-					}
-				}
-				BOL = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 2
-						capital_scope = { continent = south_america }
-					}
-				}
-				ARG = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 2
-						capital_scope = { continent = south_america }
-					}
-				}
-				PEU = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 2
-						capital_scope = { continent = south_america }
-					}
-				}
-				GCO = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 2
-						capital_scope = { continent = south_america }
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.3
-			OR = {
-				BRZ = {
-					rank = 1
-					capital_scope = { continent = south_america }
-				}
-				CLM = {
-					rank = 1
-					capital_scope = { continent = south_america }
-				}
-				BOL = {
-					rank = 1
-					capital_scope = { continent = south_america }
-				}
-				ARG = {
-					rank = 1
-					capital_scope = { continent = south_america }
-				}
-				PEU = {
-					rank = 1
-					capital_scope = { continent = south_america }
-				}
-				GCO = {
-					rank = 1
-					capital_scope = { continent = south_america }
-				}
-				BRZ = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 1
-						capital_scope = { continent = south_america }
-					}
-				}
-				CLM = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 1
-						capital_scope = { continent = south_america }
-					}
-				}
-				BOL = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 1
-						capital_scope = { continent = south_america }
-					}
-				}
-				ARG = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 1
-						capital_scope = { continent = south_america }
-					}
-				}
-				PEU = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 1
-						capital_scope = { continent = south_america }
-					}
-				}
-				GCO = {
-					exists = yes
-					any_neighbor_country = {
-						rank = 1
-						capital_scope = { continent = south_america }
-					}
-				}
-			}
-		}
-	}
-	option = {
-		name = "100000"
 		any_country = {
+			limit = {
+				industrial_score = 200
+				NOT = { industrial_score = 400 }
+			}
 			any_owned = {
 				limit = {
-					continent = south_america
-					NOT = { is_core = LAF }
+					is_colonial = no
+					total_pops = 200000
+					has_pop_type = craftsmen
+					NOT = {
+						unemployment_by_type = {
+							type = craftsmen
+							value = 0.01
+						}
+					}
 				}
-				add_core = LAF
+				add_province_modifier = {
+					name = prom_center_1
+					duration = -1
+				}
 			}
 		}
-		set_global_flag = LAF_cores_seted
+		any_country = {
+			limit = {
+				industrial_score = 400
+				NOT = { industrial_score = 800 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = no
+					total_pops = 200000
+					NOT = { total_pops = 400000 }
+					has_pop_type = craftsmen
+					NOT = {
+						unemployment_by_type = {
+							type = craftsmen
+							value = 0.01
+						}
+					}
+				}
+				add_province_modifier = {
+					name = prom_center_1
+					duration = -1
+				}
+			}
+			any_owned = {
+				limit = {
+					is_colonial = no
+					total_pops = 400000
+					has_pop_type = craftsmen
+					NOT = {
+						unemployment_by_type = {
+							type = craftsmen
+							value = 0.01
+						}
+					}
+				}
+				add_province_modifier = {
+					name = prom_center_2
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				industrial_score = 800
+				NOT = { industrial_score = 1600 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = no
+					total_pops = 200000
+					NOT = { total_pops = 400000 }
+					has_pop_type = craftsmen
+					NOT = {
+						unemployment_by_type = {
+							type = craftsmen
+							value = 0.01
+						}
+					}
+				}
+				add_province_modifier = {
+					name = prom_center_1
+					duration = -1
+				}
+			}
+			any_owned = {
+				limit = {
+					is_colonial = no
+					total_pops = 400000
+					NOT = { total_pops = 800000 }
+					has_pop_type = craftsmen
+					NOT = {
+						unemployment_by_type = {
+							type = craftsmen
+							value = 0.01
+						}
+					}
+				}
+				add_province_modifier = {
+					name = prom_center_2
+					duration = -1
+				}
+			}
+			any_owned = {
+				limit = {
+					is_colonial = no
+					total_pops = 800000
+					has_pop_type = craftsmen
+					NOT = {
+						unemployment_by_type = {
+							type = craftsmen
+							value = 0.01
+						}
+					}
+				}
+				add_province_modifier = {
+					name = prom_center_3
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				industrial_score = 1600
+				NOT = { industrial_score = 3200 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = no
+					total_pops = 200000
+					NOT = { total_pops = 400000 }
+					has_pop_type = craftsmen
+					NOT = {
+						unemployment_by_type = {
+							type = craftsmen
+							value = 0.01
+						}
+					}
+				}
+				add_province_modifier = {
+					name = prom_center_1
+					duration = -1
+				}
+			}
+			any_owned = {
+				limit = {
+					is_colonial = no
+					total_pops = 400000
+					NOT = { total_pops = 800000 }
+					has_pop_type = craftsmen
+					NOT = {
+						unemployment_by_type = {
+							type = craftsmen
+							value = 0.01
+						}
+					}
+				}
+				add_province_modifier = {
+					name = prom_center_2
+					duration = -1
+				}
+			}
+			any_owned = {
+				limit = {
+					is_colonial = no
+					total_pops = 800000
+					NOT = { total_pops = 1600000 }
+					has_pop_type = craftsmen
+					NOT = {
+						unemployment_by_type = {
+							type = craftsmen
+							value = 0.01
+						}
+					}
+				}
+				add_province_modifier = {
+					name = prom_center_3
+					duration = -1
+				}
+			}
+			any_owned = {
+				limit = {
+					is_colonial = no
+					total_pops = 1600000
+					has_pop_type = craftsmen
+					NOT = {
+						unemployment_by_type = {
+							type = craftsmen
+							value = 0.01
+						}
+					}
+				}
+				add_province_modifier = {
+					name = prom_center_4
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				industrial_score = 3200
+				NOT = { industrial_score = 6400 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = no
+					total_pops = 200000
+					NOT = { total_pops = 400000 }
+					has_pop_type = craftsmen
+					NOT = {
+						unemployment_by_type = {
+							type = craftsmen
+							value = 0.01
+						}
+					}
+				}
+				add_province_modifier = {
+					name = prom_center_1
+					duration = -1
+				}
+			}
+			any_owned = {
+				limit = {
+					is_colonial = no
+					total_pops = 400000
+					NOT = { total_pops = 800000 }
+					has_pop_type = craftsmen
+					NOT = {
+						unemployment_by_type = {
+							type = craftsmen
+							value = 0.01
+						}
+					}
+				}
+				add_province_modifier = {
+					name = prom_center_2
+					duration = -1
+				}
+			}
+			any_owned = {
+				limit = {
+					is_colonial = no
+					total_pops = 800000
+					NOT = { total_pops = 1600000 }
+					has_pop_type = craftsmen
+					NOT = {
+						unemployment_by_type = {
+							type = craftsmen
+							value = 0.01
+						}
+					}
+				}
+				add_province_modifier = {
+					name = prom_center_3
+					duration = -1
+				}
+			}
+			any_owned = {
+				limit = {
+					is_colonial = no
+					total_pops = 1600000
+					NOT = { total_pops = 3200000 }
+					has_pop_type = craftsmen
+					NOT = {
+						unemployment_by_type = {
+							type = craftsmen
+							value = 0.01
+						}
+					}
+				}
+				add_province_modifier = {
+					name = prom_center_4
+					duration = -1
+				}
+			}
+			any_owned = {
+				limit = {
+					is_colonial = no
+					total_pops = 3200000
+					has_pop_type = craftsmen
+					NOT = {
+						unemployment_by_type = {
+							type = craftsmen
+							value = 0.01
+						}
+					}
+				}
+				add_province_modifier = {
+					name = prom_center_5
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				industrial_score = 6400
+			}
+			any_owned = {
+				limit = {
+					is_colonial = no
+					total_pops = 200000
+					NOT = { total_pops = 400000 }
+					has_pop_type = craftsmen
+					NOT = {
+						unemployment_by_type = {
+							type = craftsmen
+							value = 0.01
+						}
+					}
+				}
+				add_province_modifier = {
+					name = prom_center_1
+					duration = -1
+				}
+			}
+			any_owned = {
+				limit = {
+					is_colonial = no
+					total_pops = 400000
+					NOT = { total_pops = 800000 }
+					has_pop_type = craftsmen
+					NOT = {
+						unemployment_by_type = {
+							type = craftsmen
+							value = 0.01
+						}
+					}
+				}
+				add_province_modifier = {
+					name = prom_center_2
+					duration = -1
+				}
+			}
+			any_owned = {
+				limit = {
+					is_colonial = no
+					total_pops = 800000
+					NOT = { total_pops = 1600000 }
+					has_pop_type = craftsmen
+					NOT = {
+						unemployment_by_type = {
+							type = craftsmen
+							value = 0.01
+						}
+					}
+				}
+				add_province_modifier = {
+					name = prom_center_3
+					duration = -1
+				}
+			}
+			any_owned = {
+				limit = {
+					is_colonial = no
+					total_pops = 1600000
+					NOT = { total_pops = 3200000 }
+					has_pop_type = craftsmen
+					NOT = {
+						unemployment_by_type = {
+							type = craftsmen
+							value = 0.01
+						}
+					}
+				}
+				add_province_modifier = {
+					name = prom_center_4
+					duration = -1
+				}
+			}
+			any_owned = {
+				limit = {
+					is_colonial = no
+					total_pops = 3200000
+					NOT = { total_pops = 6400000 }
+					has_pop_type = craftsmen
+					NOT = {
+						unemployment_by_type = {
+							type = craftsmen
+							value = 0.01
+						}
+					}
+				}
+				add_province_modifier = {
+					name = prom_center_5
+					duration = -1
+				}
+			}
+			any_owned = {
+				limit = {
+					is_colonial = no
+					total_pops = 6400000
+					has_pop_type = craftsmen
+					NOT = {
+						unemployment_by_type = {
+							type = craftsmen
+							value = 0.01
+						}
+					}
+				}
+				add_province_modifier = {
+					name = prom_center_6
+					duration = -1
+				}
+			}
+		}
 	}
 }

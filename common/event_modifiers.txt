@@ -936,6 +936,30 @@ our_capital = {
 	immigrant_attract = 2.5
 	assimilation_rate = 0.2
 }
+prom_center_1 = {
+	icon = 13
+	immigrant_attract = 0.5
+}
+prom_center_2 = {
+	icon = 13
+	immigrant_attract = 1
+}
+prom_center_3 = {
+	icon = 13
+	immigrant_attract = 2
+}
+prom_center_4 = {
+	icon = 13
+	immigrant_attract = 4
+}
+prom_center_5 = {
+	icon = 13
+	immigrant_attract = 8
+}
+prom_center_6 = {
+	icon = 13
+	immigrant_attract = 16
+}
 migr_from_germany = {
 	icon = 18
 	immigrant_push = 10
