@@ -30,6 +30,20 @@ party = {
 }
 
 party = {
+	name = "SOV_communist_1"
+	start_date = 1848.1.1
+	end_date = 2000.1.1
+
+	ideology = communist
+
+	economic_policy = planned_economy
+	trade_policy = free_trade
+	religious_policy = pro_atheism
+	citizenship_policy = full_citizenship
+	war_policy = pacifism
+}
+
+party = {
 	name = "SOV_communist_2"
 	start_date = 1848.1.1
 	end_date = 2000.1.1
