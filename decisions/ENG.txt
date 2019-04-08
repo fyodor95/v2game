@@ -1,4 +1,126 @@
 political_decisions = {
+	create_hnd = {
+		potential = {
+			tag = ENG
+			NOT = { has_country_flag = hnd_was_created }
+			any_neighbor_country = {
+				vassal_of = ENG
+				OR = {
+					primary_culture = assamese
+					primary_culture = bengali
+					primary_culture = bihari
+					primary_culture = manipuri
+					primary_culture = nepali
+					primary_culture = oriya
+					primary_culture = sinhala
+					primary_culture = avadhi
+					primary_culture = kanauji
+					primary_culture = panjabi
+					primary_culture = kashmiri
+					primary_culture = gujarati
+					primary_culture = marathi
+					primary_culture = sindi
+					primary_culture = rajput
+					primary_culture = kannada
+					primary_culture = malayalam
+					primary_culture = tamil
+					primary_culture = telegu
+				}
+			}
+		}
+		allow = {
+			war = no
+			HND = { exists = no }
+			any_owned_province = { is_core = HND }
+		}
+		effect = {
+			badboy = -25
+			random_country = {
+				limit = {
+					vassal_of = ENG
+					OR = {
+						primary_culture = assamese
+						primary_culture = bengali
+						primary_culture = bihari
+						primary_culture = manipuri
+						primary_culture = nepali
+						primary_culture = oriya
+						primary_culture = sinhala
+						primary_culture = avadhi
+						primary_culture = kanauji
+						primary_culture = panjabi
+						primary_culture = kashmiri
+						primary_culture = gujarati
+						primary_culture = marathi
+						primary_culture = sindi
+						primary_culture = rajput
+						primary_culture = kannada
+						primary_culture = malayalam
+						primary_culture = tamil
+						primary_culture = telegu
+					}
+				}
+				change_tag = HND
+			}
+			any_owned = {
+				limit = { is_core = HND }
+				secede_province = HND
+			}
+			HND = {
+				add_accepted_culture = union
+				any_pop = {
+					limit = {
+						OR = {
+							is_accepted_culture = yes
+							is_primary_culture = yes
+						}
+					}
+					militancy = -10
+				}
+			}
+			any_country = {
+				limit = {
+					vassal_of = ENG
+					OR = {
+						primary_culture = assamese
+						primary_culture = bengali
+						primary_culture = bihari
+						primary_culture = manipuri
+						primary_culture = nepali
+						primary_culture = oriya
+						primary_culture = sinhala
+						primary_culture = avadhi
+						primary_culture = kanauji
+						primary_culture = panjabi
+						primary_culture = kashmiri
+						primary_culture = gujarati
+						primary_culture = marathi
+						primary_culture = sindi
+						primary_culture = rajput
+						primary_culture = kannada
+						primary_culture = malayalam
+						primary_culture = tamil
+						primary_culture = telegu
+					}
+				}
+				country_event = { id=5999 days=0 }
+			}
+			set_country_flag = hnd_was_created
+			random_country = {
+				limit = {
+					ai = yes
+				}
+				country_event = { id=5998 days=0 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { badboy = 0.8 }
+			}
+		}
+	}
 	repeal_the_corn_laws = {
 		potential = {
 			tag = ENG

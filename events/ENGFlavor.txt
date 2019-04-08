@@ -1,3 +1,22 @@
+country_event = {
+	id = 5998
+	title = "x"
+	desc = "x"
+	picture = "Rebellion"
+	is_triggered_only = yes
+	option = {
+		name = "x"
+		ENG = {
+			create_vassal = HND
+			create_alliance = HND
+			diplomatic_influence = {
+				who = HND
+				value = 400
+			}
+		}
+	}
+}
+
 # Coronation of Queen Victoria
 country_event = {
 	id = 36898
