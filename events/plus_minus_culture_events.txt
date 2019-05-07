@@ -1,0 +1,4893 @@
+country_event = {
+	id = 500
+	title = "EVTNAME500"
+	desc = "EVTDESC500"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = north_german
+		NOT = {
+			any_owned_province = {
+				culture = north_german
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA500"
+		remove_accepted_culture = north_german
+	}
+}
+country_event = {
+	id = 501
+	title = "EVTNAME501"
+	desc = "EVTDESC501"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = south_german
+		NOT = {
+			any_owned_province = {
+				culture = south_german
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA501"
+		remove_accepted_culture = south_german
+	}
+}
+country_event = {
+	id = 502
+	title = "EVTNAME502"
+	desc = "EVTDESC502"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = ashkenazi
+		NOT = {
+			any_owned_province = {
+				culture = ashkenazi
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA502"
+		remove_accepted_culture = ashkenazi
+	}
+}
+country_event = {
+	id = 503
+	title = "EVTNAME503"
+	desc = "EVTDESC503"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = dutch
+		NOT = {
+			any_owned_province = {
+				culture = dutch
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA503"
+		remove_accepted_culture = dutch
+	}
+}
+country_event = {
+	id = 504
+	title = "EVTNAME504"
+	desc = "EVTDESC504"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = flemish
+		NOT = {
+			any_owned_province = {
+				culture = flemish
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA504"
+		remove_accepted_culture = flemish
+	}
+}
+country_event = {
+	id = 505
+	title = "EVTNAME505"
+	desc = "EVTDESC505"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = swiss
+		NOT = {
+			any_owned_province = {
+				culture = swiss
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA505"
+		remove_accepted_culture = swiss
+	}
+}
+country_event = {
+	id = 506
+	title = "EVTNAME506"
+	desc = "EVTDESC506"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = swedish
+		NOT = {
+			any_owned_province = {
+				culture = swedish
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA506"
+		remove_accepted_culture = swedish
+	}
+}
+country_event = {
+	id = 507
+	title = "EVTNAME507"
+	desc = "EVTDESC507"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = danish
+		NOT = {
+			any_owned_province = {
+				culture = danish
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA507"
+		remove_accepted_culture = danish
+	}
+}
+country_event = {
+	id = 508
+	title = "EVTNAME508"
+	desc = "EVTDESC508"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = norwegian
+		NOT = {
+			any_owned_province = {
+				culture = norwegian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA508"
+		remove_accepted_culture = norwegian
+	}
+}
+country_event = {
+	id = 509
+	title = "EVTNAME509"
+	desc = "EVTDESC509"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = icelandic
+		NOT = {
+			any_owned_province = {
+				culture = icelandic
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA509"
+		remove_accepted_culture = icelandic
+	}
+}
+country_event = {
+	id = 510
+	title = "EVTNAME510"
+	desc = "EVTDESC510"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = finnish
+		NOT = {
+			any_owned_province = {
+				culture = finnish
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA510"
+		remove_accepted_culture = finnish
+	}
+}
+country_event = {
+	id = 511
+	title = "EVTNAME511"
+	desc = "EVTDESC511"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = sami
+		NOT = {
+			any_owned_province = {
+				culture = sami
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA511"
+		remove_accepted_culture = sami
+	}
+}
+country_event = {
+	id = 512
+	title = "EVTNAME512"
+	desc = "EVTDESC512"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = british
+		NOT = {
+			any_owned_province = {
+				culture = british
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA512"
+		remove_accepted_culture = british
+	}
+}
+country_event = {
+	id = 513
+	title = "EVTNAME513"
+	desc = "EVTDESC513"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = irish
+		NOT = {
+			any_owned_province = {
+				culture = irish
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA513"
+		remove_accepted_culture = irish
+	}
+}
+country_event = {
+	id = 514
+	title = "EVTNAME514"
+	desc = "EVTDESC514"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = north_italian
+		NOT = {
+			any_owned_province = {
+				culture = north_italian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA514"
+		remove_accepted_culture = north_italian
+	}
+}
+country_event = {
+	id = 515
+	title = "EVTNAME515"
+	desc = "EVTDESC515"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = south_italian
+		NOT = {
+			any_owned_province = {
+				culture = south_italian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA515"
+		remove_accepted_culture = south_italian
+	}
+}
+country_event = {
+	id = 516
+	title = "EVTNAME516"
+	desc = "EVTDESC516"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = maltese
+		NOT = {
+			any_owned_province = {
+				culture = maltese
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA516"
+		remove_accepted_culture = maltese
+	}
+}
+country_event = {
+	id = 517
+	title = "EVTNAME517"
+	desc = "EVTDESC517"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = basque
+		NOT = {
+			any_owned_province = {
+				culture = basque
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA517"
+		remove_accepted_culture = basque
+	}
+}
+country_event = {
+	id = 518
+	title = "EVTNAME518"
+	desc = "EVTDESC518"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = spanish
+		NOT = {
+			any_owned_province = {
+				culture = spanish
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA518"
+		remove_accepted_culture = spanish
+	}
+}
+country_event = {
+	id = 519
+	title = "EVTNAME519"
+	desc = "EVTDESC519"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = catalan
+		NOT = {
+			any_owned_province = {
+				culture = catalan
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA519"
+		remove_accepted_culture = catalan
+	}
+}
+country_event = {
+	id = 520
+	title = "EVTNAME520"
+	desc = "EVTDESC520"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = portuguese
+		NOT = {
+			any_owned_province = {
+				culture = portuguese
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA520"
+		remove_accepted_culture = portuguese
+	}
+}
+country_event = {
+	id = 521
+	title = "EVTNAME521"
+	desc = "EVTDESC521"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = french
+		NOT = {
+			any_owned_province = {
+				culture = french
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA521"
+		remove_accepted_culture = french
+	}
+}
+country_event = {
+	id = 522
+	title = "EVTNAME522"
+	desc = "EVTDESC522"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = croat
+		NOT = {
+			any_owned_province = {
+				culture = croat
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA522"
+		remove_accepted_culture = croat
+	}
+}
+country_event = {
+	id = 523
+	title = "EVTNAME523"
+	desc = "EVTDESC523"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = serb
+		NOT = {
+			any_owned_province = {
+				culture = serb
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA523"
+		remove_accepted_culture = serb
+	}
+}
+country_event = {
+	id = 524
+	title = "EVTNAME524"
+	desc = "EVTDESC524"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = bulgarian
+		NOT = {
+			any_owned_province = {
+				culture = bulgarian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA524"
+		remove_accepted_culture = bulgarian
+	}
+}
+country_event = {
+	id = 525
+	title = "EVTNAME525"
+	desc = "EVTDESC525"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = albanian
+		NOT = {
+			any_owned_province = {
+				culture = albanian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA525"
+		remove_accepted_culture = albanian
+	}
+}
+country_event = {
+	id = 526
+	title = "EVTNAME526"
+	desc = "EVTDESC526"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = slovene
+		NOT = {
+			any_owned_province = {
+				culture = slovene
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA526"
+		remove_accepted_culture = slovene
+	}
+}
+country_event = {
+	id = 527
+	title = "EVTNAME527"
+	desc = "EVTDESC527"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = bosniak
+		NOT = {
+			any_owned_province = {
+				culture = bosniak
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA527"
+		remove_accepted_culture = bosniak
+	}
+}
+country_event = {
+	id = 528
+	title = "EVTNAME528"
+	desc = "EVTDESC528"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = romanian
+		NOT = {
+			any_owned_province = {
+				culture = romanian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA528"
+		remove_accepted_culture = romanian
+	}
+}
+country_event = {
+	id = 529
+	title = "EVTNAME529"
+	desc = "EVTDESC529"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = hungarian
+		NOT = {
+			any_owned_province = {
+				culture = hungarian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA529"
+		remove_accepted_culture = hungarian
+	}
+}
+country_event = {
+	id = 530
+	title = "EVTNAME530"
+	desc = "EVTDESC530"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = polish
+		NOT = {
+			any_owned_province = {
+				culture = polish
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA530"
+		remove_accepted_culture = polish
+	}
+}
+country_event = {
+	id = 531
+	title = "EVTNAME531"
+	desc = "EVTDESC531"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = lithuanian
+		NOT = {
+			any_owned_province = {
+				culture = lithuanian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA531"
+		remove_accepted_culture = lithuanian
+	}
+}
+country_event = {
+	id = 532
+	title = "EVTNAME532"
+	desc = "EVTDESC532"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = czech
+		NOT = {
+			any_owned_province = {
+				culture = czech
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA532"
+		remove_accepted_culture = czech
+	}
+}
+country_event = {
+	id = 533
+	title = "EVTNAME533"
+	desc = "EVTDESC533"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = slovak
+		NOT = {
+			any_owned_province = {
+				culture = slovak
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA533"
+		remove_accepted_culture = slovak
+	}
+}
+country_event = {
+	id = 534
+	title = "EVTNAME534"
+	desc = "EVTDESC534"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = russian
+		NOT = {
+			any_owned_province = {
+				culture = russian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA534"
+		remove_accepted_culture = russian
+	}
+}
+country_event = {
+	id = 535
+	title = "EVTNAME535"
+	desc = "EVTDESC535"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = byelorussian
+		NOT = {
+			any_owned_province = {
+				culture = byelorussian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA535"
+		remove_accepted_culture = byelorussian
+	}
+}
+country_event = {
+	id = 536
+	title = "EVTNAME536"
+	desc = "EVTDESC536"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = ukrainian
+		NOT = {
+			any_owned_province = {
+				culture = ukrainian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA536"
+		remove_accepted_culture = ukrainian
+	}
+}
+country_event = {
+	id = 537
+	title = "EVTNAME537"
+	desc = "EVTDESC537"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = ugrian
+		NOT = {
+			any_owned_province = {
+				culture = ugrian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA537"
+		remove_accepted_culture = ugrian
+	}
+}
+country_event = {
+	id = 538
+	title = "EVTNAME538"
+	desc = "EVTDESC538"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = latvian
+		NOT = {
+			any_owned_province = {
+				culture = latvian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA538"
+		remove_accepted_culture = latvian
+	}
+}
+country_event = {
+	id = 539
+	title = "EVTNAME539"
+	desc = "EVTDESC539"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = estonian
+		NOT = {
+			any_owned_province = {
+				culture = estonian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA539"
+		remove_accepted_culture = estonian
+	}
+}
+country_event = {
+	id = 540
+	title = "EVTNAME540"
+	desc = "EVTDESC540"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = greek
+		NOT = {
+			any_owned_province = {
+				culture = greek
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA540"
+		remove_accepted_culture = greek
+	}
+}
+country_event = {
+	id = 541
+	title = "EVTNAME541"
+	desc = "EVTDESC541"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = georgian
+		NOT = {
+			any_owned_province = {
+				culture = georgian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA541"
+		remove_accepted_culture = georgian
+	}
+}
+country_event = {
+	id = 542
+	title = "EVTNAME542"
+	desc = "EVTDESC542"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = armenian
+		NOT = {
+			any_owned_province = {
+				culture = armenian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA542"
+		remove_accepted_culture = armenian
+	}
+}
+country_event = {
+	id = 543
+	title = "EVTNAME543"
+	desc = "EVTDESC543"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = sephardic
+		NOT = {
+			any_owned_province = {
+				culture = sephardic
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA543"
+		remove_accepted_culture = sephardic
+	}
+}
+country_event = {
+	id = 544
+	title = "EVTNAME544"
+	desc = "EVTDESC544"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = turkish
+		NOT = {
+			any_owned_province = {
+				culture = turkish
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA544"
+		remove_accepted_culture = turkish
+	}
+}
+country_event = {
+	id = 545
+	title = "EVTNAME545"
+	desc = "EVTDESC545"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = azerbaijani
+		NOT = {
+			any_owned_province = {
+				culture = azerbaijani
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA545"
+		remove_accepted_culture = azerbaijani
+	}
+}
+country_event = {
+	id = 546
+	title = "EVTNAME546"
+	desc = "EVTDESC546"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = north_caucasian
+		NOT = {
+			any_owned_province = {
+				culture = north_caucasian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA546"
+		remove_accepted_culture = north_caucasian
+	}
+}
+country_event = {
+	id = 547
+	title = "EVTNAME547"
+	desc = "EVTDESC547"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = maghrebi
+		NOT = {
+			any_owned_province = {
+				culture = maghrebi
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA547"
+		remove_accepted_culture = maghrebi
+	}
+}
+country_event = {
+	id = 548
+	title = "EVTNAME548"
+	desc = "EVTDESC548"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = misri
+		NOT = {
+			any_owned_province = {
+				culture = misri
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA548"
+		remove_accepted_culture = misri
+	}
+}
+country_event = {
+	id = 549
+	title = "EVTNAME549"
+	desc = "EVTDESC549"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = mashriqi
+		NOT = {
+			any_owned_province = {
+				culture = mashriqi
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA549"
+		remove_accepted_culture = mashriqi
+	}
+}
+country_event = {
+	id = 550
+	title = "EVTNAME550"
+	desc = "EVTDESC550"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = bedouin
+		NOT = {
+			any_owned_province = {
+				culture = bedouin
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA550"
+		remove_accepted_culture = bedouin
+	}
+}
+country_event = {
+	id = 551
+	title = "EVTNAME551"
+	desc = "EVTDESC551"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = berber
+		NOT = {
+			any_owned_province = {
+				culture = berber
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA551"
+		remove_accepted_culture = berber
+	}
+}
+country_event = {
+	id = 552
+	title = "EVTNAME552"
+	desc = "EVTDESC552"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = persian
+		NOT = {
+			any_owned_province = {
+				culture = persian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA552"
+		remove_accepted_culture = persian
+	}
+}
+country_event = {
+	id = 553
+	title = "EVTNAME553"
+	desc = "EVTDESC553"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = uzbek
+		NOT = {
+			any_owned_province = {
+				culture = uzbek
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA553"
+		remove_accepted_culture = uzbek
+	}
+}
+country_event = {
+	id = 554
+	title = "EVTNAME554"
+	desc = "EVTDESC554"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = kazak
+		NOT = {
+			any_owned_province = {
+				culture = kazak
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA554"
+		remove_accepted_culture = kazak
+	}
+}
+country_event = {
+	id = 555
+	title = "EVTNAME555"
+	desc = "EVTDESC555"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = kirgiz
+		NOT = {
+			any_owned_province = {
+				culture = kirgiz
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA555"
+		remove_accepted_culture = kirgiz
+	}
+}
+country_event = {
+	id = 556
+	title = "EVTNAME556"
+	desc = "EVTDESC556"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = tajik
+		NOT = {
+			any_owned_province = {
+				culture = tajik
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA556"
+		remove_accepted_culture = tajik
+	}
+}
+country_event = {
+	id = 557
+	title = "EVTNAME557"
+	desc = "EVTDESC557"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = uighur
+		NOT = {
+			any_owned_province = {
+				culture = uighur
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA557"
+		remove_accepted_culture = uighur
+	}
+}
+country_event = {
+	id = 558
+	title = "EVTNAME558"
+	desc = "EVTDESC558"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = pashtun
+		NOT = {
+			any_owned_province = {
+				culture = pashtun
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA558"
+		remove_accepted_culture = pashtun
+	}
+}
+country_event = {
+	id = 559
+	title = "EVTNAME559"
+	desc = "EVTDESC559"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = baluchi
+		NOT = {
+			any_owned_province = {
+				culture = baluchi
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA559"
+		remove_accepted_culture = baluchi
+	}
+}
+country_event = {
+	id = 560
+	title = "EVTNAME560"
+	desc = "EVTDESC560"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = hazara
+		NOT = {
+			any_owned_province = {
+				culture = hazara
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA560"
+		remove_accepted_culture = hazara
+	}
+}
+country_event = {
+	id = 561
+	title = "EVTNAME561"
+	desc = "EVTDESC561"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = turkmen
+		NOT = {
+			any_owned_province = {
+				culture = turkmen
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA561"
+		remove_accepted_culture = turkmen
+	}
+}
+country_event = {
+	id = 562
+	title = "EVTNAME562"
+	desc = "EVTDESC562"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = kurdish
+		NOT = {
+			any_owned_province = {
+				culture = kurdish
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA562"
+		remove_accepted_culture = kurdish
+	}
+}
+country_event = {
+	id = 563
+	title = "EVTNAME563"
+	desc = "EVTDESC563"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = tatar
+		NOT = {
+			any_owned_province = {
+				culture = tatar
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA563"
+		remove_accepted_culture = tatar
+	}
+}
+country_event = {
+	id = 564
+	title = "EVTNAME564"
+	desc = "EVTDESC564"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = mongol
+		NOT = {
+			any_owned_province = {
+				culture = mongol
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA564"
+		remove_accepted_culture = mongol
+	}
+}
+country_event = {
+	id = 565
+	title = "EVTNAME565"
+	desc = "EVTDESC565"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = siberian
+		NOT = {
+			any_owned_province = {
+				culture = siberian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA565"
+		remove_accepted_culture = siberian
+	}
+}
+country_event = {
+	id = 566
+	title = "EVTNAME566"
+	desc = "EVTDESC566"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = yakut
+		NOT = {
+			any_owned_province = {
+				culture = yakut
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA566"
+		remove_accepted_culture = yakut
+	}
+}
+country_event = {
+	id = 567
+	title = "EVTNAME567"
+	desc = "EVTDESC567"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = tibetan
+		NOT = {
+			any_owned_province = {
+				culture = tibetan
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA567"
+		remove_accepted_culture = tibetan
+	}
+}
+country_event = {
+	id = 568
+	title = "EVTNAME568"
+	desc = "EVTDESC568"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = assamese
+		NOT = {
+			any_owned_province = {
+				culture = assamese
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA568"
+		remove_accepted_culture = assamese
+	}
+}
+country_event = {
+	id = 569
+	title = "EVTNAME569"
+	desc = "EVTDESC569"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = bengali
+		NOT = {
+			any_owned_province = {
+				culture = bengali
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA569"
+		remove_accepted_culture = bengali
+	}
+}
+country_event = {
+	id = 570
+	title = "EVTNAME570"
+	desc = "EVTDESC570"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = bihari
+		NOT = {
+			any_owned_province = {
+				culture = bihari
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA570"
+		remove_accepted_culture = bihari
+	}
+}
+country_event = {
+	id = 571
+	title = "EVTNAME571"
+	desc = "EVTDESC571"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = manipuri
+		NOT = {
+			any_owned_province = {
+				culture = manipuri
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA571"
+		remove_accepted_culture = manipuri
+	}
+}
+country_event = {
+	id = 572
+	title = "EVTNAME572"
+	desc = "EVTDESC572"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = nepali
+		NOT = {
+			any_owned_province = {
+				culture = nepali
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA572"
+		remove_accepted_culture = nepali
+	}
+}
+country_event = {
+	id = 573
+	title = "EVTNAME573"
+	desc = "EVTDESC573"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = oriya
+		NOT = {
+			any_owned_province = {
+				culture = oriya
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA573"
+		remove_accepted_culture = oriya
+	}
+}
+country_event = {
+	id = 574
+	title = "EVTNAME574"
+	desc = "EVTDESC574"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = sinhala
+		NOT = {
+			any_owned_province = {
+				culture = sinhala
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA574"
+		remove_accepted_culture = sinhala
+	}
+}
+country_event = {
+	id = 575
+	title = "EVTNAME575"
+	desc = "EVTDESC575"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = avadhi
+		NOT = {
+			any_owned_province = {
+				culture = avadhi
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA575"
+		remove_accepted_culture = avadhi
+	}
+}
+country_event = {
+	id = 576
+	title = "EVTNAME576"
+	desc = "EVTDESC576"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = kanauji
+		NOT = {
+			any_owned_province = {
+				culture = kanauji
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA576"
+		remove_accepted_culture = kanauji
+	}
+}
+country_event = {
+	id = 577
+	title = "EVTNAME577"
+	desc = "EVTDESC577"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = panjabi
+		NOT = {
+			any_owned_province = {
+				culture = panjabi
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA577"
+		remove_accepted_culture = panjabi
+	}
+}
+country_event = {
+	id = 578
+	title = "EVTNAME578"
+	desc = "EVTDESC578"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = kashmiri
+		NOT = {
+			any_owned_province = {
+				culture = kashmiri
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA578"
+		remove_accepted_culture = kashmiri
+	}
+}
+country_event = {
+	id = 579
+	title = "EVTNAME579"
+	desc = "EVTDESC579"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = gujarati
+		NOT = {
+			any_owned_province = {
+				culture = gujarati
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA579"
+		remove_accepted_culture = gujarati
+	}
+}
+country_event = {
+	id = 580
+	title = "EVTNAME580"
+	desc = "EVTDESC580"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = marathi
+		NOT = {
+			any_owned_province = {
+				culture = marathi
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA580"
+		remove_accepted_culture = marathi
+	}
+}
+country_event = {
+	id = 581
+	title = "EVTNAME581"
+	desc = "EVTDESC581"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = sindi
+		NOT = {
+			any_owned_province = {
+				culture = sindi
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA581"
+		remove_accepted_culture = sindi
+	}
+}
+country_event = {
+	id = 582
+	title = "EVTNAME582"
+	desc = "EVTDESC582"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = rajput
+		NOT = {
+			any_owned_province = {
+				culture = rajput
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA582"
+		remove_accepted_culture = rajput
+	}
+}
+country_event = {
+	id = 583
+	title = "EVTNAME583"
+	desc = "EVTDESC583"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = kannada
+		NOT = {
+			any_owned_province = {
+				culture = kannada
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA583"
+		remove_accepted_culture = kannada
+	}
+}
+country_event = {
+	id = 584
+	title = "EVTNAME584"
+	desc = "EVTDESC584"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = malayalam
+		NOT = {
+			any_owned_province = {
+				culture = malayalam
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA584"
+		remove_accepted_culture = malayalam
+	}
+}
+country_event = {
+	id = 585
+	title = "EVTNAME585"
+	desc = "EVTDESC585"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = tamil
+		NOT = {
+			any_owned_province = {
+				culture = tamil
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA585"
+		remove_accepted_culture = tamil
+	}
+}
+country_event = {
+	id = 586
+	title = "EVTNAME586"
+	desc = "EVTDESC586"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = telegu
+		NOT = {
+			any_owned_province = {
+				culture = telegu
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA586"
+		remove_accepted_culture = telegu
+	}
+}
+country_event = {
+	id = 587
+	title = "EVTNAME587"
+	desc = "EVTDESC587"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = vietnamese
+		NOT = {
+			any_owned_province = {
+				culture = vietnamese
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA587"
+		remove_accepted_culture = vietnamese
+	}
+}
+country_event = {
+	id = 588
+	title = "EVTNAME588"
+	desc = "EVTDESC588"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = khmer
+		NOT = {
+			any_owned_province = {
+				culture = khmer
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA588"
+		remove_accepted_culture = khmer
+	}
+}
+country_event = {
+	id = 589
+	title = "EVTNAME589"
+	desc = "EVTDESC589"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = malay
+		NOT = {
+			any_owned_province = {
+				culture = malay
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA589"
+		remove_accepted_culture = malay
+	}
+}
+country_event = {
+	id = 590
+	title = "EVTNAME590"
+	desc = "EVTDESC590"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = filipino
+		NOT = {
+			any_owned_province = {
+				culture = filipino
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA590"
+		remove_accepted_culture = filipino
+	}
+}
+country_event = {
+	id = 591
+	title = "EVTNAME591"
+	desc = "EVTDESC591"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = javan
+		NOT = {
+			any_owned_province = {
+				culture = javan
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA591"
+		remove_accepted_culture = javan
+	}
+}
+country_event = {
+	id = 592
+	title = "EVTNAME592"
+	desc = "EVTDESC592"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = moluccan
+		NOT = {
+			any_owned_province = {
+				culture = moluccan
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA592"
+		remove_accepted_culture = moluccan
+	}
+}
+country_event = {
+	id = 593
+	title = "EVTNAME593"
+	desc = "EVTDESC593"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = thai
+		NOT = {
+			any_owned_province = {
+				culture = thai
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA593"
+		remove_accepted_culture = thai
+	}
+}
+country_event = {
+	id = 594
+	title = "EVTNAME594"
+	desc = "EVTDESC594"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = lao
+		NOT = {
+			any_owned_province = {
+				culture = lao
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA594"
+		remove_accepted_culture = lao
+	}
+}
+country_event = {
+	id = 595
+	title = "EVTNAME595"
+	desc = "EVTDESC595"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = shan
+		NOT = {
+			any_owned_province = {
+				culture = shan
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA595"
+		remove_accepted_culture = shan
+	}
+}
+country_event = {
+	id = 596
+	title = "EVTNAME596"
+	desc = "EVTDESC596"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = burmese
+		NOT = {
+			any_owned_province = {
+				culture = burmese
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA596"
+		remove_accepted_culture = burmese
+	}
+}
+country_event = {
+	id = 597
+	title = "EVTNAME597"
+	desc = "EVTDESC597"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = asian_minor
+		NOT = {
+			any_owned_province = {
+				culture = asian_minor
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA597"
+		remove_accepted_culture = asian_minor
+	}
+}
+country_event = {
+	id = 598
+	title = "EVTNAME598"
+	desc = "EVTDESC598"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = kachin
+		NOT = {
+			any_owned_province = {
+				culture = kachin
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA598"
+		remove_accepted_culture = kachin
+	}
+}
+country_event = {
+	id = 599
+	title = "EVTNAME599"
+	desc = "EVTDESC599"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = karen
+		NOT = {
+			any_owned_province = {
+				culture = karen
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA599"
+		remove_accepted_culture = karen
+	}
+}
+country_event = {
+	id = 600
+	title = "EVTNAME600"
+	desc = "EVTDESC600"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = japanese
+		NOT = {
+			any_owned_province = {
+				culture = japanese
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA600"
+		remove_accepted_culture = japanese
+	}
+}
+country_event = {
+	id = 601
+	title = "EVTNAME601"
+	desc = "EVTDESC601"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = manchu
+		NOT = {
+			any_owned_province = {
+				culture = manchu
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA601"
+		remove_accepted_culture = manchu
+	}
+}
+country_event = {
+	id = 602
+	title = "EVTNAME602"
+	desc = "EVTDESC602"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = beifaren
+		NOT = {
+			any_owned_province = {
+				culture = beifaren
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA602"
+		remove_accepted_culture = beifaren
+	}
+}
+country_event = {
+	id = 603
+	title = "EVTNAME603"
+	desc = "EVTDESC603"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = nanfaren
+		NOT = {
+			any_owned_province = {
+				culture = nanfaren
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA603"
+		remove_accepted_culture = nanfaren
+	}
+}
+country_event = {
+	id = 604
+	title = "EVTNAME604"
+	desc = "EVTDESC604"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = korean
+		NOT = {
+			any_owned_province = {
+				culture = korean
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA604"
+		remove_accepted_culture = korean
+	}
+}
+country_event = {
+	id = 605
+	title = "EVTNAME605"
+	desc = "EVTDESC605"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = ainu
+		NOT = {
+			any_owned_province = {
+				culture = ainu
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA605"
+		remove_accepted_culture = ainu
+	}
+}
+country_event = {
+	id = 606
+	title = "EVTNAME606"
+	desc = "EVTDESC606"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = hakka
+		NOT = {
+			any_owned_province = {
+				culture = hakka
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA606"
+		remove_accepted_culture = hakka
+	}
+}
+country_event = {
+	id = 607
+	title = "EVTNAME607"
+	desc = "EVTDESC607"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = miao
+		NOT = {
+			any_owned_province = {
+				culture = miao
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA607"
+		remove_accepted_culture = miao
+	}
+}
+country_event = {
+	id = 608
+	title = "EVTNAME608"
+	desc = "EVTDESC608"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = min
+		NOT = {
+			any_owned_province = {
+				culture = min
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA608"
+		remove_accepted_culture = min
+	}
+}
+country_event = {
+	id = 609
+	title = "EVTNAME609"
+	desc = "EVTDESC609"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = zhuang
+		NOT = {
+			any_owned_province = {
+				culture = zhuang
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA609"
+		remove_accepted_culture = zhuang
+	}
+}
+country_event = {
+	id = 610
+	title = "EVTNAME610"
+	desc = "EVTDESC610"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = yi
+		NOT = {
+			any_owned_province = {
+				culture = yi
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA610"
+		remove_accepted_culture = yi
+	}
+}
+country_event = {
+	id = 611
+	title = "EVTNAME611"
+	desc = "EVTDESC611"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = yue
+		NOT = {
+			any_owned_province = {
+				culture = yue
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA611"
+		remove_accepted_culture = yue
+	}
+}
+country_event = {
+	id = 612
+	title = "EVTNAME612"
+	desc = "EVTDESC612"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = polynesian
+		NOT = {
+			any_owned_province = {
+				culture = polynesian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA612"
+		remove_accepted_culture = polynesian
+	}
+}
+country_event = {
+	id = 613
+	title = "EVTNAME613"
+	desc = "EVTDESC613"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = hawaiian
+		NOT = {
+			any_owned_province = {
+				culture = hawaiian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA613"
+		remove_accepted_culture = hawaiian
+	}
+}
+country_event = {
+	id = 614
+	title = "EVTNAME614"
+	desc = "EVTDESC614"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = maori
+		NOT = {
+			any_owned_province = {
+				culture = maori
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA614"
+		remove_accepted_culture = maori
+	}
+}
+country_event = {
+	id = 615
+	title = "EVTNAME615"
+	desc = "EVTDESC615"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = aborigine
+		NOT = {
+			any_owned_province = {
+				culture = aborigine
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA615"
+		remove_accepted_culture = aborigine
+	}
+}
+country_event = {
+	id = 616
+	title = "EVTNAME616"
+	desc = "EVTDESC616"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = melanesian
+		NOT = {
+			any_owned_province = {
+				culture = melanesian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA616"
+		remove_accepted_culture = melanesian
+	}
+}
+country_event = {
+	id = 617
+	title = "EVTNAME617"
+	desc = "EVTDESC617"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = micronesian
+		NOT = {
+			any_owned_province = {
+				culture = micronesian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA617"
+		remove_accepted_culture = micronesian
+	}
+}
+country_event = {
+	id = 618
+	title = "EVTNAME618"
+	desc = "EVTDESC618"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = zapotec
+		NOT = {
+			any_owned_province = {
+				culture = zapotec
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA618"
+		remove_accepted_culture = zapotec
+	}
+}
+country_event = {
+	id = 619
+	title = "EVTNAME619"
+	desc = "EVTDESC619"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = mayan
+		NOT = {
+			any_owned_province = {
+				culture = mayan
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA619"
+		remove_accepted_culture = mayan
+	}
+}
+country_event = {
+	id = 620
+	title = "EVTNAME620"
+	desc = "EVTDESC620"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = nahua
+		NOT = {
+			any_owned_province = {
+				culture = nahua
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA620"
+		remove_accepted_culture = nahua
+	}
+}
+country_event = {
+	id = 621
+	title = "EVTNAME621"
+	desc = "EVTDESC621"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = tarascan
+		NOT = {
+			any_owned_province = {
+				culture = tarascan
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA621"
+		remove_accepted_culture = tarascan
+	}
+}
+country_event = {
+	id = 622
+	title = "EVTNAME622"
+	desc = "EVTDESC622"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = guajiro
+		NOT = {
+			any_owned_province = {
+				culture = guajiro
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA622"
+		remove_accepted_culture = guajiro
+	}
+}
+country_event = {
+	id = 623
+	title = "EVTNAME623"
+	desc = "EVTDESC623"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = tupinamba
+		NOT = {
+			any_owned_province = {
+				culture = tupinamba
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA623"
+		remove_accepted_culture = tupinamba
+	}
+}
+country_event = {
+	id = 624
+	title = "EVTNAME624"
+	desc = "EVTDESC624"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = metis
+		NOT = {
+			any_owned_province = {
+				culture = metis
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA624"
+		remove_accepted_culture = metis
+	}
+}
+country_event = {
+	id = 625
+	title = "EVTNAME625"
+	desc = "EVTDESC625"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = dakota
+		NOT = {
+			any_owned_province = {
+				culture = dakota
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA625"
+		remove_accepted_culture = dakota
+	}
+}
+country_event = {
+	id = 626
+	title = "EVTNAME626"
+	desc = "EVTDESC626"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = cherokee
+		NOT = {
+			any_owned_province = {
+				culture = cherokee
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA626"
+		remove_accepted_culture = cherokee
+	}
+}
+country_event = {
+	id = 627
+	title = "EVTNAME627"
+	desc = "EVTDESC627"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = pueblo
+		NOT = {
+			any_owned_province = {
+				culture = pueblo
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA627"
+		remove_accepted_culture = pueblo
+	}
+}
+country_event = {
+	id = 628
+	title = "EVTNAME628"
+	desc = "EVTDESC628"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = inuit
+		NOT = {
+			any_owned_province = {
+				culture = inuit
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA628"
+		remove_accepted_culture = inuit
+	}
+}
+country_event = {
+	id = 629
+	title = "EVTNAME629"
+	desc = "EVTDESC629"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = cree
+		NOT = {
+			any_owned_province = {
+				culture = cree
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA629"
+		remove_accepted_culture = cree
+	}
+}
+country_event = {
+	id = 630
+	title = "EVTNAME630"
+	desc = "EVTDESC630"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = navajo
+		NOT = {
+			any_owned_province = {
+				culture = navajo
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA630"
+		remove_accepted_culture = navajo
+	}
+}
+country_event = {
+	id = 631
+	title = "EVTNAME631"
+	desc = "EVTDESC631"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = native_american_minor
+		NOT = {
+			any_owned_province = {
+				culture = native_american_minor
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA631"
+		remove_accepted_culture = native_american_minor
+	}
+}
+country_event = {
+	id = 632
+	title = "EVTNAME632"
+	desc = "EVTDESC632"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = yankee
+		NOT = {
+			any_owned_province = {
+				culture = yankee
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA632"
+		remove_accepted_culture = yankee
+	}
+}
+country_event = {
+	id = 633
+	title = "EVTNAME633"
+	desc = "EVTDESC633"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = dixie
+		NOT = {
+			any_owned_province = {
+				culture = dixie
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA633"
+		remove_accepted_culture = dixie
+	}
+}
+country_event = {
+	id = 634
+	title = "EVTNAME634"
+	desc = "EVTDESC634"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = texan
+		NOT = {
+			any_owned_province = {
+				culture = texan
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA634"
+		remove_accepted_culture = texan
+	}
+}
+country_event = {
+	id = 635
+	title = "EVTNAME635"
+	desc = "EVTDESC635"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = boer
+		NOT = {
+			any_owned_province = {
+				culture = boer
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA635"
+		remove_accepted_culture = boer
+	}
+}
+country_event = {
+	id = 636
+	title = "EVTNAME636"
+	desc = "EVTDESC636"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = australian
+		NOT = {
+			any_owned_province = {
+				culture = australian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA636"
+		remove_accepted_culture = australian
+	}
+}
+country_event = {
+	id = 637
+	title = "EVTNAME637"
+	desc = "EVTDESC637"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = anglo_canadian
+		NOT = {
+			any_owned_province = {
+				culture = anglo_canadian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA637"
+		remove_accepted_culture = anglo_canadian
+	}
+}
+country_event = {
+	id = 638
+	title = "EVTNAME638"
+	desc = "EVTDESC638"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = french_canadian
+		NOT = {
+			any_owned_province = {
+				culture = french_canadian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA638"
+		remove_accepted_culture = french_canadian
+	}
+}
+country_event = {
+	id = 639
+	title = "EVTNAME639"
+	desc = "EVTDESC639"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = mexican
+		NOT = {
+			any_owned_province = {
+				culture = mexican
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA639"
+		remove_accepted_culture = mexican
+	}
+}
+country_event = {
+	id = 640
+	title = "EVTNAME640"
+	desc = "EVTDESC640"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = central_american
+		NOT = {
+			any_owned_province = {
+				culture = central_american
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA640"
+		remove_accepted_culture = central_american
+	}
+}
+country_event = {
+	id = 641
+	title = "EVTNAME641"
+	desc = "EVTDESC641"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = caribeno
+		NOT = {
+			any_owned_province = {
+				culture = caribeno
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA641"
+		remove_accepted_culture = caribeno
+	}
+}
+country_event = {
+	id = 642
+	title = "EVTNAME642"
+	desc = "EVTDESC642"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = north_andean
+		NOT = {
+			any_owned_province = {
+				culture = north_andean
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA642"
+		remove_accepted_culture = north_andean
+	}
+}
+country_event = {
+	id = 643
+	title = "EVTNAME643"
+	desc = "EVTDESC643"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = south_andean
+		NOT = {
+			any_owned_province = {
+				culture = south_andean
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA643"
+		remove_accepted_culture = south_andean
+	}
+}
+country_event = {
+	id = 644
+	title = "EVTNAME644"
+	desc = "EVTDESC644"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = platinean
+		NOT = {
+			any_owned_province = {
+				culture = platinean
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA644"
+		remove_accepted_culture = platinean
+	}
+}
+country_event = {
+	id = 645
+	title = "EVTNAME645"
+	desc = "EVTDESC645"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = brazilian
+		NOT = {
+			any_owned_province = {
+				culture = brazilian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA645"
+		remove_accepted_culture = brazilian
+	}
+}
+country_event = {
+	id = 646
+	title = "EVTNAME646"
+	desc = "EVTDESC646"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = afro_brazilian
+		NOT = {
+			any_owned_province = {
+				culture = afro_brazilian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA646"
+		remove_accepted_culture = afro_brazilian
+	}
+}
+country_event = {
+	id = 647
+	title = "EVTNAME647"
+	desc = "EVTDESC647"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = quechua
+		NOT = {
+			any_owned_province = {
+				culture = quechua
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA647"
+		remove_accepted_culture = quechua
+	}
+}
+country_event = {
+	id = 648
+	title = "EVTNAME648"
+	desc = "EVTDESC648"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = guarani
+		NOT = {
+			any_owned_province = {
+				culture = guarani
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA648"
+		remove_accepted_culture = guarani
+	}
+}
+country_event = {
+	id = 649
+	title = "EVTNAME649"
+	desc = "EVTDESC649"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = aimara
+		NOT = {
+			any_owned_province = {
+				culture = aimara
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA649"
+		remove_accepted_culture = aimara
+	}
+}
+country_event = {
+	id = 650
+	title = "EVTNAME650"
+	desc = "EVTDESC650"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = amazonian
+		NOT = {
+			any_owned_province = {
+				culture = amazonian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA650"
+		remove_accepted_culture = amazonian
+	}
+}
+country_event = {
+	id = 651
+	title = "EVTNAME651"
+	desc = "EVTDESC651"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = patagonian
+		NOT = {
+			any_owned_province = {
+				culture = patagonian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA651"
+		remove_accepted_culture = patagonian
+	}
+}
+country_event = {
+	id = 652
+	title = "EVTNAME652"
+	desc = "EVTDESC652"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = afro_american
+		NOT = {
+			any_owned_province = {
+				culture = afro_american
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA652"
+		remove_accepted_culture = afro_american
+	}
+}
+country_event = {
+	id = 653
+	title = "EVTNAME653"
+	desc = "EVTDESC653"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = afro_caribbean
+		NOT = {
+			any_owned_province = {
+				culture = afro_caribbean
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA653"
+		remove_accepted_culture = afro_caribbean
+	}
+}
+country_event = {
+	id = 654
+	title = "EVTNAME654"
+	desc = "EVTDESC654"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = afro_caribeno
+		NOT = {
+			any_owned_province = {
+				culture = afro_caribeno
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA654"
+		remove_accepted_culture = afro_caribeno
+	}
+}
+country_event = {
+	id = 655
+	title = "EVTNAME655"
+	desc = "EVTDESC655"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = afro_antillean
+		NOT = {
+			any_owned_province = {
+				culture = afro_antillean
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA655"
+		remove_accepted_culture = afro_antillean
+	}
+}
+country_event = {
+	id = 656
+	title = "EVTNAME656"
+	desc = "EVTDESC656"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = akan
+		NOT = {
+			any_owned_province = {
+				culture = akan
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA656"
+		remove_accepted_culture = akan
+	}
+}
+country_event = {
+	id = 657
+	title = "EVTNAME657"
+	desc = "EVTDESC657"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = bambara
+		NOT = {
+			any_owned_province = {
+				culture = bambara
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA657"
+		remove_accepted_culture = bambara
+	}
+}
+country_event = {
+	id = 658
+	title = "EVTNAME658"
+	desc = "EVTDESC658"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = dyula
+		NOT = {
+			any_owned_province = {
+				culture = dyula
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA658"
+		remove_accepted_culture = dyula
+	}
+}
+country_event = {
+	id = 659
+	title = "EVTNAME659"
+	desc = "EVTDESC659"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = edo
+		NOT = {
+			any_owned_province = {
+				culture = edo
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA659"
+		remove_accepted_culture = edo
+	}
+}
+country_event = {
+	id = 660
+	title = "EVTNAME660"
+	desc = "EVTDESC660"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = ewe
+		NOT = {
+			any_owned_province = {
+				culture = ewe
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA660"
+		remove_accepted_culture = ewe
+	}
+}
+country_event = {
+	id = 661
+	title = "EVTNAME661"
+	desc = "EVTDESC661"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = fon
+		NOT = {
+			any_owned_province = {
+				culture = fon
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA661"
+		remove_accepted_culture = fon
+	}
+}
+country_event = {
+	id = 662
+	title = "EVTNAME662"
+	desc = "EVTDESC662"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = fulbe
+		NOT = {
+			any_owned_province = {
+				culture = fulbe
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA662"
+		remove_accepted_culture = fulbe
+	}
+}
+country_event = {
+	id = 663
+	title = "EVTNAME663"
+	desc = "EVTDESC663"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = hausa
+		NOT = {
+			any_owned_province = {
+				culture = hausa
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA663"
+		remove_accepted_culture = hausa
+	}
+}
+country_event = {
+	id = 664
+	title = "EVTNAME664"
+	desc = "EVTDESC664"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = ibibio
+		NOT = {
+			any_owned_province = {
+				culture = ibibio
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA664"
+		remove_accepted_culture = ibibio
+	}
+}
+country_event = {
+	id = 665
+	title = "EVTNAME665"
+	desc = "EVTDESC665"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = ibo
+		NOT = {
+			any_owned_province = {
+				culture = ibo
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA665"
+		remove_accepted_culture = ibo
+	}
+}
+country_event = {
+	id = 666
+	title = "EVTNAME666"
+	desc = "EVTDESC666"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = kru
+		NOT = {
+			any_owned_province = {
+				culture = kru
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA666"
+		remove_accepted_culture = kru
+	}
+}
+country_event = {
+	id = 667
+	title = "EVTNAME667"
+	desc = "EVTDESC667"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = mande
+		NOT = {
+			any_owned_province = {
+				culture = mande
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA667"
+		remove_accepted_culture = mande
+	}
+}
+country_event = {
+	id = 668
+	title = "EVTNAME668"
+	desc = "EVTDESC668"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = maures
+		NOT = {
+			any_owned_province = {
+				culture = maures
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA668"
+		remove_accepted_culture = maures
+	}
+}
+country_event = {
+	id = 669
+	title = "EVTNAME669"
+	desc = "EVTDESC669"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = mossi
+		NOT = {
+			any_owned_province = {
+				culture = mossi
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA669"
+		remove_accepted_culture = mossi
+	}
+}
+country_event = {
+	id = 670
+	title = "EVTNAME670"
+	desc = "EVTDESC670"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = senufo
+		NOT = {
+			any_owned_province = {
+				culture = senufo
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA670"
+		remove_accepted_culture = senufo
+	}
+}
+country_event = {
+	id = 671
+	title = "EVTNAME671"
+	desc = "EVTDESC671"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = songhai
+		NOT = {
+			any_owned_province = {
+				culture = songhai
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA671"
+		remove_accepted_culture = songhai
+	}
+}
+country_event = {
+	id = 672
+	title = "EVTNAME672"
+	desc = "EVTDESC672"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = tiv
+		NOT = {
+			any_owned_province = {
+				culture = tiv
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA672"
+		remove_accepted_culture = tiv
+	}
+}
+country_event = {
+	id = 673
+	title = "EVTNAME673"
+	desc = "EVTDESC673"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = tuareg
+		NOT = {
+			any_owned_province = {
+				culture = tuareg
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA673"
+		remove_accepted_culture = tuareg
+	}
+}
+country_event = {
+	id = 674
+	title = "EVTNAME674"
+	desc = "EVTDESC674"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = wolof
+		NOT = {
+			any_owned_province = {
+				culture = wolof
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA674"
+		remove_accepted_culture = wolof
+	}
+}
+country_event = {
+	id = 675
+	title = "EVTNAME675"
+	desc = "EVTDESC675"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = yoruba
+		NOT = {
+			any_owned_province = {
+				culture = yoruba
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA675"
+		remove_accepted_culture = yoruba
+	}
+}
+country_event = {
+	id = 676
+	title = "EVTNAME676"
+	desc = "EVTDESC676"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = bakongo
+		NOT = {
+			any_owned_province = {
+				culture = bakongo
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA676"
+		remove_accepted_culture = bakongo
+	}
+}
+country_event = {
+	id = 677
+	title = "EVTNAME677"
+	desc = "EVTDESC677"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = baguirmi
+		NOT = {
+			any_owned_province = {
+				culture = baguirmi
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA677"
+		remove_accepted_culture = baguirmi
+	}
+}
+country_event = {
+	id = 678
+	title = "EVTNAME678"
+	desc = "EVTDESC678"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = fang
+		NOT = {
+			any_owned_province = {
+				culture = fang
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA678"
+		remove_accepted_culture = fang
+	}
+}
+country_event = {
+	id = 679
+	title = "EVTNAME679"
+	desc = "EVTDESC679"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = kanuri
+		NOT = {
+			any_owned_province = {
+				culture = kanuri
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA679"
+		remove_accepted_culture = kanuri
+	}
+}
+country_event = {
+	id = 680
+	title = "EVTNAME680"
+	desc = "EVTDESC680"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = luba
+		NOT = {
+			any_owned_province = {
+				culture = luba
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA680"
+		remove_accepted_culture = luba
+	}
+}
+country_event = {
+	id = 681
+	title = "EVTNAME681"
+	desc = "EVTDESC681"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = lunda
+		NOT = {
+			any_owned_province = {
+				culture = lunda
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA681"
+		remove_accepted_culture = lunda
+	}
+}
+country_event = {
+	id = 682
+	title = "EVTNAME682"
+	desc = "EVTDESC682"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = mongo
+		NOT = {
+			any_owned_province = {
+				culture = mongo
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA682"
+		remove_accepted_culture = mongo
+	}
+}
+country_event = {
+	id = 683
+	title = "EVTNAME683"
+	desc = "EVTDESC683"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = sara
+		NOT = {
+			any_owned_province = {
+				culture = sara
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA683"
+		remove_accepted_culture = sara
+	}
+}
+country_event = {
+	id = 684
+	title = "EVTNAME684"
+	desc = "EVTDESC684"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = teda
+		NOT = {
+			any_owned_province = {
+				culture = teda
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA684"
+		remove_accepted_culture = teda
+	}
+}
+country_event = {
+	id = 685
+	title = "EVTNAME685"
+	desc = "EVTDESC685"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = african_minor
+		NOT = {
+			any_owned_province = {
+				culture = african_minor
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA685"
+		remove_accepted_culture = african_minor
+	}
+}
+country_event = {
+	id = 686
+	title = "EVTNAME686"
+	desc = "EVTDESC686"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = amhara
+		NOT = {
+			any_owned_province = {
+				culture = amhara
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA686"
+		remove_accepted_culture = amhara
+	}
+}
+country_event = {
+	id = 687
+	title = "EVTNAME687"
+	desc = "EVTDESC687"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = afar
+		NOT = {
+			any_owned_province = {
+				culture = afar
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA687"
+		remove_accepted_culture = afar
+	}
+}
+country_event = {
+	id = 688
+	title = "EVTNAME688"
+	desc = "EVTDESC688"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = azande
+		NOT = {
+			any_owned_province = {
+				culture = azande
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA688"
+		remove_accepted_culture = azande
+	}
+}
+country_event = {
+	id = 689
+	title = "EVTNAME689"
+	desc = "EVTDESC689"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = baganda
+		NOT = {
+			any_owned_province = {
+				culture = baganda
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA689"
+		remove_accepted_culture = baganda
+	}
+}
+country_event = {
+	id = 690
+	title = "EVTNAME690"
+	desc = "EVTDESC690"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = beja
+		NOT = {
+			any_owned_province = {
+				culture = beja
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA690"
+		remove_accepted_culture = beja
+	}
+}
+country_event = {
+	id = 691
+	title = "EVTNAME691"
+	desc = "EVTDESC691"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = dinka
+		NOT = {
+			any_owned_province = {
+				culture = dinka
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA691"
+		remove_accepted_culture = dinka
+	}
+}
+country_event = {
+	id = 692
+	title = "EVTNAME692"
+	desc = "EVTDESC692"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = fur
+		NOT = {
+			any_owned_province = {
+				culture = fur
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA692"
+		remove_accepted_culture = fur
+	}
+}
+country_event = {
+	id = 693
+	title = "EVTNAME693"
+	desc = "EVTDESC693"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = kikuyu
+		NOT = {
+			any_owned_province = {
+				culture = kikuyu
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA693"
+		remove_accepted_culture = kikuyu
+	}
+}
+country_event = {
+	id = 694
+	title = "EVTNAME694"
+	desc = "EVTDESC694"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = luo
+		NOT = {
+			any_owned_province = {
+				culture = luo
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA694"
+		remove_accepted_culture = luo
+	}
+}
+country_event = {
+	id = 695
+	title = "EVTNAME695"
+	desc = "EVTDESC695"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = maasai
+		NOT = {
+			any_owned_province = {
+				culture = maasai
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA695"
+		remove_accepted_culture = maasai
+	}
+}
+country_event = {
+	id = 696
+	title = "EVTNAME696"
+	desc = "EVTDESC696"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = nuer
+		NOT = {
+			any_owned_province = {
+				culture = nuer
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA696"
+		remove_accepted_culture = nuer
+	}
+}
+country_event = {
+	id = 697
+	title = "EVTNAME697"
+	desc = "EVTDESC697"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = nuba
+		NOT = {
+			any_owned_province = {
+				culture = nuba
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA697"
+		remove_accepted_culture = nuba
+	}
+}
+country_event = {
+	id = 698
+	title = "EVTNAME698"
+	desc = "EVTDESC698"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = oromo
+		NOT = {
+			any_owned_province = {
+				culture = oromo
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA698"
+		remove_accepted_culture = oromo
+	}
+}
+country_event = {
+	id = 699
+	title = "EVTNAME699"
+	desc = "EVTDESC699"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = ruanda
+		NOT = {
+			any_owned_province = {
+				culture = ruanda
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA699"
+		remove_accepted_culture = ruanda
+	}
+}
+country_event = {
+	id = 700
+	title = "EVTNAME700"
+	desc = "EVTDESC700"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = rundi
+		NOT = {
+			any_owned_province = {
+				culture = rundi
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA700"
+		remove_accepted_culture = rundi
+	}
+}
+country_event = {
+	id = 701
+	title = "EVTNAME701"
+	desc = "EVTDESC701"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = sidama
+		NOT = {
+			any_owned_province = {
+				culture = sidama
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA701"
+		remove_accepted_culture = sidama
+	}
+}
+country_event = {
+	id = 702
+	title = "EVTNAME702"
+	desc = "EVTDESC702"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = somali
+		NOT = {
+			any_owned_province = {
+				culture = somali
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA702"
+		remove_accepted_culture = somali
+	}
+}
+country_event = {
+	id = 703
+	title = "EVTNAME703"
+	desc = "EVTDESC703"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = sudanese
+		NOT = {
+			any_owned_province = {
+				culture = sudanese
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA703"
+		remove_accepted_culture = sudanese
+	}
+}
+country_event = {
+	id = 704
+	title = "EVTNAME704"
+	desc = "EVTDESC704"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = sukuma
+		NOT = {
+			any_owned_province = {
+				culture = sukuma
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA704"
+		remove_accepted_culture = sukuma
+	}
+}
+country_event = {
+	id = 705
+	title = "EVTNAME705"
+	desc = "EVTDESC705"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = swahili
+		NOT = {
+			any_owned_province = {
+				culture = swahili
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA705"
+		remove_accepted_culture = swahili
+	}
+}
+country_event = {
+	id = 706
+	title = "EVTNAME706"
+	desc = "EVTDESC706"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = tigray
+		NOT = {
+			any_owned_province = {
+				culture = tigray
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA706"
+		remove_accepted_culture = tigray
+	}
+}
+country_event = {
+	id = 707
+	title = "EVTNAME707"
+	desc = "EVTDESC707"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = unyamwezi
+		NOT = {
+			any_owned_province = {
+				culture = unyamwezi
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA707"
+		remove_accepted_culture = unyamwezi
+	}
+}
+country_event = {
+	id = 708
+	title = "EVTNAME708"
+	desc = "EVTDESC708"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = chewa
+		NOT = {
+			any_owned_province = {
+				culture = chewa
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA708"
+		remove_accepted_culture = chewa
+	}
+}
+country_event = {
+	id = 709
+	title = "EVTNAME709"
+	desc = "EVTDESC709"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = herero
+		NOT = {
+			any_owned_province = {
+				culture = herero
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA709"
+		remove_accepted_culture = herero
+	}
+}
+country_event = {
+	id = 710
+	title = "EVTNAME710"
+	desc = "EVTDESC710"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = khoisan
+		NOT = {
+			any_owned_province = {
+				culture = khoisan
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA710"
+		remove_accepted_culture = khoisan
+	}
+}
+country_event = {
+	id = 711
+	title = "EVTNAME711"
+	desc = "EVTDESC711"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = lomwe
+		NOT = {
+			any_owned_province = {
+				culture = lomwe
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA711"
+		remove_accepted_culture = lomwe
+	}
+}
+country_event = {
+	id = 712
+	title = "EVTNAME712"
+	desc = "EVTDESC712"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = makua
+		NOT = {
+			any_owned_province = {
+				culture = makua
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA712"
+		remove_accepted_culture = makua
+	}
+}
+country_event = {
+	id = 713
+	title = "EVTNAME713"
+	desc = "EVTDESC713"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = malagasy
+		NOT = {
+			any_owned_province = {
+				culture = malagasy
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA713"
+		remove_accepted_culture = malagasy
+	}
+}
+country_event = {
+	id = 714
+	title = "EVTNAME714"
+	desc = "EVTDESC714"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = nguni
+		NOT = {
+			any_owned_province = {
+				culture = nguni
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA714"
+		remove_accepted_culture = nguni
+	}
+}
+country_event = {
+	id = 715
+	title = "EVTNAME715"
+	desc = "EVTDESC715"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = ovimbundu
+		NOT = {
+			any_owned_province = {
+				culture = ovimbundu
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA715"
+		remove_accepted_culture = ovimbundu
+	}
+}
+country_event = {
+	id = 716
+	title = "EVTNAME716"
+	desc = "EVTDESC716"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = sena
+		NOT = {
+			any_owned_province = {
+				culture = sena
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA716"
+		remove_accepted_culture = sena
+	}
+}
+country_event = {
+	id = 717
+	title = "EVTNAME717"
+	desc = "EVTDESC717"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = shona
+		NOT = {
+			any_owned_province = {
+				culture = shona
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA717"
+		remove_accepted_culture = shona
+	}
+}
+country_event = {
+	id = 718
+	title = "EVTNAME718"
+	desc = "EVTDESC718"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = sotho
+		NOT = {
+			any_owned_province = {
+				culture = sotho
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA718"
+		remove_accepted_culture = sotho
+	}
+}
+country_event = {
+	id = 719
+	title = "EVTNAME719"
+	desc = "EVTDESC719"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = tonga
+		NOT = {
+			any_owned_province = {
+				culture = tonga
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA719"
+		remove_accepted_culture = tonga
+	}
+}
+country_event = {
+	id = 720
+	title = "EVTNAME720"
+	desc = "EVTDESC720"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = tswana
+		NOT = {
+			any_owned_province = {
+				culture = tswana
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA720"
+		remove_accepted_culture = tswana
+	}
+}
+country_event = {
+	id = 721
+	title = "EVTNAME721"
+	desc = "EVTDESC721"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = xhosa
+		NOT = {
+			any_owned_province = {
+				culture = xhosa
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA721"
+		remove_accepted_culture = xhosa
+	}
+}
+country_event = {
+	id = 722
+	title = "EVTNAME722"
+	desc = "EVTDESC722"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = yao
+		NOT = {
+			any_owned_province = {
+				culture = yao
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA722"
+		remove_accepted_culture = yao
+	}
+}
+country_event = {
+	id = 723
+	title = "EVTNAME723"
+	desc = "EVTDESC723"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = zulu
+		NOT = {
+			any_owned_province = {
+				culture = zulu
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA723"
+		remove_accepted_culture = zulu
+	}
+}
+country_event = {
+	id = 724
+	title = "EVTNAME724"
+	desc = "EVTDESC724"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = polar_bears
+		NOT = {
+			any_owned_province = {
+				culture = polar_bears
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA724"
+		remove_accepted_culture = polar_bears
+	}
+}
+country_event = {
+	id = 725
+	title = "EVTNAME725"
+	desc = "EVTDESC725"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = anglo_african
+		NOT = {
+			any_owned_province = {
+				culture = anglo_african
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA725"
+		remove_accepted_culture = anglo_african
+	}
+}
+country_event = {
+	id = 726
+	title = "EVTNAME726"
+	desc = "EVTDESC726"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = buryat
+		NOT = {
+			any_owned_province = {
+				culture = buryat
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA726"
+		remove_accepted_culture = buryat
+	}
+}
+country_event = {
+	id = 727
+	title = "EVTNAME727"
+	desc = "EVTDESC727"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = kalmyk
+		NOT = {
+			any_owned_province = {
+				culture = kalmyk
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA727"
+		remove_accepted_culture = kalmyk
+	}
+}
+country_event = {
+	id = 728
+	title = "EVTNAME728"
+	desc = "EVTDESC728"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = crimean_tatar
+		NOT = {
+			any_owned_province = {
+				culture = crimean_tatar
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA728"
+		remove_accepted_culture = crimean_tatar
+	}
+}
+country_event = {
+	id = 729
+	title = "EVTNAME729"
+	desc = "EVTDESC729"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = tuvan
+		NOT = {
+			any_owned_province = {
+				culture = tuvan
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA729"
+		remove_accepted_culture = tuvan
+	}
+}
+country_event = {
+	id = 730
+	title = "EVTNAME730"
+	desc = "EVTDESC730"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = cubans
+		NOT = {
+			any_owned_province = {
+				culture = cubans
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA730"
+		remove_accepted_culture = cubans
+	}
+}
+country_event = {
+	id = 731
+	title = "EVTNAME731"
+	desc = "EVTDESC731"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = scottish
+		NOT = {
+			any_owned_province = {
+				culture = scottish
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA731"
+		remove_accepted_culture = scottish
+	}
+}
+country_event = {
+	id = 732
+	title = "EVTNAME732"
+	desc = "EVTDESC732"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = new_zelandian
+		NOT = {
+			any_owned_province = {
+				culture = new_zelandian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA732"
+		remove_accepted_culture = new_zelandian
+	}
+}

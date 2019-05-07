@@ -8,3 +8,18 @@ Screenshots/
 /music/*4.mp3
 /music/*5.mp3
 /autogen1/report.txt
+
+#Built stuff
+Debug/
+Release/
+
+#Visual Studio intestines
+*.suo
+*.tlog
+*.obj
+*.user
+*.VC.db
+*.VC.db-shm
+*.VC.db-wal
+*.VC.opendb
+*.ipch

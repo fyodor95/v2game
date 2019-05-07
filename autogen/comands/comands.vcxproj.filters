@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="_pch_comands.h" />
+    <ClInclude Include="_pch_comands_private.h" />
+    <ClInclude Include="comand.h" />
+    <ClInclude Include="conditions.h" />
+    <ClInclude Include="effects.h" />
+    <ClInclude Include="events.h" />
+    <ClInclude Include="modifier.h" />
+    <ClInclude Include="target.h" />
+    <ClInclude Include="target_comand.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="_pch_comands.cpp" />
+    <ClCompile Include="comand.cpp" />
+    <ClCompile Include="events.cpp" />
+    <ClCompile Include="conditions.cpp" />
+    <ClCompile Include="effects.cpp" />
+  </ItemGroup>
+</Project>
