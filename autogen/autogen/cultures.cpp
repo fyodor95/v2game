@@ -58,7 +58,7 @@ SINGLETON(tCultures, Cultures)
         , {"azerbaijani", "Азербайджанцы"}
         , {"north_caucasian", "Кавказцы"}
         , {"maghrebi", "Магрибцы"}
-        , {"misri", "Мисри"}
+        , {"misri", "Египтяне"}
         , {"mashriqi", "Машрики"}
         , {"bedouin", "Бедуины"}
         , {"berber", "Берберы"}
