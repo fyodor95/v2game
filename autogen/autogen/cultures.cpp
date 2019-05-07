@@ -45,7 +45,7 @@ SINGLETON(tCultures, Cultures)
         , {"czech", "Чехи"}
         , {"slovak", "Словаки"}
         , {"russian", "Русские"}
-        , {"byelorussian", "Беларусы"}
+        , {"byelorussian", "Белорусы"}
         , {"ukrainian", "Украинцы"}
         , {"ugrian", "Финно-угры"}
         , {"latvian", "Латыши"}
