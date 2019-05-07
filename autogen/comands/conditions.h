@@ -1,5 +1,6 @@
 #pragma once
 
+#include "citizenship_policy.h"
 #include "target_comand.h"
 
 COMAND(tCondition);
@@ -27,6 +28,10 @@ tCondition<tTarget::kCountry> AcceptedCulture(char const * culture);
 
 // Возвращает true, если для любой провинции, принадлежащей данной стране, выполняется условие condition.
 tCondition<tTarget::kCountry> AnyOwnedProvince(tCondition<tTarget::kProvince> && condition);
+
+// Возвращает true, если законом о гражданстве в данной стране является policy.
+template <tCitizenshipPolicy policy>
+tCondition<tTarget::kCountry> CitizenshipPolicyIs() { return Set("citizenship_policy", ToString<policy>()); }
 
 // Проверяет условия coditions для столицы данной страны. Возвращает true, если выполнено каждое из условий.
 tCondition<tTarget::kCountry> ConditionsForCapital(tConditions<tTarget::kProvince> && conditions);

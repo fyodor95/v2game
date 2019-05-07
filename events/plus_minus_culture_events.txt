@@ -28,7 +28,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = north_german
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -39,6 +39,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA501"
@@ -77,7 +97,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = south_german
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -88,6 +108,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA503"
@@ -126,7 +166,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = ashkenazi
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -137,6 +177,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA505"
@@ -175,7 +235,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = dutch
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -186,6 +246,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA507"
@@ -224,7 +304,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = flemish
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -235,6 +315,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA509"
@@ -273,7 +373,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = swiss
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -284,6 +384,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA511"
@@ -322,7 +442,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = swedish
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -333,6 +453,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA513"
@@ -371,7 +511,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = danish
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -382,6 +522,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA515"
@@ -420,7 +580,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = norwegian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -431,6 +591,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA517"
@@ -469,7 +649,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = icelandic
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -480,6 +660,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA519"
@@ -518,7 +718,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = finnish
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -529,6 +729,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA521"
@@ -567,7 +787,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = sami
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -578,6 +798,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA523"
@@ -616,7 +856,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = british
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -627,6 +867,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA525"
@@ -665,7 +925,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = irish
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -676,6 +936,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA527"
@@ -714,7 +994,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = north_italian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -725,6 +1005,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA529"
@@ -763,7 +1063,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = south_italian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -774,6 +1074,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA531"
@@ -812,7 +1132,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = maltese
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -823,6 +1143,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA533"
@@ -861,7 +1201,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = basque
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -872,6 +1212,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA535"
@@ -910,7 +1270,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = spanish
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -921,6 +1281,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA537"
@@ -959,7 +1339,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = catalan
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -970,6 +1350,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA539"
@@ -1008,7 +1408,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = portuguese
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -1019,6 +1419,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA541"
@@ -1057,7 +1477,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = french
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -1068,6 +1488,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA543"
@@ -1106,7 +1546,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = croat
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -1117,6 +1557,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA545"
@@ -1155,7 +1615,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = serb
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -1166,6 +1626,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA547"
@@ -1204,7 +1684,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = bulgarian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -1215,6 +1695,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA549"
@@ -1253,7 +1753,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = albanian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -1264,6 +1764,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA551"
@@ -1302,7 +1822,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = slovene
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -1313,6 +1833,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA553"
@@ -1351,7 +1891,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = bosniak
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -1362,6 +1902,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA555"
@@ -1400,7 +1960,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = romanian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -1411,6 +1971,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA557"
@@ -1449,7 +2029,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = hungarian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -1460,6 +2040,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA559"
@@ -1498,7 +2098,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = polish
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -1509,6 +2109,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA561"
@@ -1547,7 +2167,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = lithuanian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -1558,6 +2178,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA563"
@@ -1596,7 +2236,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = czech
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -1607,6 +2247,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA565"
@@ -1645,7 +2305,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = slovak
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -1656,6 +2316,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA567"
@@ -1694,7 +2374,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = russian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -1705,6 +2385,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA569"
@@ -1743,7 +2443,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = byelorussian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -1754,6 +2454,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA571"
@@ -1792,7 +2512,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = ukrainian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -1803,6 +2523,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA573"
@@ -1841,7 +2581,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = ugrian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -1852,6 +2592,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA575"
@@ -1890,7 +2650,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = latvian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -1901,6 +2661,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA577"
@@ -1939,7 +2719,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = estonian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -1950,6 +2730,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA579"
@@ -1988,7 +2788,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = greek
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -1999,6 +2799,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA581"
@@ -2037,7 +2857,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = georgian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -2048,6 +2868,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA583"
@@ -2086,7 +2926,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = armenian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -2097,6 +2937,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA585"
@@ -2135,7 +2995,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = sephardic
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -2146,6 +3006,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA587"
@@ -2184,7 +3064,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = turkish
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -2195,6 +3075,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA589"
@@ -2233,7 +3133,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = azerbaijani
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -2244,6 +3144,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA591"
@@ -2282,7 +3202,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = north_caucasian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -2293,6 +3213,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA593"
@@ -2331,7 +3271,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = maghrebi
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -2342,6 +3282,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA595"
@@ -2380,7 +3340,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = misri
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -2391,6 +3351,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA597"
@@ -2429,7 +3409,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = mashriqi
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -2440,6 +3420,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA599"
@@ -2478,7 +3478,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = bedouin
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -2489,6 +3489,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA601"
@@ -2527,7 +3547,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = berber
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -2538,6 +3558,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA603"
@@ -2576,7 +3616,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = persian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -2587,6 +3627,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA605"
@@ -2625,7 +3685,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = uzbek
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -2636,6 +3696,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA607"
@@ -2674,7 +3754,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = kazak
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -2685,6 +3765,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA609"
@@ -2723,7 +3823,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = kirgiz
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -2734,6 +3834,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA611"
@@ -2772,7 +3892,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = tajik
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -2783,6 +3903,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA613"
@@ -2821,7 +3961,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = uighur
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -2832,6 +3972,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA615"
@@ -2870,7 +4030,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = pashtun
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -2881,6 +4041,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA617"
@@ -2919,7 +4099,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = baluchi
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -2930,6 +4110,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA619"
@@ -2968,7 +4168,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = hazara
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -2979,6 +4179,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA621"
@@ -3017,7 +4237,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = turkmen
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -3028,6 +4248,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA623"
@@ -3066,7 +4306,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = kurdish
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -3077,6 +4317,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA625"
@@ -3115,7 +4375,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = tatar
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -3126,6 +4386,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA627"
@@ -3164,7 +4444,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = mongol
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -3175,6 +4455,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA629"
@@ -3213,7 +4513,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = siberian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -3224,6 +4524,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA631"
@@ -3262,7 +4582,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = yakut
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -3273,6 +4593,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA633"
@@ -3311,7 +4651,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = tibetan
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -3322,6 +4662,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA635"
@@ -3360,7 +4720,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = assamese
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -3371,6 +4731,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA637"
@@ -3409,7 +4789,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = bengali
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -3420,6 +4800,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA639"
@@ -3458,7 +4858,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = bihari
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -3469,6 +4869,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA641"
@@ -3507,7 +4927,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = manipuri
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -3518,6 +4938,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA643"
@@ -3556,7 +4996,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = nepali
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -3567,6 +5007,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA645"
@@ -3605,7 +5065,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = oriya
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -3616,6 +5076,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA647"
@@ -3654,7 +5134,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = sinhala
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -3665,6 +5145,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA649"
@@ -3703,7 +5203,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = avadhi
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -3714,6 +5214,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA651"
@@ -3752,7 +5272,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = kanauji
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -3763,6 +5283,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA653"
@@ -3801,7 +5341,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = panjabi
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -3812,6 +5352,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA655"
@@ -3850,7 +5410,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = kashmiri
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -3861,6 +5421,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA657"
@@ -3899,7 +5479,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = gujarati
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -3910,6 +5490,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA659"
@@ -3948,7 +5548,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = marathi
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -3959,6 +5559,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA661"
@@ -3997,7 +5617,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = sindi
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -4008,6 +5628,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA663"
@@ -4046,7 +5686,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = rajput
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -4057,6 +5697,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA665"
@@ -4095,7 +5755,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = kannada
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -4106,6 +5766,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA667"
@@ -4144,7 +5824,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = malayalam
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -4155,6 +5835,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA669"
@@ -4193,7 +5893,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = tamil
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -4204,6 +5904,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA671"
@@ -4242,7 +5962,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = telegu
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -4253,6 +5973,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA673"
@@ -4291,7 +6031,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = vietnamese
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -4302,6 +6042,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA675"
@@ -4340,7 +6100,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = khmer
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -4351,6 +6111,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA677"
@@ -4389,7 +6169,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = malay
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -4400,6 +6180,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA679"
@@ -4438,7 +6238,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = filipino
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -4449,6 +6249,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA681"
@@ -4487,7 +6307,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = javan
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -4498,6 +6318,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA683"
@@ -4536,7 +6376,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = moluccan
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -4547,6 +6387,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA685"
@@ -4585,7 +6445,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = thai
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -4596,6 +6456,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA687"
@@ -4634,7 +6514,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = lao
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -4645,6 +6525,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA689"
@@ -4683,7 +6583,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = shan
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -4694,6 +6594,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA691"
@@ -4732,7 +6652,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = burmese
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -4743,6 +6663,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA693"
@@ -4781,7 +6721,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = asian_minor
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -4792,6 +6732,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA695"
@@ -4830,7 +6790,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = kachin
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -4841,6 +6801,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA697"
@@ -4879,7 +6859,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = karen
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -4890,6 +6870,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA699"
@@ -4928,7 +6928,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = japanese
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -4939,6 +6939,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA701"
@@ -4977,7 +6997,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = manchu
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -4988,6 +7008,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA703"
@@ -5026,7 +7066,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = beifaren
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -5037,6 +7077,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA705"
@@ -5075,7 +7135,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = nanfaren
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -5086,6 +7146,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA707"
@@ -5124,7 +7204,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = korean
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -5135,6 +7215,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA709"
@@ -5173,7 +7273,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = ainu
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -5184,6 +7284,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA711"
@@ -5222,7 +7342,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = hakka
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -5233,6 +7353,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA713"
@@ -5271,7 +7411,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = miao
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -5282,6 +7422,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA715"
@@ -5320,7 +7480,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = min
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -5331,6 +7491,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA717"
@@ -5369,7 +7549,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = zhuang
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -5380,6 +7560,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA719"
@@ -5418,7 +7618,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = yi
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -5429,6 +7629,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA721"
@@ -5467,7 +7687,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = yue
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -5478,6 +7698,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA723"
@@ -5516,7 +7756,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = polynesian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -5527,6 +7767,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA725"
@@ -5565,7 +7825,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = hawaiian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -5576,6 +7836,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA727"
@@ -5614,7 +7894,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = maori
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -5625,6 +7905,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA729"
@@ -5663,7 +7963,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = aborigine
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -5674,6 +7974,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA731"
@@ -5712,7 +8032,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = melanesian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -5723,6 +8043,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA733"
@@ -5761,7 +8101,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = micronesian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -5772,6 +8112,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA735"
@@ -5810,7 +8170,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = zapotec
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -5821,6 +8181,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA737"
@@ -5859,7 +8239,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = mayan
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -5870,6 +8250,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA739"
@@ -5908,7 +8308,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = nahua
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -5919,6 +8319,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA741"
@@ -5957,7 +8377,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = tarascan
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -5968,6 +8388,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA743"
@@ -6006,7 +8446,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = guajiro
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -6017,6 +8457,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA745"
@@ -6055,7 +8515,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = tupinamba
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -6066,6 +8526,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA747"
@@ -6104,7 +8584,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = metis
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -6115,6 +8595,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA749"
@@ -6153,7 +8653,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = dakota
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -6164,6 +8664,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA751"
@@ -6202,7 +8722,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = cherokee
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -6213,6 +8733,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA753"
@@ -6251,7 +8791,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = pueblo
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -6262,6 +8802,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA755"
@@ -6300,7 +8860,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = inuit
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -6311,6 +8871,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA757"
@@ -6349,7 +8929,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = cree
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -6360,6 +8940,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA759"
@@ -6398,7 +8998,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = navajo
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -6409,6 +9009,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA761"
@@ -6447,7 +9067,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = native_american_minor
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -6458,6 +9078,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA763"
@@ -6496,7 +9136,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = yankee
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -6507,6 +9147,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA765"
@@ -6545,7 +9205,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = dixie
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -6556,6 +9216,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA767"
@@ -6594,7 +9274,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = texan
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -6605,6 +9285,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA769"
@@ -6643,7 +9343,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = boer
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -6654,6 +9354,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA771"
@@ -6692,7 +9412,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = australian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -6703,6 +9423,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA773"
@@ -6741,7 +9481,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = anglo_canadian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -6752,6 +9492,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA775"
@@ -6790,7 +9550,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = french_canadian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -6801,6 +9561,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA777"
@@ -6839,7 +9619,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = mexican
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -6850,6 +9630,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA779"
@@ -6888,7 +9688,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = central_american
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -6899,6 +9699,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA781"
@@ -6937,7 +9757,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = caribeno
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -6948,6 +9768,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA783"
@@ -6986,7 +9826,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = north_andean
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -6997,6 +9837,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA785"
@@ -7035,7 +9895,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = south_andean
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -7046,6 +9906,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA787"
@@ -7084,7 +9964,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = platinean
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -7095,6 +9975,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA789"
@@ -7133,7 +10033,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = brazilian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -7144,6 +10044,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA791"
@@ -7182,7 +10102,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = afro_brazilian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -7193,6 +10113,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA793"
@@ -7231,7 +10171,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = quechua
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -7242,6 +10182,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA795"
@@ -7280,7 +10240,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = guarani
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -7291,6 +10251,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA797"
@@ -7329,7 +10309,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = aimara
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -7340,6 +10320,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA799"
@@ -7378,7 +10378,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = amazonian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -7389,6 +10389,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA801"
@@ -7427,7 +10447,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = patagonian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -7438,6 +10458,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA803"
@@ -7476,7 +10516,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = afro_american
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -7487,6 +10527,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA805"
@@ -7525,7 +10585,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = afro_caribbean
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -7536,6 +10596,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA807"
@@ -7574,7 +10654,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = afro_caribeno
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -7585,6 +10665,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA809"
@@ -7623,7 +10723,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = afro_antillean
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -7634,6 +10734,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA811"
@@ -7672,7 +10792,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = akan
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -7683,6 +10803,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA813"
@@ -7721,7 +10861,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = bambara
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -7732,6 +10872,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA815"
@@ -7770,7 +10930,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = dyula
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -7781,6 +10941,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA817"
@@ -7819,7 +10999,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = edo
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -7830,6 +11010,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA819"
@@ -7868,7 +11068,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = ewe
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -7879,6 +11079,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA821"
@@ -7917,7 +11137,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = fon
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -7928,6 +11148,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA823"
@@ -7966,7 +11206,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = fulbe
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -7977,6 +11217,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA825"
@@ -8015,7 +11275,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = hausa
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -8026,6 +11286,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA827"
@@ -8064,7 +11344,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = ibibio
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -8075,6 +11355,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA829"
@@ -8113,7 +11413,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = ibo
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -8124,6 +11424,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA831"
@@ -8162,7 +11482,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = kru
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -8173,6 +11493,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA833"
@@ -8211,7 +11551,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = mande
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -8222,6 +11562,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA835"
@@ -8260,7 +11620,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = maures
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -8271,6 +11631,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA837"
@@ -8309,7 +11689,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = mossi
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -8320,6 +11700,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA839"
@@ -8358,7 +11758,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = senufo
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -8369,6 +11769,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA841"
@@ -8407,7 +11827,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = songhai
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -8418,6 +11838,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA843"
@@ -8456,7 +11896,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = tiv
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -8467,6 +11907,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA845"
@@ -8505,7 +11965,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = tuareg
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -8516,6 +11976,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA847"
@@ -8554,7 +12034,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = wolof
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -8565,6 +12045,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA849"
@@ -8603,7 +12103,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = yoruba
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -8614,6 +12114,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA851"
@@ -8652,7 +12172,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = bakongo
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -8663,6 +12183,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA853"
@@ -8701,7 +12241,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = baguirmi
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -8712,6 +12252,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA855"
@@ -8750,7 +12310,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = fang
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -8761,6 +12321,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA857"
@@ -8799,7 +12379,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = kanuri
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -8810,6 +12390,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA859"
@@ -8848,7 +12448,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = luba
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -8859,6 +12459,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA861"
@@ -8897,7 +12517,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = lunda
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -8908,6 +12528,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA863"
@@ -8946,7 +12586,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = mongo
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -8957,6 +12597,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA865"
@@ -8995,7 +12655,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = sara
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -9006,6 +12666,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA867"
@@ -9044,7 +12724,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = teda
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -9055,6 +12735,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA869"
@@ -9093,7 +12793,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = african_minor
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -9104,6 +12804,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA871"
@@ -9142,7 +12862,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = amhara
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -9153,6 +12873,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA873"
@@ -9191,7 +12931,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = afar
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -9202,6 +12942,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA875"
@@ -9240,7 +13000,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = azande
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -9251,6 +13011,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA877"
@@ -9289,7 +13069,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = baganda
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -9300,6 +13080,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA879"
@@ -9338,7 +13138,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = beja
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -9349,6 +13149,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA881"
@@ -9387,7 +13207,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = dinka
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -9398,6 +13218,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA883"
@@ -9436,7 +13276,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = fur
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -9447,6 +13287,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA885"
@@ -9485,7 +13345,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = kikuyu
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -9496,6 +13356,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA887"
@@ -9534,7 +13414,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = luo
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -9545,6 +13425,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA889"
@@ -9583,7 +13483,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = maasai
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -9594,6 +13494,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA891"
@@ -9632,7 +13552,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = nuer
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -9643,6 +13563,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA893"
@@ -9681,7 +13621,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = nuba
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -9692,6 +13632,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA895"
@@ -9730,7 +13690,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = oromo
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -9741,6 +13701,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA897"
@@ -9779,7 +13759,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = ruanda
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -9790,6 +13770,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA899"
@@ -9828,7 +13828,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = rundi
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -9839,6 +13839,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA901"
@@ -9877,7 +13897,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = sidama
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -9888,6 +13908,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA903"
@@ -9926,7 +13966,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = somali
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -9937,6 +13977,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA905"
@@ -9975,7 +14035,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = sudanese
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -9986,6 +14046,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA907"
@@ -10024,7 +14104,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = sukuma
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -10035,6 +14115,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA909"
@@ -10073,7 +14173,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = swahili
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -10084,6 +14184,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA911"
@@ -10122,7 +14242,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = tigray
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -10133,6 +14253,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA913"
@@ -10171,7 +14311,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = unyamwezi
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -10182,6 +14322,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA915"
@@ -10220,7 +14380,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = chewa
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -10231,6 +14391,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA917"
@@ -10269,7 +14449,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = herero
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -10280,6 +14460,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA919"
@@ -10318,7 +14518,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = khoisan
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -10329,6 +14529,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA921"
@@ -10367,7 +14587,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = lomwe
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -10378,6 +14598,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA923"
@@ -10416,7 +14656,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = makua
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -10427,6 +14667,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA925"
@@ -10465,7 +14725,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = malagasy
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -10476,6 +14736,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA927"
@@ -10514,7 +14794,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = nguni
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -10525,6 +14805,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA929"
@@ -10563,7 +14863,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = ovimbundu
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -10574,6 +14874,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA931"
@@ -10612,7 +14932,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = sena
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -10623,6 +14943,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA933"
@@ -10661,7 +15001,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = shona
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -10672,6 +15012,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA935"
@@ -10710,7 +15070,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = sotho
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -10721,6 +15081,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA937"
@@ -10759,7 +15139,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = tonga
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -10770,6 +15150,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA939"
@@ -10808,7 +15208,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = tswana
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -10819,6 +15219,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA941"
@@ -10857,7 +15277,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = xhosa
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -10868,6 +15288,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA943"
@@ -10906,7 +15346,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = yao
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -10917,6 +15357,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA945"
@@ -10955,7 +15415,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = zulu
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -10966,6 +15426,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA947"
@@ -11004,7 +15484,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = polar_bears
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -11015,6 +15495,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA949"
@@ -11053,7 +15553,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = anglo_african
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -11064,6 +15564,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA951"
@@ -11102,7 +15622,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = buryat
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -11113,6 +15633,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA953"
@@ -11151,7 +15691,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = kalmyk
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -11162,6 +15702,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA955"
@@ -11200,7 +15760,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = crimean_tatar
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -11211,6 +15771,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA957"
@@ -11249,7 +15829,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = tuvan
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -11260,6 +15840,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA959"
@@ -11298,7 +15898,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = cubans
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -11309,6 +15909,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA961"
@@ -11347,7 +15967,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = scottish
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -11358,6 +15978,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA963"
@@ -11396,7 +16036,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = new_zelandian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -11407,6 +16047,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA965"
@@ -11445,7 +16105,7 @@ province_event = {
 		is_accepted_culture = yes
 		culture = wallonian
 		total_pops = 5000
-		pop_militancy = 5
+		pop_militancy = 4
 		owner = {
 			capital_scope = {
 				NOT = {
@@ -11456,6 +16116,26 @@ province_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
+		modifier = {
+			factor = 0.1
+			pop_militancy = 6
+		}
+		modifier = {
+			factor = 0.1
+			pop_militancy = 8
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				citizenship_policy = limited_citizenship
+			}
+		}
+		modifier = {
+			factor = 100
+			owner = {
+				citizenship_policy = full_citizenship
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTA967"

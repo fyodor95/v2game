@@ -10,6 +10,7 @@
     <ClInclude Include="modifier.h" />
     <ClInclude Include="target.h" />
     <ClInclude Include="target_comand.h" />
+    <ClInclude Include="citizenship_policy.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="_pch_comands.cpp" />
@@ -17,5 +18,6 @@
     <ClCompile Include="events.cpp" />
     <ClCompile Include="conditions.cpp" />
     <ClCompile Include="effects.cpp" />
+    <ClCompile Include="citizenship_policy.cpp" />
   </ItemGroup>
 </Project>

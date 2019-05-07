@@ -26,6 +26,7 @@ private:
     std::string xHighMilitancyRemovingEventTitle() const;
     std::string xHighMilitancyRemovingEventDesc() const;
     tConditions<tTarget::kProvince> xHighMilitancyRemovingConditions() const;
+    tModifiers<tTarget::kProvince> xHighMilitancyRemovingModifiers() const;
     void xHighMilitancyRemoving();
 };
 
@@ -94,7 +95,7 @@ tConditions<tTarget::kProvince> tPlusMinusCultures::xHighMilitancyRemovingCondit
         MajorityCultureIsAccepted(),
         MajorityCultureIs(xCulture()),
         PopulationIsGreaterOrEqual(5000u),
-        MilitancyIsGreaterOrEqual(5.f),
+        MilitancyIsGreaterOrEqual(4.f),
         ConditionsForOwner({ConditionsForCapital({Not(MajorityCultureIs(xCulture()))})})
     };
 }
@@ -113,6 +114,17 @@ std::string tPlusMinusCultures::xHighMilitancyRemovingEventDesc() const
     return res;
 }
 
+tModifiers<tTarget::kProvince> tPlusMinusCultures::xHighMilitancyRemovingModifiers() const
+{
+    return
+    {
+        tModifier(  0.1f, MilitancyIsGreaterOrEqual(6.f)),
+        tModifier(  0.1f, MilitancyIsGreaterOrEqual(8.f)),
+        tModifier( 10.0f, ConditionsForOwner({CitizenshipPolicyIs<tCitizenshipPolicy::kLimited>()})),
+        tModifier(100.0f, ConditionsForOwner({CitizenshipPolicyIs<tCitizenshipPolicy::kFull   >()}))
+    };
+}
+
 void tPlusMinusCultures::xHighMilitancyRemoving()
 {
     std::string const title = xHighMilitancyRemovingEventTitle();
@@ -120,7 +132,7 @@ void tPlusMinusCultures::xHighMilitancyRemoving()
     Event(xID, title.data(), desc.data(),
           xEventOutput, xLocalizationOutput,
           Trigger          <tTarget::kProvince>(xHighMilitancyRemovingConditions()),
-          MeanTimeToHappen <tTarget::kProvince>(12.f, {}),
+          MeanTimeToHappen <tTarget::kProvince>(12.f, xHighMilitancyRemovingModifiers()),
           {Option          <tTarget::kProvince>({EffectsForOwner({RemoveAcceptedCulture(xCulture())})}, xID)},
           {"Îê"});
     ++xID;
