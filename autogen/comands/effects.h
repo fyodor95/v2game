@@ -4,6 +4,9 @@
 
 COMAND(tEffect);
 
+// Делает культуру culture признанной в данной стране.
+tEffect<tTarget::kCountry> AddAcceptedCulture(char const * culture);
+
 // Удаляет признанную культуру culture в данной стране.
 tEffect<tTarget::kCountry> RemoveAcceptedCulture(char const * culture);
 

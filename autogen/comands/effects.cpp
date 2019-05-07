@@ -1,5 +1,10 @@
 #include "effects.h"
 
+tEffect<tTarget::kCountry> AddAcceptedCulture(char const * const culture)
+{
+    return Set("add_accepted_culture", culture);
+}
+
 tEffect<tTarget::kCountry> RemoveAcceptedCulture(char const * const culture)
 {
     return Set("remove_accepted_culture", culture);
