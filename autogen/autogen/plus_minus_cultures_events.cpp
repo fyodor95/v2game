@@ -71,12 +71,12 @@ void tPlusMinusCultures::xRemoveCultureEvent()
 {
     std::string const title = xRemoveCultureEventTitle();
     std::string const desc = xRemoveCultureEventDesc();
-    CountryEvent(xID, title.data(), desc.data(), "Administration",
-                 xEventOutput, xLocalizationOutput,
-                 Trigger          <tTarget::kCountry>(xRemoveCultureConditions()),
-                 MeanTimeToHappen <tTarget::kCountry>(60.f, {}),
-                 {Option          <tTarget::kCountry>({RemoveAcceptedCulture(xCulture())}, xID)},
-                 {"Îê"});
+    Event(xID, title.data(), desc.data(),
+          xEventOutput, xLocalizationOutput,
+          Trigger          <tTarget::kCountry>(xRemoveCultureConditions()),
+          MeanTimeToHappen <tTarget::kCountry>(60.f, {}),
+          {Option          <tTarget::kCountry>({RemoveAcceptedCulture(xCulture())}, xID)},
+          {"Îê"}, "Administration");
     ++xID;
 }
 
