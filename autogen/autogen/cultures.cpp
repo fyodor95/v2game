@@ -150,7 +150,7 @@ SINGLETON(tCultures, Cultures)
         , {"anglo_canadian", "Англо-канадцы"}
         , {"french_canadian", "Франко-канадцы"}
         , {"mexican", "Мексиканцы"}
-        , {"central_american", "Центр.американцы"}
+        , {"central_american", "Центральные американцы"}
         , {"caribeno", "Карибцы"}
         , {"north_andean", "Северные андцы"}
         , {"south_andean", "Южные андцы"}
