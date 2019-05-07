@@ -28,5 +28,25 @@ tCondition<tTarget::kCountry> AcceptedCulture(char const * culture);
 // ¬озвращает true, если дл€ любой провинции, принадлежащей данной стране, выполн€етс€ условие condition.
 tCondition<tTarget::kCountry> AnyOwnedProvince(tCondition<tTarget::kProvince> && condition);
 
+// ѕровер€ет услови€ coditions дл€ столицы данной страны. ¬озвращает true, если выполнено каждое из условий.
+tCondition<tTarget::kCountry> ConditionsForCapital(tConditions<tTarget::kProvince> && conditions);
+
+// ѕровер€ет услови€ conditions дл€ владельца данной провинции. ¬озвращает true, если выполнено каждое из условий.
+tCondition<tTarget::kProvince> ConditionsForOwner(tConditions<tTarget::kCountry> && conditions);
+
 // ¬озвращает true, если в данной провинции больше всего людей имеют культуру culture.
 tCondition<tTarget::kProvince> MajorityCultureIs(char const * culture);
+
+// ¬озвращает true, если наиболее многочисленна€ культура в данной провинции €вл€етс€ признанной или основной.
+// ≈сли flag == _No, то возвращаемое значение инвертируетс€.
+tCondition<tTarget::kProvince> MajorityCultureIsAccepted(tYesOrNo flag = _Yes);
+
+// ¬озвращает true, если наиболее многочисленна€ культура в данной провинции €вл€етс€ основной.
+// ≈сли flag == _No, то возвращаемое значение инвертируетс€.
+tCondition<tTarget::kProvince> MajorityCultureIsPrimary(tYesOrNo flag = _Yes);
+
+// ¬озвращает true, если в количество населени€ в данной провинции не меньше, чем num.
+tCondition<tTarget::kProvince> PopulationIsGreaterOrEqual(uint num);
+
+// ¬озвращает true, если в агрессивность населени€ в данной провинции не меньше, чем num.
+tCondition<tTarget::kProvince> MilitancyIsGreaterOrEqual(float num);

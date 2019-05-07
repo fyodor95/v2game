@@ -41,3 +41,11 @@ template <TEMPLATE_ARG arg>                            \
 using TYPE##s = std::vector<TYPE<arg>>
 
 std::string ToString(float);
+
+enum tYesOrNo
+{
+    _No = 0,
+    _Yes = 1
+};
+
+char const * YesOrNo(tYesOrNo);

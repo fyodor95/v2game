@@ -19,10 +19,38 @@ country_event = {
 		remove_accepted_culture = north_german
 	}
 }
-country_event = {
+province_event = {
 	id = 501
 	title = "EVTNAME501"
 	desc = "EVTDESC501"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = north_german
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = north_german
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA501"
+		owner = {
+			remove_accepted_culture = north_german
+		}
+	}
+}
+country_event = {
+	id = 502
+	title = "EVTNAME502"
+	desc = "EVTDESC502"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = south_german
@@ -36,14 +64,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA501"
+		name = "EVTOPTA502"
 		remove_accepted_culture = south_german
 	}
 }
+province_event = {
+	id = 503
+	title = "EVTNAME503"
+	desc = "EVTDESC503"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = south_german
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = south_german
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA503"
+		owner = {
+			remove_accepted_culture = south_german
+		}
+	}
+}
 country_event = {
-	id = 502
-	title = "EVTNAME502"
-	desc = "EVTDESC502"
+	id = 504
+	title = "EVTNAME504"
+	desc = "EVTDESC504"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = ashkenazi
@@ -57,14 +113,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA502"
+		name = "EVTOPTA504"
 		remove_accepted_culture = ashkenazi
 	}
 }
+province_event = {
+	id = 505
+	title = "EVTNAME505"
+	desc = "EVTDESC505"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = ashkenazi
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = ashkenazi
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA505"
+		owner = {
+			remove_accepted_culture = ashkenazi
+		}
+	}
+}
 country_event = {
-	id = 503
-	title = "EVTNAME503"
-	desc = "EVTDESC503"
+	id = 506
+	title = "EVTNAME506"
+	desc = "EVTDESC506"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = dutch
@@ -78,14 +162,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA503"
+		name = "EVTOPTA506"
 		remove_accepted_culture = dutch
 	}
 }
+province_event = {
+	id = 507
+	title = "EVTNAME507"
+	desc = "EVTDESC507"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = dutch
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = dutch
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA507"
+		owner = {
+			remove_accepted_culture = dutch
+		}
+	}
+}
 country_event = {
-	id = 504
-	title = "EVTNAME504"
-	desc = "EVTDESC504"
+	id = 508
+	title = "EVTNAME508"
+	desc = "EVTDESC508"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = flemish
@@ -99,14 +211,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA504"
+		name = "EVTOPTA508"
 		remove_accepted_culture = flemish
 	}
 }
+province_event = {
+	id = 509
+	title = "EVTNAME509"
+	desc = "EVTDESC509"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = flemish
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = flemish
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA509"
+		owner = {
+			remove_accepted_culture = flemish
+		}
+	}
+}
 country_event = {
-	id = 505
-	title = "EVTNAME505"
-	desc = "EVTDESC505"
+	id = 510
+	title = "EVTNAME510"
+	desc = "EVTDESC510"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = swiss
@@ -120,14 +260,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA505"
+		name = "EVTOPTA510"
 		remove_accepted_culture = swiss
 	}
 }
+province_event = {
+	id = 511
+	title = "EVTNAME511"
+	desc = "EVTDESC511"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = swiss
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = swiss
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA511"
+		owner = {
+			remove_accepted_culture = swiss
+		}
+	}
+}
 country_event = {
-	id = 506
-	title = "EVTNAME506"
-	desc = "EVTDESC506"
+	id = 512
+	title = "EVTNAME512"
+	desc = "EVTDESC512"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = swedish
@@ -141,14 +309,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA506"
+		name = "EVTOPTA512"
 		remove_accepted_culture = swedish
 	}
 }
+province_event = {
+	id = 513
+	title = "EVTNAME513"
+	desc = "EVTDESC513"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = swedish
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = swedish
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA513"
+		owner = {
+			remove_accepted_culture = swedish
+		}
+	}
+}
 country_event = {
-	id = 507
-	title = "EVTNAME507"
-	desc = "EVTDESC507"
+	id = 514
+	title = "EVTNAME514"
+	desc = "EVTDESC514"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = danish
@@ -162,14 +358,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA507"
+		name = "EVTOPTA514"
 		remove_accepted_culture = danish
 	}
 }
+province_event = {
+	id = 515
+	title = "EVTNAME515"
+	desc = "EVTDESC515"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = danish
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = danish
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA515"
+		owner = {
+			remove_accepted_culture = danish
+		}
+	}
+}
 country_event = {
-	id = 508
-	title = "EVTNAME508"
-	desc = "EVTDESC508"
+	id = 516
+	title = "EVTNAME516"
+	desc = "EVTDESC516"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = norwegian
@@ -183,14 +407,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA508"
+		name = "EVTOPTA516"
 		remove_accepted_culture = norwegian
 	}
 }
+province_event = {
+	id = 517
+	title = "EVTNAME517"
+	desc = "EVTDESC517"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = norwegian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = norwegian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA517"
+		owner = {
+			remove_accepted_culture = norwegian
+		}
+	}
+}
 country_event = {
-	id = 509
-	title = "EVTNAME509"
-	desc = "EVTDESC509"
+	id = 518
+	title = "EVTNAME518"
+	desc = "EVTDESC518"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = icelandic
@@ -204,14 +456,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA509"
+		name = "EVTOPTA518"
 		remove_accepted_culture = icelandic
 	}
 }
+province_event = {
+	id = 519
+	title = "EVTNAME519"
+	desc = "EVTDESC519"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = icelandic
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = icelandic
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA519"
+		owner = {
+			remove_accepted_culture = icelandic
+		}
+	}
+}
 country_event = {
-	id = 510
-	title = "EVTNAME510"
-	desc = "EVTDESC510"
+	id = 520
+	title = "EVTNAME520"
+	desc = "EVTDESC520"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = finnish
@@ -225,14 +505,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA510"
+		name = "EVTOPTA520"
 		remove_accepted_culture = finnish
 	}
 }
+province_event = {
+	id = 521
+	title = "EVTNAME521"
+	desc = "EVTDESC521"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = finnish
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = finnish
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA521"
+		owner = {
+			remove_accepted_culture = finnish
+		}
+	}
+}
 country_event = {
-	id = 511
-	title = "EVTNAME511"
-	desc = "EVTDESC511"
+	id = 522
+	title = "EVTNAME522"
+	desc = "EVTDESC522"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = sami
@@ -246,14 +554,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA511"
+		name = "EVTOPTA522"
 		remove_accepted_culture = sami
 	}
 }
+province_event = {
+	id = 523
+	title = "EVTNAME523"
+	desc = "EVTDESC523"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = sami
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = sami
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA523"
+		owner = {
+			remove_accepted_culture = sami
+		}
+	}
+}
 country_event = {
-	id = 512
-	title = "EVTNAME512"
-	desc = "EVTDESC512"
+	id = 524
+	title = "EVTNAME524"
+	desc = "EVTDESC524"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = british
@@ -267,14 +603,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA512"
+		name = "EVTOPTA524"
 		remove_accepted_culture = british
 	}
 }
+province_event = {
+	id = 525
+	title = "EVTNAME525"
+	desc = "EVTDESC525"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = british
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = british
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA525"
+		owner = {
+			remove_accepted_culture = british
+		}
+	}
+}
 country_event = {
-	id = 513
-	title = "EVTNAME513"
-	desc = "EVTDESC513"
+	id = 526
+	title = "EVTNAME526"
+	desc = "EVTDESC526"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = irish
@@ -288,14 +652,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA513"
+		name = "EVTOPTA526"
 		remove_accepted_culture = irish
 	}
 }
+province_event = {
+	id = 527
+	title = "EVTNAME527"
+	desc = "EVTDESC527"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = irish
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = irish
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA527"
+		owner = {
+			remove_accepted_culture = irish
+		}
+	}
+}
 country_event = {
-	id = 514
-	title = "EVTNAME514"
-	desc = "EVTDESC514"
+	id = 528
+	title = "EVTNAME528"
+	desc = "EVTDESC528"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = north_italian
@@ -309,14 +701,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA514"
+		name = "EVTOPTA528"
 		remove_accepted_culture = north_italian
 	}
 }
+province_event = {
+	id = 529
+	title = "EVTNAME529"
+	desc = "EVTDESC529"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = north_italian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = north_italian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA529"
+		owner = {
+			remove_accepted_culture = north_italian
+		}
+	}
+}
 country_event = {
-	id = 515
-	title = "EVTNAME515"
-	desc = "EVTDESC515"
+	id = 530
+	title = "EVTNAME530"
+	desc = "EVTDESC530"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = south_italian
@@ -330,14 +750,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA515"
+		name = "EVTOPTA530"
 		remove_accepted_culture = south_italian
 	}
 }
+province_event = {
+	id = 531
+	title = "EVTNAME531"
+	desc = "EVTDESC531"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = south_italian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = south_italian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA531"
+		owner = {
+			remove_accepted_culture = south_italian
+		}
+	}
+}
 country_event = {
-	id = 516
-	title = "EVTNAME516"
-	desc = "EVTDESC516"
+	id = 532
+	title = "EVTNAME532"
+	desc = "EVTDESC532"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = maltese
@@ -351,14 +799,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA516"
+		name = "EVTOPTA532"
 		remove_accepted_culture = maltese
 	}
 }
+province_event = {
+	id = 533
+	title = "EVTNAME533"
+	desc = "EVTDESC533"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = maltese
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = maltese
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA533"
+		owner = {
+			remove_accepted_culture = maltese
+		}
+	}
+}
 country_event = {
-	id = 517
-	title = "EVTNAME517"
-	desc = "EVTDESC517"
+	id = 534
+	title = "EVTNAME534"
+	desc = "EVTDESC534"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = basque
@@ -372,14 +848,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA517"
+		name = "EVTOPTA534"
 		remove_accepted_culture = basque
 	}
 }
+province_event = {
+	id = 535
+	title = "EVTNAME535"
+	desc = "EVTDESC535"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = basque
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = basque
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA535"
+		owner = {
+			remove_accepted_culture = basque
+		}
+	}
+}
 country_event = {
-	id = 518
-	title = "EVTNAME518"
-	desc = "EVTDESC518"
+	id = 536
+	title = "EVTNAME536"
+	desc = "EVTDESC536"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = spanish
@@ -393,14 +897,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA518"
+		name = "EVTOPTA536"
 		remove_accepted_culture = spanish
 	}
 }
+province_event = {
+	id = 537
+	title = "EVTNAME537"
+	desc = "EVTDESC537"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = spanish
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = spanish
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA537"
+		owner = {
+			remove_accepted_culture = spanish
+		}
+	}
+}
 country_event = {
-	id = 519
-	title = "EVTNAME519"
-	desc = "EVTDESC519"
+	id = 538
+	title = "EVTNAME538"
+	desc = "EVTDESC538"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = catalan
@@ -414,14 +946,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA519"
+		name = "EVTOPTA538"
 		remove_accepted_culture = catalan
 	}
 }
+province_event = {
+	id = 539
+	title = "EVTNAME539"
+	desc = "EVTDESC539"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = catalan
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = catalan
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA539"
+		owner = {
+			remove_accepted_culture = catalan
+		}
+	}
+}
 country_event = {
-	id = 520
-	title = "EVTNAME520"
-	desc = "EVTDESC520"
+	id = 540
+	title = "EVTNAME540"
+	desc = "EVTDESC540"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = portuguese
@@ -435,14 +995,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA520"
+		name = "EVTOPTA540"
 		remove_accepted_culture = portuguese
 	}
 }
+province_event = {
+	id = 541
+	title = "EVTNAME541"
+	desc = "EVTDESC541"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = portuguese
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = portuguese
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA541"
+		owner = {
+			remove_accepted_culture = portuguese
+		}
+	}
+}
 country_event = {
-	id = 521
-	title = "EVTNAME521"
-	desc = "EVTDESC521"
+	id = 542
+	title = "EVTNAME542"
+	desc = "EVTDESC542"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = french
@@ -456,14 +1044,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA521"
+		name = "EVTOPTA542"
 		remove_accepted_culture = french
 	}
 }
+province_event = {
+	id = 543
+	title = "EVTNAME543"
+	desc = "EVTDESC543"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = french
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = french
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA543"
+		owner = {
+			remove_accepted_culture = french
+		}
+	}
+}
 country_event = {
-	id = 522
-	title = "EVTNAME522"
-	desc = "EVTDESC522"
+	id = 544
+	title = "EVTNAME544"
+	desc = "EVTDESC544"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = croat
@@ -477,14 +1093,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA522"
+		name = "EVTOPTA544"
 		remove_accepted_culture = croat
 	}
 }
+province_event = {
+	id = 545
+	title = "EVTNAME545"
+	desc = "EVTDESC545"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = croat
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = croat
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA545"
+		owner = {
+			remove_accepted_culture = croat
+		}
+	}
+}
 country_event = {
-	id = 523
-	title = "EVTNAME523"
-	desc = "EVTDESC523"
+	id = 546
+	title = "EVTNAME546"
+	desc = "EVTDESC546"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = serb
@@ -498,14 +1142,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA523"
+		name = "EVTOPTA546"
 		remove_accepted_culture = serb
 	}
 }
+province_event = {
+	id = 547
+	title = "EVTNAME547"
+	desc = "EVTDESC547"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = serb
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = serb
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA547"
+		owner = {
+			remove_accepted_culture = serb
+		}
+	}
+}
 country_event = {
-	id = 524
-	title = "EVTNAME524"
-	desc = "EVTDESC524"
+	id = 548
+	title = "EVTNAME548"
+	desc = "EVTDESC548"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = bulgarian
@@ -519,14 +1191,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA524"
+		name = "EVTOPTA548"
 		remove_accepted_culture = bulgarian
 	}
 }
+province_event = {
+	id = 549
+	title = "EVTNAME549"
+	desc = "EVTDESC549"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = bulgarian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = bulgarian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA549"
+		owner = {
+			remove_accepted_culture = bulgarian
+		}
+	}
+}
 country_event = {
-	id = 525
-	title = "EVTNAME525"
-	desc = "EVTDESC525"
+	id = 550
+	title = "EVTNAME550"
+	desc = "EVTDESC550"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = albanian
@@ -540,14 +1240,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA525"
+		name = "EVTOPTA550"
 		remove_accepted_culture = albanian
 	}
 }
+province_event = {
+	id = 551
+	title = "EVTNAME551"
+	desc = "EVTDESC551"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = albanian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = albanian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA551"
+		owner = {
+			remove_accepted_culture = albanian
+		}
+	}
+}
 country_event = {
-	id = 526
-	title = "EVTNAME526"
-	desc = "EVTDESC526"
+	id = 552
+	title = "EVTNAME552"
+	desc = "EVTDESC552"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = slovene
@@ -561,14 +1289,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA526"
+		name = "EVTOPTA552"
 		remove_accepted_culture = slovene
 	}
 }
+province_event = {
+	id = 553
+	title = "EVTNAME553"
+	desc = "EVTDESC553"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = slovene
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = slovene
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA553"
+		owner = {
+			remove_accepted_culture = slovene
+		}
+	}
+}
 country_event = {
-	id = 527
-	title = "EVTNAME527"
-	desc = "EVTDESC527"
+	id = 554
+	title = "EVTNAME554"
+	desc = "EVTDESC554"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = bosniak
@@ -582,14 +1338,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA527"
+		name = "EVTOPTA554"
 		remove_accepted_culture = bosniak
 	}
 }
+province_event = {
+	id = 555
+	title = "EVTNAME555"
+	desc = "EVTDESC555"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = bosniak
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = bosniak
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA555"
+		owner = {
+			remove_accepted_culture = bosniak
+		}
+	}
+}
 country_event = {
-	id = 528
-	title = "EVTNAME528"
-	desc = "EVTDESC528"
+	id = 556
+	title = "EVTNAME556"
+	desc = "EVTDESC556"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = romanian
@@ -603,14 +1387,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA528"
+		name = "EVTOPTA556"
 		remove_accepted_culture = romanian
 	}
 }
+province_event = {
+	id = 557
+	title = "EVTNAME557"
+	desc = "EVTDESC557"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = romanian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = romanian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA557"
+		owner = {
+			remove_accepted_culture = romanian
+		}
+	}
+}
 country_event = {
-	id = 529
-	title = "EVTNAME529"
-	desc = "EVTDESC529"
+	id = 558
+	title = "EVTNAME558"
+	desc = "EVTDESC558"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = hungarian
@@ -624,14 +1436,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA529"
+		name = "EVTOPTA558"
 		remove_accepted_culture = hungarian
 	}
 }
+province_event = {
+	id = 559
+	title = "EVTNAME559"
+	desc = "EVTDESC559"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = hungarian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = hungarian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA559"
+		owner = {
+			remove_accepted_culture = hungarian
+		}
+	}
+}
 country_event = {
-	id = 530
-	title = "EVTNAME530"
-	desc = "EVTDESC530"
+	id = 560
+	title = "EVTNAME560"
+	desc = "EVTDESC560"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = polish
@@ -645,14 +1485,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA530"
+		name = "EVTOPTA560"
 		remove_accepted_culture = polish
 	}
 }
+province_event = {
+	id = 561
+	title = "EVTNAME561"
+	desc = "EVTDESC561"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = polish
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = polish
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA561"
+		owner = {
+			remove_accepted_culture = polish
+		}
+	}
+}
 country_event = {
-	id = 531
-	title = "EVTNAME531"
-	desc = "EVTDESC531"
+	id = 562
+	title = "EVTNAME562"
+	desc = "EVTDESC562"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = lithuanian
@@ -666,14 +1534,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA531"
+		name = "EVTOPTA562"
 		remove_accepted_culture = lithuanian
 	}
 }
+province_event = {
+	id = 563
+	title = "EVTNAME563"
+	desc = "EVTDESC563"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = lithuanian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = lithuanian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA563"
+		owner = {
+			remove_accepted_culture = lithuanian
+		}
+	}
+}
 country_event = {
-	id = 532
-	title = "EVTNAME532"
-	desc = "EVTDESC532"
+	id = 564
+	title = "EVTNAME564"
+	desc = "EVTDESC564"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = czech
@@ -687,14 +1583,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA532"
+		name = "EVTOPTA564"
 		remove_accepted_culture = czech
 	}
 }
+province_event = {
+	id = 565
+	title = "EVTNAME565"
+	desc = "EVTDESC565"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = czech
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = czech
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA565"
+		owner = {
+			remove_accepted_culture = czech
+		}
+	}
+}
 country_event = {
-	id = 533
-	title = "EVTNAME533"
-	desc = "EVTDESC533"
+	id = 566
+	title = "EVTNAME566"
+	desc = "EVTDESC566"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = slovak
@@ -708,14 +1632,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA533"
+		name = "EVTOPTA566"
 		remove_accepted_culture = slovak
 	}
 }
+province_event = {
+	id = 567
+	title = "EVTNAME567"
+	desc = "EVTDESC567"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = slovak
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = slovak
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA567"
+		owner = {
+			remove_accepted_culture = slovak
+		}
+	}
+}
 country_event = {
-	id = 534
-	title = "EVTNAME534"
-	desc = "EVTDESC534"
+	id = 568
+	title = "EVTNAME568"
+	desc = "EVTDESC568"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = russian
@@ -729,14 +1681,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA534"
+		name = "EVTOPTA568"
 		remove_accepted_culture = russian
 	}
 }
+province_event = {
+	id = 569
+	title = "EVTNAME569"
+	desc = "EVTDESC569"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = russian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = russian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA569"
+		owner = {
+			remove_accepted_culture = russian
+		}
+	}
+}
 country_event = {
-	id = 535
-	title = "EVTNAME535"
-	desc = "EVTDESC535"
+	id = 570
+	title = "EVTNAME570"
+	desc = "EVTDESC570"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = byelorussian
@@ -750,14 +1730,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA535"
+		name = "EVTOPTA570"
 		remove_accepted_culture = byelorussian
 	}
 }
+province_event = {
+	id = 571
+	title = "EVTNAME571"
+	desc = "EVTDESC571"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = byelorussian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = byelorussian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA571"
+		owner = {
+			remove_accepted_culture = byelorussian
+		}
+	}
+}
 country_event = {
-	id = 536
-	title = "EVTNAME536"
-	desc = "EVTDESC536"
+	id = 572
+	title = "EVTNAME572"
+	desc = "EVTDESC572"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = ukrainian
@@ -771,14 +1779,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA536"
+		name = "EVTOPTA572"
 		remove_accepted_culture = ukrainian
 	}
 }
+province_event = {
+	id = 573
+	title = "EVTNAME573"
+	desc = "EVTDESC573"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = ukrainian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = ukrainian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA573"
+		owner = {
+			remove_accepted_culture = ukrainian
+		}
+	}
+}
 country_event = {
-	id = 537
-	title = "EVTNAME537"
-	desc = "EVTDESC537"
+	id = 574
+	title = "EVTNAME574"
+	desc = "EVTDESC574"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = ugrian
@@ -792,14 +1828,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA537"
+		name = "EVTOPTA574"
 		remove_accepted_culture = ugrian
 	}
 }
+province_event = {
+	id = 575
+	title = "EVTNAME575"
+	desc = "EVTDESC575"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = ugrian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = ugrian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA575"
+		owner = {
+			remove_accepted_culture = ugrian
+		}
+	}
+}
 country_event = {
-	id = 538
-	title = "EVTNAME538"
-	desc = "EVTDESC538"
+	id = 576
+	title = "EVTNAME576"
+	desc = "EVTDESC576"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = latvian
@@ -813,14 +1877,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA538"
+		name = "EVTOPTA576"
 		remove_accepted_culture = latvian
 	}
 }
+province_event = {
+	id = 577
+	title = "EVTNAME577"
+	desc = "EVTDESC577"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = latvian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = latvian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA577"
+		owner = {
+			remove_accepted_culture = latvian
+		}
+	}
+}
 country_event = {
-	id = 539
-	title = "EVTNAME539"
-	desc = "EVTDESC539"
+	id = 578
+	title = "EVTNAME578"
+	desc = "EVTDESC578"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = estonian
@@ -834,14 +1926,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA539"
+		name = "EVTOPTA578"
 		remove_accepted_culture = estonian
 	}
 }
+province_event = {
+	id = 579
+	title = "EVTNAME579"
+	desc = "EVTDESC579"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = estonian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = estonian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA579"
+		owner = {
+			remove_accepted_culture = estonian
+		}
+	}
+}
 country_event = {
-	id = 540
-	title = "EVTNAME540"
-	desc = "EVTDESC540"
+	id = 580
+	title = "EVTNAME580"
+	desc = "EVTDESC580"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = greek
@@ -855,14 +1975,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA540"
+		name = "EVTOPTA580"
 		remove_accepted_culture = greek
 	}
 }
+province_event = {
+	id = 581
+	title = "EVTNAME581"
+	desc = "EVTDESC581"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = greek
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = greek
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA581"
+		owner = {
+			remove_accepted_culture = greek
+		}
+	}
+}
 country_event = {
-	id = 541
-	title = "EVTNAME541"
-	desc = "EVTDESC541"
+	id = 582
+	title = "EVTNAME582"
+	desc = "EVTDESC582"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = georgian
@@ -876,14 +2024,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA541"
+		name = "EVTOPTA582"
 		remove_accepted_culture = georgian
 	}
 }
+province_event = {
+	id = 583
+	title = "EVTNAME583"
+	desc = "EVTDESC583"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = georgian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = georgian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA583"
+		owner = {
+			remove_accepted_culture = georgian
+		}
+	}
+}
 country_event = {
-	id = 542
-	title = "EVTNAME542"
-	desc = "EVTDESC542"
+	id = 584
+	title = "EVTNAME584"
+	desc = "EVTDESC584"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = armenian
@@ -897,14 +2073,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA542"
+		name = "EVTOPTA584"
 		remove_accepted_culture = armenian
 	}
 }
+province_event = {
+	id = 585
+	title = "EVTNAME585"
+	desc = "EVTDESC585"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = armenian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = armenian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA585"
+		owner = {
+			remove_accepted_culture = armenian
+		}
+	}
+}
 country_event = {
-	id = 543
-	title = "EVTNAME543"
-	desc = "EVTDESC543"
+	id = 586
+	title = "EVTNAME586"
+	desc = "EVTDESC586"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = sephardic
@@ -918,14 +2122,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA543"
+		name = "EVTOPTA586"
 		remove_accepted_culture = sephardic
 	}
 }
+province_event = {
+	id = 587
+	title = "EVTNAME587"
+	desc = "EVTDESC587"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = sephardic
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = sephardic
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA587"
+		owner = {
+			remove_accepted_culture = sephardic
+		}
+	}
+}
 country_event = {
-	id = 544
-	title = "EVTNAME544"
-	desc = "EVTDESC544"
+	id = 588
+	title = "EVTNAME588"
+	desc = "EVTDESC588"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = turkish
@@ -939,14 +2171,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA544"
+		name = "EVTOPTA588"
 		remove_accepted_culture = turkish
 	}
 }
+province_event = {
+	id = 589
+	title = "EVTNAME589"
+	desc = "EVTDESC589"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = turkish
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = turkish
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA589"
+		owner = {
+			remove_accepted_culture = turkish
+		}
+	}
+}
 country_event = {
-	id = 545
-	title = "EVTNAME545"
-	desc = "EVTDESC545"
+	id = 590
+	title = "EVTNAME590"
+	desc = "EVTDESC590"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = azerbaijani
@@ -960,14 +2220,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA545"
+		name = "EVTOPTA590"
 		remove_accepted_culture = azerbaijani
 	}
 }
+province_event = {
+	id = 591
+	title = "EVTNAME591"
+	desc = "EVTDESC591"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = azerbaijani
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = azerbaijani
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA591"
+		owner = {
+			remove_accepted_culture = azerbaijani
+		}
+	}
+}
 country_event = {
-	id = 546
-	title = "EVTNAME546"
-	desc = "EVTDESC546"
+	id = 592
+	title = "EVTNAME592"
+	desc = "EVTDESC592"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = north_caucasian
@@ -981,14 +2269,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA546"
+		name = "EVTOPTA592"
 		remove_accepted_culture = north_caucasian
 	}
 }
+province_event = {
+	id = 593
+	title = "EVTNAME593"
+	desc = "EVTDESC593"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = north_caucasian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = north_caucasian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA593"
+		owner = {
+			remove_accepted_culture = north_caucasian
+		}
+	}
+}
 country_event = {
-	id = 547
-	title = "EVTNAME547"
-	desc = "EVTDESC547"
+	id = 594
+	title = "EVTNAME594"
+	desc = "EVTDESC594"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = maghrebi
@@ -1002,14 +2318,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA547"
+		name = "EVTOPTA594"
 		remove_accepted_culture = maghrebi
 	}
 }
+province_event = {
+	id = 595
+	title = "EVTNAME595"
+	desc = "EVTDESC595"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = maghrebi
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = maghrebi
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA595"
+		owner = {
+			remove_accepted_culture = maghrebi
+		}
+	}
+}
 country_event = {
-	id = 548
-	title = "EVTNAME548"
-	desc = "EVTDESC548"
+	id = 596
+	title = "EVTNAME596"
+	desc = "EVTDESC596"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = misri
@@ -1023,14 +2367,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA548"
+		name = "EVTOPTA596"
 		remove_accepted_culture = misri
 	}
 }
+province_event = {
+	id = 597
+	title = "EVTNAME597"
+	desc = "EVTDESC597"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = misri
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = misri
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA597"
+		owner = {
+			remove_accepted_culture = misri
+		}
+	}
+}
 country_event = {
-	id = 549
-	title = "EVTNAME549"
-	desc = "EVTDESC549"
+	id = 598
+	title = "EVTNAME598"
+	desc = "EVTDESC598"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = mashriqi
@@ -1044,14 +2416,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA549"
+		name = "EVTOPTA598"
 		remove_accepted_culture = mashriqi
 	}
 }
+province_event = {
+	id = 599
+	title = "EVTNAME599"
+	desc = "EVTDESC599"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = mashriqi
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = mashriqi
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA599"
+		owner = {
+			remove_accepted_culture = mashriqi
+		}
+	}
+}
 country_event = {
-	id = 550
-	title = "EVTNAME550"
-	desc = "EVTDESC550"
+	id = 600
+	title = "EVTNAME600"
+	desc = "EVTDESC600"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = bedouin
@@ -1065,14 +2465,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA550"
+		name = "EVTOPTA600"
 		remove_accepted_culture = bedouin
 	}
 }
+province_event = {
+	id = 601
+	title = "EVTNAME601"
+	desc = "EVTDESC601"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = bedouin
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = bedouin
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA601"
+		owner = {
+			remove_accepted_culture = bedouin
+		}
+	}
+}
 country_event = {
-	id = 551
-	title = "EVTNAME551"
-	desc = "EVTDESC551"
+	id = 602
+	title = "EVTNAME602"
+	desc = "EVTDESC602"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = berber
@@ -1086,14 +2514,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA551"
+		name = "EVTOPTA602"
 		remove_accepted_culture = berber
 	}
 }
+province_event = {
+	id = 603
+	title = "EVTNAME603"
+	desc = "EVTDESC603"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = berber
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = berber
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA603"
+		owner = {
+			remove_accepted_culture = berber
+		}
+	}
+}
 country_event = {
-	id = 552
-	title = "EVTNAME552"
-	desc = "EVTDESC552"
+	id = 604
+	title = "EVTNAME604"
+	desc = "EVTDESC604"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = persian
@@ -1107,14 +2563,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA552"
+		name = "EVTOPTA604"
 		remove_accepted_culture = persian
 	}
 }
+province_event = {
+	id = 605
+	title = "EVTNAME605"
+	desc = "EVTDESC605"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = persian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = persian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA605"
+		owner = {
+			remove_accepted_culture = persian
+		}
+	}
+}
 country_event = {
-	id = 553
-	title = "EVTNAME553"
-	desc = "EVTDESC553"
+	id = 606
+	title = "EVTNAME606"
+	desc = "EVTDESC606"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = uzbek
@@ -1128,14 +2612,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA553"
+		name = "EVTOPTA606"
 		remove_accepted_culture = uzbek
 	}
 }
+province_event = {
+	id = 607
+	title = "EVTNAME607"
+	desc = "EVTDESC607"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = uzbek
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = uzbek
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA607"
+		owner = {
+			remove_accepted_culture = uzbek
+		}
+	}
+}
 country_event = {
-	id = 554
-	title = "EVTNAME554"
-	desc = "EVTDESC554"
+	id = 608
+	title = "EVTNAME608"
+	desc = "EVTDESC608"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = kazak
@@ -1149,14 +2661,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA554"
+		name = "EVTOPTA608"
 		remove_accepted_culture = kazak
 	}
 }
+province_event = {
+	id = 609
+	title = "EVTNAME609"
+	desc = "EVTDESC609"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = kazak
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = kazak
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA609"
+		owner = {
+			remove_accepted_culture = kazak
+		}
+	}
+}
 country_event = {
-	id = 555
-	title = "EVTNAME555"
-	desc = "EVTDESC555"
+	id = 610
+	title = "EVTNAME610"
+	desc = "EVTDESC610"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = kirgiz
@@ -1170,14 +2710,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA555"
+		name = "EVTOPTA610"
 		remove_accepted_culture = kirgiz
 	}
 }
+province_event = {
+	id = 611
+	title = "EVTNAME611"
+	desc = "EVTDESC611"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = kirgiz
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = kirgiz
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA611"
+		owner = {
+			remove_accepted_culture = kirgiz
+		}
+	}
+}
 country_event = {
-	id = 556
-	title = "EVTNAME556"
-	desc = "EVTDESC556"
+	id = 612
+	title = "EVTNAME612"
+	desc = "EVTDESC612"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = tajik
@@ -1191,14 +2759,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA556"
+		name = "EVTOPTA612"
 		remove_accepted_culture = tajik
 	}
 }
+province_event = {
+	id = 613
+	title = "EVTNAME613"
+	desc = "EVTDESC613"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = tajik
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = tajik
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA613"
+		owner = {
+			remove_accepted_culture = tajik
+		}
+	}
+}
 country_event = {
-	id = 557
-	title = "EVTNAME557"
-	desc = "EVTDESC557"
+	id = 614
+	title = "EVTNAME614"
+	desc = "EVTDESC614"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = uighur
@@ -1212,14 +2808,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA557"
+		name = "EVTOPTA614"
 		remove_accepted_culture = uighur
 	}
 }
+province_event = {
+	id = 615
+	title = "EVTNAME615"
+	desc = "EVTDESC615"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = uighur
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = uighur
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA615"
+		owner = {
+			remove_accepted_culture = uighur
+		}
+	}
+}
 country_event = {
-	id = 558
-	title = "EVTNAME558"
-	desc = "EVTDESC558"
+	id = 616
+	title = "EVTNAME616"
+	desc = "EVTDESC616"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = pashtun
@@ -1233,14 +2857,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA558"
+		name = "EVTOPTA616"
 		remove_accepted_culture = pashtun
 	}
 }
+province_event = {
+	id = 617
+	title = "EVTNAME617"
+	desc = "EVTDESC617"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = pashtun
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = pashtun
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA617"
+		owner = {
+			remove_accepted_culture = pashtun
+		}
+	}
+}
 country_event = {
-	id = 559
-	title = "EVTNAME559"
-	desc = "EVTDESC559"
+	id = 618
+	title = "EVTNAME618"
+	desc = "EVTDESC618"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = baluchi
@@ -1254,14 +2906,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA559"
+		name = "EVTOPTA618"
 		remove_accepted_culture = baluchi
 	}
 }
+province_event = {
+	id = 619
+	title = "EVTNAME619"
+	desc = "EVTDESC619"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = baluchi
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = baluchi
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA619"
+		owner = {
+			remove_accepted_culture = baluchi
+		}
+	}
+}
 country_event = {
-	id = 560
-	title = "EVTNAME560"
-	desc = "EVTDESC560"
+	id = 620
+	title = "EVTNAME620"
+	desc = "EVTDESC620"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = hazara
@@ -1275,14 +2955,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA560"
+		name = "EVTOPTA620"
 		remove_accepted_culture = hazara
 	}
 }
+province_event = {
+	id = 621
+	title = "EVTNAME621"
+	desc = "EVTDESC621"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = hazara
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = hazara
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA621"
+		owner = {
+			remove_accepted_culture = hazara
+		}
+	}
+}
 country_event = {
-	id = 561
-	title = "EVTNAME561"
-	desc = "EVTDESC561"
+	id = 622
+	title = "EVTNAME622"
+	desc = "EVTDESC622"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = turkmen
@@ -1296,14 +3004,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA561"
+		name = "EVTOPTA622"
 		remove_accepted_culture = turkmen
 	}
 }
+province_event = {
+	id = 623
+	title = "EVTNAME623"
+	desc = "EVTDESC623"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = turkmen
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = turkmen
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA623"
+		owner = {
+			remove_accepted_culture = turkmen
+		}
+	}
+}
 country_event = {
-	id = 562
-	title = "EVTNAME562"
-	desc = "EVTDESC562"
+	id = 624
+	title = "EVTNAME624"
+	desc = "EVTDESC624"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = kurdish
@@ -1317,14 +3053,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA562"
+		name = "EVTOPTA624"
 		remove_accepted_culture = kurdish
 	}
 }
+province_event = {
+	id = 625
+	title = "EVTNAME625"
+	desc = "EVTDESC625"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = kurdish
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = kurdish
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA625"
+		owner = {
+			remove_accepted_culture = kurdish
+		}
+	}
+}
 country_event = {
-	id = 563
-	title = "EVTNAME563"
-	desc = "EVTDESC563"
+	id = 626
+	title = "EVTNAME626"
+	desc = "EVTDESC626"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = tatar
@@ -1338,14 +3102,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA563"
+		name = "EVTOPTA626"
 		remove_accepted_culture = tatar
 	}
 }
+province_event = {
+	id = 627
+	title = "EVTNAME627"
+	desc = "EVTDESC627"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = tatar
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = tatar
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA627"
+		owner = {
+			remove_accepted_culture = tatar
+		}
+	}
+}
 country_event = {
-	id = 564
-	title = "EVTNAME564"
-	desc = "EVTDESC564"
+	id = 628
+	title = "EVTNAME628"
+	desc = "EVTDESC628"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = mongol
@@ -1359,14 +3151,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA564"
+		name = "EVTOPTA628"
 		remove_accepted_culture = mongol
 	}
 }
+province_event = {
+	id = 629
+	title = "EVTNAME629"
+	desc = "EVTDESC629"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = mongol
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = mongol
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA629"
+		owner = {
+			remove_accepted_culture = mongol
+		}
+	}
+}
 country_event = {
-	id = 565
-	title = "EVTNAME565"
-	desc = "EVTDESC565"
+	id = 630
+	title = "EVTNAME630"
+	desc = "EVTDESC630"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = siberian
@@ -1380,14 +3200,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA565"
+		name = "EVTOPTA630"
 		remove_accepted_culture = siberian
 	}
 }
+province_event = {
+	id = 631
+	title = "EVTNAME631"
+	desc = "EVTDESC631"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = siberian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = siberian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA631"
+		owner = {
+			remove_accepted_culture = siberian
+		}
+	}
+}
 country_event = {
-	id = 566
-	title = "EVTNAME566"
-	desc = "EVTDESC566"
+	id = 632
+	title = "EVTNAME632"
+	desc = "EVTDESC632"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = yakut
@@ -1401,14 +3249,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA566"
+		name = "EVTOPTA632"
 		remove_accepted_culture = yakut
 	}
 }
+province_event = {
+	id = 633
+	title = "EVTNAME633"
+	desc = "EVTDESC633"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = yakut
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = yakut
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA633"
+		owner = {
+			remove_accepted_culture = yakut
+		}
+	}
+}
 country_event = {
-	id = 567
-	title = "EVTNAME567"
-	desc = "EVTDESC567"
+	id = 634
+	title = "EVTNAME634"
+	desc = "EVTDESC634"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = tibetan
@@ -1422,14 +3298,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA567"
+		name = "EVTOPTA634"
 		remove_accepted_culture = tibetan
 	}
 }
+province_event = {
+	id = 635
+	title = "EVTNAME635"
+	desc = "EVTDESC635"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = tibetan
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = tibetan
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA635"
+		owner = {
+			remove_accepted_culture = tibetan
+		}
+	}
+}
 country_event = {
-	id = 568
-	title = "EVTNAME568"
-	desc = "EVTDESC568"
+	id = 636
+	title = "EVTNAME636"
+	desc = "EVTDESC636"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = assamese
@@ -1443,14 +3347,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA568"
+		name = "EVTOPTA636"
 		remove_accepted_culture = assamese
 	}
 }
+province_event = {
+	id = 637
+	title = "EVTNAME637"
+	desc = "EVTDESC637"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = assamese
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = assamese
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA637"
+		owner = {
+			remove_accepted_culture = assamese
+		}
+	}
+}
 country_event = {
-	id = 569
-	title = "EVTNAME569"
-	desc = "EVTDESC569"
+	id = 638
+	title = "EVTNAME638"
+	desc = "EVTDESC638"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = bengali
@@ -1464,14 +3396,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA569"
+		name = "EVTOPTA638"
 		remove_accepted_culture = bengali
 	}
 }
+province_event = {
+	id = 639
+	title = "EVTNAME639"
+	desc = "EVTDESC639"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = bengali
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = bengali
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA639"
+		owner = {
+			remove_accepted_culture = bengali
+		}
+	}
+}
 country_event = {
-	id = 570
-	title = "EVTNAME570"
-	desc = "EVTDESC570"
+	id = 640
+	title = "EVTNAME640"
+	desc = "EVTDESC640"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = bihari
@@ -1485,14 +3445,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA570"
+		name = "EVTOPTA640"
 		remove_accepted_culture = bihari
 	}
 }
+province_event = {
+	id = 641
+	title = "EVTNAME641"
+	desc = "EVTDESC641"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = bihari
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = bihari
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA641"
+		owner = {
+			remove_accepted_culture = bihari
+		}
+	}
+}
 country_event = {
-	id = 571
-	title = "EVTNAME571"
-	desc = "EVTDESC571"
+	id = 642
+	title = "EVTNAME642"
+	desc = "EVTDESC642"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = manipuri
@@ -1506,14 +3494,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA571"
+		name = "EVTOPTA642"
 		remove_accepted_culture = manipuri
 	}
 }
+province_event = {
+	id = 643
+	title = "EVTNAME643"
+	desc = "EVTDESC643"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = manipuri
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = manipuri
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA643"
+		owner = {
+			remove_accepted_culture = manipuri
+		}
+	}
+}
 country_event = {
-	id = 572
-	title = "EVTNAME572"
-	desc = "EVTDESC572"
+	id = 644
+	title = "EVTNAME644"
+	desc = "EVTDESC644"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = nepali
@@ -1527,14 +3543,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA572"
+		name = "EVTOPTA644"
 		remove_accepted_culture = nepali
 	}
 }
+province_event = {
+	id = 645
+	title = "EVTNAME645"
+	desc = "EVTDESC645"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = nepali
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = nepali
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA645"
+		owner = {
+			remove_accepted_culture = nepali
+		}
+	}
+}
 country_event = {
-	id = 573
-	title = "EVTNAME573"
-	desc = "EVTDESC573"
+	id = 646
+	title = "EVTNAME646"
+	desc = "EVTDESC646"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = oriya
@@ -1548,14 +3592,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA573"
+		name = "EVTOPTA646"
 		remove_accepted_culture = oriya
 	}
 }
+province_event = {
+	id = 647
+	title = "EVTNAME647"
+	desc = "EVTDESC647"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = oriya
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = oriya
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA647"
+		owner = {
+			remove_accepted_culture = oriya
+		}
+	}
+}
 country_event = {
-	id = 574
-	title = "EVTNAME574"
-	desc = "EVTDESC574"
+	id = 648
+	title = "EVTNAME648"
+	desc = "EVTDESC648"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = sinhala
@@ -1569,14 +3641,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA574"
+		name = "EVTOPTA648"
 		remove_accepted_culture = sinhala
 	}
 }
+province_event = {
+	id = 649
+	title = "EVTNAME649"
+	desc = "EVTDESC649"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = sinhala
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = sinhala
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA649"
+		owner = {
+			remove_accepted_culture = sinhala
+		}
+	}
+}
 country_event = {
-	id = 575
-	title = "EVTNAME575"
-	desc = "EVTDESC575"
+	id = 650
+	title = "EVTNAME650"
+	desc = "EVTDESC650"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = avadhi
@@ -1590,14 +3690,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA575"
+		name = "EVTOPTA650"
 		remove_accepted_culture = avadhi
 	}
 }
+province_event = {
+	id = 651
+	title = "EVTNAME651"
+	desc = "EVTDESC651"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = avadhi
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = avadhi
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA651"
+		owner = {
+			remove_accepted_culture = avadhi
+		}
+	}
+}
 country_event = {
-	id = 576
-	title = "EVTNAME576"
-	desc = "EVTDESC576"
+	id = 652
+	title = "EVTNAME652"
+	desc = "EVTDESC652"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = kanauji
@@ -1611,14 +3739,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA576"
+		name = "EVTOPTA652"
 		remove_accepted_culture = kanauji
 	}
 }
+province_event = {
+	id = 653
+	title = "EVTNAME653"
+	desc = "EVTDESC653"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = kanauji
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = kanauji
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA653"
+		owner = {
+			remove_accepted_culture = kanauji
+		}
+	}
+}
 country_event = {
-	id = 577
-	title = "EVTNAME577"
-	desc = "EVTDESC577"
+	id = 654
+	title = "EVTNAME654"
+	desc = "EVTDESC654"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = panjabi
@@ -1632,14 +3788,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA577"
+		name = "EVTOPTA654"
 		remove_accepted_culture = panjabi
 	}
 }
+province_event = {
+	id = 655
+	title = "EVTNAME655"
+	desc = "EVTDESC655"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = panjabi
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = panjabi
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA655"
+		owner = {
+			remove_accepted_culture = panjabi
+		}
+	}
+}
 country_event = {
-	id = 578
-	title = "EVTNAME578"
-	desc = "EVTDESC578"
+	id = 656
+	title = "EVTNAME656"
+	desc = "EVTDESC656"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = kashmiri
@@ -1653,14 +3837,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA578"
+		name = "EVTOPTA656"
 		remove_accepted_culture = kashmiri
 	}
 }
+province_event = {
+	id = 657
+	title = "EVTNAME657"
+	desc = "EVTDESC657"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = kashmiri
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = kashmiri
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA657"
+		owner = {
+			remove_accepted_culture = kashmiri
+		}
+	}
+}
 country_event = {
-	id = 579
-	title = "EVTNAME579"
-	desc = "EVTDESC579"
+	id = 658
+	title = "EVTNAME658"
+	desc = "EVTDESC658"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = gujarati
@@ -1674,14 +3886,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA579"
+		name = "EVTOPTA658"
 		remove_accepted_culture = gujarati
 	}
 }
+province_event = {
+	id = 659
+	title = "EVTNAME659"
+	desc = "EVTDESC659"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = gujarati
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = gujarati
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA659"
+		owner = {
+			remove_accepted_culture = gujarati
+		}
+	}
+}
 country_event = {
-	id = 580
-	title = "EVTNAME580"
-	desc = "EVTDESC580"
+	id = 660
+	title = "EVTNAME660"
+	desc = "EVTDESC660"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = marathi
@@ -1695,14 +3935,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA580"
+		name = "EVTOPTA660"
 		remove_accepted_culture = marathi
 	}
 }
+province_event = {
+	id = 661
+	title = "EVTNAME661"
+	desc = "EVTDESC661"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = marathi
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = marathi
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA661"
+		owner = {
+			remove_accepted_culture = marathi
+		}
+	}
+}
 country_event = {
-	id = 581
-	title = "EVTNAME581"
-	desc = "EVTDESC581"
+	id = 662
+	title = "EVTNAME662"
+	desc = "EVTDESC662"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = sindi
@@ -1716,14 +3984,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA581"
+		name = "EVTOPTA662"
 		remove_accepted_culture = sindi
 	}
 }
+province_event = {
+	id = 663
+	title = "EVTNAME663"
+	desc = "EVTDESC663"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = sindi
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = sindi
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA663"
+		owner = {
+			remove_accepted_culture = sindi
+		}
+	}
+}
 country_event = {
-	id = 582
-	title = "EVTNAME582"
-	desc = "EVTDESC582"
+	id = 664
+	title = "EVTNAME664"
+	desc = "EVTDESC664"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = rajput
@@ -1737,14 +4033,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA582"
+		name = "EVTOPTA664"
 		remove_accepted_culture = rajput
 	}
 }
+province_event = {
+	id = 665
+	title = "EVTNAME665"
+	desc = "EVTDESC665"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = rajput
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = rajput
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA665"
+		owner = {
+			remove_accepted_culture = rajput
+		}
+	}
+}
 country_event = {
-	id = 583
-	title = "EVTNAME583"
-	desc = "EVTDESC583"
+	id = 666
+	title = "EVTNAME666"
+	desc = "EVTDESC666"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = kannada
@@ -1758,14 +4082,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA583"
+		name = "EVTOPTA666"
 		remove_accepted_culture = kannada
 	}
 }
+province_event = {
+	id = 667
+	title = "EVTNAME667"
+	desc = "EVTDESC667"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = kannada
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = kannada
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA667"
+		owner = {
+			remove_accepted_culture = kannada
+		}
+	}
+}
 country_event = {
-	id = 584
-	title = "EVTNAME584"
-	desc = "EVTDESC584"
+	id = 668
+	title = "EVTNAME668"
+	desc = "EVTDESC668"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = malayalam
@@ -1779,14 +4131,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA584"
+		name = "EVTOPTA668"
 		remove_accepted_culture = malayalam
 	}
 }
+province_event = {
+	id = 669
+	title = "EVTNAME669"
+	desc = "EVTDESC669"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = malayalam
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = malayalam
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA669"
+		owner = {
+			remove_accepted_culture = malayalam
+		}
+	}
+}
 country_event = {
-	id = 585
-	title = "EVTNAME585"
-	desc = "EVTDESC585"
+	id = 670
+	title = "EVTNAME670"
+	desc = "EVTDESC670"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = tamil
@@ -1800,14 +4180,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA585"
+		name = "EVTOPTA670"
 		remove_accepted_culture = tamil
 	}
 }
+province_event = {
+	id = 671
+	title = "EVTNAME671"
+	desc = "EVTDESC671"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = tamil
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = tamil
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA671"
+		owner = {
+			remove_accepted_culture = tamil
+		}
+	}
+}
 country_event = {
-	id = 586
-	title = "EVTNAME586"
-	desc = "EVTDESC586"
+	id = 672
+	title = "EVTNAME672"
+	desc = "EVTDESC672"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = telegu
@@ -1821,14 +4229,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA586"
+		name = "EVTOPTA672"
 		remove_accepted_culture = telegu
 	}
 }
+province_event = {
+	id = 673
+	title = "EVTNAME673"
+	desc = "EVTDESC673"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = telegu
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = telegu
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA673"
+		owner = {
+			remove_accepted_culture = telegu
+		}
+	}
+}
 country_event = {
-	id = 587
-	title = "EVTNAME587"
-	desc = "EVTDESC587"
+	id = 674
+	title = "EVTNAME674"
+	desc = "EVTDESC674"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = vietnamese
@@ -1842,14 +4278,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA587"
+		name = "EVTOPTA674"
 		remove_accepted_culture = vietnamese
 	}
 }
+province_event = {
+	id = 675
+	title = "EVTNAME675"
+	desc = "EVTDESC675"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = vietnamese
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = vietnamese
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA675"
+		owner = {
+			remove_accepted_culture = vietnamese
+		}
+	}
+}
 country_event = {
-	id = 588
-	title = "EVTNAME588"
-	desc = "EVTDESC588"
+	id = 676
+	title = "EVTNAME676"
+	desc = "EVTDESC676"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = khmer
@@ -1863,14 +4327,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA588"
+		name = "EVTOPTA676"
 		remove_accepted_culture = khmer
 	}
 }
+province_event = {
+	id = 677
+	title = "EVTNAME677"
+	desc = "EVTDESC677"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = khmer
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = khmer
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA677"
+		owner = {
+			remove_accepted_culture = khmer
+		}
+	}
+}
 country_event = {
-	id = 589
-	title = "EVTNAME589"
-	desc = "EVTDESC589"
+	id = 678
+	title = "EVTNAME678"
+	desc = "EVTDESC678"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = malay
@@ -1884,14 +4376,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA589"
+		name = "EVTOPTA678"
 		remove_accepted_culture = malay
 	}
 }
+province_event = {
+	id = 679
+	title = "EVTNAME679"
+	desc = "EVTDESC679"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = malay
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = malay
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA679"
+		owner = {
+			remove_accepted_culture = malay
+		}
+	}
+}
 country_event = {
-	id = 590
-	title = "EVTNAME590"
-	desc = "EVTDESC590"
+	id = 680
+	title = "EVTNAME680"
+	desc = "EVTDESC680"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = filipino
@@ -1905,14 +4425,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA590"
+		name = "EVTOPTA680"
 		remove_accepted_culture = filipino
 	}
 }
+province_event = {
+	id = 681
+	title = "EVTNAME681"
+	desc = "EVTDESC681"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = filipino
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = filipino
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA681"
+		owner = {
+			remove_accepted_culture = filipino
+		}
+	}
+}
 country_event = {
-	id = 591
-	title = "EVTNAME591"
-	desc = "EVTDESC591"
+	id = 682
+	title = "EVTNAME682"
+	desc = "EVTDESC682"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = javan
@@ -1926,14 +4474,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA591"
+		name = "EVTOPTA682"
 		remove_accepted_culture = javan
 	}
 }
+province_event = {
+	id = 683
+	title = "EVTNAME683"
+	desc = "EVTDESC683"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = javan
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = javan
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA683"
+		owner = {
+			remove_accepted_culture = javan
+		}
+	}
+}
 country_event = {
-	id = 592
-	title = "EVTNAME592"
-	desc = "EVTDESC592"
+	id = 684
+	title = "EVTNAME684"
+	desc = "EVTDESC684"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = moluccan
@@ -1947,14 +4523,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA592"
+		name = "EVTOPTA684"
 		remove_accepted_culture = moluccan
 	}
 }
+province_event = {
+	id = 685
+	title = "EVTNAME685"
+	desc = "EVTDESC685"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = moluccan
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = moluccan
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA685"
+		owner = {
+			remove_accepted_culture = moluccan
+		}
+	}
+}
 country_event = {
-	id = 593
-	title = "EVTNAME593"
-	desc = "EVTDESC593"
+	id = 686
+	title = "EVTNAME686"
+	desc = "EVTDESC686"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = thai
@@ -1968,14 +4572,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA593"
+		name = "EVTOPTA686"
 		remove_accepted_culture = thai
 	}
 }
+province_event = {
+	id = 687
+	title = "EVTNAME687"
+	desc = "EVTDESC687"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = thai
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = thai
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA687"
+		owner = {
+			remove_accepted_culture = thai
+		}
+	}
+}
 country_event = {
-	id = 594
-	title = "EVTNAME594"
-	desc = "EVTDESC594"
+	id = 688
+	title = "EVTNAME688"
+	desc = "EVTDESC688"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = lao
@@ -1989,14 +4621,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA594"
+		name = "EVTOPTA688"
 		remove_accepted_culture = lao
 	}
 }
+province_event = {
+	id = 689
+	title = "EVTNAME689"
+	desc = "EVTDESC689"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = lao
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = lao
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA689"
+		owner = {
+			remove_accepted_culture = lao
+		}
+	}
+}
 country_event = {
-	id = 595
-	title = "EVTNAME595"
-	desc = "EVTDESC595"
+	id = 690
+	title = "EVTNAME690"
+	desc = "EVTDESC690"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = shan
@@ -2010,14 +4670,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA595"
+		name = "EVTOPTA690"
 		remove_accepted_culture = shan
 	}
 }
+province_event = {
+	id = 691
+	title = "EVTNAME691"
+	desc = "EVTDESC691"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = shan
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = shan
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA691"
+		owner = {
+			remove_accepted_culture = shan
+		}
+	}
+}
 country_event = {
-	id = 596
-	title = "EVTNAME596"
-	desc = "EVTDESC596"
+	id = 692
+	title = "EVTNAME692"
+	desc = "EVTDESC692"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = burmese
@@ -2031,14 +4719,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA596"
+		name = "EVTOPTA692"
 		remove_accepted_culture = burmese
 	}
 }
+province_event = {
+	id = 693
+	title = "EVTNAME693"
+	desc = "EVTDESC693"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = burmese
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = burmese
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA693"
+		owner = {
+			remove_accepted_culture = burmese
+		}
+	}
+}
 country_event = {
-	id = 597
-	title = "EVTNAME597"
-	desc = "EVTDESC597"
+	id = 694
+	title = "EVTNAME694"
+	desc = "EVTDESC694"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = asian_minor
@@ -2052,14 +4768,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA597"
+		name = "EVTOPTA694"
 		remove_accepted_culture = asian_minor
 	}
 }
+province_event = {
+	id = 695
+	title = "EVTNAME695"
+	desc = "EVTDESC695"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = asian_minor
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = asian_minor
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA695"
+		owner = {
+			remove_accepted_culture = asian_minor
+		}
+	}
+}
 country_event = {
-	id = 598
-	title = "EVTNAME598"
-	desc = "EVTDESC598"
+	id = 696
+	title = "EVTNAME696"
+	desc = "EVTDESC696"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = kachin
@@ -2073,14 +4817,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA598"
+		name = "EVTOPTA696"
 		remove_accepted_culture = kachin
 	}
 }
+province_event = {
+	id = 697
+	title = "EVTNAME697"
+	desc = "EVTDESC697"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = kachin
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = kachin
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA697"
+		owner = {
+			remove_accepted_culture = kachin
+		}
+	}
+}
 country_event = {
-	id = 599
-	title = "EVTNAME599"
-	desc = "EVTDESC599"
+	id = 698
+	title = "EVTNAME698"
+	desc = "EVTDESC698"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = karen
@@ -2094,14 +4866,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA599"
+		name = "EVTOPTA698"
 		remove_accepted_culture = karen
 	}
 }
+province_event = {
+	id = 699
+	title = "EVTNAME699"
+	desc = "EVTDESC699"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = karen
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = karen
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA699"
+		owner = {
+			remove_accepted_culture = karen
+		}
+	}
+}
 country_event = {
-	id = 600
-	title = "EVTNAME600"
-	desc = "EVTDESC600"
+	id = 700
+	title = "EVTNAME700"
+	desc = "EVTDESC700"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = japanese
@@ -2115,14 +4915,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA600"
+		name = "EVTOPTA700"
 		remove_accepted_culture = japanese
 	}
 }
+province_event = {
+	id = 701
+	title = "EVTNAME701"
+	desc = "EVTDESC701"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = japanese
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = japanese
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA701"
+		owner = {
+			remove_accepted_culture = japanese
+		}
+	}
+}
 country_event = {
-	id = 601
-	title = "EVTNAME601"
-	desc = "EVTDESC601"
+	id = 702
+	title = "EVTNAME702"
+	desc = "EVTDESC702"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = manchu
@@ -2136,14 +4964,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA601"
+		name = "EVTOPTA702"
 		remove_accepted_culture = manchu
 	}
 }
+province_event = {
+	id = 703
+	title = "EVTNAME703"
+	desc = "EVTDESC703"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = manchu
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = manchu
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA703"
+		owner = {
+			remove_accepted_culture = manchu
+		}
+	}
+}
 country_event = {
-	id = 602
-	title = "EVTNAME602"
-	desc = "EVTDESC602"
+	id = 704
+	title = "EVTNAME704"
+	desc = "EVTDESC704"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = beifaren
@@ -2157,14 +5013,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA602"
+		name = "EVTOPTA704"
 		remove_accepted_culture = beifaren
 	}
 }
+province_event = {
+	id = 705
+	title = "EVTNAME705"
+	desc = "EVTDESC705"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = beifaren
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = beifaren
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA705"
+		owner = {
+			remove_accepted_culture = beifaren
+		}
+	}
+}
 country_event = {
-	id = 603
-	title = "EVTNAME603"
-	desc = "EVTDESC603"
+	id = 706
+	title = "EVTNAME706"
+	desc = "EVTDESC706"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = nanfaren
@@ -2178,14 +5062,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA603"
+		name = "EVTOPTA706"
 		remove_accepted_culture = nanfaren
 	}
 }
+province_event = {
+	id = 707
+	title = "EVTNAME707"
+	desc = "EVTDESC707"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = nanfaren
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = nanfaren
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA707"
+		owner = {
+			remove_accepted_culture = nanfaren
+		}
+	}
+}
 country_event = {
-	id = 604
-	title = "EVTNAME604"
-	desc = "EVTDESC604"
+	id = 708
+	title = "EVTNAME708"
+	desc = "EVTDESC708"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = korean
@@ -2199,14 +5111,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA604"
+		name = "EVTOPTA708"
 		remove_accepted_culture = korean
 	}
 }
+province_event = {
+	id = 709
+	title = "EVTNAME709"
+	desc = "EVTDESC709"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = korean
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = korean
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA709"
+		owner = {
+			remove_accepted_culture = korean
+		}
+	}
+}
 country_event = {
-	id = 605
-	title = "EVTNAME605"
-	desc = "EVTDESC605"
+	id = 710
+	title = "EVTNAME710"
+	desc = "EVTDESC710"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = ainu
@@ -2220,14 +5160,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA605"
+		name = "EVTOPTA710"
 		remove_accepted_culture = ainu
 	}
 }
+province_event = {
+	id = 711
+	title = "EVTNAME711"
+	desc = "EVTDESC711"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = ainu
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = ainu
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA711"
+		owner = {
+			remove_accepted_culture = ainu
+		}
+	}
+}
 country_event = {
-	id = 606
-	title = "EVTNAME606"
-	desc = "EVTDESC606"
+	id = 712
+	title = "EVTNAME712"
+	desc = "EVTDESC712"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = hakka
@@ -2241,14 +5209,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA606"
+		name = "EVTOPTA712"
 		remove_accepted_culture = hakka
 	}
 }
+province_event = {
+	id = 713
+	title = "EVTNAME713"
+	desc = "EVTDESC713"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = hakka
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = hakka
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA713"
+		owner = {
+			remove_accepted_culture = hakka
+		}
+	}
+}
 country_event = {
-	id = 607
-	title = "EVTNAME607"
-	desc = "EVTDESC607"
+	id = 714
+	title = "EVTNAME714"
+	desc = "EVTDESC714"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = miao
@@ -2262,14 +5258,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA607"
+		name = "EVTOPTA714"
 		remove_accepted_culture = miao
 	}
 }
+province_event = {
+	id = 715
+	title = "EVTNAME715"
+	desc = "EVTDESC715"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = miao
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = miao
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA715"
+		owner = {
+			remove_accepted_culture = miao
+		}
+	}
+}
 country_event = {
-	id = 608
-	title = "EVTNAME608"
-	desc = "EVTDESC608"
+	id = 716
+	title = "EVTNAME716"
+	desc = "EVTDESC716"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = min
@@ -2283,14 +5307,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA608"
+		name = "EVTOPTA716"
 		remove_accepted_culture = min
 	}
 }
+province_event = {
+	id = 717
+	title = "EVTNAME717"
+	desc = "EVTDESC717"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = min
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = min
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA717"
+		owner = {
+			remove_accepted_culture = min
+		}
+	}
+}
 country_event = {
-	id = 609
-	title = "EVTNAME609"
-	desc = "EVTDESC609"
+	id = 718
+	title = "EVTNAME718"
+	desc = "EVTDESC718"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = zhuang
@@ -2304,14 +5356,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA609"
+		name = "EVTOPTA718"
 		remove_accepted_culture = zhuang
 	}
 }
+province_event = {
+	id = 719
+	title = "EVTNAME719"
+	desc = "EVTDESC719"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = zhuang
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = zhuang
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA719"
+		owner = {
+			remove_accepted_culture = zhuang
+		}
+	}
+}
 country_event = {
-	id = 610
-	title = "EVTNAME610"
-	desc = "EVTDESC610"
+	id = 720
+	title = "EVTNAME720"
+	desc = "EVTDESC720"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = yi
@@ -2325,14 +5405,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA610"
+		name = "EVTOPTA720"
 		remove_accepted_culture = yi
 	}
 }
+province_event = {
+	id = 721
+	title = "EVTNAME721"
+	desc = "EVTDESC721"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = yi
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = yi
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA721"
+		owner = {
+			remove_accepted_culture = yi
+		}
+	}
+}
 country_event = {
-	id = 611
-	title = "EVTNAME611"
-	desc = "EVTDESC611"
+	id = 722
+	title = "EVTNAME722"
+	desc = "EVTDESC722"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = yue
@@ -2346,14 +5454,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA611"
+		name = "EVTOPTA722"
 		remove_accepted_culture = yue
 	}
 }
+province_event = {
+	id = 723
+	title = "EVTNAME723"
+	desc = "EVTDESC723"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = yue
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = yue
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA723"
+		owner = {
+			remove_accepted_culture = yue
+		}
+	}
+}
 country_event = {
-	id = 612
-	title = "EVTNAME612"
-	desc = "EVTDESC612"
+	id = 724
+	title = "EVTNAME724"
+	desc = "EVTDESC724"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = polynesian
@@ -2367,14 +5503,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA612"
+		name = "EVTOPTA724"
 		remove_accepted_culture = polynesian
 	}
 }
+province_event = {
+	id = 725
+	title = "EVTNAME725"
+	desc = "EVTDESC725"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = polynesian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = polynesian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA725"
+		owner = {
+			remove_accepted_culture = polynesian
+		}
+	}
+}
 country_event = {
-	id = 613
-	title = "EVTNAME613"
-	desc = "EVTDESC613"
+	id = 726
+	title = "EVTNAME726"
+	desc = "EVTDESC726"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = hawaiian
@@ -2388,14 +5552,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA613"
+		name = "EVTOPTA726"
 		remove_accepted_culture = hawaiian
 	}
 }
+province_event = {
+	id = 727
+	title = "EVTNAME727"
+	desc = "EVTDESC727"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = hawaiian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = hawaiian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA727"
+		owner = {
+			remove_accepted_culture = hawaiian
+		}
+	}
+}
 country_event = {
-	id = 614
-	title = "EVTNAME614"
-	desc = "EVTDESC614"
+	id = 728
+	title = "EVTNAME728"
+	desc = "EVTDESC728"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = maori
@@ -2409,14 +5601,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA614"
+		name = "EVTOPTA728"
 		remove_accepted_culture = maori
 	}
 }
+province_event = {
+	id = 729
+	title = "EVTNAME729"
+	desc = "EVTDESC729"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = maori
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = maori
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA729"
+		owner = {
+			remove_accepted_culture = maori
+		}
+	}
+}
 country_event = {
-	id = 615
-	title = "EVTNAME615"
-	desc = "EVTDESC615"
+	id = 730
+	title = "EVTNAME730"
+	desc = "EVTDESC730"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = aborigine
@@ -2430,14 +5650,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA615"
+		name = "EVTOPTA730"
 		remove_accepted_culture = aborigine
 	}
 }
+province_event = {
+	id = 731
+	title = "EVTNAME731"
+	desc = "EVTDESC731"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = aborigine
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = aborigine
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA731"
+		owner = {
+			remove_accepted_culture = aborigine
+		}
+	}
+}
 country_event = {
-	id = 616
-	title = "EVTNAME616"
-	desc = "EVTDESC616"
+	id = 732
+	title = "EVTNAME732"
+	desc = "EVTDESC732"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = melanesian
@@ -2451,14 +5699,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA616"
+		name = "EVTOPTA732"
 		remove_accepted_culture = melanesian
 	}
 }
+province_event = {
+	id = 733
+	title = "EVTNAME733"
+	desc = "EVTDESC733"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = melanesian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = melanesian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA733"
+		owner = {
+			remove_accepted_culture = melanesian
+		}
+	}
+}
 country_event = {
-	id = 617
-	title = "EVTNAME617"
-	desc = "EVTDESC617"
+	id = 734
+	title = "EVTNAME734"
+	desc = "EVTDESC734"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = micronesian
@@ -2472,14 +5748,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA617"
+		name = "EVTOPTA734"
 		remove_accepted_culture = micronesian
 	}
 }
+province_event = {
+	id = 735
+	title = "EVTNAME735"
+	desc = "EVTDESC735"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = micronesian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = micronesian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA735"
+		owner = {
+			remove_accepted_culture = micronesian
+		}
+	}
+}
 country_event = {
-	id = 618
-	title = "EVTNAME618"
-	desc = "EVTDESC618"
+	id = 736
+	title = "EVTNAME736"
+	desc = "EVTDESC736"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = zapotec
@@ -2493,14 +5797,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA618"
+		name = "EVTOPTA736"
 		remove_accepted_culture = zapotec
 	}
 }
+province_event = {
+	id = 737
+	title = "EVTNAME737"
+	desc = "EVTDESC737"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = zapotec
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = zapotec
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA737"
+		owner = {
+			remove_accepted_culture = zapotec
+		}
+	}
+}
 country_event = {
-	id = 619
-	title = "EVTNAME619"
-	desc = "EVTDESC619"
+	id = 738
+	title = "EVTNAME738"
+	desc = "EVTDESC738"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = mayan
@@ -2514,14 +5846,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA619"
+		name = "EVTOPTA738"
 		remove_accepted_culture = mayan
 	}
 }
+province_event = {
+	id = 739
+	title = "EVTNAME739"
+	desc = "EVTDESC739"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = mayan
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = mayan
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA739"
+		owner = {
+			remove_accepted_culture = mayan
+		}
+	}
+}
 country_event = {
-	id = 620
-	title = "EVTNAME620"
-	desc = "EVTDESC620"
+	id = 740
+	title = "EVTNAME740"
+	desc = "EVTDESC740"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = nahua
@@ -2535,14 +5895,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA620"
+		name = "EVTOPTA740"
 		remove_accepted_culture = nahua
 	}
 }
+province_event = {
+	id = 741
+	title = "EVTNAME741"
+	desc = "EVTDESC741"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = nahua
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = nahua
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA741"
+		owner = {
+			remove_accepted_culture = nahua
+		}
+	}
+}
 country_event = {
-	id = 621
-	title = "EVTNAME621"
-	desc = "EVTDESC621"
+	id = 742
+	title = "EVTNAME742"
+	desc = "EVTDESC742"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = tarascan
@@ -2556,14 +5944,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA621"
+		name = "EVTOPTA742"
 		remove_accepted_culture = tarascan
 	}
 }
+province_event = {
+	id = 743
+	title = "EVTNAME743"
+	desc = "EVTDESC743"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = tarascan
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = tarascan
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA743"
+		owner = {
+			remove_accepted_culture = tarascan
+		}
+	}
+}
 country_event = {
-	id = 622
-	title = "EVTNAME622"
-	desc = "EVTDESC622"
+	id = 744
+	title = "EVTNAME744"
+	desc = "EVTDESC744"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = guajiro
@@ -2577,14 +5993,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA622"
+		name = "EVTOPTA744"
 		remove_accepted_culture = guajiro
 	}
 }
+province_event = {
+	id = 745
+	title = "EVTNAME745"
+	desc = "EVTDESC745"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = guajiro
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = guajiro
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA745"
+		owner = {
+			remove_accepted_culture = guajiro
+		}
+	}
+}
 country_event = {
-	id = 623
-	title = "EVTNAME623"
-	desc = "EVTDESC623"
+	id = 746
+	title = "EVTNAME746"
+	desc = "EVTDESC746"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = tupinamba
@@ -2598,14 +6042,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA623"
+		name = "EVTOPTA746"
 		remove_accepted_culture = tupinamba
 	}
 }
+province_event = {
+	id = 747
+	title = "EVTNAME747"
+	desc = "EVTDESC747"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = tupinamba
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = tupinamba
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA747"
+		owner = {
+			remove_accepted_culture = tupinamba
+		}
+	}
+}
 country_event = {
-	id = 624
-	title = "EVTNAME624"
-	desc = "EVTDESC624"
+	id = 748
+	title = "EVTNAME748"
+	desc = "EVTDESC748"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = metis
@@ -2619,14 +6091,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA624"
+		name = "EVTOPTA748"
 		remove_accepted_culture = metis
 	}
 }
+province_event = {
+	id = 749
+	title = "EVTNAME749"
+	desc = "EVTDESC749"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = metis
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = metis
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA749"
+		owner = {
+			remove_accepted_culture = metis
+		}
+	}
+}
 country_event = {
-	id = 625
-	title = "EVTNAME625"
-	desc = "EVTDESC625"
+	id = 750
+	title = "EVTNAME750"
+	desc = "EVTDESC750"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = dakota
@@ -2640,14 +6140,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA625"
+		name = "EVTOPTA750"
 		remove_accepted_culture = dakota
 	}
 }
+province_event = {
+	id = 751
+	title = "EVTNAME751"
+	desc = "EVTDESC751"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = dakota
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = dakota
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA751"
+		owner = {
+			remove_accepted_culture = dakota
+		}
+	}
+}
 country_event = {
-	id = 626
-	title = "EVTNAME626"
-	desc = "EVTDESC626"
+	id = 752
+	title = "EVTNAME752"
+	desc = "EVTDESC752"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = cherokee
@@ -2661,14 +6189,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA626"
+		name = "EVTOPTA752"
 		remove_accepted_culture = cherokee
 	}
 }
+province_event = {
+	id = 753
+	title = "EVTNAME753"
+	desc = "EVTDESC753"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = cherokee
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = cherokee
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA753"
+		owner = {
+			remove_accepted_culture = cherokee
+		}
+	}
+}
 country_event = {
-	id = 627
-	title = "EVTNAME627"
-	desc = "EVTDESC627"
+	id = 754
+	title = "EVTNAME754"
+	desc = "EVTDESC754"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = pueblo
@@ -2682,14 +6238,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA627"
+		name = "EVTOPTA754"
 		remove_accepted_culture = pueblo
 	}
 }
+province_event = {
+	id = 755
+	title = "EVTNAME755"
+	desc = "EVTDESC755"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = pueblo
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = pueblo
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA755"
+		owner = {
+			remove_accepted_culture = pueblo
+		}
+	}
+}
 country_event = {
-	id = 628
-	title = "EVTNAME628"
-	desc = "EVTDESC628"
+	id = 756
+	title = "EVTNAME756"
+	desc = "EVTDESC756"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = inuit
@@ -2703,14 +6287,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA628"
+		name = "EVTOPTA756"
 		remove_accepted_culture = inuit
 	}
 }
+province_event = {
+	id = 757
+	title = "EVTNAME757"
+	desc = "EVTDESC757"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = inuit
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = inuit
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA757"
+		owner = {
+			remove_accepted_culture = inuit
+		}
+	}
+}
 country_event = {
-	id = 629
-	title = "EVTNAME629"
-	desc = "EVTDESC629"
+	id = 758
+	title = "EVTNAME758"
+	desc = "EVTDESC758"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = cree
@@ -2724,14 +6336,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA629"
+		name = "EVTOPTA758"
 		remove_accepted_culture = cree
 	}
 }
+province_event = {
+	id = 759
+	title = "EVTNAME759"
+	desc = "EVTDESC759"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = cree
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = cree
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA759"
+		owner = {
+			remove_accepted_culture = cree
+		}
+	}
+}
 country_event = {
-	id = 630
-	title = "EVTNAME630"
-	desc = "EVTDESC630"
+	id = 760
+	title = "EVTNAME760"
+	desc = "EVTDESC760"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = navajo
@@ -2745,14 +6385,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA630"
+		name = "EVTOPTA760"
 		remove_accepted_culture = navajo
 	}
 }
+province_event = {
+	id = 761
+	title = "EVTNAME761"
+	desc = "EVTDESC761"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = navajo
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = navajo
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA761"
+		owner = {
+			remove_accepted_culture = navajo
+		}
+	}
+}
 country_event = {
-	id = 631
-	title = "EVTNAME631"
-	desc = "EVTDESC631"
+	id = 762
+	title = "EVTNAME762"
+	desc = "EVTDESC762"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = native_american_minor
@@ -2766,14 +6434,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA631"
+		name = "EVTOPTA762"
 		remove_accepted_culture = native_american_minor
 	}
 }
+province_event = {
+	id = 763
+	title = "EVTNAME763"
+	desc = "EVTDESC763"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = native_american_minor
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = native_american_minor
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA763"
+		owner = {
+			remove_accepted_culture = native_american_minor
+		}
+	}
+}
 country_event = {
-	id = 632
-	title = "EVTNAME632"
-	desc = "EVTDESC632"
+	id = 764
+	title = "EVTNAME764"
+	desc = "EVTDESC764"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = yankee
@@ -2787,14 +6483,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA632"
+		name = "EVTOPTA764"
 		remove_accepted_culture = yankee
 	}
 }
+province_event = {
+	id = 765
+	title = "EVTNAME765"
+	desc = "EVTDESC765"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = yankee
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = yankee
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA765"
+		owner = {
+			remove_accepted_culture = yankee
+		}
+	}
+}
 country_event = {
-	id = 633
-	title = "EVTNAME633"
-	desc = "EVTDESC633"
+	id = 766
+	title = "EVTNAME766"
+	desc = "EVTDESC766"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = dixie
@@ -2808,14 +6532,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA633"
+		name = "EVTOPTA766"
 		remove_accepted_culture = dixie
 	}
 }
+province_event = {
+	id = 767
+	title = "EVTNAME767"
+	desc = "EVTDESC767"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = dixie
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = dixie
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA767"
+		owner = {
+			remove_accepted_culture = dixie
+		}
+	}
+}
 country_event = {
-	id = 634
-	title = "EVTNAME634"
-	desc = "EVTDESC634"
+	id = 768
+	title = "EVTNAME768"
+	desc = "EVTDESC768"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = texan
@@ -2829,14 +6581,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA634"
+		name = "EVTOPTA768"
 		remove_accepted_culture = texan
 	}
 }
+province_event = {
+	id = 769
+	title = "EVTNAME769"
+	desc = "EVTDESC769"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = texan
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = texan
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA769"
+		owner = {
+			remove_accepted_culture = texan
+		}
+	}
+}
 country_event = {
-	id = 635
-	title = "EVTNAME635"
-	desc = "EVTDESC635"
+	id = 770
+	title = "EVTNAME770"
+	desc = "EVTDESC770"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = boer
@@ -2850,14 +6630,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA635"
+		name = "EVTOPTA770"
 		remove_accepted_culture = boer
 	}
 }
+province_event = {
+	id = 771
+	title = "EVTNAME771"
+	desc = "EVTDESC771"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = boer
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = boer
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA771"
+		owner = {
+			remove_accepted_culture = boer
+		}
+	}
+}
 country_event = {
-	id = 636
-	title = "EVTNAME636"
-	desc = "EVTDESC636"
+	id = 772
+	title = "EVTNAME772"
+	desc = "EVTDESC772"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = australian
@@ -2871,14 +6679,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA636"
+		name = "EVTOPTA772"
 		remove_accepted_culture = australian
 	}
 }
+province_event = {
+	id = 773
+	title = "EVTNAME773"
+	desc = "EVTDESC773"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = australian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = australian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA773"
+		owner = {
+			remove_accepted_culture = australian
+		}
+	}
+}
 country_event = {
-	id = 637
-	title = "EVTNAME637"
-	desc = "EVTDESC637"
+	id = 774
+	title = "EVTNAME774"
+	desc = "EVTDESC774"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = anglo_canadian
@@ -2892,14 +6728,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA637"
+		name = "EVTOPTA774"
 		remove_accepted_culture = anglo_canadian
 	}
 }
+province_event = {
+	id = 775
+	title = "EVTNAME775"
+	desc = "EVTDESC775"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = anglo_canadian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = anglo_canadian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA775"
+		owner = {
+			remove_accepted_culture = anglo_canadian
+		}
+	}
+}
 country_event = {
-	id = 638
-	title = "EVTNAME638"
-	desc = "EVTDESC638"
+	id = 776
+	title = "EVTNAME776"
+	desc = "EVTDESC776"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = french_canadian
@@ -2913,14 +6777,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA638"
+		name = "EVTOPTA776"
 		remove_accepted_culture = french_canadian
 	}
 }
+province_event = {
+	id = 777
+	title = "EVTNAME777"
+	desc = "EVTDESC777"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = french_canadian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = french_canadian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA777"
+		owner = {
+			remove_accepted_culture = french_canadian
+		}
+	}
+}
 country_event = {
-	id = 639
-	title = "EVTNAME639"
-	desc = "EVTDESC639"
+	id = 778
+	title = "EVTNAME778"
+	desc = "EVTDESC778"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = mexican
@@ -2934,14 +6826,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA639"
+		name = "EVTOPTA778"
 		remove_accepted_culture = mexican
 	}
 }
+province_event = {
+	id = 779
+	title = "EVTNAME779"
+	desc = "EVTDESC779"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = mexican
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = mexican
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA779"
+		owner = {
+			remove_accepted_culture = mexican
+		}
+	}
+}
 country_event = {
-	id = 640
-	title = "EVTNAME640"
-	desc = "EVTDESC640"
+	id = 780
+	title = "EVTNAME780"
+	desc = "EVTDESC780"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = central_american
@@ -2955,14 +6875,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA640"
+		name = "EVTOPTA780"
 		remove_accepted_culture = central_american
 	}
 }
+province_event = {
+	id = 781
+	title = "EVTNAME781"
+	desc = "EVTDESC781"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = central_american
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = central_american
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA781"
+		owner = {
+			remove_accepted_culture = central_american
+		}
+	}
+}
 country_event = {
-	id = 641
-	title = "EVTNAME641"
-	desc = "EVTDESC641"
+	id = 782
+	title = "EVTNAME782"
+	desc = "EVTDESC782"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = caribeno
@@ -2976,14 +6924,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA641"
+		name = "EVTOPTA782"
 		remove_accepted_culture = caribeno
 	}
 }
+province_event = {
+	id = 783
+	title = "EVTNAME783"
+	desc = "EVTDESC783"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = caribeno
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = caribeno
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA783"
+		owner = {
+			remove_accepted_culture = caribeno
+		}
+	}
+}
 country_event = {
-	id = 642
-	title = "EVTNAME642"
-	desc = "EVTDESC642"
+	id = 784
+	title = "EVTNAME784"
+	desc = "EVTDESC784"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = north_andean
@@ -2997,14 +6973,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA642"
+		name = "EVTOPTA784"
 		remove_accepted_culture = north_andean
 	}
 }
+province_event = {
+	id = 785
+	title = "EVTNAME785"
+	desc = "EVTDESC785"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = north_andean
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = north_andean
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA785"
+		owner = {
+			remove_accepted_culture = north_andean
+		}
+	}
+}
 country_event = {
-	id = 643
-	title = "EVTNAME643"
-	desc = "EVTDESC643"
+	id = 786
+	title = "EVTNAME786"
+	desc = "EVTDESC786"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = south_andean
@@ -3018,14 +7022,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA643"
+		name = "EVTOPTA786"
 		remove_accepted_culture = south_andean
 	}
 }
+province_event = {
+	id = 787
+	title = "EVTNAME787"
+	desc = "EVTDESC787"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = south_andean
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = south_andean
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA787"
+		owner = {
+			remove_accepted_culture = south_andean
+		}
+	}
+}
 country_event = {
-	id = 644
-	title = "EVTNAME644"
-	desc = "EVTDESC644"
+	id = 788
+	title = "EVTNAME788"
+	desc = "EVTDESC788"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = platinean
@@ -3039,14 +7071,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA644"
+		name = "EVTOPTA788"
 		remove_accepted_culture = platinean
 	}
 }
+province_event = {
+	id = 789
+	title = "EVTNAME789"
+	desc = "EVTDESC789"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = platinean
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = platinean
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA789"
+		owner = {
+			remove_accepted_culture = platinean
+		}
+	}
+}
 country_event = {
-	id = 645
-	title = "EVTNAME645"
-	desc = "EVTDESC645"
+	id = 790
+	title = "EVTNAME790"
+	desc = "EVTDESC790"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = brazilian
@@ -3060,14 +7120,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA645"
+		name = "EVTOPTA790"
 		remove_accepted_culture = brazilian
 	}
 }
+province_event = {
+	id = 791
+	title = "EVTNAME791"
+	desc = "EVTDESC791"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = brazilian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = brazilian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA791"
+		owner = {
+			remove_accepted_culture = brazilian
+		}
+	}
+}
 country_event = {
-	id = 646
-	title = "EVTNAME646"
-	desc = "EVTDESC646"
+	id = 792
+	title = "EVTNAME792"
+	desc = "EVTDESC792"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = afro_brazilian
@@ -3081,14 +7169,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA646"
+		name = "EVTOPTA792"
 		remove_accepted_culture = afro_brazilian
 	}
 }
+province_event = {
+	id = 793
+	title = "EVTNAME793"
+	desc = "EVTDESC793"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = afro_brazilian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = afro_brazilian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA793"
+		owner = {
+			remove_accepted_culture = afro_brazilian
+		}
+	}
+}
 country_event = {
-	id = 647
-	title = "EVTNAME647"
-	desc = "EVTDESC647"
+	id = 794
+	title = "EVTNAME794"
+	desc = "EVTDESC794"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = quechua
@@ -3102,14 +7218,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA647"
+		name = "EVTOPTA794"
 		remove_accepted_culture = quechua
 	}
 }
+province_event = {
+	id = 795
+	title = "EVTNAME795"
+	desc = "EVTDESC795"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = quechua
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = quechua
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA795"
+		owner = {
+			remove_accepted_culture = quechua
+		}
+	}
+}
 country_event = {
-	id = 648
-	title = "EVTNAME648"
-	desc = "EVTDESC648"
+	id = 796
+	title = "EVTNAME796"
+	desc = "EVTDESC796"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = guarani
@@ -3123,14 +7267,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA648"
+		name = "EVTOPTA796"
 		remove_accepted_culture = guarani
 	}
 }
+province_event = {
+	id = 797
+	title = "EVTNAME797"
+	desc = "EVTDESC797"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = guarani
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = guarani
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA797"
+		owner = {
+			remove_accepted_culture = guarani
+		}
+	}
+}
 country_event = {
-	id = 649
-	title = "EVTNAME649"
-	desc = "EVTDESC649"
+	id = 798
+	title = "EVTNAME798"
+	desc = "EVTDESC798"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = aimara
@@ -3144,14 +7316,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA649"
+		name = "EVTOPTA798"
 		remove_accepted_culture = aimara
 	}
 }
+province_event = {
+	id = 799
+	title = "EVTNAME799"
+	desc = "EVTDESC799"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = aimara
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = aimara
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA799"
+		owner = {
+			remove_accepted_culture = aimara
+		}
+	}
+}
 country_event = {
-	id = 650
-	title = "EVTNAME650"
-	desc = "EVTDESC650"
+	id = 800
+	title = "EVTNAME800"
+	desc = "EVTDESC800"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = amazonian
@@ -3165,14 +7365,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA650"
+		name = "EVTOPTA800"
 		remove_accepted_culture = amazonian
 	}
 }
+province_event = {
+	id = 801
+	title = "EVTNAME801"
+	desc = "EVTDESC801"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = amazonian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = amazonian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA801"
+		owner = {
+			remove_accepted_culture = amazonian
+		}
+	}
+}
 country_event = {
-	id = 651
-	title = "EVTNAME651"
-	desc = "EVTDESC651"
+	id = 802
+	title = "EVTNAME802"
+	desc = "EVTDESC802"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = patagonian
@@ -3186,14 +7414,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA651"
+		name = "EVTOPTA802"
 		remove_accepted_culture = patagonian
 	}
 }
+province_event = {
+	id = 803
+	title = "EVTNAME803"
+	desc = "EVTDESC803"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = patagonian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = patagonian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA803"
+		owner = {
+			remove_accepted_culture = patagonian
+		}
+	}
+}
 country_event = {
-	id = 652
-	title = "EVTNAME652"
-	desc = "EVTDESC652"
+	id = 804
+	title = "EVTNAME804"
+	desc = "EVTDESC804"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = afro_american
@@ -3207,14 +7463,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA652"
+		name = "EVTOPTA804"
 		remove_accepted_culture = afro_american
 	}
 }
+province_event = {
+	id = 805
+	title = "EVTNAME805"
+	desc = "EVTDESC805"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = afro_american
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = afro_american
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA805"
+		owner = {
+			remove_accepted_culture = afro_american
+		}
+	}
+}
 country_event = {
-	id = 653
-	title = "EVTNAME653"
-	desc = "EVTDESC653"
+	id = 806
+	title = "EVTNAME806"
+	desc = "EVTDESC806"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = afro_caribbean
@@ -3228,14 +7512,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA653"
+		name = "EVTOPTA806"
 		remove_accepted_culture = afro_caribbean
 	}
 }
+province_event = {
+	id = 807
+	title = "EVTNAME807"
+	desc = "EVTDESC807"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = afro_caribbean
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = afro_caribbean
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA807"
+		owner = {
+			remove_accepted_culture = afro_caribbean
+		}
+	}
+}
 country_event = {
-	id = 654
-	title = "EVTNAME654"
-	desc = "EVTDESC654"
+	id = 808
+	title = "EVTNAME808"
+	desc = "EVTDESC808"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = afro_caribeno
@@ -3249,14 +7561,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA654"
+		name = "EVTOPTA808"
 		remove_accepted_culture = afro_caribeno
 	}
 }
+province_event = {
+	id = 809
+	title = "EVTNAME809"
+	desc = "EVTDESC809"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = afro_caribeno
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = afro_caribeno
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA809"
+		owner = {
+			remove_accepted_culture = afro_caribeno
+		}
+	}
+}
 country_event = {
-	id = 655
-	title = "EVTNAME655"
-	desc = "EVTDESC655"
+	id = 810
+	title = "EVTNAME810"
+	desc = "EVTDESC810"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = afro_antillean
@@ -3270,14 +7610,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA655"
+		name = "EVTOPTA810"
 		remove_accepted_culture = afro_antillean
 	}
 }
+province_event = {
+	id = 811
+	title = "EVTNAME811"
+	desc = "EVTDESC811"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = afro_antillean
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = afro_antillean
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA811"
+		owner = {
+			remove_accepted_culture = afro_antillean
+		}
+	}
+}
 country_event = {
-	id = 656
-	title = "EVTNAME656"
-	desc = "EVTDESC656"
+	id = 812
+	title = "EVTNAME812"
+	desc = "EVTDESC812"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = akan
@@ -3291,14 +7659,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA656"
+		name = "EVTOPTA812"
 		remove_accepted_culture = akan
 	}
 }
+province_event = {
+	id = 813
+	title = "EVTNAME813"
+	desc = "EVTDESC813"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = akan
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = akan
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA813"
+		owner = {
+			remove_accepted_culture = akan
+		}
+	}
+}
 country_event = {
-	id = 657
-	title = "EVTNAME657"
-	desc = "EVTDESC657"
+	id = 814
+	title = "EVTNAME814"
+	desc = "EVTDESC814"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = bambara
@@ -3312,14 +7708,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA657"
+		name = "EVTOPTA814"
 		remove_accepted_culture = bambara
 	}
 }
+province_event = {
+	id = 815
+	title = "EVTNAME815"
+	desc = "EVTDESC815"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = bambara
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = bambara
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA815"
+		owner = {
+			remove_accepted_culture = bambara
+		}
+	}
+}
 country_event = {
-	id = 658
-	title = "EVTNAME658"
-	desc = "EVTDESC658"
+	id = 816
+	title = "EVTNAME816"
+	desc = "EVTDESC816"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = dyula
@@ -3333,14 +7757,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA658"
+		name = "EVTOPTA816"
 		remove_accepted_culture = dyula
 	}
 }
+province_event = {
+	id = 817
+	title = "EVTNAME817"
+	desc = "EVTDESC817"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = dyula
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = dyula
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA817"
+		owner = {
+			remove_accepted_culture = dyula
+		}
+	}
+}
 country_event = {
-	id = 659
-	title = "EVTNAME659"
-	desc = "EVTDESC659"
+	id = 818
+	title = "EVTNAME818"
+	desc = "EVTDESC818"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = edo
@@ -3354,14 +7806,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA659"
+		name = "EVTOPTA818"
 		remove_accepted_culture = edo
 	}
 }
+province_event = {
+	id = 819
+	title = "EVTNAME819"
+	desc = "EVTDESC819"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = edo
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = edo
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA819"
+		owner = {
+			remove_accepted_culture = edo
+		}
+	}
+}
 country_event = {
-	id = 660
-	title = "EVTNAME660"
-	desc = "EVTDESC660"
+	id = 820
+	title = "EVTNAME820"
+	desc = "EVTDESC820"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = ewe
@@ -3375,14 +7855,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA660"
+		name = "EVTOPTA820"
 		remove_accepted_culture = ewe
 	}
 }
+province_event = {
+	id = 821
+	title = "EVTNAME821"
+	desc = "EVTDESC821"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = ewe
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = ewe
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA821"
+		owner = {
+			remove_accepted_culture = ewe
+		}
+	}
+}
 country_event = {
-	id = 661
-	title = "EVTNAME661"
-	desc = "EVTDESC661"
+	id = 822
+	title = "EVTNAME822"
+	desc = "EVTDESC822"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = fon
@@ -3396,14 +7904,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA661"
+		name = "EVTOPTA822"
 		remove_accepted_culture = fon
 	}
 }
+province_event = {
+	id = 823
+	title = "EVTNAME823"
+	desc = "EVTDESC823"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = fon
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = fon
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA823"
+		owner = {
+			remove_accepted_culture = fon
+		}
+	}
+}
 country_event = {
-	id = 662
-	title = "EVTNAME662"
-	desc = "EVTDESC662"
+	id = 824
+	title = "EVTNAME824"
+	desc = "EVTDESC824"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = fulbe
@@ -3417,14 +7953,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA662"
+		name = "EVTOPTA824"
 		remove_accepted_culture = fulbe
 	}
 }
+province_event = {
+	id = 825
+	title = "EVTNAME825"
+	desc = "EVTDESC825"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = fulbe
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = fulbe
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA825"
+		owner = {
+			remove_accepted_culture = fulbe
+		}
+	}
+}
 country_event = {
-	id = 663
-	title = "EVTNAME663"
-	desc = "EVTDESC663"
+	id = 826
+	title = "EVTNAME826"
+	desc = "EVTDESC826"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = hausa
@@ -3438,14 +8002,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA663"
+		name = "EVTOPTA826"
 		remove_accepted_culture = hausa
 	}
 }
+province_event = {
+	id = 827
+	title = "EVTNAME827"
+	desc = "EVTDESC827"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = hausa
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = hausa
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA827"
+		owner = {
+			remove_accepted_culture = hausa
+		}
+	}
+}
 country_event = {
-	id = 664
-	title = "EVTNAME664"
-	desc = "EVTDESC664"
+	id = 828
+	title = "EVTNAME828"
+	desc = "EVTDESC828"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = ibibio
@@ -3459,14 +8051,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA664"
+		name = "EVTOPTA828"
 		remove_accepted_culture = ibibio
 	}
 }
+province_event = {
+	id = 829
+	title = "EVTNAME829"
+	desc = "EVTDESC829"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = ibibio
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = ibibio
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA829"
+		owner = {
+			remove_accepted_culture = ibibio
+		}
+	}
+}
 country_event = {
-	id = 665
-	title = "EVTNAME665"
-	desc = "EVTDESC665"
+	id = 830
+	title = "EVTNAME830"
+	desc = "EVTDESC830"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = ibo
@@ -3480,14 +8100,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA665"
+		name = "EVTOPTA830"
 		remove_accepted_culture = ibo
 	}
 }
+province_event = {
+	id = 831
+	title = "EVTNAME831"
+	desc = "EVTDESC831"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = ibo
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = ibo
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA831"
+		owner = {
+			remove_accepted_culture = ibo
+		}
+	}
+}
 country_event = {
-	id = 666
-	title = "EVTNAME666"
-	desc = "EVTDESC666"
+	id = 832
+	title = "EVTNAME832"
+	desc = "EVTDESC832"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = kru
@@ -3501,14 +8149,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA666"
+		name = "EVTOPTA832"
 		remove_accepted_culture = kru
 	}
 }
+province_event = {
+	id = 833
+	title = "EVTNAME833"
+	desc = "EVTDESC833"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = kru
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = kru
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA833"
+		owner = {
+			remove_accepted_culture = kru
+		}
+	}
+}
 country_event = {
-	id = 667
-	title = "EVTNAME667"
-	desc = "EVTDESC667"
+	id = 834
+	title = "EVTNAME834"
+	desc = "EVTDESC834"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = mande
@@ -3522,14 +8198,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA667"
+		name = "EVTOPTA834"
 		remove_accepted_culture = mande
 	}
 }
+province_event = {
+	id = 835
+	title = "EVTNAME835"
+	desc = "EVTDESC835"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = mande
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = mande
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA835"
+		owner = {
+			remove_accepted_culture = mande
+		}
+	}
+}
 country_event = {
-	id = 668
-	title = "EVTNAME668"
-	desc = "EVTDESC668"
+	id = 836
+	title = "EVTNAME836"
+	desc = "EVTDESC836"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = maures
@@ -3543,14 +8247,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA668"
+		name = "EVTOPTA836"
 		remove_accepted_culture = maures
 	}
 }
+province_event = {
+	id = 837
+	title = "EVTNAME837"
+	desc = "EVTDESC837"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = maures
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = maures
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA837"
+		owner = {
+			remove_accepted_culture = maures
+		}
+	}
+}
 country_event = {
-	id = 669
-	title = "EVTNAME669"
-	desc = "EVTDESC669"
+	id = 838
+	title = "EVTNAME838"
+	desc = "EVTDESC838"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = mossi
@@ -3564,14 +8296,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA669"
+		name = "EVTOPTA838"
 		remove_accepted_culture = mossi
 	}
 }
+province_event = {
+	id = 839
+	title = "EVTNAME839"
+	desc = "EVTDESC839"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = mossi
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = mossi
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA839"
+		owner = {
+			remove_accepted_culture = mossi
+		}
+	}
+}
 country_event = {
-	id = 670
-	title = "EVTNAME670"
-	desc = "EVTDESC670"
+	id = 840
+	title = "EVTNAME840"
+	desc = "EVTDESC840"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = senufo
@@ -3585,14 +8345,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA670"
+		name = "EVTOPTA840"
 		remove_accepted_culture = senufo
 	}
 }
+province_event = {
+	id = 841
+	title = "EVTNAME841"
+	desc = "EVTDESC841"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = senufo
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = senufo
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA841"
+		owner = {
+			remove_accepted_culture = senufo
+		}
+	}
+}
 country_event = {
-	id = 671
-	title = "EVTNAME671"
-	desc = "EVTDESC671"
+	id = 842
+	title = "EVTNAME842"
+	desc = "EVTDESC842"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = songhai
@@ -3606,14 +8394,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA671"
+		name = "EVTOPTA842"
 		remove_accepted_culture = songhai
 	}
 }
+province_event = {
+	id = 843
+	title = "EVTNAME843"
+	desc = "EVTDESC843"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = songhai
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = songhai
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA843"
+		owner = {
+			remove_accepted_culture = songhai
+		}
+	}
+}
 country_event = {
-	id = 672
-	title = "EVTNAME672"
-	desc = "EVTDESC672"
+	id = 844
+	title = "EVTNAME844"
+	desc = "EVTDESC844"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = tiv
@@ -3627,14 +8443,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA672"
+		name = "EVTOPTA844"
 		remove_accepted_culture = tiv
 	}
 }
+province_event = {
+	id = 845
+	title = "EVTNAME845"
+	desc = "EVTDESC845"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = tiv
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = tiv
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA845"
+		owner = {
+			remove_accepted_culture = tiv
+		}
+	}
+}
 country_event = {
-	id = 673
-	title = "EVTNAME673"
-	desc = "EVTDESC673"
+	id = 846
+	title = "EVTNAME846"
+	desc = "EVTDESC846"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = tuareg
@@ -3648,14 +8492,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA673"
+		name = "EVTOPTA846"
 		remove_accepted_culture = tuareg
 	}
 }
+province_event = {
+	id = 847
+	title = "EVTNAME847"
+	desc = "EVTDESC847"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = tuareg
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = tuareg
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA847"
+		owner = {
+			remove_accepted_culture = tuareg
+		}
+	}
+}
 country_event = {
-	id = 674
-	title = "EVTNAME674"
-	desc = "EVTDESC674"
+	id = 848
+	title = "EVTNAME848"
+	desc = "EVTDESC848"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = wolof
@@ -3669,14 +8541,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA674"
+		name = "EVTOPTA848"
 		remove_accepted_culture = wolof
 	}
 }
+province_event = {
+	id = 849
+	title = "EVTNAME849"
+	desc = "EVTDESC849"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = wolof
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = wolof
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA849"
+		owner = {
+			remove_accepted_culture = wolof
+		}
+	}
+}
 country_event = {
-	id = 675
-	title = "EVTNAME675"
-	desc = "EVTDESC675"
+	id = 850
+	title = "EVTNAME850"
+	desc = "EVTDESC850"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = yoruba
@@ -3690,14 +8590,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA675"
+		name = "EVTOPTA850"
 		remove_accepted_culture = yoruba
 	}
 }
+province_event = {
+	id = 851
+	title = "EVTNAME851"
+	desc = "EVTDESC851"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = yoruba
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = yoruba
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA851"
+		owner = {
+			remove_accepted_culture = yoruba
+		}
+	}
+}
 country_event = {
-	id = 676
-	title = "EVTNAME676"
-	desc = "EVTDESC676"
+	id = 852
+	title = "EVTNAME852"
+	desc = "EVTDESC852"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = bakongo
@@ -3711,14 +8639,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA676"
+		name = "EVTOPTA852"
 		remove_accepted_culture = bakongo
 	}
 }
+province_event = {
+	id = 853
+	title = "EVTNAME853"
+	desc = "EVTDESC853"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = bakongo
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = bakongo
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA853"
+		owner = {
+			remove_accepted_culture = bakongo
+		}
+	}
+}
 country_event = {
-	id = 677
-	title = "EVTNAME677"
-	desc = "EVTDESC677"
+	id = 854
+	title = "EVTNAME854"
+	desc = "EVTDESC854"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = baguirmi
@@ -3732,14 +8688,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA677"
+		name = "EVTOPTA854"
 		remove_accepted_culture = baguirmi
 	}
 }
+province_event = {
+	id = 855
+	title = "EVTNAME855"
+	desc = "EVTDESC855"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = baguirmi
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = baguirmi
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA855"
+		owner = {
+			remove_accepted_culture = baguirmi
+		}
+	}
+}
 country_event = {
-	id = 678
-	title = "EVTNAME678"
-	desc = "EVTDESC678"
+	id = 856
+	title = "EVTNAME856"
+	desc = "EVTDESC856"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = fang
@@ -3753,14 +8737,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA678"
+		name = "EVTOPTA856"
 		remove_accepted_culture = fang
 	}
 }
+province_event = {
+	id = 857
+	title = "EVTNAME857"
+	desc = "EVTDESC857"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = fang
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = fang
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA857"
+		owner = {
+			remove_accepted_culture = fang
+		}
+	}
+}
 country_event = {
-	id = 679
-	title = "EVTNAME679"
-	desc = "EVTDESC679"
+	id = 858
+	title = "EVTNAME858"
+	desc = "EVTDESC858"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = kanuri
@@ -3774,14 +8786,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA679"
+		name = "EVTOPTA858"
 		remove_accepted_culture = kanuri
 	}
 }
+province_event = {
+	id = 859
+	title = "EVTNAME859"
+	desc = "EVTDESC859"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = kanuri
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = kanuri
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA859"
+		owner = {
+			remove_accepted_culture = kanuri
+		}
+	}
+}
 country_event = {
-	id = 680
-	title = "EVTNAME680"
-	desc = "EVTDESC680"
+	id = 860
+	title = "EVTNAME860"
+	desc = "EVTDESC860"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = luba
@@ -3795,14 +8835,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA680"
+		name = "EVTOPTA860"
 		remove_accepted_culture = luba
 	}
 }
+province_event = {
+	id = 861
+	title = "EVTNAME861"
+	desc = "EVTDESC861"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = luba
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = luba
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA861"
+		owner = {
+			remove_accepted_culture = luba
+		}
+	}
+}
 country_event = {
-	id = 681
-	title = "EVTNAME681"
-	desc = "EVTDESC681"
+	id = 862
+	title = "EVTNAME862"
+	desc = "EVTDESC862"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = lunda
@@ -3816,14 +8884,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA681"
+		name = "EVTOPTA862"
 		remove_accepted_culture = lunda
 	}
 }
+province_event = {
+	id = 863
+	title = "EVTNAME863"
+	desc = "EVTDESC863"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = lunda
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = lunda
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA863"
+		owner = {
+			remove_accepted_culture = lunda
+		}
+	}
+}
 country_event = {
-	id = 682
-	title = "EVTNAME682"
-	desc = "EVTDESC682"
+	id = 864
+	title = "EVTNAME864"
+	desc = "EVTDESC864"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = mongo
@@ -3837,14 +8933,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA682"
+		name = "EVTOPTA864"
 		remove_accepted_culture = mongo
 	}
 }
+province_event = {
+	id = 865
+	title = "EVTNAME865"
+	desc = "EVTDESC865"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = mongo
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = mongo
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA865"
+		owner = {
+			remove_accepted_culture = mongo
+		}
+	}
+}
 country_event = {
-	id = 683
-	title = "EVTNAME683"
-	desc = "EVTDESC683"
+	id = 866
+	title = "EVTNAME866"
+	desc = "EVTDESC866"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = sara
@@ -3858,14 +8982,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA683"
+		name = "EVTOPTA866"
 		remove_accepted_culture = sara
 	}
 }
+province_event = {
+	id = 867
+	title = "EVTNAME867"
+	desc = "EVTDESC867"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = sara
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = sara
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA867"
+		owner = {
+			remove_accepted_culture = sara
+		}
+	}
+}
 country_event = {
-	id = 684
-	title = "EVTNAME684"
-	desc = "EVTDESC684"
+	id = 868
+	title = "EVTNAME868"
+	desc = "EVTDESC868"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = teda
@@ -3879,14 +9031,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA684"
+		name = "EVTOPTA868"
 		remove_accepted_culture = teda
 	}
 }
+province_event = {
+	id = 869
+	title = "EVTNAME869"
+	desc = "EVTDESC869"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = teda
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = teda
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA869"
+		owner = {
+			remove_accepted_culture = teda
+		}
+	}
+}
 country_event = {
-	id = 685
-	title = "EVTNAME685"
-	desc = "EVTDESC685"
+	id = 870
+	title = "EVTNAME870"
+	desc = "EVTDESC870"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = african_minor
@@ -3900,14 +9080,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA685"
+		name = "EVTOPTA870"
 		remove_accepted_culture = african_minor
 	}
 }
+province_event = {
+	id = 871
+	title = "EVTNAME871"
+	desc = "EVTDESC871"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = african_minor
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = african_minor
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA871"
+		owner = {
+			remove_accepted_culture = african_minor
+		}
+	}
+}
 country_event = {
-	id = 686
-	title = "EVTNAME686"
-	desc = "EVTDESC686"
+	id = 872
+	title = "EVTNAME872"
+	desc = "EVTDESC872"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = amhara
@@ -3921,14 +9129,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA686"
+		name = "EVTOPTA872"
 		remove_accepted_culture = amhara
 	}
 }
+province_event = {
+	id = 873
+	title = "EVTNAME873"
+	desc = "EVTDESC873"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = amhara
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = amhara
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA873"
+		owner = {
+			remove_accepted_culture = amhara
+		}
+	}
+}
 country_event = {
-	id = 687
-	title = "EVTNAME687"
-	desc = "EVTDESC687"
+	id = 874
+	title = "EVTNAME874"
+	desc = "EVTDESC874"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = afar
@@ -3942,14 +9178,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA687"
+		name = "EVTOPTA874"
 		remove_accepted_culture = afar
 	}
 }
+province_event = {
+	id = 875
+	title = "EVTNAME875"
+	desc = "EVTDESC875"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = afar
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = afar
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA875"
+		owner = {
+			remove_accepted_culture = afar
+		}
+	}
+}
 country_event = {
-	id = 688
-	title = "EVTNAME688"
-	desc = "EVTDESC688"
+	id = 876
+	title = "EVTNAME876"
+	desc = "EVTDESC876"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = azande
@@ -3963,14 +9227,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA688"
+		name = "EVTOPTA876"
 		remove_accepted_culture = azande
 	}
 }
+province_event = {
+	id = 877
+	title = "EVTNAME877"
+	desc = "EVTDESC877"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = azande
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = azande
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA877"
+		owner = {
+			remove_accepted_culture = azande
+		}
+	}
+}
 country_event = {
-	id = 689
-	title = "EVTNAME689"
-	desc = "EVTDESC689"
+	id = 878
+	title = "EVTNAME878"
+	desc = "EVTDESC878"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = baganda
@@ -3984,14 +9276,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA689"
+		name = "EVTOPTA878"
 		remove_accepted_culture = baganda
 	}
 }
+province_event = {
+	id = 879
+	title = "EVTNAME879"
+	desc = "EVTDESC879"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = baganda
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = baganda
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA879"
+		owner = {
+			remove_accepted_culture = baganda
+		}
+	}
+}
 country_event = {
-	id = 690
-	title = "EVTNAME690"
-	desc = "EVTDESC690"
+	id = 880
+	title = "EVTNAME880"
+	desc = "EVTDESC880"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = beja
@@ -4005,14 +9325,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA690"
+		name = "EVTOPTA880"
 		remove_accepted_culture = beja
 	}
 }
+province_event = {
+	id = 881
+	title = "EVTNAME881"
+	desc = "EVTDESC881"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = beja
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = beja
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA881"
+		owner = {
+			remove_accepted_culture = beja
+		}
+	}
+}
 country_event = {
-	id = 691
-	title = "EVTNAME691"
-	desc = "EVTDESC691"
+	id = 882
+	title = "EVTNAME882"
+	desc = "EVTDESC882"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = dinka
@@ -4026,14 +9374,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA691"
+		name = "EVTOPTA882"
 		remove_accepted_culture = dinka
 	}
 }
+province_event = {
+	id = 883
+	title = "EVTNAME883"
+	desc = "EVTDESC883"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = dinka
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = dinka
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA883"
+		owner = {
+			remove_accepted_culture = dinka
+		}
+	}
+}
 country_event = {
-	id = 692
-	title = "EVTNAME692"
-	desc = "EVTDESC692"
+	id = 884
+	title = "EVTNAME884"
+	desc = "EVTDESC884"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = fur
@@ -4047,14 +9423,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA692"
+		name = "EVTOPTA884"
 		remove_accepted_culture = fur
 	}
 }
+province_event = {
+	id = 885
+	title = "EVTNAME885"
+	desc = "EVTDESC885"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = fur
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = fur
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA885"
+		owner = {
+			remove_accepted_culture = fur
+		}
+	}
+}
 country_event = {
-	id = 693
-	title = "EVTNAME693"
-	desc = "EVTDESC693"
+	id = 886
+	title = "EVTNAME886"
+	desc = "EVTDESC886"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = kikuyu
@@ -4068,14 +9472,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA693"
+		name = "EVTOPTA886"
 		remove_accepted_culture = kikuyu
 	}
 }
+province_event = {
+	id = 887
+	title = "EVTNAME887"
+	desc = "EVTDESC887"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = kikuyu
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = kikuyu
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA887"
+		owner = {
+			remove_accepted_culture = kikuyu
+		}
+	}
+}
 country_event = {
-	id = 694
-	title = "EVTNAME694"
-	desc = "EVTDESC694"
+	id = 888
+	title = "EVTNAME888"
+	desc = "EVTDESC888"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = luo
@@ -4089,14 +9521,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA694"
+		name = "EVTOPTA888"
 		remove_accepted_culture = luo
 	}
 }
+province_event = {
+	id = 889
+	title = "EVTNAME889"
+	desc = "EVTDESC889"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = luo
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = luo
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA889"
+		owner = {
+			remove_accepted_culture = luo
+		}
+	}
+}
 country_event = {
-	id = 695
-	title = "EVTNAME695"
-	desc = "EVTDESC695"
+	id = 890
+	title = "EVTNAME890"
+	desc = "EVTDESC890"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = maasai
@@ -4110,14 +9570,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA695"
+		name = "EVTOPTA890"
 		remove_accepted_culture = maasai
 	}
 }
+province_event = {
+	id = 891
+	title = "EVTNAME891"
+	desc = "EVTDESC891"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = maasai
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = maasai
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA891"
+		owner = {
+			remove_accepted_culture = maasai
+		}
+	}
+}
 country_event = {
-	id = 696
-	title = "EVTNAME696"
-	desc = "EVTDESC696"
+	id = 892
+	title = "EVTNAME892"
+	desc = "EVTDESC892"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = nuer
@@ -4131,14 +9619,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA696"
+		name = "EVTOPTA892"
 		remove_accepted_culture = nuer
 	}
 }
+province_event = {
+	id = 893
+	title = "EVTNAME893"
+	desc = "EVTDESC893"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = nuer
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = nuer
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA893"
+		owner = {
+			remove_accepted_culture = nuer
+		}
+	}
+}
 country_event = {
-	id = 697
-	title = "EVTNAME697"
-	desc = "EVTDESC697"
+	id = 894
+	title = "EVTNAME894"
+	desc = "EVTDESC894"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = nuba
@@ -4152,14 +9668,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA697"
+		name = "EVTOPTA894"
 		remove_accepted_culture = nuba
 	}
 }
+province_event = {
+	id = 895
+	title = "EVTNAME895"
+	desc = "EVTDESC895"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = nuba
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = nuba
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA895"
+		owner = {
+			remove_accepted_culture = nuba
+		}
+	}
+}
 country_event = {
-	id = 698
-	title = "EVTNAME698"
-	desc = "EVTDESC698"
+	id = 896
+	title = "EVTNAME896"
+	desc = "EVTDESC896"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = oromo
@@ -4173,14 +9717,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA698"
+		name = "EVTOPTA896"
 		remove_accepted_culture = oromo
 	}
 }
+province_event = {
+	id = 897
+	title = "EVTNAME897"
+	desc = "EVTDESC897"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = oromo
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = oromo
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA897"
+		owner = {
+			remove_accepted_culture = oromo
+		}
+	}
+}
 country_event = {
-	id = 699
-	title = "EVTNAME699"
-	desc = "EVTDESC699"
+	id = 898
+	title = "EVTNAME898"
+	desc = "EVTDESC898"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = ruanda
@@ -4194,14 +9766,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA699"
+		name = "EVTOPTA898"
 		remove_accepted_culture = ruanda
 	}
 }
+province_event = {
+	id = 899
+	title = "EVTNAME899"
+	desc = "EVTDESC899"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = ruanda
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = ruanda
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA899"
+		owner = {
+			remove_accepted_culture = ruanda
+		}
+	}
+}
 country_event = {
-	id = 700
-	title = "EVTNAME700"
-	desc = "EVTDESC700"
+	id = 900
+	title = "EVTNAME900"
+	desc = "EVTDESC900"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = rundi
@@ -4215,14 +9815,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA700"
+		name = "EVTOPTA900"
 		remove_accepted_culture = rundi
 	}
 }
+province_event = {
+	id = 901
+	title = "EVTNAME901"
+	desc = "EVTDESC901"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = rundi
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = rundi
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA901"
+		owner = {
+			remove_accepted_culture = rundi
+		}
+	}
+}
 country_event = {
-	id = 701
-	title = "EVTNAME701"
-	desc = "EVTDESC701"
+	id = 902
+	title = "EVTNAME902"
+	desc = "EVTDESC902"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = sidama
@@ -4236,14 +9864,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA701"
+		name = "EVTOPTA902"
 		remove_accepted_culture = sidama
 	}
 }
+province_event = {
+	id = 903
+	title = "EVTNAME903"
+	desc = "EVTDESC903"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = sidama
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = sidama
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA903"
+		owner = {
+			remove_accepted_culture = sidama
+		}
+	}
+}
 country_event = {
-	id = 702
-	title = "EVTNAME702"
-	desc = "EVTDESC702"
+	id = 904
+	title = "EVTNAME904"
+	desc = "EVTDESC904"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = somali
@@ -4257,14 +9913,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA702"
+		name = "EVTOPTA904"
 		remove_accepted_culture = somali
 	}
 }
+province_event = {
+	id = 905
+	title = "EVTNAME905"
+	desc = "EVTDESC905"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = somali
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = somali
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA905"
+		owner = {
+			remove_accepted_culture = somali
+		}
+	}
+}
 country_event = {
-	id = 703
-	title = "EVTNAME703"
-	desc = "EVTDESC703"
+	id = 906
+	title = "EVTNAME906"
+	desc = "EVTDESC906"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = sudanese
@@ -4278,14 +9962,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA703"
+		name = "EVTOPTA906"
 		remove_accepted_culture = sudanese
 	}
 }
+province_event = {
+	id = 907
+	title = "EVTNAME907"
+	desc = "EVTDESC907"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = sudanese
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = sudanese
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA907"
+		owner = {
+			remove_accepted_culture = sudanese
+		}
+	}
+}
 country_event = {
-	id = 704
-	title = "EVTNAME704"
-	desc = "EVTDESC704"
+	id = 908
+	title = "EVTNAME908"
+	desc = "EVTDESC908"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = sukuma
@@ -4299,14 +10011,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA704"
+		name = "EVTOPTA908"
 		remove_accepted_culture = sukuma
 	}
 }
+province_event = {
+	id = 909
+	title = "EVTNAME909"
+	desc = "EVTDESC909"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = sukuma
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = sukuma
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA909"
+		owner = {
+			remove_accepted_culture = sukuma
+		}
+	}
+}
 country_event = {
-	id = 705
-	title = "EVTNAME705"
-	desc = "EVTDESC705"
+	id = 910
+	title = "EVTNAME910"
+	desc = "EVTDESC910"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = swahili
@@ -4320,14 +10060,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA705"
+		name = "EVTOPTA910"
 		remove_accepted_culture = swahili
 	}
 }
+province_event = {
+	id = 911
+	title = "EVTNAME911"
+	desc = "EVTDESC911"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = swahili
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = swahili
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA911"
+		owner = {
+			remove_accepted_culture = swahili
+		}
+	}
+}
 country_event = {
-	id = 706
-	title = "EVTNAME706"
-	desc = "EVTDESC706"
+	id = 912
+	title = "EVTNAME912"
+	desc = "EVTDESC912"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = tigray
@@ -4341,14 +10109,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA706"
+		name = "EVTOPTA912"
 		remove_accepted_culture = tigray
 	}
 }
+province_event = {
+	id = 913
+	title = "EVTNAME913"
+	desc = "EVTDESC913"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = tigray
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = tigray
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA913"
+		owner = {
+			remove_accepted_culture = tigray
+		}
+	}
+}
 country_event = {
-	id = 707
-	title = "EVTNAME707"
-	desc = "EVTDESC707"
+	id = 914
+	title = "EVTNAME914"
+	desc = "EVTDESC914"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = unyamwezi
@@ -4362,14 +10158,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA707"
+		name = "EVTOPTA914"
 		remove_accepted_culture = unyamwezi
 	}
 }
+province_event = {
+	id = 915
+	title = "EVTNAME915"
+	desc = "EVTDESC915"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = unyamwezi
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = unyamwezi
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA915"
+		owner = {
+			remove_accepted_culture = unyamwezi
+		}
+	}
+}
 country_event = {
-	id = 708
-	title = "EVTNAME708"
-	desc = "EVTDESC708"
+	id = 916
+	title = "EVTNAME916"
+	desc = "EVTDESC916"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = chewa
@@ -4383,14 +10207,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA708"
+		name = "EVTOPTA916"
 		remove_accepted_culture = chewa
 	}
 }
+province_event = {
+	id = 917
+	title = "EVTNAME917"
+	desc = "EVTDESC917"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = chewa
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = chewa
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA917"
+		owner = {
+			remove_accepted_culture = chewa
+		}
+	}
+}
 country_event = {
-	id = 709
-	title = "EVTNAME709"
-	desc = "EVTDESC709"
+	id = 918
+	title = "EVTNAME918"
+	desc = "EVTDESC918"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = herero
@@ -4404,14 +10256,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA709"
+		name = "EVTOPTA918"
 		remove_accepted_culture = herero
 	}
 }
+province_event = {
+	id = 919
+	title = "EVTNAME919"
+	desc = "EVTDESC919"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = herero
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = herero
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA919"
+		owner = {
+			remove_accepted_culture = herero
+		}
+	}
+}
 country_event = {
-	id = 710
-	title = "EVTNAME710"
-	desc = "EVTDESC710"
+	id = 920
+	title = "EVTNAME920"
+	desc = "EVTDESC920"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = khoisan
@@ -4425,14 +10305,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA710"
+		name = "EVTOPTA920"
 		remove_accepted_culture = khoisan
 	}
 }
+province_event = {
+	id = 921
+	title = "EVTNAME921"
+	desc = "EVTDESC921"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = khoisan
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = khoisan
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA921"
+		owner = {
+			remove_accepted_culture = khoisan
+		}
+	}
+}
 country_event = {
-	id = 711
-	title = "EVTNAME711"
-	desc = "EVTDESC711"
+	id = 922
+	title = "EVTNAME922"
+	desc = "EVTDESC922"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = lomwe
@@ -4446,14 +10354,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA711"
+		name = "EVTOPTA922"
 		remove_accepted_culture = lomwe
 	}
 }
+province_event = {
+	id = 923
+	title = "EVTNAME923"
+	desc = "EVTDESC923"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = lomwe
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = lomwe
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA923"
+		owner = {
+			remove_accepted_culture = lomwe
+		}
+	}
+}
 country_event = {
-	id = 712
-	title = "EVTNAME712"
-	desc = "EVTDESC712"
+	id = 924
+	title = "EVTNAME924"
+	desc = "EVTDESC924"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = makua
@@ -4467,14 +10403,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA712"
+		name = "EVTOPTA924"
 		remove_accepted_culture = makua
 	}
 }
+province_event = {
+	id = 925
+	title = "EVTNAME925"
+	desc = "EVTDESC925"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = makua
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = makua
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA925"
+		owner = {
+			remove_accepted_culture = makua
+		}
+	}
+}
 country_event = {
-	id = 713
-	title = "EVTNAME713"
-	desc = "EVTDESC713"
+	id = 926
+	title = "EVTNAME926"
+	desc = "EVTDESC926"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = malagasy
@@ -4488,14 +10452,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA713"
+		name = "EVTOPTA926"
 		remove_accepted_culture = malagasy
 	}
 }
+province_event = {
+	id = 927
+	title = "EVTNAME927"
+	desc = "EVTDESC927"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = malagasy
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = malagasy
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA927"
+		owner = {
+			remove_accepted_culture = malagasy
+		}
+	}
+}
 country_event = {
-	id = 714
-	title = "EVTNAME714"
-	desc = "EVTDESC714"
+	id = 928
+	title = "EVTNAME928"
+	desc = "EVTDESC928"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = nguni
@@ -4509,14 +10501,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA714"
+		name = "EVTOPTA928"
 		remove_accepted_culture = nguni
 	}
 }
+province_event = {
+	id = 929
+	title = "EVTNAME929"
+	desc = "EVTDESC929"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = nguni
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = nguni
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA929"
+		owner = {
+			remove_accepted_culture = nguni
+		}
+	}
+}
 country_event = {
-	id = 715
-	title = "EVTNAME715"
-	desc = "EVTDESC715"
+	id = 930
+	title = "EVTNAME930"
+	desc = "EVTDESC930"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = ovimbundu
@@ -4530,14 +10550,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA715"
+		name = "EVTOPTA930"
 		remove_accepted_culture = ovimbundu
 	}
 }
+province_event = {
+	id = 931
+	title = "EVTNAME931"
+	desc = "EVTDESC931"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = ovimbundu
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = ovimbundu
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA931"
+		owner = {
+			remove_accepted_culture = ovimbundu
+		}
+	}
+}
 country_event = {
-	id = 716
-	title = "EVTNAME716"
-	desc = "EVTDESC716"
+	id = 932
+	title = "EVTNAME932"
+	desc = "EVTDESC932"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = sena
@@ -4551,14 +10599,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA716"
+		name = "EVTOPTA932"
 		remove_accepted_culture = sena
 	}
 }
+province_event = {
+	id = 933
+	title = "EVTNAME933"
+	desc = "EVTDESC933"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = sena
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = sena
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA933"
+		owner = {
+			remove_accepted_culture = sena
+		}
+	}
+}
 country_event = {
-	id = 717
-	title = "EVTNAME717"
-	desc = "EVTDESC717"
+	id = 934
+	title = "EVTNAME934"
+	desc = "EVTDESC934"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = shona
@@ -4572,14 +10648,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA717"
+		name = "EVTOPTA934"
 		remove_accepted_culture = shona
 	}
 }
+province_event = {
+	id = 935
+	title = "EVTNAME935"
+	desc = "EVTDESC935"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = shona
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = shona
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA935"
+		owner = {
+			remove_accepted_culture = shona
+		}
+	}
+}
 country_event = {
-	id = 718
-	title = "EVTNAME718"
-	desc = "EVTDESC718"
+	id = 936
+	title = "EVTNAME936"
+	desc = "EVTDESC936"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = sotho
@@ -4593,14 +10697,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA718"
+		name = "EVTOPTA936"
 		remove_accepted_culture = sotho
 	}
 }
+province_event = {
+	id = 937
+	title = "EVTNAME937"
+	desc = "EVTDESC937"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = sotho
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = sotho
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA937"
+		owner = {
+			remove_accepted_culture = sotho
+		}
+	}
+}
 country_event = {
-	id = 719
-	title = "EVTNAME719"
-	desc = "EVTDESC719"
+	id = 938
+	title = "EVTNAME938"
+	desc = "EVTDESC938"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = tonga
@@ -4614,14 +10746,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA719"
+		name = "EVTOPTA938"
 		remove_accepted_culture = tonga
 	}
 }
+province_event = {
+	id = 939
+	title = "EVTNAME939"
+	desc = "EVTDESC939"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = tonga
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = tonga
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA939"
+		owner = {
+			remove_accepted_culture = tonga
+		}
+	}
+}
 country_event = {
-	id = 720
-	title = "EVTNAME720"
-	desc = "EVTDESC720"
+	id = 940
+	title = "EVTNAME940"
+	desc = "EVTDESC940"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = tswana
@@ -4635,14 +10795,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA720"
+		name = "EVTOPTA940"
 		remove_accepted_culture = tswana
 	}
 }
+province_event = {
+	id = 941
+	title = "EVTNAME941"
+	desc = "EVTDESC941"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = tswana
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = tswana
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA941"
+		owner = {
+			remove_accepted_culture = tswana
+		}
+	}
+}
 country_event = {
-	id = 721
-	title = "EVTNAME721"
-	desc = "EVTDESC721"
+	id = 942
+	title = "EVTNAME942"
+	desc = "EVTDESC942"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = xhosa
@@ -4656,14 +10844,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA721"
+		name = "EVTOPTA942"
 		remove_accepted_culture = xhosa
 	}
 }
+province_event = {
+	id = 943
+	title = "EVTNAME943"
+	desc = "EVTDESC943"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = xhosa
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = xhosa
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA943"
+		owner = {
+			remove_accepted_culture = xhosa
+		}
+	}
+}
 country_event = {
-	id = 722
-	title = "EVTNAME722"
-	desc = "EVTDESC722"
+	id = 944
+	title = "EVTNAME944"
+	desc = "EVTDESC944"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = yao
@@ -4677,14 +10893,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA722"
+		name = "EVTOPTA944"
 		remove_accepted_culture = yao
 	}
 }
+province_event = {
+	id = 945
+	title = "EVTNAME945"
+	desc = "EVTDESC945"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = yao
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = yao
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA945"
+		owner = {
+			remove_accepted_culture = yao
+		}
+	}
+}
 country_event = {
-	id = 723
-	title = "EVTNAME723"
-	desc = "EVTDESC723"
+	id = 946
+	title = "EVTNAME946"
+	desc = "EVTDESC946"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = zulu
@@ -4698,14 +10942,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA723"
+		name = "EVTOPTA946"
 		remove_accepted_culture = zulu
 	}
 }
+province_event = {
+	id = 947
+	title = "EVTNAME947"
+	desc = "EVTDESC947"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = zulu
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = zulu
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA947"
+		owner = {
+			remove_accepted_culture = zulu
+		}
+	}
+}
 country_event = {
-	id = 724
-	title = "EVTNAME724"
-	desc = "EVTDESC724"
+	id = 948
+	title = "EVTNAME948"
+	desc = "EVTDESC948"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = polar_bears
@@ -4719,14 +10991,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA724"
+		name = "EVTOPTA948"
 		remove_accepted_culture = polar_bears
 	}
 }
+province_event = {
+	id = 949
+	title = "EVTNAME949"
+	desc = "EVTDESC949"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = polar_bears
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = polar_bears
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA949"
+		owner = {
+			remove_accepted_culture = polar_bears
+		}
+	}
+}
 country_event = {
-	id = 725
-	title = "EVTNAME725"
-	desc = "EVTDESC725"
+	id = 950
+	title = "EVTNAME950"
+	desc = "EVTDESC950"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = anglo_african
@@ -4740,14 +11040,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA725"
+		name = "EVTOPTA950"
 		remove_accepted_culture = anglo_african
 	}
 }
+province_event = {
+	id = 951
+	title = "EVTNAME951"
+	desc = "EVTDESC951"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = anglo_african
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = anglo_african
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA951"
+		owner = {
+			remove_accepted_culture = anglo_african
+		}
+	}
+}
 country_event = {
-	id = 726
-	title = "EVTNAME726"
-	desc = "EVTDESC726"
+	id = 952
+	title = "EVTNAME952"
+	desc = "EVTDESC952"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = buryat
@@ -4761,14 +11089,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA726"
+		name = "EVTOPTA952"
 		remove_accepted_culture = buryat
 	}
 }
+province_event = {
+	id = 953
+	title = "EVTNAME953"
+	desc = "EVTDESC953"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = buryat
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = buryat
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA953"
+		owner = {
+			remove_accepted_culture = buryat
+		}
+	}
+}
 country_event = {
-	id = 727
-	title = "EVTNAME727"
-	desc = "EVTDESC727"
+	id = 954
+	title = "EVTNAME954"
+	desc = "EVTDESC954"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = kalmyk
@@ -4782,14 +11138,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA727"
+		name = "EVTOPTA954"
 		remove_accepted_culture = kalmyk
 	}
 }
+province_event = {
+	id = 955
+	title = "EVTNAME955"
+	desc = "EVTDESC955"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = kalmyk
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = kalmyk
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA955"
+		owner = {
+			remove_accepted_culture = kalmyk
+		}
+	}
+}
 country_event = {
-	id = 728
-	title = "EVTNAME728"
-	desc = "EVTDESC728"
+	id = 956
+	title = "EVTNAME956"
+	desc = "EVTDESC956"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = crimean_tatar
@@ -4803,14 +11187,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA728"
+		name = "EVTOPTA956"
 		remove_accepted_culture = crimean_tatar
 	}
 }
+province_event = {
+	id = 957
+	title = "EVTNAME957"
+	desc = "EVTDESC957"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = crimean_tatar
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = crimean_tatar
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA957"
+		owner = {
+			remove_accepted_culture = crimean_tatar
+		}
+	}
+}
 country_event = {
-	id = 729
-	title = "EVTNAME729"
-	desc = "EVTDESC729"
+	id = 958
+	title = "EVTNAME958"
+	desc = "EVTDESC958"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = tuvan
@@ -4824,14 +11236,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA729"
+		name = "EVTOPTA958"
 		remove_accepted_culture = tuvan
 	}
 }
+province_event = {
+	id = 959
+	title = "EVTNAME959"
+	desc = "EVTDESC959"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = tuvan
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = tuvan
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA959"
+		owner = {
+			remove_accepted_culture = tuvan
+		}
+	}
+}
 country_event = {
-	id = 730
-	title = "EVTNAME730"
-	desc = "EVTDESC730"
+	id = 960
+	title = "EVTNAME960"
+	desc = "EVTDESC960"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = cubans
@@ -4845,14 +11285,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA730"
+		name = "EVTOPTA960"
 		remove_accepted_culture = cubans
 	}
 }
+province_event = {
+	id = 961
+	title = "EVTNAME961"
+	desc = "EVTDESC961"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = cubans
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = cubans
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA961"
+		owner = {
+			remove_accepted_culture = cubans
+		}
+	}
+}
 country_event = {
-	id = 731
-	title = "EVTNAME731"
-	desc = "EVTDESC731"
+	id = 962
+	title = "EVTNAME962"
+	desc = "EVTDESC962"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = scottish
@@ -4866,14 +11334,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA731"
+		name = "EVTOPTA962"
 		remove_accepted_culture = scottish
 	}
 }
+province_event = {
+	id = 963
+	title = "EVTNAME963"
+	desc = "EVTDESC963"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = scottish
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = scottish
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA963"
+		owner = {
+			remove_accepted_culture = scottish
+		}
+	}
+}
 country_event = {
-	id = 732
-	title = "EVTNAME732"
-	desc = "EVTDESC732"
+	id = 964
+	title = "EVTNAME964"
+	desc = "EVTDESC964"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = new_zelandian
@@ -4887,14 +11383,42 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA732"
+		name = "EVTOPTA964"
 		remove_accepted_culture = new_zelandian
 	}
 }
+province_event = {
+	id = 965
+	title = "EVTNAME965"
+	desc = "EVTDESC965"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = new_zelandian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = new_zelandian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA965"
+		owner = {
+			remove_accepted_culture = new_zelandian
+		}
+	}
+}
 country_event = {
-	id = 733
-	title = "EVTNAME733"
-	desc = "EVTDESC733"
+	id = 966
+	title = "EVTNAME966"
+	desc = "EVTDESC966"
 	picture = "Administration"
 	trigger = {
 		accepted_culture = wallonian
@@ -4908,7 +11432,35 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA733"
+		name = "EVTOPTA966"
 		remove_accepted_culture = wallonian
+	}
+}
+province_event = {
+	id = 967
+	title = "EVTNAME967"
+	desc = "EVTDESC967"
+	trigger = {
+		is_primary_culture = no
+		is_accepted_culture = yes
+		culture = wallonian
+		total_pops = 5000
+		pop_militancy = 5
+		owner = {
+			capital_scope = {
+				NOT = {
+					culture = wallonian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA967"
+		owner = {
+			remove_accepted_culture = wallonian
+		}
 	}
 }

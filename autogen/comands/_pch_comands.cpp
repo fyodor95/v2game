@@ -21,3 +21,8 @@ std::string ToString(float const num)
     res.erase(res[lastNormal] == '.' ? lastNormal : removeSuffixFrom);
     return res;
 }
+
+char const * YesOrNo(tYesOrNo const yesOrNo)
+{
+    return yesOrNo == _Yes ? "yes" : "no";
+}
