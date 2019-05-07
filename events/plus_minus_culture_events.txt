@@ -4891,3 +4891,24 @@ country_event = {
 		remove_accepted_culture = new_zelandian
 	}
 }
+country_event = {
+	id = 733
+	title = "EVTNAME733"
+	desc = "EVTDESC733"
+	picture = "Administration"
+	trigger = {
+		accepted_culture = wallonian
+		NOT = {
+			any_owned_province = {
+				culture = wallonian
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA733"
+		remove_accepted_culture = wallonian
+	}
+}

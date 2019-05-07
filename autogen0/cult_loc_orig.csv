@@ -1,16 +1,15 @@
-dutch;Голландцы;X
-flemish;Фламандцы;X
 north_german;Северные германцы;X
 south_german;Южные германцы;X
-swiss;Швейцарцы;X
-beneluxian;Нидерландцы;X
 ashkenazi;Ашкенази;X
-scandinavian;Скандинавы;X
+dutch;Голландцы;X
+flemish;Фламандцы;X
+swiss;Швейцарцы;X
 swedish;Шведы;X
 danish;Датчане;X
 norwegian;Норвежцы;X
 icelandic;Исландцы;X
 finnish;Финны;X
+sami;Саамская;X
 british;Англичане;X
 irish;Ирландцы;X
 north_italian;Северные итальянцы;X
@@ -21,40 +20,36 @@ spanish;Испанцы;X
 catalan;Каталанцы;X
 portuguese;Португальцы;X
 french;Французы;X
-wallonian;Валлоны;X
 croat;Хорваты;X
 serb;Сербы;X
 bulgarian;Болгары;X
-romanian;Румыны;X
 albanian;Албанцы;X
 slovene;Словены;X
 bosniak;Босняки;X
-czech;Чехи;X
-polish;Поляки;X
+romanian;Румыны;X
 hungarian;Венгры;X
+polish;Поляки;X
+lithuanian;Литовцы;X
+czech;Чехи;X
 slovak;Словаки;X
 russian;Русские;X
 byelorussian;Беларусы;X
 ukrainian;Украинцы;X
 ugrian;Финно-угры;X
-lithuanian;Литовцы;X
 latvian;Латыши;X
 estonian;Эстонцы;X
 greek;Греки;X
 georgian;Грузины;X
 armenian;Армяне;X
 sephardic;Сефарды;X
-turko_semitic;Левиты;X
+turkish;Турки;X
+azerbaijani;Азербайджанцы;X
+north_caucasian;Кавказцы;X
 maghrebi;Магрибцы;X
 misri;Мисри;X
 mashriqi;Машрики;X
 bedouin;Бедуины;X
 berber;Берберы;X
-turkish;Турки;X
-azerbaijani;Азербайджанцы;X
-north_caucasian;Кавказцы;X
-kurdish;Курды;X
-iranian_turanian;Туранцы;X
 persian;Персы;X
 uzbek;Узбеки;X
 kazak;Казахи;X
@@ -65,6 +60,7 @@ pashtun;Пуштуны;X
 baluchi;Белуджи;X
 hazara;Газара;X
 turkmen;Туркмены;X
+kurdish;Курды;X
 tatar;Татары;X
 mongol;Монголы;X
 siberian;Сибирцы;X
@@ -120,16 +116,10 @@ maori;Маори;X
 aborigine;Аборигены;X
 melanesian;Меланезийцы;X
 micronesian;Микронезийцы;X
-native_american;Индейцы;X
 zapotec;Сапотеки;X
 mayan;Майя;X
 nahua;Науа;X
 tarascan;Тараски;X
-quechua;Кечуа;X
-guarani;Гуарани;X
-aimara;Аймара;X
-amazonian;Амазонцы;X
-patagonian;Патагонцы;X
 guajiro;Гуахиро;X
 tupinamba;Тупинамба;X
 metis;Метисы;X
@@ -140,16 +130,13 @@ inuit;Инуиты;X
 cree;Кри;X
 navajo;Навахо;X
 native_american_minor;Индейск. меньшинства;X
-neo_european_cultures;Ново-европейцы;X
 yankee;Янки;X
-anglo_african;Англо-африканцы;X
-anglo_canadian;Англо-канадцы;X
-french_canadian;Франко-канадцы;X
 dixie;Дикси;X
 texan;Техасцы;X
 boer;Буры;X
 australian;Австралийцы;X
-latin_american_cultures;Латиноамериканцы;X
+anglo_canadian;Англо-канадцы;X
+french_canadian;Франко-канадцы;X
 mexican;Мексиканцы;X
 central_american;Центр. американцы;X
 caribeno;Карибцы;X
@@ -157,13 +144,16 @@ north_andean;Северные андцы;X
 south_andean;Южные андцы;X
 platinean;Аргентинцы;X
 brazilian;Бразильцы;X
-african_diaspora_cultures;Африкан. диаспора;X
+afro_brazilian;Афробразильцы;X
+quechua;Кечуа;X
+guarani;Гуарани;X
+aimara;Аймара;X
+amazonian;Амазонцы;X
+patagonian;Патагонцы;X
 afro_american;Афроамериканцы;X
 afro_caribbean;Афрокарибы;X
 afro_caribeno;Афрокарибеньо;X
-afro_brazilian;Афробразильцы;X
 afro_antillean;Афроантильцы;X
-west_african;Западные африканцы;X
 akan;Акан;X
 bambara;Бамбара;X
 dyula;Дьюла;X
@@ -184,7 +174,6 @@ tiv;Тив;X
 tuareg;Туареги;X
 wolof;Волоф;X
 yoruba;Йоруба;X
-central_african;Центральные африканцы;X
 bakongo;Баконго;X
 baguirmi;Багирми;X
 fang;Фанг;X
@@ -195,7 +184,6 @@ mongo;Монго;X
 sara;Сара;X
 teda;Теда;X
 african_minor;Африкан. меньшинства;X
-east_african;Восточные африканцы;X
 amhara;Амхара;X
 afar;Афар;X
 azande;Азанде;X
@@ -218,7 +206,6 @@ sukuma;Сукума;X
 swahili;Суахили;X
 tigray;Тиграй;X
 unyamwezi;Ньямвези;X
-southern_african;Южные африканцы;X
 chewa;Чева;X
 herero;Гереро;X
 khoisan;Койсаны;X
@@ -235,8 +222,8 @@ tswana;Тсвана;X
 xhosa;Коса;X
 yao;Яо;X
 zulu;Зулусы;X
-bears;Медведи;X
 polar_bears;Белые медведи;X
+anglo_african;Англо-африканцы;X
 buryat;Буряты;X
 kalmyk;Калмыки;X
 crimean_tatar;Крымские татары;X
@@ -244,3 +231,4 @@ tuvan;Тувинцы;X
 cubans;Кубинцы;X
 scottish;Шотландцы;X
 new_zelandian;Новозеландцы;X
+wallonian;Валлоны;X

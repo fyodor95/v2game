@@ -1,241 +1,248 @@
 #include "cultures.h"
 
+tCulture::tCulture(char const * const name, char const * const localization)
+    : Name(name)
+    , Localization(localization)
+{
+}
+
 SINGLETON(tCultures, Cultures)
 {
     return
     {
-        "north_german",
-        "south_german",
-        "ashkenazi",
-        "dutch",
-        "flemish",
-        "swiss",
-        "swedish",
-        "danish",
-        "norwegian",
-        "icelandic",
-        "finnish",
-        "sami",
-        "british",
-        "irish",
-        "north_italian",
-        "south_italian",
-        "maltese",
-        "basque",
-        "spanish",
-        "catalan",
-        "portuguese",
-        "french",
-        "croat",
-        "serb",
-        "bulgarian",
-        "albanian",
-        "slovene",
-        "bosniak",
-        "romanian",
-        "hungarian",
-        "polish",
-        "lithuanian",
-        "czech",
-        "slovak",
-        "russian",
-        "byelorussian",
-        "ukrainian",
-        "ugrian",
-        "latvian",
-        "estonian",
-        "greek",
-        "georgian",
-        "armenian",
-        "sephardic",
-        "turkish",
-        "azerbaijani",
-        "north_caucasian",
-        "maghrebi",
-        "misri",
-        "mashriqi",
-        "bedouin",
-        "berber",
-        "persian",
-        "uzbek",
-        "kazak",
-        "kirgiz",
-        "tajik",
-        "uighur",
-        "pashtun",
-        "baluchi",
-        "hazara",
-        "turkmen",
-        "kurdish",
-        "tatar",
-        "mongol",
-        "siberian",
-        "yakut",
-        "tibetan",
-        "assamese",
-        "bengali",
-        "bihari",
-        "manipuri",
-        "nepali",
-        "oriya",
-        "sinhala",
-        "avadhi",
-        "kanauji",
-        "panjabi",
-        "kashmiri",
-        "gujarati",
-        "marathi",
-        "sindi",
-        "rajput",
-        "kannada",
-        "malayalam",
-        "tamil",
-        "telegu",
-        "vietnamese",
-        "khmer",
-        "malay",
-        "filipino",
-        "javan",
-        "moluccan",
-        "thai",
-        "lao",
-        "shan",
-        "burmese",
-        "asian_minor",
-        "kachin",
-        "karen",
-        "japanese",
-        "manchu",
-        "beifaren",
-        "nanfaren",
-        "korean",
-        "ainu",
-        "hakka",
-        "miao",
-        "min",
-        "zhuang",
-        "yi",
-        "yue",
-        "polynesian",
-        "hawaiian",
-        "maori",
-        "aborigine",
-        "melanesian",
-        "micronesian",
-        "zapotec",
-        "mayan",
-        "nahua",
-        "tarascan",
-        "guajiro",
-        "tupinamba",
-        "metis",
-        "dakota",
-        "cherokee",
-        "pueblo",
-        "inuit",
-        "cree",
-        "navajo",
-        "native_american_minor",
-        "yankee",
-        "dixie",
-        "texan",
-        "boer",
-        "australian",
-        "anglo_canadian",
-        "french_canadian",
-        "mexican",
-        "central_american",
-        "caribeno",
-        "north_andean",
-        "south_andean",
-        "platinean",
-        "brazilian",
-        "afro_brazilian",
-        "quechua",
-        "guarani",
-        "aimara",
-        "amazonian",
-        "patagonian",
-        "afro_american",
-        "afro_caribbean",
-        "afro_caribeno",
-        "afro_antillean",
-        "akan",
-        "bambara",
-        "dyula",
-        "edo",
-        "ewe",
-        "fon",
-        "fulbe",
-        "hausa",
-        "ibibio",
-        "ibo",
-        "kru",
-        "mande",
-        "maures",
-        "mossi",
-        "senufo",
-        "songhai",
-        "tiv",
-        "tuareg",
-        "wolof",
-        "yoruba",
-        "bakongo",
-        "baguirmi",
-        "fang",
-        "kanuri",
-        "luba",
-        "lunda",
-        "mongo",
-        "sara",
-        "teda",
-        "african_minor",
-        "amhara",
-        "afar",
-        "azande",
-        "baganda",
-        "beja",
-        "dinka",
-        "fur",
-        "kikuyu",
-        "luo",
-        "maasai",
-        "nuer",
-        "nuba",
-        "oromo",
-        "ruanda",
-        "rundi",
-        "sidama",
-        "somali",
-        "sudanese",
-        "sukuma",
-        "swahili",
-        "tigray",
-        "unyamwezi",
-        "chewa",
-        "herero",
-        "khoisan",
-        "lomwe",
-        "makua",
-        "malagasy",
-        "nguni",
-        "ovimbundu",
-        "sena",
-        "shona",
-        "sotho",
-        "tonga",
-        "tswana",
-        "xhosa",
-        "yao",
-        "zulu",
-        "polar_bears",
-        "anglo_african",
-        "buryat",
-        "kalmyk",
-        "crimean_tatar",
-        "tuvan",
-        "cubans",
-        "scottish",
-        "new_zelandian"
+          {"north_german", "Северные германцы"}
+        , {"south_german", "Южные германцы"}
+        , {"ashkenazi", "Евреи"}
+        , {"dutch", "Голландцы"}
+        , {"flemish", "Фламандцы"}
+        , {"swiss", "Швейцарцы"}
+        , {"swedish", "Шведы"}
+        , {"danish", "Датчане"}
+        , {"norwegian", "Норвежцы"}
+        , {"icelandic", "Исландцы"}
+        , {"finnish", "Финны"}
+        , {"sami", "Саамская"}
+        , {"british", "Англичане"}
+        , {"irish", "Ирландцы"}
+        , {"north_italian", "Северные итальянцы"}
+        , {"south_italian", "Южные итальянцы"}
+        , {"maltese", "Мальтийцы"}
+        , {"basque", "Баски"}
+        , {"spanish", "Испанцы"}
+        , {"catalan", "Каталанцы"}
+        , {"portuguese", "Португальцы"}
+        , {"french", "Французы"}
+        , {"croat", "Хорваты"}
+        , {"serb", "Сербы"}
+        , {"bulgarian", "Болгары"}
+        , {"albanian", "Албанцы"}
+        , {"slovene", "Словены"}
+        , {"bosniak", "Босняки"}
+        , {"romanian", "Румыны"}
+        , {"hungarian", "Венгры"}
+        , {"polish", "Поляки"}
+        , {"lithuanian", "Литовцы"}
+        , {"czech", "Чехи"}
+        , {"slovak", "Словаки"}
+        , {"russian", "Русские"}
+        , {"byelorussian", "Беларусы"}
+        , {"ukrainian", "Украинцы"}
+        , {"ugrian", "Финно-угры"}
+        , {"latvian", "Латыши"}
+        , {"estonian", "Эстонцы"}
+        , {"greek", "Греки"}
+        , {"georgian", "Грузины"}
+        , {"armenian", "Армяне"}
+        , {"sephardic", "Сефарды"}
+        , {"turkish", "Турки"}
+        , {"azerbaijani", "Азербайджанцы"}
+        , {"north_caucasian", "Кавказцы"}
+        , {"maghrebi", "Магрибцы"}
+        , {"misri", "Мисри"}
+        , {"mashriqi", "Машрики"}
+        , {"bedouin", "Бедуины"}
+        , {"berber", "Берберы"}
+        , {"persian", "Персы"}
+        , {"uzbek", "Узбеки"}
+        , {"kazak", "Казахи"}
+        , {"kirgiz", "Киргизы"}
+        , {"tajik", "Таджики"}
+        , {"uighur", "Уйгуры"}
+        , {"pashtun", "Пуштуны"}
+        , {"baluchi", "Белуджи"}
+        , {"hazara", "Газара"}
+        , {"turkmen", "Туркмены"}
+        , {"kurdish", "Курды"}
+        , {"tatar", "Татары"}
+        , {"mongol", "Монголы"}
+        , {"siberian", "Сибирцы"}
+        , {"yakut", "Якуты"}
+        , {"tibetan", "Тибетцы"}
+        , {"assamese", "Ассамцы"}
+        , {"bengali", "Бенгальцы"}
+        , {"bihari", "Бихарцы"}
+        , {"manipuri", "Манипури"}
+        , {"nepali", "Непальцы"}
+        , {"oriya", "Ория"}
+        , {"sinhala", "Сингалы"}
+        , {"avadhi", "Авадхи"}
+        , {"kanauji", "Канауджи"}
+        , {"panjabi", "Пенджабцы"}
+        , {"kashmiri", "Кашмирцы"}
+        , {"gujarati", "Гуджарати"}
+        , {"marathi", "Маратхи"}
+        , {"sindi", "Синды"}
+        , {"rajput", "Раджпуты"}
+        , {"kannada", "Каннара"}
+        , {"malayalam", "Малаялам"}
+        , {"tamil", "Тамилы"}
+        , {"telegu", "Телугу"}
+        , {"vietnamese", "Вьетнамцы"}
+        , {"khmer", "Кхмеры"}
+        , {"malay", "Малайзийцы"}
+        , {"filipino", "Филиппинцы"}
+        , {"javan", "Яванцы"}
+        , {"moluccan", "Молуккцы"}
+        , {"thai", "Тайцы"}
+        , {"lao", "Лао"}
+        , {"shan", "Шань"}
+        , {"burmese", "Бирманцы"}
+        , {"asian_minor", "Азиатские меньшинства"}
+        , {"kachin", "Качины"}
+        , {"karen", "Карены"}
+        , {"japanese", "Японцы"}
+        , {"manchu", "Манчжуры"}
+        , {"beifaren", "Пекинцы"}
+        , {"nanfaren", "Нанкинцы"}
+        , {"korean", "Корейцы"}
+        , {"ainu", "Айны"}
+        , {"hakka", "Хакка"}
+        , {"miao", "Шанхайцы"}
+        , {"min", "Мин"}
+        , {"zhuang", "Чжуаны"}
+        , {"yi", "Юэ"}
+        , {"yue", "Кантонцы"}
+        , {"polynesian", "Полинезийцы"}
+        , {"hawaiian", "Гавайцы"}
+        , {"maori", "Маори"}
+        , {"aborigine", "Аборигены"}
+        , {"melanesian", "Меланезийцы"}
+        , {"micronesian", "Микронезийцы"}
+        , {"zapotec", "Сапотеки"}
+        , {"mayan", "Майя"}
+        , {"nahua", "Науа"}
+        , {"tarascan", "Тараски"}
+        , {"guajiro", "Гуахиро"}
+        , {"tupinamba", "Тупинамба"}
+        , {"metis", "Метисы"}
+        , {"dakota", "Дакота"}
+        , {"cherokee", "Чероки"}
+        , {"pueblo", "Пуэбло"}
+        , {"inuit", "Инуиты"}
+        , {"cree", "Кри"}
+        , {"navajo", "Навахо"}
+        , {"native_american_minor", "Индейские меньшинства"}
+        , {"yankee", "Янки"}
+        , {"dixie", "Дикси"}
+        , {"texan", "Техасцы"}
+        , {"boer", "Буры"}
+        , {"australian", "Австралийцы"}
+        , {"anglo_canadian", "Англо-канадцы"}
+        , {"french_canadian", "Франко-канадцы"}
+        , {"mexican", "Мексиканцы"}
+        , {"central_american", "Центр.американцы"}
+        , {"caribeno", "Карибцы"}
+        , {"north_andean", "Северные андцы"}
+        , {"south_andean", "Южные андцы"}
+        , {"platinean", "Аргентинцы"}
+        , {"brazilian", "Бразильцы"}
+        , {"afro_brazilian", "Афробразильцы"}
+        , {"quechua", "Кечуа"}
+        , {"guarani", "Гуарани"}
+        , {"aimara", "Аймара"}
+        , {"amazonian", "Амазонцы"}
+        , {"patagonian", "Патагонцы"}
+        , {"afro_american", "Афроамериканцы"}
+        , {"afro_caribbean", "Афрокарибы"}
+        , {"afro_caribeno", "Афрокарибеньо"}
+        , {"afro_antillean", "Афроантильцы"}
+        , {"akan", "Акан"}
+        , {"bambara", "Бамбара"}
+        , {"dyula", "Дьюла"}
+        , {"edo", "Эдо"}
+        , {"ewe", "Эве"}
+        , {"fon", "Фон"}
+        , {"fulbe", "Фульбе"}
+        , {"hausa", "Хауса"}
+        , {"ibibio", "Ибибио"}
+        , {"ibo", "Ибо"}
+        , {"kru", "Кру"}
+        , {"mande", "Манде"}
+        , {"maures", "Мавры"}
+        , {"mossi", "Моси"}
+        , {"senufo", "Сенуфо"}
+        , {"songhai", "Сонгай"}
+        , {"tiv", "Тив"}
+        , {"tuareg", "Туареги"}
+        , {"wolof", "Волоф"}
+        , {"yoruba", "Йоруба"}
+        , {"bakongo", "Баконго"}
+        , {"baguirmi", "Багирми"}
+        , {"fang", "Фанг"}
+        , {"kanuri", "Канури"}
+        , {"luba", "Балуба"}
+        , {"lunda", "Балунда"}
+        , {"mongo", "Монго"}
+        , {"sara", "Сара"}
+        , {"teda", "Теда"}
+        , {"african_minor", "Африканские меньшинства"}
+        , {"amhara", "Амхара"}
+        , {"afar", "Афар"}
+        , {"azande", "Азанде"}
+        , {"baganda", "Баганда"}
+        , {"beja", "Беджа"}
+        , {"dinka", "Динка"}
+        , {"fur", "Фор"}
+        , {"kikuyu", "Кикуйю"}
+        , {"luo", "Луо"}
+        , {"maasai", "Масаи"}
+        , {"nuer", "Нуэр"}
+        , {"nuba", "Нубийцы"}
+        , {"oromo", "Оромо"}
+        , {"ruanda", "Руанди"}
+        , {"rundi", "Рунди"}
+        , {"sidama", "Сидамо"}
+        , {"somali", "Сомалийцы"}
+        , {"sudanese", "Суданцы"}
+        , {"sukuma", "Сукума"}
+        , {"swahili", "Суахили"}
+        , {"tigray", "Тиграй"}
+        , {"unyamwezi", "Ньямвези"}
+        , {"chewa", "Чева"}
+        , {"herero", "Гереро"}
+        , {"khoisan", "Койсаны"}
+        , {"lomwe", "Ломве"}
+        , {"makua", "Макуа"}
+        , {"malagasy", "Малагасийцы"}
+        , {"nguni", "Нгуни"}
+        , {"ovimbundu", "Овимбунду"}
+        , {"sena", "Сену"}
+        , {"shona", "Шона"}
+        , {"sotho", "Сото"}
+        , {"tonga", "Тонганцы"}
+        , {"tswana", "Тсвана"}
+        , {"xhosa", "Коса"}
+        , {"yao", "Яо"}
+        , {"zulu", "Зулусы"}
+        , {"polar_bears", "Белые медведи"}
+        , {"anglo_african", "Англо-африканцы"}
+        , {"buryat", "Буряты"}
+        , {"kalmyk", "Калмыки"}
+        , {"crimean_tatar", "Крымские татары"}
+        , {"tuvan", "Тувинцы"}
+        , {"cubans", "Кубинцы"}
+        , {"scottish", "Шотландцы"}
+        , {"new_zelandian", "Новозеландцы"}
+        , {"wallonian", "Валлоны"}
     };
 }

@@ -25,33 +25,23 @@ tMeanTimeToHappen<target> MeanTimeToHappen(float const months, tModifiers<target
     return res;
 }
 
-// ¬озможно три случа€:
-// 1) property == "title" && propertyName == "NAME";
-// 2) property == "desc"  && propertyName == "DESC";
-// 3) property == "name"  && propertyName == "OPT".
-// јргумент optionNum нужен только дл€ третьего случа€ (и он не должен быть нулевым в этом случае).
-tString EventProperty(char const * property, char const * propertyName,
-                      uint eventID, uint optionNum = 0u);
-
 COMAND(tOption);
 
 template <tTarget target>
-tOption<target> Option(tEffects<target> && effects, uint const eventID, uint const optionNum = 1u)
-{
-    static_assert(target != tTarget::kPop);
-    assertion(optionNum && optionNum <= 26u);
-    tOption<target> res("option", tComands{});
-    res.AddToBody(EventProperty("name", "OPT", eventID, optionNum));
-    res.AddToBody(std::move(CastToComands(effects)), 1u);
-    return res;
-}
+tOption<target> Option(tEffects<target> &&, uint eventID, uint optionNum = 1u);
 
-tComand CountryEvent(uint id, char const * picture,
-                     tTrigger           <tTarget::kCountry> &&,
-                     tMeanTimeToHappen  <tTarget::kCountry> &&,
-                     tOptions           <tTarget::kCountry> &&);
+using tOptionDescriptions = std::vector<char const *>;
 
-tComand ProvinceEvent(uint id,
-                      tTrigger          <tTarget::kProvince> &&,
-                      tMeanTimeToHappen <tTarget::kProvince> &&,
-                      tOptions          <tTarget::kProvince> &&);
+void CountryEvent(uint id, char const * title, char const * desc, char const * picture,
+                  std::ostream & eventOutput, std::ostream & localizationOutput,
+                  tTrigger           <tTarget::kCountry> &&,
+                  tMeanTimeToHappen  <tTarget::kCountry> &&,
+                  tOptions           <tTarget::kCountry> &&,
+                  tOptionDescriptions const &);
+
+void ProvinceEvent(uint id, char const * title, char const * desc,
+                   std::ostream & eventOutput, std::ostream & localizationOutput,
+                   tTrigger          <tTarget::kProvince> &&,
+                   tMeanTimeToHappen <tTarget::kProvince> &&,
+                   tOptions          <tTarget::kProvince> &&,
+                   tOptionDescriptions const &);
