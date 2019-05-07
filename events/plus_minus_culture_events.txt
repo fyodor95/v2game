@@ -13,6 +13,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA500"
@@ -82,6 +90,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA502"
@@ -151,6 +167,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA504"
@@ -220,6 +244,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA506"
@@ -289,6 +321,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA508"
@@ -358,6 +398,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA510"
@@ -427,6 +475,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA512"
@@ -496,6 +552,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA514"
@@ -565,6 +629,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA516"
@@ -634,6 +706,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA518"
@@ -703,6 +783,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA520"
@@ -772,6 +860,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA522"
@@ -841,6 +937,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA524"
@@ -910,6 +1014,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA526"
@@ -979,6 +1091,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA528"
@@ -1048,6 +1168,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA530"
@@ -1117,6 +1245,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA532"
@@ -1186,6 +1322,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA534"
@@ -1255,6 +1399,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA536"
@@ -1324,6 +1476,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA538"
@@ -1393,6 +1553,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA540"
@@ -1462,6 +1630,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA542"
@@ -1531,6 +1707,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA544"
@@ -1600,6 +1784,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA546"
@@ -1669,6 +1861,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA548"
@@ -1738,6 +1938,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA550"
@@ -1807,6 +2015,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA552"
@@ -1876,6 +2092,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA554"
@@ -1945,6 +2169,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA556"
@@ -2014,6 +2246,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA558"
@@ -2083,6 +2323,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA560"
@@ -2152,6 +2400,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA562"
@@ -2221,6 +2477,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA564"
@@ -2290,6 +2554,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA566"
@@ -2359,6 +2631,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA568"
@@ -2428,6 +2708,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA570"
@@ -2497,6 +2785,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA572"
@@ -2566,6 +2862,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA574"
@@ -2635,6 +2939,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA576"
@@ -2704,6 +3016,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA578"
@@ -2773,6 +3093,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA580"
@@ -2842,6 +3170,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA582"
@@ -2911,6 +3247,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA584"
@@ -2980,6 +3324,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA586"
@@ -3049,6 +3401,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA588"
@@ -3118,6 +3478,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA590"
@@ -3187,6 +3555,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA592"
@@ -3256,6 +3632,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA594"
@@ -3325,6 +3709,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA596"
@@ -3394,6 +3786,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA598"
@@ -3463,6 +3863,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA600"
@@ -3532,6 +3940,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA602"
@@ -3601,6 +4017,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA604"
@@ -3670,6 +4094,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA606"
@@ -3739,6 +4171,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA608"
@@ -3808,6 +4248,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA610"
@@ -3877,6 +4325,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA612"
@@ -3946,6 +4402,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA614"
@@ -4015,6 +4479,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA616"
@@ -4084,6 +4556,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA618"
@@ -4153,6 +4633,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA620"
@@ -4222,6 +4710,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA622"
@@ -4291,6 +4787,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA624"
@@ -4360,6 +4864,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA626"
@@ -4429,6 +4941,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA628"
@@ -4498,6 +5018,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA630"
@@ -4567,6 +5095,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA632"
@@ -4636,6 +5172,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA634"
@@ -4705,6 +5249,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA636"
@@ -4774,6 +5326,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA638"
@@ -4843,6 +5403,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA640"
@@ -4912,6 +5480,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA642"
@@ -4981,6 +5557,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA644"
@@ -5050,6 +5634,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA646"
@@ -5119,6 +5711,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA648"
@@ -5188,6 +5788,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA650"
@@ -5257,6 +5865,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA652"
@@ -5326,6 +5942,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA654"
@@ -5395,6 +6019,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA656"
@@ -5464,6 +6096,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA658"
@@ -5533,6 +6173,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA660"
@@ -5602,6 +6250,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA662"
@@ -5671,6 +6327,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA664"
@@ -5740,6 +6404,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA666"
@@ -5809,6 +6481,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA668"
@@ -5878,6 +6558,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA670"
@@ -5947,6 +6635,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA672"
@@ -6016,6 +6712,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA674"
@@ -6085,6 +6789,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA676"
@@ -6154,6 +6866,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA678"
@@ -6223,6 +6943,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA680"
@@ -6292,6 +7020,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA682"
@@ -6361,6 +7097,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA684"
@@ -6430,6 +7174,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA686"
@@ -6499,6 +7251,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA688"
@@ -6568,6 +7328,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA690"
@@ -6637,6 +7405,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA692"
@@ -6706,6 +7482,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA694"
@@ -6775,6 +7559,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA696"
@@ -6844,6 +7636,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA698"
@@ -6913,6 +7713,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA700"
@@ -6982,6 +7790,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA702"
@@ -7051,6 +7867,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA704"
@@ -7120,6 +7944,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA706"
@@ -7189,6 +8021,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA708"
@@ -7258,6 +8098,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA710"
@@ -7327,6 +8175,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA712"
@@ -7396,6 +8252,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA714"
@@ -7465,6 +8329,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA716"
@@ -7534,6 +8406,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA718"
@@ -7603,6 +8483,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA720"
@@ -7672,6 +8560,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA722"
@@ -7741,6 +8637,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA724"
@@ -7810,6 +8714,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA726"
@@ -7879,6 +8791,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA728"
@@ -7948,6 +8868,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA730"
@@ -8017,6 +8945,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA732"
@@ -8086,6 +9022,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA734"
@@ -8155,6 +9099,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA736"
@@ -8224,6 +9176,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA738"
@@ -8293,6 +9253,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA740"
@@ -8362,6 +9330,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA742"
@@ -8431,6 +9407,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA744"
@@ -8500,6 +9484,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA746"
@@ -8569,6 +9561,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA748"
@@ -8638,6 +9638,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA750"
@@ -8707,6 +9715,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA752"
@@ -8776,6 +9792,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA754"
@@ -8845,6 +9869,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA756"
@@ -8914,6 +9946,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA758"
@@ -8983,6 +10023,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA760"
@@ -9052,6 +10100,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA762"
@@ -9121,6 +10177,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA764"
@@ -9190,6 +10254,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA766"
@@ -9259,6 +10331,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA768"
@@ -9328,6 +10408,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA770"
@@ -9397,6 +10485,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA772"
@@ -9466,6 +10562,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA774"
@@ -9535,6 +10639,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA776"
@@ -9604,6 +10716,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA778"
@@ -9673,6 +10793,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA780"
@@ -9742,6 +10870,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA782"
@@ -9811,6 +10947,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA784"
@@ -9880,6 +11024,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA786"
@@ -9949,6 +11101,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA788"
@@ -10018,6 +11178,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA790"
@@ -10087,6 +11255,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA792"
@@ -10156,6 +11332,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA794"
@@ -10225,6 +11409,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA796"
@@ -10294,6 +11486,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA798"
@@ -10363,6 +11563,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA800"
@@ -10432,6 +11640,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA802"
@@ -10501,6 +11717,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA804"
@@ -10570,6 +11794,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA806"
@@ -10639,6 +11871,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA808"
@@ -10708,6 +11948,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA810"
@@ -10777,6 +12025,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA812"
@@ -10846,6 +12102,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA814"
@@ -10915,6 +12179,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA816"
@@ -10984,6 +12256,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA818"
@@ -11053,6 +12333,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA820"
@@ -11122,6 +12410,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA822"
@@ -11191,6 +12487,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA824"
@@ -11260,6 +12564,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA826"
@@ -11329,6 +12641,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA828"
@@ -11398,6 +12718,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA830"
@@ -11467,6 +12795,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA832"
@@ -11536,6 +12872,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA834"
@@ -11605,6 +12949,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA836"
@@ -11674,6 +13026,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA838"
@@ -11743,6 +13103,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA840"
@@ -11812,6 +13180,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA842"
@@ -11881,6 +13257,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA844"
@@ -11950,6 +13334,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA846"
@@ -12019,6 +13411,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA848"
@@ -12088,6 +13488,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA850"
@@ -12157,6 +13565,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA852"
@@ -12226,6 +13642,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA854"
@@ -12295,6 +13719,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA856"
@@ -12364,6 +13796,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA858"
@@ -12433,6 +13873,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA860"
@@ -12502,6 +13950,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA862"
@@ -12571,6 +14027,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA864"
@@ -12640,6 +14104,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA866"
@@ -12709,6 +14181,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA868"
@@ -12778,6 +14258,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA870"
@@ -12847,6 +14335,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA872"
@@ -12916,6 +14412,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA874"
@@ -12985,6 +14489,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA876"
@@ -13054,6 +14566,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA878"
@@ -13123,6 +14643,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA880"
@@ -13192,6 +14720,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA882"
@@ -13261,6 +14797,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA884"
@@ -13330,6 +14874,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA886"
@@ -13399,6 +14951,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA888"
@@ -13468,6 +15028,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA890"
@@ -13537,6 +15105,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA892"
@@ -13606,6 +15182,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA894"
@@ -13675,6 +15259,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA896"
@@ -13744,6 +15336,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA898"
@@ -13813,6 +15413,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA900"
@@ -13882,6 +15490,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA902"
@@ -13951,6 +15567,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA904"
@@ -14020,6 +15644,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA906"
@@ -14089,6 +15721,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA908"
@@ -14158,6 +15798,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA910"
@@ -14227,6 +15875,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA912"
@@ -14296,6 +15952,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA914"
@@ -14365,6 +16029,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA916"
@@ -14434,6 +16106,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA918"
@@ -14503,6 +16183,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA920"
@@ -14572,6 +16260,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA922"
@@ -14641,6 +16337,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA924"
@@ -14710,6 +16414,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA926"
@@ -14779,6 +16491,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA928"
@@ -14848,6 +16568,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA930"
@@ -14917,6 +16645,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA932"
@@ -14986,6 +16722,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA934"
@@ -15055,6 +16799,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA936"
@@ -15124,6 +16876,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA938"
@@ -15193,6 +16953,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA940"
@@ -15262,6 +17030,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA942"
@@ -15331,6 +17107,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA944"
@@ -15400,6 +17184,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA946"
@@ -15469,6 +17261,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA948"
@@ -15538,6 +17338,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA950"
@@ -15607,6 +17415,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA952"
@@ -15676,6 +17492,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA954"
@@ -15745,6 +17569,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA956"
@@ -15814,6 +17646,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA958"
@@ -15883,6 +17723,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA960"
@@ -15952,6 +17800,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA962"
@@ -16021,6 +17877,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA964"
@@ -16090,6 +17954,14 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			citizenship_policy = limited_citizenship
+		}
+		modifier = {
+			factor = 0.01
+			citizenship_policy = residency
+		}
 	}
 	option = {
 		name = "EVTOPTA966"

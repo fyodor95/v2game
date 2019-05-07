@@ -21,6 +21,7 @@ private:
     std::string xRemoveCultureEventTitle() const;
     std::string xRemoveCultureEventDesc() const;
     tConditions<tTarget::kCountry> xRemoveCultureConditions() const;
+    tModifiers<tTarget::kCountry> xRemoveCultureModifiers() const;
     void xRemoveCultureEvent();
 
     std::string xHighMilitancyRemovingEventTitle() const;
@@ -59,6 +60,15 @@ tConditions<tTarget::kCountry> tPlusMinusCultures::xRemoveCultureConditions() co
     };
 }
 
+tModifiers<tTarget::kCountry> tPlusMinusCultures::xRemoveCultureModifiers() const
+{
+    return
+    {
+        tModifier(0.10f, CitizenshipPolicyIs<tCitizenshipPolicy::kLimited  >()),
+        tModifier(0.01f, CitizenshipPolicyIs<tCitizenshipPolicy::kResidency>())
+    };
+}
+
 std::string tPlusMinusCultures::xRemoveCultureEventTitle() const
 {
     std::string res = " то такие ";
@@ -81,7 +91,7 @@ void tPlusMinusCultures::xRemoveCultureEvent()
     Event(xID, title.data(), desc.data(),
           xEventOutput, xLocalizationOutput,
           Trigger          <tTarget::kCountry>(xRemoveCultureConditions()),
-          MeanTimeToHappen <tTarget::kCountry>(60.f, {}),
+          MeanTimeToHappen <tTarget::kCountry>(60.f, xRemoveCultureModifiers()),
           {Option          <tTarget::kCountry>({RemoveAcceptedCulture(xCulture())}, xID)},
           {"ќк"}, "Administration");
     ++xID;
