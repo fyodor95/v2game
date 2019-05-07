@@ -1,5 +1,15 @@
 #include "conditions.h"
 
+template <tTarget target>
+tCondition<target> AverageMilitancy(float const num)
+{
+    static_assert(target != tTarget::kPop);
+    return Set("average_militancy", ToString(num));
+}
+
+template tCondition<tTarget::kCountry > AverageMilitancy(float);
+template tCondition<tTarget::kProvince> AverageMilitancy(float);
+
 tCondition<tTarget::kCountry> AcceptedCulture(char const * const culture)
 {
     return Set("accepted_culture", culture);
@@ -20,6 +30,11 @@ tCondition<tTarget::kProvince> ConditionsForOwner(tConditions<tTarget::kCountry>
     return tCondition<tTarget::kProvince>("owner", std::move(CastToComands(conditions)));
 }
 
+tCondition<tTarget::kProvince> ExistsPopWithMilitancy(float const num)
+{
+    return Set("pop_militancy", ToString(num));
+}
+
 tCondition<tTarget::kProvince> MajorityCultureIs(char const * const culture)
 {
     return Set("culture", culture);
@@ -38,9 +53,4 @@ tCondition<tTarget::kProvince> MajorityCultureIsPrimary(tYesOrNo const flag)
 tCondition<tTarget::kProvince> PopulationIsGreaterOrEqual(uint const num)
 {
     return Set("total_pops", std::to_string(num));
-}
-
-tCondition<tTarget::kProvince> MilitancyIsGreaterOrEqual(float const num)
-{
-    return Set("pop_militancy", ToString(num));
 }

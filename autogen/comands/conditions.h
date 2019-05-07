@@ -23,6 +23,10 @@ tCondition<target> Not(tCondition<target> && condition)
     return tCondition<target>("NOT", {static_cast<tComand &&>(condition)});
 }
 
+// ¬озвращает true, если средн€€ агрессивность населени€ в данной провинции или стране не меньше, чем num.
+template <tTarget target>
+tCondition<target> AverageMilitancy(float num);
+
 // ¬озвращает true, если культура culture €вл€етс€ признанной в данной стране.
 tCondition<tTarget::kCountry> AcceptedCulture(char const * culture);
 
@@ -39,6 +43,9 @@ tCondition<tTarget::kCountry> ConditionsForCapital(tConditions<tTarget::kProvinc
 // ѕровер€ет услови€ conditions дл€ владельца данной провинции. ¬озвращает true, если выполнено каждое из условий.
 tCondition<tTarget::kProvince> ConditionsForOwner(tConditions<tTarget::kCountry> && conditions);
 
+// ¬озвращает true, если в данной провинции существует поп с агрессивностью не менее, чем num.
+tCondition<tTarget::kProvince> ExistsPopWithMilitancy(float num);
+
 // ¬озвращает true, если в данной провинции больше всего людей имеют культуру culture.
 tCondition<tTarget::kProvince> MajorityCultureIs(char const * culture);
 
@@ -52,6 +59,3 @@ tCondition<tTarget::kProvince> MajorityCultureIsPrimary(tYesOrNo flag = _Yes);
 
 // ¬озвращает true, если в количество населени€ в данной провинции не меньше, чем num.
 tCondition<tTarget::kProvince> PopulationIsGreaterOrEqual(uint num);
-
-// ¬озвращает true, если в агрессивность населени€ в данной провинции не меньше, чем num.
-tCondition<tTarget::kProvince> MilitancyIsGreaterOrEqual(float num);

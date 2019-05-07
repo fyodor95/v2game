@@ -95,7 +95,7 @@ tConditions<tTarget::kProvince> tPlusMinusCultures::xHighMilitancyRemovingCondit
         MajorityCultureIsAccepted(),
         MajorityCultureIs(xCulture()),
         PopulationIsGreaterOrEqual(5000u),
-        MilitancyIsGreaterOrEqual(4.f),
+        AverageMilitancy<tTarget::kProvince>(4.f),
         ConditionsForOwner({ConditionsForCapital({Not(MajorityCultureIs(xCulture()))})})
     };
 }
@@ -118,8 +118,8 @@ tModifiers<tTarget::kProvince> tPlusMinusCultures::xHighMilitancyRemovingModifie
 {
     return
     {
-        tModifier(  0.1f, MilitancyIsGreaterOrEqual(6.f)),
-        tModifier(  0.1f, MilitancyIsGreaterOrEqual(8.f)),
+        tModifier(  0.1f, AverageMilitancy<tTarget::kProvince>(6.f)),
+        tModifier(  0.1f, AverageMilitancy<tTarget::kProvince>(8.f)),
         tModifier( 10.0f, ConditionsForOwner({CitizenshipPolicyIs<tCitizenshipPolicy::kLimited>()})),
         tModifier(100.0f, ConditionsForOwner({CitizenshipPolicyIs<tCitizenshipPolicy::kFull   >()}))
     };
