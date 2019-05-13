@@ -45,10 +45,12 @@ tCondition<tTarget::kCountry> CitizenshipPolicyIs()
 // Проверяет условия coditions для столицы данной страны. Возвращает true, если выполнено каждое из условий.
 tCondition<tTarget::kCountry> ConditionsForCapital(tConditions<tTarget::kProvince> && conditions);
 
+// Условие для доминионов (стран с тэгами DXX (01 <= XX <= 50)). По умолчанию их культурой является tCulture::british.
+// Возвращает true, если основная культура государства совпадает с культурой по умолчанию.
+tCondition<tTarget::kCountry> HasDefaultPrimaryCulture();
+
 // Возвращает true, если тэгом является DXX (01 <= XX <= 50).
 tCondition<tTarget::kCountry> IsDominion();
-
-tCondition<tTarget::kCountry> IsDominionWithDefaultCulture();
 
 // Возвращает true, если культура culture является основной в данной стране.
 template <tCulture culture>
@@ -84,3 +86,11 @@ tCondition<tTarget::kProvince> MajorityCultureIsPrimary(tYesOrNo flag = _Yes);
 
 // Возвращает true, если в количество населения в данной провинции не меньше, чем num.
 tCondition<tTarget::kProvince> PopulationIsGreaterOrEqual(uint num);
+
+// Возвращает true, если культура попа является признанной культурой страны, в которой он проживает.
+// Если flag == _No, то возвращаемое значение инвертируется.
+tCondition<tTarget::kPop> IsAcceptedPop(tYesOrNo flag = _Yes);
+
+// Возвращает true, если культура попа совпадает с основной культурой страны, в которой он проживает.
+// Если flag == _No, то возвращаемое значение инвертируется.
+tCondition<tTarget::kPop> IsPrimaryPop(tYesOrNo flag = _Yes);

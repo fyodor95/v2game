@@ -16,7 +16,9 @@ void CapitalCulturesAcceptanceImpl(tDesicionOutput & decisionOutput, std::ofstre
     tConditions<tTarget::kCountry> potential
     {
         ConditionsForCapital({MajorityCultureIs<culture>(), Not(IsInNewWorld())}),
-        Not(Or<tTarget::kCountry>({IsAccepted<culture>(), IsPrimary<culture>(), IsDominionWithDefaultCulture()}))
+        Not(Or<tTarget::kCountry>({IsAccepted<culture>(),
+                                   IsPrimary<culture>(),
+                                   And<tTarget::kCountry>({HasDefaultPrimaryCulture(), IsDominion()})}))
     };
     Desicion(std::move(name), title.data(), desc.data(), decisionOutput, localizationOutput, std::move(potential),
              {ConditionsForCapital({MajorityCultureIs<culture>(), PopulationIsGreaterOrEqual(20000u)})},

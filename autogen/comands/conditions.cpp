@@ -20,6 +20,11 @@ tCondition<tTarget::kCountry> ConditionsForCapital(tConditions<tTarget::kProvinc
     return tCondition<tTarget::kCountry>("capital_scope", std::move(CastToComands(conditions)));
 }
 
+tCondition<tTarget::kCountry> HasDefaultPrimaryCulture()
+{
+    return IsPrimary<tCulture::british>();
+}
+
 template <size_t i = 0u>
 void AddTag(tConditions<tTarget::kCountry> & conditions)
 {
@@ -38,11 +43,6 @@ tCondition<tTarget::kCountry> IsDominion()
     body.reserve(Dominions.size());
     AddTag(body);
     return Or(std::move(body));
-}
-
-tCondition<tTarget::kCountry> IsDominionWithDefaultCulture()
-{
-    return And<tTarget::kCountry>({IsPrimary<tCulture::british>(), IsDominion()});
 }
 
 tCondition<tTarget::kProvince> ConditionsForOwner(tConditions<tTarget::kCountry> && conditions)
@@ -75,4 +75,14 @@ tCondition<tTarget::kProvince> MajorityCultureIsPrimary(tYesOrNo const flag)
 tCondition<tTarget::kProvince> PopulationIsGreaterOrEqual(uint const num)
 {
     return Set("total_pops", std::to_string(num));
+}
+
+tCondition<tTarget::kPop> IsAcceptedPop(tYesOrNo const flag)
+{
+    return Set("is_accepted_culture", YesOrNo(flag));
+}
+
+tCondition<tTarget::kPop> IsPrimaryPop(tYesOrNo const flag)
+{
+    return Set("is_primary_culture", YesOrNo(flag));
 }

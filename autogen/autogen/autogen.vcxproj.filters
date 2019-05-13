@@ -2,13 +2,15 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="_pch_autogen.cpp" />
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="plus_minus_cultures_events.cpp" />
     <ClCompile Include="capital_cultures_acceptance.cpp" />
+    <ClCompile Include="new_primary_culture_for_dxx.cpp" />
+    <ClCompile Include="_main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="_pch_autogen.h" />
     <ClInclude Include="plus_minus_cultures_events.h" />
     <ClInclude Include="capital_cultures_acceptance.h" />
+    <ClInclude Include="new_primary_culture_for_dxx.h" />
   </ItemGroup>
 </Project>
