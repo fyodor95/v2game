@@ -26,3 +26,8 @@ char const * YesOrNo(tYesOrNo const yesOrNo)
 {
     return yesOrNo == _Yes ? "yes" : "no";
 }
+
+char const * LocLineEnd()
+{
+    return ";X\n";
+}

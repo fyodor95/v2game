@@ -2,10 +2,11 @@
 #include "events.h"
 #include "plus_minus_cultures_events.h"
 
-class tPlusMinusCultures
+template <tCulture culture>
+class tPlusMinusCulture
 {
 public:
-    tPlusMinusCultures(std::ostream & eventOutput, std::ostream & localizationOutput);
+    tPlusMinusCulture(uint & id, std::ostream & eventOutput, std::ostream & localizationOutput);
 
 private:
     std::ostream & xEventOutput;
@@ -13,10 +14,10 @@ private:
 
     tCulture const * xCurrentCulture;
 
-    uint xID = 5050u;
+    uint & xID;
 
     char const * xCulture() const;
-    void xProcessCulture(tCulture const & culture);
+    char const * xLocalization() const;
 
     std::string xRemoveCultureEventTitle() const;
     std::string xRemoveCultureEventDesc() const;
@@ -37,37 +38,41 @@ private:
     void xLowMilitancyAdding();
 };
 
-tPlusMinusCultures::tPlusMinusCultures(std::ostream & eventOutput, std::ostream & localizationOutput)
+template <tCulture culture>
+tPlusMinusCulture<culture>::tPlusMinusCulture(uint & id, std::ostream & eventOutput, std::ostream & localizationOutput)
     : xEventOutput(eventOutput)
     , xLocalizationOutput(localizationOutput)
+    , xID(id)
 {
-    for (tCulture const & culture : Cultures())
-        xProcessCulture(culture);
-}
-
-char const * tPlusMinusCultures::xCulture() const
-{
-    return xCurrentCulture->Name;
-}
-
-void tPlusMinusCultures::xProcessCulture(tCulture const & culture)
-{
-    xCurrentCulture = &culture;
     xRemoveCultureEvent();
     xHighMilitancyRemoving();
     xLowMilitancyAdding();
 }
 
-tConditions<tTarget::kCountry> tPlusMinusCultures::xRemoveCultureConditions() const
+template <tCulture culture>
+char const * tPlusMinusCulture<culture>::xCulture() const
+{
+    return nsCulture::ToString<culture>();
+}
+
+template <tCulture culture>
+char const * tPlusMinusCulture<culture>::xLocalization() const
+{
+    return nsCulture::Localization<culture>();
+}
+
+template <tCulture culture>
+tConditions<tTarget::kCountry> tPlusMinusCulture<culture>::xRemoveCultureConditions() const
 {
     return
     {
-        AcceptedCulture(xCulture()),
-        Not(AnyOwnedProvince(MajorityCultureIs(xCulture())))
+        IsAccepted<culture>(),
+        Not(AnyOwnedProvince(MajorityCultureIs<culture>()))
     };
 }
 
-tModifiers<tTarget::kCountry> tPlusMinusCultures::xRemoveCultureModifiers() const
+template <tCulture culture>
+tModifiers<tTarget::kCountry> tPlusMinusCulture<culture>::xRemoveCultureModifiers() const
 {
     return
     {
@@ -76,22 +81,25 @@ tModifiers<tTarget::kCountry> tPlusMinusCultures::xRemoveCultureModifiers() cons
     };
 }
 
-std::string tPlusMinusCultures::xRemoveCultureEventTitle() const
+template <tCulture culture>
+std::string tPlusMinusCulture<culture>::xRemoveCultureEventTitle() const
 {
     std::string res = "Кто такие ";
-    res += xCurrentCulture->Localization;
+    res += xLocalization();
     res += '?';
     return res;
 }
 
-std::string tPlusMinusCultures::xRemoveCultureEventDesc() const
+template <tCulture culture>
+std::string tPlusMinusCulture<culture>::xRemoveCultureEventDesc() const
 {
-    std::string res = xCurrentCulture->Localization;
+    std::string res = xLocalization();
     res += " уже почти не живут в нашей стране. Они перестали считаться признанной культурой.";
     return res;
 }
 
-void tPlusMinusCultures::xRemoveCultureEvent()
+template <tCulture culture>
+void tPlusMinusCulture<culture>::xRemoveCultureEvent()
 {
     std::string const title = xRemoveCultureEventTitle();
     std::string const desc = xRemoveCultureEventDesc();
@@ -99,39 +107,43 @@ void tPlusMinusCultures::xRemoveCultureEvent()
           xEventOutput, xLocalizationOutput,
           Trigger          <tTarget::kCountry>(xRemoveCultureConditions()),
           MeanTimeToHappen <tTarget::kCountry>(60.f, xRemoveCultureModifiers()),
-          {Option          <tTarget::kCountry>({RemoveAcceptedCulture(xCulture())}, xID)},
+          {Option          <tTarget::kCountry>({RemoveAcceptedCulture<culture>()}, xID)},
           {"Ок"}, "Administration");
     ++xID;
 }
 
-tConditions<tTarget::kProvince> tPlusMinusCultures::xHighMilitancyRemovingConditions() const
+template <tCulture culture>
+tConditions<tTarget::kProvince> tPlusMinusCulture<culture>::xHighMilitancyRemovingConditions() const
 {
     return
     {
         MajorityCultureIsPrimary(_No),
         MajorityCultureIsAccepted(),
-        MajorityCultureIs(xCulture()),
+        MajorityCultureIs<culture>(),
         PopulationIsGreaterOrEqual(5000u),
         AverageMilitancy<tTarget::kProvince>(4.f),
-        ConditionsForOwner({ConditionsForCapital({Not(MajorityCultureIs(xCulture()))})})
+        ConditionsForOwner({ConditionsForCapital({Not(MajorityCultureIs<culture>())})})
     };
 }
 
-std::string tPlusMinusCultures::xHighMilitancyRemovingEventTitle() const
+template <tCulture culture>
+std::string tPlusMinusCulture<culture>::xHighMilitancyRemovingEventTitle() const
 {
     std::string res = "Недовольные ";
-    res += xCurrentCulture->Localization;
+    res += xLocalization();
     return res;
 }
 
-std::string tPlusMinusCultures::xHighMilitancyRemovingEventDesc() const
+template <tCulture culture>
+std::string tPlusMinusCulture<culture>::xHighMilitancyRemovingEventDesc() const
 {
-    std::string res = xCurrentCulture->Localization;
+    std::string res = xLocalization();
     res += " в провинции $PROVINCENAME$ в результате ужасных условий жизни уже не ощущают себя признанной культурой.";
     return res;
 }
 
-tModifiers<tTarget::kProvince> tPlusMinusCultures::xHighMilitancyRemovingModifiers() const
+template <tCulture culture>
+tModifiers<tTarget::kProvince> tPlusMinusCulture<culture>::xHighMilitancyRemovingModifiers() const
 {
     return
     {
@@ -142,7 +154,8 @@ tModifiers<tTarget::kProvince> tPlusMinusCultures::xHighMilitancyRemovingModifie
     };
 }
 
-void tPlusMinusCultures::xHighMilitancyRemoving()
+template <tCulture culture>
+void tPlusMinusCulture<culture>::xHighMilitancyRemoving()
 {
     std::string const title = xHighMilitancyRemovingEventTitle();
     std::string const desc = xHighMilitancyRemovingEventDesc();
@@ -150,37 +163,41 @@ void tPlusMinusCultures::xHighMilitancyRemoving()
           xEventOutput, xLocalizationOutput,
           Trigger          <tTarget::kProvince>(xHighMilitancyRemovingConditions()),
           MeanTimeToHappen <tTarget::kProvince>(12.f, xHighMilitancyRemovingModifiers()),
-          {Option          <tTarget::kProvince>({EffectsForOwner({RemoveAcceptedCulture(xCulture())})}, xID)},
+          {Option          <tTarget::kProvince>({EffectsForOwner({RemoveAcceptedCulture<culture>()})}, xID)},
           {"Ок"});
     ++xID;
 }
 
-tConditions<tTarget::kProvince> tPlusMinusCultures::xLowMilitancyAddingConditions() const
+template <tCulture culture>
+tConditions<tTarget::kProvince> tPlusMinusCulture<culture>::xLowMilitancyAddingConditions() const
 {
     return
     {
         MajorityCultureIsAccepted(_No),
-        MajorityCultureIs(xCulture()),
+        MajorityCultureIs<culture>(),
         PopulationIsGreaterOrEqual(40000u),
         Not(AverageMilitancy<tTarget::kProvince>(0.4f))
     };
 }
 
-std::string tPlusMinusCultures::xLowMilitancyAddingEventTitle() const
+template <tCulture culture>
+std::string tPlusMinusCulture<culture>::xLowMilitancyAddingEventTitle() const
 {
     std::string res = "Довольные ";
-    res += xCurrentCulture->Localization;
+    res += xLocalization();
     return res;
 }
 
-std::string tPlusMinusCultures::xLowMilitancyAddingEventDesc() const
+template <tCulture culture>
+std::string tPlusMinusCulture<culture>::xLowMilitancyAddingEventDesc() const
 {
-    std::string res = xCurrentCulture->Localization;
+    std::string res = xLocalization();
     res += " в провинции $PROVINCENAME$ в результате превосходных условий жизни стали ощущать себя признанной культурой.";
     return res;
 }
 
-tModifiers<tTarget::kProvince> tPlusMinusCultures::xLowMilitancyAddingModifiers() const
+template <tCulture culture>
+tModifiers<tTarget::kProvince> tPlusMinusCulture<culture>::xLowMilitancyAddingModifiers() const
 {
     return
     {
@@ -191,7 +208,8 @@ tModifiers<tTarget::kProvince> tPlusMinusCultures::xLowMilitancyAddingModifiers(
     };
 }
 
-void tPlusMinusCultures::xLowMilitancyAdding()
+template <tCulture culture>
+void tPlusMinusCulture<culture>::xLowMilitancyAdding()
 {
     std::string const title = xLowMilitancyAddingEventTitle();
     std::string const desc = xLowMilitancyAddingEventDesc();
@@ -199,15 +217,27 @@ void tPlusMinusCultures::xLowMilitancyAdding()
           xEventOutput, xLocalizationOutput,
           Trigger          <tTarget::kProvince>(xLowMilitancyAddingConditions()),
           MeanTimeToHappen <tTarget::kProvince>(240.f, xLowMilitancyAddingModifiers()),
-          {Option          <tTarget::kProvince>({EffectsForOwner({AddAcceptedCulture(xCulture())})}, xID)},
+          {Option          <tTarget::kProvince>({EffectsForOwner({AddAcceptedCulture<culture>()})}, xID)},
           {"Ок"});
     ++xID;
+}
+
+template <size_t i = 0u>
+void ProcessCulture(uint & id, std::ofstream & eventOutput, std::ofstream & localizationOutput)
+{
+    tPlusMinusCulture<Cultures[i]>(id, eventOutput, localizationOutput);
+    ProcessCulture<i + 1u>        (id, eventOutput, localizationOutput);
+}
+
+template <>
+void ProcessCulture<Cultures.size()>(uint &, std::ofstream &, std::ofstream &)
+{
 }
 
 void AddingAndRemovingCultures()
 {
     std::ofstream        eventOutput      ("events\\plus_minus_culture_events.txt");
     std::ofstream localizationOutput("localisation\\plus_minus_culture_events.csv");
-    tPlusMinusCultures(static_cast<std::ostream &>(       eventOutput),
-                       static_cast<std::ostream &>(localizationOutput));
+    uint id = 5050u;
+    ProcessCulture(id, eventOutput, localizationOutput);
 }

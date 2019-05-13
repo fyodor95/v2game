@@ -1,6 +1,9 @@
 #pragma once
 
 #include "citizenship_policy.h"
+#include "continents.h"
+#include "cultures.h"
+#include "tags.h"
 #include "target_comand.h"
 
 COMAND(tCondition);
@@ -28,17 +31,31 @@ template <tTarget target>
 tCondition<target> AverageMilitancy(float num);
 
 // Возвращает true, если культура culture является признанной в данной стране.
-tCondition<tTarget::kCountry> AcceptedCulture(char const * culture);
+template <tCulture culture>
+tCondition<tTarget::kCountry> IsAccepted() { return Set("accepted_culture", nsCulture::ToString<culture>()); }
 
 // Возвращает true, если для любой провинции, принадлежащей данной стране, выполняется условие condition.
 tCondition<tTarget::kCountry> AnyOwnedProvince(tCondition<tTarget::kProvince> && condition);
 
 // Возвращает true, если законом о гражданстве в данной стране является policy.
 template <tCitizenshipPolicy policy>
-tCondition<tTarget::kCountry> CitizenshipPolicyIs() { return Set("citizenship_policy", ToString<policy>()); }
+tCondition<tTarget::kCountry> CitizenshipPolicyIs()
+{ return Set("citizenship_policy", nsCitizenshipPolicy::ToString<policy>()); }
 
 // Проверяет условия coditions для столицы данной страны. Возвращает true, если выполнено каждое из условий.
 tCondition<tTarget::kCountry> ConditionsForCapital(tConditions<tTarget::kProvince> && conditions);
+
+// Возвращает true, если тэгом является DXX (01 <= XX <= 50).
+tCondition<tTarget::kCountry> IsDominion();
+
+tCondition<tTarget::kCountry> IsDominionWithDefaultCulture();
+
+// Возвращает true, если культура culture является основной в данной стране.
+template <tCulture culture>
+tCondition<tTarget::kCountry> IsPrimary() { return Set("primary_culture", nsCulture::ToString<culture>()); }
+
+template <tTag tag>
+tCondition<tTarget::kCountry> TagIs() { return Set("tag", nsTag::ToString<tag>()); }
 
 // Проверяет условия conditions для владельца данной провинции. Возвращает true, если выполнено каждое из условий.
 tCondition<tTarget::kProvince> ConditionsForOwner(tConditions<tTarget::kCountry> && conditions);
@@ -46,8 +63,16 @@ tCondition<tTarget::kProvince> ConditionsForOwner(tConditions<tTarget::kCountry>
 // Возвращает true, если в данной провинции существует поп с агрессивностью не менее, чем num.
 tCondition<tTarget::kProvince> ExistsPopWithMilitancy(float num);
 
-// Возвращает true, если в данной провинции больше всего людей имеют культуру culture.
-tCondition<tTarget::kProvince> MajorityCultureIs(char const * culture);
+// Возвращает true, если данная провинция находится на континенте continent.
+template <tContinent continent>
+tCondition<tTarget::kProvince> IsInContinent() { return Set("continent", ToString<continent>()); }
+
+// Возвращает true, если данная провинция находится в Америке или Океании.
+tCondition<tTarget::kProvince> IsInNewWorld();
+
+// Возвращает true, если culture является самой многочисленной культурой данной провинции.
+template <tCulture culture>
+tCondition<tTarget::kProvince> MajorityCultureIs() { return Set("culture", nsCulture::ToString<culture>()); }
 
 // Возвращает true, если наиболее многочисленная культура в данной провинции является признанной или основной.
 // Если flag == _No, то возвращаемое значение инвертируется.

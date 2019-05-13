@@ -62,6 +62,7 @@
       <ForcedIncludeFiles>_pch_autogen.h</ForcedIncludeFiles>
       <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>../comands</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>../comands/$(IntDir)</AdditionalLibraryDirectories>
@@ -85,6 +86,7 @@
       <PreprocessorDefinitions>_MBCS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <AdditionalIncludeDirectories>../comands</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -94,7 +96,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="cultures.cpp" />
+    <ClCompile Include="capital_cultures_acceptance.cpp" />
     <ClCompile Include="plus_minus_cultures_events.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="_pch_autogen.cpp">
@@ -103,7 +105,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="cultures.h" />
+    <ClInclude Include="capital_cultures_acceptance.h" />
     <ClInclude Include="plus_minus_cultures_events.h" />
     <ClInclude Include="_pch_autogen.h" />
   </ItemGroup>

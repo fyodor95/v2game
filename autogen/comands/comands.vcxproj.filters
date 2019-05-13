@@ -11,6 +11,10 @@
     <ClInclude Include="target.h" />
     <ClInclude Include="target_comand.h" />
     <ClInclude Include="citizenship_policy.h" />
+    <ClInclude Include="decisions.h" />
+    <ClInclude Include="continents.h" />
+    <ClInclude Include="tags.h" />
+    <ClInclude Include="cultures.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="_pch_comands.cpp" />
@@ -19,5 +23,9 @@
     <ClCompile Include="conditions.cpp" />
     <ClCompile Include="effects.cpp" />
     <ClCompile Include="citizenship_policy.cpp" />
+    <ClCompile Include="decisions.cpp" />
+    <ClCompile Include="continents.cpp" />
+    <ClCompile Include="tags.cpp" />
+    <ClCompile Include="cultures.cpp" />
   </ItemGroup>
 </Project>

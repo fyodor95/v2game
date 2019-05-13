@@ -113,7 +113,7 @@ char const * EventScope<tTarget::kProvince>()
 
 template <tTarget target>
 void Event(uint const id, char const * const title, char const * const desc,
-           std::ostream & eventOutput, std::ostream & localizationOutput,
+           std::ostream & eventOutput, std::ostream & locOutput,
            tTrigger          <target> && trigger,
            tMeanTimeToHappen <target> && meanTimeToHappen,
            tOptions          <target> && options,
@@ -127,12 +127,12 @@ void Event(uint const id, char const * const title, char const * const desc,
     res.AddToBody({std::move(         trigger)}  , 0u);
     res.AddToBody(EventHeader(id, picture)       , 0u);
     eventOutput << res;
-    localizationOutput << EventLocalizationReference(tEventPropertyType::kEventName, id) << ';' << title << ";X\n";
-    localizationOutput << EventLocalizationReference(tEventPropertyType::kEventDesc, id) << ';' << desc  << ";X\n";
+    locOutput << EventLocalizationReference(tEventPropertyType::kEventName, id) << ';' << title << LocLineEnd();
+    locOutput << EventLocalizationReference(tEventPropertyType::kEventDesc, id) << ';' << desc  << LocLineEnd();
     for (uint i = 0u; i < optionDescriptions.size(); ++i)
-        (localizationOutput
+        (locOutput
          << EventLocalizationReference(tEventPropertyType::kOptionDescription, id, i + 1u)
-         << ';' << optionDescriptions[i] << ";X\n");
+         << ';' << optionDescriptions[i] << LocLineEnd());
 }
 
 template void Event(uint, char const *, char const *,

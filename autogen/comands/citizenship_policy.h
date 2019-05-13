@@ -7,5 +7,8 @@ enum class tCitizenshipPolicy : uint8_t
     kFull       // полное гражданство
 };
 
-template <tCitizenshipPolicy>
-char const * ToString();
+namespace nsCitizenshipPolicy
+{
+    template <tCitizenshipPolicy>
+    char const * ToString();
+}

@@ -1,13 +1,8 @@
 #include "effects.h"
 
-tEffect<tTarget::kCountry> AddAcceptedCulture(char const * const culture)
+tEffect<tTarget::kCountry> AddPrestige(int const value)
 {
-    return Set("add_accepted_culture", culture);
-}
-
-tEffect<tTarget::kCountry> RemoveAcceptedCulture(char const * const culture)
-{
-    return Set("remove_accepted_culture", culture);
+    return Set("prestige", std::to_string(value));
 }
 
 tEffect<tTarget::kProvince> EffectsForOwner(tEffects<tTarget::kCountry> && effects)

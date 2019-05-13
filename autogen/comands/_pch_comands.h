@@ -3,7 +3,7 @@
 #include <array>
 #include <cstdint>
 #include <forward_list>
-#include <ostream>
+#include <fstream>
 #include <string>
 #include <string_view>
 #include <utility>
@@ -49,3 +49,5 @@ enum tYesOrNo
 };
 
 char const * YesOrNo(tYesOrNo);
+
+char const * LocLineEnd();

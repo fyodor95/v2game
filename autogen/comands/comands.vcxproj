@@ -62,6 +62,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>_pch_comands_private.h</PrecompiledHeaderFile>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -79,6 +80,7 @@
       <ForcedIncludeFiles>_pch_comands_private.h</ForcedIncludeFiles>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>_pch_comands_private.h</PrecompiledHeaderFile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -89,9 +91,13 @@
     <ClInclude Include="citizenship_policy.h" />
     <ClInclude Include="comand.h" />
     <ClInclude Include="conditions.h" />
+    <ClInclude Include="continents.h" />
+    <ClInclude Include="cultures.h" />
+    <ClInclude Include="decisions.h" />
     <ClInclude Include="effects.h" />
     <ClInclude Include="events.h" />
     <ClInclude Include="modifier.h" />
+    <ClInclude Include="tags.h" />
     <ClInclude Include="target.h" />
     <ClInclude Include="target_comand.h" />
     <ClInclude Include="_pch_comands.h" />
@@ -101,8 +107,12 @@
     <ClCompile Include="citizenship_policy.cpp" />
     <ClCompile Include="comand.cpp" />
     <ClCompile Include="conditions.cpp" />
+    <ClCompile Include="continents.cpp" />
+    <ClCompile Include="cultures.cpp" />
+    <ClCompile Include="decisions.cpp" />
     <ClCompile Include="effects.cpp" />
     <ClCompile Include="events.cpp" />
+    <ClCompile Include="tags.cpp" />
     <ClCompile Include="_pch_comands.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>

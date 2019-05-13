@@ -1,19 +1,15 @@
-acceptance_capital_dutch_title;Голландцы — наши братья!;X
-acceptance_capital_dutch_desc;Отныне Голландцы являются полноправными гражданами нашей страны!;X
-acceptance_capital_flemish_title;Фламандцы — наши братья!;X
-acceptance_capital_flemish_desc;Отныне Фламандцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_north_german_title;Северные германцы — наши братья!;X
 acceptance_capital_north_german_desc;Отныне Северные германцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_south_german_title;Южные германцы — наши братья!;X
 acceptance_capital_south_german_desc;Отныне Южные германцы являются полноправными гражданами нашей страны!;X
+acceptance_capital_ashkenazi_title;Евреи — наши братья!;X
+acceptance_capital_ashkenazi_desc;Отныне Евреи являются полноправными гражданами нашей страны!;X
+acceptance_capital_dutch_title;Голландцы — наши братья!;X
+acceptance_capital_dutch_desc;Отныне Голландцы являются полноправными гражданами нашей страны!;X
+acceptance_capital_flemish_title;Фламандцы — наши братья!;X
+acceptance_capital_flemish_desc;Отныне Фламандцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_swiss_title;Швейцарцы — наши братья!;X
 acceptance_capital_swiss_desc;Отныне Швейцарцы являются полноправными гражданами нашей страны!;X
-acceptance_capital_beneluxian_title;Нидерландцы — наши братья!;X
-acceptance_capital_beneluxian_desc;Отныне Нидерландцы являются полноправными гражданами нашей страны!;X
-acceptance_capital_ashkenazi_title;Ашкенази — наши братья!;X
-acceptance_capital_ashkenazi_desc;Отныне Ашкенази являются полноправными гражданами нашей страны!;X
-acceptance_capital_scandinavian_title;Скандинавы — наши братья!;X
-acceptance_capital_scandinavian_desc;Отныне Скандинавы являются полноправными гражданами нашей страны!;X
 acceptance_capital_swedish_title;Шведы — наши братья!;X
 acceptance_capital_swedish_desc;Отныне Шведы являются полноправными гражданами нашей страны!;X
 acceptance_capital_danish_title;Датчане — наши братья!;X
@@ -24,6 +20,8 @@ acceptance_capital_icelandic_title;Исландцы — наши братья!;X
 acceptance_capital_icelandic_desc;Отныне Исландцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_finnish_title;Финны — наши братья!;X
 acceptance_capital_finnish_desc;Отныне Финны являются полноправными гражданами нашей страны!;X
+acceptance_capital_sami_title;Саамская — наши братья!;X
+acceptance_capital_sami_desc;Отныне Саамская являются полноправными гражданами нашей страны!;X
 acceptance_capital_british_title;Англичане — наши братья!;X
 acceptance_capital_british_desc;Отныне Англичане являются полноправными гражданами нашей страны!;X
 acceptance_capital_irish_title;Ирландцы — наши братья!;X
@@ -44,40 +42,38 @@ acceptance_capital_portuguese_title;Португальцы — наши братья!;X
 acceptance_capital_portuguese_desc;Отныне Португальцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_french_title;Французы — наши братья!;X
 acceptance_capital_french_desc;Отныне Французы являются полноправными гражданами нашей страны!;X
-acceptance_capital_wallonian_title;Валлоны — наши братья!;X
-acceptance_capital_wallonian_desc;Отныне Валлоны являются полноправными гражданами нашей страны!;X
 acceptance_capital_croat_title;Хорваты — наши братья!;X
 acceptance_capital_croat_desc;Отныне Хорваты являются полноправными гражданами нашей страны!;X
 acceptance_capital_serb_title;Сербы — наши братья!;X
 acceptance_capital_serb_desc;Отныне Сербы являются полноправными гражданами нашей страны!;X
 acceptance_capital_bulgarian_title;Болгары — наши братья!;X
 acceptance_capital_bulgarian_desc;Отныне Болгары являются полноправными гражданами нашей страны!;X
-acceptance_capital_romanian_title;Румыны — наши братья!;X
-acceptance_capital_romanian_desc;Отныне Румыны являются полноправными гражданами нашей страны!;X
 acceptance_capital_albanian_title;Албанцы — наши братья!;X
 acceptance_capital_albanian_desc;Отныне Албанцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_slovene_title;Словены — наши братья!;X
 acceptance_capital_slovene_desc;Отныне Словены являются полноправными гражданами нашей страны!;X
 acceptance_capital_bosniak_title;Босняки — наши братья!;X
 acceptance_capital_bosniak_desc;Отныне Босняки являются полноправными гражданами нашей страны!;X
-acceptance_capital_czech_title;Чехи — наши братья!;X
-acceptance_capital_czech_desc;Отныне Чехи являются полноправными гражданами нашей страны!;X
-acceptance_capital_polish_title;Поляки — наши братья!;X
-acceptance_capital_polish_desc;Отныне Поляки являются полноправными гражданами нашей страны!;X
+acceptance_capital_romanian_title;Румыны — наши братья!;X
+acceptance_capital_romanian_desc;Отныне Румыны являются полноправными гражданами нашей страны!;X
 acceptance_capital_hungarian_title;Венгры — наши братья!;X
 acceptance_capital_hungarian_desc;Отныне Венгры являются полноправными гражданами нашей страны!;X
+acceptance_capital_polish_title;Поляки — наши братья!;X
+acceptance_capital_polish_desc;Отныне Поляки являются полноправными гражданами нашей страны!;X
+acceptance_capital_lithuanian_title;Литовцы — наши братья!;X
+acceptance_capital_lithuanian_desc;Отныне Литовцы являются полноправными гражданами нашей страны!;X
+acceptance_capital_czech_title;Чехи — наши братья!;X
+acceptance_capital_czech_desc;Отныне Чехи являются полноправными гражданами нашей страны!;X
 acceptance_capital_slovak_title;Словаки — наши братья!;X
 acceptance_capital_slovak_desc;Отныне Словаки являются полноправными гражданами нашей страны!;X
 acceptance_capital_russian_title;Русские — наши братья!;X
 acceptance_capital_russian_desc;Отныне Русские являются полноправными гражданами нашей страны!;X
-acceptance_capital_byelorussian_title;Беларусы — наши братья!;X
-acceptance_capital_byelorussian_desc;Отныне Беларусы являются полноправными гражданами нашей страны!;X
+acceptance_capital_byelorussian_title;Белорусы — наши братья!;X
+acceptance_capital_byelorussian_desc;Отныне Белорусы являются полноправными гражданами нашей страны!;X
 acceptance_capital_ukrainian_title;Украинцы — наши братья!;X
 acceptance_capital_ukrainian_desc;Отныне Украинцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_ugrian_title;Финно-угры — наши братья!;X
 acceptance_capital_ugrian_desc;Отныне Финно-угры являются полноправными гражданами нашей страны!;X
-acceptance_capital_lithuanian_title;Литовцы — наши братья!;X
-acceptance_capital_lithuanian_desc;Отныне Литовцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_latvian_title;Латыши — наши братья!;X
 acceptance_capital_latvian_desc;Отныне Латыши являются полноправными гражданами нашей страны!;X
 acceptance_capital_estonian_title;Эстонцы — наши братья!;X
@@ -90,28 +86,22 @@ acceptance_capital_armenian_title;Армяне — наши братья!;X
 acceptance_capital_armenian_desc;Отныне Армяне являются полноправными гражданами нашей страны!;X
 acceptance_capital_sephardic_title;Сефарды — наши братья!;X
 acceptance_capital_sephardic_desc;Отныне Сефарды являются полноправными гражданами нашей страны!;X
-acceptance_capital_turko_semitic_title;Левиты — наши братья!;X
-acceptance_capital_turko_semitic_desc;Отныне Левиты являются полноправными гражданами нашей страны!;X
-acceptance_capital_maghrebi_title;Магрибцы — наши братья!;X
-acceptance_capital_maghrebi_desc;Отныне Магрибцы являются полноправными гражданами нашей страны!;X
-acceptance_capital_misri_title;Мисри — наши братья!;X
-acceptance_capital_misri_desc;Отныне Мисри являются полноправными гражданами нашей страны!;X
-acceptance_capital_mashriqi_title;Машрики — наши братья!;X
-acceptance_capital_mashriqi_desc;Отныне Машрики являются полноправными гражданами нашей страны!;X
-acceptance_capital_bedouin_title;Бедуины — наши братья!;X
-acceptance_capital_bedouin_desc;Отныне Бедуины являются полноправными гражданами нашей страны!;X
-acceptance_capital_berber_title;Берберы — наши братья!;X
-acceptance_capital_berber_desc;Отныне Берберы являются полноправными гражданами нашей страны!;X
 acceptance_capital_turkish_title;Турки — наши братья!;X
 acceptance_capital_turkish_desc;Отныне Турки являются полноправными гражданами нашей страны!;X
 acceptance_capital_azerbaijani_title;Азербайджанцы — наши братья!;X
 acceptance_capital_azerbaijani_desc;Отныне Азербайджанцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_north_caucasian_title;Кавказцы — наши братья!;X
 acceptance_capital_north_caucasian_desc;Отныне Кавказцы являются полноправными гражданами нашей страны!;X
-acceptance_capital_kurdish_title;Курды — наши братья!;X
-acceptance_capital_kurdish_desc;Отныне Курды являются полноправными гражданами нашей страны!;X
-acceptance_capital_iranian_turanian_title;Туранцы — наши братья!;X
-acceptance_capital_iranian_turanian_desc;Отныне Туранцы являются полноправными гражданами нашей страны!;X
+acceptance_capital_maghrebi_title;Магрибцы — наши братья!;X
+acceptance_capital_maghrebi_desc;Отныне Магрибцы являются полноправными гражданами нашей страны!;X
+acceptance_capital_misri_title;Египтяне — наши братья!;X
+acceptance_capital_misri_desc;Отныне Египтяне являются полноправными гражданами нашей страны!;X
+acceptance_capital_mashriqi_title;Машрики — наши братья!;X
+acceptance_capital_mashriqi_desc;Отныне Машрики являются полноправными гражданами нашей страны!;X
+acceptance_capital_bedouin_title;Бедуины — наши братья!;X
+acceptance_capital_bedouin_desc;Отныне Бедуины являются полноправными гражданами нашей страны!;X
+acceptance_capital_berber_title;Берберы — наши братья!;X
+acceptance_capital_berber_desc;Отныне Берберы являются полноправными гражданами нашей страны!;X
 acceptance_capital_persian_title;Персы — наши братья!;X
 acceptance_capital_persian_desc;Отныне Персы являются полноправными гражданами нашей страны!;X
 acceptance_capital_uzbek_title;Узбеки — наши братья!;X
@@ -132,6 +122,8 @@ acceptance_capital_hazara_title;Газара — наши братья!;X
 acceptance_capital_hazara_desc;Отныне Газара являются полноправными гражданами нашей страны!;X
 acceptance_capital_turkmen_title;Туркмены — наши братья!;X
 acceptance_capital_turkmen_desc;Отныне Туркмены являются полноправными гражданами нашей страны!;X
+acceptance_capital_kurdish_title;Курды — наши братья!;X
+acceptance_capital_kurdish_desc;Отныне Курды являются полноправными гражданами нашей страны!;X
 acceptance_capital_tatar_title;Татары — наши братья!;X
 acceptance_capital_tatar_desc;Отныне Татары являются полноправными гражданами нашей страны!;X
 acceptance_capital_mongol_title;Монголы — наши братья!;X
@@ -242,8 +234,6 @@ acceptance_capital_melanesian_title;Меланезийцы — наши братья!;X
 acceptance_capital_melanesian_desc;Отныне Меланезийцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_micronesian_title;Микронезийцы — наши братья!;X
 acceptance_capital_micronesian_desc;Отныне Микронезийцы являются полноправными гражданами нашей страны!;X
-acceptance_capital_native_american_title;Индейцы — наши братья!;X
-acceptance_capital_native_american_desc;Отныне Индейцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_zapotec_title;Сапотеки — наши братья!;X
 acceptance_capital_zapotec_desc;Отныне Сапотеки являются полноправными гражданами нашей страны!;X
 acceptance_capital_mayan_title;Майя — наши братья!;X
@@ -252,16 +242,6 @@ acceptance_capital_nahua_title;Науа — наши братья!;X
 acceptance_capital_nahua_desc;Отныне Науа являются полноправными гражданами нашей страны!;X
 acceptance_capital_tarascan_title;Тараски — наши братья!;X
 acceptance_capital_tarascan_desc;Отныне Тараски являются полноправными гражданами нашей страны!;X
-acceptance_capital_quechua_title;Кечуа — наши братья!;X
-acceptance_capital_quechua_desc;Отныне Кечуа являются полноправными гражданами нашей страны!;X
-acceptance_capital_guarani_title;Гуарани — наши братья!;X
-acceptance_capital_guarani_desc;Отныне Гуарани являются полноправными гражданами нашей страны!;X
-acceptance_capital_aimara_title;Аймара — наши братья!;X
-acceptance_capital_aimara_desc;Отныне Аймара являются полноправными гражданами нашей страны!;X
-acceptance_capital_amazonian_title;Амазонцы — наши братья!;X
-acceptance_capital_amazonian_desc;Отныне Амазонцы являются полноправными гражданами нашей страны!;X
-acceptance_capital_patagonian_title;Патагонцы — наши братья!;X
-acceptance_capital_patagonian_desc;Отныне Патагонцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_guajiro_title;Гуахиро — наши братья!;X
 acceptance_capital_guajiro_desc;Отныне Гуахиро являются полноправными гражданами нашей страны!;X
 acceptance_capital_tupinamba_title;Тупинамба — наши братья!;X
@@ -280,18 +260,10 @@ acceptance_capital_cree_title;Кри — наши братья!;X
 acceptance_capital_cree_desc;Отныне Кри являются полноправными гражданами нашей страны!;X
 acceptance_capital_navajo_title;Навахо — наши братья!;X
 acceptance_capital_navajo_desc;Отныне Навахо являются полноправными гражданами нашей страны!;X
-acceptance_capital_native_american_minor_title;Индейск. меньшинства — наши братья!;X
-acceptance_capital_native_american_minor_desc;Отныне Индейск. меньшинства являются полноправными гражданами нашей страны!;X
-acceptance_capital_neo_european_cultures_title;Ново-европейцы — наши братья!;X
-acceptance_capital_neo_european_cultures_desc;Отныне Ново-европейцы являются полноправными гражданами нашей страны!;X
+acceptance_capital_native_american_minor_title;Индейские меньшинства — наши братья!;X
+acceptance_capital_native_american_minor_desc;Отныне Индейские меньшинства являются полноправными гражданами нашей страны!;X
 acceptance_capital_yankee_title;Янки — наши братья!;X
 acceptance_capital_yankee_desc;Отныне Янки являются полноправными гражданами нашей страны!;X
-acceptance_capital_anglo_african_title;Англо-африканцы — наши братья!;X
-acceptance_capital_anglo_african_desc;Отныне Англо-африканцы являются полноправными гражданами нашей страны!;X
-acceptance_capital_anglo_canadian_title;Англо-канадцы — наши братья!;X
-acceptance_capital_anglo_canadian_desc;Отныне Англо-канадцы являются полноправными гражданами нашей страны!;X
-acceptance_capital_french_canadian_title;Франко-канадцы — наши братья!;X
-acceptance_capital_french_canadian_desc;Отныне Франко-канадцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_dixie_title;Дикси — наши братья!;X
 acceptance_capital_dixie_desc;Отныне Дикси являются полноправными гражданами нашей страны!;X
 acceptance_capital_texan_title;Техасцы — наши братья!;X
@@ -300,12 +272,14 @@ acceptance_capital_boer_title;Буры — наши братья!;X
 acceptance_capital_boer_desc;Отныне Буры являются полноправными гражданами нашей страны!;X
 acceptance_capital_australian_title;Австралийцы — наши братья!;X
 acceptance_capital_australian_desc;Отныне Австралийцы являются полноправными гражданами нашей страны!;X
-acceptance_capital_latin_american_cultures_title;Латиноамериканцы — наши братья!;X
-acceptance_capital_latin_american_cultures_desc;Отныне Латиноамериканцы являются полноправными гражданами нашей страны!;X
+acceptance_capital_anglo_canadian_title;Англо-канадцы — наши братья!;X
+acceptance_capital_anglo_canadian_desc;Отныне Англо-канадцы являются полноправными гражданами нашей страны!;X
+acceptance_capital_french_canadian_title;Франко-канадцы — наши братья!;X
+acceptance_capital_french_canadian_desc;Отныне Франко-канадцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_mexican_title;Мексиканцы — наши братья!;X
 acceptance_capital_mexican_desc;Отныне Мексиканцы являются полноправными гражданами нашей страны!;X
-acceptance_capital_central_american_title;Центр. американцы — наши братья!;X
-acceptance_capital_central_american_desc;Отныне Центр. американцы являются полноправными гражданами нашей страны!;X
+acceptance_capital_central_american_title;Центральные американцы — наши братья!;X
+acceptance_capital_central_american_desc;Отныне Центральные американцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_caribeno_title;Карибцы — наши братья!;X
 acceptance_capital_caribeno_desc;Отныне Карибцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_north_andean_title;Северные андцы — наши братья!;X
@@ -316,20 +290,26 @@ acceptance_capital_platinean_title;Аргентинцы — наши братья!;X
 acceptance_capital_platinean_desc;Отныне Аргентинцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_brazilian_title;Бразильцы — наши братья!;X
 acceptance_capital_brazilian_desc;Отныне Бразильцы являются полноправными гражданами нашей страны!;X
-acceptance_capital_african_diaspora_cultures_title;Африкан. диаспора — наши братья!;X
-acceptance_capital_african_diaspora_cultures_desc;Отныне Африкан. диаспора являются полноправными гражданами нашей страны!;X
+acceptance_capital_afro_brazilian_title;Афробразильцы — наши братья!;X
+acceptance_capital_afro_brazilian_desc;Отныне Афробразильцы являются полноправными гражданами нашей страны!;X
+acceptance_capital_quechua_title;Кечуа — наши братья!;X
+acceptance_capital_quechua_desc;Отныне Кечуа являются полноправными гражданами нашей страны!;X
+acceptance_capital_guarani_title;Гуарани — наши братья!;X
+acceptance_capital_guarani_desc;Отныне Гуарани являются полноправными гражданами нашей страны!;X
+acceptance_capital_aimara_title;Аймара — наши братья!;X
+acceptance_capital_aimara_desc;Отныне Аймара являются полноправными гражданами нашей страны!;X
+acceptance_capital_amazonian_title;Амазонцы — наши братья!;X
+acceptance_capital_amazonian_desc;Отныне Амазонцы являются полноправными гражданами нашей страны!;X
+acceptance_capital_patagonian_title;Патагонцы — наши братья!;X
+acceptance_capital_patagonian_desc;Отныне Патагонцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_afro_american_title;Афроамериканцы — наши братья!;X
 acceptance_capital_afro_american_desc;Отныне Афроамериканцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_afro_caribbean_title;Афрокарибы — наши братья!;X
 acceptance_capital_afro_caribbean_desc;Отныне Афрокарибы являются полноправными гражданами нашей страны!;X
 acceptance_capital_afro_caribeno_title;Афрокарибеньо — наши братья!;X
 acceptance_capital_afro_caribeno_desc;Отныне Афрокарибеньо являются полноправными гражданами нашей страны!;X
-acceptance_capital_afro_brazilian_title;Афробразильцы — наши братья!;X
-acceptance_capital_afro_brazilian_desc;Отныне Афробразильцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_afro_antillean_title;Афроантильцы — наши братья!;X
 acceptance_capital_afro_antillean_desc;Отныне Афроантильцы являются полноправными гражданами нашей страны!;X
-acceptance_capital_west_african_title;Западные африканцы — наши братья!;X
-acceptance_capital_west_african_desc;Отныне Западные африканцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_akan_title;Акан — наши братья!;X
 acceptance_capital_akan_desc;Отныне Акан являются полноправными гражданами нашей страны!;X
 acceptance_capital_bambara_title;Бамбара — наши братья!;X
@@ -370,8 +350,6 @@ acceptance_capital_wolof_title;Волоф — наши братья!;X
 acceptance_capital_wolof_desc;Отныне Волоф являются полноправными гражданами нашей страны!;X
 acceptance_capital_yoruba_title;Йоруба — наши братья!;X
 acceptance_capital_yoruba_desc;Отныне Йоруба являются полноправными гражданами нашей страны!;X
-acceptance_capital_central_african_title;Центральные африканцы — наши братья!;X
-acceptance_capital_central_african_desc;Отныне Центральные африканцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_bakongo_title;Баконго — наши братья!;X
 acceptance_capital_bakongo_desc;Отныне Баконго являются полноправными гражданами нашей страны!;X
 acceptance_capital_baguirmi_title;Багирми — наши братья!;X
@@ -390,10 +368,8 @@ acceptance_capital_sara_title;Сара — наши братья!;X
 acceptance_capital_sara_desc;Отныне Сара являются полноправными гражданами нашей страны!;X
 acceptance_capital_teda_title;Теда — наши братья!;X
 acceptance_capital_teda_desc;Отныне Теда являются полноправными гражданами нашей страны!;X
-acceptance_capital_african_minor_title;Африкан. меньшинства — наши братья!;X
-acceptance_capital_african_minor_desc;Отныне Африкан. меньшинства являются полноправными гражданами нашей страны!;X
-acceptance_capital_east_african_title;Восточные африканцы — наши братья!;X
-acceptance_capital_east_african_desc;Отныне Восточные африканцы являются полноправными гражданами нашей страны!;X
+acceptance_capital_african_minor_title;Африканские меньшинства — наши братья!;X
+acceptance_capital_african_minor_desc;Отныне Африканские меньшинства являются полноправными гражданами нашей страны!;X
 acceptance_capital_amhara_title;Амхара — наши братья!;X
 acceptance_capital_amhara_desc;Отныне Амхара являются полноправными гражданами нашей страны!;X
 acceptance_capital_afar_title;Афар — наши братья!;X
@@ -438,8 +414,6 @@ acceptance_capital_tigray_title;Тиграй — наши братья!;X
 acceptance_capital_tigray_desc;Отныне Тиграй являются полноправными гражданами нашей страны!;X
 acceptance_capital_unyamwezi_title;Ньямвези — наши братья!;X
 acceptance_capital_unyamwezi_desc;Отныне Ньямвези являются полноправными гражданами нашей страны!;X
-acceptance_capital_southern_african_title;Южные африканцы — наши братья!;X
-acceptance_capital_southern_african_desc;Отныне Южные африканцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_chewa_title;Чева — наши братья!;X
 acceptance_capital_chewa_desc;Отныне Чева являются полноправными гражданами нашей страны!;X
 acceptance_capital_herero_title;Гереро — наши братья!;X
@@ -472,10 +446,10 @@ acceptance_capital_yao_title;Яо — наши братья!;X
 acceptance_capital_yao_desc;Отныне Яо являются полноправными гражданами нашей страны!;X
 acceptance_capital_zulu_title;Зулусы — наши братья!;X
 acceptance_capital_zulu_desc;Отныне Зулусы являются полноправными гражданами нашей страны!;X
-acceptance_capital_bears_title;Медведи — наши братья!;X
-acceptance_capital_bears_desc;Отныне Медведи являются полноправными гражданами нашей страны!;X
 acceptance_capital_polar_bears_title;Белые медведи — наши братья!;X
 acceptance_capital_polar_bears_desc;Отныне Белые медведи являются полноправными гражданами нашей страны!;X
+acceptance_capital_anglo_african_title;Англо-африканцы — наши братья!;X
+acceptance_capital_anglo_african_desc;Отныне Англо-африканцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_buryat_title;Буряты — наши братья!;X
 acceptance_capital_buryat_desc;Отныне Буряты являются полноправными гражданами нашей страны!;X
 acceptance_capital_kalmyk_title;Калмыки — наши братья!;X
@@ -490,3 +464,5 @@ acceptance_capital_scottish_title;Шотландцы — наши братья!;X
 acceptance_capital_scottish_desc;Отныне Шотландцы являются полноправными гражданами нашей страны!;X
 acceptance_capital_new_zelandian_title;Новозеландцы — наши братья!;X
 acceptance_capital_new_zelandian_desc;Отныне Новозеландцы являются полноправными гражданами нашей страны!;X
+acceptance_capital_wallonian_title;Валлоны — наши братья!;X
+acceptance_capital_wallonian_desc;Отныне Валлоны являются полноправными гражданами нашей страны!;X
