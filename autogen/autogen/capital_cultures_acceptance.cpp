@@ -20,9 +20,13 @@ void CapitalCulturesAcceptanceImpl(tDecisionOutput & decisionOutput, std::ofstre
                                    IsPrimary<culture>(),
                                    And<tTarget::kCountry>({HasDefaultPrimaryCulture(), IsDominion()})}))
     };
+    tConditions<tTarget::kCountry> allow
+    {
+        Not(CitizenshipPolicyIs<tCitizenshipPolicy::kResidency>()),
+        ConditionsForCapital({MajorityCultureIs<culture>(), PopulationIsGreaterOrEqual(20000u)})
+    };
     Decision(std::move(name), title.data(), desc.data(), decisionOutput, localizationOutput, std::move(potential),
-             {ConditionsForCapital({MajorityCultureIs<culture>(), PopulationIsGreaterOrEqual(20000u)})},
-             {AddPrestige(1), AddAcceptedCulture<culture>()});
+             std::move(allow), {AddPrestige(1), AddAcceptedCulture<culture>()});
     CapitalCulturesAcceptanceImpl<i + 1u>(decisionOutput, localizationOutput);
 }
 

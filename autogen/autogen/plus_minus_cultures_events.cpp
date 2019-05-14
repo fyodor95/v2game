@@ -122,7 +122,14 @@ tConditions<tTarget::kProvince> tPlusMinusCulture<culture>::xHighMilitancyRemovi
         MajorityCultureIs<culture>(),
         PopulationIsGreaterOrEqual(5000u),
         AverageMilitancy<tTarget::kProvince>(4.f),
-        ConditionsForOwner({ConditionsForCapital({Not(MajorityCultureIs<culture>())})})
+        ConditionsForOwner
+        ({
+            Or<tTarget::kCountry>
+            ({
+                ConditionsForCapital({Not(MajorityCultureIs<culture>())}),
+                CitizenshipPolicyIs<tCitizenshipPolicy::kResidency>()
+            })
+        })
     };
 }
 

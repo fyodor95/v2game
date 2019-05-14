@@ -38,10 +38,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = north_german
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = north_german
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -161,10 +164,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = south_german
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = south_german
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -284,10 +290,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = ashkenazi
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = ashkenazi
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -407,10 +416,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = dutch
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = dutch
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -530,10 +542,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = flemish
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = flemish
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -653,10 +668,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = swiss
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = swiss
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -776,10 +794,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = swedish
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = swedish
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -899,10 +920,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = danish
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = danish
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -1022,10 +1046,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = norwegian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = norwegian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -1145,10 +1172,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = icelandic
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = icelandic
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -1268,10 +1298,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = finnish
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = finnish
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -1391,10 +1424,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = sami
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = sami
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -1514,10 +1550,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = british
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = british
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -1637,10 +1676,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = irish
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = irish
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -1760,10 +1802,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = north_italian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = north_italian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -1883,10 +1928,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = south_italian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = south_italian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -2006,10 +2054,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = maltese
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = maltese
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -2129,10 +2180,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = basque
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = basque
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -2252,10 +2306,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = spanish
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = spanish
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -2375,10 +2432,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = catalan
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = catalan
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -2498,10 +2558,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = portuguese
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = portuguese
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -2621,10 +2684,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = french
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = french
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -2744,10 +2810,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = croat
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = croat
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -2867,10 +2936,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = serb
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = serb
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -2990,10 +3062,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = bulgarian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = bulgarian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -3113,10 +3188,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = albanian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = albanian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -3236,10 +3314,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = slovene
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = slovene
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -3359,10 +3440,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = bosniak
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = bosniak
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -3482,10 +3566,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = romanian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = romanian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -3605,10 +3692,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = hungarian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = hungarian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -3728,10 +3818,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = polish
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = polish
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -3851,10 +3944,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = lithuanian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = lithuanian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -3974,10 +4070,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = czech
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = czech
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -4097,10 +4196,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = slovak
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = slovak
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -4220,10 +4322,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = russian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = russian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -4343,10 +4448,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = byelorussian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = byelorussian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -4466,10 +4574,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = ukrainian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = ukrainian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -4589,10 +4700,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = ugrian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = ugrian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -4712,10 +4826,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = latvian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = latvian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -4835,10 +4952,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = estonian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = estonian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -4958,10 +5078,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = greek
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = greek
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -5081,10 +5204,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = georgian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = georgian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -5204,10 +5330,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = armenian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = armenian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -5327,10 +5456,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = sephardic
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = sephardic
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -5450,10 +5582,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = turkish
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = turkish
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -5573,10 +5708,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = azerbaijani
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = azerbaijani
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -5696,10 +5834,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = north_caucasian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = north_caucasian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -5819,10 +5960,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = maghrebi
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = maghrebi
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -5942,10 +6086,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = misri
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = misri
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -6065,10 +6212,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = mashriqi
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = mashriqi
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -6188,10 +6338,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = bedouin
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = bedouin
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -6311,10 +6464,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = berber
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = berber
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -6434,10 +6590,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = persian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = persian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -6557,10 +6716,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = uzbek
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = uzbek
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -6680,10 +6842,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = kazak
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = kazak
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -6803,10 +6968,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = kirgiz
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = kirgiz
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -6926,10 +7094,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = tajik
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = tajik
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -7049,10 +7220,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = uighur
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = uighur
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -7172,10 +7346,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = pashtun
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = pashtun
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -7295,10 +7472,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = baluchi
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = baluchi
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -7418,10 +7598,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = hazara
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = hazara
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -7541,10 +7724,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = turkmen
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = turkmen
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -7664,10 +7850,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = kurdish
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = kurdish
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -7787,10 +7976,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = tatar
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = tatar
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -7910,10 +8102,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = mongol
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = mongol
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -8033,10 +8228,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = siberian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = siberian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -8156,10 +8354,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = yakut
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = yakut
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -8279,10 +8480,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = tibetan
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = tibetan
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -8402,10 +8606,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = assamese
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = assamese
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -8525,10 +8732,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = bengali
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = bengali
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -8648,10 +8858,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = bihari
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = bihari
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -8771,10 +8984,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = manipuri
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = manipuri
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -8894,10 +9110,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = nepali
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = nepali
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -9017,10 +9236,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = oriya
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = oriya
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -9140,10 +9362,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = sinhala
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = sinhala
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -9263,10 +9488,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = avadhi
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = avadhi
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -9386,10 +9614,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = kanauji
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = kanauji
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -9509,10 +9740,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = panjabi
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = panjabi
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -9632,10 +9866,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = kashmiri
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = kashmiri
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -9755,10 +9992,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = gujarati
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = gujarati
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -9878,10 +10118,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = marathi
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = marathi
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -10001,10 +10244,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = sindi
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = sindi
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -10124,10 +10370,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = rajput
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = rajput
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -10247,10 +10496,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = kannada
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = kannada
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -10370,10 +10622,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = malayalam
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = malayalam
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -10493,10 +10748,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = tamil
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = tamil
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -10616,10 +10874,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = telegu
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = telegu
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -10739,10 +11000,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = vietnamese
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = vietnamese
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -10862,10 +11126,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = khmer
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = khmer
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -10985,10 +11252,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = malay
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = malay
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -11108,10 +11378,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = filipino
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = filipino
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -11231,10 +11504,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = javan
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = javan
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -11354,10 +11630,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = moluccan
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = moluccan
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -11477,10 +11756,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = thai
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = thai
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -11600,10 +11882,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = lao
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = lao
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -11723,10 +12008,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = shan
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = shan
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -11846,10 +12134,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = burmese
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = burmese
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -11969,10 +12260,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = asian_minor
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = asian_minor
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -12092,10 +12386,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = kachin
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = kachin
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -12215,10 +12512,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = karen
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = karen
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -12338,10 +12638,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = japanese
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = japanese
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -12461,10 +12764,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = manchu
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = manchu
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -12584,10 +12890,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = beifaren
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = beifaren
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -12707,10 +13016,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = nanfaren
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = nanfaren
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -12830,10 +13142,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = korean
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = korean
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -12953,10 +13268,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = ainu
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = ainu
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -13076,10 +13394,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = hakka
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = hakka
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -13199,10 +13520,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = miao
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = miao
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -13322,10 +13646,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = min
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = min
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -13445,10 +13772,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = zhuang
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = zhuang
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -13568,10 +13898,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = yi
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = yi
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -13691,10 +14024,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = yue
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = yue
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -13814,10 +14150,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = polynesian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = polynesian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -13937,10 +14276,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = hawaiian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = hawaiian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -14060,10 +14402,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = maori
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = maori
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -14183,10 +14528,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = aborigine
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = aborigine
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -14306,10 +14654,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = melanesian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = melanesian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -14429,10 +14780,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = micronesian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = micronesian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -14552,10 +14906,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = zapotec
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = zapotec
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -14675,10 +15032,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = mayan
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = mayan
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -14798,10 +15158,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = nahua
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = nahua
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -14921,10 +15284,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = tarascan
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = tarascan
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -15044,10 +15410,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = guajiro
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = guajiro
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -15167,10 +15536,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = tupinamba
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = tupinamba
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -15290,10 +15662,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = metis
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = metis
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -15413,10 +15788,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = dakota
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = dakota
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -15536,10 +15914,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = cherokee
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = cherokee
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -15659,10 +16040,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = pueblo
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = pueblo
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -15782,10 +16166,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = inuit
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = inuit
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -15905,10 +16292,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = cree
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = cree
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -16028,10 +16418,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = navajo
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = navajo
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -16151,10 +16544,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = native_american_minor
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = native_american_minor
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -16274,10 +16670,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = yankee
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = yankee
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -16397,10 +16796,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = dixie
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = dixie
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -16520,10 +16922,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = texan
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = texan
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -16643,10 +17048,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = boer
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = boer
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -16766,10 +17174,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = australian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = australian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -16889,10 +17300,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = anglo_canadian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = anglo_canadian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -17012,10 +17426,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = french_canadian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = french_canadian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -17135,10 +17552,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = mexican
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = mexican
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -17258,10 +17678,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = central_american
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = central_american
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -17381,10 +17804,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = caribeno
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = caribeno
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -17504,10 +17930,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = north_andean
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = north_andean
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -17627,10 +18056,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = south_andean
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = south_andean
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -17750,10 +18182,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = platinean
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = platinean
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -17873,10 +18308,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = brazilian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = brazilian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -17996,10 +18434,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = afro_brazilian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = afro_brazilian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -18119,10 +18560,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = quechua
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = quechua
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -18242,10 +18686,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = guarani
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = guarani
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -18365,10 +18812,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = aimara
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = aimara
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -18488,10 +18938,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = amazonian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = amazonian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -18611,10 +19064,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = patagonian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = patagonian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -18734,10 +19190,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = afro_american
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = afro_american
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -18857,10 +19316,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = afro_caribbean
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = afro_caribbean
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -18980,10 +19442,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = afro_caribeno
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = afro_caribeno
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -19103,10 +19568,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = afro_antillean
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = afro_antillean
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -19226,10 +19694,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = akan
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = akan
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -19349,10 +19820,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = bambara
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = bambara
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -19472,10 +19946,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = dyula
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = dyula
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -19595,10 +20072,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = edo
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = edo
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -19718,10 +20198,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = ewe
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = ewe
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -19841,10 +20324,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = fon
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = fon
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -19964,10 +20450,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = fulbe
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = fulbe
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -20087,10 +20576,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = hausa
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = hausa
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -20210,10 +20702,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = ibibio
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = ibibio
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -20333,10 +20828,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = ibo
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = ibo
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -20456,10 +20954,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = kru
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = kru
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -20579,10 +21080,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = mande
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = mande
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -20702,10 +21206,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = maures
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = maures
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -20825,10 +21332,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = mossi
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = mossi
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -20948,10 +21458,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = senufo
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = senufo
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -21071,10 +21584,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = songhai
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = songhai
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -21194,10 +21710,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = tiv
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = tiv
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -21317,10 +21836,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = tuareg
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = tuareg
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -21440,10 +21962,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = wolof
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = wolof
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -21563,10 +22088,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = yoruba
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = yoruba
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -21686,10 +22214,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = bakongo
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = bakongo
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -21809,10 +22340,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = baguirmi
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = baguirmi
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -21932,10 +22466,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = fang
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = fang
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -22055,10 +22592,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = kanuri
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = kanuri
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -22178,10 +22718,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = luba
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = luba
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -22301,10 +22844,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = lunda
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = lunda
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -22424,10 +22970,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = mongo
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = mongo
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -22547,10 +23096,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = sara
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = sara
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -22670,10 +23222,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = teda
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = teda
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -22793,10 +23348,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = african_minor
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = african_minor
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -22916,10 +23474,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = amhara
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = amhara
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -23039,10 +23600,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = afar
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = afar
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -23162,10 +23726,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = azande
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = azande
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -23285,10 +23852,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = baganda
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = baganda
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -23408,10 +23978,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = beja
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = beja
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -23531,10 +24104,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = dinka
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = dinka
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -23654,10 +24230,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = fur
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = fur
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -23777,10 +24356,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = kikuyu
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = kikuyu
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -23900,10 +24482,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = luo
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = luo
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -24023,10 +24608,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = maasai
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = maasai
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -24146,10 +24734,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = nuer
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = nuer
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -24269,10 +24860,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = nuba
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = nuba
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -24392,10 +24986,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = oromo
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = oromo
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -24515,10 +25112,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = ruanda
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = ruanda
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -24638,10 +25238,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = rundi
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = rundi
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -24761,10 +25364,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = sidama
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = sidama
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -24884,10 +25490,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = somali
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = somali
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -25007,10 +25616,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = sudanese
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = sudanese
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -25130,10 +25742,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = sukuma
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = sukuma
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -25253,10 +25868,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = swahili
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = swahili
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -25376,10 +25994,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = tigray
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = tigray
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -25499,10 +26120,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = unyamwezi
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = unyamwezi
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -25622,10 +26246,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = chewa
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = chewa
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -25745,10 +26372,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = herero
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = herero
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -25868,10 +26498,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = khoisan
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = khoisan
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -25991,10 +26624,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = lomwe
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = lomwe
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -26114,10 +26750,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = makua
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = makua
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -26237,10 +26876,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = malagasy
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = malagasy
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -26360,10 +27002,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = nguni
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = nguni
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -26483,10 +27128,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = ovimbundu
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = ovimbundu
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -26606,10 +27254,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = sena
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = sena
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -26729,10 +27380,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = shona
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = shona
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -26852,10 +27506,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = sotho
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = sotho
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -26975,10 +27632,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = tonga
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = tonga
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -27098,10 +27758,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = tswana
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = tswana
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -27221,10 +27884,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = xhosa
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = xhosa
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -27344,10 +28010,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = yao
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = yao
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -27467,10 +28136,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = zulu
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = zulu
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -27590,10 +28262,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = polar_bears
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = polar_bears
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -27713,10 +28388,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = anglo_african
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = anglo_african
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -27836,10 +28514,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = buryat
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = buryat
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -27959,10 +28640,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = kalmyk
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = kalmyk
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -28082,10 +28766,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = crimean_tatar
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = crimean_tatar
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -28205,10 +28892,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = tuvan
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = tuvan
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -28328,10 +29018,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = cubans
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = cubans
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -28451,10 +29144,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = scottish
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = scottish
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -28574,10 +29270,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = new_zelandian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = new_zelandian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}
@@ -28697,10 +29396,13 @@ province_event = {
 		total_pops = 5000
 		average_militancy = 4
 		owner = {
-			capital_scope = {
-				NOT = {
-					culture = wallonian
+			OR = {
+				capital_scope = {
+					NOT = {
+						culture = wallonian
+					}
 				}
+				citizenship_policy = residency
 			}
 		}
 	}

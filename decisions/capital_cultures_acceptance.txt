@@ -74,6 +74,9 @@ acceptance_capital_north_german = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = north_german
 			total_pops = 20000
@@ -159,6 +162,9 @@ acceptance_capital_south_german = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = south_german
 			total_pops = 20000
@@ -244,6 +250,9 @@ acceptance_capital_ashkenazi = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = ashkenazi
 			total_pops = 20000
@@ -329,6 +338,9 @@ acceptance_capital_dutch = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = dutch
 			total_pops = 20000
@@ -414,6 +426,9 @@ acceptance_capital_flemish = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = flemish
 			total_pops = 20000
@@ -499,6 +514,9 @@ acceptance_capital_swiss = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = swiss
 			total_pops = 20000
@@ -584,6 +602,9 @@ acceptance_capital_swedish = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = swedish
 			total_pops = 20000
@@ -669,6 +690,9 @@ acceptance_capital_danish = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = danish
 			total_pops = 20000
@@ -754,6 +778,9 @@ acceptance_capital_norwegian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = norwegian
 			total_pops = 20000
@@ -839,6 +866,9 @@ acceptance_capital_icelandic = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = icelandic
 			total_pops = 20000
@@ -924,6 +954,9 @@ acceptance_capital_finnish = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = finnish
 			total_pops = 20000
@@ -1009,6 +1042,9 @@ acceptance_capital_sami = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = sami
 			total_pops = 20000
@@ -1094,6 +1130,9 @@ acceptance_capital_british = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = british
 			total_pops = 20000
@@ -1179,6 +1218,9 @@ acceptance_capital_irish = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = irish
 			total_pops = 20000
@@ -1264,6 +1306,9 @@ acceptance_capital_north_italian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = north_italian
 			total_pops = 20000
@@ -1349,6 +1394,9 @@ acceptance_capital_south_italian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = south_italian
 			total_pops = 20000
@@ -1434,6 +1482,9 @@ acceptance_capital_maltese = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = maltese
 			total_pops = 20000
@@ -1519,6 +1570,9 @@ acceptance_capital_basque = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = basque
 			total_pops = 20000
@@ -1604,6 +1658,9 @@ acceptance_capital_spanish = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = spanish
 			total_pops = 20000
@@ -1689,6 +1746,9 @@ acceptance_capital_catalan = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = catalan
 			total_pops = 20000
@@ -1774,6 +1834,9 @@ acceptance_capital_portuguese = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = portuguese
 			total_pops = 20000
@@ -1859,6 +1922,9 @@ acceptance_capital_french = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = french
 			total_pops = 20000
@@ -1944,6 +2010,9 @@ acceptance_capital_croat = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = croat
 			total_pops = 20000
@@ -2029,6 +2098,9 @@ acceptance_capital_serb = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = serb
 			total_pops = 20000
@@ -2114,6 +2186,9 @@ acceptance_capital_bulgarian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = bulgarian
 			total_pops = 20000
@@ -2199,6 +2274,9 @@ acceptance_capital_albanian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = albanian
 			total_pops = 20000
@@ -2284,6 +2362,9 @@ acceptance_capital_slovene = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = slovene
 			total_pops = 20000
@@ -2369,6 +2450,9 @@ acceptance_capital_bosniak = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = bosniak
 			total_pops = 20000
@@ -2454,6 +2538,9 @@ acceptance_capital_romanian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = romanian
 			total_pops = 20000
@@ -2539,6 +2626,9 @@ acceptance_capital_hungarian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = hungarian
 			total_pops = 20000
@@ -2624,6 +2714,9 @@ acceptance_capital_polish = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = polish
 			total_pops = 20000
@@ -2709,6 +2802,9 @@ acceptance_capital_lithuanian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = lithuanian
 			total_pops = 20000
@@ -2794,6 +2890,9 @@ acceptance_capital_czech = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = czech
 			total_pops = 20000
@@ -2879,6 +2978,9 @@ acceptance_capital_slovak = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = slovak
 			total_pops = 20000
@@ -2964,6 +3066,9 @@ acceptance_capital_russian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = russian
 			total_pops = 20000
@@ -3049,6 +3154,9 @@ acceptance_capital_byelorussian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = byelorussian
 			total_pops = 20000
@@ -3134,6 +3242,9 @@ acceptance_capital_ukrainian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = ukrainian
 			total_pops = 20000
@@ -3219,6 +3330,9 @@ acceptance_capital_ugrian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = ugrian
 			total_pops = 20000
@@ -3304,6 +3418,9 @@ acceptance_capital_latvian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = latvian
 			total_pops = 20000
@@ -3389,6 +3506,9 @@ acceptance_capital_estonian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = estonian
 			total_pops = 20000
@@ -3474,6 +3594,9 @@ acceptance_capital_greek = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = greek
 			total_pops = 20000
@@ -3559,6 +3682,9 @@ acceptance_capital_georgian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = georgian
 			total_pops = 20000
@@ -3644,6 +3770,9 @@ acceptance_capital_armenian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = armenian
 			total_pops = 20000
@@ -3729,6 +3858,9 @@ acceptance_capital_sephardic = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = sephardic
 			total_pops = 20000
@@ -3814,6 +3946,9 @@ acceptance_capital_turkish = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = turkish
 			total_pops = 20000
@@ -3899,6 +4034,9 @@ acceptance_capital_azerbaijani = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = azerbaijani
 			total_pops = 20000
@@ -3984,6 +4122,9 @@ acceptance_capital_north_caucasian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = north_caucasian
 			total_pops = 20000
@@ -4069,6 +4210,9 @@ acceptance_capital_maghrebi = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = maghrebi
 			total_pops = 20000
@@ -4154,6 +4298,9 @@ acceptance_capital_misri = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = misri
 			total_pops = 20000
@@ -4239,6 +4386,9 @@ acceptance_capital_mashriqi = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = mashriqi
 			total_pops = 20000
@@ -4324,6 +4474,9 @@ acceptance_capital_bedouin = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = bedouin
 			total_pops = 20000
@@ -4409,6 +4562,9 @@ acceptance_capital_berber = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = berber
 			total_pops = 20000
@@ -4494,6 +4650,9 @@ acceptance_capital_persian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = persian
 			total_pops = 20000
@@ -4579,6 +4738,9 @@ acceptance_capital_uzbek = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = uzbek
 			total_pops = 20000
@@ -4664,6 +4826,9 @@ acceptance_capital_kazak = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = kazak
 			total_pops = 20000
@@ -4749,6 +4914,9 @@ acceptance_capital_kirgiz = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = kirgiz
 			total_pops = 20000
@@ -4834,6 +5002,9 @@ acceptance_capital_tajik = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = tajik
 			total_pops = 20000
@@ -4919,6 +5090,9 @@ acceptance_capital_uighur = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = uighur
 			total_pops = 20000
@@ -5004,6 +5178,9 @@ acceptance_capital_pashtun = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = pashtun
 			total_pops = 20000
@@ -5089,6 +5266,9 @@ acceptance_capital_baluchi = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = baluchi
 			total_pops = 20000
@@ -5174,6 +5354,9 @@ acceptance_capital_hazara = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = hazara
 			total_pops = 20000
@@ -5259,6 +5442,9 @@ acceptance_capital_turkmen = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = turkmen
 			total_pops = 20000
@@ -5344,6 +5530,9 @@ acceptance_capital_kurdish = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = kurdish
 			total_pops = 20000
@@ -5429,6 +5618,9 @@ acceptance_capital_tatar = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = tatar
 			total_pops = 20000
@@ -5514,6 +5706,9 @@ acceptance_capital_mongol = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = mongol
 			total_pops = 20000
@@ -5599,6 +5794,9 @@ acceptance_capital_siberian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = siberian
 			total_pops = 20000
@@ -5684,6 +5882,9 @@ acceptance_capital_yakut = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = yakut
 			total_pops = 20000
@@ -5769,6 +5970,9 @@ acceptance_capital_tibetan = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = tibetan
 			total_pops = 20000
@@ -5854,6 +6058,9 @@ acceptance_capital_assamese = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = assamese
 			total_pops = 20000
@@ -5939,6 +6146,9 @@ acceptance_capital_bengali = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = bengali
 			total_pops = 20000
@@ -6024,6 +6234,9 @@ acceptance_capital_bihari = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = bihari
 			total_pops = 20000
@@ -6109,6 +6322,9 @@ acceptance_capital_manipuri = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = manipuri
 			total_pops = 20000
@@ -6194,6 +6410,9 @@ acceptance_capital_nepali = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = nepali
 			total_pops = 20000
@@ -6279,6 +6498,9 @@ acceptance_capital_oriya = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = oriya
 			total_pops = 20000
@@ -6364,6 +6586,9 @@ acceptance_capital_sinhala = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = sinhala
 			total_pops = 20000
@@ -6449,6 +6674,9 @@ acceptance_capital_avadhi = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = avadhi
 			total_pops = 20000
@@ -6534,6 +6762,9 @@ acceptance_capital_kanauji = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = kanauji
 			total_pops = 20000
@@ -6619,6 +6850,9 @@ acceptance_capital_panjabi = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = panjabi
 			total_pops = 20000
@@ -6704,6 +6938,9 @@ acceptance_capital_kashmiri = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = kashmiri
 			total_pops = 20000
@@ -6789,6 +7026,9 @@ acceptance_capital_gujarati = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = gujarati
 			total_pops = 20000
@@ -6874,6 +7114,9 @@ acceptance_capital_marathi = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = marathi
 			total_pops = 20000
@@ -6959,6 +7202,9 @@ acceptance_capital_sindi = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = sindi
 			total_pops = 20000
@@ -7044,6 +7290,9 @@ acceptance_capital_rajput = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = rajput
 			total_pops = 20000
@@ -7129,6 +7378,9 @@ acceptance_capital_kannada = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = kannada
 			total_pops = 20000
@@ -7214,6 +7466,9 @@ acceptance_capital_malayalam = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = malayalam
 			total_pops = 20000
@@ -7299,6 +7554,9 @@ acceptance_capital_tamil = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = tamil
 			total_pops = 20000
@@ -7384,6 +7642,9 @@ acceptance_capital_telegu = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = telegu
 			total_pops = 20000
@@ -7469,6 +7730,9 @@ acceptance_capital_vietnamese = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = vietnamese
 			total_pops = 20000
@@ -7554,6 +7818,9 @@ acceptance_capital_khmer = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = khmer
 			total_pops = 20000
@@ -7639,6 +7906,9 @@ acceptance_capital_malay = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = malay
 			total_pops = 20000
@@ -7724,6 +7994,9 @@ acceptance_capital_filipino = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = filipino
 			total_pops = 20000
@@ -7809,6 +8082,9 @@ acceptance_capital_javan = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = javan
 			total_pops = 20000
@@ -7894,6 +8170,9 @@ acceptance_capital_moluccan = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = moluccan
 			total_pops = 20000
@@ -7979,6 +8258,9 @@ acceptance_capital_thai = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = thai
 			total_pops = 20000
@@ -8064,6 +8346,9 @@ acceptance_capital_lao = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = lao
 			total_pops = 20000
@@ -8149,6 +8434,9 @@ acceptance_capital_shan = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = shan
 			total_pops = 20000
@@ -8234,6 +8522,9 @@ acceptance_capital_burmese = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = burmese
 			total_pops = 20000
@@ -8319,6 +8610,9 @@ acceptance_capital_asian_minor = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = asian_minor
 			total_pops = 20000
@@ -8404,6 +8698,9 @@ acceptance_capital_kachin = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = kachin
 			total_pops = 20000
@@ -8489,6 +8786,9 @@ acceptance_capital_karen = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = karen
 			total_pops = 20000
@@ -8574,6 +8874,9 @@ acceptance_capital_japanese = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = japanese
 			total_pops = 20000
@@ -8659,6 +8962,9 @@ acceptance_capital_manchu = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = manchu
 			total_pops = 20000
@@ -8744,6 +9050,9 @@ acceptance_capital_beifaren = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = beifaren
 			total_pops = 20000
@@ -8829,6 +9138,9 @@ acceptance_capital_nanfaren = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = nanfaren
 			total_pops = 20000
@@ -8914,6 +9226,9 @@ acceptance_capital_korean = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = korean
 			total_pops = 20000
@@ -8999,6 +9314,9 @@ acceptance_capital_ainu = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = ainu
 			total_pops = 20000
@@ -9084,6 +9402,9 @@ acceptance_capital_hakka = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = hakka
 			total_pops = 20000
@@ -9169,6 +9490,9 @@ acceptance_capital_miao = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = miao
 			total_pops = 20000
@@ -9254,6 +9578,9 @@ acceptance_capital_min = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = min
 			total_pops = 20000
@@ -9339,6 +9666,9 @@ acceptance_capital_zhuang = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = zhuang
 			total_pops = 20000
@@ -9424,6 +9754,9 @@ acceptance_capital_yi = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = yi
 			total_pops = 20000
@@ -9509,6 +9842,9 @@ acceptance_capital_yue = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = yue
 			total_pops = 20000
@@ -9594,6 +9930,9 @@ acceptance_capital_polynesian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = polynesian
 			total_pops = 20000
@@ -9679,6 +10018,9 @@ acceptance_capital_hawaiian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = hawaiian
 			total_pops = 20000
@@ -9764,6 +10106,9 @@ acceptance_capital_maori = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = maori
 			total_pops = 20000
@@ -9849,6 +10194,9 @@ acceptance_capital_aborigine = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = aborigine
 			total_pops = 20000
@@ -9934,6 +10282,9 @@ acceptance_capital_melanesian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = melanesian
 			total_pops = 20000
@@ -10019,6 +10370,9 @@ acceptance_capital_micronesian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = micronesian
 			total_pops = 20000
@@ -10104,6 +10458,9 @@ acceptance_capital_zapotec = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = zapotec
 			total_pops = 20000
@@ -10189,6 +10546,9 @@ acceptance_capital_mayan = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = mayan
 			total_pops = 20000
@@ -10274,6 +10634,9 @@ acceptance_capital_nahua = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = nahua
 			total_pops = 20000
@@ -10359,6 +10722,9 @@ acceptance_capital_tarascan = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = tarascan
 			total_pops = 20000
@@ -10444,6 +10810,9 @@ acceptance_capital_guajiro = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = guajiro
 			total_pops = 20000
@@ -10529,6 +10898,9 @@ acceptance_capital_tupinamba = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = tupinamba
 			total_pops = 20000
@@ -10614,6 +10986,9 @@ acceptance_capital_metis = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = metis
 			total_pops = 20000
@@ -10699,6 +11074,9 @@ acceptance_capital_dakota = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = dakota
 			total_pops = 20000
@@ -10784,6 +11162,9 @@ acceptance_capital_cherokee = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = cherokee
 			total_pops = 20000
@@ -10869,6 +11250,9 @@ acceptance_capital_pueblo = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = pueblo
 			total_pops = 20000
@@ -10954,6 +11338,9 @@ acceptance_capital_inuit = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = inuit
 			total_pops = 20000
@@ -11039,6 +11426,9 @@ acceptance_capital_cree = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = cree
 			total_pops = 20000
@@ -11124,6 +11514,9 @@ acceptance_capital_navajo = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = navajo
 			total_pops = 20000
@@ -11209,6 +11602,9 @@ acceptance_capital_native_american_minor = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = native_american_minor
 			total_pops = 20000
@@ -11294,6 +11690,9 @@ acceptance_capital_yankee = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = yankee
 			total_pops = 20000
@@ -11379,6 +11778,9 @@ acceptance_capital_dixie = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = dixie
 			total_pops = 20000
@@ -11464,6 +11866,9 @@ acceptance_capital_texan = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = texan
 			total_pops = 20000
@@ -11549,6 +11954,9 @@ acceptance_capital_boer = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = boer
 			total_pops = 20000
@@ -11634,6 +12042,9 @@ acceptance_capital_australian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = australian
 			total_pops = 20000
@@ -11719,6 +12130,9 @@ acceptance_capital_anglo_canadian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = anglo_canadian
 			total_pops = 20000
@@ -11804,6 +12218,9 @@ acceptance_capital_french_canadian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = french_canadian
 			total_pops = 20000
@@ -11889,6 +12306,9 @@ acceptance_capital_mexican = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = mexican
 			total_pops = 20000
@@ -11974,6 +12394,9 @@ acceptance_capital_central_american = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = central_american
 			total_pops = 20000
@@ -12059,6 +12482,9 @@ acceptance_capital_caribeno = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = caribeno
 			total_pops = 20000
@@ -12144,6 +12570,9 @@ acceptance_capital_north_andean = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = north_andean
 			total_pops = 20000
@@ -12229,6 +12658,9 @@ acceptance_capital_south_andean = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = south_andean
 			total_pops = 20000
@@ -12314,6 +12746,9 @@ acceptance_capital_platinean = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = platinean
 			total_pops = 20000
@@ -12399,6 +12834,9 @@ acceptance_capital_brazilian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = brazilian
 			total_pops = 20000
@@ -12484,6 +12922,9 @@ acceptance_capital_afro_brazilian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = afro_brazilian
 			total_pops = 20000
@@ -12569,6 +13010,9 @@ acceptance_capital_quechua = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = quechua
 			total_pops = 20000
@@ -12654,6 +13098,9 @@ acceptance_capital_guarani = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = guarani
 			total_pops = 20000
@@ -12739,6 +13186,9 @@ acceptance_capital_aimara = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = aimara
 			total_pops = 20000
@@ -12824,6 +13274,9 @@ acceptance_capital_amazonian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = amazonian
 			total_pops = 20000
@@ -12909,6 +13362,9 @@ acceptance_capital_patagonian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = patagonian
 			total_pops = 20000
@@ -12994,6 +13450,9 @@ acceptance_capital_afro_american = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = afro_american
 			total_pops = 20000
@@ -13079,6 +13538,9 @@ acceptance_capital_afro_caribbean = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = afro_caribbean
 			total_pops = 20000
@@ -13164,6 +13626,9 @@ acceptance_capital_afro_caribeno = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = afro_caribeno
 			total_pops = 20000
@@ -13249,6 +13714,9 @@ acceptance_capital_afro_antillean = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = afro_antillean
 			total_pops = 20000
@@ -13334,6 +13802,9 @@ acceptance_capital_akan = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = akan
 			total_pops = 20000
@@ -13419,6 +13890,9 @@ acceptance_capital_bambara = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = bambara
 			total_pops = 20000
@@ -13504,6 +13978,9 @@ acceptance_capital_dyula = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = dyula
 			total_pops = 20000
@@ -13589,6 +14066,9 @@ acceptance_capital_edo = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = edo
 			total_pops = 20000
@@ -13674,6 +14154,9 @@ acceptance_capital_ewe = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = ewe
 			total_pops = 20000
@@ -13759,6 +14242,9 @@ acceptance_capital_fon = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = fon
 			total_pops = 20000
@@ -13844,6 +14330,9 @@ acceptance_capital_fulbe = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = fulbe
 			total_pops = 20000
@@ -13929,6 +14418,9 @@ acceptance_capital_hausa = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = hausa
 			total_pops = 20000
@@ -14014,6 +14506,9 @@ acceptance_capital_ibibio = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = ibibio
 			total_pops = 20000
@@ -14099,6 +14594,9 @@ acceptance_capital_ibo = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = ibo
 			total_pops = 20000
@@ -14184,6 +14682,9 @@ acceptance_capital_kru = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = kru
 			total_pops = 20000
@@ -14269,6 +14770,9 @@ acceptance_capital_mande = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = mande
 			total_pops = 20000
@@ -14354,6 +14858,9 @@ acceptance_capital_maures = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = maures
 			total_pops = 20000
@@ -14439,6 +14946,9 @@ acceptance_capital_mossi = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = mossi
 			total_pops = 20000
@@ -14524,6 +15034,9 @@ acceptance_capital_senufo = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = senufo
 			total_pops = 20000
@@ -14609,6 +15122,9 @@ acceptance_capital_songhai = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = songhai
 			total_pops = 20000
@@ -14694,6 +15210,9 @@ acceptance_capital_tiv = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = tiv
 			total_pops = 20000
@@ -14779,6 +15298,9 @@ acceptance_capital_tuareg = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = tuareg
 			total_pops = 20000
@@ -14864,6 +15386,9 @@ acceptance_capital_wolof = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = wolof
 			total_pops = 20000
@@ -14949,6 +15474,9 @@ acceptance_capital_yoruba = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = yoruba
 			total_pops = 20000
@@ -15034,6 +15562,9 @@ acceptance_capital_bakongo = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = bakongo
 			total_pops = 20000
@@ -15119,6 +15650,9 @@ acceptance_capital_baguirmi = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = baguirmi
 			total_pops = 20000
@@ -15204,6 +15738,9 @@ acceptance_capital_fang = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = fang
 			total_pops = 20000
@@ -15289,6 +15826,9 @@ acceptance_capital_kanuri = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = kanuri
 			total_pops = 20000
@@ -15374,6 +15914,9 @@ acceptance_capital_luba = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = luba
 			total_pops = 20000
@@ -15459,6 +16002,9 @@ acceptance_capital_lunda = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = lunda
 			total_pops = 20000
@@ -15544,6 +16090,9 @@ acceptance_capital_mongo = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = mongo
 			total_pops = 20000
@@ -15629,6 +16178,9 @@ acceptance_capital_sara = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = sara
 			total_pops = 20000
@@ -15714,6 +16266,9 @@ acceptance_capital_teda = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = teda
 			total_pops = 20000
@@ -15799,6 +16354,9 @@ acceptance_capital_african_minor = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = african_minor
 			total_pops = 20000
@@ -15884,6 +16442,9 @@ acceptance_capital_amhara = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = amhara
 			total_pops = 20000
@@ -15969,6 +16530,9 @@ acceptance_capital_afar = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = afar
 			total_pops = 20000
@@ -16054,6 +16618,9 @@ acceptance_capital_azande = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = azande
 			total_pops = 20000
@@ -16139,6 +16706,9 @@ acceptance_capital_baganda = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = baganda
 			total_pops = 20000
@@ -16224,6 +16794,9 @@ acceptance_capital_beja = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = beja
 			total_pops = 20000
@@ -16309,6 +16882,9 @@ acceptance_capital_dinka = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = dinka
 			total_pops = 20000
@@ -16394,6 +16970,9 @@ acceptance_capital_fur = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = fur
 			total_pops = 20000
@@ -16479,6 +17058,9 @@ acceptance_capital_kikuyu = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = kikuyu
 			total_pops = 20000
@@ -16564,6 +17146,9 @@ acceptance_capital_luo = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = luo
 			total_pops = 20000
@@ -16649,6 +17234,9 @@ acceptance_capital_maasai = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = maasai
 			total_pops = 20000
@@ -16734,6 +17322,9 @@ acceptance_capital_nuer = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = nuer
 			total_pops = 20000
@@ -16819,6 +17410,9 @@ acceptance_capital_nuba = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = nuba
 			total_pops = 20000
@@ -16904,6 +17498,9 @@ acceptance_capital_oromo = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = oromo
 			total_pops = 20000
@@ -16989,6 +17586,9 @@ acceptance_capital_ruanda = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = ruanda
 			total_pops = 20000
@@ -17074,6 +17674,9 @@ acceptance_capital_rundi = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = rundi
 			total_pops = 20000
@@ -17159,6 +17762,9 @@ acceptance_capital_sidama = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = sidama
 			total_pops = 20000
@@ -17244,6 +17850,9 @@ acceptance_capital_somali = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = somali
 			total_pops = 20000
@@ -17329,6 +17938,9 @@ acceptance_capital_sudanese = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = sudanese
 			total_pops = 20000
@@ -17414,6 +18026,9 @@ acceptance_capital_sukuma = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = sukuma
 			total_pops = 20000
@@ -17499,6 +18114,9 @@ acceptance_capital_swahili = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = swahili
 			total_pops = 20000
@@ -17584,6 +18202,9 @@ acceptance_capital_tigray = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = tigray
 			total_pops = 20000
@@ -17669,6 +18290,9 @@ acceptance_capital_unyamwezi = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = unyamwezi
 			total_pops = 20000
@@ -17754,6 +18378,9 @@ acceptance_capital_chewa = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = chewa
 			total_pops = 20000
@@ -17839,6 +18466,9 @@ acceptance_capital_herero = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = herero
 			total_pops = 20000
@@ -17924,6 +18554,9 @@ acceptance_capital_khoisan = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = khoisan
 			total_pops = 20000
@@ -18009,6 +18642,9 @@ acceptance_capital_lomwe = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = lomwe
 			total_pops = 20000
@@ -18094,6 +18730,9 @@ acceptance_capital_makua = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = makua
 			total_pops = 20000
@@ -18179,6 +18818,9 @@ acceptance_capital_malagasy = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = malagasy
 			total_pops = 20000
@@ -18264,6 +18906,9 @@ acceptance_capital_nguni = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = nguni
 			total_pops = 20000
@@ -18349,6 +18994,9 @@ acceptance_capital_ovimbundu = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = ovimbundu
 			total_pops = 20000
@@ -18434,6 +19082,9 @@ acceptance_capital_sena = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = sena
 			total_pops = 20000
@@ -18519,6 +19170,9 @@ acceptance_capital_shona = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = shona
 			total_pops = 20000
@@ -18604,6 +19258,9 @@ acceptance_capital_sotho = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = sotho
 			total_pops = 20000
@@ -18689,6 +19346,9 @@ acceptance_capital_tonga = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = tonga
 			total_pops = 20000
@@ -18774,6 +19434,9 @@ acceptance_capital_tswana = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = tswana
 			total_pops = 20000
@@ -18859,6 +19522,9 @@ acceptance_capital_xhosa = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = xhosa
 			total_pops = 20000
@@ -18944,6 +19610,9 @@ acceptance_capital_yao = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = yao
 			total_pops = 20000
@@ -19029,6 +19698,9 @@ acceptance_capital_zulu = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = zulu
 			total_pops = 20000
@@ -19114,6 +19786,9 @@ acceptance_capital_polar_bears = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = polar_bears
 			total_pops = 20000
@@ -19199,6 +19874,9 @@ acceptance_capital_anglo_african = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = anglo_african
 			total_pops = 20000
@@ -19284,6 +19962,9 @@ acceptance_capital_buryat = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = buryat
 			total_pops = 20000
@@ -19369,6 +20050,9 @@ acceptance_capital_kalmyk = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = kalmyk
 			total_pops = 20000
@@ -19454,6 +20138,9 @@ acceptance_capital_crimean_tatar = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = crimean_tatar
 			total_pops = 20000
@@ -19539,6 +20226,9 @@ acceptance_capital_tuvan = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = tuvan
 			total_pops = 20000
@@ -19624,6 +20314,9 @@ acceptance_capital_cubans = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = cubans
 			total_pops = 20000
@@ -19709,6 +20402,9 @@ acceptance_capital_scottish = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = scottish
 			total_pops = 20000
@@ -19794,6 +20490,9 @@ acceptance_capital_new_zelandian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = new_zelandian
 			total_pops = 20000
@@ -19879,6 +20578,9 @@ acceptance_capital_wallonian = {
 		}
 	}
 	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
 		capital_scope = {
 			culture = wallonian
 			total_pops = 20000
