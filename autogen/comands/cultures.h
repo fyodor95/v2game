@@ -249,7 +249,10 @@ namespace nsCulture
 
 }
 
-constexpr std::array<tCulture, 234u> Cultures
+//  ультура, €вл€юща€с€ основной по умолчанию у доминионов (стран с тэгами DXX (01 <= XX <= 50)).
+constexpr tCulture kDefaultCulture = tCulture::british;
+
+constexpr std::array<tCulture, 234u> kCultures
 {
       tCulture::north_german
     , tCulture::south_german

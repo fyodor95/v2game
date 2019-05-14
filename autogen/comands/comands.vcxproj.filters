@@ -15,6 +15,8 @@
     <ClInclude Include="continents.h" />
     <ClInclude Include="tags.h" />
     <ClInclude Include="cultures.h" />
+    <ClInclude Include="reforms.h" />
+    <ClInclude Include="governments.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="_pch_comands.cpp" />
@@ -27,5 +29,7 @@
     <ClCompile Include="continents.cpp" />
     <ClCompile Include="tags.cpp" />
     <ClCompile Include="cultures.cpp" />
+    <ClCompile Include="reforms.cpp" />
+    <ClCompile Include="governments.cpp" />
   </ItemGroup>
 </Project>

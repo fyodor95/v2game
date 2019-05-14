@@ -1,0 +1,109 @@
+country_event = {
+	id = 403
+	title = "EVTNAME403"
+	desc = "EVTDESC403"
+	picture = "Administration"
+	trigger = {
+		government = proletarian_dictatorship
+		work_hours = eight_hours
+		unemployment_subsidies = good_subsidies
+		pensions = good_pensions
+		school_reforms = good_schools
+		NOT = {
+			OR = {
+				wage_reform = no_minimum_wage
+				wage_reform = trinket_wage
+			}
+		}
+		NOT = {
+			OR = {
+				safety_regulations = no_safety
+				safety_regulations = trinket_safety
+			}
+		}
+		NOT = {
+			OR = {
+				health_care = no_health_care
+				health_care = trinket_health_care
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 90
+		modifier = {
+			factor = 2
+			NOT = {
+				OR = {
+					wage_reform = acceptable_minimum_wage
+					wage_reform = good_minimum_wage
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				OR = {
+					safety_regulations = acceptable_safety
+					safety_regulations = good_safety
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				OR = {
+					health_care = acceptable_health_care
+					health_care = good_health_care
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				wage_reform = good_minimum_wage
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				safety_regulations = good_safety
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				health_care = good_health_care
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA403"
+		political_reform = universal_voting
+		random_list = {
+			1 = {
+				political_reform = state_equal_weight
+			}
+			1 = {
+				political_reform = population_equal_weight
+			}
+		}
+		random_list = {
+			1 = {
+				political_reform = harassment
+			}
+			1 = {
+				political_reform = gerrymandering
+			}
+			1 = {
+				political_reform = non_secret_ballots
+			}
+			1 = {
+				political_reform = secret_ballots
+			}
+		}
+		government = democracy
+	}
+	option = {
+		name = "EVTOPTB403"
+	}
+}

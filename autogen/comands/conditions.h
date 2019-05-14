@@ -3,6 +3,8 @@
 #include "citizenship_policy.h"
 #include "continents.h"
 #include "cultures.h"
+#include "governments.h"
+#include "reforms.h"
 #include "tags.h"
 #include "target_comand.h"
 
@@ -26,6 +28,12 @@ tCondition<target> Not(tCondition<target> && condition)
     return tCondition<target>("NOT", {static_cast<tComand &&>(condition)});
 }
 
+template <tTarget target>
+tCondition<target> NotOr(tCondition<target> && conditions)
+{
+    return Not<target>(Or<target>(std::move(conditions)));
+}
+
 // Возвращает true, если средняя агрессивность населения в данной провинции или стране не меньше, чем num.
 template <tTarget target>
 tCondition<target> AverageMilitancy(float num);
@@ -45,6 +53,13 @@ tCondition<tTarget::kCountry> CitizenshipPolicyIs()
 // Проверяет условия coditions для столицы данной страны. Возвращает true, если выполнено каждое из условий.
 tCondition<tTarget::kCountry> ConditionsForCapital(tConditions<tTarget::kProvince> && conditions);
 
+// Возвращает true, если данная страна имеют форму правления government.
+template <tGovernment government>
+tCondition<tTarget::kCountry> GovernmentIs()
+{
+    return Set("government", nsGovernment::ToString<government>());
+}
+
 // Условие для доминионов (стран с тэгами DXX (01 <= XX <= 50)). По умолчанию их культурой является tCulture::british.
 // Возвращает true, если основная культура государства совпадает с культурой по умолчанию.
 tCondition<tTarget::kCountry> HasDefaultPrimaryCulture();
@@ -55,6 +70,21 @@ tCondition<tTarget::kCountry> IsDominion();
 // Возвращает true, если культура culture является основной в данной стране.
 template <tCulture culture>
 tCondition<tTarget::kCountry> IsPrimary() { return Set("primary_culture", nsCulture::ToString<culture>()); }
+
+// Возвращает true, если уровень реформы tReformType в данной стране равен level.
+template <class tReformType, tReformType level>
+tCondition<tTarget::kCountry> ReformLevelIs()
+{
+    return Set(std::string(nsReforms::ToString<tReformType>()), nsReforms::ToString<tReformType, level>());
+}
+
+// Возвращает true, если уровень реформы tReformType в данной стране меньше, чем level.
+template <class tReformType, tReformType level>
+tCondition<tTarget::kCountry> ReformLevelIsLessThan();
+
+// Возвращает true, если уровень реформы tReformType в данной стране больше или равен level.
+template <class tReformType, tReformType level>
+tCondition<tTarget::kCountry> ReformLevelIsGreaterOrEaqualThan();
 
 template <tTag tag>
 tCondition<tTarget::kCountry> TagIs() { return Set("tag", nsTag::ToString<tag>()); }
@@ -67,7 +97,7 @@ tCondition<tTarget::kProvince> ExistsPopWithMilitancy(float num);
 
 // Возвращает true, если данная провинция находится на континенте continent.
 template <tContinent continent>
-tCondition<tTarget::kProvince> IsInContinent() { return Set("continent", ToString<continent>()); }
+tCondition<tTarget::kProvince> IsInContinent() { return Set("continent", nsContinent::ToString<continent>()); }
 
 // Возвращает true, если данная провинция находится в Америке или Океании.
 tCondition<tTarget::kProvince> IsInNewWorld();
@@ -89,8 +119,49 @@ tCondition<tTarget::kProvince> PopulationIsGreaterOrEqual(uint num);
 
 // Возвращает true, если культура попа является признанной культурой страны, в которой он проживает.
 // Если flag == _No, то возвращаемое значение инвертируется.
-tCondition<tTarget::kPop> IsAcceptedPop(tYesOrNo flag = _Yes);
+tCondition<tTarget::kPop> HasAcceptedCulture(tYesOrNo flag = _Yes);
 
 // Возвращает true, если культура попа совпадает с основной культурой страны, в которой он проживает.
 // Если flag == _No, то возвращаемое значение инвертируется.
-tCondition<tTarget::kPop> IsPrimaryPop(tYesOrNo flag = _Yes);
+tCondition<tTarget::kPop> HasPrimaryCulture(tYesOrNo flag = _Yes);
+
+template <class tReformType, uint8_t from, uint8_t to>
+void AddConditions(tConditions<tTarget::kCountry> & where)
+{
+    if constexpr (from == to)
+        return;
+    else
+    {
+        static_assert(from != to);
+        where.push_back(ReformLevelIs<tReformType, static_cast<tReformType>(from)>());
+        AddConditions<tReformType, from + 1u, to>(where);
+    }
+}
+
+template <class tReformType, tReformType level>
+tCondition<tTarget::kCountry> ReformLevelIsLessThan()
+{
+    static_assert(static_cast<uint8_t>(level));
+    if constexpr (static_cast<uint8_t>(level) > static_cast<uint8_t>(tReformType::END) - static_cast<uint8_t>(level))
+        return Not(ReformLevelIsGreaterOrEaqualThan<tReformType, level>());
+    else
+    {
+        tConditions<tTarget::kCountry> conditions;
+        AddConditions<tReformType, 0u, static_cast<uint8_t>(level)>(conditions);
+        return Or<tTarget::kCountry>(std::move(conditions));
+    }
+}
+
+template <class tReformType, tReformType level>
+tCondition<tTarget::kCountry> ReformLevelIsGreaterOrEaqualThan()
+{
+    static_assert(static_cast<uint8_t>(level) < static_cast<uint8_t>(tReformType::END) - 1u);
+    if constexpr (static_cast<uint8_t>(level) <= static_cast<uint8_t>(tReformType::END) - static_cast<uint8_t>(level))
+        return Not(ReformLevelIsLessThan<tReformType, level>());
+    else
+    {
+        tConditions<tTarget::kCountry> conditions;
+        AddConditions<tReformType, static_cast<uint8_t>(level), static_cast<uint8_t>(tReformType::END)>(conditions);
+        return Or<tTarget::kCountry>(std::move(conditions));
+    }
+}

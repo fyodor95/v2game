@@ -298,7 +298,7 @@ namespace nsTag
     char const * ToString();
 }
 
-constexpr std::array<tTag, 50u> Dominions
+constexpr std::array<tTag, 50u> kDominions
 {
       tTag::D01
     , tTag::D02

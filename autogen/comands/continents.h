@@ -10,5 +10,8 @@ enum class tContinent : uint8_t
     kOceania
 };
 
-template <tContinent>
-char const * ToString();
+namespace nsContinent
+{
+    template <tContinent>
+    char const * ToString();
+}

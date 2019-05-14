@@ -99,6 +99,7 @@
     <ClCompile Include="capital_cultures_acceptance.cpp" />
     <ClCompile Include="new_primary_culture_for_dxx.cpp" />
     <ClCompile Include="plus_minus_cultures_events.cpp" />
+    <ClCompile Include="simple_events.cpp" />
     <ClCompile Include="_main.cpp" />
     <ClCompile Include="_pch_autogen.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -109,6 +110,7 @@
     <ClInclude Include="capital_cultures_acceptance.h" />
     <ClInclude Include="new_primary_culture_for_dxx.h" />
     <ClInclude Include="plus_minus_cultures_events.h" />
+    <ClInclude Include="simple_events.h" />
     <ClInclude Include="_pch_autogen.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

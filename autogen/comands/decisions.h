@@ -3,16 +3,16 @@
 #include "conditions.h"
 #include "effects.h"
 
-class tDesicionOutput : public std::ofstream
+class tDecisionOutput : public std::ofstream
 {
 public:
-    tDesicionOutput(char const * file);
+    tDecisionOutput(char const * file);
 
-    ~tDesicionOutput();
+    ~tDecisionOutput();
 };
 
-void Desicion(std::string && name, char const * title, char const * desc,
-              tDesicionOutput & desicionOutput, std::ostream & localizationOutput,
+void Decision(std::string && name, char const * title, char const * desc,
+              tDecisionOutput & decisionOutput, std::ostream & localizationOutput,
               tConditions<tTarget::kCountry> && potential,
               tConditions<tTarget::kCountry> && allow,
               tEffects   <tTarget::kCountry> &&);

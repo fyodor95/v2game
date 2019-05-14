@@ -96,7 +96,9 @@
     <ClInclude Include="decisions.h" />
     <ClInclude Include="effects.h" />
     <ClInclude Include="events.h" />
+    <ClInclude Include="governments.h" />
     <ClInclude Include="modifier.h" />
+    <ClInclude Include="reforms.h" />
     <ClInclude Include="tags.h" />
     <ClInclude Include="target.h" />
     <ClInclude Include="target_comand.h" />
@@ -112,6 +114,8 @@
     <ClCompile Include="decisions.cpp" />
     <ClCompile Include="effects.cpp" />
     <ClCompile Include="events.cpp" />
+    <ClCompile Include="governments.cpp" />
+    <ClCompile Include="reforms.cpp" />
     <ClCompile Include="tags.cpp" />
     <ClCompile Include="_pch_comands.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

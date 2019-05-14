@@ -1,18 +1,18 @@
 #include "decisions.h"
 
-tDesicionOutput::tDesicionOutput(char const * const file)
+tDecisionOutput::tDecisionOutput(char const * const file)
     : std::ofstream(file)
 {
     *this << "political_decisions = {\n";
 }
 
-tDesicionOutput::~tDesicionOutput()
+tDecisionOutput::~tDecisionOutput()
 {
     *this << "}\n";
 }
 
-void Desicion(std::string && name, char const * const title, char const * const desc,
-              tDesicionOutput & desicionOutput, std::ostream & localizationOutput,
+void Decision(std::string && name, char const * const title, char const * const desc,
+              tDecisionOutput & decisionOutput, std::ostream & localizationOutput,
               tConditions<tTarget::kCountry> && potential,
               tConditions<tTarget::kCountry> && allow,
               tEffects   <tTarget::kCountry> && effects)
@@ -26,5 +26,5 @@ void Desicion(std::string && name, char const * const title, char const * const 
     };
     localizationOutput << name << "_title;" << title << LocLineEnd();
     localizationOutput << name << "_desc;"  << desc  << LocLineEnd();
-    desicionOutput << tComand(std::move(name), std::move(body));
+    decisionOutput << tComand(std::move(name), std::move(body));
 }

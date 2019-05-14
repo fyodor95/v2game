@@ -225,12 +225,12 @@ void tPlusMinusCulture<culture>::xLowMilitancyAdding()
 template <size_t i = 0u>
 void ProcessCulture(uint & id, std::ofstream & eventOutput, std::ofstream & localizationOutput)
 {
-    tPlusMinusCulture<Cultures[i]>(id, eventOutput, localizationOutput);
-    ProcessCulture<i + 1u>        (id, eventOutput, localizationOutput);
+    tPlusMinusCulture<kCultures[i]>(id, eventOutput, localizationOutput);
+    ProcessCulture<i + 1u>         (id, eventOutput, localizationOutput);
 }
 
 template <>
-void ProcessCulture<Cultures.size()>(uint &, std::ofstream &, std::ofstream &)
+void ProcessCulture<kCultures.size()>(uint &, std::ofstream &, std::ofstream &)
 {
 }
 

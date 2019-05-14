@@ -6,11 +6,13 @@
     <ClCompile Include="capital_cultures_acceptance.cpp" />
     <ClCompile Include="new_primary_culture_for_dxx.cpp" />
     <ClCompile Include="_main.cpp" />
+    <ClCompile Include="simple_events.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="_pch_autogen.h" />
     <ClInclude Include="plus_minus_cultures_events.h" />
     <ClInclude Include="capital_cultures_acceptance.h" />
     <ClInclude Include="new_primary_culture_for_dxx.h" />
+    <ClInclude Include="simple_events.h" />
   </ItemGroup>
 </Project>

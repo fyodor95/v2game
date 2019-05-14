@@ -1,5 +1,17 @@
 #include "effects.h"
 
+template <tTarget target>
+tEffect<target> RandomEffectFrom(tEffects<target> && effects)
+{
+    static_assert(target != tTarget::kPop);
+    for (tEffect<target> & effect : effects)
+        effect = tEffect<target>("1", {std::move(effect)});
+    return {"random_list", std::move(CastToComands(effects))};
+}
+
+template tEffect<tTarget::kCountry > RandomEffectFrom(tEffects<tTarget::kCountry > &&);
+template tEffect<tTarget::kProvince> RandomEffectFrom(tEffects<tTarget::kProvince> &&);
+
 tEffect<tTarget::kCountry> AddPrestige(int const value)
 {
     return Set("prestige", std::to_string(value));

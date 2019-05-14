@@ -16,6 +16,8 @@ tTrigger<target> Trigger(tConditions<target> && conditions)
 
 COMAND(tMeanTimeToHappen);
 
+// Не рекомендуется делать параметр months больше 6000 с учётом всех факторов, потому что иначе с определённого
+// значения событие начинает происходить очень часто (по-видимому, где-то происходит переполнение).
 template <tTarget target>
 tMeanTimeToHappen<target> MeanTimeToHappen(float const months, tModifiers<target> && modifiers)
 {
