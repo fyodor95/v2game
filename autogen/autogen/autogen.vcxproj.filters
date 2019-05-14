@@ -7,6 +7,7 @@
     <ClCompile Include="new_primary_culture_for_dxx.cpp" />
     <ClCompile Include="_main.cpp" />
     <ClCompile Include="simple_events.cpp" />
+    <ClCompile Include="events_id_checker.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="_pch_autogen.h" />
@@ -14,5 +15,6 @@
     <ClInclude Include="capital_cultures_acceptance.h" />
     <ClInclude Include="new_primary_culture_for_dxx.h" />
     <ClInclude Include="simple_events.h" />
+    <ClInclude Include="events_id_checker.h" />
   </ItemGroup>
 </Project>

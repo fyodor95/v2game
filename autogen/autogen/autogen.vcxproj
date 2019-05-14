@@ -97,6 +97,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="capital_cultures_acceptance.cpp" />
+    <ClCompile Include="events_id_checker.cpp" />
     <ClCompile Include="new_primary_culture_for_dxx.cpp" />
     <ClCompile Include="plus_minus_cultures_events.cpp" />
     <ClCompile Include="simple_events.cpp" />
@@ -108,6 +109,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="capital_cultures_acceptance.h" />
+    <ClInclude Include="events_id_checker.h" />
     <ClInclude Include="new_primary_culture_for_dxx.h" />
     <ClInclude Include="plus_minus_cultures_events.h" />
     <ClInclude Include="simple_events.h" />
