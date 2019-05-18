@@ -2,6 +2,7 @@
 
 #include "conditions.h"
 #include "cultures.h"
+#include "flags.h"
 #include "governments.h"
 #include "reforms.h"
 #include "target_comand.h"
@@ -37,7 +38,7 @@ tEffect<tTarget::kCountry> ChangeReformLevel()
 // Все попы в данной стране, удовлетворяющие условию limit, получают эффекты effects.
 tEffect<tTarget::kCountry> EffectsForAllPops(tCondition<tTarget::kPop> && limit, tEffects<tTarget::kPop> && effects);
 
-// Делает культуру culture лосновной для данной державы. Может использоваться для несуществующих государств.
+// Делает культуру culture основной для данной державы. Может использоваться для несуществующих государств.
 template <tCulture culture>
 tEffect<tTarget::kCountry> MakePrimary()
 {
@@ -49,6 +50,18 @@ template <tCulture culture>
 tEffect<tTarget::kCountry> RemoveAcceptedCulture()
 {
     return Set("remove_accepted_culture", nsCulture::ToString<culture>());
+}
+
+template <tCountryFlag flag>
+tEffect<tTarget::kCountry> RemoveFlag()
+{
+    return Set("clr_country_flag", nsCountryFlag::ToString<flag>());
+}
+
+template <tCountryFlag flag>
+tEffect<tTarget::kCountry> SetFlag()
+{
+    return Set("set_country_flag", nsCountryFlag::ToString<flag>());
 }
 
 // Владелец данной провинции получает эффекты effects.

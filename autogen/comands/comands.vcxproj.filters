@@ -17,6 +17,9 @@
     <ClInclude Include="cultures.h" />
     <ClInclude Include="reforms.h" />
     <ClInclude Include="governments.h" />
+    <ClInclude Include="flags.h" />
+    <ClInclude Include="event_pictures.h" />
+    <ClInclude Include="pop_types.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="_pch_comands.cpp" />
@@ -31,5 +34,8 @@
     <ClCompile Include="cultures.cpp" />
     <ClCompile Include="reforms.cpp" />
     <ClCompile Include="governments.cpp" />
+    <ClCompile Include="flags.cpp" />
+    <ClCompile Include="event_pictures.cpp" />
+    <ClCompile Include="pop_types.cpp" />
   </ItemGroup>
 </Project>

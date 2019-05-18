@@ -252,6 +252,8 @@ namespace nsCulture
 //  ультура, €вл€юща€с€ основной по умолчанию у доминионов (стран с тэгами DXX (01 <= XX <= 50)).
 constexpr tCulture kDefaultCulture = tCulture::british;
 
+#define LOOP_BY_CULTURES(FUNC_NAME) CONSTEXPR_LOOP(FUNC_NAME, tCulture, kCultures, culture)
+
 constexpr std::array<tCulture, 234u> kCultures
 {
       tCulture::north_german

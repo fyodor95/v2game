@@ -8,6 +8,7 @@
     <ClCompile Include="_main.cpp" />
     <ClCompile Include="simple_events.cpp" />
     <ClCompile Include="events_id_checker.cpp" />
+    <ClCompile Include="events_to_change_primary_culturies.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="_pch_autogen.h" />
@@ -16,5 +17,6 @@
     <ClInclude Include="new_primary_culture_for_dxx.h" />
     <ClInclude Include="simple_events.h" />
     <ClInclude Include="events_id_checker.h" />
+    <ClInclude Include="events_to_change_primary_culturies.h" />
   </ItemGroup>
 </Project>

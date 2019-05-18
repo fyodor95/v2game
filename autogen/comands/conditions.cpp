@@ -25,6 +25,11 @@ tCondition<tTarget::kCountry> HasDefaultPrimaryCulture()
     return IsPrimary<kDefaultCulture>();
 }
 
+tCondition<tTarget::kCountry> HasProvince(tConditions<tTarget::kProvince> && conditions)
+{
+    return {"any_owned_province", std::move(CastToComands(conditions))};
+}
+
 template <size_t i = 0u>
 void AddTag(tConditions<tTarget::kCountry> & conditions)
 {
@@ -53,6 +58,11 @@ tCondition<tTarget::kProvince> ConditionsForOwner(tConditions<tTarget::kCountry>
 tCondition<tTarget::kProvince> ExistsPopWithMilitancy(float const num)
 {
     return Set("pop_militancy", ToString(num));
+}
+
+tCondition<tTarget::kProvince> HasPop(tCondition<tTarget::kPop> && condition)
+{
+    return {"any_pop", {std::move(condition)}};
 }
 
 tCondition<tTarget::kProvince> IsInNewWorld()

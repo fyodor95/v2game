@@ -3,7 +3,9 @@
 #include "citizenship_policy.h"
 #include "continents.h"
 #include "cultures.h"
+#include "flags.h"
 #include "governments.h"
+#include "pop_types.h"
 #include "reforms.h"
 #include "tags.h"
 #include "target_comand.h"
@@ -13,6 +15,7 @@ COMAND(tCondition);
 template <tTarget target>
 tCondition<target> And(tConditions<target> && conditions)
 {
+    static_assert(target != tTarget::kPop, "результат этой операции может быть очень неожиданным");
     return tCondition<target>("AND", std::move(CastToComands(conditions)));
 }
 
@@ -64,6 +67,15 @@ tCondition<tTarget::kCountry> GovernmentIs()
 // ¬озвращает true, если основна€ культура государства совпадает с культурой по умолчанию.
 tCondition<tTarget::kCountry> HasDefaultPrimaryCulture();
 
+template <tCountryFlag flag>
+tCondition<tTarget::kCountry> HasFlag()
+{
+    return Set("has_country_flag", nsCountryFlag::ToString<flag>());
+}
+
+// ¬озвращает true, если в данной стране существует провинци€, удовлетвор€юща€ набору условий conditions.
+tCondition<tTarget::kCountry> HasProvince(tConditions<tTarget::kProvince> && conditions);
+
 // ¬озвращает true, если тэгом €вл€етс€ DXX (01 <= XX <= 50).
 tCondition<tTarget::kCountry> IsDominion();
 
@@ -95,6 +107,9 @@ tCondition<tTarget::kProvince> ConditionsForOwner(tConditions<tTarget::kCountry>
 // ¬озвращает true, если в данной провинции существует поп с агрессивностью не менее, чем num.
 tCondition<tTarget::kProvince> ExistsPopWithMilitancy(float num);
 
+// ¬озвращает true, если в данной провинции проживает поп, удовлетвор€ющий условию condition.
+tCondition<tTarget::kProvince> HasPop(tCondition<tTarget::kPop> && condition);
+
 // ¬озвращает true, если данна€ провинци€ находитс€ на континенте continent.
 template <tContinent continent>
 tCondition<tTarget::kProvince> IsInContinent() { return Set("continent", nsContinent::ToString<continent>()); }
@@ -116,6 +131,20 @@ tCondition<tTarget::kProvince> MajorityCultureIsPrimary(tYesOrNo flag = _Yes);
 
 // ¬озвращает true, если в количество населени€ в данной провинции не меньше, чем num.
 tCondition<tTarget::kProvince> PopulationIsGreaterOrEqual(uint num);
+
+// ¬озвращает true, если культурой попа €вл€етс€ culture.
+template <tCulture culture>
+tCondition<tTarget::kPop> HasCulture()
+{
+    return Set("has_pop_culture", nsCulture::ToString<culture>());
+}
+
+// ¬озвращает true, если поп имеет тип type.
+template <tPopType type>
+tCondition<tTarget::kPop> HasType()
+{
+    return Set("type", nsPopType::ToString<type>());
+}
 
 // ¬озвращает true, если культура попа €вл€етс€ признанной культурой страны, в которой он проживает.
 // ≈сли flag == _No, то возвращаемое значение инвертируетс€.
