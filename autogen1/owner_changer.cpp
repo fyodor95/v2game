@@ -43,15 +43,22 @@ int main() {
             const std::string input_path = path + dirs[i] + "\\" + file,
                               output_path = new_path + dirs[i] + "\\" + file;
             std::string str;
-            std::ifstream input(input_path);
-            std::ofstream output(output_path);
-            while (std::getline(input, str)) {
-                if (str.substr(0, 5) == "owner") {
-                    output << "owner = " << pos->second << '\n';
-                } else {
-                    output << str << '\n';
+            std::string res;
+            {
+                std::ifstream input(input_path);
+                while (std::getline(input, str)) {
+                    if (str.substr(0, 5) == "owner") {
+                        res += "owner = ";
+                        res += pos->second;
+                        res += '\n';
+                    } else {
+                        res += str;
+                        res += '\n';
+                    }
                 }
             }
+            std::ofstream output(output_path);
+            output << res;
         }
     }
 }
