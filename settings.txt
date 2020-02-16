@@ -6,7 +6,7 @@ graphics=
 {
 size=
 {
-	x=1366
+	x=1024
 	y=768
 }
 
@@ -38,7 +38,7 @@ sea_text_alpha=120
 details=1.000
 }
 lastplayer="Игрок"
-lasthost="192.168.123.35"
+lasthost="192.168.123.36"
 serveradress="diplomacy.valkyrienet.com"
 debug_saves=1
 autosave="MONTHLY"
