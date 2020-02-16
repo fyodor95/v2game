@@ -1,0 +1,456 @@
+UKR = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+POL = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+CRI = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+ROM = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+LIT = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+LAT = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+EST = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+EST = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+FIN = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+AZB = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+ARM = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+GEO = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D01 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D02 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D03 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D04 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D05 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+BYE = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D06 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D07 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D08 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D09 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D10 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D11 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D12 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D13 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D14 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D15 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D16 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D17 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D18 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D19 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D20 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D21 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D22 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D23 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D24 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+D25 = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+substate = {
+	first = RUS
+	second = UKR
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = POL
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = CRI
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = ROM
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = LIT
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = LAT
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = EST
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = EST
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = FIN
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = AZB
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = ARM
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = GEO
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D01
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D02
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D03
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D04
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D05
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = BYE
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D06
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D07
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D08
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D09
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D10
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D11
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D12
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D13
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D14
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D15
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D16
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D17
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D18
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D19
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D20
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D21
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D22
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D23
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D24
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}
+substate = {
+	first = RUS
+	second = D25
+	start_date = 1809.9.5
+	end_date = 1917.12.6
+}

@@ -1,5 +1,5 @@
-owner = RUS
-controller = RUS
+owner = D24
+controller = D24
+add_core = D24
 trade_goods = fish
 life_rating = 10
-colonial = 2

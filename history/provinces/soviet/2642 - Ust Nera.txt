@@ -1,5 +1,6 @@
-owner = RUS
-controller = RUS
+owner = D19
+controller = D19
+add_core = D19
 add_core = RUS
 trade_goods = cattle
 life_rating = 35

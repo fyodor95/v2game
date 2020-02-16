@@ -1,10 +1,10 @@
-owner = RUS
+owner = LAT
 
-controller = RUS
+controller = LAT
+add_core = LAT
 
 add_core = RUS
 
-add_core = LAT
 
 add_core = UBD
 
