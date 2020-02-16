@@ -51,6 +51,13 @@ int main() {
                         res += "owner = ";
                         res += pos->second;
                         res += '\n';
+                    } else if (str.substr(0, 10) == "controller") {
+                        res += "controller = ";
+                        res += pos->second;
+                        res += '\n';
+                        res += "add_core = ";
+                        res += pos->second;
+                        res += '\n';
                     } else {
                         res += str;
                         res += '\n';
