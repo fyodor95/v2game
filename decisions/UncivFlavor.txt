@@ -57,7 +57,7 @@ political_decisions = {
 			civilized = no
 			year = 1860
 			NOT = {
-				has_country_flag = manchu_elite_cleared_out
+				has_country_flag = manchu_elite_cleared_out_new
 			}
 		}
 		allow = {
@@ -72,7 +72,9 @@ political_decisions = {
 				militancy = 2
 				consciousness = 1
 			}
-			set_country_flag = manchu_elite_cleared_out
+			set_country_flag = manchu_elite_cleared_out_new
+			primary_culture = beifaren
+			add_accepted_culture = manchu
 		}
 	}
 	
