@@ -96,6 +96,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="adding_cores.cpp" />
     <ClCompile Include="capital_cultures_acceptance.cpp" />
     <ClCompile Include="events_id_checker.cpp" />
     <ClCompile Include="events_to_change_primary_culturies.cpp" />
@@ -109,7 +110,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="adding_cores.h" />
     <ClInclude Include="capital_cultures_acceptance.h" />
+    <ClInclude Include="culture_country_hardcode.h" />
     <ClInclude Include="events_id_checker.h" />
     <ClInclude Include="events_to_change_primary_culturies.h" />
     <ClInclude Include="new_primary_culture_for_dxx.h" />

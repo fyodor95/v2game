@@ -67,5 +67,12 @@ tEffect<tTarget::kCountry> SetFlag()
 // Владелец данной провинции получает эффекты effects.
 tEffect<tTarget::kProvince> EffectsForOwner(tEffects<tTarget::kCountry> && effects);
 
+// Делает данную провинцию национальной для державы tag.
+template <tTag tag>
+tEffect<tTarget::kProvince> MakeNationalFor()
+{
+    return Set("add_core", nsTag::ToString<tag>());
+}
+
 // Добавляет данному попу value агрессивности.
 tEffect<tTarget::kPop> AddMilitancy(int value);

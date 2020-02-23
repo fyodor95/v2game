@@ -9,6 +9,7 @@
     <ClCompile Include="simple_events.cpp" />
     <ClCompile Include="events_id_checker.cpp" />
     <ClCompile Include="events_to_change_primary_culturies.cpp" />
+    <ClCompile Include="adding_cores.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="_pch_autogen.h" />
@@ -18,5 +19,7 @@
     <ClInclude Include="simple_events.h" />
     <ClInclude Include="events_id_checker.h" />
     <ClInclude Include="events_to_change_primary_culturies.h" />
+    <ClInclude Include="adding_cores.h" />
+    <ClInclude Include="culture_country_hardcode.h" />
   </ItemGroup>
 </Project>

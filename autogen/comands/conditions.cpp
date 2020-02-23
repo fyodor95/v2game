@@ -20,6 +20,11 @@ tCondition<tTarget::kCountry> ConditionsForCapital(tConditions<tTarget::kProvinc
     return tCondition<tTarget::kCountry>("capital_scope", std::move(CastToComands(conditions)));
 }
 
+tCondition<tTarget::kCountry> Exists(tYesOrNo const flag)
+{
+    return Set("exists", YesOrNo(flag));
+}
+
 tCondition<tTarget::kCountry> HasDefaultPrimaryCulture()
 {
     return IsPrimary<kDefaultCulture>();
@@ -55,9 +60,24 @@ tCondition<tTarget::kProvince> ConditionsForOwner(tConditions<tTarget::kCountry>
     return tCondition<tTarget::kProvince>("owner", std::move(CastToComands(conditions)));
 }
 
+tCondition<tTarget::kProvince> ControlledByRebels(tYesOrNo const flag)
+{
+    return Set("controlled_by_rebels", YesOrNo(flag));
+}
+
+tCondition<tTarget::kProvince> Empty(tYesOrNo const flag)
+{
+    return Set("empty", YesOrNo(flag));
+}
+
 tCondition<tTarget::kProvince> ExistsPopWithMilitancy(float const num)
 {
     return Set("pop_militancy", ToString(num));
+}
+
+tCondition<tTarget::kProvince> HasNeighborProvince(tConditions<tTarget::kProvince> && conditions)
+{
+    return {"any_neighbor_province", std::move(CastToComands(conditions))};
 }
 
 tCondition<tTarget::kProvince> HasPop(tCondition<tTarget::kPop> && condition)

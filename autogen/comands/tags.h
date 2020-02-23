@@ -1,8 +1,10 @@
 #pragma once
 
-enum class tTag
+enum class tTag : uint16_t
 {
-      SOV
+      kInvalidTag
+
+    , SOV
     , LAF
     , KAZ
     , KYR
@@ -294,8 +296,13 @@ enum class tTag
 
 namespace nsTag
 {
+
+    template <tTag>
+    char const * Localization();
+
     template <tTag>
     char const * ToString();
+
 }
 
 constexpr std::array<tTag, 50u> kDominions

@@ -41,11 +41,7 @@ tCondition<target> NotOr(tCondition<target> && conditions)
 template <tTarget target>
 tCondition<target> AverageMilitancy(float num);
 
-// Возвращает true, если культура culture является признанной в данной стране.
-template <tCulture culture>
-tCondition<tTarget::kCountry> IsAccepted() { return Set("accepted_culture", nsCulture::ToString<culture>()); }
-
-// Возвращает true, если для любой провинции, принадлежащей данной стране, выполняется условие condition.
+// Возвращает true, если хотя бы для одной провинции, принадлежащей данной стране, выполняется условие condition.
 tCondition<tTarget::kCountry> AnyOwnedProvince(tCondition<tTarget::kProvince> && condition);
 
 // Возвращает true, если законом о гражданстве в данной стране является policy.
@@ -53,28 +49,38 @@ template <tCitizenshipPolicy policy>
 tCondition<tTarget::kCountry> CitizenshipPolicyIs()
 { return Set("citizenship_policy", nsCitizenshipPolicy::ToString<policy>()); }
 
-// Проверяет условия coditions для столицы данной страны. Возвращает true, если выполнено каждое из условий.
+// Проверяет условия conditions для столицы данной страны. Возвращает true, если выполнено каждое из условий.
 tCondition<tTarget::kCountry> ConditionsForCapital(tConditions<tTarget::kProvince> && conditions);
+
+// Проверяет условия conditions для державы tag. Возвращает true, если выполнено каждое из условий.
+template <tTag tag, tTarget target = tTarget::kCountry>
+tCondition<target> ConditionsForSpecifiedCountry(tConditions<tTarget::kCountry> && conditions);
+
+// Возвращает true, если данная страна существует в данный момент.
+// Если flag == _No, то возвращаемое значение инвертируется.
+tCondition<tTarget::kCountry> Exists(tYesOrNo flag = _Yes);
 
 // Возвращает true, если данная страна имеют форму правления government.
 template <tGovernment government>
-tCondition<tTarget::kCountry> GovernmentIs()
-{
-    return Set("government", nsGovernment::ToString<government>());
-}
+tCondition<tTarget::kCountry> GovernmentIs() { return Set("government", nsGovernment::ToString<government>()); }
 
 // Условие для доминионов (стран с тэгами DXX (01 <= XX <= 50)). По умолчанию их культурой является tCulture::british.
 // Возвращает true, если основная культура государства совпадает с культурой по умолчанию.
 tCondition<tTarget::kCountry> HasDefaultPrimaryCulture();
 
 template <tCountryFlag flag>
-tCondition<tTarget::kCountry> HasFlag()
-{
-    return Set("has_country_flag", nsCountryFlag::ToString<flag>());
-}
+tCondition<tTarget::kCountry> HasFlag() { return Set("has_country_flag", nsCountryFlag::ToString<flag>()); }
 
 // Возвращает true, если в данной стране существует провинция, удовлетворяющая набору условий conditions.
 tCondition<tTarget::kCountry> HasProvince(tConditions<tTarget::kProvince> && conditions);
+
+// Возвращает true, если культура culture является признанной в данной стране.
+template <tCulture culture>
+tCondition<tTarget::kCountry> IsAccepted() { return Set("accepted_culture", nsCulture::ToString<culture>()); }
+
+// Возвращает true, если культура culture является признанной или основной в данной стране.
+template <tCulture culture>
+tCondition<tTarget::kCountry> IsAcceptedOrPrimary();
 
 // Возвращает true, если тэгом является DXX (01 <= XX <= 50).
 tCondition<tTarget::kCountry> IsDominion();
@@ -104,8 +110,20 @@ tCondition<tTarget::kCountry> TagIs() { return Set("tag", nsTag::ToString<tag>()
 // Проверяет условия conditions для владельца данной провинции. Возвращает true, если выполнено каждое из условий.
 tCondition<tTarget::kProvince> ConditionsForOwner(tConditions<tTarget::kCountry> && conditions);
 
+// Возвращает true, если данная провинция оккупирована повстанцами.
+// Если flag == _No, то возвращаемое значение инвертируется.
+tCondition<tTarget::kProvince> ControlledByRebels(tYesOrNo flag = _Yes);
+
+// Возвращает true, если данная провинция не принадлежит никому (то есть ещё ни кем не колонизированной).
+// Если flag == _No, то возвращаемое значение инвертируется.
+tCondition<tTarget::kProvince> Empty(tYesOrNo flag = _Yes);
+
 // Возвращает true, если в данной провинции существует поп с агрессивностью не менее, чем num.
 tCondition<tTarget::kProvince> ExistsPopWithMilitancy(float num);
+
+// Возвращает true, если среди соседей данной провинции существует хотя бы одна НЕПУСТАЯ провинция, удовлетворяющая
+// набору условий conditions.
+tCondition<tTarget::kProvince> HasNeighborProvince(tConditions<tTarget::kProvince> && conditions);
 
 // Возвращает true, если в данной провинции проживает поп, удовлетворяющий условию condition.
 tCondition<tTarget::kProvince> HasPop(tCondition<tTarget::kPop> && condition);
@@ -116,6 +134,13 @@ tCondition<tTarget::kProvince> IsInContinent() { return Set("continent", nsConti
 
 // Возвращает true, если данная провинция находится в Америке или Океании.
 tCondition<tTarget::kProvince> IsInNewWorld();
+
+// Возвращает true, если данная провинция является национальной для державы tag.
+template <tTag tag>
+tCondition<tTarget::kProvince> IsNationalFor()
+{
+    return Set("is_core", nsTag::ToString<tag>());
+}
 
 // Возвращает true, если culture является самой многочисленной культурой данной провинции.
 template <tCulture culture>
@@ -165,6 +190,21 @@ void AddConditions(tConditions<tTarget::kCountry> & where)
         where.push_back(ReformLevelIs<tReformType, static_cast<tReformType>(from)>());
         AddConditions<tReformType, from + 1u, to>(where);
     }
+}
+
+template <tTag tag, tTarget target>
+tCondition<target> ConditionsForSpecifiedCountry(tConditions<tTarget::kCountry> && conditions)
+{
+    if constexpr (target == tTarget::kCountry)
+        return tCondition<target>(nsTag::ToString<tag>(), std::move(CastToComands(conditions)));
+    else
+        return tCondition<target>(ConditionsForOwner({ConditionsForSpecifiedCountry<tag>(std::move(conditions))}));
+}
+
+template <tCulture culture>
+tCondition<tTarget::kCountry> IsAcceptedOrPrimary()
+{
+    return Or<tTarget::kCountry>({IsAccepted<culture>(), IsPrimary<culture>()});
 }
 
 template <class tReformType, tReformType level>

@@ -1,0 +1,9308 @@
+province_event = {
+	id = 24001
+	title = "EVTNAME24001"
+	desc = "EVTDESC24001"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = YAK
+		}
+		owner = {
+			NOT = {
+				tag = YAK
+			}
+			YAK = {
+				OR = {
+					accepted_culture = yakut
+					primary_culture = yakut
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = yakut
+				owner = {
+					YAK = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = YAK
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = yakut
+				}
+				any_neighbor_province = {
+					is_core = YAK
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24001"
+		add_core = YAK
+	}
+}
+province_event = {
+	id = 24002
+	title = "EVTNAME24002"
+	desc = "EVTDESC24002"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = TTT
+		}
+		owner = {
+			NOT = {
+				tag = TTT
+			}
+			TTT = {
+				OR = {
+					accepted_culture = tatar
+					primary_culture = tatar
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = tatar
+				owner = {
+					TTT = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = TTT
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = tatar
+				}
+				any_neighbor_province = {
+					is_core = TTT
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24002"
+		add_core = TTT
+	}
+}
+province_event = {
+	id = 24003
+	title = "EVTNAME24003"
+	desc = "EVTDESC24003"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = TAJ
+		}
+		owner = {
+			NOT = {
+				tag = TAJ
+			}
+			TAJ = {
+				OR = {
+					accepted_culture = tajik
+					primary_culture = tajik
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = tajik
+				owner = {
+					TAJ = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = TAJ
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = tajik
+				}
+				any_neighbor_province = {
+					is_core = TAJ
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24003"
+		add_core = TAJ
+	}
+}
+province_event = {
+	id = 24004
+	title = "EVTNAME24004"
+	desc = "EVTDESC24004"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = SOK
+		}
+		owner = {
+			NOT = {
+				tag = SOK
+			}
+			SOK = {
+				OR = {
+					accepted_culture = hausa
+					primary_culture = hausa
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = hausa
+				owner = {
+					SOK = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = SOK
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = hausa
+				}
+				any_neighbor_province = {
+					is_core = SOK
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24004"
+		add_core = SOK
+	}
+}
+province_event = {
+	id = 24005
+	title = "EVTNAME24005"
+	desc = "EVTDESC24005"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = SIA
+		}
+		owner = {
+			NOT = {
+				tag = SIA
+			}
+			SIA = {
+				OR = {
+					accepted_culture = thai
+					primary_culture = thai
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = thai
+				owner = {
+					SIA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = SIA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = thai
+				}
+				any_neighbor_province = {
+					is_core = SIA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24005"
+		add_core = SIA
+	}
+}
+province_event = {
+	id = 24006
+	title = "EVTNAME24006"
+	desc = "EVTDESC24006"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = PHI
+		}
+		owner = {
+			NOT = {
+				tag = PHI
+			}
+			PHI = {
+				OR = {
+					accepted_culture = filipino
+					primary_culture = filipino
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = filipino
+				owner = {
+					PHI = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = PHI
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = filipino
+				}
+				any_neighbor_province = {
+					is_core = PHI
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24006"
+		add_core = PHI
+	}
+}
+province_event = {
+	id = 24007
+	title = "EVTNAME24007"
+	desc = "EVTDESC24007"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = NZL
+		}
+		owner = {
+			NOT = {
+				tag = NZL
+			}
+			NZL = {
+				OR = {
+					accepted_culture = new_zelandian
+					primary_culture = new_zelandian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = new_zelandian
+				owner = {
+					NZL = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = NZL
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = new_zelandian
+				}
+				any_neighbor_province = {
+					is_core = NZL
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24007"
+		add_core = NZL
+	}
+}
+province_event = {
+	id = 24008
+	title = "EVTNAME24008"
+	desc = "EVTDESC24008"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = SAF
+		}
+		owner = {
+			NOT = {
+				tag = SAF
+			}
+			SAF = {
+				OR = {
+					accepted_culture = boer
+					primary_culture = boer
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = boer
+				owner = {
+					SAF = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = SAF
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = boer
+				}
+				any_neighbor_province = {
+					is_core = SAF
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24008"
+		add_core = SAF
+	}
+}
+province_event = {
+	id = 24009
+	title = "EVTNAME24009"
+	desc = "EVTDESC24009"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = MTC
+		}
+		owner = {
+			NOT = {
+				tag = MTC
+			}
+			MTC = {
+				OR = {
+					accepted_culture = metis
+					primary_culture = metis
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = metis
+				owner = {
+					MTC = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = MTC
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = metis
+				}
+				any_neighbor_province = {
+					is_core = MTC
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24009"
+		add_core = MTC
+	}
+}
+province_event = {
+	id = 24010
+	title = "EVTNAME24010"
+	desc = "EVTDESC24010"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = MGL
+		}
+		owner = {
+			NOT = {
+				tag = MGL
+			}
+			MGL = {
+				OR = {
+					accepted_culture = mongol
+					primary_culture = mongol
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = mongol
+				owner = {
+					MGL = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = MGL
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = mongol
+				}
+				any_neighbor_province = {
+					is_core = MGL
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24010"
+		add_core = MGL
+	}
+}
+province_event = {
+	id = 24011
+	title = "EVTNAME24011"
+	desc = "EVTDESC24011"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = MEX
+		}
+		owner = {
+			NOT = {
+				tag = MEX
+			}
+			MEX = {
+				OR = {
+					accepted_culture = mexican
+					primary_culture = mexican
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = mexican
+				owner = {
+					MEX = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = MEX
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = mexican
+				}
+				any_neighbor_province = {
+					is_core = MEX
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24011"
+		add_core = MEX
+	}
+}
+province_event = {
+	id = 24012
+	title = "EVTNAME24012"
+	desc = "EVTDESC24012"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = MAD
+		}
+		owner = {
+			NOT = {
+				tag = MAD
+			}
+			MAD = {
+				OR = {
+					accepted_culture = malagasy
+					primary_culture = malagasy
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = malagasy
+				owner = {
+					MAD = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = MAD
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = malagasy
+				}
+				any_neighbor_province = {
+					is_core = MAD
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24012"
+		add_core = MAD
+	}
+}
+province_event = {
+	id = 24013
+	title = "EVTNAME24013"
+	desc = "EVTDESC24013"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = LUA
+		}
+		owner = {
+			NOT = {
+				tag = LUA
+			}
+			LUA = {
+				OR = {
+					accepted_culture = lao
+					primary_culture = lao
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = lao
+				owner = {
+					LUA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = LUA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = lao
+				}
+				any_neighbor_province = {
+					is_core = LUA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24013"
+		add_core = LUA
+	}
+}
+province_event = {
+	id = 24014
+	title = "EVTNAME24014"
+	desc = "EVTDESC24014"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = KRD
+		}
+		owner = {
+			NOT = {
+				tag = KRD
+			}
+			KRD = {
+				OR = {
+					accepted_culture = kurdish
+					primary_culture = kurdish
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = kurdish
+				owner = {
+					KRD = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = KRD
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = kurdish
+				}
+				any_neighbor_province = {
+					is_core = KRD
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24014"
+		add_core = KRD
+	}
+}
+province_event = {
+	id = 24015
+	title = "EVTNAME24015"
+	desc = "EVTDESC24015"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = SAF
+		}
+		owner = {
+			NOT = {
+				tag = SAF
+			}
+			SAF = {
+				OR = {
+					accepted_culture = anglo_african
+					primary_culture = anglo_african
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = anglo_african
+				owner = {
+					SAF = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = SAF
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = anglo_african
+				}
+				any_neighbor_province = {
+					is_core = SAF
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24015"
+		add_core = SAF
+	}
+}
+province_event = {
+	id = 24016
+	title = "EVTNAME24016"
+	desc = "EVTDESC24016"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = KOR
+		}
+		owner = {
+			NOT = {
+				tag = KOR
+			}
+			KOR = {
+				OR = {
+					accepted_culture = korean
+					primary_culture = korean
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = korean
+				owner = {
+					KOR = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = KOR
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = korean
+				}
+				any_neighbor_province = {
+					is_core = KOR
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24016"
+		add_core = KOR
+	}
+}
+province_event = {
+	id = 24017
+	title = "EVTNAME24017"
+	desc = "EVTDESC24017"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = JAV
+		}
+		owner = {
+			NOT = {
+				tag = JAV
+			}
+			JAV = {
+				OR = {
+					accepted_culture = javan
+					primary_culture = javan
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = javan
+				owner = {
+					JAV = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = JAV
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = javan
+				}
+				any_neighbor_province = {
+					is_core = JAV
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24017"
+		add_core = JAV
+	}
+}
+province_event = {
+	id = 24018
+	title = "EVTNAME24018"
+	desc = "EVTDESC24018"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = HAW
+		}
+		owner = {
+			NOT = {
+				tag = HAW
+			}
+			HAW = {
+				OR = {
+					accepted_culture = polynesian
+					primary_culture = polynesian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = polynesian
+				owner = {
+					HAW = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = HAW
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = polynesian
+				}
+				any_neighbor_province = {
+					is_core = HAW
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24018"
+		add_core = HAW
+	}
+}
+province_event = {
+	id = 24019
+	title = "EVTNAME24019"
+	desc = "EVTDESC24019"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = ZUL
+		}
+		owner = {
+			NOT = {
+				tag = ZUL
+			}
+			ZUL = {
+				OR = {
+					accepted_culture = zulu
+					primary_culture = zulu
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = zulu
+				owner = {
+					ZUL = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = ZUL
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = zulu
+				}
+				any_neighbor_province = {
+					is_core = ZUL
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24019"
+		add_core = ZUL
+	}
+}
+province_event = {
+	id = 24020
+	title = "EVTNAME24020"
+	desc = "EVTDESC24020"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = HAI
+		}
+		owner = {
+			NOT = {
+				tag = HAI
+			}
+			HAI = {
+				OR = {
+					accepted_culture = afro_antillean
+					primary_culture = afro_antillean
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = afro_antillean
+				owner = {
+					HAI = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = HAI
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = afro_antillean
+				}
+				any_neighbor_province = {
+					is_core = HAI
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24020"
+		add_core = HAI
+	}
+}
+province_event = {
+	id = 24021
+	title = "EVTNAME24021"
+	desc = "EVTDESC24021"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = GEO
+		}
+		owner = {
+			NOT = {
+				tag = GEO
+			}
+			GEO = {
+				OR = {
+					accepted_culture = georgian
+					primary_culture = georgian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = georgian
+				owner = {
+					GEO = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = GEO
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = georgian
+				}
+				any_neighbor_province = {
+					is_core = GEO
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24021"
+		add_core = GEO
+	}
+}
+province_event = {
+	id = 24022
+	title = "EVTNAME24022"
+	desc = "EVTDESC24022"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = ETH
+		}
+		owner = {
+			NOT = {
+				tag = ETH
+			}
+			ETH = {
+				OR = {
+					accepted_culture = amhara
+					primary_culture = amhara
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = amhara
+				owner = {
+					ETH = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = ETH
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = amhara
+				}
+				any_neighbor_province = {
+					is_core = ETH
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24022"
+		add_core = ETH
+	}
+}
+province_event = {
+	id = 24023
+	title = "EVTNAME24023"
+	desc = "EVTDESC24023"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = ASM
+		}
+		owner = {
+			NOT = {
+				tag = ASM
+			}
+			ASM = {
+				OR = {
+					accepted_culture = assamese
+					primary_culture = assamese
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = assamese
+				owner = {
+					ASM = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = ASM
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = assamese
+				}
+				any_neighbor_province = {
+					is_core = ASM
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24023"
+		add_core = ASM
+	}
+}
+province_event = {
+	id = 24024
+	title = "EVTNAME24024"
+	desc = "EVTDESC24024"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = HND
+		}
+		owner = {
+			NOT = {
+				tag = HND
+			}
+			HND = {
+				OR = {
+					accepted_culture = assamese
+					primary_culture = assamese
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = assamese
+				owner = {
+					HND = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = HND
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = assamese
+				}
+				any_neighbor_province = {
+					is_core = HND
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24024"
+		add_core = HND
+	}
+}
+province_event = {
+	id = 24025
+	title = "EVTNAME24025"
+	desc = "EVTDESC24025"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = ARA
+		}
+		owner = {
+			NOT = {
+				tag = ARA
+			}
+			ARA = {
+				OR = {
+					accepted_culture = bedouin
+					primary_culture = bedouin
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = bedouin
+				owner = {
+					ARA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = ARA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = bedouin
+				}
+				any_neighbor_province = {
+					is_core = ARA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24025"
+		add_core = ARA
+	}
+}
+province_event = {
+	id = 24026
+	title = "EVTNAME24026"
+	desc = "EVTDESC24026"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = KYR
+		}
+		owner = {
+			NOT = {
+				tag = KYR
+			}
+			KYR = {
+				OR = {
+					accepted_culture = kirgiz
+					primary_culture = kirgiz
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = kirgiz
+				owner = {
+					KYR = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = KYR
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = kirgiz
+				}
+				any_neighbor_province = {
+					is_core = KYR
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24026"
+		add_core = KYR
+	}
+}
+province_event = {
+	id = 24027
+	title = "EVTNAME24027"
+	desc = "EVTDESC24027"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = CAT
+		}
+		owner = {
+			NOT = {
+				tag = CAT
+			}
+			CAT = {
+				OR = {
+					accepted_culture = catalan
+					primary_culture = catalan
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = catalan
+				owner = {
+					CAT = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = CAT
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = catalan
+				}
+				any_neighbor_province = {
+					is_core = CAT
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24027"
+		add_core = CAT
+	}
+}
+province_event = {
+	id = 24028
+	title = "EVTNAME24028"
+	desc = "EVTDESC24028"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = ARA
+		}
+		owner = {
+			NOT = {
+				tag = ARA
+			}
+			ARA = {
+				OR = {
+					accepted_culture = berber
+					primary_culture = berber
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = berber
+				owner = {
+					ARA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = ARA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = berber
+				}
+				any_neighbor_province = {
+					is_core = ARA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24028"
+		add_core = ARA
+	}
+}
+province_event = {
+	id = 24029
+	title = "EVTNAME24029"
+	desc = "EVTDESC24029"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = RUS
+		}
+		owner = {
+			NOT = {
+				tag = RUS
+			}
+			RUS = {
+				OR = {
+					accepted_culture = ugrian
+					primary_culture = ugrian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = ugrian
+				owner = {
+					RUS = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = RUS
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = ugrian
+				}
+				any_neighbor_province = {
+					is_core = RUS
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24029"
+		add_core = RUS
+	}
+}
+province_event = {
+	id = 24030
+	title = "EVTNAME24030"
+	desc = "EVTDESC24030"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = ORI
+		}
+		owner = {
+			NOT = {
+				tag = ORI
+			}
+			ORI = {
+				OR = {
+					accepted_culture = oriya
+					primary_culture = oriya
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = oriya
+				owner = {
+					ORI = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = ORI
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = oriya
+				}
+				any_neighbor_province = {
+					is_core = ORI
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24030"
+		add_core = ORI
+	}
+}
+province_event = {
+	id = 24031
+	title = "EVTNAME24031"
+	desc = "EVTDESC24031"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = HND
+		}
+		owner = {
+			NOT = {
+				tag = HND
+			}
+			HND = {
+				OR = {
+					accepted_culture = oriya
+					primary_culture = oriya
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = oriya
+				owner = {
+					HND = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = HND
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = oriya
+				}
+				any_neighbor_province = {
+					is_core = HND
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24031"
+		add_core = HND
+	}
+}
+province_event = {
+	id = 24032
+	title = "EVTNAME24032"
+	desc = "EVTDESC24032"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = SIN
+		}
+		owner = {
+			NOT = {
+				tag = SIN
+			}
+			SIN = {
+				OR = {
+					accepted_culture = sindi
+					primary_culture = sindi
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = sindi
+				owner = {
+					SIN = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = SIN
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = sindi
+				}
+				any_neighbor_province = {
+					is_core = SIN
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24032"
+		add_core = SIN
+	}
+}
+province_event = {
+	id = 24033
+	title = "EVTNAME24033"
+	desc = "EVTDESC24033"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = HND
+		}
+		owner = {
+			NOT = {
+				tag = HND
+			}
+			HND = {
+				OR = {
+					accepted_culture = sindi
+					primary_culture = sindi
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = sindi
+				owner = {
+					HND = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = HND
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = sindi
+				}
+				any_neighbor_province = {
+					is_core = HND
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24033"
+		add_core = HND
+	}
+}
+province_event = {
+	id = 24034
+	title = "EVTNAME24034"
+	desc = "EVTDESC24034"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = UKR
+		}
+		owner = {
+			NOT = {
+				tag = UKR
+			}
+			UKR = {
+				OR = {
+					accepted_culture = ukrainian
+					primary_culture = ukrainian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = ukrainian
+				owner = {
+					UKR = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = UKR
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = ukrainian
+				}
+				any_neighbor_province = {
+					is_core = UKR
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24034"
+		add_core = UKR
+	}
+}
+province_event = {
+	id = 24035
+	title = "EVTNAME24035"
+	desc = "EVTDESC24035"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = RUS
+		}
+		owner = {
+			NOT = {
+				tag = RUS
+			}
+			RUS = {
+				OR = {
+					accepted_culture = ukrainian
+					primary_culture = ukrainian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = ukrainian
+				owner = {
+					RUS = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = RUS
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = ukrainian
+				}
+				any_neighbor_province = {
+					is_core = RUS
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24035"
+		add_core = RUS
+	}
+}
+province_event = {
+	id = 24036
+	title = "EVTNAME24036"
+	desc = "EVTDESC24036"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = ITA
+		}
+		owner = {
+			NOT = {
+				tag = ITA
+			}
+			ITA = {
+				OR = {
+					accepted_culture = north_italian
+					primary_culture = north_italian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = north_italian
+				owner = {
+					ITA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = ITA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = north_italian
+				}
+				any_neighbor_province = {
+					is_core = ITA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24036"
+		add_core = ITA
+	}
+}
+province_event = {
+	id = 24037
+	title = "EVTNAME24037"
+	desc = "EVTDESC24037"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = GRE
+		}
+		owner = {
+			NOT = {
+				tag = GRE
+			}
+			GRE = {
+				OR = {
+					accepted_culture = greek
+					primary_culture = greek
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = greek
+				owner = {
+					GRE = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = GRE
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = greek
+				}
+				any_neighbor_province = {
+					is_core = GRE
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24037"
+		add_core = GRE
+	}
+}
+province_event = {
+	id = 24038
+	title = "EVTNAME24038"
+	desc = "EVTDESC24038"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = AFG
+		}
+		owner = {
+			NOT = {
+				tag = AFG
+			}
+			AFG = {
+				OR = {
+					accepted_culture = pashtun
+					primary_culture = pashtun
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = pashtun
+				owner = {
+					AFG = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = AFG
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = pashtun
+				}
+				any_neighbor_province = {
+					is_core = AFG
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24038"
+		add_core = AFG
+	}
+}
+province_event = {
+	id = 24039
+	title = "EVTNAME24039"
+	desc = "EVTDESC24039"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = SLV
+		}
+		owner = {
+			NOT = {
+				tag = SLV
+			}
+			SLV = {
+				OR = {
+					accepted_culture = slovak
+					primary_culture = slovak
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = slovak
+				owner = {
+					SLV = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = SLV
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = slovak
+				}
+				any_neighbor_province = {
+					is_core = SLV
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24039"
+		add_core = SLV
+	}
+}
+province_event = {
+	id = 24040
+	title = "EVTNAME24040"
+	desc = "EVTDESC24040"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = CZH
+		}
+		owner = {
+			NOT = {
+				tag = CZH
+			}
+			CZH = {
+				OR = {
+					accepted_culture = slovak
+					primary_culture = slovak
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = slovak
+				owner = {
+					CZH = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = CZH
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = slovak
+				}
+				any_neighbor_province = {
+					is_core = CZH
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24040"
+		add_core = CZH
+	}
+}
+province_event = {
+	id = 24041
+	title = "EVTNAME24041"
+	desc = "EVTDESC24041"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = LAF
+		}
+		owner = {
+			NOT = {
+				tag = LAF
+			}
+			LAF = {
+				OR = {
+					accepted_culture = platinean
+					primary_culture = platinean
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = platinean
+				owner = {
+					LAF = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = LAF
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = platinean
+				}
+				any_neighbor_province = {
+					is_core = LAF
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24041"
+		add_core = LAF
+	}
+}
+province_event = {
+	id = 24042
+	title = "EVTNAME24042"
+	desc = "EVTDESC24042"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = KAS
+		}
+		owner = {
+			NOT = {
+				tag = KAS
+			}
+			KAS = {
+				OR = {
+					accepted_culture = kashmiri
+					primary_culture = kashmiri
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = kashmiri
+				owner = {
+					KAS = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = KAS
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = kashmiri
+				}
+				any_neighbor_province = {
+					is_core = KAS
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24042"
+		add_core = KAS
+	}
+}
+province_event = {
+	id = 24043
+	title = "EVTNAME24043"
+	desc = "EVTDESC24043"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = HND
+		}
+		owner = {
+			NOT = {
+				tag = HND
+			}
+			HND = {
+				OR = {
+					accepted_culture = kashmiri
+					primary_culture = kashmiri
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = kashmiri
+				owner = {
+					HND = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = HND
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = kashmiri
+				}
+				any_neighbor_province = {
+					is_core = HND
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24043"
+		add_core = HND
+	}
+}
+province_event = {
+	id = 24044
+	title = "EVTNAME24044"
+	desc = "EVTDESC24044"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = KAZ
+		}
+		owner = {
+			NOT = {
+				tag = KAZ
+			}
+			KAZ = {
+				OR = {
+					accepted_culture = kazak
+					primary_culture = kazak
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = kazak
+				owner = {
+					KAZ = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = KAZ
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = kazak
+				}
+				any_neighbor_province = {
+					is_core = KAZ
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24044"
+		add_core = KAZ
+	}
+}
+province_event = {
+	id = 24045
+	title = "EVTNAME24045"
+	desc = "EVTDESC24045"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = HUN
+		}
+		owner = {
+			NOT = {
+				tag = HUN
+			}
+			HUN = {
+				OR = {
+					accepted_culture = hungarian
+					primary_culture = hungarian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = hungarian
+				owner = {
+					HUN = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = HUN
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = hungarian
+				}
+				any_neighbor_province = {
+					is_core = HUN
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24045"
+		add_core = HUN
+	}
+}
+province_event = {
+	id = 24046
+	title = "EVTNAME24046"
+	desc = "EVTDESC24046"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = FRA
+		}
+		owner = {
+			NOT = {
+				tag = FRA
+			}
+			FRA = {
+				OR = {
+					accepted_culture = french
+					primary_culture = french
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = french
+				owner = {
+					FRA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = FRA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = french
+				}
+				any_neighbor_province = {
+					is_core = FRA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24046"
+		add_core = FRA
+	}
+}
+province_event = {
+	id = 24047
+	title = "EVTNAME24047"
+	desc = "EVTDESC24047"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = MCK
+		}
+		owner = {
+			NOT = {
+				tag = MCK
+			}
+			MCK = {
+				OR = {
+					accepted_culture = manchu
+					primary_culture = manchu
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = manchu
+				owner = {
+					MCK = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = MCK
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = manchu
+				}
+				any_neighbor_province = {
+					is_core = MCK
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24047"
+		add_core = MCK
+	}
+}
+province_event = {
+	id = 24048
+	title = "EVTNAME24048"
+	desc = "EVTDESC24048"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = CHI
+		}
+		owner = {
+			NOT = {
+				tag = CHI
+			}
+			CHI = {
+				OR = {
+					accepted_culture = manchu
+					primary_culture = manchu
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = manchu
+				owner = {
+					CHI = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = CHI
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = manchu
+				}
+				any_neighbor_province = {
+					is_core = CHI
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24048"
+		add_core = CHI
+	}
+}
+province_event = {
+	id = 24049
+	title = "EVTNAME24049"
+	desc = "EVTDESC24049"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = PER
+		}
+		owner = {
+			NOT = {
+				tag = PER
+			}
+			PER = {
+				OR = {
+					accepted_culture = persian
+					primary_culture = persian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = persian
+				owner = {
+					PER = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = PER
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = persian
+				}
+				any_neighbor_province = {
+					is_core = PER
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24049"
+		add_core = PER
+	}
+}
+province_event = {
+	id = 24050
+	title = "EVTNAME24050"
+	desc = "EVTDESC24050"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = ROM
+		}
+		owner = {
+			NOT = {
+				tag = ROM
+			}
+			ROM = {
+				OR = {
+					accepted_culture = romanian
+					primary_culture = romanian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = romanian
+				owner = {
+					ROM = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = ROM
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = romanian
+				}
+				any_neighbor_province = {
+					is_core = ROM
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24050"
+		add_core = ROM
+	}
+}
+province_event = {
+	id = 24051
+	title = "EVTNAME24051"
+	desc = "EVTDESC24051"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = NOR
+		}
+		owner = {
+			NOT = {
+				tag = NOR
+			}
+			NOR = {
+				OR = {
+					accepted_culture = norwegian
+					primary_culture = norwegian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = norwegian
+				owner = {
+					NOR = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = NOR
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = norwegian
+				}
+				any_neighbor_province = {
+					is_core = NOR
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24051"
+		add_core = NOR
+	}
+}
+province_event = {
+	id = 24052
+	title = "EVTNAME24052"
+	desc = "EVTDESC24052"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = SCA
+		}
+		owner = {
+			NOT = {
+				tag = SCA
+			}
+			SCA = {
+				OR = {
+					accepted_culture = norwegian
+					primary_culture = norwegian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = norwegian
+				owner = {
+					SCA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = SCA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = norwegian
+				}
+				any_neighbor_province = {
+					is_core = SCA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24052"
+		add_core = SCA
+	}
+}
+province_event = {
+	id = 24053
+	title = "EVTNAME24053"
+	desc = "EVTDESC24053"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = HND
+		}
+		owner = {
+			NOT = {
+				tag = HND
+			}
+			HND = {
+				OR = {
+					accepted_culture = marathi
+					primary_culture = marathi
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = marathi
+				owner = {
+					HND = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = HND
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = marathi
+				}
+				any_neighbor_province = {
+					is_core = HND
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24053"
+		add_core = HND
+	}
+}
+province_event = {
+	id = 24054
+	title = "EVTNAME24054"
+	desc = "EVTDESC24054"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = SCA
+		}
+		owner = {
+			NOT = {
+				tag = SCA
+			}
+			SCA = {
+				OR = {
+					accepted_culture = polar_bears
+					primary_culture = polar_bears
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = polar_bears
+				owner = {
+					SCA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = SCA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = polar_bears
+				}
+				any_neighbor_province = {
+					is_core = SCA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24054"
+		add_core = SCA
+	}
+}
+province_event = {
+	id = 24055
+	title = "EVTNAME24055"
+	desc = "EVTDESC24055"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = HND
+		}
+		owner = {
+			NOT = {
+				tag = HND
+			}
+			HND = {
+				OR = {
+					accepted_culture = bengali
+					primary_culture = bengali
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = bengali
+				owner = {
+					HND = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = HND
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = bengali
+				}
+				any_neighbor_province = {
+					is_core = HND
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24055"
+		add_core = HND
+	}
+}
+province_event = {
+	id = 24056
+	title = "EVTNAME24056"
+	desc = "EVTDESC24056"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = BNG
+		}
+		owner = {
+			NOT = {
+				tag = BNG
+			}
+			BNG = {
+				OR = {
+					accepted_culture = bengali
+					primary_culture = bengali
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = bengali
+				owner = {
+					BNG = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = BNG
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = bengali
+				}
+				any_neighbor_province = {
+					is_core = BNG
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24056"
+		add_core = BNG
+	}
+}
+province_event = {
+	id = 24057
+	title = "EVTNAME24057"
+	desc = "EVTDESC24057"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = RUS
+		}
+		owner = {
+			NOT = {
+				tag = RUS
+			}
+			RUS = {
+				OR = {
+					accepted_culture = russian
+					primary_culture = russian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = russian
+				owner = {
+					RUS = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = RUS
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = russian
+				}
+				any_neighbor_province = {
+					is_core = RUS
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24057"
+		add_core = RUS
+	}
+}
+province_event = {
+	id = 24058
+	title = "EVTNAME24058"
+	desc = "EVTDESC24058"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = FLA
+		}
+		owner = {
+			NOT = {
+				tag = FLA
+			}
+			FLA = {
+				OR = {
+					accepted_culture = flemish
+					primary_culture = flemish
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = flemish
+				owner = {
+					FLA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = FLA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = flemish
+				}
+				any_neighbor_province = {
+					is_core = FLA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24058"
+		add_core = FLA
+	}
+}
+province_event = {
+	id = 24059
+	title = "EVTNAME24059"
+	desc = "EVTDESC24059"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = BEL
+		}
+		owner = {
+			NOT = {
+				tag = BEL
+			}
+			BEL = {
+				OR = {
+					accepted_culture = flemish
+					primary_culture = flemish
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = flemish
+				owner = {
+					BEL = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = BEL
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = flemish
+				}
+				any_neighbor_province = {
+					is_core = BEL
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24059"
+		add_core = BEL
+	}
+}
+province_event = {
+	id = 24060
+	title = "EVTNAME24060"
+	desc = "EVTDESC24060"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = IRE
+		}
+		owner = {
+			NOT = {
+				tag = IRE
+			}
+			IRE = {
+				OR = {
+					accepted_culture = irish
+					primary_culture = irish
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = irish
+				owner = {
+					IRE = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = IRE
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = irish
+				}
+				any_neighbor_province = {
+					is_core = IRE
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24060"
+		add_core = IRE
+	}
+}
+province_event = {
+	id = 24061
+	title = "EVTNAME24061"
+	desc = "EVTDESC24061"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = ENG
+		}
+		owner = {
+			NOT = {
+				tag = ENG
+			}
+			ENG = {
+				OR = {
+					accepted_culture = irish
+					primary_culture = irish
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = irish
+				owner = {
+					ENG = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = ENG
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = irish
+				}
+				any_neighbor_province = {
+					is_core = ENG
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24061"
+		add_core = ENG
+	}
+}
+province_event = {
+	id = 24062
+	title = "EVTNAME24062"
+	desc = "EVTDESC24062"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = EST
+		}
+		owner = {
+			NOT = {
+				tag = EST
+			}
+			EST = {
+				OR = {
+					accepted_culture = estonian
+					primary_culture = estonian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = estonian
+				owner = {
+					EST = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = EST
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = estonian
+				}
+				any_neighbor_province = {
+					is_core = EST
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24062"
+		add_core = EST
+	}
+}
+province_event = {
+	id = 24063
+	title = "EVTNAME24063"
+	desc = "EVTDESC24063"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = UBD
+		}
+		owner = {
+			NOT = {
+				tag = UBD
+			}
+			UBD = {
+				OR = {
+					accepted_culture = estonian
+					primary_culture = estonian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = estonian
+				owner = {
+					UBD = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = UBD
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = estonian
+				}
+				any_neighbor_province = {
+					is_core = UBD
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24063"
+		add_core = UBD
+	}
+}
+province_event = {
+	id = 24064
+	title = "EVTNAME24064"
+	desc = "EVTDESC24064"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = LIT
+		}
+		owner = {
+			NOT = {
+				tag = LIT
+			}
+			LIT = {
+				OR = {
+					accepted_culture = lithuanian
+					primary_culture = lithuanian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = lithuanian
+				owner = {
+					LIT = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = LIT
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = lithuanian
+				}
+				any_neighbor_province = {
+					is_core = LIT
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24064"
+		add_core = LIT
+	}
+}
+province_event = {
+	id = 24065
+	title = "EVTNAME24065"
+	desc = "EVTDESC24065"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = PLC
+		}
+		owner = {
+			NOT = {
+				tag = PLC
+			}
+			PLC = {
+				OR = {
+					accepted_culture = lithuanian
+					primary_culture = lithuanian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = lithuanian
+				owner = {
+					PLC = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = PLC
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = lithuanian
+				}
+				any_neighbor_province = {
+					is_core = PLC
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24065"
+		add_core = PLC
+	}
+}
+province_event = {
+	id = 24066
+	title = "EVTNAME24066"
+	desc = "EVTDESC24066"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = CHI
+		}
+		owner = {
+			NOT = {
+				tag = CHI
+			}
+			CHI = {
+				OR = {
+					accepted_culture = nanfaren
+					primary_culture = nanfaren
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = nanfaren
+				owner = {
+					CHI = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = CHI
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = nanfaren
+				}
+				any_neighbor_province = {
+					is_core = CHI
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24066"
+		add_core = CHI
+	}
+}
+province_event = {
+	id = 24067
+	title = "EVTNAME24067"
+	desc = "EVTDESC24067"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = GER
+		}
+		owner = {
+			NOT = {
+				tag = GER
+			}
+			GER = {
+				OR = {
+					accepted_culture = south_german
+					primary_culture = south_german
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = south_german
+				owner = {
+					GER = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = GER
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = south_german
+				}
+				any_neighbor_province = {
+					is_core = GER
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24067"
+		add_core = GER
+	}
+}
+province_event = {
+	id = 24068
+	title = "EVTNAME24068"
+	desc = "EVTDESC24068"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = LAT
+		}
+		owner = {
+			NOT = {
+				tag = LAT
+			}
+			LAT = {
+				OR = {
+					accepted_culture = latvian
+					primary_culture = latvian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = latvian
+				owner = {
+					LAT = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = LAT
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = latvian
+				}
+				any_neighbor_province = {
+					is_core = LAT
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24068"
+		add_core = LAT
+	}
+}
+province_event = {
+	id = 24069
+	title = "EVTNAME24069"
+	desc = "EVTDESC24069"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = UBD
+		}
+		owner = {
+			NOT = {
+				tag = UBD
+			}
+			UBD = {
+				OR = {
+					accepted_culture = latvian
+					primary_culture = latvian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = latvian
+				owner = {
+					UBD = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = UBD
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = latvian
+				}
+				any_neighbor_province = {
+					is_core = UBD
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24069"
+		add_core = UBD
+	}
+}
+province_event = {
+	id = 24070
+	title = "EVTNAME24070"
+	desc = "EVTDESC24070"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = ITA
+		}
+		owner = {
+			NOT = {
+				tag = ITA
+			}
+			ITA = {
+				OR = {
+					accepted_culture = maltese
+					primary_culture = maltese
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = maltese
+				owner = {
+					ITA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = ITA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = maltese
+				}
+				any_neighbor_province = {
+					is_core = ITA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24070"
+		add_core = ITA
+	}
+}
+province_event = {
+	id = 24071
+	title = "EVTNAME24071"
+	desc = "EVTDESC24071"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = DOM
+		}
+		owner = {
+			NOT = {
+				tag = DOM
+			}
+			DOM = {
+				OR = {
+					accepted_culture = caribeno
+					primary_culture = caribeno
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = caribeno
+				owner = {
+					DOM = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = DOM
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = caribeno
+				}
+				any_neighbor_province = {
+					is_core = DOM
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24071"
+		add_core = DOM
+	}
+}
+province_event = {
+	id = 24072
+	title = "EVTNAME24072"
+	desc = "EVTDESC24072"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = WLL
+		}
+		owner = {
+			NOT = {
+				tag = WLL
+			}
+			WLL = {
+				OR = {
+					accepted_culture = wallonian
+					primary_culture = wallonian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = wallonian
+				owner = {
+					WLL = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = WLL
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = wallonian
+				}
+				any_neighbor_province = {
+					is_core = WLL
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24072"
+		add_core = WLL
+	}
+}
+province_event = {
+	id = 24073
+	title = "EVTNAME24073"
+	desc = "EVTDESC24073"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = BEL
+		}
+		owner = {
+			NOT = {
+				tag = BEL
+			}
+			BEL = {
+				OR = {
+					accepted_culture = wallonian
+					primary_culture = wallonian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = wallonian
+				owner = {
+					BEL = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = BEL
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = wallonian
+				}
+				any_neighbor_province = {
+					is_core = BEL
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24073"
+		add_core = BEL
+	}
+}
+province_event = {
+	id = 24074
+	title = "EVTNAME24074"
+	desc = "EVTDESC24074"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = BUL
+		}
+		owner = {
+			NOT = {
+				tag = BUL
+			}
+			BUL = {
+				OR = {
+					accepted_culture = bulgarian
+					primary_culture = bulgarian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = bulgarian
+				owner = {
+					BUL = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = BUL
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = bulgarian
+				}
+				any_neighbor_province = {
+					is_core = BUL
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24074"
+		add_core = BUL
+	}
+}
+province_event = {
+	id = 24075
+	title = "EVTNAME24075"
+	desc = "EVTDESC24075"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = YUG
+		}
+		owner = {
+			NOT = {
+				tag = YUG
+			}
+			YUG = {
+				OR = {
+					accepted_culture = bulgarian
+					primary_culture = bulgarian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = bulgarian
+				owner = {
+					YUG = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = YUG
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = bulgarian
+				}
+				any_neighbor_province = {
+					is_core = YUG
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24075"
+		add_core = YUG
+	}
+}
+province_event = {
+	id = 24076
+	title = "EVTNAME24076"
+	desc = "EVTDESC24076"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = NET
+		}
+		owner = {
+			NOT = {
+				tag = NET
+			}
+			NET = {
+				OR = {
+					accepted_culture = dutch
+					primary_culture = dutch
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = dutch
+				owner = {
+					NET = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = NET
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = dutch
+				}
+				any_neighbor_province = {
+					is_core = NET
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24076"
+		add_core = NET
+	}
+}
+province_event = {
+	id = 24077
+	title = "EVTNAME24077"
+	desc = "EVTDESC24077"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = ISR
+		}
+		owner = {
+			NOT = {
+				tag = ISR
+			}
+			ISR = {
+				OR = {
+					accepted_culture = ashkenazi
+					primary_culture = ashkenazi
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = ashkenazi
+				owner = {
+					ISR = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = ISR
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = ashkenazi
+				}
+				any_neighbor_province = {
+					is_core = ISR
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24077"
+		add_core = ISR
+	}
+}
+province_event = {
+	id = 24078
+	title = "EVTNAME24078"
+	desc = "EVTDESC24078"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = GER
+		}
+		owner = {
+			NOT = {
+				tag = GER
+			}
+			GER = {
+				OR = {
+					accepted_culture = ashkenazi
+					primary_culture = ashkenazi
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = ashkenazi
+				owner = {
+					GER = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = GER
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = ashkenazi
+				}
+				any_neighbor_province = {
+					is_core = GER
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24078"
+		add_core = GER
+	}
+}
+province_event = {
+	id = 24079
+	title = "EVTNAME24079"
+	desc = "EVTDESC24079"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = CNG
+		}
+		owner = {
+			NOT = {
+				tag = CNG
+			}
+			CNG = {
+				OR = {
+					accepted_culture = bakongo
+					primary_culture = bakongo
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = bakongo
+				owner = {
+					CNG = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = CNG
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = bakongo
+				}
+				any_neighbor_province = {
+					is_core = CNG
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24079"
+		add_core = CNG
+	}
+}
+province_event = {
+	id = 24080
+	title = "EVTNAME24080"
+	desc = "EVTDESC24080"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = ARA
+		}
+		owner = {
+			NOT = {
+				tag = ARA
+			}
+			ARA = {
+				OR = {
+					accepted_culture = mashriqi
+					primary_culture = mashriqi
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = mashriqi
+				owner = {
+					ARA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = ARA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = mashriqi
+				}
+				any_neighbor_province = {
+					is_core = ARA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24080"
+		add_core = ARA
+	}
+}
+province_event = {
+	id = 24081
+	title = "EVTNAME24081"
+	desc = "EVTDESC24081"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = SWI
+		}
+		owner = {
+			NOT = {
+				tag = SWI
+			}
+			SWI = {
+				OR = {
+					accepted_culture = swiss
+					primary_culture = swiss
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = swiss
+				owner = {
+					SWI = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = SWI
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = swiss
+				}
+				any_neighbor_province = {
+					is_core = SWI
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24081"
+		add_core = SWI
+	}
+}
+province_event = {
+	id = 24082
+	title = "EVTNAME24082"
+	desc = "EVTDESC24082"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = BYE
+		}
+		owner = {
+			NOT = {
+				tag = BYE
+			}
+			BYE = {
+				OR = {
+					accepted_culture = byelorussian
+					primary_culture = byelorussian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = byelorussian
+				owner = {
+					BYE = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = BYE
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = byelorussian
+				}
+				any_neighbor_province = {
+					is_core = BYE
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24082"
+		add_core = BYE
+	}
+}
+province_event = {
+	id = 24083
+	title = "EVTNAME24083"
+	desc = "EVTDESC24083"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = RUS
+		}
+		owner = {
+			NOT = {
+				tag = RUS
+			}
+			RUS = {
+				OR = {
+					accepted_culture = byelorussian
+					primary_culture = byelorussian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = byelorussian
+				owner = {
+					RUS = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = RUS
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = byelorussian
+				}
+				any_neighbor_province = {
+					is_core = RUS
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24083"
+		add_core = RUS
+	}
+}
+province_event = {
+	id = 24084
+	title = "EVTNAME24084"
+	desc = "EVTDESC24084"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = USA
+		}
+		owner = {
+			NOT = {
+				tag = USA
+			}
+			USA = {
+				OR = {
+					accepted_culture = yankee
+					primary_culture = yankee
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = yankee
+				owner = {
+					USA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = USA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = yankee
+				}
+				any_neighbor_province = {
+					is_core = USA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24084"
+		add_core = USA
+	}
+}
+province_event = {
+	id = 24085
+	title = "EVTNAME24085"
+	desc = "EVTDESC24085"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = SPA
+		}
+		owner = {
+			NOT = {
+				tag = SPA
+			}
+			SPA = {
+				OR = {
+					accepted_culture = spanish
+					primary_culture = spanish
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = spanish
+				owner = {
+					SPA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = SPA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = spanish
+				}
+				any_neighbor_province = {
+					is_core = SPA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24085"
+		add_core = SPA
+	}
+}
+province_event = {
+	id = 24086
+	title = "EVTNAME24086"
+	desc = "EVTDESC24086"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = ARA
+		}
+		owner = {
+			NOT = {
+				tag = ARA
+			}
+			ARA = {
+				OR = {
+					accepted_culture = maghrebi
+					primary_culture = maghrebi
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = maghrebi
+				owner = {
+					ARA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = ARA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = maghrebi
+				}
+				any_neighbor_province = {
+					is_core = ARA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24086"
+		add_core = ARA
+	}
+}
+province_event = {
+	id = 24087
+	title = "EVTNAME24087"
+	desc = "EVTDESC24087"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = POR
+		}
+		owner = {
+			NOT = {
+				tag = POR
+			}
+			POR = {
+				OR = {
+					accepted_culture = portuguese
+					primary_culture = portuguese
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = portuguese
+				owner = {
+					POR = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = POR
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = portuguese
+				}
+				any_neighbor_province = {
+					is_core = POR
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24087"
+		add_core = POR
+	}
+}
+province_event = {
+	id = 24088
+	title = "EVTNAME24088"
+	desc = "EVTDESC24088"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = KAL
+		}
+		owner = {
+			NOT = {
+				tag = KAL
+			}
+			KAL = {
+				OR = {
+					accepted_culture = baluchi
+					primary_culture = baluchi
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = baluchi
+				owner = {
+					KAL = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = KAL
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = baluchi
+				}
+				any_neighbor_province = {
+					is_core = KAL
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24088"
+		add_core = KAL
+	}
+}
+province_event = {
+	id = 24089
+	title = "EVTNAME24089"
+	desc = "EVTDESC24089"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = BUR
+		}
+		owner = {
+			NOT = {
+				tag = BUR
+			}
+			BUR = {
+				OR = {
+					accepted_culture = burmese
+					primary_culture = burmese
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = burmese
+				owner = {
+					BUR = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = BUR
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = burmese
+				}
+				any_neighbor_province = {
+					is_core = BUR
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24089"
+		add_core = BUR
+	}
+}
+province_event = {
+	id = 24090
+	title = "EVTNAME24090"
+	desc = "EVTDESC24090"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = BOS
+		}
+		owner = {
+			NOT = {
+				tag = BOS
+			}
+			BOS = {
+				OR = {
+					accepted_culture = bosniak
+					primary_culture = bosniak
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = bosniak
+				owner = {
+					BOS = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = BOS
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = bosniak
+				}
+				any_neighbor_province = {
+					is_core = BOS
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24090"
+		add_core = BOS
+	}
+}
+province_event = {
+	id = 24091
+	title = "EVTNAME24091"
+	desc = "EVTDESC24091"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = YUG
+		}
+		owner = {
+			NOT = {
+				tag = YUG
+			}
+			YUG = {
+				OR = {
+					accepted_culture = bosniak
+					primary_culture = bosniak
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = bosniak
+				owner = {
+					YUG = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = YUG
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = bosniak
+				}
+				any_neighbor_province = {
+					is_core = YUG
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24091"
+		add_core = YUG
+	}
+}
+province_event = {
+	id = 24092
+	title = "EVTNAME24092"
+	desc = "EVTDESC24092"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = TKM
+		}
+		owner = {
+			NOT = {
+				tag = TKM
+			}
+			TKM = {
+				OR = {
+					accepted_culture = turkmen
+					primary_culture = turkmen
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = turkmen
+				owner = {
+					TKM = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = TKM
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = turkmen
+				}
+				any_neighbor_province = {
+					is_core = TKM
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24092"
+		add_core = TKM
+	}
+}
+province_event = {
+	id = 24093
+	title = "EVTNAME24093"
+	desc = "EVTDESC24093"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = LAF
+		}
+		owner = {
+			NOT = {
+				tag = LAF
+			}
+			LAF = {
+				OR = {
+					accepted_culture = afro_brazilian
+					primary_culture = afro_brazilian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = afro_brazilian
+				owner = {
+					LAF = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = LAF
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = afro_brazilian
+				}
+				any_neighbor_province = {
+					is_core = LAF
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24093"
+		add_core = LAF
+	}
+}
+province_event = {
+	id = 24094
+	title = "EVTNAME24094"
+	desc = "EVTDESC24094"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = POL
+		}
+		owner = {
+			NOT = {
+				tag = POL
+			}
+			POL = {
+				OR = {
+					accepted_culture = polish
+					primary_culture = polish
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = polish
+				owner = {
+					POL = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = POL
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = polish
+				}
+				any_neighbor_province = {
+					is_core = POL
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24094"
+		add_core = POL
+	}
+}
+province_event = {
+	id = 24095
+	title = "EVTNAME24095"
+	desc = "EVTDESC24095"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = PLC
+		}
+		owner = {
+			NOT = {
+				tag = PLC
+			}
+			PLC = {
+				OR = {
+					accepted_culture = polish
+					primary_culture = polish
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = polish
+				owner = {
+					PLC = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = PLC
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = polish
+				}
+				any_neighbor_province = {
+					is_core = PLC
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24095"
+		add_core = PLC
+	}
+}
+province_event = {
+	id = 24096
+	title = "EVTNAME24096"
+	desc = "EVTDESC24096"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = HND
+		}
+		owner = {
+			NOT = {
+				tag = HND
+			}
+			HND = {
+				OR = {
+					accepted_culture = bihari
+					primary_culture = bihari
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = bihari
+				owner = {
+					HND = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = HND
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = bihari
+				}
+				any_neighbor_province = {
+					is_core = HND
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24096"
+		add_core = HND
+	}
+}
+province_event = {
+	id = 24097
+	title = "EVTNAME24097"
+	desc = "EVTDESC24097"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = BIH
+		}
+		owner = {
+			NOT = {
+				tag = BIH
+			}
+			BIH = {
+				OR = {
+					accepted_culture = bihari
+					primary_culture = bihari
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = bihari
+				owner = {
+					BIH = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = BIH
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = bihari
+				}
+				any_neighbor_province = {
+					is_core = BIH
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24097"
+		add_core = BIH
+	}
+}
+province_event = {
+	id = 24098
+	title = "EVTNAME24098"
+	desc = "EVTDESC24098"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = HND
+		}
+		owner = {
+			NOT = {
+				tag = HND
+			}
+			HND = {
+				OR = {
+					accepted_culture = gujarati
+					primary_culture = gujarati
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = gujarati
+				owner = {
+					HND = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = HND
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = gujarati
+				}
+				any_neighbor_province = {
+					is_core = HND
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24098"
+		add_core = HND
+	}
+}
+province_event = {
+	id = 24099
+	title = "EVTNAME24099"
+	desc = "EVTDESC24099"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = ITA
+		}
+		owner = {
+			NOT = {
+				tag = ITA
+			}
+			ITA = {
+				OR = {
+					accepted_culture = south_italian
+					primary_culture = south_italian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = south_italian
+				owner = {
+					ITA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = ITA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = south_italian
+				}
+				any_neighbor_province = {
+					is_core = ITA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24099"
+		add_core = ITA
+	}
+}
+province_event = {
+	id = 24100
+	title = "EVTNAME24100"
+	desc = "EVTDESC24100"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = SER
+		}
+		owner = {
+			NOT = {
+				tag = SER
+			}
+			SER = {
+				OR = {
+					accepted_culture = serb
+					primary_culture = serb
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = serb
+				owner = {
+					SER = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = SER
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = serb
+				}
+				any_neighbor_province = {
+					is_core = SER
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24100"
+		add_core = SER
+	}
+}
+province_event = {
+	id = 24101
+	title = "EVTNAME24101"
+	desc = "EVTDESC24101"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = YUG
+		}
+		owner = {
+			NOT = {
+				tag = YUG
+			}
+			YUG = {
+				OR = {
+					accepted_culture = serb
+					primary_culture = serb
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = serb
+				owner = {
+					YUG = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = YUG
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = serb
+				}
+				any_neighbor_province = {
+					is_core = YUG
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24101"
+		add_core = YUG
+	}
+}
+province_event = {
+	id = 24102
+	title = "EVTNAME24102"
+	desc = "EVTDESC24102"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = CHI
+		}
+		owner = {
+			NOT = {
+				tag = CHI
+			}
+			CHI = {
+				OR = {
+					accepted_culture = beifaren
+					primary_culture = beifaren
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = beifaren
+				owner = {
+					CHI = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = CHI
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = beifaren
+				}
+				any_neighbor_province = {
+					is_core = CHI
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24102"
+		add_core = CHI
+	}
+}
+province_event = {
+	id = 24103
+	title = "EVTNAME24103"
+	desc = "EVTDESC24103"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = ALB
+		}
+		owner = {
+			NOT = {
+				tag = ALB
+			}
+			ALB = {
+				OR = {
+					accepted_culture = albanian
+					primary_culture = albanian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = albanian
+				owner = {
+					ALB = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = ALB
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = albanian
+				}
+				any_neighbor_province = {
+					is_core = ALB
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24103"
+		add_core = ALB
+	}
+}
+province_event = {
+	id = 24104
+	title = "EVTNAME24104"
+	desc = "EVTDESC24104"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = TUR
+		}
+		owner = {
+			NOT = {
+				tag = TUR
+			}
+			TUR = {
+				OR = {
+					accepted_culture = turkish
+					primary_culture = turkish
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = turkish
+				owner = {
+					TUR = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = TUR
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = turkish
+				}
+				any_neighbor_province = {
+					is_core = TUR
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24104"
+		add_core = TUR
+	}
+}
+province_event = {
+	id = 24105
+	title = "EVTNAME24105"
+	desc = "EVTDESC24105"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = FIN
+		}
+		owner = {
+			NOT = {
+				tag = FIN
+			}
+			FIN = {
+				OR = {
+					accepted_culture = finnish
+					primary_culture = finnish
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = finnish
+				owner = {
+					FIN = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = FIN
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = finnish
+				}
+				any_neighbor_province = {
+					is_core = FIN
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24105"
+		add_core = FIN
+	}
+}
+province_event = {
+	id = 24106
+	title = "EVTNAME24106"
+	desc = "EVTDESC24106"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = SCA
+		}
+		owner = {
+			NOT = {
+				tag = SCA
+			}
+			SCA = {
+				OR = {
+					accepted_culture = finnish
+					primary_culture = finnish
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = finnish
+				owner = {
+					SCA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = SCA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = finnish
+				}
+				any_neighbor_province = {
+					is_core = SCA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24106"
+		add_core = SCA
+	}
+}
+province_event = {
+	id = 24107
+	title = "EVTNAME24107"
+	desc = "EVTDESC24107"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = BOH
+		}
+		owner = {
+			NOT = {
+				tag = BOH
+			}
+			BOH = {
+				OR = {
+					accepted_culture = czech
+					primary_culture = czech
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = czech
+				owner = {
+					BOH = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = BOH
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = czech
+				}
+				any_neighbor_province = {
+					is_core = BOH
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24107"
+		add_core = BOH
+	}
+}
+province_event = {
+	id = 24108
+	title = "EVTNAME24108"
+	desc = "EVTDESC24108"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = CZH
+		}
+		owner = {
+			NOT = {
+				tag = CZH
+			}
+			CZH = {
+				OR = {
+					accepted_culture = czech
+					primary_culture = czech
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = czech
+				owner = {
+					CZH = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = CZH
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = czech
+				}
+				any_neighbor_province = {
+					is_core = CZH
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24108"
+		add_core = CZH
+	}
+}
+province_event = {
+	id = 24109
+	title = "EVTNAME24109"
+	desc = "EVTDESC24109"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = CAN
+		}
+		owner = {
+			NOT = {
+				tag = CAN
+			}
+			CAN = {
+				OR = {
+					accepted_culture = anglo_canadian
+					primary_culture = anglo_canadian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = anglo_canadian
+				owner = {
+					CAN = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = CAN
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = anglo_canadian
+				}
+				any_neighbor_province = {
+					is_core = CAN
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24109"
+		add_core = CAN
+	}
+}
+province_event = {
+	id = 24110
+	title = "EVTNAME24110"
+	desc = "EVTDESC24110"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = SLO
+		}
+		owner = {
+			NOT = {
+				tag = SLO
+			}
+			SLO = {
+				OR = {
+					accepted_culture = slovene
+					primary_culture = slovene
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = slovene
+				owner = {
+					SLO = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = SLO
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = slovene
+				}
+				any_neighbor_province = {
+					is_core = SLO
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24110"
+		add_core = SLO
+	}
+}
+province_event = {
+	id = 24111
+	title = "EVTNAME24111"
+	desc = "EVTDESC24111"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = YUG
+		}
+		owner = {
+			NOT = {
+				tag = YUG
+			}
+			YUG = {
+				OR = {
+					accepted_culture = slovene
+					primary_culture = slovene
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = slovene
+				owner = {
+					YUG = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = YUG
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = slovene
+				}
+				any_neighbor_province = {
+					is_core = YUG
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24111"
+		add_core = YUG
+	}
+}
+province_event = {
+	id = 24112
+	title = "EVTNAME24112"
+	desc = "EVTDESC24112"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = NEP
+		}
+		owner = {
+			NOT = {
+				tag = NEP
+			}
+			NEP = {
+				OR = {
+					accepted_culture = nepali
+					primary_culture = nepali
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = nepali
+				owner = {
+					NEP = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = NEP
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = nepali
+				}
+				any_neighbor_province = {
+					is_core = NEP
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24112"
+		add_core = NEP
+	}
+}
+province_event = {
+	id = 24113
+	title = "EVTNAME24113"
+	desc = "EVTDESC24113"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = HND
+		}
+		owner = {
+			NOT = {
+				tag = HND
+			}
+			HND = {
+				OR = {
+					accepted_culture = nepali
+					primary_culture = nepali
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = nepali
+				owner = {
+					HND = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = HND
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = nepali
+				}
+				any_neighbor_province = {
+					is_core = HND
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24113"
+		add_core = HND
+	}
+}
+province_event = {
+	id = 24114
+	title = "EVTNAME24114"
+	desc = "EVTDESC24114"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = JAP
+		}
+		owner = {
+			NOT = {
+				tag = JAP
+			}
+			JAP = {
+				OR = {
+					accepted_culture = japanese
+					primary_culture = japanese
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = japanese
+				owner = {
+					JAP = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = JAP
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = japanese
+				}
+				any_neighbor_province = {
+					is_core = JAP
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24114"
+		add_core = JAP
+	}
+}
+province_event = {
+	id = 24115
+	title = "EVTNAME24115"
+	desc = "EVTDESC24115"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = DEN
+		}
+		owner = {
+			NOT = {
+				tag = DEN
+			}
+			DEN = {
+				OR = {
+					accepted_culture = danish
+					primary_culture = danish
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = danish
+				owner = {
+					DEN = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = DEN
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = danish
+				}
+				any_neighbor_province = {
+					is_core = DEN
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24115"
+		add_core = DEN
+	}
+}
+province_event = {
+	id = 24116
+	title = "EVTNAME24116"
+	desc = "EVTDESC24116"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = SCA
+		}
+		owner = {
+			NOT = {
+				tag = SCA
+			}
+			SCA = {
+				OR = {
+					accepted_culture = danish
+					primary_culture = danish
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = danish
+				owner = {
+					SCA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = SCA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = danish
+				}
+				any_neighbor_province = {
+					is_core = SCA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24116"
+		add_core = SCA
+	}
+}
+province_event = {
+	id = 24117
+	title = "EVTNAME24117"
+	desc = "EVTDESC24117"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = HND
+		}
+		owner = {
+			NOT = {
+				tag = HND
+			}
+			HND = {
+				OR = {
+					accepted_culture = sinhala
+					primary_culture = sinhala
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = sinhala
+				owner = {
+					HND = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = HND
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = sinhala
+				}
+				any_neighbor_province = {
+					is_core = HND
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24117"
+		add_core = HND
+	}
+}
+province_event = {
+	id = 24118
+	title = "EVTNAME24118"
+	desc = "EVTDESC24118"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = SRI
+		}
+		owner = {
+			NOT = {
+				tag = SRI
+			}
+			SRI = {
+				OR = {
+					accepted_culture = sinhala
+					primary_culture = sinhala
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = sinhala
+				owner = {
+					SRI = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = SRI
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = sinhala
+				}
+				any_neighbor_province = {
+					is_core = SRI
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24118"
+		add_core = SRI
+	}
+}
+province_event = {
+	id = 24119
+	title = "EVTNAME24119"
+	desc = "EVTDESC24119"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = CUB
+		}
+		owner = {
+			NOT = {
+				tag = CUB
+			}
+			CUB = {
+				OR = {
+					accepted_culture = cubans
+					primary_culture = cubans
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = cubans
+				owner = {
+					CUB = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = CUB
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = cubans
+				}
+				any_neighbor_province = {
+					is_core = CUB
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24119"
+		add_core = CUB
+	}
+}
+province_event = {
+	id = 24120
+	title = "EVTNAME24120"
+	desc = "EVTDESC24120"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = LIB
+		}
+		owner = {
+			NOT = {
+				tag = LIB
+			}
+			LIB = {
+				OR = {
+					accepted_culture = afro_american
+					primary_culture = afro_american
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = afro_american
+				owner = {
+					LIB = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = LIB
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = afro_american
+				}
+				any_neighbor_province = {
+					is_core = LIB
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24120"
+		add_core = LIB
+	}
+}
+province_event = {
+	id = 24121
+	title = "EVTNAME24121"
+	desc = "EVTDESC24121"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = KMK
+		}
+		owner = {
+			NOT = {
+				tag = KMK
+			}
+			KMK = {
+				OR = {
+					accepted_culture = kalmyk
+					primary_culture = kalmyk
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = kalmyk
+				owner = {
+					KMK = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = KMK
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = kalmyk
+				}
+				any_neighbor_province = {
+					is_core = KMK
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24121"
+		add_core = KMK
+	}
+}
+province_event = {
+	id = 24122
+	title = "EVTNAME24122"
+	desc = "EVTDESC24122"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = SWE
+		}
+		owner = {
+			NOT = {
+				tag = SWE
+			}
+			SWE = {
+				OR = {
+					accepted_culture = swedish
+					primary_culture = swedish
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = swedish
+				owner = {
+					SWE = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = SWE
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = swedish
+				}
+				any_neighbor_province = {
+					is_core = SWE
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24122"
+		add_core = SWE
+	}
+}
+province_event = {
+	id = 24123
+	title = "EVTNAME24123"
+	desc = "EVTDESC24123"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = SCA
+		}
+		owner = {
+			NOT = {
+				tag = SCA
+			}
+			SCA = {
+				OR = {
+					accepted_culture = swedish
+					primary_culture = swedish
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = swedish
+				owner = {
+					SCA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = SCA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = swedish
+				}
+				any_neighbor_province = {
+					is_core = SCA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24123"
+		add_core = SCA
+	}
+}
+province_event = {
+	id = 24124
+	title = "EVTNAME24124"
+	desc = "EVTDESC24124"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = HND
+		}
+		owner = {
+			NOT = {
+				tag = HND
+			}
+			HND = {
+				OR = {
+					accepted_culture = avadhi
+					primary_culture = avadhi
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = avadhi
+				owner = {
+					HND = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = HND
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = avadhi
+				}
+				any_neighbor_province = {
+					is_core = HND
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24124"
+		add_core = HND
+	}
+}
+province_event = {
+	id = 24125
+	title = "EVTNAME24125"
+	desc = "EVTDESC24125"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = SCA
+		}
+		owner = {
+			NOT = {
+				tag = SCA
+			}
+			SCA = {
+				OR = {
+					accepted_culture = sami
+					primary_culture = sami
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = sami
+				owner = {
+					SCA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = SCA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = sami
+				}
+				any_neighbor_province = {
+					is_core = SCA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24125"
+		add_core = SCA
+	}
+}
+province_event = {
+	id = 24126
+	title = "EVTNAME24126"
+	desc = "EVTDESC24126"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = BUN
+		}
+		owner = {
+			NOT = {
+				tag = BUN
+			}
+			BUN = {
+				OR = {
+					accepted_culture = kanauji
+					primary_culture = kanauji
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = kanauji
+				owner = {
+					BUN = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = BUN
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = kanauji
+				}
+				any_neighbor_province = {
+					is_core = BUN
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24126"
+		add_core = BUN
+	}
+}
+province_event = {
+	id = 24127
+	title = "EVTNAME24127"
+	desc = "EVTDESC24127"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = HND
+		}
+		owner = {
+			NOT = {
+				tag = HND
+			}
+			HND = {
+				OR = {
+					accepted_culture = kanauji
+					primary_culture = kanauji
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = kanauji
+				owner = {
+					HND = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = HND
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = kanauji
+				}
+				any_neighbor_province = {
+					is_core = HND
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24127"
+		add_core = HND
+	}
+}
+province_event = {
+	id = 24128
+	title = "EVTNAME24128"
+	desc = "EVTDESC24128"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = ZAN
+		}
+		owner = {
+			NOT = {
+				tag = ZAN
+			}
+			ZAN = {
+				OR = {
+					accepted_culture = swahili
+					primary_culture = swahili
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = swahili
+				owner = {
+					ZAN = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = ZAN
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = swahili
+				}
+				any_neighbor_province = {
+					is_core = ZAN
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24128"
+		add_core = ZAN
+	}
+}
+province_event = {
+	id = 24129
+	title = "EVTNAME24129"
+	desc = "EVTDESC24129"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = LAF
+		}
+		owner = {
+			NOT = {
+				tag = LAF
+			}
+			LAF = {
+				OR = {
+					accepted_culture = guarani
+					primary_culture = guarani
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = guarani
+				owner = {
+					LAF = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = LAF
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = guarani
+				}
+				any_neighbor_province = {
+					is_core = LAF
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24129"
+		add_core = LAF
+	}
+}
+province_event = {
+	id = 24130
+	title = "EVTNAME24130"
+	desc = "EVTDESC24130"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = TNT
+		}
+		owner = {
+			NOT = {
+				tag = TNT
+			}
+			TNT = {
+				OR = {
+					accepted_culture = tuvan
+					primary_culture = tuvan
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = tuvan
+				owner = {
+					TNT = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = TNT
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = tuvan
+				}
+				any_neighbor_province = {
+					is_core = TNT
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24130"
+		add_core = TNT
+	}
+}
+province_event = {
+	id = 24131
+	title = "EVTNAME24131"
+	desc = "EVTDESC24131"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = GER
+		}
+		owner = {
+			NOT = {
+				tag = GER
+			}
+			GER = {
+				OR = {
+					accepted_culture = north_german
+					primary_culture = north_german
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = north_german
+				owner = {
+					GER = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = GER
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = north_german
+				}
+				any_neighbor_province = {
+					is_core = GER
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24131"
+		add_core = GER
+	}
+}
+province_event = {
+	id = 24132
+	title = "EVTNAME24132"
+	desc = "EVTDESC24132"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = CRO
+		}
+		owner = {
+			NOT = {
+				tag = CRO
+			}
+			CRO = {
+				OR = {
+					accepted_culture = croat
+					primary_culture = croat
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = croat
+				owner = {
+					CRO = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = CRO
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = croat
+				}
+				any_neighbor_province = {
+					is_core = CRO
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24132"
+		add_core = CRO
+	}
+}
+province_event = {
+	id = 24133
+	title = "EVTNAME24133"
+	desc = "EVTDESC24133"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = YUG
+		}
+		owner = {
+			NOT = {
+				tag = YUG
+			}
+			YUG = {
+				OR = {
+					accepted_culture = croat
+					primary_culture = croat
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = croat
+				owner = {
+					YUG = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = YUG
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = croat
+				}
+				any_neighbor_province = {
+					is_core = YUG
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24133"
+		add_core = YUG
+	}
+}
+province_event = {
+	id = 24134
+	title = "EVTNAME24134"
+	desc = "EVTDESC24134"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = ARM
+		}
+		owner = {
+			NOT = {
+				tag = ARM
+			}
+			ARM = {
+				OR = {
+					accepted_culture = armenian
+					primary_culture = armenian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = armenian
+				owner = {
+					ARM = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = ARM
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = armenian
+				}
+				any_neighbor_province = {
+					is_core = ARM
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24134"
+		add_core = ARM
+	}
+}
+province_event = {
+	id = 24135
+	title = "EVTNAME24135"
+	desc = "EVTDESC24135"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = UZB
+		}
+		owner = {
+			NOT = {
+				tag = UZB
+			}
+			UZB = {
+				OR = {
+					accepted_culture = uzbek
+					primary_culture = uzbek
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = uzbek
+				owner = {
+					UZB = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = UZB
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = uzbek
+				}
+				any_neighbor_province = {
+					is_core = UZB
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24135"
+		add_core = UZB
+	}
+}
+province_event = {
+	id = 24136
+	title = "EVTNAME24136"
+	desc = "EVTDESC24136"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = HND
+		}
+		owner = {
+			NOT = {
+				tag = HND
+			}
+			HND = {
+				OR = {
+					accepted_culture = rajput
+					primary_culture = rajput
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = rajput
+				owner = {
+					HND = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = HND
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = rajput
+				}
+				any_neighbor_province = {
+					is_core = HND
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24136"
+		add_core = HND
+	}
+}
+province_event = {
+	id = 24137
+	title = "EVTNAME24137"
+	desc = "EVTDESC24137"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = EGY
+		}
+		owner = {
+			NOT = {
+				tag = EGY
+			}
+			EGY = {
+				OR = {
+					accepted_culture = misri
+					primary_culture = misri
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = misri
+				owner = {
+					EGY = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = EGY
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = misri
+				}
+				any_neighbor_province = {
+					is_core = EGY
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24137"
+		add_core = EGY
+	}
+}
+province_event = {
+	id = 24138
+	title = "EVTNAME24138"
+	desc = "EVTDESC24138"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = ARA
+		}
+		owner = {
+			NOT = {
+				tag = ARA
+			}
+			ARA = {
+				OR = {
+					accepted_culture = misri
+					primary_culture = misri
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = misri
+				owner = {
+					ARA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = ARA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = misri
+				}
+				any_neighbor_province = {
+					is_core = ARA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24138"
+		add_core = ARA
+	}
+}
+province_event = {
+	id = 24139
+	title = "EVTNAME24139"
+	desc = "EVTDESC24139"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = ICL
+		}
+		owner = {
+			NOT = {
+				tag = ICL
+			}
+			ICL = {
+				OR = {
+					accepted_culture = icelandic
+					primary_culture = icelandic
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = icelandic
+				owner = {
+					ICL = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = ICL
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = icelandic
+				}
+				any_neighbor_province = {
+					is_core = ICL
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24139"
+		add_core = ICL
+	}
+}
+province_event = {
+	id = 24140
+	title = "EVTNAME24140"
+	desc = "EVTDESC24140"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = SCA
+		}
+		owner = {
+			NOT = {
+				tag = SCA
+			}
+			SCA = {
+				OR = {
+					accepted_culture = icelandic
+					primary_culture = icelandic
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = icelandic
+				owner = {
+					SCA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = SCA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = icelandic
+				}
+				any_neighbor_province = {
+					is_core = SCA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24140"
+		add_core = SCA
+	}
+}
+province_event = {
+	id = 24141
+	title = "EVTNAME24141"
+	desc = "EVTDESC24141"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = AZB
+		}
+		owner = {
+			NOT = {
+				tag = AZB
+			}
+			AZB = {
+				OR = {
+					accepted_culture = azerbaijani
+					primary_culture = azerbaijani
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = azerbaijani
+				owner = {
+					AZB = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = AZB
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = azerbaijani
+				}
+				any_neighbor_province = {
+					is_core = AZB
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24141"
+		add_core = AZB
+	}
+}
+province_event = {
+	id = 24142
+	title = "EVTNAME24142"
+	desc = "EVTDESC24142"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = MYS
+		}
+		owner = {
+			NOT = {
+				tag = MYS
+			}
+			MYS = {
+				OR = {
+					accepted_culture = kannada
+					primary_culture = kannada
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = kannada
+				owner = {
+					MYS = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = MYS
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = kannada
+				}
+				any_neighbor_province = {
+					is_core = MYS
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24142"
+		add_core = MYS
+	}
+}
+province_event = {
+	id = 24143
+	title = "EVTNAME24143"
+	desc = "EVTDESC24143"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = HND
+		}
+		owner = {
+			NOT = {
+				tag = HND
+			}
+			HND = {
+				OR = {
+					accepted_culture = kannada
+					primary_culture = kannada
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = kannada
+				owner = {
+					HND = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = HND
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = kannada
+				}
+				any_neighbor_province = {
+					is_core = HND
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24143"
+		add_core = HND
+	}
+}
+province_event = {
+	id = 24144
+	title = "EVTNAME24144"
+	desc = "EVTDESC24144"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = BRZ
+		}
+		owner = {
+			NOT = {
+				tag = BRZ
+			}
+			BRZ = {
+				OR = {
+					accepted_culture = brazilian
+					primary_culture = brazilian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = brazilian
+				owner = {
+					BRZ = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = BRZ
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = brazilian
+				}
+				any_neighbor_province = {
+					is_core = BRZ
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24144"
+		add_core = BRZ
+	}
+}
+province_event = {
+	id = 24145
+	title = "EVTNAME24145"
+	desc = "EVTDESC24145"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = LAF
+		}
+		owner = {
+			NOT = {
+				tag = LAF
+			}
+			LAF = {
+				OR = {
+					accepted_culture = brazilian
+					primary_culture = brazilian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = brazilian
+				owner = {
+					LAF = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = LAF
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = brazilian
+				}
+				any_neighbor_province = {
+					is_core = LAF
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24145"
+		add_core = LAF
+	}
+}
+province_event = {
+	id = 24146
+	title = "EVTNAME24146"
+	desc = "EVTDESC24146"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = TRA
+		}
+		owner = {
+			NOT = {
+				tag = TRA
+			}
+			TRA = {
+				OR = {
+					accepted_culture = malayalam
+					primary_culture = malayalam
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = malayalam
+				owner = {
+					TRA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = TRA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = malayalam
+				}
+				any_neighbor_province = {
+					is_core = TRA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24146"
+		add_core = TRA
+	}
+}
+province_event = {
+	id = 24147
+	title = "EVTNAME24147"
+	desc = "EVTDESC24147"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = HND
+		}
+		owner = {
+			NOT = {
+				tag = HND
+			}
+			HND = {
+				OR = {
+					accepted_culture = malayalam
+					primary_culture = malayalam
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = malayalam
+				owner = {
+					HND = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = HND
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = malayalam
+				}
+				any_neighbor_province = {
+					is_core = HND
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24147"
+		add_core = HND
+	}
+}
+province_event = {
+	id = 24148
+	title = "EVTNAME24148"
+	desc = "EVTDESC24148"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = SCO
+		}
+		owner = {
+			NOT = {
+				tag = SCO
+			}
+			SCO = {
+				OR = {
+					accepted_culture = scottish
+					primary_culture = scottish
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = scottish
+				owner = {
+					SCO = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = SCO
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = scottish
+				}
+				any_neighbor_province = {
+					is_core = SCO
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24148"
+		add_core = SCO
+	}
+}
+province_event = {
+	id = 24149
+	title = "EVTNAME24149"
+	desc = "EVTDESC24149"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = ENG
+		}
+		owner = {
+			NOT = {
+				tag = ENG
+			}
+			ENG = {
+				OR = {
+					accepted_culture = scottish
+					primary_culture = scottish
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = scottish
+				owner = {
+					ENG = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = ENG
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = scottish
+				}
+				any_neighbor_province = {
+					is_core = ENG
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24149"
+		add_core = ENG
+	}
+}
+province_event = {
+	id = 24150
+	title = "EVTNAME24150"
+	desc = "EVTDESC24150"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = HND
+		}
+		owner = {
+			NOT = {
+				tag = HND
+			}
+			HND = {
+				OR = {
+					accepted_culture = tamil
+					primary_culture = tamil
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = tamil
+				owner = {
+					HND = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = HND
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = tamil
+				}
+				any_neighbor_province = {
+					is_core = HND
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24150"
+		add_core = HND
+	}
+}
+province_event = {
+	id = 24151
+	title = "EVTNAME24151"
+	desc = "EVTDESC24151"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = ENG
+		}
+		owner = {
+			NOT = {
+				tag = ENG
+			}
+			ENG = {
+				OR = {
+					accepted_culture = british
+					primary_culture = british
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = british
+				owner = {
+					ENG = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = ENG
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = british
+				}
+				any_neighbor_province = {
+					is_core = ENG
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24151"
+		add_core = ENG
+	}
+}
+province_event = {
+	id = 24152
+	title = "EVTNAME24152"
+	desc = "EVTDESC24152"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = BAS
+		}
+		owner = {
+			NOT = {
+				tag = BAS
+			}
+			BAS = {
+				OR = {
+					accepted_culture = telegu
+					primary_culture = telegu
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = telegu
+				owner = {
+					BAS = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = BAS
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = telegu
+				}
+				any_neighbor_province = {
+					is_core = BAS
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24152"
+		add_core = BAS
+	}
+}
+province_event = {
+	id = 24153
+	title = "EVTNAME24153"
+	desc = "EVTDESC24153"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = HND
+		}
+		owner = {
+			NOT = {
+				tag = HND
+			}
+			HND = {
+				OR = {
+					accepted_culture = telegu
+					primary_culture = telegu
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = telegu
+				owner = {
+					HND = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = HND
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = telegu
+				}
+				any_neighbor_province = {
+					is_core = HND
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24153"
+		add_core = HND
+	}
+}
+province_event = {
+	id = 24154
+	title = "EVTNAME24154"
+	desc = "EVTDESC24154"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = AST
+		}
+		owner = {
+			NOT = {
+				tag = AST
+			}
+			AST = {
+				OR = {
+					accepted_culture = australian
+					primary_culture = australian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = australian
+				owner = {
+					AST = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = AST
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = australian
+				}
+				any_neighbor_province = {
+					is_core = AST
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24154"
+		add_core = AST
+	}
+}
+province_event = {
+	id = 24155
+	title = "EVTNAME24155"
+	desc = "EVTDESC24155"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = MLY
+		}
+		owner = {
+			NOT = {
+				tag = MLY
+			}
+			MLY = {
+				OR = {
+					accepted_culture = malay
+					primary_culture = malay
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = malay
+				owner = {
+					MLY = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = MLY
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = malay
+				}
+				any_neighbor_province = {
+					is_core = MLY
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24155"
+		add_core = MLY
+	}
+}
+province_event = {
+	id = 24156
+	title = "EVTNAME24156"
+	desc = "EVTDESC24156"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = TIB
+		}
+		owner = {
+			NOT = {
+				tag = TIB
+			}
+			TIB = {
+				OR = {
+					accepted_culture = tibetan
+					primary_culture = tibetan
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = tibetan
+				owner = {
+					TIB = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = TIB
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = tibetan
+				}
+				any_neighbor_province = {
+					is_core = TIB
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24156"
+		add_core = TIB
+	}
+}
+province_event = {
+	id = 24157
+	title = "EVTNAME24157"
+	desc = "EVTDESC24157"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = CHI
+		}
+		owner = {
+			NOT = {
+				tag = CHI
+			}
+			CHI = {
+				OR = {
+					accepted_culture = tibetan
+					primary_culture = tibetan
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = tibetan
+				owner = {
+					CHI = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = CHI
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = tibetan
+				}
+				any_neighbor_province = {
+					is_core = CHI
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24157"
+		add_core = CHI
+	}
+}
+province_event = {
+	id = 24158
+	title = "EVTNAME24158"
+	desc = "EVTDESC24158"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = QUE
+		}
+		owner = {
+			NOT = {
+				tag = QUE
+			}
+			QUE = {
+				OR = {
+					accepted_culture = french_canadian
+					primary_culture = french_canadian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = french_canadian
+				owner = {
+					QUE = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = QUE
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = french_canadian
+				}
+				any_neighbor_province = {
+					is_core = QUE
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24158"
+		add_core = QUE
+	}
+}
+province_event = {
+	id = 24159
+	title = "EVTNAME24159"
+	desc = "EVTDESC24159"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = CAN
+		}
+		owner = {
+			NOT = {
+				tag = CAN
+			}
+			CAN = {
+				OR = {
+					accepted_culture = french_canadian
+					primary_culture = french_canadian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = french_canadian
+				owner = {
+					CAN = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = CAN
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = french_canadian
+				}
+				any_neighbor_province = {
+					is_core = CAN
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24159"
+		add_core = CAN
+	}
+}
+province_event = {
+	id = 24160
+	title = "EVTNAME24160"
+	desc = "EVTDESC24160"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = LAF
+		}
+		owner = {
+			NOT = {
+				tag = LAF
+			}
+			LAF = {
+				OR = {
+					accepted_culture = north_andean
+					primary_culture = north_andean
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = north_andean
+				owner = {
+					LAF = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = LAF
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = north_andean
+				}
+				any_neighbor_province = {
+					is_core = LAF
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24160"
+		add_core = LAF
+	}
+}
+province_event = {
+	id = 24161
+	title = "EVTNAME24161"
+	desc = "EVTDESC24161"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = GCO
+		}
+		owner = {
+			NOT = {
+				tag = GCO
+			}
+			GCO = {
+				OR = {
+					accepted_culture = north_andean
+					primary_culture = north_andean
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = north_andean
+				owner = {
+					GCO = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = GCO
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = north_andean
+				}
+				any_neighbor_province = {
+					is_core = GCO
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24161"
+		add_core = GCO
+	}
+}
+province_event = {
+	id = 24162
+	title = "EVTNAME24162"
+	desc = "EVTDESC24162"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = CSA
+		}
+		owner = {
+			NOT = {
+				tag = CSA
+			}
+			CSA = {
+				OR = {
+					accepted_culture = dixie
+					primary_culture = dixie
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = dixie
+				owner = {
+					CSA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = CSA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = dixie
+				}
+				any_neighbor_province = {
+					is_core = CSA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24162"
+		add_core = CSA
+	}
+}
+province_event = {
+	id = 24163
+	title = "EVTNAME24163"
+	desc = "EVTDESC24163"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = USA
+		}
+		owner = {
+			NOT = {
+				tag = USA
+			}
+			USA = {
+				OR = {
+					accepted_culture = dixie
+					primary_culture = dixie
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = dixie
+				owner = {
+					USA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = USA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = dixie
+				}
+				any_neighbor_province = {
+					is_core = USA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24163"
+		add_core = USA
+	}
+}
+province_event = {
+	id = 24164
+	title = "EVTNAME24164"
+	desc = "EVTDESC24164"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = TEX
+		}
+		owner = {
+			NOT = {
+				tag = TEX
+			}
+			TEX = {
+				OR = {
+					accepted_culture = texan
+					primary_culture = texan
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = texan
+				owner = {
+					TEX = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = TEX
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = texan
+				}
+				any_neighbor_province = {
+					is_core = TEX
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24164"
+		add_core = TEX
+	}
+}
+province_event = {
+	id = 24165
+	title = "EVTNAME24165"
+	desc = "EVTDESC24165"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = USA
+		}
+		owner = {
+			NOT = {
+				tag = USA
+			}
+			USA = {
+				OR = {
+					accepted_culture = texan
+					primary_culture = texan
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = texan
+				owner = {
+					USA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = USA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = texan
+				}
+				any_neighbor_province = {
+					is_core = USA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24165"
+		add_core = USA
+	}
+}
+province_event = {
+	id = 24166
+	title = "EVTNAME24166"
+	desc = "EVTDESC24166"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = GXI
+		}
+		owner = {
+			NOT = {
+				tag = GXI
+			}
+			GXI = {
+				OR = {
+					accepted_culture = zhuang
+					primary_culture = zhuang
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = zhuang
+				owner = {
+					GXI = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = GXI
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = zhuang
+				}
+				any_neighbor_province = {
+					is_core = GXI
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24166"
+		add_core = GXI
+	}
+}
+province_event = {
+	id = 24167
+	title = "EVTNAME24167"
+	desc = "EVTDESC24167"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = UCA
+		}
+		owner = {
+			NOT = {
+				tag = UCA
+			}
+			UCA = {
+				OR = {
+					accepted_culture = central_american
+					primary_culture = central_american
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = central_american
+				owner = {
+					UCA = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = UCA
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = central_american
+				}
+				any_neighbor_province = {
+					is_core = UCA
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24167"
+		add_core = UCA
+	}
+}
+province_event = {
+	id = 24168
+	title = "EVTNAME24168"
+	desc = "EVTDESC24168"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = CAM
+		}
+		owner = {
+			NOT = {
+				tag = CAM
+			}
+			CAM = {
+				OR = {
+					accepted_culture = khmer
+					primary_culture = khmer
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = khmer
+				owner = {
+					CAM = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = CAM
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = khmer
+				}
+				any_neighbor_province = {
+					is_core = CAM
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24168"
+		add_core = CAM
+	}
+}
+province_event = {
+	id = 24169
+	title = "EVTNAME24169"
+	desc = "EVTDESC24169"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = LAF
+		}
+		owner = {
+			NOT = {
+				tag = LAF
+			}
+			LAF = {
+				OR = {
+					accepted_culture = south_andean
+					primary_culture = south_andean
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = south_andean
+				owner = {
+					LAF = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = LAF
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = south_andean
+				}
+				any_neighbor_province = {
+					is_core = LAF
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24169"
+		add_core = LAF
+	}
+}
+province_event = {
+	id = 24170
+	title = "EVTNAME24170"
+	desc = "EVTDESC24170"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = HND
+		}
+		owner = {
+			NOT = {
+				tag = HND
+			}
+			HND = {
+				OR = {
+					accepted_culture = manipuri
+					primary_culture = manipuri
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = manipuri
+				owner = {
+					HND = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = HND
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = manipuri
+				}
+				any_neighbor_province = {
+					is_core = HND
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24170"
+		add_core = HND
+	}
+}
+province_event = {
+	id = 24171
+	title = "EVTNAME24171"
+	desc = "EVTDESC24171"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = LAF
+		}
+		owner = {
+			NOT = {
+				tag = LAF
+			}
+			LAF = {
+				OR = {
+					accepted_culture = aimara
+					primary_culture = aimara
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = aimara
+				owner = {
+					LAF = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = LAF
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = aimara
+				}
+				any_neighbor_province = {
+					is_core = LAF
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24171"
+		add_core = LAF
+	}
+}
+province_event = {
+	id = 24172
+	title = "EVTNAME24172"
+	desc = "EVTDESC24172"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = LAF
+		}
+		owner = {
+			NOT = {
+				tag = LAF
+			}
+			LAF = {
+				OR = {
+					accepted_culture = amazonian
+					primary_culture = amazonian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = amazonian
+				owner = {
+					LAF = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = LAF
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = amazonian
+				}
+				any_neighbor_province = {
+					is_core = LAF
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24172"
+		add_core = LAF
+	}
+}
+province_event = {
+	id = 24173
+	title = "EVTNAME24173"
+	desc = "EVTDESC24173"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = PAN
+		}
+		owner = {
+			NOT = {
+				tag = PAN
+			}
+			PAN = {
+				OR = {
+					accepted_culture = panjabi
+					primary_culture = panjabi
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = panjabi
+				owner = {
+					PAN = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = PAN
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = panjabi
+				}
+				any_neighbor_province = {
+					is_core = PAN
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24173"
+		add_core = PAN
+	}
+}
+province_event = {
+	id = 24174
+	title = "EVTNAME24174"
+	desc = "EVTDESC24174"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = HND
+		}
+		owner = {
+			NOT = {
+				tag = HND
+			}
+			HND = {
+				OR = {
+					accepted_culture = panjabi
+					primary_culture = panjabi
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = panjabi
+				owner = {
+					HND = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = HND
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = panjabi
+				}
+				any_neighbor_province = {
+					is_core = HND
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24174"
+		add_core = HND
+	}
+}
+province_event = {
+	id = 24175
+	title = "EVTNAME24175"
+	desc = "EVTDESC24175"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = BMG
+		}
+		owner = {
+			NOT = {
+				tag = BMG
+			}
+			BMG = {
+				OR = {
+					accepted_culture = buryat
+					primary_culture = buryat
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = buryat
+				owner = {
+					BMG = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = BMG
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = buryat
+				}
+				any_neighbor_province = {
+					is_core = BMG
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24175"
+		add_core = BMG
+	}
+}
+province_event = {
+	id = 24176
+	title = "EVTNAME24176"
+	desc = "EVTDESC24176"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = LAF
+		}
+		owner = {
+			NOT = {
+				tag = LAF
+			}
+			LAF = {
+				OR = {
+					accepted_culture = patagonian
+					primary_culture = patagonian
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = patagonian
+				owner = {
+					LAF = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = LAF
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = patagonian
+				}
+				any_neighbor_province = {
+					is_core = LAF
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24176"
+		add_core = LAF
+	}
+}
+province_event = {
+	id = 24177
+	title = "EVTNAME24177"
+	desc = "EVTDESC24177"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = CHE
+		}
+		owner = {
+			NOT = {
+				tag = CHE
+			}
+			CHE = {
+				OR = {
+					accepted_culture = cherokee
+					primary_culture = cherokee
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = cherokee
+				owner = {
+					CHE = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = CHE
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = cherokee
+				}
+				any_neighbor_province = {
+					is_core = CHE
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24177"
+		add_core = CHE
+	}
+}
+province_event = {
+	id = 24178
+	title = "EVTNAME24178"
+	desc = "EVTDESC24178"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = CRI
+		}
+		owner = {
+			NOT = {
+				tag = CRI
+			}
+			CRI = {
+				OR = {
+					accepted_culture = crimean_tatar
+					primary_culture = crimean_tatar
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = crimean_tatar
+				owner = {
+					CRI = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = CRI
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = crimean_tatar
+				}
+				any_neighbor_province = {
+					is_core = CRI
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24178"
+		add_core = CRI
+	}
+}
+province_event = {
+	id = 24179
+	title = "EVTNAME24179"
+	desc = "EVTDESC24179"
+	trigger = {
+		controlled_by_rebels = yes
+		NOT = {
+			is_core = DAI
+		}
+		owner = {
+			NOT = {
+				tag = DAI
+			}
+			DAI = {
+				OR = {
+					accepted_culture = vietnamese
+					primary_culture = vietnamese
+				}
+			}
+		}
+		OR = {
+			AND = {
+				culture = vietnamese
+				owner = {
+					DAI = {
+						exists = no
+					}
+					NOT = {
+						any_owned_province = {
+							is_core = DAI
+						}
+					}
+				}
+			}
+			AND = {
+				any_pop = {
+					has_pop_culture = vietnamese
+				}
+				any_neighbor_province = {
+					is_core = DAI
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA24179"
+		add_core = DAI
+	}
+}

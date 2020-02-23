@@ -612,7 +612,7 @@ namespace nsCulture
     template <>
     char const * Localization<tCulture::manchu>()
     {
-        return "Манчжуры";
+        return "Маньчжуры";
     }
 
     template <>

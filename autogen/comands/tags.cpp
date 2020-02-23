@@ -4,6 +4,1746 @@ namespace nsTag
 {
 
     template <>
+    char const * Localization<tTag::kInvalidTag>()
+    {
+        return nullptr;
+    }
+
+    template <>
+    char const * Localization<tTag::ABU>()
+    {
+        return "Абу-Даби";
+    }
+
+    template <>
+    char const * Localization<tTag::AFG>()
+    {
+        return "Афганистан";
+    }
+
+    template <>
+    char const * Localization<tTag::ALB>()
+    {
+        return "Албания";
+    }
+
+    template <>
+    char const * Localization<tTag::ALD>()
+    {
+        return "Алжир";
+    }
+
+    template <>
+    char const * Localization<tTag::ANH>()
+    {
+        return "Ангальт";
+    }
+
+    template <>
+    char const * Localization<tTag::ARA>()
+    {
+        return "Арабия";
+    }
+
+    template <>
+    char const * Localization<tTag::ARG>()
+    {
+        return "Аргентина";
+    }
+
+    template <>
+    char const * Localization<tTag::ARM>()
+    {
+        return "Армения";
+    }
+
+    template <>
+    char const * Localization<tTag::ASM>()
+    {
+        return "Ассам";
+    }
+
+    template <>
+    char const * Localization<tTag::AST>()
+    {
+        return "Австралия";
+    }
+
+    template <>
+    char const * Localization<tTag::ATJ>()
+    {
+        return "Ачех";
+    }
+
+    template <>
+    char const * Localization<tTag::AUS>()
+    {
+        return "Австрия";
+    }
+
+    template <>
+    char const * Localization<tTag::AWA>()
+    {
+        return "Авадх";
+    }
+
+    template <>
+    char const * Localization<tTag::AZB>()
+    {
+        return "Азербайджан";
+    }
+
+    template <>
+    char const * Localization<tTag::BAB>()
+    {
+        return "Вавилон";
+    }
+
+    template <>
+    char const * Localization<tTag::BAD>()
+    {
+        return "Баден";
+    }
+
+    template <>
+    char const * Localization<tTag::BAL>()
+    {
+        return "Бали";
+    }
+
+    template <>
+    char const * Localization<tTag::BAS>()
+    {
+        return "Бастар";
+    }
+
+    template <>
+    char const * Localization<tTag::BAV>()
+    {
+        return "Бавария";
+    }
+
+    template <>
+    char const * Localization<tTag::BEL>()
+    {
+        return "Бельгия";
+    }
+
+    template <>
+    char const * Localization<tTag::BER>()
+    {
+        return "Барода";
+    }
+
+    template <>
+    char const * Localization<tTag::BHO>()
+    {
+        return "Бхопал";
+    }
+
+    template <>
+    char const * Localization<tTag::BHU>()
+    {
+        return "Бутан";
+    }
+
+    template <>
+    char const * Localization<tTag::BIH>()
+    {
+        return "Бихар";
+    }
+
+    template <>
+    char const * Localization<tTag::BIK>()
+    {
+        return "Биканер";
+    }
+
+    template <>
+    char const * Localization<tTag::BMG>()
+    {
+        return "Бурят-Монголия";
+    }
+
+    template <>
+    char const * Localization<tTag::BNG>()
+    {
+        return "Бенгалия";
+    }
+
+    template <>
+    char const * Localization<tTag::BOH>()
+    {
+        return "Богемия-Моравия";
+    }
+
+    template <>
+    char const * Localization<tTag::BOL>()
+    {
+        return "Боливия";
+    }
+
+    template <>
+    char const * Localization<tTag::BOS>()
+    {
+        return "Босния-Герцеговина";
+    }
+
+    template <>
+    char const * Localization<tTag::BRA>()
+    {
+        return "Брауншвейг";
+    }
+
+    template <>
+    char const * Localization<tTag::BRE>()
+    {
+        return "Бремен";
+    }
+
+    template <>
+    char const * Localization<tTag::BRU>()
+    {
+        return "Бруней";
+    }
+
+    template <>
+    char const * Localization<tTag::BRZ>()
+    {
+        return "Бразилия";
+    }
+
+    template <>
+    char const * Localization<tTag::BUK>()
+    {
+        return "Бухара";
+    }
+
+    template <>
+    char const * Localization<tTag::BUL>()
+    {
+        return "Болгария";
+    }
+
+    template <>
+    char const * Localization<tTag::BUN>()
+    {
+        return "Бандельканд";
+    }
+
+    template <>
+    char const * Localization<tTag::BUR>()
+    {
+        return "Бирма";
+    }
+
+    template <>
+    char const * Localization<tTag::BYE>()
+    {
+        return "Белоруссия";
+    }
+
+    template <>
+    char const * Localization<tTag::BYZ>()
+    {
+        return "Византия";
+    }
+
+    template <>
+    char const * Localization<tTag::CAL>()
+    {
+        return "Калифорнийская респ.";
+    }
+
+    template <>
+    char const * Localization<tTag::CAM>()
+    {
+        return "Камбоджа";
+    }
+
+    template <>
+    char const * Localization<tTag::CAN>()
+    {
+        return "Канада";
+    }
+
+    template <>
+    char const * Localization<tTag::CAT>()
+    {
+        return "Каталония";
+    }
+
+    template <>
+    char const * Localization<tTag::CHE>()
+    {
+        return "Чероки";
+    }
+
+    template <>
+    char const * Localization<tTag::CHI>()
+    {
+        return "Китай";
+    }
+
+    template <>
+    char const * Localization<tTag::CHL>()
+    {
+        return "Чили";
+    }
+
+    template <>
+    char const * Localization<tTag::CLM>()
+    {
+        return "Колумбия";
+    }
+
+    template <>
+    char const * Localization<tTag::CNG>()
+    {
+        return "Конго";
+    }
+
+    template <>
+    char const * Localization<tTag::COB>()
+    {
+        return "Саксен-Кобург-Гота";
+    }
+
+    template <>
+    char const * Localization<tTag::COL>()
+    {
+        return "Колумбия";
+    }
+
+    template <>
+    char const * Localization<tTag::COS>()
+    {
+        return "Коста-Рика";
+    }
+
+    template <>
+    char const * Localization<tTag::CRE>()
+    {
+        return "Крит";
+    }
+
+    template <>
+    char const * Localization<tTag::CRI>()
+    {
+        return "Крым";
+    }
+
+    template <>
+    char const * Localization<tTag::CRO>()
+    {
+        return "Хорватия";
+    }
+
+    template <>
+    char const * Localization<tTag::CSA>()
+    {
+        return "КША";
+    }
+
+    template <>
+    char const * Localization<tTag::CUB>()
+    {
+        return "Куба";
+    }
+
+    template <>
+    char const * Localization<tTag::CYP>()
+    {
+        return "Кипр";
+    }
+
+    template <>
+    char const * Localization<tTag::CZH>()
+    {
+        return "Чехословакия";
+    }
+
+    template <>
+    char const * Localization<tTag::D01>()
+    {
+        return "1-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D02>()
+    {
+        return "2-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D03>()
+    {
+        return "3-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D04>()
+    {
+        return "4-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D05>()
+    {
+        return "5-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D06>()
+    {
+        return "6-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D07>()
+    {
+        return "7-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D08>()
+    {
+        return "8-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D09>()
+    {
+        return "9-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D10>()
+    {
+        return "10-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D11>()
+    {
+        return "11-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D12>()
+    {
+        return "12-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D13>()
+    {
+        return "13-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D14>()
+    {
+        return "14-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D15>()
+    {
+        return "15-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D16>()
+    {
+        return "16-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D17>()
+    {
+        return "17-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D18>()
+    {
+        return "18-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D19>()
+    {
+        return "19-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D20>()
+    {
+        return "20-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D21>()
+    {
+        return "21-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D22>()
+    {
+        return "22-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D23>()
+    {
+        return "23-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D24>()
+    {
+        return "24-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D25>()
+    {
+        return "25-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D26>()
+    {
+        return "26-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D27>()
+    {
+        return "27-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D28>()
+    {
+        return "28-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D29>()
+    {
+        return "29-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D30>()
+    {
+        return "30-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D31>()
+    {
+        return "31-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D32>()
+    {
+        return "32-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D33>()
+    {
+        return "33-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D34>()
+    {
+        return "34-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D35>()
+    {
+        return "35-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D36>()
+    {
+        return "36-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D37>()
+    {
+        return "37-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D38>()
+    {
+        return "38-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D39>()
+    {
+        return "39-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D40>()
+    {
+        return "40-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D41>()
+    {
+        return "41-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D42>()
+    {
+        return "42-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D43>()
+    {
+        return "43-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D44>()
+    {
+        return "44-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D45>()
+    {
+        return "45-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D46>()
+    {
+        return "46-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D47>()
+    {
+        return "47-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D48>()
+    {
+        return "48-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D49>()
+    {
+        return "49-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::D50>()
+    {
+        return "50-я Независимая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::DAI>()
+    {
+        return "Дайнам";
+    }
+
+    template <>
+    char const * Localization<tTag::DEN>()
+    {
+        return "Дания";
+    }
+
+    template <>
+    char const * Localization<tTag::DES>()
+    {
+        return "Дезерет";
+    }
+
+    template <>
+    char const * Localization<tTag::DOM>()
+    {
+        return "Доминикана";
+    }
+
+    template <>
+    char const * Localization<tTag::DZG>()
+    {
+        return "Данциг";
+    }
+
+    template <>
+    char const * Localization<tTag::ECU>()
+    {
+        return "Эквадор";
+    }
+
+    template <>
+    char const * Localization<tTag::EGY>()
+    {
+        return "Египет";
+    }
+
+    template <>
+    char const * Localization<tTag::ELS>()
+    {
+        return "Сальвадор";
+    }
+
+    template <>
+    char const * Localization<tTag::ENG>()
+    {
+        return "Великобритания";
+    }
+
+    template <>
+    char const * Localization<tTag::EST>()
+    {
+        return "Эстония";
+    }
+
+    template <>
+    char const * Localization<tTag::ETH>()
+    {
+        return "Эфиопия";
+    }
+
+    template <>
+    char const * Localization<tTag::FIN>()
+    {
+        return "Финляндия";
+    }
+
+    template <>
+    char const * Localization<tTag::FLA>()
+    {
+        return "Фландрия";
+    }
+
+    template <>
+    char const * Localization<tTag::FRA>()
+    {
+        return "Франция";
+    }
+
+    template <>
+    char const * Localization<tTag::FRM>()
+    {
+        return "Франкфурт-на-Майне";
+    }
+
+    template <>
+    char const * Localization<tTag::GCO>()
+    {
+        return "Великая Колумбия";
+    }
+
+    template <>
+    char const * Localization<tTag::GEO>()
+    {
+        return "Грузия";
+    }
+
+    template <>
+    char const * Localization<tTag::GER>()
+    {
+        return "Германия";
+    }
+
+    template <>
+    char const * Localization<tTag::GRE>()
+    {
+        return "Греция";
+    }
+
+    template <>
+    char const * Localization<tTag::GUA>()
+    {
+        return "Гватемала";
+    }
+
+    template <>
+    char const * Localization<tTag::GWA>()
+    {
+        return "Гвалияр";
+    }
+
+    template <>
+    char const * Localization<tTag::GXI>()
+    {
+        return "Гуанси";
+    }
+
+    template <>
+    char const * Localization<tTag::HAI>()
+    {
+        return "Гаити";
+    }
+
+    template <>
+    char const * Localization<tTag::HAM>()
+    {
+        return "Гамбург";
+    }
+
+    template <>
+    char const * Localization<tTag::HAN>()
+    {
+        return "Ганновер";
+    }
+
+    template <>
+    char const * Localization<tTag::HAW>()
+    {
+        return "Гавайи";
+    }
+
+    template <>
+    char const * Localization<tTag::HDJ>()
+    {
+        return "Хиджаз";
+    }
+
+    template <>
+    char const * Localization<tTag::HEK>()
+    {
+        return "Гессен-Кассель";
+    }
+
+    template <>
+    char const * Localization<tTag::HES>()
+    {
+        return "Гессен-Дармштадт";
+    }
+
+    template <>
+    char const * Localization<tTag::HND>()
+    {
+        return "Индия";
+    }
+
+    template <>
+    char const * Localization<tTag::HOL>()
+    {
+        return "Гольштейн";
+    }
+
+    template <>
+    char const * Localization<tTag::HON>()
+    {
+        return "Гондурас";
+    }
+
+    template <>
+    char const * Localization<tTag::HUN>()
+    {
+        return "Венгрия";
+    }
+
+    template <>
+    char const * Localization<tTag::HYD>()
+    {
+        return "Хайдерабад";
+    }
+
+    template <>
+    char const * Localization<tTag::ICL>()
+    {
+        return "Исландия";
+    }
+
+    template <>
+    char const * Localization<tTag::IND>()
+    {
+        return "Индаур";
+    }
+
+    template <>
+    char const * Localization<tTag::ION>()
+    {
+        return "Ионическая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::IRE>()
+    {
+        return "Ирландия";
+    }
+
+    template <>
+    char const * Localization<tTag::IRQ>()
+    {
+        return "Ирак";
+    }
+
+    template <>
+    char const * Localization<tTag::ISR>()
+    {
+        return "Израиль";
+    }
+
+    template <>
+    char const * Localization<tTag::ITA>()
+    {
+        return "Италия";
+    }
+
+    template <>
+    char const * Localization<tTag::JAI>()
+    {
+        return "Джайпур";
+    }
+
+    template <>
+    char const * Localization<tTag::JAN>()
+    {
+        return "Ян-Майен";
+    }
+
+    template <>
+    char const * Localization<tTag::JAP>()
+    {
+        return "Япония";
+    }
+
+    template <>
+    char const * Localization<tTag::JAS>()
+    {
+        return "Джайсалмер";
+    }
+
+    template <>
+    char const * Localization<tTag::JAV>()
+    {
+        return "Ява";
+    }
+
+    template <>
+    char const * Localization<tTag::JOD>()
+    {
+        return "Джодхпур";
+    }
+
+    template <>
+    char const * Localization<tTag::JOH>()
+    {
+        return "Джохор";
+    }
+
+    template <>
+    char const * Localization<tTag::KAL>()
+    {
+        return "Калат";
+    }
+
+    template <>
+    char const * Localization<tTag::KAS>()
+    {
+        return "Кашмир";
+    }
+
+    template <>
+    char const * Localization<tTag::KAZ>()
+    {
+        return "Казахстан";
+    }
+
+    template <>
+    char const * Localization<tTag::KHI>()
+    {
+        return "Хива";
+    }
+
+    template <>
+    char const * Localization<tTag::KMK>()
+    {
+        return "Калмыкия";
+    }
+
+    template <>
+    char const * Localization<tTag::KOK>()
+    {
+        return "Коканд";
+    }
+
+    template <>
+    char const * Localization<tTag::KOR>()
+    {
+        return "Корея";
+    }
+
+    template <>
+    char const * Localization<tTag::KRA>()
+    {
+        return "Краков";
+    }
+
+    template <>
+    char const * Localization<tTag::KRD>()
+    {
+        return "Курдистан";
+    }
+
+    template <>
+    char const * Localization<tTag::KUK>()
+    {
+        return "Австро-Венгрия";
+    }
+
+    template <>
+    char const * Localization<tTag::KUT>()
+    {
+        return "Кач";
+    }
+
+    template <>
+    char const * Localization<tTag::KYR>()
+    {
+        return "Киргизия";
+    }
+
+    template <>
+    char const * Localization<tTag::LAD>()
+    {
+        return "Ладакх";
+    }
+
+    template <>
+    char const * Localization<tTag::LAF>()
+    {
+        return "Южноамериканский Союз";
+    }
+
+    template <>
+    char const * Localization<tTag::LAT>()
+    {
+        return "Латвия";
+    }
+
+    template <>
+    char const * Localization<tTag::LIB>()
+    {
+        return "Либерия";
+    }
+
+    template <>
+    char const * Localization<tTag::LIP>()
+    {
+        return "Липпе-Детмольд";
+    }
+
+    template <>
+    char const * Localization<tTag::LIT>()
+    {
+        return "Литва";
+    }
+
+    template <>
+    char const * Localization<tTag::LOM>()
+    {
+        return "Ломбардия";
+    }
+
+    template <>
+    char const * Localization<tTag::LUA>()
+    {
+        return "Луанг-Прабанг";
+    }
+
+    template <>
+    char const * Localization<tTag::LUB>()
+    {
+        return "Любек";
+    }
+
+    template <>
+    char const * Localization<tTag::LUC>()
+    {
+        return "Лукка";
+    }
+
+    template <>
+    char const * Localization<tTag::LUX>()
+    {
+        return "Люксембург";
+    }
+
+    template <>
+    char const * Localization<tTag::MAD>()
+    {
+        return "Мадагаскар";
+    }
+
+    template <>
+    char const * Localization<tTag::MAK>()
+    {
+        return "Мекран";
+    }
+
+    template <>
+    char const * Localization<tTag::MAN>()
+    {
+        return "Коммуна Манхеттена";
+    }
+
+    template <>
+    char const * Localization<tTag::MCK>()
+    {
+        return "Маньчжурия";
+    }
+
+    template <>
+    char const * Localization<tTag::MEC>()
+    {
+        return "Мекленбург";
+    }
+
+    template <>
+    char const * Localization<tTag::MEI>()
+    {
+        return "Саксен-Майнинген";
+    }
+
+    template <>
+    char const * Localization<tTag::MEW>()
+    {
+        return "Мевар";
+    }
+
+    template <>
+    char const * Localization<tTag::MEX>()
+    {
+        return "Мексика";
+    }
+
+    template <>
+    char const * Localization<tTag::MGL>()
+    {
+        return "Монголия";
+    }
+
+    template <>
+    char const * Localization<tTag::MLY>()
+    {
+        return "Малайзия";
+    }
+
+    template <>
+    char const * Localization<tTag::MOD>()
+    {
+        return "Модена";
+    }
+
+    template <>
+    char const * Localization<tTag::MOL>()
+    {
+        return "Молдавия";
+    }
+
+    template <>
+    char const * Localization<tTag::MON>()
+    {
+        return "Черногория";
+    }
+
+    template <>
+    char const * Localization<tTag::MOR>()
+    {
+        return "Марокко";
+    }
+
+    template <>
+    char const * Localization<tTag::MTC>()
+    {
+        return "Метисская конфедерация";
+    }
+
+    template <>
+    char const * Localization<tTag::MUG>()
+    {
+        return "Могулистан";
+    }
+
+    template <>
+    char const * Localization<tTag::MYS>()
+    {
+        return "Майсур";
+    }
+
+    template <>
+    char const * Localization<tTag::NAG>()
+    {
+        return "Нагпур";
+    }
+
+    template <>
+    char const * Localization<tTag::NAL>()
+    {
+        return "Наталь";
+    }
+
+    template <>
+    char const * Localization<tTag::NAS>()
+    {
+        return "Нассау";
+    }
+
+    template <>
+    char const * Localization<tTag::NEJ>()
+    {
+        return "Неджд";
+    }
+
+    template <>
+    char const * Localization<tTag::NEN>()
+    {
+        return "Новая Англия";
+    }
+
+    template <>
+    char const * Localization<tTag::NEP>()
+    {
+        return "Непал";
+    }
+
+    template <>
+    char const * Localization<tTag::NET>()
+    {
+        return "Нидерланды";
+    }
+
+    template <>
+    char const * Localization<tTag::NEW>()
+    {
+        return "Ньюфаундленд";
+    }
+
+    template <>
+    char const * Localization<tTag::NGF>()
+    {
+        return "Северогерманский союз";
+    }
+
+    template <>
+    char const * Localization<tTag::NIC>()
+    {
+        return "Никарагуа";
+    }
+
+    template <>
+    char const * Localization<tTag::NOR>()
+    {
+        return "Норвегия";
+    }
+
+    template <>
+    char const * Localization<tTag::NZL>()
+    {
+        return "Новая Зеландия";
+    }
+
+    template <>
+    char const * Localization<tTag::OLD>()
+    {
+        return "Ольденбург";
+    }
+
+    template <>
+    char const * Localization<tTag::OMA>()
+    {
+        return "Оман";
+    }
+
+    template <>
+    char const * Localization<tTag::ORA>()
+    {
+        return "Оранжевая республика";
+    }
+
+    template <>
+    char const * Localization<tTag::ORI>()
+    {
+        return "Орисса";
+    }
+
+    template <>
+    char const * Localization<tTag::PAN>()
+    {
+        return "Пенджаб";
+    }
+
+    template <>
+    char const * Localization<tTag::PAP>()
+    {
+        return "Папская область";
+    }
+
+    template <>
+    char const * Localization<tTag::PAR>()
+    {
+        return "Парма";
+    }
+
+    template <>
+    char const * Localization<tTag::PER>()
+    {
+        return "Персия";
+    }
+
+    template <>
+    char const * Localization<tTag::PEU>()
+    {
+        return "Перу";
+    }
+
+    template <>
+    char const * Localization<tTag::PHI>()
+    {
+        return "Филиппины";
+    }
+
+    template <>
+    char const * Localization<tTag::PLC>()
+    {
+        return "Речь Посполитая";
+    }
+
+    template <>
+    char const * Localization<tTag::PNM>()
+    {
+        return "Панама";
+    }
+
+    template <>
+    char const * Localization<tTag::POL>()
+    {
+        return "Польша";
+    }
+
+    template <>
+    char const * Localization<tTag::POR>()
+    {
+        return "Португалия";
+    }
+
+    template <>
+    char const * Localization<tTag::PRG>()
+    {
+        return "Парагвай";
+    }
+
+    template <>
+    char const * Localization<tTag::PRU>()
+    {
+        return "Пруссия";
+    }
+
+    template <>
+    char const * Localization<tTag::QUE>()
+    {
+        return "Квебек";
+    }
+
+    template <>
+    char const * Localization<tTag::RHO>()
+    {
+        return "Южная Родезия";
+    }
+
+    template <>
+    char const * Localization<tTag::ROM>()
+    {
+        return "Румыния";
+    }
+
+    template <>
+    char const * Localization<tTag::RUS>()
+    {
+        return "Россия";
+    }
+
+    template <>
+    char const * Localization<tTag::RUT>()
+    {
+        return "Рутения";
+    }
+
+    template <>
+    char const * Localization<tTag::SAF>()
+    {
+        return "Южная Африка";
+    }
+
+    template <>
+    char const * Localization<tTag::SAR>()
+    {
+        return "Сардиния-Пьемонт";
+    }
+
+    template <>
+    char const * Localization<tTag::SAX>()
+    {
+        return "Саксония";
+    }
+
+    template <>
+    char const * Localization<tTag::SCA>()
+    {
+        return "Скандинавия";
+    }
+
+    template <>
+    char const * Localization<tTag::SCH>()
+    {
+        return "Шлезвиг";
+    }
+
+    template <>
+    char const * Localization<tTag::SCO>()
+    {
+        return "Шотландия";
+    }
+
+    template <>
+    char const * Localization<tTag::SER>()
+    {
+        return "Сербия";
+    }
+
+    template <>
+    char const * Localization<tTag::SGF>()
+    {
+        return "Южногерманский союз";
+    }
+
+    template <>
+    char const * Localization<tTag::SHI>()
+    {
+        return "Шимла";
+    }
+
+    template <>
+    char const * Localization<tTag::SIA>()
+    {
+        return "Сиам";
+    }
+
+    template <>
+    char const * Localization<tTag::SIC>()
+    {
+        return "Сицилия";
+    }
+
+    template <>
+    char const * Localization<tTag::SIE>()
+    {
+        return "Трансильвания";
+    }
+
+    template <>
+    char const * Localization<tTag::SIK>()
+    {
+        return "Сикким";
+    }
+
+    template <>
+    char const * Localization<tTag::SIN>()
+    {
+        return "Синд";
+    }
+
+    template <>
+    char const * Localization<tTag::SLO>()
+    {
+        return "Словения";
+    }
+
+    template <>
+    char const * Localization<tTag::SLV>()
+    {
+        return "Словакия";
+    }
+
+    template <>
+    char const * Localization<tTag::SOK>()
+    {
+        return "Сокото";
+    }
+
+    template <>
+    char const * Localization<tTag::SOV>()
+    {
+        return "СССР";
+    }
+
+    template <>
+    char const * Localization<tTag::SPA>()
+    {
+        return "Испания";
+    }
+
+    template <>
+    char const * Localization<tTag::SRI>()
+    {
+        return "Шри-Ланка";
+    }
+
+    template <>
+    char const * Localization<tTag::SWE>()
+    {
+        return "Швеция";
+    }
+
+    template <>
+    char const * Localization<tTag::SWI>()
+    {
+        return "Швейцария";
+    }
+
+    template <>
+    char const * Localization<tTag::SXI>()
+    {
+        return "Клика Шаньси";
+    }
+
+    template <>
+    char const * Localization<tTag::TAJ>()
+    {
+        return "Таджикистан";
+    }
+
+    template <>
+    char const * Localization<tTag::TEX>()
+    {
+        return "Техас";
+    }
+
+    template <>
+    char const * Localization<tTag::TIB>()
+    {
+        return "Тибет";
+    }
+
+    template <>
+    char const * Localization<tTag::TKM>()
+    {
+        return "Туркмения";
+    }
+
+    template <>
+    char const * Localization<tTag::TNT>()
+    {
+        return "Танну-Тува";
+    }
+
+    template <>
+    char const * Localization<tTag::TPG>()
+    {
+        return "Небесное Царство";
+    }
+
+    template <>
+    char const * Localization<tTag::TRA>()
+    {
+        return "Траванкор";
+    }
+
+    template <>
+    char const * Localization<tTag::TRE>()
+    {
+        return "Триест";
+    }
+
+    template <>
+    char const * Localization<tTag::TRI>()
+    {
+        return "Триполи";
+    }
+
+    template <>
+    char const * Localization<tTag::TRN>()
+    {
+        return "Трансвааль";
+    }
+
+    template <>
+    char const * Localization<tTag::TTT>()
+    {
+        return "Татарстан";
+    }
+
+    template <>
+    char const * Localization<tTag::TUN>()
+    {
+        return "Тунис";
+    }
+
+    template <>
+    char const * Localization<tTag::TUR>()
+    {
+        return "Османская Империя";
+    }
+
+    template <>
+    char const * Localization<tTag::TUS>()
+    {
+        return "Тоскана";
+    }
+
+    template <>
+    char const * Localization<tTag::UBD>()
+    {
+        return "Объединённая Балтия";
+    }
+
+    template <>
+    char const * Localization<tTag::UCA>()
+    {
+        return "СПЦА";
+    }
+
+    template <>
+    char const * Localization<tTag::UKR>()
+    {
+        return "Украина";
+    }
+
+    template <>
+    char const * Localization<tTag::URU>()
+    {
+        return "Уругвай";
+    }
+
+    template <>
+    char const * Localization<tTag::USA>()
+    {
+        return "США";
+    }
+
+    template <>
+    char const * Localization<tTag::UZB>()
+    {
+        return "Узбекистан";
+    }
+
+    template <>
+    char const * Localization<tTag::VEN>()
+    {
+        return "Венеция";
+    }
+
+    template <>
+    char const * Localization<tTag::VNZ>()
+    {
+        return "Венесуэла";
+    }
+
+    template <>
+    char const * Localization<tTag::WAL>()
+    {
+        return "Валахия";
+    }
+
+    template <>
+    char const * Localization<tTag::WEI>()
+    {
+        return "Саксен-Веймар";
+    }
+
+    template <>
+    char const * Localization<tTag::WIA>()
+    {
+        return "Вьентьян";
+    }
+
+    template <>
+    char const * Localization<tTag::WLL>()
+    {
+        return "Валлония";
+    }
+
+    template <>
+    char const * Localization<tTag::WUR>()
+    {
+        return "Вюртемберг";
+    }
+
+    template <>
+    char const * Localization<tTag::XBI>()
+    {
+        return "Цинхай";
+    }
+
+    template <>
+    char const * Localization<tTag::XIN>()
+    {
+        return "Синьцзян";
+    }
+
+    template <>
+    char const * Localization<tTag::YAK>()
+    {
+        return "Якутия";
+    }
+
+    template <>
+    char const * Localization<tTag::YEM>()
+    {
+        return "Йемен";
+    }
+
+    template <>
+    char const * Localization<tTag::YNN>()
+    {
+        return "Юннань";
+    }
+
+    template <>
+    char const * Localization<tTag::YUG>()
+    {
+        return "Югославия";
+    }
+
+    template <>
+    char const * Localization<tTag::ZAN>()
+    {
+        return "Занзибар";
+    }
+
+    template <>
+    char const * Localization<tTag::ZUL>()
+    {
+        return "Зулу";
+    }
+
+    template <>
+    char const * ToString<tTag::kInvalidTag>()
+    {
+        return nullptr;
+    }
+
+    template <>
     char const * ToString<tTag::SOV>()
     {
         return "SOV";
