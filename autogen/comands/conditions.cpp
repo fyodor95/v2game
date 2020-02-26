@@ -15,6 +15,11 @@ tCondition<tTarget::kCountry> AnyOwnedProvince(tCondition<tTarget::kProvince> &&
     return tCondition<tTarget::kCountry>("any_owned_province", tComands{std::move(condition)});
 }
 
+tCondition<tTarget::kCountry> Civilized(tYesOrNo const flag)
+{
+    return Set("civilized", YesOrNo(flag));
+}
+
 tCondition<tTarget::kCountry> ConditionsForCapital(tConditions<tTarget::kProvince> && conditions)
 {
     return tCondition<tTarget::kCountry>("capital_scope", std::move(CastToComands(conditions)));

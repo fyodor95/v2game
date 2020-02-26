@@ -38,6 +38,10 @@ tEffect<tTarget::kCountry> ChangeReformLevel()
 // Все попы в данной стране, удовлетворяющие условию limit, получают эффекты effects.
 tEffect<tTarget::kCountry> EffectsForAllPops(tCondition<tTarget::kPop> && limit, tEffects<tTarget::kPop> && effects);
 
+// Держава tag получает эффекты effects.
+template <tTag tag, tTarget target = tTarget::kCountry>
+tEffect<target> EffectsForSpecifiedCountry(tEffects<tTarget::kCountry> && effects);
+
 // Делает культуру culture основной для данной державы. Может использоваться для несуществующих государств.
 template <tCulture culture>
 tEffect<tTarget::kCountry> MakePrimary()
@@ -76,3 +80,12 @@ tEffect<tTarget::kProvince> MakeNationalFor()
 
 // Добавляет данному попу value агрессивности.
 tEffect<tTarget::kPop> AddMilitancy(int value);
+
+template <tTag tag, tTarget target>
+tEffect<target> EffectsForSpecifiedCountry(tEffects<tTarget::kCountry> && effects)
+{
+    if constexpr (target == tTarget::kCountry)
+        return tEffect<target>(nsTag::ToString<tag>(), std::move(CastToComands(effects)));
+    else
+        return tEffect<target>(EffectsForOwner({EffectsForSpecifiedCountry<tag>(std::move(effects))}));
+}

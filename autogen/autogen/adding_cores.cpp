@@ -4,52 +4,74 @@
 #include "effects.h"
 #include "events.h"
 
-template <tCulture culture, tTag tag>
+template
+<
+    tCulture  culture,
+    tTag      tag,
+    bool      civilized,
+    bool      main,
+    bool      dxx
+>
 void ProcessCultureAndCountry(uint & id, std::ofstream & eventOutput, std::ofstream & localizationOutput)
 {
-    if constexpr (tag == tTag::kInvalidTag)
-        return;
     std::string const desc = "Провинция $PROVINCENAME$ стала считаться национальной для державы ";
     tConditions<tTarget::kProvince> conditions
     {
         ControlledByRebels(),
-        Not(IsNationalFor<tag>()),
-        ConditionsForOwner
-        ({
-            Not(TagIs<tag>()),
-            ConditionsForSpecifiedCountry<tag>({IsAcceptedOrPrimary<culture>()})
-        }),
-        Or<tTarget::kProvince>
-        ({
-            And<tTarget::kProvince>
-            ({
-                MajorityCultureIs<culture>(),
-                ConditionsForOwner
-                ({
-                    ConditionsForSpecifiedCountry<tag>({Exists(_No)}),
-                    Not(AnyOwnedProvince(IsNationalFor<tag>()))
-                })
-            }),
-            And<tTarget::kProvince>
-            ({
-                HasPop(HasCulture<culture>()),
-                HasNeighborProvince({IsNationalFor<tag>()})
-            })
-        })
+        Not(IsNationalFor<tag>())
     };
+    tConditions<tTarget::kCountry> conditionsForOwner{Not(TagIs<tag>())};
+    tConditions<tTarget::kCountry> conditionsForTag;
+    tEffects<tTarget::kProvince> effects = {MakeNationalFor<tag>()};
+    if constexpr (!main || !dxx)
+        conditionsForTag.push_back(IsAcceptedOrPrimary<culture>());
+    else
+        effects.push_back(EffectsForSpecifiedCountry<tag, tTarget::kProvince>({AddAcceptedCulture<culture>()}));
+    if constexpr (main)
+    {
+        conditions.push_back(MajorityCultureIs<culture>());
+        conditionsForTag.push_back(Exists(_No));
+        if constexpr (civilized && !dxx)
+            conditionsForOwner.push_back(Civilized());
+        conditionsForOwner.push_back(Not(AnyOwnedProvince(IsNationalFor<tag>())));
+    }
+    else
+    {
+        conditions.push_back(HasNeighborProvince({IsNationalFor<tag>()}));
+        conditions.push_back(HasPop(HasCulture<culture>()));
+    }
+    conditionsForOwner.push_back(ConditionsForSpecifiedCountry<tag>(std::move(conditionsForTag)));
+    conditions.push_back(ConditionsForOwner(std::move(conditionsForOwner)));
     ++id;
     Event(id, "Плоды восстаний", (desc + nsTag::Localization<tag>() + '.').data(), eventOutput, localizationOutput,
           Trigger          <tTarget::kProvince>(std::move(conditions)),
           MeanTimeToHappen <tTarget::kProvince>(4.f),
-          {Option          <tTarget::kProvince>({MakeNationalFor<tag>()}, id)},
+          {Option          <tTarget::kProvince>(std::move(effects), id)},
           {"Ок"});
 }
 
 template <size_t i = 0u>
 static void ProcessCulture(uint & id, std::ofstream & eventOutput, std::ofstream & localizationOutput)
 {
-    ProcessCultureAndCountry<kCultureTagHardcode[i].first, kCultureTagHardcode[i].second[0]>(id, eventOutput, localizationOutput);
-    ProcessCultureAndCountry<kCultureTagHardcode[i].first, kCultureTagHardcode[i].second[1]>(id, eventOutput, localizationOutput);
+    ProcessCultureAndCountry
+    <
+        kCultureTagHardcode[i].Culture,
+        kCultureTagHardcode[i].Tag,
+        kCultureTagHardcode[i].Civilized,
+        kCultureTagHardcode[i].Main,
+        kCultureTagHardcode[i].DXX
+    >
+    (id, eventOutput, localizationOutput);
+    if constexpr (kCultureTagHardcode[i].Main)
+        ProcessCultureAndCountry
+        <
+            kCultureTagHardcode[i].Culture,
+            kCultureTagHardcode[i].Tag,
+            kCultureTagHardcode[i].Civilized,
+            false,
+            kCultureTagHardcode[i].DXX
+        >
+        (id, eventOutput, localizationOutput);
     ProcessCulture<i + 1u>(id, eventOutput, localizationOutput);
 }
 

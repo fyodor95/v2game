@@ -1,7 +1,5 @@
 capital = 1008
-primary_culture = russian
-culture = byelorussian
-culture = ukrainian
+primary_culture = hawaiian
 religion = orthodox
 government = proletarian_dictatorship
 plurality = 0.0

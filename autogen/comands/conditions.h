@@ -49,6 +49,10 @@ template <tCitizenshipPolicy policy>
 tCondition<tTarget::kCountry> CitizenshipPolicyIs()
 { return Set("citizenship_policy", nsCitizenshipPolicy::ToString<policy>()); }
 
+// ¬озвращает true, если данна€ страна вестернизирована.
+// ≈сли flag == _No, то возвращаемое значение инвертируетс€.
+tCondition<tTarget::kCountry> Civilized(tYesOrNo flag = _Yes);
+
 // ѕровер€ет услови€ conditions дл€ столицы данной страны. ¬озвращает true, если выполнено каждое из условий.
 tCondition<tTarget::kCountry> ConditionsForCapital(tConditions<tTarget::kProvince> && conditions);
 
