@@ -5,6 +5,7 @@
 #include "new_primary_culture_for_dxx.h"
 #include "plus_minus_cultures_events.h"
 #include "simple_events.h"
+#include "words.h"
 
 int main()
 {
@@ -13,6 +14,7 @@ int main()
     CapitalCulturesAcceptance();
     EventsToChangePrimaryCultures();
     GenerateSimpleEvents();
+    GenerateWordEvents();
     NewPrimaryCulturesForDXX();
 
     CheckEventsID();

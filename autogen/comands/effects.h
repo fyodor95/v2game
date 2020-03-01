@@ -13,6 +13,12 @@ COMAND(tEffect);
 template <tTarget target>
 tEffect<target> RandomEffectFrom(tEffects<target> &&);
 
+template <tTarget target = tTarget::kCountry>
+tEffect<target> SetGlobalFlag(char const * flag);
+
+template <tTarget target = tTarget::kCountry>
+tEffect<target> RemoveGlobalFlag(char const * flag);
+
 // Делает культуру culture признанной в данной стране.
 template <tCulture culture>
 tEffect<tTarget::kCountry> AddAcceptedCulture() { return Set("add_accepted_culture", nsCulture::ToString<culture>()); }

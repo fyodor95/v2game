@@ -2,7 +2,6 @@
 
 #include "conditions.h"
 #include "effects.h"
-#include "event_pictures.h"
 #include "modifier.h"
 #include "target_comand.h"
 
@@ -35,22 +34,24 @@ tOption<target> Option(tEffects<target> &&, uint eventID, uint optionNum = 1u);
 
 using tOptionDescriptions = std::vector<char const *>;
 
-template <tTarget target, tEventPicture = tEventPicture::NONE>
+template <tTarget target>
 void Event(uint id, char const * title, char const * desc,
            std::ostream & eventOutput, std::ostream & localizationOutput,
            tTrigger           <target> &&,
            tMeanTimeToHappen  <target> &&,
            tOptions           <target> &&,
-           tOptionDescriptions const &);
+           tOptionDescriptions const &,
+           char const * eventPicture = nullptr);
 
-template <tEventPicture picture>
+inline
 void CountryEvent(uint id, char const * title, char const * desc,
                   std::ostream & eventOutput, std::ostream & localizationOutput,
                   tTrigger           <tTarget::kCountry> && trigger,
                   tMeanTimeToHappen  <tTarget::kCountry> && meanTimeToHappen,
                   tOptions           <tTarget::kCountry> && options,
-                  tOptionDescriptions const & optionDescriptions)
+                  tOptionDescriptions const & optionDescriptions,
+                  char const * eventPicture)
 {
-    return Event<tTarget::kCountry, picture>(id, title, desc, eventOutput, localizationOutput, std::move(trigger),
-                                             std::move(meanTimeToHappen), std::move(options), optionDescriptions);
+    return Event<tTarget::kCountry>(id, title, desc, eventOutput, localizationOutput, std::move(trigger),
+                                    std::move(meanTimeToHappen), std::move(options), optionDescriptions, eventPicture);
 }

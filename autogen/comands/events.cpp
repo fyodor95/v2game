@@ -72,29 +72,27 @@ tOption<target> Option(tEffects<target> && effects, uint const eventID, uint con
 template tOption<tTarget::kCountry > Option(tEffects<tTarget::kCountry > &&, uint, uint);
 template tOption<tTarget::kProvince> Option(tEffects<tTarget::kProvince> &&, uint, uint);
 
-template <tEventPicture picture>
-tString Picture()
+tString Picture(char const * const eventPicture)
 {
     std::string res = "picture = \"";
-    res += nsEventPicture::ToString<picture>();
+    res += eventPicture;
     res += '\"';
     return std::move(res);
 }
 
-template <tEventPicture picture>
-tComands EventHeader(uint const id)
+tComands EventHeader(uint const id, char const * const eventPicture)
 {
     assertion(id < 1e6);
     tComands res;
-    res.reserve(3u + (picture != tEventPicture::NONE));
+    res.reserve(3u + !!eventPicture);
     res =
     {
         Set("id", std::to_string(id)),
         tComand(EventProperty(tEventPropertyType::kEventName, id)),
         tComand(EventProperty(tEventPropertyType::kEventDesc, id))
     };
-    if constexpr (picture != tEventPicture::NONE)
-        res.emplace_back(Picture<picture>());
+    if (eventPicture)
+        res.emplace_back(Picture(eventPicture));
     return res;
 }
 
@@ -138,33 +136,32 @@ void PrintEvent(tComand const & event, uint const id, char const * const title, 
          << ';' << optionDescriptions[i] << LocLineEnd());
 }
 
-template <tTarget target, tEventPicture picture>
+template <tTarget target>
 void Event(uint const id, char const * const title, char const * const desc,
            std::ostream & eventOutput, std::ostream & locOutput,
            tTrigger          <target> && trigger,
            tMeanTimeToHappen <target> && meanTimeToHappen,
            tOptions          <target> && options,
-           tOptionDescriptions const & optionDescriptions)
+           tOptionDescriptions const & optionDescriptions,
+           char const * const eventPicture)
 {
     static_assert(target != tTarget::kPop);
-    static_assert(TargetIsCountry(target) == (picture != tEventPicture::NONE));
+    assertion(TargetIsCountry(target) == !!eventPicture);
     assertion(title && desc && options.size() == optionDescriptions.size());
     tComand res = ConstructEventWithoutHeader<target>(std::move(trigger), std::move(meanTimeToHappen),
                                                       std::move(options));
-    res.AddToBody(EventHeader<picture>(id), 0u);
+    res.AddToBody(EventHeader(id, eventPicture), 0u);
     PrintEvent<target>(res, id, title, desc, eventOutput, locOutput, optionDescriptions);
 }
 
-#define EVENT_INSTANTIATION(TARGET, PICTURE)                       \
-template void Event<tTarget::k##TARGET, tEventPicture::PICTURE>     \
+#define EVENT_INSTANTIATION(TARGET)                                \
+template void Event<tTarget::k##TARGET>                             \
 (uint, char const *, char const *, std::ostream &, std::ostream &,   \
  tTrigger          <tTarget::k##TARGET> &&,                           \
  tMeanTimeToHappen <tTarget::k##TARGET> &&,                            \
  tOptions          <tTarget::k##TARGET> &&,                             \
- tOptionDescriptions const &)
+ tOptionDescriptions const &,                                            \
+ char const *)
 
-#define COUNTRY_EVENT_INSTANTIATION(PICTURE) EVENT_INSTANTIATION(Country, PICTURE)
-
-COUNTRY_EVENT_INSTANTIATION(Administration);
-
-EVENT_INSTANTIATION(Province, NONE);
+EVENT_INSTANTIATION(Country);
+EVENT_INSTANTIATION(Province);

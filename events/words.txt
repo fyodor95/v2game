@@ -1,0 +1,5304 @@
+country_event = {
+	id = 50001
+	title = "EVTNAME50001"
+	desc = "EVTDESC50001"
+	picture = "eng_words_116968"
+	trigger = {
+		ai = no
+		NOT = {
+			has_global_flag = eng_words_116968_0
+		}
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+	option = {
+		name = "EVTOPTA50001"
+	}
+	option = {
+		name = "EVTOPTB50001"
+		set_global_flag = eng_words_116968_0
+	}
+}
+country_event = {
+	id = 50002
+	title = "EVTNAME50002"
+	desc = "EVTDESC50002"
+	picture = "eng_words_116968"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_116968_0
+		NOT = {
+			has_global_flag = eng_words_116968_1
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA50002"
+		clr_global_flag = eng_words_116968_0
+	}
+	option = {
+		name = "EVTOPTB50002"
+	}
+	option = {
+		name = "EVTOPTC50002"
+		set_global_flag = eng_words_116968_1
+	}
+}
+country_event = {
+	id = 50003
+	title = "EVTNAME50003"
+	desc = "EVTDESC50003"
+	picture = "eng_words_116968"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_116968_1
+		NOT = {
+			has_global_flag = eng_words_116968_2
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	option = {
+		name = "EVTOPTA50003"
+		clr_global_flag = eng_words_116968_1
+	}
+	option = {
+		name = "EVTOPTB50003"
+	}
+	option = {
+		name = "EVTOPTC50003"
+		set_global_flag = eng_words_116968_2
+	}
+}
+country_event = {
+	id = 50004
+	title = "EVTNAME50004"
+	desc = "EVTDESC50004"
+	picture = "eng_words_116968"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_116968_2
+		NOT = {
+			has_global_flag = eng_words_116968_3
+		}
+	}
+	mean_time_to_happen = {
+		months = 16
+	}
+	option = {
+		name = "EVTOPTA50004"
+		clr_global_flag = eng_words_116968_2
+	}
+	option = {
+		name = "EVTOPTB50004"
+	}
+	option = {
+		name = "EVTOPTC50004"
+		set_global_flag = eng_words_116968_3
+	}
+}
+country_event = {
+	id = 50005
+	title = "EVTNAME50005"
+	desc = "EVTDESC50005"
+	picture = "eng_words_116968"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_116968_3
+		NOT = {
+			has_global_flag = eng_words_116968_4
+		}
+	}
+	mean_time_to_happen = {
+		months = 32
+	}
+	option = {
+		name = "EVTOPTA50005"
+		clr_global_flag = eng_words_116968_3
+	}
+	option = {
+		name = "EVTOPTB50005"
+	}
+	option = {
+		name = "EVTOPTC50005"
+		set_global_flag = eng_words_116968_4
+	}
+}
+country_event = {
+	id = 50006
+	title = "EVTNAME50006"
+	desc = "EVTDESC50006"
+	picture = "eng_words_116968"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_116968_4
+		NOT = {
+			has_global_flag = eng_words_116968_5
+		}
+	}
+	mean_time_to_happen = {
+		months = 64
+	}
+	option = {
+		name = "EVTOPTA50006"
+		clr_global_flag = eng_words_116968_4
+	}
+	option = {
+		name = "EVTOPTB50006"
+	}
+	option = {
+		name = "EVTOPTC50006"
+		set_global_flag = eng_words_116968_5
+	}
+}
+country_event = {
+	id = 50007
+	title = "EVTNAME50007"
+	desc = "EVTDESC50007"
+	picture = "eng_words_116968"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_116968_5
+		NOT = {
+			has_global_flag = eng_words_116968_6
+		}
+	}
+	mean_time_to_happen = {
+		months = 128
+	}
+	option = {
+		name = "EVTOPTA50007"
+		clr_global_flag = eng_words_116968_5
+	}
+	option = {
+		name = "EVTOPTB50007"
+	}
+	option = {
+		name = "EVTOPTC50007"
+		set_global_flag = eng_words_116968_6
+	}
+}
+country_event = {
+	id = 50008
+	title = "EVTNAME50008"
+	desc = "EVTDESC50008"
+	picture = "eng_words_116968"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_116968_6
+		NOT = {
+			has_global_flag = eng_words_116968_7
+		}
+	}
+	mean_time_to_happen = {
+		months = 256
+	}
+	option = {
+		name = "EVTOPTA50008"
+		clr_global_flag = eng_words_116968_6
+	}
+	option = {
+		name = "EVTOPTB50008"
+	}
+	option = {
+		name = "EVTOPTC50008"
+		set_global_flag = eng_words_116968_7
+	}
+}
+country_event = {
+	id = 50009
+	title = "EVTNAME50009"
+	desc = "EVTDESC50009"
+	picture = "eng_words_116968"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_116968_7
+		NOT = {
+			has_global_flag = eng_words_116968_8
+		}
+	}
+	mean_time_to_happen = {
+		months = 512
+	}
+	option = {
+		name = "EVTOPTA50009"
+		clr_global_flag = eng_words_116968_7
+	}
+	option = {
+		name = "EVTOPTB50009"
+	}
+	option = {
+		name = "EVTOPTC50009"
+		set_global_flag = eng_words_116968_8
+	}
+}
+country_event = {
+	id = 50010
+	title = "EVTNAME50010"
+	desc = "EVTDESC50010"
+	picture = "eng_words_116968"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_116968_8
+		NOT = {
+			has_global_flag = eng_words_116968_9
+		}
+	}
+	mean_time_to_happen = {
+		months = 1024
+	}
+	option = {
+		name = "EVTOPTA50010"
+		clr_global_flag = eng_words_116968_8
+	}
+	option = {
+		name = "EVTOPTB50010"
+	}
+	option = {
+		name = "EVTOPTC50010"
+		set_global_flag = eng_words_116968_9
+	}
+}
+country_event = {
+	id = 50011
+	title = "EVTNAME50011"
+	desc = "EVTDESC50011"
+	picture = "eng_words_116968"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_116968_9
+		NOT = {
+			has_global_flag = eng_words_116968_10
+		}
+	}
+	mean_time_to_happen = {
+		months = 2048
+	}
+	option = {
+		name = "EVTOPTA50011"
+		clr_global_flag = eng_words_116968_9
+	}
+	option = {
+		name = "EVTOPTB50011"
+	}
+	option = {
+		name = "EVTOPTC50011"
+		set_global_flag = eng_words_116968_10
+	}
+}
+country_event = {
+	id = 50012
+	title = "EVTNAME50012"
+	desc = "EVTDESC50012"
+	picture = "eng_words_116968"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_116968_10
+	}
+	mean_time_to_happen = {
+		months = 4096
+	}
+	option = {
+		name = "EVTOPTA50012"
+		clr_global_flag = eng_words_116968_10
+	}
+	option = {
+		name = "EVTOPTB50012"
+	}
+}
+country_event = {
+	id = 50013
+	title = "EVTNAME50013"
+	desc = "EVTDESC50013"
+	picture = "eng_words_119014"
+	trigger = {
+		ai = no
+		NOT = {
+			has_global_flag = eng_words_119014_0
+		}
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+	option = {
+		name = "EVTOPTA50013"
+	}
+	option = {
+		name = "EVTOPTB50013"
+		set_global_flag = eng_words_119014_0
+	}
+}
+country_event = {
+	id = 50014
+	title = "EVTNAME50014"
+	desc = "EVTDESC50014"
+	picture = "eng_words_119014"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_119014_0
+		NOT = {
+			has_global_flag = eng_words_119014_1
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA50014"
+		clr_global_flag = eng_words_119014_0
+	}
+	option = {
+		name = "EVTOPTB50014"
+	}
+	option = {
+		name = "EVTOPTC50014"
+		set_global_flag = eng_words_119014_1
+	}
+}
+country_event = {
+	id = 50015
+	title = "EVTNAME50015"
+	desc = "EVTDESC50015"
+	picture = "eng_words_119014"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_119014_1
+		NOT = {
+			has_global_flag = eng_words_119014_2
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	option = {
+		name = "EVTOPTA50015"
+		clr_global_flag = eng_words_119014_1
+	}
+	option = {
+		name = "EVTOPTB50015"
+	}
+	option = {
+		name = "EVTOPTC50015"
+		set_global_flag = eng_words_119014_2
+	}
+}
+country_event = {
+	id = 50016
+	title = "EVTNAME50016"
+	desc = "EVTDESC50016"
+	picture = "eng_words_119014"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_119014_2
+		NOT = {
+			has_global_flag = eng_words_119014_3
+		}
+	}
+	mean_time_to_happen = {
+		months = 16
+	}
+	option = {
+		name = "EVTOPTA50016"
+		clr_global_flag = eng_words_119014_2
+	}
+	option = {
+		name = "EVTOPTB50016"
+	}
+	option = {
+		name = "EVTOPTC50016"
+		set_global_flag = eng_words_119014_3
+	}
+}
+country_event = {
+	id = 50017
+	title = "EVTNAME50017"
+	desc = "EVTDESC50017"
+	picture = "eng_words_119014"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_119014_3
+		NOT = {
+			has_global_flag = eng_words_119014_4
+		}
+	}
+	mean_time_to_happen = {
+		months = 32
+	}
+	option = {
+		name = "EVTOPTA50017"
+		clr_global_flag = eng_words_119014_3
+	}
+	option = {
+		name = "EVTOPTB50017"
+	}
+	option = {
+		name = "EVTOPTC50017"
+		set_global_flag = eng_words_119014_4
+	}
+}
+country_event = {
+	id = 50018
+	title = "EVTNAME50018"
+	desc = "EVTDESC50018"
+	picture = "eng_words_119014"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_119014_4
+		NOT = {
+			has_global_flag = eng_words_119014_5
+		}
+	}
+	mean_time_to_happen = {
+		months = 64
+	}
+	option = {
+		name = "EVTOPTA50018"
+		clr_global_flag = eng_words_119014_4
+	}
+	option = {
+		name = "EVTOPTB50018"
+	}
+	option = {
+		name = "EVTOPTC50018"
+		set_global_flag = eng_words_119014_5
+	}
+}
+country_event = {
+	id = 50019
+	title = "EVTNAME50019"
+	desc = "EVTDESC50019"
+	picture = "eng_words_119014"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_119014_5
+		NOT = {
+			has_global_flag = eng_words_119014_6
+		}
+	}
+	mean_time_to_happen = {
+		months = 128
+	}
+	option = {
+		name = "EVTOPTA50019"
+		clr_global_flag = eng_words_119014_5
+	}
+	option = {
+		name = "EVTOPTB50019"
+	}
+	option = {
+		name = "EVTOPTC50019"
+		set_global_flag = eng_words_119014_6
+	}
+}
+country_event = {
+	id = 50020
+	title = "EVTNAME50020"
+	desc = "EVTDESC50020"
+	picture = "eng_words_119014"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_119014_6
+		NOT = {
+			has_global_flag = eng_words_119014_7
+		}
+	}
+	mean_time_to_happen = {
+		months = 256
+	}
+	option = {
+		name = "EVTOPTA50020"
+		clr_global_flag = eng_words_119014_6
+	}
+	option = {
+		name = "EVTOPTB50020"
+	}
+	option = {
+		name = "EVTOPTC50020"
+		set_global_flag = eng_words_119014_7
+	}
+}
+country_event = {
+	id = 50021
+	title = "EVTNAME50021"
+	desc = "EVTDESC50021"
+	picture = "eng_words_119014"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_119014_7
+		NOT = {
+			has_global_flag = eng_words_119014_8
+		}
+	}
+	mean_time_to_happen = {
+		months = 512
+	}
+	option = {
+		name = "EVTOPTA50021"
+		clr_global_flag = eng_words_119014_7
+	}
+	option = {
+		name = "EVTOPTB50021"
+	}
+	option = {
+		name = "EVTOPTC50021"
+		set_global_flag = eng_words_119014_8
+	}
+}
+country_event = {
+	id = 50022
+	title = "EVTNAME50022"
+	desc = "EVTDESC50022"
+	picture = "eng_words_119014"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_119014_8
+		NOT = {
+			has_global_flag = eng_words_119014_9
+		}
+	}
+	mean_time_to_happen = {
+		months = 1024
+	}
+	option = {
+		name = "EVTOPTA50022"
+		clr_global_flag = eng_words_119014_8
+	}
+	option = {
+		name = "EVTOPTB50022"
+	}
+	option = {
+		name = "EVTOPTC50022"
+		set_global_flag = eng_words_119014_9
+	}
+}
+country_event = {
+	id = 50023
+	title = "EVTNAME50023"
+	desc = "EVTDESC50023"
+	picture = "eng_words_119014"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_119014_9
+		NOT = {
+			has_global_flag = eng_words_119014_10
+		}
+	}
+	mean_time_to_happen = {
+		months = 2048
+	}
+	option = {
+		name = "EVTOPTA50023"
+		clr_global_flag = eng_words_119014_9
+	}
+	option = {
+		name = "EVTOPTB50023"
+	}
+	option = {
+		name = "EVTOPTC50023"
+		set_global_flag = eng_words_119014_10
+	}
+}
+country_event = {
+	id = 50024
+	title = "EVTNAME50024"
+	desc = "EVTDESC50024"
+	picture = "eng_words_119014"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_119014_10
+	}
+	mean_time_to_happen = {
+		months = 4096
+	}
+	option = {
+		name = "EVTOPTA50024"
+		clr_global_flag = eng_words_119014_10
+	}
+	option = {
+		name = "EVTOPTB50024"
+	}
+}
+country_event = {
+	id = 50025
+	title = "EVTNAME50025"
+	desc = "EVTDESC50025"
+	picture = "eng_words_122354"
+	trigger = {
+		ai = no
+		NOT = {
+			has_global_flag = eng_words_122354_0
+		}
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+	option = {
+		name = "EVTOPTA50025"
+	}
+	option = {
+		name = "EVTOPTB50025"
+		set_global_flag = eng_words_122354_0
+	}
+}
+country_event = {
+	id = 50026
+	title = "EVTNAME50026"
+	desc = "EVTDESC50026"
+	picture = "eng_words_122354"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_122354_0
+		NOT = {
+			has_global_flag = eng_words_122354_1
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA50026"
+		clr_global_flag = eng_words_122354_0
+	}
+	option = {
+		name = "EVTOPTB50026"
+	}
+	option = {
+		name = "EVTOPTC50026"
+		set_global_flag = eng_words_122354_1
+	}
+}
+country_event = {
+	id = 50027
+	title = "EVTNAME50027"
+	desc = "EVTDESC50027"
+	picture = "eng_words_122354"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_122354_1
+		NOT = {
+			has_global_flag = eng_words_122354_2
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	option = {
+		name = "EVTOPTA50027"
+		clr_global_flag = eng_words_122354_1
+	}
+	option = {
+		name = "EVTOPTB50027"
+	}
+	option = {
+		name = "EVTOPTC50027"
+		set_global_flag = eng_words_122354_2
+	}
+}
+country_event = {
+	id = 50028
+	title = "EVTNAME50028"
+	desc = "EVTDESC50028"
+	picture = "eng_words_122354"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_122354_2
+		NOT = {
+			has_global_flag = eng_words_122354_3
+		}
+	}
+	mean_time_to_happen = {
+		months = 16
+	}
+	option = {
+		name = "EVTOPTA50028"
+		clr_global_flag = eng_words_122354_2
+	}
+	option = {
+		name = "EVTOPTB50028"
+	}
+	option = {
+		name = "EVTOPTC50028"
+		set_global_flag = eng_words_122354_3
+	}
+}
+country_event = {
+	id = 50029
+	title = "EVTNAME50029"
+	desc = "EVTDESC50029"
+	picture = "eng_words_122354"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_122354_3
+		NOT = {
+			has_global_flag = eng_words_122354_4
+		}
+	}
+	mean_time_to_happen = {
+		months = 32
+	}
+	option = {
+		name = "EVTOPTA50029"
+		clr_global_flag = eng_words_122354_3
+	}
+	option = {
+		name = "EVTOPTB50029"
+	}
+	option = {
+		name = "EVTOPTC50029"
+		set_global_flag = eng_words_122354_4
+	}
+}
+country_event = {
+	id = 50030
+	title = "EVTNAME50030"
+	desc = "EVTDESC50030"
+	picture = "eng_words_122354"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_122354_4
+		NOT = {
+			has_global_flag = eng_words_122354_5
+		}
+	}
+	mean_time_to_happen = {
+		months = 64
+	}
+	option = {
+		name = "EVTOPTA50030"
+		clr_global_flag = eng_words_122354_4
+	}
+	option = {
+		name = "EVTOPTB50030"
+	}
+	option = {
+		name = "EVTOPTC50030"
+		set_global_flag = eng_words_122354_5
+	}
+}
+country_event = {
+	id = 50031
+	title = "EVTNAME50031"
+	desc = "EVTDESC50031"
+	picture = "eng_words_122354"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_122354_5
+		NOT = {
+			has_global_flag = eng_words_122354_6
+		}
+	}
+	mean_time_to_happen = {
+		months = 128
+	}
+	option = {
+		name = "EVTOPTA50031"
+		clr_global_flag = eng_words_122354_5
+	}
+	option = {
+		name = "EVTOPTB50031"
+	}
+	option = {
+		name = "EVTOPTC50031"
+		set_global_flag = eng_words_122354_6
+	}
+}
+country_event = {
+	id = 50032
+	title = "EVTNAME50032"
+	desc = "EVTDESC50032"
+	picture = "eng_words_122354"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_122354_6
+		NOT = {
+			has_global_flag = eng_words_122354_7
+		}
+	}
+	mean_time_to_happen = {
+		months = 256
+	}
+	option = {
+		name = "EVTOPTA50032"
+		clr_global_flag = eng_words_122354_6
+	}
+	option = {
+		name = "EVTOPTB50032"
+	}
+	option = {
+		name = "EVTOPTC50032"
+		set_global_flag = eng_words_122354_7
+	}
+}
+country_event = {
+	id = 50033
+	title = "EVTNAME50033"
+	desc = "EVTDESC50033"
+	picture = "eng_words_122354"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_122354_7
+		NOT = {
+			has_global_flag = eng_words_122354_8
+		}
+	}
+	mean_time_to_happen = {
+		months = 512
+	}
+	option = {
+		name = "EVTOPTA50033"
+		clr_global_flag = eng_words_122354_7
+	}
+	option = {
+		name = "EVTOPTB50033"
+	}
+	option = {
+		name = "EVTOPTC50033"
+		set_global_flag = eng_words_122354_8
+	}
+}
+country_event = {
+	id = 50034
+	title = "EVTNAME50034"
+	desc = "EVTDESC50034"
+	picture = "eng_words_122354"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_122354_8
+		NOT = {
+			has_global_flag = eng_words_122354_9
+		}
+	}
+	mean_time_to_happen = {
+		months = 1024
+	}
+	option = {
+		name = "EVTOPTA50034"
+		clr_global_flag = eng_words_122354_8
+	}
+	option = {
+		name = "EVTOPTB50034"
+	}
+	option = {
+		name = "EVTOPTC50034"
+		set_global_flag = eng_words_122354_9
+	}
+}
+country_event = {
+	id = 50035
+	title = "EVTNAME50035"
+	desc = "EVTDESC50035"
+	picture = "eng_words_122354"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_122354_9
+		NOT = {
+			has_global_flag = eng_words_122354_10
+		}
+	}
+	mean_time_to_happen = {
+		months = 2048
+	}
+	option = {
+		name = "EVTOPTA50035"
+		clr_global_flag = eng_words_122354_9
+	}
+	option = {
+		name = "EVTOPTB50035"
+	}
+	option = {
+		name = "EVTOPTC50035"
+		set_global_flag = eng_words_122354_10
+	}
+}
+country_event = {
+	id = 50036
+	title = "EVTNAME50036"
+	desc = "EVTDESC50036"
+	picture = "eng_words_122354"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_122354_10
+	}
+	mean_time_to_happen = {
+		months = 4096
+	}
+	option = {
+		name = "EVTOPTA50036"
+		clr_global_flag = eng_words_122354_10
+	}
+	option = {
+		name = "EVTOPTB50036"
+	}
+}
+country_event = {
+	id = 50037
+	title = "EVTNAME50037"
+	desc = "EVTDESC50037"
+	picture = "eng_words_13651"
+	trigger = {
+		ai = no
+		NOT = {
+			has_global_flag = eng_words_13651_0
+		}
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+	option = {
+		name = "EVTOPTA50037"
+	}
+	option = {
+		name = "EVTOPTB50037"
+		set_global_flag = eng_words_13651_0
+	}
+}
+country_event = {
+	id = 50038
+	title = "EVTNAME50038"
+	desc = "EVTDESC50038"
+	picture = "eng_words_13651"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_13651_0
+		NOT = {
+			has_global_flag = eng_words_13651_1
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA50038"
+		clr_global_flag = eng_words_13651_0
+	}
+	option = {
+		name = "EVTOPTB50038"
+	}
+	option = {
+		name = "EVTOPTC50038"
+		set_global_flag = eng_words_13651_1
+	}
+}
+country_event = {
+	id = 50039
+	title = "EVTNAME50039"
+	desc = "EVTDESC50039"
+	picture = "eng_words_13651"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_13651_1
+		NOT = {
+			has_global_flag = eng_words_13651_2
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	option = {
+		name = "EVTOPTA50039"
+		clr_global_flag = eng_words_13651_1
+	}
+	option = {
+		name = "EVTOPTB50039"
+	}
+	option = {
+		name = "EVTOPTC50039"
+		set_global_flag = eng_words_13651_2
+	}
+}
+country_event = {
+	id = 50040
+	title = "EVTNAME50040"
+	desc = "EVTDESC50040"
+	picture = "eng_words_13651"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_13651_2
+		NOT = {
+			has_global_flag = eng_words_13651_3
+		}
+	}
+	mean_time_to_happen = {
+		months = 16
+	}
+	option = {
+		name = "EVTOPTA50040"
+		clr_global_flag = eng_words_13651_2
+	}
+	option = {
+		name = "EVTOPTB50040"
+	}
+	option = {
+		name = "EVTOPTC50040"
+		set_global_flag = eng_words_13651_3
+	}
+}
+country_event = {
+	id = 50041
+	title = "EVTNAME50041"
+	desc = "EVTDESC50041"
+	picture = "eng_words_13651"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_13651_3
+		NOT = {
+			has_global_flag = eng_words_13651_4
+		}
+	}
+	mean_time_to_happen = {
+		months = 32
+	}
+	option = {
+		name = "EVTOPTA50041"
+		clr_global_flag = eng_words_13651_3
+	}
+	option = {
+		name = "EVTOPTB50041"
+	}
+	option = {
+		name = "EVTOPTC50041"
+		set_global_flag = eng_words_13651_4
+	}
+}
+country_event = {
+	id = 50042
+	title = "EVTNAME50042"
+	desc = "EVTDESC50042"
+	picture = "eng_words_13651"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_13651_4
+		NOT = {
+			has_global_flag = eng_words_13651_5
+		}
+	}
+	mean_time_to_happen = {
+		months = 64
+	}
+	option = {
+		name = "EVTOPTA50042"
+		clr_global_flag = eng_words_13651_4
+	}
+	option = {
+		name = "EVTOPTB50042"
+	}
+	option = {
+		name = "EVTOPTC50042"
+		set_global_flag = eng_words_13651_5
+	}
+}
+country_event = {
+	id = 50043
+	title = "EVTNAME50043"
+	desc = "EVTDESC50043"
+	picture = "eng_words_13651"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_13651_5
+		NOT = {
+			has_global_flag = eng_words_13651_6
+		}
+	}
+	mean_time_to_happen = {
+		months = 128
+	}
+	option = {
+		name = "EVTOPTA50043"
+		clr_global_flag = eng_words_13651_5
+	}
+	option = {
+		name = "EVTOPTB50043"
+	}
+	option = {
+		name = "EVTOPTC50043"
+		set_global_flag = eng_words_13651_6
+	}
+}
+country_event = {
+	id = 50044
+	title = "EVTNAME50044"
+	desc = "EVTDESC50044"
+	picture = "eng_words_13651"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_13651_6
+		NOT = {
+			has_global_flag = eng_words_13651_7
+		}
+	}
+	mean_time_to_happen = {
+		months = 256
+	}
+	option = {
+		name = "EVTOPTA50044"
+		clr_global_flag = eng_words_13651_6
+	}
+	option = {
+		name = "EVTOPTB50044"
+	}
+	option = {
+		name = "EVTOPTC50044"
+		set_global_flag = eng_words_13651_7
+	}
+}
+country_event = {
+	id = 50045
+	title = "EVTNAME50045"
+	desc = "EVTDESC50045"
+	picture = "eng_words_13651"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_13651_7
+		NOT = {
+			has_global_flag = eng_words_13651_8
+		}
+	}
+	mean_time_to_happen = {
+		months = 512
+	}
+	option = {
+		name = "EVTOPTA50045"
+		clr_global_flag = eng_words_13651_7
+	}
+	option = {
+		name = "EVTOPTB50045"
+	}
+	option = {
+		name = "EVTOPTC50045"
+		set_global_flag = eng_words_13651_8
+	}
+}
+country_event = {
+	id = 50046
+	title = "EVTNAME50046"
+	desc = "EVTDESC50046"
+	picture = "eng_words_13651"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_13651_8
+		NOT = {
+			has_global_flag = eng_words_13651_9
+		}
+	}
+	mean_time_to_happen = {
+		months = 1024
+	}
+	option = {
+		name = "EVTOPTA50046"
+		clr_global_flag = eng_words_13651_8
+	}
+	option = {
+		name = "EVTOPTB50046"
+	}
+	option = {
+		name = "EVTOPTC50046"
+		set_global_flag = eng_words_13651_9
+	}
+}
+country_event = {
+	id = 50047
+	title = "EVTNAME50047"
+	desc = "EVTDESC50047"
+	picture = "eng_words_13651"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_13651_9
+		NOT = {
+			has_global_flag = eng_words_13651_10
+		}
+	}
+	mean_time_to_happen = {
+		months = 2048
+	}
+	option = {
+		name = "EVTOPTA50047"
+		clr_global_flag = eng_words_13651_9
+	}
+	option = {
+		name = "EVTOPTB50047"
+	}
+	option = {
+		name = "EVTOPTC50047"
+		set_global_flag = eng_words_13651_10
+	}
+}
+country_event = {
+	id = 50048
+	title = "EVTNAME50048"
+	desc = "EVTDESC50048"
+	picture = "eng_words_13651"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_13651_10
+	}
+	mean_time_to_happen = {
+		months = 4096
+	}
+	option = {
+		name = "EVTOPTA50048"
+		clr_global_flag = eng_words_13651_10
+	}
+	option = {
+		name = "EVTOPTB50048"
+	}
+}
+country_event = {
+	id = 50049
+	title = "EVTNAME50049"
+	desc = "EVTDESC50049"
+	picture = "eng_words_14561"
+	trigger = {
+		ai = no
+		NOT = {
+			has_global_flag = eng_words_14561_0
+		}
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+	option = {
+		name = "EVTOPTA50049"
+	}
+	option = {
+		name = "EVTOPTB50049"
+		set_global_flag = eng_words_14561_0
+	}
+}
+country_event = {
+	id = 50050
+	title = "EVTNAME50050"
+	desc = "EVTDESC50050"
+	picture = "eng_words_14561"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_14561_0
+		NOT = {
+			has_global_flag = eng_words_14561_1
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA50050"
+		clr_global_flag = eng_words_14561_0
+	}
+	option = {
+		name = "EVTOPTB50050"
+	}
+	option = {
+		name = "EVTOPTC50050"
+		set_global_flag = eng_words_14561_1
+	}
+}
+country_event = {
+	id = 50051
+	title = "EVTNAME50051"
+	desc = "EVTDESC50051"
+	picture = "eng_words_14561"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_14561_1
+		NOT = {
+			has_global_flag = eng_words_14561_2
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	option = {
+		name = "EVTOPTA50051"
+		clr_global_flag = eng_words_14561_1
+	}
+	option = {
+		name = "EVTOPTB50051"
+	}
+	option = {
+		name = "EVTOPTC50051"
+		set_global_flag = eng_words_14561_2
+	}
+}
+country_event = {
+	id = 50052
+	title = "EVTNAME50052"
+	desc = "EVTDESC50052"
+	picture = "eng_words_14561"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_14561_2
+		NOT = {
+			has_global_flag = eng_words_14561_3
+		}
+	}
+	mean_time_to_happen = {
+		months = 16
+	}
+	option = {
+		name = "EVTOPTA50052"
+		clr_global_flag = eng_words_14561_2
+	}
+	option = {
+		name = "EVTOPTB50052"
+	}
+	option = {
+		name = "EVTOPTC50052"
+		set_global_flag = eng_words_14561_3
+	}
+}
+country_event = {
+	id = 50053
+	title = "EVTNAME50053"
+	desc = "EVTDESC50053"
+	picture = "eng_words_14561"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_14561_3
+		NOT = {
+			has_global_flag = eng_words_14561_4
+		}
+	}
+	mean_time_to_happen = {
+		months = 32
+	}
+	option = {
+		name = "EVTOPTA50053"
+		clr_global_flag = eng_words_14561_3
+	}
+	option = {
+		name = "EVTOPTB50053"
+	}
+	option = {
+		name = "EVTOPTC50053"
+		set_global_flag = eng_words_14561_4
+	}
+}
+country_event = {
+	id = 50054
+	title = "EVTNAME50054"
+	desc = "EVTDESC50054"
+	picture = "eng_words_14561"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_14561_4
+		NOT = {
+			has_global_flag = eng_words_14561_5
+		}
+	}
+	mean_time_to_happen = {
+		months = 64
+	}
+	option = {
+		name = "EVTOPTA50054"
+		clr_global_flag = eng_words_14561_4
+	}
+	option = {
+		name = "EVTOPTB50054"
+	}
+	option = {
+		name = "EVTOPTC50054"
+		set_global_flag = eng_words_14561_5
+	}
+}
+country_event = {
+	id = 50055
+	title = "EVTNAME50055"
+	desc = "EVTDESC50055"
+	picture = "eng_words_14561"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_14561_5
+		NOT = {
+			has_global_flag = eng_words_14561_6
+		}
+	}
+	mean_time_to_happen = {
+		months = 128
+	}
+	option = {
+		name = "EVTOPTA50055"
+		clr_global_flag = eng_words_14561_5
+	}
+	option = {
+		name = "EVTOPTB50055"
+	}
+	option = {
+		name = "EVTOPTC50055"
+		set_global_flag = eng_words_14561_6
+	}
+}
+country_event = {
+	id = 50056
+	title = "EVTNAME50056"
+	desc = "EVTDESC50056"
+	picture = "eng_words_14561"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_14561_6
+		NOT = {
+			has_global_flag = eng_words_14561_7
+		}
+	}
+	mean_time_to_happen = {
+		months = 256
+	}
+	option = {
+		name = "EVTOPTA50056"
+		clr_global_flag = eng_words_14561_6
+	}
+	option = {
+		name = "EVTOPTB50056"
+	}
+	option = {
+		name = "EVTOPTC50056"
+		set_global_flag = eng_words_14561_7
+	}
+}
+country_event = {
+	id = 50057
+	title = "EVTNAME50057"
+	desc = "EVTDESC50057"
+	picture = "eng_words_14561"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_14561_7
+		NOT = {
+			has_global_flag = eng_words_14561_8
+		}
+	}
+	mean_time_to_happen = {
+		months = 512
+	}
+	option = {
+		name = "EVTOPTA50057"
+		clr_global_flag = eng_words_14561_7
+	}
+	option = {
+		name = "EVTOPTB50057"
+	}
+	option = {
+		name = "EVTOPTC50057"
+		set_global_flag = eng_words_14561_8
+	}
+}
+country_event = {
+	id = 50058
+	title = "EVTNAME50058"
+	desc = "EVTDESC50058"
+	picture = "eng_words_14561"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_14561_8
+		NOT = {
+			has_global_flag = eng_words_14561_9
+		}
+	}
+	mean_time_to_happen = {
+		months = 1024
+	}
+	option = {
+		name = "EVTOPTA50058"
+		clr_global_flag = eng_words_14561_8
+	}
+	option = {
+		name = "EVTOPTB50058"
+	}
+	option = {
+		name = "EVTOPTC50058"
+		set_global_flag = eng_words_14561_9
+	}
+}
+country_event = {
+	id = 50059
+	title = "EVTNAME50059"
+	desc = "EVTDESC50059"
+	picture = "eng_words_14561"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_14561_9
+		NOT = {
+			has_global_flag = eng_words_14561_10
+		}
+	}
+	mean_time_to_happen = {
+		months = 2048
+	}
+	option = {
+		name = "EVTOPTA50059"
+		clr_global_flag = eng_words_14561_9
+	}
+	option = {
+		name = "EVTOPTB50059"
+	}
+	option = {
+		name = "EVTOPTC50059"
+		set_global_flag = eng_words_14561_10
+	}
+}
+country_event = {
+	id = 50060
+	title = "EVTNAME50060"
+	desc = "EVTDESC50060"
+	picture = "eng_words_14561"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_14561_10
+	}
+	mean_time_to_happen = {
+		months = 4096
+	}
+	option = {
+		name = "EVTOPTA50060"
+		clr_global_flag = eng_words_14561_10
+	}
+	option = {
+		name = "EVTOPTB50060"
+	}
+}
+country_event = {
+	id = 50061
+	title = "EVTNAME50061"
+	desc = "EVTDESC50061"
+	picture = "eng_words_92696"
+	trigger = {
+		ai = no
+		NOT = {
+			has_global_flag = eng_words_92696_0
+		}
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+	option = {
+		name = "EVTOPTA50061"
+	}
+	option = {
+		name = "EVTOPTB50061"
+		set_global_flag = eng_words_92696_0
+	}
+}
+country_event = {
+	id = 50062
+	title = "EVTNAME50062"
+	desc = "EVTDESC50062"
+	picture = "eng_words_92696"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_92696_0
+		NOT = {
+			has_global_flag = eng_words_92696_1
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA50062"
+		clr_global_flag = eng_words_92696_0
+	}
+	option = {
+		name = "EVTOPTB50062"
+	}
+	option = {
+		name = "EVTOPTC50062"
+		set_global_flag = eng_words_92696_1
+	}
+}
+country_event = {
+	id = 50063
+	title = "EVTNAME50063"
+	desc = "EVTDESC50063"
+	picture = "eng_words_92696"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_92696_1
+		NOT = {
+			has_global_flag = eng_words_92696_2
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	option = {
+		name = "EVTOPTA50063"
+		clr_global_flag = eng_words_92696_1
+	}
+	option = {
+		name = "EVTOPTB50063"
+	}
+	option = {
+		name = "EVTOPTC50063"
+		set_global_flag = eng_words_92696_2
+	}
+}
+country_event = {
+	id = 50064
+	title = "EVTNAME50064"
+	desc = "EVTDESC50064"
+	picture = "eng_words_92696"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_92696_2
+		NOT = {
+			has_global_flag = eng_words_92696_3
+		}
+	}
+	mean_time_to_happen = {
+		months = 16
+	}
+	option = {
+		name = "EVTOPTA50064"
+		clr_global_flag = eng_words_92696_2
+	}
+	option = {
+		name = "EVTOPTB50064"
+	}
+	option = {
+		name = "EVTOPTC50064"
+		set_global_flag = eng_words_92696_3
+	}
+}
+country_event = {
+	id = 50065
+	title = "EVTNAME50065"
+	desc = "EVTDESC50065"
+	picture = "eng_words_92696"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_92696_3
+		NOT = {
+			has_global_flag = eng_words_92696_4
+		}
+	}
+	mean_time_to_happen = {
+		months = 32
+	}
+	option = {
+		name = "EVTOPTA50065"
+		clr_global_flag = eng_words_92696_3
+	}
+	option = {
+		name = "EVTOPTB50065"
+	}
+	option = {
+		name = "EVTOPTC50065"
+		set_global_flag = eng_words_92696_4
+	}
+}
+country_event = {
+	id = 50066
+	title = "EVTNAME50066"
+	desc = "EVTDESC50066"
+	picture = "eng_words_92696"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_92696_4
+		NOT = {
+			has_global_flag = eng_words_92696_5
+		}
+	}
+	mean_time_to_happen = {
+		months = 64
+	}
+	option = {
+		name = "EVTOPTA50066"
+		clr_global_flag = eng_words_92696_4
+	}
+	option = {
+		name = "EVTOPTB50066"
+	}
+	option = {
+		name = "EVTOPTC50066"
+		set_global_flag = eng_words_92696_5
+	}
+}
+country_event = {
+	id = 50067
+	title = "EVTNAME50067"
+	desc = "EVTDESC50067"
+	picture = "eng_words_92696"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_92696_5
+		NOT = {
+			has_global_flag = eng_words_92696_6
+		}
+	}
+	mean_time_to_happen = {
+		months = 128
+	}
+	option = {
+		name = "EVTOPTA50067"
+		clr_global_flag = eng_words_92696_5
+	}
+	option = {
+		name = "EVTOPTB50067"
+	}
+	option = {
+		name = "EVTOPTC50067"
+		set_global_flag = eng_words_92696_6
+	}
+}
+country_event = {
+	id = 50068
+	title = "EVTNAME50068"
+	desc = "EVTDESC50068"
+	picture = "eng_words_92696"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_92696_6
+		NOT = {
+			has_global_flag = eng_words_92696_7
+		}
+	}
+	mean_time_to_happen = {
+		months = 256
+	}
+	option = {
+		name = "EVTOPTA50068"
+		clr_global_flag = eng_words_92696_6
+	}
+	option = {
+		name = "EVTOPTB50068"
+	}
+	option = {
+		name = "EVTOPTC50068"
+		set_global_flag = eng_words_92696_7
+	}
+}
+country_event = {
+	id = 50069
+	title = "EVTNAME50069"
+	desc = "EVTDESC50069"
+	picture = "eng_words_92696"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_92696_7
+		NOT = {
+			has_global_flag = eng_words_92696_8
+		}
+	}
+	mean_time_to_happen = {
+		months = 512
+	}
+	option = {
+		name = "EVTOPTA50069"
+		clr_global_flag = eng_words_92696_7
+	}
+	option = {
+		name = "EVTOPTB50069"
+	}
+	option = {
+		name = "EVTOPTC50069"
+		set_global_flag = eng_words_92696_8
+	}
+}
+country_event = {
+	id = 50070
+	title = "EVTNAME50070"
+	desc = "EVTDESC50070"
+	picture = "eng_words_92696"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_92696_8
+		NOT = {
+			has_global_flag = eng_words_92696_9
+		}
+	}
+	mean_time_to_happen = {
+		months = 1024
+	}
+	option = {
+		name = "EVTOPTA50070"
+		clr_global_flag = eng_words_92696_8
+	}
+	option = {
+		name = "EVTOPTB50070"
+	}
+	option = {
+		name = "EVTOPTC50070"
+		set_global_flag = eng_words_92696_9
+	}
+}
+country_event = {
+	id = 50071
+	title = "EVTNAME50071"
+	desc = "EVTDESC50071"
+	picture = "eng_words_92696"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_92696_9
+		NOT = {
+			has_global_flag = eng_words_92696_10
+		}
+	}
+	mean_time_to_happen = {
+		months = 2048
+	}
+	option = {
+		name = "EVTOPTA50071"
+		clr_global_flag = eng_words_92696_9
+	}
+	option = {
+		name = "EVTOPTB50071"
+	}
+	option = {
+		name = "EVTOPTC50071"
+		set_global_flag = eng_words_92696_10
+	}
+}
+country_event = {
+	id = 50072
+	title = "EVTNAME50072"
+	desc = "EVTDESC50072"
+	picture = "eng_words_92696"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_92696_10
+	}
+	mean_time_to_happen = {
+		months = 4096
+	}
+	option = {
+		name = "EVTOPTA50072"
+		clr_global_flag = eng_words_92696_10
+	}
+	option = {
+		name = "EVTOPTB50072"
+	}
+}
+country_event = {
+	id = 50073
+	title = "EVTNAME50073"
+	desc = "EVTDESC50073"
+	picture = "eng_words_213324"
+	trigger = {
+		ai = no
+		NOT = {
+			has_global_flag = eng_words_213324_0
+		}
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+	option = {
+		name = "EVTOPTA50073"
+	}
+	option = {
+		name = "EVTOPTB50073"
+		set_global_flag = eng_words_213324_0
+	}
+}
+country_event = {
+	id = 50074
+	title = "EVTNAME50074"
+	desc = "EVTDESC50074"
+	picture = "eng_words_213324"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_213324_0
+		NOT = {
+			has_global_flag = eng_words_213324_1
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA50074"
+		clr_global_flag = eng_words_213324_0
+	}
+	option = {
+		name = "EVTOPTB50074"
+	}
+	option = {
+		name = "EVTOPTC50074"
+		set_global_flag = eng_words_213324_1
+	}
+}
+country_event = {
+	id = 50075
+	title = "EVTNAME50075"
+	desc = "EVTDESC50075"
+	picture = "eng_words_213324"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_213324_1
+		NOT = {
+			has_global_flag = eng_words_213324_2
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	option = {
+		name = "EVTOPTA50075"
+		clr_global_flag = eng_words_213324_1
+	}
+	option = {
+		name = "EVTOPTB50075"
+	}
+	option = {
+		name = "EVTOPTC50075"
+		set_global_flag = eng_words_213324_2
+	}
+}
+country_event = {
+	id = 50076
+	title = "EVTNAME50076"
+	desc = "EVTDESC50076"
+	picture = "eng_words_213324"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_213324_2
+		NOT = {
+			has_global_flag = eng_words_213324_3
+		}
+	}
+	mean_time_to_happen = {
+		months = 16
+	}
+	option = {
+		name = "EVTOPTA50076"
+		clr_global_flag = eng_words_213324_2
+	}
+	option = {
+		name = "EVTOPTB50076"
+	}
+	option = {
+		name = "EVTOPTC50076"
+		set_global_flag = eng_words_213324_3
+	}
+}
+country_event = {
+	id = 50077
+	title = "EVTNAME50077"
+	desc = "EVTDESC50077"
+	picture = "eng_words_213324"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_213324_3
+		NOT = {
+			has_global_flag = eng_words_213324_4
+		}
+	}
+	mean_time_to_happen = {
+		months = 32
+	}
+	option = {
+		name = "EVTOPTA50077"
+		clr_global_flag = eng_words_213324_3
+	}
+	option = {
+		name = "EVTOPTB50077"
+	}
+	option = {
+		name = "EVTOPTC50077"
+		set_global_flag = eng_words_213324_4
+	}
+}
+country_event = {
+	id = 50078
+	title = "EVTNAME50078"
+	desc = "EVTDESC50078"
+	picture = "eng_words_213324"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_213324_4
+		NOT = {
+			has_global_flag = eng_words_213324_5
+		}
+	}
+	mean_time_to_happen = {
+		months = 64
+	}
+	option = {
+		name = "EVTOPTA50078"
+		clr_global_flag = eng_words_213324_4
+	}
+	option = {
+		name = "EVTOPTB50078"
+	}
+	option = {
+		name = "EVTOPTC50078"
+		set_global_flag = eng_words_213324_5
+	}
+}
+country_event = {
+	id = 50079
+	title = "EVTNAME50079"
+	desc = "EVTDESC50079"
+	picture = "eng_words_213324"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_213324_5
+		NOT = {
+			has_global_flag = eng_words_213324_6
+		}
+	}
+	mean_time_to_happen = {
+		months = 128
+	}
+	option = {
+		name = "EVTOPTA50079"
+		clr_global_flag = eng_words_213324_5
+	}
+	option = {
+		name = "EVTOPTB50079"
+	}
+	option = {
+		name = "EVTOPTC50079"
+		set_global_flag = eng_words_213324_6
+	}
+}
+country_event = {
+	id = 50080
+	title = "EVTNAME50080"
+	desc = "EVTDESC50080"
+	picture = "eng_words_213324"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_213324_6
+		NOT = {
+			has_global_flag = eng_words_213324_7
+		}
+	}
+	mean_time_to_happen = {
+		months = 256
+	}
+	option = {
+		name = "EVTOPTA50080"
+		clr_global_flag = eng_words_213324_6
+	}
+	option = {
+		name = "EVTOPTB50080"
+	}
+	option = {
+		name = "EVTOPTC50080"
+		set_global_flag = eng_words_213324_7
+	}
+}
+country_event = {
+	id = 50081
+	title = "EVTNAME50081"
+	desc = "EVTDESC50081"
+	picture = "eng_words_213324"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_213324_7
+		NOT = {
+			has_global_flag = eng_words_213324_8
+		}
+	}
+	mean_time_to_happen = {
+		months = 512
+	}
+	option = {
+		name = "EVTOPTA50081"
+		clr_global_flag = eng_words_213324_7
+	}
+	option = {
+		name = "EVTOPTB50081"
+	}
+	option = {
+		name = "EVTOPTC50081"
+		set_global_flag = eng_words_213324_8
+	}
+}
+country_event = {
+	id = 50082
+	title = "EVTNAME50082"
+	desc = "EVTDESC50082"
+	picture = "eng_words_213324"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_213324_8
+		NOT = {
+			has_global_flag = eng_words_213324_9
+		}
+	}
+	mean_time_to_happen = {
+		months = 1024
+	}
+	option = {
+		name = "EVTOPTA50082"
+		clr_global_flag = eng_words_213324_8
+	}
+	option = {
+		name = "EVTOPTB50082"
+	}
+	option = {
+		name = "EVTOPTC50082"
+		set_global_flag = eng_words_213324_9
+	}
+}
+country_event = {
+	id = 50083
+	title = "EVTNAME50083"
+	desc = "EVTDESC50083"
+	picture = "eng_words_213324"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_213324_9
+		NOT = {
+			has_global_flag = eng_words_213324_10
+		}
+	}
+	mean_time_to_happen = {
+		months = 2048
+	}
+	option = {
+		name = "EVTOPTA50083"
+		clr_global_flag = eng_words_213324_9
+	}
+	option = {
+		name = "EVTOPTB50083"
+	}
+	option = {
+		name = "EVTOPTC50083"
+		set_global_flag = eng_words_213324_10
+	}
+}
+country_event = {
+	id = 50084
+	title = "EVTNAME50084"
+	desc = "EVTDESC50084"
+	picture = "eng_words_213324"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_213324_10
+	}
+	mean_time_to_happen = {
+		months = 4096
+	}
+	option = {
+		name = "EVTOPTA50084"
+		clr_global_flag = eng_words_213324_10
+	}
+	option = {
+		name = "EVTOPTB50084"
+	}
+}
+country_event = {
+	id = 50085
+	title = "EVTNAME50085"
+	desc = "EVTDESC50085"
+	picture = "eng_words_62086"
+	trigger = {
+		ai = no
+		NOT = {
+			has_global_flag = eng_words_62086_0
+		}
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+	option = {
+		name = "EVTOPTA50085"
+	}
+	option = {
+		name = "EVTOPTB50085"
+		set_global_flag = eng_words_62086_0
+	}
+}
+country_event = {
+	id = 50086
+	title = "EVTNAME50086"
+	desc = "EVTDESC50086"
+	picture = "eng_words_62086"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_62086_0
+		NOT = {
+			has_global_flag = eng_words_62086_1
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA50086"
+		clr_global_flag = eng_words_62086_0
+	}
+	option = {
+		name = "EVTOPTB50086"
+	}
+	option = {
+		name = "EVTOPTC50086"
+		set_global_flag = eng_words_62086_1
+	}
+}
+country_event = {
+	id = 50087
+	title = "EVTNAME50087"
+	desc = "EVTDESC50087"
+	picture = "eng_words_62086"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_62086_1
+		NOT = {
+			has_global_flag = eng_words_62086_2
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	option = {
+		name = "EVTOPTA50087"
+		clr_global_flag = eng_words_62086_1
+	}
+	option = {
+		name = "EVTOPTB50087"
+	}
+	option = {
+		name = "EVTOPTC50087"
+		set_global_flag = eng_words_62086_2
+	}
+}
+country_event = {
+	id = 50088
+	title = "EVTNAME50088"
+	desc = "EVTDESC50088"
+	picture = "eng_words_62086"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_62086_2
+		NOT = {
+			has_global_flag = eng_words_62086_3
+		}
+	}
+	mean_time_to_happen = {
+		months = 16
+	}
+	option = {
+		name = "EVTOPTA50088"
+		clr_global_flag = eng_words_62086_2
+	}
+	option = {
+		name = "EVTOPTB50088"
+	}
+	option = {
+		name = "EVTOPTC50088"
+		set_global_flag = eng_words_62086_3
+	}
+}
+country_event = {
+	id = 50089
+	title = "EVTNAME50089"
+	desc = "EVTDESC50089"
+	picture = "eng_words_62086"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_62086_3
+		NOT = {
+			has_global_flag = eng_words_62086_4
+		}
+	}
+	mean_time_to_happen = {
+		months = 32
+	}
+	option = {
+		name = "EVTOPTA50089"
+		clr_global_flag = eng_words_62086_3
+	}
+	option = {
+		name = "EVTOPTB50089"
+	}
+	option = {
+		name = "EVTOPTC50089"
+		set_global_flag = eng_words_62086_4
+	}
+}
+country_event = {
+	id = 50090
+	title = "EVTNAME50090"
+	desc = "EVTDESC50090"
+	picture = "eng_words_62086"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_62086_4
+		NOT = {
+			has_global_flag = eng_words_62086_5
+		}
+	}
+	mean_time_to_happen = {
+		months = 64
+	}
+	option = {
+		name = "EVTOPTA50090"
+		clr_global_flag = eng_words_62086_4
+	}
+	option = {
+		name = "EVTOPTB50090"
+	}
+	option = {
+		name = "EVTOPTC50090"
+		set_global_flag = eng_words_62086_5
+	}
+}
+country_event = {
+	id = 50091
+	title = "EVTNAME50091"
+	desc = "EVTDESC50091"
+	picture = "eng_words_62086"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_62086_5
+		NOT = {
+			has_global_flag = eng_words_62086_6
+		}
+	}
+	mean_time_to_happen = {
+		months = 128
+	}
+	option = {
+		name = "EVTOPTA50091"
+		clr_global_flag = eng_words_62086_5
+	}
+	option = {
+		name = "EVTOPTB50091"
+	}
+	option = {
+		name = "EVTOPTC50091"
+		set_global_flag = eng_words_62086_6
+	}
+}
+country_event = {
+	id = 50092
+	title = "EVTNAME50092"
+	desc = "EVTDESC50092"
+	picture = "eng_words_62086"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_62086_6
+		NOT = {
+			has_global_flag = eng_words_62086_7
+		}
+	}
+	mean_time_to_happen = {
+		months = 256
+	}
+	option = {
+		name = "EVTOPTA50092"
+		clr_global_flag = eng_words_62086_6
+	}
+	option = {
+		name = "EVTOPTB50092"
+	}
+	option = {
+		name = "EVTOPTC50092"
+		set_global_flag = eng_words_62086_7
+	}
+}
+country_event = {
+	id = 50093
+	title = "EVTNAME50093"
+	desc = "EVTDESC50093"
+	picture = "eng_words_62086"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_62086_7
+		NOT = {
+			has_global_flag = eng_words_62086_8
+		}
+	}
+	mean_time_to_happen = {
+		months = 512
+	}
+	option = {
+		name = "EVTOPTA50093"
+		clr_global_flag = eng_words_62086_7
+	}
+	option = {
+		name = "EVTOPTB50093"
+	}
+	option = {
+		name = "EVTOPTC50093"
+		set_global_flag = eng_words_62086_8
+	}
+}
+country_event = {
+	id = 50094
+	title = "EVTNAME50094"
+	desc = "EVTDESC50094"
+	picture = "eng_words_62086"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_62086_8
+		NOT = {
+			has_global_flag = eng_words_62086_9
+		}
+	}
+	mean_time_to_happen = {
+		months = 1024
+	}
+	option = {
+		name = "EVTOPTA50094"
+		clr_global_flag = eng_words_62086_8
+	}
+	option = {
+		name = "EVTOPTB50094"
+	}
+	option = {
+		name = "EVTOPTC50094"
+		set_global_flag = eng_words_62086_9
+	}
+}
+country_event = {
+	id = 50095
+	title = "EVTNAME50095"
+	desc = "EVTDESC50095"
+	picture = "eng_words_62086"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_62086_9
+		NOT = {
+			has_global_flag = eng_words_62086_10
+		}
+	}
+	mean_time_to_happen = {
+		months = 2048
+	}
+	option = {
+		name = "EVTOPTA50095"
+		clr_global_flag = eng_words_62086_9
+	}
+	option = {
+		name = "EVTOPTB50095"
+	}
+	option = {
+		name = "EVTOPTC50095"
+		set_global_flag = eng_words_62086_10
+	}
+}
+country_event = {
+	id = 50096
+	title = "EVTNAME50096"
+	desc = "EVTDESC50096"
+	picture = "eng_words_62086"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_62086_10
+	}
+	mean_time_to_happen = {
+		months = 4096
+	}
+	option = {
+		name = "EVTOPTA50096"
+		clr_global_flag = eng_words_62086_10
+	}
+	option = {
+		name = "EVTOPTB50096"
+	}
+}
+country_event = {
+	id = 50097
+	title = "EVTNAME50097"
+	desc = "EVTDESC50097"
+	picture = "eng_words_28068"
+	trigger = {
+		ai = no
+		NOT = {
+			has_global_flag = eng_words_28068_0
+		}
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+	option = {
+		name = "EVTOPTA50097"
+	}
+	option = {
+		name = "EVTOPTB50097"
+		set_global_flag = eng_words_28068_0
+	}
+}
+country_event = {
+	id = 50098
+	title = "EVTNAME50098"
+	desc = "EVTDESC50098"
+	picture = "eng_words_28068"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_28068_0
+		NOT = {
+			has_global_flag = eng_words_28068_1
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA50098"
+		clr_global_flag = eng_words_28068_0
+	}
+	option = {
+		name = "EVTOPTB50098"
+	}
+	option = {
+		name = "EVTOPTC50098"
+		set_global_flag = eng_words_28068_1
+	}
+}
+country_event = {
+	id = 50099
+	title = "EVTNAME50099"
+	desc = "EVTDESC50099"
+	picture = "eng_words_28068"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_28068_1
+		NOT = {
+			has_global_flag = eng_words_28068_2
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	option = {
+		name = "EVTOPTA50099"
+		clr_global_flag = eng_words_28068_1
+	}
+	option = {
+		name = "EVTOPTB50099"
+	}
+	option = {
+		name = "EVTOPTC50099"
+		set_global_flag = eng_words_28068_2
+	}
+}
+country_event = {
+	id = 50100
+	title = "EVTNAME50100"
+	desc = "EVTDESC50100"
+	picture = "eng_words_28068"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_28068_2
+		NOT = {
+			has_global_flag = eng_words_28068_3
+		}
+	}
+	mean_time_to_happen = {
+		months = 16
+	}
+	option = {
+		name = "EVTOPTA50100"
+		clr_global_flag = eng_words_28068_2
+	}
+	option = {
+		name = "EVTOPTB50100"
+	}
+	option = {
+		name = "EVTOPTC50100"
+		set_global_flag = eng_words_28068_3
+	}
+}
+country_event = {
+	id = 50101
+	title = "EVTNAME50101"
+	desc = "EVTDESC50101"
+	picture = "eng_words_28068"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_28068_3
+		NOT = {
+			has_global_flag = eng_words_28068_4
+		}
+	}
+	mean_time_to_happen = {
+		months = 32
+	}
+	option = {
+		name = "EVTOPTA50101"
+		clr_global_flag = eng_words_28068_3
+	}
+	option = {
+		name = "EVTOPTB50101"
+	}
+	option = {
+		name = "EVTOPTC50101"
+		set_global_flag = eng_words_28068_4
+	}
+}
+country_event = {
+	id = 50102
+	title = "EVTNAME50102"
+	desc = "EVTDESC50102"
+	picture = "eng_words_28068"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_28068_4
+		NOT = {
+			has_global_flag = eng_words_28068_5
+		}
+	}
+	mean_time_to_happen = {
+		months = 64
+	}
+	option = {
+		name = "EVTOPTA50102"
+		clr_global_flag = eng_words_28068_4
+	}
+	option = {
+		name = "EVTOPTB50102"
+	}
+	option = {
+		name = "EVTOPTC50102"
+		set_global_flag = eng_words_28068_5
+	}
+}
+country_event = {
+	id = 50103
+	title = "EVTNAME50103"
+	desc = "EVTDESC50103"
+	picture = "eng_words_28068"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_28068_5
+		NOT = {
+			has_global_flag = eng_words_28068_6
+		}
+	}
+	mean_time_to_happen = {
+		months = 128
+	}
+	option = {
+		name = "EVTOPTA50103"
+		clr_global_flag = eng_words_28068_5
+	}
+	option = {
+		name = "EVTOPTB50103"
+	}
+	option = {
+		name = "EVTOPTC50103"
+		set_global_flag = eng_words_28068_6
+	}
+}
+country_event = {
+	id = 50104
+	title = "EVTNAME50104"
+	desc = "EVTDESC50104"
+	picture = "eng_words_28068"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_28068_6
+		NOT = {
+			has_global_flag = eng_words_28068_7
+		}
+	}
+	mean_time_to_happen = {
+		months = 256
+	}
+	option = {
+		name = "EVTOPTA50104"
+		clr_global_flag = eng_words_28068_6
+	}
+	option = {
+		name = "EVTOPTB50104"
+	}
+	option = {
+		name = "EVTOPTC50104"
+		set_global_flag = eng_words_28068_7
+	}
+}
+country_event = {
+	id = 50105
+	title = "EVTNAME50105"
+	desc = "EVTDESC50105"
+	picture = "eng_words_28068"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_28068_7
+		NOT = {
+			has_global_flag = eng_words_28068_8
+		}
+	}
+	mean_time_to_happen = {
+		months = 512
+	}
+	option = {
+		name = "EVTOPTA50105"
+		clr_global_flag = eng_words_28068_7
+	}
+	option = {
+		name = "EVTOPTB50105"
+	}
+	option = {
+		name = "EVTOPTC50105"
+		set_global_flag = eng_words_28068_8
+	}
+}
+country_event = {
+	id = 50106
+	title = "EVTNAME50106"
+	desc = "EVTDESC50106"
+	picture = "eng_words_28068"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_28068_8
+		NOT = {
+			has_global_flag = eng_words_28068_9
+		}
+	}
+	mean_time_to_happen = {
+		months = 1024
+	}
+	option = {
+		name = "EVTOPTA50106"
+		clr_global_flag = eng_words_28068_8
+	}
+	option = {
+		name = "EVTOPTB50106"
+	}
+	option = {
+		name = "EVTOPTC50106"
+		set_global_flag = eng_words_28068_9
+	}
+}
+country_event = {
+	id = 50107
+	title = "EVTNAME50107"
+	desc = "EVTDESC50107"
+	picture = "eng_words_28068"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_28068_9
+		NOT = {
+			has_global_flag = eng_words_28068_10
+		}
+	}
+	mean_time_to_happen = {
+		months = 2048
+	}
+	option = {
+		name = "EVTOPTA50107"
+		clr_global_flag = eng_words_28068_9
+	}
+	option = {
+		name = "EVTOPTB50107"
+	}
+	option = {
+		name = "EVTOPTC50107"
+		set_global_flag = eng_words_28068_10
+	}
+}
+country_event = {
+	id = 50108
+	title = "EVTNAME50108"
+	desc = "EVTDESC50108"
+	picture = "eng_words_28068"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_28068_10
+	}
+	mean_time_to_happen = {
+		months = 4096
+	}
+	option = {
+		name = "EVTOPTA50108"
+		clr_global_flag = eng_words_28068_10
+	}
+	option = {
+		name = "EVTOPTB50108"
+	}
+}
+country_event = {
+	id = 50109
+	title = "EVTNAME50109"
+	desc = "EVTDESC50109"
+	picture = "eng_words_2141"
+	trigger = {
+		ai = no
+		NOT = {
+			has_global_flag = eng_words_2141_0
+		}
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+	option = {
+		name = "EVTOPTA50109"
+	}
+	option = {
+		name = "EVTOPTB50109"
+		set_global_flag = eng_words_2141_0
+	}
+}
+country_event = {
+	id = 50110
+	title = "EVTNAME50110"
+	desc = "EVTDESC50110"
+	picture = "eng_words_2141"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_2141_0
+		NOT = {
+			has_global_flag = eng_words_2141_1
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA50110"
+		clr_global_flag = eng_words_2141_0
+	}
+	option = {
+		name = "EVTOPTB50110"
+	}
+	option = {
+		name = "EVTOPTC50110"
+		set_global_flag = eng_words_2141_1
+	}
+}
+country_event = {
+	id = 50111
+	title = "EVTNAME50111"
+	desc = "EVTDESC50111"
+	picture = "eng_words_2141"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_2141_1
+		NOT = {
+			has_global_flag = eng_words_2141_2
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	option = {
+		name = "EVTOPTA50111"
+		clr_global_flag = eng_words_2141_1
+	}
+	option = {
+		name = "EVTOPTB50111"
+	}
+	option = {
+		name = "EVTOPTC50111"
+		set_global_flag = eng_words_2141_2
+	}
+}
+country_event = {
+	id = 50112
+	title = "EVTNAME50112"
+	desc = "EVTDESC50112"
+	picture = "eng_words_2141"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_2141_2
+		NOT = {
+			has_global_flag = eng_words_2141_3
+		}
+	}
+	mean_time_to_happen = {
+		months = 16
+	}
+	option = {
+		name = "EVTOPTA50112"
+		clr_global_flag = eng_words_2141_2
+	}
+	option = {
+		name = "EVTOPTB50112"
+	}
+	option = {
+		name = "EVTOPTC50112"
+		set_global_flag = eng_words_2141_3
+	}
+}
+country_event = {
+	id = 50113
+	title = "EVTNAME50113"
+	desc = "EVTDESC50113"
+	picture = "eng_words_2141"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_2141_3
+		NOT = {
+			has_global_flag = eng_words_2141_4
+		}
+	}
+	mean_time_to_happen = {
+		months = 32
+	}
+	option = {
+		name = "EVTOPTA50113"
+		clr_global_flag = eng_words_2141_3
+	}
+	option = {
+		name = "EVTOPTB50113"
+	}
+	option = {
+		name = "EVTOPTC50113"
+		set_global_flag = eng_words_2141_4
+	}
+}
+country_event = {
+	id = 50114
+	title = "EVTNAME50114"
+	desc = "EVTDESC50114"
+	picture = "eng_words_2141"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_2141_4
+		NOT = {
+			has_global_flag = eng_words_2141_5
+		}
+	}
+	mean_time_to_happen = {
+		months = 64
+	}
+	option = {
+		name = "EVTOPTA50114"
+		clr_global_flag = eng_words_2141_4
+	}
+	option = {
+		name = "EVTOPTB50114"
+	}
+	option = {
+		name = "EVTOPTC50114"
+		set_global_flag = eng_words_2141_5
+	}
+}
+country_event = {
+	id = 50115
+	title = "EVTNAME50115"
+	desc = "EVTDESC50115"
+	picture = "eng_words_2141"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_2141_5
+		NOT = {
+			has_global_flag = eng_words_2141_6
+		}
+	}
+	mean_time_to_happen = {
+		months = 128
+	}
+	option = {
+		name = "EVTOPTA50115"
+		clr_global_flag = eng_words_2141_5
+	}
+	option = {
+		name = "EVTOPTB50115"
+	}
+	option = {
+		name = "EVTOPTC50115"
+		set_global_flag = eng_words_2141_6
+	}
+}
+country_event = {
+	id = 50116
+	title = "EVTNAME50116"
+	desc = "EVTDESC50116"
+	picture = "eng_words_2141"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_2141_6
+		NOT = {
+			has_global_flag = eng_words_2141_7
+		}
+	}
+	mean_time_to_happen = {
+		months = 256
+	}
+	option = {
+		name = "EVTOPTA50116"
+		clr_global_flag = eng_words_2141_6
+	}
+	option = {
+		name = "EVTOPTB50116"
+	}
+	option = {
+		name = "EVTOPTC50116"
+		set_global_flag = eng_words_2141_7
+	}
+}
+country_event = {
+	id = 50117
+	title = "EVTNAME50117"
+	desc = "EVTDESC50117"
+	picture = "eng_words_2141"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_2141_7
+		NOT = {
+			has_global_flag = eng_words_2141_8
+		}
+	}
+	mean_time_to_happen = {
+		months = 512
+	}
+	option = {
+		name = "EVTOPTA50117"
+		clr_global_flag = eng_words_2141_7
+	}
+	option = {
+		name = "EVTOPTB50117"
+	}
+	option = {
+		name = "EVTOPTC50117"
+		set_global_flag = eng_words_2141_8
+	}
+}
+country_event = {
+	id = 50118
+	title = "EVTNAME50118"
+	desc = "EVTDESC50118"
+	picture = "eng_words_2141"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_2141_8
+		NOT = {
+			has_global_flag = eng_words_2141_9
+		}
+	}
+	mean_time_to_happen = {
+		months = 1024
+	}
+	option = {
+		name = "EVTOPTA50118"
+		clr_global_flag = eng_words_2141_8
+	}
+	option = {
+		name = "EVTOPTB50118"
+	}
+	option = {
+		name = "EVTOPTC50118"
+		set_global_flag = eng_words_2141_9
+	}
+}
+country_event = {
+	id = 50119
+	title = "EVTNAME50119"
+	desc = "EVTDESC50119"
+	picture = "eng_words_2141"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_2141_9
+		NOT = {
+			has_global_flag = eng_words_2141_10
+		}
+	}
+	mean_time_to_happen = {
+		months = 2048
+	}
+	option = {
+		name = "EVTOPTA50119"
+		clr_global_flag = eng_words_2141_9
+	}
+	option = {
+		name = "EVTOPTB50119"
+	}
+	option = {
+		name = "EVTOPTC50119"
+		set_global_flag = eng_words_2141_10
+	}
+}
+country_event = {
+	id = 50120
+	title = "EVTNAME50120"
+	desc = "EVTDESC50120"
+	picture = "eng_words_2141"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_2141_10
+	}
+	mean_time_to_happen = {
+		months = 4096
+	}
+	option = {
+		name = "EVTOPTA50120"
+		clr_global_flag = eng_words_2141_10
+	}
+	option = {
+		name = "EVTOPTB50120"
+	}
+}
+country_event = {
+	id = 50121
+	title = "EVTNAME50121"
+	desc = "EVTDESC50121"
+	picture = "eng_words_194285"
+	trigger = {
+		ai = no
+		NOT = {
+			has_global_flag = eng_words_194285_0
+		}
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+	option = {
+		name = "EVTOPTA50121"
+	}
+	option = {
+		name = "EVTOPTB50121"
+		set_global_flag = eng_words_194285_0
+	}
+}
+country_event = {
+	id = 50122
+	title = "EVTNAME50122"
+	desc = "EVTDESC50122"
+	picture = "eng_words_194285"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_194285_0
+		NOT = {
+			has_global_flag = eng_words_194285_1
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA50122"
+		clr_global_flag = eng_words_194285_0
+	}
+	option = {
+		name = "EVTOPTB50122"
+	}
+	option = {
+		name = "EVTOPTC50122"
+		set_global_flag = eng_words_194285_1
+	}
+}
+country_event = {
+	id = 50123
+	title = "EVTNAME50123"
+	desc = "EVTDESC50123"
+	picture = "eng_words_194285"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_194285_1
+		NOT = {
+			has_global_flag = eng_words_194285_2
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	option = {
+		name = "EVTOPTA50123"
+		clr_global_flag = eng_words_194285_1
+	}
+	option = {
+		name = "EVTOPTB50123"
+	}
+	option = {
+		name = "EVTOPTC50123"
+		set_global_flag = eng_words_194285_2
+	}
+}
+country_event = {
+	id = 50124
+	title = "EVTNAME50124"
+	desc = "EVTDESC50124"
+	picture = "eng_words_194285"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_194285_2
+		NOT = {
+			has_global_flag = eng_words_194285_3
+		}
+	}
+	mean_time_to_happen = {
+		months = 16
+	}
+	option = {
+		name = "EVTOPTA50124"
+		clr_global_flag = eng_words_194285_2
+	}
+	option = {
+		name = "EVTOPTB50124"
+	}
+	option = {
+		name = "EVTOPTC50124"
+		set_global_flag = eng_words_194285_3
+	}
+}
+country_event = {
+	id = 50125
+	title = "EVTNAME50125"
+	desc = "EVTDESC50125"
+	picture = "eng_words_194285"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_194285_3
+		NOT = {
+			has_global_flag = eng_words_194285_4
+		}
+	}
+	mean_time_to_happen = {
+		months = 32
+	}
+	option = {
+		name = "EVTOPTA50125"
+		clr_global_flag = eng_words_194285_3
+	}
+	option = {
+		name = "EVTOPTB50125"
+	}
+	option = {
+		name = "EVTOPTC50125"
+		set_global_flag = eng_words_194285_4
+	}
+}
+country_event = {
+	id = 50126
+	title = "EVTNAME50126"
+	desc = "EVTDESC50126"
+	picture = "eng_words_194285"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_194285_4
+		NOT = {
+			has_global_flag = eng_words_194285_5
+		}
+	}
+	mean_time_to_happen = {
+		months = 64
+	}
+	option = {
+		name = "EVTOPTA50126"
+		clr_global_flag = eng_words_194285_4
+	}
+	option = {
+		name = "EVTOPTB50126"
+	}
+	option = {
+		name = "EVTOPTC50126"
+		set_global_flag = eng_words_194285_5
+	}
+}
+country_event = {
+	id = 50127
+	title = "EVTNAME50127"
+	desc = "EVTDESC50127"
+	picture = "eng_words_194285"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_194285_5
+		NOT = {
+			has_global_flag = eng_words_194285_6
+		}
+	}
+	mean_time_to_happen = {
+		months = 128
+	}
+	option = {
+		name = "EVTOPTA50127"
+		clr_global_flag = eng_words_194285_5
+	}
+	option = {
+		name = "EVTOPTB50127"
+	}
+	option = {
+		name = "EVTOPTC50127"
+		set_global_flag = eng_words_194285_6
+	}
+}
+country_event = {
+	id = 50128
+	title = "EVTNAME50128"
+	desc = "EVTDESC50128"
+	picture = "eng_words_194285"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_194285_6
+		NOT = {
+			has_global_flag = eng_words_194285_7
+		}
+	}
+	mean_time_to_happen = {
+		months = 256
+	}
+	option = {
+		name = "EVTOPTA50128"
+		clr_global_flag = eng_words_194285_6
+	}
+	option = {
+		name = "EVTOPTB50128"
+	}
+	option = {
+		name = "EVTOPTC50128"
+		set_global_flag = eng_words_194285_7
+	}
+}
+country_event = {
+	id = 50129
+	title = "EVTNAME50129"
+	desc = "EVTDESC50129"
+	picture = "eng_words_194285"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_194285_7
+		NOT = {
+			has_global_flag = eng_words_194285_8
+		}
+	}
+	mean_time_to_happen = {
+		months = 512
+	}
+	option = {
+		name = "EVTOPTA50129"
+		clr_global_flag = eng_words_194285_7
+	}
+	option = {
+		name = "EVTOPTB50129"
+	}
+	option = {
+		name = "EVTOPTC50129"
+		set_global_flag = eng_words_194285_8
+	}
+}
+country_event = {
+	id = 50130
+	title = "EVTNAME50130"
+	desc = "EVTDESC50130"
+	picture = "eng_words_194285"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_194285_8
+		NOT = {
+			has_global_flag = eng_words_194285_9
+		}
+	}
+	mean_time_to_happen = {
+		months = 1024
+	}
+	option = {
+		name = "EVTOPTA50130"
+		clr_global_flag = eng_words_194285_8
+	}
+	option = {
+		name = "EVTOPTB50130"
+	}
+	option = {
+		name = "EVTOPTC50130"
+		set_global_flag = eng_words_194285_9
+	}
+}
+country_event = {
+	id = 50131
+	title = "EVTNAME50131"
+	desc = "EVTDESC50131"
+	picture = "eng_words_194285"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_194285_9
+		NOT = {
+			has_global_flag = eng_words_194285_10
+		}
+	}
+	mean_time_to_happen = {
+		months = 2048
+	}
+	option = {
+		name = "EVTOPTA50131"
+		clr_global_flag = eng_words_194285_9
+	}
+	option = {
+		name = "EVTOPTB50131"
+	}
+	option = {
+		name = "EVTOPTC50131"
+		set_global_flag = eng_words_194285_10
+	}
+}
+country_event = {
+	id = 50132
+	title = "EVTNAME50132"
+	desc = "EVTDESC50132"
+	picture = "eng_words_194285"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_194285_10
+	}
+	mean_time_to_happen = {
+		months = 4096
+	}
+	option = {
+		name = "EVTOPTA50132"
+		clr_global_flag = eng_words_194285_10
+	}
+	option = {
+		name = "EVTOPTB50132"
+	}
+}
+country_event = {
+	id = 50133
+	title = "EVTNAME50133"
+	desc = "EVTDESC50133"
+	picture = "eng_words_122904"
+	trigger = {
+		ai = no
+		NOT = {
+			has_global_flag = eng_words_122904_0
+		}
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+	option = {
+		name = "EVTOPTA50133"
+	}
+	option = {
+		name = "EVTOPTB50133"
+		set_global_flag = eng_words_122904_0
+	}
+}
+country_event = {
+	id = 50134
+	title = "EVTNAME50134"
+	desc = "EVTDESC50134"
+	picture = "eng_words_122904"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_122904_0
+		NOT = {
+			has_global_flag = eng_words_122904_1
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA50134"
+		clr_global_flag = eng_words_122904_0
+	}
+	option = {
+		name = "EVTOPTB50134"
+	}
+	option = {
+		name = "EVTOPTC50134"
+		set_global_flag = eng_words_122904_1
+	}
+}
+country_event = {
+	id = 50135
+	title = "EVTNAME50135"
+	desc = "EVTDESC50135"
+	picture = "eng_words_122904"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_122904_1
+		NOT = {
+			has_global_flag = eng_words_122904_2
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	option = {
+		name = "EVTOPTA50135"
+		clr_global_flag = eng_words_122904_1
+	}
+	option = {
+		name = "EVTOPTB50135"
+	}
+	option = {
+		name = "EVTOPTC50135"
+		set_global_flag = eng_words_122904_2
+	}
+}
+country_event = {
+	id = 50136
+	title = "EVTNAME50136"
+	desc = "EVTDESC50136"
+	picture = "eng_words_122904"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_122904_2
+		NOT = {
+			has_global_flag = eng_words_122904_3
+		}
+	}
+	mean_time_to_happen = {
+		months = 16
+	}
+	option = {
+		name = "EVTOPTA50136"
+		clr_global_flag = eng_words_122904_2
+	}
+	option = {
+		name = "EVTOPTB50136"
+	}
+	option = {
+		name = "EVTOPTC50136"
+		set_global_flag = eng_words_122904_3
+	}
+}
+country_event = {
+	id = 50137
+	title = "EVTNAME50137"
+	desc = "EVTDESC50137"
+	picture = "eng_words_122904"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_122904_3
+		NOT = {
+			has_global_flag = eng_words_122904_4
+		}
+	}
+	mean_time_to_happen = {
+		months = 32
+	}
+	option = {
+		name = "EVTOPTA50137"
+		clr_global_flag = eng_words_122904_3
+	}
+	option = {
+		name = "EVTOPTB50137"
+	}
+	option = {
+		name = "EVTOPTC50137"
+		set_global_flag = eng_words_122904_4
+	}
+}
+country_event = {
+	id = 50138
+	title = "EVTNAME50138"
+	desc = "EVTDESC50138"
+	picture = "eng_words_122904"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_122904_4
+		NOT = {
+			has_global_flag = eng_words_122904_5
+		}
+	}
+	mean_time_to_happen = {
+		months = 64
+	}
+	option = {
+		name = "EVTOPTA50138"
+		clr_global_flag = eng_words_122904_4
+	}
+	option = {
+		name = "EVTOPTB50138"
+	}
+	option = {
+		name = "EVTOPTC50138"
+		set_global_flag = eng_words_122904_5
+	}
+}
+country_event = {
+	id = 50139
+	title = "EVTNAME50139"
+	desc = "EVTDESC50139"
+	picture = "eng_words_122904"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_122904_5
+		NOT = {
+			has_global_flag = eng_words_122904_6
+		}
+	}
+	mean_time_to_happen = {
+		months = 128
+	}
+	option = {
+		name = "EVTOPTA50139"
+		clr_global_flag = eng_words_122904_5
+	}
+	option = {
+		name = "EVTOPTB50139"
+	}
+	option = {
+		name = "EVTOPTC50139"
+		set_global_flag = eng_words_122904_6
+	}
+}
+country_event = {
+	id = 50140
+	title = "EVTNAME50140"
+	desc = "EVTDESC50140"
+	picture = "eng_words_122904"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_122904_6
+		NOT = {
+			has_global_flag = eng_words_122904_7
+		}
+	}
+	mean_time_to_happen = {
+		months = 256
+	}
+	option = {
+		name = "EVTOPTA50140"
+		clr_global_flag = eng_words_122904_6
+	}
+	option = {
+		name = "EVTOPTB50140"
+	}
+	option = {
+		name = "EVTOPTC50140"
+		set_global_flag = eng_words_122904_7
+	}
+}
+country_event = {
+	id = 50141
+	title = "EVTNAME50141"
+	desc = "EVTDESC50141"
+	picture = "eng_words_122904"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_122904_7
+		NOT = {
+			has_global_flag = eng_words_122904_8
+		}
+	}
+	mean_time_to_happen = {
+		months = 512
+	}
+	option = {
+		name = "EVTOPTA50141"
+		clr_global_flag = eng_words_122904_7
+	}
+	option = {
+		name = "EVTOPTB50141"
+	}
+	option = {
+		name = "EVTOPTC50141"
+		set_global_flag = eng_words_122904_8
+	}
+}
+country_event = {
+	id = 50142
+	title = "EVTNAME50142"
+	desc = "EVTDESC50142"
+	picture = "eng_words_122904"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_122904_8
+		NOT = {
+			has_global_flag = eng_words_122904_9
+		}
+	}
+	mean_time_to_happen = {
+		months = 1024
+	}
+	option = {
+		name = "EVTOPTA50142"
+		clr_global_flag = eng_words_122904_8
+	}
+	option = {
+		name = "EVTOPTB50142"
+	}
+	option = {
+		name = "EVTOPTC50142"
+		set_global_flag = eng_words_122904_9
+	}
+}
+country_event = {
+	id = 50143
+	title = "EVTNAME50143"
+	desc = "EVTDESC50143"
+	picture = "eng_words_122904"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_122904_9
+		NOT = {
+			has_global_flag = eng_words_122904_10
+		}
+	}
+	mean_time_to_happen = {
+		months = 2048
+	}
+	option = {
+		name = "EVTOPTA50143"
+		clr_global_flag = eng_words_122904_9
+	}
+	option = {
+		name = "EVTOPTB50143"
+	}
+	option = {
+		name = "EVTOPTC50143"
+		set_global_flag = eng_words_122904_10
+	}
+}
+country_event = {
+	id = 50144
+	title = "EVTNAME50144"
+	desc = "EVTDESC50144"
+	picture = "eng_words_122904"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_122904_10
+	}
+	mean_time_to_happen = {
+		months = 4096
+	}
+	option = {
+		name = "EVTOPTA50144"
+		clr_global_flag = eng_words_122904_10
+	}
+	option = {
+		name = "EVTOPTB50144"
+	}
+}
+country_event = {
+	id = 50145
+	title = "EVTNAME50145"
+	desc = "EVTDESC50145"
+	picture = "eng_words_47575"
+	trigger = {
+		ai = no
+		NOT = {
+			has_global_flag = eng_words_47575_0
+		}
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+	option = {
+		name = "EVTOPTA50145"
+	}
+	option = {
+		name = "EVTOPTB50145"
+		set_global_flag = eng_words_47575_0
+	}
+}
+country_event = {
+	id = 50146
+	title = "EVTNAME50146"
+	desc = "EVTDESC50146"
+	picture = "eng_words_47575"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_47575_0
+		NOT = {
+			has_global_flag = eng_words_47575_1
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA50146"
+		clr_global_flag = eng_words_47575_0
+	}
+	option = {
+		name = "EVTOPTB50146"
+	}
+	option = {
+		name = "EVTOPTC50146"
+		set_global_flag = eng_words_47575_1
+	}
+}
+country_event = {
+	id = 50147
+	title = "EVTNAME50147"
+	desc = "EVTDESC50147"
+	picture = "eng_words_47575"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_47575_1
+		NOT = {
+			has_global_flag = eng_words_47575_2
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	option = {
+		name = "EVTOPTA50147"
+		clr_global_flag = eng_words_47575_1
+	}
+	option = {
+		name = "EVTOPTB50147"
+	}
+	option = {
+		name = "EVTOPTC50147"
+		set_global_flag = eng_words_47575_2
+	}
+}
+country_event = {
+	id = 50148
+	title = "EVTNAME50148"
+	desc = "EVTDESC50148"
+	picture = "eng_words_47575"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_47575_2
+		NOT = {
+			has_global_flag = eng_words_47575_3
+		}
+	}
+	mean_time_to_happen = {
+		months = 16
+	}
+	option = {
+		name = "EVTOPTA50148"
+		clr_global_flag = eng_words_47575_2
+	}
+	option = {
+		name = "EVTOPTB50148"
+	}
+	option = {
+		name = "EVTOPTC50148"
+		set_global_flag = eng_words_47575_3
+	}
+}
+country_event = {
+	id = 50149
+	title = "EVTNAME50149"
+	desc = "EVTDESC50149"
+	picture = "eng_words_47575"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_47575_3
+		NOT = {
+			has_global_flag = eng_words_47575_4
+		}
+	}
+	mean_time_to_happen = {
+		months = 32
+	}
+	option = {
+		name = "EVTOPTA50149"
+		clr_global_flag = eng_words_47575_3
+	}
+	option = {
+		name = "EVTOPTB50149"
+	}
+	option = {
+		name = "EVTOPTC50149"
+		set_global_flag = eng_words_47575_4
+	}
+}
+country_event = {
+	id = 50150
+	title = "EVTNAME50150"
+	desc = "EVTDESC50150"
+	picture = "eng_words_47575"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_47575_4
+		NOT = {
+			has_global_flag = eng_words_47575_5
+		}
+	}
+	mean_time_to_happen = {
+		months = 64
+	}
+	option = {
+		name = "EVTOPTA50150"
+		clr_global_flag = eng_words_47575_4
+	}
+	option = {
+		name = "EVTOPTB50150"
+	}
+	option = {
+		name = "EVTOPTC50150"
+		set_global_flag = eng_words_47575_5
+	}
+}
+country_event = {
+	id = 50151
+	title = "EVTNAME50151"
+	desc = "EVTDESC50151"
+	picture = "eng_words_47575"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_47575_5
+		NOT = {
+			has_global_flag = eng_words_47575_6
+		}
+	}
+	mean_time_to_happen = {
+		months = 128
+	}
+	option = {
+		name = "EVTOPTA50151"
+		clr_global_flag = eng_words_47575_5
+	}
+	option = {
+		name = "EVTOPTB50151"
+	}
+	option = {
+		name = "EVTOPTC50151"
+		set_global_flag = eng_words_47575_6
+	}
+}
+country_event = {
+	id = 50152
+	title = "EVTNAME50152"
+	desc = "EVTDESC50152"
+	picture = "eng_words_47575"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_47575_6
+		NOT = {
+			has_global_flag = eng_words_47575_7
+		}
+	}
+	mean_time_to_happen = {
+		months = 256
+	}
+	option = {
+		name = "EVTOPTA50152"
+		clr_global_flag = eng_words_47575_6
+	}
+	option = {
+		name = "EVTOPTB50152"
+	}
+	option = {
+		name = "EVTOPTC50152"
+		set_global_flag = eng_words_47575_7
+	}
+}
+country_event = {
+	id = 50153
+	title = "EVTNAME50153"
+	desc = "EVTDESC50153"
+	picture = "eng_words_47575"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_47575_7
+		NOT = {
+			has_global_flag = eng_words_47575_8
+		}
+	}
+	mean_time_to_happen = {
+		months = 512
+	}
+	option = {
+		name = "EVTOPTA50153"
+		clr_global_flag = eng_words_47575_7
+	}
+	option = {
+		name = "EVTOPTB50153"
+	}
+	option = {
+		name = "EVTOPTC50153"
+		set_global_flag = eng_words_47575_8
+	}
+}
+country_event = {
+	id = 50154
+	title = "EVTNAME50154"
+	desc = "EVTDESC50154"
+	picture = "eng_words_47575"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_47575_8
+		NOT = {
+			has_global_flag = eng_words_47575_9
+		}
+	}
+	mean_time_to_happen = {
+		months = 1024
+	}
+	option = {
+		name = "EVTOPTA50154"
+		clr_global_flag = eng_words_47575_8
+	}
+	option = {
+		name = "EVTOPTB50154"
+	}
+	option = {
+		name = "EVTOPTC50154"
+		set_global_flag = eng_words_47575_9
+	}
+}
+country_event = {
+	id = 50155
+	title = "EVTNAME50155"
+	desc = "EVTDESC50155"
+	picture = "eng_words_47575"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_47575_9
+		NOT = {
+			has_global_flag = eng_words_47575_10
+		}
+	}
+	mean_time_to_happen = {
+		months = 2048
+	}
+	option = {
+		name = "EVTOPTA50155"
+		clr_global_flag = eng_words_47575_9
+	}
+	option = {
+		name = "EVTOPTB50155"
+	}
+	option = {
+		name = "EVTOPTC50155"
+		set_global_flag = eng_words_47575_10
+	}
+}
+country_event = {
+	id = 50156
+	title = "EVTNAME50156"
+	desc = "EVTDESC50156"
+	picture = "eng_words_47575"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_47575_10
+	}
+	mean_time_to_happen = {
+		months = 4096
+	}
+	option = {
+		name = "EVTOPTA50156"
+		clr_global_flag = eng_words_47575_10
+	}
+	option = {
+		name = "EVTOPTB50156"
+	}
+}
+country_event = {
+	id = 50157
+	title = "EVTNAME50157"
+	desc = "EVTDESC50157"
+	picture = "eng_words_75265"
+	trigger = {
+		ai = no
+		NOT = {
+			has_global_flag = eng_words_75265_0
+		}
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+	option = {
+		name = "EVTOPTA50157"
+	}
+	option = {
+		name = "EVTOPTB50157"
+		set_global_flag = eng_words_75265_0
+	}
+}
+country_event = {
+	id = 50158
+	title = "EVTNAME50158"
+	desc = "EVTDESC50158"
+	picture = "eng_words_75265"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_75265_0
+		NOT = {
+			has_global_flag = eng_words_75265_1
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA50158"
+		clr_global_flag = eng_words_75265_0
+	}
+	option = {
+		name = "EVTOPTB50158"
+	}
+	option = {
+		name = "EVTOPTC50158"
+		set_global_flag = eng_words_75265_1
+	}
+}
+country_event = {
+	id = 50159
+	title = "EVTNAME50159"
+	desc = "EVTDESC50159"
+	picture = "eng_words_75265"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_75265_1
+		NOT = {
+			has_global_flag = eng_words_75265_2
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	option = {
+		name = "EVTOPTA50159"
+		clr_global_flag = eng_words_75265_1
+	}
+	option = {
+		name = "EVTOPTB50159"
+	}
+	option = {
+		name = "EVTOPTC50159"
+		set_global_flag = eng_words_75265_2
+	}
+}
+country_event = {
+	id = 50160
+	title = "EVTNAME50160"
+	desc = "EVTDESC50160"
+	picture = "eng_words_75265"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_75265_2
+		NOT = {
+			has_global_flag = eng_words_75265_3
+		}
+	}
+	mean_time_to_happen = {
+		months = 16
+	}
+	option = {
+		name = "EVTOPTA50160"
+		clr_global_flag = eng_words_75265_2
+	}
+	option = {
+		name = "EVTOPTB50160"
+	}
+	option = {
+		name = "EVTOPTC50160"
+		set_global_flag = eng_words_75265_3
+	}
+}
+country_event = {
+	id = 50161
+	title = "EVTNAME50161"
+	desc = "EVTDESC50161"
+	picture = "eng_words_75265"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_75265_3
+		NOT = {
+			has_global_flag = eng_words_75265_4
+		}
+	}
+	mean_time_to_happen = {
+		months = 32
+	}
+	option = {
+		name = "EVTOPTA50161"
+		clr_global_flag = eng_words_75265_3
+	}
+	option = {
+		name = "EVTOPTB50161"
+	}
+	option = {
+		name = "EVTOPTC50161"
+		set_global_flag = eng_words_75265_4
+	}
+}
+country_event = {
+	id = 50162
+	title = "EVTNAME50162"
+	desc = "EVTDESC50162"
+	picture = "eng_words_75265"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_75265_4
+		NOT = {
+			has_global_flag = eng_words_75265_5
+		}
+	}
+	mean_time_to_happen = {
+		months = 64
+	}
+	option = {
+		name = "EVTOPTA50162"
+		clr_global_flag = eng_words_75265_4
+	}
+	option = {
+		name = "EVTOPTB50162"
+	}
+	option = {
+		name = "EVTOPTC50162"
+		set_global_flag = eng_words_75265_5
+	}
+}
+country_event = {
+	id = 50163
+	title = "EVTNAME50163"
+	desc = "EVTDESC50163"
+	picture = "eng_words_75265"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_75265_5
+		NOT = {
+			has_global_flag = eng_words_75265_6
+		}
+	}
+	mean_time_to_happen = {
+		months = 128
+	}
+	option = {
+		name = "EVTOPTA50163"
+		clr_global_flag = eng_words_75265_5
+	}
+	option = {
+		name = "EVTOPTB50163"
+	}
+	option = {
+		name = "EVTOPTC50163"
+		set_global_flag = eng_words_75265_6
+	}
+}
+country_event = {
+	id = 50164
+	title = "EVTNAME50164"
+	desc = "EVTDESC50164"
+	picture = "eng_words_75265"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_75265_6
+		NOT = {
+			has_global_flag = eng_words_75265_7
+		}
+	}
+	mean_time_to_happen = {
+		months = 256
+	}
+	option = {
+		name = "EVTOPTA50164"
+		clr_global_flag = eng_words_75265_6
+	}
+	option = {
+		name = "EVTOPTB50164"
+	}
+	option = {
+		name = "EVTOPTC50164"
+		set_global_flag = eng_words_75265_7
+	}
+}
+country_event = {
+	id = 50165
+	title = "EVTNAME50165"
+	desc = "EVTDESC50165"
+	picture = "eng_words_75265"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_75265_7
+		NOT = {
+			has_global_flag = eng_words_75265_8
+		}
+	}
+	mean_time_to_happen = {
+		months = 512
+	}
+	option = {
+		name = "EVTOPTA50165"
+		clr_global_flag = eng_words_75265_7
+	}
+	option = {
+		name = "EVTOPTB50165"
+	}
+	option = {
+		name = "EVTOPTC50165"
+		set_global_flag = eng_words_75265_8
+	}
+}
+country_event = {
+	id = 50166
+	title = "EVTNAME50166"
+	desc = "EVTDESC50166"
+	picture = "eng_words_75265"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_75265_8
+		NOT = {
+			has_global_flag = eng_words_75265_9
+		}
+	}
+	mean_time_to_happen = {
+		months = 1024
+	}
+	option = {
+		name = "EVTOPTA50166"
+		clr_global_flag = eng_words_75265_8
+	}
+	option = {
+		name = "EVTOPTB50166"
+	}
+	option = {
+		name = "EVTOPTC50166"
+		set_global_flag = eng_words_75265_9
+	}
+}
+country_event = {
+	id = 50167
+	title = "EVTNAME50167"
+	desc = "EVTDESC50167"
+	picture = "eng_words_75265"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_75265_9
+		NOT = {
+			has_global_flag = eng_words_75265_10
+		}
+	}
+	mean_time_to_happen = {
+		months = 2048
+	}
+	option = {
+		name = "EVTOPTA50167"
+		clr_global_flag = eng_words_75265_9
+	}
+	option = {
+		name = "EVTOPTB50167"
+	}
+	option = {
+		name = "EVTOPTC50167"
+		set_global_flag = eng_words_75265_10
+	}
+}
+country_event = {
+	id = 50168
+	title = "EVTNAME50168"
+	desc = "EVTDESC50168"
+	picture = "eng_words_75265"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_75265_10
+	}
+	mean_time_to_happen = {
+		months = 4096
+	}
+	option = {
+		name = "EVTOPTA50168"
+		clr_global_flag = eng_words_75265_10
+	}
+	option = {
+		name = "EVTOPTB50168"
+	}
+}
+country_event = {
+	id = 50169
+	title = "EVTNAME50169"
+	desc = "EVTDESC50169"
+	picture = "eng_words_79012"
+	trigger = {
+		ai = no
+		NOT = {
+			has_global_flag = eng_words_79012_0
+		}
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+	option = {
+		name = "EVTOPTA50169"
+	}
+	option = {
+		name = "EVTOPTB50169"
+		set_global_flag = eng_words_79012_0
+	}
+}
+country_event = {
+	id = 50170
+	title = "EVTNAME50170"
+	desc = "EVTDESC50170"
+	picture = "eng_words_79012"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_79012_0
+		NOT = {
+			has_global_flag = eng_words_79012_1
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA50170"
+		clr_global_flag = eng_words_79012_0
+	}
+	option = {
+		name = "EVTOPTB50170"
+	}
+	option = {
+		name = "EVTOPTC50170"
+		set_global_flag = eng_words_79012_1
+	}
+}
+country_event = {
+	id = 50171
+	title = "EVTNAME50171"
+	desc = "EVTDESC50171"
+	picture = "eng_words_79012"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_79012_1
+		NOT = {
+			has_global_flag = eng_words_79012_2
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	option = {
+		name = "EVTOPTA50171"
+		clr_global_flag = eng_words_79012_1
+	}
+	option = {
+		name = "EVTOPTB50171"
+	}
+	option = {
+		name = "EVTOPTC50171"
+		set_global_flag = eng_words_79012_2
+	}
+}
+country_event = {
+	id = 50172
+	title = "EVTNAME50172"
+	desc = "EVTDESC50172"
+	picture = "eng_words_79012"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_79012_2
+		NOT = {
+			has_global_flag = eng_words_79012_3
+		}
+	}
+	mean_time_to_happen = {
+		months = 16
+	}
+	option = {
+		name = "EVTOPTA50172"
+		clr_global_flag = eng_words_79012_2
+	}
+	option = {
+		name = "EVTOPTB50172"
+	}
+	option = {
+		name = "EVTOPTC50172"
+		set_global_flag = eng_words_79012_3
+	}
+}
+country_event = {
+	id = 50173
+	title = "EVTNAME50173"
+	desc = "EVTDESC50173"
+	picture = "eng_words_79012"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_79012_3
+		NOT = {
+			has_global_flag = eng_words_79012_4
+		}
+	}
+	mean_time_to_happen = {
+		months = 32
+	}
+	option = {
+		name = "EVTOPTA50173"
+		clr_global_flag = eng_words_79012_3
+	}
+	option = {
+		name = "EVTOPTB50173"
+	}
+	option = {
+		name = "EVTOPTC50173"
+		set_global_flag = eng_words_79012_4
+	}
+}
+country_event = {
+	id = 50174
+	title = "EVTNAME50174"
+	desc = "EVTDESC50174"
+	picture = "eng_words_79012"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_79012_4
+		NOT = {
+			has_global_flag = eng_words_79012_5
+		}
+	}
+	mean_time_to_happen = {
+		months = 64
+	}
+	option = {
+		name = "EVTOPTA50174"
+		clr_global_flag = eng_words_79012_4
+	}
+	option = {
+		name = "EVTOPTB50174"
+	}
+	option = {
+		name = "EVTOPTC50174"
+		set_global_flag = eng_words_79012_5
+	}
+}
+country_event = {
+	id = 50175
+	title = "EVTNAME50175"
+	desc = "EVTDESC50175"
+	picture = "eng_words_79012"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_79012_5
+		NOT = {
+			has_global_flag = eng_words_79012_6
+		}
+	}
+	mean_time_to_happen = {
+		months = 128
+	}
+	option = {
+		name = "EVTOPTA50175"
+		clr_global_flag = eng_words_79012_5
+	}
+	option = {
+		name = "EVTOPTB50175"
+	}
+	option = {
+		name = "EVTOPTC50175"
+		set_global_flag = eng_words_79012_6
+	}
+}
+country_event = {
+	id = 50176
+	title = "EVTNAME50176"
+	desc = "EVTDESC50176"
+	picture = "eng_words_79012"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_79012_6
+		NOT = {
+			has_global_flag = eng_words_79012_7
+		}
+	}
+	mean_time_to_happen = {
+		months = 256
+	}
+	option = {
+		name = "EVTOPTA50176"
+		clr_global_flag = eng_words_79012_6
+	}
+	option = {
+		name = "EVTOPTB50176"
+	}
+	option = {
+		name = "EVTOPTC50176"
+		set_global_flag = eng_words_79012_7
+	}
+}
+country_event = {
+	id = 50177
+	title = "EVTNAME50177"
+	desc = "EVTDESC50177"
+	picture = "eng_words_79012"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_79012_7
+		NOT = {
+			has_global_flag = eng_words_79012_8
+		}
+	}
+	mean_time_to_happen = {
+		months = 512
+	}
+	option = {
+		name = "EVTOPTA50177"
+		clr_global_flag = eng_words_79012_7
+	}
+	option = {
+		name = "EVTOPTB50177"
+	}
+	option = {
+		name = "EVTOPTC50177"
+		set_global_flag = eng_words_79012_8
+	}
+}
+country_event = {
+	id = 50178
+	title = "EVTNAME50178"
+	desc = "EVTDESC50178"
+	picture = "eng_words_79012"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_79012_8
+		NOT = {
+			has_global_flag = eng_words_79012_9
+		}
+	}
+	mean_time_to_happen = {
+		months = 1024
+	}
+	option = {
+		name = "EVTOPTA50178"
+		clr_global_flag = eng_words_79012_8
+	}
+	option = {
+		name = "EVTOPTB50178"
+	}
+	option = {
+		name = "EVTOPTC50178"
+		set_global_flag = eng_words_79012_9
+	}
+}
+country_event = {
+	id = 50179
+	title = "EVTNAME50179"
+	desc = "EVTDESC50179"
+	picture = "eng_words_79012"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_79012_9
+		NOT = {
+			has_global_flag = eng_words_79012_10
+		}
+	}
+	mean_time_to_happen = {
+		months = 2048
+	}
+	option = {
+		name = "EVTOPTA50179"
+		clr_global_flag = eng_words_79012_9
+	}
+	option = {
+		name = "EVTOPTB50179"
+	}
+	option = {
+		name = "EVTOPTC50179"
+		set_global_flag = eng_words_79012_10
+	}
+}
+country_event = {
+	id = 50180
+	title = "EVTNAME50180"
+	desc = "EVTDESC50180"
+	picture = "eng_words_79012"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_79012_10
+	}
+	mean_time_to_happen = {
+		months = 4096
+	}
+	option = {
+		name = "EVTOPTA50180"
+		clr_global_flag = eng_words_79012_10
+	}
+	option = {
+		name = "EVTOPTB50180"
+	}
+}
+country_event = {
+	id = 50181
+	title = "EVTNAME50181"
+	desc = "EVTDESC50181"
+	picture = "eng_words_232621"
+	trigger = {
+		ai = no
+		NOT = {
+			has_global_flag = eng_words_232621_0
+		}
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+	option = {
+		name = "EVTOPTA50181"
+	}
+	option = {
+		name = "EVTOPTB50181"
+		set_global_flag = eng_words_232621_0
+	}
+}
+country_event = {
+	id = 50182
+	title = "EVTNAME50182"
+	desc = "EVTDESC50182"
+	picture = "eng_words_232621"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_232621_0
+		NOT = {
+			has_global_flag = eng_words_232621_1
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA50182"
+		clr_global_flag = eng_words_232621_0
+	}
+	option = {
+		name = "EVTOPTB50182"
+	}
+	option = {
+		name = "EVTOPTC50182"
+		set_global_flag = eng_words_232621_1
+	}
+}
+country_event = {
+	id = 50183
+	title = "EVTNAME50183"
+	desc = "EVTDESC50183"
+	picture = "eng_words_232621"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_232621_1
+		NOT = {
+			has_global_flag = eng_words_232621_2
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	option = {
+		name = "EVTOPTA50183"
+		clr_global_flag = eng_words_232621_1
+	}
+	option = {
+		name = "EVTOPTB50183"
+	}
+	option = {
+		name = "EVTOPTC50183"
+		set_global_flag = eng_words_232621_2
+	}
+}
+country_event = {
+	id = 50184
+	title = "EVTNAME50184"
+	desc = "EVTDESC50184"
+	picture = "eng_words_232621"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_232621_2
+		NOT = {
+			has_global_flag = eng_words_232621_3
+		}
+	}
+	mean_time_to_happen = {
+		months = 16
+	}
+	option = {
+		name = "EVTOPTA50184"
+		clr_global_flag = eng_words_232621_2
+	}
+	option = {
+		name = "EVTOPTB50184"
+	}
+	option = {
+		name = "EVTOPTC50184"
+		set_global_flag = eng_words_232621_3
+	}
+}
+country_event = {
+	id = 50185
+	title = "EVTNAME50185"
+	desc = "EVTDESC50185"
+	picture = "eng_words_232621"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_232621_3
+		NOT = {
+			has_global_flag = eng_words_232621_4
+		}
+	}
+	mean_time_to_happen = {
+		months = 32
+	}
+	option = {
+		name = "EVTOPTA50185"
+		clr_global_flag = eng_words_232621_3
+	}
+	option = {
+		name = "EVTOPTB50185"
+	}
+	option = {
+		name = "EVTOPTC50185"
+		set_global_flag = eng_words_232621_4
+	}
+}
+country_event = {
+	id = 50186
+	title = "EVTNAME50186"
+	desc = "EVTDESC50186"
+	picture = "eng_words_232621"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_232621_4
+		NOT = {
+			has_global_flag = eng_words_232621_5
+		}
+	}
+	mean_time_to_happen = {
+		months = 64
+	}
+	option = {
+		name = "EVTOPTA50186"
+		clr_global_flag = eng_words_232621_4
+	}
+	option = {
+		name = "EVTOPTB50186"
+	}
+	option = {
+		name = "EVTOPTC50186"
+		set_global_flag = eng_words_232621_5
+	}
+}
+country_event = {
+	id = 50187
+	title = "EVTNAME50187"
+	desc = "EVTDESC50187"
+	picture = "eng_words_232621"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_232621_5
+		NOT = {
+			has_global_flag = eng_words_232621_6
+		}
+	}
+	mean_time_to_happen = {
+		months = 128
+	}
+	option = {
+		name = "EVTOPTA50187"
+		clr_global_flag = eng_words_232621_5
+	}
+	option = {
+		name = "EVTOPTB50187"
+	}
+	option = {
+		name = "EVTOPTC50187"
+		set_global_flag = eng_words_232621_6
+	}
+}
+country_event = {
+	id = 50188
+	title = "EVTNAME50188"
+	desc = "EVTDESC50188"
+	picture = "eng_words_232621"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_232621_6
+		NOT = {
+			has_global_flag = eng_words_232621_7
+		}
+	}
+	mean_time_to_happen = {
+		months = 256
+	}
+	option = {
+		name = "EVTOPTA50188"
+		clr_global_flag = eng_words_232621_6
+	}
+	option = {
+		name = "EVTOPTB50188"
+	}
+	option = {
+		name = "EVTOPTC50188"
+		set_global_flag = eng_words_232621_7
+	}
+}
+country_event = {
+	id = 50189
+	title = "EVTNAME50189"
+	desc = "EVTDESC50189"
+	picture = "eng_words_232621"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_232621_7
+		NOT = {
+			has_global_flag = eng_words_232621_8
+		}
+	}
+	mean_time_to_happen = {
+		months = 512
+	}
+	option = {
+		name = "EVTOPTA50189"
+		clr_global_flag = eng_words_232621_7
+	}
+	option = {
+		name = "EVTOPTB50189"
+	}
+	option = {
+		name = "EVTOPTC50189"
+		set_global_flag = eng_words_232621_8
+	}
+}
+country_event = {
+	id = 50190
+	title = "EVTNAME50190"
+	desc = "EVTDESC50190"
+	picture = "eng_words_232621"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_232621_8
+		NOT = {
+			has_global_flag = eng_words_232621_9
+		}
+	}
+	mean_time_to_happen = {
+		months = 1024
+	}
+	option = {
+		name = "EVTOPTA50190"
+		clr_global_flag = eng_words_232621_8
+	}
+	option = {
+		name = "EVTOPTB50190"
+	}
+	option = {
+		name = "EVTOPTC50190"
+		set_global_flag = eng_words_232621_9
+	}
+}
+country_event = {
+	id = 50191
+	title = "EVTNAME50191"
+	desc = "EVTDESC50191"
+	picture = "eng_words_232621"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_232621_9
+		NOT = {
+			has_global_flag = eng_words_232621_10
+		}
+	}
+	mean_time_to_happen = {
+		months = 2048
+	}
+	option = {
+		name = "EVTOPTA50191"
+		clr_global_flag = eng_words_232621_9
+	}
+	option = {
+		name = "EVTOPTB50191"
+	}
+	option = {
+		name = "EVTOPTC50191"
+		set_global_flag = eng_words_232621_10
+	}
+}
+country_event = {
+	id = 50192
+	title = "EVTNAME50192"
+	desc = "EVTDESC50192"
+	picture = "eng_words_232621"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_232621_10
+	}
+	mean_time_to_happen = {
+		months = 4096
+	}
+	option = {
+		name = "EVTOPTA50192"
+		clr_global_flag = eng_words_232621_10
+	}
+	option = {
+		name = "EVTOPTB50192"
+	}
+}
+country_event = {
+	id = 50193
+	title = "EVTNAME50193"
+	desc = "EVTDESC50193"
+	picture = "eng_words_201485"
+	trigger = {
+		ai = no
+		NOT = {
+			has_global_flag = eng_words_201485_0
+		}
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+	option = {
+		name = "EVTOPTA50193"
+	}
+	option = {
+		name = "EVTOPTB50193"
+		set_global_flag = eng_words_201485_0
+	}
+}
+country_event = {
+	id = 50194
+	title = "EVTNAME50194"
+	desc = "EVTDESC50194"
+	picture = "eng_words_201485"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_201485_0
+		NOT = {
+			has_global_flag = eng_words_201485_1
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA50194"
+		clr_global_flag = eng_words_201485_0
+	}
+	option = {
+		name = "EVTOPTB50194"
+	}
+	option = {
+		name = "EVTOPTC50194"
+		set_global_flag = eng_words_201485_1
+	}
+}
+country_event = {
+	id = 50195
+	title = "EVTNAME50195"
+	desc = "EVTDESC50195"
+	picture = "eng_words_201485"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_201485_1
+		NOT = {
+			has_global_flag = eng_words_201485_2
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	option = {
+		name = "EVTOPTA50195"
+		clr_global_flag = eng_words_201485_1
+	}
+	option = {
+		name = "EVTOPTB50195"
+	}
+	option = {
+		name = "EVTOPTC50195"
+		set_global_flag = eng_words_201485_2
+	}
+}
+country_event = {
+	id = 50196
+	title = "EVTNAME50196"
+	desc = "EVTDESC50196"
+	picture = "eng_words_201485"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_201485_2
+		NOT = {
+			has_global_flag = eng_words_201485_3
+		}
+	}
+	mean_time_to_happen = {
+		months = 16
+	}
+	option = {
+		name = "EVTOPTA50196"
+		clr_global_flag = eng_words_201485_2
+	}
+	option = {
+		name = "EVTOPTB50196"
+	}
+	option = {
+		name = "EVTOPTC50196"
+		set_global_flag = eng_words_201485_3
+	}
+}
+country_event = {
+	id = 50197
+	title = "EVTNAME50197"
+	desc = "EVTDESC50197"
+	picture = "eng_words_201485"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_201485_3
+		NOT = {
+			has_global_flag = eng_words_201485_4
+		}
+	}
+	mean_time_to_happen = {
+		months = 32
+	}
+	option = {
+		name = "EVTOPTA50197"
+		clr_global_flag = eng_words_201485_3
+	}
+	option = {
+		name = "EVTOPTB50197"
+	}
+	option = {
+		name = "EVTOPTC50197"
+		set_global_flag = eng_words_201485_4
+	}
+}
+country_event = {
+	id = 50198
+	title = "EVTNAME50198"
+	desc = "EVTDESC50198"
+	picture = "eng_words_201485"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_201485_4
+		NOT = {
+			has_global_flag = eng_words_201485_5
+		}
+	}
+	mean_time_to_happen = {
+		months = 64
+	}
+	option = {
+		name = "EVTOPTA50198"
+		clr_global_flag = eng_words_201485_4
+	}
+	option = {
+		name = "EVTOPTB50198"
+	}
+	option = {
+		name = "EVTOPTC50198"
+		set_global_flag = eng_words_201485_5
+	}
+}
+country_event = {
+	id = 50199
+	title = "EVTNAME50199"
+	desc = "EVTDESC50199"
+	picture = "eng_words_201485"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_201485_5
+		NOT = {
+			has_global_flag = eng_words_201485_6
+		}
+	}
+	mean_time_to_happen = {
+		months = 128
+	}
+	option = {
+		name = "EVTOPTA50199"
+		clr_global_flag = eng_words_201485_5
+	}
+	option = {
+		name = "EVTOPTB50199"
+	}
+	option = {
+		name = "EVTOPTC50199"
+		set_global_flag = eng_words_201485_6
+	}
+}
+country_event = {
+	id = 50200
+	title = "EVTNAME50200"
+	desc = "EVTDESC50200"
+	picture = "eng_words_201485"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_201485_6
+		NOT = {
+			has_global_flag = eng_words_201485_7
+		}
+	}
+	mean_time_to_happen = {
+		months = 256
+	}
+	option = {
+		name = "EVTOPTA50200"
+		clr_global_flag = eng_words_201485_6
+	}
+	option = {
+		name = "EVTOPTB50200"
+	}
+	option = {
+		name = "EVTOPTC50200"
+		set_global_flag = eng_words_201485_7
+	}
+}
+country_event = {
+	id = 50201
+	title = "EVTNAME50201"
+	desc = "EVTDESC50201"
+	picture = "eng_words_201485"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_201485_7
+		NOT = {
+			has_global_flag = eng_words_201485_8
+		}
+	}
+	mean_time_to_happen = {
+		months = 512
+	}
+	option = {
+		name = "EVTOPTA50201"
+		clr_global_flag = eng_words_201485_7
+	}
+	option = {
+		name = "EVTOPTB50201"
+	}
+	option = {
+		name = "EVTOPTC50201"
+		set_global_flag = eng_words_201485_8
+	}
+}
+country_event = {
+	id = 50202
+	title = "EVTNAME50202"
+	desc = "EVTDESC50202"
+	picture = "eng_words_201485"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_201485_8
+		NOT = {
+			has_global_flag = eng_words_201485_9
+		}
+	}
+	mean_time_to_happen = {
+		months = 1024
+	}
+	option = {
+		name = "EVTOPTA50202"
+		clr_global_flag = eng_words_201485_8
+	}
+	option = {
+		name = "EVTOPTB50202"
+	}
+	option = {
+		name = "EVTOPTC50202"
+		set_global_flag = eng_words_201485_9
+	}
+}
+country_event = {
+	id = 50203
+	title = "EVTNAME50203"
+	desc = "EVTDESC50203"
+	picture = "eng_words_201485"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_201485_9
+		NOT = {
+			has_global_flag = eng_words_201485_10
+		}
+	}
+	mean_time_to_happen = {
+		months = 2048
+	}
+	option = {
+		name = "EVTOPTA50203"
+		clr_global_flag = eng_words_201485_9
+	}
+	option = {
+		name = "EVTOPTB50203"
+	}
+	option = {
+		name = "EVTOPTC50203"
+		set_global_flag = eng_words_201485_10
+	}
+}
+country_event = {
+	id = 50204
+	title = "EVTNAME50204"
+	desc = "EVTDESC50204"
+	picture = "eng_words_201485"
+	trigger = {
+		ai = no
+		has_global_flag = eng_words_201485_10
+	}
+	mean_time_to_happen = {
+		months = 4096
+	}
+	option = {
+		name = "EVTOPTA50204"
+		clr_global_flag = eng_words_201485_10
+	}
+	option = {
+		name = "EVTOPTB50204"
+	}
+}

@@ -10,6 +10,16 @@ tCondition<target> AverageMilitancy(float const num)
 template tCondition<tTarget::kCountry > AverageMilitancy(float);
 template tCondition<tTarget::kProvince> AverageMilitancy(float);
 
+template <tTarget target>
+tCondition<target> HasGlobalFlag(char const * const flag)
+{
+    static_assert(target != tTarget::kPop);
+    return Set("has_global_flag", flag);
+}
+
+template tCondition<tTarget::kCountry > HasGlobalFlag(char const *);
+template tCondition<tTarget::kProvince> HasGlobalFlag(char const *);
+
 tCondition<tTarget::kCountry> AnyOwnedProvince(tCondition<tTarget::kProvince> && condition)
 {
     return tCondition<tTarget::kCountry>("any_owned_province", tComands{std::move(condition)});
@@ -50,6 +60,11 @@ void AddTag(tConditions<tTarget::kCountry> & conditions)
 template <>
 void AddTag<kDominions.size()>(tConditions<tTarget::kCountry> &)
 {
+}
+
+tCondition<tTarget::kCountry> IsAI(tYesOrNo const flag)
+{
+    return Set("ai", YesOrNo(flag));
 }
 
 tCondition<tTarget::kCountry> IsDominion()

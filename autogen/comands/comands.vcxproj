@@ -96,7 +96,6 @@
     <ClInclude Include="decisions.h" />
     <ClInclude Include="effects.h" />
     <ClInclude Include="events.h" />
-    <ClInclude Include="event_pictures.h" />
     <ClInclude Include="flags.h" />
     <ClInclude Include="governments.h" />
     <ClInclude Include="modifier.h" />
@@ -117,7 +116,6 @@
     <ClCompile Include="decisions.cpp" />
     <ClCompile Include="effects.cpp" />
     <ClCompile Include="events.cpp" />
-    <ClCompile Include="event_pictures.cpp" />
     <ClCompile Include="flags.cpp" />
     <ClCompile Include="governments.cpp" />
     <ClCompile Include="pop_types.cpp" />
