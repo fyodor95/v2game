@@ -41,6 +41,9 @@ tCondition<target> NotOr(tCondition<target> && conditions)
 template <tTarget target>
 tCondition<target> AverageMilitancy(float num);
 
+template <tTarget target = tTarget::kCountry>
+tCondition<target> HasGlobalFlag(char const * flag);
+
 // Возвращает true, если хотя бы для одной провинции, принадлежащей данной стране, выполняется условие condition.
 tCondition<tTarget::kCountry> AnyOwnedProvince(tCondition<tTarget::kProvince> && condition);
 
@@ -85,6 +88,8 @@ tCondition<tTarget::kCountry> IsAccepted() { return Set("accepted_culture", nsCu
 // Возвращает true, если культура culture является признанной или основной в данной стране.
 template <tCulture culture>
 tCondition<tTarget::kCountry> IsAcceptedOrPrimary();
+
+tCondition<tTarget::kCountry> IsAI(tYesOrNo flag = _Yes);
 
 // Возвращает true, если тэгом является DXX (01 <= XX <= 50).
 tCondition<tTarget::kCountry> IsDominion();

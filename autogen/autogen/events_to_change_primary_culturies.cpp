@@ -40,13 +40,13 @@ LOOP_BY_CULTURES(GenerateEvents)
         RemoveFlag<tCountryFlag::primary_culture_must_be_changed>()
     };
     for (uint id = ++ID(), i = 0u; i < 2u; ++id, ++i)
-        CountryEvent<tEventPicture::Administration>
+        CountryEvent
             (id, "Смена основной культуры", "Основная культура нашего государства изменилась.",
              EventOutput(), LocalisationOutput(),
              Trigger          <tTarget::kCountry>(std::move(conditions[i])),
              MeanTimeToHappen <tTarget::kCountry>(months[i]),
              {Option          <tTarget::kCountry>(tEffects<tTarget::kCountry>(effects), id)},
-             {"Ок"});
+             {"Ок"}, "Administration");
     ++ID();
 }
 
@@ -57,13 +57,13 @@ void EventsToChangePrimaryCultures()
         Not(HasFlag<tCountryFlag::primary_culture_must_be_changed>()),
         Not(HasProvince({HasPop(HasPrimaryCulture())}))
     };
-    CountryEvent<tEventPicture::Administration>
+    CountryEvent
         (ID(), "Кто такие $COUNTRYCULTURE$?",
          "В нашей стране не проживает ни одного представителя народа $COUNTRYCULTURE$. Это означает, что вскоре основная культура нашего государства изменится.",
          EventOutput(), LocalisationOutput(),
          Trigger          <tTarget::kCountry>(std::move(conditions)),
          MeanTimeToHappen <tTarget::kCountry>(9.f),
          {Option          <tTarget::kCountry>({SetFlag<tCountryFlag::primary_culture_must_be_changed>()}, ID())},
-         {"Ок"});
+         {"Ок"}, "Administration");
     GenerateEvents();
 }

@@ -52,11 +52,11 @@ static void CommunistPoliticalReforms(std::ofstream & eventOutput, std::ofstream
         }),
         ChangeGovernmentType<tGovernment::democracy>()
     };
-    CountryEvent<tEventPicture::Administration>
+    CountryEvent
         (id, "Политические реформы", desc, eventOutput, localizationOutput,
          Trigger(std::move(conditions)), MeanTimeToHappen(90.f, std::move(modefiers)),
          {Option(std::move(effects), id), Option<tTarget::kCountry>({}, id, 2u)},
-         {"Давайте сделаем это!", "Пока ещё рано"});
+         {"Давайте сделаем это!", "Пока ещё рано"}, "Administration");
 }
 
 void GenerateSimpleEvents()

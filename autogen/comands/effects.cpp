@@ -12,6 +12,24 @@ tEffect<target> RandomEffectFrom(tEffects<target> && effects)
 template tEffect<tTarget::kCountry > RandomEffectFrom(tEffects<tTarget::kCountry > &&);
 template tEffect<tTarget::kProvince> RandomEffectFrom(tEffects<tTarget::kProvince> &&);
 
+template <tTarget target>
+tEffect<target> SetGlobalFlag(char const * flag)
+{
+    return Set("set_global_flag", flag);
+}
+
+template tEffect<tTarget::kCountry > SetGlobalFlag(char const *);
+template tEffect<tTarget::kProvince> SetGlobalFlag(char const *);
+
+template <tTarget target>
+tEffect<target> RemoveGlobalFlag(char const * const flag)
+{
+    return Set("clr_global_flag", flag);
+}
+
+template tEffect<tTarget::kCountry > RemoveGlobalFlag(char const *);
+template tEffect<tTarget::kProvince> RemoveGlobalFlag(char const *);
+
 tEffect<tTarget::kCountry> AddPrestige(int const value)
 {
     return Set("prestige", std::to_string(value));
