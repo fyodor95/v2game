@@ -23,6 +23,8 @@ tEffect<target> RemoveGlobalFlag(char const * flag);
 template <tCulture culture>
 tEffect<tTarget::kCountry> AddAcceptedCulture() { return Set("add_accepted_culture", nsCulture::ToString<culture>()); }
 
+tEffect<tTarget::kCountry> AddBadboy(float value);
+
 // Добавляет value престижа данной стране.
 tEffect<tTarget::kCountry> AddPrestige(int value);
 
@@ -41,12 +43,29 @@ tEffect<tTarget::kCountry> ChangeReformLevel()
     return Set(nsType::ToString<Type<tReformType>()>(), ToString<tReformType, level>());
 }
 
+// Увеличивает отношения между данной державой и державой tag на dif.
+template <tTag tag>
+tEffect<tTarget::kCountry> ChangeRelation(int dif);
+
 // Все попы в данной стране, удовлетворяющие условию limit, получают эффекты effects.
 tEffect<tTarget::kCountry> EffectsForAllPops(tCondition<tTarget::kPop> && limit, tEffects<tTarget::kPop> && effects);
+
+// Все провинции, которыми владеет данная держава и которые удовлетворяют всем условиям limit,
+// получают эффекты effects.
+tEffect<tTarget::kCountry> EffectsForOwnedProvinces(tConditions <tTarget::kProvince> && limit,
+                                                    tEffects    <tTarget::kProvince> && effects);
 
 // Держава tag получает эффекты effects.
 template <tTag tag, tTarget target = tTarget::kCountry>
 tEffect<target> EffectsForSpecifiedCountry(tEffects<tTarget::kCountry> && effects);
+
+// В державе tag произойдёт событие с номером eventID.
+template <tTag tag>
+tEffect<tTarget::kCountry> EventInCountry(uint eventID);
+
+// Присоединяет державу tag к данной державе
+template <tTag tag>
+tEffect<tTarget::kCountry> Inherit() { return Set("inherit", nsTag::ToString<tag>()); }
 
 // Делает культуру culture основной для данной державы. Может использоваться для несуществующих государств.
 template <tCulture culture>
@@ -74,15 +93,16 @@ tEffect<tTarget::kCountry> SetFlag()
     return Set("set_country_flag", nsCountryFlag::ToString<flag>());
 }
 
+// Владельцем данной провинции становится держава tag.
+template <tTag tag>
+tEffect<tTarget::kProvince> ChangeOwner() { return Set("secede_province", nsTag::ToString<tag>()); }
+
 // Владелец данной провинции получает эффекты effects.
 tEffect<tTarget::kProvince> EffectsForOwner(tEffects<tTarget::kCountry> && effects);
 
-// Делает данную провинцию национальной для державы tag.
+// Делает данную провинцию национальной для державы tag. Тэгом не может быть kFrom.
 template <tTag tag>
-tEffect<tTarget::kProvince> MakeNationalFor()
-{
-    return Set("add_core", nsTag::ToString<tag>());
-}
+tEffect<tTarget::kProvince> MakeNationalFor(tYesOrNo flag = _Yes);
 
 // Добавляет данному попу value агрессивности.
 tEffect<tTarget::kPop> AddMilitancy(int value);
@@ -94,4 +114,28 @@ tEffect<target> EffectsForSpecifiedCountry(tEffects<tTarget::kCountry> && effect
         return tEffect<target>(nsTag::ToString<tag>(), std::move(CastToComands(effects)));
     else
         return tEffect<target>(EffectsForOwner({EffectsForSpecifiedCountry<tag>(std::move(effects))}));
+}
+
+template <tTag tag>
+tEffect<tTarget::kCountry> ChangeRelation(int const dif)
+{
+    assertion(-400 <= dif && dif <= 400);
+    return tEffect<tTarget::kCountry>("relation",
+                                      {Set("who", nsTag::ToString<tag>()), Set("value", std::to_string(dif))});
+}
+
+template <tTag tag>
+tEffect<tTarget::kCountry> EventInCountry(uint const eventID)
+{
+    return EffectsForSpecifiedCountry<tag>
+    ({
+        tEffect<tTarget::kCountry>("country_event = { id=" + std::to_string(eventID) + " days=0 }")
+    });
+}
+
+template <tTag tag>
+tEffect<tTarget::kProvince> MakeNationalFor(tYesOrNo const flag)
+{
+    assertion(flag || tag != tTag::kFrom);
+    return Set(flag ? "add_core" : "remove_core", nsTag::ToString<tag>());
 }

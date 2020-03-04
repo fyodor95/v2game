@@ -30,7 +30,7 @@ tMeanTimeToHappen<target> MeanTimeToHappen(float const months, tModifiers<target
 COMAND(tOption);
 
 template <tTarget target>
-tOption<target> Option(tEffects<target> &&, uint eventID, uint optionNum = 1u);
+tOption<target> Option(tEffects<target> &&, uint eventID, uint optionNum = 1u, uint aiChance = UINT_MAX);
 
 using tOptionDescriptions = std::vector<char const *>;
 
@@ -55,3 +55,9 @@ void CountryEvent(uint id, char const * title, char const * desc,
     return Event<tTarget::kCountry>(id, title, desc, eventOutput, localizationOutput, std::move(trigger),
                                     std::move(meanTimeToHappen), std::move(options), optionDescriptions, eventPicture);
 }
+
+void TriggeredCountryEvent(uint id, char const * title, char const * desc,
+                           std::ostream & eventOutput, std::ostream & localizationOutput,
+                           tOptions           <tTarget::kCountry> && options,
+                           tOptionDescriptions const & optionDescriptions,
+                           char const * eventPicture);

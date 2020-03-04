@@ -104,6 +104,8 @@
     <ClInclude Include="tags.h" />
     <ClInclude Include="target.h" />
     <ClInclude Include="target_comand.h" />
+    <ClInclude Include="technologies.h" />
+    <ClInclude Include="war_policy.h" />
     <ClInclude Include="_pch_comands.h" />
     <ClInclude Include="_pch_comands_private.h" />
   </ItemGroup>
@@ -121,6 +123,8 @@
     <ClCompile Include="pop_types.cpp" />
     <ClCompile Include="reforms.cpp" />
     <ClCompile Include="tags.cpp" />
+    <ClCompile Include="technologies.cpp" />
+    <ClCompile Include="war_policy.cpp" />
     <ClCompile Include="_pch_comands.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>

@@ -12,6 +12,9 @@ province_event = {
 			NOT = {
 				tag = FRA
 			}
+			NOT = {
+				exists = FRA
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -23,7 +26,6 @@ province_event = {
 					accepted_culture = french
 					primary_culture = french
 				}
-				exists = no
 			}
 		}
 	}
@@ -155,12 +157,14 @@ province_event = {
 				tag = D26
 			}
 			NOT = {
+				exists = D26
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D26
 				}
 			}
 			D26 = {
-				exists = no
 			}
 		}
 	}
@@ -1102,12 +1106,14 @@ province_event = {
 				tag = D40
 			}
 			NOT = {
+				exists = D40
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D40
 				}
 			}
 			D40 = {
-				exists = no
 			}
 		}
 	}
@@ -1174,6 +1180,9 @@ province_event = {
 				tag = HAW
 			}
 			NOT = {
+				exists = HAW
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = HAW
 				}
@@ -1183,7 +1192,6 @@ province_event = {
 					accepted_culture = polynesian
 					primary_culture = polynesian
 				}
-				exists = no
 			}
 		}
 	}
@@ -1245,6 +1253,9 @@ province_event = {
 				tag = CRI
 			}
 			NOT = {
+				exists = CRI
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = CRI
 				}
@@ -1254,7 +1265,6 @@ province_event = {
 					accepted_culture = crimean_tatar
 					primary_culture = crimean_tatar
 				}
-				exists = no
 			}
 		}
 	}
@@ -1316,12 +1326,14 @@ province_event = {
 				tag = D01
 			}
 			NOT = {
+				exists = D01
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D01
 				}
 			}
 			D01 = {
-				exists = no
 			}
 		}
 	}
@@ -1912,6 +1924,9 @@ province_event = {
 			NOT = {
 				tag = TEX
 			}
+			NOT = {
+				exists = TEX
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -1923,7 +1938,6 @@ province_event = {
 					accepted_culture = texan
 					primary_culture = texan
 				}
-				exists = no
 			}
 		}
 	}
@@ -2055,6 +2069,9 @@ province_event = {
 				tag = TIB
 			}
 			NOT = {
+				exists = TIB
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = TIB
 				}
@@ -2064,7 +2081,6 @@ province_event = {
 					accepted_culture = tibetan
 					primary_culture = tibetan
 				}
-				exists = no
 			}
 		}
 	}
@@ -2301,6 +2317,9 @@ province_event = {
 				tag = CAM
 			}
 			NOT = {
+				exists = CAM
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = CAM
 				}
@@ -2310,7 +2329,6 @@ province_event = {
 					accepted_culture = khmer
 					primary_culture = khmer
 				}
-				exists = no
 			}
 		}
 	}
@@ -2371,6 +2389,9 @@ province_event = {
 			NOT = {
 				tag = ISR
 			}
+			NOT = {
+				exists = ISR
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -2382,7 +2403,6 @@ province_event = {
 					accepted_culture = ashkenazi
 					primary_culture = ashkenazi
 				}
-				exists = no
 			}
 		}
 	}
@@ -2479,12 +2499,14 @@ province_event = {
 				tag = D50
 			}
 			NOT = {
+				exists = D50
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D50
 				}
 			}
 			D50 = {
-				exists = no
 			}
 		}
 	}
@@ -2551,12 +2573,14 @@ province_event = {
 				tag = D18
 			}
 			NOT = {
+				exists = D18
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D18
 				}
 			}
 			D18 = {
-				exists = no
 			}
 		}
 	}
@@ -2622,6 +2646,9 @@ province_event = {
 			NOT = {
 				tag = SLO
 			}
+			NOT = {
+				exists = SLO
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -2633,7 +2660,6 @@ province_event = {
 					accepted_culture = slovene
 					primary_culture = slovene
 				}
-				exists = no
 			}
 		}
 	}
@@ -2729,6 +2755,9 @@ province_event = {
 			NOT = {
 				tag = NET
 			}
+			NOT = {
+				exists = NET
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -2740,7 +2769,6 @@ province_event = {
 					accepted_culture = dutch
 					primary_culture = dutch
 				}
-				exists = no
 			}
 		}
 	}
@@ -2872,6 +2900,9 @@ province_event = {
 				tag = JAV
 			}
 			NOT = {
+				exists = JAV
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = JAV
 				}
@@ -2881,7 +2912,6 @@ province_event = {
 					accepted_culture = javan
 					primary_culture = javan
 				}
-				exists = no
 			}
 		}
 	}
@@ -2942,6 +2972,9 @@ province_event = {
 			NOT = {
 				tag = FLA
 			}
+			NOT = {
+				exists = FLA
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -2953,7 +2986,6 @@ province_event = {
 					accepted_culture = flemish
 					primary_culture = flemish
 				}
-				exists = no
 			}
 		}
 	}
@@ -3085,6 +3117,9 @@ province_event = {
 				tag = ZAN
 			}
 			NOT = {
+				exists = ZAN
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = ZAN
 				}
@@ -3094,7 +3129,6 @@ province_event = {
 					accepted_culture = swahili
 					primary_culture = swahili
 				}
-				exists = no
 			}
 		}
 	}
@@ -3156,12 +3190,14 @@ province_event = {
 				tag = D46
 			}
 			NOT = {
+				exists = D46
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D46
 				}
 			}
 			D46 = {
-				exists = no
 			}
 		}
 	}
@@ -3402,6 +3438,9 @@ province_event = {
 			NOT = {
 				tag = WLL
 			}
+			NOT = {
+				exists = WLL
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -3413,7 +3452,6 @@ province_event = {
 					accepted_culture = wallonian
 					primary_culture = wallonian
 				}
-				exists = no
 			}
 		}
 	}
@@ -3509,6 +3547,9 @@ province_event = {
 			NOT = {
 				tag = BOS
 			}
+			NOT = {
+				exists = BOS
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -3520,7 +3561,6 @@ province_event = {
 					accepted_culture = bosniak
 					primary_culture = bosniak
 				}
-				exists = no
 			}
 		}
 	}
@@ -3616,6 +3656,9 @@ province_event = {
 			NOT = {
 				tag = SWI
 			}
+			NOT = {
+				exists = SWI
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -3627,7 +3670,6 @@ province_event = {
 					accepted_culture = swiss
 					primary_culture = swiss
 				}
-				exists = no
 			}
 		}
 	}
@@ -3689,12 +3731,14 @@ province_event = {
 				tag = D33
 			}
 			NOT = {
+				exists = D33
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D33
 				}
 			}
 			D33 = {
-				exists = no
 			}
 		}
 	}
@@ -3760,6 +3804,9 @@ province_event = {
 			NOT = {
 				tag = SWE
 			}
+			NOT = {
+				exists = SWE
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -3771,7 +3818,6 @@ province_event = {
 					accepted_culture = swedish
 					primary_culture = swedish
 				}
-				exists = no
 			}
 		}
 	}
@@ -3903,12 +3949,14 @@ province_event = {
 				tag = D01
 			}
 			NOT = {
+				exists = D01
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D01
 				}
 			}
 			D01 = {
-				exists = no
 			}
 		}
 	}
@@ -3975,12 +4023,14 @@ province_event = {
 				tag = D18
 			}
 			NOT = {
+				exists = D18
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D18
 				}
 			}
 			D18 = {
-				exists = no
 			}
 		}
 	}
@@ -4046,6 +4096,9 @@ province_event = {
 			NOT = {
 				tag = SIE
 			}
+			NOT = {
+				exists = SIE
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -4057,7 +4110,6 @@ province_event = {
 					accepted_culture = hungarian
 					primary_culture = hungarian
 				}
-				exists = no
 			}
 		}
 	}
@@ -4189,12 +4241,14 @@ province_event = {
 				tag = D33
 			}
 			NOT = {
+				exists = D33
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D33
 				}
 			}
 			D33 = {
-				exists = no
 			}
 		}
 	}
@@ -4401,6 +4455,9 @@ province_event = {
 				tag = SOK
 			}
 			NOT = {
+				exists = SOK
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = SOK
 				}
@@ -4410,7 +4467,6 @@ province_event = {
 					accepted_culture = hausa
 					primary_culture = hausa
 				}
-				exists = no
 			}
 		}
 	}
@@ -4472,12 +4528,14 @@ province_event = {
 				tag = D22
 			}
 			NOT = {
+				exists = D22
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D22
 				}
 			}
 			D22 = {
-				exists = no
 			}
 		}
 	}
@@ -4543,6 +4601,9 @@ province_event = {
 			NOT = {
 				tag = UZB
 			}
+			NOT = {
+				exists = UZB
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -4554,7 +4615,6 @@ province_event = {
 					accepted_culture = uzbek
 					primary_culture = uzbek
 				}
-				exists = no
 			}
 		}
 	}
@@ -4685,6 +4745,9 @@ province_event = {
 			NOT = {
 				tag = BOH
 			}
+			NOT = {
+				exists = BOH
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -4696,7 +4759,6 @@ province_event = {
 					accepted_culture = czech
 					primary_culture = czech
 				}
-				exists = no
 			}
 		}
 	}
@@ -4827,6 +4889,9 @@ province_event = {
 			NOT = {
 				tag = NOR
 			}
+			NOT = {
+				exists = NOR
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -4838,7 +4903,6 @@ province_event = {
 					accepted_culture = norwegian
 					primary_culture = norwegian
 				}
-				exists = no
 			}
 		}
 	}
@@ -5005,12 +5069,14 @@ province_event = {
 				tag = D21
 			}
 			NOT = {
+				exists = D21
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D21
 				}
 			}
 			D21 = {
-				exists = no
 			}
 		}
 	}
@@ -5147,12 +5213,14 @@ province_event = {
 				tag = D13
 			}
 			NOT = {
+				exists = D13
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D13
 				}
 			}
 			D13 = {
-				exists = no
 			}
 		}
 	}
@@ -5218,6 +5286,9 @@ province_event = {
 			NOT = {
 				tag = ICL
 			}
+			NOT = {
+				exists = ICL
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -5229,7 +5300,6 @@ province_event = {
 					accepted_culture = icelandic
 					primary_culture = icelandic
 				}
-				exists = no
 			}
 		}
 	}
@@ -5360,6 +5430,9 @@ province_event = {
 			NOT = {
 				tag = FIN
 			}
+			NOT = {
+				exists = FIN
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -5371,7 +5444,6 @@ province_event = {
 					accepted_culture = finnish
 					primary_culture = finnish
 				}
-				exists = no
 			}
 		}
 	}
@@ -5503,12 +5575,14 @@ province_event = {
 				tag = D02
 			}
 			NOT = {
+				exists = D02
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D02
 				}
 			}
 			D02 = {
-				exists = no
 			}
 		}
 	}
@@ -5679,6 +5753,9 @@ province_event = {
 			NOT = {
 				tag = ENG
 			}
+			NOT = {
+				exists = ENG
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -5690,7 +5767,6 @@ province_event = {
 					accepted_culture = british
 					primary_culture = british
 				}
-				exists = no
 			}
 		}
 	}
@@ -5997,12 +6073,14 @@ province_event = {
 				tag = D02
 			}
 			NOT = {
+				exists = D02
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D02
 				}
 			}
 			D02 = {
-				exists = no
 			}
 		}
 	}
@@ -6208,6 +6286,9 @@ province_event = {
 			NOT = {
 				tag = SCO
 			}
+			NOT = {
+				exists = SCO
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -6219,7 +6300,6 @@ province_event = {
 					accepted_culture = scottish
 					primary_culture = scottish
 				}
-				exists = no
 			}
 		}
 	}
@@ -6315,6 +6395,9 @@ province_event = {
 			NOT = {
 				tag = IRE
 			}
+			NOT = {
+				exists = IRE
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -6326,7 +6409,6 @@ province_event = {
 					accepted_culture = irish
 					primary_culture = irish
 				}
-				exists = no
 			}
 		}
 	}
@@ -6423,12 +6505,14 @@ province_event = {
 				tag = D35
 			}
 			NOT = {
+				exists = D35
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D35
 				}
 			}
 			D35 = {
-				exists = no
 			}
 		}
 	}
@@ -6495,12 +6579,14 @@ province_event = {
 				tag = D32
 			}
 			NOT = {
+				exists = D32
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D32
 				}
 			}
 			D32 = {
-				exists = no
 			}
 		}
 	}
@@ -6917,12 +7003,14 @@ province_event = {
 				tag = D05
 			}
 			NOT = {
+				exists = D05
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D05
 				}
 			}
 			D05 = {
-				exists = no
 			}
 		}
 	}
@@ -6989,12 +7077,14 @@ province_event = {
 				tag = D24
 			}
 			NOT = {
+				exists = D24
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D24
 				}
 			}
 			D24 = {
-				exists = no
 			}
 		}
 	}
@@ -7060,6 +7150,9 @@ province_event = {
 			NOT = {
 				tag = CHE
 			}
+			NOT = {
+				exists = CHE
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -7071,7 +7164,6 @@ province_event = {
 					accepted_culture = cherokee
 					primary_culture = cherokee
 				}
-				exists = no
 			}
 		}
 	}
@@ -7133,12 +7225,14 @@ province_event = {
 				tag = D34
 			}
 			NOT = {
+				exists = D34
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D34
 				}
 			}
 			D34 = {
-				exists = no
 			}
 		}
 	}
@@ -7204,6 +7298,9 @@ province_event = {
 			NOT = {
 				tag = LAT
 			}
+			NOT = {
+				exists = LAT
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -7215,7 +7312,6 @@ province_event = {
 					accepted_culture = latvian
 					primary_culture = latvian
 				}
-				exists = no
 			}
 		}
 	}
@@ -7312,12 +7408,14 @@ province_event = {
 				tag = D03
 			}
 			NOT = {
+				exists = D03
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D03
 				}
 			}
 			D03 = {
-				exists = no
 			}
 		}
 	}
@@ -7489,12 +7587,14 @@ province_event = {
 				tag = D31
 			}
 			NOT = {
+				exists = D31
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D31
 				}
 			}
 			D31 = {
-				exists = no
 			}
 		}
 	}
@@ -7595,6 +7695,9 @@ province_event = {
 			NOT = {
 				tag = SPA
 			}
+			NOT = {
+				exists = SPA
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -7606,7 +7709,6 @@ province_event = {
 					accepted_culture = basque
 					primary_culture = basque
 				}
-				exists = no
 			}
 		}
 	}
@@ -7667,6 +7769,9 @@ province_event = {
 			NOT = {
 				tag = SPA
 			}
+			NOT = {
+				exists = SPA
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -7678,7 +7783,6 @@ province_event = {
 					accepted_culture = spanish
 					primary_culture = spanish
 				}
-				exists = no
 			}
 		}
 	}
@@ -7774,6 +7878,9 @@ province_event = {
 			NOT = {
 				tag = CAT
 			}
+			NOT = {
+				exists = CAT
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -7785,7 +7892,6 @@ province_event = {
 					accepted_culture = catalan
 					primary_culture = catalan
 				}
-				exists = no
 			}
 		}
 	}
@@ -7881,6 +7987,9 @@ province_event = {
 			NOT = {
 				tag = POR
 			}
+			NOT = {
+				exists = POR
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -7892,7 +8001,6 @@ province_event = {
 					accepted_culture = portuguese
 					primary_culture = portuguese
 				}
-				exists = no
 			}
 		}
 	}
@@ -7953,6 +8061,9 @@ province_event = {
 			NOT = {
 				tag = CRO
 			}
+			NOT = {
+				exists = CRO
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -7964,7 +8075,6 @@ province_event = {
 					accepted_culture = croat
 					primary_culture = croat
 				}
-				exists = no
 			}
 		}
 	}
@@ -8061,12 +8171,14 @@ province_event = {
 				tag = D15
 			}
 			NOT = {
+				exists = D15
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D15
 				}
 			}
 			D15 = {
-				exists = no
 			}
 		}
 	}
@@ -8132,6 +8244,9 @@ province_event = {
 			NOT = {
 				tag = HAI
 			}
+			NOT = {
+				exists = HAI
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -8143,7 +8258,6 @@ province_event = {
 					accepted_culture = afro_caribeno
 					primary_culture = afro_caribeno
 				}
-				exists = no
 			}
 		}
 	}
@@ -8204,6 +8318,9 @@ province_event = {
 			NOT = {
 				tag = YAK
 			}
+			NOT = {
+				exists = YAK
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -8215,7 +8332,6 @@ province_event = {
 					accepted_culture = yakut
 					primary_culture = yakut
 				}
-				exists = no
 			}
 		}
 	}
@@ -8276,6 +8392,9 @@ province_event = {
 			NOT = {
 				tag = AZB
 			}
+			NOT = {
+				exists = AZB
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -8287,7 +8406,6 @@ province_event = {
 					accepted_culture = azerbaijani
 					primary_culture = azerbaijani
 				}
-				exists = no
 			}
 		}
 	}
@@ -8383,6 +8501,9 @@ province_event = {
 			NOT = {
 				tag = SER
 			}
+			NOT = {
+				exists = SER
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -8394,7 +8515,6 @@ province_event = {
 					accepted_culture = serb
 					primary_culture = serb
 				}
-				exists = no
 			}
 		}
 	}
@@ -8525,6 +8645,9 @@ province_event = {
 			NOT = {
 				tag = BUL
 			}
+			NOT = {
+				exists = BUL
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -8536,7 +8659,6 @@ province_event = {
 					accepted_culture = bulgarian
 					primary_culture = bulgarian
 				}
-				exists = no
 			}
 		}
 	}
@@ -8632,6 +8754,9 @@ province_event = {
 			NOT = {
 				tag = ALB
 			}
+			NOT = {
+				exists = ALB
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -8643,7 +8768,6 @@ province_event = {
 					accepted_culture = albanian
 					primary_culture = albanian
 				}
-				exists = no
 			}
 		}
 	}
@@ -8739,6 +8863,9 @@ province_event = {
 			NOT = {
 				tag = ROM
 			}
+			NOT = {
+				exists = ROM
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -8750,7 +8877,6 @@ province_event = {
 					accepted_culture = romanian
 					primary_culture = romanian
 				}
-				exists = no
 			}
 		}
 	}
@@ -8916,6 +9042,9 @@ province_event = {
 			NOT = {
 				tag = POL
 			}
+			NOT = {
+				exists = POL
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -8927,7 +9056,6 @@ province_event = {
 					accepted_culture = polish
 					primary_culture = polish
 				}
-				exists = no
 			}
 		}
 	}
@@ -9093,6 +9221,9 @@ province_event = {
 			NOT = {
 				tag = MEX
 			}
+			NOT = {
+				exists = MEX
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -9104,7 +9235,6 @@ province_event = {
 					accepted_culture = mexican
 					primary_culture = mexican
 				}
-				exists = no
 			}
 		}
 	}
@@ -9201,6 +9331,9 @@ province_event = {
 				tag = SRI
 			}
 			NOT = {
+				exists = SRI
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = SRI
 				}
@@ -9210,7 +9343,6 @@ province_event = {
 					accepted_culture = sinhala
 					primary_culture = sinhala
 				}
-				exists = no
 			}
 		}
 	}
@@ -9307,6 +9439,9 @@ province_event = {
 				tag = PER
 			}
 			NOT = {
+				exists = PER
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = PER
 				}
@@ -9316,7 +9451,6 @@ province_event = {
 					accepted_culture = persian
 					primary_culture = persian
 				}
-				exists = no
 			}
 		}
 	}
@@ -9377,6 +9511,9 @@ province_event = {
 			NOT = {
 				tag = LIT
 			}
+			NOT = {
+				exists = LIT
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -9388,7 +9525,6 @@ province_event = {
 					accepted_culture = lithuanian
 					primary_culture = lithuanian
 				}
-				exists = no
 			}
 		}
 	}
@@ -9485,6 +9621,9 @@ province_event = {
 				tag = XIN
 			}
 			NOT = {
+				exists = XIN
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = XIN
 				}
@@ -9494,7 +9633,6 @@ province_event = {
 					accepted_culture = uighur
 					primary_culture = uighur
 				}
-				exists = no
 			}
 		}
 	}
@@ -9555,6 +9693,9 @@ province_event = {
 			NOT = {
 				tag = SLV
 			}
+			NOT = {
+				exists = SLV
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -9566,7 +9707,6 @@ province_event = {
 					accepted_culture = slovak
 					primary_culture = slovak
 				}
-				exists = no
 			}
 		}
 	}
@@ -9698,6 +9838,9 @@ province_event = {
 				tag = JAP
 			}
 			NOT = {
+				exists = JAP
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = JAP
 				}
@@ -9707,7 +9850,6 @@ province_event = {
 					accepted_culture = japanese
 					primary_culture = japanese
 				}
-				exists = no
 			}
 		}
 	}
@@ -9768,6 +9910,9 @@ province_event = {
 			NOT = {
 				tag = RUS
 			}
+			NOT = {
+				exists = RUS
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -9779,7 +9924,6 @@ province_event = {
 					accepted_culture = russian
 					primary_culture = russian
 				}
-				exists = no
 			}
 		}
 	}
@@ -9946,12 +10090,14 @@ province_event = {
 				tag = D25
 			}
 			NOT = {
+				exists = D25
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D25
 				}
 			}
 			D25 = {
-				exists = no
 			}
 		}
 	}
@@ -10017,6 +10163,9 @@ province_event = {
 			NOT = {
 				tag = BYE
 			}
+			NOT = {
+				exists = BYE
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -10028,7 +10177,6 @@ province_event = {
 					accepted_culture = byelorussian
 					primary_culture = byelorussian
 				}
-				exists = no
 			}
 		}
 	}
@@ -10125,12 +10273,14 @@ province_event = {
 				tag = D27
 			}
 			NOT = {
+				exists = D27
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D27
 				}
 			}
 			D27 = {
-				exists = no
 			}
 		}
 	}
@@ -10197,6 +10347,9 @@ province_event = {
 				tag = AFG
 			}
 			NOT = {
+				exists = AFG
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = AFG
 				}
@@ -10206,7 +10359,6 @@ province_event = {
 					accepted_culture = pashtun
 					primary_culture = pashtun
 				}
-				exists = no
 			}
 		}
 	}
@@ -10267,6 +10419,9 @@ province_event = {
 			NOT = {
 				tag = UKR
 			}
+			NOT = {
+				exists = UKR
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -10278,7 +10433,6 @@ province_event = {
 					accepted_culture = ukrainian
 					primary_culture = ukrainian
 				}
-				exists = no
 			}
 		}
 	}
@@ -10410,12 +10564,14 @@ province_event = {
 				tag = D03
 			}
 			NOT = {
+				exists = D03
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D03
 				}
 			}
 			D03 = {
-				exists = no
 			}
 		}
 	}
@@ -10552,12 +10708,14 @@ province_event = {
 				tag = D27
 			}
 			NOT = {
+				exists = D27
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D27
 				}
 			}
 			D27 = {
-				exists = no
 			}
 		}
 	}
@@ -10624,12 +10782,14 @@ province_event = {
 				tag = D45
 			}
 			NOT = {
+				exists = D45
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D45
 				}
 			}
 			D45 = {
-				exists = no
 			}
 		}
 	}
@@ -10695,6 +10855,9 @@ province_event = {
 			NOT = {
 				tag = RUS
 			}
+			NOT = {
+				exists = RUS
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -10706,7 +10869,6 @@ province_event = {
 					accepted_culture = ugrian
 					primary_culture = ugrian
 				}
-				exists = no
 			}
 		}
 	}
@@ -10767,6 +10929,9 @@ province_event = {
 			NOT = {
 				tag = TTT
 			}
+			NOT = {
+				exists = TTT
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -10778,7 +10943,6 @@ province_event = {
 					accepted_culture = tatar
 					primary_culture = tatar
 				}
-				exists = no
 			}
 		}
 	}
@@ -10839,6 +11003,9 @@ province_event = {
 			NOT = {
 				tag = EST
 			}
+			NOT = {
+				exists = EST
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -10850,7 +11017,6 @@ province_event = {
 					accepted_culture = estonian
 					primary_culture = estonian
 				}
-				exists = no
 			}
 		}
 	}
@@ -10946,6 +11112,9 @@ province_event = {
 			NOT = {
 				tag = GRE
 			}
+			NOT = {
+				exists = GRE
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -10957,7 +11126,6 @@ province_event = {
 					accepted_culture = greek
 					primary_culture = greek
 				}
-				exists = no
 			}
 		}
 	}
@@ -11158,6 +11326,9 @@ province_event = {
 			NOT = {
 				tag = GEO
 			}
+			NOT = {
+				exists = GEO
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -11169,7 +11340,6 @@ province_event = {
 					accepted_culture = georgian
 					primary_culture = georgian
 				}
-				exists = no
 			}
 		}
 	}
@@ -11230,6 +11400,9 @@ province_event = {
 			NOT = {
 				tag = ARM
 			}
+			NOT = {
+				exists = ARM
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -11241,7 +11414,6 @@ province_event = {
 					accepted_culture = armenian
 					primary_culture = armenian
 				}
-				exists = no
 			}
 		}
 	}
@@ -11302,6 +11474,9 @@ province_event = {
 			NOT = {
 				tag = ISR
 			}
+			NOT = {
+				exists = ISR
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -11313,7 +11488,6 @@ province_event = {
 					accepted_culture = sephardic
 					primary_culture = sephardic
 				}
-				exists = no
 			}
 		}
 	}
@@ -11375,6 +11549,9 @@ province_event = {
 				tag = LIB
 			}
 			NOT = {
+				exists = LIB
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = LIB
 				}
@@ -11384,7 +11561,6 @@ province_event = {
 					accepted_culture = afro_american
 					primary_culture = afro_american
 				}
-				exists = no
 			}
 		}
 	}
@@ -11445,6 +11621,9 @@ province_event = {
 			NOT = {
 				tag = KMK
 			}
+			NOT = {
+				exists = KMK
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -11456,7 +11635,6 @@ province_event = {
 					accepted_culture = kalmyk
 					primary_culture = kalmyk
 				}
-				exists = no
 			}
 		}
 	}
@@ -11517,6 +11695,9 @@ province_event = {
 			NOT = {
 				tag = TUR
 			}
+			NOT = {
+				exists = TUR
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -11528,7 +11709,6 @@ province_event = {
 					accepted_culture = turkish
 					primary_culture = turkish
 				}
-				exists = no
 			}
 		}
 	}
@@ -11659,6 +11839,9 @@ province_event = {
 			NOT = {
 				tag = JAN
 			}
+			NOT = {
+				exists = JAN
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -11670,7 +11853,6 @@ province_event = {
 					accepted_culture = polar_bears
 					primary_culture = polar_bears
 				}
-				exists = no
 			}
 		}
 	}
@@ -11767,12 +11949,14 @@ province_event = {
 				tag = D04
 			}
 			NOT = {
+				exists = D04
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D04
 				}
 			}
 			D04 = {
-				exists = no
 			}
 		}
 	}
@@ -11839,12 +12023,14 @@ province_event = {
 				tag = D05
 			}
 			NOT = {
+				exists = D05
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D05
 				}
 			}
 			D05 = {
-				exists = no
 			}
 		}
 	}
@@ -12086,6 +12272,9 @@ province_event = {
 				tag = EGY
 			}
 			NOT = {
+				exists = EGY
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = EGY
 				}
@@ -12095,7 +12284,6 @@ province_event = {
 					accepted_culture = misri
 					primary_culture = misri
 				}
-				exists = no
 			}
 		}
 	}
@@ -12191,6 +12379,9 @@ province_event = {
 			NOT = {
 				tag = ARA
 			}
+			NOT = {
+				exists = ARA
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -12202,7 +12393,6 @@ province_event = {
 					accepted_culture = mashriqi
 					primary_culture = mashriqi
 				}
-				exists = no
 			}
 		}
 	}
@@ -12404,12 +12594,14 @@ province_event = {
 				tag = D39
 			}
 			NOT = {
+				exists = D39
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D39
 				}
 			}
 			D39 = {
-				exists = no
 			}
 		}
 	}
@@ -12476,12 +12668,14 @@ province_event = {
 				tag = D35
 			}
 			NOT = {
+				exists = D35
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D35
 				}
 			}
 			D35 = {
-				exists = no
 			}
 		}
 	}
@@ -12792,6 +12986,9 @@ province_event = {
 			NOT = {
 				tag = QUE
 			}
+			NOT = {
+				exists = QUE
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -12803,7 +13000,6 @@ province_event = {
 					accepted_culture = french_canadian
 					primary_culture = french_canadian
 				}
-				exists = no
 			}
 		}
 	}
@@ -13005,6 +13201,9 @@ province_event = {
 				tag = NEP
 			}
 			NOT = {
+				exists = NEP
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = NEP
 				}
@@ -13014,7 +13213,6 @@ province_event = {
 					accepted_culture = nepali
 					primary_culture = nepali
 				}
-				exists = no
 			}
 		}
 	}
@@ -13181,6 +13379,9 @@ province_event = {
 				tag = MOR
 			}
 			NOT = {
+				exists = MOR
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = MOR
 				}
@@ -13190,7 +13391,6 @@ province_event = {
 					accepted_culture = berber
 					primary_culture = berber
 				}
-				exists = no
 			}
 		}
 	}
@@ -13286,6 +13486,9 @@ province_event = {
 			NOT = {
 				tag = KAZ
 			}
+			NOT = {
+				exists = KAZ
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -13297,7 +13500,6 @@ province_event = {
 					accepted_culture = kazak
 					primary_culture = kazak
 				}
-				exists = no
 			}
 		}
 	}
@@ -13358,6 +13560,9 @@ province_event = {
 			NOT = {
 				tag = KYR
 			}
+			NOT = {
+				exists = KYR
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -13369,7 +13574,6 @@ province_event = {
 					accepted_culture = kirgiz
 					primary_culture = kirgiz
 				}
-				exists = no
 			}
 		}
 	}
@@ -13466,6 +13670,9 @@ province_event = {
 				tag = PAN
 			}
 			NOT = {
+				exists = PAN
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = PAN
 				}
@@ -13475,7 +13682,6 @@ province_event = {
 					accepted_culture = panjabi
 					primary_culture = panjabi
 				}
-				exists = no
 			}
 		}
 	}
@@ -13641,6 +13847,9 @@ province_event = {
 			NOT = {
 				tag = TAJ
 			}
+			NOT = {
+				exists = TAJ
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -13652,7 +13861,6 @@ province_event = {
 					accepted_culture = tajik
 					primary_culture = tajik
 				}
-				exists = no
 			}
 		}
 	}
@@ -13749,12 +13957,14 @@ province_event = {
 				tag = D13
 			}
 			NOT = {
+				exists = D13
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D13
 				}
 			}
 			D13 = {
-				exists = no
 			}
 		}
 	}
@@ -13821,12 +14031,14 @@ province_event = {
 				tag = D06
 			}
 			NOT = {
+				exists = D06
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D06
 				}
 			}
 			D06 = {
-				exists = no
 			}
 		}
 	}
@@ -13997,6 +14209,9 @@ province_event = {
 			NOT = {
 				tag = TKM
 			}
+			NOT = {
+				exists = TKM
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -14008,7 +14223,6 @@ province_event = {
 					accepted_culture = turkmen
 					primary_culture = turkmen
 				}
-				exists = no
 			}
 		}
 	}
@@ -14069,6 +14283,9 @@ province_event = {
 			NOT = {
 				tag = KRD
 			}
+			NOT = {
+				exists = KRD
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -14080,7 +14297,6 @@ province_event = {
 					accepted_culture = kurdish
 					primary_culture = kurdish
 				}
-				exists = no
 			}
 		}
 	}
@@ -14142,6 +14358,9 @@ province_event = {
 				tag = HND
 			}
 			NOT = {
+				exists = HND
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = HND
 				}
@@ -14151,7 +14370,6 @@ province_event = {
 					accepted_culture = tamil
 					primary_culture = tamil
 				}
-				exists = no
 			}
 		}
 	}
@@ -14212,6 +14430,9 @@ province_event = {
 			NOT = {
 				tag = BMG
 			}
+			NOT = {
+				exists = BMG
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -14223,7 +14444,6 @@ province_event = {
 					accepted_culture = buryat
 					primary_culture = buryat
 				}
-				exists = no
 			}
 		}
 	}
@@ -14285,6 +14505,9 @@ province_event = {
 				tag = MGL
 			}
 			NOT = {
+				exists = MGL
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = MGL
 				}
@@ -14294,7 +14517,6 @@ province_event = {
 					accepted_culture = mongol
 					primary_culture = mongol
 				}
-				exists = no
 			}
 		}
 	}
@@ -14355,6 +14577,9 @@ province_event = {
 			NOT = {
 				tag = PHI
 			}
+			NOT = {
+				exists = PHI
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -14366,7 +14591,6 @@ province_event = {
 					accepted_culture = filipino
 					primary_culture = filipino
 				}
-				exists = no
 			}
 		}
 	}
@@ -14428,12 +14652,14 @@ province_event = {
 				tag = D07
 			}
 			NOT = {
+				exists = D07
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D07
 				}
 			}
 			D07 = {
-				exists = no
 			}
 		}
 	}
@@ -14499,6 +14725,9 @@ province_event = {
 			NOT = {
 				tag = HAI
 			}
+			NOT = {
+				exists = HAI
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -14510,7 +14739,6 @@ province_event = {
 					accepted_culture = afro_antillean
 					primary_culture = afro_antillean
 				}
-				exists = no
 			}
 		}
 	}
@@ -14572,6 +14800,9 @@ province_event = {
 				tag = DAI
 			}
 			NOT = {
+				exists = DAI
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = DAI
 				}
@@ -14581,7 +14812,6 @@ province_event = {
 					accepted_culture = vietnamese
 					primary_culture = vietnamese
 				}
-				exists = no
 			}
 		}
 	}
@@ -14642,6 +14872,9 @@ province_event = {
 			NOT = {
 				tag = TNT
 			}
+			NOT = {
+				exists = TNT
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -14653,7 +14886,6 @@ province_event = {
 					accepted_culture = tuvan
 					primary_culture = tuvan
 				}
-				exists = no
 			}
 		}
 	}
@@ -14715,6 +14947,9 @@ province_event = {
 				tag = ASM
 			}
 			NOT = {
+				exists = ASM
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = ASM
 				}
@@ -14724,7 +14959,6 @@ province_event = {
 					accepted_culture = assamese
 					primary_culture = assamese
 				}
-				exists = no
 			}
 		}
 	}
@@ -14821,6 +15055,9 @@ province_event = {
 				tag = BNG
 			}
 			NOT = {
+				exists = BNG
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = BNG
 				}
@@ -14830,7 +15067,6 @@ province_event = {
 					accepted_culture = bengali
 					primary_culture = bengali
 				}
-				exists = no
 			}
 		}
 	}
@@ -14927,6 +15163,9 @@ province_event = {
 				tag = SIA
 			}
 			NOT = {
+				exists = SIA
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = SIA
 				}
@@ -14936,7 +15175,6 @@ province_event = {
 					accepted_culture = thai
 					primary_culture = thai
 				}
-				exists = no
 			}
 		}
 	}
@@ -14998,6 +15236,9 @@ province_event = {
 				tag = BIH
 			}
 			NOT = {
+				exists = BIH
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = BIH
 				}
@@ -15007,7 +15248,6 @@ province_event = {
 					accepted_culture = bihari
 					primary_culture = bihari
 				}
-				exists = no
 			}
 		}
 	}
@@ -15139,12 +15379,14 @@ province_event = {
 				tag = D08
 			}
 			NOT = {
+				exists = D08
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D08
 				}
 			}
 			D08 = {
-				exists = no
 			}
 		}
 	}
@@ -15246,6 +15488,9 @@ province_event = {
 				tag = ORI
 			}
 			NOT = {
+				exists = ORI
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = ORI
 				}
@@ -15255,7 +15500,6 @@ province_event = {
 					accepted_culture = oriya
 					primary_culture = oriya
 				}
-				exists = no
 			}
 		}
 	}
@@ -15352,12 +15596,14 @@ province_event = {
 				tag = D32
 			}
 			NOT = {
+				exists = D32
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D32
 				}
 			}
 			D32 = {
-				exists = no
 			}
 		}
 	}
@@ -15424,12 +15670,14 @@ province_event = {
 				tag = D09
 			}
 			NOT = {
+				exists = D09
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D09
 				}
 			}
 			D09 = {
-				exists = no
 			}
 		}
 	}
@@ -15671,6 +15919,9 @@ province_event = {
 				tag = BUN
 			}
 			NOT = {
+				exists = BUN
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = BUN
 				}
@@ -15680,7 +15931,6 @@ province_event = {
 					accepted_culture = kanauji
 					primary_culture = kanauji
 				}
-				exists = no
 			}
 		}
 	}
@@ -15777,6 +16027,9 @@ province_event = {
 				tag = KAS
 			}
 			NOT = {
+				exists = KAS
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = KAS
 				}
@@ -15786,7 +16039,6 @@ province_event = {
 					accepted_culture = kashmiri
 					primary_culture = kashmiri
 				}
-				exists = no
 			}
 		}
 	}
@@ -15883,12 +16135,14 @@ province_event = {
 				tag = D39
 			}
 			NOT = {
+				exists = D39
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D39
 				}
 			}
 			D39 = {
-				exists = no
 			}
 		}
 	}
@@ -16095,12 +16349,14 @@ province_event = {
 				tag = D25
 			}
 			NOT = {
+				exists = D25
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D25
 				}
 			}
 			D25 = {
-				exists = no
 			}
 		}
 	}
@@ -16167,12 +16423,14 @@ province_event = {
 				tag = D10
 			}
 			NOT = {
+				exists = D10
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D10
 				}
 			}
 			D10 = {
-				exists = no
 			}
 		}
 	}
@@ -16589,12 +16847,14 @@ province_event = {
 				tag = D12
 			}
 			NOT = {
+				exists = D12
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D12
 				}
 			}
 			D12 = {
-				exists = no
 			}
 		}
 	}
@@ -16660,6 +16920,9 @@ province_event = {
 			NOT = {
 				tag = BRZ
 			}
+			NOT = {
+				exists = BRZ
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -16671,7 +16934,6 @@ province_event = {
 					accepted_culture = afro_brazilian
 					primary_culture = afro_brazilian
 				}
-				exists = no
 			}
 		}
 	}
@@ -16768,12 +17030,14 @@ province_event = {
 				tag = D15
 			}
 			NOT = {
+				exists = D15
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D15
 				}
 			}
 			D15 = {
-				exists = no
 			}
 		}
 	}
@@ -16840,6 +17104,9 @@ province_event = {
 				tag = SIN
 			}
 			NOT = {
+				exists = SIN
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = SIN
 				}
@@ -16849,7 +17116,6 @@ province_event = {
 					accepted_culture = sindi
 					primary_culture = sindi
 				}
-				exists = no
 			}
 		}
 	}
@@ -16946,12 +17212,14 @@ province_event = {
 				tag = D28
 			}
 			NOT = {
+				exists = D28
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D28
 				}
 			}
 			D28 = {
-				exists = no
 			}
 		}
 	}
@@ -17018,12 +17286,14 @@ province_event = {
 				tag = D38
 			}
 			NOT = {
+				exists = D38
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D38
 				}
 			}
 			D38 = {
-				exists = no
 			}
 		}
 	}
@@ -17335,12 +17605,14 @@ province_event = {
 				tag = D43
 			}
 			NOT = {
+				exists = D43
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D43
 				}
 			}
 			D43 = {
-				exists = no
 			}
 		}
 	}
@@ -17407,6 +17679,9 @@ province_event = {
 				tag = GXI
 			}
 			NOT = {
+				exists = GXI
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = GXI
 				}
@@ -17416,7 +17691,6 @@ province_event = {
 					accepted_culture = zhuang
 					primary_culture = zhuang
 				}
-				exists = no
 			}
 		}
 	}
@@ -17478,6 +17752,9 @@ province_event = {
 				tag = MYS
 			}
 			NOT = {
+				exists = MYS
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = MYS
 				}
@@ -17487,7 +17764,6 @@ province_event = {
 					accepted_culture = kannada
 					primary_culture = kannada
 				}
-				exists = no
 			}
 		}
 	}
@@ -17584,6 +17860,9 @@ province_event = {
 				tag = ZUL
 			}
 			NOT = {
+				exists = ZUL
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = ZUL
 				}
@@ -17593,7 +17872,6 @@ province_event = {
 					accepted_culture = sotho
 					primary_culture = sotho
 				}
-				exists = no
 			}
 		}
 	}
@@ -17655,6 +17933,9 @@ province_event = {
 				tag = TRA
 			}
 			NOT = {
+				exists = TRA
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = TRA
 				}
@@ -17664,7 +17945,6 @@ province_event = {
 					accepted_culture = malayalam
 					primary_culture = malayalam
 				}
-				exists = no
 			}
 		}
 	}
@@ -17761,6 +18041,9 @@ province_event = {
 				tag = BAS
 			}
 			NOT = {
+				exists = BAS
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = BAS
 				}
@@ -17770,7 +18053,6 @@ province_event = {
 					accepted_culture = telegu
 					primary_culture = telegu
 				}
-				exists = no
 			}
 		}
 	}
@@ -17937,12 +18219,14 @@ province_event = {
 				tag = D11
 			}
 			NOT = {
+				exists = D11
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D11
 				}
 			}
 			D11 = {
-				exists = no
 			}
 		}
 	}
@@ -18184,6 +18468,9 @@ province_event = {
 				tag = BAL
 			}
 			NOT = {
+				exists = BAL
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = BAL
 				}
@@ -18193,7 +18480,6 @@ province_event = {
 					accepted_culture = moluccan
 					primary_culture = moluccan
 				}
-				exists = no
 			}
 		}
 	}
@@ -18255,12 +18541,14 @@ province_event = {
 				tag = D48
 			}
 			NOT = {
+				exists = D48
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D48
 				}
 			}
 			D48 = {
-				exists = no
 			}
 		}
 	}
@@ -18327,12 +18615,14 @@ province_event = {
 				tag = D41
 			}
 			NOT = {
+				exists = D41
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D41
 				}
 			}
 			D41 = {
-				exists = no
 			}
 		}
 	}
@@ -18469,12 +18759,14 @@ province_event = {
 				tag = D12
 			}
 			NOT = {
+				exists = D12
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D12
 				}
 			}
 			D12 = {
-				exists = no
 			}
 		}
 	}
@@ -18541,12 +18833,14 @@ province_event = {
 				tag = D19
 			}
 			NOT = {
+				exists = D19
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D19
 				}
 			}
 			D19 = {
-				exists = no
 			}
 		}
 	}
@@ -18613,6 +18907,9 @@ province_event = {
 				tag = BUR
 			}
 			NOT = {
+				exists = BUR
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = BUR
 				}
@@ -18622,7 +18919,6 @@ province_event = {
 					accepted_culture = burmese
 					primary_culture = burmese
 				}
-				exists = no
 			}
 		}
 	}
@@ -18684,12 +18980,14 @@ province_event = {
 				tag = D31
 			}
 			NOT = {
+				exists = D31
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D31
 				}
 			}
 			D31 = {
-				exists = no
 			}
 		}
 	}
@@ -18756,6 +19054,9 @@ province_event = {
 				tag = ETH
 			}
 			NOT = {
+				exists = ETH
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = ETH
 				}
@@ -18765,7 +19066,6 @@ province_event = {
 					accepted_culture = amhara
 					primary_culture = amhara
 				}
-				exists = no
 			}
 		}
 	}
@@ -18827,12 +19127,14 @@ province_event = {
 				tag = D43
 			}
 			NOT = {
+				exists = D43
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D43
 				}
 			}
 			D43 = {
-				exists = no
 			}
 		}
 	}
@@ -18899,12 +19201,14 @@ province_event = {
 				tag = D20
 			}
 			NOT = {
+				exists = D20
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D20
 				}
 			}
 			D20 = {
-				exists = no
 			}
 		}
 	}
@@ -18971,12 +19275,14 @@ province_event = {
 				tag = D23
 			}
 			NOT = {
+				exists = D23
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D23
 				}
 			}
 			D23 = {
-				exists = no
 			}
 		}
 	}
@@ -19043,12 +19349,14 @@ province_event = {
 				tag = D14
 			}
 			NOT = {
+				exists = D14
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D14
 				}
 			}
 			D14 = {
-				exists = no
 			}
 		}
 	}
@@ -19115,6 +19423,9 @@ province_event = {
 				tag = KOR
 			}
 			NOT = {
+				exists = KOR
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = KOR
 				}
@@ -19124,7 +19435,6 @@ province_event = {
 					accepted_culture = korean
 					primary_culture = korean
 				}
-				exists = no
 			}
 		}
 	}
@@ -19186,6 +19496,9 @@ province_event = {
 				tag = JAP
 			}
 			NOT = {
+				exists = JAP
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = JAP
 				}
@@ -19195,7 +19508,6 @@ province_event = {
 					accepted_culture = ainu
 					primary_culture = ainu
 				}
-				exists = no
 			}
 		}
 	}
@@ -19257,12 +19569,14 @@ province_event = {
 				tag = D42
 			}
 			NOT = {
+				exists = D42
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D42
 				}
 			}
 			D42 = {
-				exists = no
 			}
 		}
 	}
@@ -19329,12 +19643,14 @@ province_event = {
 				tag = D16
 			}
 			NOT = {
+				exists = D16
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D16
 				}
 			}
 			D16 = {
-				exists = no
 			}
 		}
 	}
@@ -19401,12 +19717,14 @@ province_event = {
 				tag = D34
 			}
 			NOT = {
+				exists = D34
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D34
 				}
 			}
 			D34 = {
-				exists = no
 			}
 		}
 	}
@@ -19473,12 +19791,14 @@ province_event = {
 				tag = D44
 			}
 			NOT = {
+				exists = D44
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D44
 				}
 			}
 			D44 = {
-				exists = no
 			}
 		}
 	}
@@ -19720,6 +20040,9 @@ province_event = {
 				tag = MCK
 			}
 			NOT = {
+				exists = MCK
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = MCK
 				}
@@ -19729,7 +20052,6 @@ province_event = {
 					accepted_culture = manchu
 					primary_culture = manchu
 				}
-				exists = no
 			}
 		}
 	}
@@ -19826,12 +20148,14 @@ province_event = {
 				tag = D17
 			}
 			NOT = {
+				exists = D17
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D17
 				}
 			}
 			D17 = {
-				exists = no
 			}
 		}
 	}
@@ -20072,6 +20396,9 @@ province_event = {
 			NOT = {
 				tag = AST
 			}
+			NOT = {
+				exists = AST
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -20083,7 +20410,6 @@ province_event = {
 					accepted_culture = australian
 					primary_culture = australian
 				}
-				exists = no
 			}
 		}
 	}
@@ -20145,12 +20471,14 @@ province_event = {
 				tag = D47
 			}
 			NOT = {
+				exists = D47
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D47
 				}
 			}
 			D47 = {
-				exists = no
 			}
 		}
 	}
@@ -20357,12 +20685,14 @@ province_event = {
 				tag = D19
 			}
 			NOT = {
+				exists = D19
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D19
 				}
 			}
 			D19 = {
-				exists = no
 			}
 		}
 	}
@@ -20429,12 +20759,14 @@ province_event = {
 				tag = D49
 			}
 			NOT = {
+				exists = D49
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D49
 				}
 			}
 			D49 = {
-				exists = no
 			}
 		}
 	}
@@ -20501,12 +20833,14 @@ province_event = {
 				tag = D20
 			}
 			NOT = {
+				exists = D20
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D20
 				}
 			}
 			D20 = {
-				exists = no
 			}
 		}
 	}
@@ -20573,12 +20907,14 @@ province_event = {
 				tag = D33
 			}
 			NOT = {
+				exists = D33
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D33
 				}
 			}
 			D33 = {
-				exists = no
 			}
 		}
 	}
@@ -20855,12 +21191,14 @@ province_event = {
 				tag = D24
 			}
 			NOT = {
+				exists = D24
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D24
 				}
 			}
 			D24 = {
-				exists = no
 			}
 		}
 	}
@@ -20927,6 +21265,9 @@ province_event = {
 				tag = MAD
 			}
 			NOT = {
+				exists = MAD
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = MAD
 				}
@@ -20936,7 +21277,6 @@ province_event = {
 					accepted_culture = malagasy
 					primary_culture = malagasy
 				}
-				exists = no
 			}
 		}
 	}
@@ -20997,6 +21337,9 @@ province_event = {
 			NOT = {
 				tag = MTC
 			}
+			NOT = {
+				exists = MTC
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -21008,7 +21351,6 @@ province_event = {
 					accepted_culture = metis
 					primary_culture = metis
 				}
-				exists = no
 			}
 		}
 	}
@@ -21070,12 +21412,14 @@ province_event = {
 				tag = D28
 			}
 			NOT = {
+				exists = D28
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D28
 				}
 			}
 			D28 = {
-				exists = no
 			}
 		}
 	}
@@ -21141,6 +21485,9 @@ province_event = {
 			NOT = {
 				tag = PRG
 			}
+			NOT = {
+				exists = PRG
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -21152,7 +21499,6 @@ province_event = {
 					accepted_culture = guarani
 					primary_culture = guarani
 				}
-				exists = no
 			}
 		}
 	}
@@ -21249,12 +21595,14 @@ province_event = {
 				tag = D29
 			}
 			NOT = {
+				exists = D29
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D29
 				}
 			}
 			D29 = {
-				exists = no
 			}
 		}
 	}
@@ -21321,12 +21669,14 @@ province_event = {
 				tag = D30
 			}
 			NOT = {
+				exists = D30
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D30
 				}
 			}
 			D30 = {
-				exists = no
 			}
 		}
 	}
@@ -21393,12 +21743,14 @@ province_event = {
 				tag = D30
 			}
 			NOT = {
+				exists = D30
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D30
 				}
 			}
 			D30 = {
-				exists = no
 			}
 		}
 	}
@@ -21465,12 +21817,14 @@ province_event = {
 				tag = D04
 			}
 			NOT = {
+				exists = D04
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D04
 				}
 			}
 			D04 = {
-				exists = no
 			}
 		}
 	}
@@ -21572,12 +21926,14 @@ province_event = {
 				tag = D36
 			}
 			NOT = {
+				exists = D36
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D36
 				}
 			}
 			D36 = {
-				exists = no
 			}
 		}
 	}
@@ -21644,12 +22000,14 @@ province_event = {
 				tag = D35
 			}
 			NOT = {
+				exists = D35
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D35
 				}
 			}
 			D35 = {
-				exists = no
 			}
 		}
 	}
@@ -21716,12 +22074,14 @@ province_event = {
 				tag = D37
 			}
 			NOT = {
+				exists = D37
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D37
 				}
 			}
 			D37 = {
-				exists = no
 			}
 		}
 	}
@@ -21788,12 +22148,14 @@ province_event = {
 				tag = D08
 			}
 			NOT = {
+				exists = D08
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D08
 				}
 			}
 			D08 = {
-				exists = no
 			}
 		}
 	}
@@ -21860,12 +22222,14 @@ province_event = {
 				tag = D40
 			}
 			NOT = {
+				exists = D40
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D40
 				}
 			}
 			D40 = {
-				exists = no
 			}
 		}
 	}
@@ -22106,6 +22470,9 @@ province_event = {
 			NOT = {
 				tag = CSA
 			}
+			NOT = {
+				exists = CSA
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -22117,7 +22484,6 @@ province_event = {
 					accepted_culture = dixie
 					primary_culture = dixie
 				}
-				exists = no
 			}
 		}
 	}
@@ -22354,12 +22720,14 @@ province_event = {
 				tag = D06
 			}
 			NOT = {
+				exists = D06
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D06
 				}
 			}
 			D06 = {
-				exists = no
 			}
 		}
 	}
@@ -22425,6 +22793,9 @@ province_event = {
 			NOT = {
 				tag = NZL
 			}
+			NOT = {
+				exists = NZL
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -22436,7 +22807,6 @@ province_event = {
 					accepted_culture = new_zelandian
 					primary_culture = new_zelandian
 				}
-				exists = no
 			}
 		}
 	}
@@ -22498,12 +22868,14 @@ province_event = {
 				tag = D07
 			}
 			NOT = {
+				exists = D07
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D07
 				}
 			}
 			D07 = {
-				exists = no
 			}
 		}
 	}
@@ -22570,12 +22942,14 @@ province_event = {
 				tag = D50
 			}
 			NOT = {
+				exists = D50
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D50
 				}
 			}
 			D50 = {
-				exists = no
 			}
 		}
 	}
@@ -22712,12 +23086,14 @@ province_event = {
 				tag = D26
 			}
 			NOT = {
+				exists = D26
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D26
 				}
 			}
 			D26 = {
-				exists = no
 			}
 		}
 	}
@@ -22959,12 +23335,14 @@ province_event = {
 				tag = D01
 			}
 			NOT = {
+				exists = D01
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D01
 				}
 			}
 			D01 = {
-				exists = no
 			}
 		}
 	}
@@ -23275,6 +23653,9 @@ province_event = {
 			NOT = {
 				tag = DOM
 			}
+			NOT = {
+				exists = DOM
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -23286,7 +23667,6 @@ province_event = {
 					accepted_culture = caribeno
 					primary_culture = caribeno
 				}
-				exists = no
 			}
 		}
 	}
@@ -23383,12 +23763,14 @@ province_event = {
 				tag = D10
 			}
 			NOT = {
+				exists = D10
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D10
 				}
 			}
 			D10 = {
-				exists = no
 			}
 		}
 	}
@@ -23454,6 +23836,9 @@ province_event = {
 			NOT = {
 				tag = CUB
 			}
+			NOT = {
+				exists = CUB
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -23465,7 +23850,6 @@ province_event = {
 					accepted_culture = cubans
 					primary_culture = cubans
 				}
-				exists = no
 			}
 		}
 	}
@@ -23527,12 +23911,14 @@ province_event = {
 				tag = D32
 			}
 			NOT = {
+				exists = D32
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D32
 				}
 			}
 			D32 = {
-				exists = no
 			}
 		}
 	}
@@ -23738,6 +24124,9 @@ province_event = {
 			NOT = {
 				tag = BRZ
 			}
+			NOT = {
+				exists = BRZ
+			}
 			civilized = yes
 			NOT = {
 				any_owned_province = {
@@ -23749,7 +24138,6 @@ province_event = {
 					accepted_culture = brazilian
 					primary_culture = brazilian
 				}
-				exists = no
 			}
 		}
 	}
@@ -23846,12 +24234,14 @@ province_event = {
 				tag = D31
 			}
 			NOT = {
+				exists = D31
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D31
 				}
 			}
 			D31 = {
-				exists = no
 			}
 		}
 	}
@@ -23988,12 +24378,14 @@ province_event = {
 				tag = D05
 			}
 			NOT = {
+				exists = D05
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D05
 				}
 			}
 			D05 = {
-				exists = no
 			}
 		}
 	}
@@ -24095,12 +24487,14 @@ province_event = {
 				tag = D47
 			}
 			NOT = {
+				exists = D47
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D47
 				}
 			}
 			D47 = {
-				exists = no
 			}
 		}
 	}
@@ -24167,12 +24561,14 @@ province_event = {
 				tag = D34
 			}
 			NOT = {
+				exists = D34
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D34
 				}
 			}
 			D34 = {
-				exists = no
 			}
 		}
 	}
@@ -24239,12 +24635,14 @@ province_event = {
 				tag = D44
 			}
 			NOT = {
+				exists = D44
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D44
 				}
 			}
 			D44 = {
-				exists = no
 			}
 		}
 	}
@@ -24311,12 +24709,14 @@ province_event = {
 				tag = D08
 			}
 			NOT = {
+				exists = D08
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D08
 				}
 			}
 			D08 = {
-				exists = no
 			}
 		}
 	}
@@ -24383,12 +24783,14 @@ province_event = {
 				tag = D09
 			}
 			NOT = {
+				exists = D09
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D09
 				}
 			}
 			D09 = {
-				exists = no
 			}
 		}
 	}
@@ -24455,12 +24857,14 @@ province_event = {
 				tag = D49
 			}
 			NOT = {
+				exists = D49
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D49
 				}
 			}
 			D49 = {
-				exists = no
 			}
 		}
 	}
@@ -24597,6 +25001,9 @@ province_event = {
 				tag = SOK
 			}
 			NOT = {
+				exists = SOK
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = SOK
 				}
@@ -24606,7 +25013,6 @@ province_event = {
 					accepted_culture = fulbe
 					primary_culture = fulbe
 				}
-				exists = no
 			}
 		}
 	}
@@ -24668,12 +25074,14 @@ province_event = {
 				tag = D38
 			}
 			NOT = {
+				exists = D38
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D38
 				}
 			}
 			D38 = {
-				exists = no
 			}
 		}
 	}
@@ -24740,6 +25148,9 @@ province_event = {
 				tag = LIB
 			}
 			NOT = {
+				exists = LIB
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = LIB
 				}
@@ -24749,7 +25160,6 @@ province_event = {
 					accepted_culture = kru
 					primary_culture = kru
 				}
-				exists = no
 			}
 		}
 	}
@@ -24811,12 +25221,14 @@ province_event = {
 				tag = D22
 			}
 			NOT = {
+				exists = D22
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D22
 				}
 			}
 			D22 = {
-				exists = no
 			}
 		}
 	}
@@ -24883,12 +25295,14 @@ province_event = {
 				tag = D11
 			}
 			NOT = {
+				exists = D11
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D11
 				}
 			}
 			D11 = {
-				exists = no
 			}
 		}
 	}
@@ -24955,6 +25369,9 @@ province_event = {
 				tag = ZUL
 			}
 			NOT = {
+				exists = ZUL
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = ZUL
 				}
@@ -24964,7 +25381,6 @@ province_event = {
 					accepted_culture = nguni
 					primary_culture = nguni
 				}
-				exists = no
 			}
 		}
 	}
@@ -25026,12 +25442,14 @@ province_event = {
 				tag = D41
 			}
 			NOT = {
+				exists = D41
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D41
 				}
 			}
 			D41 = {
-				exists = no
 			}
 		}
 	}
@@ -25098,6 +25516,9 @@ province_event = {
 				tag = SOK
 			}
 			NOT = {
+				exists = SOK
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = SOK
 				}
@@ -25107,7 +25528,6 @@ province_event = {
 					accepted_culture = tiv
 					primary_culture = tiv
 				}
-				exists = no
 			}
 		}
 	}
@@ -25169,12 +25589,14 @@ province_event = {
 				tag = D29
 			}
 			NOT = {
+				exists = D29
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D29
 				}
 			}
 			D29 = {
-				exists = no
 			}
 		}
 	}
@@ -25241,6 +25663,9 @@ province_event = {
 				tag = TRI
 			}
 			NOT = {
+				exists = TRI
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = TRI
 				}
@@ -25250,7 +25675,6 @@ province_event = {
 					accepted_culture = tuareg
 					primary_culture = tuareg
 				}
-				exists = no
 			}
 		}
 	}
@@ -25312,12 +25736,14 @@ province_event = {
 				tag = D14
 			}
 			NOT = {
+				exists = D14
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D14
 				}
 			}
 			D14 = {
-				exists = no
 			}
 		}
 	}
@@ -25384,6 +25810,9 @@ province_event = {
 				tag = ETH
 			}
 			NOT = {
+				exists = ETH
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = ETH
 				}
@@ -25393,7 +25822,6 @@ province_event = {
 					accepted_culture = oromo
 					primary_culture = oromo
 				}
-				exists = no
 			}
 		}
 	}
@@ -25455,12 +25883,14 @@ province_event = {
 				tag = D42
 			}
 			NOT = {
+				exists = D42
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D42
 				}
 			}
 			D42 = {
-				exists = no
 			}
 		}
 	}
@@ -25527,12 +25957,14 @@ province_event = {
 				tag = D09
 			}
 			NOT = {
+				exists = D09
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D09
 				}
 			}
 			D09 = {
-				exists = no
 			}
 		}
 	}
@@ -25599,6 +26031,9 @@ province_event = {
 				tag = CNG
 			}
 			NOT = {
+				exists = CNG
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = CNG
 				}
@@ -25608,7 +26043,6 @@ province_event = {
 					accepted_culture = bakongo
 					primary_culture = bakongo
 				}
-				exists = no
 			}
 		}
 	}
@@ -25670,12 +26104,14 @@ province_event = {
 				tag = D45
 			}
 			NOT = {
+				exists = D45
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D45
 				}
 			}
 			D45 = {
-				exists = no
 			}
 		}
 	}
@@ -25742,12 +26178,14 @@ province_event = {
 				tag = D16
 			}
 			NOT = {
+				exists = D16
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D16
 				}
 			}
 			D16 = {
-				exists = no
 			}
 		}
 	}
@@ -25814,12 +26252,14 @@ province_event = {
 				tag = D26
 			}
 			NOT = {
+				exists = D26
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D26
 				}
 			}
 			D26 = {
-				exists = no
 			}
 		}
 	}
@@ -25886,12 +26326,14 @@ province_event = {
 				tag = D17
 			}
 			NOT = {
+				exists = D17
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D17
 				}
 			}
 			D17 = {
-				exists = no
 			}
 		}
 	}
@@ -25958,12 +26400,14 @@ province_event = {
 				tag = D48
 			}
 			NOT = {
+				exists = D48
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D48
 				}
 			}
 			D48 = {
-				exists = no
 			}
 		}
 	}
@@ -26030,12 +26474,14 @@ province_event = {
 				tag = D21
 			}
 			NOT = {
+				exists = D21
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D21
 				}
 			}
 			D21 = {
-				exists = no
 			}
 		}
 	}
@@ -26102,12 +26548,14 @@ province_event = {
 				tag = D23
 			}
 			NOT = {
+				exists = D23
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D23
 				}
 			}
 			D23 = {
-				exists = no
 			}
 		}
 	}
@@ -26174,12 +26622,14 @@ province_event = {
 				tag = D36
 			}
 			NOT = {
+				exists = D36
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D36
 				}
 			}
 			D36 = {
-				exists = no
 			}
 		}
 	}
@@ -26246,6 +26696,9 @@ province_event = {
 				tag = ZUL
 			}
 			NOT = {
+				exists = ZUL
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = ZUL
 				}
@@ -26255,7 +26708,6 @@ province_event = {
 					accepted_culture = zulu
 					primary_culture = zulu
 				}
-				exists = no
 			}
 		}
 	}
@@ -26317,12 +26769,14 @@ province_event = {
 				tag = D37
 			}
 			NOT = {
+				exists = D37
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D37
 				}
 			}
 			D37 = {
-				exists = no
 			}
 		}
 	}
@@ -26389,12 +26843,14 @@ province_event = {
 				tag = D46
 			}
 			NOT = {
+				exists = D46
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D46
 				}
 			}
 			D46 = {
-				exists = no
 			}
 		}
 	}
@@ -26461,12 +26917,14 @@ province_event = {
 				tag = D02
 			}
 			NOT = {
+				exists = D02
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D02
 				}
 			}
 			D02 = {
-				exists = no
 			}
 		}
 	}
@@ -26533,12 +26991,14 @@ province_event = {
 				tag = D03
 			}
 			NOT = {
+				exists = D03
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D03
 				}
 			}
 			D03 = {
-				exists = no
 			}
 		}
 	}
@@ -26605,12 +27065,14 @@ province_event = {
 				tag = D04
 			}
 			NOT = {
+				exists = D04
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D04
 				}
 			}
 			D04 = {
-				exists = no
 			}
 		}
 	}
@@ -26677,12 +27139,14 @@ province_event = {
 				tag = D06
 			}
 			NOT = {
+				exists = D06
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D06
 				}
 			}
 			D06 = {
-				exists = no
 			}
 		}
 	}
@@ -26749,12 +27213,14 @@ province_event = {
 				tag = D07
 			}
 			NOT = {
+				exists = D07
+			}
+			NOT = {
 				any_owned_province = {
 					is_core = D07
 				}
 			}
 			D07 = {
-				exists = no
 			}
 		}
 	}

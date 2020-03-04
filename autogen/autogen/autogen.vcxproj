@@ -101,8 +101,10 @@
     <ClCompile Include="events_id_checker.cpp" />
     <ClCompile Include="events_to_change_primary_culturies.cpp" />
     <ClCompile Include="new_primary_culture_for_dxx.cpp" />
+    <ClCompile Include="peaceful_settlement.cpp" />
     <ClCompile Include="plus_minus_cultures_events.cpp" />
     <ClCompile Include="simple_events.cpp" />
+    <ClCompile Include="test.cpp" />
     <ClCompile Include="_main.cpp" />
     <ClCompile Include="_pch_autogen.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -116,8 +118,10 @@
     <ClInclude Include="events_id_checker.h" />
     <ClInclude Include="events_to_change_primary_culturies.h" />
     <ClInclude Include="new_primary_culture_for_dxx.h" />
+    <ClInclude Include="peaceful_settlement.h" />
     <ClInclude Include="plus_minus_cultures_events.h" />
     <ClInclude Include="simple_events.h" />
+    <ClInclude Include="test.h" />
     <ClInclude Include="_pch_autogen.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
