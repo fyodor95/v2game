@@ -192,16 +192,6 @@ BHU = {
 	influence_value = 25
 }
 
-GXI = {
-	value = 55
-	influence_value = 25
-}
-
-YNN = {
-	value = 55
-	influence_value = 25
-}
-
 HAN = {
 	value = 125
 	level = 5
