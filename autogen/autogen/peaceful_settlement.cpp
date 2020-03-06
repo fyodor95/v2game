@@ -2,76 +2,69 @@
 #include "events.h"
 #include "peaceful_settlement.h"
 
-template <size_t i = 0u>
-static void Generate(uint const id, std::ofstream & eventOutput,
-                     tDecisionOutput & decisionOutput, std::ofstream & localizationOutput)
+static void Generate(size_t const i, uint const id, tDecisionOutput & decisionOutput,
+                     std::ofstream & localizationOutput)
 {
-    constexpr tTag tag = kTags[i];
+    tTag const tag = kTags[i];
     tConditions<tTarget::kCountry> potentialConditions1
     {
-        Exists<tag>(),
-        Not(TagIs<tag>()),
+        Exists(tag),
+        Not(TagIs(tag)),
         IsIndependant(),
         Or<tTarget::kCountry>
         ({
-            WarPolicyIs<tWarPolicy::anti_military>(),
-            WarPolicyIs<tWarPolicy::pacifism>()
+            WarPolicyIs(tWarPolicy::anti_military),
+            WarPolicyIs(tWarPolicy::pacifism)
         })
     };
     tConditions<tTarget::kCountry> potentialConditions2 = potentialConditions1;
-    potentialConditions1.push_back(AnyOwnedProvince(IsNationalFor<tag>()));
-    potentialConditions1.push_back(AnyOwnedProvince(Not(IsNationalFor<tag>())));
-    potentialConditions2.push_back(AllProvinces(IsNationalFor<tag>()));
+    potentialConditions1.push_back(AnyOwnedProvince(IsNationalFor(tag)));
+    potentialConditions1.push_back(AnyOwnedProvince(Not(IsNationalFor(tag))));
+    potentialConditions2.push_back(AllProvinces(IsNationalFor(tag)));
     tConditions<tTarget::kCountry> allowedConditions1
     {
-        Not(WarWith<tag>()),
-        RelationWithCountryIsHigherOrEqual<tag>(-100),
-        AllProvinces(Or<tTarget::kProvince>({Not(IsNationalFor<tag>()), ControlledBy<tTag::kThis>()}))
+        Not(WarWith(tag)),
+        RelationWithCountryIsHigherOrEqual(tag, -100),
+        AllProvinces(Or<tTarget::kProvince>({Not(IsNationalFor(tag)), ControlledBy(tTag::kThis)}))
     };
     tConditions<tTarget::kCountry> allowedConditions2
     {
-        Not(WarWith<tag>()),
-        RelationWithCountryIsHigherOrEqual<tag>(100),
-        AllProvinces(ControlledBy<tTag::kThis>())
+        Not(WarWith(tag)),
+        RelationWithCountryIsHigherOrEqual(tag, 100),
+        AllProvinces(ControlledBy(tTag::kThis))
     };
     tConditions<tTarget::kCountry> aiWillDoIt1
     {
-        IsNeighbor<tag>(),
+        IsNeighbor(tag),
         Not(IsPartOfSphere()),
-        ConditionsForSpecifiedCountry<tag>({War(_No), IsMobilised(_No)}),
+        ConditionsForSpecifiedCountry(tag, {War(_No), IsMobilised(_No)}),
         Or<tTarget::kCountry>
         ({
             And<tTarget::kCountry>
             ({
-                NumOfBrigadesNTimesLessThan<tag>(4.f),
-                Not(HasMuchBetterArmyTechsThan<tag>())
+                NumOfBrigadesNTimesLessThan(tag, 4.f),
+                Not(HasMuchBetterArmyTechsThan(tag))
             }),
             And<tTarget::kCountry>
             ({
-                NumOfBrigadesNTimesLessThan<tag>(1.f),
-                ConditionsForSpecifiedCountry<tag>({HasMuchBetterArmyTechsThan<tTag::kThis>()})
+                NumOfBrigadesNTimesLessThan(tag, 1.f),
+                ConditionsForSpecifiedCountry(tag, {HasMuchBetterArmyTechsThan(tTag::kThis)})
             })
         })
     };
     tConditions<tTarget::kCountry> aiWillDoIt2 = aiWillDoIt1;
     std::string name = (std::string("Мирное урегулирование территориальных споров с державой ") +
-                        nsTag::Localization<tag>());
-    std::string desc = (std::string("Мы решили попробовать договориться с державой ") + nsTag::Localization<tag>() +
+                        Localization(tag));
+    std::string desc = (std::string("Мы решили попробовать договориться с державой ") + Localization(tag) +
                         " цивилизованным путём.");
-    Decision(nsTag::ToString<tag>() + std::string("_peaceful_settlement"), name.data(), desc.data(),
+    Decision(ToString(tag) + std::string("_peaceful_settlement"), name.data(), desc.data(),
              decisionOutput, localizationOutput, std::move(potentialConditions1),
-             std::move(allowedConditions1), {EventInCountry<tag>(id)}, &aiWillDoIt1);
-    name = std::string("Просьба о вхождении в состав державы ") + nsTag::Localization<tag>();
-    desc = (std::string("Мы решили попросить державу ") + nsTag::Localization<tag>() + " войти в её состав.");
-    Decision(nsTag::ToString<tag>() + std::string("_peaceful_unification"), name.data(), desc.data(),
+             std::move(allowedConditions1), {EventInCountry(tag, id)}, &aiWillDoIt1);
+    name = std::string("Просьба о вхождении в состав державы ") + Localization(tag);
+    desc = (std::string("Мы решили попросить державу ") + Localization(tag) + " войти в её состав.");
+    Decision(ToString(tag) + std::string("_peaceful_unification"), name.data(), desc.data(),
              decisionOutput, localizationOutput, std::move(potentialConditions2),
-             std::move(allowedConditions2), {EventInCountry<tag>(id + 3u)}, &aiWillDoIt2);
-    Generate<i + 1u>(id, eventOutput, decisionOutput, localizationOutput);
-}
-
-template <>
-void Generate<kTags.size()>(uint, std::ofstream &, tDecisionOutput &, std::ofstream &)
-{
+             std::move(allowedConditions2), {EventInCountry(tag, id + 3u)}, &aiWillDoIt2);
 }
 
 void PeacefulSettlement()
@@ -80,19 +73,20 @@ void PeacefulSettlement()
     tDecisionOutput   decisionOutput   ("decisions\\peaceful_settlement.txt");
     std::ofstream localizationOutput("localisation\\peaceful_settlement.csv");
     uint id = 76000u;
-    Generate(id, eventOutput, decisionOutput, localizationOutput);
-    std::string name = std::string("Предложение державы ") + nsTag::Localization<tTag::kFrom>();
+    for (size_t i = 0u; i < kTags.size(); ++i)
+        Generate(i, id, decisionOutput, localizationOutput);
+    std::string name = std::string("Предложение державы ") + Localization(tTag::kFrom);
     std::string desc =
     (
-        std::string("Послы державы ") + nsTag::Localization<tTag::kFrom>() +
+        std::string("Послы державы ") + Localization(tTag::kFrom) +
         " сегодня обратились к Вам с предложением передать нашей державе все национальные для нас провинции, " +
-        "которыми владеет держава " + nsTag::Localization<tTag::kFrom>() + '.'
+        "которыми владеет держава " + Localization(tTag::kFrom) + '.'
     );
     tOptions<tTarget::kCountry> options1
     {
         Option<tTarget::kCountry>
         (
-            {EventInCountry<tTag::kFrom>(id + 1u)},
+            {EventInCountry(tTag::kFrom, id + 1u)},
             id,
             1u,
             100u
@@ -100,16 +94,19 @@ void PeacefulSettlement()
         Option<tTarget::kCountry>
         (
             {
-                EffectsForSpecifiedCountry<tTag::kFrom>
-                ({
-                    EffectsForOwnedProvinces
-                    (
-                        {IsNationalFor<tTag::kThis>()},
-                        {MakeNationalFor<tTag::kThis>(_No)}
-                    )
-                }),
+                EffectsForSpecifiedCountry
+                (
+                    tTag::kFrom,
+                    {
+                        EffectsForOwnedProvinces
+                        (
+                            {IsNationalFor(tTag::kThis)},
+                            {MakeNationalFor(tTag::kThis, _No)}
+                        )
+                    }
+                ),
                 AddPrestige(-5),
-                EventInCountry<tTag::kFrom>(id + 2u)
+                EventInCountry(tTag::kFrom, id + 2u)
             },
             id,
             2u,
@@ -123,12 +120,12 @@ void PeacefulSettlement()
             {
                 EffectsForOwnedProvinces
                 (
-                    {IsNationalFor<tTag::kFrom>()},
-                    {ChangeOwner<tTag::kFrom>(), MakeNationalFor<tTag::kThis>(_No)}
+                    {IsNationalFor(tTag::kFrom)},
+                    {ChangeOwner(tTag::kFrom), MakeNationalFor(tTag::kThis, _No)}
                 ),
                 AddPrestige(-10),
                 AddBadboy(-5),
-                ChangeRelation<tTag::kFrom>(200)
+                ChangeRelation(tTag::kFrom, 200)
             },
             id
         )
@@ -136,16 +133,16 @@ void PeacefulSettlement()
     TriggeredCountryEvent(id, name.data(), desc.data(), eventOutput, localizationOutput,
                           std::move(options1), {"Да будет так!", "Мы что, дураки?"}, "Administration");
     ++id;
-    desc = std::string("Держава ") + nsTag::Localization<tTag::kFrom>() + " решила принять наше предложение.";
+    desc = std::string("Держава ") + Localization(tTag::kFrom) + " решила принять наше предложение.";
     TriggeredCountryEvent(id, "Они согласны", desc.data(), eventOutput, localizationOutput,
                           std::move(options11), {"Отлично!"}, "Administration");
     ++id;
-    desc = std::string("Держава ") + nsTag::Localization<tTag::kFrom>() + " отказалась принять наше предложение.";
+    desc = std::string("Держава ") + Localization(tTag::kFrom) + " отказалась принять наше предложение.";
     TriggeredCountryEvent(id, "Они не согласны", desc.data(), eventOutput, localizationOutput,
                           {Option<tTarget::kCountry>({}, id)}, {"Им же хуже..."}, "Administration");
     desc =
     (
-        std::string("Послы державы ") + nsTag::Localization<tTag::kFrom>() +
+        std::string("Послы державы ") + Localization(tTag::kFrom) +
         " сегодня обратились к Вам с просьбой войти в состав нашей державы."
     );
     ++id;
@@ -154,7 +151,7 @@ void PeacefulSettlement()
         Option<tTarget::kCountry>
         (
             {
-                Inherit<tTag::kFrom>(),
+                Inherit(tTag::kFrom),
                 AddPrestige(10)
             },
             id,
@@ -164,12 +161,13 @@ void PeacefulSettlement()
         Option<tTarget::kCountry>
         (
             {
-                EffectsForSpecifiedCountry<tTag::kFrom>
-                ({
-                    EffectsForOwnedProvinces({}, {MakeNationalFor<tTag::kThis>(_No)})
-                }),
+                EffectsForSpecifiedCountry
+                (
+                    tTag::kFrom,
+                    {EffectsForOwnedProvinces({}, {MakeNationalFor(tTag::kThis, _No)})}
+                ),
                 AddPrestige(-5),
-                EventInCountry<tTag::kFrom>(id - 1u)
+                EventInCountry(tTag::kFrom, id - 1u)
             },
             id,
             2u,

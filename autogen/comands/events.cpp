@@ -1,6 +1,6 @@
 #include "events.h"
 
-enum class tEventPropertyType : uint8_t
+enum class tEventPropertyType : uint16_t
 {
     kOptionDescription = 0u,
     kEventName = 1u,
@@ -25,7 +25,7 @@ tEventProperty::tEventProperty(char const * const property, char const * const l
 
 using tEventProperties = std::array<tEventProperty, 3u>;
 
-static SINGLETON(tEventProperties, EventProperties)
+static SINGLETON(EventProperties, tEventProperties)
 {
     return
     {
@@ -38,7 +38,7 @@ static SINGLETON(tEventProperties, EventProperties)
 static std::string EventLocalizationReference
 (tEventPropertyType const type, uint const eventID, uint const optionNum = 0u)
 {
-    size_t const eventPropertyIndex = static_cast<uint8_t>(type);
+    size_t const eventPropertyIndex = static_cast<uint16_t>(type);
     assertion(eventPropertyIndex || optionNum);
     std::string res = "EVT";
     res += EventProperties()[eventPropertyIndex].LocalizationReference;
@@ -51,7 +51,7 @@ static std::string EventLocalizationReference
 static tString EventProperty(tEventPropertyType const type, uint const eventID, uint const optionNum = 0u)
 {
     std::string name;
-    name += EventProperties()[static_cast<uint8_t>(type)].Property;
+    name += EventProperties()[static_cast<uint16_t>(type)].Property;
     name += " = \"";
     name += EventLocalizationReference(type, eventID, optionNum);
     name += '\"';

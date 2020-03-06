@@ -1,3498 +1,610 @@
 #include "tags.h"
 
-namespace nsTag
+using tLocStorage = std::array<char const *, 291u>;
+
+static SINGLETON(LocStorage, tLocStorage)
 {
-
-    template <>
-    char const * Localization<tTag::kInvalidTag>()
-    {
-        return nullptr;
-    }
-
-    template <>
-    char const * Localization<tTag::kThis>()
-    {
-        return "$COUNTRY$";
-    }
-
-    template <>
-    char const * Localization<tTag::kFrom>()
-    {
-        return "$FROMCOUNTRY$";
-    }
-
-    template <>
-    char const * Localization<tTag::ABU>()
-    {
-        return "Абу-Даби";
-    }
-
-    template <>
-    char const * Localization<tTag::AFG>()
-    {
-        return "Афганистан";
-    }
-
-    template <>
-    char const * Localization<tTag::ALB>()
-    {
-        return "Албания";
-    }
-
-    template <>
-    char const * Localization<tTag::ALD>()
-    {
-        return "Алжир";
-    }
-
-    template <>
-    char const * Localization<tTag::ANH>()
-    {
-        return "Ангальт";
-    }
-
-    template <>
-    char const * Localization<tTag::ARA>()
-    {
-        return "Арабия";
-    }
-
-    template <>
-    char const * Localization<tTag::ARG>()
-    {
-        return "Аргентина";
-    }
-
-    template <>
-    char const * Localization<tTag::ARM>()
-    {
-        return "Армения";
-    }
-
-    template <>
-    char const * Localization<tTag::ASM>()
-    {
-        return "Ассам";
-    }
-
-    template <>
-    char const * Localization<tTag::AST>()
-    {
-        return "Австралия";
-    }
-
-    template <>
-    char const * Localization<tTag::ATJ>()
-    {
-        return "Ачех";
-    }
-
-    template <>
-    char const * Localization<tTag::AUS>()
-    {
-        return "Австрия";
-    }
-
-    template <>
-    char const * Localization<tTag::AWA>()
-    {
-        return "Авадх";
-    }
-
-    template <>
-    char const * Localization<tTag::AZB>()
-    {
-        return "Азербайджан";
-    }
-
-    template <>
-    char const * Localization<tTag::BAB>()
-    {
-        return "Вавилон";
-    }
-
-    template <>
-    char const * Localization<tTag::BAD>()
-    {
-        return "Баден";
-    }
-
-    template <>
-    char const * Localization<tTag::BAL>()
-    {
-        return "Бали";
-    }
-
-    template <>
-    char const * Localization<tTag::BAS>()
-    {
-        return "Бастар";
-    }
-
-    template <>
-    char const * Localization<tTag::BAV>()
-    {
-        return "Бавария";
-    }
-
-    template <>
-    char const * Localization<tTag::BEL>()
-    {
-        return "Бельгия";
-    }
-
-    template <>
-    char const * Localization<tTag::BER>()
-    {
-        return "Барода";
-    }
-
-    template <>
-    char const * Localization<tTag::BHO>()
-    {
-        return "Бхопал";
-    }
-
-    template <>
-    char const * Localization<tTag::BHU>()
-    {
-        return "Бутан";
-    }
-
-    template <>
-    char const * Localization<tTag::BIH>()
-    {
-        return "Бихар";
-    }
-
-    template <>
-    char const * Localization<tTag::BIK>()
-    {
-        return "Биканер";
-    }
-
-    template <>
-    char const * Localization<tTag::BMG>()
-    {
-        return "Бурят-Монголия";
-    }
-
-    template <>
-    char const * Localization<tTag::BNG>()
-    {
-        return "Бенгалия";
-    }
-
-    template <>
-    char const * Localization<tTag::BOH>()
-    {
-        return "Богемия-Моравия";
-    }
-
-    template <>
-    char const * Localization<tTag::BOL>()
-    {
-        return "Боливия";
-    }
-
-    template <>
-    char const * Localization<tTag::BOS>()
-    {
-        return "Босния-Герцеговина";
-    }
-
-    template <>
-    char const * Localization<tTag::BRA>()
-    {
-        return "Брауншвейг";
-    }
-
-    template <>
-    char const * Localization<tTag::BRE>()
-    {
-        return "Бремен";
-    }
-
-    template <>
-    char const * Localization<tTag::BRU>()
-    {
-        return "Бруней";
-    }
-
-    template <>
-    char const * Localization<tTag::BRZ>()
-    {
-        return "Бразилия";
-    }
-
-    template <>
-    char const * Localization<tTag::BUK>()
-    {
-        return "Бухара";
-    }
-
-    template <>
-    char const * Localization<tTag::BUL>()
-    {
-        return "Болгария";
-    }
-
-    template <>
-    char const * Localization<tTag::BUN>()
-    {
-        return "Бандельканд";
-    }
-
-    template <>
-    char const * Localization<tTag::BUR>()
-    {
-        return "Бирма";
-    }
-
-    template <>
-    char const * Localization<tTag::BYE>()
-    {
-        return "Белоруссия";
-    }
-
-    template <>
-    char const * Localization<tTag::BYZ>()
-    {
-        return "Византия";
-    }
-
-    template <>
-    char const * Localization<tTag::CAL>()
-    {
-        return "Калифорнийская респ.";
-    }
-
-    template <>
-    char const * Localization<tTag::CAM>()
-    {
-        return "Камбоджа";
-    }
-
-    template <>
-    char const * Localization<tTag::CAN>()
-    {
-        return "Канада";
-    }
-
-    template <>
-    char const * Localization<tTag::CAT>()
-    {
-        return "Каталония";
-    }
-
-    template <>
-    char const * Localization<tTag::CHE>()
-    {
-        return "Чероки";
-    }
-
-    template <>
-    char const * Localization<tTag::CHI>()
-    {
-        return "Китай";
-    }
-
-    template <>
-    char const * Localization<tTag::CHL>()
-    {
-        return "Чили";
-    }
-
-    template <>
-    char const * Localization<tTag::CLM>()
-    {
-        return "Колумбия";
-    }
-
-    template <>
-    char const * Localization<tTag::CNG>()
-    {
-        return "Конго";
-    }
-
-    template <>
-    char const * Localization<tTag::COB>()
-    {
-        return "Саксен-Кобург-Гота";
-    }
-
-    template <>
-    char const * Localization<tTag::COL>()
-    {
-        return "Колумбия";
-    }
-
-    template <>
-    char const * Localization<tTag::COS>()
-    {
-        return "Коста-Рика";
-    }
-
-    template <>
-    char const * Localization<tTag::CRE>()
-    {
-        return "Крит";
-    }
-
-    template <>
-    char const * Localization<tTag::CRI>()
-    {
-        return "Крым";
-    }
-
-    template <>
-    char const * Localization<tTag::CRO>()
-    {
-        return "Хорватия";
-    }
-
-    template <>
-    char const * Localization<tTag::CSA>()
-    {
-        return "КША";
-    }
-
-    template <>
-    char const * Localization<tTag::CUB>()
-    {
-        return "Куба";
-    }
-
-    template <>
-    char const * Localization<tTag::CYP>()
-    {
-        return "Кипр";
-    }
-
-    template <>
-    char const * Localization<tTag::CZH>()
-    {
-        return "Чехословакия";
-    }
-
-    template <>
-    char const * Localization<tTag::D01>()
-    {
-        return "1-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D02>()
-    {
-        return "2-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D03>()
-    {
-        return "3-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D04>()
-    {
-        return "4-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D05>()
-    {
-        return "5-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D06>()
-    {
-        return "6-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D07>()
-    {
-        return "7-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D08>()
-    {
-        return "8-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D09>()
-    {
-        return "9-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D10>()
-    {
-        return "10-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D11>()
-    {
-        return "11-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D12>()
-    {
-        return "12-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D13>()
-    {
-        return "13-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D14>()
-    {
-        return "14-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D15>()
-    {
-        return "15-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D16>()
-    {
-        return "16-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D17>()
-    {
-        return "17-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D18>()
-    {
-        return "18-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D19>()
-    {
-        return "19-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D20>()
-    {
-        return "20-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D21>()
-    {
-        return "21-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D22>()
-    {
-        return "22-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D23>()
-    {
-        return "23-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D24>()
-    {
-        return "24-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D25>()
-    {
-        return "25-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D26>()
-    {
-        return "26-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D27>()
-    {
-        return "27-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D28>()
-    {
-        return "28-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D29>()
-    {
-        return "29-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D30>()
-    {
-        return "30-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D31>()
-    {
-        return "31-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D32>()
-    {
-        return "32-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D33>()
-    {
-        return "33-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D34>()
-    {
-        return "34-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D35>()
-    {
-        return "35-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D36>()
-    {
-        return "36-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D37>()
-    {
-        return "37-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D38>()
-    {
-        return "38-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D39>()
-    {
-        return "39-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D40>()
-    {
-        return "40-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D41>()
-    {
-        return "41-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D42>()
-    {
-        return "42-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D43>()
-    {
-        return "43-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D44>()
-    {
-        return "44-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D45>()
-    {
-        return "45-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D46>()
-    {
-        return "46-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D47>()
-    {
-        return "47-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D48>()
-    {
-        return "48-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D49>()
-    {
-        return "49-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::D50>()
-    {
-        return "50-я Независимая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::DAI>()
-    {
-        return "Дайнам";
-    }
-
-    template <>
-    char const * Localization<tTag::DEN>()
-    {
-        return "Дания";
-    }
-
-    template <>
-    char const * Localization<tTag::DES>()
-    {
-        return "Дезерет";
-    }
-
-    template <>
-    char const * Localization<tTag::DOM>()
-    {
-        return "Доминикана";
-    }
-
-    template <>
-    char const * Localization<tTag::DZG>()
-    {
-        return "Данциг";
-    }
-
-    template <>
-    char const * Localization<tTag::ECU>()
-    {
-        return "Эквадор";
-    }
-
-    template <>
-    char const * Localization<tTag::EGY>()
-    {
-        return "Египет";
-    }
-
-    template <>
-    char const * Localization<tTag::ELS>()
-    {
-        return "Сальвадор";
-    }
-
-    template <>
-    char const * Localization<tTag::ENG>()
-    {
-        return "Великобритания";
-    }
-
-    template <>
-    char const * Localization<tTag::EST>()
-    {
-        return "Эстония";
-    }
-
-    template <>
-    char const * Localization<tTag::ETH>()
-    {
-        return "Эфиопия";
-    }
-
-    template <>
-    char const * Localization<tTag::FIN>()
-    {
-        return "Финляндия";
-    }
-
-    template <>
-    char const * Localization<tTag::FLA>()
-    {
-        return "Фландрия";
-    }
-
-    template <>
-    char const * Localization<tTag::FRA>()
-    {
-        return "Франция";
-    }
-
-    template <>
-    char const * Localization<tTag::FRM>()
-    {
-        return "Франкфурт-на-Майне";
-    }
-
-    template <>
-    char const * Localization<tTag::GCO>()
-    {
-        return "Великая Колумбия";
-    }
-
-    template <>
-    char const * Localization<tTag::GEO>()
-    {
-        return "Грузия";
-    }
-
-    template <>
-    char const * Localization<tTag::GER>()
-    {
-        return "Германия";
-    }
-
-    template <>
-    char const * Localization<tTag::GRE>()
-    {
-        return "Греция";
-    }
-
-    template <>
-    char const * Localization<tTag::GUA>()
-    {
-        return "Гватемала";
-    }
-
-    template <>
-    char const * Localization<tTag::GWA>()
-    {
-        return "Гвалияр";
-    }
-
-    template <>
-    char const * Localization<tTag::GXI>()
-    {
-        return "Гуанси";
-    }
-
-    template <>
-    char const * Localization<tTag::HAI>()
-    {
-        return "Гаити";
-    }
-
-    template <>
-    char const * Localization<tTag::HAM>()
-    {
-        return "Гамбург";
-    }
-
-    template <>
-    char const * Localization<tTag::HAN>()
-    {
-        return "Ганновер";
-    }
-
-    template <>
-    char const * Localization<tTag::HAW>()
-    {
-        return "Гавайи";
-    }
-
-    template <>
-    char const * Localization<tTag::HDJ>()
-    {
-        return "Хиджаз";
-    }
-
-    template <>
-    char const * Localization<tTag::HEK>()
-    {
-        return "Гессен-Кассель";
-    }
-
-    template <>
-    char const * Localization<tTag::HES>()
-    {
-        return "Гессен-Дармштадт";
-    }
-
-    template <>
-    char const * Localization<tTag::HND>()
-    {
-        return "Индия";
-    }
-
-    template <>
-    char const * Localization<tTag::HOL>()
-    {
-        return "Гольштейн";
-    }
-
-    template <>
-    char const * Localization<tTag::HON>()
-    {
-        return "Гондурас";
-    }
-
-    template <>
-    char const * Localization<tTag::HUN>()
-    {
-        return "Венгрия";
-    }
-
-    template <>
-    char const * Localization<tTag::HYD>()
-    {
-        return "Хайдерабад";
-    }
-
-    template <>
-    char const * Localization<tTag::ICL>()
-    {
-        return "Исландия";
-    }
-
-    template <>
-    char const * Localization<tTag::IND>()
-    {
-        return "Индаур";
-    }
-
-    template <>
-    char const * Localization<tTag::ION>()
-    {
-        return "Ионическая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::IRE>()
-    {
-        return "Ирландия";
-    }
-
-    template <>
-    char const * Localization<tTag::IRQ>()
-    {
-        return "Ирак";
-    }
-
-    template <>
-    char const * Localization<tTag::ISR>()
-    {
-        return "Израиль";
-    }
-
-    template <>
-    char const * Localization<tTag::ITA>()
-    {
-        return "Италия";
-    }
-
-    template <>
-    char const * Localization<tTag::JAI>()
-    {
-        return "Джайпур";
-    }
-
-    template <>
-    char const * Localization<tTag::JAN>()
-    {
-        return "Ян-Майен";
-    }
-
-    template <>
-    char const * Localization<tTag::JAP>()
-    {
-        return "Япония";
-    }
-
-    template <>
-    char const * Localization<tTag::JAS>()
-    {
-        return "Джайсалмер";
-    }
-
-    template <>
-    char const * Localization<tTag::JAV>()
-    {
-        return "Ява";
-    }
-
-    template <>
-    char const * Localization<tTag::JOD>()
-    {
-        return "Джодхпур";
-    }
-
-    template <>
-    char const * Localization<tTag::JOH>()
-    {
-        return "Джохор";
-    }
-
-    template <>
-    char const * Localization<tTag::KAL>()
-    {
-        return "Калат";
-    }
-
-    template <>
-    char const * Localization<tTag::KAS>()
-    {
-        return "Кашмир";
-    }
-
-    template <>
-    char const * Localization<tTag::KAZ>()
-    {
-        return "Казахстан";
-    }
-
-    template <>
-    char const * Localization<tTag::KHI>()
-    {
-        return "Хива";
-    }
-
-    template <>
-    char const * Localization<tTag::KMK>()
-    {
-        return "Калмыкия";
-    }
-
-    template <>
-    char const * Localization<tTag::KOK>()
-    {
-        return "Коканд";
-    }
-
-    template <>
-    char const * Localization<tTag::KOR>()
-    {
-        return "Корея";
-    }
-
-    template <>
-    char const * Localization<tTag::KRA>()
-    {
-        return "Краков";
-    }
-
-    template <>
-    char const * Localization<tTag::KRD>()
-    {
-        return "Курдистан";
-    }
-
-    template <>
-    char const * Localization<tTag::KUK>()
-    {
-        return "Австро-Венгрия";
-    }
-
-    template <>
-    char const * Localization<tTag::KUT>()
-    {
-        return "Кач";
-    }
-
-    template <>
-    char const * Localization<tTag::KYR>()
-    {
-        return "Киргизия";
-    }
-
-    template <>
-    char const * Localization<tTag::LAD>()
-    {
-        return "Ладакх";
-    }
-
-    template <>
-    char const * Localization<tTag::LAF>()
-    {
-        return "Южноамериканский Союз";
-    }
-
-    template <>
-    char const * Localization<tTag::LAT>()
-    {
-        return "Латвия";
-    }
-
-    template <>
-    char const * Localization<tTag::LIB>()
-    {
-        return "Либерия";
-    }
-
-    template <>
-    char const * Localization<tTag::LIP>()
-    {
-        return "Липпе-Детмольд";
-    }
-
-    template <>
-    char const * Localization<tTag::LIT>()
-    {
-        return "Литва";
-    }
-
-    template <>
-    char const * Localization<tTag::LOM>()
-    {
-        return "Ломбардия";
-    }
-
-    template <>
-    char const * Localization<tTag::LUA>()
-    {
-        return "Луанг-Прабанг";
-    }
-
-    template <>
-    char const * Localization<tTag::LUB>()
-    {
-        return "Любек";
-    }
-
-    template <>
-    char const * Localization<tTag::LUC>()
-    {
-        return "Лукка";
-    }
-
-    template <>
-    char const * Localization<tTag::LUX>()
-    {
-        return "Люксембург";
-    }
-
-    template <>
-    char const * Localization<tTag::MAD>()
-    {
-        return "Мадагаскар";
-    }
-
-    template <>
-    char const * Localization<tTag::MAK>()
-    {
-        return "Мекран";
-    }
-
-    template <>
-    char const * Localization<tTag::MAN>()
-    {
-        return "Коммуна Манхеттена";
-    }
-
-    template <>
-    char const * Localization<tTag::MCK>()
-    {
-        return "Маньчжурия";
-    }
-
-    template <>
-    char const * Localization<tTag::MEC>()
-    {
-        return "Мекленбург";
-    }
-
-    template <>
-    char const * Localization<tTag::MEI>()
-    {
-        return "Саксен-Майнинген";
-    }
-
-    template <>
-    char const * Localization<tTag::MEW>()
-    {
-        return "Мевар";
-    }
-
-    template <>
-    char const * Localization<tTag::MEX>()
-    {
-        return "Мексика";
-    }
-
-    template <>
-    char const * Localization<tTag::MGL>()
-    {
-        return "Монголия";
-    }
-
-    template <>
-    char const * Localization<tTag::MLY>()
-    {
-        return "Малайзия";
-    }
-
-    template <>
-    char const * Localization<tTag::MOD>()
-    {
-        return "Модена";
-    }
-
-    template <>
-    char const * Localization<tTag::MOL>()
-    {
-        return "Молдавия";
-    }
-
-    template <>
-    char const * Localization<tTag::MON>()
-    {
-        return "Черногория";
-    }
-
-    template <>
-    char const * Localization<tTag::MOR>()
-    {
-        return "Марокко";
-    }
-
-    template <>
-    char const * Localization<tTag::MTC>()
-    {
-        return "Метисская конфедерация";
-    }
-
-    template <>
-    char const * Localization<tTag::MUG>()
-    {
-        return "Могулистан";
-    }
-
-    template <>
-    char const * Localization<tTag::MYS>()
-    {
-        return "Майсур";
-    }
-
-    template <>
-    char const * Localization<tTag::NAG>()
-    {
-        return "Нагпур";
-    }
-
-    template <>
-    char const * Localization<tTag::NAL>()
-    {
-        return "Наталь";
-    }
-
-    template <>
-    char const * Localization<tTag::NAS>()
-    {
-        return "Нассау";
-    }
-
-    template <>
-    char const * Localization<tTag::NEJ>()
-    {
-        return "Неджд";
-    }
-
-    template <>
-    char const * Localization<tTag::NEN>()
-    {
-        return "Новая Англия";
-    }
-
-    template <>
-    char const * Localization<tTag::NEP>()
-    {
-        return "Непал";
-    }
-
-    template <>
-    char const * Localization<tTag::NET>()
-    {
-        return "Нидерланды";
-    }
-
-    template <>
-    char const * Localization<tTag::NEW>()
-    {
-        return "Ньюфаундленд";
-    }
-
-    template <>
-    char const * Localization<tTag::NGF>()
-    {
-        return "Северогерманский союз";
-    }
-
-    template <>
-    char const * Localization<tTag::NIC>()
-    {
-        return "Никарагуа";
-    }
-
-    template <>
-    char const * Localization<tTag::NOR>()
-    {
-        return "Норвегия";
-    }
-
-    template <>
-    char const * Localization<tTag::NZL>()
-    {
-        return "Новая Зеландия";
-    }
-
-    template <>
-    char const * Localization<tTag::OLD>()
-    {
-        return "Ольденбург";
-    }
-
-    template <>
-    char const * Localization<tTag::OMA>()
-    {
-        return "Оман";
-    }
-
-    template <>
-    char const * Localization<tTag::ORA>()
-    {
-        return "Оранжевая республика";
-    }
-
-    template <>
-    char const * Localization<tTag::ORI>()
-    {
-        return "Орисса";
-    }
-
-    template <>
-    char const * Localization<tTag::PAN>()
-    {
-        return "Пенджаб";
-    }
-
-    template <>
-    char const * Localization<tTag::PAP>()
-    {
-        return "Папская область";
-    }
-
-    template <>
-    char const * Localization<tTag::PAR>()
-    {
-        return "Парма";
-    }
-
-    template <>
-    char const * Localization<tTag::PER>()
-    {
-        return "Персия";
-    }
-
-    template <>
-    char const * Localization<tTag::PEU>()
-    {
-        return "Перу";
-    }
-
-    template <>
-    char const * Localization<tTag::PHI>()
-    {
-        return "Филиппины";
-    }
-
-    template <>
-    char const * Localization<tTag::PLC>()
-    {
-        return "Речь Посполитая";
-    }
-
-    template <>
-    char const * Localization<tTag::PNM>()
-    {
-        return "Панама";
-    }
-
-    template <>
-    char const * Localization<tTag::POL>()
-    {
-        return "Польша";
-    }
-
-    template <>
-    char const * Localization<tTag::POR>()
-    {
-        return "Португалия";
-    }
-
-    template <>
-    char const * Localization<tTag::PRG>()
-    {
-        return "Парагвай";
-    }
-
-    template <>
-    char const * Localization<tTag::PRU>()
-    {
-        return "Пруссия";
-    }
-
-    template <>
-    char const * Localization<tTag::QUE>()
-    {
-        return "Квебек";
-    }
-
-    template <>
-    char const * Localization<tTag::RHO>()
-    {
-        return "Южная Родезия";
-    }
-
-    template <>
-    char const * Localization<tTag::ROM>()
-    {
-        return "Румыния";
-    }
-
-    template <>
-    char const * Localization<tTag::RUS>()
-    {
-        return "Россия";
-    }
-
-    template <>
-    char const * Localization<tTag::RUT>()
-    {
-        return "Рутения";
-    }
-
-    template <>
-    char const * Localization<tTag::SAF>()
-    {
-        return "Южная Африка";
-    }
-
-    template <>
-    char const * Localization<tTag::SAR>()
-    {
-        return "Сардиния-Пьемонт";
-    }
-
-    template <>
-    char const * Localization<tTag::SAX>()
-    {
-        return "Саксония";
-    }
-
-    template <>
-    char const * Localization<tTag::SCA>()
-    {
-        return "Скандинавия";
-    }
-
-    template <>
-    char const * Localization<tTag::SCH>()
-    {
-        return "Шлезвиг";
-    }
-
-    template <>
-    char const * Localization<tTag::SCO>()
-    {
-        return "Шотландия";
-    }
-
-    template <>
-    char const * Localization<tTag::SER>()
-    {
-        return "Сербия";
-    }
-
-    template <>
-    char const * Localization<tTag::SGF>()
-    {
-        return "Южногерманский союз";
-    }
-
-    template <>
-    char const * Localization<tTag::SHI>()
-    {
-        return "Шимла";
-    }
-
-    template <>
-    char const * Localization<tTag::SIA>()
-    {
-        return "Сиам";
-    }
-
-    template <>
-    char const * Localization<tTag::SIC>()
-    {
-        return "Сицилия";
-    }
-
-    template <>
-    char const * Localization<tTag::SIE>()
-    {
-        return "Трансильвания";
-    }
-
-    template <>
-    char const * Localization<tTag::SIK>()
-    {
-        return "Сикким";
-    }
-
-    template <>
-    char const * Localization<tTag::SIN>()
-    {
-        return "Синд";
-    }
-
-    template <>
-    char const * Localization<tTag::SLO>()
-    {
-        return "Словения";
-    }
-
-    template <>
-    char const * Localization<tTag::SLV>()
-    {
-        return "Словакия";
-    }
-
-    template <>
-    char const * Localization<tTag::SOK>()
-    {
-        return "Сокото";
-    }
-
-    template <>
-    char const * Localization<tTag::SOV>()
-    {
-        return "СССР";
-    }
-
-    template <>
-    char const * Localization<tTag::SPA>()
-    {
-        return "Испания";
-    }
-
-    template <>
-    char const * Localization<tTag::SRI>()
-    {
-        return "Шри-Ланка";
-    }
-
-    template <>
-    char const * Localization<tTag::SWE>()
-    {
-        return "Швеция";
-    }
-
-    template <>
-    char const * Localization<tTag::SWI>()
-    {
-        return "Швейцария";
-    }
-
-    template <>
-    char const * Localization<tTag::SXI>()
-    {
-        return "Клика Шаньси";
-    }
-
-    template <>
-    char const * Localization<tTag::TAJ>()
-    {
-        return "Таджикистан";
-    }
-
-    template <>
-    char const * Localization<tTag::TEX>()
-    {
-        return "Техас";
-    }
-
-    template <>
-    char const * Localization<tTag::TIB>()
-    {
-        return "Тибет";
-    }
-
-    template <>
-    char const * Localization<tTag::TKM>()
-    {
-        return "Туркмения";
-    }
-
-    template <>
-    char const * Localization<tTag::TNT>()
-    {
-        return "Танну-Тува";
-    }
-
-    template <>
-    char const * Localization<tTag::TPG>()
-    {
-        return "Небесное Царство";
-    }
-
-    template <>
-    char const * Localization<tTag::TRA>()
-    {
-        return "Траванкор";
-    }
-
-    template <>
-    char const * Localization<tTag::TRE>()
-    {
-        return "Триест";
-    }
-
-    template <>
-    char const * Localization<tTag::TRI>()
-    {
-        return "Триполи";
-    }
-
-    template <>
-    char const * Localization<tTag::TRN>()
-    {
-        return "Трансвааль";
-    }
-
-    template <>
-    char const * Localization<tTag::TTT>()
-    {
-        return "Татарстан";
-    }
-
-    template <>
-    char const * Localization<tTag::TUN>()
-    {
-        return "Тунис";
-    }
-
-    template <>
-    char const * Localization<tTag::TUR>()
-    {
-        return "Османская Империя";
-    }
-
-    template <>
-    char const * Localization<tTag::TUS>()
-    {
-        return "Тоскана";
-    }
-
-    template <>
-    char const * Localization<tTag::UBD>()
-    {
-        return "Объединённая Балтия";
-    }
-
-    template <>
-    char const * Localization<tTag::UCA>()
-    {
-        return "СПЦА";
-    }
-
-    template <>
-    char const * Localization<tTag::UKR>()
-    {
-        return "Украина";
-    }
-
-    template <>
-    char const * Localization<tTag::URU>()
-    {
-        return "Уругвай";
-    }
-
-    template <>
-    char const * Localization<tTag::USA>()
-    {
-        return "США";
-    }
-
-    template <>
-    char const * Localization<tTag::UZB>()
-    {
-        return "Узбекистан";
-    }
-
-    template <>
-    char const * Localization<tTag::VEN>()
-    {
-        return "Венеция";
-    }
-
-    template <>
-    char const * Localization<tTag::VNZ>()
-    {
-        return "Венесуэла";
-    }
-
-    template <>
-    char const * Localization<tTag::WAL>()
-    {
-        return "Валахия";
-    }
-
-    template <>
-    char const * Localization<tTag::WEI>()
-    {
-        return "Саксен-Веймар";
-    }
-
-    template <>
-    char const * Localization<tTag::WIA>()
-    {
-        return "Вьентьян";
-    }
-
-    template <>
-    char const * Localization<tTag::WLL>()
-    {
-        return "Валлония";
-    }
-
-    template <>
-    char const * Localization<tTag::WUR>()
-    {
-        return "Вюртемберг";
-    }
-
-    template <>
-    char const * Localization<tTag::XBI>()
-    {
-        return "Цинхай";
-    }
-
-    template <>
-    char const * Localization<tTag::XIN>()
-    {
-        return "Синьцзян";
-    }
-
-    template <>
-    char const * Localization<tTag::YAK>()
-    {
-        return "Якутия";
-    }
-
-    template <>
-    char const * Localization<tTag::YEM>()
-    {
-        return "Йемен";
-    }
-
-    template <>
-    char const * Localization<tTag::YNN>()
-    {
-        return "Юннань";
-    }
-
-    template <>
-    char const * Localization<tTag::YUG>()
-    {
-        return "Югославия";
-    }
-
-    template <>
-    char const * Localization<tTag::ZAN>()
-    {
-        return "Занзибар";
-    }
-
-    template <>
-    char const * Localization<tTag::ZUL>()
-    {
-        return "Зулу";
-    }
-
-    template <>
-    char const * ToString<tTag::kInvalidTag>()
-    {
-        return nullptr;
-    }
-
-    template <>
-    char const * ToString<tTag::kThis>()
-    {
-        return "THIS";
-    }
-
-    template <>
-    char const * ToString<tTag::kFrom>()
-    {
-        return "FROM";
-    }
-
-    template <>
-    char const * ToString<tTag::SOV>()
-    {
-        return "SOV";
-    }
-
-    template <>
-    char const * ToString<tTag::LAF>()
-    {
-        return "LAF";
-    }
-
-    template <>
-    char const * ToString<tTag::KAZ>()
-    {
-        return "KAZ";
-    }
-
-    template <>
-    char const * ToString<tTag::KYR>()
-    {
-        return "KYR";
-    }
-
-    template <>
-    char const * ToString<tTag::TAJ>()
-    {
-        return "TAJ";
-    }
-
-    template <>
-    char const * ToString<tTag::TKM>()
-    {
-        return "TKM";
-    }
-
-    template <>
-    char const * ToString<tTag::UZB>()
-    {
-        return "UZB";
-    }
-
-    template <>
-    char const * ToString<tTag::KMK>()
-    {
-        return "KMK";
-    }
-
-    template <>
-    char const * ToString<tTag::BMG>()
-    {
-        return "BMG";
-    }
-
-    template <>
-    char const * ToString<tTag::TNT>()
-    {
-        return "TNT";
-    }
-
-    template <>
-    char const * ToString<tTag::YAK>()
-    {
-        return "YAK";
-    }
-
-    template <>
-    char const * ToString<tTag::MLY>()
-    {
-        return "MLY";
-    }
-
-    template <>
-    char const * ToString<tTag::TTT>()
-    {
-        return "TTT";
-    }
-
-    template <>
-    char const * ToString<tTag::KRD>()
-    {
-        return "KRD";
-    }
-
-    template <>
-    char const * ToString<tTag::ASM>()
-    {
-        return "ASM";
-    }
-
-    template <>
-    char const * ToString<tTag::BIH>()
-    {
-        return "BIH";
-    }
-
-    template <>
-    char const * ToString<tTag::BNG>()
-    {
-        return "BNG";
-    }
-
-    template <>
-    char const * ToString<tTag::SRI>()
-    {
-        return "SRI";
-    }
-
-    template <>
-    char const * ToString<tTag::ENG>()
-    {
-        return "ENG";
-    }
-
-    template <>
-    char const * ToString<tTag::RUS>()
-    {
-        return "RUS";
-    }
-
-    template <>
-    char const * ToString<tTag::FRA>()
-    {
-        return "FRA";
-    }
-
-    template <>
-    char const * ToString<tTag::PRU>()
-    {
-        return "PRU";
-    }
-
-    template <>
-    char const * ToString<tTag::GER>()
-    {
-        return "GER";
-    }
-
-    template <>
-    char const * ToString<tTag::AUS>()
-    {
-        return "AUS";
-    }
-
-    template <>
-    char const * ToString<tTag::USA>()
-    {
-        return "USA";
-    }
-
-    template <>
-    char const * ToString<tTag::JAP>()
-    {
-        return "JAP";
-    }
-
-    template <>
-    char const * ToString<tTag::ITA>()
-    {
-        return "ITA";
-    }
-
-    template <>
-    char const * ToString<tTag::KUK>()
-    {
-        return "KUK";
-    }
-
-    template <>
-    char const * ToString<tTag::DEN>()
-    {
-        return "DEN";
-    }
-
-    template <>
-    char const * ToString<tTag::FIN>()
-    {
-        return "FIN";
-    }
-
-    template <>
-    char const * ToString<tTag::NOR>()
-    {
-        return "NOR";
-    }
-
-    template <>
-    char const * ToString<tTag::SCA>()
-    {
-        return "SCA";
-    }
-
-    template <>
-    char const * ToString<tTag::SWE>()
-    {
-        return "SWE";
-    }
-
-    template <>
-    char const * ToString<tTag::BEL>()
-    {
-        return "BEL";
-    }
-
-    template <>
-    char const * ToString<tTag::CAT>()
-    {
-        return "CAT";
-    }
-
-    template <>
-    char const * ToString<tTag::FLA>()
-    {
-        return "FLA";
-    }
-
-    template <>
-    char const * ToString<tTag::IRE>()
-    {
-        return "IRE";
-    }
-
-    template <>
-    char const * ToString<tTag::NET>()
-    {
-        return "NET";
-    }
-
-    template <>
-    char const * ToString<tTag::POR>()
-    {
-        return "POR";
-    }
-
-    template <>
-    char const * ToString<tTag::SCO>()
-    {
-        return "SCO";
-    }
-
-    template <>
-    char const * ToString<tTag::SPA>()
-    {
-        return "SPA";
-    }
-
-    template <>
-    char const * ToString<tTag::WLL>()
-    {
-        return "WLL";
-    }
-
-    template <>
-    char const * ToString<tTag::ANH>()
-    {
-        return "ANH";
-    }
-
-    template <>
-    char const * ToString<tTag::BAD>()
-    {
-        return "BAD";
-    }
-
-    template <>
-    char const * ToString<tTag::BAV>()
-    {
-        return "BAV";
-    }
-
-    template <>
-    char const * ToString<tTag::BRA>()
-    {
-        return "BRA";
-    }
-
-    template <>
-    char const * ToString<tTag::BRE>()
-    {
-        return "BRE";
-    }
-
-    template <>
-    char const * ToString<tTag::COB>()
-    {
-        return "COB";
-    }
-
-    template <>
-    char const * ToString<tTag::DZG>()
-    {
-        return "DZG";
-    }
-
-    template <>
-    char const * ToString<tTag::FRM>()
-    {
-        return "FRM";
-    }
-
-    template <>
-    char const * ToString<tTag::HAM>()
-    {
-        return "HAM";
-    }
-
-    template <>
-    char const * ToString<tTag::HAN>()
-    {
-        return "HAN";
-    }
-
-    template <>
-    char const * ToString<tTag::HES>()
-    {
-        return "HES";
-    }
-
-    template <>
-    char const * ToString<tTag::HEK>()
-    {
-        return "HEK";
-    }
-
-    template <>
-    char const * ToString<tTag::HOL>()
-    {
-        return "HOL";
-    }
-
-    template <>
-    char const * ToString<tTag::LIP>()
-    {
-        return "LIP";
-    }
-
-    template <>
-    char const * ToString<tTag::LUB>()
-    {
-        return "LUB";
-    }
-
-    template <>
-    char const * ToString<tTag::LUX>()
-    {
-        return "LUX";
-    }
-
-    template <>
-    char const * ToString<tTag::MEC>()
-    {
-        return "MEC";
-    }
-
-    template <>
-    char const * ToString<tTag::MEI>()
-    {
-        return "MEI";
-    }
-
-    template <>
-    char const * ToString<tTag::NAS>()
-    {
-        return "NAS";
-    }
-
-    template <>
-    char const * ToString<tTag::NGF>()
-    {
-        return "NGF";
-    }
-
-    template <>
-    char const * ToString<tTag::OLD>()
-    {
-        return "OLD";
-    }
-
-    template <>
-    char const * ToString<tTag::SAX>()
-    {
-        return "SAX";
-    }
-
-    template <>
-    char const * ToString<tTag::SCH>()
-    {
-        return "SCH";
-    }
-
-    template <>
-    char const * ToString<tTag::SGF>()
-    {
-        return "SGF";
-    }
-
-    template <>
-    char const * ToString<tTag::WEI>()
-    {
-        return "WEI";
-    }
-
-    template <>
-    char const * ToString<tTag::WUR>()
-    {
-        return "WUR";
-    }
-
-    template <>
-    char const * ToString<tTag::LOM>()
-    {
-        return "LOM";
-    }
-
-    template <>
-    char const * ToString<tTag::LUC>()
-    {
-        return "LUC";
-    }
-
-    template <>
-    char const * ToString<tTag::MOD>()
-    {
-        return "MOD";
-    }
-
-    template <>
-    char const * ToString<tTag::PAP>()
-    {
-        return "PAP";
-    }
-
-    template <>
-    char const * ToString<tTag::PAR>()
-    {
-        return "PAR";
-    }
-
-    template <>
-    char const * ToString<tTag::SAR>()
-    {
-        return "SAR";
-    }
-
-    template <>
-    char const * ToString<tTag::SIC>()
-    {
-        return "SIC";
-    }
-
-    template <>
-    char const * ToString<tTag::TRE>()
-    {
-        return "TRE";
-    }
-
-    template <>
-    char const * ToString<tTag::TUS>()
-    {
-        return "TUS";
-    }
-
-    template <>
-    char const * ToString<tTag::VEN>()
-    {
-        return "VEN";
-    }
-
-    template <>
-    char const * ToString<tTag::BOH>()
-    {
-        return "BOH";
-    }
-
-    template <>
-    char const * ToString<tTag::KRA>()
-    {
-        return "KRA";
-    }
-
-    template <>
-    char const * ToString<tTag::CRI>()
-    {
-        return "CRI";
-    }
-
-    template <>
-    char const * ToString<tTag::EST>()
-    {
-        return "EST";
-    }
-
-    template <>
-    char const * ToString<tTag::HUN>()
-    {
-        return "HUN";
-    }
-
-    template <>
-    char const * ToString<tTag::LIT>()
-    {
-        return "LIT";
-    }
-
-    template <>
-    char const * ToString<tTag::LAT>()
-    {
-        return "LAT";
-    }
-
-    template <>
-    char const * ToString<tTag::POL>()
-    {
-        return "POL";
-    }
-
-    template <>
-    char const * ToString<tTag::SLV>()
-    {
-        return "SLV";
-    }
-
-    template <>
-    char const * ToString<tTag::SWI>()
-    {
-        return "SWI";
-    }
-
-    template <>
-    char const * ToString<tTag::RUT>()
-    {
-        return "RUT";
-    }
-
-    template <>
-    char const * ToString<tTag::SIE>()
-    {
-        return "SIE";
-    }
-
-    template <>
-    char const * ToString<tTag::UKR>()
-    {
-        return "UKR";
-    }
-
-    template <>
-    char const * ToString<tTag::CZH>()
-    {
-        return "CZH";
-    }
-
-    template <>
-    char const * ToString<tTag::ALB>()
-    {
-        return "ALB";
-    }
-
-    template <>
-    char const * ToString<tTag::BOS>()
-    {
-        return "BOS";
-    }
-
-    template <>
-    char const * ToString<tTag::BUL>()
-    {
-        return "BUL";
-    }
-
-    template <>
-    char const * ToString<tTag::CRE>()
-    {
-        return "CRE";
-    }
-
-    template <>
-    char const * ToString<tTag::CRO>()
-    {
-        return "CRO";
-    }
-
-    template <>
-    char const * ToString<tTag::CYP>()
-    {
-        return "CYP";
-    }
-
-    template <>
-    char const * ToString<tTag::GRE>()
-    {
-        return "GRE";
-    }
-
-    template <>
-    char const * ToString<tTag::ION>()
-    {
-        return "ION";
-    }
-
-    template <>
-    char const * ToString<tTag::MOL>()
-    {
-        return "MOL";
-    }
-
-    template <>
-    char const * ToString<tTag::MON>()
-    {
-        return "MON";
-    }
-
-    template <>
-    char const * ToString<tTag::ROM>()
-    {
-        return "ROM";
-    }
-
-    template <>
-    char const * ToString<tTag::SER>()
-    {
-        return "SER";
-    }
-
-    template <>
-    char const * ToString<tTag::SLO>()
-    {
-        return "SLO";
-    }
-
-    template <>
-    char const * ToString<tTag::TUR>()
-    {
-        return "TUR";
-    }
-
-    template <>
-    char const * ToString<tTag::WAL>()
-    {
-        return "WAL";
-    }
-
-    template <>
-    char const * ToString<tTag::YUG>()
-    {
-        return "YUG";
-    }
-
-    template <>
-    char const * ToString<tTag::ALD>()
-    {
-        return "ALD";
-    }
-
-    template <>
-    char const * ToString<tTag::CNG>()
-    {
-        return "CNG";
-    }
-
-    template <>
-    char const * ToString<tTag::EGY>()
-    {
-        return "EGY";
-    }
-
-    template <>
-    char const * ToString<tTag::ETH>()
-    {
-        return "ETH";
-    }
-
-    template <>
-    char const * ToString<tTag::MAD>()
-    {
-        return "MAD";
-    }
-
-    template <>
-    char const * ToString<tTag::LIB>()
-    {
-        return "LIB";
-    }
-
-    template <>
-    char const * ToString<tTag::MOR>()
-    {
-        return "MOR";
-    }
-
-    template <>
-    char const * ToString<tTag::NAL>()
-    {
-        return "NAL";
-    }
-
-    template <>
-    char const * ToString<tTag::ORA>()
-    {
-        return "ORA";
-    }
-
-    template <>
-    char const * ToString<tTag::SAF>()
-    {
-        return "SAF";
-    }
-
-    template <>
-    char const * ToString<tTag::SOK>()
-    {
-        return "SOK";
-    }
-
-    template <>
-    char const * ToString<tTag::RHO>()
-    {
-        return "RHO";
-    }
-
-    template <>
-    char const * ToString<tTag::TRI>()
-    {
-        return "TRI";
-    }
-
-    template <>
-    char const * ToString<tTag::TRN>()
-    {
-        return "TRN";
-    }
-
-    template <>
-    char const * ToString<tTag::TUN>()
-    {
-        return "TUN";
-    }
-
-    template <>
-    char const * ToString<tTag::ZAN>()
-    {
-        return "ZAN";
-    }
-
-    template <>
-    char const * ToString<tTag::ZUL>()
-    {
-        return "ZUL";
-    }
-
-    template <>
-    char const * ToString<tTag::ABU>()
-    {
-        return "ABU";
-    }
-
-    template <>
-    char const * ToString<tTag::AFG>()
-    {
-        return "AFG";
-    }
-
-    template <>
-    char const * ToString<tTag::ARM>()
-    {
-        return "ARM";
-    }
-
-    template <>
-    char const * ToString<tTag::AZB>()
-    {
-        return "AZB";
-    }
-
-    template <>
-    char const * ToString<tTag::BUK>()
-    {
-        return "BUK";
-    }
-
-    template <>
-    char const * ToString<tTag::GEO>()
-    {
-        return "GEO";
-    }
-
-    template <>
-    char const * ToString<tTag::HDJ>()
-    {
-        return "HDJ";
-    }
-
-    template <>
-    char const * ToString<tTag::IRQ>()
-    {
-        return "IRQ";
-    }
-
-    template <>
-    char const * ToString<tTag::KHI>()
-    {
-        return "KHI";
-    }
-
-    template <>
-    char const * ToString<tTag::KOK>()
-    {
-        return "KOK";
-    }
-
-    template <>
-    char const * ToString<tTag::MUG>()
-    {
-        return "MUG";
-    }
-
-    template <>
-    char const * ToString<tTag::NEJ>()
-    {
-        return "NEJ";
-    }
-
-    template <>
-    char const * ToString<tTag::OMA>()
-    {
-        return "OMA";
-    }
-
-    template <>
-    char const * ToString<tTag::PER>()
-    {
-        return "PER";
-    }
-
-    template <>
-    char const * ToString<tTag::YEM>()
-    {
-        return "YEM";
-    }
-
-    template <>
-    char const * ToString<tTag::HND>()
-    {
-        return "HND";
-    }
-
-    template <>
-    char const * ToString<tTag::AWA>()
-    {
-        return "AWA";
-    }
-
-    template <>
-    char const * ToString<tTag::BAS>()
-    {
-        return "BAS";
-    }
-
-    template <>
-    char const * ToString<tTag::BER>()
-    {
-        return "BER";
-    }
-
-    template <>
-    char const * ToString<tTag::BHO>()
-    {
-        return "BHO";
-    }
-
-    template <>
-    char const * ToString<tTag::BIK>()
-    {
-        return "BIK";
-    }
-
-    template <>
-    char const * ToString<tTag::BUN>()
-    {
-        return "BUN";
-    }
-
-    template <>
-    char const * ToString<tTag::GWA>()
-    {
-        return "GWA";
-    }
-
-    template <>
-    char const * ToString<tTag::HYD>()
-    {
-        return "HYD";
-    }
-
-    template <>
-    char const * ToString<tTag::IND>()
-    {
-        return "IND";
-    }
-
-    template <>
-    char const * ToString<tTag::JAI>()
-    {
-        return "JAI";
-    }
-
-    template <>
-    char const * ToString<tTag::JAS>()
-    {
-        return "JAS";
-    }
-
-    template <>
-    char const * ToString<tTag::JOD>()
-    {
-        return "JOD";
-    }
-
-    template <>
-    char const * ToString<tTag::KAL>()
-    {
-        return "KAL";
-    }
-
-    template <>
-    char const * ToString<tTag::KAS>()
-    {
-        return "KAS";
-    }
-
-    template <>
-    char const * ToString<tTag::KUT>()
-    {
-        return "KUT";
-    }
-
-    template <>
-    char const * ToString<tTag::LAD>()
-    {
-        return "LAD";
-    }
-
-    template <>
-    char const * ToString<tTag::MAK>()
-    {
-        return "MAK";
-    }
-
-    template <>
-    char const * ToString<tTag::MEW>()
-    {
-        return "MEW";
-    }
-
-    template <>
-    char const * ToString<tTag::MYS>()
-    {
-        return "MYS";
-    }
-
-    template <>
-    char const * ToString<tTag::NAG>()
-    {
-        return "NAG";
-    }
-
-    template <>
-    char const * ToString<tTag::NEP>()
-    {
-        return "NEP";
-    }
-
-    template <>
-    char const * ToString<tTag::ORI>()
-    {
-        return "ORI";
-    }
-
-    template <>
-    char const * ToString<tTag::PAN>()
-    {
-        return "PAN";
-    }
-
-    template <>
-    char const * ToString<tTag::SHI>()
-    {
-        return "SHI";
-    }
-
-    template <>
-    char const * ToString<tTag::SIK>()
-    {
-        return "SIK";
-    }
-
-    template <>
-    char const * ToString<tTag::SIN>()
-    {
-        return "SIN";
-    }
-
-    template <>
-    char const * ToString<tTag::TRA>()
-    {
-        return "TRA";
-    }
-
-    template <>
-    char const * ToString<tTag::ATJ>()
-    {
-        return "ATJ";
-    }
-
-    template <>
-    char const * ToString<tTag::BAL>()
-    {
-        return "BAL";
-    }
-
-    template <>
-    char const * ToString<tTag::BHU>()
-    {
-        return "BHU";
-    }
-
-    template <>
-    char const * ToString<tTag::BRU>()
-    {
-        return "BRU";
-    }
-
-    template <>
-    char const * ToString<tTag::BUR>()
-    {
-        return "BUR";
-    }
-
-    template <>
-    char const * ToString<tTag::CAM>()
-    {
-        return "CAM";
-    }
-
-    template <>
-    char const * ToString<tTag::CHI>()
-    {
-        return "CHI";
-    }
-
-    template <>
-    char const * ToString<tTag::DAI>()
-    {
-        return "DAI";
-    }
-
-    template <>
-    char const * ToString<tTag::JAV>()
-    {
-        return "JAV";
-    }
-
-    template <>
-    char const * ToString<tTag::KOR>()
-    {
-        return "KOR";
-    }
-
-    template <>
-    char const * ToString<tTag::LUA>()
-    {
-        return "LUA";
-    }
-
-    template <>
-    char const * ToString<tTag::JOH>()
-    {
-        return "JOH";
-    }
-
-    template <>
-    char const * ToString<tTag::SIA>()
-    {
-        return "SIA";
-    }
-
-    template <>
-    char const * ToString<tTag::TIB>()
-    {
-        return "TIB";
-    }
-
-    template <>
-    char const * ToString<tTag::MGL>()
-    {
-        return "MGL";
-    }
-
-    template <>
-    char const * ToString<tTag::WIA>()
-    {
-        return "WIA";
-    }
-
-    template <>
-    char const * ToString<tTag::PHI>()
-    {
-        return "PHI";
-    }
-
-    template <>
-    char const * ToString<tTag::MCK>()
-    {
-        return "MCK";
-    }
-
-    template <>
-    char const * ToString<tTag::GXI>()
-    {
-        return "GXI";
-    }
-
-    template <>
-    char const * ToString<tTag::SXI>()
-    {
-        return "SXI";
-    }
-
-    template <>
-    char const * ToString<tTag::YNN>()
-    {
-        return "YNN";
-    }
-
-    template <>
-    char const * ToString<tTag::XBI>()
-    {
-        return "XBI";
-    }
-
-    template <>
-    char const * ToString<tTag::XIN>()
-    {
-        return "XIN";
-    }
-
-    template <>
-    char const * ToString<tTag::CAL>()
-    {
-        return "CAL";
-    }
-
-    template <>
-    char const * ToString<tTag::CAN>()
-    {
-        return "CAN";
-    }
-
-    template <>
-    char const * ToString<tTag::CHE>()
-    {
-        return "CHE";
-    }
-
-    template <>
-    char const * ToString<tTag::COL>()
-    {
-        return "COL";
-    }
-
-    template <>
-    char const * ToString<tTag::COS>()
-    {
-        return "COS";
-    }
-
-    template <>
-    char const * ToString<tTag::CSA>()
-    {
-        return "CSA";
-    }
-
-    template <>
-    char const * ToString<tTag::CUB>()
-    {
-        return "CUB";
-    }
-
-    template <>
-    char const * ToString<tTag::DES>()
-    {
-        return "DES";
-    }
-
-    template <>
-    char const * ToString<tTag::DOM>()
-    {
-        return "DOM";
-    }
-
-    template <>
-    char const * ToString<tTag::ELS>()
-    {
-        return "ELS";
-    }
-
-    template <>
-    char const * ToString<tTag::GUA>()
-    {
-        return "GUA";
-    }
-
-    template <>
-    char const * ToString<tTag::HAI>()
-    {
-        return "HAI";
-    }
-
-    template <>
-    char const * ToString<tTag::HAW>()
-    {
-        return "HAW";
-    }
-
-    template <>
-    char const * ToString<tTag::MAN>()
-    {
-        return "MAN";
-    }
-
-    template <>
-    char const * ToString<tTag::MEX>()
-    {
-        return "MEX";
-    }
-
-    template <>
-    char const * ToString<tTag::MTC>()
-    {
-        return "MTC";
-    }
-
-    template <>
-    char const * ToString<tTag::HON>()
-    {
-        return "HON";
-    }
-
-    template <>
-    char const * ToString<tTag::NEN>()
-    {
-        return "NEN";
-    }
-
-    template <>
-    char const * ToString<tTag::NEW>()
-    {
-        return "NEW";
-    }
-
-    template <>
-    char const * ToString<tTag::NIC>()
-    {
-        return "NIC";
-    }
-
-    template <>
-    char const * ToString<tTag::PNM>()
-    {
-        return "PNM";
-    }
-
-    template <>
-    char const * ToString<tTag::QUE>()
-    {
-        return "QUE";
-    }
-
-    template <>
-    char const * ToString<tTag::TEX>()
-    {
-        return "TEX";
-    }
-
-    template <>
-    char const * ToString<tTag::UCA>()
-    {
-        return "UCA";
-    }
-
-    template <>
-    char const * ToString<tTag::ARG>()
-    {
-        return "ARG";
-    }
-
-    template <>
-    char const * ToString<tTag::BOL>()
-    {
-        return "BOL";
-    }
-
-    template <>
-    char const * ToString<tTag::BRZ>()
-    {
-        return "BRZ";
-    }
-
-    template <>
-    char const * ToString<tTag::CHL>()
-    {
-        return "CHL";
-    }
-
-    template <>
-    char const * ToString<tTag::CLM>()
-    {
-        return "CLM";
-    }
-
-    template <>
-    char const * ToString<tTag::ECU>()
-    {
-        return "ECU";
-    }
-
-    template <>
-    char const * ToString<tTag::PEU>()
-    {
-        return "PEU";
-    }
-
-    template <>
-    char const * ToString<tTag::PRG>()
-    {
-        return "PRG";
-    }
-
-    template <>
-    char const * ToString<tTag::URU>()
-    {
-        return "URU";
-    }
-
-    template <>
-    char const * ToString<tTag::VNZ>()
-    {
-        return "VNZ";
-    }
-
-    template <>
-    char const * ToString<tTag::AST>()
-    {
-        return "AST";
-    }
-
-    template <>
-    char const * ToString<tTag::NZL>()
-    {
-        return "NZL";
-    }
-
-    template <>
-    char const * ToString<tTag::ISR>()
-    {
-        return "ISR";
-    }
-
-    template <>
-    char const * ToString<tTag::BYZ>()
-    {
-        return "BYZ";
-    }
-
-    template <>
-    char const * ToString<tTag::ICL>()
-    {
-        return "ICL";
-    }
-
-    template <>
-    char const * ToString<tTag::BAB>()
-    {
-        return "BAB";
-    }
-
-    template <>
-    char const * ToString<tTag::TPG>()
-    {
-        return "TPG";
-    }
-
-    template <>
-    char const * ToString<tTag::ARA>()
-    {
-        return "ARA";
-    }
-
-    template <>
-    char const * ToString<tTag::UBD>()
-    {
-        return "UBD";
-    }
-
-    template <>
-    char const * ToString<tTag::BYE>()
-    {
-        return "BYE";
-    }
-
-    template <>
-    char const * ToString<tTag::PLC>()
-    {
-        return "PLC";
-    }
-
-    template <>
-    char const * ToString<tTag::GCO>()
-    {
-        return "GCO";
-    }
-
-    template <>
-    char const * ToString<tTag::JAN>()
-    {
-        return "JAN";
-    }
-
-    template <>
-    char const * ToString<tTag::D01>()
-    {
-        return "D01";
-    }
-
-    template <>
-    char const * ToString<tTag::D02>()
-    {
-        return "D02";
-    }
-
-    template <>
-    char const * ToString<tTag::D03>()
-    {
-        return "D03";
-    }
-
-    template <>
-    char const * ToString<tTag::D04>()
-    {
-        return "D04";
-    }
-
-    template <>
-    char const * ToString<tTag::D05>()
-    {
-        return "D05";
-    }
-
-    template <>
-    char const * ToString<tTag::D06>()
-    {
-        return "D06";
-    }
-
-    template <>
-    char const * ToString<tTag::D07>()
-    {
-        return "D07";
-    }
-
-    template <>
-    char const * ToString<tTag::D08>()
-    {
-        return "D08";
-    }
-
-    template <>
-    char const * ToString<tTag::D09>()
-    {
-        return "D09";
-    }
-
-    template <>
-    char const * ToString<tTag::D10>()
-    {
-        return "D10";
-    }
-
-    template <>
-    char const * ToString<tTag::D11>()
-    {
-        return "D11";
-    }
-
-    template <>
-    char const * ToString<tTag::D12>()
-    {
-        return "D12";
-    }
-
-    template <>
-    char const * ToString<tTag::D13>()
-    {
-        return "D13";
-    }
-
-    template <>
-    char const * ToString<tTag::D14>()
-    {
-        return "D14";
-    }
-
-    template <>
-    char const * ToString<tTag::D15>()
-    {
-        return "D15";
-    }
-
-    template <>
-    char const * ToString<tTag::D16>()
-    {
-        return "D16";
-    }
-
-    template <>
-    char const * ToString<tTag::D17>()
-    {
-        return "D17";
-    }
-
-    template <>
-    char const * ToString<tTag::D18>()
-    {
-        return "D18";
-    }
-
-    template <>
-    char const * ToString<tTag::D19>()
-    {
-        return "D19";
-    }
-
-    template <>
-    char const * ToString<tTag::D20>()
-    {
-        return "D20";
-    }
-
-    template <>
-    char const * ToString<tTag::D21>()
-    {
-        return "D21";
-    }
-
-    template <>
-    char const * ToString<tTag::D22>()
-    {
-        return "D22";
-    }
-
-    template <>
-    char const * ToString<tTag::D23>()
-    {
-        return "D23";
-    }
-
-    template <>
-    char const * ToString<tTag::D24>()
-    {
-        return "D24";
-    }
-
-    template <>
-    char const * ToString<tTag::D25>()
-    {
-        return "D25";
-    }
-
-    template <>
-    char const * ToString<tTag::D26>()
-    {
-        return "D26";
-    }
-
-    template <>
-    char const * ToString<tTag::D27>()
-    {
-        return "D27";
-    }
-
-    template <>
-    char const * ToString<tTag::D28>()
-    {
-        return "D28";
-    }
-
-    template <>
-    char const * ToString<tTag::D29>()
-    {
-        return "D29";
-    }
-
-    template <>
-    char const * ToString<tTag::D30>()
-    {
-        return "D30";
-    }
-
-    template <>
-    char const * ToString<tTag::D31>()
-    {
-        return "D31";
-    }
-
-    template <>
-    char const * ToString<tTag::D32>()
-    {
-        return "D32";
-    }
-
-    template <>
-    char const * ToString<tTag::D33>()
-    {
-        return "D33";
-    }
-
-    template <>
-    char const * ToString<tTag::D34>()
-    {
-        return "D34";
-    }
-
-    template <>
-    char const * ToString<tTag::D35>()
-    {
-        return "D35";
-    }
-
-    template <>
-    char const * ToString<tTag::D36>()
-    {
-        return "D36";
-    }
-
-    template <>
-    char const * ToString<tTag::D37>()
-    {
-        return "D37";
-    }
-
-    template <>
-    char const * ToString<tTag::D38>()
-    {
-        return "D38";
-    }
-
-    template <>
-    char const * ToString<tTag::D39>()
-    {
-        return "D39";
-    }
-
-    template <>
-    char const * ToString<tTag::D40>()
-    {
-        return "D40";
-    }
-
-    template <>
-    char const * ToString<tTag::D41>()
-    {
-        return "D41";
-    }
-
-    template <>
-    char const * ToString<tTag::D42>()
-    {
-        return "D42";
-    }
-
-    template <>
-    char const * ToString<tTag::D43>()
-    {
-        return "D43";
-    }
-
-    template <>
-    char const * ToString<tTag::D44>()
-    {
-        return "D44";
-    }
-
-    template <>
-    char const * ToString<tTag::D45>()
-    {
-        return "D45";
-    }
-
-    template <>
-    char const * ToString<tTag::D46>()
-    {
-        return "D46";
-    }
-
-    template <>
-    char const * ToString<tTag::D47>()
-    {
-        return "D47";
-    }
-
-    template <>
-    char const * ToString<tTag::D48>()
-    {
-        return "D48";
-    }
-
-    template <>
-    char const * ToString<tTag::D49>()
-    {
-        return "D49";
-    }
-
-    template <>
-    char const * ToString<tTag::D50>()
-    {
-        return "D50";
-    }
-
+    tLocStorage loc;
+    loc[static_cast<uint16_t>(tTag::kInvalidTag)] = nullptr;
+    loc[static_cast<uint16_t>(tTag::kThis)] = "$COUNTRY$";
+    loc[static_cast<uint16_t>(tTag::kFrom)] = "$FROMCOUNTRY$";
+    loc[static_cast<uint16_t>(tTag::ABU)] = "Абу-Даби";
+    loc[static_cast<uint16_t>(tTag::AFG)] = "Афганистан";
+    loc[static_cast<uint16_t>(tTag::ALB)] = "Албания";
+    loc[static_cast<uint16_t>(tTag::ALD)] = "Алжир";
+    loc[static_cast<uint16_t>(tTag::ANH)] = "Ангальт";
+    loc[static_cast<uint16_t>(tTag::ARA)] = "Арабия";
+    loc[static_cast<uint16_t>(tTag::ARG)] = "Аргентина";
+    loc[static_cast<uint16_t>(tTag::ARM)] = "Армения";
+    loc[static_cast<uint16_t>(tTag::ASM)] = "Ассам";
+    loc[static_cast<uint16_t>(tTag::AST)] = "Австралия";
+    loc[static_cast<uint16_t>(tTag::ATJ)] = "Ачех";
+    loc[static_cast<uint16_t>(tTag::AUS)] = "Австрия";
+    loc[static_cast<uint16_t>(tTag::AWA)] = "Авадх";
+    loc[static_cast<uint16_t>(tTag::AZB)] = "Азербайджан";
+    loc[static_cast<uint16_t>(tTag::BAB)] = "Вавилон";
+    loc[static_cast<uint16_t>(tTag::BAD)] = "Баден";
+    loc[static_cast<uint16_t>(tTag::BAL)] = "Бали";
+    loc[static_cast<uint16_t>(tTag::BAS)] = "Бастар";
+    loc[static_cast<uint16_t>(tTag::BAV)] = "Бавария";
+    loc[static_cast<uint16_t>(tTag::BEL)] = "Бельгия";
+    loc[static_cast<uint16_t>(tTag::BER)] = "Барода";
+    loc[static_cast<uint16_t>(tTag::BHO)] = "Бхопал";
+    loc[static_cast<uint16_t>(tTag::BHU)] = "Бутан";
+    loc[static_cast<uint16_t>(tTag::BIH)] = "Бихар";
+    loc[static_cast<uint16_t>(tTag::BIK)] = "Биканер";
+    loc[static_cast<uint16_t>(tTag::BMG)] = "Бурят-Монголия";
+    loc[static_cast<uint16_t>(tTag::BNG)] = "Бенгалия";
+    loc[static_cast<uint16_t>(tTag::BOH)] = "Богемия-Моравия";
+    loc[static_cast<uint16_t>(tTag::BOL)] = "Боливия";
+    loc[static_cast<uint16_t>(tTag::BOS)] = "Босния-Герцеговина";
+    loc[static_cast<uint16_t>(tTag::BRA)] = "Брауншвейг";
+    loc[static_cast<uint16_t>(tTag::BRE)] = "Бремен";
+    loc[static_cast<uint16_t>(tTag::BRU)] = "Бруней";
+    loc[static_cast<uint16_t>(tTag::BRZ)] = "Бразилия";
+    loc[static_cast<uint16_t>(tTag::BUK)] = "Бухара";
+    loc[static_cast<uint16_t>(tTag::BUL)] = "Болгария";
+    loc[static_cast<uint16_t>(tTag::BUN)] = "Бандельканд";
+    loc[static_cast<uint16_t>(tTag::BUR)] = "Бирма";
+    loc[static_cast<uint16_t>(tTag::BYE)] = "Белоруссия";
+    loc[static_cast<uint16_t>(tTag::BYZ)] = "Византия";
+    loc[static_cast<uint16_t>(tTag::CAL)] = "Калифорнийская респ.";
+    loc[static_cast<uint16_t>(tTag::CAM)] = "Камбоджа";
+    loc[static_cast<uint16_t>(tTag::CAN)] = "Канада";
+    loc[static_cast<uint16_t>(tTag::CAT)] = "Каталония";
+    loc[static_cast<uint16_t>(tTag::CHE)] = "Чероки";
+    loc[static_cast<uint16_t>(tTag::CHI)] = "Китай";
+    loc[static_cast<uint16_t>(tTag::CHL)] = "Чили";
+    loc[static_cast<uint16_t>(tTag::CLM)] = "Колумбия";
+    loc[static_cast<uint16_t>(tTag::CNG)] = "Конго";
+    loc[static_cast<uint16_t>(tTag::COB)] = "Саксен-Кобург-Гота";
+    loc[static_cast<uint16_t>(tTag::COL)] = "Колумбия";
+    loc[static_cast<uint16_t>(tTag::COS)] = "Коста-Рика";
+    loc[static_cast<uint16_t>(tTag::CRE)] = "Крит";
+    loc[static_cast<uint16_t>(tTag::CRI)] = "Крым";
+    loc[static_cast<uint16_t>(tTag::CRO)] = "Хорватия";
+    loc[static_cast<uint16_t>(tTag::CSA)] = "КША";
+    loc[static_cast<uint16_t>(tTag::CUB)] = "Куба";
+    loc[static_cast<uint16_t>(tTag::CYP)] = "Кипр";
+    loc[static_cast<uint16_t>(tTag::CZH)] = "Чехословакия";
+    loc[static_cast<uint16_t>(tTag::D01)] = "1-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D02)] = "2-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D03)] = "3-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D04)] = "4-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D05)] = "5-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D06)] = "6-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D07)] = "7-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D08)] = "8-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D09)] = "9-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D10)] = "10-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D11)] = "11-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D12)] = "12-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D13)] = "13-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D14)] = "14-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D15)] = "15-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D16)] = "16-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D17)] = "17-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D18)] = "18-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D19)] = "19-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D20)] = "20-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D21)] = "21-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D22)] = "22-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D23)] = "23-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D24)] = "24-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D25)] = "25-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D26)] = "26-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D27)] = "27-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D28)] = "28-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D29)] = "29-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D30)] = "30-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D31)] = "31-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D32)] = "32-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D33)] = "33-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D34)] = "34-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D35)] = "35-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D36)] = "36-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D37)] = "37-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D38)] = "38-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D39)] = "39-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D40)] = "40-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D41)] = "41-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D42)] = "42-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D43)] = "43-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D44)] = "44-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D45)] = "45-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D46)] = "46-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D47)] = "47-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D48)] = "48-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D49)] = "49-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::D50)] = "50-я Независимая республика";
+    loc[static_cast<uint16_t>(tTag::DAI)] = "Дайнам";
+    loc[static_cast<uint16_t>(tTag::DEN)] = "Дания";
+    loc[static_cast<uint16_t>(tTag::DES)] = "Дезерет";
+    loc[static_cast<uint16_t>(tTag::DOM)] = "Доминикана";
+    loc[static_cast<uint16_t>(tTag::DZG)] = "Данциг";
+    loc[static_cast<uint16_t>(tTag::ECU)] = "Эквадор";
+    loc[static_cast<uint16_t>(tTag::EGY)] = "Египет";
+    loc[static_cast<uint16_t>(tTag::ELS)] = "Сальвадор";
+    loc[static_cast<uint16_t>(tTag::ENG)] = "Великобритания";
+    loc[static_cast<uint16_t>(tTag::EST)] = "Эстония";
+    loc[static_cast<uint16_t>(tTag::ETH)] = "Эфиопия";
+    loc[static_cast<uint16_t>(tTag::FIN)] = "Финляндия";
+    loc[static_cast<uint16_t>(tTag::FLA)] = "Фландрия";
+    loc[static_cast<uint16_t>(tTag::FRA)] = "Франция";
+    loc[static_cast<uint16_t>(tTag::FRM)] = "Франкфурт-на-Майне";
+    loc[static_cast<uint16_t>(tTag::GCO)] = "Великая Колумбия";
+    loc[static_cast<uint16_t>(tTag::GEO)] = "Грузия";
+    loc[static_cast<uint16_t>(tTag::GER)] = "Германия";
+    loc[static_cast<uint16_t>(tTag::GRE)] = "Греция";
+    loc[static_cast<uint16_t>(tTag::GUA)] = "Гватемала";
+    loc[static_cast<uint16_t>(tTag::GWA)] = "Гвалияр";
+    loc[static_cast<uint16_t>(tTag::GXI)] = "Гуанси";
+    loc[static_cast<uint16_t>(tTag::HAI)] = "Гаити";
+    loc[static_cast<uint16_t>(tTag::HAM)] = "Гамбург";
+    loc[static_cast<uint16_t>(tTag::HAN)] = "Ганновер";
+    loc[static_cast<uint16_t>(tTag::HAW)] = "Гавайи";
+    loc[static_cast<uint16_t>(tTag::HDJ)] = "Хиджаз";
+    loc[static_cast<uint16_t>(tTag::HEK)] = "Гессен-Кассель";
+    loc[static_cast<uint16_t>(tTag::HES)] = "Гессен-Дармштадт";
+    loc[static_cast<uint16_t>(tTag::HND)] = "Индия";
+    loc[static_cast<uint16_t>(tTag::HOL)] = "Гольштейн";
+    loc[static_cast<uint16_t>(tTag::HON)] = "Гондурас";
+    loc[static_cast<uint16_t>(tTag::HUN)] = "Венгрия";
+    loc[static_cast<uint16_t>(tTag::HYD)] = "Хайдерабад";
+    loc[static_cast<uint16_t>(tTag::ICL)] = "Исландия";
+    loc[static_cast<uint16_t>(tTag::IND)] = "Индаур";
+    loc[static_cast<uint16_t>(tTag::ION)] = "Ионическая республика";
+    loc[static_cast<uint16_t>(tTag::IRE)] = "Ирландия";
+    loc[static_cast<uint16_t>(tTag::IRQ)] = "Ирак";
+    loc[static_cast<uint16_t>(tTag::ISR)] = "Израиль";
+    loc[static_cast<uint16_t>(tTag::ITA)] = "Италия";
+    loc[static_cast<uint16_t>(tTag::JAI)] = "Джайпур";
+    loc[static_cast<uint16_t>(tTag::JAN)] = "Ян-Майен";
+    loc[static_cast<uint16_t>(tTag::JAP)] = "Япония";
+    loc[static_cast<uint16_t>(tTag::JAS)] = "Джайсалмер";
+    loc[static_cast<uint16_t>(tTag::JAV)] = "Ява";
+    loc[static_cast<uint16_t>(tTag::JOD)] = "Джодхпур";
+    loc[static_cast<uint16_t>(tTag::JOH)] = "Джохор";
+    loc[static_cast<uint16_t>(tTag::KAL)] = "Калат";
+    loc[static_cast<uint16_t>(tTag::KAS)] = "Кашмир";
+    loc[static_cast<uint16_t>(tTag::KAZ)] = "Казахстан";
+    loc[static_cast<uint16_t>(tTag::KHI)] = "Хива";
+    loc[static_cast<uint16_t>(tTag::KMK)] = "Калмыкия";
+    loc[static_cast<uint16_t>(tTag::KOK)] = "Коканд";
+    loc[static_cast<uint16_t>(tTag::KOR)] = "Корея";
+    loc[static_cast<uint16_t>(tTag::KRA)] = "Краков";
+    loc[static_cast<uint16_t>(tTag::KRD)] = "Курдистан";
+    loc[static_cast<uint16_t>(tTag::KUK)] = "Австро-Венгрия";
+    loc[static_cast<uint16_t>(tTag::KUT)] = "Кач";
+    loc[static_cast<uint16_t>(tTag::KYR)] = "Киргизия";
+    loc[static_cast<uint16_t>(tTag::LAD)] = "Ладакх";
+    loc[static_cast<uint16_t>(tTag::LAF)] = "Южноамериканский Союз";
+    loc[static_cast<uint16_t>(tTag::LAT)] = "Латвия";
+    loc[static_cast<uint16_t>(tTag::LIB)] = "Либерия";
+    loc[static_cast<uint16_t>(tTag::LIP)] = "Липпе-Детмольд";
+    loc[static_cast<uint16_t>(tTag::LIT)] = "Литва";
+    loc[static_cast<uint16_t>(tTag::LOM)] = "Ломбардия";
+    loc[static_cast<uint16_t>(tTag::LUA)] = "Луанг-Прабанг";
+    loc[static_cast<uint16_t>(tTag::LUB)] = "Любек";
+    loc[static_cast<uint16_t>(tTag::LUC)] = "Лукка";
+    loc[static_cast<uint16_t>(tTag::LUX)] = "Люксембург";
+    loc[static_cast<uint16_t>(tTag::MAD)] = "Мадагаскар";
+    loc[static_cast<uint16_t>(tTag::MAK)] = "Мекран";
+    loc[static_cast<uint16_t>(tTag::MAN)] = "Коммуна Манхеттена";
+    loc[static_cast<uint16_t>(tTag::MCK)] = "Маньчжурия";
+    loc[static_cast<uint16_t>(tTag::MEC)] = "Мекленбург";
+    loc[static_cast<uint16_t>(tTag::MEI)] = "Саксен-Майнинген";
+    loc[static_cast<uint16_t>(tTag::MEW)] = "Мевар";
+    loc[static_cast<uint16_t>(tTag::MEX)] = "Мексика";
+    loc[static_cast<uint16_t>(tTag::MGL)] = "Монголия";
+    loc[static_cast<uint16_t>(tTag::MLY)] = "Малайзия";
+    loc[static_cast<uint16_t>(tTag::MOD)] = "Модена";
+    loc[static_cast<uint16_t>(tTag::MOL)] = "Молдавия";
+    loc[static_cast<uint16_t>(tTag::MON)] = "Черногория";
+    loc[static_cast<uint16_t>(tTag::MOR)] = "Марокко";
+    loc[static_cast<uint16_t>(tTag::MTC)] = "Метисская конфедерация";
+    loc[static_cast<uint16_t>(tTag::MUG)] = "Могулистан";
+    loc[static_cast<uint16_t>(tTag::MYS)] = "Майсур";
+    loc[static_cast<uint16_t>(tTag::NAG)] = "Нагпур";
+    loc[static_cast<uint16_t>(tTag::NAL)] = "Наталь";
+    loc[static_cast<uint16_t>(tTag::NAS)] = "Нассау";
+    loc[static_cast<uint16_t>(tTag::NEJ)] = "Неджд";
+    loc[static_cast<uint16_t>(tTag::NEN)] = "Новая Англия";
+    loc[static_cast<uint16_t>(tTag::NEP)] = "Непал";
+    loc[static_cast<uint16_t>(tTag::NET)] = "Нидерланды";
+    loc[static_cast<uint16_t>(tTag::NEW)] = "Ньюфаундленд";
+    loc[static_cast<uint16_t>(tTag::NGF)] = "Северогерманский союз";
+    loc[static_cast<uint16_t>(tTag::NIC)] = "Никарагуа";
+    loc[static_cast<uint16_t>(tTag::NOR)] = "Норвегия";
+    loc[static_cast<uint16_t>(tTag::NZL)] = "Новая Зеландия";
+    loc[static_cast<uint16_t>(tTag::OLD)] = "Ольденбург";
+    loc[static_cast<uint16_t>(tTag::OMA)] = "Оман";
+    loc[static_cast<uint16_t>(tTag::ORA)] = "Оранжевая республика";
+    loc[static_cast<uint16_t>(tTag::ORI)] = "Орисса";
+    loc[static_cast<uint16_t>(tTag::PAN)] = "Пенджаб";
+    loc[static_cast<uint16_t>(tTag::PAP)] = "Папская область";
+    loc[static_cast<uint16_t>(tTag::PAR)] = "Парма";
+    loc[static_cast<uint16_t>(tTag::PER)] = "Персия";
+    loc[static_cast<uint16_t>(tTag::PEU)] = "Перу";
+    loc[static_cast<uint16_t>(tTag::PHI)] = "Филиппины";
+    loc[static_cast<uint16_t>(tTag::PLC)] = "Речь Посполитая";
+    loc[static_cast<uint16_t>(tTag::PNM)] = "Панама";
+    loc[static_cast<uint16_t>(tTag::POL)] = "Польша";
+    loc[static_cast<uint16_t>(tTag::POR)] = "Португалия";
+    loc[static_cast<uint16_t>(tTag::PRG)] = "Парагвай";
+    loc[static_cast<uint16_t>(tTag::PRU)] = "Пруссия";
+    loc[static_cast<uint16_t>(tTag::QUE)] = "Квебек";
+    loc[static_cast<uint16_t>(tTag::RHO)] = "Южная Родезия";
+    loc[static_cast<uint16_t>(tTag::ROM)] = "Румыния";
+    loc[static_cast<uint16_t>(tTag::RUS)] = "Россия";
+    loc[static_cast<uint16_t>(tTag::RUT)] = "Рутения";
+    loc[static_cast<uint16_t>(tTag::SAF)] = "Южная Африка";
+    loc[static_cast<uint16_t>(tTag::SAR)] = "Сардиния-Пьемонт";
+    loc[static_cast<uint16_t>(tTag::SAX)] = "Саксония";
+    loc[static_cast<uint16_t>(tTag::SCA)] = "Скандинавия";
+    loc[static_cast<uint16_t>(tTag::SCH)] = "Шлезвиг";
+    loc[static_cast<uint16_t>(tTag::SCO)] = "Шотландия";
+    loc[static_cast<uint16_t>(tTag::SER)] = "Сербия";
+    loc[static_cast<uint16_t>(tTag::SGF)] = "Южногерманский союз";
+    loc[static_cast<uint16_t>(tTag::SHI)] = "Шимла";
+    loc[static_cast<uint16_t>(tTag::SIA)] = "Сиам";
+    loc[static_cast<uint16_t>(tTag::SIC)] = "Сицилия";
+    loc[static_cast<uint16_t>(tTag::SIE)] = "Трансильвания";
+    loc[static_cast<uint16_t>(tTag::SIK)] = "Сикким";
+    loc[static_cast<uint16_t>(tTag::SIN)] = "Синд";
+    loc[static_cast<uint16_t>(tTag::SLO)] = "Словения";
+    loc[static_cast<uint16_t>(tTag::SLV)] = "Словакия";
+    loc[static_cast<uint16_t>(tTag::SOK)] = "Сокото";
+    loc[static_cast<uint16_t>(tTag::SOV)] = "СССР";
+    loc[static_cast<uint16_t>(tTag::SPA)] = "Испания";
+    loc[static_cast<uint16_t>(tTag::SRI)] = "Шри-Ланка";
+    loc[static_cast<uint16_t>(tTag::SWE)] = "Швеция";
+    loc[static_cast<uint16_t>(tTag::SWI)] = "Швейцария";
+    loc[static_cast<uint16_t>(tTag::SXI)] = "Клика Шаньси";
+    loc[static_cast<uint16_t>(tTag::TAJ)] = "Таджикистан";
+    loc[static_cast<uint16_t>(tTag::TEX)] = "Техас";
+    loc[static_cast<uint16_t>(tTag::TIB)] = "Тибет";
+    loc[static_cast<uint16_t>(tTag::TKM)] = "Туркмения";
+    loc[static_cast<uint16_t>(tTag::TNT)] = "Танну-Тува";
+    loc[static_cast<uint16_t>(tTag::TPG)] = "Небесное Царство";
+    loc[static_cast<uint16_t>(tTag::TRA)] = "Траванкор";
+    loc[static_cast<uint16_t>(tTag::TRE)] = "Триест";
+    loc[static_cast<uint16_t>(tTag::TRI)] = "Триполи";
+    loc[static_cast<uint16_t>(tTag::TRN)] = "Трансвааль";
+    loc[static_cast<uint16_t>(tTag::TTT)] = "Татарстан";
+    loc[static_cast<uint16_t>(tTag::TUN)] = "Тунис";
+    loc[static_cast<uint16_t>(tTag::TUR)] = "Османская Империя";
+    loc[static_cast<uint16_t>(tTag::TUS)] = "Тоскана";
+    loc[static_cast<uint16_t>(tTag::UBD)] = "Объединённая Балтия";
+    loc[static_cast<uint16_t>(tTag::UCA)] = "СПЦА";
+    loc[static_cast<uint16_t>(tTag::UKR)] = "Украина";
+    loc[static_cast<uint16_t>(tTag::URU)] = "Уругвай";
+    loc[static_cast<uint16_t>(tTag::USA)] = "США";
+    loc[static_cast<uint16_t>(tTag::UZB)] = "Узбекистан";
+    loc[static_cast<uint16_t>(tTag::VEN)] = "Венеция";
+    loc[static_cast<uint16_t>(tTag::VNZ)] = "Венесуэла";
+    loc[static_cast<uint16_t>(tTag::WAL)] = "Валахия";
+    loc[static_cast<uint16_t>(tTag::WEI)] = "Саксен-Веймар";
+    loc[static_cast<uint16_t>(tTag::WIA)] = "Вьентьян";
+    loc[static_cast<uint16_t>(tTag::WLL)] = "Валлония";
+    loc[static_cast<uint16_t>(tTag::WUR)] = "Вюртемберг";
+    loc[static_cast<uint16_t>(tTag::XBI)] = "Цинхай";
+    loc[static_cast<uint16_t>(tTag::XIN)] = "Синьцзян";
+    loc[static_cast<uint16_t>(tTag::YAK)] = "Якутия";
+    loc[static_cast<uint16_t>(tTag::YEM)] = "Йемен";
+    loc[static_cast<uint16_t>(tTag::YNN)] = "Юннань";
+    loc[static_cast<uint16_t>(tTag::YUG)] = "Югославия";
+    loc[static_cast<uint16_t>(tTag::ZAN)] = "Занзибар";
+    loc[static_cast<uint16_t>(tTag::ZUL)] = "Зулу";
+    return loc;
+}
+
+char const * Localization(tTag const input)
+{
+    return LocStorage()[static_cast<uint16_t>(input)];
+}
+
+
+using tStorage = std::array<char const *, 291u>;
+
+static SINGLETON(Storage, tStorage)
+{
+    tStorage res;
+    res[static_cast<uint16_t>(tTag::kInvalidTag)] = nullptr;
+    res[static_cast<uint16_t>(tTag::kThis)] = "THIS";
+    res[static_cast<uint16_t>(tTag::kFrom)] = "FROM";
+    res[static_cast<uint16_t>(tTag::SOV)] = "SOV";
+    res[static_cast<uint16_t>(tTag::LAF)] = "LAF";
+    res[static_cast<uint16_t>(tTag::KAZ)] = "KAZ";
+    res[static_cast<uint16_t>(tTag::KYR)] = "KYR";
+    res[static_cast<uint16_t>(tTag::TAJ)] = "TAJ";
+    res[static_cast<uint16_t>(tTag::TKM)] = "TKM";
+    res[static_cast<uint16_t>(tTag::UZB)] = "UZB";
+    res[static_cast<uint16_t>(tTag::KMK)] = "KMK";
+    res[static_cast<uint16_t>(tTag::BMG)] = "BMG";
+    res[static_cast<uint16_t>(tTag::TNT)] = "TNT";
+    res[static_cast<uint16_t>(tTag::YAK)] = "YAK";
+    res[static_cast<uint16_t>(tTag::MLY)] = "MLY";
+    res[static_cast<uint16_t>(tTag::TTT)] = "TTT";
+    res[static_cast<uint16_t>(tTag::KRD)] = "KRD";
+    res[static_cast<uint16_t>(tTag::ASM)] = "ASM";
+    res[static_cast<uint16_t>(tTag::BIH)] = "BIH";
+    res[static_cast<uint16_t>(tTag::BNG)] = "BNG";
+    res[static_cast<uint16_t>(tTag::SRI)] = "SRI";
+    res[static_cast<uint16_t>(tTag::ENG)] = "ENG";
+    res[static_cast<uint16_t>(tTag::RUS)] = "RUS";
+    res[static_cast<uint16_t>(tTag::FRA)] = "FRA";
+    res[static_cast<uint16_t>(tTag::PRU)] = "PRU";
+    res[static_cast<uint16_t>(tTag::GER)] = "GER";
+    res[static_cast<uint16_t>(tTag::AUS)] = "AUS";
+    res[static_cast<uint16_t>(tTag::USA)] = "USA";
+    res[static_cast<uint16_t>(tTag::JAP)] = "JAP";
+    res[static_cast<uint16_t>(tTag::ITA)] = "ITA";
+    res[static_cast<uint16_t>(tTag::KUK)] = "KUK";
+    res[static_cast<uint16_t>(tTag::DEN)] = "DEN";
+    res[static_cast<uint16_t>(tTag::FIN)] = "FIN";
+    res[static_cast<uint16_t>(tTag::NOR)] = "NOR";
+    res[static_cast<uint16_t>(tTag::SCA)] = "SCA";
+    res[static_cast<uint16_t>(tTag::SWE)] = "SWE";
+    res[static_cast<uint16_t>(tTag::BEL)] = "BEL";
+    res[static_cast<uint16_t>(tTag::CAT)] = "CAT";
+    res[static_cast<uint16_t>(tTag::FLA)] = "FLA";
+    res[static_cast<uint16_t>(tTag::IRE)] = "IRE";
+    res[static_cast<uint16_t>(tTag::NET)] = "NET";
+    res[static_cast<uint16_t>(tTag::POR)] = "POR";
+    res[static_cast<uint16_t>(tTag::SCO)] = "SCO";
+    res[static_cast<uint16_t>(tTag::SPA)] = "SPA";
+    res[static_cast<uint16_t>(tTag::WLL)] = "WLL";
+    res[static_cast<uint16_t>(tTag::ANH)] = "ANH";
+    res[static_cast<uint16_t>(tTag::BAD)] = "BAD";
+    res[static_cast<uint16_t>(tTag::BAV)] = "BAV";
+    res[static_cast<uint16_t>(tTag::BRA)] = "BRA";
+    res[static_cast<uint16_t>(tTag::BRE)] = "BRE";
+    res[static_cast<uint16_t>(tTag::COB)] = "COB";
+    res[static_cast<uint16_t>(tTag::DZG)] = "DZG";
+    res[static_cast<uint16_t>(tTag::FRM)] = "FRM";
+    res[static_cast<uint16_t>(tTag::HAM)] = "HAM";
+    res[static_cast<uint16_t>(tTag::HAN)] = "HAN";
+    res[static_cast<uint16_t>(tTag::HES)] = "HES";
+    res[static_cast<uint16_t>(tTag::HEK)] = "HEK";
+    res[static_cast<uint16_t>(tTag::HOL)] = "HOL";
+    res[static_cast<uint16_t>(tTag::LIP)] = "LIP";
+    res[static_cast<uint16_t>(tTag::LUB)] = "LUB";
+    res[static_cast<uint16_t>(tTag::LUX)] = "LUX";
+    res[static_cast<uint16_t>(tTag::MEC)] = "MEC";
+    res[static_cast<uint16_t>(tTag::MEI)] = "MEI";
+    res[static_cast<uint16_t>(tTag::NAS)] = "NAS";
+    res[static_cast<uint16_t>(tTag::NGF)] = "NGF";
+    res[static_cast<uint16_t>(tTag::OLD)] = "OLD";
+    res[static_cast<uint16_t>(tTag::SAX)] = "SAX";
+    res[static_cast<uint16_t>(tTag::SCH)] = "SCH";
+    res[static_cast<uint16_t>(tTag::SGF)] = "SGF";
+    res[static_cast<uint16_t>(tTag::WEI)] = "WEI";
+    res[static_cast<uint16_t>(tTag::WUR)] = "WUR";
+    res[static_cast<uint16_t>(tTag::LOM)] = "LOM";
+    res[static_cast<uint16_t>(tTag::LUC)] = "LUC";
+    res[static_cast<uint16_t>(tTag::MOD)] = "MOD";
+    res[static_cast<uint16_t>(tTag::PAP)] = "PAP";
+    res[static_cast<uint16_t>(tTag::PAR)] = "PAR";
+    res[static_cast<uint16_t>(tTag::SAR)] = "SAR";
+    res[static_cast<uint16_t>(tTag::SIC)] = "SIC";
+    res[static_cast<uint16_t>(tTag::TRE)] = "TRE";
+    res[static_cast<uint16_t>(tTag::TUS)] = "TUS";
+    res[static_cast<uint16_t>(tTag::VEN)] = "VEN";
+    res[static_cast<uint16_t>(tTag::BOH)] = "BOH";
+    res[static_cast<uint16_t>(tTag::KRA)] = "KRA";
+    res[static_cast<uint16_t>(tTag::CRI)] = "CRI";
+    res[static_cast<uint16_t>(tTag::EST)] = "EST";
+    res[static_cast<uint16_t>(tTag::HUN)] = "HUN";
+    res[static_cast<uint16_t>(tTag::LIT)] = "LIT";
+    res[static_cast<uint16_t>(tTag::LAT)] = "LAT";
+    res[static_cast<uint16_t>(tTag::POL)] = "POL";
+    res[static_cast<uint16_t>(tTag::SLV)] = "SLV";
+    res[static_cast<uint16_t>(tTag::SWI)] = "SWI";
+    res[static_cast<uint16_t>(tTag::RUT)] = "RUT";
+    res[static_cast<uint16_t>(tTag::SIE)] = "SIE";
+    res[static_cast<uint16_t>(tTag::UKR)] = "UKR";
+    res[static_cast<uint16_t>(tTag::CZH)] = "CZH";
+    res[static_cast<uint16_t>(tTag::ALB)] = "ALB";
+    res[static_cast<uint16_t>(tTag::BOS)] = "BOS";
+    res[static_cast<uint16_t>(tTag::BUL)] = "BUL";
+    res[static_cast<uint16_t>(tTag::CRE)] = "CRE";
+    res[static_cast<uint16_t>(tTag::CRO)] = "CRO";
+    res[static_cast<uint16_t>(tTag::CYP)] = "CYP";
+    res[static_cast<uint16_t>(tTag::GRE)] = "GRE";
+    res[static_cast<uint16_t>(tTag::ION)] = "ION";
+    res[static_cast<uint16_t>(tTag::MOL)] = "MOL";
+    res[static_cast<uint16_t>(tTag::MON)] = "MON";
+    res[static_cast<uint16_t>(tTag::ROM)] = "ROM";
+    res[static_cast<uint16_t>(tTag::SER)] = "SER";
+    res[static_cast<uint16_t>(tTag::SLO)] = "SLO";
+    res[static_cast<uint16_t>(tTag::TUR)] = "TUR";
+    res[static_cast<uint16_t>(tTag::WAL)] = "WAL";
+    res[static_cast<uint16_t>(tTag::YUG)] = "YUG";
+    res[static_cast<uint16_t>(tTag::ALD)] = "ALD";
+    res[static_cast<uint16_t>(tTag::CNG)] = "CNG";
+    res[static_cast<uint16_t>(tTag::EGY)] = "EGY";
+    res[static_cast<uint16_t>(tTag::ETH)] = "ETH";
+    res[static_cast<uint16_t>(tTag::MAD)] = "MAD";
+    res[static_cast<uint16_t>(tTag::LIB)] = "LIB";
+    res[static_cast<uint16_t>(tTag::MOR)] = "MOR";
+    res[static_cast<uint16_t>(tTag::NAL)] = "NAL";
+    res[static_cast<uint16_t>(tTag::ORA)] = "ORA";
+    res[static_cast<uint16_t>(tTag::SAF)] = "SAF";
+    res[static_cast<uint16_t>(tTag::SOK)] = "SOK";
+    res[static_cast<uint16_t>(tTag::RHO)] = "RHO";
+    res[static_cast<uint16_t>(tTag::TRI)] = "TRI";
+    res[static_cast<uint16_t>(tTag::TRN)] = "TRN";
+    res[static_cast<uint16_t>(tTag::TUN)] = "TUN";
+    res[static_cast<uint16_t>(tTag::ZAN)] = "ZAN";
+    res[static_cast<uint16_t>(tTag::ZUL)] = "ZUL";
+    res[static_cast<uint16_t>(tTag::ABU)] = "ABU";
+    res[static_cast<uint16_t>(tTag::AFG)] = "AFG";
+    res[static_cast<uint16_t>(tTag::ARM)] = "ARM";
+    res[static_cast<uint16_t>(tTag::AZB)] = "AZB";
+    res[static_cast<uint16_t>(tTag::BUK)] = "BUK";
+    res[static_cast<uint16_t>(tTag::GEO)] = "GEO";
+    res[static_cast<uint16_t>(tTag::HDJ)] = "HDJ";
+    res[static_cast<uint16_t>(tTag::IRQ)] = "IRQ";
+    res[static_cast<uint16_t>(tTag::KHI)] = "KHI";
+    res[static_cast<uint16_t>(tTag::KOK)] = "KOK";
+    res[static_cast<uint16_t>(tTag::MUG)] = "MUG";
+    res[static_cast<uint16_t>(tTag::NEJ)] = "NEJ";
+    res[static_cast<uint16_t>(tTag::OMA)] = "OMA";
+    res[static_cast<uint16_t>(tTag::PER)] = "PER";
+    res[static_cast<uint16_t>(tTag::YEM)] = "YEM";
+    res[static_cast<uint16_t>(tTag::HND)] = "HND";
+    res[static_cast<uint16_t>(tTag::AWA)] = "AWA";
+    res[static_cast<uint16_t>(tTag::BAS)] = "BAS";
+    res[static_cast<uint16_t>(tTag::BER)] = "BER";
+    res[static_cast<uint16_t>(tTag::BHO)] = "BHO";
+    res[static_cast<uint16_t>(tTag::BIK)] = "BIK";
+    res[static_cast<uint16_t>(tTag::BUN)] = "BUN";
+    res[static_cast<uint16_t>(tTag::GWA)] = "GWA";
+    res[static_cast<uint16_t>(tTag::HYD)] = "HYD";
+    res[static_cast<uint16_t>(tTag::IND)] = "IND";
+    res[static_cast<uint16_t>(tTag::JAI)] = "JAI";
+    res[static_cast<uint16_t>(tTag::JAS)] = "JAS";
+    res[static_cast<uint16_t>(tTag::JOD)] = "JOD";
+    res[static_cast<uint16_t>(tTag::KAL)] = "KAL";
+    res[static_cast<uint16_t>(tTag::KAS)] = "KAS";
+    res[static_cast<uint16_t>(tTag::KUT)] = "KUT";
+    res[static_cast<uint16_t>(tTag::LAD)] = "LAD";
+    res[static_cast<uint16_t>(tTag::MAK)] = "MAK";
+    res[static_cast<uint16_t>(tTag::MEW)] = "MEW";
+    res[static_cast<uint16_t>(tTag::MYS)] = "MYS";
+    res[static_cast<uint16_t>(tTag::NAG)] = "NAG";
+    res[static_cast<uint16_t>(tTag::NEP)] = "NEP";
+    res[static_cast<uint16_t>(tTag::ORI)] = "ORI";
+    res[static_cast<uint16_t>(tTag::PAN)] = "PAN";
+    res[static_cast<uint16_t>(tTag::SHI)] = "SHI";
+    res[static_cast<uint16_t>(tTag::SIK)] = "SIK";
+    res[static_cast<uint16_t>(tTag::SIN)] = "SIN";
+    res[static_cast<uint16_t>(tTag::TRA)] = "TRA";
+    res[static_cast<uint16_t>(tTag::ATJ)] = "ATJ";
+    res[static_cast<uint16_t>(tTag::BAL)] = "BAL";
+    res[static_cast<uint16_t>(tTag::BHU)] = "BHU";
+    res[static_cast<uint16_t>(tTag::BRU)] = "BRU";
+    res[static_cast<uint16_t>(tTag::BUR)] = "BUR";
+    res[static_cast<uint16_t>(tTag::CAM)] = "CAM";
+    res[static_cast<uint16_t>(tTag::CHI)] = "CHI";
+    res[static_cast<uint16_t>(tTag::DAI)] = "DAI";
+    res[static_cast<uint16_t>(tTag::JAV)] = "JAV";
+    res[static_cast<uint16_t>(tTag::KOR)] = "KOR";
+    res[static_cast<uint16_t>(tTag::LUA)] = "LUA";
+    res[static_cast<uint16_t>(tTag::JOH)] = "JOH";
+    res[static_cast<uint16_t>(tTag::SIA)] = "SIA";
+    res[static_cast<uint16_t>(tTag::TIB)] = "TIB";
+    res[static_cast<uint16_t>(tTag::MGL)] = "MGL";
+    res[static_cast<uint16_t>(tTag::WIA)] = "WIA";
+    res[static_cast<uint16_t>(tTag::PHI)] = "PHI";
+    res[static_cast<uint16_t>(tTag::MCK)] = "MCK";
+    res[static_cast<uint16_t>(tTag::GXI)] = "GXI";
+    res[static_cast<uint16_t>(tTag::SXI)] = "SXI";
+    res[static_cast<uint16_t>(tTag::YNN)] = "YNN";
+    res[static_cast<uint16_t>(tTag::XBI)] = "XBI";
+    res[static_cast<uint16_t>(tTag::XIN)] = "XIN";
+    res[static_cast<uint16_t>(tTag::CAL)] = "CAL";
+    res[static_cast<uint16_t>(tTag::CAN)] = "CAN";
+    res[static_cast<uint16_t>(tTag::CHE)] = "CHE";
+    res[static_cast<uint16_t>(tTag::COL)] = "COL";
+    res[static_cast<uint16_t>(tTag::COS)] = "COS";
+    res[static_cast<uint16_t>(tTag::CSA)] = "CSA";
+    res[static_cast<uint16_t>(tTag::CUB)] = "CUB";
+    res[static_cast<uint16_t>(tTag::DES)] = "DES";
+    res[static_cast<uint16_t>(tTag::DOM)] = "DOM";
+    res[static_cast<uint16_t>(tTag::ELS)] = "ELS";
+    res[static_cast<uint16_t>(tTag::GUA)] = "GUA";
+    res[static_cast<uint16_t>(tTag::HAI)] = "HAI";
+    res[static_cast<uint16_t>(tTag::HAW)] = "HAW";
+    res[static_cast<uint16_t>(tTag::MAN)] = "MAN";
+    res[static_cast<uint16_t>(tTag::MEX)] = "MEX";
+    res[static_cast<uint16_t>(tTag::MTC)] = "MTC";
+    res[static_cast<uint16_t>(tTag::HON)] = "HON";
+    res[static_cast<uint16_t>(tTag::NEN)] = "NEN";
+    res[static_cast<uint16_t>(tTag::NEW)] = "NEW";
+    res[static_cast<uint16_t>(tTag::NIC)] = "NIC";
+    res[static_cast<uint16_t>(tTag::PNM)] = "PNM";
+    res[static_cast<uint16_t>(tTag::QUE)] = "QUE";
+    res[static_cast<uint16_t>(tTag::TEX)] = "TEX";
+    res[static_cast<uint16_t>(tTag::UCA)] = "UCA";
+    res[static_cast<uint16_t>(tTag::ARG)] = "ARG";
+    res[static_cast<uint16_t>(tTag::BOL)] = "BOL";
+    res[static_cast<uint16_t>(tTag::BRZ)] = "BRZ";
+    res[static_cast<uint16_t>(tTag::CHL)] = "CHL";
+    res[static_cast<uint16_t>(tTag::CLM)] = "CLM";
+    res[static_cast<uint16_t>(tTag::ECU)] = "ECU";
+    res[static_cast<uint16_t>(tTag::PEU)] = "PEU";
+    res[static_cast<uint16_t>(tTag::PRG)] = "PRG";
+    res[static_cast<uint16_t>(tTag::URU)] = "URU";
+    res[static_cast<uint16_t>(tTag::VNZ)] = "VNZ";
+    res[static_cast<uint16_t>(tTag::AST)] = "AST";
+    res[static_cast<uint16_t>(tTag::NZL)] = "NZL";
+    res[static_cast<uint16_t>(tTag::ISR)] = "ISR";
+    res[static_cast<uint16_t>(tTag::BYZ)] = "BYZ";
+    res[static_cast<uint16_t>(tTag::ICL)] = "ICL";
+    res[static_cast<uint16_t>(tTag::BAB)] = "BAB";
+    res[static_cast<uint16_t>(tTag::TPG)] = "TPG";
+    res[static_cast<uint16_t>(tTag::ARA)] = "ARA";
+    res[static_cast<uint16_t>(tTag::UBD)] = "UBD";
+    res[static_cast<uint16_t>(tTag::BYE)] = "BYE";
+    res[static_cast<uint16_t>(tTag::PLC)] = "PLC";
+    res[static_cast<uint16_t>(tTag::GCO)] = "GCO";
+    res[static_cast<uint16_t>(tTag::JAN)] = "JAN";
+    res[static_cast<uint16_t>(tTag::D01)] = "D01";
+    res[static_cast<uint16_t>(tTag::D02)] = "D02";
+    res[static_cast<uint16_t>(tTag::D03)] = "D03";
+    res[static_cast<uint16_t>(tTag::D04)] = "D04";
+    res[static_cast<uint16_t>(tTag::D05)] = "D05";
+    res[static_cast<uint16_t>(tTag::D06)] = "D06";
+    res[static_cast<uint16_t>(tTag::D07)] = "D07";
+    res[static_cast<uint16_t>(tTag::D08)] = "D08";
+    res[static_cast<uint16_t>(tTag::D09)] = "D09";
+    res[static_cast<uint16_t>(tTag::D10)] = "D10";
+    res[static_cast<uint16_t>(tTag::D11)] = "D11";
+    res[static_cast<uint16_t>(tTag::D12)] = "D12";
+    res[static_cast<uint16_t>(tTag::D13)] = "D13";
+    res[static_cast<uint16_t>(tTag::D14)] = "D14";
+    res[static_cast<uint16_t>(tTag::D15)] = "D15";
+    res[static_cast<uint16_t>(tTag::D16)] = "D16";
+    res[static_cast<uint16_t>(tTag::D17)] = "D17";
+    res[static_cast<uint16_t>(tTag::D18)] = "D18";
+    res[static_cast<uint16_t>(tTag::D19)] = "D19";
+    res[static_cast<uint16_t>(tTag::D20)] = "D20";
+    res[static_cast<uint16_t>(tTag::D21)] = "D21";
+    res[static_cast<uint16_t>(tTag::D22)] = "D22";
+    res[static_cast<uint16_t>(tTag::D23)] = "D23";
+    res[static_cast<uint16_t>(tTag::D24)] = "D24";
+    res[static_cast<uint16_t>(tTag::D25)] = "D25";
+    res[static_cast<uint16_t>(tTag::D26)] = "D26";
+    res[static_cast<uint16_t>(tTag::D27)] = "D27";
+    res[static_cast<uint16_t>(tTag::D28)] = "D28";
+    res[static_cast<uint16_t>(tTag::D29)] = "D29";
+    res[static_cast<uint16_t>(tTag::D30)] = "D30";
+    res[static_cast<uint16_t>(tTag::D31)] = "D31";
+    res[static_cast<uint16_t>(tTag::D32)] = "D32";
+    res[static_cast<uint16_t>(tTag::D33)] = "D33";
+    res[static_cast<uint16_t>(tTag::D34)] = "D34";
+    res[static_cast<uint16_t>(tTag::D35)] = "D35";
+    res[static_cast<uint16_t>(tTag::D36)] = "D36";
+    res[static_cast<uint16_t>(tTag::D37)] = "D37";
+    res[static_cast<uint16_t>(tTag::D38)] = "D38";
+    res[static_cast<uint16_t>(tTag::D39)] = "D39";
+    res[static_cast<uint16_t>(tTag::D40)] = "D40";
+    res[static_cast<uint16_t>(tTag::D41)] = "D41";
+    res[static_cast<uint16_t>(tTag::D42)] = "D42";
+    res[static_cast<uint16_t>(tTag::D43)] = "D43";
+    res[static_cast<uint16_t>(tTag::D44)] = "D44";
+    res[static_cast<uint16_t>(tTag::D45)] = "D45";
+    res[static_cast<uint16_t>(tTag::D46)] = "D46";
+    res[static_cast<uint16_t>(tTag::D47)] = "D47";
+    res[static_cast<uint16_t>(tTag::D48)] = "D48";
+    res[static_cast<uint16_t>(tTag::D49)] = "D49";
+    res[static_cast<uint16_t>(tTag::D50)] = "D50";
+    return res;
+}
+
+char const * ToString(tTag const input)
+{
+    return Storage()[static_cast<uint16_t>(input)];
 }

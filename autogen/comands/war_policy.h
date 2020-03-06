@@ -1,6 +1,6 @@
 #pragma once
 
-enum class tWarPolicy : uint8_t
+enum class tWarPolicy : uint16_t
 {
       jingoism       // шовинизм
     , pro_military   // милитаризм
@@ -8,8 +8,4 @@ enum class tWarPolicy : uint8_t
     , pacifism       // пацифизм
 };
 
-namespace nsWarPolicy
-{
-    template <tWarPolicy>
-    char const * ToString();
-}
+char const * ToString(tWarPolicy);

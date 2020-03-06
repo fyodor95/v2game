@@ -1,7 +1,7 @@
 #include "events.h"
 #include "words.h"
 
-static UNCONST_SINGLETON(std::ifstream, Input)
+static UNCONST_SINGLETON(Input, std::ifstream)
 {
     return std::ifstream("autogen/words.txt");
 }
@@ -41,7 +41,7 @@ static std::string operator+(std::string const & str, std::vector<std::string> c
 
 using tOptDescStorage = std::array<std::string, 12u>;
 
-static SINGLETON(tOptDescStorage, OptDescStorage)
+static SINGLETON(OptDescStorage, tOptDescStorage)
 {
     tOptDescStorage res;
     uint v = 1;

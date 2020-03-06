@@ -1,6 +1,6 @@
 #pragma once
 
-enum class tContinent : uint8_t
+enum class tContinent : uint16_t
 {
     kEurope,
     kAsia,
@@ -10,8 +10,4 @@ enum class tContinent : uint8_t
     kOceania
 };
 
-namespace nsContinent
-{
-    template <tContinent>
-    char const * ToString();
-}
+char const * ToString(tContinent);

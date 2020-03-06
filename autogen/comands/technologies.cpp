@@ -47,7 +47,7 @@ tTechArea ConstructArmyTechArea()
     return res;
 }
 
-SINGLETON(tTechArea, ArmyTech)
+SINGLETON(ArmyTech, tTechArea)
 {
     return ConstructArmyTechArea();
 }

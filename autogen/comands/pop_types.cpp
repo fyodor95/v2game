@@ -1,78 +1,26 @@
 #include "pop_types.h"
 
-namespace nsPopType
+using tStorage = std::array<char const *, 12u>;
+
+static SINGLETON(Storage, tStorage)
 {
+    tStorage res;
+    res[static_cast<uint16_t>(tPopType::aristocrats)] = "aristocrats";
+    res[static_cast<uint16_t>(tPopType::artisans)] = "artisans";
+    res[static_cast<uint16_t>(tPopType::bureaucrats)] = "bureaucrats";
+    res[static_cast<uint16_t>(tPopType::capitalists)] = "capitalists";
+    res[static_cast<uint16_t>(tPopType::clergymen)] = "clergymen";
+    res[static_cast<uint16_t>(tPopType::clerks)] = "clerks";
+    res[static_cast<uint16_t>(tPopType::craftsmen)] = "craftsmen";
+    res[static_cast<uint16_t>(tPopType::farmers)] = "farmers";
+    res[static_cast<uint16_t>(tPopType::labourers)] = "labourers";
+    res[static_cast<uint16_t>(tPopType::officers)] = "officers";
+    res[static_cast<uint16_t>(tPopType::slaves)] = "slaves";
+    res[static_cast<uint16_t>(tPopType::soldiers)] = "soldiers";
+    return res;
+}
 
-    template <>
-    char const * ToString<tPopType::aristocrats>()
-    {
-        return "aristocrats";
-    }
-
-    template <>
-    char const * ToString<tPopType::artisans>()
-    {
-        return "artisans";
-    }
-
-    template <>
-    char const * ToString<tPopType::bureaucrats>()
-    {
-        return "bureaucrats";
-    }
-
-    template <>
-    char const * ToString<tPopType::capitalists>()
-    {
-        return "capitalists";
-    }
-
-    template <>
-    char const * ToString<tPopType::clergymen>()
-    {
-        return "clergymen";
-    }
-
-    template <>
-    char const * ToString<tPopType::clerks>()
-    {
-        return "clerks";
-    }
-
-    template <>
-    char const * ToString<tPopType::craftsmen>()
-    {
-        return "craftsmen";
-    }
-
-    template <>
-    char const * ToString<tPopType::farmers>()
-    {
-        return "farmers";
-    }
-
-    template <>
-    char const * ToString<tPopType::labourers>()
-    {
-        return "labourers";
-    }
-
-    template <>
-    char const * ToString<tPopType::officers>()
-    {
-        return "officers";
-    }
-
-    template <>
-    char const * ToString<tPopType::slaves>()
-    {
-        return "slaves";
-    }
-
-    template <>
-    char const * ToString<tPopType::soldiers>()
-    {
-        return "soldiers";
-    }
-
+char const * ToString(tPopType const input)
+{
+    return Storage()[static_cast<uint16_t>(input)];
 }

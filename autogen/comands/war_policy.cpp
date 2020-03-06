@@ -1,30 +1,18 @@
 #include "war_policy.h"
 
-namespace nsWarPolicy
+using tStorage = std::array<char const *, 4u>;
+
+static SINGLETON(Storage, tStorage)
 {
+    tStorage res;
+    res[static_cast<uint16_t>(tWarPolicy::jingoism)] = "jingoism";
+    res[static_cast<uint16_t>(tWarPolicy::pro_military)] = "pro_military";
+    res[static_cast<uint16_t>(tWarPolicy::anti_military)] = "anti_military";
+    res[static_cast<uint16_t>(tWarPolicy::pacifism)] = "pacifism";
+    return res;
+}
 
-    template <>
-    char const * ToString<tWarPolicy::jingoism>()
-    {
-        return "jingoism";
-    }
-
-    template <>
-    char const * ToString<tWarPolicy::pro_military>()
-    {
-        return "pro_military";
-    }
-
-    template <>
-    char const * ToString<tWarPolicy::anti_military>()
-    {
-        return "anti_military";
-    }
-
-    template <>
-    char const * ToString<tWarPolicy::pacifism>()
-    {
-        return "pacifism";
-    }
-
+char const * ToString(tWarPolicy const input)
+{
+    return Storage()[static_cast<uint16_t>(input)];
 }

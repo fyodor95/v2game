@@ -1,54 +1,22 @@
 #include "governments.h"
 
-namespace nsGovernment
+using tStorage = std::array<char const *, 8u>;
+
+static SINGLETON(Storage, tStorage)
 {
+    tStorage res;
+    res[static_cast<uint16_t>(tGovernment::proletarian_dictatorship)] = "proletarian_dictatorship";
+    res[static_cast<uint16_t>(tGovernment::presidential_dictatorship)] = "presidential_dictatorship";
+    res[static_cast<uint16_t>(tGovernment::bourgeois_dictatorship)] = "bourgeois_dictatorship";
+    res[static_cast<uint16_t>(tGovernment::fascist_dictatorship)] = "fascist_dictatorship";
+    res[static_cast<uint16_t>(tGovernment::absolute_monarchy)] = "absolute_monarchy";
+    res[static_cast<uint16_t>(tGovernment::prussian_constitutionalism)] = "prussian_constitutionalism";
+    res[static_cast<uint16_t>(tGovernment::hms_government)] = "hms_government";
+    res[static_cast<uint16_t>(tGovernment::democracy)] = "democracy";
+    return res;
+}
 
-    template <>
-    char const * ToString<tGovernment::proletarian_dictatorship>()
-    {
-        return "proletarian_dictatorship";
-    }
-
-    template <>
-    char const * ToString<tGovernment::presidential_dictatorship>()
-    {
-        return "presidential_dictatorship";
-    }
-
-    template <>
-    char const * ToString<tGovernment::bourgeois_dictatorship>()
-    {
-        return "bourgeois_dictatorship";
-    }
-
-    template <>
-    char const * ToString<tGovernment::fascist_dictatorship>()
-    {
-        return "fascist_dictatorship";
-    }
-
-    template <>
-    char const * ToString<tGovernment::absolute_monarchy>()
-    {
-        return "absolute_monarchy";
-    }
-
-    template <>
-    char const * ToString<tGovernment::prussian_constitutionalism>()
-    {
-        return "prussian_constitutionalism";
-    }
-
-    template <>
-    char const * ToString<tGovernment::hms_government>()
-    {
-        return "hms_government";
-    }
-
-    template <>
-    char const * ToString<tGovernment::democracy>()
-    {
-        return "democracy";
-    }
-
+char const * ToString(tGovernment const input)
+{
+    return Storage()[static_cast<uint16_t>(input)];
 }

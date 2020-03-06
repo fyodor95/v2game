@@ -1,6 +1,6 @@
 #pragma once
 
-enum class tGovernment : uint8_t
+enum class tGovernment : uint16_t
 {
       proletarian_dictatorship
     , presidential_dictatorship
@@ -12,8 +12,4 @@ enum class tGovernment : uint8_t
     , democracy
 };
 
-namespace nsGovernment
-{
-    template <tGovernment>
-    char const * ToString();
-}
+char const * ToString(tGovernment);
