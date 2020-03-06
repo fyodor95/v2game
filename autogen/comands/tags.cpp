@@ -10,6 +10,18 @@ namespace nsTag
     }
 
     template <>
+    char const * Localization<tTag::kThis>()
+    {
+        return "$COUNTRY$";
+    }
+
+    template <>
+    char const * Localization<tTag::kFrom>()
+    {
+        return "$FROMCOUNTRY$";
+    }
+
+    template <>
     char const * Localization<tTag::ABU>()
     {
         return "Абу-Даби";
@@ -1741,6 +1753,18 @@ namespace nsTag
     char const * ToString<tTag::kInvalidTag>()
     {
         return nullptr;
+    }
+
+    template <>
+    char const * ToString<tTag::kThis>()
+    {
+        return "THIS";
+    }
+
+    template <>
+    char const * ToString<tTag::kFrom>()
+    {
+        return "FROM";
     }
 
     template <>

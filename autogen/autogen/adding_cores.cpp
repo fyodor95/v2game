@@ -30,7 +30,7 @@ void ProcessCultureAndCountry(uint & id, std::ofstream & eventOutput, std::ofstr
     if constexpr (main)
     {
         conditions.push_back(MajorityCultureIs<culture>());
-        conditionsForTag.push_back(Exists(_No));
+        conditionsForOwner.push_back(Not(Exists<tag>()));
         if constexpr (civilized && !dxx)
             conditionsForOwner.push_back(Civilized());
         conditionsForOwner.push_back(Not(AnyOwnedProvince(IsNationalFor<tag>())));

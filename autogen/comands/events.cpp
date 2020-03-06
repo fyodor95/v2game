@@ -59,18 +59,23 @@ static tString EventProperty(tEventPropertyType const type, uint const eventID, 
 }
 
 template <tTarget target>
-tOption<target> Option(tEffects<target> && effects, uint const eventID, uint const optionNum)
+tOption<target> Option(tEffects<target> && effects, uint const eventID, uint const optionNum, uint const aiChance)
 {
     static_assert(target != tTarget::kPop);
     assertion(optionNum && optionNum <= 26u);
     tOption<target> res("option", tComands{});
+    if (aiChance != UINT_MAX)
+    {
+        assertion(aiChance <= 100);
+        res.AddToBody("ai_chance = { factor = " + std::to_string(aiChance) + " }");
+    }
     res.AddToBody(EventProperty(tEventPropertyType::kOptionDescription, eventID, optionNum));
     res.AddToBody(std::move(CastToComands(effects)), 1u);
     return res;
 }
 
-template tOption<tTarget::kCountry > Option(tEffects<tTarget::kCountry > &&, uint, uint);
-template tOption<tTarget::kProvince> Option(tEffects<tTarget::kProvince> &&, uint, uint);
+template tOption<tTarget::kCountry > Option(tEffects<tTarget::kCountry > &&, uint, uint, uint);
+template tOption<tTarget::kProvince> Option(tEffects<tTarget::kProvince> &&, uint, uint, uint);
 
 tString Picture(char const * const eventPicture)
 {
@@ -112,14 +117,21 @@ char const * EventScope<tTarget::kProvince>()
 }
 
 template <tTarget target>
-tComand ConstructEventWithoutHeader(tTrigger          <target> && trigger,
-                                    tMeanTimeToHappen <target> && meanTimeToHappen,
+tComand ConstructEventWithoutHeader(tTrigger          <target> * const trigger,
+                                    tMeanTimeToHappen <target> * const meanTimeToHappen,
                                     tOptions          <target> && options)
 {
-    assertion(!options.empty());
+    assertion(!options.empty() && !!trigger == !!meanTimeToHappen);
     tComand res(EventScope<target>(), std::move(CastToComands(options)));
-    res.AddToBody({std::move(meanTimeToHappen)}  , 0u);
-    res.AddToBody({std::move(         trigger)}  , 0u);
+    if (trigger)
+    {
+        res.AddToBody({std::move(* meanTimeToHappen)}  , 0u);
+        res.AddToBody({std::move(*          trigger)}  , 0u);
+    }
+    else
+    {
+        res.AddToBody(std::string("is_triggered_only = yes"));
+    }
     return res;
 }
 
@@ -137,6 +149,25 @@ void PrintEvent(tComand const & event, uint const id, char const * const title, 
 }
 
 template <tTarget target>
+static void Event(uint const id, char const * const title, char const * const desc,
+                  std::ostream & eventOutput, std::ostream & locOutput,
+                  tTrigger          <target> * const trigger,
+                  tMeanTimeToHappen <target> * const meanTimeToHappen,
+                  tOptions          <target> && options,
+                  tOptionDescriptions const & optionDescriptions,
+                  char const * const eventPicture)
+{
+    static_assert(target != tTarget::kPop);
+    assertion(TargetIsCountry(target) == !!eventPicture);
+    assertion(!!trigger == !!meanTimeToHappen);
+    assertion(title && desc && options.size() == optionDescriptions.size());
+    tComand res = ConstructEventWithoutHeader<target>(std::move(trigger), std::move(meanTimeToHappen),
+                                                      std::move(options));
+    res.AddToBody(EventHeader(id, eventPicture), 0u);
+    PrintEvent<target>(res, id, title, desc, eventOutput, locOutput, optionDescriptions);
+}
+
+template <tTarget target>
 void Event(uint const id, char const * const title, char const * const desc,
            std::ostream & eventOutput, std::ostream & locOutput,
            tTrigger          <target> && trigger,
@@ -146,12 +177,8 @@ void Event(uint const id, char const * const title, char const * const desc,
            char const * const eventPicture)
 {
     static_assert(target != tTarget::kPop);
-    assertion(TargetIsCountry(target) == !!eventPicture);
-    assertion(title && desc && options.size() == optionDescriptions.size());
-    tComand res = ConstructEventWithoutHeader<target>(std::move(trigger), std::move(meanTimeToHappen),
-                                                      std::move(options));
-    res.AddToBody(EventHeader(id, eventPicture), 0u);
-    PrintEvent<target>(res, id, title, desc, eventOutput, locOutput, optionDescriptions);
+    Event<target>(id, title, desc, eventOutput, locOutput, &trigger, &meanTimeToHappen,
+                  std::move(options), optionDescriptions, eventPicture);
 }
 
 #define EVENT_INSTANTIATION(TARGET)                                \
@@ -162,6 +189,15 @@ template void Event<tTarget::k##TARGET>                             \
  tOptions          <tTarget::k##TARGET> &&,                             \
  tOptionDescriptions const &,                                            \
  char const *)
-
 EVENT_INSTANTIATION(Country);
 EVENT_INSTANTIATION(Province);
+
+void TriggeredCountryEvent(uint const id, char const * const title, char const * const desc,
+                           std::ostream & eventOutput, std::ostream & locOutput,
+                           tOptions           <tTarget::kCountry> && options,
+                           tOptionDescriptions const & optionDescriptions,
+                           char const * const eventPicture)
+{
+    Event<tTarget::kCountry>(id, title, desc, eventOutput, locOutput, nullptr, nullptr,
+                             std::move(options), optionDescriptions, eventPicture);
+}

@@ -9,6 +9,7 @@ Screenshots/
 /music/*5.mp3
 /autogen1/report.txt
 report.txt
+*.orig
 
 #Built stuff
 Debug/

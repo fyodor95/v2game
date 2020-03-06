@@ -19,6 +19,8 @@
     <ClInclude Include="governments.h" />
     <ClInclude Include="flags.h" />
     <ClInclude Include="pop_types.h" />
+    <ClInclude Include="war_policy.h" />
+    <ClInclude Include="technologies.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="_pch_comands.cpp" />
@@ -35,5 +37,7 @@
     <ClCompile Include="governments.cpp" />
     <ClCompile Include="flags.cpp" />
     <ClCompile Include="pop_types.cpp" />
+    <ClCompile Include="war_policy.cpp" />
+    <ClCompile Include="technologies.cpp" />
   </ItemGroup>
 </Project>

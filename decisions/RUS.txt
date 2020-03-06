@@ -163,40 +163,6 @@ political_decisions = {
 			}
 		}
 	}
-	
-	peking_convention = {
-		potential = {
-			tag = RUS
-			MCK = {
-					owns = 1082 }
-			NOT = {
-				has_country_flag = peking_convention
-				war_with = MCK
-			}
-			OR = {
-				is_sphere_leader_of = MCK
-				has_global_flag = summer_palace_torched
-			}
-		}
-		
-		allow = {
-			is_greater_power = yes
-		}
-		
-		effect = {
-			CHI_1082 = {
-				add_core = RUS
-			}
-			1469 = {
-				add_core = RUS
-			}
-			set_country_flag = peking_convention			
-			MCK = {
-				country_event = { id=80000 days=0 }
-			}
-			prestige = 2
-		}
-	}
 
 	russian_vladivostok = {
 		potential = {

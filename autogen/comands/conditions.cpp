@@ -20,6 +20,11 @@ tCondition<target> HasGlobalFlag(char const * const flag)
 template tCondition<tTarget::kCountry > HasGlobalFlag(char const *);
 template tCondition<tTarget::kProvince> HasGlobalFlag(char const *);
 
+tCondition<tTarget::kCountry> AllProvinces(tCondition<tTarget::kProvince> && condition)
+{
+    return Not(AnyOwnedProvince(Not(std::move(condition))));
+}
+
 tCondition<tTarget::kCountry> AnyOwnedProvince(tCondition<tTarget::kProvince> && condition)
 {
     return tCondition<tTarget::kCountry>("any_owned_province", tComands{std::move(condition)});
@@ -35,11 +40,6 @@ tCondition<tTarget::kCountry> ConditionsForCapital(tConditions<tTarget::kProvinc
     return tCondition<tTarget::kCountry>("capital_scope", std::move(CastToComands(conditions)));
 }
 
-tCondition<tTarget::kCountry> Exists(tYesOrNo const flag)
-{
-    return Set("exists", YesOrNo(flag));
-}
-
 tCondition<tTarget::kCountry> HasDefaultPrimaryCulture()
 {
     return IsPrimary<kDefaultCulture>();
@@ -48,6 +48,11 @@ tCondition<tTarget::kCountry> HasDefaultPrimaryCulture()
 tCondition<tTarget::kCountry> HasProvince(tConditions<tTarget::kProvince> && conditions)
 {
     return {"any_owned_province", std::move(CastToComands(conditions))};
+}
+
+tCondition<tTarget::kCountry> HasTechnology(tTechnology const & tech)
+{
+    return Set(std::string(tech.ToString()), "1");
 }
 
 template <size_t i = 0u>
@@ -67,12 +72,37 @@ tCondition<tTarget::kCountry> IsAI(tYesOrNo const flag)
     return Set("ai", YesOrNo(flag));
 }
 
+tCondition<tTarget::kCountry> IsAI(tYesOrNo const flag)
+{
+    return Set("ai", YesOrNo(flag));
+}
+
 tCondition<tTarget::kCountry> IsDominion()
 {
     tConditions<tTarget::kCountry> body;
     body.reserve(kDominions.size());
     AddTag(body);
     return Or(std::move(body));
+}
+
+tCondition<tTarget::kCountry> IsIndependant(tYesOrNo const flag)
+{
+    return Set("is_independant", YesOrNo(flag));
+}
+
+tCondition<tTarget::kCountry> IsMobilised(tYesOrNo const flag)
+{
+    return Set("is_mobilised", YesOrNo(flag));
+}
+
+tCondition<tTarget::kCountry> IsPartOfSphere(tYesOrNo const flag)
+{
+    return Set("part_of_sphere", YesOrNo(flag));
+}
+
+tCondition<tTarget::kCountry> War(tYesOrNo const flag)
+{
+    return Set("war", YesOrNo(flag));
 }
 
 tCondition<tTarget::kProvince> ConditionsForOwner(tConditions<tTarget::kCountry> && conditions)

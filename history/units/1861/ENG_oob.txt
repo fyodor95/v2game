@@ -210,16 +210,6 @@ BHU = {
 	influence_value = 25
 }
 
-YNN = {
-	value = 75
-	influence_value = 25
-}
-
-GXI = {
-	value = 75
-	influence_value = 25
-}
-
 #Leaders
 
 leader = {

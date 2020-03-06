@@ -30,6 +30,11 @@ tEffect<target> RemoveGlobalFlag(char const * const flag)
 template tEffect<tTarget::kCountry > RemoveGlobalFlag(char const *);
 template tEffect<tTarget::kProvince> RemoveGlobalFlag(char const *);
 
+tEffect<tTarget::kCountry> AddBadboy(float const value)
+{
+    return Set("badboy", ToString(value));
+}
+
 tEffect<tTarget::kCountry> AddPrestige(int const value)
 {
     return Set("prestige", std::to_string(value));
@@ -39,6 +44,15 @@ tEffect<tTarget::kCountry> EffectsForAllPops(tCondition<tTarget::kPop> && limit,
 {
     tEffect<tTarget::kCountry> res("any_pop", std::move(CastToComands(effects)));
     res.AddToBody({tComand("limit", tComands{std::move(limit)})}, 0u);
+    return res;
+}
+
+tEffect<tTarget::kCountry> EffectsForOwnedProvinces(tConditions <tTarget::kProvince> && conditions,
+                                                    tEffects    <tTarget::kProvince> && effects)
+{
+    tEffect<tTarget::kCountry> res("any_owned", std::move(CastToComands(effects)));
+    if (!conditions.empty())
+        res.AddToBody({tComand("limit", std::move(CastToComands(conditions)))}, 0u);
     return res;
 }
 

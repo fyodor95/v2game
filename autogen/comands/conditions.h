@@ -9,6 +9,8 @@
 #include "reforms.h"
 #include "tags.h"
 #include "target_comand.h"
+#include "technologies.h"
+#include "war_policy.h"
 
 COMAND(tCondition);
 
@@ -44,6 +46,9 @@ tCondition<target> AverageMilitancy(float num);
 template <tTarget target = tTarget::kCountry>
 tCondition<target> HasGlobalFlag(char const * flag);
 
+// Возвращает true, если для всех провинций выполнено условие condition.
+tCondition<tTarget::kCountry> AllProvinces(tCondition<tTarget::kProvince> && condition);
+
 // Возвращает true, если хотя бы для одной провинции, принадлежащей данной стране, выполняется условие condition.
 tCondition<tTarget::kCountry> AnyOwnedProvince(tCondition<tTarget::kProvince> && condition);
 
@@ -63,13 +68,18 @@ tCondition<tTarget::kCountry> ConditionsForCapital(tConditions<tTarget::kProvinc
 template <tTag tag, tTarget target = tTarget::kCountry>
 tCondition<target> ConditionsForSpecifiedCountry(tConditions<tTarget::kCountry> && conditions);
 
-// Возвращает true, если данная страна существует в данный момент.
-// Если flag == _No, то возвращаемое значение инвертируется.
-tCondition<tTarget::kCountry> Exists(tYesOrNo flag = _Yes);
+// Возвращает true, если держава tag существует в данный момент.
+template <tTag tag>
+tCondition<tTarget::kCountry> Exists() { return Set("exists", nsTag::ToString<tag>()); }
 
 // Возвращает true, если данная страна имеют форму правления government.
 template <tGovernment government>
 tCondition<tTarget::kCountry> GovernmentIs() { return Set("government", nsGovernment::ToString<government>()); }
+
+// Возвращает true, если данная держава значительно опережает державу tag по военным технологиям
+// (если каждый военный столбик в данной стране выше, чем в стране tag).
+template <tTag tag>
+tCondition<tTarget::kCountry> HasMuchBetterArmyTechsThan();
 
 // Условие для доминионов (стран с тэгами DXX (01 <= XX <= 50)). По умолчанию их культурой является tCulture::british.
 // Возвращает true, если основная культура государства совпадает с культурой по умолчанию.
@@ -81,6 +91,9 @@ tCondition<tTarget::kCountry> HasFlag() { return Set("has_country_flag", nsCount
 // Возвращает true, если в данной стране существует провинция, удовлетворяющая набору условий conditions.
 tCondition<tTarget::kCountry> HasProvince(tConditions<tTarget::kProvince> && conditions);
 
+// Возвращает true, если в данной стране изучена технология tech.
+tCondition<tTarget::kCountry> HasTechnology(tTechnology const & tech);
+
 // Возвращает true, если культура culture является признанной в данной стране.
 template <tCulture culture>
 tCondition<tTarget::kCountry> IsAccepted() { return Set("accepted_culture", nsCulture::ToString<culture>()); }
@@ -91,12 +104,32 @@ tCondition<tTarget::kCountry> IsAcceptedOrPrimary();
 
 tCondition<tTarget::kCountry> IsAI(tYesOrNo flag = _Yes);
 
+tCondition<tTarget::kCountry> IsAI(tYesOrNo flag = _Yes);
+
 // Возвращает true, если тэгом является DXX (01 <= XX <= 50).
 tCondition<tTarget::kCountry> IsDominion();
+
+// Возвращает true, если данная страна не является ни автономией, ни сателлитом.
+tCondition<tTarget::kCountry> IsIndependant(tYesOrNo flag = _Yes);
+
+// Возвращает true, если данная войска данной державы в настоящий момент мобилизованы.
+tCondition<tTarget::kCountry> IsMobilised(tYesOrNo flag = _Yes);
+
+// Возвращает true, если данная держава имеет общую границу с державой tag.
+template <tTag tag>
+tCondition<tTarget::kCountry> IsNeighbor() { return Set("neighbour", nsTag::ToString<tag>()); }
+
+// Возвращает true, если данная держава находится в чьей-либо сфере влияния.
+tCondition<tTarget::kCountry> IsPartOfSphere(tYesOrNo flag = _Yes);
 
 // Возвращает true, если культура culture является основной в данной стране.
 template <tCulture culture>
 tCondition<tTarget::kCountry> IsPrimary() { return Set("primary_culture", nsCulture::ToString<culture>()); }
+
+// Возвращает true, если данная держава имеет не более [число бригад державы tag]/n бригад (включая мобилизованные).
+template <tTag tag>
+tCondition<tTarget::kCountry> NumOfBrigadesNTimesLessThan(float n)
+{ return tCondition<tTarget::kCountry>(nsTag::ToString<tag>(), {Set("brigades_compare", ToString(n))}); }
 
 // Возвращает true, если уровень реформы tReformType в данной стране равен level.
 template <class tReformType, tReformType level>
@@ -113,11 +146,30 @@ tCondition<tTarget::kCountry> ReformLevelIsLessThan();
 template <class tReformType, tReformType level>
 tCondition<tTarget::kCountry> ReformLevelIsGreaterOrEaqualThan();
 
+// Возвращает true, если отношения между данной державой и державой tag не меньше, чем value.
+template <tTag tag>
+tCondition<tTarget::kCountry> RelationWithCountryIsHigherOrEqual(int value);
+
 template <tTag tag>
 tCondition<tTarget::kCountry> TagIs() { return Set("tag", nsTag::ToString<tag>()); }
 
+// Возвращает true, если военной политикой данной державы является policy.
+template <tWarPolicy policy>
+tCondition<tTarget::kCountry> WarPolicyIs() { return Set("war_policy", nsWarPolicy::ToString<policy>()); }
+
+// Возвращает true, если данная страна находится в состоянии войны.
+tCondition<tTarget::kCountry> War(tYesOrNo flag = _Yes);
+
+// Возвращает true, если данная страна находится в состоянии войны с державой tag.
+template <tTag tag>
+tCondition<tTarget::kCountry> WarWith() { return Set("war_with", nsTag::ToString<tag>()); }
+
 // Проверяет условия conditions для владельца данной провинции. Возвращает true, если выполнено каждое из условий.
 tCondition<tTarget::kProvince> ConditionsForOwner(tConditions<tTarget::kCountry> && conditions);
+
+// Возвращает true, если данная провинция в данный момент контролируется державой tag.
+template <tTag tag>
+tCondition<tTarget::kProvince> ControlledBy() { return Set("controlled_by", nsTag::ToString<tag>()); }
 
 // Возвращает true, если данная провинция оккупирована повстанцами.
 // Если flag == _No, то возвращаемое значение инвертируется.
@@ -210,10 +262,42 @@ tCondition<target> ConditionsForSpecifiedCountry(tConditions<tTarget::kCountry> 
         return tCondition<target>(ConditionsForOwner({ConditionsForSpecifiedCountry<tag>(std::move(conditions))}));
 }
 
+template <tTag tag>
+tCondition<tTarget::kCountry> HasMuchBetterArmyTechsThan()
+{
+    tConditions<tTarget::kCountry> conditions;
+    for (int i = 0; i < 5; ++i)
+    {
+        tConditions<tTarget::kCountry> subconditions;
+        for (int j = 0; j < 6; ++j)
+        {
+            tTechnology const & tech = ArmyTech()[i][j];
+            subconditions.push_back
+            (
+                And<tTarget::kCountry>
+                ({
+                    HasTechnology(tech),
+                    ConditionsForSpecifiedCountry<tag>({Not(HasTechnology(tech))})
+                })
+            );
+        }
+        conditions.push_back(Or<tTarget::kCountry>(std::move(subconditions)));
+    }
+    return And<tTarget::kCountry>(std::move(conditions));
+}
+
 template <tCulture culture>
 tCondition<tTarget::kCountry> IsAcceptedOrPrimary()
 {
     return Or<tTarget::kCountry>({IsAccepted<culture>(), IsPrimary<culture>()});
+}
+
+template <tTag tag>
+tCondition<tTarget::kCountry> RelationWithCountryIsHigherOrEqual(int const value)
+{
+    assertion(-200 < value && value <= 200);
+    return tCondition<tTarget::kCountry>("relation",
+                                         {Set("who", nsTag::ToString<tag>()), Set("value", std::to_string(value))});
 }
 
 template <class tReformType, tReformType level>

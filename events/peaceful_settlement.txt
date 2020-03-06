@@ -1,0 +1,89 @@
+country_event = {
+	id = 76000
+	title = "EVTNAME76000"
+	desc = "EVTDESC76000"
+	picture = "Administration"
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPTA76000"
+		FROM = {
+			country_event = { id=76001 days=0 }
+		}
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = "EVTOPTB76000"
+		FROM = {
+			any_owned = {
+				limit = {
+					is_core = THIS
+				}
+				remove_core = THIS
+			}
+		}
+		prestige = -5
+		FROM = {
+			country_event = { id=76002 days=0 }
+		}
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 76001
+	title = "EVTNAME76001"
+	desc = "EVTDESC76001"
+	picture = "Administration"
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPTA76000"
+		any_owned = {
+			limit = {
+				is_core = FROM
+			}
+			secede_province = FROM
+			remove_core = THIS
+		}
+		prestige = -10
+		badboy = -5
+		relation = {
+			who = FROM
+			value = 200
+		}
+	}
+}
+country_event = {
+	id = 76002
+	title = "EVTNAME76002"
+	desc = "EVTDESC76002"
+	picture = "Administration"
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPTA76002"
+	}
+}
+country_event = {
+	id = 76003
+	title = "EVTNAME76003"
+	desc = "EVTDESC76003"
+	picture = "Administration"
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPTA76003"
+		inherit = FROM
+		prestige = 10
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = "EVTOPTB76003"
+		FROM = {
+			any_owned = {
+				remove_core = THIS
+			}
+		}
+		prestige = -5
+		FROM = {
+			country_event = { id=76002 days=0 }
+		}
+		ai_chance = { factor = 0 }
+	}
+}
