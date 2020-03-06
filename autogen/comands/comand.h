@@ -1,6 +1,6 @@
 #pragma once
 
-enum class tShift : uint8_t
+enum class tShift : uint16_t
 {
     kDecrease,
     kTheSame,

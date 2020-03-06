@@ -1,6 +1,6 @@
 #pragma once
 
-enum class tPopType
+enum class tPopType : uint16_t
 {
     aristocrats, // аристократы
     artisans,    // кустари
@@ -16,8 +16,4 @@ enum class tPopType
     soldiers     // солдаты
 };
 
-namespace nsPopType
-{
-    template <tPopType>
-    char const * ToString();
-}
+char const * ToString(tPopType);

@@ -1,6 +1,6 @@
 #pragma once
 
-enum class tCulture : uint8_t
+enum class tCulture : uint16_t
 {
       north_german
     , south_german
@@ -238,21 +238,11 @@ enum class tCulture : uint8_t
     , wallonian
 };
 
-namespace nsCulture
-{
-
-    template <tCulture>
-    char const * Localization();
-
-    template <tCulture>
-    char const * ToString();
-
-}
+char const * Localization(tCulture);
+char const * ToString(tCulture);
 
 //  ультура, €вл€юща€с€ основной по умолчанию у доминионов (стран с тэгами DXX (01 <= XX <= 50)).
 constexpr tCulture kDefaultCulture = tCulture::british;
-
-#define LOOP_BY_CULTURES(FUNC_NAME) CONSTEXPR_LOOP(FUNC_NAME, tCulture, kCultures, culture)
 
 constexpr std::array<tCulture, 234u> kCultures
 {

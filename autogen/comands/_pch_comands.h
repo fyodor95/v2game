@@ -21,17 +21,17 @@ using uint = unsigned;
 template <class T>
 using tCouple = std::array<T, 2>;
 
-#define UNCONST_SINGLETON(TYPE, NAME)              \
-TYPE & NAME();                                      \
-static TYPE Construct##NAME();                       \
-TYPE & NAME()                                         \
+#define UNCONST_SINGLETON(name, ...)               \
+__VA_ARGS__ & name();                               \
+static __VA_ARGS__ Construct##name();                \
+__VA_ARGS__ & name()                                  \
 {                                                      \
-    static TYPE storage = Construct##NAME();            \
+    static __VA_ARGS__ storage = Construct##name();     \
     return storage;                                      \
 }                                                         \
-TYPE Construct##NAME()
+__VA_ARGS__ Construct##name()
 
-#define SINGLETON(TYPE, NAME) UNCONST_SINGLETON(TYPE const, NAME)
+#define SINGLETON(name, ...) UNCONST_SINGLETON(name, __VA_ARGS__ const)
 
 #define DELETE_COPY_AND_MOVE_CONSTRUCTORS(CLASS_NAME) \
 CLASS_NAME(CLASS_NAME const &) = delete;               \
@@ -42,21 +42,6 @@ CLASS_NAME(CLASS_NAME      &&) = delete
 #define DEFINE_TEMPLATE_CONTAINER(TYPE, TEMPLATE_ARG) \
 template <TEMPLATE_ARG arg>                            \
 using TYPE##s = std::vector<TYPE<arg>>
-
-#define CONSTEXPR_LOOP(FUNC_NAME, TYPE, CONTAINER, VAR_NAME) \
-template <TYPE>                                               \
-void FUNC_NAME##Body();                                        \
-template <size_t i = 0u>                                        \
-void FUNC_NAME()                                                 \
-{                                                                 \
-    if constexpr (i != CONTAINER.size())                           \
-    {                                                               \
-        FUNC_NAME##Body<CONTAINER[i]>();                             \
-        FUNC_NAME<i + 1u>();                                          \
-    }                                                                  \
-}                                                                       \
-template <TYPE VAR_NAME>                                                 \
-void FUNC_NAME##Body()
 
 std::string ToString(float);
 

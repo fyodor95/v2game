@@ -1,6 +1,6 @@
 #pragma once
 
-enum class tTarget : uint8_t
+enum class tTarget : uint16_t
 {
     kCountry,
     kProvince,

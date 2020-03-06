@@ -17,7 +17,7 @@ static void CommunistPoliticalReforms(std::ofstream & eventOutput, std::ofstream
         "В последнее время мы провели огромное количество социальных реформ. Пришло время взяться за политические.";
     tConditions<tTarget::kCountry> conditions
     {
-        GovernmentIs<tGovernment::proletarian_dictatorship>(),
+        GovernmentIs(tGovernment::proletarian_dictatorship),
         ReformLevelIs<work_hours             , work_hours::eight>(),
         ReformLevelIs<unemployment_subsidies , unemployment_subsidies ::good>(),
         ReformLevelIs<pensions               , pensions               ::good>(),
@@ -50,7 +50,7 @@ static void CommunistPoliticalReforms(std::ofstream & eventOutput, std::ofstream
             ChangeReformLevel<political_parties, political_parties::non_secret_ballots >(),
             ChangeReformLevel<political_parties, political_parties::secret_ballots     >()
         }),
-        ChangeGovernmentType<tGovernment::democracy>()
+        ChangeGovernmentType(tGovernment::democracy)
     };
     CountryEvent
         (id, "Политические реформы", desc, eventOutput, localizationOutput,

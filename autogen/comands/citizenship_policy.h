@@ -1,14 +1,10 @@
 #pragma once
 
-enum class tCitizenshipPolicy : uint8_t
+enum class tCitizenshipPolicy : uint16_t
 {
     kResidency, // вид на жительство
     kLimited,   // ограниченное гражданство
     kFull       // полное гражданство
 };
 
-namespace nsCitizenshipPolicy
-{
-    template <tCitizenshipPolicy>
-    char const * ToString();
-}
+char const * ToString(tCitizenshipPolicy);

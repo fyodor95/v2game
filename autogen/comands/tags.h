@@ -589,16 +589,8 @@ constexpr std::array<tTag, 288u> kTags
     , tTag::D50
 };
 
-namespace nsTag
-{
-
-    template <tTag>
-    char const * Localization();
-
-    template <tTag>
-    char const * ToString();
-
-}
+char const * Localization(tTag);
+char const * ToString(tTag);
 
 constexpr std::array<tTag, 50u> kDominions
 {

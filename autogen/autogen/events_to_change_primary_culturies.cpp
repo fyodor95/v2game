@@ -2,42 +2,44 @@
 #include "events.h"
 #include "events_to_change_primary_culturies.h"
 
-static UNCONST_SINGLETON(std::ofstream, EventOutput)
+static UNCONST_SINGLETON(EventOutput, std::ofstream)
 {
     return std::ofstream("events\\events_to_change_primary_culturies.txt");
 }
 
-static UNCONST_SINGLETON(std::ofstream, LocalisationOutput)
+static UNCONST_SINGLETON(LocalisationOutput, std::ofstream)
 {
     return std::ofstream("localisation\\events_to_change_primary_culturies.csv");
 }
 
-static UNCONST_SINGLETON(uint, ID)
+static UNCONST_SINGLETON(ID, uint)
 {
     return 7000u;
 }
 
-LOOP_BY_CULTURES(GenerateEvents)
+static void GenerateEvents()
 {
-    tCondition<tTarget::kCountry> const flagIsSet = HasFlag<tCountryFlag::primary_culture_must_be_changed>();
+    for (tCulture const culture : kCultures)
+    {
+    tCondition<tTarget::kCountry> const flagIsSet = HasFlag(tCountryFlag::primary_culture_must_be_changed);
     tCouple<tConditions<tTarget::kCountry>> conditions
     {
         tConditions<tTarget::kCountry>
         {
             flagIsSet,
-            ConditionsForCapital({MajorityCultureIs<culture>()})
+            ConditionsForCapital({MajorityCultureIs(culture)})
         },
         tConditions<tTarget::kCountry>
         {
             flagIsSet,
-            IsAccepted<culture>()
+            IsAccepted(culture)
         }
     };
     tCouple<float> const months{8, 8};
     tEffects<tTarget::kCountry> effects
     {
-        MakePrimary<culture>(),
-        RemoveFlag<tCountryFlag::primary_culture_must_be_changed>()
+        MakePrimary(culture),
+        RemoveFlag(tCountryFlag::primary_culture_must_be_changed)
     };
     for (uint id = ++ID(), i = 0u; i < 2u; ++id, ++i)
         CountryEvent
@@ -48,13 +50,14 @@ LOOP_BY_CULTURES(GenerateEvents)
              {Option          <tTarget::kCountry>(tEffects<tTarget::kCountry>(effects), id)},
              {"Îê"}, "Administration");
     ++ID();
+    }
 }
 
 void EventsToChangePrimaryCultures()
 {
     tConditions<tTarget::kCountry> conditions
     {
-        Not(HasFlag<tCountryFlag::primary_culture_must_be_changed>()),
+        Not(HasFlag(tCountryFlag::primary_culture_must_be_changed)),
         Not(HasProvince({HasPop(HasPrimaryCulture())}))
     };
     CountryEvent
@@ -63,7 +66,7 @@ void EventsToChangePrimaryCultures()
          EventOutput(), LocalisationOutput(),
          Trigger          <tTarget::kCountry>(std::move(conditions)),
          MeanTimeToHappen <tTarget::kCountry>(9.f),
-         {Option          <tTarget::kCountry>({SetFlag<tCountryFlag::primary_culture_must_be_changed>()}, ID())},
+         {Option          <tTarget::kCountry>({SetFlag(tCountryFlag::primary_culture_must_be_changed)}, ID())},
          {"Îê"}, "Administration");
     GenerateEvents();
 }

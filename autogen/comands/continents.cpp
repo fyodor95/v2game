@@ -1,42 +1,20 @@
 #include "continents.h"
 
-namespace nsContinent
+using tStorage = std::array<char const *, 6u>;
+
+static SINGLETON(Storage, tStorage)
 {
+    tStorage res;
+    res[static_cast<uint16_t>(tContinent::kEurope)] = "europe";
+    res[static_cast<uint16_t>(tContinent::kAsia)] = "asia";
+    res[static_cast<uint16_t>(tContinent::kAfrica)] = "africa";
+    res[static_cast<uint16_t>(tContinent::kNorthAmerica)] = "north_america";
+    res[static_cast<uint16_t>(tContinent::kSouthAmerica)] = "south_america";
+    res[static_cast<uint16_t>(tContinent::kOceania)] = "oceania";
+    return res;
+}
 
-    template <>
-    char const * ToString<tContinent::kEurope>()
-    {
-        return "europe";
-    }
-
-    template <>
-    char const * ToString<tContinent::kAsia>()
-    {
-        return "asia";
-    }
-
-    template <>
-    char const * ToString<tContinent::kAfrica>()
-    {
-        return "africa";
-    }
-
-    template <>
-    char const * ToString<tContinent::kNorthAmerica>()
-    {
-        return "north_america";
-    }
-
-    template <>
-    char const * ToString<tContinent::kSouthAmerica>()
-    {
-        return "south_america";
-    }
-
-    template <>
-    char const * ToString<tContinent::kOceania>()
-    {
-        return "oceania";
-    }
-
+char const * ToString(tContinent const input)
+{
+    return Storage()[static_cast<uint16_t>(input)];
 }

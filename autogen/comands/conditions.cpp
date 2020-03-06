@@ -30,6 +30,11 @@ tCondition<tTarget::kCountry> AnyOwnedProvince(tCondition<tTarget::kProvince> &&
     return tCondition<tTarget::kCountry>("any_owned_province", tComands{std::move(condition)});
 }
 
+tCondition<tTarget::kCountry> CitizenshipPolicyIs(tCitizenshipPolicy const policy)
+{
+    return Set("citizenship_policy", ToString(policy));
+}
+
 tCondition<tTarget::kCountry> Civilized(tYesOrNo const flag)
 {
     return Set("civilized", YesOrNo(flag));
@@ -42,7 +47,7 @@ tCondition<tTarget::kCountry> ConditionsForCapital(tConditions<tTarget::kProvinc
 
 tCondition<tTarget::kCountry> HasDefaultPrimaryCulture()
 {
-    return IsPrimary<kDefaultCulture>();
+    return IsPrimary(kDefaultCulture);
 }
 
 tCondition<tTarget::kCountry> HasProvince(tConditions<tTarget::kProvince> && conditions)
@@ -55,18 +60,6 @@ tCondition<tTarget::kCountry> HasTechnology(tTechnology const & tech)
     return Set(std::string(tech.ToString()), "1");
 }
 
-template <size_t i = 0u>
-void AddTag(tConditions<tTarget::kCountry> & conditions)
-{
-    conditions.push_back(TagIs<kDominions[i]>());
-    AddTag<i + 1u>(conditions);
-}
-
-template <>
-void AddTag<kDominions.size()>(tConditions<tTarget::kCountry> &)
-{
-}
-
 tCondition<tTarget::kCountry> IsAI(tYesOrNo const flag)
 {
     return Set("ai", YesOrNo(flag));
@@ -76,7 +69,8 @@ tCondition<tTarget::kCountry> IsDominion()
 {
     tConditions<tTarget::kCountry> body;
     body.reserve(kDominions.size());
-    AddTag(body);
+    for (tTag const tag : kDominions)
+        body.push_back(TagIs(tag));
     return Or(std::move(body));
 }
 
@@ -132,9 +126,9 @@ tCondition<tTarget::kProvince> HasPop(tCondition<tTarget::kPop> && condition)
 
 tCondition<tTarget::kProvince> IsInNewWorld()
 {
-    return Or<tTarget::kProvince>({IsInContinent<tContinent::kNorthAmerica>(),
-                                   IsInContinent<tContinent::kSouthAmerica>(),
-                                   IsInContinent<tContinent::kOceania     >()});
+    return Or<tTarget::kProvince>({IsInContinent(tContinent::kNorthAmerica),
+                                   IsInContinent(tContinent::kSouthAmerica),
+                                   IsInContinent(tContinent::kOceania     )});
 }
 
 tCondition<tTarget::kProvince> MajorityCultureIsAccepted(tYesOrNo const flag)

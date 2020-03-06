@@ -1,10 +1,15 @@
 #include "flags.h"
 
-namespace nsCountryFlag
+using tStorage = std::array<char const *, 1u>;
+
+static SINGLETON(Storage, tStorage)
 {
-    template <>
-    char const * ToString<tCountryFlag::primary_culture_must_be_changed>()
-    {
-        return "primary_culture_must_be_changed";
-    }
+    tStorage res;
+    res[static_cast<uint16_t>(tCountryFlag::primary_culture_must_be_changed)] = "primary_culture_must_be_changed";
+    return res;
+}
+
+char const * ToString(tCountryFlag const input)
+{
+    return Storage()[static_cast<uint16_t>(input)];
 }
