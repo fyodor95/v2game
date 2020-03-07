@@ -1,152 +1,14 @@
-100260
-orbiter
-РѕСЂР±РёС‚Р°Р»СЊРЅС‹Р№ Р°РїРїР°СЂР°С‚ (РёСЃРєСѓСЃСЃС‚РІРµРЅРЅС‹Р№)
-Л€Й”ЛђbЙЄtЙ™
-Man-made equipment that orbits around the earth or the moon.
-####
-A lunar [orbiter].
-They were extensively photographed by lunar [orbiters] and Apollo astronauts.
-####
-173628
-dare
-РѕСЃРјРµР»РёРІР°С‚СЊСЃСЏ
-deЙ™
-To be courageous enough to try or do something.
-####
-I hardly [dare] to go into the room without first getting permission.
-He was one of the few people who [dared] to protest.
-I drove as fast as I [dared].
-####
-25843
-bend
-СЃРіРёР±Р°С‚СЊ
-bЙ›nd
-To turn something from straight or even to curved or angular, or to move it into a position that is not straight.
-####
-The rising wind [bent] the long grass.
-[Bend] your knees when lifting heavy objects.
-Don't [bend] the corners of the pages in, it damages them.
-He had an arm he couldn't [bend].
-####
-116968
-prior
-РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅС‹Р№ (РїСЂРµР¶РЅРёР№)
-Л€praЙЄЙ™
-Existing or happening before something else.
-####
-Illegally parked cars may be removed at any time without [prior] notice.
-She was taught by [prior] experience.
-She will be unable to attend because of a [prior] engagement.
-####
-119014
-bump
-РІСЂРµР·Р°С‚СЊСЃСЏ
-bКЊmp
-To accidentally hit against something and suffer damage.
-####
-I [bumped] into a chair in the dark.
-The car [bumped] against the kerb.
-####
-122354
-lounge
-РєРѕРјРЅР°С‚Р° РґР»СЏ РѕС‚РґС‹С…Р°
-laКЉnК¤
-A public room in a hotel, university, etc. with seats where people can wait or relax.
-####
-Let's meet up in the [lounge] in an hour.
-I saw her in the [lounge] a few minutes ago, but she's not there anymore.
-####
-13651
-tyre
-РїРѕРєСЂС‹С€РєР°
-Л€taЙЄЙ™
-A thick, round piece of rubber filled with air, that fits around a wheel.
-####
-I got a flat [tyre]. Do you have a spare one?
-We need to change our winter [tyres].
-####
-14561
-enhance
-СѓРІРµР»РёС‡РёРІР°С‚СЊ
-ЙЄnЛ€hЙ‘Лђns
-Increase.
-####
-This will [enhance] your enjoyment.
-Profit is expected to be [enhanced] after introducing new technology.
-####
 92696
 genuine
-РїРѕРґР»РёРЅРЅС‹Р№
-Л€К¤enjuЙЄn
+подлинный
 Not fake or counterfeit; being or reflecting the essential character of something.
 ####
 Is the painting a [genuine] Picasso?
 Fake designer watches are sold at a fraction of the price of the [genuine] watches.
 ####
-213324
-similarity
-РїРѕРґРѕР±РёРµ
-ЛЊsЙЄmЙЄЛ€lГ¦rЙЄti
-The quality of being similar.
-####
-The painting bears a striking [similarity] to one in the Louvre.
-The [similarity] of symptoms makes them hard to diagnose.
-I can see the [similarity] between you and your mother.
-They are both doctors but that is where the [similarity] ends.
-####
-62086
-curtain
-С€С‚РѕСЂР°
-Л€kЙњЛђtn
-A long piece of cloth, usually one of a pair, that hangs down and covers a window.
-####
-Draw the [curtains] and put the light on.
-Draw those heavy [curtains] and let some sunlight in.
-####
-28068
-perpetual
-Р±РµСЃРєРѕРЅРµС‡РЅС‹Р№
-pЙ™Л€pЙ›К§КЉЙ™l
-Continuing forever or indefinitely.
-####
-Just as money can't buy love, neither can an Oscar guarantee [perpetual] box office success.
-More importantly, it is a country that exists in [perpetual] darkness for most of the winter.
-Deep caves in [perpetual] darkness.
-HellвЂ™s [perpetual] fires.
-####
-2141
-dwindling
-СЃРѕРєСЂР°С‰Р°СЋС‰РёР№СЃСЏ
-Л€dwЙЄndlЙЄЕ‹
-Gradually decreasing until little remains.
-####
-A [dwindling] supply of food.
-[dwindling] resources.
-####
-194285
-humane
-С‡РµР»РѕРІРµС‡РЅС‹Р№
-hju(Лђ)Л€meЙЄn
-Showing evidence of moral and intellectual advancement.
-####
-The [humane] personality never leaves another person in trouble and always shows sympathy.
-Society must strive for [humane] treatment of animals.
-####
-122904
-steady
-РїРѕСЃС‚РѕСЏРЅРЅС‹Р№
-Л€stЙ›di
-Not subject to change or variation.
-####
-A [steady] beat.
-A [steady] increase.
-The procession moved through the streets at a [steady] pace.
-A [steady] job.
-####
 47575
 supply
-Р·Р°РїР°СЃ
-sЙ™Л€plaЙЄ
+запас
 An amount of something available for use.
 ####
 [Supplies] of food are almost exhausted.
@@ -154,40 +16,286 @@ A limited oil [supply] has made gas prices rise.
 Aquarium fish need a constant [supply] of oxygen.
 The falling leaves provide a good [supply] of nutrients to the soil.
 ####
-75265
-barbarian
-РІР°СЂРІР°СЂСЃРєРёР№
-bЙ‘ЛђЛ€beЙ™rЙЄЙ™n
-Without civilizing influences.
+184304
+compatible
+совместимый
+Able to exist and perform in harmonious or agreeable combination.
 ####
-Many [barbarian] tribes are cannibalistic.
-They are [barbarian] people who savagely attacked innocent victims.
-[barbarian] invaders.
+A [compatible] married couple.
+Her deeds were [compatible] with her ideology.
+Such policies are not [compatible] with democratic government.
+####
+2141
+dwindling
+сокращающийся
+Gradually decreasing until little remains.
+####
+A [dwindling] supply of food.
+[dwindling] resources.
+####
+122354
+lounge
+комната для отдыха
+A public room in a hotel, university, etc. with seats where people can wait or relax.
+####
+Let's meet up in the [lounge] in an hour.
+I saw her in the [lounge] a few minutes ago, but she's not there anymore.
+####
+173628
+dare
+осмеливаться
+To be courageous enough to try or do something.
+####
+I hardly [dare] to go into the room without first getting permission.
+He was one of the few people who [dared] to protest.
+I drove as fast as I [dared].
+####
+229550
+on the left
+слева
+In the direction of the left hand.
+####
+The bank is [on the left], just after the post office.
+That's the museum building [on the left].
+[On the left] you can see Hyde Park.
+####
+229548
+in the middle
+в середине
+In the central point, position, or part.
+####
+This is my class photo – I’m the one [in the middle].
+Do you see this building [in the middle] of the street? That's where you want to go.
+####
+28068
+perpetual
+бесконечный
+Continuing forever or indefinitely.
+####
+Just as money can't buy love, neither can an Oscar guarantee [perpetual] box office success.
+More importantly, it is a country that exists in [perpetual] darkness for most of the winter.
+Deep caves in [perpetual] darkness.
+Hell’s [perpetual] fires.
+####
+16663
+waist
+талия
+The narrowing of the body between the ribs and hips.
+####
+Her [waist] has reduced from 35 to 28 inches.
+He put an arm around her [waist].
+####
+122979
+stain
+пачкать
+Produce or leave stains.
+####
+Red wine [stains] the table cloth.
+I couldn't help but notice his teeth were [stained] a faint yellow, probably from consumption of too many cigars.
+####
+2853
+opposite
+находящийся напротив
+In a position facing something or someone but on the other side.
+####
+A picture on the [opposite] page caught her attention.
+On the [opposite] side of the road from the school was the church.
+####
+115389
+indigenous
+коренной
+Belonging to a particular place rather than coming to it from somewhere else.
+####
+Coriander is [indigenous] to southern Europe.
+The Ainu are [indigenous] to the northern islands of Japan.
+####
+237486
+do the ironing
+гладить
+To iron clothes, sheets, etc.
+####
+Do you [do the ironing] yourself, or do you pay someone to do it for you?
+You can watch TV while you [do the ironing].
+####
+2830
+fashionable
+модный
+Popular at a particular time.
+####
+These cars are no longer [fashionable] among the young.
+She keeps a boutique of [fashionable] clothes.
+####
+198336
+challenging
+требующий усилий
+Requiring full use of your abilities or resources.
+####
+This has been a [challenging] time for us all.
+The situation in our country is difficult and [challenging] at the moment.
+This is [challenging] work to do.
+####
+229547
+in front of
+перед
+In a position just ahead or at the front part of someone or something else.
+####
+Susan and Jack were sitting [in front of] me at the theatre.
+I honked at the car [in front of] me.
+Don't swear [in front of] the children.
+The pit yawned open [in front of] them.
+####
+160288
+pleasant
+приятный
+Enjoyable in a way that makes you feel satisfied.
+####
+What a [pleasant] surprise!
+Her husband seemed a very [pleasant] man.
+They spent a [pleasant] evening together.
+####
+45442
+behind
+позади
+At the back of.
+####
+The final runners were far [behind].
+Seen from [behind], the house is more imposing than it is from the front.
+####
+62976
+gentle
+спокойный
+Quiet and soothing.
+####
+A [gentle] nocturne.
+A [gentle] voice.
+####
+56630
+obey
+повиноваться
+To do what you are told to do by a person, rule, or instruction.
+####
+They must [obey] the rules of international law.
+I [obey] your requisition and inquire the purpose of it.
+I always [obey] my father.
 ####
 79012
 dullness
-СЃРєСѓРєР°
-Л€dКЊlnЙ™s
+скука
 Lack of sensibility.
 ####
 There was a [dullness] in his heart.
 Without him the [dullness] of her life crept into her work no matter how she tried to compartmentalize it.
 ####
-232621
-distraction
-РѕС‚РІР»РµС‡РµРЅРёРµ РІРЅРёРјР°РЅРёСЏ
-dЙЄsЛ€trГ¦kКѓЙ™n
-Something that вЂ‹prevents someone from giving вЂ‹their вЂ‹attention to something вЂ‹else.
+229546
+be famous  for
+быть известным за
+To be known and recognized by many people for something particular.
 ####
-I realised I was more of a [distraction] to myself than others.
-However, this is just a [distraction] from the main issue.
+Marie Curie [is famous for] her contribution to science.
+He [was famous for] his charitable character.
 ####
-201485
-artifact
-Р°СЂС‚РµС„Р°РєС‚
-Л€Й‘ЛђtЙЄЛЊfГ¦kt
-A man-made object taken as a whole.
+160981
+howl
+вой
+A loud sustained noise resembling the cry of a hound.
 ####
-Gold and silver [artifacts].
-An exhibition of ancient Egyptian [artifacts].
+The [howl] of the wind made him restless.
+####
+148585
+dust
+протирать пыль
+To remove the dust from.
+####
+Did you [dust] from my table? It's still too dirty.
+To [dust] from all surfaces with a duster.
+####
+229812
+tracksuit
+тренировочный костюм
+A set of clothes consisting of a sweatshirt and trousers worn when exercising (British; 'sweatsuit' is the American term).
+####
+At this point, the company began producing leisure wear and [tracksuits].
+I need a new [tracksuit] for my gym class.
+####
+153208
+obedience
+повиновение
+The trait of being willing to obey.
+####
+It's mindless [obedience] that's the killer.
+They quickly recognize that absolute [obedience] is the only means to ensure survival.
+####
+17095
+participle
+причастие
+A non-finite form of the verb; in English it is used adjectivally and to form compound tenses.
+####
+Like [participles], adjectives and also some idiomatic preposition phrases, when used as adjuncts, need an understood subject.
+The end of the previous sentence itself contains an absolute clause with the [participle] being as its verb.
+####
+160780
+dovetail
+плотно соединять
+Go past the station.
+####
+He [dovetailed] components of a wooden cabinet together.
+To [dovetail] 2 parts of a desk.
+####
+120749
+whoop
+вопль (выражающий изумление, торжество)
+A loud hooting cry of exultation or excitement.
+####
+When the [whoops] and cheers had finally died down he started to speak.
+####
+122904
+steady
+постоянный
+Not subject to change or variation.
+####
+A [steady] beat.
+A [steady] increase.
+The procession moved through the streets at a [steady] pace.
+A [steady] job.
+####
+180432
+between
+в промежутке
+In the interval separating two points in time.
+####
+There's a train at 6.15 and one at 10.30 but nothing in [between].
+Henry had to endure several journeys by plane, with a four-hour wait in Bangkok in [between].
+Dancing all the dances with little rest [between].
+####
+200461
+witty
+остроумный
+Using words in a clever and funny way.
+####
+A [witty] remark.
+Marlowe was charming and [witty].
+####
+63069
+painting
+картина
+A picture made using paint.
+####
+He bought the [painting] as an investment.
+The walls are covered in oil [paintings].
+####
+63859
+contribute
+жертвовать
+To give something, especially money or goods, to help.
+####
+We [contributed] clothing for the flood victims.
+The US is [contributing] $4 billion in loans, credits and grants.
+####
+44116
+in
+внутрь
+Into a space or area from the outside of it.
+####
+Put the milk back [in] the fridge when you’ve finished with it.
+Cut the pastry into a square and turn [in] the corners.
 ####

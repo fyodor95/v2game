@@ -1,43 +1,27 @@
-import io, json, os, requests, sys, textwrap
+import datetime, io, json, os, random, requests, sys, textwrap
 
 from PIL import Image, ImageDraw, ImageFont
 
 origImageLocation = 'D:/Downloads/orig_v2_event.bmp'
 
-words = (
-            ('orbiter', 'орбитальный аппарат'),
-            ('dare', 'осмеливаться'),
-            ('bend', 'сгибать'),
-            ('prior', 'предварительный'),
-            ('bump', 'врезаться'),
-            ('lounge', 'комната для отдыха'),
-            ('tyre', 'покрышка'),
-            ('enhance', 'увеличивать'),
-            ('genuine', 'подлинный'),
-            ('similarity', 'подобие'),
-            ('curtain', 'штора'),
-            ('perpetual', 'бесконечный'),
-            ('dwindling', 'сокращающийся'),
-            ('humane', 'человечный'),
-            ('steady', 'постоянный'),
-            ('supply', 'запас'),
-            ('barbarian', 'варварский'),
-            ('dullness', 'скука'),
-            ('distraction', 'отвлечение внимания'),
-            ('artifact', 'артефакт')
-        )
+addEachTime = 20
 
 
 def Write(*args):
     global output
     for arg in args:
-        output.write(str(arg))
+        s = str(arg)
+        try:
+            s.encode('Windows-1251')
+        except UnicodeError:
+            continue
+        output.write(s)
         output.write('\n')
 
 
-def Translation(translation, data):
-    res = translation
-    note = data['translation']['note']
+def Translation(translation):
+    res = translation['text']
+    note = translation['note']
     if note is not None and note != '':
         res += ' (' + note + ')'
     return res
@@ -52,57 +36,98 @@ def DetailedData(id):
 
 
 fontLocation = 'C:/Windows/Fonts/times.ttf'
-textWrapper = textwrap.TextWrapper(width=20, break_long_words=False)
+font = ImageFont.truetype(fontLocation, 20)
 
-def ProcessLines(image, linesAndTheirLocations):
+def EstimateWidth(drawer, text):
+    return drawer.textsize(text, font)[0]
+
+def ProcessLines(image, text, position):
     drawer = ImageDraw.Draw(image)
-    for lineAndLocation in linesAndTheirLocations:
-        text, position = lineAndLocation
-        font = ImageFont.truetype(fontLocation, 20)
-        drawer.text(position, textWrapper.fill(text), font=font, fill=(0, 0, 0))
+    prevMax = len(text)
+    width = EstimateWidth(drawer, text)
+    while width > image.size[0] - position[0]:
+        split = textwrap.wrap(text, prevMax - 1)
+        prevMax = len(max(split, key=lambda x: len(x)))
+        text = '\n'.join(split)
+        width = EstimateWidth(drawer, text)
+    drawer.text(position, text, font=font, fill=(0, 0, 0))
 
 
 offset = 10 # Количество пикселей между изображением и текстом.
 
 def ProcessImage(wordID, word, transcription, translation, mainImage, image):
     image.thumbnail(mainImage.size)
+    origImage = mainImage.copy()
     mainImage.paste(image, (0, 0))
     xStart = image.size[0] + offset
     wordWithTranscription = word + ' [' + transcription + ']'
-    ProcessLines(mainImage, ((wordWithTranscription, (xStart, 0)), (translation, (xStart, 100))))
-    mainImage.save('C:/v2game/gfx/pictures/events/eng_words_' + str(wordID) + '.tga')
+
+    ProcessLines(mainImage, translation, (xStart, 120))
+    mainImage.save('gfx/pictures/events/eng_words_' + str(wordID) + '_rus.tga')
+
+    ProcessLines(mainImage, wordWithTranscription, (xStart, 20))
+    mainImage.save('gfx/pictures/events/eng_words_' + str(wordID) + '.tga')
+
+    ProcessLines(origImage, wordWithTranscription, (image.size[0] - 100, 80))
+    origImage.save('gfx/pictures/events/eng_words_' + str(wordID) + '_eng.tga')
 
 
 endLine = '####'
 
-def ProcessWord(word, data):
-    id = data['id']
-    translation = Translation(word[1], data)
-    transcription = data['transcription']
+def ProcessWord(id):
     detailedData = DetailedData(id)
+    word = detailedData['text']
+    transcription = detailedData['transcription']
+    translation = Translation(detailedData['translation'])
     assert(len(detailedData['images']) == 1)
     imageURL = 'http:' + detailedData['images'][0]['url']
     with Image.open(origImageLocation) as mainImage:
         with Image.open(io.BytesIO(requests.get(imageURL, stream=True).content)) as image:
-            ProcessImage(id, word[0], transcription, translation, mainImage, image)
-    Write(id, word[0], translation, transcription, detailedData['definition']['text'], endLine)
+            ProcessImage(id, word, transcription, translation, mainImage, image)
+    Write(id, word, translation, detailedData['definition']['text'], endLine)
     for example in detailedData['examples']:
         Write(example['text'])
-    Write('####')
+    Write(endLine)
 
 
-output = open('C:/v2game/autogen/words.txt', 'w', encoding='utf-8')
-for word in words:
-    data = requests.get('https://dictionary.skyeng.ru/api/public/v1/words/search', params={'search': word[0]})
-    o = json.loads(data.text)
-    found = False
-    for one in o:
-        for version in one['meanings']:
-            if version['translation']['text'] == word[1]:
-                found = True
-                ProcessWord(word, version)
-                break
-        if found:
-            break
-    assert(found)
-output.close()
+cashLocation = 'autogen_words/cash.json'
+
+def UpdateCashIfNeeded():
+    lastTime = datetime.datetime.fromtimestamp(os.path.getmtime(cashLocation))
+    if datetime.datetime.now() - lastTime < datetime.timedelta(hours=6):
+        return
+    words = json.loads(requests.get('https://words.skyeng.ru/api/public/v1/users/meanings',
+                                    params={'email': 'fedor.sharov@altium.com', 'token': '992a9'}).text)
+    with open(cashLocation, 'w') as outfile:
+        json.dump(words, outfile)
+
+
+UpdateCashIfNeeded()
+
+with open('autogen_words/cash.json') as cash:
+    words = json.load(cash)
+random.shuffle(words)
+words.sort(key=lambda v: v['progress'])
+
+startID = 0
+for i in range(len(words) - 1, -1, -1):
+    if words[i]['progress'] != 1:
+        startID = i
+        break
+
+processedWords = set()
+with open('autogen/processed_words.txt', 'r') as file:
+    for id in file:
+        processedWords.add(int(id[:-1]))
+
+newWords = []
+with open('autogen/words.txt', 'a', encoding='Windows-1251') as output:
+    for i in range(addEachTime):
+        id = words[startID - i]['meaningId']
+        if id not in processedWords:
+            ProcessWord(id)
+            newWords.append(id)
+
+with open('autogen/processed_words.txt', 'a') as procWordsOutput:
+    for word in newWords:
+        procWordsOutput.write(str(word) + '\n')

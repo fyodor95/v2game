@@ -7,10 +7,11 @@
     <StartupFile>autogen_words.py</StartupFile>
     <SearchPath>
     </SearchPath>
-    <WorkingDirectory>.</WorkingDirectory>
+    <WorkingDirectory>C:\v2game</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>autogen_words</Name>
     <RootNamespace>autogen_words</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>

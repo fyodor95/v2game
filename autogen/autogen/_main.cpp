@@ -21,6 +21,7 @@ int main()
     NewPrimaryCulturesForDXX();
     PeacefulSettlement();
 #else
+    GenerateWordEvents();
     Test();
 #endif
 
