@@ -11,65 +11,18 @@ country_event = {
 	option = {				# Accept inheritance
 		name = "EVTOPTA11100"
 		change_tag = culture
-		any_country = {
-			limit = {
-				NOT = {
-					tag = THIS
-				}
-				is_culture_group = THIS
-				is_greater_power = no
-				OR = {
-					in_sphere = THIS
-					AND = {
-						part_of_sphere = no
-						NOT = {
-							OR = {
-								tag = AUS
-								tag = KUK
-								}
-							}
-						}
-					tag = WAL
-					tag = MOL
-					tag = MON
-					tag = BOS
-					tag = SER
-					tag = SLO
-					AND = {
-						OR = {
-							tag = AUS
-							tag = KUK
-						}
-						exists = HUN
-						part_of_sphere = no
-					}
-				}
-				num_of_cities = 1
-			}
+		FROM = {
 			country_event = { id=11101 days=0 }
 		}
-		political_reform = wealth_voting
-		political_reform = population_equal_weight
-		political_reform = yes_meeting
-		political_reform = free_press
-		political_reform = non_socialist
-		political_reform = secret_ballots
 		government = hms_government
 		add_accepted_culture = union
-		prestige = -15
-		badboy = 10
+		prestige = 5
+		badboy = 2.5
 		ai_chance = {
-			factor = 5
+			factor = 95
 			modifier = {
 				factor = 0
-				badboy = 0.6
-			}
-			modifier = {
-				factor = 200
-				OR = {
-					tag = MOL
-					tag = WAL
-				}
+				badboy = 0.9
 			}
 			modifier = {
 				factor = 5
@@ -97,7 +50,7 @@ country_event = {
 		name = "EVTOPTB11100"
 		prestige = 2
 		ai_chance = {
-			factor = 95
+			factor = 5
 			modifier = {
 				factor = 1.5
 				government = absolute_monarchy
@@ -122,22 +75,6 @@ country_event = {
 		name = "EVTOPTA11101"
 		FROM = {
 			inherit = THIS
-		}
-		ai_chance = {
-			factor = 25
-		}
-	}
-
-	option = {
-		name = "EVTOPTB11101"
-		prestige = 1
-		relation = {
-			who = FROM
-			value = -100
-		}
-		any_pop = {
-			militancy = 3
-			consciousness = 2
 		}
 	}
 }
@@ -168,9 +105,14 @@ country_event = {
 			}
 			country_event = { id=11101 days=0 }
 		}
-		prestige = 10
+		prestige = 15
+		badboy = 15
 		ai_chance = {
 			factor = 95
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
 		}
 	}
 
