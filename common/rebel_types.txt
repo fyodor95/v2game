@@ -1131,15 +1131,17 @@ pan_nationalist_rebels = {
 		modifier = {
 			factor = 0
 			OR = { 
-				culture_has_union_tag = no
-				is_cultural_union = THIS
+				country = { culture_has_union_tag = no }
+				country = { is_cultural_union = THIS }
 				NOT = { is_culture_group = THIS }
 			}
 		}
 		modifier = {
 			factor = 0
-			cultural_union = {
-				exists = yes
+			country = {
+				cultural_union = {
+					exists = yes
+				}
 			}
 		}
 		
@@ -1349,15 +1351,17 @@ pan_nationalist_rebels_2 = {
 		modifier = {
 			factor = 0
 			OR = { 
-				culture_has_union_tag = no
-				is_cultural_union = THIS
+				country = { culture_has_union_tag = no }
+				country = { is_cultural_union = THIS }
 				NOT = { is_culture_group = THIS }
 			}
 		}
 		modifier = {
 			factor = 0
-			cultural_union = {
-				exists = no
+			country = {
+				cultural_union = {
+					exists = no
+				}
 			}
 		}
 		
