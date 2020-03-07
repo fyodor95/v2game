@@ -144,17 +144,22 @@ void GenerateWordEvents()
             std::shuffle(optionsRus.begin(), optionsRus.end(), g);
             std::shuffle(optionsEng.begin(), optionsEng.end(), g);
 
+            tCondition<tTarget::kCountry> const condition =
+            (
+                And<tTarget::kCountry>({IsAI(_No), Not(HasGlobalFlag(flags[i].data()))})
+            );
+
             std::string const rusPicture = "eng_words_" + std::to_string(wordID) + "_rus";
             CountryEvent(rusID, "It's time to learn words, my addict",
                          "Choose the correct translation.", eventOutput, localizationOutput,
-                         Trigger          <tTarget::kCountry>({IsAI(_No)}),
+                         Trigger          <tTarget::kCountry>({condition}),
                          MeanTimeToHappen <tTarget::kCountry>(months, tModifiers<tTarget::kCountry>(modifiers)),
                          std::move(optionsRus), optDescsRus, rusPicture.data());
 
             std::string const engPicture = "eng_words_" + std::to_string(wordID) + "_eng";
             CountryEvent(engID, "It's time to learn words, my addict",
                          "Choose the correct translation.", eventOutput, localizationOutput,
-                         Trigger          <tTarget::kCountry>({IsAI(_No)}),
+                         Trigger          <tTarget::kCountry>({condition}),
                          MeanTimeToHappen <tTarget::kCountry>(months, tModifiers<tTarget::kCountry>(modifiers)),
                          std::move(optionsEng), optDescsEng, engPicture.data());
         }
