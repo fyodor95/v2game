@@ -107,6 +107,8 @@ static void RestoreJustice()
         EffectsForSpecifiedProvince(1084, {MakeNationalFor(tTag::RUS)}),
         EffectsForSpecifiedProvince(1085, {MakeNationalFor(tTag::RUS)}),
         EffectsForSpecifiedProvince(2617, {MakeNationalFor(tTag::RUS)}),
+        EffectsForSpecifiedProvince(1081, {MakeNationalFor(tTag::CHI), MakeNationalFor(tTag::MCK)}),
+        EffectsForSpecifiedProvince(2697, {MakeNationalFor(tTag::CHI), MakeNationalFor(tTag::MCK)}),
         EffectsForAllCountries
         (
             {

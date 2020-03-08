@@ -37,6 +37,14 @@ chi_restore_justice = {
 		2617 = {
 			add_core = RUS
 		}
+		1081 = {
+			add_core = CHI
+			add_core = MCK
+		}
+		2697 = {
+			add_core = CHI
+			add_core = MCK
+		}
 		any_country = {
 			limit = {
 				OR = {
