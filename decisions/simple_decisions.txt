@@ -1,0 +1,91 @@
+political_decisions = {
+chi_restore_justice = {
+	potential = {
+		tag = CHI
+		OR = {
+			is_our_vassal = GXI
+			is_our_vassal = MCK
+			is_our_vassal = XBI
+			is_our_vassal = YNN
+			is_our_vassal = XIN
+			is_our_vassal = MGL
+			is_our_vassal = TIB
+		}
+		NOT = {
+			has_country_flag = justice_was_restored
+		}
+	}
+	allow = {
+	}
+	effect = {
+		set_country_flag = justice_was_restored
+		1469 = {
+			add_core = RUS
+		}
+		1082 = {
+			add_core = RUS
+		}
+		1083 = {
+			add_core = RUS
+		}
+		1084 = {
+			add_core = RUS
+		}
+		1085 = {
+			add_core = RUS
+		}
+		2617 = {
+			add_core = RUS
+		}
+		any_country = {
+			limit = {
+				OR = {
+					AND = {
+						tag = GXI
+						CHI = {
+							is_our_vassal = GXI
+						}
+					}
+					AND = {
+						tag = MCK
+						CHI = {
+							is_our_vassal = MCK
+						}
+					}
+					AND = {
+						tag = XBI
+						CHI = {
+							is_our_vassal = XBI
+						}
+					}
+					AND = {
+						tag = YNN
+						CHI = {
+							is_our_vassal = YNN
+						}
+					}
+					AND = {
+						tag = XIN
+						CHI = {
+							is_our_vassal = XIN
+						}
+					}
+					AND = {
+						tag = MGL
+						CHI = {
+							is_our_vassal = MGL
+						}
+					}
+					AND = {
+						tag = TIB
+						CHI = {
+							is_our_vassal = TIB
+						}
+					}
+				}
+			}
+			country_event = { id=11101 days=0 }
+		}
+	}
+}
+}

@@ -1,5 +1,21 @@
+#include "decisions.h"
 #include "events.h"
-#include "simple_events.h"
+#include "simple_items.h"
+
+static UNCONST_SINGLETON(EventOutput, std::ofstream)
+{
+    return std::ofstream("events\\simple_events.txt");
+}
+
+static UNCONST_SINGLETON(LocalizationOutput, std::ofstream)
+{
+    return std::ofstream("localisation\\simple_items.csv");
+}
+
+static UNCONST_SINGLETON(DecisionOutput, tDecisionOutput)
+{
+    return "decisions\\simple_decisions.txt";
+}
 
 // Событие, возникающее в странах с пролетарской диктатурой. Оно позволяет превратить форму правления в
 // республиканскую.
@@ -9,7 +25,7 @@
 // safety_regulations::low (низкое обеспечение) и health_care::low (низкий уровень).
 // Если проведены все социальные реформы, то возникает раз в 90 месяцев (7,5 лет). Иначе каждая непроведённая
 // социальная реформа уменьшает скорость срабатывания вдвое.
-static void CommunistPoliticalReforms(std::ofstream & eventOutput, std::ofstream & localizationOutput)
+static void CommunistPoliticalReforms()
 {
     using namespace nsReforms;
     static constexpr uint id = 403u;
@@ -53,15 +69,68 @@ static void CommunistPoliticalReforms(std::ofstream & eventOutput, std::ofstream
         ChangeGovernmentType(tGovernment::democracy)
     };
     CountryEvent
-        (id, "Политические реформы", desc, eventOutput, localizationOutput,
+        (id, "Политические реформы", desc, EventOutput(), LocalizationOutput(),
          Trigger(std::move(conditions)), MeanTimeToHappen(90.f, std::move(modefiers)),
          {Option(std::move(effects), id), Option<tTarget::kCountry>({}, id, 2u)},
          {"Давайте сделаем это!", "Пока ещё рано"}, "Administration");
 }
 
-void GenerateSimpleEvents()
+static tCondition<tTarget::kCountry> IsChineseVassal(tTag const tag)
 {
-    std::ofstream         eventOutput     ("events\\simple_events.txt");
-    std::ofstream localizationOutput("localisation\\simple_events.csv");
-    CommunistPoliticalReforms(eventOutput, localizationOutput);
+    return And<tTarget::kCountry>({TagIs(tag), ConditionsForSpecifiedCountry(tTag::CHI, {HasVassal(tag)})});
+}
+
+// Решение для Китая, позволяющее присоединить все автономии и Тибет.
+static void RestoreJustice()
+{
+    tConditions<tTarget::kCountry> potential
+    {
+        TagIs(tTag::CHI),
+        Or<tTarget::kCountry>
+        ({
+            HasVassal(tTag::GXI),
+            HasVassal(tTag::MCK),
+            HasVassal(tTag::XBI),
+            HasVassal(tTag::YNN),
+            HasVassal(tTag::XIN),
+            HasVassal(tTag::MGL),
+            HasVassal(tTag::TIB)
+        }),
+        Not(HasFlag(tCountryFlag::justice_was_restored))
+    };
+    tEffects<tTarget::kCountry> effects
+    {
+        SetFlag(tCountryFlag::justice_was_restored),
+        EffectsForSpecifiedProvince(1469, {MakeNationalFor(tTag::RUS)}),
+        EffectsForSpecifiedProvince(1082, {MakeNationalFor(tTag::RUS)}),
+        EffectsForSpecifiedProvince(1083, {MakeNationalFor(tTag::RUS)}),
+        EffectsForSpecifiedProvince(1084, {MakeNationalFor(tTag::RUS)}),
+        EffectsForSpecifiedProvince(1085, {MakeNationalFor(tTag::RUS)}),
+        EffectsForSpecifiedProvince(2617, {MakeNationalFor(tTag::RUS)}),
+        EffectsForAllCountries
+        (
+            {
+                Or<tTarget::kCountry>
+                ({
+                    IsChineseVassal(tTag::GXI),
+                    IsChineseVassal(tTag::MCK),
+                    IsChineseVassal(tTag::XBI),
+                    IsChineseVassal(tTag::YNN),
+                    IsChineseVassal(tTag::XIN),
+                    IsChineseVassal(tTag::MGL),
+                    IsChineseVassal(tTag::TIB)
+                })
+            },
+            {EventInCountry(11101u)}
+        )
+    };
+    Decision("chi_restore_justice", "Восстановление игровой справедливости",
+             "Нас долго унижали. Пришла пора расправить плечи.", DecisionOutput(),
+             LocalizationOutput(), std::move(potential), {}, std::move(effects));
+}
+
+void GenerateSimpleItems()
+{
+    CommunistPoliticalReforms();
+    RestoreJustice();
 }

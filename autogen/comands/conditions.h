@@ -83,11 +83,17 @@ tCondition<tTarget::kCountry> HasDefaultPrimaryCulture();
 
 inline tCondition<tTarget::kCountry> HasFlag(tCountryFlag flag) { return Set("has_country_flag", ToString(flag)); }
 
+// Возвращает true, если данная держава имеет хотя бы одного соседа, удовлетворяющего всем условиям conditions.
+tCondition<tTarget::kCountry> HasNeighborSuchThat(tConditions<tTarget::kCountry> && conditions);
+
 // Возвращает true, если в данной стране существует провинция, удовлетворяющая набору условий conditions.
 tCondition<tTarget::kCountry> HasProvince(tConditions<tTarget::kProvince> && conditions);
 
 // Возвращает true, если в данной стране изучена технология tech.
 tCondition<tTarget::kCountry> HasTechnology(tTechnology const & tech);
+
+// Возвращает true, если данная страна имеет вассала tag.
+tCondition<tTarget::kCountry> HasVassal(tTag tag);
 
 // Возвращает true, если культура culture является признанной в данной стране.
 inline tCondition<tTarget::kCountry> IsAccepted(tCulture culture) { return Set("accepted_culture", ToString(culture)); }

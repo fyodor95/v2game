@@ -103,7 +103,7 @@
     <ClCompile Include="new_primary_culture_for_dxx.cpp" />
     <ClCompile Include="peaceful_settlement.cpp" />
     <ClCompile Include="plus_minus_cultures_events.cpp" />
-    <ClCompile Include="simple_events.cpp" />
+    <ClCompile Include="simple_items.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="_main.cpp" />
     <ClCompile Include="_pch_autogen.cpp">
@@ -120,7 +120,7 @@
     <ClInclude Include="new_primary_culture_for_dxx.h" />
     <ClInclude Include="peaceful_settlement.h" />
     <ClInclude Include="plus_minus_cultures_events.h" />
-    <ClInclude Include="simple_events.h" />
+    <ClInclude Include="simple_items.h" />
     <ClInclude Include="test.h" />
     <ClInclude Include="_pch_autogen.h" />
   </ItemGroup>

@@ -59,12 +59,12 @@ static void Generate(size_t const i, uint const id, tDecisionOutput & decisionOu
                         " цивилизованным путём.");
     Decision(ToString(tag) + std::string("_peaceful_settlement"), name.data(), desc.data(),
              decisionOutput, localizationOutput, std::move(potentialConditions1),
-             std::move(allowedConditions1), {EventInCountry(tag, id)}, &aiWillDoIt1);
+             std::move(allowedConditions1), {EventInCountry(id, tag)}, &aiWillDoIt1);
     name = std::string("Просьба о вхождении в состав державы ") + Localization(tag);
     desc = (std::string("Мы решили попросить державу ") + Localization(tag) + " войти в её состав.");
     Decision(ToString(tag) + std::string("_peaceful_unification"), name.data(), desc.data(),
              decisionOutput, localizationOutput, std::move(potentialConditions2),
-             std::move(allowedConditions2), {EventInCountry(tag, id + 3u)}, &aiWillDoIt2);
+             std::move(allowedConditions2), {EventInCountry(id + 3u, tag)}, &aiWillDoIt2);
 }
 
 void PeacefulSettlement()
@@ -86,7 +86,7 @@ void PeacefulSettlement()
     {
         Option<tTarget::kCountry>
         (
-            {EventInCountry(tTag::kFrom, id + 1u)},
+            {EventInCountry(id + 1u, tTag::kFrom)},
             id,
             1u,
             100u
@@ -106,7 +106,7 @@ void PeacefulSettlement()
                     }
                 ),
                 AddPrestige(-5),
-                EventInCountry(tTag::kFrom, id + 2u)
+                EventInCountry(id + 2u, tTag::kFrom)
             },
             id,
             2u,
@@ -167,7 +167,7 @@ void PeacefulSettlement()
                     {EffectsForOwnedProvinces({}, {MakeNationalFor(tTag::kThis, _No)})}
                 ),
                 AddPrestige(-5),
-                EventInCountry(tTag::kFrom, id - 1u)
+                EventInCountry(id - 1u, tTag::kFrom)
             },
             id,
             2u,

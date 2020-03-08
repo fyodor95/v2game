@@ -50,6 +50,11 @@ tCondition<tTarget::kCountry> HasDefaultPrimaryCulture()
     return IsPrimary(kDefaultCulture);
 }
 
+tCondition<tTarget::kCountry> HasNeighborSuchThat(tConditions<tTarget::kCountry> && conditions)
+{
+    return {"any_neighbor_country", std::move(CastToComands(conditions))};
+}
+
 tCondition<tTarget::kCountry> HasProvince(tConditions<tTarget::kProvince> && conditions)
 {
     return {"any_owned_province", std::move(CastToComands(conditions))};
@@ -58,6 +63,11 @@ tCondition<tTarget::kCountry> HasProvince(tConditions<tTarget::kProvince> && con
 tCondition<tTarget::kCountry> HasTechnology(tTechnology const & tech)
 {
     return Set(std::string(tech.ToString()), "1");
+}
+
+tCondition<tTarget::kCountry> HasVassal(tTag const tag)
+{
+    return Set("is_our_vassal", ToString(tag));
 }
 
 tCondition<tTarget::kCountry> IsAI(tYesOrNo const flag)

@@ -40,6 +40,14 @@ tEffect<tTarget::kCountry> AddPrestige(int const value)
     return Set("prestige", std::to_string(value));
 }
 
+tEffect<tTarget::kCountry> EffectsForAllCountries
+(tConditions<tTarget::kCountry> && limit, tEffects<tTarget::kCountry> && effects)
+{
+    tEffect<tTarget::kCountry> res("any_country", std::move(CastToComands(effects)));
+    res.AddToBody({tComand("limit", std::move(CastToComands(limit)))}, 0u);
+    return res;
+}
+
 tEffect<tTarget::kCountry> EffectsForAllPops(tCondition<tTarget::kPop> && limit, tEffects<tTarget::kPop> && effects)
 {
     tEffect<tTarget::kCountry> res("any_pop", std::move(CastToComands(effects)));

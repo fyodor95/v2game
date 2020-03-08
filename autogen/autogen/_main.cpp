@@ -5,7 +5,7 @@
 #include "new_primary_culture_for_dxx.h"
 #include "peaceful_settlement.h"
 #include "plus_minus_cultures_events.h"
-#include "simple_events.h"
+#include "simple_items.h"
 #include "test.h"
 
 int main()
@@ -15,7 +15,7 @@ int main()
     CoreAddingEvents();
     CapitalCulturesAcceptance();
     EventsToChangePrimaryCultures();
-    GenerateSimpleEvents();
+    GenerateSimpleItems();
     NewPrimaryCulturesForDXX();
     PeacefulSettlement();
 #else

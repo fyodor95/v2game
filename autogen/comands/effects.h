@@ -45,6 +45,12 @@ tEffect<tTarget::kCountry> ChangeReformLevel()
 // Увеличивает отношения между данной державой и державой tag на dif.
 tEffect<tTarget::kCountry> ChangeRelation(tTag tag, int dif);
 
+// Все страны, удовлетворяющие условиям limit, получают эффекты effects. Эта функция работает по-разному в событиях и
+// решениях. В решениях эффекты распространяются лишь на существующие на данный момент страны за исключением страны,
+// для которой эта функция вызывается. В событиях эффекты воистину распространяются на все страны.
+tEffect<tTarget::kCountry> EffectsForAllCountries
+(tConditions<tTarget::kCountry> && limit, tEffects<tTarget::kCountry> && effects);
+
 // Все попы в данной стране, удовлетворяющие условию limit, получают эффекты effects.
 tEffect<tTarget::kCountry> EffectsForAllPops(tCondition<tTarget::kPop> && limit, tEffects<tTarget::kPop> && effects);
 
@@ -57,8 +63,13 @@ tEffect<tTarget::kCountry> EffectsForOwnedProvinces(tConditions <tTarget::kProvi
 template <tTarget target = tTarget::kCountry>
 tEffect<target> EffectsForSpecifiedCountry(tTag tag, tEffects<tTarget::kCountry> && effects);
 
-// В державе tag произойдёт событие с номером eventID.
-tEffect<tTarget::kCountry> EventInCountry(tTag tag, uint eventID);
+// Провинция provID получает эффекты effects.
+template <tTarget target = tTarget::kCountry>
+tEffect<target> EffectsForSpecifiedProvince(uint provID, tEffects<tTarget::kProvince> && effects);
+
+// В державе tag произойдёт событие с номером eventID. Если tag == tTag::kInvelidTag, событие произойдёт в державе, для
+// которой эта функция вызывается.
+tEffect<tTarget::kCountry> EventInCountry(uint eventID, tTag tag = tTag::kInvalidTag);
 
 // Присоединяет державу tag к данной державе
 inline tEffect<tTarget::kCountry> Inherit(tTag tag) { return Set("inherit", ToString(tag)); }
@@ -106,6 +117,12 @@ tEffect<target> EffectsForSpecifiedCountry(tTag tag, tEffects<tTarget::kCountry>
         return tEffect<target>(EffectsForOwner({EffectsForSpecifiedCountry(tag, std::move(effects))}));
 }
 
+template <tTarget target>
+tEffect<target> EffectsForSpecifiedProvince(uint provID, tEffects<tTarget::kProvince> && effects)
+{
+    return tEffect<target>(std::to_string(provID), std::move(CastToComands(effects)));
+}
+
 inline tEffect<tTarget::kCountry> ChangeRelation(tTag tag, int const dif)
 {
     assertion(-400 <= dif && dif <= 400);
@@ -113,13 +130,16 @@ inline tEffect<tTarget::kCountry> ChangeRelation(tTag tag, int const dif)
                                       {Set("who", ToString(tag)), Set("value", std::to_string(dif))});
 }
 
-inline tEffect<tTarget::kCountry> EventInCountry(tTag tag, uint const eventID)
+inline tEffect<tTarget::kCountry> EventInCountry(uint const eventID, tTag tag)
 {
+    tEffect<tTarget::kCountry> res("country_event = { id=" + std::to_string(eventID) + " days=0 }");
+    if (tag == tTag::kInvalidTag)
+        return res;
     return EffectsForSpecifiedCountry
     (
         tag,
         {
-            tEffect<tTarget::kCountry>("country_event = { id=" + std::to_string(eventID) + " days=0 }")
+            std::move(res)
         }
     );
 }
