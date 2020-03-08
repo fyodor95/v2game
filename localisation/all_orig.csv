@@ -4749,7 +4749,7 @@ WARINDEMNITIES_EXPENSE;Военная контрибуция: §R$VAL$§W;X
 WARSUBSIDIES_INCOME;Военные субсидии: §G$VAL$§W;X
 WARINDEMNITIES_INCOME;Военная контрибуция: §G$VAL$§W;X
 REMOVE_BUDGET_DIPL_DESC;Различные доходы или расходы, связанные с дипломатическими действиями или мирными договорами.;X
-sami;Саамская;X
+sami;Саамы;X
 pan_romanian;Румынская;X
 MODIFIER_MOBILISED;Мобилизация: $VALUE$;X
 MODIFIER_OVERSEAS;Штраф заморским территориям: $VALUE$;X
