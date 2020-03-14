@@ -1,3 +1,4 @@
+terrain = dry_forest_mountains
 owner = MEX
 controller = MEX
 add_core = MEX

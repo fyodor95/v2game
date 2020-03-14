@@ -1,3 +1,4 @@
+terrain = dry_grassland
 trade_goods = coal
 add_core = RUS
 life_rating = 35

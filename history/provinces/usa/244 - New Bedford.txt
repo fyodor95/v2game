@@ -1,3 +1,4 @@
+terrain = marginal_farmland
 owner = USA
 controller = USA
 add_core = USA

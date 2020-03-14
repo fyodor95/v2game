@@ -1,3 +1,4 @@
+terrain = seasonal_jungle
 owner = TRA
 controller = TRA
 add_core = TRA

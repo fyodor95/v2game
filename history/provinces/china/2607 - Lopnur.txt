@@ -1,3 +1,4 @@
+terrain = desert
 add_core = CHI
 add_core = XIN
 trade_goods = cotton

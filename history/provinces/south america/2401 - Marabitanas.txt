@@ -1,3 +1,4 @@
+terrain = swamp_jungle
 owner = CLM
 controller = CLM
 add_core = BRZ

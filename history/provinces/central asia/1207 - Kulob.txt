@@ -1,3 +1,4 @@
+terrain = mountain_grassland
 owner = BUK
 controller = BUK
 add_core = BUK

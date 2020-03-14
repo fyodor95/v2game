@@ -1,3 +1,4 @@
+terrain = seasonal_jungle_mountains
 owner = SIA
 controller = SIA
 add_core = SIA

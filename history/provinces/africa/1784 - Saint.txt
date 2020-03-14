@@ -1,3 +1,4 @@
+terrain = semi_desert
 owner = FRA
 controller = FRA
 trade_goods = fruit

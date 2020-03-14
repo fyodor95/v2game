@@ -1,3 +1,4 @@
+terrain = dry_grassland
 owner = BHO
 controller = BHO
 add_core = BHO

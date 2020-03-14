@@ -1,3 +1,4 @@
+terrain = floodplain_farmland
 owner = AUS
 controller = AUS
 add_core = LOM

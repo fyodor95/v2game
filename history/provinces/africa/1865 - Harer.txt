@@ -1,3 +1,4 @@
+terrain = mountain_grassland
 owner = ETH
 controller = ETH
 add_core = ETH

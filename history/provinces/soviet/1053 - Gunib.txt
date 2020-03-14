@@ -1,3 +1,5 @@
+terrain = mountain
+terrain = conifer_forest_mountains
 owner = RUS
 controller = RUS
 add_core = RUS

@@ -1,3 +1,4 @@
+terrain = deciduous_forest
 owner = USA
 controller = USA
 add_core = USA

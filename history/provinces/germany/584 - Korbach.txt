@@ -1,3 +1,4 @@
+terrain = hilly_farmland
 owner = PRU
 controller = PRU
 add_core = PRU

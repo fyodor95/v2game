@@ -1,3 +1,4 @@
+terrain = jungle_mountains
 owner = BRU
 controller = BRU
 add_core = BRU

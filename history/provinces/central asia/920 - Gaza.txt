@@ -1,3 +1,4 @@
+terrain = dry_grassland
 owner = EGY
 controller = EGY
 add_core = EGY

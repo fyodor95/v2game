@@ -1,3 +1,4 @@
+terrain = hilly_grassland
 owner = SPA
 controller = SPA
 add_core = SPA

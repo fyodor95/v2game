@@ -1,3 +1,4 @@
+terrain = semi_desert_mountains
 owner = HDJ
 controller = HDJ
 add_core = HDJ

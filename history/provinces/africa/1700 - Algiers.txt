@@ -1,3 +1,4 @@
+terrain = forested_farmland
 owner = FRA
 controller = FRA
 add_core = ALD

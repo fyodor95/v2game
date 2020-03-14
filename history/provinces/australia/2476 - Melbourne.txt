@@ -1,3 +1,4 @@
+terrain = forested_farmland
 owner = ENG
 controller = ENG
 trade_goods = wool

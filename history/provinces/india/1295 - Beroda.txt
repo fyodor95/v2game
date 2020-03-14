@@ -1,3 +1,4 @@
+terrain = dry_forest_hills
 owner = BER
 controller = BER
 add_core = BER

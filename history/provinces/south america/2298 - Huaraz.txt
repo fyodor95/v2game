@@ -1,3 +1,4 @@
+terrain = semi_desert
 owner = PEU
 controller = PEU
 add_core = PEU

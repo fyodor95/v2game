@@ -1,3 +1,4 @@
+terrain = tundra
 owner = RUS
 controller = RUS
 add_core = RUS

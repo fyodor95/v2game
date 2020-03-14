@@ -1,3 +1,4 @@
+terrain = jungle_hills
 owner = MAD
 controller = MAD
 add_core = MAD

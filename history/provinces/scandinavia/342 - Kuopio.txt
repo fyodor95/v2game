@@ -1,3 +1,4 @@
+terrain = boreal_forest
 owner = FIN
 controller = FIN
 add_core = RUS

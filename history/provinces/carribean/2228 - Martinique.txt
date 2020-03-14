@@ -1,3 +1,4 @@
+terrain = jungle_hills
 owner = FRA
 controller = FRA
 trade_goods = cotton

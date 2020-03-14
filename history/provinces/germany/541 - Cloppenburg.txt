@@ -1,3 +1,4 @@
+terrain = marginal_farmland
 owner = OLD
 controller = OLD
 add_core = OLD

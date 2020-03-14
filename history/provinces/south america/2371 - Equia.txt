@@ -1,3 +1,4 @@
+terrain = dry_forest_mountains
 owner = ARG
 controller = ARG
 add_core = ARG

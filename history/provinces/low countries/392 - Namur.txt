@@ -1,3 +1,4 @@
+terrain = forested_farmland
 owner = BEL
 controller = BEL
 add_core = BEL

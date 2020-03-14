@@ -1,3 +1,4 @@
+terrain = mountain_farmland
 owner = PER
 controller = PER
 add_core = PER

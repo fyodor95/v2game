@@ -1,3 +1,4 @@
+terrain = dry_forest_hills
 owner = ENG
 controller = ENG
 trade_goods = grain

@@ -1,3 +1,4 @@
+terrain = seasonal_jungle
 owner = OMA
 controller = OMA
 add_core = OMA

@@ -1,3 +1,4 @@
+terrain = floodplain_farmland
 owner = ENG
 controller = ENG
 add_core = HYD

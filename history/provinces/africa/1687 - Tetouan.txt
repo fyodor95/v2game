@@ -1,3 +1,4 @@
+terrain = mountain_grassland
 owner = MOR
 controller = MOR
 add_core = MOR

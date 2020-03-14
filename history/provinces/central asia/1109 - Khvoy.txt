@@ -1,3 +1,4 @@
+terrain = mountain
 owner = PER
 controller = PER
 add_core = PER

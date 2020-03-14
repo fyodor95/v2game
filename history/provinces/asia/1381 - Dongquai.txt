@@ -1,3 +1,4 @@
+terrain = seasonal_jungle_hills
 owner = DAI
 controller = DAI
 add_core = DAI

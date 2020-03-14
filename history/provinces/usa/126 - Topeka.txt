@@ -1,3 +1,4 @@
+terrain = temperate_grassland
 owner = USA
 
 controller = USA

@@ -1,3 +1,4 @@
+terrain = seasonal_jungle_hills
 owner = BUR
 controller = BUR
 add_core = BUR

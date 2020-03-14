@@ -1,3 +1,4 @@
+terrain = desert_mountains
 owner = EGY
 controller = EGY
 add_core = EGY

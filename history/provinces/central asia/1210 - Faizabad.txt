@@ -1,3 +1,4 @@
+terrain = tundra_mountains
 owner = AFG
 controller = AFG
 add_core = AFG

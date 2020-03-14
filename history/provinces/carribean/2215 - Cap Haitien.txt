@@ -1,3 +1,4 @@
+terrain = seasonal_jungle_hills
 owner = HAI
 controller = HAI
 add_core = HAI

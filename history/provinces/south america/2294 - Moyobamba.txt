@@ -1,3 +1,4 @@
+terrain = seasonal_jungle_mountains
 owner = PEU
 controller = PEU
 add_core = PEU

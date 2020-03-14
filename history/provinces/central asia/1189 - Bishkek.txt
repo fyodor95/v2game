@@ -1,3 +1,4 @@
+terrain = mountain_grassland
 owner = KOK
 controller = KOK
 add_core = KOK

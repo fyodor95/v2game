@@ -1,3 +1,4 @@
+terrain = hilly_farmland
 owner = EGY
 controller = EGY
 add_core = EGY

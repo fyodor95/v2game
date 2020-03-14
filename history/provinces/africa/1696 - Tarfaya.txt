@@ -1,3 +1,4 @@
+terrain = semi_desert
 owner = MOR
 controller = MOR
 add_core = MOR

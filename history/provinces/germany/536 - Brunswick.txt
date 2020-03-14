@@ -1,3 +1,4 @@
+terrain = forested_farmland
 owner = BRA
 controller = BRA
 add_core = BRA

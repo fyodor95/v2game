@@ -1,3 +1,4 @@
+terrain = hilly_farmland
 owner = PAN
 controller = PAN
 add_core = PAN

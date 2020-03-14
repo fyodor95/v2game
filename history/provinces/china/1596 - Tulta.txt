@@ -1,3 +1,4 @@
+terrain = mountain_grassland
 
 add_core = CHI
 add_core = XIN

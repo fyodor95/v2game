@@ -1,3 +1,4 @@
+terrain = mountain_grassland
 owner = TUR
 controller = TUR
 add_core = TUR

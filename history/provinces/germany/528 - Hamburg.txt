@@ -1,3 +1,4 @@
+terrain = marginal_farmland
 owner = HAM
 controller = HAM
 add_core = HAM

@@ -1,3 +1,4 @@
+terrain = conifer_forest
 add_core = CAN
 add_core = MTC
 trade_goods = cattle

@@ -1,3 +1,4 @@
+terrain = boreal_marsh
 owner = ENG
 controller = ENG
 add_core = CAN

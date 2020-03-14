@@ -1,3 +1,4 @@
+terrain = hilly_farmland
 owner = SIC
 controller = SIC
 add_core = SIC

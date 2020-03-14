@@ -1,3 +1,4 @@
+terrain = seasonal_jungle_hills
 owner = JAP
 controller = JAP
 add_core = JAP

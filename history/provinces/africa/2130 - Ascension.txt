@@ -1,3 +1,4 @@
+terrain = hills
 owner = ENG
 controller = ENG
 trade_goods = fish

@@ -1,3 +1,4 @@
+terrain = marsh
 owner = CLM
 controller = CLM
 add_core = CLM

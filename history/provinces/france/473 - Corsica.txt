@@ -1,3 +1,4 @@
+terrain = dry_forest_mountains
 owner = FRA
 controller = FRA
 add_core = FRA

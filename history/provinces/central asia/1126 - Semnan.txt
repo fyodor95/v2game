@@ -1,3 +1,4 @@
+terrain = dry_grassland
 owner = PER
 controller = PER
 add_core = PER

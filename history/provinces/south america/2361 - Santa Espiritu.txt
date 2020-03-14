@@ -1,3 +1,4 @@
+terrain = temperate_grassland
 owner = ARG
 controller = ARG
 add_core = ARG

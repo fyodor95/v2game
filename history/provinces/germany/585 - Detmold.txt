@@ -1,3 +1,4 @@
+terrain = forested_farmland
 owner = LIP
 controller = LIP
 add_core = LIP

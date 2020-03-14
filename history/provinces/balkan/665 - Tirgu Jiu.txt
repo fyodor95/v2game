@@ -1,3 +1,4 @@
+terrain = deciduous_forest_hills
 owner = WAL
 controller = WAL
 add_core = WAL

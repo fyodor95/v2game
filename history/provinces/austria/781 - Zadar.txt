@@ -1,3 +1,4 @@
+terrain = marginal_farmland
 owner = AUS
 controller = AUS
 add_core = AUS

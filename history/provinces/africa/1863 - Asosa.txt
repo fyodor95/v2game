@@ -1,3 +1,4 @@
+terrain = seasonal_jungle_mountains
 owner = ETH
 controller = ETH
 add_core = ETH

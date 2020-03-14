@@ -1,3 +1,4 @@
+terrain = dry_forest
 owner = POR
 controller = POR
 trade_goods = cotton

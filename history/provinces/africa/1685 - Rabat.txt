@@ -1,3 +1,4 @@
+terrain = forested_farmland
 owner = MOR
 controller = MOR
 add_core = MOR

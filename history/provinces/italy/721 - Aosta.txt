@@ -1,3 +1,4 @@
+terrain = conifer_forest_mountains
 owner = SAR
 controller = SAR
 add_core = SAR

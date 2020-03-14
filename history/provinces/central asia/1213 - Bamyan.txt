@@ -1,3 +1,4 @@
+terrain = mountain_grassland
 owner = AFG
 controller = AFG
 add_core = AFG

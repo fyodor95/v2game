@@ -1,3 +1,4 @@
+terrain = deciduous_forest_hills
 trade_goods = cattle
 life_rating = 30
 1861.1.1 = { 

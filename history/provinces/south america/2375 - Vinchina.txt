@@ -1,3 +1,4 @@
+terrain = desert_mountains
 owner = ARG
 controller = ARG
 add_core = BOL

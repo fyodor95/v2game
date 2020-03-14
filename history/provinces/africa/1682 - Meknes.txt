@@ -1,3 +1,4 @@
+terrain = dry_forest_hills
 owner = MOR
 controller = MOR
 add_core = MOR

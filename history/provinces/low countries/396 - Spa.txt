@@ -1,3 +1,4 @@
+terrain = deciduous_forest
 owner = BEL
 controller = BEL
 add_core = BEL

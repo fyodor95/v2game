@@ -1,3 +1,4 @@
+terrain = forested_farmland
 owner = HES
 controller = HES
 add_core = HES

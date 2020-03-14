@@ -1,3 +1,4 @@
+terrain = boreal_forest_mountains
 owner = CHI
 controller = CHI
 add_core = CHI

@@ -1,3 +1,4 @@
+terrain = hilly_farmland
 owner = PAR
 controller = PAR
 add_core = PAR

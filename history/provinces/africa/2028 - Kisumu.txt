@@ -1,2 +1,3 @@
+terrain = jungle_hills
 trade_goods = tea
 life_rating = 15

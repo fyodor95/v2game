@@ -1,3 +1,4 @@
+terrain = good_farmland
 owner = EGY
 controller = EGY
 add_core = EGY

@@ -1,3 +1,4 @@
+terrain = marsh
 owner = RUS
 controller = RUS
 add_core = RUS

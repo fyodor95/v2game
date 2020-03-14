@@ -1,3 +1,4 @@
+terrain = dry_grassland
 owner = CHI
 controller = CHI
 add_core = CHI

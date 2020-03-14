@@ -1,3 +1,4 @@
+terrain = semi_desert
 owner = EGY
 controller = EGY
 add_core = EGY

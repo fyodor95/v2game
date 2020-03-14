@@ -1,3 +1,4 @@
+terrain = forested_farmland
 owner = MOL
 controller = MOL
 add_core = MOL

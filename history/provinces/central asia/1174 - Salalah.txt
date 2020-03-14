@@ -1,3 +1,4 @@
+terrain = desert_hills
 owner = OMA
 controller = OMA
 add_core = OMA

@@ -1,3 +1,4 @@
+terrain = dry_grassland
 owner = TRN
 controller = TRN
 add_core = TRN

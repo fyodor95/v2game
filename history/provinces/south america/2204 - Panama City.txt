@@ -1,3 +1,4 @@
+terrain = jungle_farmland
 owner = CLM
 controller = CLM
 add_core = CLM

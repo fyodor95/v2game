@@ -1,3 +1,5 @@
+terrain = forested_farmland
+terrain = forested_farmland
 owner = RUS
 controller = RUS
 add_core = RUS

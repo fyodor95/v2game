@@ -1,3 +1,4 @@
+terrain = semi_desert_mountains
 owner = MAK
 controller = MAK
 add_core = MAK

@@ -1,3 +1,4 @@
+terrain = mountain_grassland
 owner = KAL
 controller = KAL
 add_core = KAL

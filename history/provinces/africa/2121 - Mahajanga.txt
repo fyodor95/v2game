@@ -1,3 +1,4 @@
+terrain = seasonal_jungle
 owner = MAD
 controller = MAD
 add_core = MAD

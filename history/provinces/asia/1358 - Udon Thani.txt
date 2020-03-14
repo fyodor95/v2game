@@ -1,3 +1,4 @@
+terrain = dry_forest
 owner = SIA
 controller = SIA
 add_core = SIA

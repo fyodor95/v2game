@@ -1,3 +1,4 @@
+terrain = dry_grassland
 owner = BUN
 controller = BUN
 add_core = BUN

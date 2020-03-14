@@ -1,3 +1,4 @@
+terrain = deciduous_forest_mountains
 owner = MOL
 controller = MOL
 add_core = MOL

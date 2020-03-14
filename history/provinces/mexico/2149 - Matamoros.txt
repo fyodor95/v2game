@@ -1,3 +1,4 @@
+terrain = dry_grassland
 owner = MEX
 controller = MEX
 add_core = MEX

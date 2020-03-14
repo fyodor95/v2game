@@ -1,3 +1,4 @@
+terrain = forested_farmland
 owner = NAG
 controller = NAG
 add_core = NAG

@@ -1,3 +1,4 @@
+terrain = swamp_jungle
 owner = VNZ
 controller = VNZ
 add_core = VNZ

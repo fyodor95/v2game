@@ -1,3 +1,4 @@
+terrain = dry_grassland
 owner = FRA
 controller = FRA
 add_core = ALD

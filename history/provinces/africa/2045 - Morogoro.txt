@@ -1,2 +1,3 @@
+terrain = mountain_grassland
 trade_goods = fruit
 life_rating = 15

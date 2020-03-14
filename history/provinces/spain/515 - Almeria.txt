@@ -1,3 +1,4 @@
+terrain = mountain_grassland
 owner = SPA
 controller = SPA
 add_core = SPA

@@ -1,3 +1,4 @@
+terrain = forested_farmland
 owner = VNZ
 controller = VNZ
 add_core = VNZ

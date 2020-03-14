@@ -1,3 +1,4 @@
+terrain = forested_farmland
 owner = SIA
 controller = SIA
 add_core = SIA

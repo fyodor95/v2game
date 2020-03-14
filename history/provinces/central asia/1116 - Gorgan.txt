@@ -1,3 +1,4 @@
+terrain = dry_forest_hills
 owner = PER
 controller = PER
 add_core = PER

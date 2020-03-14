@@ -1,3 +1,4 @@
+terrain = mountain_farmland
 owner = ECU
 controller = ECU
 add_core = ECU

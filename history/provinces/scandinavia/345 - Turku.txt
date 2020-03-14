@@ -1,3 +1,4 @@
+terrain = forested_farmland
 owner = FIN
 controller = FIN
 add_core = RUS

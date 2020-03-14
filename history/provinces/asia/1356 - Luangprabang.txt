@@ -1,3 +1,4 @@
+terrain = seasonal_jungle_mountains
 owner = LUA
 controller = LUA
 add_core = LUA

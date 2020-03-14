@@ -1,3 +1,4 @@
+terrain = conifer_forest_mountains
 trade_goods = wool
 life_rating = 30
 1861.1.1 = {

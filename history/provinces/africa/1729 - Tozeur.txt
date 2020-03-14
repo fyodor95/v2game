@@ -1,3 +1,4 @@
+terrain = desert_hills
 owner = TUN
 controller = TUN
 add_core = TUN

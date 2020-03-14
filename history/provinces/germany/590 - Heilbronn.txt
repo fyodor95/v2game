@@ -1,3 +1,4 @@
+terrain = forested_farmland
 owner = WUR
 controller = WUR
 add_core = WUR

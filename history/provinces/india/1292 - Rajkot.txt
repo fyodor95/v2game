@@ -1,3 +1,4 @@
+terrain = dry_grassland
 owner = BER
 controller = BER
 add_core = BER

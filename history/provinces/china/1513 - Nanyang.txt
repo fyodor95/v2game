@@ -1,3 +1,4 @@
+terrain = hilly_farmland
 owner = CHI
 controller = CHI
 add_core = CHI

@@ -1,3 +1,4 @@
+terrain = jungle_hills
 owner = BRU
 controller = BRU
 add_core = BRU

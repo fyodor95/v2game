@@ -1,3 +1,4 @@
+terrain = marsh
 owner = ARG
 controller = ARG
 add_core = ARG

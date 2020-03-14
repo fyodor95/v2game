@@ -1,3 +1,4 @@
+terrain = jungle_hills
 owner = JOH
 controller = JOH
 add_core = JOH

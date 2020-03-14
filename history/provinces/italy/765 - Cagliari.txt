@@ -1,3 +1,4 @@
+terrain = hilly_farmland
 owner = SAR
 controller = SAR
 add_core = SAR

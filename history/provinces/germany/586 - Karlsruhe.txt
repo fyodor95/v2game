@@ -1,3 +1,4 @@
+terrain = hilly_farmland
 owner = BAD
 controller = BAD
 add_core = BAD

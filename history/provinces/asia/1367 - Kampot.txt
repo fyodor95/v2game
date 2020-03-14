@@ -1,3 +1,4 @@
+terrain = seasonal_jungle_hills
 owner = CAM
 controller = CAM
 add_core = CAM

@@ -1,3 +1,4 @@
+terrain = seasonal_jungle
 owner = ENG
 controller = ENG
 trade_goods = grain

@@ -1,3 +1,4 @@
+terrain = deciduous_forest_hills
 owner = BEL
 controller = BEL
 add_core = BEL

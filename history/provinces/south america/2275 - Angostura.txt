@@ -1,3 +1,4 @@
+terrain = seasonal_jungle_hills
 owner = VNZ
 controller = VNZ
 add_core = VNZ

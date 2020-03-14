@@ -1,3 +1,4 @@
+terrain = deciduous_forest_hills
 owner = HAN
 controller = HAN
 add_core = HAN

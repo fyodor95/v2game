@@ -1,3 +1,4 @@
+terrain = conifer_forest_hills
 owner = MEX
 controller = MEX
 add_core = MEX

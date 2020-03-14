@@ -1,3 +1,4 @@
+terrain = desert
 owner = NEJ
 controller = NEJ
 add_core = NEJ

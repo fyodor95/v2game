@@ -1,3 +1,4 @@
+terrain = semi_desert
 owner = JOD
 controller = JOD
 add_core = JOD

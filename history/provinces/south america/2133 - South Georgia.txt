@@ -1,2 +1,3 @@
+terrain = tundra_mountains
 trade_goods = fish
 life_rating = 30

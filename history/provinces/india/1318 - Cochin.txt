@@ -1,3 +1,4 @@
+terrain = seasonal_jungle_hills
 owner = TRA
 controller = TRA
 add_core = HND

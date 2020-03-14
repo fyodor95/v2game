@@ -1,3 +1,4 @@
+terrain = hills
 owner = DEN
 controller = DEN
 add_core = DEN

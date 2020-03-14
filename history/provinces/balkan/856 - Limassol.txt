@@ -1,3 +1,4 @@
+terrain = dry_forest
 owner = TUR
 controller = TUR
 add_core = TUR

@@ -1,3 +1,4 @@
+terrain = seasonal_jungle_mountains
 owner = MEX
 controller = MEX
 add_core = MEX

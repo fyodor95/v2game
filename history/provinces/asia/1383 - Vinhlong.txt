@@ -1,3 +1,4 @@
+terrain = floodplain_farmland
 owner = DAI
 controller = DAI
 add_core = DAI

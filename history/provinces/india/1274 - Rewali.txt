@@ -1,3 +1,4 @@
+terrain = hilly_farmland
 owner = BUN
 controller = BUN
 add_core = BUN

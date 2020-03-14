@@ -1,3 +1,4 @@
+terrain = forested_farmland
 owner = URU
 controller = URU
 add_core = URU

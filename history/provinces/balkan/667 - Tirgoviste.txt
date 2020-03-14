@@ -1,3 +1,4 @@
+terrain = conifer_forest_mountains
 owner = WAL
 controller = WAL
 add_core = WAL

@@ -1,3 +1,4 @@
+terrain = mountain_farmland
 owner = BOL
 controller = BOL
 add_core = BOL

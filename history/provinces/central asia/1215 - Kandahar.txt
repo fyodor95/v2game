@@ -1,3 +1,4 @@
+terrain = desert
 owner = AFG
 controller = AFG
 add_core = AFG

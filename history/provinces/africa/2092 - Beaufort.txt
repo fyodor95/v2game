@@ -1,3 +1,4 @@
+terrain = semi_desert_hills
 owner = ENG
 controller = ENG
 trade_goods = fruit

@@ -1,3 +1,4 @@
+terrain = semi_desert_hills
 owner = ALD
 controller = ALD
 add_core = ALD

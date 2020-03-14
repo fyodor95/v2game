@@ -1,3 +1,4 @@
+terrain = desert_hills
 owner = AFG
 controller = AFG
 add_core = AFG

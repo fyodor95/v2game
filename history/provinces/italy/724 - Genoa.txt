@@ -1,3 +1,4 @@
+terrain = deciduous_forest_hills
 owner = SAR
 controller = SAR
 add_core = SAR

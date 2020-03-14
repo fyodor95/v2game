@@ -1,3 +1,4 @@
+terrain = conifer_forest
 owner = RUS
 controller = RUS
 add_core = RUS

@@ -1,3 +1,4 @@
+terrain = conifer_forest_hills
 add_core = RUS
 add_core = JAP
 trade_goods = coal

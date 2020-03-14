@@ -1,3 +1,4 @@
+terrain = semi_desert
 owner = RUS
 controller = RUS
 add_core = RUS

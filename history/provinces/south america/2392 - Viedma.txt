@@ -1,3 +1,4 @@
+terrain = desert
 owner = ARG
 controller = ARG
 add_core = ARG

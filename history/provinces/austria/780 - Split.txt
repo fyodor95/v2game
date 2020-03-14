@@ -1,3 +1,4 @@
+terrain = dry_forest_hills
 owner = AUS
 controller = AUS
 add_core = AUS

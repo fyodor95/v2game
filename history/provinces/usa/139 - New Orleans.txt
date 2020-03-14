@@ -1,3 +1,4 @@
+terrain = marsh
 owner = USA
 controller = USA
 add_core = USA

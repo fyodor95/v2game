@@ -1,3 +1,4 @@
+terrain = desert
 owner = JAS
 controller = JAS
 add_core = JAS

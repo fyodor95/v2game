@@ -1,3 +1,4 @@
+terrain = boreal_forest_mountains
 owner = RUS
 controller = RUS
 add_core = CHI

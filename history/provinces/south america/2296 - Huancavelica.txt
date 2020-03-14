@@ -1,3 +1,4 @@
+terrain = mountain_grassland
 owner = PEU
 controller = PEU
 add_core = PEU

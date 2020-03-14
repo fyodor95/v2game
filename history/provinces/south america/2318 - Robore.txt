@@ -1,1 +1,2 @@
+terrain = dry_forest
 owner = BOLcontroller = BOLadd_core = BOLtrade_goods = woollife_rating = 30

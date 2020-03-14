@@ -1,3 +1,4 @@
+terrain = jungle
 owner = UCA
 controller = UCA
 add_core = UCA

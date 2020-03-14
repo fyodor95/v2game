@@ -1,3 +1,4 @@
+terrain = mountain
 owner = CHI
 controller = CHI
 add_core = CHI

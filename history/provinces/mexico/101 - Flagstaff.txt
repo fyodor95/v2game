@@ -1,3 +1,4 @@
+terrain = semi_desert_mountains
 owner = MEX
 controller = MEX
 add_core = MEX

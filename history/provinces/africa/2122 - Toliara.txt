@@ -1,3 +1,4 @@
+terrain = dry_forest
 owner = MAD
 controller = MAD
 add_core = MAD

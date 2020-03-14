@@ -1,3 +1,4 @@
+terrain = swamp_jungle
 owner = PEU
 controller = PEU
 add_core = PEU

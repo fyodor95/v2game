@@ -1,3 +1,4 @@
+terrain = hilly_grassland
 owner = GRE
 controller = GRE
 add_core = GRE

@@ -1,3 +1,4 @@
+terrain = temperate_grassland
 owner = ENG
 controller = ENG
 trade_goods = cattle

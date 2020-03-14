@@ -1,3 +1,4 @@
+terrain = good_farmland
 owner = ORA
 controller = ORA
 add_core = ORA

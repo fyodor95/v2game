@@ -1,3 +1,4 @@
+terrain = deciduous_forest_mountains
 owner = SPA
 controller = SPA
 add_core = SPA

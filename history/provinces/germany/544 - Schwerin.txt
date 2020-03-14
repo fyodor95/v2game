@@ -1,3 +1,4 @@
+terrain = good_farmland
 owner = MEC
 controller = MEC
 add_core = MEC

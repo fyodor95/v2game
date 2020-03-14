@@ -1,3 +1,4 @@
+terrain = conifer_forest_mountains
 owner = BHU
 controller = BHU
 add_core = BHU

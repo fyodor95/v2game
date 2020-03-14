@@ -1,3 +1,4 @@
+terrain = tundra_mountains
 owner = KOK
 controller = KOK
 add_core = KOK

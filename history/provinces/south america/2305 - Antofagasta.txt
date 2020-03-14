@@ -1,3 +1,4 @@
+terrain = desert_hills
 owner = BOL
 controller = BOL
 add_core = BOL

@@ -1,3 +1,4 @@
+terrain = desert_hills
 owner = YEM
 controller = YEM
 add_core = YEM

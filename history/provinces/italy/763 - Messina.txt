@@ -1,3 +1,4 @@
+terrain = dry_forest_mountains
 owner = SIC
 controller = SIC
 add_core = SIC

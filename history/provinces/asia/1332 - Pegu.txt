@@ -1,3 +1,4 @@
+terrain = jungle_farmland
 owner = BUR
 controller = BUR
 add_core = BUR

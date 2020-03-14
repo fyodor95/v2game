@@ -1,3 +1,4 @@
+terrain = deciduous_forest_hills
 owner = SER
 controller = SER
 add_core = SER

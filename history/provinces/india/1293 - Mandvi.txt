@@ -1,3 +1,4 @@
+terrain = semi_desert
 owner = KUT
 controller = KUT
 add_core = KUT

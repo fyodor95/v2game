@@ -1,3 +1,4 @@
+terrain = jungle_farmland
 owner = ATJ
 controller = ATJ
 add_core = ATJ

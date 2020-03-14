@@ -1,3 +1,4 @@
+terrain = hilly_grassland
 owner = MOR
 controller = MOR
 add_core = MOR

@@ -1,3 +1,4 @@
+terrain = hilly_farmland
 owner = TUS
 controller = TUS
 add_core = TUS

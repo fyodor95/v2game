@@ -1,3 +1,4 @@
+terrain = forested_farmland
 owner = LUX
 controller = LUX
 add_core = LUX
