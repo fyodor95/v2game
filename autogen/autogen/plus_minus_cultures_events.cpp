@@ -112,7 +112,7 @@ tConditions<tTarget::kProvince> tPlusMinusCulture::xHighMilitancyRemovingConditi
         MajorityCultureIsPrimary(_No),
         MajorityCultureIsAccepted(),
         MajorityCultureIs(culture),
-        PopulationIsGreaterOrEqual(5000u),
+        PopulationIsGreaterOrEqual<tTarget::kProvince>(5000u),
         AverageMilitancy<tTarget::kProvince>(4.f),
         ConditionsForOwner
         ({
@@ -169,7 +169,7 @@ tConditions<tTarget::kProvince> tPlusMinusCulture::xLowMilitancyAddingConditions
     {
         MajorityCultureIsAccepted(_No),
         MajorityCultureIs(culture),
-        PopulationIsGreaterOrEqual(40000u),
+        PopulationIsGreaterOrEqual<tTarget::kProvince>(40000u),
         Not(AverageMilitancy<tTarget::kProvince>(0.4f))
     };
 }

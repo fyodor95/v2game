@@ -92,6 +92,7 @@
     <ClInclude Include="comand.h" />
     <ClInclude Include="conditions.h" />
     <ClInclude Include="continents.h" />
+    <ClInclude Include="country_scores.h" />
     <ClInclude Include="cultures.h" />
     <ClInclude Include="decisions.h" />
     <ClInclude Include="effects.h" />
@@ -101,6 +102,7 @@
     <ClInclude Include="modifier.h" />
     <ClInclude Include="pop_types.h" />
     <ClInclude Include="reforms.h" />
+    <ClInclude Include="religious_policy.h" />
     <ClInclude Include="tags.h" />
     <ClInclude Include="target.h" />
     <ClInclude Include="target_comand.h" />
@@ -114,6 +116,7 @@
     <ClCompile Include="comand.cpp" />
     <ClCompile Include="conditions.cpp" />
     <ClCompile Include="continents.cpp" />
+    <ClCompile Include="country_scores.cpp" />
     <ClCompile Include="cultures.cpp" />
     <ClCompile Include="decisions.cpp" />
     <ClCompile Include="effects.cpp" />
@@ -122,6 +125,7 @@
     <ClCompile Include="governments.cpp" />
     <ClCompile Include="pop_types.cpp" />
     <ClCompile Include="reforms.cpp" />
+    <ClCompile Include="religious_policy.cpp" />
     <ClCompile Include="tags.cpp" />
     <ClCompile Include="technologies.cpp" />
     <ClCompile Include="war_policy.cpp" />

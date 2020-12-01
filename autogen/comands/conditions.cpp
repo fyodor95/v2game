@@ -151,11 +151,6 @@ tCondition<tTarget::kProvince> MajorityCultureIsPrimary(tYesOrNo const flag)
     return Set("is_primary_culture", YesOrNo(flag));
 }
 
-tCondition<tTarget::kProvince> PopulationIsGreaterOrEqual(uint const num)
-{
-    return Set("total_pops", std::to_string(num));
-}
-
 tCondition<tTarget::kPop> HasAcceptedCulture(tYesOrNo const flag)
 {
     return Set("is_accepted_culture", YesOrNo(flag));

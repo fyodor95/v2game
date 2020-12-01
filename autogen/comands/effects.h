@@ -59,6 +59,10 @@ tEffect<tTarget::kCountry> EffectsForAllPops(tCondition<tTarget::kPop> && limit,
 tEffect<tTarget::kCountry> EffectsForOwnedProvinces(tConditions <tTarget::kProvince> && limit,
                                                     tEffects    <tTarget::kProvince> && effects);
 
+// —лучайна€ держава, удовлетвор€юща€ услови€м limit, получает эффекты effects.
+tEffect<tTarget::kCountry> EffectsForRandomCountry
+(tConditions<tTarget::kCountry> && limit, tEffects<tTarget::kCountry> && effects);
+
 // ƒержава tag получает эффекты effects.
 template <tTarget target = tTarget::kCountry>
 tEffect<target> EffectsForSpecifiedCountry(tTag tag, tEffects<tTarget::kCountry> && effects);
@@ -95,6 +99,9 @@ inline tEffect<tTarget::kCountry> SetFlag(tCountryFlag flag)
 {
     return Set("set_country_flag", ToString(flag));
 }
+
+// »грок, управл€ющий данной державой, начинает управл€ть державой tag.
+inline tEffect<tTarget::kCountry> SwitchTo(tTag tag) { return Set("change_tag_no_core_switch", ToString(tag)); }
 
 // ¬ладельцем данной провинции становитс€ держава tag.
 inline tEffect<tTarget::kProvince> ChangeOwner(tTag tag) { return Set("secede_province", ToString(tag)); }

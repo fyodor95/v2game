@@ -21,6 +21,8 @@
     <ClInclude Include="pop_types.h" />
     <ClInclude Include="war_policy.h" />
     <ClInclude Include="technologies.h" />
+    <ClInclude Include="country_scores.h" />
+    <ClInclude Include="religious_policy.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="_pch_comands.cpp" />
@@ -39,5 +41,7 @@
     <ClCompile Include="pop_types.cpp" />
     <ClCompile Include="war_policy.cpp" />
     <ClCompile Include="technologies.cpp" />
+    <ClCompile Include="country_scores.cpp" />
+    <ClCompile Include="religious_policy.cpp" />
   </ItemGroup>
 </Project>

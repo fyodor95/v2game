@@ -23,7 +23,7 @@ void CapitalCulturesAcceptanceImpl(size_t const i, tDecisionOutput & decisionOut
     tConditions<tTarget::kCountry> allow
     {
         Not(CitizenshipPolicyIs(tCitizenshipPolicy::kResidency)),
-        ConditionsForCapital({MajorityCultureIs(culture), PopulationIsGreaterOrEqual(20000u)})
+        ConditionsForCapital({MajorityCultureIs(culture), PopulationIsGreaterOrEqual<tTarget::kProvince>(20000u)})
     };
     Decision(std::move(name), title.data(), desc.data(), decisionOutput, localizationOutput, std::move(potential),
              std::move(allow), {AddPrestige(1), AddAcceptedCulture(culture)});

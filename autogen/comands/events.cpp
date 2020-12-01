@@ -87,7 +87,7 @@ tString Picture(char const * const eventPicture)
 
 tComands EventHeader(uint const id, char const * const eventPicture)
 {
-    assertion(id < 1e6);
+    assertion(id < 4e6);
     tComands res;
     res.reserve(3u + !!eventPicture);
     res =

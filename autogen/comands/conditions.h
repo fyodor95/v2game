@@ -2,11 +2,13 @@
 
 #include "citizenship_policy.h"
 #include "continents.h"
+#include "country_scores.h"
 #include "cultures.h"
 #include "flags.h"
 #include "governments.h"
 #include "pop_types.h"
 #include "reforms.h"
+#include "religious_policy.h"
 #include "tags.h"
 #include "target_comand.h"
 #include "technologies.h"
@@ -106,6 +108,10 @@ tCondition<tTarget::kCountry> IsAI(tYesOrNo flag = _Yes);
 // ¬озвращает true, если тэгом €вл€етс€ DXX (01 <= XX <= 50).
 tCondition<tTarget::kCountry> IsDominion();
 
+// ¬озвращает true, если данна€ держава €вл€етс€ великой.
+inline tCondition<tTarget::kCountry> IsGreatPower(tYesOrNo flag = _Yes)
+{ return Set("is_greater_power", YesOrNo(flag)); }
+
 // ¬озвращает true, если данна€ страна не €вл€етс€ ни автономией, ни сателлитом.
 tCondition<tTarget::kCountry> IsIndependant(tYesOrNo flag = _Yes);
 
@@ -125,6 +131,9 @@ inline tCondition<tTarget::kCountry> IsPrimary(tCulture culture) { return Set("p
 inline tCondition<tTarget::kCountry> NumOfBrigadesNTimesLessThan(tTag tag, float n)
 { return tCondition<tTarget::kCountry>(ToString(tag), {Set("brigades_compare", ToString(n))}); }
 
+// ¬озвращает true, если ранг данной державы больше или равен rank.
+inline tCondition<tTarget::kCountry> RankIsGreaterOrEqual(uint rank) { return Set("rank", std::to_string(rank)); }
+
 // ¬озвращает true, если уровень реформы tReformType в данной стране равен level.
 template <class tReformType, tReformType level>
 tCondition<tTarget::kCountry> ReformLevelIs()
@@ -140,8 +149,16 @@ tCondition<tTarget::kCountry> ReformLevelIsLessThan();
 template <class tReformType, tReformType level>
 tCondition<tTarget::kCountry> ReformLevelIsGreaterOrEaqualThan();
 
+// ¬озвращает true, если религиозной политикой данной державы €вл€етс€ policy.
+inline tCondition<tTarget::kCountry> ReligiousPolicyIs(tReligiousPolicy policy)
+{ return Set("religious_policy", ToString(policy)); }
+
 // ¬озвращает true, если отношени€ между данной державой и державой tag не меньше, чем value.
 tCondition<tTarget::kCountry> RelationWithCountryIsHigherOrEqual(tTag tag, int value);
+
+// ¬озвращает true, если указанна€ характеристика данной державы не меньше, чем value.
+inline tCondition<tTarget::kCountry> ScoreIsGreaterOrEqual(tScoreType type, uint value)
+{ return Set(ToString(type), std::to_string(value)); }
 
 inline tCondition<tTarget::kCountry> TagIs(tTag tag) { return Set("tag", ToString(tag)); }
 
@@ -201,8 +218,9 @@ tCondition<tTarget::kProvince> MajorityCultureIsAccepted(tYesOrNo flag = _Yes);
 // ≈сли flag == _No, то возвращаемое значение инвертируетс€.
 tCondition<tTarget::kProvince> MajorityCultureIsPrimary(tYesOrNo flag = _Yes);
 
-// ¬озвращает true, если в количество населени€ в данной провинции не меньше, чем num.
-tCondition<tTarget::kProvince> PopulationIsGreaterOrEqual(uint num);
+// ¬озвращает true, если в количество населени€ в данной провинции или державе не меньше, чем num.
+template <tTarget target>
+tCondition<target> PopulationIsGreaterOrEqual(uint num) { return Set("total_pops", std::to_string(num)); }
 
 // ¬озвращает true, если культурой попа €вл€етс€ culture.
 inline tCondition<tTarget::kPop> HasCulture(tCulture culture)

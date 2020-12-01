@@ -12,6 +12,7 @@
     <ClCompile Include="test.cpp" />
     <ClCompile Include="peaceful_settlement.cpp" />
     <ClCompile Include="simple_items.cpp" />
+    <ClCompile Include="change_tag.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="_pch_autogen.h" />
@@ -25,5 +26,6 @@
     <ClInclude Include="test.h" />
     <ClInclude Include="peaceful_settlement.h" />
     <ClInclude Include="simple_items.h" />
+    <ClInclude Include="change_tag.h" />
   </ItemGroup>
 </Project>

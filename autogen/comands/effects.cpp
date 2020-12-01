@@ -40,33 +40,43 @@ tEffect<tTarget::kCountry> AddPrestige(int const value)
     return Set("prestige", std::to_string(value));
 }
 
+template <tTarget target>
+tEffect<tTarget::kCountry> Effects(char const * const _for, tConditions<target> && limit, tEffects<target> && effects)
+{
+    tEffect<tTarget::kCountry> res(_for, std::move(CastToComands(effects)));
+
+    if (!limit.empty())
+        res.AddToBody({tComand("limit", std::move(CastToComands(limit)))}, 0u);
+
+    return res;
+}
+
 tEffect<tTarget::kCountry> EffectsForAllCountries
 (tConditions<tTarget::kCountry> && limit, tEffects<tTarget::kCountry> && effects)
 {
-    tEffect<tTarget::kCountry> res("any_country", std::move(CastToComands(effects)));
-    res.AddToBody({tComand("limit", std::move(CastToComands(limit)))}, 0u);
-    return res;
+    return Effects<tTarget::kCountry>("any_country", std::move(limit), std::move(effects));
 }
 
 tEffect<tTarget::kCountry> EffectsForAllPops(tCondition<tTarget::kPop> && limit, tEffects<tTarget::kPop> && effects)
 {
-    tEffect<tTarget::kCountry> res("any_pop", std::move(CastToComands(effects)));
-    res.AddToBody({tComand("limit", tComands{std::move(limit)})}, 0u);
-    return res;
+    return Effects<tTarget::kPop>("any_pop", {limit}, std::move(effects));
 }
 
 tEffect<tTarget::kCountry> EffectsForOwnedProvinces(tConditions <tTarget::kProvince> && conditions,
                                                     tEffects    <tTarget::kProvince> && effects)
 {
-    tEffect<tTarget::kCountry> res("any_owned", std::move(CastToComands(effects)));
-    if (!conditions.empty())
-        res.AddToBody({tComand("limit", std::move(CastToComands(conditions)))}, 0u);
-    return res;
+    return Effects<tTarget::kProvince>("any_owned", std::move(conditions), std::move(effects));
 }
 
 tEffect<tTarget::kProvince> EffectsForOwner(tEffects<tTarget::kCountry> && effects)
 {
     return tEffect<tTarget::kProvince>("owner", std::move(CastToComands(effects)));
+}
+
+tEffect<tTarget::kCountry> EffectsForRandomCountry
+(tConditions<tTarget::kCountry> && limit, tEffects<tTarget::kCountry> && effects)
+{
+    return Effects<tTarget::kCountry>("random_country", std::move(limit), std::move(effects));
 }
 
 tEffect<tTarget::kPop> AddMilitancy(int const value)
