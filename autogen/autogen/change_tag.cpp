@@ -35,24 +35,24 @@ void ChangeTag()
 
         tModifiers<tTarget::kCountry> modifiers
         {
-            tModifier
-            (
-                0.9f,
-
-                Or<tTarget::kCountry>
-                ({
-                    TagIs(tTag::RUS),
-                    TagIs(tTag::SOV)
-                })
-            ),
-
             tModifier( 0.95f, Civilized()),
             tModifier( 0.95f, RankIsGreaterOrEqual(16)),
             tModifier( 0.95f, IsGreatPower()),
             tModifier( 0.95f, ScoreIsGreaterOrEqual(tScoreType::industrial_score, 100)),
             tModifier( 0.95f, ScoreIsGreaterOrEqual(tScoreType::industrial_score, 1000)),
-            tModifier( 0.10f, GovernmentIs(tGovernment::proletarian_dictatorship)),
-            tModifier(10.00f, GovernmentIs(tGovernment::fascist_dictatorship))
+
+            tModifier( 2.15f, ReligiousPolicyIs(tReligiousPolicy::moralism    )),
+            tModifier( 1.29f, ReligiousPolicyIs(tReligiousPolicy::pluralism   )),
+            tModifier( 0.77f, ReligiousPolicyIs(tReligiousPolicy::secularized )),
+            tModifier( 0.46f, ReligiousPolicyIs(tReligiousPolicy::pro_atheism )),
+
+            tModifier( 2.15f, WarPolicyIs(tWarPolicy::jingoism      )),
+            tModifier( 1.29f, WarPolicyIs(tWarPolicy::pro_military  )),
+            tModifier( 0.77f, WarPolicyIs(tWarPolicy::anti_military )),
+            tModifier( 0.46f, WarPolicyIs(tWarPolicy::pacifism      )),
+
+            tModifier( 2.15f, CitizenshipPolicyIs(tCitizenshipPolicy::kResidency )),
+            tModifier( 0.46f, CitizenshipPolicyIs(tCitizenshipPolicy::kFull      )),
         };
 
         auto switchToCurrentTag = [initialId]
