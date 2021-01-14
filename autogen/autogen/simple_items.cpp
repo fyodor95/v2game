@@ -131,8 +131,89 @@ static void RestoreJustice()
              LocalizationOutput(), std::move(potential), {}, std::move(effects));
 }
 
+// ”даление нецивилизованных модификаторов дл€ цивилизованных стран.
+static void RemoveUncivMods()
+{
+    tConditions<tTarget::kCountry> conditions
+    {
+        Civilized(),
+
+        Or<tTarget::kCountry>
+        ({
+            HasCountryModifier("educational_reform"),
+            HasCountryModifier("military_reform"),
+            HasCountryModifier("western_influences"),
+            HasCountryModifier("uncivilized_isolationism"),
+            HasCountryModifier("trade_restrictions"),
+            HasCountryModifier("sayings_of_the_dutch"),
+            HasCountryModifier("extraterritoriality_granted"),
+            HasCountryModifier("meiji_restoration_boost"),
+
+            HasProvince
+            ({
+                Or<tTarget::kProvince>
+                ({
+                    HasProvinceModifier("western_presence"),
+                    HasProvinceModifier("foreign_smugglers"),
+                    HasProvinceModifier("foreign_trading_post"),
+                    HasProvinceModifier("local_opium_habit"),
+                    HasProvinceModifier("european_military_mission"),
+                    HasProvinceModifier("legation_quarter"),
+                    HasProvinceModifier("kettler_denkmal"),
+                })
+            })
+        })
+    };
+
+    tEffects<tTarget::kCountry> effects
+    {
+        RemoveCountryModifier("educational_reform"),
+        RemoveCountryModifier("military_reform"),
+        RemoveCountryModifier("western_influences"),
+        RemoveCountryModifier("uncivilized_isolationism"),
+        RemoveCountryModifier("trade_restrictions"),
+        RemoveCountryModifier("sayings_of_the_dutch"),
+        RemoveCountryModifier("extraterritoriality_granted"),
+        RemoveCountryModifier("meiji_restoration_boost"),
+
+        EffectsForOwnedProvinces
+        (
+            {},
+
+            {
+                RemoveProvinceModifier("western_presence"),
+                RemoveProvinceModifier("foreign_smugglers"),
+                RemoveProvinceModifier("foreign_trading_post"),
+                RemoveProvinceModifier("local_opium_habit"),
+                RemoveProvinceModifier("european_military_mission"),
+                RemoveProvinceModifier("legation_quarter"),
+                RemoveProvinceModifier("kettler_denkmal"),
+            }
+        )
+    };
+
+    char const * const desc =
+    (
+        "Ќаша страна находитс€ под интеллектуальным натиском современности и западного мира. ¬ "
+        "области современных технологий, промышленности и военной теории старые традиции и "
+        "институты больше не могут служить нам, как прежде. «ападное вли€ние распростран€етс€ как "
+        "лесной пожар по нашему государству, среди нашего народа и в наших душах. ≈сли мы хотим "
+        "остатьс€ собой и не потер€ть свою суть, сейчас самое врем€ вз€ть нашу судьбу в свои "
+        "руки. ¬едущим представител€м нашей интеллектуальной элиты стало очевидно, что "
+        "единственна€ возможность остановить разрушительный напор чудовища с запада Ч плыть его "
+        "курсом. —унь ÷зы говорил: Ђ“ростник гнЄтс€ вместе с ветром и этим сопротивл€етс€ ему.ї."
+    );
+
+    uint const id = 160002;
+
+    CountryEvent(id, "ѕрин€тие вестернизации", desc, EventOutput(), LocalizationOutput(),
+                 Trigger(std::move(conditions)), MeanTimeToHappen<tTarget::kCountry>(1.f),
+                 {Option(std::move(effects), id)}, {"¬ фургоны и на «апад!"}, "Prosper");
+}
+
 void GenerateSimpleItems()
 {
     CommunistPoliticalReforms();
+    RemoveUncivMods();
     RestoreJustice();
 }

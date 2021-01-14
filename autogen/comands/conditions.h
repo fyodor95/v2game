@@ -75,6 +75,11 @@ inline tCondition<tTarget::kCountry> Exists(tTag tag) { return Set("exists", ToS
 inline tCondition<tTarget::kCountry> GovernmentIs(tGovernment government)
 { return Set("government", ToString(government)); }
 
+inline tCondition<tTarget::kCountry> HasCountryModifier(char const * modifierName)
+{
+    return Set("has_country_modifier", modifierName);
+}
+
 // Возвращает true, если данная держава значительно опережает державу tag по военным технологиям
 // (если каждый военный столбик в данной стране выше, чем в стране tag).
 tCondition<tTarget::kCountry> HasMuchBetterArmyTechsThan(tTag tag);
@@ -194,6 +199,11 @@ tCondition<tTarget::kProvince> HasNeighborProvince(tConditions<tTarget::kProvinc
 
 // Возвращает true, если в данной провинции проживает поп, удовлетворяющий условию condition.
 tCondition<tTarget::kProvince> HasPop(tCondition<tTarget::kPop> && condition);
+
+inline tCondition<tTarget::kProvince> HasProvinceModifier(char const * modifierName)
+{
+    return Set("has_province_modifier", modifierName);
+}
 
 // Возвращает true, если данная провинция находится на континенте continent.
 inline tCondition<tTarget::kProvince> IsInContinent(tContinent continent) { return Set("continent", ToString(continent)); }

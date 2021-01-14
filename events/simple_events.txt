@@ -107,3 +107,56 @@ country_event = {
 		name = "EVTOPTB403"
 	}
 }
+country_event = {
+	id = 160002
+	title = "EVTNAME160002"
+	desc = "EVTDESC160002"
+	picture = "Prosper"
+	trigger = {
+		civilized = yes
+		OR = {
+			has_country_modifier = educational_reform
+			has_country_modifier = military_reform
+			has_country_modifier = western_influences
+			has_country_modifier = uncivilized_isolationism
+			has_country_modifier = trade_restrictions
+			has_country_modifier = sayings_of_the_dutch
+			has_country_modifier = extraterritoriality_granted
+			has_country_modifier = meiji_restoration_boost
+			any_owned_province = {
+				OR = {
+					has_province_modifier = western_presence
+					has_province_modifier = foreign_smugglers
+					has_province_modifier = foreign_trading_post
+					has_province_modifier = local_opium_habit
+					has_province_modifier = european_military_mission
+					has_province_modifier = legation_quarter
+					has_province_modifier = kettler_denkmal
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "EVTOPTA160002"
+		remove_country_modifier = educational_reform
+		remove_country_modifier = military_reform
+		remove_country_modifier = western_influences
+		remove_country_modifier = uncivilized_isolationism
+		remove_country_modifier = trade_restrictions
+		remove_country_modifier = sayings_of_the_dutch
+		remove_country_modifier = extraterritoriality_granted
+		remove_country_modifier = meiji_restoration_boost
+		any_owned = {
+			remove_province_modifier = western_presence
+			remove_province_modifier = foreign_smugglers
+			remove_province_modifier = foreign_trading_post
+			remove_province_modifier = local_opium_habit
+			remove_province_modifier = european_military_mission
+			remove_province_modifier = legation_quarter
+			remove_province_modifier = kettler_denkmal
+		}
+	}
+}

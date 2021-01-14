@@ -90,6 +90,11 @@ inline tEffect<tTarget::kCountry> RemoveAcceptedCulture(tCulture culture)
     return Set("remove_accepted_culture", ToString(culture));
 }
 
+inline tEffect<tTarget::kCountry> RemoveCountryModifier(char const * modifierName)
+{
+    return Set("remove_country_modifier", modifierName);
+}
+
 inline tEffect<tTarget::kCountry> RemoveFlag(tCountryFlag flag)
 {
     return Set("clr_country_flag", ToString(flag));
@@ -111,6 +116,11 @@ tEffect<tTarget::kProvince> EffectsForOwner(tEffects<tTarget::kCountry> && effec
 
 // Делает данную провинцию национальной для державы tag. Тэгом не может быть kFrom.
 tEffect<tTarget::kProvince> MakeNationalFor(tTag tag, tYesOrNo flag = _Yes);
+
+inline tEffect<tTarget::kProvince> RemoveProvinceModifier(char const * modifierName)
+{
+    return Set("remove_province_modifier", modifierName);
+}
 
 // Добавляет данному попу value агрессивности.
 tEffect<tTarget::kPop> AddMilitancy(int value);
