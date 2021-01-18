@@ -70,11 +70,18 @@ static void Generate(size_t const i, uint const id, tDecisionOutput & decisionOu
 void PeacefulSettlement()
 {
     std::ofstream        eventOutput      ("events\\peaceful_settlement.txt");
-    tDecisionOutput   decisionOutput   ("decisions\\peaceful_settlement.txt");
     std::ofstream localizationOutput("localisation\\peaceful_settlement.csv");
     uint id = 76000u;
+
     for (size_t i = 0u; i < kTags.size(); ++i)
+    {
+        std::string const outputFileName =
+            std::string("decisions\\peaceful_settlement_") + ToString(kTags[i]) + ".txt";
+
+        tDecisionOutput decisionOutput(outputFileName.data());
         Generate(i, id, decisionOutput, localizationOutput);
+    }
+
     std::string name = std::string("Предложение державы ") + Localization(tTag::kFrom);
     std::string desc =
     (
