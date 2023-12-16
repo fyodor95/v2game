@@ -28,7 +28,7 @@ tEffect<tTarget::kCountry> AddBadboy(float value);
 // Добавляет value престижа данной стране.
 tEffect<tTarget::kCountry> AddPrestige(int value);
 
-// Выставляет реформу типа tReformType в значение level.
+// Меняет тип правительства в стране на government.
 inline tEffect<tTarget::kCountry> ChangeGovernmentType(tGovernment government)
 {
     return Set("government", ToString(government));
