@@ -71,7 +71,7 @@ tCondition<target> ConditionsForSpecifiedCountry(tTag tag, tConditions<tTarget::
 // ¬озвращает true, если держава tag существует в данный момент.
 inline tCondition<tTarget::kCountry> Exists(tTag tag) { return Set("exists", ToString(tag)); }
 
-// ¬озвращает true, если данна€ страна имеют форму правлени€ government.
+// ¬озвращает true, если данна€ страна имеет форму правлени€ government.
 inline tCondition<tTarget::kCountry> GovernmentIs(tGovernment government)
 { return Set("government", ToString(government)); }
 
