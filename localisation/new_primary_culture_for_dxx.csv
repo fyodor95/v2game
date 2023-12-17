@@ -8,6 +8,8 @@ D_primary_dutch_title;Голландцы — наши братья!;X
 D_primary_dutch_desc;Отныне Голландцы являются полноправными гражданами нашей страны!;X
 D_primary_flemish_title;Фламандцы — наши братья!;X
 D_primary_flemish_desc;Отныне Фламандцы являются полноправными гражданами нашей страны!;X
+D_primary_wallonian_title;Валлоны — наши братья!;X
+D_primary_wallonian_desc;Отныне Валлоны являются полноправными гражданами нашей страны!;X
 D_primary_swiss_title;Швейцарцы — наши братья!;X
 D_primary_swiss_desc;Отныне Швейцарцы являются полноправными гражданами нашей страны!;X
 D_primary_swedish_title;Шведы — наши братья!;X
@@ -20,8 +22,10 @@ D_primary_icelandic_title;Исландцы — наши братья!;X
 D_primary_icelandic_desc;Отныне Исландцы являются полноправными гражданами нашей страны!;X
 D_primary_finnish_title;Финны — наши братья!;X
 D_primary_finnish_desc;Отныне Финны являются полноправными гражданами нашей страны!;X
-D_primary_sami_title;Саамская — наши братья!;X
-D_primary_sami_desc;Отныне Саамская являются полноправными гражданами нашей страны!;X
+D_primary_sami_title;Саамы — наши братья!;X
+D_primary_sami_desc;Отныне Саамы являются полноправными гражданами нашей страны!;X
+D_primary_scottish_title;Шотландцы — наши братья!;X
+D_primary_scottish_desc;Отныне Шотландцы являются полноправными гражданами нашей страны!;X
 D_primary_irish_title;Ирландцы — наши братья!;X
 D_primary_irish_desc;Отныне Ирландцы являются полноправными гражданами нашей страны!;X
 D_primary_north_italian_title;Северные итальянцы — наши братья!;X
@@ -86,6 +90,8 @@ D_primary_sephardic_title;Сефарды — наши братья!;X
 D_primary_sephardic_desc;Отныне Сефарды являются полноправными гражданами нашей страны!;X
 D_primary_turkish_title;Турки — наши братья!;X
 D_primary_turkish_desc;Отныне Турки являются полноправными гражданами нашей страны!;X
+D_primary_crimean_tatar_title;Крымские татары — наши братья!;X
+D_primary_crimean_tatar_desc;Отныне Крымские татары являются полноправными гражданами нашей страны!;X
 D_primary_azerbaijani_title;Азербайджанцы — наши братья!;X
 D_primary_azerbaijani_desc;Отныне Азербайджанцы являются полноправными гражданами нашей страны!;X
 D_primary_north_caucasian_title;Кавказцы — наши братья!;X
@@ -100,10 +106,10 @@ D_primary_bedouin_title;Бедуины — наши братья!;X
 D_primary_bedouin_desc;Отныне Бедуины являются полноправными гражданами нашей страны!;X
 D_primary_berber_title;Берберы — наши братья!;X
 D_primary_berber_desc;Отныне Берберы являются полноправными гражданами нашей страны!;X
-D_primary_persian_title;Персы — наши братья!;X
-D_primary_persian_desc;Отныне Персы являются полноправными гражданами нашей страны!;X
 D_primary_uzbek_title;Узбеки — наши братья!;X
 D_primary_uzbek_desc;Отныне Узбеки являются полноправными гражданами нашей страны!;X
+D_primary_persian_title;Персы — наши братья!;X
+D_primary_persian_desc;Отныне Персы являются полноправными гражданами нашей страны!;X
 D_primary_kazak_title;Казахи — наши братья!;X
 D_primary_kazak_desc;Отныне Казахи являются полноправными гражданами нашей страны!;X
 D_primary_kirgiz_title;Киргизы — наши братья!;X
@@ -124,14 +130,18 @@ D_primary_kurdish_title;Курды — наши братья!;X
 D_primary_kurdish_desc;Отныне Курды являются полноправными гражданами нашей страны!;X
 D_primary_tatar_title;Татары — наши братья!;X
 D_primary_tatar_desc;Отныне Татары являются полноправными гражданами нашей страны!;X
+D_primary_buryat_title;Буряты — наши братья!;X
+D_primary_buryat_desc;Отныне Буряты являются полноправными гражданами нашей страны!;X
 D_primary_mongol_title;Монголы — наши братья!;X
 D_primary_mongol_desc;Отныне Монголы являются полноправными гражданами нашей страны!;X
+D_primary_kalmyk_title;Калмыки — наши братья!;X
+D_primary_kalmyk_desc;Отныне Калмыки являются полноправными гражданами нашей страны!;X
 D_primary_siberian_title;Сибирцы — наши братья!;X
 D_primary_siberian_desc;Отныне Сибирцы являются полноправными гражданами нашей страны!;X
 D_primary_yakut_title;Якуты — наши братья!;X
 D_primary_yakut_desc;Отныне Якуты являются полноправными гражданами нашей страны!;X
-D_primary_tibetan_title;Тибетцы — наши братья!;X
-D_primary_tibetan_desc;Отныне Тибетцы являются полноправными гражданами нашей страны!;X
+D_primary_tuvan_title;Тувинцы — наши братья!;X
+D_primary_tuvan_desc;Отныне Тувинцы являются полноправными гражданами нашей страны!;X
 D_primary_assamese_title;Ассамцы — наши братья!;X
 D_primary_assamese_desc;Отныне Ассамцы являются полноправными гражданами нашей страны!;X
 D_primary_bengali_title;Бенгальцы — наши братья!;X
@@ -170,12 +180,12 @@ D_primary_tamil_title;Тамилы — наши братья!;X
 D_primary_tamil_desc;Отныне Тамилы являются полноправными гражданами нашей страны!;X
 D_primary_telegu_title;Телугу — наши братья!;X
 D_primary_telegu_desc;Отныне Телугу являются полноправными гражданами нашей страны!;X
+D_primary_malay_title;Малайзийцы — наши братья!;X
+D_primary_malay_desc;Отныне Малайзийцы являются полноправными гражданами нашей страны!;X
 D_primary_vietnamese_title;Вьетнамцы — наши братья!;X
 D_primary_vietnamese_desc;Отныне Вьетнамцы являются полноправными гражданами нашей страны!;X
 D_primary_khmer_title;Кхмеры — наши братья!;X
 D_primary_khmer_desc;Отныне Кхмеры являются полноправными гражданами нашей страны!;X
-D_primary_malay_title;Малайзийцы — наши братья!;X
-D_primary_malay_desc;Отныне Малайзийцы являются полноправными гражданами нашей страны!;X
 D_primary_filipino_title;Филиппинцы — наши братья!;X
 D_primary_filipino_desc;Отныне Филиппинцы являются полноправными гражданами нашей страны!;X
 D_primary_javan_title;Яванцы — наши братья!;X
@@ -198,12 +208,6 @@ D_primary_karen_title;Карены — наши братья!;X
 D_primary_karen_desc;Отныне Карены являются полноправными гражданами нашей страны!;X
 D_primary_japanese_title;Японцы — наши братья!;X
 D_primary_japanese_desc;Отныне Японцы являются полноправными гражданами нашей страны!;X
-D_primary_manchu_title;Маньчжуры — наши братья!;X
-D_primary_manchu_desc;Отныне Маньчжуры являются полноправными гражданами нашей страны!;X
-D_primary_beifaren_title;Пекинцы — наши братья!;X
-D_primary_beifaren_desc;Отныне Пекинцы являются полноправными гражданами нашей страны!;X
-D_primary_nanfaren_title;Нанкинцы — наши братья!;X
-D_primary_nanfaren_desc;Отныне Нанкинцы являются полноправными гражданами нашей страны!;X
 D_primary_korean_title;Корейцы — наши братья!;X
 D_primary_korean_desc;Отныне Корейцы являются полноправными гражданами нашей страны!;X
 D_primary_ainu_title;Айны — наши братья!;X
@@ -220,6 +224,14 @@ D_primary_yi_title;Юэ — наши братья!;X
 D_primary_yi_desc;Отныне Юэ являются полноправными гражданами нашей страны!;X
 D_primary_yue_title;Кантонцы — наши братья!;X
 D_primary_yue_desc;Отныне Кантонцы являются полноправными гражданами нашей страны!;X
+D_primary_manchu_title;Маньчжуры — наши братья!;X
+D_primary_manchu_desc;Отныне Маньчжуры являются полноправными гражданами нашей страны!;X
+D_primary_beifaren_title;Пекинцы — наши братья!;X
+D_primary_beifaren_desc;Отныне Пекинцы являются полноправными гражданами нашей страны!;X
+D_primary_nanfaren_title;Нанкинцы — наши братья!;X
+D_primary_nanfaren_desc;Отныне Нанкинцы являются полноправными гражданами нашей страны!;X
+D_primary_tibetan_title;Тибетцы — наши братья!;X
+D_primary_tibetan_desc;Отныне Тибетцы являются полноправными гражданами нашей страны!;X
 D_primary_polynesian_title;Полинезийцы — наши братья!;X
 D_primary_polynesian_desc;Отныне Полинезийцы являются полноправными гражданами нашей страны!;X
 D_primary_hawaiian_title;Гавайцы — наши братья!;X
@@ -258,28 +270,34 @@ D_primary_cree_title;Кри — наши братья!;X
 D_primary_cree_desc;Отныне Кри являются полноправными гражданами нашей страны!;X
 D_primary_navajo_title;Навахо — наши братья!;X
 D_primary_navajo_desc;Отныне Навахо являются полноправными гражданами нашей страны!;X
-D_primary_native_american_minor_title;Индейские меньшинства — наши братья!;X
-D_primary_native_american_minor_desc;Отныне Индейские меньшинства являются полноправными гражданами нашей страны!;X
+D_primary_native_american_minor_title;Индейск. меньшинства — наши братья!;X
+D_primary_native_american_minor_desc;Отныне Индейск. меньшинства являются полноправными гражданами нашей страны!;X
 D_primary_yankee_title;Янки — наши братья!;X
 D_primary_yankee_desc;Отныне Янки являются полноправными гражданами нашей страны!;X
 D_primary_dixie_title;Дикси — наши братья!;X
 D_primary_dixie_desc;Отныне Дикси являются полноправными гражданами нашей страны!;X
 D_primary_texan_title;Техасцы — наши братья!;X
 D_primary_texan_desc;Отныне Техасцы являются полноправными гражданами нашей страны!;X
-D_primary_boer_title;Буры — наши братья!;X
-D_primary_boer_desc;Отныне Буры являются полноправными гражданами нашей страны!;X
 D_primary_australian_title;Австралийцы — наши братья!;X
 D_primary_australian_desc;Отныне Австралийцы являются полноправными гражданами нашей страны!;X
+D_primary_new_zelandian_title;Новозеландцы — наши братья!;X
+D_primary_new_zelandian_desc;Отныне Новозеландцы являются полноправными гражданами нашей страны!;X
+D_primary_boer_title;Буры — наши братья!;X
+D_primary_boer_desc;Отныне Буры являются полноправными гражданами нашей страны!;X
+D_primary_anglo_african_title;Англо-африканцы — наши братья!;X
+D_primary_anglo_african_desc;Отныне Англо-африканцы являются полноправными гражданами нашей страны!;X
 D_primary_anglo_canadian_title;Англо-канадцы — наши братья!;X
 D_primary_anglo_canadian_desc;Отныне Англо-канадцы являются полноправными гражданами нашей страны!;X
 D_primary_french_canadian_title;Франко-канадцы — наши братья!;X
 D_primary_french_canadian_desc;Отныне Франко-канадцы являются полноправными гражданами нашей страны!;X
-D_primary_mexican_title;Мексиканцы — наши братья!;X
-D_primary_mexican_desc;Отныне Мексиканцы являются полноправными гражданами нашей страны!;X
 D_primary_central_american_title;Центральные американцы — наши братья!;X
 D_primary_central_american_desc;Отныне Центральные американцы являются полноправными гражданами нашей страны!;X
+D_primary_mexican_title;Мексиканцы — наши братья!;X
+D_primary_mexican_desc;Отныне Мексиканцы являются полноправными гражданами нашей страны!;X
 D_primary_caribeno_title;Карибцы — наши братья!;X
 D_primary_caribeno_desc;Отныне Карибцы являются полноправными гражданами нашей страны!;X
+D_primary_cubans_title;Кубинцы — наши братья!;X
+D_primary_cubans_desc;Отныне Кубинцы являются полноправными гражданами нашей страны!;X
 D_primary_north_andean_title;Северные андцы — наши братья!;X
 D_primary_north_andean_desc;Отныне Северные андцы являются полноправными гражданами нашей страны!;X
 D_primary_south_andean_title;Южные андцы — наши братья!;X
@@ -446,21 +464,3 @@ D_primary_zulu_title;Зулусы — наши братья!;X
 D_primary_zulu_desc;Отныне Зулусы являются полноправными гражданами нашей страны!;X
 D_primary_polar_bears_title;Белые медведи — наши братья!;X
 D_primary_polar_bears_desc;Отныне Белые медведи являются полноправными гражданами нашей страны!;X
-D_primary_anglo_african_title;Англо-африканцы — наши братья!;X
-D_primary_anglo_african_desc;Отныне Англо-африканцы являются полноправными гражданами нашей страны!;X
-D_primary_buryat_title;Буряты — наши братья!;X
-D_primary_buryat_desc;Отныне Буряты являются полноправными гражданами нашей страны!;X
-D_primary_kalmyk_title;Калмыки — наши братья!;X
-D_primary_kalmyk_desc;Отныне Калмыки являются полноправными гражданами нашей страны!;X
-D_primary_crimean_tatar_title;Крымские татары — наши братья!;X
-D_primary_crimean_tatar_desc;Отныне Крымские татары являются полноправными гражданами нашей страны!;X
-D_primary_tuvan_title;Тувинцы — наши братья!;X
-D_primary_tuvan_desc;Отныне Тувинцы являются полноправными гражданами нашей страны!;X
-D_primary_cubans_title;Кубинцы — наши братья!;X
-D_primary_cubans_desc;Отныне Кубинцы являются полноправными гражданами нашей страны!;X
-D_primary_scottish_title;Шотландцы — наши братья!;X
-D_primary_scottish_desc;Отныне Шотландцы являются полноправными гражданами нашей страны!;X
-D_primary_new_zelandian_title;Новозеландцы — наши братья!;X
-D_primary_new_zelandian_desc;Отныне Новозеландцы являются полноправными гражданами нашей страны!;X
-D_primary_wallonian_title;Валлоны — наши братья!;X
-D_primary_wallonian_desc;Отныне Валлоны являются полноправными гражданами нашей страны!;X
