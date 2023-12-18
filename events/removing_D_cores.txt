@@ -1,16 +1,16 @@
 country_event = {
 	id = 145000
-	title = "0"
-	desc = "0"
+	title = "EVTNAME145000"
+	desc = "EVTDESC145000"
 	picture = "greatpowers"
 	trigger = {
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 120
 	}
 	option = {
-		name = "0"
+		name = "EVTOPTA145000"
 		any_country = {
 			limit = {
 				tag = D01
