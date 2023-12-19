@@ -1,503 +1,3 @@
-SOV_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой СССР;X
-SOV_peaceful_settlement_desc;Мы решили попробовать договориться с державой СССР цивилизованным путём.;X
-SOV_peaceful_unification_title;Просьба о вхождении в состав державы СССР;X
-SOV_peaceful_unification_desc;Мы решили попросить державу СССР войти в её состав.;X
-LAF_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Южноамериканский Союз;X
-LAF_peaceful_settlement_desc;Мы решили попробовать договориться с державой Южноамериканский Союз цивилизованным путём.;X
-LAF_peaceful_unification_title;Просьба о вхождении в состав державы Южноамериканский Союз;X
-LAF_peaceful_unification_desc;Мы решили попросить державу Южноамериканский Союз войти в её состав.;X
-KAZ_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Казахстан;X
-KAZ_peaceful_settlement_desc;Мы решили попробовать договориться с державой Казахстан цивилизованным путём.;X
-KAZ_peaceful_unification_title;Просьба о вхождении в состав державы Казахстан;X
-KAZ_peaceful_unification_desc;Мы решили попросить державу Казахстан войти в её состав.;X
-KYR_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Киргизия;X
-KYR_peaceful_settlement_desc;Мы решили попробовать договориться с державой Киргизия цивилизованным путём.;X
-KYR_peaceful_unification_title;Просьба о вхождении в состав державы Киргизия;X
-KYR_peaceful_unification_desc;Мы решили попросить державу Киргизия войти в её состав.;X
-TAJ_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Таджикистан;X
-TAJ_peaceful_settlement_desc;Мы решили попробовать договориться с державой Таджикистан цивилизованным путём.;X
-TAJ_peaceful_unification_title;Просьба о вхождении в состав державы Таджикистан;X
-TAJ_peaceful_unification_desc;Мы решили попросить державу Таджикистан войти в её состав.;X
-TKM_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Туркмения;X
-TKM_peaceful_settlement_desc;Мы решили попробовать договориться с державой Туркмения цивилизованным путём.;X
-TKM_peaceful_unification_title;Просьба о вхождении в состав державы Туркмения;X
-TKM_peaceful_unification_desc;Мы решили попросить державу Туркмения войти в её состав.;X
-UZB_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Узбекистан;X
-UZB_peaceful_settlement_desc;Мы решили попробовать договориться с державой Узбекистан цивилизованным путём.;X
-UZB_peaceful_unification_title;Просьба о вхождении в состав державы Узбекистан;X
-UZB_peaceful_unification_desc;Мы решили попросить державу Узбекистан войти в её состав.;X
-KMK_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Калмыкия;X
-KMK_peaceful_settlement_desc;Мы решили попробовать договориться с державой Калмыкия цивилизованным путём.;X
-KMK_peaceful_unification_title;Просьба о вхождении в состав державы Калмыкия;X
-KMK_peaceful_unification_desc;Мы решили попросить державу Калмыкия войти в её состав.;X
-BMG_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бурят-Монголия;X
-BMG_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бурят-Монголия цивилизованным путём.;X
-BMG_peaceful_unification_title;Просьба о вхождении в состав державы Бурят-Монголия;X
-BMG_peaceful_unification_desc;Мы решили попросить державу Бурят-Монголия войти в её состав.;X
-TNT_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Танну-Тува;X
-TNT_peaceful_settlement_desc;Мы решили попробовать договориться с державой Танну-Тува цивилизованным путём.;X
-TNT_peaceful_unification_title;Просьба о вхождении в состав державы Танну-Тува;X
-TNT_peaceful_unification_desc;Мы решили попросить державу Танну-Тува войти в её состав.;X
-YAK_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Якутия;X
-YAK_peaceful_settlement_desc;Мы решили попробовать договориться с державой Якутия цивилизованным путём.;X
-YAK_peaceful_unification_title;Просьба о вхождении в состав державы Якутия;X
-YAK_peaceful_unification_desc;Мы решили попросить державу Якутия войти в её состав.;X
-MLY_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Малайзия;X
-MLY_peaceful_settlement_desc;Мы решили попробовать договориться с державой Малайзия цивилизованным путём.;X
-MLY_peaceful_unification_title;Просьба о вхождении в состав державы Малайзия;X
-MLY_peaceful_unification_desc;Мы решили попросить державу Малайзия войти в её состав.;X
-TTT_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Татарстан;X
-TTT_peaceful_settlement_desc;Мы решили попробовать договориться с державой Татарстан цивилизованным путём.;X
-TTT_peaceful_unification_title;Просьба о вхождении в состав державы Татарстан;X
-TTT_peaceful_unification_desc;Мы решили попросить державу Татарстан войти в её состав.;X
-KRD_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Курдистан;X
-KRD_peaceful_settlement_desc;Мы решили попробовать договориться с державой Курдистан цивилизованным путём.;X
-KRD_peaceful_unification_title;Просьба о вхождении в состав державы Курдистан;X
-KRD_peaceful_unification_desc;Мы решили попросить державу Курдистан войти в её состав.;X
-ASM_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ассам;X
-ASM_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ассам цивилизованным путём.;X
-ASM_peaceful_unification_title;Просьба о вхождении в состав державы Ассам;X
-ASM_peaceful_unification_desc;Мы решили попросить державу Ассам войти в её состав.;X
-BIH_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бихар;X
-BIH_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бихар цивилизованным путём.;X
-BIH_peaceful_unification_title;Просьба о вхождении в состав державы Бихар;X
-BIH_peaceful_unification_desc;Мы решили попросить державу Бихар войти в её состав.;X
-BNG_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бенгалия;X
-BNG_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бенгалия цивилизованным путём.;X
-BNG_peaceful_unification_title;Просьба о вхождении в состав державы Бенгалия;X
-BNG_peaceful_unification_desc;Мы решили попросить державу Бенгалия войти в её состав.;X
-SRI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Шри-Ланка;X
-SRI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Шри-Ланка цивилизованным путём.;X
-SRI_peaceful_unification_title;Просьба о вхождении в состав державы Шри-Ланка;X
-SRI_peaceful_unification_desc;Мы решили попросить державу Шри-Ланка войти в её состав.;X
-ENG_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Великобритания;X
-ENG_peaceful_settlement_desc;Мы решили попробовать договориться с державой Великобритания цивилизованным путём.;X
-ENG_peaceful_unification_title;Просьба о вхождении в состав державы Великобритания;X
-ENG_peaceful_unification_desc;Мы решили попросить державу Великобритания войти в её состав.;X
-RUS_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Россия;X
-RUS_peaceful_settlement_desc;Мы решили попробовать договориться с державой Россия цивилизованным путём.;X
-RUS_peaceful_unification_title;Просьба о вхождении в состав державы Россия;X
-RUS_peaceful_unification_desc;Мы решили попросить державу Россия войти в её состав.;X
-FRA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Франция;X
-FRA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Франция цивилизованным путём.;X
-FRA_peaceful_unification_title;Просьба о вхождении в состав державы Франция;X
-FRA_peaceful_unification_desc;Мы решили попросить державу Франция войти в её состав.;X
-PRU_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Пруссия;X
-PRU_peaceful_settlement_desc;Мы решили попробовать договориться с державой Пруссия цивилизованным путём.;X
-PRU_peaceful_unification_title;Просьба о вхождении в состав державы Пруссия;X
-PRU_peaceful_unification_desc;Мы решили попросить державу Пруссия войти в её состав.;X
-GER_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Германия;X
-GER_peaceful_settlement_desc;Мы решили попробовать договориться с державой Германия цивилизованным путём.;X
-GER_peaceful_unification_title;Просьба о вхождении в состав державы Германия;X
-GER_peaceful_unification_desc;Мы решили попросить державу Германия войти в её состав.;X
-AUS_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Австрия;X
-AUS_peaceful_settlement_desc;Мы решили попробовать договориться с державой Австрия цивилизованным путём.;X
-AUS_peaceful_unification_title;Просьба о вхождении в состав державы Австрия;X
-AUS_peaceful_unification_desc;Мы решили попросить державу Австрия войти в её состав.;X
-USA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой США;X
-USA_peaceful_settlement_desc;Мы решили попробовать договориться с державой США цивилизованным путём.;X
-USA_peaceful_unification_title;Просьба о вхождении в состав державы США;X
-USA_peaceful_unification_desc;Мы решили попросить державу США войти в её состав.;X
-JAP_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Япония;X
-JAP_peaceful_settlement_desc;Мы решили попробовать договориться с державой Япония цивилизованным путём.;X
-JAP_peaceful_unification_title;Просьба о вхождении в состав державы Япония;X
-JAP_peaceful_unification_desc;Мы решили попросить державу Япония войти в её состав.;X
-ITA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Италия;X
-ITA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Италия цивилизованным путём.;X
-ITA_peaceful_unification_title;Просьба о вхождении в состав державы Италия;X
-ITA_peaceful_unification_desc;Мы решили попросить державу Италия войти в её состав.;X
-KUK_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Австро-Венгрия;X
-KUK_peaceful_settlement_desc;Мы решили попробовать договориться с державой Австро-Венгрия цивилизованным путём.;X
-KUK_peaceful_unification_title;Просьба о вхождении в состав державы Австро-Венгрия;X
-KUK_peaceful_unification_desc;Мы решили попросить державу Австро-Венгрия войти в её состав.;X
-DEN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Дания;X
-DEN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Дания цивилизованным путём.;X
-DEN_peaceful_unification_title;Просьба о вхождении в состав державы Дания;X
-DEN_peaceful_unification_desc;Мы решили попросить державу Дания войти в её состав.;X
-FIN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Финляндия;X
-FIN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Финляндия цивилизованным путём.;X
-FIN_peaceful_unification_title;Просьба о вхождении в состав державы Финляндия;X
-FIN_peaceful_unification_desc;Мы решили попросить державу Финляндия войти в её состав.;X
-NOR_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Норвегия;X
-NOR_peaceful_settlement_desc;Мы решили попробовать договориться с державой Норвегия цивилизованным путём.;X
-NOR_peaceful_unification_title;Просьба о вхождении в состав державы Норвегия;X
-NOR_peaceful_unification_desc;Мы решили попросить державу Норвегия войти в её состав.;X
-SCA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Скандинавия;X
-SCA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Скандинавия цивилизованным путём.;X
-SCA_peaceful_unification_title;Просьба о вхождении в состав державы Скандинавия;X
-SCA_peaceful_unification_desc;Мы решили попросить державу Скандинавия войти в её состав.;X
-SWE_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Швеция;X
-SWE_peaceful_settlement_desc;Мы решили попробовать договориться с державой Швеция цивилизованным путём.;X
-SWE_peaceful_unification_title;Просьба о вхождении в состав державы Швеция;X
-SWE_peaceful_unification_desc;Мы решили попросить державу Швеция войти в её состав.;X
-BEL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бельгия;X
-BEL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бельгия цивилизованным путём.;X
-BEL_peaceful_unification_title;Просьба о вхождении в состав державы Бельгия;X
-BEL_peaceful_unification_desc;Мы решили попросить державу Бельгия войти в её состав.;X
-CAT_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Каталония;X
-CAT_peaceful_settlement_desc;Мы решили попробовать договориться с державой Каталония цивилизованным путём.;X
-CAT_peaceful_unification_title;Просьба о вхождении в состав державы Каталония;X
-CAT_peaceful_unification_desc;Мы решили попросить державу Каталония войти в её состав.;X
-FLA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Фландрия;X
-FLA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Фландрия цивилизованным путём.;X
-FLA_peaceful_unification_title;Просьба о вхождении в состав державы Фландрия;X
-FLA_peaceful_unification_desc;Мы решили попросить державу Фландрия войти в её состав.;X
-IRE_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ирландия;X
-IRE_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ирландия цивилизованным путём.;X
-IRE_peaceful_unification_title;Просьба о вхождении в состав державы Ирландия;X
-IRE_peaceful_unification_desc;Мы решили попросить державу Ирландия войти в её состав.;X
-NET_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Нидерланды;X
-NET_peaceful_settlement_desc;Мы решили попробовать договориться с державой Нидерланды цивилизованным путём.;X
-NET_peaceful_unification_title;Просьба о вхождении в состав державы Нидерланды;X
-NET_peaceful_unification_desc;Мы решили попросить державу Нидерланды войти в её состав.;X
-POR_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Португалия;X
-POR_peaceful_settlement_desc;Мы решили попробовать договориться с державой Португалия цивилизованным путём.;X
-POR_peaceful_unification_title;Просьба о вхождении в состав державы Португалия;X
-POR_peaceful_unification_desc;Мы решили попросить державу Португалия войти в её состав.;X
-SCO_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Шотландия;X
-SCO_peaceful_settlement_desc;Мы решили попробовать договориться с державой Шотландия цивилизованным путём.;X
-SCO_peaceful_unification_title;Просьба о вхождении в состав державы Шотландия;X
-SCO_peaceful_unification_desc;Мы решили попросить державу Шотландия войти в её состав.;X
-SPA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Испания;X
-SPA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Испания цивилизованным путём.;X
-SPA_peaceful_unification_title;Просьба о вхождении в состав державы Испания;X
-SPA_peaceful_unification_desc;Мы решили попросить державу Испания войти в её состав.;X
-WLL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Валлония;X
-WLL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Валлония цивилизованным путём.;X
-WLL_peaceful_unification_title;Просьба о вхождении в состав державы Валлония;X
-WLL_peaceful_unification_desc;Мы решили попросить державу Валлония войти в её состав.;X
-ANH_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ангальт;X
-ANH_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ангальт цивилизованным путём.;X
-ANH_peaceful_unification_title;Просьба о вхождении в состав державы Ангальт;X
-ANH_peaceful_unification_desc;Мы решили попросить державу Ангальт войти в её состав.;X
-BAD_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Баден;X
-BAD_peaceful_settlement_desc;Мы решили попробовать договориться с державой Баден цивилизованным путём.;X
-BAD_peaceful_unification_title;Просьба о вхождении в состав державы Баден;X
-BAD_peaceful_unification_desc;Мы решили попросить державу Баден войти в её состав.;X
-BAV_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бавария;X
-BAV_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бавария цивилизованным путём.;X
-BAV_peaceful_unification_title;Просьба о вхождении в состав державы Бавария;X
-BAV_peaceful_unification_desc;Мы решили попросить державу Бавария войти в её состав.;X
-BRA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Брауншвейг;X
-BRA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Брауншвейг цивилизованным путём.;X
-BRA_peaceful_unification_title;Просьба о вхождении в состав державы Брауншвейг;X
-BRA_peaceful_unification_desc;Мы решили попросить державу Брауншвейг войти в её состав.;X
-BRE_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бремен;X
-BRE_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бремен цивилизованным путём.;X
-BRE_peaceful_unification_title;Просьба о вхождении в состав державы Бремен;X
-BRE_peaceful_unification_desc;Мы решили попросить державу Бремен войти в её состав.;X
-COB_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Саксен-Кобург-Гота;X
-COB_peaceful_settlement_desc;Мы решили попробовать договориться с державой Саксен-Кобург-Гота цивилизованным путём.;X
-COB_peaceful_unification_title;Просьба о вхождении в состав державы Саксен-Кобург-Гота;X
-COB_peaceful_unification_desc;Мы решили попросить державу Саксен-Кобург-Гота войти в её состав.;X
-DZG_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Данциг;X
-DZG_peaceful_settlement_desc;Мы решили попробовать договориться с державой Данциг цивилизованным путём.;X
-DZG_peaceful_unification_title;Просьба о вхождении в состав державы Данциг;X
-DZG_peaceful_unification_desc;Мы решили попросить державу Данциг войти в её состав.;X
-FRM_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Франкфурт-на-Майне;X
-FRM_peaceful_settlement_desc;Мы решили попробовать договориться с державой Франкфурт-на-Майне цивилизованным путём.;X
-FRM_peaceful_unification_title;Просьба о вхождении в состав державы Франкфурт-на-Майне;X
-FRM_peaceful_unification_desc;Мы решили попросить державу Франкфурт-на-Майне войти в её состав.;X
-HAM_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Гамбург;X
-HAM_peaceful_settlement_desc;Мы решили попробовать договориться с державой Гамбург цивилизованным путём.;X
-HAM_peaceful_unification_title;Просьба о вхождении в состав державы Гамбург;X
-HAM_peaceful_unification_desc;Мы решили попросить державу Гамбург войти в её состав.;X
-HAN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ганновер;X
-HAN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ганновер цивилизованным путём.;X
-HAN_peaceful_unification_title;Просьба о вхождении в состав державы Ганновер;X
-HAN_peaceful_unification_desc;Мы решили попросить державу Ганновер войти в её состав.;X
-HES_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Гессен-Дармштадт;X
-HES_peaceful_settlement_desc;Мы решили попробовать договориться с державой Гессен-Дармштадт цивилизованным путём.;X
-HES_peaceful_unification_title;Просьба о вхождении в состав державы Гессен-Дармштадт;X
-HES_peaceful_unification_desc;Мы решили попросить державу Гессен-Дармштадт войти в её состав.;X
-HEK_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Гессен-Кассель;X
-HEK_peaceful_settlement_desc;Мы решили попробовать договориться с державой Гессен-Кассель цивилизованным путём.;X
-HEK_peaceful_unification_title;Просьба о вхождении в состав державы Гессен-Кассель;X
-HEK_peaceful_unification_desc;Мы решили попросить державу Гессен-Кассель войти в её состав.;X
-HOL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Гольштейн;X
-HOL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Гольштейн цивилизованным путём.;X
-HOL_peaceful_unification_title;Просьба о вхождении в состав державы Гольштейн;X
-HOL_peaceful_unification_desc;Мы решили попросить державу Гольштейн войти в её состав.;X
-LIP_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Липпе-Детмольд;X
-LIP_peaceful_settlement_desc;Мы решили попробовать договориться с державой Липпе-Детмольд цивилизованным путём.;X
-LIP_peaceful_unification_title;Просьба о вхождении в состав державы Липпе-Детмольд;X
-LIP_peaceful_unification_desc;Мы решили попросить державу Липпе-Детмольд войти в её состав.;X
-LUB_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Любек;X
-LUB_peaceful_settlement_desc;Мы решили попробовать договориться с державой Любек цивилизованным путём.;X
-LUB_peaceful_unification_title;Просьба о вхождении в состав державы Любек;X
-LUB_peaceful_unification_desc;Мы решили попросить державу Любек войти в её состав.;X
-LUX_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Люксембург;X
-LUX_peaceful_settlement_desc;Мы решили попробовать договориться с державой Люксембург цивилизованным путём.;X
-LUX_peaceful_unification_title;Просьба о вхождении в состав державы Люксембург;X
-LUX_peaceful_unification_desc;Мы решили попросить державу Люксембург войти в её состав.;X
-MEC_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Мекленбург;X
-MEC_peaceful_settlement_desc;Мы решили попробовать договориться с державой Мекленбург цивилизованным путём.;X
-MEC_peaceful_unification_title;Просьба о вхождении в состав державы Мекленбург;X
-MEC_peaceful_unification_desc;Мы решили попросить державу Мекленбург войти в её состав.;X
-MEI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Саксен-Майнинген;X
-MEI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Саксен-Майнинген цивилизованным путём.;X
-MEI_peaceful_unification_title;Просьба о вхождении в состав державы Саксен-Майнинген;X
-MEI_peaceful_unification_desc;Мы решили попросить державу Саксен-Майнинген войти в её состав.;X
-NAS_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Нассау;X
-NAS_peaceful_settlement_desc;Мы решили попробовать договориться с державой Нассау цивилизованным путём.;X
-NAS_peaceful_unification_title;Просьба о вхождении в состав державы Нассау;X
-NAS_peaceful_unification_desc;Мы решили попросить державу Нассау войти в её состав.;X
-NGF_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Северогерманский союз;X
-NGF_peaceful_settlement_desc;Мы решили попробовать договориться с державой Северогерманский союз цивилизованным путём.;X
-NGF_peaceful_unification_title;Просьба о вхождении в состав державы Северогерманский союз;X
-NGF_peaceful_unification_desc;Мы решили попросить державу Северогерманский союз войти в её состав.;X
-OLD_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ольденбург;X
-OLD_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ольденбург цивилизованным путём.;X
-OLD_peaceful_unification_title;Просьба о вхождении в состав державы Ольденбург;X
-OLD_peaceful_unification_desc;Мы решили попросить державу Ольденбург войти в её состав.;X
-SAX_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Саксония;X
-SAX_peaceful_settlement_desc;Мы решили попробовать договориться с державой Саксония цивилизованным путём.;X
-SAX_peaceful_unification_title;Просьба о вхождении в состав державы Саксония;X
-SAX_peaceful_unification_desc;Мы решили попросить державу Саксония войти в её состав.;X
-SCH_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Шлезвиг;X
-SCH_peaceful_settlement_desc;Мы решили попробовать договориться с державой Шлезвиг цивилизованным путём.;X
-SCH_peaceful_unification_title;Просьба о вхождении в состав державы Шлезвиг;X
-SCH_peaceful_unification_desc;Мы решили попросить державу Шлезвиг войти в её состав.;X
-SGF_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Южногерманский союз;X
-SGF_peaceful_settlement_desc;Мы решили попробовать договориться с державой Южногерманский союз цивилизованным путём.;X
-SGF_peaceful_unification_title;Просьба о вхождении в состав державы Южногерманский союз;X
-SGF_peaceful_unification_desc;Мы решили попросить державу Южногерманский союз войти в её состав.;X
-WEI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Саксен-Веймар;X
-WEI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Саксен-Веймар цивилизованным путём.;X
-WEI_peaceful_unification_title;Просьба о вхождении в состав державы Саксен-Веймар;X
-WEI_peaceful_unification_desc;Мы решили попросить державу Саксен-Веймар войти в её состав.;X
-WUR_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Вюртемберг;X
-WUR_peaceful_settlement_desc;Мы решили попробовать договориться с державой Вюртемберг цивилизованным путём.;X
-WUR_peaceful_unification_title;Просьба о вхождении в состав державы Вюртемберг;X
-WUR_peaceful_unification_desc;Мы решили попросить державу Вюртемберг войти в её состав.;X
-LOM_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ломбардия;X
-LOM_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ломбардия цивилизованным путём.;X
-LOM_peaceful_unification_title;Просьба о вхождении в состав державы Ломбардия;X
-LOM_peaceful_unification_desc;Мы решили попросить державу Ломбардия войти в её состав.;X
-LUC_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Лукка;X
-LUC_peaceful_settlement_desc;Мы решили попробовать договориться с державой Лукка цивилизованным путём.;X
-LUC_peaceful_unification_title;Просьба о вхождении в состав державы Лукка;X
-LUC_peaceful_unification_desc;Мы решили попросить державу Лукка войти в её состав.;X
-MOD_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Модена;X
-MOD_peaceful_settlement_desc;Мы решили попробовать договориться с державой Модена цивилизованным путём.;X
-MOD_peaceful_unification_title;Просьба о вхождении в состав державы Модена;X
-MOD_peaceful_unification_desc;Мы решили попросить державу Модена войти в её состав.;X
-PAP_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Папская область;X
-PAP_peaceful_settlement_desc;Мы решили попробовать договориться с державой Папская область цивилизованным путём.;X
-PAP_peaceful_unification_title;Просьба о вхождении в состав державы Папская область;X
-PAP_peaceful_unification_desc;Мы решили попросить державу Папская область войти в её состав.;X
-PAR_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Парма;X
-PAR_peaceful_settlement_desc;Мы решили попробовать договориться с державой Парма цивилизованным путём.;X
-PAR_peaceful_unification_title;Просьба о вхождении в состав державы Парма;X
-PAR_peaceful_unification_desc;Мы решили попросить державу Парма войти в её состав.;X
-SAR_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Сардиния-Пьемонт;X
-SAR_peaceful_settlement_desc;Мы решили попробовать договориться с державой Сардиния-Пьемонт цивилизованным путём.;X
-SAR_peaceful_unification_title;Просьба о вхождении в состав державы Сардиния-Пьемонт;X
-SAR_peaceful_unification_desc;Мы решили попросить державу Сардиния-Пьемонт войти в её состав.;X
-SIC_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Сицилия;X
-SIC_peaceful_settlement_desc;Мы решили попробовать договориться с державой Сицилия цивилизованным путём.;X
-SIC_peaceful_unification_title;Просьба о вхождении в состав державы Сицилия;X
-SIC_peaceful_unification_desc;Мы решили попросить державу Сицилия войти в её состав.;X
-TRE_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Триест;X
-TRE_peaceful_settlement_desc;Мы решили попробовать договориться с державой Триест цивилизованным путём.;X
-TRE_peaceful_unification_title;Просьба о вхождении в состав державы Триест;X
-TRE_peaceful_unification_desc;Мы решили попросить державу Триест войти в её состав.;X
-TUS_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Тоскана;X
-TUS_peaceful_settlement_desc;Мы решили попробовать договориться с державой Тоскана цивилизованным путём.;X
-TUS_peaceful_unification_title;Просьба о вхождении в состав державы Тоскана;X
-TUS_peaceful_unification_desc;Мы решили попросить державу Тоскана войти в её состав.;X
-VEN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Венеция;X
-VEN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Венеция цивилизованным путём.;X
-VEN_peaceful_unification_title;Просьба о вхождении в состав державы Венеция;X
-VEN_peaceful_unification_desc;Мы решили попросить державу Венеция войти в её состав.;X
-BOH_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Богемия-Моравия;X
-BOH_peaceful_settlement_desc;Мы решили попробовать договориться с державой Богемия-Моравия цивилизованным путём.;X
-BOH_peaceful_unification_title;Просьба о вхождении в состав державы Богемия-Моравия;X
-BOH_peaceful_unification_desc;Мы решили попросить державу Богемия-Моравия войти в её состав.;X
-KRA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Краков;X
-KRA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Краков цивилизованным путём.;X
-KRA_peaceful_unification_title;Просьба о вхождении в состав державы Краков;X
-KRA_peaceful_unification_desc;Мы решили попросить державу Краков войти в её состав.;X
-CRI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Крым;X
-CRI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Крым цивилизованным путём.;X
-CRI_peaceful_unification_title;Просьба о вхождении в состав державы Крым;X
-CRI_peaceful_unification_desc;Мы решили попросить державу Крым войти в её состав.;X
-EST_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Эстония;X
-EST_peaceful_settlement_desc;Мы решили попробовать договориться с державой Эстония цивилизованным путём.;X
-EST_peaceful_unification_title;Просьба о вхождении в состав державы Эстония;X
-EST_peaceful_unification_desc;Мы решили попросить державу Эстония войти в её состав.;X
-HUN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Венгрия;X
-HUN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Венгрия цивилизованным путём.;X
-HUN_peaceful_unification_title;Просьба о вхождении в состав державы Венгрия;X
-HUN_peaceful_unification_desc;Мы решили попросить державу Венгрия войти в её состав.;X
-LIT_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Литва;X
-LIT_peaceful_settlement_desc;Мы решили попробовать договориться с державой Литва цивилизованным путём.;X
-LIT_peaceful_unification_title;Просьба о вхождении в состав державы Литва;X
-LIT_peaceful_unification_desc;Мы решили попросить державу Литва войти в её состав.;X
-LAT_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Латвия;X
-LAT_peaceful_settlement_desc;Мы решили попробовать договориться с державой Латвия цивилизованным путём.;X
-LAT_peaceful_unification_title;Просьба о вхождении в состав державы Латвия;X
-LAT_peaceful_unification_desc;Мы решили попросить державу Латвия войти в её состав.;X
-POL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Польша;X
-POL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Польша цивилизованным путём.;X
-POL_peaceful_unification_title;Просьба о вхождении в состав державы Польша;X
-POL_peaceful_unification_desc;Мы решили попросить державу Польша войти в её состав.;X
-SLV_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Словакия;X
-SLV_peaceful_settlement_desc;Мы решили попробовать договориться с державой Словакия цивилизованным путём.;X
-SLV_peaceful_unification_title;Просьба о вхождении в состав державы Словакия;X
-SLV_peaceful_unification_desc;Мы решили попросить державу Словакия войти в её состав.;X
-SWI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Швейцария;X
-SWI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Швейцария цивилизованным путём.;X
-SWI_peaceful_unification_title;Просьба о вхождении в состав державы Швейцария;X
-SWI_peaceful_unification_desc;Мы решили попросить державу Швейцария войти в её состав.;X
-RUT_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Рутения;X
-RUT_peaceful_settlement_desc;Мы решили попробовать договориться с державой Рутения цивилизованным путём.;X
-RUT_peaceful_unification_title;Просьба о вхождении в состав державы Рутения;X
-RUT_peaceful_unification_desc;Мы решили попросить державу Рутения войти в её состав.;X
-SIE_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Трансильвания;X
-SIE_peaceful_settlement_desc;Мы решили попробовать договориться с державой Трансильвания цивилизованным путём.;X
-SIE_peaceful_unification_title;Просьба о вхождении в состав державы Трансильвания;X
-SIE_peaceful_unification_desc;Мы решили попросить державу Трансильвания войти в её состав.;X
-UKR_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Украина;X
-UKR_peaceful_settlement_desc;Мы решили попробовать договориться с державой Украина цивилизованным путём.;X
-UKR_peaceful_unification_title;Просьба о вхождении в состав державы Украина;X
-UKR_peaceful_unification_desc;Мы решили попросить державу Украина войти в её состав.;X
-CZH_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Чехословакия;X
-CZH_peaceful_settlement_desc;Мы решили попробовать договориться с державой Чехословакия цивилизованным путём.;X
-CZH_peaceful_unification_title;Просьба о вхождении в состав державы Чехословакия;X
-CZH_peaceful_unification_desc;Мы решили попросить державу Чехословакия войти в её состав.;X
-ALB_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Албания;X
-ALB_peaceful_settlement_desc;Мы решили попробовать договориться с державой Албания цивилизованным путём.;X
-ALB_peaceful_unification_title;Просьба о вхождении в состав державы Албания;X
-ALB_peaceful_unification_desc;Мы решили попросить державу Албания войти в её состав.;X
-BOS_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Босния-Герцеговина;X
-BOS_peaceful_settlement_desc;Мы решили попробовать договориться с державой Босния-Герцеговина цивилизованным путём.;X
-BOS_peaceful_unification_title;Просьба о вхождении в состав державы Босния-Герцеговина;X
-BOS_peaceful_unification_desc;Мы решили попросить державу Босния-Герцеговина войти в её состав.;X
-BUL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Болгария;X
-BUL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Болгария цивилизованным путём.;X
-BUL_peaceful_unification_title;Просьба о вхождении в состав державы Болгария;X
-BUL_peaceful_unification_desc;Мы решили попросить державу Болгария войти в её состав.;X
-CRE_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Крит;X
-CRE_peaceful_settlement_desc;Мы решили попробовать договориться с державой Крит цивилизованным путём.;X
-CRE_peaceful_unification_title;Просьба о вхождении в состав державы Крит;X
-CRE_peaceful_unification_desc;Мы решили попросить державу Крит войти в её состав.;X
-CRO_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Хорватия;X
-CRO_peaceful_settlement_desc;Мы решили попробовать договориться с державой Хорватия цивилизованным путём.;X
-CRO_peaceful_unification_title;Просьба о вхождении в состав державы Хорватия;X
-CRO_peaceful_unification_desc;Мы решили попросить державу Хорватия войти в её состав.;X
-CYP_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Кипр;X
-CYP_peaceful_settlement_desc;Мы решили попробовать договориться с державой Кипр цивилизованным путём.;X
-CYP_peaceful_unification_title;Просьба о вхождении в состав державы Кипр;X
-CYP_peaceful_unification_desc;Мы решили попросить державу Кипр войти в её состав.;X
-GRE_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Греция;X
-GRE_peaceful_settlement_desc;Мы решили попробовать договориться с державой Греция цивилизованным путём.;X
-GRE_peaceful_unification_title;Просьба о вхождении в состав державы Греция;X
-GRE_peaceful_unification_desc;Мы решили попросить державу Греция войти в её состав.;X
-ION_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ионическая республика;X
-ION_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ионическая республика цивилизованным путём.;X
-ION_peaceful_unification_title;Просьба о вхождении в состав державы Ионическая республика;X
-ION_peaceful_unification_desc;Мы решили попросить державу Ионическая республика войти в её состав.;X
-MOL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Молдавия;X
-MOL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Молдавия цивилизованным путём.;X
-MOL_peaceful_unification_title;Просьба о вхождении в состав державы Молдавия;X
-MOL_peaceful_unification_desc;Мы решили попросить державу Молдавия войти в её состав.;X
-MON_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Черногория;X
-MON_peaceful_settlement_desc;Мы решили попробовать договориться с державой Черногория цивилизованным путём.;X
-MON_peaceful_unification_title;Просьба о вхождении в состав державы Черногория;X
-MON_peaceful_unification_desc;Мы решили попросить державу Черногория войти в её состав.;X
-ROM_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Румыния;X
-ROM_peaceful_settlement_desc;Мы решили попробовать договориться с державой Румыния цивилизованным путём.;X
-ROM_peaceful_unification_title;Просьба о вхождении в состав державы Румыния;X
-ROM_peaceful_unification_desc;Мы решили попросить державу Румыния войти в её состав.;X
-SER_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Сербия;X
-SER_peaceful_settlement_desc;Мы решили попробовать договориться с державой Сербия цивилизованным путём.;X
-SER_peaceful_unification_title;Просьба о вхождении в состав державы Сербия;X
-SER_peaceful_unification_desc;Мы решили попросить державу Сербия войти в её состав.;X
-SLO_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Словения;X
-SLO_peaceful_settlement_desc;Мы решили попробовать договориться с державой Словения цивилизованным путём.;X
-SLO_peaceful_unification_title;Просьба о вхождении в состав державы Словения;X
-SLO_peaceful_unification_desc;Мы решили попросить державу Словения войти в её состав.;X
-TUR_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Османская Империя;X
-TUR_peaceful_settlement_desc;Мы решили попробовать договориться с державой Османская Империя цивилизованным путём.;X
-TUR_peaceful_unification_title;Просьба о вхождении в состав державы Османская Империя;X
-TUR_peaceful_unification_desc;Мы решили попросить державу Османская Империя войти в её состав.;X
-WAL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Валахия;X
-WAL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Валахия цивилизованным путём.;X
-WAL_peaceful_unification_title;Просьба о вхождении в состав державы Валахия;X
-WAL_peaceful_unification_desc;Мы решили попросить державу Валахия войти в её состав.;X
-YUG_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Югославия;X
-YUG_peaceful_settlement_desc;Мы решили попробовать договориться с державой Югославия цивилизованным путём.;X
-YUG_peaceful_unification_title;Просьба о вхождении в состав державы Югославия;X
-YUG_peaceful_unification_desc;Мы решили попросить державу Югославия войти в её состав.;X
-ALD_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Алжир;X
-ALD_peaceful_settlement_desc;Мы решили попробовать договориться с державой Алжир цивилизованным путём.;X
-ALD_peaceful_unification_title;Просьба о вхождении в состав державы Алжир;X
-ALD_peaceful_unification_desc;Мы решили попросить державу Алжир войти в её состав.;X
-CNG_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Конго;X
-CNG_peaceful_settlement_desc;Мы решили попробовать договориться с державой Конго цивилизованным путём.;X
-CNG_peaceful_unification_title;Просьба о вхождении в состав державы Конго;X
-CNG_peaceful_unification_desc;Мы решили попросить державу Конго войти в её состав.;X
-EGY_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Египет;X
-EGY_peaceful_settlement_desc;Мы решили попробовать договориться с державой Египет цивилизованным путём.;X
-EGY_peaceful_unification_title;Просьба о вхождении в состав державы Египет;X
-EGY_peaceful_unification_desc;Мы решили попросить державу Египет войти в её состав.;X
-ETH_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Эфиопия;X
-ETH_peaceful_settlement_desc;Мы решили попробовать договориться с державой Эфиопия цивилизованным путём.;X
-ETH_peaceful_unification_title;Просьба о вхождении в состав державы Эфиопия;X
-ETH_peaceful_unification_desc;Мы решили попросить державу Эфиопия войти в её состав.;X
-MAD_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Мадагаскар;X
-MAD_peaceful_settlement_desc;Мы решили попробовать договориться с державой Мадагаскар цивилизованным путём.;X
-MAD_peaceful_unification_title;Просьба о вхождении в состав державы Мадагаскар;X
-MAD_peaceful_unification_desc;Мы решили попросить державу Мадагаскар войти в её состав.;X
-LIB_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Либерия;X
-LIB_peaceful_settlement_desc;Мы решили попробовать договориться с державой Либерия цивилизованным путём.;X
-LIB_peaceful_unification_title;Просьба о вхождении в состав державы Либерия;X
-LIB_peaceful_unification_desc;Мы решили попросить державу Либерия войти в её состав.;X
-MOR_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Марокко;X
-MOR_peaceful_settlement_desc;Мы решили попробовать договориться с державой Марокко цивилизованным путём.;X
-MOR_peaceful_unification_title;Просьба о вхождении в состав державы Марокко;X
-MOR_peaceful_unification_desc;Мы решили попросить державу Марокко войти в её состав.;X
-NAL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Наталь;X
-NAL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Наталь цивилизованным путём.;X
-NAL_peaceful_unification_title;Просьба о вхождении в состав державы Наталь;X
-NAL_peaceful_unification_desc;Мы решили попросить державу Наталь войти в её состав.;X
-ORA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Оранжевая республика;X
-ORA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Оранжевая республика цивилизованным путём.;X
-ORA_peaceful_unification_title;Просьба о вхождении в состав державы Оранжевая республика;X
-ORA_peaceful_unification_desc;Мы решили попросить державу Оранжевая республика войти в её состав.;X
-SAF_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Южная Африка;X
-SAF_peaceful_settlement_desc;Мы решили попробовать договориться с державой Южная Африка цивилизованным путём.;X
-SAF_peaceful_unification_title;Просьба о вхождении в состав державы Южная Африка;X
-SAF_peaceful_unification_desc;Мы решили попросить державу Южная Африка войти в её состав.;X
-SOK_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Сокото;X
-SOK_peaceful_settlement_desc;Мы решили попробовать договориться с державой Сокото цивилизованным путём.;X
-SOK_peaceful_unification_title;Просьба о вхождении в состав державы Сокото;X
-SOK_peaceful_unification_desc;Мы решили попросить державу Сокото войти в её состав.;X
-RHO_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Южная Родезия;X
-RHO_peaceful_settlement_desc;Мы решили попробовать договориться с державой Южная Родезия цивилизованным путём.;X
-RHO_peaceful_unification_title;Просьба о вхождении в состав державы Южная Родезия;X
-RHO_peaceful_unification_desc;Мы решили попросить державу Южная Родезия войти в её состав.;X
-TRI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Триполи;X
-TRI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Триполи цивилизованным путём.;X
-TRI_peaceful_unification_title;Просьба о вхождении в состав державы Триполи;X
-TRI_peaceful_unification_desc;Мы решили попросить державу Триполи войти в её состав.;X
-TRN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Трансвааль;X
-TRN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Трансвааль цивилизованным путём.;X
-TRN_peaceful_unification_title;Просьба о вхождении в состав державы Трансвааль;X
-TRN_peaceful_unification_desc;Мы решили попросить державу Трансвааль войти в её состав.;X
-TUN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Тунис;X
-TUN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Тунис цивилизованным путём.;X
-TUN_peaceful_unification_title;Просьба о вхождении в состав державы Тунис;X
-TUN_peaceful_unification_desc;Мы решили попросить державу Тунис войти в её состав.;X
-ZAN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Занзибар;X
-ZAN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Занзибар цивилизованным путём.;X
-ZAN_peaceful_unification_title;Просьба о вхождении в состав державы Занзибар;X
-ZAN_peaceful_unification_desc;Мы решили попросить державу Занзибар войти в её состав.;X
-ZUL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Зулу;X
-ZUL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Зулу цивилизованным путём.;X
-ZUL_peaceful_unification_title;Просьба о вхождении в состав державы Зулу;X
-ZUL_peaceful_unification_desc;Мы решили попросить державу Зулу войти в её состав.;X
 ABU_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Абу-Даби;X
 ABU_peaceful_settlement_desc;Мы решили попробовать договориться с державой Абу-Даби цивилизованным путём.;X
 ABU_peaceful_unification_title;Просьба о вхождении в состав державы Абу-Даби;X
@@ -506,70 +6,78 @@ AFG_peaceful_settlement_title;Мирное урегулирование территориальных споров с дер
 AFG_peaceful_settlement_desc;Мы решили попробовать договориться с державой Афганистан цивилизованным путём.;X
 AFG_peaceful_unification_title;Просьба о вхождении в состав державы Афганистан;X
 AFG_peaceful_unification_desc;Мы решили попросить державу Афганистан войти в её состав.;X
+ALB_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Албания;X
+ALB_peaceful_settlement_desc;Мы решили попробовать договориться с державой Албания цивилизованным путём.;X
+ALB_peaceful_unification_title;Просьба о вхождении в состав державы Албания;X
+ALB_peaceful_unification_desc;Мы решили попросить державу Албания войти в её состав.;X
+ALD_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Алжир;X
+ALD_peaceful_settlement_desc;Мы решили попробовать договориться с державой Алжир цивилизованным путём.;X
+ALD_peaceful_unification_title;Просьба о вхождении в состав державы Алжир;X
+ALD_peaceful_unification_desc;Мы решили попросить державу Алжир войти в её состав.;X
+ANH_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ангальт;X
+ANH_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ангальт цивилизованным путём.;X
+ANH_peaceful_unification_title;Просьба о вхождении в состав державы Ангальт;X
+ANH_peaceful_unification_desc;Мы решили попросить державу Ангальт войти в её состав.;X
+ARA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Арабия;X
+ARA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Арабия цивилизованным путём.;X
+ARA_peaceful_unification_title;Просьба о вхождении в состав державы Арабия;X
+ARA_peaceful_unification_desc;Мы решили попросить державу Арабия войти в её состав.;X
+ARG_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Аргентина;X
+ARG_peaceful_settlement_desc;Мы решили попробовать договориться с державой Аргентина цивилизованным путём.;X
+ARG_peaceful_unification_title;Просьба о вхождении в состав державы Аргентина;X
+ARG_peaceful_unification_desc;Мы решили попросить державу Аргентина войти в её состав.;X
 ARM_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Армения;X
 ARM_peaceful_settlement_desc;Мы решили попробовать договориться с державой Армения цивилизованным путём.;X
 ARM_peaceful_unification_title;Просьба о вхождении в состав державы Армения;X
 ARM_peaceful_unification_desc;Мы решили попросить державу Армения войти в её состав.;X
-AZB_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Азербайджан;X
-AZB_peaceful_settlement_desc;Мы решили попробовать договориться с державой Азербайджан цивилизованным путём.;X
-AZB_peaceful_unification_title;Просьба о вхождении в состав державы Азербайджан;X
-AZB_peaceful_unification_desc;Мы решили попросить державу Азербайджан войти в её состав.;X
-BUK_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бухара;X
-BUK_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бухара цивилизованным путём.;X
-BUK_peaceful_unification_title;Просьба о вхождении в состав державы Бухара;X
-BUK_peaceful_unification_desc;Мы решили попросить державу Бухара войти в её состав.;X
-GEO_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Грузия;X
-GEO_peaceful_settlement_desc;Мы решили попробовать договориться с державой Грузия цивилизованным путём.;X
-GEO_peaceful_unification_title;Просьба о вхождении в состав державы Грузия;X
-GEO_peaceful_unification_desc;Мы решили попросить державу Грузия войти в её состав.;X
-HDJ_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Хиджаз;X
-HDJ_peaceful_settlement_desc;Мы решили попробовать договориться с державой Хиджаз цивилизованным путём.;X
-HDJ_peaceful_unification_title;Просьба о вхождении в состав державы Хиджаз;X
-HDJ_peaceful_unification_desc;Мы решили попросить державу Хиджаз войти в её состав.;X
-IRQ_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ирак;X
-IRQ_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ирак цивилизованным путём.;X
-IRQ_peaceful_unification_title;Просьба о вхождении в состав державы Ирак;X
-IRQ_peaceful_unification_desc;Мы решили попросить державу Ирак войти в её состав.;X
-KHI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Хива;X
-KHI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Хива цивилизованным путём.;X
-KHI_peaceful_unification_title;Просьба о вхождении в состав державы Хива;X
-KHI_peaceful_unification_desc;Мы решили попросить державу Хива войти в её состав.;X
-KOK_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Коканд;X
-KOK_peaceful_settlement_desc;Мы решили попробовать договориться с державой Коканд цивилизованным путём.;X
-KOK_peaceful_unification_title;Просьба о вхождении в состав державы Коканд;X
-KOK_peaceful_unification_desc;Мы решили попросить державу Коканд войти в её состав.;X
-MUG_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Могулистан;X
-MUG_peaceful_settlement_desc;Мы решили попробовать договориться с державой Могулистан цивилизованным путём.;X
-MUG_peaceful_unification_title;Просьба о вхождении в состав державы Могулистан;X
-MUG_peaceful_unification_desc;Мы решили попросить державу Могулистан войти в её состав.;X
-NEJ_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Неджд;X
-NEJ_peaceful_settlement_desc;Мы решили попробовать договориться с державой Неджд цивилизованным путём.;X
-NEJ_peaceful_unification_title;Просьба о вхождении в состав державы Неджд;X
-NEJ_peaceful_unification_desc;Мы решили попросить державу Неджд войти в её состав.;X
-OMA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Оман;X
-OMA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Оман цивилизованным путём.;X
-OMA_peaceful_unification_title;Просьба о вхождении в состав державы Оман;X
-OMA_peaceful_unification_desc;Мы решили попросить державу Оман войти в её состав.;X
-PER_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Персия;X
-PER_peaceful_settlement_desc;Мы решили попробовать договориться с державой Персия цивилизованным путём.;X
-PER_peaceful_unification_title;Просьба о вхождении в состав державы Персия;X
-PER_peaceful_unification_desc;Мы решили попросить державу Персия войти в её состав.;X
-YEM_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Йемен;X
-YEM_peaceful_settlement_desc;Мы решили попробовать договориться с державой Йемен цивилизованным путём.;X
-YEM_peaceful_unification_title;Просьба о вхождении в состав державы Йемен;X
-YEM_peaceful_unification_desc;Мы решили попросить державу Йемен войти в её состав.;X
-HND_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Индия;X
-HND_peaceful_settlement_desc;Мы решили попробовать договориться с державой Индия цивилизованным путём.;X
-HND_peaceful_unification_title;Просьба о вхождении в состав державы Индия;X
-HND_peaceful_unification_desc;Мы решили попросить державу Индия войти в её состав.;X
+ASM_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ассам;X
+ASM_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ассам цивилизованным путём.;X
+ASM_peaceful_unification_title;Просьба о вхождении в состав державы Ассам;X
+ASM_peaceful_unification_desc;Мы решили попросить державу Ассам войти в её состав.;X
+AST_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Австралия;X
+AST_peaceful_settlement_desc;Мы решили попробовать договориться с державой Австралия цивилизованным путём.;X
+AST_peaceful_unification_title;Просьба о вхождении в состав державы Австралия;X
+AST_peaceful_unification_desc;Мы решили попросить державу Австралия войти в её состав.;X
+ATJ_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ачех;X
+ATJ_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ачех цивилизованным путём.;X
+ATJ_peaceful_unification_title;Просьба о вхождении в состав державы Ачех;X
+ATJ_peaceful_unification_desc;Мы решили попросить державу Ачех войти в её состав.;X
+AUS_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Австрия;X
+AUS_peaceful_settlement_desc;Мы решили попробовать договориться с державой Австрия цивилизованным путём.;X
+AUS_peaceful_unification_title;Просьба о вхождении в состав державы Австрия;X
+AUS_peaceful_unification_desc;Мы решили попросить державу Австрия войти в её состав.;X
 AWA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Авадх;X
 AWA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Авадх цивилизованным путём.;X
 AWA_peaceful_unification_title;Просьба о вхождении в состав державы Авадх;X
 AWA_peaceful_unification_desc;Мы решили попросить державу Авадх войти в её состав.;X
+AZB_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Азербайджан;X
+AZB_peaceful_settlement_desc;Мы решили попробовать договориться с державой Азербайджан цивилизованным путём.;X
+AZB_peaceful_unification_title;Просьба о вхождении в состав державы Азербайджан;X
+AZB_peaceful_unification_desc;Мы решили попросить державу Азербайджан войти в её состав.;X
+BAB_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Вавилон;X
+BAB_peaceful_settlement_desc;Мы решили попробовать договориться с державой Вавилон цивилизованным путём.;X
+BAB_peaceful_unification_title;Просьба о вхождении в состав державы Вавилон;X
+BAB_peaceful_unification_desc;Мы решили попросить державу Вавилон войти в её состав.;X
+BAD_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Баден;X
+BAD_peaceful_settlement_desc;Мы решили попробовать договориться с державой Баден цивилизованным путём.;X
+BAD_peaceful_unification_title;Просьба о вхождении в состав державы Баден;X
+BAD_peaceful_unification_desc;Мы решили попросить державу Баден войти в её состав.;X
+BAL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бали;X
+BAL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бали цивилизованным путём.;X
+BAL_peaceful_unification_title;Просьба о вхождении в состав державы Бали;X
+BAL_peaceful_unification_desc;Мы решили попросить державу Бали войти в её состав.;X
 BAS_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бастар;X
 BAS_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бастар цивилизованным путём.;X
 BAS_peaceful_unification_title;Просьба о вхождении в состав державы Бастар;X
 BAS_peaceful_unification_desc;Мы решили попросить державу Бастар войти в её состав.;X
+BAV_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бавария;X
+BAV_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бавария цивилизованным путём.;X
+BAV_peaceful_unification_title;Просьба о вхождении в состав державы Бавария;X
+BAV_peaceful_unification_desc;Мы решили попросить державу Бавария войти в её состав.;X
+BEL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бельгия;X
+BEL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бельгия цивилизованным путём.;X
+BEL_peaceful_unification_title;Просьба о вхождении в состав державы Бельгия;X
+BEL_peaceful_unification_desc;Мы решили попросить державу Бельгия войти в её состав.;X
 BER_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Барода;X
 BER_peaceful_settlement_desc;Мы решили попробовать договориться с державой Барода цивилизованным путём.;X
 BER_peaceful_unification_title;Просьба о вхождении в состав державы Барода;X
@@ -578,298 +86,102 @@ BHO_peaceful_settlement_title;Мирное урегулирование территориальных споров с дер
 BHO_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бхопал цивилизованным путём.;X
 BHO_peaceful_unification_title;Просьба о вхождении в состав державы Бхопал;X
 BHO_peaceful_unification_desc;Мы решили попросить державу Бхопал войти в её состав.;X
-BIK_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Биканер;X
-BIK_peaceful_settlement_desc;Мы решили попробовать договориться с державой Биканер цивилизованным путём.;X
-BIK_peaceful_unification_title;Просьба о вхождении в состав державы Биканер;X
-BIK_peaceful_unification_desc;Мы решили попросить державу Биканер войти в её состав.;X
-BUN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бандельканд;X
-BUN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бандельканд цивилизованным путём.;X
-BUN_peaceful_unification_title;Просьба о вхождении в состав державы Бандельканд;X
-BUN_peaceful_unification_desc;Мы решили попросить державу Бандельканд войти в её состав.;X
-GWA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Гвалияр;X
-GWA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Гвалияр цивилизованным путём.;X
-GWA_peaceful_unification_title;Просьба о вхождении в состав державы Гвалияр;X
-GWA_peaceful_unification_desc;Мы решили попросить державу Гвалияр войти в её состав.;X
-HYD_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Хайдерабад;X
-HYD_peaceful_settlement_desc;Мы решили попробовать договориться с державой Хайдерабад цивилизованным путём.;X
-HYD_peaceful_unification_title;Просьба о вхождении в состав державы Хайдерабад;X
-HYD_peaceful_unification_desc;Мы решили попросить державу Хайдерабад войти в её состав.;X
-IND_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Индаур;X
-IND_peaceful_settlement_desc;Мы решили попробовать договориться с державой Индаур цивилизованным путём.;X
-IND_peaceful_unification_title;Просьба о вхождении в состав державы Индаур;X
-IND_peaceful_unification_desc;Мы решили попросить державу Индаур войти в её состав.;X
-JAI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Джайпур;X
-JAI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Джайпур цивилизованным путём.;X
-JAI_peaceful_unification_title;Просьба о вхождении в состав державы Джайпур;X
-JAI_peaceful_unification_desc;Мы решили попросить державу Джайпур войти в её состав.;X
-JAS_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Джайсалмер;X
-JAS_peaceful_settlement_desc;Мы решили попробовать договориться с державой Джайсалмер цивилизованным путём.;X
-JAS_peaceful_unification_title;Просьба о вхождении в состав державы Джайсалмер;X
-JAS_peaceful_unification_desc;Мы решили попросить державу Джайсалмер войти в её состав.;X
-JOD_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Джодхпур;X
-JOD_peaceful_settlement_desc;Мы решили попробовать договориться с державой Джодхпур цивилизованным путём.;X
-JOD_peaceful_unification_title;Просьба о вхождении в состав державы Джодхпур;X
-JOD_peaceful_unification_desc;Мы решили попросить державу Джодхпур войти в её состав.;X
-KAL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Калат;X
-KAL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Калат цивилизованным путём.;X
-KAL_peaceful_unification_title;Просьба о вхождении в состав державы Калат;X
-KAL_peaceful_unification_desc;Мы решили попросить державу Калат войти в её состав.;X
-KAS_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Кашмир;X
-KAS_peaceful_settlement_desc;Мы решили попробовать договориться с державой Кашмир цивилизованным путём.;X
-KAS_peaceful_unification_title;Просьба о вхождении в состав державы Кашмир;X
-KAS_peaceful_unification_desc;Мы решили попросить державу Кашмир войти в её состав.;X
-KUT_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Кач;X
-KUT_peaceful_settlement_desc;Мы решили попробовать договориться с державой Кач цивилизованным путём.;X
-KUT_peaceful_unification_title;Просьба о вхождении в состав державы Кач;X
-KUT_peaceful_unification_desc;Мы решили попросить державу Кач войти в её состав.;X
-LAD_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ладакх;X
-LAD_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ладакх цивилизованным путём.;X
-LAD_peaceful_unification_title;Просьба о вхождении в состав державы Ладакх;X
-LAD_peaceful_unification_desc;Мы решили попросить державу Ладакх войти в её состав.;X
-MAK_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Мекран;X
-MAK_peaceful_settlement_desc;Мы решили попробовать договориться с державой Мекран цивилизованным путём.;X
-MAK_peaceful_unification_title;Просьба о вхождении в состав державы Мекран;X
-MAK_peaceful_unification_desc;Мы решили попросить державу Мекран войти в её состав.;X
-MEW_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Мевар;X
-MEW_peaceful_settlement_desc;Мы решили попробовать договориться с державой Мевар цивилизованным путём.;X
-MEW_peaceful_unification_title;Просьба о вхождении в состав державы Мевар;X
-MEW_peaceful_unification_desc;Мы решили попросить державу Мевар войти в её состав.;X
-MYS_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Майсур;X
-MYS_peaceful_settlement_desc;Мы решили попробовать договориться с державой Майсур цивилизованным путём.;X
-MYS_peaceful_unification_title;Просьба о вхождении в состав державы Майсур;X
-MYS_peaceful_unification_desc;Мы решили попросить державу Майсур войти в её состав.;X
-NAG_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Нагпур;X
-NAG_peaceful_settlement_desc;Мы решили попробовать договориться с державой Нагпур цивилизованным путём.;X
-NAG_peaceful_unification_title;Просьба о вхождении в состав державы Нагпур;X
-NAG_peaceful_unification_desc;Мы решили попросить державу Нагпур войти в её состав.;X
-NEP_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Непал;X
-NEP_peaceful_settlement_desc;Мы решили попробовать договориться с державой Непал цивилизованным путём.;X
-NEP_peaceful_unification_title;Просьба о вхождении в состав державы Непал;X
-NEP_peaceful_unification_desc;Мы решили попросить державу Непал войти в её состав.;X
-ORI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Орисса;X
-ORI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Орисса цивилизованным путём.;X
-ORI_peaceful_unification_title;Просьба о вхождении в состав державы Орисса;X
-ORI_peaceful_unification_desc;Мы решили попросить державу Орисса войти в её состав.;X
-PAN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Пенджаб;X
-PAN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Пенджаб цивилизованным путём.;X
-PAN_peaceful_unification_title;Просьба о вхождении в состав державы Пенджаб;X
-PAN_peaceful_unification_desc;Мы решили попросить державу Пенджаб войти в её состав.;X
-SHI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Шимла;X
-SHI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Шимла цивилизованным путём.;X
-SHI_peaceful_unification_title;Просьба о вхождении в состав державы Шимла;X
-SHI_peaceful_unification_desc;Мы решили попросить державу Шимла войти в её состав.;X
-SIK_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Сикким;X
-SIK_peaceful_settlement_desc;Мы решили попробовать договориться с державой Сикким цивилизованным путём.;X
-SIK_peaceful_unification_title;Просьба о вхождении в состав державы Сикким;X
-SIK_peaceful_unification_desc;Мы решили попросить державу Сикким войти в её состав.;X
-SIN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Синд;X
-SIN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Синд цивилизованным путём.;X
-SIN_peaceful_unification_title;Просьба о вхождении в состав державы Синд;X
-SIN_peaceful_unification_desc;Мы решили попросить державу Синд войти в её состав.;X
-TRA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Траванкор;X
-TRA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Траванкор цивилизованным путём.;X
-TRA_peaceful_unification_title;Просьба о вхождении в состав державы Траванкор;X
-TRA_peaceful_unification_desc;Мы решили попросить державу Траванкор войти в её состав.;X
-ATJ_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ачех;X
-ATJ_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ачех цивилизованным путём.;X
-ATJ_peaceful_unification_title;Просьба о вхождении в состав державы Ачех;X
-ATJ_peaceful_unification_desc;Мы решили попросить державу Ачех войти в её состав.;X
-BAL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бали;X
-BAL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бали цивилизованным путём.;X
-BAL_peaceful_unification_title;Просьба о вхождении в состав державы Бали;X
-BAL_peaceful_unification_desc;Мы решили попросить державу Бали войти в её состав.;X
 BHU_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бутан;X
 BHU_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бутан цивилизованным путём.;X
 BHU_peaceful_unification_title;Просьба о вхождении в состав державы Бутан;X
 BHU_peaceful_unification_desc;Мы решили попросить державу Бутан войти в её состав.;X
-BRU_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бруней;X
-BRU_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бруней цивилизованным путём.;X
-BRU_peaceful_unification_title;Просьба о вхождении в состав державы Бруней;X
-BRU_peaceful_unification_desc;Мы решили попросить державу Бруней войти в её состав.;X
-BUR_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бирма;X
-BUR_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бирма цивилизованным путём.;X
-BUR_peaceful_unification_title;Просьба о вхождении в состав державы Бирма;X
-BUR_peaceful_unification_desc;Мы решили попросить державу Бирма войти в её состав.;X
-CAM_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Камбоджа;X
-CAM_peaceful_settlement_desc;Мы решили попробовать договориться с державой Камбоджа цивилизованным путём.;X
-CAM_peaceful_unification_title;Просьба о вхождении в состав державы Камбоджа;X
-CAM_peaceful_unification_desc;Мы решили попросить державу Камбоджа войти в её состав.;X
-CHI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Китай;X
-CHI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Китай цивилизованным путём.;X
-CHI_peaceful_unification_title;Просьба о вхождении в состав державы Китай;X
-CHI_peaceful_unification_desc;Мы решили попросить державу Китай войти в её состав.;X
-DAI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Дайнам;X
-DAI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Дайнам цивилизованным путём.;X
-DAI_peaceful_unification_title;Просьба о вхождении в состав державы Дайнам;X
-DAI_peaceful_unification_desc;Мы решили попросить державу Дайнам войти в её состав.;X
-JAV_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ява;X
-JAV_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ява цивилизованным путём.;X
-JAV_peaceful_unification_title;Просьба о вхождении в состав державы Ява;X
-JAV_peaceful_unification_desc;Мы решили попросить державу Ява войти в её состав.;X
-KOR_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Корея;X
-KOR_peaceful_settlement_desc;Мы решили попробовать договориться с державой Корея цивилизованным путём.;X
-KOR_peaceful_unification_title;Просьба о вхождении в состав державы Корея;X
-KOR_peaceful_unification_desc;Мы решили попросить державу Корея войти в её состав.;X
-LUA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Луанг-Прабанг;X
-LUA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Луанг-Прабанг цивилизованным путём.;X
-LUA_peaceful_unification_title;Просьба о вхождении в состав державы Луанг-Прабанг;X
-LUA_peaceful_unification_desc;Мы решили попросить державу Луанг-Прабанг войти в её состав.;X
-JOH_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Джохор;X
-JOH_peaceful_settlement_desc;Мы решили попробовать договориться с державой Джохор цивилизованным путём.;X
-JOH_peaceful_unification_title;Просьба о вхождении в состав державы Джохор;X
-JOH_peaceful_unification_desc;Мы решили попросить державу Джохор войти в её состав.;X
-SIA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Сиам;X
-SIA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Сиам цивилизованным путём.;X
-SIA_peaceful_unification_title;Просьба о вхождении в состав державы Сиам;X
-SIA_peaceful_unification_desc;Мы решили попросить державу Сиам войти в её состав.;X
-TIB_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Тибет;X
-TIB_peaceful_settlement_desc;Мы решили попробовать договориться с державой Тибет цивилизованным путём.;X
-TIB_peaceful_unification_title;Просьба о вхождении в состав державы Тибет;X
-TIB_peaceful_unification_desc;Мы решили попросить державу Тибет войти в её состав.;X
-MGL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Монголия;X
-MGL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Монголия цивилизованным путём.;X
-MGL_peaceful_unification_title;Просьба о вхождении в состав державы Монголия;X
-MGL_peaceful_unification_desc;Мы решили попросить державу Монголия войти в её состав.;X
-WIA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Вьентьян;X
-WIA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Вьентьян цивилизованным путём.;X
-WIA_peaceful_unification_title;Просьба о вхождении в состав державы Вьентьян;X
-WIA_peaceful_unification_desc;Мы решили попросить державу Вьентьян войти в её состав.;X
-PHI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Филиппины;X
-PHI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Филиппины цивилизованным путём.;X
-PHI_peaceful_unification_title;Просьба о вхождении в состав державы Филиппины;X
-PHI_peaceful_unification_desc;Мы решили попросить державу Филиппины войти в её состав.;X
-MCK_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Маньчжурия;X
-MCK_peaceful_settlement_desc;Мы решили попробовать договориться с державой Маньчжурия цивилизованным путём.;X
-MCK_peaceful_unification_title;Просьба о вхождении в состав державы Маньчжурия;X
-MCK_peaceful_unification_desc;Мы решили попросить державу Маньчжурия войти в её состав.;X
-GXI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Гуанси;X
-GXI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Гуанси цивилизованным путём.;X
-GXI_peaceful_unification_title;Просьба о вхождении в состав державы Гуанси;X
-GXI_peaceful_unification_desc;Мы решили попросить державу Гуанси войти в её состав.;X
-SXI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Клика Шаньси;X
-SXI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Клика Шаньси цивилизованным путём.;X
-SXI_peaceful_unification_title;Просьба о вхождении в состав державы Клика Шаньси;X
-SXI_peaceful_unification_desc;Мы решили попросить державу Клика Шаньси войти в её состав.;X
-YNN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Юннань;X
-YNN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Юннань цивилизованным путём.;X
-YNN_peaceful_unification_title;Просьба о вхождении в состав державы Юннань;X
-YNN_peaceful_unification_desc;Мы решили попросить державу Юннань войти в её состав.;X
-XBI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Цинхай;X
-XBI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Цинхай цивилизованным путём.;X
-XBI_peaceful_unification_title;Просьба о вхождении в состав державы Цинхай;X
-XBI_peaceful_unification_desc;Мы решили попросить державу Цинхай войти в её состав.;X
-XIN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Синьцзян;X
-XIN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Синьцзян цивилизованным путём.;X
-XIN_peaceful_unification_title;Просьба о вхождении в состав державы Синьцзян;X
-XIN_peaceful_unification_desc;Мы решили попросить державу Синьцзян войти в её состав.;X
-CAL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Калифорнийская респ.;X
-CAL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Калифорнийская респ. цивилизованным путём.;X
-CAL_peaceful_unification_title;Просьба о вхождении в состав державы Калифорнийская респ.;X
-CAL_peaceful_unification_desc;Мы решили попросить державу Калифорнийская респ. войти в её состав.;X
-CAN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Канада;X
-CAN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Канада цивилизованным путём.;X
-CAN_peaceful_unification_title;Просьба о вхождении в состав державы Канада;X
-CAN_peaceful_unification_desc;Мы решили попросить державу Канада войти в её состав.;X
-CHE_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Чероки;X
-CHE_peaceful_settlement_desc;Мы решили попробовать договориться с державой Чероки цивилизованным путём.;X
-CHE_peaceful_unification_title;Просьба о вхождении в состав державы Чероки;X
-CHE_peaceful_unification_desc;Мы решили попросить державу Чероки войти в её состав.;X
-COL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Колумбия;X
-COL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Колумбия цивилизованным путём.;X
-COL_peaceful_unification_title;Просьба о вхождении в состав державы Колумбия;X
-COL_peaceful_unification_desc;Мы решили попросить державу Колумбия войти в её состав.;X
-COS_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Коста-Рика;X
-COS_peaceful_settlement_desc;Мы решили попробовать договориться с державой Коста-Рика цивилизованным путём.;X
-COS_peaceful_unification_title;Просьба о вхождении в состав державы Коста-Рика;X
-COS_peaceful_unification_desc;Мы решили попросить державу Коста-Рика войти в её состав.;X
-CSA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой КША;X
-CSA_peaceful_settlement_desc;Мы решили попробовать договориться с державой КША цивилизованным путём.;X
-CSA_peaceful_unification_title;Просьба о вхождении в состав державы КША;X
-CSA_peaceful_unification_desc;Мы решили попросить державу КША войти в её состав.;X
-CUB_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Куба;X
-CUB_peaceful_settlement_desc;Мы решили попробовать договориться с державой Куба цивилизованным путём.;X
-CUB_peaceful_unification_title;Просьба о вхождении в состав державы Куба;X
-CUB_peaceful_unification_desc;Мы решили попросить державу Куба войти в её состав.;X
-DES_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Дезерет;X
-DES_peaceful_settlement_desc;Мы решили попробовать договориться с державой Дезерет цивилизованным путём.;X
-DES_peaceful_unification_title;Просьба о вхождении в состав державы Дезерет;X
-DES_peaceful_unification_desc;Мы решили попросить державу Дезерет войти в её состав.;X
-DOM_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Доминикана;X
-DOM_peaceful_settlement_desc;Мы решили попробовать договориться с державой Доминикана цивилизованным путём.;X
-DOM_peaceful_unification_title;Просьба о вхождении в состав державы Доминикана;X
-DOM_peaceful_unification_desc;Мы решили попросить державу Доминикана войти в её состав.;X
-ELS_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Сальвадор;X
-ELS_peaceful_settlement_desc;Мы решили попробовать договориться с державой Сальвадор цивилизованным путём.;X
-ELS_peaceful_unification_title;Просьба о вхождении в состав державы Сальвадор;X
-ELS_peaceful_unification_desc;Мы решили попросить державу Сальвадор войти в её состав.;X
-GUA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Гватемала;X
-GUA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Гватемала цивилизованным путём.;X
-GUA_peaceful_unification_title;Просьба о вхождении в состав державы Гватемала;X
-GUA_peaceful_unification_desc;Мы решили попросить державу Гватемала войти в её состав.;X
-HAI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Гаити;X
-HAI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Гаити цивилизованным путём.;X
-HAI_peaceful_unification_title;Просьба о вхождении в состав державы Гаити;X
-HAI_peaceful_unification_desc;Мы решили попросить державу Гаити войти в её состав.;X
-HAW_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Гавайи;X
-HAW_peaceful_settlement_desc;Мы решили попробовать договориться с державой Гавайи цивилизованным путём.;X
-HAW_peaceful_unification_title;Просьба о вхождении в состав державы Гавайи;X
-HAW_peaceful_unification_desc;Мы решили попросить державу Гавайи войти в её состав.;X
-MAN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Коммуна Манхеттена;X
-MAN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Коммуна Манхеттена цивилизованным путём.;X
-MAN_peaceful_unification_title;Просьба о вхождении в состав державы Коммуна Манхеттена;X
-MAN_peaceful_unification_desc;Мы решили попросить державу Коммуна Манхеттена войти в её состав.;X
-MEX_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Мексика;X
-MEX_peaceful_settlement_desc;Мы решили попробовать договориться с державой Мексика цивилизованным путём.;X
-MEX_peaceful_unification_title;Просьба о вхождении в состав державы Мексика;X
-MEX_peaceful_unification_desc;Мы решили попросить державу Мексика войти в её состав.;X
-MTC_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Метисская конфедерация;X
-MTC_peaceful_settlement_desc;Мы решили попробовать договориться с державой Метисская конфедерация цивилизованным путём.;X
-MTC_peaceful_unification_title;Просьба о вхождении в состав державы Метисская конфедерация;X
-MTC_peaceful_unification_desc;Мы решили попросить державу Метисская конфедерация войти в её состав.;X
-HON_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Гондурас;X
-HON_peaceful_settlement_desc;Мы решили попробовать договориться с державой Гондурас цивилизованным путём.;X
-HON_peaceful_unification_title;Просьба о вхождении в состав державы Гондурас;X
-HON_peaceful_unification_desc;Мы решили попросить державу Гондурас войти в её состав.;X
-NEN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Новая Англия;X
-NEN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Новая Англия цивилизованным путём.;X
-NEN_peaceful_unification_title;Просьба о вхождении в состав державы Новая Англия;X
-NEN_peaceful_unification_desc;Мы решили попросить державу Новая Англия войти в её состав.;X
-NEW_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ньюфаундленд;X
-NEW_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ньюфаундленд цивилизованным путём.;X
-NEW_peaceful_unification_title;Просьба о вхождении в состав державы Ньюфаундленд;X
-NEW_peaceful_unification_desc;Мы решили попросить державу Ньюфаундленд войти в её состав.;X
-NIC_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Никарагуа;X
-NIC_peaceful_settlement_desc;Мы решили попробовать договориться с державой Никарагуа цивилизованным путём.;X
-NIC_peaceful_unification_title;Просьба о вхождении в состав державы Никарагуа;X
-NIC_peaceful_unification_desc;Мы решили попросить державу Никарагуа войти в её состав.;X
-PNM_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Панама;X
-PNM_peaceful_settlement_desc;Мы решили попробовать договориться с державой Панама цивилизованным путём.;X
-PNM_peaceful_unification_title;Просьба о вхождении в состав державы Панама;X
-PNM_peaceful_unification_desc;Мы решили попросить державу Панама войти в её состав.;X
-QUE_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Квебек;X
-QUE_peaceful_settlement_desc;Мы решили попробовать договориться с державой Квебек цивилизованным путём.;X
-QUE_peaceful_unification_title;Просьба о вхождении в состав державы Квебек;X
-QUE_peaceful_unification_desc;Мы решили попросить державу Квебек войти в её состав.;X
-TEX_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Техас;X
-TEX_peaceful_settlement_desc;Мы решили попробовать договориться с державой Техас цивилизованным путём.;X
-TEX_peaceful_unification_title;Просьба о вхождении в состав державы Техас;X
-TEX_peaceful_unification_desc;Мы решили попросить державу Техас войти в её состав.;X
-UCA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой СПЦА;X
-UCA_peaceful_settlement_desc;Мы решили попробовать договориться с державой СПЦА цивилизованным путём.;X
-UCA_peaceful_unification_title;Просьба о вхождении в состав державы СПЦА;X
-UCA_peaceful_unification_desc;Мы решили попросить державу СПЦА войти в её состав.;X
-ARG_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Аргентина;X
-ARG_peaceful_settlement_desc;Мы решили попробовать договориться с державой Аргентина цивилизованным путём.;X
-ARG_peaceful_unification_title;Просьба о вхождении в состав державы Аргентина;X
-ARG_peaceful_unification_desc;Мы решили попросить державу Аргентина войти в её состав.;X
+BIH_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бихар;X
+BIH_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бихар цивилизованным путём.;X
+BIH_peaceful_unification_title;Просьба о вхождении в состав державы Бихар;X
+BIH_peaceful_unification_desc;Мы решили попросить державу Бихар войти в её состав.;X
+BIK_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Биканер;X
+BIK_peaceful_settlement_desc;Мы решили попробовать договориться с державой Биканер цивилизованным путём.;X
+BIK_peaceful_unification_title;Просьба о вхождении в состав державы Биканер;X
+BIK_peaceful_unification_desc;Мы решили попросить державу Биканер войти в её состав.;X
+BMG_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бурят-Монголия;X
+BMG_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бурят-Монголия цивилизованным путём.;X
+BMG_peaceful_unification_title;Просьба о вхождении в состав державы Бурят-Монголия;X
+BMG_peaceful_unification_desc;Мы решили попросить державу Бурят-Монголия войти в её состав.;X
+BNG_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бенгалия;X
+BNG_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бенгалия цивилизованным путём.;X
+BNG_peaceful_unification_title;Просьба о вхождении в состав державы Бенгалия;X
+BNG_peaceful_unification_desc;Мы решили попросить державу Бенгалия войти в её состав.;X
+BOH_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Богемия-Моравия;X
+BOH_peaceful_settlement_desc;Мы решили попробовать договориться с державой Богемия-Моравия цивилизованным путём.;X
+BOH_peaceful_unification_title;Просьба о вхождении в состав державы Богемия-Моравия;X
+BOH_peaceful_unification_desc;Мы решили попросить державу Богемия-Моравия войти в её состав.;X
 BOL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Боливия;X
 BOL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Боливия цивилизованным путём.;X
 BOL_peaceful_unification_title;Просьба о вхождении в состав державы Боливия;X
 BOL_peaceful_unification_desc;Мы решили попросить державу Боливия войти в её состав.;X
+BOS_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Босния-Герцеговина;X
+BOS_peaceful_settlement_desc;Мы решили попробовать договориться с державой Босния-Герцеговина цивилизованным путём.;X
+BOS_peaceful_unification_title;Просьба о вхождении в состав державы Босния-Герцеговина;X
+BOS_peaceful_unification_desc;Мы решили попросить державу Босния-Герцеговина войти в её состав.;X
+BRA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Брауншвейг;X
+BRA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Брауншвейг цивилизованным путём.;X
+BRA_peaceful_unification_title;Просьба о вхождении в состав державы Брауншвейг;X
+BRA_peaceful_unification_desc;Мы решили попросить державу Брауншвейг войти в её состав.;X
+BRE_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бремен;X
+BRE_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бремен цивилизованным путём.;X
+BRE_peaceful_unification_title;Просьба о вхождении в состав державы Бремен;X
+BRE_peaceful_unification_desc;Мы решили попросить державу Бремен войти в её состав.;X
+BRU_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бруней;X
+BRU_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бруней цивилизованным путём.;X
+BRU_peaceful_unification_title;Просьба о вхождении в состав державы Бруней;X
+BRU_peaceful_unification_desc;Мы решили попросить державу Бруней войти в её состав.;X
 BRZ_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бразилия;X
 BRZ_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бразилия цивилизованным путём.;X
 BRZ_peaceful_unification_title;Просьба о вхождении в состав державы Бразилия;X
 BRZ_peaceful_unification_desc;Мы решили попросить державу Бразилия войти в её состав.;X
+BUK_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бухара;X
+BUK_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бухара цивилизованным путём.;X
+BUK_peaceful_unification_title;Просьба о вхождении в состав державы Бухара;X
+BUK_peaceful_unification_desc;Мы решили попросить державу Бухара войти в её состав.;X
+BUL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Болгария;X
+BUL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Болгария цивилизованным путём.;X
+BUL_peaceful_unification_title;Просьба о вхождении в состав державы Болгария;X
+BUL_peaceful_unification_desc;Мы решили попросить державу Болгария войти в её состав.;X
+BUN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бандельканд;X
+BUN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бандельканд цивилизованным путём.;X
+BUN_peaceful_unification_title;Просьба о вхождении в состав державы Бандельканд;X
+BUN_peaceful_unification_desc;Мы решили попросить державу Бандельканд войти в её состав.;X
+BUR_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Бирма;X
+BUR_peaceful_settlement_desc;Мы решили попробовать договориться с державой Бирма цивилизованным путём.;X
+BUR_peaceful_unification_title;Просьба о вхождении в состав державы Бирма;X
+BUR_peaceful_unification_desc;Мы решили попросить державу Бирма войти в её состав.;X
+BYE_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Белоруссия;X
+BYE_peaceful_settlement_desc;Мы решили попробовать договориться с державой Белоруссия цивилизованным путём.;X
+BYE_peaceful_unification_title;Просьба о вхождении в состав державы Белоруссия;X
+BYE_peaceful_unification_desc;Мы решили попросить державу Белоруссия войти в её состав.;X
+BYZ_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Византия;X
+BYZ_peaceful_settlement_desc;Мы решили попробовать договориться с державой Византия цивилизованным путём.;X
+BYZ_peaceful_unification_title;Просьба о вхождении в состав державы Византия;X
+BYZ_peaceful_unification_desc;Мы решили попросить державу Византия войти в её состав.;X
+CAL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Калифорнийская респ.;X
+CAL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Калифорнийская респ. цивилизованным путём.;X
+CAL_peaceful_unification_title;Просьба о вхождении в состав державы Калифорнийская респ.;X
+CAL_peaceful_unification_desc;Мы решили попросить державу Калифорнийская респ. войти в её состав.;X
+CAM_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Камбоджа;X
+CAM_peaceful_settlement_desc;Мы решили попробовать договориться с державой Камбоджа цивилизованным путём.;X
+CAM_peaceful_unification_title;Просьба о вхождении в состав державы Камбоджа;X
+CAM_peaceful_unification_desc;Мы решили попросить державу Камбоджа войти в её состав.;X
+CAN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Канада;X
+CAN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Канада цивилизованным путём.;X
+CAN_peaceful_unification_title;Просьба о вхождении в состав державы Канада;X
+CAN_peaceful_unification_desc;Мы решили попросить державу Канада войти в её состав.;X
+CAT_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Каталония;X
+CAT_peaceful_settlement_desc;Мы решили попробовать договориться с державой Каталония цивилизованным путём.;X
+CAT_peaceful_unification_title;Просьба о вхождении в состав державы Каталония;X
+CAT_peaceful_unification_desc;Мы решили попросить державу Каталония войти в её состав.;X
+CHE_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Чероки;X
+CHE_peaceful_settlement_desc;Мы решили попробовать договориться с державой Чероки цивилизованным путём.;X
+CHE_peaceful_unification_title;Просьба о вхождении в состав державы Чероки;X
+CHE_peaceful_unification_desc;Мы решили попросить державу Чероки войти в её состав.;X
+CHI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Китай;X
+CHI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Китай цивилизованным путём.;X
+CHI_peaceful_unification_title;Просьба о вхождении в состав державы Китай;X
+CHI_peaceful_unification_desc;Мы решили попросить державу Китай войти в её состав.;X
 CHL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Чили;X
 CHL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Чили цивилизованным путём.;X
 CHL_peaceful_unification_title;Просьба о вхождении в состав державы Чили;X
@@ -878,78 +190,50 @@ CLM_peaceful_settlement_title;Мирное урегулирование территориальных споров с дер
 CLM_peaceful_settlement_desc;Мы решили попробовать договориться с державой Колумбия цивилизованным путём.;X
 CLM_peaceful_unification_title;Просьба о вхождении в состав державы Колумбия;X
 CLM_peaceful_unification_desc;Мы решили попросить державу Колумбия войти в её состав.;X
-ECU_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Эквадор;X
-ECU_peaceful_settlement_desc;Мы решили попробовать договориться с державой Эквадор цивилизованным путём.;X
-ECU_peaceful_unification_title;Просьба о вхождении в состав державы Эквадор;X
-ECU_peaceful_unification_desc;Мы решили попросить державу Эквадор войти в её состав.;X
-PEU_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Перу;X
-PEU_peaceful_settlement_desc;Мы решили попробовать договориться с державой Перу цивилизованным путём.;X
-PEU_peaceful_unification_title;Просьба о вхождении в состав державы Перу;X
-PEU_peaceful_unification_desc;Мы решили попросить державу Перу войти в её состав.;X
-PRG_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Парагвай;X
-PRG_peaceful_settlement_desc;Мы решили попробовать договориться с державой Парагвай цивилизованным путём.;X
-PRG_peaceful_unification_title;Просьба о вхождении в состав державы Парагвай;X
-PRG_peaceful_unification_desc;Мы решили попросить державу Парагвай войти в её состав.;X
-URU_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Уругвай;X
-URU_peaceful_settlement_desc;Мы решили попробовать договориться с державой Уругвай цивилизованным путём.;X
-URU_peaceful_unification_title;Просьба о вхождении в состав державы Уругвай;X
-URU_peaceful_unification_desc;Мы решили попросить державу Уругвай войти в её состав.;X
-VNZ_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Венесуэла;X
-VNZ_peaceful_settlement_desc;Мы решили попробовать договориться с державой Венесуэла цивилизованным путём.;X
-VNZ_peaceful_unification_title;Просьба о вхождении в состав державы Венесуэла;X
-VNZ_peaceful_unification_desc;Мы решили попросить державу Венесуэла войти в её состав.;X
-AST_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Австралия;X
-AST_peaceful_settlement_desc;Мы решили попробовать договориться с державой Австралия цивилизованным путём.;X
-AST_peaceful_unification_title;Просьба о вхождении в состав державы Австралия;X
-AST_peaceful_unification_desc;Мы решили попросить державу Австралия войти в её состав.;X
-NZL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Новая Зеландия;X
-NZL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Новая Зеландия цивилизованным путём.;X
-NZL_peaceful_unification_title;Просьба о вхождении в состав державы Новая Зеландия;X
-NZL_peaceful_unification_desc;Мы решили попросить державу Новая Зеландия войти в её состав.;X
-ISR_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Израиль;X
-ISR_peaceful_settlement_desc;Мы решили попробовать договориться с державой Израиль цивилизованным путём.;X
-ISR_peaceful_unification_title;Просьба о вхождении в состав державы Израиль;X
-ISR_peaceful_unification_desc;Мы решили попросить державу Израиль войти в её состав.;X
-BYZ_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Византия;X
-BYZ_peaceful_settlement_desc;Мы решили попробовать договориться с державой Византия цивилизованным путём.;X
-BYZ_peaceful_unification_title;Просьба о вхождении в состав державы Византия;X
-BYZ_peaceful_unification_desc;Мы решили попросить державу Византия войти в её состав.;X
-ICL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Исландия;X
-ICL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Исландия цивилизованным путём.;X
-ICL_peaceful_unification_title;Просьба о вхождении в состав державы Исландия;X
-ICL_peaceful_unification_desc;Мы решили попросить державу Исландия войти в её состав.;X
-BAB_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Вавилон;X
-BAB_peaceful_settlement_desc;Мы решили попробовать договориться с державой Вавилон цивилизованным путём.;X
-BAB_peaceful_unification_title;Просьба о вхождении в состав державы Вавилон;X
-BAB_peaceful_unification_desc;Мы решили попросить державу Вавилон войти в её состав.;X
-TPG_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Небесное Царство;X
-TPG_peaceful_settlement_desc;Мы решили попробовать договориться с державой Небесное Царство цивилизованным путём.;X
-TPG_peaceful_unification_title;Просьба о вхождении в состав державы Небесное Царство;X
-TPG_peaceful_unification_desc;Мы решили попросить державу Небесное Царство войти в её состав.;X
-ARA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Арабия;X
-ARA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Арабия цивилизованным путём.;X
-ARA_peaceful_unification_title;Просьба о вхождении в состав державы Арабия;X
-ARA_peaceful_unification_desc;Мы решили попросить державу Арабия войти в её состав.;X
-UBD_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Объединённая Балтия;X
-UBD_peaceful_settlement_desc;Мы решили попробовать договориться с державой Объединённая Балтия цивилизованным путём.;X
-UBD_peaceful_unification_title;Просьба о вхождении в состав державы Объединённая Балтия;X
-UBD_peaceful_unification_desc;Мы решили попросить державу Объединённая Балтия войти в её состав.;X
-BYE_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Белоруссия;X
-BYE_peaceful_settlement_desc;Мы решили попробовать договориться с державой Белоруссия цивилизованным путём.;X
-BYE_peaceful_unification_title;Просьба о вхождении в состав державы Белоруссия;X
-BYE_peaceful_unification_desc;Мы решили попросить державу Белоруссия войти в её состав.;X
-PLC_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Речь Посполитая;X
-PLC_peaceful_settlement_desc;Мы решили попробовать договориться с державой Речь Посполитая цивилизованным путём.;X
-PLC_peaceful_unification_title;Просьба о вхождении в состав державы Речь Посполитая;X
-PLC_peaceful_unification_desc;Мы решили попросить державу Речь Посполитая войти в её состав.;X
-GCO_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Великая Колумбия;X
-GCO_peaceful_settlement_desc;Мы решили попробовать договориться с державой Великая Колумбия цивилизованным путём.;X
-GCO_peaceful_unification_title;Просьба о вхождении в состав державы Великая Колумбия;X
-GCO_peaceful_unification_desc;Мы решили попросить державу Великая Колумбия войти в её состав.;X
-JAN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ян-Майен;X
-JAN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ян-Майен цивилизованным путём.;X
-JAN_peaceful_unification_title;Просьба о вхождении в состав державы Ян-Майен;X
-JAN_peaceful_unification_desc;Мы решили попросить державу Ян-Майен войти в её состав.;X
+CNG_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Конго;X
+CNG_peaceful_settlement_desc;Мы решили попробовать договориться с державой Конго цивилизованным путём.;X
+CNG_peaceful_unification_title;Просьба о вхождении в состав державы Конго;X
+CNG_peaceful_unification_desc;Мы решили попросить державу Конго войти в её состав.;X
+COB_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Саксен-Кобург-Гота;X
+COB_peaceful_settlement_desc;Мы решили попробовать договориться с державой Саксен-Кобург-Гота цивилизованным путём.;X
+COB_peaceful_unification_title;Просьба о вхождении в состав державы Саксен-Кобург-Гота;X
+COB_peaceful_unification_desc;Мы решили попросить державу Саксен-Кобург-Гота войти в её состав.;X
+COL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Колумбия;X
+COL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Колумбия цивилизованным путём.;X
+COL_peaceful_unification_title;Просьба о вхождении в состав державы Колумбия;X
+COL_peaceful_unification_desc;Мы решили попросить державу Колумбия войти в её состав.;X
+COS_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Коста-Рика;X
+COS_peaceful_settlement_desc;Мы решили попробовать договориться с державой Коста-Рика цивилизованным путём.;X
+COS_peaceful_unification_title;Просьба о вхождении в состав державы Коста-Рика;X
+COS_peaceful_unification_desc;Мы решили попросить державу Коста-Рика войти в её состав.;X
+CRE_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Крит;X
+CRE_peaceful_settlement_desc;Мы решили попробовать договориться с державой Крит цивилизованным путём.;X
+CRE_peaceful_unification_title;Просьба о вхождении в состав державы Крит;X
+CRE_peaceful_unification_desc;Мы решили попросить державу Крит войти в её состав.;X
+CRI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Крым;X
+CRI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Крым цивилизованным путём.;X
+CRI_peaceful_unification_title;Просьба о вхождении в состав державы Крым;X
+CRI_peaceful_unification_desc;Мы решили попросить державу Крым войти в её состав.;X
+CRO_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Хорватия;X
+CRO_peaceful_settlement_desc;Мы решили попробовать договориться с державой Хорватия цивилизованным путём.;X
+CRO_peaceful_unification_title;Просьба о вхождении в состав державы Хорватия;X
+CRO_peaceful_unification_desc;Мы решили попросить державу Хорватия войти в её состав.;X
+CSA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой КША;X
+CSA_peaceful_settlement_desc;Мы решили попробовать договориться с державой КША цивилизованным путём.;X
+CSA_peaceful_unification_title;Просьба о вхождении в состав державы КША;X
+CSA_peaceful_unification_desc;Мы решили попросить державу КША войти в её состав.;X
+CUB_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Куба;X
+CUB_peaceful_settlement_desc;Мы решили попробовать договориться с державой Куба цивилизованным путём.;X
+CUB_peaceful_unification_title;Просьба о вхождении в состав державы Куба;X
+CUB_peaceful_unification_desc;Мы решили попросить державу Куба войти в её состав.;X
+CYP_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Кипр;X
+CYP_peaceful_settlement_desc;Мы решили попробовать договориться с державой Кипр цивилизованным путём.;X
+CYP_peaceful_unification_title;Просьба о вхождении в состав державы Кипр;X
+CYP_peaceful_unification_desc;Мы решили попросить державу Кипр войти в её состав.;X
+CZH_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Чехословакия;X
+CZH_peaceful_settlement_desc;Мы решили попробовать договориться с державой Чехословакия цивилизованным путём.;X
+CZH_peaceful_unification_title;Просьба о вхождении в состав державы Чехословакия;X
+CZH_peaceful_unification_desc;Мы решили попросить державу Чехословакия войти в её состав.;X
 D01_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой 1-я Независимая республика;X
 D01_peaceful_settlement_desc;Мы решили попробовать договориться с державой 1-я Независимая республика цивилизованным путём.;X
 D01_peaceful_unification_title;Просьба о вхождении в состав державы 1-я Независимая республика;X
@@ -1150,6 +434,722 @@ D50_peaceful_settlement_title;Мирное урегулирование территориальных споров с дер
 D50_peaceful_settlement_desc;Мы решили попробовать договориться с державой 50-я Независимая республика цивилизованным путём.;X
 D50_peaceful_unification_title;Просьба о вхождении в состав державы 50-я Независимая республика;X
 D50_peaceful_unification_desc;Мы решили попросить державу 50-я Независимая республика войти в её состав.;X
+DAI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Дайнам;X
+DAI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Дайнам цивилизованным путём.;X
+DAI_peaceful_unification_title;Просьба о вхождении в состав державы Дайнам;X
+DAI_peaceful_unification_desc;Мы решили попросить державу Дайнам войти в её состав.;X
+DEN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Дания;X
+DEN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Дания цивилизованным путём.;X
+DEN_peaceful_unification_title;Просьба о вхождении в состав державы Дания;X
+DEN_peaceful_unification_desc;Мы решили попросить державу Дания войти в её состав.;X
+DES_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Дезерет;X
+DES_peaceful_settlement_desc;Мы решили попробовать договориться с державой Дезерет цивилизованным путём.;X
+DES_peaceful_unification_title;Просьба о вхождении в состав державы Дезерет;X
+DES_peaceful_unification_desc;Мы решили попросить державу Дезерет войти в её состав.;X
+DOM_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Доминикана;X
+DOM_peaceful_settlement_desc;Мы решили попробовать договориться с державой Доминикана цивилизованным путём.;X
+DOM_peaceful_unification_title;Просьба о вхождении в состав державы Доминикана;X
+DOM_peaceful_unification_desc;Мы решили попросить державу Доминикана войти в её состав.;X
+DZG_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Данциг;X
+DZG_peaceful_settlement_desc;Мы решили попробовать договориться с державой Данциг цивилизованным путём.;X
+DZG_peaceful_unification_title;Просьба о вхождении в состав державы Данциг;X
+DZG_peaceful_unification_desc;Мы решили попросить державу Данциг войти в её состав.;X
+ECU_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Эквадор;X
+ECU_peaceful_settlement_desc;Мы решили попробовать договориться с державой Эквадор цивилизованным путём.;X
+ECU_peaceful_unification_title;Просьба о вхождении в состав державы Эквадор;X
+ECU_peaceful_unification_desc;Мы решили попросить державу Эквадор войти в её состав.;X
+EGY_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Египет;X
+EGY_peaceful_settlement_desc;Мы решили попробовать договориться с державой Египет цивилизованным путём.;X
+EGY_peaceful_unification_title;Просьба о вхождении в состав державы Египет;X
+EGY_peaceful_unification_desc;Мы решили попросить державу Египет войти в её состав.;X
+ELS_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Сальвадор;X
+ELS_peaceful_settlement_desc;Мы решили попробовать договориться с державой Сальвадор цивилизованным путём.;X
+ELS_peaceful_unification_title;Просьба о вхождении в состав державы Сальвадор;X
+ELS_peaceful_unification_desc;Мы решили попросить державу Сальвадор войти в её состав.;X
+ENG_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Великобритания;X
+ENG_peaceful_settlement_desc;Мы решили попробовать договориться с державой Великобритания цивилизованным путём.;X
+ENG_peaceful_unification_title;Просьба о вхождении в состав державы Великобритания;X
+ENG_peaceful_unification_desc;Мы решили попросить державу Великобритания войти в её состав.;X
+EST_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Эстония;X
+EST_peaceful_settlement_desc;Мы решили попробовать договориться с державой Эстония цивилизованным путём.;X
+EST_peaceful_unification_title;Просьба о вхождении в состав державы Эстония;X
+EST_peaceful_unification_desc;Мы решили попросить державу Эстония войти в её состав.;X
+ETH_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Эфиопия;X
+ETH_peaceful_settlement_desc;Мы решили попробовать договориться с державой Эфиопия цивилизованным путём.;X
+ETH_peaceful_unification_title;Просьба о вхождении в состав державы Эфиопия;X
+ETH_peaceful_unification_desc;Мы решили попросить державу Эфиопия войти в её состав.;X
+FIN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Финляндия;X
+FIN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Финляндия цивилизованным путём.;X
+FIN_peaceful_unification_title;Просьба о вхождении в состав державы Финляндия;X
+FIN_peaceful_unification_desc;Мы решили попросить державу Финляндия войти в её состав.;X
+FLA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Фландрия;X
+FLA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Фландрия цивилизованным путём.;X
+FLA_peaceful_unification_title;Просьба о вхождении в состав державы Фландрия;X
+FLA_peaceful_unification_desc;Мы решили попросить державу Фландрия войти в её состав.;X
+FRA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Франция;X
+FRA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Франция цивилизованным путём.;X
+FRA_peaceful_unification_title;Просьба о вхождении в состав державы Франция;X
+FRA_peaceful_unification_desc;Мы решили попросить державу Франция войти в её состав.;X
+FRM_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Франкфурт-на-Майне;X
+FRM_peaceful_settlement_desc;Мы решили попробовать договориться с державой Франкфурт-на-Майне цивилизованным путём.;X
+FRM_peaceful_unification_title;Просьба о вхождении в состав державы Франкфурт-на-Майне;X
+FRM_peaceful_unification_desc;Мы решили попросить державу Франкфурт-на-Майне войти в её состав.;X
+GCO_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Великая Колумбия;X
+GCO_peaceful_settlement_desc;Мы решили попробовать договориться с державой Великая Колумбия цивилизованным путём.;X
+GCO_peaceful_unification_title;Просьба о вхождении в состав державы Великая Колумбия;X
+GCO_peaceful_unification_desc;Мы решили попросить державу Великая Колумбия войти в её состав.;X
+GEO_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Грузия;X
+GEO_peaceful_settlement_desc;Мы решили попробовать договориться с державой Грузия цивилизованным путём.;X
+GEO_peaceful_unification_title;Просьба о вхождении в состав державы Грузия;X
+GEO_peaceful_unification_desc;Мы решили попросить державу Грузия войти в её состав.;X
+GER_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Германия;X
+GER_peaceful_settlement_desc;Мы решили попробовать договориться с державой Германия цивилизованным путём.;X
+GER_peaceful_unification_title;Просьба о вхождении в состав державы Германия;X
+GER_peaceful_unification_desc;Мы решили попросить державу Германия войти в её состав.;X
+GRE_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Греция;X
+GRE_peaceful_settlement_desc;Мы решили попробовать договориться с державой Греция цивилизованным путём.;X
+GRE_peaceful_unification_title;Просьба о вхождении в состав державы Греция;X
+GRE_peaceful_unification_desc;Мы решили попросить державу Греция войти в её состав.;X
+GUA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Гватемала;X
+GUA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Гватемала цивилизованным путём.;X
+GUA_peaceful_unification_title;Просьба о вхождении в состав державы Гватемала;X
+GUA_peaceful_unification_desc;Мы решили попросить державу Гватемала войти в её состав.;X
+GWA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Гвалияр;X
+GWA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Гвалияр цивилизованным путём.;X
+GWA_peaceful_unification_title;Просьба о вхождении в состав державы Гвалияр;X
+GWA_peaceful_unification_desc;Мы решили попросить державу Гвалияр войти в её состав.;X
+GXI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Гуанси;X
+GXI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Гуанси цивилизованным путём.;X
+GXI_peaceful_unification_title;Просьба о вхождении в состав державы Гуанси;X
+GXI_peaceful_unification_desc;Мы решили попросить державу Гуанси войти в её состав.;X
+HAI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Гаити;X
+HAI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Гаити цивилизованным путём.;X
+HAI_peaceful_unification_title;Просьба о вхождении в состав державы Гаити;X
+HAI_peaceful_unification_desc;Мы решили попросить державу Гаити войти в её состав.;X
+HAM_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Гамбург;X
+HAM_peaceful_settlement_desc;Мы решили попробовать договориться с державой Гамбург цивилизованным путём.;X
+HAM_peaceful_unification_title;Просьба о вхождении в состав державы Гамбург;X
+HAM_peaceful_unification_desc;Мы решили попросить державу Гамбург войти в её состав.;X
+HAN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ганновер;X
+HAN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ганновер цивилизованным путём.;X
+HAN_peaceful_unification_title;Просьба о вхождении в состав державы Ганновер;X
+HAN_peaceful_unification_desc;Мы решили попросить державу Ганновер войти в её состав.;X
+HAW_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Гавайи;X
+HAW_peaceful_settlement_desc;Мы решили попробовать договориться с державой Гавайи цивилизованным путём.;X
+HAW_peaceful_unification_title;Просьба о вхождении в состав державы Гавайи;X
+HAW_peaceful_unification_desc;Мы решили попросить державу Гавайи войти в её состав.;X
+HDJ_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Хиджаз;X
+HDJ_peaceful_settlement_desc;Мы решили попробовать договориться с державой Хиджаз цивилизованным путём.;X
+HDJ_peaceful_unification_title;Просьба о вхождении в состав державы Хиджаз;X
+HDJ_peaceful_unification_desc;Мы решили попросить державу Хиджаз войти в её состав.;X
+HEK_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Гессен-Кассель;X
+HEK_peaceful_settlement_desc;Мы решили попробовать договориться с державой Гессен-Кассель цивилизованным путём.;X
+HEK_peaceful_unification_title;Просьба о вхождении в состав державы Гессен-Кассель;X
+HEK_peaceful_unification_desc;Мы решили попросить державу Гессен-Кассель войти в её состав.;X
+HES_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Гессен-Дармштадт;X
+HES_peaceful_settlement_desc;Мы решили попробовать договориться с державой Гессен-Дармштадт цивилизованным путём.;X
+HES_peaceful_unification_title;Просьба о вхождении в состав державы Гессен-Дармштадт;X
+HES_peaceful_unification_desc;Мы решили попросить державу Гессен-Дармштадт войти в её состав.;X
+HND_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Индия;X
+HND_peaceful_settlement_desc;Мы решили попробовать договориться с державой Индия цивилизованным путём.;X
+HND_peaceful_unification_title;Просьба о вхождении в состав державы Индия;X
+HND_peaceful_unification_desc;Мы решили попросить державу Индия войти в её состав.;X
+HOL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Гольштейн;X
+HOL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Гольштейн цивилизованным путём.;X
+HOL_peaceful_unification_title;Просьба о вхождении в состав державы Гольштейн;X
+HOL_peaceful_unification_desc;Мы решили попросить державу Гольштейн войти в её состав.;X
+HON_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Гондурас;X
+HON_peaceful_settlement_desc;Мы решили попробовать договориться с державой Гондурас цивилизованным путём.;X
+HON_peaceful_unification_title;Просьба о вхождении в состав державы Гондурас;X
+HON_peaceful_unification_desc;Мы решили попросить державу Гондурас войти в её состав.;X
+HUN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Венгрия;X
+HUN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Венгрия цивилизованным путём.;X
+HUN_peaceful_unification_title;Просьба о вхождении в состав державы Венгрия;X
+HUN_peaceful_unification_desc;Мы решили попросить державу Венгрия войти в её состав.;X
+HYD_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Хайдерабад;X
+HYD_peaceful_settlement_desc;Мы решили попробовать договориться с державой Хайдерабад цивилизованным путём.;X
+HYD_peaceful_unification_title;Просьба о вхождении в состав державы Хайдерабад;X
+HYD_peaceful_unification_desc;Мы решили попросить державу Хайдерабад войти в её состав.;X
+ICL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Исландия;X
+ICL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Исландия цивилизованным путём.;X
+ICL_peaceful_unification_title;Просьба о вхождении в состав державы Исландия;X
+ICL_peaceful_unification_desc;Мы решили попросить державу Исландия войти в её состав.;X
+IND_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Индаур;X
+IND_peaceful_settlement_desc;Мы решили попробовать договориться с державой Индаур цивилизованным путём.;X
+IND_peaceful_unification_title;Просьба о вхождении в состав державы Индаур;X
+IND_peaceful_unification_desc;Мы решили попросить державу Индаур войти в её состав.;X
+ION_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ионическая республика;X
+ION_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ионическая республика цивилизованным путём.;X
+ION_peaceful_unification_title;Просьба о вхождении в состав державы Ионическая республика;X
+ION_peaceful_unification_desc;Мы решили попросить державу Ионическая республика войти в её состав.;X
+IRE_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ирландия;X
+IRE_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ирландия цивилизованным путём.;X
+IRE_peaceful_unification_title;Просьба о вхождении в состав державы Ирландия;X
+IRE_peaceful_unification_desc;Мы решили попросить державу Ирландия войти в её состав.;X
+IRQ_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ирак;X
+IRQ_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ирак цивилизованным путём.;X
+IRQ_peaceful_unification_title;Просьба о вхождении в состав державы Ирак;X
+IRQ_peaceful_unification_desc;Мы решили попросить державу Ирак войти в её состав.;X
+ISR_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Израиль;X
+ISR_peaceful_settlement_desc;Мы решили попробовать договориться с державой Израиль цивилизованным путём.;X
+ISR_peaceful_unification_title;Просьба о вхождении в состав державы Израиль;X
+ISR_peaceful_unification_desc;Мы решили попросить державу Израиль войти в её состав.;X
+ITA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Италия;X
+ITA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Италия цивилизованным путём.;X
+ITA_peaceful_unification_title;Просьба о вхождении в состав державы Италия;X
+ITA_peaceful_unification_desc;Мы решили попросить державу Италия войти в её состав.;X
+JAI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Джайпур;X
+JAI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Джайпур цивилизованным путём.;X
+JAI_peaceful_unification_title;Просьба о вхождении в состав державы Джайпур;X
+JAI_peaceful_unification_desc;Мы решили попросить державу Джайпур войти в её состав.;X
+JAN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ян-Майен;X
+JAN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ян-Майен цивилизованным путём.;X
+JAN_peaceful_unification_title;Просьба о вхождении в состав державы Ян-Майен;X
+JAN_peaceful_unification_desc;Мы решили попросить державу Ян-Майен войти в её состав.;X
+JAP_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Япония;X
+JAP_peaceful_settlement_desc;Мы решили попробовать договориться с державой Япония цивилизованным путём.;X
+JAP_peaceful_unification_title;Просьба о вхождении в состав державы Япония;X
+JAP_peaceful_unification_desc;Мы решили попросить державу Япония войти в её состав.;X
+JAS_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Джайсалмер;X
+JAS_peaceful_settlement_desc;Мы решили попробовать договориться с державой Джайсалмер цивилизованным путём.;X
+JAS_peaceful_unification_title;Просьба о вхождении в состав державы Джайсалмер;X
+JAS_peaceful_unification_desc;Мы решили попросить державу Джайсалмер войти в её состав.;X
+JAV_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ява;X
+JAV_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ява цивилизованным путём.;X
+JAV_peaceful_unification_title;Просьба о вхождении в состав державы Ява;X
+JAV_peaceful_unification_desc;Мы решили попросить державу Ява войти в её состав.;X
+JOD_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Джодхпур;X
+JOD_peaceful_settlement_desc;Мы решили попробовать договориться с державой Джодхпур цивилизованным путём.;X
+JOD_peaceful_unification_title;Просьба о вхождении в состав державы Джодхпур;X
+JOD_peaceful_unification_desc;Мы решили попросить державу Джодхпур войти в её состав.;X
+JOH_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Джохор;X
+JOH_peaceful_settlement_desc;Мы решили попробовать договориться с державой Джохор цивилизованным путём.;X
+JOH_peaceful_unification_title;Просьба о вхождении в состав державы Джохор;X
+JOH_peaceful_unification_desc;Мы решили попросить державу Джохор войти в её состав.;X
+KAL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Калат;X
+KAL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Калат цивилизованным путём.;X
+KAL_peaceful_unification_title;Просьба о вхождении в состав державы Калат;X
+KAL_peaceful_unification_desc;Мы решили попросить державу Калат войти в её состав.;X
+KAS_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Кашмир;X
+KAS_peaceful_settlement_desc;Мы решили попробовать договориться с державой Кашмир цивилизованным путём.;X
+KAS_peaceful_unification_title;Просьба о вхождении в состав державы Кашмир;X
+KAS_peaceful_unification_desc;Мы решили попросить державу Кашмир войти в её состав.;X
+KAZ_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Казахстан;X
+KAZ_peaceful_settlement_desc;Мы решили попробовать договориться с державой Казахстан цивилизованным путём.;X
+KAZ_peaceful_unification_title;Просьба о вхождении в состав державы Казахстан;X
+KAZ_peaceful_unification_desc;Мы решили попросить державу Казахстан войти в её состав.;X
+KHI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Хива;X
+KHI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Хива цивилизованным путём.;X
+KHI_peaceful_unification_title;Просьба о вхождении в состав державы Хива;X
+KHI_peaceful_unification_desc;Мы решили попросить державу Хива войти в её состав.;X
+KMK_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Калмыкия;X
+KMK_peaceful_settlement_desc;Мы решили попробовать договориться с державой Калмыкия цивилизованным путём.;X
+KMK_peaceful_unification_title;Просьба о вхождении в состав державы Калмыкия;X
+KMK_peaceful_unification_desc;Мы решили попросить державу Калмыкия войти в её состав.;X
+KOK_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Коканд;X
+KOK_peaceful_settlement_desc;Мы решили попробовать договориться с державой Коканд цивилизованным путём.;X
+KOK_peaceful_unification_title;Просьба о вхождении в состав державы Коканд;X
+KOK_peaceful_unification_desc;Мы решили попросить державу Коканд войти в её состав.;X
+KOR_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Корея;X
+KOR_peaceful_settlement_desc;Мы решили попробовать договориться с державой Корея цивилизованным путём.;X
+KOR_peaceful_unification_title;Просьба о вхождении в состав державы Корея;X
+KOR_peaceful_unification_desc;Мы решили попросить державу Корея войти в её состав.;X
+KRA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Краков;X
+KRA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Краков цивилизованным путём.;X
+KRA_peaceful_unification_title;Просьба о вхождении в состав державы Краков;X
+KRA_peaceful_unification_desc;Мы решили попросить державу Краков войти в её состав.;X
+KRD_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Курдистан;X
+KRD_peaceful_settlement_desc;Мы решили попробовать договориться с державой Курдистан цивилизованным путём.;X
+KRD_peaceful_unification_title;Просьба о вхождении в состав державы Курдистан;X
+KRD_peaceful_unification_desc;Мы решили попросить державу Курдистан войти в её состав.;X
+KUK_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Австро-Венгрия;X
+KUK_peaceful_settlement_desc;Мы решили попробовать договориться с державой Австро-Венгрия цивилизованным путём.;X
+KUK_peaceful_unification_title;Просьба о вхождении в состав державы Австро-Венгрия;X
+KUK_peaceful_unification_desc;Мы решили попросить державу Австро-Венгрия войти в её состав.;X
+KUT_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Кач;X
+KUT_peaceful_settlement_desc;Мы решили попробовать договориться с державой Кач цивилизованным путём.;X
+KUT_peaceful_unification_title;Просьба о вхождении в состав державы Кач;X
+KUT_peaceful_unification_desc;Мы решили попросить державу Кач войти в её состав.;X
+KYR_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Киргизия;X
+KYR_peaceful_settlement_desc;Мы решили попробовать договориться с державой Киргизия цивилизованным путём.;X
+KYR_peaceful_unification_title;Просьба о вхождении в состав державы Киргизия;X
+KYR_peaceful_unification_desc;Мы решили попросить державу Киргизия войти в её состав.;X
+LAD_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ладакх;X
+LAD_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ладакх цивилизованным путём.;X
+LAD_peaceful_unification_title;Просьба о вхождении в состав державы Ладакх;X
+LAD_peaceful_unification_desc;Мы решили попросить державу Ладакх войти в её состав.;X
+LAF_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Южноамериканский Союз;X
+LAF_peaceful_settlement_desc;Мы решили попробовать договориться с державой Южноамериканский Союз цивилизованным путём.;X
+LAF_peaceful_unification_title;Просьба о вхождении в состав державы Южноамериканский Союз;X
+LAF_peaceful_unification_desc;Мы решили попросить державу Южноамериканский Союз войти в её состав.;X
+LAT_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Латвия;X
+LAT_peaceful_settlement_desc;Мы решили попробовать договориться с державой Латвия цивилизованным путём.;X
+LAT_peaceful_unification_title;Просьба о вхождении в состав державы Латвия;X
+LAT_peaceful_unification_desc;Мы решили попросить державу Латвия войти в её состав.;X
+LIB_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Либерия;X
+LIB_peaceful_settlement_desc;Мы решили попробовать договориться с державой Либерия цивилизованным путём.;X
+LIB_peaceful_unification_title;Просьба о вхождении в состав державы Либерия;X
+LIB_peaceful_unification_desc;Мы решили попросить державу Либерия войти в её состав.;X
+LIP_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Липпе-Детмольд;X
+LIP_peaceful_settlement_desc;Мы решили попробовать договориться с державой Липпе-Детмольд цивилизованным путём.;X
+LIP_peaceful_unification_title;Просьба о вхождении в состав державы Липпе-Детмольд;X
+LIP_peaceful_unification_desc;Мы решили попросить державу Липпе-Детмольд войти в её состав.;X
+LIT_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Литва;X
+LIT_peaceful_settlement_desc;Мы решили попробовать договориться с державой Литва цивилизованным путём.;X
+LIT_peaceful_unification_title;Просьба о вхождении в состав державы Литва;X
+LIT_peaceful_unification_desc;Мы решили попросить державу Литва войти в её состав.;X
+LOM_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ломбардия;X
+LOM_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ломбардия цивилизованным путём.;X
+LOM_peaceful_unification_title;Просьба о вхождении в состав державы Ломбардия;X
+LOM_peaceful_unification_desc;Мы решили попросить державу Ломбардия войти в её состав.;X
+LUA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Луанг-Прабанг;X
+LUA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Луанг-Прабанг цивилизованным путём.;X
+LUA_peaceful_unification_title;Просьба о вхождении в состав державы Луанг-Прабанг;X
+LUA_peaceful_unification_desc;Мы решили попросить державу Луанг-Прабанг войти в её состав.;X
+LUB_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Любек;X
+LUB_peaceful_settlement_desc;Мы решили попробовать договориться с державой Любек цивилизованным путём.;X
+LUB_peaceful_unification_title;Просьба о вхождении в состав державы Любек;X
+LUB_peaceful_unification_desc;Мы решили попросить державу Любек войти в её состав.;X
+LUC_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Лукка;X
+LUC_peaceful_settlement_desc;Мы решили попробовать договориться с державой Лукка цивилизованным путём.;X
+LUC_peaceful_unification_title;Просьба о вхождении в состав державы Лукка;X
+LUC_peaceful_unification_desc;Мы решили попросить державу Лукка войти в её состав.;X
+LUX_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Люксембург;X
+LUX_peaceful_settlement_desc;Мы решили попробовать договориться с державой Люксембург цивилизованным путём.;X
+LUX_peaceful_unification_title;Просьба о вхождении в состав державы Люксембург;X
+LUX_peaceful_unification_desc;Мы решили попросить державу Люксембург войти в её состав.;X
+MAD_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Мадагаскар;X
+MAD_peaceful_settlement_desc;Мы решили попробовать договориться с державой Мадагаскар цивилизованным путём.;X
+MAD_peaceful_unification_title;Просьба о вхождении в состав державы Мадагаскар;X
+MAD_peaceful_unification_desc;Мы решили попросить державу Мадагаскар войти в её состав.;X
+MAK_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Мекран;X
+MAK_peaceful_settlement_desc;Мы решили попробовать договориться с державой Мекран цивилизованным путём.;X
+MAK_peaceful_unification_title;Просьба о вхождении в состав державы Мекран;X
+MAK_peaceful_unification_desc;Мы решили попросить державу Мекран войти в её состав.;X
+MAN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Коммуна Манхеттена;X
+MAN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Коммуна Манхеттена цивилизованным путём.;X
+MAN_peaceful_unification_title;Просьба о вхождении в состав державы Коммуна Манхеттена;X
+MAN_peaceful_unification_desc;Мы решили попросить державу Коммуна Манхеттена войти в её состав.;X
+MCK_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Маньчжурия;X
+MCK_peaceful_settlement_desc;Мы решили попробовать договориться с державой Маньчжурия цивилизованным путём.;X
+MCK_peaceful_unification_title;Просьба о вхождении в состав державы Маньчжурия;X
+MCK_peaceful_unification_desc;Мы решили попросить державу Маньчжурия войти в её состав.;X
+MEC_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Мекленбург;X
+MEC_peaceful_settlement_desc;Мы решили попробовать договориться с державой Мекленбург цивилизованным путём.;X
+MEC_peaceful_unification_title;Просьба о вхождении в состав державы Мекленбург;X
+MEC_peaceful_unification_desc;Мы решили попросить державу Мекленбург войти в её состав.;X
+MEI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Саксен-Майнинген;X
+MEI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Саксен-Майнинген цивилизованным путём.;X
+MEI_peaceful_unification_title;Просьба о вхождении в состав державы Саксен-Майнинген;X
+MEI_peaceful_unification_desc;Мы решили попросить державу Саксен-Майнинген войти в её состав.;X
+MEW_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Мевар;X
+MEW_peaceful_settlement_desc;Мы решили попробовать договориться с державой Мевар цивилизованным путём.;X
+MEW_peaceful_unification_title;Просьба о вхождении в состав державы Мевар;X
+MEW_peaceful_unification_desc;Мы решили попросить державу Мевар войти в её состав.;X
+MEX_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Мексика;X
+MEX_peaceful_settlement_desc;Мы решили попробовать договориться с державой Мексика цивилизованным путём.;X
+MEX_peaceful_unification_title;Просьба о вхождении в состав державы Мексика;X
+MEX_peaceful_unification_desc;Мы решили попросить державу Мексика войти в её состав.;X
+MGL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Монголия;X
+MGL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Монголия цивилизованным путём.;X
+MGL_peaceful_unification_title;Просьба о вхождении в состав державы Монголия;X
+MGL_peaceful_unification_desc;Мы решили попросить державу Монголия войти в её состав.;X
+MLY_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Малайзия;X
+MLY_peaceful_settlement_desc;Мы решили попробовать договориться с державой Малайзия цивилизованным путём.;X
+MLY_peaceful_unification_title;Просьба о вхождении в состав державы Малайзия;X
+MLY_peaceful_unification_desc;Мы решили попросить державу Малайзия войти в её состав.;X
+MOD_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Модена;X
+MOD_peaceful_settlement_desc;Мы решили попробовать договориться с державой Модена цивилизованным путём.;X
+MOD_peaceful_unification_title;Просьба о вхождении в состав державы Модена;X
+MOD_peaceful_unification_desc;Мы решили попросить державу Модена войти в её состав.;X
+MOL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Молдавия;X
+MOL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Молдавия цивилизованным путём.;X
+MOL_peaceful_unification_title;Просьба о вхождении в состав державы Молдавия;X
+MOL_peaceful_unification_desc;Мы решили попросить державу Молдавия войти в её состав.;X
+MON_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Черногория;X
+MON_peaceful_settlement_desc;Мы решили попробовать договориться с державой Черногория цивилизованным путём.;X
+MON_peaceful_unification_title;Просьба о вхождении в состав державы Черногория;X
+MON_peaceful_unification_desc;Мы решили попросить державу Черногория войти в её состав.;X
+MOR_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Марокко;X
+MOR_peaceful_settlement_desc;Мы решили попробовать договориться с державой Марокко цивилизованным путём.;X
+MOR_peaceful_unification_title;Просьба о вхождении в состав державы Марокко;X
+MOR_peaceful_unification_desc;Мы решили попросить державу Марокко войти в её состав.;X
+MTC_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Метисская конфедерация;X
+MTC_peaceful_settlement_desc;Мы решили попробовать договориться с державой Метисская конфедерация цивилизованным путём.;X
+MTC_peaceful_unification_title;Просьба о вхождении в состав державы Метисская конфедерация;X
+MTC_peaceful_unification_desc;Мы решили попросить державу Метисская конфедерация войти в её состав.;X
+MUG_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Могулистан;X
+MUG_peaceful_settlement_desc;Мы решили попробовать договориться с державой Могулистан цивилизованным путём.;X
+MUG_peaceful_unification_title;Просьба о вхождении в состав державы Могулистан;X
+MUG_peaceful_unification_desc;Мы решили попросить державу Могулистан войти в её состав.;X
+MYS_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Майсур;X
+MYS_peaceful_settlement_desc;Мы решили попробовать договориться с державой Майсур цивилизованным путём.;X
+MYS_peaceful_unification_title;Просьба о вхождении в состав державы Майсур;X
+MYS_peaceful_unification_desc;Мы решили попросить державу Майсур войти в её состав.;X
+NAG_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Нагпур;X
+NAG_peaceful_settlement_desc;Мы решили попробовать договориться с державой Нагпур цивилизованным путём.;X
+NAG_peaceful_unification_title;Просьба о вхождении в состав державы Нагпур;X
+NAG_peaceful_unification_desc;Мы решили попросить державу Нагпур войти в её состав.;X
+NAL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Наталь;X
+NAL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Наталь цивилизованным путём.;X
+NAL_peaceful_unification_title;Просьба о вхождении в состав державы Наталь;X
+NAL_peaceful_unification_desc;Мы решили попросить державу Наталь войти в её состав.;X
+NAS_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Нассау;X
+NAS_peaceful_settlement_desc;Мы решили попробовать договориться с державой Нассау цивилизованным путём.;X
+NAS_peaceful_unification_title;Просьба о вхождении в состав державы Нассау;X
+NAS_peaceful_unification_desc;Мы решили попросить державу Нассау войти в её состав.;X
+NEJ_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Неджд;X
+NEJ_peaceful_settlement_desc;Мы решили попробовать договориться с державой Неджд цивилизованным путём.;X
+NEJ_peaceful_unification_title;Просьба о вхождении в состав державы Неджд;X
+NEJ_peaceful_unification_desc;Мы решили попросить державу Неджд войти в её состав.;X
+NEN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Новая Англия;X
+NEN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Новая Англия цивилизованным путём.;X
+NEN_peaceful_unification_title;Просьба о вхождении в состав державы Новая Англия;X
+NEN_peaceful_unification_desc;Мы решили попросить державу Новая Англия войти в её состав.;X
+NEP_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Непал;X
+NEP_peaceful_settlement_desc;Мы решили попробовать договориться с державой Непал цивилизованным путём.;X
+NEP_peaceful_unification_title;Просьба о вхождении в состав державы Непал;X
+NEP_peaceful_unification_desc;Мы решили попросить державу Непал войти в её состав.;X
+NET_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Нидерланды;X
+NET_peaceful_settlement_desc;Мы решили попробовать договориться с державой Нидерланды цивилизованным путём.;X
+NET_peaceful_unification_title;Просьба о вхождении в состав державы Нидерланды;X
+NET_peaceful_unification_desc;Мы решили попросить державу Нидерланды войти в её состав.;X
+NEW_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ньюфаундленд;X
+NEW_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ньюфаундленд цивилизованным путём.;X
+NEW_peaceful_unification_title;Просьба о вхождении в состав державы Ньюфаундленд;X
+NEW_peaceful_unification_desc;Мы решили попросить державу Ньюфаундленд войти в её состав.;X
+NGF_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Северогерманский союз;X
+NGF_peaceful_settlement_desc;Мы решили попробовать договориться с державой Северогерманский союз цивилизованным путём.;X
+NGF_peaceful_unification_title;Просьба о вхождении в состав державы Северогерманский союз;X
+NGF_peaceful_unification_desc;Мы решили попросить державу Северогерманский союз войти в её состав.;X
+NIC_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Никарагуа;X
+NIC_peaceful_settlement_desc;Мы решили попробовать договориться с державой Никарагуа цивилизованным путём.;X
+NIC_peaceful_unification_title;Просьба о вхождении в состав державы Никарагуа;X
+NIC_peaceful_unification_desc;Мы решили попросить державу Никарагуа войти в её состав.;X
+NOR_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Норвегия;X
+NOR_peaceful_settlement_desc;Мы решили попробовать договориться с державой Норвегия цивилизованным путём.;X
+NOR_peaceful_unification_title;Просьба о вхождении в состав державы Норвегия;X
+NOR_peaceful_unification_desc;Мы решили попросить державу Норвегия войти в её состав.;X
+NZL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Новая Зеландия;X
+NZL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Новая Зеландия цивилизованным путём.;X
+NZL_peaceful_unification_title;Просьба о вхождении в состав державы Новая Зеландия;X
+NZL_peaceful_unification_desc;Мы решили попросить державу Новая Зеландия войти в её состав.;X
+OLD_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Ольденбург;X
+OLD_peaceful_settlement_desc;Мы решили попробовать договориться с державой Ольденбург цивилизованным путём.;X
+OLD_peaceful_unification_title;Просьба о вхождении в состав державы Ольденбург;X
+OLD_peaceful_unification_desc;Мы решили попросить державу Ольденбург войти в её состав.;X
+OMA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Оман;X
+OMA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Оман цивилизованным путём.;X
+OMA_peaceful_unification_title;Просьба о вхождении в состав державы Оман;X
+OMA_peaceful_unification_desc;Мы решили попросить державу Оман войти в её состав.;X
+ORA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Оранжевая республика;X
+ORA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Оранжевая республика цивилизованным путём.;X
+ORA_peaceful_unification_title;Просьба о вхождении в состав державы Оранжевая республика;X
+ORA_peaceful_unification_desc;Мы решили попросить державу Оранжевая республика войти в её состав.;X
+ORI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Орисса;X
+ORI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Орисса цивилизованным путём.;X
+ORI_peaceful_unification_title;Просьба о вхождении в состав державы Орисса;X
+ORI_peaceful_unification_desc;Мы решили попросить державу Орисса войти в её состав.;X
+PAN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Пенджаб;X
+PAN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Пенджаб цивилизованным путём.;X
+PAN_peaceful_unification_title;Просьба о вхождении в состав державы Пенджаб;X
+PAN_peaceful_unification_desc;Мы решили попросить державу Пенджаб войти в её состав.;X
+PAP_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Папская область;X
+PAP_peaceful_settlement_desc;Мы решили попробовать договориться с державой Папская область цивилизованным путём.;X
+PAP_peaceful_unification_title;Просьба о вхождении в состав державы Папская область;X
+PAP_peaceful_unification_desc;Мы решили попросить державу Папская область войти в её состав.;X
+PAR_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Парма;X
+PAR_peaceful_settlement_desc;Мы решили попробовать договориться с державой Парма цивилизованным путём.;X
+PAR_peaceful_unification_title;Просьба о вхождении в состав державы Парма;X
+PAR_peaceful_unification_desc;Мы решили попросить державу Парма войти в её состав.;X
+PER_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Персия;X
+PER_peaceful_settlement_desc;Мы решили попробовать договориться с державой Персия цивилизованным путём.;X
+PER_peaceful_unification_title;Просьба о вхождении в состав державы Персия;X
+PER_peaceful_unification_desc;Мы решили попросить державу Персия войти в её состав.;X
+PEU_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Перу;X
+PEU_peaceful_settlement_desc;Мы решили попробовать договориться с державой Перу цивилизованным путём.;X
+PEU_peaceful_unification_title;Просьба о вхождении в состав державы Перу;X
+PEU_peaceful_unification_desc;Мы решили попросить державу Перу войти в её состав.;X
+PHI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Филиппины;X
+PHI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Филиппины цивилизованным путём.;X
+PHI_peaceful_unification_title;Просьба о вхождении в состав державы Филиппины;X
+PHI_peaceful_unification_desc;Мы решили попросить державу Филиппины войти в её состав.;X
+PLC_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Речь Посполитая;X
+PLC_peaceful_settlement_desc;Мы решили попробовать договориться с державой Речь Посполитая цивилизованным путём.;X
+PLC_peaceful_unification_title;Просьба о вхождении в состав державы Речь Посполитая;X
+PLC_peaceful_unification_desc;Мы решили попросить державу Речь Посполитая войти в её состав.;X
+PNM_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Панама;X
+PNM_peaceful_settlement_desc;Мы решили попробовать договориться с державой Панама цивилизованным путём.;X
+PNM_peaceful_unification_title;Просьба о вхождении в состав державы Панама;X
+PNM_peaceful_unification_desc;Мы решили попросить державу Панама войти в её состав.;X
+POL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Польша;X
+POL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Польша цивилизованным путём.;X
+POL_peaceful_unification_title;Просьба о вхождении в состав державы Польша;X
+POL_peaceful_unification_desc;Мы решили попросить державу Польша войти в её состав.;X
+POR_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Португалия;X
+POR_peaceful_settlement_desc;Мы решили попробовать договориться с державой Португалия цивилизованным путём.;X
+POR_peaceful_unification_title;Просьба о вхождении в состав державы Португалия;X
+POR_peaceful_unification_desc;Мы решили попросить державу Португалия войти в её состав.;X
+PRG_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Парагвай;X
+PRG_peaceful_settlement_desc;Мы решили попробовать договориться с державой Парагвай цивилизованным путём.;X
+PRG_peaceful_unification_title;Просьба о вхождении в состав державы Парагвай;X
+PRG_peaceful_unification_desc;Мы решили попросить державу Парагвай войти в её состав.;X
+PRU_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Пруссия;X
+PRU_peaceful_settlement_desc;Мы решили попробовать договориться с державой Пруссия цивилизованным путём.;X
+PRU_peaceful_unification_title;Просьба о вхождении в состав державы Пруссия;X
+PRU_peaceful_unification_desc;Мы решили попросить державу Пруссия войти в её состав.;X
+QUE_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Квебек;X
+QUE_peaceful_settlement_desc;Мы решили попробовать договориться с державой Квебек цивилизованным путём.;X
+QUE_peaceful_unification_title;Просьба о вхождении в состав державы Квебек;X
+QUE_peaceful_unification_desc;Мы решили попросить державу Квебек войти в её состав.;X
+RHO_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Южная Родезия;X
+RHO_peaceful_settlement_desc;Мы решили попробовать договориться с державой Южная Родезия цивилизованным путём.;X
+RHO_peaceful_unification_title;Просьба о вхождении в состав державы Южная Родезия;X
+RHO_peaceful_unification_desc;Мы решили попросить державу Южная Родезия войти в её состав.;X
+ROM_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Румыния;X
+ROM_peaceful_settlement_desc;Мы решили попробовать договориться с державой Румыния цивилизованным путём.;X
+ROM_peaceful_unification_title;Просьба о вхождении в состав державы Румыния;X
+ROM_peaceful_unification_desc;Мы решили попросить державу Румыния войти в её состав.;X
+RUS_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Россия;X
+RUS_peaceful_settlement_desc;Мы решили попробовать договориться с державой Россия цивилизованным путём.;X
+RUS_peaceful_unification_title;Просьба о вхождении в состав державы Россия;X
+RUS_peaceful_unification_desc;Мы решили попросить державу Россия войти в её состав.;X
+RUT_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Рутения;X
+RUT_peaceful_settlement_desc;Мы решили попробовать договориться с державой Рутения цивилизованным путём.;X
+RUT_peaceful_unification_title;Просьба о вхождении в состав державы Рутения;X
+RUT_peaceful_unification_desc;Мы решили попросить державу Рутения войти в её состав.;X
+SAF_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Южная Африка;X
+SAF_peaceful_settlement_desc;Мы решили попробовать договориться с державой Южная Африка цивилизованным путём.;X
+SAF_peaceful_unification_title;Просьба о вхождении в состав державы Южная Африка;X
+SAF_peaceful_unification_desc;Мы решили попросить державу Южная Африка войти в её состав.;X
+SAR_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Сардиния-Пьемонт;X
+SAR_peaceful_settlement_desc;Мы решили попробовать договориться с державой Сардиния-Пьемонт цивилизованным путём.;X
+SAR_peaceful_unification_title;Просьба о вхождении в состав державы Сардиния-Пьемонт;X
+SAR_peaceful_unification_desc;Мы решили попросить державу Сардиния-Пьемонт войти в её состав.;X
+SAX_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Саксония;X
+SAX_peaceful_settlement_desc;Мы решили попробовать договориться с державой Саксония цивилизованным путём.;X
+SAX_peaceful_unification_title;Просьба о вхождении в состав державы Саксония;X
+SAX_peaceful_unification_desc;Мы решили попросить державу Саксония войти в её состав.;X
+SCA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Скандинавия;X
+SCA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Скандинавия цивилизованным путём.;X
+SCA_peaceful_unification_title;Просьба о вхождении в состав державы Скандинавия;X
+SCA_peaceful_unification_desc;Мы решили попросить державу Скандинавия войти в её состав.;X
+SCH_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Шлезвиг;X
+SCH_peaceful_settlement_desc;Мы решили попробовать договориться с державой Шлезвиг цивилизованным путём.;X
+SCH_peaceful_unification_title;Просьба о вхождении в состав державы Шлезвиг;X
+SCH_peaceful_unification_desc;Мы решили попросить державу Шлезвиг войти в её состав.;X
+SCO_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Шотландия;X
+SCO_peaceful_settlement_desc;Мы решили попробовать договориться с державой Шотландия цивилизованным путём.;X
+SCO_peaceful_unification_title;Просьба о вхождении в состав державы Шотландия;X
+SCO_peaceful_unification_desc;Мы решили попросить державу Шотландия войти в её состав.;X
+SER_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Сербия;X
+SER_peaceful_settlement_desc;Мы решили попробовать договориться с державой Сербия цивилизованным путём.;X
+SER_peaceful_unification_title;Просьба о вхождении в состав державы Сербия;X
+SER_peaceful_unification_desc;Мы решили попросить державу Сербия войти в её состав.;X
+SGF_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Южногерманский союз;X
+SGF_peaceful_settlement_desc;Мы решили попробовать договориться с державой Южногерманский союз цивилизованным путём.;X
+SGF_peaceful_unification_title;Просьба о вхождении в состав державы Южногерманский союз;X
+SGF_peaceful_unification_desc;Мы решили попросить державу Южногерманский союз войти в её состав.;X
+SHI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Шимла;X
+SHI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Шимла цивилизованным путём.;X
+SHI_peaceful_unification_title;Просьба о вхождении в состав державы Шимла;X
+SHI_peaceful_unification_desc;Мы решили попросить державу Шимла войти в её состав.;X
+SIA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Сиам;X
+SIA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Сиам цивилизованным путём.;X
+SIA_peaceful_unification_title;Просьба о вхождении в состав державы Сиам;X
+SIA_peaceful_unification_desc;Мы решили попросить державу Сиам войти в её состав.;X
+SIC_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Сицилия;X
+SIC_peaceful_settlement_desc;Мы решили попробовать договориться с державой Сицилия цивилизованным путём.;X
+SIC_peaceful_unification_title;Просьба о вхождении в состав державы Сицилия;X
+SIC_peaceful_unification_desc;Мы решили попросить державу Сицилия войти в её состав.;X
+SIE_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Трансильвания;X
+SIE_peaceful_settlement_desc;Мы решили попробовать договориться с державой Трансильвания цивилизованным путём.;X
+SIE_peaceful_unification_title;Просьба о вхождении в состав державы Трансильвания;X
+SIE_peaceful_unification_desc;Мы решили попросить державу Трансильвания войти в её состав.;X
+SIK_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Сикким;X
+SIK_peaceful_settlement_desc;Мы решили попробовать договориться с державой Сикким цивилизованным путём.;X
+SIK_peaceful_unification_title;Просьба о вхождении в состав державы Сикким;X
+SIK_peaceful_unification_desc;Мы решили попросить державу Сикким войти в её состав.;X
+SIN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Синд;X
+SIN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Синд цивилизованным путём.;X
+SIN_peaceful_unification_title;Просьба о вхождении в состав державы Синд;X
+SIN_peaceful_unification_desc;Мы решили попросить державу Синд войти в её состав.;X
+SLO_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Словения;X
+SLO_peaceful_settlement_desc;Мы решили попробовать договориться с державой Словения цивилизованным путём.;X
+SLO_peaceful_unification_title;Просьба о вхождении в состав державы Словения;X
+SLO_peaceful_unification_desc;Мы решили попросить державу Словения войти в её состав.;X
+SLV_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Словакия;X
+SLV_peaceful_settlement_desc;Мы решили попробовать договориться с державой Словакия цивилизованным путём.;X
+SLV_peaceful_unification_title;Просьба о вхождении в состав державы Словакия;X
+SLV_peaceful_unification_desc;Мы решили попросить державу Словакия войти в её состав.;X
+SOK_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Сокото;X
+SOK_peaceful_settlement_desc;Мы решили попробовать договориться с державой Сокото цивилизованным путём.;X
+SOK_peaceful_unification_title;Просьба о вхождении в состав державы Сокото;X
+SOK_peaceful_unification_desc;Мы решили попросить державу Сокото войти в её состав.;X
+SOV_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой СССР;X
+SOV_peaceful_settlement_desc;Мы решили попробовать договориться с державой СССР цивилизованным путём.;X
+SOV_peaceful_unification_title;Просьба о вхождении в состав державы СССР;X
+SOV_peaceful_unification_desc;Мы решили попросить державу СССР войти в её состав.;X
+SPA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Испания;X
+SPA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Испания цивилизованным путём.;X
+SPA_peaceful_unification_title;Просьба о вхождении в состав державы Испания;X
+SPA_peaceful_unification_desc;Мы решили попросить державу Испания войти в её состав.;X
+SRI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Шри-Ланка;X
+SRI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Шри-Ланка цивилизованным путём.;X
+SRI_peaceful_unification_title;Просьба о вхождении в состав державы Шри-Ланка;X
+SRI_peaceful_unification_desc;Мы решили попросить державу Шри-Ланка войти в её состав.;X
+SWE_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Швеция;X
+SWE_peaceful_settlement_desc;Мы решили попробовать договориться с державой Швеция цивилизованным путём.;X
+SWE_peaceful_unification_title;Просьба о вхождении в состав державы Швеция;X
+SWE_peaceful_unification_desc;Мы решили попросить державу Швеция войти в её состав.;X
+SWI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Швейцария;X
+SWI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Швейцария цивилизованным путём.;X
+SWI_peaceful_unification_title;Просьба о вхождении в состав державы Швейцария;X
+SWI_peaceful_unification_desc;Мы решили попросить державу Швейцария войти в её состав.;X
+SXI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Клика Шаньси;X
+SXI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Клика Шаньси цивилизованным путём.;X
+SXI_peaceful_unification_title;Просьба о вхождении в состав державы Клика Шаньси;X
+SXI_peaceful_unification_desc;Мы решили попросить державу Клика Шаньси войти в её состав.;X
+TAJ_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Таджикистан;X
+TAJ_peaceful_settlement_desc;Мы решили попробовать договориться с державой Таджикистан цивилизованным путём.;X
+TAJ_peaceful_unification_title;Просьба о вхождении в состав державы Таджикистан;X
+TAJ_peaceful_unification_desc;Мы решили попросить державу Таджикистан войти в её состав.;X
+TEX_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Техас;X
+TEX_peaceful_settlement_desc;Мы решили попробовать договориться с державой Техас цивилизованным путём.;X
+TEX_peaceful_unification_title;Просьба о вхождении в состав державы Техас;X
+TEX_peaceful_unification_desc;Мы решили попросить державу Техас войти в её состав.;X
+TIB_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Тибет;X
+TIB_peaceful_settlement_desc;Мы решили попробовать договориться с державой Тибет цивилизованным путём.;X
+TIB_peaceful_unification_title;Просьба о вхождении в состав державы Тибет;X
+TIB_peaceful_unification_desc;Мы решили попросить державу Тибет войти в её состав.;X
+TKM_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Туркмения;X
+TKM_peaceful_settlement_desc;Мы решили попробовать договориться с державой Туркмения цивилизованным путём.;X
+TKM_peaceful_unification_title;Просьба о вхождении в состав державы Туркмения;X
+TKM_peaceful_unification_desc;Мы решили попросить державу Туркмения войти в её состав.;X
+TNT_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Танну-Тува;X
+TNT_peaceful_settlement_desc;Мы решили попробовать договориться с державой Танну-Тува цивилизованным путём.;X
+TNT_peaceful_unification_title;Просьба о вхождении в состав державы Танну-Тува;X
+TNT_peaceful_unification_desc;Мы решили попросить державу Танну-Тува войти в её состав.;X
+TPG_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Небесное Царство;X
+TPG_peaceful_settlement_desc;Мы решили попробовать договориться с державой Небесное Царство цивилизованным путём.;X
+TPG_peaceful_unification_title;Просьба о вхождении в состав державы Небесное Царство;X
+TPG_peaceful_unification_desc;Мы решили попросить державу Небесное Царство войти в её состав.;X
+TRA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Траванкор;X
+TRA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Траванкор цивилизованным путём.;X
+TRA_peaceful_unification_title;Просьба о вхождении в состав державы Траванкор;X
+TRA_peaceful_unification_desc;Мы решили попросить державу Траванкор войти в её состав.;X
+TRE_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Триест;X
+TRE_peaceful_settlement_desc;Мы решили попробовать договориться с державой Триест цивилизованным путём.;X
+TRE_peaceful_unification_title;Просьба о вхождении в состав державы Триест;X
+TRE_peaceful_unification_desc;Мы решили попросить державу Триест войти в её состав.;X
+TRI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Триполи;X
+TRI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Триполи цивилизованным путём.;X
+TRI_peaceful_unification_title;Просьба о вхождении в состав державы Триполи;X
+TRI_peaceful_unification_desc;Мы решили попросить державу Триполи войти в её состав.;X
+TRN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Трансвааль;X
+TRN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Трансвааль цивилизованным путём.;X
+TRN_peaceful_unification_title;Просьба о вхождении в состав державы Трансвааль;X
+TRN_peaceful_unification_desc;Мы решили попросить державу Трансвааль войти в её состав.;X
+TTT_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Татарстан;X
+TTT_peaceful_settlement_desc;Мы решили попробовать договориться с державой Татарстан цивилизованным путём.;X
+TTT_peaceful_unification_title;Просьба о вхождении в состав державы Татарстан;X
+TTT_peaceful_unification_desc;Мы решили попросить державу Татарстан войти в её состав.;X
+TUN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Тунис;X
+TUN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Тунис цивилизованным путём.;X
+TUN_peaceful_unification_title;Просьба о вхождении в состав державы Тунис;X
+TUN_peaceful_unification_desc;Мы решили попросить державу Тунис войти в её состав.;X
+TUR_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Османская Империя;X
+TUR_peaceful_settlement_desc;Мы решили попробовать договориться с державой Османская Империя цивилизованным путём.;X
+TUR_peaceful_unification_title;Просьба о вхождении в состав державы Османская Империя;X
+TUR_peaceful_unification_desc;Мы решили попросить державу Османская Империя войти в её состав.;X
+TUS_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Тоскана;X
+TUS_peaceful_settlement_desc;Мы решили попробовать договориться с державой Тоскана цивилизованным путём.;X
+TUS_peaceful_unification_title;Просьба о вхождении в состав державы Тоскана;X
+TUS_peaceful_unification_desc;Мы решили попросить державу Тоскана войти в её состав.;X
+UBD_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Объединённая Балтия;X
+UBD_peaceful_settlement_desc;Мы решили попробовать договориться с державой Объединённая Балтия цивилизованным путём.;X
+UBD_peaceful_unification_title;Просьба о вхождении в состав державы Объединённая Балтия;X
+UBD_peaceful_unification_desc;Мы решили попросить державу Объединённая Балтия войти в её состав.;X
+UCA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой СПЦА;X
+UCA_peaceful_settlement_desc;Мы решили попробовать договориться с державой СПЦА цивилизованным путём.;X
+UCA_peaceful_unification_title;Просьба о вхождении в состав державы СПЦА;X
+UCA_peaceful_unification_desc;Мы решили попросить державу СПЦА войти в её состав.;X
+UKR_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Украина;X
+UKR_peaceful_settlement_desc;Мы решили попробовать договориться с державой Украина цивилизованным путём.;X
+UKR_peaceful_unification_title;Просьба о вхождении в состав державы Украина;X
+UKR_peaceful_unification_desc;Мы решили попросить державу Украина войти в её состав.;X
+URU_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Уругвай;X
+URU_peaceful_settlement_desc;Мы решили попробовать договориться с державой Уругвай цивилизованным путём.;X
+URU_peaceful_unification_title;Просьба о вхождении в состав державы Уругвай;X
+URU_peaceful_unification_desc;Мы решили попросить державу Уругвай войти в её состав.;X
+USA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой США;X
+USA_peaceful_settlement_desc;Мы решили попробовать договориться с державой США цивилизованным путём.;X
+USA_peaceful_unification_title;Просьба о вхождении в состав державы США;X
+USA_peaceful_unification_desc;Мы решили попросить державу США войти в её состав.;X
+UZB_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Узбекистан;X
+UZB_peaceful_settlement_desc;Мы решили попробовать договориться с державой Узбекистан цивилизованным путём.;X
+UZB_peaceful_unification_title;Просьба о вхождении в состав державы Узбекистан;X
+UZB_peaceful_unification_desc;Мы решили попросить державу Узбекистан войти в её состав.;X
+VEN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Венеция;X
+VEN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Венеция цивилизованным путём.;X
+VEN_peaceful_unification_title;Просьба о вхождении в состав державы Венеция;X
+VEN_peaceful_unification_desc;Мы решили попросить державу Венеция войти в её состав.;X
+VNZ_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Венесуэла;X
+VNZ_peaceful_settlement_desc;Мы решили попробовать договориться с державой Венесуэла цивилизованным путём.;X
+VNZ_peaceful_unification_title;Просьба о вхождении в состав державы Венесуэла;X
+VNZ_peaceful_unification_desc;Мы решили попросить державу Венесуэла войти в её состав.;X
+WAL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Валахия;X
+WAL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Валахия цивилизованным путём.;X
+WAL_peaceful_unification_title;Просьба о вхождении в состав державы Валахия;X
+WAL_peaceful_unification_desc;Мы решили попросить державу Валахия войти в её состав.;X
+WEI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Саксен-Веймар;X
+WEI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Саксен-Веймар цивилизованным путём.;X
+WEI_peaceful_unification_title;Просьба о вхождении в состав державы Саксен-Веймар;X
+WEI_peaceful_unification_desc;Мы решили попросить державу Саксен-Веймар войти в её состав.;X
+WIA_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Вьентьян;X
+WIA_peaceful_settlement_desc;Мы решили попробовать договориться с державой Вьентьян цивилизованным путём.;X
+WIA_peaceful_unification_title;Просьба о вхождении в состав державы Вьентьян;X
+WIA_peaceful_unification_desc;Мы решили попросить державу Вьентьян войти в её состав.;X
+WLL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Валлония;X
+WLL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Валлония цивилизованным путём.;X
+WLL_peaceful_unification_title;Просьба о вхождении в состав державы Валлония;X
+WLL_peaceful_unification_desc;Мы решили попросить державу Валлония войти в её состав.;X
+WUR_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Вюртемберг;X
+WUR_peaceful_settlement_desc;Мы решили попробовать договориться с державой Вюртемберг цивилизованным путём.;X
+WUR_peaceful_unification_title;Просьба о вхождении в состав державы Вюртемберг;X
+WUR_peaceful_unification_desc;Мы решили попросить державу Вюртемберг войти в её состав.;X
+XBI_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Цинхай;X
+XBI_peaceful_settlement_desc;Мы решили попробовать договориться с державой Цинхай цивилизованным путём.;X
+XBI_peaceful_unification_title;Просьба о вхождении в состав державы Цинхай;X
+XBI_peaceful_unification_desc;Мы решили попросить державу Цинхай войти в её состав.;X
+XIN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Синьцзян;X
+XIN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Синьцзян цивилизованным путём.;X
+XIN_peaceful_unification_title;Просьба о вхождении в состав державы Синьцзян;X
+XIN_peaceful_unification_desc;Мы решили попросить державу Синьцзян войти в её состав.;X
+YAK_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Якутия;X
+YAK_peaceful_settlement_desc;Мы решили попробовать договориться с державой Якутия цивилизованным путём.;X
+YAK_peaceful_unification_title;Просьба о вхождении в состав державы Якутия;X
+YAK_peaceful_unification_desc;Мы решили попросить державу Якутия войти в её состав.;X
+YEM_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Йемен;X
+YEM_peaceful_settlement_desc;Мы решили попробовать договориться с державой Йемен цивилизованным путём.;X
+YEM_peaceful_unification_title;Просьба о вхождении в состав державы Йемен;X
+YEM_peaceful_unification_desc;Мы решили попросить державу Йемен войти в её состав.;X
+YNN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Юннань;X
+YNN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Юннань цивилизованным путём.;X
+YNN_peaceful_unification_title;Просьба о вхождении в состав державы Юннань;X
+YNN_peaceful_unification_desc;Мы решили попросить державу Юннань войти в её состав.;X
+YUG_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Югославия;X
+YUG_peaceful_settlement_desc;Мы решили попробовать договориться с державой Югославия цивилизованным путём.;X
+YUG_peaceful_unification_title;Просьба о вхождении в состав державы Югославия;X
+YUG_peaceful_unification_desc;Мы решили попросить державу Югославия войти в её состав.;X
+ZAN_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Занзибар;X
+ZAN_peaceful_settlement_desc;Мы решили попробовать договориться с державой Занзибар цивилизованным путём.;X
+ZAN_peaceful_unification_title;Просьба о вхождении в состав державы Занзибар;X
+ZAN_peaceful_unification_desc;Мы решили попросить державу Занзибар войти в её состав.;X
+ZUL_peaceful_settlement_title;Мирное урегулирование территориальных споров с державой Зулу;X
+ZUL_peaceful_settlement_desc;Мы решили попробовать договориться с державой Зулу цивилизованным путём.;X
+ZUL_peaceful_unification_title;Просьба о вхождении в состав державы Зулу;X
+ZUL_peaceful_unification_desc;Мы решили попросить державу Зулу войти в её состав.;X
 EVTNAME76000;Предложение державы $FROMCOUNTRY$;X
 EVTDESC76000;Послы державы $FROMCOUNTRY$ сегодня обратились к Вам с предложением передать нашей державе все национальные для нас провинции, которыми владеет держава $FROMCOUNTRY$.;X
 EVTOPTA76000;Да будет так!;X

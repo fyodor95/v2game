@@ -4,7 +4,7 @@ country_event = {
 	desc = "EVTDESC1472073"
 	picture = "greatpowers"
 	trigger = {
-		tag = SOV
+		tag = ABU
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -98,7 +98,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = SOV
+		tag = ABU
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -127,7 +127,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472075"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = SOV
+		change_tag_no_core_switch = ABU
 	}
 }
 country_event = {
@@ -136,7 +136,7 @@ country_event = {
 	desc = "EVTDESC1472076"
 	picture = "greatpowers"
 	trigger = {
-		tag = LAF
+		tag = AFG
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -230,7 +230,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = LAF
+		tag = AFG
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -259,7 +259,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472078"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = LAF
+		change_tag_no_core_switch = AFG
 	}
 }
 country_event = {
@@ -268,7 +268,7 @@ country_event = {
 	desc = "EVTDESC1472079"
 	picture = "greatpowers"
 	trigger = {
-		tag = KAZ
+		tag = ALB
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -362,7 +362,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = KAZ
+		tag = ALB
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -391,7 +391,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472081"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = KAZ
+		change_tag_no_core_switch = ALB
 	}
 }
 country_event = {
@@ -400,7 +400,7 @@ country_event = {
 	desc = "EVTDESC1472082"
 	picture = "greatpowers"
 	trigger = {
-		tag = KYR
+		tag = ALD
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -494,7 +494,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = KYR
+		tag = ALD
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -523,7 +523,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472084"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = KYR
+		change_tag_no_core_switch = ALD
 	}
 }
 country_event = {
@@ -532,7 +532,7 @@ country_event = {
 	desc = "EVTDESC1472085"
 	picture = "greatpowers"
 	trigger = {
-		tag = TAJ
+		tag = ANH
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -626,7 +626,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = TAJ
+		tag = ANH
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -655,7 +655,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472087"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = TAJ
+		change_tag_no_core_switch = ANH
 	}
 }
 country_event = {
@@ -664,7 +664,7 @@ country_event = {
 	desc = "EVTDESC1472088"
 	picture = "greatpowers"
 	trigger = {
-		tag = TKM
+		tag = ARA
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -758,7 +758,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = TKM
+		tag = ARA
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -787,7 +787,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472090"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = TKM
+		change_tag_no_core_switch = ARA
 	}
 }
 country_event = {
@@ -796,7 +796,7 @@ country_event = {
 	desc = "EVTDESC1472091"
 	picture = "greatpowers"
 	trigger = {
-		tag = UZB
+		tag = ARG
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -890,7 +890,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = UZB
+		tag = ARG
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -919,7 +919,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472093"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = UZB
+		change_tag_no_core_switch = ARG
 	}
 }
 country_event = {
@@ -928,7 +928,7 @@ country_event = {
 	desc = "EVTDESC1472094"
 	picture = "greatpowers"
 	trigger = {
-		tag = KMK
+		tag = ARM
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -1022,7 +1022,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = KMK
+		tag = ARM
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -1051,7 +1051,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472096"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = KMK
+		change_tag_no_core_switch = ARM
 	}
 }
 country_event = {
@@ -1060,7 +1060,7 @@ country_event = {
 	desc = "EVTDESC1472097"
 	picture = "greatpowers"
 	trigger = {
-		tag = BMG
+		tag = ASM
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -1154,7 +1154,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BMG
+		tag = ASM
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -1183,7 +1183,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472099"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BMG
+		change_tag_no_core_switch = ASM
 	}
 }
 country_event = {
@@ -1192,7 +1192,7 @@ country_event = {
 	desc = "EVTDESC1472100"
 	picture = "greatpowers"
 	trigger = {
-		tag = TNT
+		tag = AST
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -1286,7 +1286,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = TNT
+		tag = AST
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -1315,7 +1315,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472102"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = TNT
+		change_tag_no_core_switch = AST
 	}
 }
 country_event = {
@@ -1324,7 +1324,7 @@ country_event = {
 	desc = "EVTDESC1472103"
 	picture = "greatpowers"
 	trigger = {
-		tag = YAK
+		tag = ATJ
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -1418,7 +1418,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = YAK
+		tag = ATJ
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -1447,7 +1447,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472105"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = YAK
+		change_tag_no_core_switch = ATJ
 	}
 }
 country_event = {
@@ -1456,7 +1456,7 @@ country_event = {
 	desc = "EVTDESC1472106"
 	picture = "greatpowers"
 	trigger = {
-		tag = MLY
+		tag = AUS
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -1550,7 +1550,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = MLY
+		tag = AUS
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -1579,7 +1579,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472108"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = MLY
+		change_tag_no_core_switch = AUS
 	}
 }
 country_event = {
@@ -1588,7 +1588,7 @@ country_event = {
 	desc = "EVTDESC1472109"
 	picture = "greatpowers"
 	trigger = {
-		tag = TTT
+		tag = AWA
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -1682,7 +1682,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = TTT
+		tag = AWA
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -1711,7 +1711,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472111"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = TTT
+		change_tag_no_core_switch = AWA
 	}
 }
 country_event = {
@@ -1720,7 +1720,7 @@ country_event = {
 	desc = "EVTDESC1472112"
 	picture = "greatpowers"
 	trigger = {
-		tag = KRD
+		tag = AZB
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -1814,7 +1814,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = KRD
+		tag = AZB
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -1843,7 +1843,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472114"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = KRD
+		change_tag_no_core_switch = AZB
 	}
 }
 country_event = {
@@ -1852,7 +1852,7 @@ country_event = {
 	desc = "EVTDESC1472115"
 	picture = "greatpowers"
 	trigger = {
-		tag = ASM
+		tag = BAB
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -1946,7 +1946,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = ASM
+		tag = BAB
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -1975,7 +1975,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472117"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = ASM
+		change_tag_no_core_switch = BAB
 	}
 }
 country_event = {
@@ -1984,7 +1984,7 @@ country_event = {
 	desc = "EVTDESC1472118"
 	picture = "greatpowers"
 	trigger = {
-		tag = BIH
+		tag = BAD
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -2078,7 +2078,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BIH
+		tag = BAD
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -2107,7 +2107,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472120"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BIH
+		change_tag_no_core_switch = BAD
 	}
 }
 country_event = {
@@ -2116,7 +2116,7 @@ country_event = {
 	desc = "EVTDESC1472121"
 	picture = "greatpowers"
 	trigger = {
-		tag = BNG
+		tag = BAL
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -2210,7 +2210,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BNG
+		tag = BAL
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -2239,7 +2239,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472123"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BNG
+		change_tag_no_core_switch = BAL
 	}
 }
 country_event = {
@@ -2248,7 +2248,7 @@ country_event = {
 	desc = "EVTDESC1472124"
 	picture = "greatpowers"
 	trigger = {
-		tag = SRI
+		tag = BAS
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -2342,7 +2342,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = SRI
+		tag = BAS
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -2371,7 +2371,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472126"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = SRI
+		change_tag_no_core_switch = BAS
 	}
 }
 country_event = {
@@ -2380,7 +2380,7 @@ country_event = {
 	desc = "EVTDESC1472127"
 	picture = "greatpowers"
 	trigger = {
-		tag = ENG
+		tag = BAV
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -2474,7 +2474,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = ENG
+		tag = BAV
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -2503,7 +2503,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472129"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = ENG
+		change_tag_no_core_switch = BAV
 	}
 }
 country_event = {
@@ -2512,7 +2512,7 @@ country_event = {
 	desc = "EVTDESC1472130"
 	picture = "greatpowers"
 	trigger = {
-		tag = RUS
+		tag = BEL
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -2606,7 +2606,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = RUS
+		tag = BEL
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -2635,7 +2635,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472132"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = RUS
+		change_tag_no_core_switch = BEL
 	}
 }
 country_event = {
@@ -2644,7 +2644,7 @@ country_event = {
 	desc = "EVTDESC1472133"
 	picture = "greatpowers"
 	trigger = {
-		tag = FRA
+		tag = BER
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -2738,7 +2738,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = FRA
+		tag = BER
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -2767,7 +2767,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472135"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = FRA
+		change_tag_no_core_switch = BER
 	}
 }
 country_event = {
@@ -2776,7 +2776,7 @@ country_event = {
 	desc = "EVTDESC1472136"
 	picture = "greatpowers"
 	trigger = {
-		tag = PRU
+		tag = BHO
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -2870,7 +2870,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = PRU
+		tag = BHO
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -2899,7 +2899,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472138"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = PRU
+		change_tag_no_core_switch = BHO
 	}
 }
 country_event = {
@@ -2908,7 +2908,7 @@ country_event = {
 	desc = "EVTDESC1472139"
 	picture = "greatpowers"
 	trigger = {
-		tag = GER
+		tag = BHU
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -3002,7 +3002,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = GER
+		tag = BHU
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -3031,7 +3031,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472141"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = GER
+		change_tag_no_core_switch = BHU
 	}
 }
 country_event = {
@@ -3040,7 +3040,7 @@ country_event = {
 	desc = "EVTDESC1472142"
 	picture = "greatpowers"
 	trigger = {
-		tag = AUS
+		tag = BIH
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -3134,7 +3134,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = AUS
+		tag = BIH
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -3163,7 +3163,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472144"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = AUS
+		change_tag_no_core_switch = BIH
 	}
 }
 country_event = {
@@ -3172,7 +3172,7 @@ country_event = {
 	desc = "EVTDESC1472145"
 	picture = "greatpowers"
 	trigger = {
-		tag = USA
+		tag = BIK
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -3266,7 +3266,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = USA
+		tag = BIK
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -3295,7 +3295,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472147"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = USA
+		change_tag_no_core_switch = BIK
 	}
 }
 country_event = {
@@ -3304,7 +3304,7 @@ country_event = {
 	desc = "EVTDESC1472148"
 	picture = "greatpowers"
 	trigger = {
-		tag = JAP
+		tag = BMG
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -3398,7 +3398,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = JAP
+		tag = BMG
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -3427,7 +3427,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472150"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = JAP
+		change_tag_no_core_switch = BMG
 	}
 }
 country_event = {
@@ -3436,7 +3436,7 @@ country_event = {
 	desc = "EVTDESC1472151"
 	picture = "greatpowers"
 	trigger = {
-		tag = ITA
+		tag = BNG
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -3530,7 +3530,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = ITA
+		tag = BNG
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -3559,7 +3559,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472153"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = ITA
+		change_tag_no_core_switch = BNG
 	}
 }
 country_event = {
@@ -3568,7 +3568,7 @@ country_event = {
 	desc = "EVTDESC1472154"
 	picture = "greatpowers"
 	trigger = {
-		tag = KUK
+		tag = BOH
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -3662,7 +3662,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = KUK
+		tag = BOH
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -3691,7 +3691,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472156"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = KUK
+		change_tag_no_core_switch = BOH
 	}
 }
 country_event = {
@@ -3700,7 +3700,7 @@ country_event = {
 	desc = "EVTDESC1472157"
 	picture = "greatpowers"
 	trigger = {
-		tag = DEN
+		tag = BOL
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -3794,7 +3794,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = DEN
+		tag = BOL
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -3823,7 +3823,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472159"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = DEN
+		change_tag_no_core_switch = BOL
 	}
 }
 country_event = {
@@ -3832,7 +3832,7 @@ country_event = {
 	desc = "EVTDESC1472160"
 	picture = "greatpowers"
 	trigger = {
-		tag = FIN
+		tag = BOS
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -3926,7 +3926,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = FIN
+		tag = BOS
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -3955,7 +3955,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472162"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = FIN
+		change_tag_no_core_switch = BOS
 	}
 }
 country_event = {
@@ -3964,7 +3964,7 @@ country_event = {
 	desc = "EVTDESC1472163"
 	picture = "greatpowers"
 	trigger = {
-		tag = NOR
+		tag = BRA
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -4058,7 +4058,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = NOR
+		tag = BRA
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -4087,7 +4087,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472165"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = NOR
+		change_tag_no_core_switch = BRA
 	}
 }
 country_event = {
@@ -4096,7 +4096,7 @@ country_event = {
 	desc = "EVTDESC1472166"
 	picture = "greatpowers"
 	trigger = {
-		tag = SCA
+		tag = BRE
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -4190,7 +4190,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = SCA
+		tag = BRE
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -4219,7 +4219,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472168"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = SCA
+		change_tag_no_core_switch = BRE
 	}
 }
 country_event = {
@@ -4228,7 +4228,7 @@ country_event = {
 	desc = "EVTDESC1472169"
 	picture = "greatpowers"
 	trigger = {
-		tag = SWE
+		tag = BRU
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -4322,7 +4322,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = SWE
+		tag = BRU
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -4351,7 +4351,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472171"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = SWE
+		change_tag_no_core_switch = BRU
 	}
 }
 country_event = {
@@ -4360,7 +4360,7 @@ country_event = {
 	desc = "EVTDESC1472172"
 	picture = "greatpowers"
 	trigger = {
-		tag = BEL
+		tag = BRZ
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -4454,7 +4454,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BEL
+		tag = BRZ
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -4483,7 +4483,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472174"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BEL
+		change_tag_no_core_switch = BRZ
 	}
 }
 country_event = {
@@ -4492,7 +4492,7 @@ country_event = {
 	desc = "EVTDESC1472175"
 	picture = "greatpowers"
 	trigger = {
-		tag = CAT
+		tag = BUK
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -4586,7 +4586,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = CAT
+		tag = BUK
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -4615,7 +4615,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472177"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = CAT
+		change_tag_no_core_switch = BUK
 	}
 }
 country_event = {
@@ -4624,7 +4624,7 @@ country_event = {
 	desc = "EVTDESC1472178"
 	picture = "greatpowers"
 	trigger = {
-		tag = FLA
+		tag = BUL
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -4718,7 +4718,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = FLA
+		tag = BUL
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -4747,7 +4747,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472180"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = FLA
+		change_tag_no_core_switch = BUL
 	}
 }
 country_event = {
@@ -4756,7 +4756,7 @@ country_event = {
 	desc = "EVTDESC1472181"
 	picture = "greatpowers"
 	trigger = {
-		tag = IRE
+		tag = BUN
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -4850,7 +4850,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = IRE
+		tag = BUN
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -4879,7 +4879,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472183"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = IRE
+		change_tag_no_core_switch = BUN
 	}
 }
 country_event = {
@@ -4888,7 +4888,7 @@ country_event = {
 	desc = "EVTDESC1472184"
 	picture = "greatpowers"
 	trigger = {
-		tag = NET
+		tag = BUR
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -4982,7 +4982,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = NET
+		tag = BUR
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -5011,7 +5011,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472186"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = NET
+		change_tag_no_core_switch = BUR
 	}
 }
 country_event = {
@@ -5020,7 +5020,7 @@ country_event = {
 	desc = "EVTDESC1472187"
 	picture = "greatpowers"
 	trigger = {
-		tag = POR
+		tag = BYE
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -5114,7 +5114,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = POR
+		tag = BYE
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -5143,7 +5143,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472189"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = POR
+		change_tag_no_core_switch = BYE
 	}
 }
 country_event = {
@@ -5152,7 +5152,7 @@ country_event = {
 	desc = "EVTDESC1472190"
 	picture = "greatpowers"
 	trigger = {
-		tag = SCO
+		tag = BYZ
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -5246,7 +5246,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = SCO
+		tag = BYZ
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -5275,7 +5275,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472192"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = SCO
+		change_tag_no_core_switch = BYZ
 	}
 }
 country_event = {
@@ -5284,7 +5284,7 @@ country_event = {
 	desc = "EVTDESC1472193"
 	picture = "greatpowers"
 	trigger = {
-		tag = SPA
+		tag = CAL
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -5378,7 +5378,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = SPA
+		tag = CAL
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -5407,7 +5407,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472195"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = SPA
+		change_tag_no_core_switch = CAL
 	}
 }
 country_event = {
@@ -5416,7 +5416,7 @@ country_event = {
 	desc = "EVTDESC1472196"
 	picture = "greatpowers"
 	trigger = {
-		tag = WLL
+		tag = CAM
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -5510,7 +5510,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = WLL
+		tag = CAM
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -5539,7 +5539,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472198"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = WLL
+		change_tag_no_core_switch = CAM
 	}
 }
 country_event = {
@@ -5548,7 +5548,7 @@ country_event = {
 	desc = "EVTDESC1472199"
 	picture = "greatpowers"
 	trigger = {
-		tag = ANH
+		tag = CAN
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -5642,7 +5642,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = ANH
+		tag = CAN
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -5671,7 +5671,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472201"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = ANH
+		change_tag_no_core_switch = CAN
 	}
 }
 country_event = {
@@ -5680,7 +5680,7 @@ country_event = {
 	desc = "EVTDESC1472202"
 	picture = "greatpowers"
 	trigger = {
-		tag = BAD
+		tag = CAT
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -5774,7 +5774,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BAD
+		tag = CAT
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -5803,7 +5803,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472204"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BAD
+		change_tag_no_core_switch = CAT
 	}
 }
 country_event = {
@@ -5812,7 +5812,7 @@ country_event = {
 	desc = "EVTDESC1472205"
 	picture = "greatpowers"
 	trigger = {
-		tag = BAV
+		tag = CHE
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -5906,7 +5906,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BAV
+		tag = CHE
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -5935,7 +5935,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472207"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BAV
+		change_tag_no_core_switch = CHE
 	}
 }
 country_event = {
@@ -5944,7 +5944,7 @@ country_event = {
 	desc = "EVTDESC1472208"
 	picture = "greatpowers"
 	trigger = {
-		tag = BRA
+		tag = CHI
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -6038,7 +6038,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BRA
+		tag = CHI
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -6067,7 +6067,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472210"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BRA
+		change_tag_no_core_switch = CHI
 	}
 }
 country_event = {
@@ -6076,7 +6076,7 @@ country_event = {
 	desc = "EVTDESC1472211"
 	picture = "greatpowers"
 	trigger = {
-		tag = BRE
+		tag = CHL
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -6170,7 +6170,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BRE
+		tag = CHL
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -6199,7 +6199,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472213"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BRE
+		change_tag_no_core_switch = CHL
 	}
 }
 country_event = {
@@ -6208,7 +6208,7 @@ country_event = {
 	desc = "EVTDESC1472214"
 	picture = "greatpowers"
 	trigger = {
-		tag = COB
+		tag = CLM
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -6302,7 +6302,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = COB
+		tag = CLM
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -6331,7 +6331,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472216"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = COB
+		change_tag_no_core_switch = CLM
 	}
 }
 country_event = {
@@ -6340,7 +6340,7 @@ country_event = {
 	desc = "EVTDESC1472217"
 	picture = "greatpowers"
 	trigger = {
-		tag = DZG
+		tag = CNG
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -6434,7 +6434,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = DZG
+		tag = CNG
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -6463,7 +6463,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472219"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = DZG
+		change_tag_no_core_switch = CNG
 	}
 }
 country_event = {
@@ -6472,7 +6472,7 @@ country_event = {
 	desc = "EVTDESC1472220"
 	picture = "greatpowers"
 	trigger = {
-		tag = FRM
+		tag = COB
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -6566,7 +6566,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = FRM
+		tag = COB
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -6595,7 +6595,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472222"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = FRM
+		change_tag_no_core_switch = COB
 	}
 }
 country_event = {
@@ -6604,7 +6604,7 @@ country_event = {
 	desc = "EVTDESC1472223"
 	picture = "greatpowers"
 	trigger = {
-		tag = HAM
+		tag = COL
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -6698,7 +6698,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = HAM
+		tag = COL
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -6727,7 +6727,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472225"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = HAM
+		change_tag_no_core_switch = COL
 	}
 }
 country_event = {
@@ -6736,7 +6736,7 @@ country_event = {
 	desc = "EVTDESC1472226"
 	picture = "greatpowers"
 	trigger = {
-		tag = HAN
+		tag = COS
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -6830,7 +6830,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = HAN
+		tag = COS
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -6859,7 +6859,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472228"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = HAN
+		change_tag_no_core_switch = COS
 	}
 }
 country_event = {
@@ -6868,7 +6868,7 @@ country_event = {
 	desc = "EVTDESC1472229"
 	picture = "greatpowers"
 	trigger = {
-		tag = HES
+		tag = CRE
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -6962,7 +6962,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = HES
+		tag = CRE
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -6991,7 +6991,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472231"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = HES
+		change_tag_no_core_switch = CRE
 	}
 }
 country_event = {
@@ -7000,7 +7000,7 @@ country_event = {
 	desc = "EVTDESC1472232"
 	picture = "greatpowers"
 	trigger = {
-		tag = HEK
+		tag = CRI
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -7094,7 +7094,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = HEK
+		tag = CRI
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -7123,7 +7123,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472234"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = HEK
+		change_tag_no_core_switch = CRI
 	}
 }
 country_event = {
@@ -7132,7 +7132,7 @@ country_event = {
 	desc = "EVTDESC1472235"
 	picture = "greatpowers"
 	trigger = {
-		tag = HOL
+		tag = CRO
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -7226,7 +7226,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = HOL
+		tag = CRO
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -7255,7 +7255,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472237"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = HOL
+		change_tag_no_core_switch = CRO
 	}
 }
 country_event = {
@@ -7264,7 +7264,7 @@ country_event = {
 	desc = "EVTDESC1472238"
 	picture = "greatpowers"
 	trigger = {
-		tag = LIP
+		tag = CSA
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -7358,7 +7358,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = LIP
+		tag = CSA
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -7387,7 +7387,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472240"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = LIP
+		change_tag_no_core_switch = CSA
 	}
 }
 country_event = {
@@ -7396,7 +7396,7 @@ country_event = {
 	desc = "EVTDESC1472241"
 	picture = "greatpowers"
 	trigger = {
-		tag = LUB
+		tag = CUB
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -7490,7 +7490,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = LUB
+		tag = CUB
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -7519,7 +7519,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472243"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = LUB
+		change_tag_no_core_switch = CUB
 	}
 }
 country_event = {
@@ -7528,7 +7528,7 @@ country_event = {
 	desc = "EVTDESC1472244"
 	picture = "greatpowers"
 	trigger = {
-		tag = LUX
+		tag = CYP
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -7622,7 +7622,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = LUX
+		tag = CYP
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -7651,7 +7651,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472246"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = LUX
+		change_tag_no_core_switch = CYP
 	}
 }
 country_event = {
@@ -7660,7 +7660,7 @@ country_event = {
 	desc = "EVTDESC1472247"
 	picture = "greatpowers"
 	trigger = {
-		tag = MEC
+		tag = CZH
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -7754,7 +7754,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = MEC
+		tag = CZH
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -7783,7 +7783,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472249"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = MEC
+		change_tag_no_core_switch = CZH
 	}
 }
 country_event = {
@@ -7792,7 +7792,7 @@ country_event = {
 	desc = "EVTDESC1472250"
 	picture = "greatpowers"
 	trigger = {
-		tag = MEI
+		tag = D01
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -7886,7 +7886,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = MEI
+		tag = D01
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -7915,7 +7915,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472252"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = MEI
+		change_tag_no_core_switch = D01
 	}
 }
 country_event = {
@@ -7924,7 +7924,7 @@ country_event = {
 	desc = "EVTDESC1472253"
 	picture = "greatpowers"
 	trigger = {
-		tag = NAS
+		tag = D02
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -8018,7 +8018,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = NAS
+		tag = D02
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -8047,7 +8047,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472255"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = NAS
+		change_tag_no_core_switch = D02
 	}
 }
 country_event = {
@@ -8056,7 +8056,7 @@ country_event = {
 	desc = "EVTDESC1472256"
 	picture = "greatpowers"
 	trigger = {
-		tag = NGF
+		tag = D03
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -8150,7 +8150,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = NGF
+		tag = D03
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -8179,7 +8179,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472258"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = NGF
+		change_tag_no_core_switch = D03
 	}
 }
 country_event = {
@@ -8188,7 +8188,7 @@ country_event = {
 	desc = "EVTDESC1472259"
 	picture = "greatpowers"
 	trigger = {
-		tag = OLD
+		tag = D04
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -8282,7 +8282,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = OLD
+		tag = D04
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -8311,7 +8311,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472261"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = OLD
+		change_tag_no_core_switch = D04
 	}
 }
 country_event = {
@@ -8320,7 +8320,7 @@ country_event = {
 	desc = "EVTDESC1472262"
 	picture = "greatpowers"
 	trigger = {
-		tag = SAX
+		tag = D05
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -8414,7 +8414,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = SAX
+		tag = D05
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -8443,7 +8443,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472264"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = SAX
+		change_tag_no_core_switch = D05
 	}
 }
 country_event = {
@@ -8452,7 +8452,7 @@ country_event = {
 	desc = "EVTDESC1472265"
 	picture = "greatpowers"
 	trigger = {
-		tag = SCH
+		tag = D06
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -8546,7 +8546,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = SCH
+		tag = D06
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -8575,7 +8575,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472267"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = SCH
+		change_tag_no_core_switch = D06
 	}
 }
 country_event = {
@@ -8584,7 +8584,7 @@ country_event = {
 	desc = "EVTDESC1472268"
 	picture = "greatpowers"
 	trigger = {
-		tag = SGF
+		tag = D07
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -8678,7 +8678,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = SGF
+		tag = D07
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -8707,7 +8707,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472270"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = SGF
+		change_tag_no_core_switch = D07
 	}
 }
 country_event = {
@@ -8716,7 +8716,7 @@ country_event = {
 	desc = "EVTDESC1472271"
 	picture = "greatpowers"
 	trigger = {
-		tag = WEI
+		tag = D08
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -8810,7 +8810,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = WEI
+		tag = D08
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -8839,7 +8839,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472273"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = WEI
+		change_tag_no_core_switch = D08
 	}
 }
 country_event = {
@@ -8848,7 +8848,7 @@ country_event = {
 	desc = "EVTDESC1472274"
 	picture = "greatpowers"
 	trigger = {
-		tag = WUR
+		tag = D09
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -8942,7 +8942,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = WUR
+		tag = D09
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -8971,7 +8971,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472276"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = WUR
+		change_tag_no_core_switch = D09
 	}
 }
 country_event = {
@@ -8980,7 +8980,7 @@ country_event = {
 	desc = "EVTDESC1472277"
 	picture = "greatpowers"
 	trigger = {
-		tag = LOM
+		tag = D10
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -9074,7 +9074,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = LOM
+		tag = D10
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -9103,7 +9103,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472279"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = LOM
+		change_tag_no_core_switch = D10
 	}
 }
 country_event = {
@@ -9112,7 +9112,7 @@ country_event = {
 	desc = "EVTDESC1472280"
 	picture = "greatpowers"
 	trigger = {
-		tag = LUC
+		tag = D11
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -9206,7 +9206,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = LUC
+		tag = D11
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -9235,7 +9235,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472282"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = LUC
+		change_tag_no_core_switch = D11
 	}
 }
 country_event = {
@@ -9244,7 +9244,7 @@ country_event = {
 	desc = "EVTDESC1472283"
 	picture = "greatpowers"
 	trigger = {
-		tag = MOD
+		tag = D12
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -9338,7 +9338,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = MOD
+		tag = D12
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -9367,7 +9367,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472285"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = MOD
+		change_tag_no_core_switch = D12
 	}
 }
 country_event = {
@@ -9376,7 +9376,7 @@ country_event = {
 	desc = "EVTDESC1472286"
 	picture = "greatpowers"
 	trigger = {
-		tag = PAP
+		tag = D13
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -9470,7 +9470,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = PAP
+		tag = D13
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -9499,7 +9499,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472288"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = PAP
+		change_tag_no_core_switch = D13
 	}
 }
 country_event = {
@@ -9508,7 +9508,7 @@ country_event = {
 	desc = "EVTDESC1472289"
 	picture = "greatpowers"
 	trigger = {
-		tag = PAR
+		tag = D14
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -9602,7 +9602,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = PAR
+		tag = D14
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -9631,7 +9631,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472291"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = PAR
+		change_tag_no_core_switch = D14
 	}
 }
 country_event = {
@@ -9640,7 +9640,7 @@ country_event = {
 	desc = "EVTDESC1472292"
 	picture = "greatpowers"
 	trigger = {
-		tag = SAR
+		tag = D15
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -9734,7 +9734,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = SAR
+		tag = D15
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -9763,7 +9763,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472294"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = SAR
+		change_tag_no_core_switch = D15
 	}
 }
 country_event = {
@@ -9772,7 +9772,7 @@ country_event = {
 	desc = "EVTDESC1472295"
 	picture = "greatpowers"
 	trigger = {
-		tag = SIC
+		tag = D16
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -9866,7 +9866,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = SIC
+		tag = D16
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -9895,7 +9895,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472297"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = SIC
+		change_tag_no_core_switch = D16
 	}
 }
 country_event = {
@@ -9904,7 +9904,7 @@ country_event = {
 	desc = "EVTDESC1472298"
 	picture = "greatpowers"
 	trigger = {
-		tag = TRE
+		tag = D17
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -9998,7 +9998,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = TRE
+		tag = D17
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -10027,7 +10027,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472300"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = TRE
+		change_tag_no_core_switch = D17
 	}
 }
 country_event = {
@@ -10036,7 +10036,7 @@ country_event = {
 	desc = "EVTDESC1472301"
 	picture = "greatpowers"
 	trigger = {
-		tag = TUS
+		tag = D18
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -10130,7 +10130,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = TUS
+		tag = D18
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -10159,7 +10159,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472303"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = TUS
+		change_tag_no_core_switch = D18
 	}
 }
 country_event = {
@@ -10168,7 +10168,7 @@ country_event = {
 	desc = "EVTDESC1472304"
 	picture = "greatpowers"
 	trigger = {
-		tag = VEN
+		tag = D19
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -10262,7 +10262,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = VEN
+		tag = D19
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -10291,7 +10291,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472306"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = VEN
+		change_tag_no_core_switch = D19
 	}
 }
 country_event = {
@@ -10300,7 +10300,7 @@ country_event = {
 	desc = "EVTDESC1472307"
 	picture = "greatpowers"
 	trigger = {
-		tag = BOH
+		tag = D20
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -10394,7 +10394,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BOH
+		tag = D20
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -10423,7 +10423,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472309"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BOH
+		change_tag_no_core_switch = D20
 	}
 }
 country_event = {
@@ -10432,7 +10432,7 @@ country_event = {
 	desc = "EVTDESC1472310"
 	picture = "greatpowers"
 	trigger = {
-		tag = KRA
+		tag = D21
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -10526,7 +10526,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = KRA
+		tag = D21
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -10555,7 +10555,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472312"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = KRA
+		change_tag_no_core_switch = D21
 	}
 }
 country_event = {
@@ -10564,7 +10564,7 @@ country_event = {
 	desc = "EVTDESC1472313"
 	picture = "greatpowers"
 	trigger = {
-		tag = CRI
+		tag = D22
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -10658,7 +10658,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = CRI
+		tag = D22
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -10687,7 +10687,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472315"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = CRI
+		change_tag_no_core_switch = D22
 	}
 }
 country_event = {
@@ -10696,7 +10696,7 @@ country_event = {
 	desc = "EVTDESC1472316"
 	picture = "greatpowers"
 	trigger = {
-		tag = EST
+		tag = D23
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -10790,7 +10790,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = EST
+		tag = D23
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -10819,7 +10819,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472318"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = EST
+		change_tag_no_core_switch = D23
 	}
 }
 country_event = {
@@ -10828,7 +10828,7 @@ country_event = {
 	desc = "EVTDESC1472319"
 	picture = "greatpowers"
 	trigger = {
-		tag = HUN
+		tag = D24
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -10922,7 +10922,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = HUN
+		tag = D24
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -10951,7 +10951,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472321"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = HUN
+		change_tag_no_core_switch = D24
 	}
 }
 country_event = {
@@ -10960,7 +10960,7 @@ country_event = {
 	desc = "EVTDESC1472322"
 	picture = "greatpowers"
 	trigger = {
-		tag = LIT
+		tag = D25
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -11054,7 +11054,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = LIT
+		tag = D25
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -11083,7 +11083,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472324"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = LIT
+		change_tag_no_core_switch = D25
 	}
 }
 country_event = {
@@ -11092,7 +11092,7 @@ country_event = {
 	desc = "EVTDESC1472325"
 	picture = "greatpowers"
 	trigger = {
-		tag = LAT
+		tag = D26
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -11186,7 +11186,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = LAT
+		tag = D26
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -11215,7 +11215,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472327"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = LAT
+		change_tag_no_core_switch = D26
 	}
 }
 country_event = {
@@ -11224,7 +11224,7 @@ country_event = {
 	desc = "EVTDESC1472328"
 	picture = "greatpowers"
 	trigger = {
-		tag = POL
+		tag = D27
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -11318,7 +11318,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = POL
+		tag = D27
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -11347,7 +11347,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472330"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = POL
+		change_tag_no_core_switch = D27
 	}
 }
 country_event = {
@@ -11356,7 +11356,7 @@ country_event = {
 	desc = "EVTDESC1472331"
 	picture = "greatpowers"
 	trigger = {
-		tag = SLV
+		tag = D28
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -11450,7 +11450,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = SLV
+		tag = D28
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -11479,7 +11479,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472333"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = SLV
+		change_tag_no_core_switch = D28
 	}
 }
 country_event = {
@@ -11488,7 +11488,7 @@ country_event = {
 	desc = "EVTDESC1472334"
 	picture = "greatpowers"
 	trigger = {
-		tag = SWI
+		tag = D29
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -11582,7 +11582,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = SWI
+		tag = D29
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -11611,7 +11611,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472336"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = SWI
+		change_tag_no_core_switch = D29
 	}
 }
 country_event = {
@@ -11620,7 +11620,7 @@ country_event = {
 	desc = "EVTDESC1472337"
 	picture = "greatpowers"
 	trigger = {
-		tag = RUT
+		tag = D30
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -11714,7 +11714,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = RUT
+		tag = D30
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -11743,7 +11743,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472339"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = RUT
+		change_tag_no_core_switch = D30
 	}
 }
 country_event = {
@@ -11752,7 +11752,7 @@ country_event = {
 	desc = "EVTDESC1472340"
 	picture = "greatpowers"
 	trigger = {
-		tag = SIE
+		tag = D31
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -11846,7 +11846,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = SIE
+		tag = D31
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -11875,7 +11875,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472342"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = SIE
+		change_tag_no_core_switch = D31
 	}
 }
 country_event = {
@@ -11884,7 +11884,7 @@ country_event = {
 	desc = "EVTDESC1472343"
 	picture = "greatpowers"
 	trigger = {
-		tag = UKR
+		tag = D32
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -11978,7 +11978,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = UKR
+		tag = D32
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -12007,7 +12007,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472345"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = UKR
+		change_tag_no_core_switch = D32
 	}
 }
 country_event = {
@@ -12016,7 +12016,7 @@ country_event = {
 	desc = "EVTDESC1472346"
 	picture = "greatpowers"
 	trigger = {
-		tag = CZH
+		tag = D33
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -12110,7 +12110,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = CZH
+		tag = D33
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -12139,7 +12139,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472348"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = CZH
+		change_tag_no_core_switch = D33
 	}
 }
 country_event = {
@@ -12148,7 +12148,7 @@ country_event = {
 	desc = "EVTDESC1472349"
 	picture = "greatpowers"
 	trigger = {
-		tag = ALB
+		tag = D34
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -12242,7 +12242,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = ALB
+		tag = D34
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -12271,7 +12271,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472351"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = ALB
+		change_tag_no_core_switch = D34
 	}
 }
 country_event = {
@@ -12280,7 +12280,7 @@ country_event = {
 	desc = "EVTDESC1472352"
 	picture = "greatpowers"
 	trigger = {
-		tag = BOS
+		tag = D35
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -12374,7 +12374,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BOS
+		tag = D35
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -12403,7 +12403,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472354"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BOS
+		change_tag_no_core_switch = D35
 	}
 }
 country_event = {
@@ -12412,7 +12412,7 @@ country_event = {
 	desc = "EVTDESC1472355"
 	picture = "greatpowers"
 	trigger = {
-		tag = BUL
+		tag = D36
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -12506,7 +12506,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BUL
+		tag = D36
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -12535,7 +12535,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472357"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BUL
+		change_tag_no_core_switch = D36
 	}
 }
 country_event = {
@@ -12544,7 +12544,7 @@ country_event = {
 	desc = "EVTDESC1472358"
 	picture = "greatpowers"
 	trigger = {
-		tag = CRE
+		tag = D37
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -12638,7 +12638,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = CRE
+		tag = D37
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -12667,7 +12667,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472360"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = CRE
+		change_tag_no_core_switch = D37
 	}
 }
 country_event = {
@@ -12676,7 +12676,7 @@ country_event = {
 	desc = "EVTDESC1472361"
 	picture = "greatpowers"
 	trigger = {
-		tag = CRO
+		tag = D38
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -12770,7 +12770,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = CRO
+		tag = D38
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -12799,7 +12799,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472363"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = CRO
+		change_tag_no_core_switch = D38
 	}
 }
 country_event = {
@@ -12808,7 +12808,7 @@ country_event = {
 	desc = "EVTDESC1472364"
 	picture = "greatpowers"
 	trigger = {
-		tag = CYP
+		tag = D39
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -12902,7 +12902,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = CYP
+		tag = D39
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -12931,7 +12931,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472366"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = CYP
+		change_tag_no_core_switch = D39
 	}
 }
 country_event = {
@@ -12940,7 +12940,7 @@ country_event = {
 	desc = "EVTDESC1472367"
 	picture = "greatpowers"
 	trigger = {
-		tag = GRE
+		tag = D40
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -13034,7 +13034,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = GRE
+		tag = D40
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -13063,7 +13063,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472369"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = GRE
+		change_tag_no_core_switch = D40
 	}
 }
 country_event = {
@@ -13072,7 +13072,7 @@ country_event = {
 	desc = "EVTDESC1472370"
 	picture = "greatpowers"
 	trigger = {
-		tag = ION
+		tag = D41
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -13166,7 +13166,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = ION
+		tag = D41
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -13195,7 +13195,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472372"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = ION
+		change_tag_no_core_switch = D41
 	}
 }
 country_event = {
@@ -13204,7 +13204,7 @@ country_event = {
 	desc = "EVTDESC1472373"
 	picture = "greatpowers"
 	trigger = {
-		tag = MOL
+		tag = D42
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -13298,7 +13298,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = MOL
+		tag = D42
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -13327,7 +13327,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472375"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = MOL
+		change_tag_no_core_switch = D42
 	}
 }
 country_event = {
@@ -13336,7 +13336,7 @@ country_event = {
 	desc = "EVTDESC1472376"
 	picture = "greatpowers"
 	trigger = {
-		tag = MON
+		tag = D43
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -13430,7 +13430,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = MON
+		tag = D43
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -13459,7 +13459,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472378"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = MON
+		change_tag_no_core_switch = D43
 	}
 }
 country_event = {
@@ -13468,7 +13468,7 @@ country_event = {
 	desc = "EVTDESC1472379"
 	picture = "greatpowers"
 	trigger = {
-		tag = ROM
+		tag = D44
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -13562,7 +13562,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = ROM
+		tag = D44
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -13591,7 +13591,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472381"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = ROM
+		change_tag_no_core_switch = D44
 	}
 }
 country_event = {
@@ -13600,7 +13600,7 @@ country_event = {
 	desc = "EVTDESC1472382"
 	picture = "greatpowers"
 	trigger = {
-		tag = SER
+		tag = D45
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -13694,7 +13694,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = SER
+		tag = D45
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -13723,7 +13723,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472384"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = SER
+		change_tag_no_core_switch = D45
 	}
 }
 country_event = {
@@ -13732,7 +13732,7 @@ country_event = {
 	desc = "EVTDESC1472385"
 	picture = "greatpowers"
 	trigger = {
-		tag = SLO
+		tag = D46
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -13826,7 +13826,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = SLO
+		tag = D46
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -13855,7 +13855,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472387"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = SLO
+		change_tag_no_core_switch = D46
 	}
 }
 country_event = {
@@ -13864,7 +13864,7 @@ country_event = {
 	desc = "EVTDESC1472388"
 	picture = "greatpowers"
 	trigger = {
-		tag = TUR
+		tag = D47
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -13958,7 +13958,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = TUR
+		tag = D47
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -13987,7 +13987,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472390"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = TUR
+		change_tag_no_core_switch = D47
 	}
 }
 country_event = {
@@ -13996,7 +13996,7 @@ country_event = {
 	desc = "EVTDESC1472391"
 	picture = "greatpowers"
 	trigger = {
-		tag = WAL
+		tag = D48
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -14090,7 +14090,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = WAL
+		tag = D48
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -14119,7 +14119,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472393"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = WAL
+		change_tag_no_core_switch = D48
 	}
 }
 country_event = {
@@ -14128,7 +14128,7 @@ country_event = {
 	desc = "EVTDESC1472394"
 	picture = "greatpowers"
 	trigger = {
-		tag = YUG
+		tag = D49
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -14222,7 +14222,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = YUG
+		tag = D49
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -14251,7 +14251,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472396"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = YUG
+		change_tag_no_core_switch = D49
 	}
 }
 country_event = {
@@ -14260,7 +14260,7 @@ country_event = {
 	desc = "EVTDESC1472397"
 	picture = "greatpowers"
 	trigger = {
-		tag = ALD
+		tag = D50
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -14354,7 +14354,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = ALD
+		tag = D50
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -14383,7 +14383,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472399"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = ALD
+		change_tag_no_core_switch = D50
 	}
 }
 country_event = {
@@ -14392,7 +14392,7 @@ country_event = {
 	desc = "EVTDESC1472400"
 	picture = "greatpowers"
 	trigger = {
-		tag = CNG
+		tag = DAI
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -14486,7 +14486,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = CNG
+		tag = DAI
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -14515,7 +14515,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472402"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = CNG
+		change_tag_no_core_switch = DAI
 	}
 }
 country_event = {
@@ -14524,7 +14524,7 @@ country_event = {
 	desc = "EVTDESC1472403"
 	picture = "greatpowers"
 	trigger = {
-		tag = EGY
+		tag = DEN
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -14618,7 +14618,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = EGY
+		tag = DEN
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -14647,7 +14647,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472405"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = EGY
+		change_tag_no_core_switch = DEN
 	}
 }
 country_event = {
@@ -14656,7 +14656,7 @@ country_event = {
 	desc = "EVTDESC1472406"
 	picture = "greatpowers"
 	trigger = {
-		tag = ETH
+		tag = DES
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -14750,7 +14750,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = ETH
+		tag = DES
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -14779,7 +14779,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472408"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = ETH
+		change_tag_no_core_switch = DES
 	}
 }
 country_event = {
@@ -14788,7 +14788,7 @@ country_event = {
 	desc = "EVTDESC1472409"
 	picture = "greatpowers"
 	trigger = {
-		tag = MAD
+		tag = DOM
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -14882,7 +14882,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = MAD
+		tag = DOM
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -14911,7 +14911,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472411"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = MAD
+		change_tag_no_core_switch = DOM
 	}
 }
 country_event = {
@@ -14920,7 +14920,7 @@ country_event = {
 	desc = "EVTDESC1472412"
 	picture = "greatpowers"
 	trigger = {
-		tag = LIB
+		tag = DZG
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -15014,7 +15014,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = LIB
+		tag = DZG
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -15043,7 +15043,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472414"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = LIB
+		change_tag_no_core_switch = DZG
 	}
 }
 country_event = {
@@ -15052,7 +15052,7 @@ country_event = {
 	desc = "EVTDESC1472415"
 	picture = "greatpowers"
 	trigger = {
-		tag = MOR
+		tag = ECU
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -15146,7 +15146,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = MOR
+		tag = ECU
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -15175,7 +15175,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472417"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = MOR
+		change_tag_no_core_switch = ECU
 	}
 }
 country_event = {
@@ -15184,7 +15184,7 @@ country_event = {
 	desc = "EVTDESC1472418"
 	picture = "greatpowers"
 	trigger = {
-		tag = NAL
+		tag = EGY
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -15278,7 +15278,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = NAL
+		tag = EGY
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -15307,7 +15307,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472420"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = NAL
+		change_tag_no_core_switch = EGY
 	}
 }
 country_event = {
@@ -15316,7 +15316,7 @@ country_event = {
 	desc = "EVTDESC1472421"
 	picture = "greatpowers"
 	trigger = {
-		tag = ORA
+		tag = ELS
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -15410,7 +15410,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = ORA
+		tag = ELS
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -15439,7 +15439,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472423"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = ORA
+		change_tag_no_core_switch = ELS
 	}
 }
 country_event = {
@@ -15448,7 +15448,7 @@ country_event = {
 	desc = "EVTDESC1472424"
 	picture = "greatpowers"
 	trigger = {
-		tag = SAF
+		tag = ENG
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -15542,7 +15542,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = SAF
+		tag = ENG
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -15571,7 +15571,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472426"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = SAF
+		change_tag_no_core_switch = ENG
 	}
 }
 country_event = {
@@ -15580,7 +15580,7 @@ country_event = {
 	desc = "EVTDESC1472427"
 	picture = "greatpowers"
 	trigger = {
-		tag = SOK
+		tag = EST
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -15674,7 +15674,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = SOK
+		tag = EST
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -15703,7 +15703,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472429"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = SOK
+		change_tag_no_core_switch = EST
 	}
 }
 country_event = {
@@ -15712,7 +15712,7 @@ country_event = {
 	desc = "EVTDESC1472430"
 	picture = "greatpowers"
 	trigger = {
-		tag = RHO
+		tag = ETH
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -15806,7 +15806,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = RHO
+		tag = ETH
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -15835,7 +15835,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472432"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = RHO
+		change_tag_no_core_switch = ETH
 	}
 }
 country_event = {
@@ -15844,7 +15844,7 @@ country_event = {
 	desc = "EVTDESC1472433"
 	picture = "greatpowers"
 	trigger = {
-		tag = TRI
+		tag = FIN
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -15938,7 +15938,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = TRI
+		tag = FIN
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -15967,7 +15967,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472435"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = TRI
+		change_tag_no_core_switch = FIN
 	}
 }
 country_event = {
@@ -15976,7 +15976,7 @@ country_event = {
 	desc = "EVTDESC1472436"
 	picture = "greatpowers"
 	trigger = {
-		tag = TRN
+		tag = FLA
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -16070,7 +16070,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = TRN
+		tag = FLA
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -16099,7 +16099,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472438"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = TRN
+		change_tag_no_core_switch = FLA
 	}
 }
 country_event = {
@@ -16108,7 +16108,7 @@ country_event = {
 	desc = "EVTDESC1472439"
 	picture = "greatpowers"
 	trigger = {
-		tag = TUN
+		tag = FRA
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -16202,7 +16202,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = TUN
+		tag = FRA
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -16231,7 +16231,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472441"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = TUN
+		change_tag_no_core_switch = FRA
 	}
 }
 country_event = {
@@ -16240,7 +16240,7 @@ country_event = {
 	desc = "EVTDESC1472442"
 	picture = "greatpowers"
 	trigger = {
-		tag = ZAN
+		tag = FRM
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -16334,7 +16334,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = ZAN
+		tag = FRM
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -16363,7 +16363,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472444"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = ZAN
+		change_tag_no_core_switch = FRM
 	}
 }
 country_event = {
@@ -16372,7 +16372,7 @@ country_event = {
 	desc = "EVTDESC1472445"
 	picture = "greatpowers"
 	trigger = {
-		tag = ZUL
+		tag = GCO
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -16466,7 +16466,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = ZUL
+		tag = GCO
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -16495,7 +16495,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472447"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = ZUL
+		change_tag_no_core_switch = GCO
 	}
 }
 country_event = {
@@ -16504,7 +16504,7 @@ country_event = {
 	desc = "EVTDESC1472448"
 	picture = "greatpowers"
 	trigger = {
-		tag = ABU
+		tag = GEO
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -16598,7 +16598,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = ABU
+		tag = GEO
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -16627,7 +16627,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472450"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = ABU
+		change_tag_no_core_switch = GEO
 	}
 }
 country_event = {
@@ -16636,7 +16636,7 @@ country_event = {
 	desc = "EVTDESC1472451"
 	picture = "greatpowers"
 	trigger = {
-		tag = AFG
+		tag = GER
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -16730,7 +16730,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = AFG
+		tag = GER
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -16759,7 +16759,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472453"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = AFG
+		change_tag_no_core_switch = GER
 	}
 }
 country_event = {
@@ -16768,7 +16768,7 @@ country_event = {
 	desc = "EVTDESC1472454"
 	picture = "greatpowers"
 	trigger = {
-		tag = ARM
+		tag = GRE
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -16862,7 +16862,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = ARM
+		tag = GRE
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -16891,7 +16891,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472456"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = ARM
+		change_tag_no_core_switch = GRE
 	}
 }
 country_event = {
@@ -16900,7 +16900,7 @@ country_event = {
 	desc = "EVTDESC1472457"
 	picture = "greatpowers"
 	trigger = {
-		tag = AZB
+		tag = GUA
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -16994,7 +16994,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = AZB
+		tag = GUA
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -17023,7 +17023,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472459"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = AZB
+		change_tag_no_core_switch = GUA
 	}
 }
 country_event = {
@@ -17032,7 +17032,7 @@ country_event = {
 	desc = "EVTDESC1472460"
 	picture = "greatpowers"
 	trigger = {
-		tag = BUK
+		tag = GWA
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -17126,7 +17126,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BUK
+		tag = GWA
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -17155,7 +17155,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472462"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BUK
+		change_tag_no_core_switch = GWA
 	}
 }
 country_event = {
@@ -17164,7 +17164,7 @@ country_event = {
 	desc = "EVTDESC1472463"
 	picture = "greatpowers"
 	trigger = {
-		tag = GEO
+		tag = GXI
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -17258,7 +17258,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = GEO
+		tag = GXI
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -17287,7 +17287,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472465"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = GEO
+		change_tag_no_core_switch = GXI
 	}
 }
 country_event = {
@@ -17296,7 +17296,7 @@ country_event = {
 	desc = "EVTDESC1472466"
 	picture = "greatpowers"
 	trigger = {
-		tag = HDJ
+		tag = HAI
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -17390,7 +17390,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = HDJ
+		tag = HAI
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -17419,7 +17419,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472468"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = HDJ
+		change_tag_no_core_switch = HAI
 	}
 }
 country_event = {
@@ -17428,7 +17428,7 @@ country_event = {
 	desc = "EVTDESC1472469"
 	picture = "greatpowers"
 	trigger = {
-		tag = IRQ
+		tag = HAM
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -17522,7 +17522,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = IRQ
+		tag = HAM
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -17551,7 +17551,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472471"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = IRQ
+		change_tag_no_core_switch = HAM
 	}
 }
 country_event = {
@@ -17560,7 +17560,7 @@ country_event = {
 	desc = "EVTDESC1472472"
 	picture = "greatpowers"
 	trigger = {
-		tag = KHI
+		tag = HAN
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -17654,7 +17654,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = KHI
+		tag = HAN
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -17683,7 +17683,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472474"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = KHI
+		change_tag_no_core_switch = HAN
 	}
 }
 country_event = {
@@ -17692,7 +17692,7 @@ country_event = {
 	desc = "EVTDESC1472475"
 	picture = "greatpowers"
 	trigger = {
-		tag = KOK
+		tag = HAW
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -17786,7 +17786,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = KOK
+		tag = HAW
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -17815,7 +17815,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472477"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = KOK
+		change_tag_no_core_switch = HAW
 	}
 }
 country_event = {
@@ -17824,7 +17824,7 @@ country_event = {
 	desc = "EVTDESC1472478"
 	picture = "greatpowers"
 	trigger = {
-		tag = MUG
+		tag = HDJ
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -17918,7 +17918,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = MUG
+		tag = HDJ
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -17947,7 +17947,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472480"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = MUG
+		change_tag_no_core_switch = HDJ
 	}
 }
 country_event = {
@@ -17956,7 +17956,7 @@ country_event = {
 	desc = "EVTDESC1472481"
 	picture = "greatpowers"
 	trigger = {
-		tag = NEJ
+		tag = HEK
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -18050,7 +18050,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = NEJ
+		tag = HEK
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -18079,7 +18079,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472483"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = NEJ
+		change_tag_no_core_switch = HEK
 	}
 }
 country_event = {
@@ -18088,7 +18088,7 @@ country_event = {
 	desc = "EVTDESC1472484"
 	picture = "greatpowers"
 	trigger = {
-		tag = OMA
+		tag = HES
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -18182,7 +18182,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = OMA
+		tag = HES
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -18211,7 +18211,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472486"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = OMA
+		change_tag_no_core_switch = HES
 	}
 }
 country_event = {
@@ -18220,7 +18220,7 @@ country_event = {
 	desc = "EVTDESC1472487"
 	picture = "greatpowers"
 	trigger = {
-		tag = PER
+		tag = HND
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -18314,7 +18314,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = PER
+		tag = HND
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -18343,7 +18343,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472489"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = PER
+		change_tag_no_core_switch = HND
 	}
 }
 country_event = {
@@ -18352,7 +18352,7 @@ country_event = {
 	desc = "EVTDESC1472490"
 	picture = "greatpowers"
 	trigger = {
-		tag = YEM
+		tag = HOL
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -18446,7 +18446,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = YEM
+		tag = HOL
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -18475,7 +18475,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472492"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = YEM
+		change_tag_no_core_switch = HOL
 	}
 }
 country_event = {
@@ -18484,7 +18484,7 @@ country_event = {
 	desc = "EVTDESC1472493"
 	picture = "greatpowers"
 	trigger = {
-		tag = HND
+		tag = HON
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -18578,7 +18578,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = HND
+		tag = HON
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -18607,7 +18607,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472495"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = HND
+		change_tag_no_core_switch = HON
 	}
 }
 country_event = {
@@ -18616,7 +18616,7 @@ country_event = {
 	desc = "EVTDESC1472496"
 	picture = "greatpowers"
 	trigger = {
-		tag = AWA
+		tag = HUN
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -18710,7 +18710,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = AWA
+		tag = HUN
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -18739,7 +18739,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472498"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = AWA
+		change_tag_no_core_switch = HUN
 	}
 }
 country_event = {
@@ -18748,7 +18748,7 @@ country_event = {
 	desc = "EVTDESC1472499"
 	picture = "greatpowers"
 	trigger = {
-		tag = BAS
+		tag = HYD
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -18842,7 +18842,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BAS
+		tag = HYD
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -18871,7 +18871,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472501"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BAS
+		change_tag_no_core_switch = HYD
 	}
 }
 country_event = {
@@ -18880,7 +18880,7 @@ country_event = {
 	desc = "EVTDESC1472502"
 	picture = "greatpowers"
 	trigger = {
-		tag = BER
+		tag = ICL
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -18974,7 +18974,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BER
+		tag = ICL
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -19003,7 +19003,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472504"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BER
+		change_tag_no_core_switch = ICL
 	}
 }
 country_event = {
@@ -19012,7 +19012,7 @@ country_event = {
 	desc = "EVTDESC1472505"
 	picture = "greatpowers"
 	trigger = {
-		tag = BHO
+		tag = IND
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -19106,7 +19106,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BHO
+		tag = IND
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -19135,7 +19135,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472507"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BHO
+		change_tag_no_core_switch = IND
 	}
 }
 country_event = {
@@ -19144,7 +19144,7 @@ country_event = {
 	desc = "EVTDESC1472508"
 	picture = "greatpowers"
 	trigger = {
-		tag = BIK
+		tag = ION
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -19238,7 +19238,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BIK
+		tag = ION
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -19267,7 +19267,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472510"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BIK
+		change_tag_no_core_switch = ION
 	}
 }
 country_event = {
@@ -19276,7 +19276,7 @@ country_event = {
 	desc = "EVTDESC1472511"
 	picture = "greatpowers"
 	trigger = {
-		tag = BUN
+		tag = IRE
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -19370,7 +19370,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BUN
+		tag = IRE
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -19399,7 +19399,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472513"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BUN
+		change_tag_no_core_switch = IRE
 	}
 }
 country_event = {
@@ -19408,7 +19408,7 @@ country_event = {
 	desc = "EVTDESC1472514"
 	picture = "greatpowers"
 	trigger = {
-		tag = GWA
+		tag = IRQ
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -19502,7 +19502,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = GWA
+		tag = IRQ
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -19531,7 +19531,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472516"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = GWA
+		change_tag_no_core_switch = IRQ
 	}
 }
 country_event = {
@@ -19540,7 +19540,7 @@ country_event = {
 	desc = "EVTDESC1472517"
 	picture = "greatpowers"
 	trigger = {
-		tag = HYD
+		tag = ISR
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -19634,7 +19634,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = HYD
+		tag = ISR
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -19663,7 +19663,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472519"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = HYD
+		change_tag_no_core_switch = ISR
 	}
 }
 country_event = {
@@ -19672,7 +19672,7 @@ country_event = {
 	desc = "EVTDESC1472520"
 	picture = "greatpowers"
 	trigger = {
-		tag = IND
+		tag = ITA
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -19766,7 +19766,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = IND
+		tag = ITA
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -19795,7 +19795,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472522"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = IND
+		change_tag_no_core_switch = ITA
 	}
 }
 country_event = {
@@ -19936,7 +19936,7 @@ country_event = {
 	desc = "EVTDESC1472526"
 	picture = "greatpowers"
 	trigger = {
-		tag = JAS
+		tag = JAN
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -20030,7 +20030,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = JAS
+		tag = JAN
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -20059,7 +20059,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472528"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = JAS
+		change_tag_no_core_switch = JAN
 	}
 }
 country_event = {
@@ -20068,7 +20068,7 @@ country_event = {
 	desc = "EVTDESC1472529"
 	picture = "greatpowers"
 	trigger = {
-		tag = JOD
+		tag = JAP
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -20162,7 +20162,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = JOD
+		tag = JAP
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -20191,7 +20191,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472531"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = JOD
+		change_tag_no_core_switch = JAP
 	}
 }
 country_event = {
@@ -20200,7 +20200,7 @@ country_event = {
 	desc = "EVTDESC1472532"
 	picture = "greatpowers"
 	trigger = {
-		tag = KAL
+		tag = JAS
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -20294,7 +20294,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = KAL
+		tag = JAS
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -20323,7 +20323,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472534"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = KAL
+		change_tag_no_core_switch = JAS
 	}
 }
 country_event = {
@@ -20332,7 +20332,7 @@ country_event = {
 	desc = "EVTDESC1472535"
 	picture = "greatpowers"
 	trigger = {
-		tag = KAS
+		tag = JAV
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -20426,7 +20426,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = KAS
+		tag = JAV
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -20455,7 +20455,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472537"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = KAS
+		change_tag_no_core_switch = JAV
 	}
 }
 country_event = {
@@ -20464,7 +20464,7 @@ country_event = {
 	desc = "EVTDESC1472538"
 	picture = "greatpowers"
 	trigger = {
-		tag = KUT
+		tag = JOD
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -20558,7 +20558,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = KUT
+		tag = JOD
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -20587,7 +20587,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472540"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = KUT
+		change_tag_no_core_switch = JOD
 	}
 }
 country_event = {
@@ -20596,7 +20596,7 @@ country_event = {
 	desc = "EVTDESC1472541"
 	picture = "greatpowers"
 	trigger = {
-		tag = LAD
+		tag = JOH
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -20690,7 +20690,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = LAD
+		tag = JOH
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -20719,7 +20719,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472543"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = LAD
+		change_tag_no_core_switch = JOH
 	}
 }
 country_event = {
@@ -20728,7 +20728,7 @@ country_event = {
 	desc = "EVTDESC1472544"
 	picture = "greatpowers"
 	trigger = {
-		tag = MAK
+		tag = KAL
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -20822,7 +20822,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = MAK
+		tag = KAL
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -20851,7 +20851,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472546"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = MAK
+		change_tag_no_core_switch = KAL
 	}
 }
 country_event = {
@@ -20860,7 +20860,7 @@ country_event = {
 	desc = "EVTDESC1472547"
 	picture = "greatpowers"
 	trigger = {
-		tag = MEW
+		tag = KAS
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -20954,7 +20954,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = MEW
+		tag = KAS
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -20983,7 +20983,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472549"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = MEW
+		change_tag_no_core_switch = KAS
 	}
 }
 country_event = {
@@ -20992,7 +20992,7 @@ country_event = {
 	desc = "EVTDESC1472550"
 	picture = "greatpowers"
 	trigger = {
-		tag = MYS
+		tag = KAZ
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -21086,7 +21086,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = MYS
+		tag = KAZ
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -21115,7 +21115,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472552"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = MYS
+		change_tag_no_core_switch = KAZ
 	}
 }
 country_event = {
@@ -21124,7 +21124,7 @@ country_event = {
 	desc = "EVTDESC1472553"
 	picture = "greatpowers"
 	trigger = {
-		tag = NAG
+		tag = KHI
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -21218,7 +21218,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = NAG
+		tag = KHI
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -21247,7 +21247,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472555"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = NAG
+		change_tag_no_core_switch = KHI
 	}
 }
 country_event = {
@@ -21256,7 +21256,7 @@ country_event = {
 	desc = "EVTDESC1472556"
 	picture = "greatpowers"
 	trigger = {
-		tag = NEP
+		tag = KMK
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -21350,7 +21350,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = NEP
+		tag = KMK
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -21379,7 +21379,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472558"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = NEP
+		change_tag_no_core_switch = KMK
 	}
 }
 country_event = {
@@ -21388,7 +21388,7 @@ country_event = {
 	desc = "EVTDESC1472559"
 	picture = "greatpowers"
 	trigger = {
-		tag = ORI
+		tag = KOK
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -21482,7 +21482,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = ORI
+		tag = KOK
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -21511,7 +21511,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472561"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = ORI
+		change_tag_no_core_switch = KOK
 	}
 }
 country_event = {
@@ -21520,7 +21520,7 @@ country_event = {
 	desc = "EVTDESC1472562"
 	picture = "greatpowers"
 	trigger = {
-		tag = PAN
+		tag = KOR
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -21614,7 +21614,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = PAN
+		tag = KOR
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -21643,7 +21643,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472564"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = PAN
+		change_tag_no_core_switch = KOR
 	}
 }
 country_event = {
@@ -21652,7 +21652,7 @@ country_event = {
 	desc = "EVTDESC1472565"
 	picture = "greatpowers"
 	trigger = {
-		tag = SHI
+		tag = KRA
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -21746,7 +21746,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = SHI
+		tag = KRA
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -21775,7 +21775,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472567"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = SHI
+		change_tag_no_core_switch = KRA
 	}
 }
 country_event = {
@@ -21784,7 +21784,7 @@ country_event = {
 	desc = "EVTDESC1472568"
 	picture = "greatpowers"
 	trigger = {
-		tag = SIK
+		tag = KRD
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -21878,7 +21878,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = SIK
+		tag = KRD
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -21907,7 +21907,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472570"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = SIK
+		change_tag_no_core_switch = KRD
 	}
 }
 country_event = {
@@ -21916,7 +21916,7 @@ country_event = {
 	desc = "EVTDESC1472571"
 	picture = "greatpowers"
 	trigger = {
-		tag = SIN
+		tag = KUK
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -22010,7 +22010,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = SIN
+		tag = KUK
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -22039,7 +22039,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472573"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = SIN
+		change_tag_no_core_switch = KUK
 	}
 }
 country_event = {
@@ -22048,7 +22048,7 @@ country_event = {
 	desc = "EVTDESC1472574"
 	picture = "greatpowers"
 	trigger = {
-		tag = TRA
+		tag = KUT
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -22142,7 +22142,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = TRA
+		tag = KUT
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -22171,7 +22171,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472576"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = TRA
+		change_tag_no_core_switch = KUT
 	}
 }
 country_event = {
@@ -22180,7 +22180,7 @@ country_event = {
 	desc = "EVTDESC1472577"
 	picture = "greatpowers"
 	trigger = {
-		tag = ATJ
+		tag = KYR
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -22274,7 +22274,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = ATJ
+		tag = KYR
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -22303,7 +22303,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472579"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = ATJ
+		change_tag_no_core_switch = KYR
 	}
 }
 country_event = {
@@ -22312,7 +22312,7 @@ country_event = {
 	desc = "EVTDESC1472580"
 	picture = "greatpowers"
 	trigger = {
-		tag = BAL
+		tag = LAD
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -22406,7 +22406,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BAL
+		tag = LAD
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -22435,7 +22435,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472582"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BAL
+		change_tag_no_core_switch = LAD
 	}
 }
 country_event = {
@@ -22444,7 +22444,7 @@ country_event = {
 	desc = "EVTDESC1472583"
 	picture = "greatpowers"
 	trigger = {
-		tag = BHU
+		tag = LAF
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -22538,7 +22538,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BHU
+		tag = LAF
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -22567,7 +22567,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472585"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BHU
+		change_tag_no_core_switch = LAF
 	}
 }
 country_event = {
@@ -22576,7 +22576,7 @@ country_event = {
 	desc = "EVTDESC1472586"
 	picture = "greatpowers"
 	trigger = {
-		tag = BRU
+		tag = LAT
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -22670,7 +22670,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BRU
+		tag = LAT
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -22699,7 +22699,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472588"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BRU
+		change_tag_no_core_switch = LAT
 	}
 }
 country_event = {
@@ -22708,7 +22708,7 @@ country_event = {
 	desc = "EVTDESC1472589"
 	picture = "greatpowers"
 	trigger = {
-		tag = BUR
+		tag = LIB
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -22802,7 +22802,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BUR
+		tag = LIB
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -22831,7 +22831,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472591"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BUR
+		change_tag_no_core_switch = LIB
 	}
 }
 country_event = {
@@ -22840,7 +22840,7 @@ country_event = {
 	desc = "EVTDESC1472592"
 	picture = "greatpowers"
 	trigger = {
-		tag = CAM
+		tag = LIP
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -22934,7 +22934,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = CAM
+		tag = LIP
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -22963,7 +22963,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472594"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = CAM
+		change_tag_no_core_switch = LIP
 	}
 }
 country_event = {
@@ -22972,7 +22972,7 @@ country_event = {
 	desc = "EVTDESC1472595"
 	picture = "greatpowers"
 	trigger = {
-		tag = CHI
+		tag = LIT
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -23066,7 +23066,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = CHI
+		tag = LIT
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -23095,7 +23095,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472597"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = CHI
+		change_tag_no_core_switch = LIT
 	}
 }
 country_event = {
@@ -23104,7 +23104,7 @@ country_event = {
 	desc = "EVTDESC1472598"
 	picture = "greatpowers"
 	trigger = {
-		tag = DAI
+		tag = LOM
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -23198,7 +23198,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = DAI
+		tag = LOM
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -23227,7 +23227,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472600"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = DAI
+		change_tag_no_core_switch = LOM
 	}
 }
 country_event = {
@@ -23236,7 +23236,7 @@ country_event = {
 	desc = "EVTDESC1472601"
 	picture = "greatpowers"
 	trigger = {
-		tag = JAV
+		tag = LUA
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -23330,7 +23330,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = JAV
+		tag = LUA
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -23359,7 +23359,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472603"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = JAV
+		change_tag_no_core_switch = LUA
 	}
 }
 country_event = {
@@ -23368,7 +23368,7 @@ country_event = {
 	desc = "EVTDESC1472604"
 	picture = "greatpowers"
 	trigger = {
-		tag = KOR
+		tag = LUB
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -23462,7 +23462,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = KOR
+		tag = LUB
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -23491,7 +23491,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472606"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = KOR
+		change_tag_no_core_switch = LUB
 	}
 }
 country_event = {
@@ -23500,7 +23500,7 @@ country_event = {
 	desc = "EVTDESC1472607"
 	picture = "greatpowers"
 	trigger = {
-		tag = LUA
+		tag = LUC
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -23594,7 +23594,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = LUA
+		tag = LUC
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -23623,7 +23623,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472609"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = LUA
+		change_tag_no_core_switch = LUC
 	}
 }
 country_event = {
@@ -23632,7 +23632,7 @@ country_event = {
 	desc = "EVTDESC1472610"
 	picture = "greatpowers"
 	trigger = {
-		tag = JOH
+		tag = LUX
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -23726,7 +23726,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = JOH
+		tag = LUX
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -23755,7 +23755,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472612"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = JOH
+		change_tag_no_core_switch = LUX
 	}
 }
 country_event = {
@@ -23764,7 +23764,7 @@ country_event = {
 	desc = "EVTDESC1472613"
 	picture = "greatpowers"
 	trigger = {
-		tag = SIA
+		tag = MAD
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -23858,7 +23858,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = SIA
+		tag = MAD
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -23887,7 +23887,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472615"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = SIA
+		change_tag_no_core_switch = MAD
 	}
 }
 country_event = {
@@ -23896,7 +23896,7 @@ country_event = {
 	desc = "EVTDESC1472616"
 	picture = "greatpowers"
 	trigger = {
-		tag = TIB
+		tag = MAK
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -23990,7 +23990,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = TIB
+		tag = MAK
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -24019,7 +24019,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472618"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = TIB
+		change_tag_no_core_switch = MAK
 	}
 }
 country_event = {
@@ -24028,7 +24028,7 @@ country_event = {
 	desc = "EVTDESC1472619"
 	picture = "greatpowers"
 	trigger = {
-		tag = MGL
+		tag = MAN
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -24122,7 +24122,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = MGL
+		tag = MAN
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -24151,7 +24151,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472621"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = MGL
+		change_tag_no_core_switch = MAN
 	}
 }
 country_event = {
@@ -24160,7 +24160,7 @@ country_event = {
 	desc = "EVTDESC1472622"
 	picture = "greatpowers"
 	trigger = {
-		tag = WIA
+		tag = MCK
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -24254,7 +24254,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = WIA
+		tag = MCK
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -24283,7 +24283,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472624"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = WIA
+		change_tag_no_core_switch = MCK
 	}
 }
 country_event = {
@@ -24292,7 +24292,7 @@ country_event = {
 	desc = "EVTDESC1472625"
 	picture = "greatpowers"
 	trigger = {
-		tag = PHI
+		tag = MEC
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -24386,7 +24386,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = PHI
+		tag = MEC
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -24415,7 +24415,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472627"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = PHI
+		change_tag_no_core_switch = MEC
 	}
 }
 country_event = {
@@ -24424,7 +24424,7 @@ country_event = {
 	desc = "EVTDESC1472628"
 	picture = "greatpowers"
 	trigger = {
-		tag = MCK
+		tag = MEI
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -24518,7 +24518,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = MCK
+		tag = MEI
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -24547,7 +24547,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472630"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = MCK
+		change_tag_no_core_switch = MEI
 	}
 }
 country_event = {
@@ -24556,7 +24556,7 @@ country_event = {
 	desc = "EVTDESC1472631"
 	picture = "greatpowers"
 	trigger = {
-		tag = GXI
+		tag = MEW
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -24650,7 +24650,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = GXI
+		tag = MEW
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -24679,7 +24679,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472633"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = GXI
+		change_tag_no_core_switch = MEW
 	}
 }
 country_event = {
@@ -24688,7 +24688,7 @@ country_event = {
 	desc = "EVTDESC1472634"
 	picture = "greatpowers"
 	trigger = {
-		tag = SXI
+		tag = MEX
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -24782,7 +24782,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = SXI
+		tag = MEX
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -24811,7 +24811,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472636"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = SXI
+		change_tag_no_core_switch = MEX
 	}
 }
 country_event = {
@@ -24820,7 +24820,7 @@ country_event = {
 	desc = "EVTDESC1472637"
 	picture = "greatpowers"
 	trigger = {
-		tag = YNN
+		tag = MGL
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -24914,7 +24914,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = YNN
+		tag = MGL
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -24943,7 +24943,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472639"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = YNN
+		change_tag_no_core_switch = MGL
 	}
 }
 country_event = {
@@ -24952,7 +24952,7 @@ country_event = {
 	desc = "EVTDESC1472640"
 	picture = "greatpowers"
 	trigger = {
-		tag = XBI
+		tag = MLY
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -25046,7 +25046,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = XBI
+		tag = MLY
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -25075,7 +25075,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472642"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = XBI
+		change_tag_no_core_switch = MLY
 	}
 }
 country_event = {
@@ -25084,7 +25084,7 @@ country_event = {
 	desc = "EVTDESC1472643"
 	picture = "greatpowers"
 	trigger = {
-		tag = XIN
+		tag = MOD
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -25178,7 +25178,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = XIN
+		tag = MOD
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -25207,7 +25207,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472645"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = XIN
+		change_tag_no_core_switch = MOD
 	}
 }
 country_event = {
@@ -25216,7 +25216,7 @@ country_event = {
 	desc = "EVTDESC1472646"
 	picture = "greatpowers"
 	trigger = {
-		tag = CAL
+		tag = MOL
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -25310,7 +25310,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = CAL
+		tag = MOL
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -25339,7 +25339,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472648"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = CAL
+		change_tag_no_core_switch = MOL
 	}
 }
 country_event = {
@@ -25348,7 +25348,7 @@ country_event = {
 	desc = "EVTDESC1472649"
 	picture = "greatpowers"
 	trigger = {
-		tag = CAN
+		tag = MON
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -25442,7 +25442,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = CAN
+		tag = MON
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -25471,7 +25471,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472651"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = CAN
+		change_tag_no_core_switch = MON
 	}
 }
 country_event = {
@@ -25480,7 +25480,7 @@ country_event = {
 	desc = "EVTDESC1472652"
 	picture = "greatpowers"
 	trigger = {
-		tag = CHE
+		tag = MOR
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -25574,7 +25574,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = CHE
+		tag = MOR
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -25603,7 +25603,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472654"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = CHE
+		change_tag_no_core_switch = MOR
 	}
 }
 country_event = {
@@ -25612,7 +25612,7 @@ country_event = {
 	desc = "EVTDESC1472655"
 	picture = "greatpowers"
 	trigger = {
-		tag = COL
+		tag = MTC
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -25706,7 +25706,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = COL
+		tag = MTC
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -25735,7 +25735,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472657"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = COL
+		change_tag_no_core_switch = MTC
 	}
 }
 country_event = {
@@ -25744,7 +25744,7 @@ country_event = {
 	desc = "EVTDESC1472658"
 	picture = "greatpowers"
 	trigger = {
-		tag = COS
+		tag = MUG
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -25838,7 +25838,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = COS
+		tag = MUG
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -25867,7 +25867,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472660"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = COS
+		change_tag_no_core_switch = MUG
 	}
 }
 country_event = {
@@ -25876,7 +25876,7 @@ country_event = {
 	desc = "EVTDESC1472661"
 	picture = "greatpowers"
 	trigger = {
-		tag = CSA
+		tag = MYS
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -25970,7 +25970,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = CSA
+		tag = MYS
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -25999,7 +25999,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472663"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = CSA
+		change_tag_no_core_switch = MYS
 	}
 }
 country_event = {
@@ -26008,7 +26008,7 @@ country_event = {
 	desc = "EVTDESC1472664"
 	picture = "greatpowers"
 	trigger = {
-		tag = CUB
+		tag = NAG
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -26102,7 +26102,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = CUB
+		tag = NAG
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -26131,7 +26131,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472666"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = CUB
+		change_tag_no_core_switch = NAG
 	}
 }
 country_event = {
@@ -26140,7 +26140,7 @@ country_event = {
 	desc = "EVTDESC1472667"
 	picture = "greatpowers"
 	trigger = {
-		tag = DES
+		tag = NAL
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -26234,7 +26234,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = DES
+		tag = NAL
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -26263,7 +26263,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472669"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = DES
+		change_tag_no_core_switch = NAL
 	}
 }
 country_event = {
@@ -26272,7 +26272,7 @@ country_event = {
 	desc = "EVTDESC1472670"
 	picture = "greatpowers"
 	trigger = {
-		tag = DOM
+		tag = NAS
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -26366,7 +26366,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = DOM
+		tag = NAS
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -26395,7 +26395,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472672"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = DOM
+		change_tag_no_core_switch = NAS
 	}
 }
 country_event = {
@@ -26404,7 +26404,7 @@ country_event = {
 	desc = "EVTDESC1472673"
 	picture = "greatpowers"
 	trigger = {
-		tag = ELS
+		tag = NEJ
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -26498,7 +26498,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = ELS
+		tag = NEJ
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -26527,7 +26527,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472675"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = ELS
+		change_tag_no_core_switch = NEJ
 	}
 }
 country_event = {
@@ -26536,7 +26536,7 @@ country_event = {
 	desc = "EVTDESC1472676"
 	picture = "greatpowers"
 	trigger = {
-		tag = GUA
+		tag = NEN
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -26630,7 +26630,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = GUA
+		tag = NEN
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -26659,7 +26659,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472678"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = GUA
+		change_tag_no_core_switch = NEN
 	}
 }
 country_event = {
@@ -26668,7 +26668,7 @@ country_event = {
 	desc = "EVTDESC1472679"
 	picture = "greatpowers"
 	trigger = {
-		tag = HAI
+		tag = NEP
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -26762,7 +26762,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = HAI
+		tag = NEP
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -26791,7 +26791,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472681"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = HAI
+		change_tag_no_core_switch = NEP
 	}
 }
 country_event = {
@@ -26800,7 +26800,7 @@ country_event = {
 	desc = "EVTDESC1472682"
 	picture = "greatpowers"
 	trigger = {
-		tag = HAW
+		tag = NET
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -26894,7 +26894,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = HAW
+		tag = NET
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -26923,7 +26923,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472684"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = HAW
+		change_tag_no_core_switch = NET
 	}
 }
 country_event = {
@@ -26932,7 +26932,7 @@ country_event = {
 	desc = "EVTDESC1472685"
 	picture = "greatpowers"
 	trigger = {
-		tag = MAN
+		tag = NEW
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -27026,7 +27026,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = MAN
+		tag = NEW
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -27055,7 +27055,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472687"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = MAN
+		change_tag_no_core_switch = NEW
 	}
 }
 country_event = {
@@ -27064,7 +27064,7 @@ country_event = {
 	desc = "EVTDESC1472688"
 	picture = "greatpowers"
 	trigger = {
-		tag = MEX
+		tag = NGF
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -27158,7 +27158,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = MEX
+		tag = NGF
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -27187,7 +27187,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472690"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = MEX
+		change_tag_no_core_switch = NGF
 	}
 }
 country_event = {
@@ -27196,7 +27196,7 @@ country_event = {
 	desc = "EVTDESC1472691"
 	picture = "greatpowers"
 	trigger = {
-		tag = MTC
+		tag = NIC
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -27290,7 +27290,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = MTC
+		tag = NIC
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -27319,7 +27319,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472693"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = MTC
+		change_tag_no_core_switch = NIC
 	}
 }
 country_event = {
@@ -27328,7 +27328,7 @@ country_event = {
 	desc = "EVTDESC1472694"
 	picture = "greatpowers"
 	trigger = {
-		tag = HON
+		tag = NOR
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -27422,7 +27422,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = HON
+		tag = NOR
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -27451,7 +27451,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472696"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = HON
+		change_tag_no_core_switch = NOR
 	}
 }
 country_event = {
@@ -27460,7 +27460,7 @@ country_event = {
 	desc = "EVTDESC1472697"
 	picture = "greatpowers"
 	trigger = {
-		tag = NEN
+		tag = NZL
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -27554,7 +27554,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = NEN
+		tag = NZL
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -27583,7 +27583,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472699"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = NEN
+		change_tag_no_core_switch = NZL
 	}
 }
 country_event = {
@@ -27592,7 +27592,7 @@ country_event = {
 	desc = "EVTDESC1472700"
 	picture = "greatpowers"
 	trigger = {
-		tag = NEW
+		tag = OLD
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -27686,7 +27686,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = NEW
+		tag = OLD
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -27715,7 +27715,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472702"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = NEW
+		change_tag_no_core_switch = OLD
 	}
 }
 country_event = {
@@ -27724,7 +27724,7 @@ country_event = {
 	desc = "EVTDESC1472703"
 	picture = "greatpowers"
 	trigger = {
-		tag = NIC
+		tag = OMA
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -27818,7 +27818,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = NIC
+		tag = OMA
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -27847,7 +27847,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472705"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = NIC
+		change_tag_no_core_switch = OMA
 	}
 }
 country_event = {
@@ -27856,7 +27856,7 @@ country_event = {
 	desc = "EVTDESC1472706"
 	picture = "greatpowers"
 	trigger = {
-		tag = PNM
+		tag = ORA
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -27950,7 +27950,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = PNM
+		tag = ORA
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -27979,7 +27979,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472708"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = PNM
+		change_tag_no_core_switch = ORA
 	}
 }
 country_event = {
@@ -27988,7 +27988,7 @@ country_event = {
 	desc = "EVTDESC1472709"
 	picture = "greatpowers"
 	trigger = {
-		tag = QUE
+		tag = ORI
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -28082,7 +28082,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = QUE
+		tag = ORI
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -28111,7 +28111,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472711"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = QUE
+		change_tag_no_core_switch = ORI
 	}
 }
 country_event = {
@@ -28120,7 +28120,7 @@ country_event = {
 	desc = "EVTDESC1472712"
 	picture = "greatpowers"
 	trigger = {
-		tag = TEX
+		tag = PAN
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -28214,7 +28214,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = TEX
+		tag = PAN
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -28243,7 +28243,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472714"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = TEX
+		change_tag_no_core_switch = PAN
 	}
 }
 country_event = {
@@ -28252,7 +28252,7 @@ country_event = {
 	desc = "EVTDESC1472715"
 	picture = "greatpowers"
 	trigger = {
-		tag = UCA
+		tag = PAP
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -28346,7 +28346,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = UCA
+		tag = PAP
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -28375,7 +28375,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472717"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = UCA
+		change_tag_no_core_switch = PAP
 	}
 }
 country_event = {
@@ -28384,7 +28384,7 @@ country_event = {
 	desc = "EVTDESC1472718"
 	picture = "greatpowers"
 	trigger = {
-		tag = ARG
+		tag = PAR
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -28478,7 +28478,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = ARG
+		tag = PAR
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -28507,7 +28507,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472720"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = ARG
+		change_tag_no_core_switch = PAR
 	}
 }
 country_event = {
@@ -28516,7 +28516,7 @@ country_event = {
 	desc = "EVTDESC1472721"
 	picture = "greatpowers"
 	trigger = {
-		tag = BOL
+		tag = PER
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -28610,7 +28610,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BOL
+		tag = PER
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -28639,7 +28639,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472723"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BOL
+		change_tag_no_core_switch = PER
 	}
 }
 country_event = {
@@ -28648,7 +28648,7 @@ country_event = {
 	desc = "EVTDESC1472724"
 	picture = "greatpowers"
 	trigger = {
-		tag = BRZ
+		tag = PEU
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -28742,7 +28742,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BRZ
+		tag = PEU
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -28771,7 +28771,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472726"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BRZ
+		change_tag_no_core_switch = PEU
 	}
 }
 country_event = {
@@ -28780,7 +28780,7 @@ country_event = {
 	desc = "EVTDESC1472727"
 	picture = "greatpowers"
 	trigger = {
-		tag = CHL
+		tag = PHI
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -28874,7 +28874,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = CHL
+		tag = PHI
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -28903,7 +28903,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472729"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = CHL
+		change_tag_no_core_switch = PHI
 	}
 }
 country_event = {
@@ -28912,7 +28912,7 @@ country_event = {
 	desc = "EVTDESC1472730"
 	picture = "greatpowers"
 	trigger = {
-		tag = CLM
+		tag = PLC
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -29006,7 +29006,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = CLM
+		tag = PLC
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -29035,7 +29035,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472732"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = CLM
+		change_tag_no_core_switch = PLC
 	}
 }
 country_event = {
@@ -29044,7 +29044,7 @@ country_event = {
 	desc = "EVTDESC1472733"
 	picture = "greatpowers"
 	trigger = {
-		tag = ECU
+		tag = PNM
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -29138,7 +29138,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = ECU
+		tag = PNM
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -29167,7 +29167,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472735"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = ECU
+		change_tag_no_core_switch = PNM
 	}
 }
 country_event = {
@@ -29176,7 +29176,7 @@ country_event = {
 	desc = "EVTDESC1472736"
 	picture = "greatpowers"
 	trigger = {
-		tag = PEU
+		tag = POL
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -29270,7 +29270,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = PEU
+		tag = POL
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -29299,7 +29299,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472738"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = PEU
+		change_tag_no_core_switch = POL
 	}
 }
 country_event = {
@@ -29308,7 +29308,7 @@ country_event = {
 	desc = "EVTDESC1472739"
 	picture = "greatpowers"
 	trigger = {
-		tag = PRG
+		tag = POR
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -29402,7 +29402,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = PRG
+		tag = POR
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -29431,7 +29431,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472741"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = PRG
+		change_tag_no_core_switch = POR
 	}
 }
 country_event = {
@@ -29440,7 +29440,7 @@ country_event = {
 	desc = "EVTDESC1472742"
 	picture = "greatpowers"
 	trigger = {
-		tag = URU
+		tag = PRG
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -29534,7 +29534,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = URU
+		tag = PRG
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -29563,7 +29563,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472744"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = URU
+		change_tag_no_core_switch = PRG
 	}
 }
 country_event = {
@@ -29572,7 +29572,7 @@ country_event = {
 	desc = "EVTDESC1472745"
 	picture = "greatpowers"
 	trigger = {
-		tag = VNZ
+		tag = PRU
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -29666,7 +29666,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = VNZ
+		tag = PRU
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -29695,7 +29695,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472747"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = VNZ
+		change_tag_no_core_switch = PRU
 	}
 }
 country_event = {
@@ -29704,7 +29704,7 @@ country_event = {
 	desc = "EVTDESC1472748"
 	picture = "greatpowers"
 	trigger = {
-		tag = AST
+		tag = QUE
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -29798,7 +29798,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = AST
+		tag = QUE
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -29827,7 +29827,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472750"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = AST
+		change_tag_no_core_switch = QUE
 	}
 }
 country_event = {
@@ -29836,7 +29836,7 @@ country_event = {
 	desc = "EVTDESC1472751"
 	picture = "greatpowers"
 	trigger = {
-		tag = NZL
+		tag = RHO
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -29930,7 +29930,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = NZL
+		tag = RHO
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -29959,7 +29959,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472753"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = NZL
+		change_tag_no_core_switch = RHO
 	}
 }
 country_event = {
@@ -29968,7 +29968,7 @@ country_event = {
 	desc = "EVTDESC1472754"
 	picture = "greatpowers"
 	trigger = {
-		tag = ISR
+		tag = ROM
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -30062,7 +30062,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = ISR
+		tag = ROM
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -30091,7 +30091,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472756"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = ISR
+		change_tag_no_core_switch = ROM
 	}
 }
 country_event = {
@@ -30100,7 +30100,7 @@ country_event = {
 	desc = "EVTDESC1472757"
 	picture = "greatpowers"
 	trigger = {
-		tag = BYZ
+		tag = RUS
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -30194,7 +30194,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BYZ
+		tag = RUS
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -30223,7 +30223,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472759"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BYZ
+		change_tag_no_core_switch = RUS
 	}
 }
 country_event = {
@@ -30232,7 +30232,7 @@ country_event = {
 	desc = "EVTDESC1472760"
 	picture = "greatpowers"
 	trigger = {
-		tag = ICL
+		tag = RUT
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -30326,7 +30326,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = ICL
+		tag = RUT
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -30355,7 +30355,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472762"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = ICL
+		change_tag_no_core_switch = RUT
 	}
 }
 country_event = {
@@ -30364,7 +30364,7 @@ country_event = {
 	desc = "EVTDESC1472763"
 	picture = "greatpowers"
 	trigger = {
-		tag = BAB
+		tag = SAF
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -30458,7 +30458,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BAB
+		tag = SAF
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -30487,7 +30487,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472765"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BAB
+		change_tag_no_core_switch = SAF
 	}
 }
 country_event = {
@@ -30496,7 +30496,7 @@ country_event = {
 	desc = "EVTDESC1472766"
 	picture = "greatpowers"
 	trigger = {
-		tag = TPG
+		tag = SAR
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -30590,7 +30590,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = TPG
+		tag = SAR
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -30619,7 +30619,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472768"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = TPG
+		change_tag_no_core_switch = SAR
 	}
 }
 country_event = {
@@ -30628,7 +30628,7 @@ country_event = {
 	desc = "EVTDESC1472769"
 	picture = "greatpowers"
 	trigger = {
-		tag = ARA
+		tag = SAX
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -30722,7 +30722,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = ARA
+		tag = SAX
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -30751,7 +30751,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472771"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = ARA
+		change_tag_no_core_switch = SAX
 	}
 }
 country_event = {
@@ -30760,7 +30760,7 @@ country_event = {
 	desc = "EVTDESC1472772"
 	picture = "greatpowers"
 	trigger = {
-		tag = UBD
+		tag = SCA
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -30854,7 +30854,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = UBD
+		tag = SCA
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -30883,7 +30883,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472774"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = UBD
+		change_tag_no_core_switch = SCA
 	}
 }
 country_event = {
@@ -30892,7 +30892,7 @@ country_event = {
 	desc = "EVTDESC1472775"
 	picture = "greatpowers"
 	trigger = {
-		tag = BYE
+		tag = SCH
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -30986,7 +30986,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = BYE
+		tag = SCH
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -31015,7 +31015,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472777"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = BYE
+		change_tag_no_core_switch = SCH
 	}
 }
 country_event = {
@@ -31024,7 +31024,7 @@ country_event = {
 	desc = "EVTDESC1472778"
 	picture = "greatpowers"
 	trigger = {
-		tag = PLC
+		tag = SCO
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -31118,7 +31118,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = PLC
+		tag = SCO
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -31147,7 +31147,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472780"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = PLC
+		change_tag_no_core_switch = SCO
 	}
 }
 country_event = {
@@ -31156,7 +31156,7 @@ country_event = {
 	desc = "EVTDESC1472781"
 	picture = "greatpowers"
 	trigger = {
-		tag = GCO
+		tag = SER
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -31250,7 +31250,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = GCO
+		tag = SER
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -31279,7 +31279,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472783"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = GCO
+		change_tag_no_core_switch = SER
 	}
 }
 country_event = {
@@ -31288,7 +31288,7 @@ country_event = {
 	desc = "EVTDESC1472784"
 	picture = "greatpowers"
 	trigger = {
-		tag = JAN
+		tag = SGF
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -31382,7 +31382,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = JAN
+		tag = SGF
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -31411,7 +31411,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472786"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = JAN
+		change_tag_no_core_switch = SGF
 	}
 }
 country_event = {
@@ -31420,7 +31420,7 @@ country_event = {
 	desc = "EVTDESC1472787"
 	picture = "greatpowers"
 	trigger = {
-		tag = D01
+		tag = SHI
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -31514,7 +31514,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D01
+		tag = SHI
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -31543,7 +31543,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472789"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D01
+		change_tag_no_core_switch = SHI
 	}
 }
 country_event = {
@@ -31552,7 +31552,7 @@ country_event = {
 	desc = "EVTDESC1472790"
 	picture = "greatpowers"
 	trigger = {
-		tag = D02
+		tag = SIA
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -31646,7 +31646,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D02
+		tag = SIA
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -31675,7 +31675,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472792"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D02
+		change_tag_no_core_switch = SIA
 	}
 }
 country_event = {
@@ -31684,7 +31684,7 @@ country_event = {
 	desc = "EVTDESC1472793"
 	picture = "greatpowers"
 	trigger = {
-		tag = D03
+		tag = SIC
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -31778,7 +31778,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D03
+		tag = SIC
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -31807,7 +31807,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472795"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D03
+		change_tag_no_core_switch = SIC
 	}
 }
 country_event = {
@@ -31816,7 +31816,7 @@ country_event = {
 	desc = "EVTDESC1472796"
 	picture = "greatpowers"
 	trigger = {
-		tag = D04
+		tag = SIE
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -31910,7 +31910,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D04
+		tag = SIE
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -31939,7 +31939,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472798"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D04
+		change_tag_no_core_switch = SIE
 	}
 }
 country_event = {
@@ -31948,7 +31948,7 @@ country_event = {
 	desc = "EVTDESC1472799"
 	picture = "greatpowers"
 	trigger = {
-		tag = D05
+		tag = SIK
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -32042,7 +32042,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D05
+		tag = SIK
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -32071,7 +32071,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472801"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D05
+		change_tag_no_core_switch = SIK
 	}
 }
 country_event = {
@@ -32080,7 +32080,7 @@ country_event = {
 	desc = "EVTDESC1472802"
 	picture = "greatpowers"
 	trigger = {
-		tag = D06
+		tag = SIN
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -32174,7 +32174,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D06
+		tag = SIN
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -32203,7 +32203,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472804"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D06
+		change_tag_no_core_switch = SIN
 	}
 }
 country_event = {
@@ -32212,7 +32212,7 @@ country_event = {
 	desc = "EVTDESC1472805"
 	picture = "greatpowers"
 	trigger = {
-		tag = D07
+		tag = SLO
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -32306,7 +32306,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D07
+		tag = SLO
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -32335,7 +32335,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472807"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D07
+		change_tag_no_core_switch = SLO
 	}
 }
 country_event = {
@@ -32344,7 +32344,7 @@ country_event = {
 	desc = "EVTDESC1472808"
 	picture = "greatpowers"
 	trigger = {
-		tag = D08
+		tag = SLV
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -32438,7 +32438,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D08
+		tag = SLV
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -32467,7 +32467,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472810"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D08
+		change_tag_no_core_switch = SLV
 	}
 }
 country_event = {
@@ -32476,7 +32476,7 @@ country_event = {
 	desc = "EVTDESC1472811"
 	picture = "greatpowers"
 	trigger = {
-		tag = D09
+		tag = SOK
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -32570,7 +32570,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D09
+		tag = SOK
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -32599,7 +32599,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472813"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D09
+		change_tag_no_core_switch = SOK
 	}
 }
 country_event = {
@@ -32608,7 +32608,7 @@ country_event = {
 	desc = "EVTDESC1472814"
 	picture = "greatpowers"
 	trigger = {
-		tag = D10
+		tag = SOV
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -32702,7 +32702,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D10
+		tag = SOV
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -32731,7 +32731,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472816"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D10
+		change_tag_no_core_switch = SOV
 	}
 }
 country_event = {
@@ -32740,7 +32740,7 @@ country_event = {
 	desc = "EVTDESC1472817"
 	picture = "greatpowers"
 	trigger = {
-		tag = D11
+		tag = SPA
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -32834,7 +32834,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D11
+		tag = SPA
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -32863,7 +32863,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472819"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D11
+		change_tag_no_core_switch = SPA
 	}
 }
 country_event = {
@@ -32872,7 +32872,7 @@ country_event = {
 	desc = "EVTDESC1472820"
 	picture = "greatpowers"
 	trigger = {
-		tag = D12
+		tag = SRI
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -32966,7 +32966,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D12
+		tag = SRI
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -32995,7 +32995,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472822"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D12
+		change_tag_no_core_switch = SRI
 	}
 }
 country_event = {
@@ -33004,7 +33004,7 @@ country_event = {
 	desc = "EVTDESC1472823"
 	picture = "greatpowers"
 	trigger = {
-		tag = D13
+		tag = SWE
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -33098,7 +33098,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D13
+		tag = SWE
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -33127,7 +33127,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472825"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D13
+		change_tag_no_core_switch = SWE
 	}
 }
 country_event = {
@@ -33136,7 +33136,7 @@ country_event = {
 	desc = "EVTDESC1472826"
 	picture = "greatpowers"
 	trigger = {
-		tag = D14
+		tag = SWI
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -33230,7 +33230,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D14
+		tag = SWI
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -33259,7 +33259,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472828"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D14
+		change_tag_no_core_switch = SWI
 	}
 }
 country_event = {
@@ -33268,7 +33268,7 @@ country_event = {
 	desc = "EVTDESC1472829"
 	picture = "greatpowers"
 	trigger = {
-		tag = D15
+		tag = SXI
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -33362,7 +33362,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D15
+		tag = SXI
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -33391,7 +33391,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472831"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D15
+		change_tag_no_core_switch = SXI
 	}
 }
 country_event = {
@@ -33400,7 +33400,7 @@ country_event = {
 	desc = "EVTDESC1472832"
 	picture = "greatpowers"
 	trigger = {
-		tag = D16
+		tag = TAJ
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -33494,7 +33494,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D16
+		tag = TAJ
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -33523,7 +33523,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472834"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D16
+		change_tag_no_core_switch = TAJ
 	}
 }
 country_event = {
@@ -33532,7 +33532,7 @@ country_event = {
 	desc = "EVTDESC1472835"
 	picture = "greatpowers"
 	trigger = {
-		tag = D17
+		tag = TEX
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -33626,7 +33626,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D17
+		tag = TEX
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -33655,7 +33655,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472837"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D17
+		change_tag_no_core_switch = TEX
 	}
 }
 country_event = {
@@ -33664,7 +33664,7 @@ country_event = {
 	desc = "EVTDESC1472838"
 	picture = "greatpowers"
 	trigger = {
-		tag = D18
+		tag = TIB
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -33758,7 +33758,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D18
+		tag = TIB
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -33787,7 +33787,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472840"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D18
+		change_tag_no_core_switch = TIB
 	}
 }
 country_event = {
@@ -33796,7 +33796,7 @@ country_event = {
 	desc = "EVTDESC1472841"
 	picture = "greatpowers"
 	trigger = {
-		tag = D19
+		tag = TKM
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -33890,7 +33890,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D19
+		tag = TKM
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -33919,7 +33919,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472843"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D19
+		change_tag_no_core_switch = TKM
 	}
 }
 country_event = {
@@ -33928,7 +33928,7 @@ country_event = {
 	desc = "EVTDESC1472844"
 	picture = "greatpowers"
 	trigger = {
-		tag = D20
+		tag = TNT
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -34022,7 +34022,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D20
+		tag = TNT
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -34051,7 +34051,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472846"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D20
+		change_tag_no_core_switch = TNT
 	}
 }
 country_event = {
@@ -34060,7 +34060,7 @@ country_event = {
 	desc = "EVTDESC1472847"
 	picture = "greatpowers"
 	trigger = {
-		tag = D21
+		tag = TPG
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -34154,7 +34154,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D21
+		tag = TPG
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -34183,7 +34183,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472849"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D21
+		change_tag_no_core_switch = TPG
 	}
 }
 country_event = {
@@ -34192,7 +34192,7 @@ country_event = {
 	desc = "EVTDESC1472850"
 	picture = "greatpowers"
 	trigger = {
-		tag = D22
+		tag = TRA
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -34286,7 +34286,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D22
+		tag = TRA
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -34315,7 +34315,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472852"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D22
+		change_tag_no_core_switch = TRA
 	}
 }
 country_event = {
@@ -34324,7 +34324,7 @@ country_event = {
 	desc = "EVTDESC1472853"
 	picture = "greatpowers"
 	trigger = {
-		tag = D23
+		tag = TRE
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -34418,7 +34418,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D23
+		tag = TRE
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -34447,7 +34447,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472855"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D23
+		change_tag_no_core_switch = TRE
 	}
 }
 country_event = {
@@ -34456,7 +34456,7 @@ country_event = {
 	desc = "EVTDESC1472856"
 	picture = "greatpowers"
 	trigger = {
-		tag = D24
+		tag = TRI
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -34550,7 +34550,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D24
+		tag = TRI
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -34579,7 +34579,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472858"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D24
+		change_tag_no_core_switch = TRI
 	}
 }
 country_event = {
@@ -34588,7 +34588,7 @@ country_event = {
 	desc = "EVTDESC1472859"
 	picture = "greatpowers"
 	trigger = {
-		tag = D25
+		tag = TRN
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -34682,7 +34682,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D25
+		tag = TRN
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -34711,7 +34711,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472861"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D25
+		change_tag_no_core_switch = TRN
 	}
 }
 country_event = {
@@ -34720,7 +34720,7 @@ country_event = {
 	desc = "EVTDESC1472862"
 	picture = "greatpowers"
 	trigger = {
-		tag = D26
+		tag = TTT
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -34814,7 +34814,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D26
+		tag = TTT
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -34843,7 +34843,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472864"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D26
+		change_tag_no_core_switch = TTT
 	}
 }
 country_event = {
@@ -34852,7 +34852,7 @@ country_event = {
 	desc = "EVTDESC1472865"
 	picture = "greatpowers"
 	trigger = {
-		tag = D27
+		tag = TUN
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -34946,7 +34946,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D27
+		tag = TUN
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -34975,7 +34975,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472867"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D27
+		change_tag_no_core_switch = TUN
 	}
 }
 country_event = {
@@ -34984,7 +34984,7 @@ country_event = {
 	desc = "EVTDESC1472868"
 	picture = "greatpowers"
 	trigger = {
-		tag = D28
+		tag = TUR
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -35078,7 +35078,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D28
+		tag = TUR
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -35107,7 +35107,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472870"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D28
+		change_tag_no_core_switch = TUR
 	}
 }
 country_event = {
@@ -35116,7 +35116,7 @@ country_event = {
 	desc = "EVTDESC1472871"
 	picture = "greatpowers"
 	trigger = {
-		tag = D29
+		tag = TUS
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -35210,7 +35210,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D29
+		tag = TUS
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -35239,7 +35239,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472873"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D29
+		change_tag_no_core_switch = TUS
 	}
 }
 country_event = {
@@ -35248,7 +35248,7 @@ country_event = {
 	desc = "EVTDESC1472874"
 	picture = "greatpowers"
 	trigger = {
-		tag = D30
+		tag = UBD
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -35342,7 +35342,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D30
+		tag = UBD
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -35371,7 +35371,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472876"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D30
+		change_tag_no_core_switch = UBD
 	}
 }
 country_event = {
@@ -35380,7 +35380,7 @@ country_event = {
 	desc = "EVTDESC1472877"
 	picture = "greatpowers"
 	trigger = {
-		tag = D31
+		tag = UCA
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -35474,7 +35474,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D31
+		tag = UCA
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -35503,7 +35503,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472879"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D31
+		change_tag_no_core_switch = UCA
 	}
 }
 country_event = {
@@ -35512,7 +35512,7 @@ country_event = {
 	desc = "EVTDESC1472880"
 	picture = "greatpowers"
 	trigger = {
-		tag = D32
+		tag = UKR
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -35606,7 +35606,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D32
+		tag = UKR
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -35635,7 +35635,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472882"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D32
+		change_tag_no_core_switch = UKR
 	}
 }
 country_event = {
@@ -35644,7 +35644,7 @@ country_event = {
 	desc = "EVTDESC1472883"
 	picture = "greatpowers"
 	trigger = {
-		tag = D33
+		tag = URU
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -35738,7 +35738,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D33
+		tag = URU
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -35767,7 +35767,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472885"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D33
+		change_tag_no_core_switch = URU
 	}
 }
 country_event = {
@@ -35776,7 +35776,7 @@ country_event = {
 	desc = "EVTDESC1472886"
 	picture = "greatpowers"
 	trigger = {
-		tag = D34
+		tag = USA
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -35870,7 +35870,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D34
+		tag = USA
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -35899,7 +35899,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472888"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D34
+		change_tag_no_core_switch = USA
 	}
 }
 country_event = {
@@ -35908,7 +35908,7 @@ country_event = {
 	desc = "EVTDESC1472889"
 	picture = "greatpowers"
 	trigger = {
-		tag = D35
+		tag = UZB
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -36002,7 +36002,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D35
+		tag = UZB
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -36031,7 +36031,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472891"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D35
+		change_tag_no_core_switch = UZB
 	}
 }
 country_event = {
@@ -36040,7 +36040,7 @@ country_event = {
 	desc = "EVTDESC1472892"
 	picture = "greatpowers"
 	trigger = {
-		tag = D36
+		tag = VEN
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -36134,7 +36134,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D36
+		tag = VEN
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -36163,7 +36163,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472894"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D36
+		change_tag_no_core_switch = VEN
 	}
 }
 country_event = {
@@ -36172,7 +36172,7 @@ country_event = {
 	desc = "EVTDESC1472895"
 	picture = "greatpowers"
 	trigger = {
-		tag = D37
+		tag = VNZ
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -36266,7 +36266,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D37
+		tag = VNZ
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -36295,7 +36295,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472897"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D37
+		change_tag_no_core_switch = VNZ
 	}
 }
 country_event = {
@@ -36304,7 +36304,7 @@ country_event = {
 	desc = "EVTDESC1472898"
 	picture = "greatpowers"
 	trigger = {
-		tag = D38
+		tag = WAL
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -36398,7 +36398,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D38
+		tag = WAL
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -36427,7 +36427,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472900"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D38
+		change_tag_no_core_switch = WAL
 	}
 }
 country_event = {
@@ -36436,7 +36436,7 @@ country_event = {
 	desc = "EVTDESC1472901"
 	picture = "greatpowers"
 	trigger = {
-		tag = D39
+		tag = WEI
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -36530,7 +36530,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D39
+		tag = WEI
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -36559,7 +36559,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472903"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D39
+		change_tag_no_core_switch = WEI
 	}
 }
 country_event = {
@@ -36568,7 +36568,7 @@ country_event = {
 	desc = "EVTDESC1472904"
 	picture = "greatpowers"
 	trigger = {
-		tag = D40
+		tag = WIA
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -36662,7 +36662,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D40
+		tag = WIA
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -36691,7 +36691,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472906"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D40
+		change_tag_no_core_switch = WIA
 	}
 }
 country_event = {
@@ -36700,7 +36700,7 @@ country_event = {
 	desc = "EVTDESC1472907"
 	picture = "greatpowers"
 	trigger = {
-		tag = D41
+		tag = WLL
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -36794,7 +36794,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D41
+		tag = WLL
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -36823,7 +36823,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472909"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D41
+		change_tag_no_core_switch = WLL
 	}
 }
 country_event = {
@@ -36832,7 +36832,7 @@ country_event = {
 	desc = "EVTDESC1472910"
 	picture = "greatpowers"
 	trigger = {
-		tag = D42
+		tag = WUR
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -36926,7 +36926,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D42
+		tag = WUR
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -36955,7 +36955,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472912"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D42
+		change_tag_no_core_switch = WUR
 	}
 }
 country_event = {
@@ -36964,7 +36964,7 @@ country_event = {
 	desc = "EVTDESC1472913"
 	picture = "greatpowers"
 	trigger = {
-		tag = D43
+		tag = XBI
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -37058,7 +37058,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D43
+		tag = XBI
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -37087,7 +37087,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472915"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D43
+		change_tag_no_core_switch = XBI
 	}
 }
 country_event = {
@@ -37096,7 +37096,7 @@ country_event = {
 	desc = "EVTDESC1472916"
 	picture = "greatpowers"
 	trigger = {
-		tag = D44
+		tag = XIN
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -37190,7 +37190,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D44
+		tag = XIN
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -37219,7 +37219,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472918"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D44
+		change_tag_no_core_switch = XIN
 	}
 }
 country_event = {
@@ -37228,7 +37228,7 @@ country_event = {
 	desc = "EVTDESC1472919"
 	picture = "greatpowers"
 	trigger = {
-		tag = D45
+		tag = YAK
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -37322,7 +37322,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D45
+		tag = YAK
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -37351,7 +37351,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472921"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D45
+		change_tag_no_core_switch = YAK
 	}
 }
 country_event = {
@@ -37360,7 +37360,7 @@ country_event = {
 	desc = "EVTDESC1472922"
 	picture = "greatpowers"
 	trigger = {
-		tag = D46
+		tag = YEM
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -37454,7 +37454,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D46
+		tag = YEM
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -37483,7 +37483,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472924"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D46
+		change_tag_no_core_switch = YEM
 	}
 }
 country_event = {
@@ -37492,7 +37492,7 @@ country_event = {
 	desc = "EVTDESC1472925"
 	picture = "greatpowers"
 	trigger = {
-		tag = D47
+		tag = YNN
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -37586,7 +37586,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D47
+		tag = YNN
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -37615,7 +37615,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472927"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D47
+		change_tag_no_core_switch = YNN
 	}
 }
 country_event = {
@@ -37624,7 +37624,7 @@ country_event = {
 	desc = "EVTDESC1472928"
 	picture = "greatpowers"
 	trigger = {
-		tag = D48
+		tag = YUG
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -37718,7 +37718,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D48
+		tag = YUG
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -37747,7 +37747,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472930"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D48
+		change_tag_no_core_switch = YUG
 	}
 }
 country_event = {
@@ -37756,7 +37756,7 @@ country_event = {
 	desc = "EVTDESC1472931"
 	picture = "greatpowers"
 	trigger = {
-		tag = D49
+		tag = ZAN
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -37850,7 +37850,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D49
+		tag = ZAN
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -37879,7 +37879,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472933"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D49
+		change_tag_no_core_switch = ZAN
 	}
 }
 country_event = {
@@ -37888,7 +37888,7 @@ country_event = {
 	desc = "EVTDESC1472934"
 	picture = "greatpowers"
 	trigger = {
-		tag = D50
+		tag = ZUL
 		ai = yes
 		total_pops = 100000
 		OR = {
@@ -37982,7 +37982,7 @@ country_event = {
 	picture = "greatpowers"
 	trigger = {
 		has_country_flag = not_ai
-		tag = D50
+		tag = ZUL
 		has_global_flag = kozelam_net
 		ai = yes
 	}
@@ -38011,6 +38011,6 @@ country_event = {
 	option = {
 		name = "EVTOPTA1472936"
 		clr_country_flag = not_ai
-		change_tag_no_core_switch = D50
+		change_tag_no_core_switch = ZUL
 	}
 }

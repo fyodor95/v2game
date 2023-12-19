@@ -384,6 +384,83 @@ D_primary_flemish = {
 		}
 	}
 }
+D_primary_wallonian = {
+	potential = {
+		primary_culture = british
+		capital_scope = {
+			culture = wallonian
+		}
+		OR = {
+			tag = D01
+			tag = D02
+			tag = D03
+			tag = D04
+			tag = D05
+			tag = D06
+			tag = D07
+			tag = D08
+			tag = D09
+			tag = D10
+			tag = D11
+			tag = D12
+			tag = D13
+			tag = D14
+			tag = D15
+			tag = D16
+			tag = D17
+			tag = D18
+			tag = D19
+			tag = D20
+			tag = D21
+			tag = D22
+			tag = D23
+			tag = D24
+			tag = D25
+			tag = D26
+			tag = D27
+			tag = D28
+			tag = D29
+			tag = D30
+			tag = D31
+			tag = D32
+			tag = D33
+			tag = D34
+			tag = D35
+			tag = D36
+			tag = D37
+			tag = D38
+			tag = D39
+			tag = D40
+			tag = D41
+			tag = D42
+			tag = D43
+			tag = D44
+			tag = D45
+			tag = D46
+			tag = D47
+			tag = D48
+			tag = D49
+			tag = D50
+		}
+	}
+	allow = {
+		capital_scope = {
+			culture = wallonian
+		}
+	}
+	effect = {
+		primary_culture = wallonian
+		any_pop = {
+			limit = {
+				OR = {
+					is_accepted_culture = yes
+					is_primary_culture = yes
+				}
+			}
+			militancy = -10
+		}
+	}
+}
 D_primary_swiss = {
 	potential = {
 		primary_culture = british
@@ -912,6 +989,83 @@ D_primary_sami = {
 	}
 	effect = {
 		primary_culture = sami
+		any_pop = {
+			limit = {
+				OR = {
+					is_accepted_culture = yes
+					is_primary_culture = yes
+				}
+			}
+			militancy = -10
+		}
+	}
+}
+D_primary_scottish = {
+	potential = {
+		primary_culture = british
+		capital_scope = {
+			culture = scottish
+		}
+		OR = {
+			tag = D01
+			tag = D02
+			tag = D03
+			tag = D04
+			tag = D05
+			tag = D06
+			tag = D07
+			tag = D08
+			tag = D09
+			tag = D10
+			tag = D11
+			tag = D12
+			tag = D13
+			tag = D14
+			tag = D15
+			tag = D16
+			tag = D17
+			tag = D18
+			tag = D19
+			tag = D20
+			tag = D21
+			tag = D22
+			tag = D23
+			tag = D24
+			tag = D25
+			tag = D26
+			tag = D27
+			tag = D28
+			tag = D29
+			tag = D30
+			tag = D31
+			tag = D32
+			tag = D33
+			tag = D34
+			tag = D35
+			tag = D36
+			tag = D37
+			tag = D38
+			tag = D39
+			tag = D40
+			tag = D41
+			tag = D42
+			tag = D43
+			tag = D44
+			tag = D45
+			tag = D46
+			tag = D47
+			tag = D48
+			tag = D49
+			tag = D50
+		}
+	}
+	allow = {
+		capital_scope = {
+			culture = scottish
+		}
+	}
+	effect = {
+		primary_culture = scottish
 		any_pop = {
 			limit = {
 				OR = {
@@ -3387,6 +3541,83 @@ D_primary_turkish = {
 		}
 	}
 }
+D_primary_crimean_tatar = {
+	potential = {
+		primary_culture = british
+		capital_scope = {
+			culture = crimean_tatar
+		}
+		OR = {
+			tag = D01
+			tag = D02
+			tag = D03
+			tag = D04
+			tag = D05
+			tag = D06
+			tag = D07
+			tag = D08
+			tag = D09
+			tag = D10
+			tag = D11
+			tag = D12
+			tag = D13
+			tag = D14
+			tag = D15
+			tag = D16
+			tag = D17
+			tag = D18
+			tag = D19
+			tag = D20
+			tag = D21
+			tag = D22
+			tag = D23
+			tag = D24
+			tag = D25
+			tag = D26
+			tag = D27
+			tag = D28
+			tag = D29
+			tag = D30
+			tag = D31
+			tag = D32
+			tag = D33
+			tag = D34
+			tag = D35
+			tag = D36
+			tag = D37
+			tag = D38
+			tag = D39
+			tag = D40
+			tag = D41
+			tag = D42
+			tag = D43
+			tag = D44
+			tag = D45
+			tag = D46
+			tag = D47
+			tag = D48
+			tag = D49
+			tag = D50
+		}
+	}
+	allow = {
+		capital_scope = {
+			culture = crimean_tatar
+		}
+	}
+	effect = {
+		primary_culture = crimean_tatar
+		any_pop = {
+			limit = {
+				OR = {
+					is_accepted_culture = yes
+					is_primary_culture = yes
+				}
+			}
+			militancy = -10
+		}
+	}
+}
 D_primary_azerbaijani = {
 	potential = {
 		primary_culture = british
@@ -3926,83 +4157,6 @@ D_primary_berber = {
 		}
 	}
 }
-D_primary_persian = {
-	potential = {
-		primary_culture = british
-		capital_scope = {
-			culture = persian
-		}
-		OR = {
-			tag = D01
-			tag = D02
-			tag = D03
-			tag = D04
-			tag = D05
-			tag = D06
-			tag = D07
-			tag = D08
-			tag = D09
-			tag = D10
-			tag = D11
-			tag = D12
-			tag = D13
-			tag = D14
-			tag = D15
-			tag = D16
-			tag = D17
-			tag = D18
-			tag = D19
-			tag = D20
-			tag = D21
-			tag = D22
-			tag = D23
-			tag = D24
-			tag = D25
-			tag = D26
-			tag = D27
-			tag = D28
-			tag = D29
-			tag = D30
-			tag = D31
-			tag = D32
-			tag = D33
-			tag = D34
-			tag = D35
-			tag = D36
-			tag = D37
-			tag = D38
-			tag = D39
-			tag = D40
-			tag = D41
-			tag = D42
-			tag = D43
-			tag = D44
-			tag = D45
-			tag = D46
-			tag = D47
-			tag = D48
-			tag = D49
-			tag = D50
-		}
-	}
-	allow = {
-		capital_scope = {
-			culture = persian
-		}
-	}
-	effect = {
-		primary_culture = persian
-		any_pop = {
-			limit = {
-				OR = {
-					is_accepted_culture = yes
-					is_primary_culture = yes
-				}
-			}
-			militancy = -10
-		}
-	}
-}
 D_primary_uzbek = {
 	potential = {
 		primary_culture = british
@@ -4069,6 +4223,83 @@ D_primary_uzbek = {
 	}
 	effect = {
 		primary_culture = uzbek
+		any_pop = {
+			limit = {
+				OR = {
+					is_accepted_culture = yes
+					is_primary_culture = yes
+				}
+			}
+			militancy = -10
+		}
+	}
+}
+D_primary_persian = {
+	potential = {
+		primary_culture = british
+		capital_scope = {
+			culture = persian
+		}
+		OR = {
+			tag = D01
+			tag = D02
+			tag = D03
+			tag = D04
+			tag = D05
+			tag = D06
+			tag = D07
+			tag = D08
+			tag = D09
+			tag = D10
+			tag = D11
+			tag = D12
+			tag = D13
+			tag = D14
+			tag = D15
+			tag = D16
+			tag = D17
+			tag = D18
+			tag = D19
+			tag = D20
+			tag = D21
+			tag = D22
+			tag = D23
+			tag = D24
+			tag = D25
+			tag = D26
+			tag = D27
+			tag = D28
+			tag = D29
+			tag = D30
+			tag = D31
+			tag = D32
+			tag = D33
+			tag = D34
+			tag = D35
+			tag = D36
+			tag = D37
+			tag = D38
+			tag = D39
+			tag = D40
+			tag = D41
+			tag = D42
+			tag = D43
+			tag = D44
+			tag = D45
+			tag = D46
+			tag = D47
+			tag = D48
+			tag = D49
+			tag = D50
+		}
+	}
+	allow = {
+		capital_scope = {
+			culture = persian
+		}
+	}
+	effect = {
+		primary_culture = persian
 		any_pop = {
 			limit = {
 				OR = {
@@ -4850,6 +5081,83 @@ D_primary_tatar = {
 		}
 	}
 }
+D_primary_buryat = {
+	potential = {
+		primary_culture = british
+		capital_scope = {
+			culture = buryat
+		}
+		OR = {
+			tag = D01
+			tag = D02
+			tag = D03
+			tag = D04
+			tag = D05
+			tag = D06
+			tag = D07
+			tag = D08
+			tag = D09
+			tag = D10
+			tag = D11
+			tag = D12
+			tag = D13
+			tag = D14
+			tag = D15
+			tag = D16
+			tag = D17
+			tag = D18
+			tag = D19
+			tag = D20
+			tag = D21
+			tag = D22
+			tag = D23
+			tag = D24
+			tag = D25
+			tag = D26
+			tag = D27
+			tag = D28
+			tag = D29
+			tag = D30
+			tag = D31
+			tag = D32
+			tag = D33
+			tag = D34
+			tag = D35
+			tag = D36
+			tag = D37
+			tag = D38
+			tag = D39
+			tag = D40
+			tag = D41
+			tag = D42
+			tag = D43
+			tag = D44
+			tag = D45
+			tag = D46
+			tag = D47
+			tag = D48
+			tag = D49
+			tag = D50
+		}
+	}
+	allow = {
+		capital_scope = {
+			culture = buryat
+		}
+	}
+	effect = {
+		primary_culture = buryat
+		any_pop = {
+			limit = {
+				OR = {
+					is_accepted_culture = yes
+					is_primary_culture = yes
+				}
+			}
+			militancy = -10
+		}
+	}
+}
 D_primary_mongol = {
 	potential = {
 		primary_culture = british
@@ -4916,6 +5224,83 @@ D_primary_mongol = {
 	}
 	effect = {
 		primary_culture = mongol
+		any_pop = {
+			limit = {
+				OR = {
+					is_accepted_culture = yes
+					is_primary_culture = yes
+				}
+			}
+			militancy = -10
+		}
+	}
+}
+D_primary_kalmyk = {
+	potential = {
+		primary_culture = british
+		capital_scope = {
+			culture = kalmyk
+		}
+		OR = {
+			tag = D01
+			tag = D02
+			tag = D03
+			tag = D04
+			tag = D05
+			tag = D06
+			tag = D07
+			tag = D08
+			tag = D09
+			tag = D10
+			tag = D11
+			tag = D12
+			tag = D13
+			tag = D14
+			tag = D15
+			tag = D16
+			tag = D17
+			tag = D18
+			tag = D19
+			tag = D20
+			tag = D21
+			tag = D22
+			tag = D23
+			tag = D24
+			tag = D25
+			tag = D26
+			tag = D27
+			tag = D28
+			tag = D29
+			tag = D30
+			tag = D31
+			tag = D32
+			tag = D33
+			tag = D34
+			tag = D35
+			tag = D36
+			tag = D37
+			tag = D38
+			tag = D39
+			tag = D40
+			tag = D41
+			tag = D42
+			tag = D43
+			tag = D44
+			tag = D45
+			tag = D46
+			tag = D47
+			tag = D48
+			tag = D49
+			tag = D50
+		}
+	}
+	allow = {
+		capital_scope = {
+			culture = kalmyk
+		}
+	}
+	effect = {
+		primary_culture = kalmyk
 		any_pop = {
 			limit = {
 				OR = {
@@ -5081,11 +5466,11 @@ D_primary_yakut = {
 		}
 	}
 }
-D_primary_tibetan = {
+D_primary_tuvan = {
 	potential = {
 		primary_culture = british
 		capital_scope = {
-			culture = tibetan
+			culture = tuvan
 		}
 		OR = {
 			tag = D01
@@ -5142,11 +5527,11 @@ D_primary_tibetan = {
 	}
 	allow = {
 		capital_scope = {
-			culture = tibetan
+			culture = tuvan
 		}
 	}
 	effect = {
-		primary_culture = tibetan
+		primary_culture = tuvan
 		any_pop = {
 			limit = {
 				OR = {
@@ -6621,6 +7006,83 @@ D_primary_telegu = {
 		}
 	}
 }
+D_primary_malay = {
+	potential = {
+		primary_culture = british
+		capital_scope = {
+			culture = malay
+		}
+		OR = {
+			tag = D01
+			tag = D02
+			tag = D03
+			tag = D04
+			tag = D05
+			tag = D06
+			tag = D07
+			tag = D08
+			tag = D09
+			tag = D10
+			tag = D11
+			tag = D12
+			tag = D13
+			tag = D14
+			tag = D15
+			tag = D16
+			tag = D17
+			tag = D18
+			tag = D19
+			tag = D20
+			tag = D21
+			tag = D22
+			tag = D23
+			tag = D24
+			tag = D25
+			tag = D26
+			tag = D27
+			tag = D28
+			tag = D29
+			tag = D30
+			tag = D31
+			tag = D32
+			tag = D33
+			tag = D34
+			tag = D35
+			tag = D36
+			tag = D37
+			tag = D38
+			tag = D39
+			tag = D40
+			tag = D41
+			tag = D42
+			tag = D43
+			tag = D44
+			tag = D45
+			tag = D46
+			tag = D47
+			tag = D48
+			tag = D49
+			tag = D50
+		}
+	}
+	allow = {
+		capital_scope = {
+			culture = malay
+		}
+	}
+	effect = {
+		primary_culture = malay
+		any_pop = {
+			limit = {
+				OR = {
+					is_accepted_culture = yes
+					is_primary_culture = yes
+				}
+			}
+			militancy = -10
+		}
+	}
+}
 D_primary_vietnamese = {
 	potential = {
 		primary_culture = british
@@ -6764,83 +7226,6 @@ D_primary_khmer = {
 	}
 	effect = {
 		primary_culture = khmer
-		any_pop = {
-			limit = {
-				OR = {
-					is_accepted_culture = yes
-					is_primary_culture = yes
-				}
-			}
-			militancy = -10
-		}
-	}
-}
-D_primary_malay = {
-	potential = {
-		primary_culture = british
-		capital_scope = {
-			culture = malay
-		}
-		OR = {
-			tag = D01
-			tag = D02
-			tag = D03
-			tag = D04
-			tag = D05
-			tag = D06
-			tag = D07
-			tag = D08
-			tag = D09
-			tag = D10
-			tag = D11
-			tag = D12
-			tag = D13
-			tag = D14
-			tag = D15
-			tag = D16
-			tag = D17
-			tag = D18
-			tag = D19
-			tag = D20
-			tag = D21
-			tag = D22
-			tag = D23
-			tag = D24
-			tag = D25
-			tag = D26
-			tag = D27
-			tag = D28
-			tag = D29
-			tag = D30
-			tag = D31
-			tag = D32
-			tag = D33
-			tag = D34
-			tag = D35
-			tag = D36
-			tag = D37
-			tag = D38
-			tag = D39
-			tag = D40
-			tag = D41
-			tag = D42
-			tag = D43
-			tag = D44
-			tag = D45
-			tag = D46
-			tag = D47
-			tag = D48
-			tag = D49
-			tag = D50
-		}
-	}
-	allow = {
-		capital_scope = {
-			culture = malay
-		}
-	}
-	effect = {
-		primary_culture = malay
 		any_pop = {
 			limit = {
 				OR = {
@@ -7699,237 +8084,6 @@ D_primary_japanese = {
 		}
 	}
 }
-D_primary_manchu = {
-	potential = {
-		primary_culture = british
-		capital_scope = {
-			culture = manchu
-		}
-		OR = {
-			tag = D01
-			tag = D02
-			tag = D03
-			tag = D04
-			tag = D05
-			tag = D06
-			tag = D07
-			tag = D08
-			tag = D09
-			tag = D10
-			tag = D11
-			tag = D12
-			tag = D13
-			tag = D14
-			tag = D15
-			tag = D16
-			tag = D17
-			tag = D18
-			tag = D19
-			tag = D20
-			tag = D21
-			tag = D22
-			tag = D23
-			tag = D24
-			tag = D25
-			tag = D26
-			tag = D27
-			tag = D28
-			tag = D29
-			tag = D30
-			tag = D31
-			tag = D32
-			tag = D33
-			tag = D34
-			tag = D35
-			tag = D36
-			tag = D37
-			tag = D38
-			tag = D39
-			tag = D40
-			tag = D41
-			tag = D42
-			tag = D43
-			tag = D44
-			tag = D45
-			tag = D46
-			tag = D47
-			tag = D48
-			tag = D49
-			tag = D50
-		}
-	}
-	allow = {
-		capital_scope = {
-			culture = manchu
-		}
-	}
-	effect = {
-		primary_culture = manchu
-		any_pop = {
-			limit = {
-				OR = {
-					is_accepted_culture = yes
-					is_primary_culture = yes
-				}
-			}
-			militancy = -10
-		}
-	}
-}
-D_primary_beifaren = {
-	potential = {
-		primary_culture = british
-		capital_scope = {
-			culture = beifaren
-		}
-		OR = {
-			tag = D01
-			tag = D02
-			tag = D03
-			tag = D04
-			tag = D05
-			tag = D06
-			tag = D07
-			tag = D08
-			tag = D09
-			tag = D10
-			tag = D11
-			tag = D12
-			tag = D13
-			tag = D14
-			tag = D15
-			tag = D16
-			tag = D17
-			tag = D18
-			tag = D19
-			tag = D20
-			tag = D21
-			tag = D22
-			tag = D23
-			tag = D24
-			tag = D25
-			tag = D26
-			tag = D27
-			tag = D28
-			tag = D29
-			tag = D30
-			tag = D31
-			tag = D32
-			tag = D33
-			tag = D34
-			tag = D35
-			tag = D36
-			tag = D37
-			tag = D38
-			tag = D39
-			tag = D40
-			tag = D41
-			tag = D42
-			tag = D43
-			tag = D44
-			tag = D45
-			tag = D46
-			tag = D47
-			tag = D48
-			tag = D49
-			tag = D50
-		}
-	}
-	allow = {
-		capital_scope = {
-			culture = beifaren
-		}
-	}
-	effect = {
-		primary_culture = beifaren
-		any_pop = {
-			limit = {
-				OR = {
-					is_accepted_culture = yes
-					is_primary_culture = yes
-				}
-			}
-			militancy = -10
-		}
-	}
-}
-D_primary_nanfaren = {
-	potential = {
-		primary_culture = british
-		capital_scope = {
-			culture = nanfaren
-		}
-		OR = {
-			tag = D01
-			tag = D02
-			tag = D03
-			tag = D04
-			tag = D05
-			tag = D06
-			tag = D07
-			tag = D08
-			tag = D09
-			tag = D10
-			tag = D11
-			tag = D12
-			tag = D13
-			tag = D14
-			tag = D15
-			tag = D16
-			tag = D17
-			tag = D18
-			tag = D19
-			tag = D20
-			tag = D21
-			tag = D22
-			tag = D23
-			tag = D24
-			tag = D25
-			tag = D26
-			tag = D27
-			tag = D28
-			tag = D29
-			tag = D30
-			tag = D31
-			tag = D32
-			tag = D33
-			tag = D34
-			tag = D35
-			tag = D36
-			tag = D37
-			tag = D38
-			tag = D39
-			tag = D40
-			tag = D41
-			tag = D42
-			tag = D43
-			tag = D44
-			tag = D45
-			tag = D46
-			tag = D47
-			tag = D48
-			tag = D49
-			tag = D50
-		}
-	}
-	allow = {
-		capital_scope = {
-			culture = nanfaren
-		}
-	}
-	effect = {
-		primary_culture = nanfaren
-		any_pop = {
-			limit = {
-				OR = {
-					is_accepted_culture = yes
-					is_primary_culture = yes
-				}
-			}
-			militancy = -10
-		}
-	}
-}
 D_primary_korean = {
 	potential = {
 		primary_culture = british
@@ -8535,6 +8689,314 @@ D_primary_yue = {
 	}
 	effect = {
 		primary_culture = yue
+		any_pop = {
+			limit = {
+				OR = {
+					is_accepted_culture = yes
+					is_primary_culture = yes
+				}
+			}
+			militancy = -10
+		}
+	}
+}
+D_primary_manchu = {
+	potential = {
+		primary_culture = british
+		capital_scope = {
+			culture = manchu
+		}
+		OR = {
+			tag = D01
+			tag = D02
+			tag = D03
+			tag = D04
+			tag = D05
+			tag = D06
+			tag = D07
+			tag = D08
+			tag = D09
+			tag = D10
+			tag = D11
+			tag = D12
+			tag = D13
+			tag = D14
+			tag = D15
+			tag = D16
+			tag = D17
+			tag = D18
+			tag = D19
+			tag = D20
+			tag = D21
+			tag = D22
+			tag = D23
+			tag = D24
+			tag = D25
+			tag = D26
+			tag = D27
+			tag = D28
+			tag = D29
+			tag = D30
+			tag = D31
+			tag = D32
+			tag = D33
+			tag = D34
+			tag = D35
+			tag = D36
+			tag = D37
+			tag = D38
+			tag = D39
+			tag = D40
+			tag = D41
+			tag = D42
+			tag = D43
+			tag = D44
+			tag = D45
+			tag = D46
+			tag = D47
+			tag = D48
+			tag = D49
+			tag = D50
+		}
+	}
+	allow = {
+		capital_scope = {
+			culture = manchu
+		}
+	}
+	effect = {
+		primary_culture = manchu
+		any_pop = {
+			limit = {
+				OR = {
+					is_accepted_culture = yes
+					is_primary_culture = yes
+				}
+			}
+			militancy = -10
+		}
+	}
+}
+D_primary_beifaren = {
+	potential = {
+		primary_culture = british
+		capital_scope = {
+			culture = beifaren
+		}
+		OR = {
+			tag = D01
+			tag = D02
+			tag = D03
+			tag = D04
+			tag = D05
+			tag = D06
+			tag = D07
+			tag = D08
+			tag = D09
+			tag = D10
+			tag = D11
+			tag = D12
+			tag = D13
+			tag = D14
+			tag = D15
+			tag = D16
+			tag = D17
+			tag = D18
+			tag = D19
+			tag = D20
+			tag = D21
+			tag = D22
+			tag = D23
+			tag = D24
+			tag = D25
+			tag = D26
+			tag = D27
+			tag = D28
+			tag = D29
+			tag = D30
+			tag = D31
+			tag = D32
+			tag = D33
+			tag = D34
+			tag = D35
+			tag = D36
+			tag = D37
+			tag = D38
+			tag = D39
+			tag = D40
+			tag = D41
+			tag = D42
+			tag = D43
+			tag = D44
+			tag = D45
+			tag = D46
+			tag = D47
+			tag = D48
+			tag = D49
+			tag = D50
+		}
+	}
+	allow = {
+		capital_scope = {
+			culture = beifaren
+		}
+	}
+	effect = {
+		primary_culture = beifaren
+		any_pop = {
+			limit = {
+				OR = {
+					is_accepted_culture = yes
+					is_primary_culture = yes
+				}
+			}
+			militancy = -10
+		}
+	}
+}
+D_primary_nanfaren = {
+	potential = {
+		primary_culture = british
+		capital_scope = {
+			culture = nanfaren
+		}
+		OR = {
+			tag = D01
+			tag = D02
+			tag = D03
+			tag = D04
+			tag = D05
+			tag = D06
+			tag = D07
+			tag = D08
+			tag = D09
+			tag = D10
+			tag = D11
+			tag = D12
+			tag = D13
+			tag = D14
+			tag = D15
+			tag = D16
+			tag = D17
+			tag = D18
+			tag = D19
+			tag = D20
+			tag = D21
+			tag = D22
+			tag = D23
+			tag = D24
+			tag = D25
+			tag = D26
+			tag = D27
+			tag = D28
+			tag = D29
+			tag = D30
+			tag = D31
+			tag = D32
+			tag = D33
+			tag = D34
+			tag = D35
+			tag = D36
+			tag = D37
+			tag = D38
+			tag = D39
+			tag = D40
+			tag = D41
+			tag = D42
+			tag = D43
+			tag = D44
+			tag = D45
+			tag = D46
+			tag = D47
+			tag = D48
+			tag = D49
+			tag = D50
+		}
+	}
+	allow = {
+		capital_scope = {
+			culture = nanfaren
+		}
+	}
+	effect = {
+		primary_culture = nanfaren
+		any_pop = {
+			limit = {
+				OR = {
+					is_accepted_culture = yes
+					is_primary_culture = yes
+				}
+			}
+			militancy = -10
+		}
+	}
+}
+D_primary_tibetan = {
+	potential = {
+		primary_culture = british
+		capital_scope = {
+			culture = tibetan
+		}
+		OR = {
+			tag = D01
+			tag = D02
+			tag = D03
+			tag = D04
+			tag = D05
+			tag = D06
+			tag = D07
+			tag = D08
+			tag = D09
+			tag = D10
+			tag = D11
+			tag = D12
+			tag = D13
+			tag = D14
+			tag = D15
+			tag = D16
+			tag = D17
+			tag = D18
+			tag = D19
+			tag = D20
+			tag = D21
+			tag = D22
+			tag = D23
+			tag = D24
+			tag = D25
+			tag = D26
+			tag = D27
+			tag = D28
+			tag = D29
+			tag = D30
+			tag = D31
+			tag = D32
+			tag = D33
+			tag = D34
+			tag = D35
+			tag = D36
+			tag = D37
+			tag = D38
+			tag = D39
+			tag = D40
+			tag = D41
+			tag = D42
+			tag = D43
+			tag = D44
+			tag = D45
+			tag = D46
+			tag = D47
+			tag = D48
+			tag = D49
+			tag = D50
+		}
+	}
+	allow = {
+		capital_scope = {
+			culture = tibetan
+		}
+	}
+	effect = {
+		primary_culture = tibetan
 		any_pop = {
 			limit = {
 				OR = {
@@ -10317,6 +10779,160 @@ D_primary_texan = {
 		}
 	}
 }
+D_primary_australian = {
+	potential = {
+		primary_culture = british
+		capital_scope = {
+			culture = australian
+		}
+		OR = {
+			tag = D01
+			tag = D02
+			tag = D03
+			tag = D04
+			tag = D05
+			tag = D06
+			tag = D07
+			tag = D08
+			tag = D09
+			tag = D10
+			tag = D11
+			tag = D12
+			tag = D13
+			tag = D14
+			tag = D15
+			tag = D16
+			tag = D17
+			tag = D18
+			tag = D19
+			tag = D20
+			tag = D21
+			tag = D22
+			tag = D23
+			tag = D24
+			tag = D25
+			tag = D26
+			tag = D27
+			tag = D28
+			tag = D29
+			tag = D30
+			tag = D31
+			tag = D32
+			tag = D33
+			tag = D34
+			tag = D35
+			tag = D36
+			tag = D37
+			tag = D38
+			tag = D39
+			tag = D40
+			tag = D41
+			tag = D42
+			tag = D43
+			tag = D44
+			tag = D45
+			tag = D46
+			tag = D47
+			tag = D48
+			tag = D49
+			tag = D50
+		}
+	}
+	allow = {
+		capital_scope = {
+			culture = australian
+		}
+	}
+	effect = {
+		primary_culture = australian
+		any_pop = {
+			limit = {
+				OR = {
+					is_accepted_culture = yes
+					is_primary_culture = yes
+				}
+			}
+			militancy = -10
+		}
+	}
+}
+D_primary_new_zelandian = {
+	potential = {
+		primary_culture = british
+		capital_scope = {
+			culture = new_zelandian
+		}
+		OR = {
+			tag = D01
+			tag = D02
+			tag = D03
+			tag = D04
+			tag = D05
+			tag = D06
+			tag = D07
+			tag = D08
+			tag = D09
+			tag = D10
+			tag = D11
+			tag = D12
+			tag = D13
+			tag = D14
+			tag = D15
+			tag = D16
+			tag = D17
+			tag = D18
+			tag = D19
+			tag = D20
+			tag = D21
+			tag = D22
+			tag = D23
+			tag = D24
+			tag = D25
+			tag = D26
+			tag = D27
+			tag = D28
+			tag = D29
+			tag = D30
+			tag = D31
+			tag = D32
+			tag = D33
+			tag = D34
+			tag = D35
+			tag = D36
+			tag = D37
+			tag = D38
+			tag = D39
+			tag = D40
+			tag = D41
+			tag = D42
+			tag = D43
+			tag = D44
+			tag = D45
+			tag = D46
+			tag = D47
+			tag = D48
+			tag = D49
+			tag = D50
+		}
+	}
+	allow = {
+		capital_scope = {
+			culture = new_zelandian
+		}
+	}
+	effect = {
+		primary_culture = new_zelandian
+		any_pop = {
+			limit = {
+				OR = {
+					is_accepted_culture = yes
+					is_primary_culture = yes
+				}
+			}
+			militancy = -10
+		}
+	}
+}
 D_primary_boer = {
 	potential = {
 		primary_culture = british
@@ -10394,11 +11010,11 @@ D_primary_boer = {
 		}
 	}
 }
-D_primary_australian = {
+D_primary_anglo_african = {
 	potential = {
 		primary_culture = british
 		capital_scope = {
-			culture = australian
+			culture = anglo_african
 		}
 		OR = {
 			tag = D01
@@ -10455,11 +11071,11 @@ D_primary_australian = {
 	}
 	allow = {
 		capital_scope = {
-			culture = australian
+			culture = anglo_african
 		}
 	}
 	effect = {
-		primary_culture = australian
+		primary_culture = anglo_african
 		any_pop = {
 			limit = {
 				OR = {
@@ -10625,83 +11241,6 @@ D_primary_french_canadian = {
 		}
 	}
 }
-D_primary_mexican = {
-	potential = {
-		primary_culture = british
-		capital_scope = {
-			culture = mexican
-		}
-		OR = {
-			tag = D01
-			tag = D02
-			tag = D03
-			tag = D04
-			tag = D05
-			tag = D06
-			tag = D07
-			tag = D08
-			tag = D09
-			tag = D10
-			tag = D11
-			tag = D12
-			tag = D13
-			tag = D14
-			tag = D15
-			tag = D16
-			tag = D17
-			tag = D18
-			tag = D19
-			tag = D20
-			tag = D21
-			tag = D22
-			tag = D23
-			tag = D24
-			tag = D25
-			tag = D26
-			tag = D27
-			tag = D28
-			tag = D29
-			tag = D30
-			tag = D31
-			tag = D32
-			tag = D33
-			tag = D34
-			tag = D35
-			tag = D36
-			tag = D37
-			tag = D38
-			tag = D39
-			tag = D40
-			tag = D41
-			tag = D42
-			tag = D43
-			tag = D44
-			tag = D45
-			tag = D46
-			tag = D47
-			tag = D48
-			tag = D49
-			tag = D50
-		}
-	}
-	allow = {
-		capital_scope = {
-			culture = mexican
-		}
-	}
-	effect = {
-		primary_culture = mexican
-		any_pop = {
-			limit = {
-				OR = {
-					is_accepted_culture = yes
-					is_primary_culture = yes
-				}
-			}
-			militancy = -10
-		}
-	}
-}
 D_primary_central_american = {
 	potential = {
 		primary_culture = british
@@ -10779,6 +11318,83 @@ D_primary_central_american = {
 		}
 	}
 }
+D_primary_mexican = {
+	potential = {
+		primary_culture = british
+		capital_scope = {
+			culture = mexican
+		}
+		OR = {
+			tag = D01
+			tag = D02
+			tag = D03
+			tag = D04
+			tag = D05
+			tag = D06
+			tag = D07
+			tag = D08
+			tag = D09
+			tag = D10
+			tag = D11
+			tag = D12
+			tag = D13
+			tag = D14
+			tag = D15
+			tag = D16
+			tag = D17
+			tag = D18
+			tag = D19
+			tag = D20
+			tag = D21
+			tag = D22
+			tag = D23
+			tag = D24
+			tag = D25
+			tag = D26
+			tag = D27
+			tag = D28
+			tag = D29
+			tag = D30
+			tag = D31
+			tag = D32
+			tag = D33
+			tag = D34
+			tag = D35
+			tag = D36
+			tag = D37
+			tag = D38
+			tag = D39
+			tag = D40
+			tag = D41
+			tag = D42
+			tag = D43
+			tag = D44
+			tag = D45
+			tag = D46
+			tag = D47
+			tag = D48
+			tag = D49
+			tag = D50
+		}
+	}
+	allow = {
+		capital_scope = {
+			culture = mexican
+		}
+	}
+	effect = {
+		primary_culture = mexican
+		any_pop = {
+			limit = {
+				OR = {
+					is_accepted_culture = yes
+					is_primary_culture = yes
+				}
+			}
+			militancy = -10
+		}
+	}
+}
 D_primary_caribeno = {
 	potential = {
 		primary_culture = british
@@ -10845,6 +11461,83 @@ D_primary_caribeno = {
 	}
 	effect = {
 		primary_culture = caribeno
+		any_pop = {
+			limit = {
+				OR = {
+					is_accepted_culture = yes
+					is_primary_culture = yes
+				}
+			}
+			militancy = -10
+		}
+	}
+}
+D_primary_cubans = {
+	potential = {
+		primary_culture = british
+		capital_scope = {
+			culture = cubans
+		}
+		OR = {
+			tag = D01
+			tag = D02
+			tag = D03
+			tag = D04
+			tag = D05
+			tag = D06
+			tag = D07
+			tag = D08
+			tag = D09
+			tag = D10
+			tag = D11
+			tag = D12
+			tag = D13
+			tag = D14
+			tag = D15
+			tag = D16
+			tag = D17
+			tag = D18
+			tag = D19
+			tag = D20
+			tag = D21
+			tag = D22
+			tag = D23
+			tag = D24
+			tag = D25
+			tag = D26
+			tag = D27
+			tag = D28
+			tag = D29
+			tag = D30
+			tag = D31
+			tag = D32
+			tag = D33
+			tag = D34
+			tag = D35
+			tag = D36
+			tag = D37
+			tag = D38
+			tag = D39
+			tag = D40
+			tag = D41
+			tag = D42
+			tag = D43
+			tag = D44
+			tag = D45
+			tag = D46
+			tag = D47
+			tag = D48
+			tag = D49
+			tag = D50
+		}
+	}
+	allow = {
+		capital_scope = {
+			culture = cubans
+		}
+	}
+	effect = {
+		primary_culture = cubans
 		any_pop = {
 			limit = {
 				OR = {
@@ -17236,699 +17929,6 @@ D_primary_polar_bears = {
 	}
 	effect = {
 		primary_culture = polar_bears
-		any_pop = {
-			limit = {
-				OR = {
-					is_accepted_culture = yes
-					is_primary_culture = yes
-				}
-			}
-			militancy = -10
-		}
-	}
-}
-D_primary_anglo_african = {
-	potential = {
-		primary_culture = british
-		capital_scope = {
-			culture = anglo_african
-		}
-		OR = {
-			tag = D01
-			tag = D02
-			tag = D03
-			tag = D04
-			tag = D05
-			tag = D06
-			tag = D07
-			tag = D08
-			tag = D09
-			tag = D10
-			tag = D11
-			tag = D12
-			tag = D13
-			tag = D14
-			tag = D15
-			tag = D16
-			tag = D17
-			tag = D18
-			tag = D19
-			tag = D20
-			tag = D21
-			tag = D22
-			tag = D23
-			tag = D24
-			tag = D25
-			tag = D26
-			tag = D27
-			tag = D28
-			tag = D29
-			tag = D30
-			tag = D31
-			tag = D32
-			tag = D33
-			tag = D34
-			tag = D35
-			tag = D36
-			tag = D37
-			tag = D38
-			tag = D39
-			tag = D40
-			tag = D41
-			tag = D42
-			tag = D43
-			tag = D44
-			tag = D45
-			tag = D46
-			tag = D47
-			tag = D48
-			tag = D49
-			tag = D50
-		}
-	}
-	allow = {
-		capital_scope = {
-			culture = anglo_african
-		}
-	}
-	effect = {
-		primary_culture = anglo_african
-		any_pop = {
-			limit = {
-				OR = {
-					is_accepted_culture = yes
-					is_primary_culture = yes
-				}
-			}
-			militancy = -10
-		}
-	}
-}
-D_primary_buryat = {
-	potential = {
-		primary_culture = british
-		capital_scope = {
-			culture = buryat
-		}
-		OR = {
-			tag = D01
-			tag = D02
-			tag = D03
-			tag = D04
-			tag = D05
-			tag = D06
-			tag = D07
-			tag = D08
-			tag = D09
-			tag = D10
-			tag = D11
-			tag = D12
-			tag = D13
-			tag = D14
-			tag = D15
-			tag = D16
-			tag = D17
-			tag = D18
-			tag = D19
-			tag = D20
-			tag = D21
-			tag = D22
-			tag = D23
-			tag = D24
-			tag = D25
-			tag = D26
-			tag = D27
-			tag = D28
-			tag = D29
-			tag = D30
-			tag = D31
-			tag = D32
-			tag = D33
-			tag = D34
-			tag = D35
-			tag = D36
-			tag = D37
-			tag = D38
-			tag = D39
-			tag = D40
-			tag = D41
-			tag = D42
-			tag = D43
-			tag = D44
-			tag = D45
-			tag = D46
-			tag = D47
-			tag = D48
-			tag = D49
-			tag = D50
-		}
-	}
-	allow = {
-		capital_scope = {
-			culture = buryat
-		}
-	}
-	effect = {
-		primary_culture = buryat
-		any_pop = {
-			limit = {
-				OR = {
-					is_accepted_culture = yes
-					is_primary_culture = yes
-				}
-			}
-			militancy = -10
-		}
-	}
-}
-D_primary_kalmyk = {
-	potential = {
-		primary_culture = british
-		capital_scope = {
-			culture = kalmyk
-		}
-		OR = {
-			tag = D01
-			tag = D02
-			tag = D03
-			tag = D04
-			tag = D05
-			tag = D06
-			tag = D07
-			tag = D08
-			tag = D09
-			tag = D10
-			tag = D11
-			tag = D12
-			tag = D13
-			tag = D14
-			tag = D15
-			tag = D16
-			tag = D17
-			tag = D18
-			tag = D19
-			tag = D20
-			tag = D21
-			tag = D22
-			tag = D23
-			tag = D24
-			tag = D25
-			tag = D26
-			tag = D27
-			tag = D28
-			tag = D29
-			tag = D30
-			tag = D31
-			tag = D32
-			tag = D33
-			tag = D34
-			tag = D35
-			tag = D36
-			tag = D37
-			tag = D38
-			tag = D39
-			tag = D40
-			tag = D41
-			tag = D42
-			tag = D43
-			tag = D44
-			tag = D45
-			tag = D46
-			tag = D47
-			tag = D48
-			tag = D49
-			tag = D50
-		}
-	}
-	allow = {
-		capital_scope = {
-			culture = kalmyk
-		}
-	}
-	effect = {
-		primary_culture = kalmyk
-		any_pop = {
-			limit = {
-				OR = {
-					is_accepted_culture = yes
-					is_primary_culture = yes
-				}
-			}
-			militancy = -10
-		}
-	}
-}
-D_primary_crimean_tatar = {
-	potential = {
-		primary_culture = british
-		capital_scope = {
-			culture = crimean_tatar
-		}
-		OR = {
-			tag = D01
-			tag = D02
-			tag = D03
-			tag = D04
-			tag = D05
-			tag = D06
-			tag = D07
-			tag = D08
-			tag = D09
-			tag = D10
-			tag = D11
-			tag = D12
-			tag = D13
-			tag = D14
-			tag = D15
-			tag = D16
-			tag = D17
-			tag = D18
-			tag = D19
-			tag = D20
-			tag = D21
-			tag = D22
-			tag = D23
-			tag = D24
-			tag = D25
-			tag = D26
-			tag = D27
-			tag = D28
-			tag = D29
-			tag = D30
-			tag = D31
-			tag = D32
-			tag = D33
-			tag = D34
-			tag = D35
-			tag = D36
-			tag = D37
-			tag = D38
-			tag = D39
-			tag = D40
-			tag = D41
-			tag = D42
-			tag = D43
-			tag = D44
-			tag = D45
-			tag = D46
-			tag = D47
-			tag = D48
-			tag = D49
-			tag = D50
-		}
-	}
-	allow = {
-		capital_scope = {
-			culture = crimean_tatar
-		}
-	}
-	effect = {
-		primary_culture = crimean_tatar
-		any_pop = {
-			limit = {
-				OR = {
-					is_accepted_culture = yes
-					is_primary_culture = yes
-				}
-			}
-			militancy = -10
-		}
-	}
-}
-D_primary_tuvan = {
-	potential = {
-		primary_culture = british
-		capital_scope = {
-			culture = tuvan
-		}
-		OR = {
-			tag = D01
-			tag = D02
-			tag = D03
-			tag = D04
-			tag = D05
-			tag = D06
-			tag = D07
-			tag = D08
-			tag = D09
-			tag = D10
-			tag = D11
-			tag = D12
-			tag = D13
-			tag = D14
-			tag = D15
-			tag = D16
-			tag = D17
-			tag = D18
-			tag = D19
-			tag = D20
-			tag = D21
-			tag = D22
-			tag = D23
-			tag = D24
-			tag = D25
-			tag = D26
-			tag = D27
-			tag = D28
-			tag = D29
-			tag = D30
-			tag = D31
-			tag = D32
-			tag = D33
-			tag = D34
-			tag = D35
-			tag = D36
-			tag = D37
-			tag = D38
-			tag = D39
-			tag = D40
-			tag = D41
-			tag = D42
-			tag = D43
-			tag = D44
-			tag = D45
-			tag = D46
-			tag = D47
-			tag = D48
-			tag = D49
-			tag = D50
-		}
-	}
-	allow = {
-		capital_scope = {
-			culture = tuvan
-		}
-	}
-	effect = {
-		primary_culture = tuvan
-		any_pop = {
-			limit = {
-				OR = {
-					is_accepted_culture = yes
-					is_primary_culture = yes
-				}
-			}
-			militancy = -10
-		}
-	}
-}
-D_primary_cubans = {
-	potential = {
-		primary_culture = british
-		capital_scope = {
-			culture = cubans
-		}
-		OR = {
-			tag = D01
-			tag = D02
-			tag = D03
-			tag = D04
-			tag = D05
-			tag = D06
-			tag = D07
-			tag = D08
-			tag = D09
-			tag = D10
-			tag = D11
-			tag = D12
-			tag = D13
-			tag = D14
-			tag = D15
-			tag = D16
-			tag = D17
-			tag = D18
-			tag = D19
-			tag = D20
-			tag = D21
-			tag = D22
-			tag = D23
-			tag = D24
-			tag = D25
-			tag = D26
-			tag = D27
-			tag = D28
-			tag = D29
-			tag = D30
-			tag = D31
-			tag = D32
-			tag = D33
-			tag = D34
-			tag = D35
-			tag = D36
-			tag = D37
-			tag = D38
-			tag = D39
-			tag = D40
-			tag = D41
-			tag = D42
-			tag = D43
-			tag = D44
-			tag = D45
-			tag = D46
-			tag = D47
-			tag = D48
-			tag = D49
-			tag = D50
-		}
-	}
-	allow = {
-		capital_scope = {
-			culture = cubans
-		}
-	}
-	effect = {
-		primary_culture = cubans
-		any_pop = {
-			limit = {
-				OR = {
-					is_accepted_culture = yes
-					is_primary_culture = yes
-				}
-			}
-			militancy = -10
-		}
-	}
-}
-D_primary_scottish = {
-	potential = {
-		primary_culture = british
-		capital_scope = {
-			culture = scottish
-		}
-		OR = {
-			tag = D01
-			tag = D02
-			tag = D03
-			tag = D04
-			tag = D05
-			tag = D06
-			tag = D07
-			tag = D08
-			tag = D09
-			tag = D10
-			tag = D11
-			tag = D12
-			tag = D13
-			tag = D14
-			tag = D15
-			tag = D16
-			tag = D17
-			tag = D18
-			tag = D19
-			tag = D20
-			tag = D21
-			tag = D22
-			tag = D23
-			tag = D24
-			tag = D25
-			tag = D26
-			tag = D27
-			tag = D28
-			tag = D29
-			tag = D30
-			tag = D31
-			tag = D32
-			tag = D33
-			tag = D34
-			tag = D35
-			tag = D36
-			tag = D37
-			tag = D38
-			tag = D39
-			tag = D40
-			tag = D41
-			tag = D42
-			tag = D43
-			tag = D44
-			tag = D45
-			tag = D46
-			tag = D47
-			tag = D48
-			tag = D49
-			tag = D50
-		}
-	}
-	allow = {
-		capital_scope = {
-			culture = scottish
-		}
-	}
-	effect = {
-		primary_culture = scottish
-		any_pop = {
-			limit = {
-				OR = {
-					is_accepted_culture = yes
-					is_primary_culture = yes
-				}
-			}
-			militancy = -10
-		}
-	}
-}
-D_primary_new_zelandian = {
-	potential = {
-		primary_culture = british
-		capital_scope = {
-			culture = new_zelandian
-		}
-		OR = {
-			tag = D01
-			tag = D02
-			tag = D03
-			tag = D04
-			tag = D05
-			tag = D06
-			tag = D07
-			tag = D08
-			tag = D09
-			tag = D10
-			tag = D11
-			tag = D12
-			tag = D13
-			tag = D14
-			tag = D15
-			tag = D16
-			tag = D17
-			tag = D18
-			tag = D19
-			tag = D20
-			tag = D21
-			tag = D22
-			tag = D23
-			tag = D24
-			tag = D25
-			tag = D26
-			tag = D27
-			tag = D28
-			tag = D29
-			tag = D30
-			tag = D31
-			tag = D32
-			tag = D33
-			tag = D34
-			tag = D35
-			tag = D36
-			tag = D37
-			tag = D38
-			tag = D39
-			tag = D40
-			tag = D41
-			tag = D42
-			tag = D43
-			tag = D44
-			tag = D45
-			tag = D46
-			tag = D47
-			tag = D48
-			tag = D49
-			tag = D50
-		}
-	}
-	allow = {
-		capital_scope = {
-			culture = new_zelandian
-		}
-	}
-	effect = {
-		primary_culture = new_zelandian
-		any_pop = {
-			limit = {
-				OR = {
-					is_accepted_culture = yes
-					is_primary_culture = yes
-				}
-			}
-			militancy = -10
-		}
-	}
-}
-D_primary_wallonian = {
-	potential = {
-		primary_culture = british
-		capital_scope = {
-			culture = wallonian
-		}
-		OR = {
-			tag = D01
-			tag = D02
-			tag = D03
-			tag = D04
-			tag = D05
-			tag = D06
-			tag = D07
-			tag = D08
-			tag = D09
-			tag = D10
-			tag = D11
-			tag = D12
-			tag = D13
-			tag = D14
-			tag = D15
-			tag = D16
-			tag = D17
-			tag = D18
-			tag = D19
-			tag = D20
-			tag = D21
-			tag = D22
-			tag = D23
-			tag = D24
-			tag = D25
-			tag = D26
-			tag = D27
-			tag = D28
-			tag = D29
-			tag = D30
-			tag = D31
-			tag = D32
-			tag = D33
-			tag = D34
-			tag = D35
-			tag = D36
-			tag = D37
-			tag = D38
-			tag = D39
-			tag = D40
-			tag = D41
-			tag = D42
-			tag = D43
-			tag = D44
-			tag = D45
-			tag = D46
-			tag = D47
-			tag = D48
-			tag = D49
-			tag = D50
-		}
-	}
-	allow = {
-		capital_scope = {
-			culture = wallonian
-		}
-	}
-	effect = {
-		primary_culture = wallonian
 		any_pop = {
 			limit = {
 				OR = {
