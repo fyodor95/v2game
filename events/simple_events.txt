@@ -69,6 +69,26 @@ country_event = {
 				work_hours = eight_hours
 			}
 		}
+		modifier = {
+			factor = 0.5
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.5
+			average_militancy = 6
+		}
+		modifier = {
+			factor = 0.5
+			average_militancy = 7
+		}
+		modifier = {
+			factor = 0.5
+			average_militancy = 8
+		}
+		modifier = {
+			factor = 0.5
+			average_militancy = 9
+		}
 	}
 	option = {
 		name = "EVTOPTA403"
