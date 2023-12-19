@@ -2,8 +2,6 @@ acceptance_capital_north_german_title;—еверные германцы Ч наши брать€!;X
 acceptance_capital_north_german_desc;ќтныне —еверные германцы €вл€ютс€ полноправными гражданами нашей страны!;X
 acceptance_capital_south_german_title;ёжные германцы Ч наши брать€!;X
 acceptance_capital_south_german_desc;ќтныне ёжные германцы €вл€ютс€ полноправными гражданами нашей страны!;X
-acceptance_capital_ashkenazi_title;≈вреи Ч наши брать€!;X
-acceptance_capital_ashkenazi_desc;ќтныне ≈вреи €вл€ютс€ полноправными гражданами нашей страны!;X
 acceptance_capital_dutch_title;√олландцы Ч наши брать€!;X
 acceptance_capital_dutch_desc;ќтныне √олландцы €вл€ютс€ полноправными гражданами нашей страны!;X
 acceptance_capital_flemish_title;‘ламандцы Ч наши брать€!;X
@@ -88,8 +86,10 @@ acceptance_capital_georgian_title;√рузины Ч наши брать€!;X
 acceptance_capital_georgian_desc;ќтныне √рузины €вл€ютс€ полноправными гражданами нашей страны!;X
 acceptance_capital_armenian_title;јрм€не Ч наши брать€!;X
 acceptance_capital_armenian_desc;ќтныне јрм€не €вл€ютс€ полноправными гражданами нашей страны!;X
-acceptance_capital_sephardic_title;—ефарды Ч наши брать€!;X
-acceptance_capital_sephardic_desc;ќтныне —ефарды €вл€ютс€ полноправными гражданами нашей страны!;X
+acceptance_capital_sephardic_title;≈вреи-сефарды Ч наши брать€!;X
+acceptance_capital_sephardic_desc;ќтныне ≈вреи-сефарды €вл€ютс€ полноправными гражданами нашей страны!;X
+acceptance_capital_ashkenazi_title;≈вреи-ашкеназы Ч наши брать€!;X
+acceptance_capital_ashkenazi_desc;ќтныне ≈вреи-ашкеназы €вл€ютс€ полноправными гражданами нашей страны!;X
 acceptance_capital_turkish_title;“урки Ч наши брать€!;X
 acceptance_capital_turkish_desc;ќтныне “урки €вл€ютс€ полноправными гражданами нашей страны!;X
 acceptance_capital_crimean_tatar_title; рымские татары Ч наши брать€!;X

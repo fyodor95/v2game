@@ -203,7 +203,6 @@ country_event = {
 					total_pops = 40000
 				}
 				add_core = ISR
-				add_core = GER
 			}
 		}
 		any_country = {
