@@ -5,27 +5,30 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		government = proletarian_dictatorship
-		work_hours = eight_hours
-		unemployment_subsidies = good_subsidies
-		pensions = good_pensions
+		OR = {
+			health_care = acceptable_health_care
+			health_care = good_health_care
+		}
+		OR = {
+			pensions = acceptable_pensions
+			pensions = good_pensions
+		}
+		OR = {
+			safety_regulations = acceptable_safety
+			safety_regulations = good_safety
+		}
 		school_reforms = good_schools
-		NOT = {
-			OR = {
-				wage_reform = no_minimum_wage
-				wage_reform = trinket_wage
-			}
+		OR = {
+			unemployment_subsidies = acceptable_subsidies
+			unemployment_subsidies = good_subsidies
 		}
-		NOT = {
-			OR = {
-				safety_regulations = no_safety
-				safety_regulations = trinket_safety
-			}
+		OR = {
+			wage_reform = acceptable_minimum_wage
+			wage_reform = good_minimum_wage
 		}
-		NOT = {
-			OR = {
-				health_care = no_health_care
-				health_care = trinket_health_care
-			}
+		OR = {
+			work_hours = ten_hours
+			work_hours = eight_hours
 		}
 	}
 	mean_time_to_happen = {
@@ -33,34 +36,13 @@ country_event = {
 		modifier = {
 			factor = 2
 			NOT = {
-				OR = {
-					wage_reform = acceptable_minimum_wage
-					wage_reform = good_minimum_wage
-				}
+				health_care = good_health_care
 			}
 		}
 		modifier = {
 			factor = 2
 			NOT = {
-				OR = {
-					safety_regulations = acceptable_safety
-					safety_regulations = good_safety
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			NOT = {
-				OR = {
-					health_care = acceptable_health_care
-					health_care = good_health_care
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			NOT = {
-				wage_reform = good_minimum_wage
+				pensions = good_pensions
 			}
 		}
 		modifier = {
@@ -72,8 +54,40 @@ country_event = {
 		modifier = {
 			factor = 2
 			NOT = {
-				health_care = good_health_care
+				unemployment_subsidies = good_subsidies
 			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				wage_reform = good_minimum_wage
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				work_hours = eight_hours
+			}
+		}
+		modifier = {
+			factor = 0.5
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.5
+			average_militancy = 6
+		}
+		modifier = {
+			factor = 0.5
+			average_militancy = 7
+		}
+		modifier = {
+			factor = 0.5
+			average_militancy = 8
+		}
+		modifier = {
+			factor = 0.5
+			average_militancy = 9
 		}
 	}
 	option = {
