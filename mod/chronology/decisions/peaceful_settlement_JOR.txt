@@ -1,0 +1,1486 @@
+political_decisions = {
+JOR_peaceful_settlement = {
+	potential = {
+		exists = JOR
+		NOT = {
+			tag = JOR
+		}
+		is_independant = yes
+		OR = {
+			war_policy = anti_military
+			war_policy = pacifism
+		}
+		any_owned_province = {
+			is_core = JOR
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = JOR
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			war_with = JOR
+		}
+		relation = {
+			who = JOR
+			value = -100
+		}
+		NOT = {
+			any_owned_province = {
+				NOT = {
+					OR = {
+						NOT = {
+							is_core = JOR
+						}
+						controlled_by = THIS
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		JOR = {
+			country_event = { id=76000 days=0 }
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					neighbour = JOR
+					NOT = {
+						part_of_sphere = yes
+					}
+					JOR = {
+						war = no
+						is_mobilised = no
+					}
+					OR = {
+						AND = {
+							JOR = {
+								brigades_compare = 4
+							}
+							NOT = {
+								AND = {
+									OR = {
+										AND = {
+											napoleonic_thought = 1
+											JOR = {
+												NOT = {
+													napoleonic_thought = 1
+												}
+											}
+										}
+										AND = {
+											post_napoleonic_thought = 1
+											JOR = {
+												NOT = {
+													post_napoleonic_thought = 1
+												}
+											}
+										}
+										AND = {
+											strategic_mobility = 1
+											JOR = {
+												NOT = {
+													strategic_mobility = 1
+												}
+											}
+										}
+										AND = {
+											point_defense_system = 1
+											JOR = {
+												NOT = {
+													point_defense_system = 1
+												}
+											}
+										}
+										AND = {
+											deep_defense_system = 1
+											JOR = {
+												NOT = {
+													deep_defense_system = 1
+												}
+											}
+										}
+										AND = {
+											infiltration = 1
+											JOR = {
+												NOT = {
+													infiltration = 1
+												}
+											}
+										}
+										AND = {
+											trench_warfare = 1
+											JOR = {
+												NOT = {
+													trench_warfare = 1
+												}
+											}
+										}
+										AND = {
+											tank_attacks_doctrine = 1
+											JOR = {
+												NOT = {
+													tank_attacks_doctrine = 1
+												}
+											}
+										}
+									}
+									OR = {
+										AND = {
+											flintlock_rifles = 1
+											JOR = {
+												NOT = {
+													flintlock_rifles = 1
+												}
+											}
+										}
+										AND = {
+											muzzle_loaded_rifles = 1
+											JOR = {
+												NOT = {
+													muzzle_loaded_rifles = 1
+												}
+											}
+										}
+										AND = {
+											caplock_rifles = 1
+											JOR = {
+												NOT = {
+													caplock_rifles = 1
+												}
+											}
+										}
+										AND = {
+											breech_loaded_rifles = 1
+											JOR = {
+												NOT = {
+													breech_loaded_rifles = 1
+												}
+											}
+										}
+										AND = {
+											machine_guns = 1
+											JOR = {
+												NOT = {
+													machine_guns = 1
+												}
+											}
+										}
+										AND = {
+											bolt_action_rifles = 1
+											JOR = {
+												NOT = {
+													bolt_action_rifles = 1
+												}
+											}
+										}
+										AND = {
+											automatic_rifles = 1
+											JOR = {
+												NOT = {
+													automatic_rifles = 1
+												}
+											}
+										}
+										AND = {
+											modern_divisional_structure = 1
+											JOR = {
+												NOT = {
+													modern_divisional_structure = 1
+												}
+											}
+										}
+									}
+									OR = {
+										AND = {
+											bronze_muzzle_loaded_artillery = 1
+											JOR = {
+												NOT = {
+													bronze_muzzle_loaded_artillery = 1
+												}
+											}
+										}
+										AND = {
+											iron_muzzle_loaded_artillery = 1
+											JOR = {
+												NOT = {
+													iron_muzzle_loaded_artillery = 1
+												}
+											}
+										}
+										AND = {
+											iron_breech_loaded_artillery = 1
+											JOR = {
+												NOT = {
+													iron_breech_loaded_artillery = 1
+												}
+											}
+										}
+										AND = {
+											steel_breech_loaded_artillery = 1
+											JOR = {
+												NOT = {
+													steel_breech_loaded_artillery = 1
+												}
+											}
+										}
+										AND = {
+											rapid-firing_field_guns = 1
+											JOR = {
+												NOT = {
+													rapid-firing_field_guns = 1
+												}
+											}
+										}
+										AND = {
+											indirect_artillery_fire = 1
+											JOR = {
+												NOT = {
+													indirect_artillery_fire = 1
+												}
+											}
+										}
+										AND = {
+											heavy_armament_dunno = 1
+											JOR = {
+												NOT = {
+													heavy_armament_dunno = 1
+												}
+											}
+										}
+										AND = {
+											rocket_artillery = 1
+											JOR = {
+												NOT = {
+													rocket_artillery = 1
+												}
+											}
+										}
+									}
+									OR = {
+										AND = {
+											military_staff_system = 1
+											JOR = {
+												NOT = {
+													military_staff_system = 1
+												}
+											}
+										}
+										AND = {
+											improved_communication_systems = 1
+											JOR = {
+												NOT = {
+													improved_communication_systems = 1
+												}
+											}
+										}
+										AND = {
+											military_plans = 1
+											JOR = {
+												NOT = {
+													military_plans = 1
+												}
+											}
+										}
+										AND = {
+											military_statistics = 1
+											JOR = {
+												NOT = {
+													military_statistics = 1
+												}
+											}
+										}
+										AND = {
+											military_logistics = 1
+											JOR = {
+												NOT = {
+													military_logistics = 1
+												}
+											}
+										}
+										AND = {
+											military_directionism = 1
+											JOR = {
+												NOT = {
+													military_directionism = 1
+												}
+											}
+										}
+										AND = {
+											aeronautics = 1
+											JOR = {
+												NOT = {
+													aeronautics = 1
+												}
+											}
+										}
+										AND = {
+											nuclear_strategy = 1
+											JOR = {
+												NOT = {
+													nuclear_strategy = 1
+												}
+											}
+										}
+									}
+									OR = {
+										AND = {
+											army_command_principle = 1
+											JOR = {
+												NOT = {
+													army_command_principle = 1
+												}
+											}
+										}
+										AND = {
+											army_professionalism = 1
+											JOR = {
+												NOT = {
+													army_professionalism = 1
+												}
+											}
+										}
+										AND = {
+											military_academies = 1
+											JOR = {
+												NOT = {
+													military_academies = 1
+												}
+											}
+										}
+										AND = {
+											army_decision_making = 1
+											JOR = {
+												NOT = {
+													army_decision_making = 1
+												}
+											}
+										}
+										AND = {
+											army_risk_management = 1
+											JOR = {
+												NOT = {
+													army_risk_management = 1
+												}
+											}
+										}
+										AND = {
+											army_nco_training = 1
+											JOR = {
+												NOT = {
+													army_nco_training = 1
+												}
+											}
+										}
+										AND = {
+											great_war_experience = 1
+											JOR = {
+												NOT = {
+													great_war_experience = 1
+												}
+											}
+										}
+										AND = {
+											second_great_war_experience = 1
+											JOR = {
+												NOT = {
+													second_great_war_experience = 1
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						AND = {
+							JOR = {
+								brigades_compare = 1
+							}
+							JOR = {
+								AND = {
+									OR = {
+										AND = {
+											napoleonic_thought = 1
+											THIS = {
+												NOT = {
+													napoleonic_thought = 1
+												}
+											}
+										}
+										AND = {
+											post_napoleonic_thought = 1
+											THIS = {
+												NOT = {
+													post_napoleonic_thought = 1
+												}
+											}
+										}
+										AND = {
+											strategic_mobility = 1
+											THIS = {
+												NOT = {
+													strategic_mobility = 1
+												}
+											}
+										}
+										AND = {
+											point_defense_system = 1
+											THIS = {
+												NOT = {
+													point_defense_system = 1
+												}
+											}
+										}
+										AND = {
+											deep_defense_system = 1
+											THIS = {
+												NOT = {
+													deep_defense_system = 1
+												}
+											}
+										}
+										AND = {
+											infiltration = 1
+											THIS = {
+												NOT = {
+													infiltration = 1
+												}
+											}
+										}
+										AND = {
+											trench_warfare = 1
+											THIS = {
+												NOT = {
+													trench_warfare = 1
+												}
+											}
+										}
+										AND = {
+											tank_attacks_doctrine = 1
+											THIS = {
+												NOT = {
+													tank_attacks_doctrine = 1
+												}
+											}
+										}
+									}
+									OR = {
+										AND = {
+											flintlock_rifles = 1
+											THIS = {
+												NOT = {
+													flintlock_rifles = 1
+												}
+											}
+										}
+										AND = {
+											muzzle_loaded_rifles = 1
+											THIS = {
+												NOT = {
+													muzzle_loaded_rifles = 1
+												}
+											}
+										}
+										AND = {
+											caplock_rifles = 1
+											THIS = {
+												NOT = {
+													caplock_rifles = 1
+												}
+											}
+										}
+										AND = {
+											breech_loaded_rifles = 1
+											THIS = {
+												NOT = {
+													breech_loaded_rifles = 1
+												}
+											}
+										}
+										AND = {
+											machine_guns = 1
+											THIS = {
+												NOT = {
+													machine_guns = 1
+												}
+											}
+										}
+										AND = {
+											bolt_action_rifles = 1
+											THIS = {
+												NOT = {
+													bolt_action_rifles = 1
+												}
+											}
+										}
+										AND = {
+											automatic_rifles = 1
+											THIS = {
+												NOT = {
+													automatic_rifles = 1
+												}
+											}
+										}
+										AND = {
+											modern_divisional_structure = 1
+											THIS = {
+												NOT = {
+													modern_divisional_structure = 1
+												}
+											}
+										}
+									}
+									OR = {
+										AND = {
+											bronze_muzzle_loaded_artillery = 1
+											THIS = {
+												NOT = {
+													bronze_muzzle_loaded_artillery = 1
+												}
+											}
+										}
+										AND = {
+											iron_muzzle_loaded_artillery = 1
+											THIS = {
+												NOT = {
+													iron_muzzle_loaded_artillery = 1
+												}
+											}
+										}
+										AND = {
+											iron_breech_loaded_artillery = 1
+											THIS = {
+												NOT = {
+													iron_breech_loaded_artillery = 1
+												}
+											}
+										}
+										AND = {
+											steel_breech_loaded_artillery = 1
+											THIS = {
+												NOT = {
+													steel_breech_loaded_artillery = 1
+												}
+											}
+										}
+										AND = {
+											rapid-firing_field_guns = 1
+											THIS = {
+												NOT = {
+													rapid-firing_field_guns = 1
+												}
+											}
+										}
+										AND = {
+											indirect_artillery_fire = 1
+											THIS = {
+												NOT = {
+													indirect_artillery_fire = 1
+												}
+											}
+										}
+										AND = {
+											heavy_armament_dunno = 1
+											THIS = {
+												NOT = {
+													heavy_armament_dunno = 1
+												}
+											}
+										}
+										AND = {
+											rocket_artillery = 1
+											THIS = {
+												NOT = {
+													rocket_artillery = 1
+												}
+											}
+										}
+									}
+									OR = {
+										AND = {
+											military_staff_system = 1
+											THIS = {
+												NOT = {
+													military_staff_system = 1
+												}
+											}
+										}
+										AND = {
+											improved_communication_systems = 1
+											THIS = {
+												NOT = {
+													improved_communication_systems = 1
+												}
+											}
+										}
+										AND = {
+											military_plans = 1
+											THIS = {
+												NOT = {
+													military_plans = 1
+												}
+											}
+										}
+										AND = {
+											military_statistics = 1
+											THIS = {
+												NOT = {
+													military_statistics = 1
+												}
+											}
+										}
+										AND = {
+											military_logistics = 1
+											THIS = {
+												NOT = {
+													military_logistics = 1
+												}
+											}
+										}
+										AND = {
+											military_directionism = 1
+											THIS = {
+												NOT = {
+													military_directionism = 1
+												}
+											}
+										}
+										AND = {
+											aeronautics = 1
+											THIS = {
+												NOT = {
+													aeronautics = 1
+												}
+											}
+										}
+										AND = {
+											nuclear_strategy = 1
+											THIS = {
+												NOT = {
+													nuclear_strategy = 1
+												}
+											}
+										}
+									}
+									OR = {
+										AND = {
+											army_command_principle = 1
+											THIS = {
+												NOT = {
+													army_command_principle = 1
+												}
+											}
+										}
+										AND = {
+											army_professionalism = 1
+											THIS = {
+												NOT = {
+													army_professionalism = 1
+												}
+											}
+										}
+										AND = {
+											military_academies = 1
+											THIS = {
+												NOT = {
+													military_academies = 1
+												}
+											}
+										}
+										AND = {
+											army_decision_making = 1
+											THIS = {
+												NOT = {
+													army_decision_making = 1
+												}
+											}
+										}
+										AND = {
+											army_risk_management = 1
+											THIS = {
+												NOT = {
+													army_risk_management = 1
+												}
+											}
+										}
+										AND = {
+											army_nco_training = 1
+											THIS = {
+												NOT = {
+													army_nco_training = 1
+												}
+											}
+										}
+										AND = {
+											great_war_experience = 1
+											THIS = {
+												NOT = {
+													great_war_experience = 1
+												}
+											}
+										}
+										AND = {
+											second_great_war_experience = 1
+											THIS = {
+												NOT = {
+													second_great_war_experience = 1
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+JOR_peaceful_unification = {
+	potential = {
+		exists = JOR
+		NOT = {
+			tag = JOR
+		}
+		is_independant = yes
+		OR = {
+			war_policy = anti_military
+			war_policy = pacifism
+		}
+		NOT = {
+			any_owned_province = {
+				NOT = {
+					is_core = JOR
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			war_with = JOR
+		}
+		relation = {
+			who = JOR
+			value = 100
+		}
+		NOT = {
+			any_owned_province = {
+				NOT = {
+					controlled_by = THIS
+				}
+			}
+		}
+	}
+	effect = {
+		JOR = {
+			country_event = { id=76003 days=0 }
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					neighbour = JOR
+					NOT = {
+						part_of_sphere = yes
+					}
+					JOR = {
+						war = no
+						is_mobilised = no
+					}
+					OR = {
+						AND = {
+							JOR = {
+								brigades_compare = 4
+							}
+							NOT = {
+								AND = {
+									OR = {
+										AND = {
+											napoleonic_thought = 1
+											JOR = {
+												NOT = {
+													napoleonic_thought = 1
+												}
+											}
+										}
+										AND = {
+											post_napoleonic_thought = 1
+											JOR = {
+												NOT = {
+													post_napoleonic_thought = 1
+												}
+											}
+										}
+										AND = {
+											strategic_mobility = 1
+											JOR = {
+												NOT = {
+													strategic_mobility = 1
+												}
+											}
+										}
+										AND = {
+											point_defense_system = 1
+											JOR = {
+												NOT = {
+													point_defense_system = 1
+												}
+											}
+										}
+										AND = {
+											deep_defense_system = 1
+											JOR = {
+												NOT = {
+													deep_defense_system = 1
+												}
+											}
+										}
+										AND = {
+											infiltration = 1
+											JOR = {
+												NOT = {
+													infiltration = 1
+												}
+											}
+										}
+										AND = {
+											trench_warfare = 1
+											JOR = {
+												NOT = {
+													trench_warfare = 1
+												}
+											}
+										}
+										AND = {
+											tank_attacks_doctrine = 1
+											JOR = {
+												NOT = {
+													tank_attacks_doctrine = 1
+												}
+											}
+										}
+									}
+									OR = {
+										AND = {
+											flintlock_rifles = 1
+											JOR = {
+												NOT = {
+													flintlock_rifles = 1
+												}
+											}
+										}
+										AND = {
+											muzzle_loaded_rifles = 1
+											JOR = {
+												NOT = {
+													muzzle_loaded_rifles = 1
+												}
+											}
+										}
+										AND = {
+											caplock_rifles = 1
+											JOR = {
+												NOT = {
+													caplock_rifles = 1
+												}
+											}
+										}
+										AND = {
+											breech_loaded_rifles = 1
+											JOR = {
+												NOT = {
+													breech_loaded_rifles = 1
+												}
+											}
+										}
+										AND = {
+											machine_guns = 1
+											JOR = {
+												NOT = {
+													machine_guns = 1
+												}
+											}
+										}
+										AND = {
+											bolt_action_rifles = 1
+											JOR = {
+												NOT = {
+													bolt_action_rifles = 1
+												}
+											}
+										}
+										AND = {
+											automatic_rifles = 1
+											JOR = {
+												NOT = {
+													automatic_rifles = 1
+												}
+											}
+										}
+										AND = {
+											modern_divisional_structure = 1
+											JOR = {
+												NOT = {
+													modern_divisional_structure = 1
+												}
+											}
+										}
+									}
+									OR = {
+										AND = {
+											bronze_muzzle_loaded_artillery = 1
+											JOR = {
+												NOT = {
+													bronze_muzzle_loaded_artillery = 1
+												}
+											}
+										}
+										AND = {
+											iron_muzzle_loaded_artillery = 1
+											JOR = {
+												NOT = {
+													iron_muzzle_loaded_artillery = 1
+												}
+											}
+										}
+										AND = {
+											iron_breech_loaded_artillery = 1
+											JOR = {
+												NOT = {
+													iron_breech_loaded_artillery = 1
+												}
+											}
+										}
+										AND = {
+											steel_breech_loaded_artillery = 1
+											JOR = {
+												NOT = {
+													steel_breech_loaded_artillery = 1
+												}
+											}
+										}
+										AND = {
+											rapid-firing_field_guns = 1
+											JOR = {
+												NOT = {
+													rapid-firing_field_guns = 1
+												}
+											}
+										}
+										AND = {
+											indirect_artillery_fire = 1
+											JOR = {
+												NOT = {
+													indirect_artillery_fire = 1
+												}
+											}
+										}
+										AND = {
+											heavy_armament_dunno = 1
+											JOR = {
+												NOT = {
+													heavy_armament_dunno = 1
+												}
+											}
+										}
+										AND = {
+											rocket_artillery = 1
+											JOR = {
+												NOT = {
+													rocket_artillery = 1
+												}
+											}
+										}
+									}
+									OR = {
+										AND = {
+											military_staff_system = 1
+											JOR = {
+												NOT = {
+													military_staff_system = 1
+												}
+											}
+										}
+										AND = {
+											improved_communication_systems = 1
+											JOR = {
+												NOT = {
+													improved_communication_systems = 1
+												}
+											}
+										}
+										AND = {
+											military_plans = 1
+											JOR = {
+												NOT = {
+													military_plans = 1
+												}
+											}
+										}
+										AND = {
+											military_statistics = 1
+											JOR = {
+												NOT = {
+													military_statistics = 1
+												}
+											}
+										}
+										AND = {
+											military_logistics = 1
+											JOR = {
+												NOT = {
+													military_logistics = 1
+												}
+											}
+										}
+										AND = {
+											military_directionism = 1
+											JOR = {
+												NOT = {
+													military_directionism = 1
+												}
+											}
+										}
+										AND = {
+											aeronautics = 1
+											JOR = {
+												NOT = {
+													aeronautics = 1
+												}
+											}
+										}
+										AND = {
+											nuclear_strategy = 1
+											JOR = {
+												NOT = {
+													nuclear_strategy = 1
+												}
+											}
+										}
+									}
+									OR = {
+										AND = {
+											army_command_principle = 1
+											JOR = {
+												NOT = {
+													army_command_principle = 1
+												}
+											}
+										}
+										AND = {
+											army_professionalism = 1
+											JOR = {
+												NOT = {
+													army_professionalism = 1
+												}
+											}
+										}
+										AND = {
+											military_academies = 1
+											JOR = {
+												NOT = {
+													military_academies = 1
+												}
+											}
+										}
+										AND = {
+											army_decision_making = 1
+											JOR = {
+												NOT = {
+													army_decision_making = 1
+												}
+											}
+										}
+										AND = {
+											army_risk_management = 1
+											JOR = {
+												NOT = {
+													army_risk_management = 1
+												}
+											}
+										}
+										AND = {
+											army_nco_training = 1
+											JOR = {
+												NOT = {
+													army_nco_training = 1
+												}
+											}
+										}
+										AND = {
+											great_war_experience = 1
+											JOR = {
+												NOT = {
+													great_war_experience = 1
+												}
+											}
+										}
+										AND = {
+											second_great_war_experience = 1
+											JOR = {
+												NOT = {
+													second_great_war_experience = 1
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						AND = {
+							JOR = {
+								brigades_compare = 1
+							}
+							JOR = {
+								AND = {
+									OR = {
+										AND = {
+											napoleonic_thought = 1
+											THIS = {
+												NOT = {
+													napoleonic_thought = 1
+												}
+											}
+										}
+										AND = {
+											post_napoleonic_thought = 1
+											THIS = {
+												NOT = {
+													post_napoleonic_thought = 1
+												}
+											}
+										}
+										AND = {
+											strategic_mobility = 1
+											THIS = {
+												NOT = {
+													strategic_mobility = 1
+												}
+											}
+										}
+										AND = {
+											point_defense_system = 1
+											THIS = {
+												NOT = {
+													point_defense_system = 1
+												}
+											}
+										}
+										AND = {
+											deep_defense_system = 1
+											THIS = {
+												NOT = {
+													deep_defense_system = 1
+												}
+											}
+										}
+										AND = {
+											infiltration = 1
+											THIS = {
+												NOT = {
+													infiltration = 1
+												}
+											}
+										}
+										AND = {
+											trench_warfare = 1
+											THIS = {
+												NOT = {
+													trench_warfare = 1
+												}
+											}
+										}
+										AND = {
+											tank_attacks_doctrine = 1
+											THIS = {
+												NOT = {
+													tank_attacks_doctrine = 1
+												}
+											}
+										}
+									}
+									OR = {
+										AND = {
+											flintlock_rifles = 1
+											THIS = {
+												NOT = {
+													flintlock_rifles = 1
+												}
+											}
+										}
+										AND = {
+											muzzle_loaded_rifles = 1
+											THIS = {
+												NOT = {
+													muzzle_loaded_rifles = 1
+												}
+											}
+										}
+										AND = {
+											caplock_rifles = 1
+											THIS = {
+												NOT = {
+													caplock_rifles = 1
+												}
+											}
+										}
+										AND = {
+											breech_loaded_rifles = 1
+											THIS = {
+												NOT = {
+													breech_loaded_rifles = 1
+												}
+											}
+										}
+										AND = {
+											machine_guns = 1
+											THIS = {
+												NOT = {
+													machine_guns = 1
+												}
+											}
+										}
+										AND = {
+											bolt_action_rifles = 1
+											THIS = {
+												NOT = {
+													bolt_action_rifles = 1
+												}
+											}
+										}
+										AND = {
+											automatic_rifles = 1
+											THIS = {
+												NOT = {
+													automatic_rifles = 1
+												}
+											}
+										}
+										AND = {
+											modern_divisional_structure = 1
+											THIS = {
+												NOT = {
+													modern_divisional_structure = 1
+												}
+											}
+										}
+									}
+									OR = {
+										AND = {
+											bronze_muzzle_loaded_artillery = 1
+											THIS = {
+												NOT = {
+													bronze_muzzle_loaded_artillery = 1
+												}
+											}
+										}
+										AND = {
+											iron_muzzle_loaded_artillery = 1
+											THIS = {
+												NOT = {
+													iron_muzzle_loaded_artillery = 1
+												}
+											}
+										}
+										AND = {
+											iron_breech_loaded_artillery = 1
+											THIS = {
+												NOT = {
+													iron_breech_loaded_artillery = 1
+												}
+											}
+										}
+										AND = {
+											steel_breech_loaded_artillery = 1
+											THIS = {
+												NOT = {
+													steel_breech_loaded_artillery = 1
+												}
+											}
+										}
+										AND = {
+											rapid-firing_field_guns = 1
+											THIS = {
+												NOT = {
+													rapid-firing_field_guns = 1
+												}
+											}
+										}
+										AND = {
+											indirect_artillery_fire = 1
+											THIS = {
+												NOT = {
+													indirect_artillery_fire = 1
+												}
+											}
+										}
+										AND = {
+											heavy_armament_dunno = 1
+											THIS = {
+												NOT = {
+													heavy_armament_dunno = 1
+												}
+											}
+										}
+										AND = {
+											rocket_artillery = 1
+											THIS = {
+												NOT = {
+													rocket_artillery = 1
+												}
+											}
+										}
+									}
+									OR = {
+										AND = {
+											military_staff_system = 1
+											THIS = {
+												NOT = {
+													military_staff_system = 1
+												}
+											}
+										}
+										AND = {
+											improved_communication_systems = 1
+											THIS = {
+												NOT = {
+													improved_communication_systems = 1
+												}
+											}
+										}
+										AND = {
+											military_plans = 1
+											THIS = {
+												NOT = {
+													military_plans = 1
+												}
+											}
+										}
+										AND = {
+											military_statistics = 1
+											THIS = {
+												NOT = {
+													military_statistics = 1
+												}
+											}
+										}
+										AND = {
+											military_logistics = 1
+											THIS = {
+												NOT = {
+													military_logistics = 1
+												}
+											}
+										}
+										AND = {
+											military_directionism = 1
+											THIS = {
+												NOT = {
+													military_directionism = 1
+												}
+											}
+										}
+										AND = {
+											aeronautics = 1
+											THIS = {
+												NOT = {
+													aeronautics = 1
+												}
+											}
+										}
+										AND = {
+											nuclear_strategy = 1
+											THIS = {
+												NOT = {
+													nuclear_strategy = 1
+												}
+											}
+										}
+									}
+									OR = {
+										AND = {
+											army_command_principle = 1
+											THIS = {
+												NOT = {
+													army_command_principle = 1
+												}
+											}
+										}
+										AND = {
+											army_professionalism = 1
+											THIS = {
+												NOT = {
+													army_professionalism = 1
+												}
+											}
+										}
+										AND = {
+											military_academies = 1
+											THIS = {
+												NOT = {
+													military_academies = 1
+												}
+											}
+										}
+										AND = {
+											army_decision_making = 1
+											THIS = {
+												NOT = {
+													army_decision_making = 1
+												}
+											}
+										}
+										AND = {
+											army_risk_management = 1
+											THIS = {
+												NOT = {
+													army_risk_management = 1
+												}
+											}
+										}
+										AND = {
+											army_nco_training = 1
+											THIS = {
+												NOT = {
+													army_nco_training = 1
+												}
+											}
+										}
+										AND = {
+											great_war_experience = 1
+											THIS = {
+												NOT = {
+													great_war_experience = 1
+												}
+											}
+										}
+										AND = {
+											second_great_war_experience = 1
+											THIS = {
+												NOT = {
+													second_great_war_experience = 1
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+}
