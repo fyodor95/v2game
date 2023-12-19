@@ -157,32 +157,26 @@ conquest = {
 	crisis = no
 	
 	can_use = {
-		NOT = { is_our_vassal = THIS }
-		# only one state or unciv
-		NOT = { number_of_states = 5 }
 		OR = {
+			neighbour = THIS
 			AND = {
-				civilized = yes
-				NOT = { number_of_states = 2 }
-			}
-			AND = {
-				civilized = no
-				THIS = { civilized = no }
-				NOT = { number_of_states = 2 }
-			}
-			AND = {
-				civilized = no
-				number_of_states = 2
+				num_of_ports = 1
 				THIS = {
-					OR = {
-						NOT = { is_greater_power = yes }
-						NOT = { nationalism_n_imperialism = 1 }
-					}
+					num_of_ports = 1
 				}
 			}
+		}
+		NOT = { is_our_vassal = THIS }
+		# only one state or unciv
+		number_of_states = 2
+		NOT = { number_of_states = 5 }
+		NOT = {
 			AND = {
 				civilized = no
-				tag = ASM
+				THIS = {
+					is_greater_power = yes
+					nationalism_n_imperialism = 1
+				}
 			}
 		}
 		is_independant = yes
@@ -427,7 +421,6 @@ acquire_core_state = {
 		any_owned_province = {
 			is_core = THIS
 		}
-		not = { any_owned_province = { is_capital = yes } }
 	}
 
 	po_demand_state = yes
@@ -470,11 +463,16 @@ annex_core_country = {
 		any_owned_province = {
 			is_core = THIS
 		}
-		NOT = {
-			any_owned_province = {
-				NOT = {
-					is_core = THIS
+		OR = {
+			NOT = {
+				any_owned_province = {
+					NOT = {
+						is_core = THIS
+					}
 				}
+			}
+			NOT = {
+				number_of_states = 2
 			}
 		}
 	}
@@ -518,6 +516,19 @@ acquire_substate_region = {
 		NOT = { is_our_vassal = THIS }
 		num_of_substates = 1 # if has any substate
 		any_substate = {
+			OR = {
+				neighbour = THIS
+				AND = {
+					any_owned_province = {
+						port = yes
+					}
+					THIS = {
+						any_owned_province = {
+							has_building = naval_base
+						}
+					}
+				}
+			}
 			number_of_states = 1
 			any_owned_province = {
 				not = { is_core = THIS }
@@ -527,6 +538,23 @@ acquire_substate_region = {
 	}
 	
 	allowed_substate_regions = {
+		OR = {
+			any_owned_province = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				any_owned_province = {
+					port = yes
+				}
+				THIS = {
+					any_owned_province = {
+						has_building = naval_base
+					}
+				}
+			}
+		}
 		is_colonial = no
 		owner = { NOT = { in_sphere = THIS } }
 		any_owned_province = {
@@ -571,9 +599,28 @@ acquire_state = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
+		OR = {
+			neighbour = THIS
+			AND = {
+				num_of_ports = 1
+				any_owned_province = {
+					port = yes
+					not = { is_core = THIS }
+					is_colonial = no
+				}
+				THIS = {
+					num_of_ports = 1
+				}
+			}
+		}
 		NOT = { is_our_vassal = THIS }
-		number_of_states = 2 # annex if you want their last state
 		any_owned_province = {
+			OR = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+				port = yes
+			}
 			not = { is_core = THIS }
 			is_colonial = no
 		}
@@ -591,7 +638,7 @@ acquire_state = {
 				}
 			}
 		}
-		is_independant = yes
+		# is_independant = yes
 	}
 	
 	allowed_states = {
@@ -600,7 +647,21 @@ acquire_state = {
 			not = {	is_core = THIS }
 			is_colonial = no
 		}
-		not = { any_owned_province = { is_capital = yes } }
+		OR = {
+			any_owned_province = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				any_owned_province = {
+					port = yes
+				}
+				THIS = {
+					num_of_ports = 1
+				}
+			}
+		}
 	}
 	
 	allowed_states_in_crisis = {
@@ -645,6 +706,19 @@ place_in_the_sun = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
+		OR = {
+			neighbour = THIS
+			AND = {
+				any_owned_province = {
+					port = yes
+					not = { is_core = THIS }
+					is_colonial = yes
+				}
+				THIS = {
+					num_of_ports = 1
+				}
+			}
+		}
 		NOT = { is_our_vassal = THIS }
 		any_owned_province = {
 			is_colonial = yes
@@ -653,6 +727,21 @@ place_in_the_sun = {
 	
 	allowed_states = {
 		is_colonial = yes
+		OR = {
+			any_owned_province = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				any_owned_province = {
+					port = yes
+				}
+				THIS = {
+					num_of_ports = 1
+				}
+			}
+		}
 	}
 	
 	allowed_states_in_crisis = {
@@ -1229,25 +1318,41 @@ demand_concession_casus_belli = {
 	always = no
 
 	can_use = {
+		OR = {
+			neighbour = THIS
+			AND = {
+				num_of_ports = 1
+				THIS = {
+					num_of_ports = 1
+				}
+			}
+		}
 		NOT = { is_our_vassal = THIS }
 		THIS = {
 			civilized = yes
 		}
 		civilized = no
-		number_of_states = 2
-		NOT = {
-			AND = {
-				tag = CHI
-				THIS = {ai = yes}
-			}
-		}
 	}
 	
 	allowed_states = {
 		any_owned_province = {
 			is_colonial = no
 		}
-		not = { any_owned_province = { is_capital = yes } }
+		OR = {
+			any_owned_province = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				any_owned_province = {
+					port = yes
+				}
+				THIS = {
+					num_of_ports = 1
+				}
+			}
+		}
 	}
 	
 	po_demand_state = yes
@@ -1288,25 +1393,25 @@ establish_protectorate_casus_belli = {
 	always = no
 	
 	can_use = {
-		NOT = { is_our_vassal = THIS }
-		THIS = {
-			civilized = yes
-		}
 		OR = {
-			NOT = {
-				number_of_states = 2 
-			}
+			neighbour = THIS
 			AND = {
+				num_of_ports = 1
 				THIS = {
-					AND = {
-						is_greater_power = yes
-						nationalism_n_imperialism = 1
-					}
+					num_of_ports = 1
 				}
-				NOT = { number_of_states = 6 }
+			}
+		}
+		THIS = {
+			AND = {
+				is_greater_power = yes
+				nationalism_n_imperialism = 1
 			}
 		}
 		civilized = no
+		NOT = { is_our_vassal = THIS }
+		number_of_states = 2
+		NOT = { number_of_states = 5 }
 	}
 	
 	po_annex = yes
