@@ -1,0 +1,135 @@
+country_event = {
+	id = 5999
+	title = "EVTNAME11101"
+	desc = "EVTDESC11101"
+	picture = "Rebellion"
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPTA11101"
+		HND = { inherit = THIS }
+	}
+}
+country_event = {
+	id = 6000
+	title = "EVTNAME6XXX"
+	desc = "EVTDESC6XXX"
+	picture = "Rebellion"
+	trigger = {
+		tag = ENG
+		HND = { exists = no }
+		any_owned_province = { is_core = HND }
+		NOT = {
+			any_owned_province = {
+				is_core = HND
+				controlled_by_rebels = no
+			}
+		}
+		any_neighbor_country = {
+			vassal_of = ENG
+			civilized = yes
+			OR = {
+				primary_culture = assamese
+				primary_culture = bengali
+				primary_culture = bihari
+				primary_culture = manipuri
+				primary_culture = nepali
+				primary_culture = oriya
+				primary_culture = sinhala
+				primary_culture = avadhi
+				primary_culture = kanauji
+				primary_culture = panjabi
+				primary_culture = kashmiri
+				primary_culture = gujarati
+				primary_culture = marathi
+				primary_culture = sindi
+				primary_culture = rajput
+				primary_culture = kannada
+				primary_culture = malayalam
+				primary_culture = tamil
+				primary_culture = telegu
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 0.1
+	}
+	option = {
+		name = "EVTOPTA6XXX"
+		random_country = {
+			limit = {
+				vassal_of = ENG
+				civilized = yes
+				OR = {
+					primary_culture = assamese
+					primary_culture = bengali
+					primary_culture = bihari
+					primary_culture = manipuri
+					primary_culture = nepali
+					primary_culture = oriya
+					primary_culture = sinhala
+					primary_culture = avadhi
+					primary_culture = kanauji
+					primary_culture = panjabi
+					primary_culture = kashmiri
+					primary_culture = gujarati
+					primary_culture = marathi
+					primary_culture = sindi
+					primary_culture = rajput
+					primary_culture = kannada
+					primary_culture = malayalam
+					primary_culture = tamil
+					primary_culture = telegu
+				}
+			}
+			change_tag = HND
+		}
+		any_owned = {
+			limit = { is_core = HND }
+			secede_province = HND
+		}
+		HND = {
+			add_accepted_culture = union
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = HND
+			type = conquest_for_all
+			months = 12
+		}
+		any_country = {
+			limit = {
+				vassal_of = ENG
+				OR = {
+					primary_culture = assamese
+					primary_culture = bengali
+					primary_culture = bihari
+					primary_culture = manipuri
+					primary_culture = nepali
+					primary_culture = oriya
+					primary_culture = sinhala
+					primary_culture = avadhi
+					primary_culture = kanauji
+					primary_culture = panjabi
+					primary_culture = kashmiri
+					primary_culture = gujarati
+					primary_culture = marathi
+					primary_culture = sindi
+					primary_culture = rajput
+					primary_culture = kannada
+					primary_culture = malayalam
+					primary_culture = tamil
+					primary_culture = telegu
+				}
+			}
+			country_event = { id=5999 days=0 }
+		}
+	}
+}
