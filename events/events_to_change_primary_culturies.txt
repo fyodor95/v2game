@@ -107,7 +107,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = ashkenazi
+			culture = dutch
 		}
 	}
 	mean_time_to_happen = {
@@ -115,7 +115,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7005"
-		primary_culture = ashkenazi
+		primary_culture = dutch
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -126,14 +126,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = ashkenazi
+		accepted_culture = dutch
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7006"
-		primary_culture = ashkenazi
+		primary_culture = dutch
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -145,7 +145,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = dutch
+			culture = flemish
 		}
 	}
 	mean_time_to_happen = {
@@ -153,7 +153,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7007"
-		primary_culture = dutch
+		primary_culture = flemish
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -164,14 +164,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = dutch
+		accepted_culture = flemish
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7008"
-		primary_culture = dutch
+		primary_culture = flemish
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -183,7 +183,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = flemish
+			culture = wallonian
 		}
 	}
 	mean_time_to_happen = {
@@ -191,7 +191,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7009"
-		primary_culture = flemish
+		primary_culture = wallonian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -202,14 +202,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = flemish
+		accepted_culture = wallonian
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7010"
-		primary_culture = flemish
+		primary_culture = wallonian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -221,7 +221,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = wallonian
+			culture = swiss
 		}
 	}
 	mean_time_to_happen = {
@@ -229,7 +229,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7011"
-		primary_culture = wallonian
+		primary_culture = swiss
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -240,14 +240,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = wallonian
+		accepted_culture = swiss
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7012"
-		primary_culture = wallonian
+		primary_culture = swiss
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -259,7 +259,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = swiss
+			culture = swedish
 		}
 	}
 	mean_time_to_happen = {
@@ -267,7 +267,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7013"
-		primary_culture = swiss
+		primary_culture = swedish
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -278,14 +278,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = swiss
+		accepted_culture = swedish
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7014"
-		primary_culture = swiss
+		primary_culture = swedish
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -297,7 +297,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = swedish
+			culture = danish
 		}
 	}
 	mean_time_to_happen = {
@@ -305,7 +305,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7015"
-		primary_culture = swedish
+		primary_culture = danish
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -316,14 +316,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = swedish
+		accepted_culture = danish
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7016"
-		primary_culture = swedish
+		primary_culture = danish
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -335,7 +335,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = danish
+			culture = norwegian
 		}
 	}
 	mean_time_to_happen = {
@@ -343,7 +343,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7017"
-		primary_culture = danish
+		primary_culture = norwegian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -354,14 +354,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = danish
+		accepted_culture = norwegian
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7018"
-		primary_culture = danish
+		primary_culture = norwegian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -373,7 +373,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = norwegian
+			culture = icelandic
 		}
 	}
 	mean_time_to_happen = {
@@ -381,7 +381,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7019"
-		primary_culture = norwegian
+		primary_culture = icelandic
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -392,14 +392,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = norwegian
+		accepted_culture = icelandic
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7020"
-		primary_culture = norwegian
+		primary_culture = icelandic
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -411,7 +411,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = icelandic
+			culture = finnish
 		}
 	}
 	mean_time_to_happen = {
@@ -419,7 +419,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7021"
-		primary_culture = icelandic
+		primary_culture = finnish
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -430,14 +430,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = icelandic
+		accepted_culture = finnish
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7022"
-		primary_culture = icelandic
+		primary_culture = finnish
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -449,7 +449,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = finnish
+			culture = sami
 		}
 	}
 	mean_time_to_happen = {
@@ -457,7 +457,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7023"
-		primary_culture = finnish
+		primary_culture = sami
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -468,14 +468,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = finnish
+		accepted_culture = sami
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7024"
-		primary_culture = finnish
+		primary_culture = sami
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -487,7 +487,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = sami
+			culture = british
 		}
 	}
 	mean_time_to_happen = {
@@ -495,7 +495,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7025"
-		primary_culture = sami
+		primary_culture = british
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -506,14 +506,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = sami
+		accepted_culture = british
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7026"
-		primary_culture = sami
+		primary_culture = british
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -525,7 +525,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = british
+			culture = scottish
 		}
 	}
 	mean_time_to_happen = {
@@ -533,7 +533,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7027"
-		primary_culture = british
+		primary_culture = scottish
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -544,14 +544,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = british
+		accepted_culture = scottish
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7028"
-		primary_culture = british
+		primary_culture = scottish
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -563,7 +563,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = scottish
+			culture = irish
 		}
 	}
 	mean_time_to_happen = {
@@ -571,7 +571,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7029"
-		primary_culture = scottish
+		primary_culture = irish
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -582,14 +582,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = scottish
+		accepted_culture = irish
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7030"
-		primary_culture = scottish
+		primary_culture = irish
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -601,7 +601,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = irish
+			culture = north_italian
 		}
 	}
 	mean_time_to_happen = {
@@ -609,7 +609,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7031"
-		primary_culture = irish
+		primary_culture = north_italian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -620,14 +620,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = irish
+		accepted_culture = north_italian
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7032"
-		primary_culture = irish
+		primary_culture = north_italian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -639,7 +639,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = north_italian
+			culture = south_italian
 		}
 	}
 	mean_time_to_happen = {
@@ -647,7 +647,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7033"
-		primary_culture = north_italian
+		primary_culture = south_italian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -658,14 +658,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = north_italian
+		accepted_culture = south_italian
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7034"
-		primary_culture = north_italian
+		primary_culture = south_italian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -677,7 +677,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = south_italian
+			culture = maltese
 		}
 	}
 	mean_time_to_happen = {
@@ -685,7 +685,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7035"
-		primary_culture = south_italian
+		primary_culture = maltese
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -696,14 +696,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = south_italian
+		accepted_culture = maltese
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7036"
-		primary_culture = south_italian
+		primary_culture = maltese
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -715,7 +715,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = maltese
+			culture = basque
 		}
 	}
 	mean_time_to_happen = {
@@ -723,7 +723,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7037"
-		primary_culture = maltese
+		primary_culture = basque
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -734,14 +734,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = maltese
+		accepted_culture = basque
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7038"
-		primary_culture = maltese
+		primary_culture = basque
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -753,7 +753,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = basque
+			culture = spanish
 		}
 	}
 	mean_time_to_happen = {
@@ -761,7 +761,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7039"
-		primary_culture = basque
+		primary_culture = spanish
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -772,14 +772,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = basque
+		accepted_culture = spanish
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7040"
-		primary_culture = basque
+		primary_culture = spanish
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -791,7 +791,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = spanish
+			culture = catalan
 		}
 	}
 	mean_time_to_happen = {
@@ -799,7 +799,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7041"
-		primary_culture = spanish
+		primary_culture = catalan
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -810,14 +810,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = spanish
+		accepted_culture = catalan
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7042"
-		primary_culture = spanish
+		primary_culture = catalan
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -829,7 +829,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = catalan
+			culture = portuguese
 		}
 	}
 	mean_time_to_happen = {
@@ -837,7 +837,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7043"
-		primary_culture = catalan
+		primary_culture = portuguese
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -848,14 +848,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = catalan
+		accepted_culture = portuguese
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7044"
-		primary_culture = catalan
+		primary_culture = portuguese
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -867,7 +867,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = portuguese
+			culture = french
 		}
 	}
 	mean_time_to_happen = {
@@ -875,7 +875,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7045"
-		primary_culture = portuguese
+		primary_culture = french
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -886,14 +886,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = portuguese
+		accepted_culture = french
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7046"
-		primary_culture = portuguese
+		primary_culture = french
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -905,7 +905,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = french
+			culture = croat
 		}
 	}
 	mean_time_to_happen = {
@@ -913,7 +913,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7047"
-		primary_culture = french
+		primary_culture = croat
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -924,14 +924,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = french
+		accepted_culture = croat
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7048"
-		primary_culture = french
+		primary_culture = croat
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -943,7 +943,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = croat
+			culture = serb
 		}
 	}
 	mean_time_to_happen = {
@@ -951,7 +951,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7049"
-		primary_culture = croat
+		primary_culture = serb
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -962,14 +962,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = croat
+		accepted_culture = serb
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7050"
-		primary_culture = croat
+		primary_culture = serb
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -981,7 +981,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = serb
+			culture = bulgarian
 		}
 	}
 	mean_time_to_happen = {
@@ -989,7 +989,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7051"
-		primary_culture = serb
+		primary_culture = bulgarian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1000,14 +1000,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = serb
+		accepted_culture = bulgarian
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7052"
-		primary_culture = serb
+		primary_culture = bulgarian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1019,7 +1019,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = bulgarian
+			culture = albanian
 		}
 	}
 	mean_time_to_happen = {
@@ -1027,7 +1027,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7053"
-		primary_culture = bulgarian
+		primary_culture = albanian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1038,14 +1038,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = bulgarian
+		accepted_culture = albanian
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7054"
-		primary_culture = bulgarian
+		primary_culture = albanian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1057,7 +1057,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = albanian
+			culture = slovene
 		}
 	}
 	mean_time_to_happen = {
@@ -1065,7 +1065,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7055"
-		primary_culture = albanian
+		primary_culture = slovene
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1076,14 +1076,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = albanian
+		accepted_culture = slovene
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7056"
-		primary_culture = albanian
+		primary_culture = slovene
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1095,7 +1095,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = slovene
+			culture = bosniak
 		}
 	}
 	mean_time_to_happen = {
@@ -1103,7 +1103,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7057"
-		primary_culture = slovene
+		primary_culture = bosniak
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1114,14 +1114,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = slovene
+		accepted_culture = bosniak
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7058"
-		primary_culture = slovene
+		primary_culture = bosniak
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1133,7 +1133,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = bosniak
+			culture = romanian
 		}
 	}
 	mean_time_to_happen = {
@@ -1141,7 +1141,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7059"
-		primary_culture = bosniak
+		primary_culture = romanian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1152,14 +1152,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = bosniak
+		accepted_culture = romanian
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7060"
-		primary_culture = bosniak
+		primary_culture = romanian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1171,7 +1171,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = romanian
+			culture = hungarian
 		}
 	}
 	mean_time_to_happen = {
@@ -1179,7 +1179,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7061"
-		primary_culture = romanian
+		primary_culture = hungarian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1190,14 +1190,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = romanian
+		accepted_culture = hungarian
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7062"
-		primary_culture = romanian
+		primary_culture = hungarian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1209,7 +1209,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = hungarian
+			culture = polish
 		}
 	}
 	mean_time_to_happen = {
@@ -1217,7 +1217,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7063"
-		primary_culture = hungarian
+		primary_culture = polish
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1228,14 +1228,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = hungarian
+		accepted_culture = polish
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7064"
-		primary_culture = hungarian
+		primary_culture = polish
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1247,7 +1247,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = polish
+			culture = lithuanian
 		}
 	}
 	mean_time_to_happen = {
@@ -1255,7 +1255,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7065"
-		primary_culture = polish
+		primary_culture = lithuanian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1266,14 +1266,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = polish
+		accepted_culture = lithuanian
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7066"
-		primary_culture = polish
+		primary_culture = lithuanian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1285,7 +1285,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = lithuanian
+			culture = czech
 		}
 	}
 	mean_time_to_happen = {
@@ -1293,7 +1293,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7067"
-		primary_culture = lithuanian
+		primary_culture = czech
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1304,14 +1304,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = lithuanian
+		accepted_culture = czech
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7068"
-		primary_culture = lithuanian
+		primary_culture = czech
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1323,7 +1323,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = czech
+			culture = slovak
 		}
 	}
 	mean_time_to_happen = {
@@ -1331,7 +1331,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7069"
-		primary_culture = czech
+		primary_culture = slovak
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1342,14 +1342,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = czech
+		accepted_culture = slovak
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7070"
-		primary_culture = czech
+		primary_culture = slovak
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1361,7 +1361,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = slovak
+			culture = russian
 		}
 	}
 	mean_time_to_happen = {
@@ -1369,7 +1369,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7071"
-		primary_culture = slovak
+		primary_culture = russian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1380,14 +1380,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = slovak
+		accepted_culture = russian
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7072"
-		primary_culture = slovak
+		primary_culture = russian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1399,7 +1399,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = russian
+			culture = byelorussian
 		}
 	}
 	mean_time_to_happen = {
@@ -1407,7 +1407,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7073"
-		primary_culture = russian
+		primary_culture = byelorussian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1418,14 +1418,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = russian
+		accepted_culture = byelorussian
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7074"
-		primary_culture = russian
+		primary_culture = byelorussian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1437,7 +1437,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = byelorussian
+			culture = ukrainian
 		}
 	}
 	mean_time_to_happen = {
@@ -1445,7 +1445,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7075"
-		primary_culture = byelorussian
+		primary_culture = ukrainian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1456,14 +1456,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = byelorussian
+		accepted_culture = ukrainian
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7076"
-		primary_culture = byelorussian
+		primary_culture = ukrainian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1475,7 +1475,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = ukrainian
+			culture = ugrian
 		}
 	}
 	mean_time_to_happen = {
@@ -1483,7 +1483,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7077"
-		primary_culture = ukrainian
+		primary_culture = ugrian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1494,14 +1494,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = ukrainian
+		accepted_culture = ugrian
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7078"
-		primary_culture = ukrainian
+		primary_culture = ugrian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1513,7 +1513,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = ugrian
+			culture = latvian
 		}
 	}
 	mean_time_to_happen = {
@@ -1521,7 +1521,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7079"
-		primary_culture = ugrian
+		primary_culture = latvian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1532,14 +1532,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = ugrian
+		accepted_culture = latvian
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7080"
-		primary_culture = ugrian
+		primary_culture = latvian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1551,7 +1551,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = latvian
+			culture = estonian
 		}
 	}
 	mean_time_to_happen = {
@@ -1559,7 +1559,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7081"
-		primary_culture = latvian
+		primary_culture = estonian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1570,14 +1570,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = latvian
+		accepted_culture = estonian
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7082"
-		primary_culture = latvian
+		primary_culture = estonian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1589,7 +1589,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = estonian
+			culture = greek
 		}
 	}
 	mean_time_to_happen = {
@@ -1597,7 +1597,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7083"
-		primary_culture = estonian
+		primary_culture = greek
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1608,14 +1608,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = estonian
+		accepted_culture = greek
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7084"
-		primary_culture = estonian
+		primary_culture = greek
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1627,7 +1627,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = greek
+			culture = georgian
 		}
 	}
 	mean_time_to_happen = {
@@ -1635,7 +1635,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7085"
-		primary_culture = greek
+		primary_culture = georgian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1646,14 +1646,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = greek
+		accepted_culture = georgian
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7086"
-		primary_culture = greek
+		primary_culture = georgian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1665,7 +1665,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = georgian
+			culture = armenian
 		}
 	}
 	mean_time_to_happen = {
@@ -1673,7 +1673,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7087"
-		primary_culture = georgian
+		primary_culture = armenian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1684,14 +1684,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = georgian
+		accepted_culture = armenian
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7088"
-		primary_culture = georgian
+		primary_culture = armenian
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1703,7 +1703,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = armenian
+			culture = sephardic
 		}
 	}
 	mean_time_to_happen = {
@@ -1711,7 +1711,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7089"
-		primary_culture = armenian
+		primary_culture = sephardic
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1722,14 +1722,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = armenian
+		accepted_culture = sephardic
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7090"
-		primary_culture = armenian
+		primary_culture = sephardic
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1741,7 +1741,7 @@ country_event = {
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
 		capital_scope = {
-			culture = sephardic
+			culture = ashkenazi
 		}
 	}
 	mean_time_to_happen = {
@@ -1749,7 +1749,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA7091"
-		primary_culture = sephardic
+		primary_culture = ashkenazi
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }
@@ -1760,14 +1760,14 @@ country_event = {
 	picture = "Administration"
 	trigger = {
 		has_country_flag = primary_culture_must_be_changed
-		accepted_culture = sephardic
+		accepted_culture = ashkenazi
 	}
 	mean_time_to_happen = {
 		months = 8
 	}
 	option = {
 		name = "EVTOPTA7092"
-		primary_culture = sephardic
+		primary_culture = ashkenazi
 		clr_country_flag = primary_culture_must_be_changed
 	}
 }

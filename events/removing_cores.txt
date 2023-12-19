@@ -2488,7 +2488,6 @@ province_event = {
 			OR = {
 				culture = north_german
 				culture = south_german
-				culture = ashkenazi
 			}
 		}
 		GER = {
@@ -2504,7 +2503,6 @@ province_event = {
 					OR = {
 						culture = north_german
 						culture = south_german
-						culture = ashkenazi
 					}
 				}
 			}
@@ -3237,7 +3235,10 @@ province_event = {
 	trigger = {
 		is_core = ISR
 		NOT = {
-			culture = ashkenazi
+			OR = {
+				culture = sephardic
+				culture = ashkenazi
+			}
 		}
 		ISR = {
 			exists = no
@@ -3249,7 +3250,10 @@ province_event = {
 					is_core = ISR
 				}
 				NOT = {
-					culture = ashkenazi
+					OR = {
+						culture = sephardic
+						culture = ashkenazi
+					}
 				}
 			}
 		}
