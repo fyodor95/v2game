@@ -146,7 +146,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -564,7 +564,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -909,7 +909,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -1264,7 +1264,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -1667,7 +1667,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -2080,7 +2080,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -2493,7 +2493,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -2916,7 +2916,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -3377,7 +3377,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -3848,7 +3848,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -4145,7 +4145,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -4452,7 +4452,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -4774,7 +4774,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -5106,7 +5106,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -5446,7 +5446,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -5796,7 +5796,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -6155,7 +6155,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -6520,7 +6520,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -6879,7 +6879,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -7248,7 +7248,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -7552,7 +7552,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -7866,7 +7866,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -8233,7 +8233,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -8606,7 +8606,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -8967,7 +8967,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -9334,7 +9334,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -9679,7 +9679,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -10030,7 +10030,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -10337,7 +10337,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -10654,7 +10654,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -10983,7 +10983,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -11318,7 +11318,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -11712,7 +11712,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -12112,7 +12112,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -12450,7 +12450,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -12794,7 +12794,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -13180,7 +13180,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
@@ -13576,7 +13576,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 48000
+		months = 24000
 		modifier = {
 			factor = 0.5
 			unemployment_by_type = {
