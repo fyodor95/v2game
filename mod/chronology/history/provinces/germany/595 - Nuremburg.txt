@@ -26,7 +26,7 @@ terrain = good_farmland
 		level = 10
 		building = lumber_mill
 		upgrade = yes
-	
+	}
 	state_building = {
 		level = 10
 		building = paper_mill
