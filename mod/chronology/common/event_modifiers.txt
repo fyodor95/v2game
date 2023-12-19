@@ -1605,3 +1605,133 @@ finland_integrate = {
 	badboy = 0.02
 	icon = 2
 }
+
+####
+extremely_low_immigration = {
+	icon = 20
+	immigrant_attract = -0.3
+	immigrant_push = 0.45
+	local_ruling_party_support = -0.15
+	assimilation_rate = -0.2
+}
+lower_immigration = {
+	icon = 20
+	immigrant_attract = -0.2
+	immigrant_push = 0.3
+	local_ruling_party_support = -0.1
+	assimilation_rate = -0.1
+}
+low_immigration = {
+	icon = 20
+	immigrant_attract = -0.1
+	immigrant_push = 0.15
+	local_ruling_party_support = -0.05
+	assimilation_rate = -0.05
+}
+medium_immigration = {
+	icon = 19
+	immigrant_attract = 0.05
+	immigrant_push = -0.05
+}
+high_immigration = {
+	icon = 19
+	immigrant_attract = 0.15
+	immigrant_push = -0.15
+	local_ruling_party_support = 0.05
+	assimilation_rate = 0.05
+}
+higher_immigration = {
+	icon = 19
+	immigrant_attract = 0.3
+	immigrant_push = -0.3
+	local_ruling_party_support = 0.1
+	assimilation_rate = 0.1
+}
+extremely_high_immigration = { 
+	icon = 19
+	immigrant_attract = 0.45
+	immigrant_push = -0.45
+	local_ruling_party_support = 0.15
+	assimilation_rate = 0.15
+}
+highest_immigration = { 
+	icon = 19
+	immigrant_attract = 0.55
+	immigrant_push = -0.55
+	local_ruling_party_support = 0.2
+	assimilation_rate = 0.2
+}
+our_capital = {
+	icon = 19
+	immigrant_attract = 2.5
+	assimilation_rate = 0.2
+}
+prom_center_1 = {
+	icon = 13
+	immigrant_attract = 0.5
+}
+prom_center_2 = {
+	icon = 13
+	immigrant_attract = 1
+}
+prom_center_3 = {
+	icon = 13
+	immigrant_attract = 2
+}
+prom_center_4 = {
+	icon = 13
+	immigrant_attract = 4
+}
+prom_center_5 = {
+	icon = 13
+	immigrant_attract = 8
+}
+prom_center_6 = {
+	icon = 13
+	immigrant_attract = 16
+}
+international_pariah = {
+	diplomatic_points_modifier = -0.25
+	prestige = -0.6
+	icon = 4
+}
+life_rating_0_14 = {
+	icon = 20
+	immigrant_attract = -2
+	immigrant_push = 0.4
+}
+life_rating_15_19 = {
+	icon = 20
+	immigrant_attract = -1.5
+	immigrant_push = 0.3
+}
+life_rating_20_24 = {
+	icon = 20
+	immigrant_attract = -1
+	immigrant_push = 0.2
+}
+life_rating_25_29 = {
+	icon = 20
+	immigrant_attract = -0.5
+	immigrant_push = 0.1
+}
+life_rating_41_45 = {
+	icon = 19
+	immigrant_attract = 0.5
+	immigrant_push = -0.1
+}
+life_rating_46_50 = {
+	icon = 19
+	immigrant_attract = 1
+	immigrant_push = -0.2
+}
+life_rating_51_55 = {
+	icon = 19
+	immigrant_attract = 1.5
+	immigrant_push = -0.3
+}
+life_rating_56_inf = {
+	icon = 19
+	immigrant_attract = 2
+	immigrant_push = -0.4
+}
