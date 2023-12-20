@@ -770,23 +770,6 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
-					culture = french
-					total_pops = 40000
-				}
-				add_core = IDF
-				add_core = FRA
-			}
-		}
-		any_country = {
-			limit = {
-				is_greater_power = no
-				NOT = {
-					rank = 16
-				}
-				civilized = yes
-			}
-			any_owned = {
-				limit = {
 					culture = french_canadian
 					total_pops = 40000
 				}
