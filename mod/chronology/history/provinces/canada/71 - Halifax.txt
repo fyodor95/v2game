@@ -6,10 +6,11 @@ life_rating = 35
 colonial = 2
 naval_base = 1
 fort = 1
-1861.1.1 = { railroad = 2 }
+1861.1.1 = {
+	railroad = 2
+}
 1914.1.1 = {
 	owner = CAN
 	controller = CAN
 	colonial = no
 }
-

@@ -6,4 +6,3 @@ life_rating = 20
 	controller = CAN
 	colonial = 3
 }
-
