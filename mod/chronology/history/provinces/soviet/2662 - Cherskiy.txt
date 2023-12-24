@@ -1,6 +1,6 @@
 add_core = RUS
 trade_goods = grain
-life_rating = 15
+life_rating = 10
 terrain = tundra
 1914.1.1 = {
 	owner = RUS

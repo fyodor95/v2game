@@ -3,5 +3,5 @@ controller = SUL
 add_core = MLY
 add_core = SUL
 trade_goods = grain
-life_rating = 15
+life_rating = 10
 terrain = jungle_mountains

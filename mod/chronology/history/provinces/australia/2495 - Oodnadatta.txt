@@ -1,6 +1,6 @@
 add_core = AST
 trade_goods = fruit
-life_rating = 20
+life_rating = 15
 terrain = desert
 1914.1.1 = {
 	owner = AST

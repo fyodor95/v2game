@@ -2,7 +2,7 @@ owner = SNR
 controller = SNR
 add_core = SNR
 trade_goods = cattle
-life_rating = 30
+life_rating = 15
 terrain = desert
 1836.1.1 = {
 	owner = EGY
@@ -15,4 +15,3 @@ terrain = desert
 	controller = ENG
 	colonial = 3
 }
-

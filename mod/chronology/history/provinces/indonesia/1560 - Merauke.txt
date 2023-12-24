@@ -1,7 +1,7 @@
 add_core = INO
 add_core = NET
 trade_goods = fish
-life_rating = 32
+life_rating = 15
 terrain = swamp_jungle
 1836.1.1 = {
 	owner = NET

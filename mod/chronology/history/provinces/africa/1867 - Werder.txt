@@ -1,5 +1,5 @@
 trade_goods = grain
-life_rating = 30
+life_rating = 26
 terrain = semi_desert_hills
 1914.1.1 = {
 	owner = ETH
@@ -7,5 +7,3 @@ terrain = semi_desert_hills
 	add_core = ETH
 	colonial = 3
 }
-
-

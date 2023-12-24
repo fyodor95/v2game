@@ -3,12 +3,11 @@ controller = POR
 add_core = POR
 add_core = BRZ
 trade_goods = tobacco
-life_rating = 25
+life_rating = 15
 terrain = swamp_jungle
 1836.1.1 = {
 	owner = BRZ
 	controller = BRZ
-	remove_core = POR
+	remove_core = POR
 	colonial = no
 }
-

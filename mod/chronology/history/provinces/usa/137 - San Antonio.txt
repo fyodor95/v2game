@@ -4,8 +4,8 @@ add_core = TEX
 add_core = MEX
 add_core = SPA
 trade_goods = cattle
-life_rating = 35
-fort = 1 #Remember the Alamo!
+life_rating = 34
+fort = 1
 terrain = hilly_grassland
 1836.1.1 = {
 	owner = TEX
@@ -14,9 +14,9 @@ terrain = hilly_grassland
 	remove_core = SPA
 }
 1861.1.1 = {
-owner = USA
-controller = USA
-add_core = USA
+	owner = USA
+	controller = USA
+	add_core = USA
 }
 1861.1.1 = {
 	controller = CSA

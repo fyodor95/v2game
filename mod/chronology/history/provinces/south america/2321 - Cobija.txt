@@ -3,22 +3,22 @@ controller = SPA
 add_core = SPA
 add_core = PEU
 trade_goods = tropical_wood
-life_rating = 30
+life_rating = 20
 colonial = 3
 terrain = jungle
 1836.1.1 = {
 	owner = PBC
 	controller = PBC
 	add_core = BOL
-	add_core = PBC
-	remove_core = PEU
-	remove_core = SPA
+	add_core = PBC
+	remove_core = PEU
+	remove_core = SPA
 	colonial = no
 }
 1861.1.1 = {
 	owner = BOL
 	controller = BOL
-	remove_core = PBC
+	remove_core = PBC
 }
 1914.1.1 = {
 	trade_goods = rubber

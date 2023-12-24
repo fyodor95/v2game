@@ -5,14 +5,14 @@ add_core = GCO
 add_core = CLM
 add_core = BRZ
 trade_goods = tobacco
-life_rating = 25
+life_rating = 15
 colonial = 3
 terrain = swamp_jungle
 1836.1.1 = {
 	owner = CLM
 	controller = CLM
-	remove_core = SPA
-	remove_core = GCO
+	remove_core = SPA
+	remove_core = GCO
 	colonial = no
 }
 1914.1.1 = {

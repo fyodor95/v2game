@@ -1,13 +1,13 @@
-owner = MEX 
+owner = MEX
 controller = MEX
 add_core = MEX
 add_core = TEX
 add_core = SPA
 trade_goods = cattle
-life_rating = 35
+life_rating = 20
 terrain = desert_hills
 1836.1.1 = {
-	owner = TEX 
+	owner = TEX
 	controller = TEX
 	remove_core = TEX
 	remove_core = SPA

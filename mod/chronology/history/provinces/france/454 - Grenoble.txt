@@ -2,7 +2,12 @@ owner = FRA
 controller = FRA
 add_core = FRA
 trade_goods = tobacco
-life_rating = 35
+life_rating = 25
 terrain = deciduous_forest_mountains
-1861.1.1 = { railroad = 3 }
-1914.1.1 = { railroad = 5 fort = 3 }
+1861.1.1 = {
+	railroad = 3
+}
+1914.1.1 = {
+	railroad = 5
+	fort = 3
+}

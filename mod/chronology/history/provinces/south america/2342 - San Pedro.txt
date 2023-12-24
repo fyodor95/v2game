@@ -1,6 +1,6 @@
-owner = PRG
+owner = PRG
 controller = PRG
-add_core = PRG
+add_core = PRG
 trade_goods = fruit
-life_rating = 30
-terrain = jungle
+life_rating = 20
+terrain = jungle

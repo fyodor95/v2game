@@ -3,11 +3,15 @@ controller = AUS
 add_core = LOM
 add_core = ITA
 trade_goods = cattle
-life_rating = 35
+life_rating = 25
 terrain = deciduous_forest_mountains
 1861.1.1 = {
 	owner = ITA
 	controller = ITA
 }
-1861.1.1 = { railroad = 1 }
-1914.1.1 = { railroad = 4 }
+1861.1.1 = {
+	railroad = 1
+}
+1914.1.1 = {
+	railroad = 4
+}

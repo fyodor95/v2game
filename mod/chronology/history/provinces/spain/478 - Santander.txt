@@ -2,7 +2,11 @@ owner = SPA
 controller = SPA
 add_core = SPA
 trade_goods = fish
-life_rating = 35
+life_rating = 25
 terrain = deciduous_forest_mountains
-1861.1.1 = { railroad = 3 }
-1914.1.1 = { railroad = 4 }
+1861.1.1 = {
+	railroad = 3
+}
+1914.1.1 = {
+	railroad = 4
+}

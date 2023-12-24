@@ -4,13 +4,13 @@ add_core = SPA
 add_core = GCO
 add_core = VNZ
 trade_goods = fruit
-life_rating = 25
+life_rating = 24
 terrain = seasonal_jungle_hills
 1836.1.1 = {
 	owner = VNZ
 	controller = VNZ
-	remove_core = SPA
-	remove_core = GCO
+	remove_core = SPA
+	remove_core = GCO
 	colonial = no
 }
 1914.1.1 = {

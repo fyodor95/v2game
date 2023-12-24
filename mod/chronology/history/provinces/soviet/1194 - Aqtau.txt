@@ -1,5 +1,5 @@
 trade_goods = opium
-life_rating = 25
+life_rating = 15
 terrain = desert
 1861.1.1 = {
 	owner = RUS

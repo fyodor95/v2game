@@ -1,7 +1,7 @@
 add_core = CHI
 add_core = XIN
 trade_goods = cotton
-life_rating = 35
+life_rating = 15
 terrain = desert
 owner = CHI
 controller = CHI

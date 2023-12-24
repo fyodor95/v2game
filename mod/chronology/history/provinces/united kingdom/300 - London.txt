@@ -4,7 +4,7 @@ add_core = ENG
 add_core = ENL
 terrain = city_300
 trade_goods = grain
-life_rating = 45
+life_rating = 40
 fort = 1
 state_building = {
 	level = 1
@@ -68,7 +68,9 @@ state_building = {
 		upgrade = yes
 	}
 }
-1861.1.1 = { railroad = 3 }
+1861.1.1 = {
+	railroad = 3
+}
 1914.1.1 = {
 	railroad = 5
 	state_building = {
@@ -112,4 +114,3 @@ state_building = {
 		upgrade = yes
 	}
 }
-

@@ -1,5 +1,5 @@
 owner = MEX
-controller = SPA
+controller = SPA
 add_core = MEX
 add_core = DES
 add_core = CAL
@@ -7,7 +7,7 @@ add_core = SPA
 colonial = 2
 terrain = city_89
 trade_goods = grain
-life_rating = 40
+life_rating = 37
 1836.1.1 = {
 	remove_core = SPA
 }
