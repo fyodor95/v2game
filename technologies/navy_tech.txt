@@ -28,7 +28,7 @@ post_nelsonian_thought = {
 		}
 		# Land-locked countries don't research this
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
@@ -121,7 +121,7 @@ battleship_column_doctrine = {
 		}
 		# Land-locked countries don't research this
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
@@ -207,7 +207,7 @@ raider_group_doctrine = {
 		}
 		# Land-locked countries don't research this
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
@@ -289,7 +289,7 @@ blue_and_brown_water_schools = {
 		}
 		# Land-locked countries don't research this
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
@@ -369,7 +369,7 @@ high_sea_battle_fleet = {
 		}
 		# Land-locked countries don't research this
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
@@ -443,7 +443,7 @@ modern_naval_doctrine = {
 		factor = 10
 		# Land-locked countries don't research this
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
@@ -536,7 +536,7 @@ clipper_design = {
 		}
 		# Land-locked countries don't research this
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
@@ -633,7 +633,7 @@ steamers = {
 		}
 		# Land-locked countries don't research this
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
@@ -726,7 +726,7 @@ iron_steamers = {
 		}
 		# Land-locked countries don't research this
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
@@ -810,7 +810,7 @@ steel_steamers = {
 		}
 		# Land-locked countries don't research this
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
@@ -890,7 +890,7 @@ steam_turbine_ships = {
 		}
 		# Land-locked countries don't research this
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
@@ -966,7 +966,7 @@ oil_driven_ships = {
 		factor = 10
 		# Land-locked countries don't research this
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
@@ -1060,7 +1060,7 @@ naval_design_bureaus = {
 		}
 		# Land-locked countries don't research this
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
@@ -1162,7 +1162,7 @@ fire_control_systems = {
 		}
 		# Land-locked countries don't research this
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
@@ -1261,7 +1261,7 @@ weapon_platforms = {
 		}
 		# Land-locked countries don't research this
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
@@ -1355,7 +1355,7 @@ main_armament = {
 		}
 		# Land-locked countries don't research this
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
@@ -1450,7 +1450,7 @@ advanced_naval_design = {
 		}
 		# Land-locked countries don't research this
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
@@ -1536,7 +1536,7 @@ modern_naval_design = {
 		factor = 10
 		# Land-locked countries don't research this
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
@@ -1635,11 +1635,11 @@ alphabetic_flag_signaling = {
 			YEAR = 1919
 		}
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_amount_of_ships = 1 }
 		}
 		modifier = {
@@ -1678,7 +1678,7 @@ naval_plans = {
 	ai_chance = {
 		factor = 1.01
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
@@ -1686,7 +1686,7 @@ naval_plans = {
 			NOT = { rank = 18 }
 		}
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_amount_of_ships = 1 }
 		}
 		modifier = {
@@ -1720,7 +1720,7 @@ naval_statistics = {
 		ai_chance = {
 		factor = 1.01
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
@@ -1728,7 +1728,7 @@ naval_statistics = {
 			NOT = { rank = 18 }
 		}
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_amount_of_ships = 1 }
 		}
 		modifier = {
@@ -1762,7 +1762,7 @@ naval_logistics = {
 		ai_chance = {
 		factor = 1.01
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
@@ -1770,7 +1770,7 @@ naval_logistics = {
 			NOT = { rank = 18 }
 		}
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_amount_of_ships = 1 }
 		}
 		modifier = {
@@ -1804,7 +1804,7 @@ naval_directionism = {
 		ai_chance = {
 		factor = 1.01
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
@@ -1812,7 +1812,7 @@ naval_directionism = {
 			NOT = { rank = 18 }
 		}
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_amount_of_ships = 1 }
 		}
 		modifier = {
@@ -1846,7 +1846,7 @@ naval_integration = {
 		ai_chance = {
 		factor = 1.01
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		modifier = {
@@ -1870,7 +1870,7 @@ naval_integration = {
 			tech_school = naval_tech_school
 		}
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_amount_of_ships = 1 }
 		}
 		modifier = {
@@ -1918,7 +1918,7 @@ the_command_principle = {
 		}
 		# Land-locked countries don't research this
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
@@ -2001,7 +2001,7 @@ naval_professionalism = {
 		factor = 1
 		# Land-locked countries don't research this
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
@@ -2084,7 +2084,7 @@ naval_decision_making = {
 		factor = 1
 		# Land-locked countries don't research this
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
@@ -2167,7 +2167,7 @@ naval_risk_management = {
 		factor = 1
 		# Land-locked countries don't research this
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
@@ -2250,7 +2250,7 @@ naval_nco_training = {
 		factor = 1
 		# Land-locked countries don't research this
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
@@ -2333,7 +2333,7 @@ modern_naval_training = {
 		factor = 1
 		# Land-locked countries don't research this
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { total_num_of_ports = 1 }
 		}
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
