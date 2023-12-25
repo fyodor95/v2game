@@ -937,7 +937,7 @@ introspectionism = {
 	ai_chance = {
 		factor = 9910
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { military_score = 10 }
 		}
 		modifier = {
@@ -986,7 +986,7 @@ associationism = {
 	ai_chance = {
 		factor = 981
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { military_score = 10 }
 		}
 		modifier = {
@@ -1034,7 +1034,7 @@ phenomenalism = {
 	ai_chance = {
 		factor = 971
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { military_score = 10 }
 		}
 		modifier = {
@@ -1078,7 +1078,7 @@ experimental_psychology = {
 	ai_chance = {
 		factor = 961
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { military_score = 10 }
 		}
 		modifier = {
@@ -1118,7 +1118,7 @@ psychoanalysis = {
 	ai_chance = {
 		factor = 1000
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = { military_score = 10 }
 		}
 		modifier = {
