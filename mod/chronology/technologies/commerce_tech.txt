@@ -4,7 +4,23 @@ joint-stock_companies = {
 	cost = 2200
 	tax_eff = 3
 	ai_chance = {
-		factor = 1.1
+		factor = 100
+		modifier = {
+			factor = 10
+			YEAR = 1850
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1870
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1900
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1919
+		}
 		modifier = {
 			factor = 3.5
 			rank = 16
@@ -24,6 +40,27 @@ joint-stock_companies = {
 		modifier = {
 			factor = 1.1
 			literacy = 0.6
+		}
+		modifier = {
+			factor = 10
+			year = 1841
+			NOT = {
+				money = 1000
+			}
+		}
+		modifier = {
+			factor = 10
+			year = 1846
+			NOT = {
+				money = 10000
+			}
+		}
+		modifier = {
+			factor = 10
+			year = 1851
+			NOT = {
+				money = 100000
+			}
 		}
 	}
 }
@@ -309,8 +346,8 @@ trust_company = {
 	ai_chance = {
 		factor = 1.1
 		modifier = {
-			factor = 3
-			is_greater_power = yes
+			factor = 1.5
+			rank = 16
 		}
 		modifier = {
 			factor = 1.25
@@ -382,14 +419,47 @@ bimetallism = {
 	cost = 4400
 	administrative_efficiency = 0.05
 	ai_chance = {
-		factor = 1.1
-		modifier = {
-			factor = 1.1
-			rank = 16
-		}
+		factor = 6.05
 		modifier = {
 			factor = 1.02
 			tech_school = commerce_tech_school
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1850
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1870
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1900
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1919
+		}
+		modifier = {
+			factor = 10
+			year = 1841
+			NOT = {
+				money = 1000
+			}
+		}
+		modifier = {
+			factor = 10
+			year = 1846
+			NOT = {
+				money = 10000
+			}
+		}
+		modifier = {
+			factor = 10
+			year = 1851
+			NOT = {
+				money = 100000
+			}
 		}
 	}
 }
@@ -559,8 +629,12 @@ bretton_woods_system = {
 	ai_chance = {
 		factor = 1.1
 		modifier = {
-			factor = 3
-			is_greater_power = yes
+			factor = 1.25
+			economic_policy = laissez_faire
+		}
+		modifier = {
+			factor = 1.1
+			rank = 16
 		}
 		modifier = {
 			factor = 1.02
@@ -574,7 +648,23 @@ physiocracy = {
 	cost = 2200
 	factory_input = -0.01
 	ai_chance = {
-		factor = 2
+		factor = 20
+		modifier = {
+			factor = 10
+			YEAR = 1850
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1870
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1900
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1919
+		}
 		modifier = {
 			factor = 1.02
 			tech_school = commerce_tech_school
@@ -781,11 +871,11 @@ monetarism = {
 		factor = 1.01
 		modifier = {
 			factor = 1.2
-			industrial_score = 2000
+			industrial_score = 1500
 		}
 		modifier = {
 			factor = 1.2
-			industrial_score = 3000
+			industrial_score = 2000
 		}
 		modifier = {
 			factor = 1.02
@@ -793,11 +883,11 @@ monetarism = {
 		}
 		modifier = {
 			factor = 1.05
-			literacy = 0.6
+			literacy = 0.3
 		}
 		modifier = {
 			factor = 1.05
-			literacy = 0.8
+			literacy = 0.6
 		}
 	}
 }
@@ -809,7 +899,23 @@ state_mercantilism = {
 	farm_rgo_eff = 0.1
 	mine_rgo_eff = 0.1
 	ai_chance = {
-		factor = 11
+		factor = 110
+		modifier = {
+			factor = 10
+			YEAR = 1850
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1870
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1900
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1919
+		}
 		modifier = {
 			factor = 1.5
 			is_greater_power = yes
@@ -825,6 +931,27 @@ state_mercantilism = {
 		modifier = {
 			factor = 1.02
 			tech_school = commerce_tech_school
+		}
+		modifier = {
+			factor = 10
+			year = 1841
+			NOT = {
+				money = 1000
+			}
+		}
+		modifier = {
+			factor = 10
+			year = 1846
+			NOT = {
+				money = 10000
+			}
+		}
+		modifier = {
+			factor = 10
+			year = 1851
+			NOT = {
+				money = 100000
+			}
 		}
 	}
 }
@@ -1102,18 +1229,18 @@ the_world_market = {
 	cost = 25000
 	influence = 0.2
 	ai_chance = {
-		factor = 1.01
+		factor = 10
 		modifier = {
 			factor = 1.2
 			is_greater_power = yes
 		}
 		modifier = {
 			factor = 1.2
-			industrial_score = 2000
+			industrial_score = 1000
 		}
 		modifier = {
 			factor = 1.2
-			industrial_score = 3000
+			industrial_score = 1500
 		}
 		modifier = {
 			factor = 1.02
@@ -1127,18 +1254,34 @@ division_of_labour = {
 	cost = 2200
 	factory_output = 0.01
 	ai_chance = {
-		factor = 1.05
+		factor = 100
+		modifier = {
+			factor = 10
+			YEAR = 1850
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1870
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1900
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1919
+		}
 		modifier = {
 			factor = 1.2
 			is_greater_power = yes
 		}
 		modifier = {
 			factor = 1.2
-			industrial_score = 5
+			industrial_score = 10
 		}
 		modifier = {
 			factor = 1.2
-			industrial_score = 25
+			industrial_score = 50
 		}
 		modifier = {
 			factor = 1.25
@@ -1151,6 +1294,27 @@ division_of_labour = {
 		modifier = {
 			factor = 1.02
 			tech_school = commerce_tech_school
+		}
+		modifier = {
+			factor = 10
+			year = 1841
+			NOT = {
+				money = 1000
+			}
+		}
+		modifier = {
+			factor = 10
+			year = 1846
+			NOT = {
+				money = 10000
+			}
+		}
+		modifier = {
+			factor = 10
+			year = 1851
+			NOT = {
+				money = 100000
+			}
 		}
 	}
 }
@@ -1443,18 +1607,18 @@ time_management = {
 	cost = 25000
 	factory_output = 0.01
 	ai_chance = {
-		factor = 1.05
+		factor = 10
 		modifier = {
 			factor = 1.2
 			is_greater_power = yes
 		}
 		modifier = {
 			factor = 1.2
-			industrial_score = 2000
+			industrial_score = 1000
 		}
 		modifier = {
 			factor = 1.2
-			industrial_score = 3000
+			industrial_score = 1500
 		}
 		modifier = {
 			factor = 1.02

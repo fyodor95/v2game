@@ -10,7 +10,23 @@ napoleonic_thought = {
 	}
 	dig_in_cap = 1
 	ai_chance = {
-		factor = 1.01
+		factor = 9990
+		modifier = {
+			factor = 10
+			YEAR = 1850
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1870
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1900
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1919
+		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -367,7 +383,11 @@ trench_warfare = {
 		supply_consumption = 0.2
 	}
 	ai_chance = {
-		factor = 1.1
+		factor = 957
+		modifier = {
+			factor = 10
+			YEAR = 1919
+		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -411,7 +431,11 @@ tank_attacks_doctrine = {
 		supply_consumption = 0.2
 	}
 	ai_chance = {
-		factor = 1.1
+		factor = 957
+		modifier = {
+			factor = 10
+			YEAR = 1919
+		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -574,10 +598,14 @@ caplock_rifles = {
 	activate_unit = guard
 	combat_width = -2
 	ai_chance = {
-		factor = 1.1
+		factor = 985
 		modifier = {
-			factor = 1.5
-			is_greater_power = yes
+			factor = 1.02
+			tech_school = army_tech_school
+		}
+		modifier = {
+			factor = 1.05
+			war = yes
 		}
 		modifier = {
 			factor = 1.2
@@ -591,13 +619,8 @@ caplock_rifles = {
 			}
 		}
 		modifier = {
-			factor = 6
-			rank = 16
-			year = 1850
-		}
-		modifier = {
-			factor = 1.05
-			war = yes
+			factor = 1.5
+			is_greater_power = yes
 		}
 		modifier = {
 			factor = 1.5
@@ -608,8 +631,16 @@ caplock_rifles = {
 			}
 		}
 		modifier = {
-			factor = 1.02
-			tech_school = army_tech_school
+			factor = 10
+			YEAR = 1870
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1900
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1919
 		}
 	}
 }
@@ -781,15 +812,7 @@ automatic_rifles = {
 	unit = 2
 	combat_width = -5
 	ai_chance = {
-		factor = 1.1
-		modifier = {
-			factor = 1.5
-			is_greater_power = yes
-		}
-		modifier = {
-			factor = 1.05
-			war = yes
-		}
+		factor = 952
 		modifier = {
 			factor = 1.02
 			civilized = yes
@@ -804,6 +827,14 @@ automatic_rifles = {
 		modifier = {
 			factor = 1.02
 			tech_school = army_tech_school
+		}
+		modifier = {
+			factor = 1.05
+			war = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
 		}
 		modifier = {
 			factor = 1.5
@@ -1095,11 +1126,7 @@ rapid-firing_field_guns = {
 		supply_consumption = 0.3
 	}
 	ai_chance = {
-		factor = 1.05
-		modifier = {
-			factor = 1.5
-			is_greater_power = yes
-		}
+		factor = 963
 		modifier = {
 			factor = 1.02
 			civilized = yes
@@ -1112,12 +1139,16 @@ rapid-firing_field_guns = {
 			}
 		}
 		modifier = {
+			factor = 1.02
+			tech_school = army_tech_school
+		}
+		modifier = {
 			factor = 1.05
 			war = yes
 		}
 		modifier = {
-			factor = 1.02
-			tech_school = army_tech_school
+			factor = 1.5
+			is_greater_power = yes
 		}
 		modifier = {
 			factor = 1.5
@@ -1126,6 +1157,10 @@ rapid-firing_field_guns = {
 				is_greater_power = yes
 				military_score = THIS
 			}
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1919
 		}
 	}
 }
@@ -1236,7 +1271,7 @@ rocket_artillery = {
 		supply_consumption = 0.1
 	}
 	ai_chance = {
-		factor = 1.05
+		factor = 948
 		modifier = {
 			factor = 1.5
 			is_greater_power = yes
@@ -1340,11 +1375,7 @@ improved_communication_systems = {
 		supply_consumption = 0.1
 	}
 	ai_chance = {
-		factor = 1.1
-		modifier = {
-			factor = 1.5
-			is_greater_power = yes
-		}
+		factor = 5493.5
 		modifier = {
 			factor = 1.02
 			civilized = yes
@@ -1357,12 +1388,16 @@ improved_communication_systems = {
 			}
 		}
 		modifier = {
+			factor = 1.02
+			tech_school = army_tech_school
+		}
+		modifier = {
 			factor = 1.05
 			war = yes
 		}
 		modifier = {
-			factor = 1.02
-			tech_school = army_tech_school
+			factor = 1.5
+			is_greater_power = yes
 		}
 		modifier = {
 			factor = 1.5
@@ -1371,6 +1406,22 @@ improved_communication_systems = {
 				is_greater_power = yes
 				military_score = THIS
 			}
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1850
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1870
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1900
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1919
 		}
 	}
 }
@@ -1648,7 +1699,7 @@ nuclear_strategy = {
 	}
 	unciv_military = yes
 	ai_chance = {
-		factor = 1.1
+		factor = 947
 		modifier = {
 			factor = 1.5
 			is_greater_power = yes
@@ -1810,15 +1861,7 @@ military_academies = {
 		supply_consumption = 0.1
 	}
 	ai_chance = {
-		factor = 1.1
-		modifier = {
-			factor = 1.5
-			is_greater_power = yes
-		}
-		modifier = {
-			factor = 1.05
-			war = yes
-		}
+		factor = 984
 		modifier = {
 			factor = 1.02
 			civilized = yes
@@ -1836,12 +1879,11 @@ military_academies = {
 		}
 		modifier = {
 			factor = 1.05
-			rank = 16
-			year = 1850
+			war = yes
 		}
 		modifier = {
-			factor = 1.05
-			year = 1860
+			factor = 1.5
+			is_greater_power = yes
 		}
 		modifier = {
 			factor = 1.5
@@ -1850,6 +1892,18 @@ military_academies = {
 				is_greater_power = yes
 				military_score = THIS
 			}
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1870
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1900
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1919
 		}
 	}
 }
@@ -2095,7 +2149,7 @@ second_great_war_experience = {
 		supply_consumption = 0.2
 	}
 	ai_chance = {
-		factor = 1.1
+		factor = 949
 		modifier = {
 			factor = 1.5
 			is_greater_power = yes

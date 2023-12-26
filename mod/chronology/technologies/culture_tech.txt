@@ -4,7 +4,30 @@ sentimentalism = {
 	cost = 2200
 	prestige = 0.05
 	ai_chance = {
-		factor = 1.01
+		factor = 10.1
+		modifier = {
+			factor = 10
+			YEAR = 1850
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1870
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1900
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1919
+		}
+		modifier = {
+			factor = 10000
+			rank = 12
+			NOT = {
+				rank = 6
+			}
+		}
 		modifier = {
 			factor = 2
 			is_greater_power = yes
@@ -12,7 +35,7 @@ sentimentalism = {
 		modifier = {
 			factor = 0.5
 			not = {
-				literacy = 0.2
+				literacy = 0.3
 			}
 		}
 		modifier = {
@@ -262,7 +285,18 @@ the_avant_garde = {
 	cost = 21600
 	prestige = 0.05
 	ai_chance = {
-		factor = 1.01
+		factor = 1.05
+		modifier = {
+			factor = 10
+			YEAR = 1919
+		}
+		modifier = {
+			factor = 10000
+			rank = 12
+			NOT = {
+				rank = 6
+			}
+		}
 		modifier = {
 			factor = 2
 			is_greater_power = yes
@@ -290,7 +324,18 @@ mass_culture = {
 	cost = 25000
 	prestige = 0.05
 	ai_chance = {
-		factor = 1.01
+		factor = 1.05
+		modifier = {
+			factor = 10
+			YEAR = 1919
+		}
+		modifier = {
+			factor = 10000
+			rank = 12
+			NOT = {
+				rank = 6
+			}
+		}
 		modifier = {
 			factor = 2
 			is_greater_power = yes
@@ -416,18 +461,10 @@ materialism = {
 	cost = 7200
 	increase_research = 0.5
 	ai_chance = {
-		factor = 51
+		factor = 100000
 		modifier = {
 			factor = 1.02
 			tech_school = culture_tech_school
-		}
-		modifier = {
-			factor = 1.1
-			year = 1845
-		}
-		modifier = {
-			factor = 2
-			year = 1850
 		}
 		modifier = {
 			factor = 1.1
@@ -440,6 +477,18 @@ materialism = {
 		modifier = {
 			factor = 2
 			year = 1885
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1870
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1900
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1919
 		}
 	}
 }
@@ -561,18 +610,18 @@ postmodernism = {
 	cost = 25000
 	increase_research = 1
 	ai_chance = {
-		factor = 51
+		factor = 100000
 		modifier = {
 			factor = 1.02
 			tech_school = culture_tech_school
 		}
 		modifier = {
 			factor = 1.1
-			year = 1945
+			year = 1905
 		}
 		modifier = {
 			factor = 2
-			year = 1950
+			year = 1910
 		}
 	}
 }
@@ -630,22 +679,31 @@ nihilism_i_anarchism = {
 	colonial_migration = 0.05
 	education_efficiency = 0.1
 	ai_chance = {
-		factor = 1.01
+		factor = 5.555
 		modifier = {
-			factor = 1.5
-			not = {
-				literacy = 0.3
-			}
+			factor = 10
+			YEAR = 1850
 		}
 		modifier = {
-			factor = 1.5
-			not = {
-				literacy = 0.2
-			}
+			factor = 10
+			YEAR = 1870
 		}
 		modifier = {
-			factor = 1.02
-			tech_school = culture_tech_school
+			factor = 10
+			YEAR = 1900
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1919
+		}
+		modifier = {
+			factor = 10000
+			OR = {
+				not = {
+					literacy = 0.99
+				}
+				tech_school = culture_tech_school
+			}
 		}
 	}
 }
@@ -826,18 +884,23 @@ consumerism = {
 	ai_chance = {
 		factor = 1.01
 		modifier = {
+			factor = 10000
+			OR = {
+				not = {
+					literacy = 0.88
+				}
+				tech_school = culture_tech_school
+			}
+		}
+		modifier = {
 			factor = 2
 			is_greater_power = yes
 		}
 		modifier = {
 			factor = 3
 			not = {
-				literacy = 0.5
+				literacy = 0.3
 			}
-		}
-		modifier = {
-			factor = 1.02
-			tech_school = culture_tech_school
 		}
 	}
 }
@@ -881,15 +944,26 @@ constitutionalism_thought = {
 	cost = 4400
 	max_national_focus = 1
 	ai_chance = {
-		factor = 11
+		factor = 550000
 		modifier = {
 			factor = 1.02
 			tech_school = culture_tech_school
 		}
 		modifier = {
-			factor = 6
-			is_greater_power = yes
-			year = 1850
+			factor = 10
+			YEAR = 1850
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1870
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1900
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1919
 		}
 	}
 }
@@ -1091,16 +1165,19 @@ global_policy = {
 	ai_chance = {
 		factor = 1.1
 		modifier = {
+			factor = 10000
+			OR = {
+				number_of_states = 7
+				tech_school = culture_tech_school
+			}
+		}
+		modifier = {
 			factor = 1.5
 			is_greater_power = yes
 		}
 		modifier = {
 			factor = 1.03
-			total_pops = 7000000
-		}
-		modifier = {
-			factor = 1.02
-			tech_school = culture_tech_school
+			total_pops = 5000000
 		}
 	}
 }
@@ -1111,22 +1188,44 @@ fundamentals_of_psychology = {
 	regular_experience_level = 5
 	reinforce_rate = 0.05
 	ai_chance = {
-		factor = 1.01
+		factor = 9910
+		modifier = {
+			factor = 0.01
+			NOT = {
+				military_score = 10
+			}
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1850
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1870
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1900
+		}
+		modifier = {
+			factor = 10
+			YEAR = 1919
+		}
 		modifier = {
 			factor = 1.05
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.02
-			tech_school = culture_tech_school
-		}
-		modifier = {
 			factor = 1.1
-			year = 1840
+			year = 1850
 		}
 		modifier = {
 			factor = 2
-			year = 1850
+			year = 1860
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
 		}
 	}
 }
@@ -1139,7 +1238,7 @@ introspectionism = {
 	ai_chance = {
 		factor = 9910
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = {
 				military_score = 10
 			}
@@ -1187,7 +1286,7 @@ associationism = {
 	ai_chance = {
 		factor = 981
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = {
 				military_score = 10
 			}
@@ -1235,7 +1334,7 @@ phenomenalism = {
 	ai_chance = {
 		factor = 971
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = {
 				military_score = 10
 			}
@@ -1279,7 +1378,7 @@ experimental_psychology = {
 	ai_chance = {
 		factor = 961
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = {
 				military_score = 10
 			}
@@ -1319,7 +1418,7 @@ psychoanalysis = {
 	ai_chance = {
 		factor = 1000
 		modifier = {
-			factor = 0
+			factor = 0.01
 			NOT = {
 				military_score = 10
 			}
@@ -1379,22 +1478,22 @@ cognitive_psychology = {
 	regular_experience_level = 5
 	reinforce_rate = 0.05
 	ai_chance = {
-		factor = 1.01
+		factor = 1000
 		modifier = {
 			factor = 1.25
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.02
-			tech_school = culture_tech_school
-		}
-		modifier = {
 			factor = 1.1
-			year = 1930
+			year = 1910
 		}
 		modifier = {
 			factor = 2
-			year = 1940
+			year = 1920
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
 		}
 	}
 }
