@@ -20,8 +20,6 @@ province_event = {
 					is_core = D17
 				}
 			}
-			D17 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -93,8 +91,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D10
 				}
-			}
-			D10 = {
 			}
 		}
 	}
@@ -1298,8 +1294,6 @@ province_event = {
 					is_core = D38
 				}
 			}
-			D38 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -1477,8 +1471,6 @@ province_event = {
 					is_core = D37
 				}
 			}
-			D37 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -1550,8 +1542,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D36
 				}
-			}
-			D36 = {
 			}
 		}
 	}
@@ -2189,8 +2179,6 @@ province_event = {
 					is_core = D18
 				}
 			}
-			D18 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -2764,8 +2752,6 @@ province_event = {
 					is_core = D36
 				}
 			}
-			D36 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -2837,8 +2823,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D19
 				}
-			}
-			D19 = {
 			}
 		}
 	}
@@ -2986,8 +2970,6 @@ province_event = {
 					is_core = D21
 				}
 			}
-			D21 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -3059,8 +3041,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D30
 				}
-			}
-			D30 = {
 			}
 		}
 	}
@@ -3492,8 +3472,6 @@ province_event = {
 					is_core = D49
 				}
 			}
-			D49 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -3748,8 +3726,6 @@ province_event = {
 					is_core = D42
 				}
 			}
-			D42 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -3997,8 +3973,6 @@ province_event = {
 					is_core = D18
 				}
 			}
-			D18 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -4070,8 +4044,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D02
 				}
-			}
-			D02 = {
 			}
 		}
 	}
@@ -4362,8 +4334,6 @@ province_event = {
 					is_core = D45
 				}
 			}
-			D45 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -4435,8 +4405,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D44
 				}
-			}
-			D44 = {
 			}
 		}
 	}
@@ -4614,8 +4582,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D32
 				}
-			}
-			D32 = {
 			}
 		}
 	}
@@ -4902,8 +4868,6 @@ province_event = {
 					is_core = D34
 				}
 			}
-			D34 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -5049,8 +5013,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D29
 				}
-			}
-			D29 = {
 			}
 		}
 	}
@@ -5894,8 +5856,6 @@ province_event = {
 					is_core = D03
 				}
 			}
-			D03 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -6283,8 +6243,6 @@ province_event = {
 					is_core = D03
 				}
 			}
-			D03 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -6464,8 +6422,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D30
 				}
-			}
-			D30 = {
 			}
 		}
 	}
@@ -6716,8 +6672,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D29
 				}
-			}
-			D29 = {
 			}
 		}
 	}
@@ -7183,8 +7137,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D16
 				}
-			}
-			D16 = {
 			}
 		}
 	}
@@ -7798,8 +7750,6 @@ province_event = {
 					is_core = D32
 				}
 			}
-			D32 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -8155,8 +8105,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D31
 				}
-			}
-			D31 = {
 			}
 		}
 	}
@@ -8730,8 +8678,6 @@ province_event = {
 					is_core = D40
 				}
 			}
-			D40 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -8803,8 +8749,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D35
 				}
-			}
-			D35 = {
 			}
 		}
 	}
@@ -8950,8 +8894,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D25
 				}
-			}
-			D25 = {
 			}
 		}
 	}
@@ -9207,8 +9149,6 @@ province_event = {
 					is_core = D22
 				}
 			}
-			D22 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -9425,8 +9365,6 @@ province_event = {
 					is_core = D23
 				}
 			}
-			D23 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -9498,8 +9436,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D04
 				}
-			}
-			D04 = {
 			}
 		}
 	}
@@ -9748,8 +9684,6 @@ province_event = {
 					is_core = D19
 				}
 			}
-			D19 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -9821,8 +9755,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D04
 				}
-			}
-			D04 = {
 			}
 		}
 	}
@@ -11423,8 +11355,6 @@ province_event = {
 					is_core = D37
 				}
 			}
-			D37 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -11570,8 +11500,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D46
 				}
-			}
-			D46 = {
 			}
 		}
 	}
@@ -12147,8 +12075,6 @@ province_event = {
 					is_core = D39
 				}
 			}
-			D39 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -12220,8 +12146,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D09
 				}
-			}
-			D09 = {
 			}
 		}
 	}
@@ -12968,8 +12892,6 @@ province_event = {
 					is_core = D05
 				}
 			}
-			D05 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -13365,8 +13287,6 @@ province_event = {
 					is_core = D21
 				}
 			}
-			D21 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -13439,8 +13359,6 @@ province_event = {
 					is_core = D17
 				}
 			}
-			D17 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -13512,8 +13430,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D43
 				}
-			}
-			D43 = {
 			}
 		}
 	}
@@ -13909,8 +13825,6 @@ province_event = {
 					is_core = D08
 				}
 			}
-			D08 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -13982,8 +13896,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D33
 				}
-			}
-			D33 = {
 			}
 		}
 	}
@@ -14274,8 +14186,6 @@ province_event = {
 					is_core = D40
 				}
 			}
-			D40 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -14347,8 +14257,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D41
 				}
-			}
-			D41 = {
 			}
 		}
 	}
@@ -14565,8 +14473,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D20
 				}
-			}
-			D20 = {
 			}
 		}
 	}
@@ -15320,8 +15226,6 @@ province_event = {
 					is_core = D50
 				}
 			}
-			D50 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -15754,8 +15658,6 @@ province_event = {
 					is_core = D47
 				}
 			}
-			D47 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -15902,8 +15804,6 @@ province_event = {
 					is_core = D11
 				}
 			}
-			D11 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -15975,8 +15875,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D01
 				}
-			}
-			D01 = {
 			}
 		}
 	}
@@ -16631,8 +16529,6 @@ province_event = {
 					is_core = D15
 				}
 			}
-			D15 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -16777,8 +16673,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D39
 				}
-			}
-			D39 = {
 			}
 		}
 	}
@@ -16926,8 +16820,6 @@ province_event = {
 					is_core = D21
 				}
 			}
-			D21 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -17074,8 +16966,6 @@ province_event = {
 					is_core = D23
 				}
 			}
-			D23 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -17147,8 +17037,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D47
 				}
-			}
-			D47 = {
 			}
 		}
 	}
@@ -17471,8 +17359,6 @@ province_event = {
 					is_core = D22
 				}
 			}
-			D22 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -17728,8 +17614,6 @@ province_event = {
 					is_core = D48
 				}
 			}
-			D48 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -17911,8 +17795,6 @@ province_event = {
 					is_core = D06
 				}
 			}
-			D06 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -17985,8 +17867,6 @@ province_event = {
 					is_core = D07
 				}
 			}
-			D07 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -18058,8 +17938,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D27
 				}
-			}
-			D27 = {
 			}
 		}
 	}
@@ -18308,8 +18186,6 @@ province_event = {
 					is_core = D11
 				}
 			}
-			D11 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -18454,8 +18330,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D46
 				}
-			}
-			D46 = {
 			}
 		}
 	}
@@ -18847,8 +18721,6 @@ province_event = {
 					is_core = D08
 				}
 			}
-			D08 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -18955,8 +18827,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D02
 				}
-			}
-			D02 = {
 			}
 		}
 	}
@@ -19170,8 +19040,6 @@ province_event = {
 					is_core = D42
 				}
 			}
-			D42 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -19384,8 +19252,6 @@ province_event = {
 					is_core = D41
 				}
 			}
-			D41 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -19493,8 +19359,6 @@ province_event = {
 					is_core = D09
 				}
 			}
-			D09 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -19566,8 +19430,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D44
 				}
-			}
-			D44 = {
 			}
 		}
 	}
@@ -20061,8 +19923,6 @@ province_event = {
 					is_core = D12
 				}
 			}
-			D12 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -20134,8 +19994,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D28
 				}
-			}
-			D28 = {
 			}
 		}
 	}
@@ -20706,8 +20564,6 @@ province_event = {
 					is_core = D11
 				}
 			}
-			D11 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -21033,8 +20889,6 @@ province_event = {
 					is_core = D05
 				}
 			}
-			D05 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -21106,8 +20960,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D12
 				}
-			}
-			D12 = {
 			}
 		}
 	}
@@ -21472,8 +21324,6 @@ province_event = {
 					is_core = D49
 				}
 			}
-			D49 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -21619,8 +21469,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D13
 				}
-			}
-			D13 = {
 			}
 		}
 	}
@@ -21802,8 +21650,6 @@ province_event = {
 					is_core = D14
 				}
 			}
-			D14 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -21875,8 +21721,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D04
 				}
-			}
-			D04 = {
 			}
 		}
 	}
@@ -22300,8 +22144,6 @@ province_event = {
 					is_core = D27
 				}
 			}
-			D27 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -22374,8 +22216,6 @@ province_event = {
 					is_core = D26
 				}
 			}
-			D26 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -22447,8 +22287,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D38
 				}
-			}
-			D38 = {
 			}
 		}
 	}
@@ -22701,8 +22539,6 @@ province_event = {
 					is_core = D20
 				}
 			}
-			D20 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -22884,8 +22720,6 @@ province_event = {
 					is_core = D24
 				}
 			}
-			D24 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -22957,8 +22791,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D33
 				}
-			}
-			D33 = {
 			}
 		}
 	}
@@ -23242,8 +23074,6 @@ province_event = {
 					is_core = D18
 				}
 			}
-			D18 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -23315,8 +23145,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D01
 				}
-			}
-			D01 = {
 			}
 		}
 	}
@@ -24300,8 +24128,6 @@ province_event = {
 					is_core = D06
 				}
 			}
-			D06 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -24938,8 +24764,6 @@ province_event = {
 					is_core = D09
 				}
 			}
-			D09 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -25011,8 +24835,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D08
 				}
-			}
-			D08 = {
 			}
 		}
 	}
@@ -25267,8 +25089,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D25
 				}
-			}
-			D25 = {
 			}
 		}
 	}
@@ -25738,8 +25558,6 @@ province_event = {
 					is_core = D20
 				}
 			}
-			D20 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -25885,8 +25703,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D35
 				}
-			}
-			D35 = {
 			}
 		}
 	}
@@ -26134,8 +25950,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D15
 				}
-			}
-			D15 = {
 			}
 		}
 	}
@@ -26423,8 +26237,6 @@ province_event = {
 					is_core = D07
 				}
 			}
-			D07 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -26676,8 +26488,6 @@ province_event = {
 					is_core = D24
 				}
 			}
-			D24 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -26749,8 +26559,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D16
 				}
-			}
-			D16 = {
 			}
 		}
 	}
@@ -26928,8 +26736,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D45
 				}
-			}
-			D45 = {
 			}
 		}
 	}
@@ -27892,8 +27698,6 @@ province_event = {
 					is_core = D10
 				}
 			}
-			D10 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -27965,8 +27769,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D05
 				}
-			}
-			D05 = {
 			}
 		}
 	}
@@ -28179,8 +27981,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D50
 				}
-			}
-			D50 = {
 			}
 		}
 	}
@@ -28798,8 +28598,6 @@ province_event = {
 					is_core = D48
 				}
 			}
-			D48 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -28946,8 +28744,6 @@ province_event = {
 					is_core = D19
 				}
 			}
-			D19 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -29019,8 +28815,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D10
 				}
-			}
-			D10 = {
 			}
 		}
 	}
@@ -29888,8 +29682,6 @@ province_event = {
 					is_core = D34
 				}
 			}
-			D34 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -30136,8 +29928,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D02
 				}
-			}
-			D02 = {
 			}
 		}
 	}
@@ -30840,8 +30630,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D07
 				}
-			}
-			D07 = {
 			}
 		}
 	}
@@ -31778,8 +31566,6 @@ province_event = {
 					is_core = D26
 				}
 			}
-			D26 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -32069,8 +31855,6 @@ province_event = {
 					is_core = D15
 				}
 			}
-			D15 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -32251,8 +32035,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D01
 				}
-			}
-			D01 = {
 			}
 		}
 	}
@@ -33081,8 +32863,6 @@ province_event = {
 					is_core = D12
 				}
 			}
-			D12 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -33228,8 +33008,6 @@ province_event = {
 					is_core = D43
 				}
 			}
-			D43 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -33371,8 +33149,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D22
 				}
-			}
-			D22 = {
 			}
 		}
 	}
@@ -33772,8 +33548,6 @@ province_event = {
 					is_core = D14
 				}
 			}
-			D14 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -33846,8 +33620,6 @@ province_event = {
 					is_core = D17
 				}
 			}
-			D17 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -33919,8 +33691,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D31
 				}
-			}
-			D31 = {
 			}
 		}
 	}
@@ -34601,8 +34371,6 @@ province_event = {
 					is_core = D16
 				}
 			}
-			D16 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -34747,8 +34515,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D03
 				}
-			}
-			D03 = {
 			}
 		}
 	}
@@ -35110,8 +34876,6 @@ province_event = {
 					is_core = D13
 				}
 			}
-			D13 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -35257,8 +35021,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D28
 				}
-			}
-			D28 = {
 			}
 		}
 	}
@@ -35507,8 +35269,6 @@ province_event = {
 					is_core = D14
 				}
 			}
-			D14 = {
-			}
 		}
 	}
 	mean_time_to_happen = {
@@ -35580,8 +35340,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D06
 				}
-			}
-			D06 = {
 			}
 		}
 	}
@@ -35977,8 +35735,6 @@ province_event = {
 				any_owned_province = {
 					is_core = D13
 				}
-			}
-			D13 = {
 			}
 		}
 	}
