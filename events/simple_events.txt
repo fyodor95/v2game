@@ -122,9 +122,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 160002
-	title = "EVTNAME160002"
-	desc = "EVTDESC160002"
+	id = 161002
+	title = "EVTNAME161002"
+	desc = "EVTDESC161002"
 	picture = "Prosper"
 	trigger = {
 		civilized = yes
@@ -154,7 +154,7 @@ country_event = {
 		months = 1
 	}
 	option = {
-		name = "EVTOPTA160002"
+		name = "EVTOPTA161002"
 		remove_country_modifier = educational_reform
 		remove_country_modifier = military_reform
 		remove_country_modifier = western_influences

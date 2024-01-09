@@ -3,6 +3,13 @@ acceptance_capital_north_german = {
 	potential = {
 		capital_scope = {
 			culture = north_german
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -84,6 +91,13 @@ acceptance_capital_south_german = {
 	potential = {
 		capital_scope = {
 			culture = south_german
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -165,6 +179,13 @@ acceptance_capital_dutch = {
 	potential = {
 		capital_scope = {
 			culture = dutch
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -246,6 +267,13 @@ acceptance_capital_flemish = {
 	potential = {
 		capital_scope = {
 			culture = flemish
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -327,6 +355,13 @@ acceptance_capital_wallonian = {
 	potential = {
 		capital_scope = {
 			culture = wallonian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -408,6 +443,13 @@ acceptance_capital_swiss = {
 	potential = {
 		capital_scope = {
 			culture = swiss
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -489,6 +531,13 @@ acceptance_capital_swedish = {
 	potential = {
 		capital_scope = {
 			culture = swedish
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -570,6 +619,13 @@ acceptance_capital_danish = {
 	potential = {
 		capital_scope = {
 			culture = danish
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -651,6 +707,13 @@ acceptance_capital_norwegian = {
 	potential = {
 		capital_scope = {
 			culture = norwegian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -732,6 +795,13 @@ acceptance_capital_icelandic = {
 	potential = {
 		capital_scope = {
 			culture = icelandic
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -813,6 +883,13 @@ acceptance_capital_finnish = {
 	potential = {
 		capital_scope = {
 			culture = finnish
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -894,6 +971,13 @@ acceptance_capital_sami = {
 	potential = {
 		capital_scope = {
 			culture = sami
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -975,6 +1059,13 @@ acceptance_capital_british = {
 	potential = {
 		capital_scope = {
 			culture = british
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -1056,6 +1147,13 @@ acceptance_capital_scottish = {
 	potential = {
 		capital_scope = {
 			culture = scottish
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -1137,6 +1235,13 @@ acceptance_capital_irish = {
 	potential = {
 		capital_scope = {
 			culture = irish
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -1218,6 +1323,13 @@ acceptance_capital_north_italian = {
 	potential = {
 		capital_scope = {
 			culture = north_italian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -1299,6 +1411,13 @@ acceptance_capital_south_italian = {
 	potential = {
 		capital_scope = {
 			culture = south_italian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -1380,6 +1499,13 @@ acceptance_capital_maltese = {
 	potential = {
 		capital_scope = {
 			culture = maltese
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -1461,6 +1587,13 @@ acceptance_capital_basque = {
 	potential = {
 		capital_scope = {
 			culture = basque
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -1542,6 +1675,13 @@ acceptance_capital_spanish = {
 	potential = {
 		capital_scope = {
 			culture = spanish
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -1623,6 +1763,13 @@ acceptance_capital_catalan = {
 	potential = {
 		capital_scope = {
 			culture = catalan
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -1704,6 +1851,13 @@ acceptance_capital_portuguese = {
 	potential = {
 		capital_scope = {
 			culture = portuguese
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -1785,6 +1939,13 @@ acceptance_capital_french = {
 	potential = {
 		capital_scope = {
 			culture = french
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -1866,6 +2027,13 @@ acceptance_capital_croat = {
 	potential = {
 		capital_scope = {
 			culture = croat
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -1947,6 +2115,13 @@ acceptance_capital_serb = {
 	potential = {
 		capital_scope = {
 			culture = serb
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -2028,6 +2203,13 @@ acceptance_capital_bulgarian = {
 	potential = {
 		capital_scope = {
 			culture = bulgarian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -2109,6 +2291,13 @@ acceptance_capital_albanian = {
 	potential = {
 		capital_scope = {
 			culture = albanian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -2190,6 +2379,13 @@ acceptance_capital_slovene = {
 	potential = {
 		capital_scope = {
 			culture = slovene
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -2271,6 +2467,13 @@ acceptance_capital_bosniak = {
 	potential = {
 		capital_scope = {
 			culture = bosniak
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -2352,6 +2555,13 @@ acceptance_capital_romanian = {
 	potential = {
 		capital_scope = {
 			culture = romanian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -2433,6 +2643,13 @@ acceptance_capital_hungarian = {
 	potential = {
 		capital_scope = {
 			culture = hungarian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -2514,6 +2731,13 @@ acceptance_capital_polish = {
 	potential = {
 		capital_scope = {
 			culture = polish
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -2595,6 +2819,13 @@ acceptance_capital_lithuanian = {
 	potential = {
 		capital_scope = {
 			culture = lithuanian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -2676,6 +2907,13 @@ acceptance_capital_czech = {
 	potential = {
 		capital_scope = {
 			culture = czech
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -2757,6 +2995,13 @@ acceptance_capital_slovak = {
 	potential = {
 		capital_scope = {
 			culture = slovak
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -2838,6 +3083,13 @@ acceptance_capital_russian = {
 	potential = {
 		capital_scope = {
 			culture = russian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -2919,6 +3171,13 @@ acceptance_capital_byelorussian = {
 	potential = {
 		capital_scope = {
 			culture = byelorussian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -3000,6 +3259,13 @@ acceptance_capital_ukrainian = {
 	potential = {
 		capital_scope = {
 			culture = ukrainian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -3081,6 +3347,13 @@ acceptance_capital_ugrian = {
 	potential = {
 		capital_scope = {
 			culture = ugrian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -3162,6 +3435,13 @@ acceptance_capital_latvian = {
 	potential = {
 		capital_scope = {
 			culture = latvian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -3243,6 +3523,13 @@ acceptance_capital_estonian = {
 	potential = {
 		capital_scope = {
 			culture = estonian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -3324,6 +3611,13 @@ acceptance_capital_greek = {
 	potential = {
 		capital_scope = {
 			culture = greek
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -3405,6 +3699,13 @@ acceptance_capital_georgian = {
 	potential = {
 		capital_scope = {
 			culture = georgian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -3486,6 +3787,13 @@ acceptance_capital_armenian = {
 	potential = {
 		capital_scope = {
 			culture = armenian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -3567,6 +3875,13 @@ acceptance_capital_sephardic = {
 	potential = {
 		capital_scope = {
 			culture = sephardic
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -3648,6 +3963,13 @@ acceptance_capital_ashkenazi = {
 	potential = {
 		capital_scope = {
 			culture = ashkenazi
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -3729,6 +4051,13 @@ acceptance_capital_turkish = {
 	potential = {
 		capital_scope = {
 			culture = turkish
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -3810,6 +4139,13 @@ acceptance_capital_crimean_tatar = {
 	potential = {
 		capital_scope = {
 			culture = crimean_tatar
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -3891,6 +4227,13 @@ acceptance_capital_azerbaijani = {
 	potential = {
 		capital_scope = {
 			culture = azerbaijani
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -3972,6 +4315,13 @@ acceptance_capital_north_caucasian = {
 	potential = {
 		capital_scope = {
 			culture = north_caucasian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -4053,6 +4403,13 @@ acceptance_capital_maghrebi = {
 	potential = {
 		capital_scope = {
 			culture = maghrebi
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -4134,6 +4491,13 @@ acceptance_capital_misri = {
 	potential = {
 		capital_scope = {
 			culture = misri
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -4215,6 +4579,13 @@ acceptance_capital_mashriqi = {
 	potential = {
 		capital_scope = {
 			culture = mashriqi
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -4296,6 +4667,13 @@ acceptance_capital_bedouin = {
 	potential = {
 		capital_scope = {
 			culture = bedouin
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -4377,6 +4755,13 @@ acceptance_capital_berber = {
 	potential = {
 		capital_scope = {
 			culture = berber
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -4458,6 +4843,13 @@ acceptance_capital_uzbek = {
 	potential = {
 		capital_scope = {
 			culture = uzbek
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -4539,6 +4931,13 @@ acceptance_capital_persian = {
 	potential = {
 		capital_scope = {
 			culture = persian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -4620,6 +5019,13 @@ acceptance_capital_kazak = {
 	potential = {
 		capital_scope = {
 			culture = kazak
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -4701,6 +5107,13 @@ acceptance_capital_kirgiz = {
 	potential = {
 		capital_scope = {
 			culture = kirgiz
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -4782,6 +5195,13 @@ acceptance_capital_tajik = {
 	potential = {
 		capital_scope = {
 			culture = tajik
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -4863,6 +5283,13 @@ acceptance_capital_uighur = {
 	potential = {
 		capital_scope = {
 			culture = uighur
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -4944,6 +5371,13 @@ acceptance_capital_pashtun = {
 	potential = {
 		capital_scope = {
 			culture = pashtun
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -5025,6 +5459,13 @@ acceptance_capital_baluchi = {
 	potential = {
 		capital_scope = {
 			culture = baluchi
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -5106,6 +5547,13 @@ acceptance_capital_hazara = {
 	potential = {
 		capital_scope = {
 			culture = hazara
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -5187,6 +5635,13 @@ acceptance_capital_turkmen = {
 	potential = {
 		capital_scope = {
 			culture = turkmen
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -5268,6 +5723,13 @@ acceptance_capital_kurdish = {
 	potential = {
 		capital_scope = {
 			culture = kurdish
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -5349,6 +5811,13 @@ acceptance_capital_tatar = {
 	potential = {
 		capital_scope = {
 			culture = tatar
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -5430,6 +5899,13 @@ acceptance_capital_buryat = {
 	potential = {
 		capital_scope = {
 			culture = buryat
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -5511,6 +5987,13 @@ acceptance_capital_mongol = {
 	potential = {
 		capital_scope = {
 			culture = mongol
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -5592,6 +6075,13 @@ acceptance_capital_kalmyk = {
 	potential = {
 		capital_scope = {
 			culture = kalmyk
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -5673,6 +6163,13 @@ acceptance_capital_siberian = {
 	potential = {
 		capital_scope = {
 			culture = siberian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -5754,6 +6251,13 @@ acceptance_capital_yakut = {
 	potential = {
 		capital_scope = {
 			culture = yakut
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -5835,6 +6339,13 @@ acceptance_capital_tuvan = {
 	potential = {
 		capital_scope = {
 			culture = tuvan
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -5916,6 +6427,13 @@ acceptance_capital_assamese = {
 	potential = {
 		capital_scope = {
 			culture = assamese
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -5997,6 +6515,13 @@ acceptance_capital_bengali = {
 	potential = {
 		capital_scope = {
 			culture = bengali
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -6078,6 +6603,13 @@ acceptance_capital_bihari = {
 	potential = {
 		capital_scope = {
 			culture = bihari
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -6159,6 +6691,13 @@ acceptance_capital_manipuri = {
 	potential = {
 		capital_scope = {
 			culture = manipuri
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -6240,6 +6779,13 @@ acceptance_capital_nepali = {
 	potential = {
 		capital_scope = {
 			culture = nepali
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -6321,6 +6867,13 @@ acceptance_capital_oriya = {
 	potential = {
 		capital_scope = {
 			culture = oriya
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -6402,6 +6955,13 @@ acceptance_capital_sinhala = {
 	potential = {
 		capital_scope = {
 			culture = sinhala
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -6483,6 +7043,13 @@ acceptance_capital_avadhi = {
 	potential = {
 		capital_scope = {
 			culture = avadhi
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -6564,6 +7131,13 @@ acceptance_capital_kanauji = {
 	potential = {
 		capital_scope = {
 			culture = kanauji
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -6645,6 +7219,13 @@ acceptance_capital_panjabi = {
 	potential = {
 		capital_scope = {
 			culture = panjabi
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -6726,6 +7307,13 @@ acceptance_capital_kashmiri = {
 	potential = {
 		capital_scope = {
 			culture = kashmiri
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -6807,6 +7395,13 @@ acceptance_capital_gujarati = {
 	potential = {
 		capital_scope = {
 			culture = gujarati
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -6888,6 +7483,13 @@ acceptance_capital_marathi = {
 	potential = {
 		capital_scope = {
 			culture = marathi
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -6969,6 +7571,13 @@ acceptance_capital_sindi = {
 	potential = {
 		capital_scope = {
 			culture = sindi
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -7050,6 +7659,13 @@ acceptance_capital_rajput = {
 	potential = {
 		capital_scope = {
 			culture = rajput
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -7131,6 +7747,13 @@ acceptance_capital_kannada = {
 	potential = {
 		capital_scope = {
 			culture = kannada
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -7212,6 +7835,13 @@ acceptance_capital_malayalam = {
 	potential = {
 		capital_scope = {
 			culture = malayalam
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -7293,6 +7923,13 @@ acceptance_capital_tamil = {
 	potential = {
 		capital_scope = {
 			culture = tamil
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -7374,6 +8011,13 @@ acceptance_capital_telegu = {
 	potential = {
 		capital_scope = {
 			culture = telegu
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -7455,6 +8099,13 @@ acceptance_capital_malay = {
 	potential = {
 		capital_scope = {
 			culture = malay
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -7536,6 +8187,13 @@ acceptance_capital_vietnamese = {
 	potential = {
 		capital_scope = {
 			culture = vietnamese
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -7617,6 +8275,13 @@ acceptance_capital_khmer = {
 	potential = {
 		capital_scope = {
 			culture = khmer
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -7698,6 +8363,13 @@ acceptance_capital_filipino = {
 	potential = {
 		capital_scope = {
 			culture = filipino
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -7779,6 +8451,13 @@ acceptance_capital_javan = {
 	potential = {
 		capital_scope = {
 			culture = javan
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -7860,6 +8539,13 @@ acceptance_capital_moluccan = {
 	potential = {
 		capital_scope = {
 			culture = moluccan
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -7941,6 +8627,13 @@ acceptance_capital_thai = {
 	potential = {
 		capital_scope = {
 			culture = thai
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -8022,6 +8715,13 @@ acceptance_capital_lao = {
 	potential = {
 		capital_scope = {
 			culture = lao
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -8103,6 +8803,13 @@ acceptance_capital_shan = {
 	potential = {
 		capital_scope = {
 			culture = shan
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -8184,6 +8891,13 @@ acceptance_capital_burmese = {
 	potential = {
 		capital_scope = {
 			culture = burmese
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -8265,6 +8979,13 @@ acceptance_capital_asian_minor = {
 	potential = {
 		capital_scope = {
 			culture = asian_minor
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -8346,6 +9067,13 @@ acceptance_capital_kachin = {
 	potential = {
 		capital_scope = {
 			culture = kachin
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -8427,6 +9155,13 @@ acceptance_capital_karen = {
 	potential = {
 		capital_scope = {
 			culture = karen
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -8508,6 +9243,13 @@ acceptance_capital_japanese = {
 	potential = {
 		capital_scope = {
 			culture = japanese
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -8589,6 +9331,13 @@ acceptance_capital_korean = {
 	potential = {
 		capital_scope = {
 			culture = korean
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -8670,6 +9419,13 @@ acceptance_capital_ainu = {
 	potential = {
 		capital_scope = {
 			culture = ainu
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -8751,6 +9507,13 @@ acceptance_capital_hakka = {
 	potential = {
 		capital_scope = {
 			culture = hakka
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -8832,6 +9595,13 @@ acceptance_capital_miao = {
 	potential = {
 		capital_scope = {
 			culture = miao
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -8913,6 +9683,13 @@ acceptance_capital_min = {
 	potential = {
 		capital_scope = {
 			culture = min
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -8994,6 +9771,13 @@ acceptance_capital_zhuang = {
 	potential = {
 		capital_scope = {
 			culture = zhuang
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -9075,6 +9859,13 @@ acceptance_capital_yi = {
 	potential = {
 		capital_scope = {
 			culture = yi
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -9156,6 +9947,13 @@ acceptance_capital_yue = {
 	potential = {
 		capital_scope = {
 			culture = yue
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -9237,6 +10035,13 @@ acceptance_capital_manchu = {
 	potential = {
 		capital_scope = {
 			culture = manchu
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -9318,6 +10123,13 @@ acceptance_capital_beifaren = {
 	potential = {
 		capital_scope = {
 			culture = beifaren
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -9399,6 +10211,13 @@ acceptance_capital_nanfaren = {
 	potential = {
 		capital_scope = {
 			culture = nanfaren
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -9480,6 +10299,13 @@ acceptance_capital_tibetan = {
 	potential = {
 		capital_scope = {
 			culture = tibetan
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -9561,6 +10387,13 @@ acceptance_capital_polynesian = {
 	potential = {
 		capital_scope = {
 			culture = polynesian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -9642,6 +10475,13 @@ acceptance_capital_hawaiian = {
 	potential = {
 		capital_scope = {
 			culture = hawaiian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -9723,6 +10563,13 @@ acceptance_capital_maori = {
 	potential = {
 		capital_scope = {
 			culture = maori
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -9804,6 +10651,13 @@ acceptance_capital_aborigine = {
 	potential = {
 		capital_scope = {
 			culture = aborigine
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -9885,6 +10739,13 @@ acceptance_capital_melanesian = {
 	potential = {
 		capital_scope = {
 			culture = melanesian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -9966,6 +10827,13 @@ acceptance_capital_micronesian = {
 	potential = {
 		capital_scope = {
 			culture = micronesian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -10047,6 +10915,13 @@ acceptance_capital_zapotec = {
 	potential = {
 		capital_scope = {
 			culture = zapotec
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -10128,6 +11003,13 @@ acceptance_capital_mayan = {
 	potential = {
 		capital_scope = {
 			culture = mayan
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -10209,6 +11091,13 @@ acceptance_capital_nahua = {
 	potential = {
 		capital_scope = {
 			culture = nahua
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -10290,6 +11179,13 @@ acceptance_capital_tarascan = {
 	potential = {
 		capital_scope = {
 			culture = tarascan
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -10371,6 +11267,13 @@ acceptance_capital_guajiro = {
 	potential = {
 		capital_scope = {
 			culture = guajiro
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -10452,6 +11355,13 @@ acceptance_capital_tupinamba = {
 	potential = {
 		capital_scope = {
 			culture = tupinamba
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -10533,6 +11443,13 @@ acceptance_capital_metis = {
 	potential = {
 		capital_scope = {
 			culture = metis
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -10614,6 +11531,13 @@ acceptance_capital_dakota = {
 	potential = {
 		capital_scope = {
 			culture = dakota
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -10695,6 +11619,13 @@ acceptance_capital_cherokee = {
 	potential = {
 		capital_scope = {
 			culture = cherokee
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -10776,6 +11707,13 @@ acceptance_capital_pueblo = {
 	potential = {
 		capital_scope = {
 			culture = pueblo
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -10857,6 +11795,13 @@ acceptance_capital_inuit = {
 	potential = {
 		capital_scope = {
 			culture = inuit
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -10938,6 +11883,13 @@ acceptance_capital_cree = {
 	potential = {
 		capital_scope = {
 			culture = cree
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -11019,6 +11971,13 @@ acceptance_capital_navajo = {
 	potential = {
 		capital_scope = {
 			culture = navajo
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -11100,6 +12059,13 @@ acceptance_capital_native_american_minor = {
 	potential = {
 		capital_scope = {
 			culture = native_american_minor
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -11181,6 +12147,13 @@ acceptance_capital_yankee = {
 	potential = {
 		capital_scope = {
 			culture = yankee
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -11262,6 +12235,13 @@ acceptance_capital_dixie = {
 	potential = {
 		capital_scope = {
 			culture = dixie
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -11343,6 +12323,13 @@ acceptance_capital_texan = {
 	potential = {
 		capital_scope = {
 			culture = texan
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -11424,6 +12411,13 @@ acceptance_capital_australian = {
 	potential = {
 		capital_scope = {
 			culture = australian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -11505,6 +12499,13 @@ acceptance_capital_new_zelandian = {
 	potential = {
 		capital_scope = {
 			culture = new_zelandian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -11586,6 +12587,13 @@ acceptance_capital_boer = {
 	potential = {
 		capital_scope = {
 			culture = boer
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -11667,6 +12675,13 @@ acceptance_capital_anglo_african = {
 	potential = {
 		capital_scope = {
 			culture = anglo_african
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -11748,6 +12763,13 @@ acceptance_capital_anglo_canadian = {
 	potential = {
 		capital_scope = {
 			culture = anglo_canadian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -11829,6 +12851,13 @@ acceptance_capital_french_canadian = {
 	potential = {
 		capital_scope = {
 			culture = french_canadian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -11910,6 +12939,13 @@ acceptance_capital_central_american = {
 	potential = {
 		capital_scope = {
 			culture = central_american
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -11991,6 +13027,13 @@ acceptance_capital_mexican = {
 	potential = {
 		capital_scope = {
 			culture = mexican
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -12072,6 +13115,13 @@ acceptance_capital_caribeno = {
 	potential = {
 		capital_scope = {
 			culture = caribeno
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -12153,6 +13203,13 @@ acceptance_capital_cubans = {
 	potential = {
 		capital_scope = {
 			culture = cubans
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -12234,6 +13291,13 @@ acceptance_capital_north_andean = {
 	potential = {
 		capital_scope = {
 			culture = north_andean
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -12315,6 +13379,13 @@ acceptance_capital_south_andean = {
 	potential = {
 		capital_scope = {
 			culture = south_andean
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -12396,6 +13467,13 @@ acceptance_capital_platinean = {
 	potential = {
 		capital_scope = {
 			culture = platinean
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -12477,6 +13555,13 @@ acceptance_capital_brazilian = {
 	potential = {
 		capital_scope = {
 			culture = brazilian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -12558,6 +13643,13 @@ acceptance_capital_afro_brazilian = {
 	potential = {
 		capital_scope = {
 			culture = afro_brazilian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -12639,6 +13731,13 @@ acceptance_capital_quechua = {
 	potential = {
 		capital_scope = {
 			culture = quechua
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -12720,6 +13819,13 @@ acceptance_capital_guarani = {
 	potential = {
 		capital_scope = {
 			culture = guarani
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -12801,6 +13907,13 @@ acceptance_capital_aimara = {
 	potential = {
 		capital_scope = {
 			culture = aimara
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -12882,6 +13995,13 @@ acceptance_capital_amazonian = {
 	potential = {
 		capital_scope = {
 			culture = amazonian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -12963,6 +14083,13 @@ acceptance_capital_patagonian = {
 	potential = {
 		capital_scope = {
 			culture = patagonian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -13044,6 +14171,13 @@ acceptance_capital_afro_american = {
 	potential = {
 		capital_scope = {
 			culture = afro_american
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -13125,6 +14259,13 @@ acceptance_capital_afro_caribbean = {
 	potential = {
 		capital_scope = {
 			culture = afro_caribbean
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -13206,6 +14347,13 @@ acceptance_capital_afro_caribeno = {
 	potential = {
 		capital_scope = {
 			culture = afro_caribeno
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -13287,6 +14435,13 @@ acceptance_capital_afro_antillean = {
 	potential = {
 		capital_scope = {
 			culture = afro_antillean
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -13368,6 +14523,13 @@ acceptance_capital_akan = {
 	potential = {
 		capital_scope = {
 			culture = akan
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -13449,6 +14611,13 @@ acceptance_capital_bambara = {
 	potential = {
 		capital_scope = {
 			culture = bambara
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -13530,6 +14699,13 @@ acceptance_capital_dyula = {
 	potential = {
 		capital_scope = {
 			culture = dyula
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -13611,6 +14787,13 @@ acceptance_capital_edo = {
 	potential = {
 		capital_scope = {
 			culture = edo
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -13692,6 +14875,13 @@ acceptance_capital_ewe = {
 	potential = {
 		capital_scope = {
 			culture = ewe
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -13773,6 +14963,13 @@ acceptance_capital_fon = {
 	potential = {
 		capital_scope = {
 			culture = fon
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -13854,6 +15051,13 @@ acceptance_capital_fulbe = {
 	potential = {
 		capital_scope = {
 			culture = fulbe
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -13935,6 +15139,13 @@ acceptance_capital_hausa = {
 	potential = {
 		capital_scope = {
 			culture = hausa
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -14016,6 +15227,13 @@ acceptance_capital_ibibio = {
 	potential = {
 		capital_scope = {
 			culture = ibibio
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -14097,6 +15315,13 @@ acceptance_capital_ibo = {
 	potential = {
 		capital_scope = {
 			culture = ibo
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -14178,6 +15403,13 @@ acceptance_capital_kru = {
 	potential = {
 		capital_scope = {
 			culture = kru
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -14259,6 +15491,13 @@ acceptance_capital_mande = {
 	potential = {
 		capital_scope = {
 			culture = mande
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -14340,6 +15579,13 @@ acceptance_capital_maures = {
 	potential = {
 		capital_scope = {
 			culture = maures
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -14421,6 +15667,13 @@ acceptance_capital_mossi = {
 	potential = {
 		capital_scope = {
 			culture = mossi
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -14502,6 +15755,13 @@ acceptance_capital_senufo = {
 	potential = {
 		capital_scope = {
 			culture = senufo
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -14583,6 +15843,13 @@ acceptance_capital_songhai = {
 	potential = {
 		capital_scope = {
 			culture = songhai
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -14664,6 +15931,13 @@ acceptance_capital_tiv = {
 	potential = {
 		capital_scope = {
 			culture = tiv
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -14745,6 +16019,13 @@ acceptance_capital_tuareg = {
 	potential = {
 		capital_scope = {
 			culture = tuareg
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -14826,6 +16107,13 @@ acceptance_capital_wolof = {
 	potential = {
 		capital_scope = {
 			culture = wolof
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -14907,6 +16195,13 @@ acceptance_capital_yoruba = {
 	potential = {
 		capital_scope = {
 			culture = yoruba
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -14988,6 +16283,13 @@ acceptance_capital_bakongo = {
 	potential = {
 		capital_scope = {
 			culture = bakongo
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -15069,6 +16371,13 @@ acceptance_capital_baguirmi = {
 	potential = {
 		capital_scope = {
 			culture = baguirmi
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -15150,6 +16459,13 @@ acceptance_capital_fang = {
 	potential = {
 		capital_scope = {
 			culture = fang
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -15231,6 +16547,13 @@ acceptance_capital_kanuri = {
 	potential = {
 		capital_scope = {
 			culture = kanuri
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -15312,6 +16635,13 @@ acceptance_capital_luba = {
 	potential = {
 		capital_scope = {
 			culture = luba
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -15393,6 +16723,13 @@ acceptance_capital_lunda = {
 	potential = {
 		capital_scope = {
 			culture = lunda
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -15474,6 +16811,13 @@ acceptance_capital_mongo = {
 	potential = {
 		capital_scope = {
 			culture = mongo
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -15555,6 +16899,13 @@ acceptance_capital_sara = {
 	potential = {
 		capital_scope = {
 			culture = sara
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -15636,6 +16987,13 @@ acceptance_capital_teda = {
 	potential = {
 		capital_scope = {
 			culture = teda
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -15717,6 +17075,13 @@ acceptance_capital_african_minor = {
 	potential = {
 		capital_scope = {
 			culture = african_minor
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -15798,6 +17163,13 @@ acceptance_capital_amhara = {
 	potential = {
 		capital_scope = {
 			culture = amhara
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -15879,6 +17251,13 @@ acceptance_capital_afar = {
 	potential = {
 		capital_scope = {
 			culture = afar
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -15960,6 +17339,13 @@ acceptance_capital_azande = {
 	potential = {
 		capital_scope = {
 			culture = azande
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -16041,6 +17427,13 @@ acceptance_capital_baganda = {
 	potential = {
 		capital_scope = {
 			culture = baganda
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -16122,6 +17515,13 @@ acceptance_capital_beja = {
 	potential = {
 		capital_scope = {
 			culture = beja
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -16203,6 +17603,13 @@ acceptance_capital_dinka = {
 	potential = {
 		capital_scope = {
 			culture = dinka
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -16284,6 +17691,13 @@ acceptance_capital_fur = {
 	potential = {
 		capital_scope = {
 			culture = fur
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -16365,6 +17779,13 @@ acceptance_capital_kikuyu = {
 	potential = {
 		capital_scope = {
 			culture = kikuyu
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -16446,6 +17867,13 @@ acceptance_capital_luo = {
 	potential = {
 		capital_scope = {
 			culture = luo
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -16527,6 +17955,13 @@ acceptance_capital_maasai = {
 	potential = {
 		capital_scope = {
 			culture = maasai
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -16608,6 +18043,13 @@ acceptance_capital_nuer = {
 	potential = {
 		capital_scope = {
 			culture = nuer
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -16689,6 +18131,13 @@ acceptance_capital_nuba = {
 	potential = {
 		capital_scope = {
 			culture = nuba
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -16770,6 +18219,13 @@ acceptance_capital_oromo = {
 	potential = {
 		capital_scope = {
 			culture = oromo
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -16851,6 +18307,13 @@ acceptance_capital_ruanda = {
 	potential = {
 		capital_scope = {
 			culture = ruanda
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -16932,6 +18395,13 @@ acceptance_capital_rundi = {
 	potential = {
 		capital_scope = {
 			culture = rundi
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -17013,6 +18483,13 @@ acceptance_capital_sidama = {
 	potential = {
 		capital_scope = {
 			culture = sidama
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -17094,6 +18571,13 @@ acceptance_capital_somali = {
 	potential = {
 		capital_scope = {
 			culture = somali
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -17175,6 +18659,13 @@ acceptance_capital_sudanese = {
 	potential = {
 		capital_scope = {
 			culture = sudanese
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -17256,6 +18747,13 @@ acceptance_capital_sukuma = {
 	potential = {
 		capital_scope = {
 			culture = sukuma
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -17337,6 +18835,13 @@ acceptance_capital_swahili = {
 	potential = {
 		capital_scope = {
 			culture = swahili
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -17418,6 +18923,13 @@ acceptance_capital_tigray = {
 	potential = {
 		capital_scope = {
 			culture = tigray
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -17499,6 +19011,13 @@ acceptance_capital_unyamwezi = {
 	potential = {
 		capital_scope = {
 			culture = unyamwezi
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -17580,6 +19099,13 @@ acceptance_capital_chewa = {
 	potential = {
 		capital_scope = {
 			culture = chewa
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -17661,6 +19187,13 @@ acceptance_capital_herero = {
 	potential = {
 		capital_scope = {
 			culture = herero
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -17742,6 +19275,13 @@ acceptance_capital_khoisan = {
 	potential = {
 		capital_scope = {
 			culture = khoisan
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -17823,6 +19363,13 @@ acceptance_capital_lomwe = {
 	potential = {
 		capital_scope = {
 			culture = lomwe
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -17904,6 +19451,13 @@ acceptance_capital_makua = {
 	potential = {
 		capital_scope = {
 			culture = makua
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -17985,6 +19539,13 @@ acceptance_capital_malagasy = {
 	potential = {
 		capital_scope = {
 			culture = malagasy
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -18066,6 +19627,13 @@ acceptance_capital_nguni = {
 	potential = {
 		capital_scope = {
 			culture = nguni
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -18147,6 +19715,13 @@ acceptance_capital_ovimbundu = {
 	potential = {
 		capital_scope = {
 			culture = ovimbundu
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -18228,6 +19803,13 @@ acceptance_capital_sena = {
 	potential = {
 		capital_scope = {
 			culture = sena
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -18309,6 +19891,13 @@ acceptance_capital_shona = {
 	potential = {
 		capital_scope = {
 			culture = shona
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -18390,6 +19979,13 @@ acceptance_capital_sotho = {
 	potential = {
 		capital_scope = {
 			culture = sotho
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -18471,6 +20067,13 @@ acceptance_capital_tonga = {
 	potential = {
 		capital_scope = {
 			culture = tonga
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -18552,6 +20155,13 @@ acceptance_capital_tswana = {
 	potential = {
 		capital_scope = {
 			culture = tswana
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -18633,6 +20243,13 @@ acceptance_capital_xhosa = {
 	potential = {
 		capital_scope = {
 			culture = xhosa
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -18714,6 +20331,13 @@ acceptance_capital_yao = {
 	potential = {
 		capital_scope = {
 			culture = yao
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -18795,6 +20419,13 @@ acceptance_capital_zulu = {
 	potential = {
 		capital_scope = {
 			culture = zulu
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
@@ -18876,6 +20507,13 @@ acceptance_capital_polar_bears = {
 	potential = {
 		capital_scope = {
 			culture = polar_bears
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
 		}
 		NOT = {
 			OR = {
