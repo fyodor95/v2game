@@ -1,136 +1,721 @@
 country_event = {
 	id = 151001
-	title = "0"
-	desc = "0"
+	title = "EVTNAME151001"
+	desc = "EVTDESC151001"
 	picture = "greatpowers"
 	trigger = {
-		SGF = {
+		ARA = {
 			exists = yes
-			primary_culture = south_german
+			primary_culture = maghrebi
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
+		name = "EVTOPTA151001"
 		any_country = {
 			limit = {
-				tag = KUK
+				tag = ALD
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = SGF
-					is_core = SGF
+					owned_by = ARA
+					is_core = ARA
 				}
-				remove_core = KUK
+				remove_core = ALD
 			}
 		}
 		any_country = {
 			limit = {
-				tag = BAV
+				tag = MOR
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = SGF
-					is_core = SGF
+					owned_by = ARA
+					is_core = ARA
 				}
-				remove_core = BAV
+				remove_core = MOR
 			}
 		}
 		any_country = {
 			limit = {
-				tag = WUR
+				tag = TRI
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = SGF
-					is_core = SGF
+					owned_by = ARA
+					is_core = ARA
 				}
-				remove_core = WUR
+				remove_core = TRI
 			}
 		}
 		any_country = {
 			limit = {
-				tag = AUS
+				tag = TUN
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = SGF
-					is_core = SGF
+					owned_by = ARA
+					is_core = ARA
 				}
-				remove_core = AUS
-			}
-		}
-		any_country = {
-			limit = {
-				tag = BAD
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = SGF
-					is_core = SGF
-				}
-				remove_core = BAD
+				remove_core = TUN
 			}
 		}
 	}
 }
 country_event = {
 	id = 151002
-	title = "0"
-	desc = "0"
+	title = "EVTNAME151002"
+	desc = "EVTDESC151002"
 	picture = "greatpowers"
 	trigger = {
-		ENG = {
+		ARA = {
 			exists = yes
-			primary_culture = irish
+			primary_culture = misri
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
+		name = "EVTOPTA151002"
 		any_country = {
 			limit = {
-				tag = IRE
+				tag = EGY
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = ENG
-					is_core = ENG
+					owned_by = ARA
+					is_core = ARA
 				}
-				remove_core = IRE
+				remove_core = EGY
 			}
 		}
 	}
 }
 country_event = {
 	id = 151003
-	title = "0"
-	desc = "0"
+	title = "EVTNAME151003"
+	desc = "EVTDESC151003"
+	picture = "greatpowers"
+	trigger = {
+		ARA = {
+			exists = yes
+			primary_culture = mashriqi
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151003"
+		any_country = {
+			limit = {
+				tag = BAB
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = ARA
+					is_core = ARA
+				}
+				remove_core = BAB
+			}
+		}
+		any_country = {
+			limit = {
+				tag = HDJ
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = ARA
+					is_core = ARA
+				}
+				remove_core = HDJ
+			}
+		}
+		any_country = {
+			limit = {
+				tag = IRQ
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = ARA
+					is_core = ARA
+				}
+				remove_core = IRQ
+			}
+		}
+		any_country = {
+			limit = {
+				tag = YEM
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = ARA
+					is_core = ARA
+				}
+				remove_core = YEM
+			}
+		}
+	}
+}
+country_event = {
+	id = 151004
+	title = "EVTNAME151004"
+	desc = "EVTDESC151004"
+	picture = "greatpowers"
+	trigger = {
+		ARA = {
+			exists = yes
+			primary_culture = bedouin
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151004"
+		any_country = {
+			limit = {
+				tag = ABU
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = ARA
+					is_core = ARA
+				}
+				remove_core = ABU
+			}
+		}
+		any_country = {
+			limit = {
+				tag = NEJ
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = ARA
+					is_core = ARA
+				}
+				remove_core = NEJ
+			}
+		}
+		any_country = {
+			limit = {
+				tag = OMA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = ARA
+					is_core = ARA
+				}
+				remove_core = OMA
+			}
+		}
+	}
+}
+country_event = {
+	id = 151005
+	title = "EVTNAME151005"
+	desc = "EVTDESC151005"
+	picture = "greatpowers"
+	trigger = {
+		BEL = {
+			exists = yes
+			primary_culture = flemish
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151005"
+		any_country = {
+			limit = {
+				tag = FLA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = BEL
+					is_core = BEL
+				}
+				remove_core = FLA
+			}
+		}
+	}
+}
+country_event = {
+	id = 151006
+	title = "EVTNAME151006"
+	desc = "EVTDESC151006"
+	picture = "greatpowers"
+	trigger = {
+		BEL = {
+			exists = yes
+			primary_culture = wallonian
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151006"
+		any_country = {
+			limit = {
+				tag = WLL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = BEL
+					is_core = BEL
+				}
+				remove_core = WLL
+			}
+		}
+	}
+}
+country_event = {
+	id = 151007
+	title = "EVTNAME151007"
+	desc = "EVTDESC151007"
+	picture = "greatpowers"
+	trigger = {
+		BYZ = {
+			exists = yes
+			primary_culture = greek
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151007"
+		any_country = {
+			limit = {
+				tag = CRE
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = BYZ
+					is_core = BYZ
+				}
+				remove_core = CRE
+			}
+		}
+		any_country = {
+			limit = {
+				tag = CYP
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = BYZ
+					is_core = BYZ
+				}
+				remove_core = CYP
+			}
+		}
+		any_country = {
+			limit = {
+				tag = GRE
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = BYZ
+					is_core = BYZ
+				}
+				remove_core = GRE
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ION
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = BYZ
+					is_core = BYZ
+				}
+				remove_core = ION
+			}
+		}
+	}
+}
+country_event = {
+	id = 151008
+	title = "EVTNAME151008"
+	desc = "EVTDESC151008"
+	picture = "greatpowers"
+	trigger = {
+		CAN = {
+			exists = yes
+			primary_culture = anglo_canadian
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151008"
+		any_country = {
+			limit = {
+				tag = COL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = CAN
+					is_core = CAN
+				}
+				remove_core = COL
+			}
+		}
+		any_country = {
+			limit = {
+				tag = NEW
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = CAN
+					is_core = CAN
+				}
+				remove_core = NEW
+			}
+		}
+	}
+}
+country_event = {
+	id = 151009
+	title = "EVTNAME151009"
+	desc = "EVTDESC151009"
+	picture = "greatpowers"
+	trigger = {
+		CAN = {
+			exists = yes
+			primary_culture = french_canadian
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151009"
+		any_country = {
+			limit = {
+				tag = QUE
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = CAN
+					is_core = CAN
+				}
+				remove_core = QUE
+			}
+		}
+	}
+}
+country_event = {
+	id = 151010
+	title = "EVTNAME151010"
+	desc = "EVTDESC151010"
+	picture = "greatpowers"
+	trigger = {
+		CHI = {
+			exists = yes
+			primary_culture = manchu
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151010"
+		any_country = {
+			limit = {
+				tag = MCK
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = CHI
+					is_core = CHI
+				}
+				remove_core = MCK
+			}
+		}
+	}
+}
+country_event = {
+	id = 151011
+	title = "EVTNAME151011"
+	desc = "EVTDESC151011"
+	picture = "greatpowers"
+	trigger = {
+		CHI = {
+			exists = yes
+			primary_culture = beifaren
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151011"
+		any_country = {
+			limit = {
+				tag = SXI
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = CHI
+					is_core = CHI
+				}
+				remove_core = SXI
+			}
+		}
+		any_country = {
+			limit = {
+				tag = XBI
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = CHI
+					is_core = CHI
+				}
+				remove_core = XBI
+			}
+		}
+		any_country = {
+			limit = {
+				tag = XIN
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = CHI
+					is_core = CHI
+				}
+				remove_core = XIN
+			}
+		}
+	}
+}
+country_event = {
+	id = 151012
+	title = "EVTNAME151012"
+	desc = "EVTDESC151012"
+	picture = "greatpowers"
+	trigger = {
+		CHI = {
+			exists = yes
+			primary_culture = nanfaren
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151012"
+		any_country = {
+			limit = {
+				tag = TPG
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = CHI
+					is_core = CHI
+				}
+				remove_core = TPG
+			}
+		}
+		any_country = {
+			limit = {
+				tag = YNN
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = CHI
+					is_core = CHI
+				}
+				remove_core = YNN
+			}
+		}
+	}
+}
+country_event = {
+	id = 151013
+	title = "EVTNAME151013"
+	desc = "EVTDESC151013"
+	picture = "greatpowers"
+	trigger = {
+		CHI = {
+			exists = yes
+			primary_culture = tibetan
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151013"
+		any_country = {
+			limit = {
+				tag = BHU
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = CHI
+					is_core = CHI
+				}
+				remove_core = BHU
+			}
+		}
+		any_country = {
+			limit = {
+				tag = LAD
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = CHI
+					is_core = CHI
+				}
+				remove_core = LAD
+			}
+		}
+		any_country = {
+			limit = {
+				tag = TIB
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = CHI
+					is_core = CHI
+				}
+				remove_core = TIB
+			}
+		}
+	}
+}
+country_event = {
+	id = 151014
+	title = "EVTNAME151014"
+	desc = "EVTDESC151014"
+	picture = "greatpowers"
+	trigger = {
+		CZH = {
+			exists = yes
+			primary_culture = czech
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151014"
+		any_country = {
+			limit = {
+				tag = BOH
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = CZH
+					is_core = CZH
+				}
+				remove_core = BOH
+			}
+		}
+	}
+}
+country_event = {
+	id = 151015
+	title = "EVTNAME151015"
+	desc = "EVTDESC151015"
+	picture = "greatpowers"
+	trigger = {
+		CZH = {
+			exists = yes
+			primary_culture = slovak
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151015"
+		any_country = {
+			limit = {
+				tag = SLV
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = CZH
+					is_core = CZH
+				}
+				remove_core = SLV
+			}
+		}
+	}
+}
+country_event = {
+	id = 151016
+	title = "EVTNAME151016"
+	desc = "EVTDESC151016"
 	picture = "greatpowers"
 	trigger = {
 		ENG = {
 			exists = yes
 			primary_culture = scottish
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
+		name = "EVTOPTA151016"
 		any_country = {
 			limit = {
 				tag = SCO
@@ -147,428 +732,106 @@ country_event = {
 	}
 }
 country_event = {
-	id = 151004
-	title = "0"
-	desc = "0"
+	id = 151017
+	title = "EVTNAME151017"
+	desc = "EVTDESC151017"
 	picture = "greatpowers"
 	trigger = {
-		ROM = {
+		ENG = {
 			exists = yes
-			primary_culture = romanian
+			primary_culture = irish
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
+		name = "EVTOPTA151017"
 		any_country = {
 			limit = {
-				tag = MOL
+				tag = IRE
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = ROM
-					is_core = ROM
+					owned_by = ENG
+					is_core = ENG
 				}
-				remove_core = MOL
-			}
-		}
-		any_country = {
-			limit = {
-				tag = WAL
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = ROM
-					is_core = ROM
-				}
-				remove_core = WAL
+				remove_core = IRE
 			}
 		}
 	}
 }
 country_event = {
-	id = 151005
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		PLC = {
-			exists = yes
-			primary_culture = lithuanian
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = LIT
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = PLC
-					is_core = PLC
-				}
-				remove_core = LIT
-			}
-		}
-	}
-}
-country_event = {
-	id = 151006
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		PLC = {
-			exists = yes
-			primary_culture = polish
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = KRA
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = PLC
-					is_core = PLC
-				}
-				remove_core = KRA
-			}
-		}
-		any_country = {
-			limit = {
-				tag = POL
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = PLC
-					is_core = PLC
-				}
-				remove_core = POL
-			}
-		}
-	}
-}
-country_event = {
-	id = 151007
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		ITA = {
-			exists = yes
-			primary_culture = south_italian
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = SIC
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = ITA
-					is_core = ITA
-				}
-				remove_core = SIC
-			}
-		}
-		any_country = {
-			limit = {
-				tag = PAP
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = ITA
-					is_core = ITA
-				}
-				remove_core = PAP
-			}
-		}
-	}
-}
-country_event = {
-	id = 151008
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		ITA = {
-			exists = yes
-			primary_culture = north_italian
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = TUS
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = ITA
-					is_core = ITA
-				}
-				remove_core = TUS
-			}
-		}
-		any_country = {
-			limit = {
-				tag = TRE
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = ITA
-					is_core = ITA
-				}
-				remove_core = TRE
-			}
-		}
-		any_country = {
-			limit = {
-				tag = SAR
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = ITA
-					is_core = ITA
-				}
-				remove_core = SAR
-			}
-		}
-		any_country = {
-			limit = {
-				tag = PAR
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = ITA
-					is_core = ITA
-				}
-				remove_core = PAR
-			}
-		}
-		any_country = {
-			limit = {
-				tag = VEN
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = ITA
-					is_core = ITA
-				}
-				remove_core = VEN
-			}
-		}
-		any_country = {
-			limit = {
-				tag = LOM
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = ITA
-					is_core = ITA
-				}
-				remove_core = LOM
-			}
-		}
-		any_country = {
-			limit = {
-				tag = MOD
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = ITA
-					is_core = ITA
-				}
-				remove_core = MOD
-			}
-		}
-		any_country = {
-			limit = {
-				tag = LUC
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = ITA
-					is_core = ITA
-				}
-				remove_core = LUC
-			}
-		}
-	}
-}
-country_event = {
-	id = 151009
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		GER = {
-			exists = yes
-			primary_culture = ashkenazi
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = ISR
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = GER
-					is_core = GER
-				}
-				remove_core = ISR
-			}
-		}
-	}
-}
-country_event = {
-	id = 151010
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		GER = {
-			exists = yes
-			primary_culture = south_german
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = KUK
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = GER
-					is_core = GER
-				}
-				remove_core = KUK
-			}
-		}
-		any_country = {
-			limit = {
-				tag = BAV
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = GER
-					is_core = GER
-				}
-				remove_core = BAV
-			}
-		}
-		any_country = {
-			limit = {
-				tag = WUR
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = GER
-					is_core = GER
-				}
-				remove_core = WUR
-			}
-		}
-		any_country = {
-			limit = {
-				tag = AUS
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = GER
-					is_core = GER
-				}
-				remove_core = AUS
-			}
-		}
-		any_country = {
-			limit = {
-				tag = BAD
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = GER
-					is_core = GER
-				}
-				remove_core = BAD
-			}
-		}
-	}
-}
-country_event = {
-	id = 151011
-	title = "0"
-	desc = "0"
+	id = 151018
+	title = "EVTNAME151018"
+	desc = "EVTDESC151018"
 	picture = "greatpowers"
 	trigger = {
 		GER = {
 			exists = yes
 			primary_culture = north_german
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
+		name = "EVTOPTA151018"
+		any_country = {
+			limit = {
+				tag = ANH
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = GER
+					is_core = GER
+				}
+				remove_core = ANH
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BRA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = GER
+					is_core = GER
+				}
+				remove_core = BRA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BRE
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = GER
+					is_core = GER
+				}
+				remove_core = BRE
+			}
+		}
+		any_country = {
+			limit = {
+				tag = COB
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = GER
+					is_core = GER
+				}
+				remove_core = COB
+			}
+		}
 		any_country = {
 			limit = {
 				tag = DZG
@@ -593,32 +856,6 @@ country_event = {
 					is_core = GER
 				}
 				remove_core = FRM
-			}
-		}
-		any_country = {
-			limit = {
-				tag = COB
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = GER
-					is_core = GER
-				}
-				remove_core = COB
-			}
-		}
-		any_country = {
-			limit = {
-				tag = ANH
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = GER
-					is_core = GER
-				}
-				remove_core = ANH
 			}
 		}
 		any_country = {
@@ -649,32 +886,6 @@ country_event = {
 		}
 		any_country = {
 			limit = {
-				tag = WEI
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = GER
-					is_core = GER
-				}
-				remove_core = WEI
-			}
-		}
-		any_country = {
-			limit = {
-				tag = MEC
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = GER
-					is_core = GER
-				}
-				remove_core = MEC
-			}
-		}
-		any_country = {
-			limit = {
 				tag = HEK
 				exists = no
 			}
@@ -697,6 +908,71 @@ country_event = {
 					is_core = GER
 				}
 				remove_core = HES
+			}
+		}
+		any_country = {
+			limit = {
+				tag = HOL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = GER
+					is_core = GER
+				}
+				remove_core = HOL
+			}
+		}
+		any_country = {
+			limit = {
+				tag = LIP
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = GER
+					is_core = GER
+				}
+				remove_core = LIP
+			}
+		}
+		any_country = {
+			limit = {
+				tag = LUB
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = GER
+					is_core = GER
+				}
+				remove_core = LUB
+			}
+		}
+		any_country = {
+			limit = {
+				tag = LUX
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = GER
+					is_core = GER
+				}
+				remove_core = LUX
+			}
+		}
+		any_country = {
+			limit = {
+				tag = MEC
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = GER
+					is_core = GER
+				}
+				remove_core = MEC
 			}
 		}
 		any_country = {
@@ -727,7 +1003,7 @@ country_event = {
 		}
 		any_country = {
 			limit = {
-				tag = BRE
+				tag = NGF
 				exists = no
 			}
 			all_core = {
@@ -735,72 +1011,7 @@ country_event = {
 					owned_by = GER
 					is_core = GER
 				}
-				remove_core = BRE
-			}
-		}
-		any_country = {
-			limit = {
-				tag = BRA
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = GER
-					is_core = GER
-				}
-				remove_core = BRA
-			}
-		}
-		any_country = {
-			limit = {
-				tag = HOL
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = GER
-					is_core = GER
-				}
-				remove_core = HOL
-			}
-		}
-		any_country = {
-			limit = {
-				tag = LUB
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = GER
-					is_core = GER
-				}
-				remove_core = LUB
-			}
-		}
-		any_country = {
-			limit = {
-				tag = LIP
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = GER
-					is_core = GER
-				}
-				remove_core = LIP
-			}
-		}
-		any_country = {
-			limit = {
-				tag = LUX
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = GER
-					is_core = GER
-				}
-				remove_core = LUX
+				remove_core = NGF
 			}
 		}
 		any_country = {
@@ -842,307 +1053,1254 @@ country_event = {
 				remove_core = SAX
 			}
 		}
-	}
-}
-country_event = {
-	id = 151012
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		BEL = {
-			exists = yes
-			primary_culture = wallonian
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
 		any_country = {
 			limit = {
-				tag = WLL
+				tag = WEI
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = BEL
-					is_core = BEL
+					owned_by = GER
+					is_core = GER
 				}
-				remove_core = WLL
-			}
-		}
-	}
-}
-country_event = {
-	id = 151013
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		BEL = {
-			exists = yes
-			primary_culture = flemish
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = FLA
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = BEL
-					is_core = BEL
-				}
-				remove_core = FLA
-			}
-		}
-	}
-}
-country_event = {
-	id = 151014
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		YUG = {
-			exists = yes
-			primary_culture = bosniak
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = BOS
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = YUG
-					is_core = YUG
-				}
-				remove_core = BOS
-			}
-		}
-	}
-}
-country_event = {
-	id = 151015
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		YUG = {
-			exists = yes
-			primary_culture = slovene
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = SLO
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = YUG
-					is_core = YUG
-				}
-				remove_core = SLO
-			}
-		}
-	}
-}
-country_event = {
-	id = 151016
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		YUG = {
-			exists = yes
-			primary_culture = croat
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = CRO
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = YUG
-					is_core = YUG
-				}
-				remove_core = CRO
-			}
-		}
-	}
-}
-country_event = {
-	id = 151017
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		YUG = {
-			exists = yes
-			primary_culture = albanian
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = ALB
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = YUG
-					is_core = YUG
-				}
-				remove_core = ALB
-			}
-		}
-	}
-}
-country_event = {
-	id = 151018
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		YUG = {
-			exists = yes
-			primary_culture = serb
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = SER
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = YUG
-					is_core = YUG
-				}
-				remove_core = SER
-			}
-		}
-		any_country = {
-			limit = {
-				tag = MON
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = YUG
-					is_core = YUG
-				}
-				remove_core = MON
+				remove_core = WEI
 			}
 		}
 	}
 }
 country_event = {
 	id = 151019
-	title = "0"
-	desc = "0"
+	title = "EVTNAME151019"
+	desc = "EVTDESC151019"
 	picture = "greatpowers"
 	trigger = {
-		YUG = {
+		GER = {
 			exists = yes
-			primary_culture = bulgarian
+			primary_culture = south_german
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
+		name = "EVTOPTA151019"
 		any_country = {
 			limit = {
-				tag = BUL
+				tag = AUS
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = YUG
-					is_core = YUG
+					owned_by = GER
+					is_core = GER
 				}
-				remove_core = BUL
+				remove_core = AUS
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BAD
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = GER
+					is_core = GER
+				}
+				remove_core = BAD
+			}
+		}
+		any_country = {
+			limit = {
+				tag = BAV
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = GER
+					is_core = GER
+				}
+				remove_core = BAV
+			}
+		}
+		any_country = {
+			limit = {
+				tag = KUK
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = GER
+					is_core = GER
+				}
+				remove_core = KUK
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SGF
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = GER
+					is_core = GER
+				}
+				remove_core = SGF
+			}
+		}
+		any_country = {
+			limit = {
+				tag = WUR
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = GER
+					is_core = GER
+				}
+				remove_core = WUR
 			}
 		}
 	}
 }
 country_event = {
 	id = 151020
-	title = "0"
-	desc = "0"
+	title = "EVTNAME151020"
+	desc = "EVTDESC151020"
+	picture = "greatpowers"
+	trigger = {
+		HND = {
+			exists = yes
+			primary_culture = assamese
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151020"
+		any_country = {
+			limit = {
+				tag = ASM
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = ASM
+			}
+		}
+	}
+}
+country_event = {
+	id = 151021
+	title = "EVTNAME151021"
+	desc = "EVTDESC151021"
+	picture = "greatpowers"
+	trigger = {
+		HND = {
+			exists = yes
+			primary_culture = bengali
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151021"
+		any_country = {
+			limit = {
+				tag = BNG
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = BNG
+			}
+		}
+	}
+}
+country_event = {
+	id = 151022
+	title = "EVTNAME151022"
+	desc = "EVTDESC151022"
+	picture = "greatpowers"
+	trigger = {
+		HND = {
+			exists = yes
+			primary_culture = bihari
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151022"
+		any_country = {
+			limit = {
+				tag = BIH
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = BIH
+			}
+		}
+	}
+}
+country_event = {
+	id = 151023
+	title = "EVTNAME151023"
+	desc = "EVTDESC151023"
+	picture = "greatpowers"
+	trigger = {
+		HND = {
+			exists = yes
+			primary_culture = nepali
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151023"
+		any_country = {
+			limit = {
+				tag = NEP
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = NEP
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SHI
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = SHI
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SIK
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = SIK
+			}
+		}
+	}
+}
+country_event = {
+	id = 151024
+	title = "EVTNAME151024"
+	desc = "EVTDESC151024"
+	picture = "greatpowers"
+	trigger = {
+		HND = {
+			exists = yes
+			primary_culture = oriya
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151024"
+		any_country = {
+			limit = {
+				tag = ORI
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = ORI
+			}
+		}
+	}
+}
+country_event = {
+	id = 151025
+	title = "EVTNAME151025"
+	desc = "EVTDESC151025"
+	picture = "greatpowers"
+	trigger = {
+		HND = {
+			exists = yes
+			primary_culture = sinhala
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151025"
+		any_country = {
+			limit = {
+				tag = SRI
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = SRI
+			}
+		}
+	}
+}
+country_event = {
+	id = 151026
+	title = "EVTNAME151026"
+	desc = "EVTDESC151026"
+	picture = "greatpowers"
+	trigger = {
+		HND = {
+			exists = yes
+			primary_culture = avadhi
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151026"
+		any_country = {
+			limit = {
+				tag = AWA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = AWA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = HYD
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = HYD
+			}
+		}
+	}
+}
+country_event = {
+	id = 151027
+	title = "EVTNAME151027"
+	desc = "EVTDESC151027"
+	picture = "greatpowers"
+	trigger = {
+		HND = {
+			exists = yes
+			primary_culture = kanauji
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151027"
+		any_country = {
+			limit = {
+				tag = BUN
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = BUN
+			}
+		}
+	}
+}
+country_event = {
+	id = 151028
+	title = "EVTNAME151028"
+	desc = "EVTDESC151028"
+	picture = "greatpowers"
+	trigger = {
+		HND = {
+			exists = yes
+			primary_culture = panjabi
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151028"
+		any_country = {
+			limit = {
+				tag = MUG
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = MUG
+			}
+		}
+		any_country = {
+			limit = {
+				tag = PAN
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = PAN
+			}
+		}
+	}
+}
+country_event = {
+	id = 151029
+	title = "EVTNAME151029"
+	desc = "EVTDESC151029"
+	picture = "greatpowers"
+	trigger = {
+		HND = {
+			exists = yes
+			primary_culture = kashmiri
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151029"
+		any_country = {
+			limit = {
+				tag = KAS
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = KAS
+			}
+		}
+	}
+}
+country_event = {
+	id = 151030
+	title = "EVTNAME151030"
+	desc = "EVTDESC151030"
+	picture = "greatpowers"
+	trigger = {
+		HND = {
+			exists = yes
+			primary_culture = gujarati
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151030"
+		any_country = {
+			limit = {
+				tag = BER
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = BER
+			}
+		}
+		any_country = {
+			limit = {
+				tag = KUT
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = KUT
+			}
+		}
+	}
+}
+country_event = {
+	id = 151031
+	title = "EVTNAME151031"
+	desc = "EVTDESC151031"
+	picture = "greatpowers"
+	trigger = {
+		HND = {
+			exists = yes
+			primary_culture = marathi
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151031"
+		any_country = {
+			limit = {
+				tag = BHO
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = BHO
+			}
+		}
+		any_country = {
+			limit = {
+				tag = GWA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = GWA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = IND
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = IND
+			}
+		}
+		any_country = {
+			limit = {
+				tag = NAG
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = NAG
+			}
+		}
+	}
+}
+country_event = {
+	id = 151032
+	title = "EVTNAME151032"
+	desc = "EVTDESC151032"
+	picture = "greatpowers"
+	trigger = {
+		HND = {
+			exists = yes
+			primary_culture = sindi
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151032"
+		any_country = {
+			limit = {
+				tag = SIN
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = SIN
+			}
+		}
+	}
+}
+country_event = {
+	id = 151033
+	title = "EVTNAME151033"
+	desc = "EVTDESC151033"
+	picture = "greatpowers"
+	trigger = {
+		HND = {
+			exists = yes
+			primary_culture = rajput
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151033"
+		any_country = {
+			limit = {
+				tag = BIK
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = BIK
+			}
+		}
+		any_country = {
+			limit = {
+				tag = JAI
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = JAI
+			}
+		}
+		any_country = {
+			limit = {
+				tag = JAS
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = JAS
+			}
+		}
+		any_country = {
+			limit = {
+				tag = JOD
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = JOD
+			}
+		}
+		any_country = {
+			limit = {
+				tag = MEW
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = MEW
+			}
+		}
+	}
+}
+country_event = {
+	id = 151034
+	title = "EVTNAME151034"
+	desc = "EVTDESC151034"
+	picture = "greatpowers"
+	trigger = {
+		HND = {
+			exists = yes
+			primary_culture = kannada
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151034"
+		any_country = {
+			limit = {
+				tag = MYS
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = MYS
+			}
+		}
+	}
+}
+country_event = {
+	id = 151035
+	title = "EVTNAME151035"
+	desc = "EVTDESC151035"
+	picture = "greatpowers"
+	trigger = {
+		HND = {
+			exists = yes
+			primary_culture = malayalam
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151035"
+		any_country = {
+			limit = {
+				tag = TRA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = TRA
+			}
+		}
+	}
+}
+country_event = {
+	id = 151036
+	title = "EVTNAME151036"
+	desc = "EVTDESC151036"
+	picture = "greatpowers"
+	trigger = {
+		HND = {
+			exists = yes
+			primary_culture = telegu
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151036"
+		any_country = {
+			limit = {
+				tag = BAS
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HND
+					is_core = HND
+				}
+				remove_core = BAS
+			}
+		}
+	}
+}
+country_event = {
+	id = 151037
+	title = "EVTNAME151037"
+	desc = "EVTDESC151037"
+	picture = "greatpowers"
+	trigger = {
+		HUN = {
+			exists = yes
+			primary_culture = hungarian
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151037"
+		any_country = {
+			limit = {
+				tag = SIE
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = HUN
+					is_core = HUN
+				}
+				remove_core = SIE
+			}
+		}
+	}
+}
+country_event = {
+	id = 151038
+	title = "EVTNAME151038"
+	desc = "EVTDESC151038"
+	picture = "greatpowers"
+	trigger = {
+		ITA = {
+			exists = yes
+			primary_culture = north_italian
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151038"
+		any_country = {
+			limit = {
+				tag = LOM
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = ITA
+					is_core = ITA
+				}
+				remove_core = LOM
+			}
+		}
+		any_country = {
+			limit = {
+				tag = LUC
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = ITA
+					is_core = ITA
+				}
+				remove_core = LUC
+			}
+		}
+		any_country = {
+			limit = {
+				tag = MOD
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = ITA
+					is_core = ITA
+				}
+				remove_core = MOD
+			}
+		}
+		any_country = {
+			limit = {
+				tag = PAR
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = ITA
+					is_core = ITA
+				}
+				remove_core = PAR
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SAR
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = ITA
+					is_core = ITA
+				}
+				remove_core = SAR
+			}
+		}
+		any_country = {
+			limit = {
+				tag = TRE
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = ITA
+					is_core = ITA
+				}
+				remove_core = TRE
+			}
+		}
+		any_country = {
+			limit = {
+				tag = TUS
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = ITA
+					is_core = ITA
+				}
+				remove_core = TUS
+			}
+		}
+		any_country = {
+			limit = {
+				tag = VEN
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = ITA
+					is_core = ITA
+				}
+				remove_core = VEN
+			}
+		}
+	}
+}
+country_event = {
+	id = 151039
+	title = "EVTNAME151039"
+	desc = "EVTDESC151039"
+	picture = "greatpowers"
+	trigger = {
+		ITA = {
+			exists = yes
+			primary_culture = south_italian
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151039"
+		any_country = {
+			limit = {
+				tag = PAP
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = ITA
+					is_core = ITA
+				}
+				remove_core = PAP
+			}
+		}
+		any_country = {
+			limit = {
+				tag = SIC
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = ITA
+					is_core = ITA
+				}
+				remove_core = SIC
+			}
+		}
+	}
+}
+country_event = {
+	id = 151040
+	title = "EVTNAME151040"
+	desc = "EVTDESC151040"
+	picture = "greatpowers"
+	trigger = {
+		LAF = {
+			exists = yes
+			primary_culture = north_andean
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151040"
+		any_country = {
+			limit = {
+				tag = CLM
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = LAF
+					is_core = LAF
+				}
+				remove_core = CLM
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ECU
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = LAF
+					is_core = LAF
+				}
+				remove_core = ECU
+			}
+		}
+		any_country = {
+			limit = {
+				tag = GCO
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = LAF
+					is_core = LAF
+				}
+				remove_core = GCO
+			}
+		}
+		any_country = {
+			limit = {
+				tag = VNZ
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = LAF
+					is_core = LAF
+				}
+				remove_core = VNZ
+			}
+		}
+	}
+}
+country_event = {
+	id = 151041
+	title = "EVTNAME151041"
+	desc = "EVTDESC151041"
+	picture = "greatpowers"
+	trigger = {
+		LAF = {
+			exists = yes
+			primary_culture = south_andean
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151041"
+		any_country = {
+			limit = {
+				tag = BOL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = LAF
+					is_core = LAF
+				}
+				remove_core = BOL
+			}
+		}
+		any_country = {
+			limit = {
+				tag = CHL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = LAF
+					is_core = LAF
+				}
+				remove_core = CHL
+			}
+		}
+		any_country = {
+			limit = {
+				tag = PEU
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = LAF
+					is_core = LAF
+				}
+				remove_core = PEU
+			}
+		}
+	}
+}
+country_event = {
+	id = 151042
+	title = "EVTNAME151042"
+	desc = "EVTDESC151042"
+	picture = "greatpowers"
+	trigger = {
+		LAF = {
+			exists = yes
+			primary_culture = platinean
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151042"
+		any_country = {
+			limit = {
+				tag = ARG
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = LAF
+					is_core = LAF
+				}
+				remove_core = ARG
+			}
+		}
+		any_country = {
+			limit = {
+				tag = PRG
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = LAF
+					is_core = LAF
+				}
+				remove_core = PRG
+			}
+		}
+		any_country = {
+			limit = {
+				tag = URU
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = LAF
+					is_core = LAF
+				}
+				remove_core = URU
+			}
+		}
+	}
+}
+country_event = {
+	id = 151043
+	title = "EVTNAME151043"
+	desc = "EVTDESC151043"
+	picture = "greatpowers"
+	trigger = {
+		LAF = {
+			exists = yes
+			primary_culture = brazilian
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151043"
+		any_country = {
+			limit = {
+				tag = BRZ
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = LAF
+					is_core = LAF
+				}
+				remove_core = BRZ
+			}
+		}
+	}
+}
+country_event = {
+	id = 151044
+	title = "EVTNAME151044"
+	desc = "EVTDESC151044"
 	picture = "greatpowers"
 	trigger = {
 		MLY = {
 			exists = yes
 			primary_culture = malay
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = JOH
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = MLY
-					is_core = MLY
-				}
-				remove_core = JOH
-			}
-		}
+		name = "EVTOPTA151044"
 		any_country = {
 			limit = {
 				tag = ATJ
@@ -1182,416 +2340,160 @@ country_event = {
 				remove_core = BRU
 			}
 		}
+		any_country = {
+			limit = {
+				tag = JOH
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = MLY
+					is_core = MLY
+				}
+				remove_core = JOH
+			}
+		}
 	}
 }
 country_event = {
-	id = 151021
-	title = "0"
-	desc = "0"
+	id = 151045
+	title = "EVTNAME151045"
+	desc = "EVTDESC151045"
 	picture = "greatpowers"
 	trigger = {
-		UBD = {
+		PLC = {
 			exists = yes
-			primary_culture = estonian
+			primary_culture = polish
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
+		name = "EVTOPTA151045"
 		any_country = {
 			limit = {
-				tag = EST
+				tag = KRA
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = UBD
-					is_core = UBD
+					owned_by = PLC
+					is_core = PLC
 				}
-				remove_core = EST
+				remove_core = KRA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = POL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = PLC
+					is_core = PLC
+				}
+				remove_core = POL
 			}
 		}
 	}
 }
 country_event = {
-	id = 151022
-	title = "0"
-	desc = "0"
+	id = 151046
+	title = "EVTNAME151046"
+	desc = "EVTDESC151046"
 	picture = "greatpowers"
 	trigger = {
-		UBD = {
+		PLC = {
 			exists = yes
-			primary_culture = latvian
+			primary_culture = lithuanian
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
+		name = "EVTOPTA151046"
 		any_country = {
 			limit = {
-				tag = LAT
+				tag = LIT
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = UBD
-					is_core = UBD
+					owned_by = PLC
+					is_core = PLC
 				}
-				remove_core = LAT
+				remove_core = LIT
 			}
 		}
 	}
 }
 country_event = {
-	id = 151023
-	title = "0"
-	desc = "0"
+	id = 151047
+	title = "EVTNAME151047"
+	desc = "EVTDESC151047"
 	picture = "greatpowers"
 	trigger = {
-		CZH = {
+		ROM = {
 			exists = yes
-			primary_culture = slovak
+			primary_culture = romanian
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
+		name = "EVTOPTA151047"
 		any_country = {
 			limit = {
-				tag = SLV
+				tag = MOL
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = CZH
-					is_core = CZH
+					owned_by = ROM
+					is_core = ROM
 				}
-				remove_core = SLV
+				remove_core = MOL
+			}
+		}
+		any_country = {
+			limit = {
+				tag = WAL
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = ROM
+					is_core = ROM
+				}
+				remove_core = WAL
 			}
 		}
 	}
 }
 country_event = {
-	id = 151024
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		CZH = {
-			exists = yes
-			primary_culture = czech
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = BOH
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = CZH
-					is_core = CZH
-				}
-				remove_core = BOH
-			}
-		}
-	}
-}
-country_event = {
-	id = 151025
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		CAN = {
-			exists = yes
-			primary_culture = french_canadian
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = QUE
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = CAN
-					is_core = CAN
-				}
-				remove_core = QUE
-			}
-		}
-	}
-}
-country_event = {
-	id = 151026
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		CAN = {
-			exists = yes
-			primary_culture = anglo_canadian
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = NEW
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = CAN
-					is_core = CAN
-				}
-				remove_core = NEW
-			}
-		}
-		any_country = {
-			limit = {
-				tag = COL
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = CAN
-					is_core = CAN
-				}
-				remove_core = COL
-			}
-		}
-	}
-}
-country_event = {
-	id = 151027
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		SCA = {
-			exists = yes
-			primary_culture = finnish
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = FIN
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = SCA
-					is_core = SCA
-				}
-				remove_core = FIN
-			}
-		}
-	}
-}
-country_event = {
-	id = 151028
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		SCA = {
-			exists = yes
-			primary_culture = swedish
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = SWE
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = SCA
-					is_core = SCA
-				}
-				remove_core = SWE
-			}
-		}
-	}
-}
-country_event = {
-	id = 151029
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		SCA = {
-			exists = yes
-			primary_culture = danish
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = SCH
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = SCA
-					is_core = SCA
-				}
-				remove_core = SCH
-			}
-		}
-		any_country = {
-			limit = {
-				tag = DEN
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = SCA
-					is_core = SCA
-				}
-				remove_core = DEN
-			}
-		}
-	}
-}
-country_event = {
-	id = 151030
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		SCA = {
-			exists = yes
-			primary_culture = norwegian
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = NOR
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = SCA
-					is_core = SCA
-				}
-				remove_core = NOR
-			}
-		}
-		any_country = {
-			limit = {
-				tag = JAN
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = SCA
-					is_core = SCA
-				}
-				remove_core = JAN
-			}
-		}
-	}
-}
-country_event = {
-	id = 151031
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		SCA = {
-			exists = yes
-			primary_culture = icelandic
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = ICL
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = SCA
-					is_core = SCA
-				}
-				remove_core = ICL
-			}
-		}
-	}
-}
-country_event = {
-	id = 151032
-	title = "0"
-	desc = "0"
+	id = 151048
+	title = "EVTNAME151048"
+	desc = "EVTDESC151048"
 	picture = "greatpowers"
 	trigger = {
 		RUS = {
 			exists = yes
 			primary_culture = byelorussian
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
+		name = "EVTOPTA151048"
 		any_country = {
 			limit = {
 				tag = BYE
@@ -1608,35 +2510,22 @@ country_event = {
 	}
 }
 country_event = {
-	id = 151033
-	title = "0"
-	desc = "0"
+	id = 151049
+	title = "EVTNAME151049"
+	desc = "EVTDESC151049"
 	picture = "greatpowers"
 	trigger = {
 		RUS = {
 			exists = yes
 			primary_culture = ukrainian
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = UKR
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = RUS
-					is_core = RUS
-				}
-				remove_core = UKR
-			}
-		}
+		name = "EVTOPTA151049"
 		any_country = {
 			limit = {
 				tag = RUT
@@ -1650,437 +2539,385 @@ country_event = {
 				remove_core = RUT
 			}
 		}
+		any_country = {
+			limit = {
+				tag = UKR
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = RUS
+					is_core = RUS
+				}
+				remove_core = UKR
+			}
+		}
 	}
 }
 country_event = {
-	id = 151034
-	title = "0"
-	desc = "0"
+	id = 151050
+	title = "EVTNAME151050"
+	desc = "EVTDESC151050"
 	picture = "greatpowers"
 	trigger = {
-		HUN = {
+		SCA = {
 			exists = yes
-			primary_culture = hungarian
+			primary_culture = swedish
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
+		name = "EVTOPTA151050"
 		any_country = {
 			limit = {
-				tag = SIE
+				tag = SWE
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = HUN
-					is_core = HUN
+					owned_by = SCA
+					is_core = SCA
 				}
-				remove_core = SIE
+				remove_core = SWE
 			}
 		}
 	}
 }
 country_event = {
-	id = 151035
-	title = "0"
-	desc = "0"
+	id = 151051
+	title = "EVTNAME151051"
+	desc = "EVTDESC151051"
 	picture = "greatpowers"
 	trigger = {
-		BYZ = {
+		SCA = {
 			exists = yes
-			primary_culture = greek
+			primary_culture = danish
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
+		name = "EVTOPTA151051"
 		any_country = {
 			limit = {
-				tag = ION
+				tag = DEN
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = BYZ
-					is_core = BYZ
+					owned_by = SCA
+					is_core = SCA
 				}
-				remove_core = ION
+				remove_core = DEN
 			}
 		}
 		any_country = {
 			limit = {
-				tag = CRE
+				tag = SCH
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = BYZ
-					is_core = BYZ
+					owned_by = SCA
+					is_core = SCA
 				}
-				remove_core = CRE
-			}
-		}
-		any_country = {
-			limit = {
-				tag = GRE
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = BYZ
-					is_core = BYZ
-				}
-				remove_core = GRE
-			}
-		}
-		any_country = {
-			limit = {
-				tag = CYP
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = BYZ
-					is_core = BYZ
-				}
-				remove_core = CYP
+				remove_core = SCH
 			}
 		}
 	}
 }
 country_event = {
-	id = 151036
-	title = "0"
-	desc = "0"
+	id = 151052
+	title = "EVTNAME151052"
+	desc = "EVTDESC151052"
 	picture = "greatpowers"
 	trigger = {
-		ARA = {
+		SCA = {
 			exists = yes
-			primary_culture = maghrebi
+			primary_culture = norwegian
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
+		name = "EVTOPTA151052"
 		any_country = {
 			limit = {
-				tag = ALD
+				tag = JAN
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = ARA
-					is_core = ARA
+					owned_by = SCA
+					is_core = SCA
 				}
-				remove_core = ALD
+				remove_core = JAN
 			}
 		}
 		any_country = {
 			limit = {
-				tag = MOR
+				tag = NOR
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = ARA
-					is_core = ARA
+					owned_by = SCA
+					is_core = SCA
 				}
-				remove_core = MOR
-			}
-		}
-		any_country = {
-			limit = {
-				tag = TUN
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = ARA
-					is_core = ARA
-				}
-				remove_core = TUN
-			}
-		}
-		any_country = {
-			limit = {
-				tag = TRI
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = ARA
-					is_core = ARA
-				}
-				remove_core = TRI
+				remove_core = NOR
 			}
 		}
 	}
 }
 country_event = {
-	id = 151037
-	title = "0"
-	desc = "0"
+	id = 151053
+	title = "EVTNAME151053"
+	desc = "EVTDESC151053"
 	picture = "greatpowers"
 	trigger = {
-		ARA = {
+		SCA = {
 			exists = yes
-			primary_culture = misri
+			primary_culture = icelandic
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
+		name = "EVTOPTA151053"
 		any_country = {
 			limit = {
-				tag = EGY
+				tag = ICL
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = ARA
-					is_core = ARA
+					owned_by = SCA
+					is_core = SCA
 				}
-				remove_core = EGY
+				remove_core = ICL
 			}
 		}
 	}
 }
 country_event = {
-	id = 151038
-	title = "0"
-	desc = "0"
+	id = 151054
+	title = "EVTNAME151054"
+	desc = "EVTDESC151054"
 	picture = "greatpowers"
 	trigger = {
-		ARA = {
+		SCA = {
 			exists = yes
-			primary_culture = bedouin
+			primary_culture = finnish
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
+		name = "EVTOPTA151054"
 		any_country = {
 			limit = {
-				tag = OMA
+				tag = FIN
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = ARA
-					is_core = ARA
+					owned_by = SCA
+					is_core = SCA
 				}
-				remove_core = OMA
-			}
-		}
-		any_country = {
-			limit = {
-				tag = ABU
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = ARA
-					is_core = ARA
-				}
-				remove_core = ABU
-			}
-		}
-		any_country = {
-			limit = {
-				tag = NEJ
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = ARA
-					is_core = ARA
-				}
-				remove_core = NEJ
+				remove_core = FIN
 			}
 		}
 	}
 }
 country_event = {
-	id = 151039
-	title = "0"
-	desc = "0"
+	id = 151055
+	title = "EVTNAME151055"
+	desc = "EVTDESC151055"
 	picture = "greatpowers"
 	trigger = {
-		ARA = {
+		UBD = {
 			exists = yes
-			primary_culture = mashriqi
+			primary_culture = latvian
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
+		name = "EVTOPTA151055"
 		any_country = {
 			limit = {
-				tag = BAB
+				tag = LAT
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = ARA
-					is_core = ARA
+					owned_by = UBD
+					is_core = UBD
 				}
-				remove_core = BAB
-			}
-		}
-		any_country = {
-			limit = {
-				tag = YEM
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = ARA
-					is_core = ARA
-				}
-				remove_core = YEM
-			}
-		}
-		any_country = {
-			limit = {
-				tag = HDJ
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = ARA
-					is_core = ARA
-				}
-				remove_core = HDJ
-			}
-		}
-		any_country = {
-			limit = {
-				tag = IRQ
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = ARA
-					is_core = ARA
-				}
-				remove_core = IRQ
+				remove_core = LAT
 			}
 		}
 	}
 }
 country_event = {
-	id = 151040
-	title = "0"
-	desc = "0"
+	id = 151056
+	title = "EVTNAME151056"
+	desc = "EVTDESC151056"
 	picture = "greatpowers"
 	trigger = {
-		USA = {
+		UBD = {
 			exists = yes
-			primary_culture = texan
+			primary_culture = estonian
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
+		name = "EVTOPTA151056"
 		any_country = {
 			limit = {
-				tag = TEX
+				tag = EST
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = USA
-					is_core = USA
+					owned_by = UBD
+					is_core = UBD
 				}
-				remove_core = TEX
+				remove_core = EST
 			}
 		}
 	}
 }
 country_event = {
-	id = 151041
-	title = "0"
-	desc = "0"
+	id = 151057
+	title = "EVTNAME151057"
+	desc = "EVTDESC151057"
 	picture = "greatpowers"
 	trigger = {
-		USA = {
+		UCA = {
 			exists = yes
-			primary_culture = dixie
+			primary_culture = central_american
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
+		name = "EVTOPTA151057"
 		any_country = {
 			limit = {
-				tag = CSA
+				tag = COS
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = USA
-					is_core = USA
+					owned_by = UCA
+					is_core = UCA
 				}
-				remove_core = CSA
+				remove_core = COS
+			}
+		}
+		any_country = {
+			limit = {
+				tag = ELS
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = UCA
+					is_core = UCA
+				}
+				remove_core = ELS
+			}
+		}
+		any_country = {
+			limit = {
+				tag = GUA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = UCA
+					is_core = UCA
+				}
+				remove_core = GUA
+			}
+		}
+		any_country = {
+			limit = {
+				tag = HON
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = UCA
+					is_core = UCA
+				}
+				remove_core = HON
+			}
+		}
+		any_country = {
+			limit = {
+				tag = NIC
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = UCA
+					is_core = UCA
+				}
+				remove_core = NIC
+			}
+		}
+		any_country = {
+			limit = {
+				tag = PNM
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = UCA
+					is_core = UCA
+				}
+				remove_core = PNM
 			}
 		}
 	}
 }
 country_event = {
-	id = 151042
-	title = "0"
-	desc = "0"
+	id = 151058
+	title = "EVTNAME151058"
+	desc = "EVTDESC151058"
 	picture = "greatpowers"
 	trigger = {
 		USA = {
 			exists = yes
 			primary_culture = yankee
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = NEN
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = USA
-					is_core = USA
-				}
-				remove_core = NEN
-			}
-		}
+		name = "EVTOPTA151058"
 		any_country = {
 			limit = {
 				tag = CAL
@@ -2120,38 +2957,102 @@ country_event = {
 				remove_core = MAN
 			}
 		}
+		any_country = {
+			limit = {
+				tag = NEN
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = USA
+					is_core = USA
+				}
+				remove_core = NEN
+			}
+		}
 	}
 }
 country_event = {
-	id = 151043
-	title = "0"
-	desc = "0"
+	id = 151059
+	title = "EVTNAME151059"
+	desc = "EVTDESC151059"
+	picture = "greatpowers"
+	trigger = {
+		USA = {
+			exists = yes
+			primary_culture = dixie
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151059"
+		any_country = {
+			limit = {
+				tag = CSA
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = USA
+					is_core = USA
+				}
+				remove_core = CSA
+			}
+		}
+	}
+}
+country_event = {
+	id = 151060
+	title = "EVTNAME151060"
+	desc = "EVTDESC151060"
+	picture = "greatpowers"
+	trigger = {
+		USA = {
+			exists = yes
+			primary_culture = texan
+		}
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA151060"
+		any_country = {
+			limit = {
+				tag = TEX
+				exists = no
+			}
+			all_core = {
+				limit = {
+					owned_by = USA
+					is_core = USA
+				}
+				remove_core = TEX
+			}
+		}
+	}
+}
+country_event = {
+	id = 151061
+	title = "EVTNAME151061"
+	desc = "EVTDESC151061"
 	picture = "greatpowers"
 	trigger = {
 		UZB = {
 			exists = yes
 			primary_culture = uzbek
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = KHI
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = UZB
-					is_core = UZB
-				}
-				remove_core = KHI
-			}
-		}
+		name = "EVTOPTA151061"
 		any_country = {
 			limit = {
 				tag = BUK
@@ -2165,1408 +3066,222 @@ country_event = {
 				remove_core = BUK
 			}
 		}
-	}
-}
-country_event = {
-	id = 151044
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		NGF = {
-			exists = yes
-			primary_culture = north_german
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
 		any_country = {
 			limit = {
-				tag = DZG
+				tag = KHI
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = NGF
-					is_core = NGF
+					owned_by = UZB
+					is_core = UZB
 				}
-				remove_core = DZG
-			}
-		}
-		any_country = {
-			limit = {
-				tag = FRM
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = NGF
-					is_core = NGF
-				}
-				remove_core = FRM
-			}
-		}
-		any_country = {
-			limit = {
-				tag = COB
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = NGF
-					is_core = NGF
-				}
-				remove_core = COB
-			}
-		}
-		any_country = {
-			limit = {
-				tag = ANH
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = NGF
-					is_core = NGF
-				}
-				remove_core = ANH
-			}
-		}
-		any_country = {
-			limit = {
-				tag = HAM
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = NGF
-					is_core = NGF
-				}
-				remove_core = HAM
-			}
-		}
-		any_country = {
-			limit = {
-				tag = HAN
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = NGF
-					is_core = NGF
-				}
-				remove_core = HAN
-			}
-		}
-		any_country = {
-			limit = {
-				tag = WEI
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = NGF
-					is_core = NGF
-				}
-				remove_core = WEI
-			}
-		}
-		any_country = {
-			limit = {
-				tag = MEC
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = NGF
-					is_core = NGF
-				}
-				remove_core = MEC
-			}
-		}
-		any_country = {
-			limit = {
-				tag = HEK
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = NGF
-					is_core = NGF
-				}
-				remove_core = HEK
-			}
-		}
-		any_country = {
-			limit = {
-				tag = HES
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = NGF
-					is_core = NGF
-				}
-				remove_core = HES
-			}
-		}
-		any_country = {
-			limit = {
-				tag = MEI
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = NGF
-					is_core = NGF
-				}
-				remove_core = MEI
-			}
-		}
-		any_country = {
-			limit = {
-				tag = NAS
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = NGF
-					is_core = NGF
-				}
-				remove_core = NAS
-			}
-		}
-		any_country = {
-			limit = {
-				tag = BRE
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = NGF
-					is_core = NGF
-				}
-				remove_core = BRE
-			}
-		}
-		any_country = {
-			limit = {
-				tag = BRA
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = NGF
-					is_core = NGF
-				}
-				remove_core = BRA
-			}
-		}
-		any_country = {
-			limit = {
-				tag = HOL
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = NGF
-					is_core = NGF
-				}
-				remove_core = HOL
-			}
-		}
-		any_country = {
-			limit = {
-				tag = LUB
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = NGF
-					is_core = NGF
-				}
-				remove_core = LUB
-			}
-		}
-		any_country = {
-			limit = {
-				tag = LIP
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = NGF
-					is_core = NGF
-				}
-				remove_core = LIP
-			}
-		}
-		any_country = {
-			limit = {
-				tag = LUX
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = NGF
-					is_core = NGF
-				}
-				remove_core = LUX
-			}
-		}
-		any_country = {
-			limit = {
-				tag = OLD
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = NGF
-					is_core = NGF
-				}
-				remove_core = OLD
-			}
-		}
-		any_country = {
-			limit = {
-				tag = PRU
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = NGF
-					is_core = NGF
-				}
-				remove_core = PRU
-			}
-		}
-		any_country = {
-			limit = {
-				tag = SAX
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = NGF
-					is_core = NGF
-				}
-				remove_core = SAX
-			}
-		}
-	}
-}
-country_event = {
-	id = 151045
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		CHI = {
-			exists = yes
-			primary_culture = tibetan
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = LAD
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = CHI
-					is_core = CHI
-				}
-				remove_core = LAD
-			}
-		}
-		any_country = {
-			limit = {
-				tag = BHU
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = CHI
-					is_core = CHI
-				}
-				remove_core = BHU
-			}
-		}
-		any_country = {
-			limit = {
-				tag = TIB
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = CHI
-					is_core = CHI
-				}
-				remove_core = TIB
-			}
-		}
-	}
-}
-country_event = {
-	id = 151046
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		CHI = {
-			exists = yes
-			primary_culture = nanfaren
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = YNN
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = CHI
-					is_core = CHI
-				}
-				remove_core = YNN
-			}
-		}
-		any_country = {
-			limit = {
-				tag = TPG
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = CHI
-					is_core = CHI
-				}
-				remove_core = TPG
-			}
-		}
-	}
-}
-country_event = {
-	id = 151047
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		CHI = {
-			exists = yes
-			primary_culture = beifaren
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = XBI
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = CHI
-					is_core = CHI
-				}
-				remove_core = XBI
-			}
-		}
-		any_country = {
-			limit = {
-				tag = SXI
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = CHI
-					is_core = CHI
-				}
-				remove_core = SXI
-			}
-		}
-		any_country = {
-			limit = {
-				tag = XIN
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = CHI
-					is_core = CHI
-				}
-				remove_core = XIN
-			}
-		}
-	}
-}
-country_event = {
-	id = 151048
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		CHI = {
-			exists = yes
-			primary_culture = manchu
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = MCK
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = CHI
-					is_core = CHI
-				}
-				remove_core = MCK
-			}
-		}
-	}
-}
-country_event = {
-	id = 151049
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		HND = {
-			exists = yes
-			primary_culture = telegu
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = BAS
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = HND
-					is_core = HND
-				}
-				remove_core = BAS
-			}
-		}
-	}
-}
-country_event = {
-	id = 151050
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		HND = {
-			exists = yes
-			primary_culture = malayalam
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = TRA
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = HND
-					is_core = HND
-				}
-				remove_core = TRA
-			}
-		}
-	}
-}
-country_event = {
-	id = 151051
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		HND = {
-			exists = yes
-			primary_culture = kannada
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = MYS
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = HND
-					is_core = HND
-				}
-				remove_core = MYS
-			}
-		}
-	}
-}
-country_event = {
-	id = 151052
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		HND = {
-			exists = yes
-			primary_culture = sindi
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = SIN
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = HND
-					is_core = HND
-				}
-				remove_core = SIN
-			}
-		}
-	}
-}
-country_event = {
-	id = 151053
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		HND = {
-			exists = yes
-			primary_culture = gujarati
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = KUT
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = HND
-					is_core = HND
-				}
-				remove_core = KUT
-			}
-		}
-		any_country = {
-			limit = {
-				tag = BER
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = HND
-					is_core = HND
-				}
-				remove_core = BER
-			}
-		}
-	}
-}
-country_event = {
-	id = 151054
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		HND = {
-			exists = yes
-			primary_culture = kashmiri
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = KAS
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = HND
-					is_core = HND
-				}
-				remove_core = KAS
-			}
-		}
-	}
-}
-country_event = {
-	id = 151055
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		HND = {
-			exists = yes
-			primary_culture = bengali
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = BNG
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = HND
-					is_core = HND
-				}
-				remove_core = BNG
-			}
-		}
-	}
-}
-country_event = {
-	id = 151056
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		HND = {
-			exists = yes
-			primary_culture = rajput
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = MEW
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = HND
-					is_core = HND
-				}
-				remove_core = MEW
-			}
-		}
-		any_country = {
-			limit = {
-				tag = JOD
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = HND
-					is_core = HND
-				}
-				remove_core = JOD
-			}
-		}
-		any_country = {
-			limit = {
-				tag = BIK
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = HND
-					is_core = HND
-				}
-				remove_core = BIK
-			}
-		}
-		any_country = {
-			limit = {
-				tag = JAS
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = HND
-					is_core = HND
-				}
-				remove_core = JAS
-			}
-		}
-		any_country = {
-			limit = {
-				tag = JAI
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = HND
-					is_core = HND
-				}
-				remove_core = JAI
-			}
-		}
-	}
-}
-country_event = {
-	id = 151057
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		HND = {
-			exists = yes
-			primary_culture = bihari
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = BIH
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = HND
-					is_core = HND
-				}
-				remove_core = BIH
-			}
-		}
-	}
-}
-country_event = {
-	id = 151058
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		HND = {
-			exists = yes
-			primary_culture = panjabi
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = PAN
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = HND
-					is_core = HND
-				}
-				remove_core = PAN
-			}
-		}
-		any_country = {
-			limit = {
-				tag = MUG
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = HND
-					is_core = HND
-				}
-				remove_core = MUG
-			}
-		}
-	}
-}
-country_event = {
-	id = 151059
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		HND = {
-			exists = yes
-			primary_culture = assamese
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = ASM
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = HND
-					is_core = HND
-				}
-				remove_core = ASM
-			}
-		}
-	}
-}
-country_event = {
-	id = 151060
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		HND = {
-			exists = yes
-			primary_culture = nepali
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = SIK
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = HND
-					is_core = HND
-				}
-				remove_core = SIK
-			}
-		}
-		any_country = {
-			limit = {
-				tag = SHI
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = HND
-					is_core = HND
-				}
-				remove_core = SHI
-			}
-		}
-		any_country = {
-			limit = {
-				tag = NEP
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = HND
-					is_core = HND
-				}
-				remove_core = NEP
-			}
-		}
-	}
-}
-country_event = {
-	id = 151061
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		HND = {
-			exists = yes
-			primary_culture = oriya
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = ORI
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = HND
-					is_core = HND
-				}
-				remove_core = ORI
+				remove_core = KHI
 			}
 		}
 	}
 }
 country_event = {
 	id = 151062
-	title = "0"
-	desc = "0"
+	title = "EVTNAME151062"
+	desc = "EVTDESC151062"
 	picture = "greatpowers"
 	trigger = {
-		HND = {
+		YUG = {
 			exists = yes
-			primary_culture = sinhala
+			primary_culture = croat
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
+		name = "EVTOPTA151062"
 		any_country = {
 			limit = {
-				tag = SRI
+				tag = CRO
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = HND
-					is_core = HND
+					owned_by = YUG
+					is_core = YUG
 				}
-				remove_core = SRI
+				remove_core = CRO
 			}
 		}
 	}
 }
 country_event = {
 	id = 151063
-	title = "0"
-	desc = "0"
+	title = "EVTNAME151063"
+	desc = "EVTDESC151063"
 	picture = "greatpowers"
 	trigger = {
-		HND = {
+		YUG = {
 			exists = yes
-			primary_culture = avadhi
+			primary_culture = serb
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
+		name = "EVTOPTA151063"
 		any_country = {
 			limit = {
-				tag = HYD
+				tag = MON
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = HND
-					is_core = HND
+					owned_by = YUG
+					is_core = YUG
 				}
-				remove_core = HYD
+				remove_core = MON
 			}
 		}
 		any_country = {
 			limit = {
-				tag = AWA
+				tag = SER
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = HND
-					is_core = HND
+					owned_by = YUG
+					is_core = YUG
 				}
-				remove_core = AWA
+				remove_core = SER
 			}
 		}
 	}
 }
 country_event = {
 	id = 151064
-	title = "0"
-	desc = "0"
+	title = "EVTNAME151064"
+	desc = "EVTDESC151064"
 	picture = "greatpowers"
 	trigger = {
-		HND = {
+		YUG = {
 			exists = yes
-			primary_culture = marathi
+			primary_culture = bulgarian
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
+		name = "EVTOPTA151064"
 		any_country = {
 			limit = {
-				tag = NAG
+				tag = BUL
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = HND
-					is_core = HND
+					owned_by = YUG
+					is_core = YUG
 				}
-				remove_core = NAG
-			}
-		}
-		any_country = {
-			limit = {
-				tag = IND
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = HND
-					is_core = HND
-				}
-				remove_core = IND
-			}
-		}
-		any_country = {
-			limit = {
-				tag = BHO
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = HND
-					is_core = HND
-				}
-				remove_core = BHO
-			}
-		}
-		any_country = {
-			limit = {
-				tag = GWA
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = HND
-					is_core = HND
-				}
-				remove_core = GWA
+				remove_core = BUL
 			}
 		}
 	}
 }
 country_event = {
 	id = 151065
-	title = "0"
-	desc = "0"
+	title = "EVTNAME151065"
+	desc = "EVTDESC151065"
 	picture = "greatpowers"
 	trigger = {
-		HND = {
+		YUG = {
 			exists = yes
-			primary_culture = kanauji
+			primary_culture = albanian
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
+		name = "EVTOPTA151065"
 		any_country = {
 			limit = {
-				tag = BUN
+				tag = ALB
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = HND
-					is_core = HND
+					owned_by = YUG
+					is_core = YUG
 				}
-				remove_core = BUN
+				remove_core = ALB
 			}
 		}
 	}
 }
 country_event = {
 	id = 151066
-	title = "0"
-	desc = "0"
+	title = "EVTNAME151066"
+	desc = "EVTDESC151066"
 	picture = "greatpowers"
 	trigger = {
-		LAF = {
+		YUG = {
 			exists = yes
-			primary_culture = north_andean
+			primary_culture = slovene
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
+		name = "EVTOPTA151066"
 		any_country = {
 			limit = {
-				tag = VNZ
+				tag = SLO
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = LAF
-					is_core = LAF
+					owned_by = YUG
+					is_core = YUG
 				}
-				remove_core = VNZ
-			}
-		}
-		any_country = {
-			limit = {
-				tag = GCO
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = LAF
-					is_core = LAF
-				}
-				remove_core = GCO
-			}
-		}
-		any_country = {
-			limit = {
-				tag = CLM
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = LAF
-					is_core = LAF
-				}
-				remove_core = CLM
-			}
-		}
-		any_country = {
-			limit = {
-				tag = ECU
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = LAF
-					is_core = LAF
-				}
-				remove_core = ECU
+				remove_core = SLO
 			}
 		}
 	}
 }
 country_event = {
 	id = 151067
-	title = "0"
-	desc = "0"
+	title = "EVTNAME151067"
+	desc = "EVTDESC151067"
 	picture = "greatpowers"
 	trigger = {
-		LAF = {
+		YUG = {
 			exists = yes
-			primary_culture = south_andean
+			primary_culture = bosniak
 		}
-		AI = yes
+		ai = yes
 	}
 	mean_time_to_happen = {
 		months = 60
 	}
 	option = {
-		name = "1"
+		name = "EVTOPTA151067"
 		any_country = {
 			limit = {
-				tag = PEU
+				tag = BOS
 				exists = no
 			}
 			all_core = {
 				limit = {
-					owned_by = LAF
-					is_core = LAF
+					owned_by = YUG
+					is_core = YUG
 				}
-				remove_core = PEU
-			}
-		}
-		any_country = {
-			limit = {
-				tag = CHL
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = LAF
-					is_core = LAF
-				}
-				remove_core = CHL
-			}
-		}
-		any_country = {
-			limit = {
-				tag = BOL
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = LAF
-					is_core = LAF
-				}
-				remove_core = BOL
-			}
-		}
-	}
-}
-country_event = {
-	id = 151068
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		LAF = {
-			exists = yes
-			primary_culture = platinean
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = URU
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = LAF
-					is_core = LAF
-				}
-				remove_core = URU
-			}
-		}
-		any_country = {
-			limit = {
-				tag = PRG
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = LAF
-					is_core = LAF
-				}
-				remove_core = PRG
-			}
-		}
-		any_country = {
-			limit = {
-				tag = ARG
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = LAF
-					is_core = LAF
-				}
-				remove_core = ARG
-			}
-		}
-	}
-}
-country_event = {
-	id = 151069
-	title = "0"
-	desc = "0"
-	picture = "greatpowers"
-	trigger = {
-		LAF = {
-			exists = yes
-			primary_culture = brazilian
-		}
-		AI = yes
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	option = {
-		name = "1"
-		any_country = {
-			limit = {
-				tag = BRZ
-				exists = no
-			}
-			all_core = {
-				limit = {
-					owned_by = LAF
-					is_core = LAF
-				}
-				remove_core = BRZ
+				remove_core = BOS
 			}
 		}
 	}
