@@ -1690,6 +1690,7 @@ austrian_form_south_german_confederation
 award_order_of_st_francis
 balance_decision_1914
 balance_decision_1923
+ban_animist_soldiers
 become_bohemia
 become_flanders
 become_guatemala
