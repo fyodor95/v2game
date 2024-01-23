@@ -1,0 +1,45 @@
+political_decisions = {
+ban_animist_soldiers = {
+	potential = {
+		ai = no
+	}
+	allow = {
+		any_owned_province = {
+			any_pop = {
+				type = soldiers
+				religion = animist
+			}
+		}
+	}
+	effect = {
+		any_owned = {
+			limit = {
+				any_pop = {
+					type = farmers
+				}
+			}
+			any_pop = {
+				limit = {
+					type = soldiers
+					religion = animist
+				}
+				pop_type = farmers
+			}
+		}
+		any_owned = {
+			limit = {
+				any_pop = {
+					type = labourers
+				}
+			}
+			any_pop = {
+				limit = {
+					type = soldiers
+					religion = animist
+				}
+				pop_type = labourers
+			}
+		}
+	}
+}
+}

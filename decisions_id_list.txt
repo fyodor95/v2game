@@ -1057,6 +1057,7 @@ apply_for_USA_statehood
 attack_the_laagers
 austrian_form_south_german_confederation
 award_order_of_st_francis
+ban_animist_soldiers
 become_guatemala
 become_negusa_nagast
 bixby_letter
