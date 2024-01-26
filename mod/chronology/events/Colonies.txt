@@ -304,6 +304,7 @@ country_event = {
 				NOT = {has_province_modifier = colonial_separatism_3}
 				NOT = {has_province_modifier = colonial_separatism_4}
 				NOT = {has_province_modifier = colonial_separatism_5} 
+				NOT = {is_core = THIS}
 			}
 		}
 		any_greater_power = {
