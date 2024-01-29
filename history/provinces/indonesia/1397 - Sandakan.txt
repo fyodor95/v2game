@@ -1,3 +1,0 @@
-terrain = jungle_farmland
-trade_goods = grain
-life_rating = 15
