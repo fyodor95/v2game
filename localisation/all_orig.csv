@@ -1067,16 +1067,28 @@ DECREASERELATION_THEY_ACCEPT_6;Наши отношения изменились на §G$CHANGE$§W пунктов
 TRI_1743;Триполи;X
 NORMAL_WAR_CONCESSION_NAME;$ORDER$ Война за уступку региона $STATE$;X
 AGRESSION_WAR_CONCESSION_NAME;$ORDER$ Война за уступку региона $STATE$;X
-demand_concession_casus_belli;Требование уступок;X
-demand_concession_casus_belli_desc;Принуждение §Yнецивилизованного государства§W к уступке части своей территории для создания колониальной области.;X
+demand_concession_casus_belli;Требование значительных уступок;X
+demand_concession_casus_belli_desc;Принуждение §Yнецивилизованного государства§W к уступке значительной части своей территории для создания колониальной области.;X
 demand_concession_casus_belli_setup;Потребовать у державы $RECIPIENT$ передачи территории для создания колониальной области.;X
 demand_concession_casus_belli_short;Присоединение региона $STATE$;X
+demand_small_concession_casus_belli;Требование уступок;X
+demand_small_concession_casus_belli_desc;Принуждение §Yнецивилизованного государства§W к уступке части своей территории для создания колониальной области.;X
+demand_small_concession_casus_belli_setup;Потребовать у державы $RECIPIENT$ передачи территории для создания колониальной области.;X
+demand_small_concession_casus_belli_short;Присоединение региона $STATE$;X
+demand_smallest_concession_casus_belli;Требование небольших уступок;X
+demand_smallest_concession_casus_belli_desc;Принуждение §Yнецивилизованного государства§W к уступке небольшой части своей территории для создания колониальной области.;X
+demand_smallest_concession_casus_belli_setup;Потребовать у державы $RECIPIENT$ передачи территории для создания колониальной области.;X
+demand_smallest_concession_casus_belli_short;Присоединение региона $STATE$;X
 NORMAL_WAR_PROTECTORATE_NAME;$ORDER$ Война за создание $FIRST$ протектората $SECOND_COUNTRY$;X
 AGRESSION_WAR_PROTECTORATE_NAME;$ORDER$ Война за создание $FIRST$ протектората $SECOND_COUNTRY$;X
 establish_protectorate_casus_belli;Установление протектората;X
 establish_protectorate_casus_belli_desc;Присоединение §Yнецивилизованного государства§W и создание на его территории собственного протектората.;X
 establish_protectorate_casus_belli_setup;Присоединить державу $RECIPIENT$, создав на его территории протекторат.;X
 establish_protectorate_casus_belli_short;Присоединение державы $RECIPIENT$;X
+establish_small_protectorate_casus_belli;Установление малого протектората;X
+establish_small_protectorate_casus_belli_desc;Присоединение §Yнецивилизованного государства§W и создание на его территории собственного протектората.;X
+establish_small_protectorate_casus_belli_setup;Присоединить державу $RECIPIENT$, создав на его территории протекторат.;X
+establish_small_protectorate_casus_belli_short;Присоединение державы $RECIPIENT$;X
 NORMAL_WAR_UNIFICATION_NAME;$ORDER$ $FIRST$ война за освобождение региона $STATE$;X
 AGRESSION_WAR_UNIFICATION_NAME;$ORDER$ $FIRST$ война за освобождение региона $STATE$;X
 unification_casus_belli;Объединение;X
@@ -3130,6 +3142,10 @@ acquire_substate_region;Получить регион автономии;x
 acquire_substate_region_desc;Получить регион от вражеской §Yавтономии§W;x
 acquire_substate_region_short;Получить $STATE$;x
 acquire_substate_region_setup;Получить $STATE$ от $RECIPIENT$;x
+acquire_small_substate_region;Получить небольшой регион автономии;x
+acquire_small_substate_region_desc;Получить небольшой регион от вражеской §Yавтономии§W;x
+acquire_small_substate_region_short;Получить $STATE$;x
+acquire_small_substate_region_setup;Получить $STATE$ от $RECIPIENT$;x
 become_independent;Стать независимой державой;x
 become_independent_short;$ACTOR$ освобождена от $RECIPIENT$;x
 become_independent_setup;$ACTOR$ освобождена от $RECIPIENT$ и становится независимой.;x
@@ -5182,7 +5198,9 @@ add_to_sphere_desc;Расширение свой §Yсферы влияния§W на эту державу.;X
 take_from_sphere_desc;Исключение страны из §Yсферы влияния§W другой державы с включением её в нашу сферу.;X
 acquire_core_state_desc;Захват вражеского §Yрегиона§W, в котором находятся наши §Yнациональные провинции§W.;X
 acquire_state_desc;Захват §Yрегиона§W, принадлежащего врагу.;X
+acquire_small_state_desc;Захват §Yрегиона§W, принадлежащего врагу.;X
 place_in_the_sun_desc;Захват §Yколониальной области§W, принадлежащей врагу.;X
+small_place_in_the_sun_desc;Захват §Yколониальной области§W, принадлежащей врагу.;X
 cut_down_to_size_desc;Принуждение другой §Yдержавы§W к разоружению и выплате репараций нам.;X
 free_peoples_desc;Освобождение §Yстраны§W от власти её угнетателей.;X
 protect_minor_desc;Выберите §Yрегион§W из списка справа.;X
@@ -8548,9 +8566,15 @@ acquire_core_state_setup;Отобрать у державы $RECIPIENT$ наш национальный регион 
 acquire_state;Захват региона;X
 acquire_state_short;Присоединение региона $STATE$;X
 acquire_state_setup;Захватить регион $STATE$ у державы $RECIPIENT$.;X
+acquire_small_state;Захват малого региона;X
+acquire_small_state_short;Присоединение малого региона $STATE$;X
+acquire_small_state_setup;Захватить малый регион $STATE$ у державы $RECIPIENT$.;X
 place_in_the_sun;Место под солнцем;X
 place_in_the_sun_short;Присоединение региона $STATE$;X
 place_in_the_sun_setup;Захватить колониальную область $STATE$ у державы $RECIPIENT$.;X
+small_place_in_the_sun;Местечко под солнцем;X
+small_place_in_the_sun_short;Присоединение малого региона $STATE$;X
+small_place_in_the_sun_setup;Захватить малую колониальную область $STATE$ у державы $RECIPIENT$.;X
 cut_down_to_size;Ограничение роста;X
 cut_down_to_size_short;Ограничение развития державы $RECIPIENT$;X
 cut_down_to_size_setup;Ограничить развитие державы $RECIPIENT$.;X

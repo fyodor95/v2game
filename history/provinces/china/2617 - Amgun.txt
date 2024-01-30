@@ -3,7 +3,6 @@ owner = CHI
 controller = CHI
 add_core = CHI
 add_core = MCK
-add_core = RUS
 trade_goods = coal
 life_rating = 32
 1861.1.1 = {
