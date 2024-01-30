@@ -122093,6 +122093,1602 @@ get_province_2635_2 = {
 		}
 	}
 }
+get_province_3266_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3266
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3266_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3266
+			}
+		}
+		3266 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3266 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3266 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3266 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3266
+			duration = -1
+		}
+		3266 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3266 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3266_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3266
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3266_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3266
+			}
+		}
+		3266 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3266 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3266 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3266 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3266
+			duration = -1
+		}
+		3266 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3266 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3266_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3266
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3266_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3266
+			}
+		}
+		3266 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3266 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3266 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3266 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3266
+			duration = -1
+		}
+		3266 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3266 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3267_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3267
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3267_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3267
+			}
+		}
+		3267 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3267 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3267 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3267 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3267
+			duration = -1
+		}
+		3267 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3267 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3267_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3267
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3267_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3267
+			}
+		}
+		3267 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3267 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3267 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3267 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3267
+			duration = -1
+		}
+		3267 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3267 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3267_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3267
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3267_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3267
+			}
+		}
+		3267 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3267 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3267 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3267 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3267
+			duration = -1
+		}
+		3267 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3267 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3268_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3268
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3268_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3268
+			}
+		}
+		3268 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3268 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3268 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3268 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3268
+			duration = -1
+		}
+		3268 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3268 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3268_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3268
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3268_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3268
+			}
+		}
+		3268 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3268 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3268 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3268 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3268
+			duration = -1
+		}
+		3268 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3268 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3268_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3268
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3268_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3268
+			}
+		}
+		3268 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3268 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3268 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3268 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3268
+			duration = -1
+		}
+		3268 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3268 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3269_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3269
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3269_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3269
+			}
+		}
+		3269 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3269 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3269 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3269 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3269
+			duration = -1
+		}
+		3269 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3269 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3269_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3269
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3269_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3269
+			}
+		}
+		3269 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3269 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3269 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3269 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3269
+			duration = -1
+		}
+		3269 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3269 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3269_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3269
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3269_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3269
+			}
+		}
+		3269 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3269 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3269 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3269 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3269
+			duration = -1
+		}
+		3269 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3269 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3270_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3270
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3270_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3270
+			}
+		}
+		3270 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3270 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3270 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3270 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3270
+			duration = -1
+		}
+		3270 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3270 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3270_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3270
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3270_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3270
+			}
+		}
+		3270 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3270 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3270 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3270 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3270
+			duration = -1
+		}
+		3270 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3270 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3270_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3270
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3270_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3270
+			}
+		}
+		3270 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3270 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3270 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3270 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3270
+			duration = -1
+		}
+		3270 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3270 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3271_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3271
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3271_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3271
+			}
+		}
+		3271 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3271 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3271 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3271 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3271
+			duration = -1
+		}
+		3271 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3271 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3271_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3271
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3271_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3271
+			}
+		}
+		3271 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3271 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3271 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3271 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3271
+			duration = -1
+		}
+		3271 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3271 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3271_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3271
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3271_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3271
+			}
+		}
+		3271 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3271 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3271 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3271 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3271
+			duration = -1
+		}
+		3271 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3271 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 get_province_790_0 = {
 	potential = {
 		war = yes
@@ -141222,272 +142818,6 @@ get_province_1396_2 = {
 						badboy = 0.16
 					}
 					1396 = {
-						state_scope = {
-							OR = {
-								AND = {
-									is_colonial = yes
-									total_pops = 2000000
-								}
-								AND = {
-									is_colonial = no
-									total_pops = 2200000
-								}
-							}
-							NOT = {
-								any_owned_province = {
-									is_core = THIS
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-get_province_1397_0 = {
-	potential = {
-		war = yes
-		NOT = {
-			owns = 1397
-		}
-		AND = {
-			NOT = {
-				has_country_modifier = wants_province_1397_back
-			}
-			NOT = {
-				has_country_modifier = wants_province_1397
-			}
-		}
-		1397 = {
-			NOT = {
-				total_pops = 400000
-			}
-			owner = {
-				war_with = THIS
-			}
-		}
-		OR = {
-			1397 = {
-				any_neighbor_province = {
-					owned_by = THIS
-				}
-			}
-			AND = {
-				num_of_ports = 1
-				1397 = {
-					port = yes
-				}
-			}
-		}
-	}
-	allow = {
-		1397 = {
-			controller = {
-				tag = THIS
-			}
-		}
-	}
-	effect = {
-		badboy = 4
-		add_country_modifier = {
-			name = wants_province_1397
-			duration = -1
-		}
-		1397 = {
-			add_province_modifier = {
-				name = wanted_by_someone
-				duration = -1
-			}
-		}
-	}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = {
-				AND = {
-					NOT = {
-						badboy = 0.64
-					}
-					1397 = {
-						state_scope = {
-							OR = {
-								AND = {
-									is_colonial = yes
-									total_pops = 2000000
-								}
-								AND = {
-									is_colonial = no
-									total_pops = 2200000
-								}
-							}
-							NOT = {
-								any_owned_province = {
-									is_core = THIS
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-get_province_1397_1 = {
-	potential = {
-		war = yes
-		NOT = {
-			owns = 1397
-		}
-		AND = {
-			NOT = {
-				has_country_modifier = wants_province_1397_back
-			}
-			NOT = {
-				has_country_modifier = wants_province_1397
-			}
-		}
-		1397 = {
-			total_pops = 400000
-			NOT = {
-				total_pops = 800000
-			}
-			owner = {
-				war_with = THIS
-			}
-		}
-		OR = {
-			1397 = {
-				any_neighbor_province = {
-					owned_by = THIS
-				}
-			}
-			AND = {
-				num_of_ports = 1
-				1397 = {
-					port = yes
-				}
-			}
-		}
-	}
-	allow = {
-		1397 = {
-			controller = {
-				tag = THIS
-			}
-		}
-	}
-	effect = {
-		badboy = 8
-		add_country_modifier = {
-			name = wants_province_1397
-			duration = -1
-		}
-		1397 = {
-			add_province_modifier = {
-				name = wanted_by_someone
-				duration = -1
-			}
-		}
-	}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = {
-				AND = {
-					NOT = {
-						badboy = 0.48
-					}
-					1397 = {
-						state_scope = {
-							OR = {
-								AND = {
-									is_colonial = yes
-									total_pops = 2000000
-								}
-								AND = {
-									is_colonial = no
-									total_pops = 2200000
-								}
-							}
-							NOT = {
-								any_owned_province = {
-									is_core = THIS
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-get_province_1397_2 = {
-	potential = {
-		war = yes
-		NOT = {
-			owns = 1397
-		}
-		AND = {
-			NOT = {
-				has_country_modifier = wants_province_1397_back
-			}
-			NOT = {
-				has_country_modifier = wants_province_1397
-			}
-		}
-		1397 = {
-			total_pops = 800000
-			owner = {
-				war_with = THIS
-			}
-		}
-		OR = {
-			1397 = {
-				any_neighbor_province = {
-					owned_by = THIS
-				}
-			}
-			AND = {
-				num_of_ports = 1
-				1397 = {
-					port = yes
-				}
-			}
-		}
-	}
-	allow = {
-		1397 = {
-			controller = {
-				tag = THIS
-			}
-		}
-	}
-	effect = {
-		badboy = 16
-		add_country_modifier = {
-			name = wants_province_1397
-			duration = -1
-		}
-		1397 = {
-			add_province_modifier = {
-				name = wanted_by_someone
-				duration = -1
-			}
-		}
-	}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = {
-				AND = {
-					NOT = {
-						badboy = 0.16
-					}
-					1397 = {
 						state_scope = {
 							OR = {
 								AND = {
@@ -163566,6 +164896,272 @@ get_province_2538_2 = {
 						badboy = 0.16
 					}
 					2538 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3265_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3265
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3265_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3265
+			}
+		}
+		3265 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3265 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3265 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3265 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3265
+			duration = -1
+		}
+		3265 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3265 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3265_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3265
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3265_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3265
+			}
+		}
+		3265 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3265 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3265 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3265 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3265
+			duration = -1
+		}
+		3265 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3265 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3265_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3265
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3265_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3265
+			}
+		}
+		3265 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3265 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3265 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3265 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3265
+			duration = -1
+		}
+		3265 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3265 = {
 						state_scope = {
 							OR = {
 								AND = {
@@ -255891,272 +257487,6 @@ get_province_1094_2 = {
 		}
 	}
 }
-get_province_1095_0 = {
-	potential = {
-		war = yes
-		NOT = {
-			owns = 1095
-		}
-		AND = {
-			NOT = {
-				has_country_modifier = wants_province_1095_back
-			}
-			NOT = {
-				has_country_modifier = wants_province_1095
-			}
-		}
-		1095 = {
-			NOT = {
-				total_pops = 400000
-			}
-			owner = {
-				war_with = THIS
-			}
-		}
-		OR = {
-			1095 = {
-				any_neighbor_province = {
-					owned_by = THIS
-				}
-			}
-			AND = {
-				num_of_ports = 1
-				1095 = {
-					port = yes
-				}
-			}
-		}
-	}
-	allow = {
-		1095 = {
-			controller = {
-				tag = THIS
-			}
-		}
-	}
-	effect = {
-		badboy = 4
-		add_country_modifier = {
-			name = wants_province_1095
-			duration = -1
-		}
-		1095 = {
-			add_province_modifier = {
-				name = wanted_by_someone
-				duration = -1
-			}
-		}
-	}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = {
-				AND = {
-					NOT = {
-						badboy = 0.64
-					}
-					1095 = {
-						state_scope = {
-							OR = {
-								AND = {
-									is_colonial = yes
-									total_pops = 2000000
-								}
-								AND = {
-									is_colonial = no
-									total_pops = 2200000
-								}
-							}
-							NOT = {
-								any_owned_province = {
-									is_core = THIS
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-get_province_1095_1 = {
-	potential = {
-		war = yes
-		NOT = {
-			owns = 1095
-		}
-		AND = {
-			NOT = {
-				has_country_modifier = wants_province_1095_back
-			}
-			NOT = {
-				has_country_modifier = wants_province_1095
-			}
-		}
-		1095 = {
-			total_pops = 400000
-			NOT = {
-				total_pops = 800000
-			}
-			owner = {
-				war_with = THIS
-			}
-		}
-		OR = {
-			1095 = {
-				any_neighbor_province = {
-					owned_by = THIS
-				}
-			}
-			AND = {
-				num_of_ports = 1
-				1095 = {
-					port = yes
-				}
-			}
-		}
-	}
-	allow = {
-		1095 = {
-			controller = {
-				tag = THIS
-			}
-		}
-	}
-	effect = {
-		badboy = 8
-		add_country_modifier = {
-			name = wants_province_1095
-			duration = -1
-		}
-		1095 = {
-			add_province_modifier = {
-				name = wanted_by_someone
-				duration = -1
-			}
-		}
-	}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = {
-				AND = {
-					NOT = {
-						badboy = 0.48
-					}
-					1095 = {
-						state_scope = {
-							OR = {
-								AND = {
-									is_colonial = yes
-									total_pops = 2000000
-								}
-								AND = {
-									is_colonial = no
-									total_pops = 2200000
-								}
-							}
-							NOT = {
-								any_owned_province = {
-									is_core = THIS
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-get_province_1095_2 = {
-	potential = {
-		war = yes
-		NOT = {
-			owns = 1095
-		}
-		AND = {
-			NOT = {
-				has_country_modifier = wants_province_1095_back
-			}
-			NOT = {
-				has_country_modifier = wants_province_1095
-			}
-		}
-		1095 = {
-			total_pops = 800000
-			owner = {
-				war_with = THIS
-			}
-		}
-		OR = {
-			1095 = {
-				any_neighbor_province = {
-					owned_by = THIS
-				}
-			}
-			AND = {
-				num_of_ports = 1
-				1095 = {
-					port = yes
-				}
-			}
-		}
-	}
-	allow = {
-		1095 = {
-			controller = {
-				tag = THIS
-			}
-		}
-	}
-	effect = {
-		badboy = 16
-		add_country_modifier = {
-			name = wants_province_1095
-			duration = -1
-		}
-		1095 = {
-			add_province_modifier = {
-				name = wanted_by_someone
-				duration = -1
-			}
-		}
-	}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = {
-				AND = {
-					NOT = {
-						badboy = 0.16
-					}
-					1095 = {
-						state_scope = {
-							OR = {
-								AND = {
-									is_colonial = yes
-									total_pops = 2000000
-								}
-								AND = {
-									is_colonial = no
-									total_pops = 2200000
-								}
-							}
-							NOT = {
-								any_owned_province = {
-									is_core = THIS
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
 get_province_1108_0 = {
 	potential = {
 		war = yes
@@ -286990,6 +288320,1336 @@ get_province_2586_2 = {
 						badboy = 0.16
 					}
 					2586 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3272_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3272
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3272_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3272
+			}
+		}
+		3272 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3272 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3272 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3272 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3272
+			duration = -1
+		}
+		3272 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3272 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3272_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3272
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3272_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3272
+			}
+		}
+		3272 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3272 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3272 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3272 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3272
+			duration = -1
+		}
+		3272 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3272 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3272_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3272
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3272_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3272
+			}
+		}
+		3272 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3272 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3272 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3272 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3272
+			duration = -1
+		}
+		3272 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3272 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3273_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3273
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3273_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3273
+			}
+		}
+		3273 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3273 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3273 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3273 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3273
+			duration = -1
+		}
+		3273 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3273 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3273_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3273
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3273_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3273
+			}
+		}
+		3273 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3273 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3273 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3273 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3273
+			duration = -1
+		}
+		3273 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3273 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3273_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3273
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3273_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3273
+			}
+		}
+		3273 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3273 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3273 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3273 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3273
+			duration = -1
+		}
+		3273 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3273 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3274_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3274
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3274_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3274
+			}
+		}
+		3274 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3274 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3274 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3274 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3274
+			duration = -1
+		}
+		3274 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3274 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3274_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3274
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3274_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3274
+			}
+		}
+		3274 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3274 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3274 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3274 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3274
+			duration = -1
+		}
+		3274 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3274 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3274_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3274
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3274_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3274
+			}
+		}
+		3274 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3274 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3274 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3274 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3274
+			duration = -1
+		}
+		3274 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3274 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3275_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3275
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3275_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3275
+			}
+		}
+		3275 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3275 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3275 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3275 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3275
+			duration = -1
+		}
+		3275 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3275 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3275_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3275
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3275_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3275
+			}
+		}
+		3275 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3275 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3275 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3275 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3275
+			duration = -1
+		}
+		3275 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3275 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3275_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3275
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3275_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3275
+			}
+		}
+		3275 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3275 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3275 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3275 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3275
+			duration = -1
+		}
+		3275 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3275 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3276_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3276
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3276_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3276
+			}
+		}
+		3276 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3276 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3276 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3276 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3276
+			duration = -1
+		}
+		3276 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3276 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3276_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3276
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3276_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3276
+			}
+		}
+		3276 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3276 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3276 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3276 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3276
+			duration = -1
+		}
+		3276 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3276 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3276_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3276
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3276_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3276
+			}
+		}
+		3276 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3276 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3276 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3276 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3276
+			duration = -1
+		}
+		3276 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3276 = {
 						state_scope = {
 							OR = {
 								AND = {
@@ -412033,6 +414693,272 @@ get_province_2566_2 = {
 		}
 	}
 }
+get_province_1397_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 1397
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_1397_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_1397
+			}
+		}
+		1397 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			1397 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				1397 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		1397 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_1397
+			duration = -1
+		}
+		1397 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					1397 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_1397_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 1397
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_1397_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_1397
+			}
+		}
+		1397 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			1397 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				1397 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		1397 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_1397
+			duration = -1
+		}
+		1397 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					1397 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_1397_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 1397
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_1397_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_1397
+			}
+		}
+		1397 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			1397 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				1397 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		1397 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_1397
+			duration = -1
+		}
+		1397 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					1397 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 get_province_1398_0 = {
 	potential = {
 		war = yes
@@ -432226,6 +435152,272 @@ get_province_2567_2 = {
 						badboy = 0.16
 					}
 					2567 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3263_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3263
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3263_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3263
+			}
+		}
+		3263 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3263 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3263 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3263 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3263
+			duration = -1
+		}
+		3263 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3263 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3263_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3263
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3263_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3263
+			}
+		}
+		3263 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3263 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3263 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3263 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3263
+			duration = -1
+		}
+		3263 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3263 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3263_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3263
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3263_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3263
+			}
+		}
+		3263 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3263 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3263 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3263 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3263
+			duration = -1
+		}
+		3263 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3263 = {
 						state_scope = {
 							OR = {
 								AND = {
@@ -597967,6 +601159,272 @@ get_province_1093_2 = {
 		}
 	}
 }
+get_province_1095_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 1095
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_1095_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_1095
+			}
+		}
+		1095 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			1095 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				1095 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		1095 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_1095
+			duration = -1
+		}
+		1095 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					1095 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_1095_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 1095
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_1095_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_1095
+			}
+		}
+		1095 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			1095 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				1095 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		1095 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_1095
+			duration = -1
+		}
+		1095 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					1095 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_1095_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 1095
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_1095_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_1095
+			}
+		}
+		1095 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			1095 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				1095 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		1095 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_1095
+			duration = -1
+		}
+		1095 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					1095 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 get_province_1098_0 = {
 	potential = {
 		war = yes
@@ -625099,6 +628557,3730 @@ get_province_2702_2 = {
 		}
 	}
 }
+get_province_3249_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3249
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3249_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3249
+			}
+		}
+		3249 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3249 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3249 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3249 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3249
+			duration = -1
+		}
+		3249 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3249 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3249_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3249
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3249_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3249
+			}
+		}
+		3249 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3249 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3249 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3249 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3249
+			duration = -1
+		}
+		3249 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3249 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3249_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3249
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3249_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3249
+			}
+		}
+		3249 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3249 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3249 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3249 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3249
+			duration = -1
+		}
+		3249 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3249 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3250_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3250
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3250_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3250
+			}
+		}
+		3250 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3250 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3250 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3250 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3250
+			duration = -1
+		}
+		3250 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3250 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3250_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3250
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3250_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3250
+			}
+		}
+		3250 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3250 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3250 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3250 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3250
+			duration = -1
+		}
+		3250 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3250 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3250_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3250
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3250_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3250
+			}
+		}
+		3250 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3250 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3250 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3250 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3250
+			duration = -1
+		}
+		3250 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3250 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3251_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3251
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3251_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3251
+			}
+		}
+		3251 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3251 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3251 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3251 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3251
+			duration = -1
+		}
+		3251 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3251 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3251_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3251
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3251_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3251
+			}
+		}
+		3251 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3251 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3251 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3251 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3251
+			duration = -1
+		}
+		3251 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3251 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3251_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3251
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3251_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3251
+			}
+		}
+		3251 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3251 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3251 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3251 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3251
+			duration = -1
+		}
+		3251 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3251 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3252_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3252
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3252_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3252
+			}
+		}
+		3252 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3252 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3252 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3252 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3252
+			duration = -1
+		}
+		3252 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3252 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3252_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3252
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3252_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3252
+			}
+		}
+		3252 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3252 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3252 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3252 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3252
+			duration = -1
+		}
+		3252 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3252 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3252_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3252
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3252_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3252
+			}
+		}
+		3252 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3252 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3252 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3252 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3252
+			duration = -1
+		}
+		3252 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3252 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3253_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3253
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3253_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3253
+			}
+		}
+		3253 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3253 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3253 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3253 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3253
+			duration = -1
+		}
+		3253 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3253 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3253_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3253
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3253_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3253
+			}
+		}
+		3253 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3253 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3253 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3253 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3253
+			duration = -1
+		}
+		3253 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3253 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3253_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3253
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3253_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3253
+			}
+		}
+		3253 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3253 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3253 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3253 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3253
+			duration = -1
+		}
+		3253 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3253 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3254_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3254
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3254_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3254
+			}
+		}
+		3254 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3254 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3254 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3254 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3254
+			duration = -1
+		}
+		3254 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3254 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3254_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3254
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3254_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3254
+			}
+		}
+		3254 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3254 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3254 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3254 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3254
+			duration = -1
+		}
+		3254 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3254 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3254_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3254
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3254_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3254
+			}
+		}
+		3254 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3254 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3254 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3254 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3254
+			duration = -1
+		}
+		3254 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3254 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3255_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3255
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3255_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3255
+			}
+		}
+		3255 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3255 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3255 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3255 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3255
+			duration = -1
+		}
+		3255 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3255 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3255_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3255
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3255_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3255
+			}
+		}
+		3255 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3255 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3255 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3255 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3255
+			duration = -1
+		}
+		3255 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3255 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3255_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3255
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3255_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3255
+			}
+		}
+		3255 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3255 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3255 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3255 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3255
+			duration = -1
+		}
+		3255 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3255 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3256_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3256
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3256_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3256
+			}
+		}
+		3256 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3256 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3256 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3256 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3256
+			duration = -1
+		}
+		3256 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3256 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3256_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3256
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3256_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3256
+			}
+		}
+		3256 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3256 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3256 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3256 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3256
+			duration = -1
+		}
+		3256 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3256 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3256_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3256
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3256_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3256
+			}
+		}
+		3256 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3256 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3256 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3256 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3256
+			duration = -1
+		}
+		3256 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3256 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3257_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3257
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3257_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3257
+			}
+		}
+		3257 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3257 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3257 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3257 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3257
+			duration = -1
+		}
+		3257 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3257 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3257_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3257
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3257_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3257
+			}
+		}
+		3257 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3257 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3257 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3257 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3257
+			duration = -1
+		}
+		3257 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3257 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3257_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3257
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3257_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3257
+			}
+		}
+		3257 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3257 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3257 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3257 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3257
+			duration = -1
+		}
+		3257 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3257 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3258_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3258
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3258_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3258
+			}
+		}
+		3258 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3258 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3258 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3258 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3258
+			duration = -1
+		}
+		3258 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3258 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3258_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3258
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3258_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3258
+			}
+		}
+		3258 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3258 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3258 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3258 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3258
+			duration = -1
+		}
+		3258 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3258 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3258_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3258
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3258_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3258
+			}
+		}
+		3258 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3258 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3258 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3258 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3258
+			duration = -1
+		}
+		3258 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3258 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3259_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3259
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3259_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3259
+			}
+		}
+		3259 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3259 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3259 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3259 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3259
+			duration = -1
+		}
+		3259 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3259 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3259_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3259
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3259_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3259
+			}
+		}
+		3259 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3259 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3259 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3259 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3259
+			duration = -1
+		}
+		3259 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3259 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3259_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3259
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3259_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3259
+			}
+		}
+		3259 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3259 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3259 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3259 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3259
+			duration = -1
+		}
+		3259 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3259 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3260_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3260
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3260_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3260
+			}
+		}
+		3260 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3260 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3260 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3260 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3260
+			duration = -1
+		}
+		3260 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3260 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3260_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3260
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3260_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3260
+			}
+		}
+		3260 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3260 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3260 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3260 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3260
+			duration = -1
+		}
+		3260 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3260 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3260_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3260
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3260_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3260
+			}
+		}
+		3260 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3260 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3260 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3260 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3260
+			duration = -1
+		}
+		3260 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3260 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3261_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3261
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3261_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3261
+			}
+		}
+		3261 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3261 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3261 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3261 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3261
+			duration = -1
+		}
+		3261 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3261 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3261_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3261
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3261_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3261
+			}
+		}
+		3261 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3261 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3261 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3261 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3261
+			duration = -1
+		}
+		3261 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3261 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3261_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3261
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3261_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3261
+			}
+		}
+		3261 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3261 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3261 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3261 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3261
+			duration = -1
+		}
+		3261 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3261 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3262_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3262
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3262_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3262
+			}
+		}
+		3262 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3262 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3262 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3262 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3262
+			duration = -1
+		}
+		3262 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3262 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3262_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3262
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3262_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3262
+			}
+		}
+		3262 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3262 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3262 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3262 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3262
+			duration = -1
+		}
+		3262 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3262 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3262_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3262
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3262_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3262
+			}
+		}
+		3262 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3262 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3262 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3262 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3262
+			duration = -1
+		}
+		3262 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3262 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 get_province_348_0 = {
 	potential = {
 		war = yes
@@ -649814,6 +656996,272 @@ get_province_999_2 = {
 						badboy = 0.16
 					}
 					999 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3264_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3264
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3264_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3264
+			}
+		}
+		3264 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3264 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3264 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3264 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3264
+			duration = -1
+		}
+		3264 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3264 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3264_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3264
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3264_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3264
+			}
+		}
+		3264 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3264 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3264 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3264 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3264
+			duration = -1
+		}
+		3264 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3264 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3264_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3264
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3264_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3264
+			}
+		}
+		3264 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3264 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3264 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3264 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3264
+			duration = -1
+		}
+		3264 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3264 = {
 						state_scope = {
 							OR = {
 								AND = {
@@ -715516,6 +722964,804 @@ get_province_3_2 = {
 						badboy = 0.16
 					}
 					3 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3277_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3277
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3277_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3277
+			}
+		}
+		3277 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3277 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3277 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3277 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3277
+			duration = -1
+		}
+		3277 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3277 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3277_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3277
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3277_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3277
+			}
+		}
+		3277 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3277 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3277 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3277 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3277
+			duration = -1
+		}
+		3277 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3277 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3277_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3277
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3277_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3277
+			}
+		}
+		3277 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3277 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3277 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3277 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3277
+			duration = -1
+		}
+		3277 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3277 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3278_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3278
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3278_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3278
+			}
+		}
+		3278 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3278 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3278 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3278 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3278
+			duration = -1
+		}
+		3278 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3278 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3278_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3278
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3278_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3278
+			}
+		}
+		3278 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3278 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3278 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3278 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3278
+			duration = -1
+		}
+		3278 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3278 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3278_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3278
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3278_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3278
+			}
+		}
+		3278 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3278 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3278 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3278 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3278
+			duration = -1
+		}
+		3278 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3278 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3279_0 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3279
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3279_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3279
+			}
+		}
+		3279 = {
+			NOT = {
+				total_pops = 400000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3279 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3279 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3279 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 4
+		add_country_modifier = {
+			name = wants_province_3279
+			duration = -1
+		}
+		3279 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.64
+					}
+					3279 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3279_1 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3279
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3279_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3279
+			}
+		}
+		3279 = {
+			total_pops = 400000
+			NOT = {
+				total_pops = 800000
+			}
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3279 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3279 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3279 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 8
+		add_country_modifier = {
+			name = wants_province_3279
+			duration = -1
+		}
+		3279 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.48
+					}
+					3279 = {
+						state_scope = {
+							OR = {
+								AND = {
+									is_colonial = yes
+									total_pops = 2000000
+								}
+								AND = {
+									is_colonial = no
+									total_pops = 2200000
+								}
+							}
+							NOT = {
+								any_owned_province = {
+									is_core = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+get_province_3279_2 = {
+	potential = {
+		war = yes
+		NOT = {
+			owns = 3279
+		}
+		AND = {
+			NOT = {
+				has_country_modifier = wants_province_3279_back
+			}
+			NOT = {
+				has_country_modifier = wants_province_3279
+			}
+		}
+		3279 = {
+			total_pops = 800000
+			owner = {
+				war_with = THIS
+			}
+		}
+		OR = {
+			3279 = {
+				any_neighbor_province = {
+					owned_by = THIS
+				}
+			}
+			AND = {
+				num_of_ports = 1
+				3279 = {
+					port = yes
+				}
+			}
+		}
+	}
+	allow = {
+		3279 = {
+			controller = {
+				tag = THIS
+			}
+		}
+	}
+	effect = {
+		badboy = 16
+		add_country_modifier = {
+			name = wants_province_3279
+			duration = -1
+		}
+		3279 = {
+			add_province_modifier = {
+				name = wanted_by_someone
+				duration = -1
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					NOT = {
+						badboy = 0.16
+					}
+					3279 = {
 						state_scope = {
 							OR = {
 								AND = {
