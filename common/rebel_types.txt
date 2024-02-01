@@ -892,6 +892,10 @@ nationalist_rebels = {
 		
 		modifier = {
 			factor = 0
+			location = { is_capital = yes }
+		}
+		modifier = {
+			factor = 0
 			country = { civilized = no }
 		}
 		modifier = {
