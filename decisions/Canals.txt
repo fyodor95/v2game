@@ -22,9 +22,6 @@ political_decisions = {
 			369 = { set_province_flag = kiel_canal }
 			prestige = 50
 			money = -1000000
-			369 = { 
-				trade_goods = precious_metal
-			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -64,9 +61,6 @@ political_decisions = {
 			prestige = 100
 			set_global_flag = suez_canal_built
 			money = -1000000
-			1755 = { 
-				trade_goods = precious_metal
-			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -104,9 +98,6 @@ political_decisions = {
 			1723 = { set_province_flag = panama_canal }
 			prestige = 100
 			money = -1000000
-			1723 = { 
-				trade_goods = precious_metal
-			}
 		}
 		ai_will_do = {
 			factor = 1
