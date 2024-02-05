@@ -1,154 +1,69 @@
 province_event = {
-
-	id = 1253
-
-	trigger = {
-		OR = {
-			region = RUS_1074
-			region = RUS_2618
-			region = RUS_1072
-			region = RUS_2668
-			province_id = 85
-			province_id = 86
-			province_id = 1078
-			province_id = 1079
-			province_id = 1081
-			province_id = 2697
-			province_id = 1002
-			province_id = 1467
-			province_id = 2676
-			province_id = 2695
-			province_id = 2650
-			province_id = 1077
-			province_id = 2587
-			province_id = 988
-			province_id = 2658
-			province_id = 1089
-			province_id = 1643
-			province_id = 2661
-			province_id = 2666
-			province_id = 2590
-			province_id = 2634
-			province_id = 1080
-			province_id = 2687
-			province_id = 2689
-			province_id = 1465
-			province_id = 1183
-			province_id = 1				# Sitka
-			province_id = 2				# Yakutat
-			province_id = 766			# Sassari
-			province_id = 769			# Postojna
-			province_id = 773			# Karlovac
-			province_id = 1387			# Kuala Lumpur
-			province_id = 1390			# Kuantan
-			province_id = 1422			# Muraleve
-			province_id = 1440			# Sumbawa
-			province_id = 1564			# Caozhou
-			province_id = 1884			# Freetown
-			province_id = 2501			# Kimberley
-			province_id = 2153			# Durango
-			province_id = 2157			# Culiacan
-			province_id = 2179			# Acapulco
-			province_id = 2295			# Lima
-			province_id = 2323			# La Serena
-			province_id = 2500			# Kalgoorlie
-			province_id = 2503			# Wiluna
-			province_id = 2575			# Ipoh
-			province_id = 2601			# Sandy Desert
-			province_id = 2605			# Gibson's Desert
-			province_id = 1659			# Kobe
-			province_id = 2142			# Chihuahua
-			province_id = 2255			# Barranquilla
-			province_id = 88			# Mariposa
-			province_id = 695			# Konigsberg
-			province_id = 1084			# Utchan
-			province_id = 93			# Pocatello
-			province_id = 2106
-			province_id = 6			# Whitehorse
-			province_id = 7			# Dawson
-			province_id = 2599		# Fairbanks
-			province_id = 2630		# Cordova
-			province_id = 2084			# Angra Pequeсa
-			province_id = 2091			# Mossel Bay
-			province_id = 2092			# Beaufort
-			province_id = 1697			# Figuig
-			province_id = 2108			# Mosega
-			province_id = 2107			# Klerksdorp
-			province_id = 2068			# Salisbury
-			province_id = 2097			# Graaf Reinet
-			province_id = 1849			# Massawa
-		}
-		OR = {
-			trade_goods = grain
-			trade_goods = wool
-			trade_goods = fruit
-			trade_goods = timber
-			trade_goods = fish
-			trade_goods = cattle
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 12000
-		modifier = {
-			factor = 0.9
-			any_neighbor_province = {
-				trade_goods = precious_metal
-			}
-		}
-		modifier = {
-			factor = 0.9
-			any_neighbor_province = {
-				has_province_modifier = gold_rush
-			}
-		}
-	}
-
-	title = "EVTNAME1100"
-	desc = "EVTDESC1100"
-
-	option = {
-		name = "EVTOPTA1100"
-		trade_goods = precious_metal
-		add_province_modifier = {
-			name = gold_rush
-			duration = 730
-		}
-		owner = {
-			remove_country_modifier = country_gold_rush
-			add_country_modifier = {
-				name = country_gold_rush
-				duration = 730
-			}
-		}
-	}
-}
-
-province_event = {
-
-	id = 1254
-
+	id = 899
+	title = "EVTNAME899"
+	desc = "EVTDESC899"
 	trigger = {
 		trade_goods = precious_metal
 		NOT = {
 			OR = {
-				has_province_modifier = gold_rush
-				province_id = 369
-				province_id = 1755
-				province_id = 1723
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
 			}
 		}
 	}
-
 	mean_time_to_happen = {
-		months = 1600
+		months = 1
 	}
-
-	title = "EVTNAME1254"
-	desc = "EVTDESC1254"
-
 	option = {
-		name = "EVTOPTA1254"
+		name = "EVTOPTA899"
 		trade_goods = grain
 		any_pop = {
 			limit = {
@@ -156,5 +71,5406 @@ province_event = {
 			}
 			pop_type = farmers
 		}
+		remove_province_modifier = gold_rush
+	}
+}
+province_event = {
+	id = 900
+	title = "EVTNAME900"
+	desc = "EVTDESC900"
+	trigger = {
+		has_province_flag = province_gold_00
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA900"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_00
+		clr_global_flag = gold_00
+	}
+}
+province_event = {
+	id = 901
+	title = "EVTNAME901"
+	desc = "EVTDESC901"
+	trigger = {
+		year = 1836
+		NOT = {
+			has_global_flag = gold_00
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA901"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_00
+		set_global_flag = gold_00
+	}
+}
+province_event = {
+	id = 902
+	title = "EVTNAME902"
+	desc = "EVTDESC902"
+	trigger = {
+		has_province_flag = province_gold_01
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA902"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_01
+		clr_global_flag = gold_01
+	}
+}
+province_event = {
+	id = 903
+	title = "EVTNAME903"
+	desc = "EVTDESC903"
+	trigger = {
+		year = 1838
+		NOT = {
+			has_global_flag = gold_01
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA903"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_01
+		set_global_flag = gold_01
+	}
+}
+province_event = {
+	id = 904
+	title = "EVTNAME904"
+	desc = "EVTDESC904"
+	trigger = {
+		has_province_flag = province_gold_02
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA904"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_02
+		clr_global_flag = gold_02
+	}
+}
+province_event = {
+	id = 905
+	title = "EVTNAME905"
+	desc = "EVTDESC905"
+	trigger = {
+		year = 1840
+		NOT = {
+			has_global_flag = gold_02
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA905"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_02
+		set_global_flag = gold_02
+	}
+}
+province_event = {
+	id = 906
+	title = "EVTNAME906"
+	desc = "EVTDESC906"
+	trigger = {
+		has_province_flag = province_gold_03
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA906"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_03
+		clr_global_flag = gold_03
+	}
+}
+province_event = {
+	id = 907
+	title = "EVTNAME907"
+	desc = "EVTDESC907"
+	trigger = {
+		year = 1842
+		NOT = {
+			has_global_flag = gold_03
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA907"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_03
+		set_global_flag = gold_03
+	}
+}
+province_event = {
+	id = 908
+	title = "EVTNAME908"
+	desc = "EVTDESC908"
+	trigger = {
+		has_province_flag = province_gold_04
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA908"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_04
+		clr_global_flag = gold_04
+	}
+}
+province_event = {
+	id = 909
+	title = "EVTNAME909"
+	desc = "EVTDESC909"
+	trigger = {
+		year = 1844
+		NOT = {
+			has_global_flag = gold_04
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA909"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_04
+		set_global_flag = gold_04
+	}
+}
+province_event = {
+	id = 910
+	title = "EVTNAME910"
+	desc = "EVTDESC910"
+	trigger = {
+		has_province_flag = province_gold_05
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA910"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_05
+		clr_global_flag = gold_05
+	}
+}
+province_event = {
+	id = 911
+	title = "EVTNAME911"
+	desc = "EVTDESC911"
+	trigger = {
+		year = 1846
+		NOT = {
+			has_global_flag = gold_05
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA911"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_05
+		set_global_flag = gold_05
+	}
+}
+province_event = {
+	id = 912
+	title = "EVTNAME912"
+	desc = "EVTDESC912"
+	trigger = {
+		has_province_flag = province_gold_06
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA912"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_06
+		clr_global_flag = gold_06
+	}
+}
+province_event = {
+	id = 913
+	title = "EVTNAME913"
+	desc = "EVTDESC913"
+	trigger = {
+		year = 1848
+		NOT = {
+			has_global_flag = gold_06
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA913"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_06
+		set_global_flag = gold_06
+	}
+}
+province_event = {
+	id = 914
+	title = "EVTNAME914"
+	desc = "EVTDESC914"
+	trigger = {
+		has_province_flag = province_gold_07
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA914"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_07
+		clr_global_flag = gold_07
+	}
+}
+province_event = {
+	id = 915
+	title = "EVTNAME915"
+	desc = "EVTDESC915"
+	trigger = {
+		year = 1850
+		NOT = {
+			has_global_flag = gold_07
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA915"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_07
+		set_global_flag = gold_07
+	}
+}
+province_event = {
+	id = 916
+	title = "EVTNAME916"
+	desc = "EVTDESC916"
+	trigger = {
+		has_province_flag = province_gold_08
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA916"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_08
+		clr_global_flag = gold_08
+	}
+}
+province_event = {
+	id = 917
+	title = "EVTNAME917"
+	desc = "EVTDESC917"
+	trigger = {
+		year = 1852
+		NOT = {
+			has_global_flag = gold_08
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA917"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_08
+		set_global_flag = gold_08
+	}
+}
+province_event = {
+	id = 918
+	title = "EVTNAME918"
+	desc = "EVTDESC918"
+	trigger = {
+		has_province_flag = province_gold_09
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA918"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_09
+		clr_global_flag = gold_09
+	}
+}
+province_event = {
+	id = 919
+	title = "EVTNAME919"
+	desc = "EVTDESC919"
+	trigger = {
+		year = 1854
+		NOT = {
+			has_global_flag = gold_09
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA919"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_09
+		set_global_flag = gold_09
+	}
+}
+province_event = {
+	id = 920
+	title = "EVTNAME920"
+	desc = "EVTDESC920"
+	trigger = {
+		has_province_flag = province_gold_10
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA920"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_10
+		clr_global_flag = gold_10
+	}
+}
+province_event = {
+	id = 921
+	title = "EVTNAME921"
+	desc = "EVTDESC921"
+	trigger = {
+		year = 1856
+		NOT = {
+			has_global_flag = gold_10
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA921"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_10
+		set_global_flag = gold_10
+	}
+}
+province_event = {
+	id = 922
+	title = "EVTNAME922"
+	desc = "EVTDESC922"
+	trigger = {
+		has_province_flag = province_gold_11
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA922"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_11
+		clr_global_flag = gold_11
+	}
+}
+province_event = {
+	id = 923
+	title = "EVTNAME923"
+	desc = "EVTDESC923"
+	trigger = {
+		year = 1858
+		NOT = {
+			has_global_flag = gold_11
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA923"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_11
+		set_global_flag = gold_11
+	}
+}
+province_event = {
+	id = 924
+	title = "EVTNAME924"
+	desc = "EVTDESC924"
+	trigger = {
+		has_province_flag = province_gold_12
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA924"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_12
+		clr_global_flag = gold_12
+	}
+}
+province_event = {
+	id = 925
+	title = "EVTNAME925"
+	desc = "EVTDESC925"
+	trigger = {
+		year = 1860
+		NOT = {
+			has_global_flag = gold_12
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA925"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_12
+		set_global_flag = gold_12
+	}
+}
+province_event = {
+	id = 926
+	title = "EVTNAME926"
+	desc = "EVTDESC926"
+	trigger = {
+		has_province_flag = province_gold_13
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA926"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_13
+		clr_global_flag = gold_13
+	}
+}
+province_event = {
+	id = 927
+	title = "EVTNAME927"
+	desc = "EVTDESC927"
+	trigger = {
+		year = 1862
+		NOT = {
+			has_global_flag = gold_13
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA927"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_13
+		set_global_flag = gold_13
+	}
+}
+province_event = {
+	id = 928
+	title = "EVTNAME928"
+	desc = "EVTDESC928"
+	trigger = {
+		has_province_flag = province_gold_14
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA928"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_14
+		clr_global_flag = gold_14
+	}
+}
+province_event = {
+	id = 929
+	title = "EVTNAME929"
+	desc = "EVTDESC929"
+	trigger = {
+		year = 1864
+		NOT = {
+			has_global_flag = gold_14
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA929"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_14
+		set_global_flag = gold_14
+	}
+}
+province_event = {
+	id = 930
+	title = "EVTNAME930"
+	desc = "EVTDESC930"
+	trigger = {
+		has_province_flag = province_gold_15
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA930"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_15
+		clr_global_flag = gold_15
+	}
+}
+province_event = {
+	id = 931
+	title = "EVTNAME931"
+	desc = "EVTDESC931"
+	trigger = {
+		year = 1866
+		NOT = {
+			has_global_flag = gold_15
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA931"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_15
+		set_global_flag = gold_15
+	}
+}
+province_event = {
+	id = 932
+	title = "EVTNAME932"
+	desc = "EVTDESC932"
+	trigger = {
+		has_province_flag = province_gold_16
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA932"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_16
+		clr_global_flag = gold_16
+	}
+}
+province_event = {
+	id = 933
+	title = "EVTNAME933"
+	desc = "EVTDESC933"
+	trigger = {
+		year = 1868
+		NOT = {
+			has_global_flag = gold_16
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA933"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_16
+		set_global_flag = gold_16
+	}
+}
+province_event = {
+	id = 934
+	title = "EVTNAME934"
+	desc = "EVTDESC934"
+	trigger = {
+		has_province_flag = province_gold_17
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA934"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_17
+		clr_global_flag = gold_17
+	}
+}
+province_event = {
+	id = 935
+	title = "EVTNAME935"
+	desc = "EVTDESC935"
+	trigger = {
+		year = 1870
+		NOT = {
+			has_global_flag = gold_17
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA935"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_17
+		set_global_flag = gold_17
+	}
+}
+province_event = {
+	id = 936
+	title = "EVTNAME936"
+	desc = "EVTDESC936"
+	trigger = {
+		has_province_flag = province_gold_18
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA936"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_18
+		clr_global_flag = gold_18
+	}
+}
+province_event = {
+	id = 937
+	title = "EVTNAME937"
+	desc = "EVTDESC937"
+	trigger = {
+		year = 1872
+		NOT = {
+			has_global_flag = gold_18
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA937"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_18
+		set_global_flag = gold_18
+	}
+}
+province_event = {
+	id = 938
+	title = "EVTNAME938"
+	desc = "EVTDESC938"
+	trigger = {
+		has_province_flag = province_gold_19
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA938"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_19
+		clr_global_flag = gold_19
+	}
+}
+province_event = {
+	id = 939
+	title = "EVTNAME939"
+	desc = "EVTDESC939"
+	trigger = {
+		year = 1874
+		NOT = {
+			has_global_flag = gold_19
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA939"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_19
+		set_global_flag = gold_19
+	}
+}
+province_event = {
+	id = 940
+	title = "EVTNAME940"
+	desc = "EVTDESC940"
+	trigger = {
+		has_province_flag = province_gold_20
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA940"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_20
+		clr_global_flag = gold_20
+	}
+}
+province_event = {
+	id = 941
+	title = "EVTNAME941"
+	desc = "EVTDESC941"
+	trigger = {
+		year = 1876
+		NOT = {
+			has_global_flag = gold_20
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA941"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_20
+		set_global_flag = gold_20
+	}
+}
+province_event = {
+	id = 942
+	title = "EVTNAME942"
+	desc = "EVTDESC942"
+	trigger = {
+		has_province_flag = province_gold_21
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA942"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_21
+		clr_global_flag = gold_21
+	}
+}
+province_event = {
+	id = 943
+	title = "EVTNAME943"
+	desc = "EVTDESC943"
+	trigger = {
+		year = 1878
+		NOT = {
+			has_global_flag = gold_21
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA943"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_21
+		set_global_flag = gold_21
+	}
+}
+province_event = {
+	id = 944
+	title = "EVTNAME944"
+	desc = "EVTDESC944"
+	trigger = {
+		has_province_flag = province_gold_22
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA944"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_22
+		clr_global_flag = gold_22
+	}
+}
+province_event = {
+	id = 945
+	title = "EVTNAME945"
+	desc = "EVTDESC945"
+	trigger = {
+		year = 1880
+		NOT = {
+			has_global_flag = gold_22
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA945"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_22
+		set_global_flag = gold_22
+	}
+}
+province_event = {
+	id = 946
+	title = "EVTNAME946"
+	desc = "EVTDESC946"
+	trigger = {
+		has_province_flag = province_gold_23
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA946"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_23
+		clr_global_flag = gold_23
+	}
+}
+province_event = {
+	id = 947
+	title = "EVTNAME947"
+	desc = "EVTDESC947"
+	trigger = {
+		year = 1882
+		NOT = {
+			has_global_flag = gold_23
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA947"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_23
+		set_global_flag = gold_23
+	}
+}
+province_event = {
+	id = 948
+	title = "EVTNAME948"
+	desc = "EVTDESC948"
+	trigger = {
+		has_province_flag = province_gold_24
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA948"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_24
+		clr_global_flag = gold_24
+	}
+}
+province_event = {
+	id = 949
+	title = "EVTNAME949"
+	desc = "EVTDESC949"
+	trigger = {
+		year = 1884
+		NOT = {
+			has_global_flag = gold_24
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA949"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_24
+		set_global_flag = gold_24
+	}
+}
+province_event = {
+	id = 950
+	title = "EVTNAME950"
+	desc = "EVTDESC950"
+	trigger = {
+		has_province_flag = province_gold_25
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA950"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_25
+		clr_global_flag = gold_25
+	}
+}
+province_event = {
+	id = 951
+	title = "EVTNAME951"
+	desc = "EVTDESC951"
+	trigger = {
+		year = 1886
+		NOT = {
+			has_global_flag = gold_25
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA951"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_25
+		set_global_flag = gold_25
+	}
+}
+province_event = {
+	id = 952
+	title = "EVTNAME952"
+	desc = "EVTDESC952"
+	trigger = {
+		has_province_flag = province_gold_26
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA952"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_26
+		clr_global_flag = gold_26
+	}
+}
+province_event = {
+	id = 953
+	title = "EVTNAME953"
+	desc = "EVTDESC953"
+	trigger = {
+		year = 1888
+		NOT = {
+			has_global_flag = gold_26
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA953"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_26
+		set_global_flag = gold_26
+	}
+}
+province_event = {
+	id = 954
+	title = "EVTNAME954"
+	desc = "EVTDESC954"
+	trigger = {
+		has_province_flag = province_gold_27
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA954"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_27
+		clr_global_flag = gold_27
+	}
+}
+province_event = {
+	id = 955
+	title = "EVTNAME955"
+	desc = "EVTDESC955"
+	trigger = {
+		year = 1890
+		NOT = {
+			has_global_flag = gold_27
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA955"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_27
+		set_global_flag = gold_27
+	}
+}
+province_event = {
+	id = 956
+	title = "EVTNAME956"
+	desc = "EVTDESC956"
+	trigger = {
+		has_province_flag = province_gold_28
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA956"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_28
+		clr_global_flag = gold_28
+	}
+}
+province_event = {
+	id = 957
+	title = "EVTNAME957"
+	desc = "EVTDESC957"
+	trigger = {
+		year = 1892
+		NOT = {
+			has_global_flag = gold_28
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA957"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_28
+		set_global_flag = gold_28
+	}
+}
+province_event = {
+	id = 958
+	title = "EVTNAME958"
+	desc = "EVTDESC958"
+	trigger = {
+		has_province_flag = province_gold_29
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA958"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_29
+		clr_global_flag = gold_29
+	}
+}
+province_event = {
+	id = 959
+	title = "EVTNAME959"
+	desc = "EVTDESC959"
+	trigger = {
+		year = 1894
+		NOT = {
+			has_global_flag = gold_29
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA959"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_29
+		set_global_flag = gold_29
+	}
+}
+province_event = {
+	id = 960
+	title = "EVTNAME960"
+	desc = "EVTDESC960"
+	trigger = {
+		has_province_flag = province_gold_30
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA960"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_30
+		clr_global_flag = gold_30
+	}
+}
+province_event = {
+	id = 961
+	title = "EVTNAME961"
+	desc = "EVTDESC961"
+	trigger = {
+		year = 1896
+		NOT = {
+			has_global_flag = gold_30
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA961"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_30
+		set_global_flag = gold_30
+	}
+}
+province_event = {
+	id = 962
+	title = "EVTNAME962"
+	desc = "EVTDESC962"
+	trigger = {
+		has_province_flag = province_gold_31
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA962"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_31
+		clr_global_flag = gold_31
+	}
+}
+province_event = {
+	id = 963
+	title = "EVTNAME963"
+	desc = "EVTDESC963"
+	trigger = {
+		year = 1898
+		NOT = {
+			has_global_flag = gold_31
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA963"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_31
+		set_global_flag = gold_31
+	}
+}
+province_event = {
+	id = 964
+	title = "EVTNAME964"
+	desc = "EVTDESC964"
+	trigger = {
+		has_province_flag = province_gold_32
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA964"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_32
+		clr_global_flag = gold_32
+	}
+}
+province_event = {
+	id = 965
+	title = "EVTNAME965"
+	desc = "EVTDESC965"
+	trigger = {
+		year = 1900
+		NOT = {
+			has_global_flag = gold_32
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA965"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_32
+		set_global_flag = gold_32
+	}
+}
+province_event = {
+	id = 966
+	title = "EVTNAME966"
+	desc = "EVTDESC966"
+	trigger = {
+		has_province_flag = province_gold_33
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA966"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_33
+		clr_global_flag = gold_33
+	}
+}
+province_event = {
+	id = 967
+	title = "EVTNAME967"
+	desc = "EVTDESC967"
+	trigger = {
+		year = 1902
+		NOT = {
+			has_global_flag = gold_33
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA967"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_33
+		set_global_flag = gold_33
+	}
+}
+province_event = {
+	id = 968
+	title = "EVTNAME968"
+	desc = "EVTDESC968"
+	trigger = {
+		has_province_flag = province_gold_34
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA968"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_34
+		clr_global_flag = gold_34
+	}
+}
+province_event = {
+	id = 969
+	title = "EVTNAME969"
+	desc = "EVTDESC969"
+	trigger = {
+		year = 1904
+		NOT = {
+			has_global_flag = gold_34
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA969"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_34
+		set_global_flag = gold_34
+	}
+}
+province_event = {
+	id = 970
+	title = "EVTNAME970"
+	desc = "EVTDESC970"
+	trigger = {
+		has_province_flag = province_gold_35
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA970"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_35
+		clr_global_flag = gold_35
+	}
+}
+province_event = {
+	id = 971
+	title = "EVTNAME971"
+	desc = "EVTDESC971"
+	trigger = {
+		year = 1906
+		NOT = {
+			has_global_flag = gold_35
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA971"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_35
+		set_global_flag = gold_35
+	}
+}
+province_event = {
+	id = 972
+	title = "EVTNAME972"
+	desc = "EVTDESC972"
+	trigger = {
+		has_province_flag = province_gold_36
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA972"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_36
+		clr_global_flag = gold_36
+	}
+}
+province_event = {
+	id = 973
+	title = "EVTNAME973"
+	desc = "EVTDESC973"
+	trigger = {
+		year = 1908
+		NOT = {
+			has_global_flag = gold_36
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA973"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_36
+		set_global_flag = gold_36
+	}
+}
+province_event = {
+	id = 974
+	title = "EVTNAME974"
+	desc = "EVTDESC974"
+	trigger = {
+		has_province_flag = province_gold_37
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA974"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_37
+		clr_global_flag = gold_37
+	}
+}
+province_event = {
+	id = 975
+	title = "EVTNAME975"
+	desc = "EVTDESC975"
+	trigger = {
+		year = 1910
+		NOT = {
+			has_global_flag = gold_37
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA975"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_37
+		set_global_flag = gold_37
+	}
+}
+province_event = {
+	id = 976
+	title = "EVTNAME976"
+	desc = "EVTDESC976"
+	trigger = {
+		has_province_flag = province_gold_38
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA976"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_38
+		clr_global_flag = gold_38
+	}
+}
+province_event = {
+	id = 977
+	title = "EVTNAME977"
+	desc = "EVTDESC977"
+	trigger = {
+		year = 1912
+		NOT = {
+			has_global_flag = gold_38
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA977"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_38
+		set_global_flag = gold_38
+	}
+}
+province_event = {
+	id = 978
+	title = "EVTNAME978"
+	desc = "EVTDESC978"
+	trigger = {
+		has_province_flag = province_gold_39
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA978"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_39
+		clr_global_flag = gold_39
+	}
+}
+province_event = {
+	id = 979
+	title = "EVTNAME979"
+	desc = "EVTDESC979"
+	trigger = {
+		year = 1914
+		NOT = {
+			has_global_flag = gold_39
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA979"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_39
+		set_global_flag = gold_39
+	}
+}
+province_event = {
+	id = 980
+	title = "EVTNAME980"
+	desc = "EVTDESC980"
+	trigger = {
+		has_province_flag = province_gold_40
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA980"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_40
+		clr_global_flag = gold_40
+	}
+}
+province_event = {
+	id = 981
+	title = "EVTNAME981"
+	desc = "EVTDESC981"
+	trigger = {
+		year = 1916
+		NOT = {
+			has_global_flag = gold_40
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA981"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_40
+		set_global_flag = gold_40
+	}
+}
+province_event = {
+	id = 982
+	title = "EVTNAME982"
+	desc = "EVTDESC982"
+	trigger = {
+		has_province_flag = province_gold_41
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA982"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_41
+		clr_global_flag = gold_41
+	}
+}
+province_event = {
+	id = 983
+	title = "EVTNAME983"
+	desc = "EVTDESC983"
+	trigger = {
+		year = 1918
+		NOT = {
+			has_global_flag = gold_41
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA983"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_41
+		set_global_flag = gold_41
+	}
+}
+province_event = {
+	id = 984
+	title = "EVTNAME984"
+	desc = "EVTDESC984"
+	trigger = {
+		has_province_flag = province_gold_42
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA984"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_42
+		clr_global_flag = gold_42
+	}
+}
+province_event = {
+	id = 985
+	title = "EVTNAME985"
+	desc = "EVTDESC985"
+	trigger = {
+		year = 1920
+		NOT = {
+			has_global_flag = gold_42
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA985"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_42
+		set_global_flag = gold_42
+	}
+}
+province_event = {
+	id = 986
+	title = "EVTNAME986"
+	desc = "EVTDESC986"
+	trigger = {
+		has_province_flag = province_gold_43
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA986"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_43
+		clr_global_flag = gold_43
+	}
+}
+province_event = {
+	id = 987
+	title = "EVTNAME987"
+	desc = "EVTDESC987"
+	trigger = {
+		year = 1922
+		NOT = {
+			has_global_flag = gold_43
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA987"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_43
+		set_global_flag = gold_43
+	}
+}
+province_event = {
+	id = 988
+	title = "EVTNAME988"
+	desc = "EVTDESC988"
+	trigger = {
+		has_province_flag = province_gold_44
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA988"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_44
+		clr_global_flag = gold_44
+	}
+}
+province_event = {
+	id = 989
+	title = "EVTNAME989"
+	desc = "EVTDESC989"
+	trigger = {
+		year = 1924
+		NOT = {
+			has_global_flag = gold_44
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA989"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_44
+		set_global_flag = gold_44
+	}
+}
+province_event = {
+	id = 990
+	title = "EVTNAME990"
+	desc = "EVTDESC990"
+	trigger = {
+		has_province_flag = province_gold_45
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA990"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_45
+		clr_global_flag = gold_45
+	}
+}
+province_event = {
+	id = 991
+	title = "EVTNAME991"
+	desc = "EVTDESC991"
+	trigger = {
+		year = 1926
+		NOT = {
+			has_global_flag = gold_45
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA991"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_45
+		set_global_flag = gold_45
+	}
+}
+province_event = {
+	id = 992
+	title = "EVTNAME992"
+	desc = "EVTDESC992"
+	trigger = {
+		has_province_flag = province_gold_46
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA992"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_46
+		clr_global_flag = gold_46
+	}
+}
+province_event = {
+	id = 993
+	title = "EVTNAME993"
+	desc = "EVTDESC993"
+	trigger = {
+		year = 1928
+		NOT = {
+			has_global_flag = gold_46
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA993"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_46
+		set_global_flag = gold_46
+	}
+}
+province_event = {
+	id = 994
+	title = "EVTNAME994"
+	desc = "EVTDESC994"
+	trigger = {
+		has_province_flag = province_gold_47
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA994"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_47
+		clr_global_flag = gold_47
+	}
+}
+province_event = {
+	id = 995
+	title = "EVTNAME995"
+	desc = "EVTDESC995"
+	trigger = {
+		year = 1930
+		NOT = {
+			has_global_flag = gold_47
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA995"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_47
+		set_global_flag = gold_47
+	}
+}
+province_event = {
+	id = 996
+	title = "EVTNAME996"
+	desc = "EVTDESC996"
+	trigger = {
+		has_province_flag = province_gold_48
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA996"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_48
+		clr_global_flag = gold_48
+	}
+}
+province_event = {
+	id = 997
+	title = "EVTNAME997"
+	desc = "EVTDESC997"
+	trigger = {
+		year = 1932
+		NOT = {
+			has_global_flag = gold_48
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA997"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_48
+		set_global_flag = gold_48
+	}
+}
+province_event = {
+	id = 998
+	title = "EVTNAME998"
+	desc = "EVTDESC998"
+	trigger = {
+		has_province_flag = province_gold_49
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.001
+			NOT = {
+				trade_goods = precious_metal
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA998"
+		trade_goods = grain
+		any_pop = {
+			limit = {
+				type = labourers
+			}
+			pop_type = farmers
+		}
+		remove_province_modifier = gold_rush
+		clr_province_flag = province_gold_49
+		clr_global_flag = gold_49
+	}
+}
+province_event = {
+	id = 999
+	title = "EVTNAME999"
+	desc = "EVTDESC999"
+	trigger = {
+		year = 1934
+		NOT = {
+			has_global_flag = gold_49
+		}
+		NOT = {
+			OR = {
+				has_province_flag = province_gold_00
+				has_province_flag = province_gold_01
+				has_province_flag = province_gold_02
+				has_province_flag = province_gold_03
+				has_province_flag = province_gold_04
+				has_province_flag = province_gold_05
+				has_province_flag = province_gold_06
+				has_province_flag = province_gold_07
+				has_province_flag = province_gold_08
+				has_province_flag = province_gold_09
+				has_province_flag = province_gold_10
+				has_province_flag = province_gold_11
+				has_province_flag = province_gold_12
+				has_province_flag = province_gold_13
+				has_province_flag = province_gold_14
+				has_province_flag = province_gold_15
+				has_province_flag = province_gold_16
+				has_province_flag = province_gold_17
+				has_province_flag = province_gold_18
+				has_province_flag = province_gold_19
+				has_province_flag = province_gold_20
+				has_province_flag = province_gold_21
+				has_province_flag = province_gold_22
+				has_province_flag = province_gold_23
+				has_province_flag = province_gold_24
+				has_province_flag = province_gold_25
+				has_province_flag = province_gold_26
+				has_province_flag = province_gold_27
+				has_province_flag = province_gold_28
+				has_province_flag = province_gold_29
+				has_province_flag = province_gold_30
+				has_province_flag = province_gold_31
+				has_province_flag = province_gold_32
+				has_province_flag = province_gold_33
+				has_province_flag = province_gold_34
+				has_province_flag = province_gold_35
+				has_province_flag = province_gold_36
+				has_province_flag = province_gold_37
+				has_province_flag = province_gold_38
+				has_province_flag = province_gold_39
+				has_province_flag = province_gold_40
+				has_province_flag = province_gold_41
+				has_province_flag = province_gold_42
+				has_province_flag = province_gold_43
+				has_province_flag = province_gold_44
+				has_province_flag = province_gold_45
+				has_province_flag = province_gold_46
+				has_province_flag = province_gold_47
+				has_province_flag = province_gold_48
+				has_province_flag = province_gold_49
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2703
+	}
+	option = {
+		name = "EVTOPTA999"
+		trade_goods = precious_metal
+		add_province_modifier = {
+			name = gold_rush
+			duration = 730
+		}
+		set_province_flag = province_gold_49
+		set_global_flag = gold_49
 	}
 }
