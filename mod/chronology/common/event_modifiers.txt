@@ -18011,3 +18011,153 @@ wants_province_3279 = {
 wants_province_3279_back = {
 	icon = 16
 }
+province_gold_00 = {
+	icon = 11
+}
+province_gold_01 = {
+	icon = 11
+}
+province_gold_02 = {
+	icon = 11
+}
+province_gold_03 = {
+	icon = 11
+}
+province_gold_04 = {
+	icon = 11
+}
+province_gold_05 = {
+	icon = 11
+}
+province_gold_06 = {
+	icon = 11
+}
+province_gold_07 = {
+	icon = 11
+}
+province_gold_08 = {
+	icon = 11
+}
+province_gold_09 = {
+	icon = 11
+}
+province_gold_10 = {
+	icon = 11
+}
+province_gold_11 = {
+	icon = 11
+}
+province_gold_12 = {
+	icon = 11
+}
+province_gold_13 = {
+	icon = 11
+}
+province_gold_14 = {
+	icon = 11
+}
+province_gold_15 = {
+	icon = 11
+}
+province_gold_16 = {
+	icon = 11
+}
+province_gold_17 = {
+	icon = 11
+}
+province_gold_18 = {
+	icon = 11
+}
+province_gold_19 = {
+	icon = 11
+}
+province_gold_20 = {
+	icon = 11
+}
+province_gold_21 = {
+	icon = 11
+}
+province_gold_22 = {
+	icon = 11
+}
+province_gold_23 = {
+	icon = 11
+}
+province_gold_24 = {
+	icon = 11
+}
+province_gold_25 = {
+	icon = 11
+}
+province_gold_26 = {
+	icon = 11
+}
+province_gold_27 = {
+	icon = 11
+}
+province_gold_28 = {
+	icon = 11
+}
+province_gold_29 = {
+	icon = 11
+}
+province_gold_30 = {
+	icon = 11
+}
+province_gold_31 = {
+	icon = 11
+}
+province_gold_32 = {
+	icon = 11
+}
+province_gold_33 = {
+	icon = 11
+}
+province_gold_34 = {
+	icon = 11
+}
+province_gold_35 = {
+	icon = 11
+}
+province_gold_36 = {
+	icon = 11
+}
+province_gold_37 = {
+	icon = 11
+}
+province_gold_38 = {
+	icon = 11
+}
+province_gold_39 = {
+	icon = 11
+}
+province_gold_40 = {
+	icon = 11
+}
+province_gold_41 = {
+	icon = 11
+}
+province_gold_42 = {
+	icon = 11
+}
+province_gold_43 = {
+	icon = 11
+}
+province_gold_44 = {
+	icon = 11
+}
+province_gold_45 = {
+	icon = 11
+}
+province_gold_46 = {
+	icon = 11
+}
+province_gold_47 = {
+	icon = 11
+}
+province_gold_48 = {
+	icon = 11
+}
+province_gold_49 = {
+	icon = 11
+}
