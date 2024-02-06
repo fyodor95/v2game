@@ -1,0 +1,117 @@
+province_event = {
+
+	id = 1251
+
+	trigger = {
+		owner = {
+			industrial_score = 100
+		}
+		OR = {
+			province_id = 980
+			province_id = 973
+			province_id = 972
+			province_id = 979
+		}
+		NOT = {
+			trade_goods = coal
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 360
+		
+		modifier = {
+			factor = 0.5
+			owner = {
+				industrial_score = 200
+			}
+		}
+
+		modifier = {
+			factor = 0.5
+			owner = {
+				industrial_score = 400
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			owner = {
+				industrial_score = 1000
+			}
+		}
+		
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				trade_goods = coal
+			}
+		}
+	}
+
+	title = "EVTNAME1251"
+	desc = "EVTDESC1251"
+
+	option = {
+		name = "EVTOPTA1251"
+		trade_goods = coal
+	}
+}
+
+province_event = {
+
+	id = 1252
+
+	trigger = {
+		owner = {
+			industrial_score = 100
+		}
+		OR = {
+			province_id = 974
+			province_id = 971
+		}
+		NOT = {
+			trade_goods = iron
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 360
+		
+		modifier = {
+			factor = 0.5
+			owner = {
+				industrial_score = 200
+			}
+		}
+
+		modifier = {
+			factor = 0.5
+			owner = {
+				industrial_score = 400
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			owner = {
+				industrial_score = 1000
+			}
+		}
+		
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				trade_goods = iron
+			}
+		}
+	}
+
+	title = "EVTNAME1252"
+	desc = "EVTDESC1252"
+
+	option = {
+		name = "EVTOPTA1252"
+		trade_goods = iron
+	}
+}
