@@ -1,188 +1,4 @@
 province_event = {
-	id = 1107
-	trigger = {
-		year = 1880
-		or = {
-			province_id = 1354
-			province_id = 1364
-			province_id = 1367
-			province_id = 1382
-			province_id = 1384
-			province_id = 1385
-			province_id = 1386
-			province_id = 1389
-			province_id = 1402
-			province_id = 1404
-			province_id = 1827
-			province_id = 1829
-			province_id = 1833
-			province_id = 1836
-			province_id = 1837
-			province_id = 1848
-			province_id = 1850
-			province_id = 1890
-			province_id = 1891
-			province_id = 1923
-			province_id = 1321
-			province_id = 1398
-			province_id = 1421
-			province_id = 1985
-			province_id = 1406
-			province_id = 1318
-			province_id = 2057
-			province_id = 1426
-			province_id = 2058
-			province_id = 977
-			province_id = 1978
-			province_id = 1980
-			province_id = 1981
-			province_id = 2624
-		}
-		not = {
-			trade_goods = rubber
-		}
-		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = edison_light_bulb
-						infiltration = 1
-						aeronautics = 1
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = edison_light_bulb
-					infiltration = 1
-					aeronautics = 1
-				}
-			}
-			year = 1900
-		}
-	}
-	mean_time_to_happen = {
-		months = 36
-	}
-	title = "EVTNAME1107"
-	desc = "EVTDESC1107"
-	picture = ""
-	option = {
-		name = "EVTOPTA1107"
-		trade_goods = rubber
-	}
-	fire_only_once = yes
-}
-province_event = {
-	id = 1108
-	trigger = {
-		year = 1890
-		or = {
-			province_id = 1926
-			province_id = 1929
-			province_id = 1931
-			province_id = 1932
-			province_id = 1957
-			province_id = 1986
-			province_id = 1988
-			province_id = 1989
-			province_id = 1996
-			province_id = 2192
-			province_id = 2317
-			province_id = 2318
-			province_id = 2319
-			province_id = 2321
-			province_id = 2402
-			province_id = 2404
-			province_id = 2405
-			province_id = 2549
-			province_id = 2550
-			province_id = 2600
-		}
-		not = {
-			trade_goods = rubber
-		}
-		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = edison_light_bulb
-						infiltration = 1
-						aeronautics = 1
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = edison_light_bulb
-					infiltration = 1
-					aeronautics = 1
-				}
-			}
-			year = 1900
-		}
-	}
-	mean_time_to_happen = {
-		months = 36
-	}
-	title = "EVTNAME1107"
-	desc = "EVTDESC1107"
-	picture = ""
-	option = {
-		name = "EVTOPTA1107"
-		trade_goods = rubber
-	}
-	fire_only_once = yes
-}
-province_event = {
-	id = 1109
-	trigger = {
-		year = 1870
-		or = {
-			province_id = 1102
-			province_id = 1205
-		}
-		not = {
-			trade_goods = oil
-		}
-		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
-		}
-	}
-	mean_time_to_happen = {
-		months = 8
-	}
-	title = "EVTNAME1109"
-	desc = "EVTDESC1109"
-	option = {
-		name = "EVTOPTA1109"
-		trade_goods = oil
-	}
-	fire_only_once = yes
-}
-province_event = {
 	id = 1110
 	trigger = {
 		year = 1871
@@ -534,178 +350,6 @@ province_event = {
 	fire_only_once = yes
 }
 province_event = {
-	id = 1119
-	trigger = {
-		year = 1882
-		or = {
-			province_id = 89
-			province_id = 133
-			province_id = 126
-		}
-		not = {
-			trade_goods = oil
-		}
-		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
-		}
-	}
-	mean_time_to_happen = {
-		months = 8
-	}
-	title = "EVTNAME1109"
-	desc = "EVTDESC1109"
-	option = {
-		name = "EVTOPTA1109"
-		trade_goods = oil
-	}
-	fire_only_once = yes
-}
-province_event = {
-	id = 1120
-	trigger = {
-		year = 1883
-		or = {
-			province_id = 1399
-			province_id = 1055
-		}
-		not = {
-			trade_goods = oil
-		}
-		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
-		}
-	}
-	mean_time_to_happen = {
-		months = 8
-	}
-	title = "EVTNAME1109"
-	desc = "EVTDESC1109"
-	option = {
-		name = "EVTOPTA1109"
-		trade_goods = oil
-	}
-	fire_only_once = yes
-}
-province_event = {
-	id = 1121
-	trigger = {
-		year = 1885
-		or = {
-			province_id = 1393
-			province_id = 1401
-			province_id = 1425
-			province_id = 1432
-		}
-		not = {
-			trade_goods = oil
-		}
-		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
-		}
-	}
-	mean_time_to_happen = {
-		months = 8
-	}
-	title = "EVTNAME1109"
-	desc = "EVTDESC1109"
-	option = {
-		name = "EVTOPTA1109"
-		trade_goods = oil
-	}
-	fire_only_once = yes
-}
-province_event = {
-	id = 1122
-	trigger = {
-		year = 1886
-		or = {
-			province_id = 1335
-			province_id = 134
-			province_id = 705
-		}
-		not = {
-			trade_goods = oil
-		}
-		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
-		}
-	}
-	mean_time_to_happen = {
-		months = 8
-	}
-	title = "EVTNAME1109"
-	desc = "EVTDESC1109"
-	option = {
-		name = "EVTOPTA1109"
-		trade_goods = oil
-	}
-	fire_only_once = yes
-}
-province_event = {
 	id = 1123
 	trigger = {
 		year = 1889
@@ -784,96 +428,10 @@ province_event = {
 	fire_only_once = yes
 }
 province_event = {
-	id = 1125
-	trigger = {
-		year = 1893
-		or = {
-			province_id = 129
-			province_id = 1680
-		}
-		not = {
-			trade_goods = oil
-		}
-		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
-		}
-	}
-	mean_time_to_happen = {
-		months = 8
-	}
-	title = "EVTNAME1109"
-	desc = "EVTDESC1109"
-	option = {
-		name = "EVTOPTA1109"
-		trade_goods = oil
-	}
-	fire_only_once = yes
-}
-province_event = {
 	id = 1126
 	trigger = {
 		year = 1894
 		province_id = 2173
-		not = {
-			trade_goods = oil
-		}
-		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
-		}
-	}
-	mean_time_to_happen = {
-		months = 8
-	}
-	title = "EVTNAME1109"
-	desc = "EVTDESC1109"
-	option = {
-		name = "EVTOPTA1109"
-		trade_goods = oil
-	}
-	fire_only_once = yes
-}
-province_event = {
-	id = 1127
-	trigger = {
-		year = 1896
-		or = {
-			province_id = 87
-			province_id = 2162
-			province_id = 2163
-			province_id = 702
-		}
 		not = {
 			trade_goods = oil
 		}
@@ -1030,52 +588,6 @@ province_event = {
 	trigger = {
 		year = 1908
 		province_id = 1131
-		not = {
-			trade_goods = oil
-		}
-		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
-		}
-	}
-	mean_time_to_happen = {
-		months = 8
-	}
-	title = "EVTNAME1109"
-	desc = "EVTDESC1109"
-	option = {
-		name = "EVTOPTA1109"
-		trade_goods = oil
-	}
-	fire_only_once = yes
-}
-province_event = {
-	id = 1132
-	trigger = {
-		year = 1910
-		or = {
-			province_id = 1732
-			province_id = 1720
-			province_id = 1167
-			province_id = 1163
-			province_id = 2270
-			province_id = 1170
-		}
 		not = {
 			trade_goods = oil
 		}
@@ -1310,6 +822,3342 @@ province_event = {
 	trigger = {
 		year = 1927
 		province_id = 923
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51354
+	trigger = {
+		year = 1880
+		province_id = 1354
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51364
+	trigger = {
+		year = 1880
+		province_id = 1364
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51367
+	trigger = {
+		year = 1880
+		province_id = 1367
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51382
+	trigger = {
+		year = 1880
+		province_id = 1382
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51384
+	trigger = {
+		year = 1880
+		province_id = 1384
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51385
+	trigger = {
+		year = 1880
+		province_id = 1385
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51386
+	trigger = {
+		year = 1880
+		province_id = 1386
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51389
+	trigger = {
+		year = 1880
+		province_id = 1389
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51402
+	trigger = {
+		year = 1880
+		province_id = 1402
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51404
+	trigger = {
+		year = 1880
+		province_id = 1404
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51827
+	trigger = {
+		year = 1880
+		province_id = 1827
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51829
+	trigger = {
+		year = 1880
+		province_id = 1829
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51833
+	trigger = {
+		year = 1880
+		province_id = 1833
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51836
+	trigger = {
+		year = 1880
+		province_id = 1836
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51837
+	trigger = {
+		year = 1880
+		province_id = 1837
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51848
+	trigger = {
+		year = 1880
+		province_id = 1848
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51850
+	trigger = {
+		year = 1880
+		province_id = 1850
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51890
+	trigger = {
+		year = 1880
+		province_id = 1890
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51891
+	trigger = {
+		year = 1880
+		province_id = 1891
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51923
+	trigger = {
+		year = 1880
+		province_id = 1923
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51321
+	trigger = {
+		year = 1880
+		province_id = 1321
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51398
+	trigger = {
+		year = 1880
+		province_id = 1398
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51421
+	trigger = {
+		year = 1880
+		province_id = 1421
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51985
+	trigger = {
+		year = 1880
+		province_id = 1985
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51406
+	trigger = {
+		year = 1880
+		province_id = 1406
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51318
+	trigger = {
+		year = 1880
+		province_id = 1318
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 52057
+	trigger = {
+		year = 1880
+		province_id = 2057
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51426
+	trigger = {
+		year = 1880
+		province_id = 1426
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 52058
+	trigger = {
+		year = 1880
+		province_id = 2058
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 50977
+	trigger = {
+		year = 1880
+		province_id = 977
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51978
+	trigger = {
+		year = 1880
+		province_id = 1978
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51980
+	trigger = {
+		year = 1880
+		province_id = 1980
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51981
+	trigger = {
+		year = 1880
+		province_id = 1981
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 52624
+	trigger = {
+		year = 1880
+		province_id = 2624
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51926
+	trigger = {
+		year = 1890
+		province_id = 1926
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51929
+	trigger = {
+		year = 1890
+		province_id = 1929
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51931
+	trigger = {
+		year = 1890
+		province_id = 1931
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51932
+	trigger = {
+		year = 1890
+		province_id = 1932
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51957
+	trigger = {
+		year = 1890
+		province_id = 1957
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51986
+	trigger = {
+		year = 1890
+		province_id = 1986
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51988
+	trigger = {
+		year = 1890
+		province_id = 1988
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51989
+	trigger = {
+		year = 1890
+		province_id = 1989
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51996
+	trigger = {
+		year = 1890
+		province_id = 1996
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 52192
+	trigger = {
+		year = 1890
+		province_id = 2192
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 52317
+	trigger = {
+		year = 1890
+		province_id = 2317
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 52318
+	trigger = {
+		year = 1890
+		province_id = 2318
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 52319
+	trigger = {
+		year = 1890
+		province_id = 2319
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 52321
+	trigger = {
+		year = 1890
+		province_id = 2321
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 52402
+	trigger = {
+		year = 1890
+		province_id = 2402
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 52404
+	trigger = {
+		year = 1890
+		province_id = 2404
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 52405
+	trigger = {
+		year = 1890
+		province_id = 2405
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 52549
+	trigger = {
+		year = 1890
+		province_id = 2549
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 52550
+	trigger = {
+		year = 1890
+		province_id = 2550
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 52600
+	trigger = {
+		year = 1890
+		province_id = 2600
+		not = {
+			trade_goods = rubber
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = edison_light_bulb
+						infiltration = 1
+						aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+				}
+			}
+			year = 1900
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51102
+	trigger = {
+		year = 1870
+		province_id = 1102
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51205
+	trigger = {
+		year = 1870
+		province_id = 1205
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 50089
+	trigger = {
+		year = 1882
+		province_id = 89
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 50133
+	trigger = {
+		year = 1882
+		province_id = 133
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 50126
+	trigger = {
+		year = 1882
+		province_id = 126
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51399
+	trigger = {
+		year = 1883
+		province_id = 1399
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51055
+	trigger = {
+		year = 1883
+		province_id = 1055
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51393
+	trigger = {
+		year = 1885
+		province_id = 1393
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51401
+	trigger = {
+		year = 1885
+		province_id = 1401
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51425
+	trigger = {
+		year = 1885
+		province_id = 1425
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51432
+	trigger = {
+		year = 1885
+		province_id = 1432
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51335
+	trigger = {
+		year = 1886
+		province_id = 1335
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 50134
+	trigger = {
+		year = 1886
+		province_id = 134
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 50705
+	trigger = {
+		year = 1886
+		province_id = 705
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 50129
+	trigger = {
+		year = 1893
+		province_id = 129
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51680
+	trigger = {
+		year = 1893
+		province_id = 1680
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 50087
+	trigger = {
+		year = 1896
+		province_id = 87
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 52162
+	trigger = {
+		year = 1896
+		province_id = 2162
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 52163
+	trigger = {
+		year = 1896
+		province_id = 2163
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 50702
+	trigger = {
+		year = 1896
+		province_id = 702
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51732
+	trigger = {
+		year = 1910
+		province_id = 1732
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51720
+	trigger = {
+		year = 1910
+		province_id = 1720
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51167
+	trigger = {
+		year = 1910
+		province_id = 1167
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51163
+	trigger = {
+		year = 1910
+		province_id = 1163
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 52270
+	trigger = {
+		year = 1910
+		province_id = 2270
+		not = {
+			trade_goods = oil
+		}
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+						invention = daimlers_automobile
+						invention = cracking
+						invention = protected_cruisers
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = cracking
+					invention = protected_cruisers
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	title = "EVTNAME1109"
+	desc = "EVTDESC1109"
+	option = {
+		name = "EVTOPTA1109"
+		trade_goods = oil
+	}
+	fire_only_once = yes
+}
+province_event = {
+	id = 51170
+	trigger = {
+		year = 1910
+		province_id = 1170
 		not = {
 			trade_goods = oil
 		}

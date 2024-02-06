@@ -7027,17 +7027,25 @@ province_event = {
 				OR = {
 					terrain = desert
 					terrain = desert_hills
+					terrain = hills
 					terrain = hilly_grassland
 				}
 			}
 			AND = {
 				continent = asia
 				OR = {
+					terrain = boreal_forest_hills
 					terrain = desert
 					terrain = dry_grassland
+					terrain = floodplain_farmland
+					terrain = forest
+					terrain = hills
 					terrain = jungle
 					terrain = jungle_farmland
 					terrain = jungle_mountains
+					terrain = marginal_farmland
+					terrain = mountain
+					terrain = mountain_grassland
 					terrain = semi_desert_hills
 					terrain = swamp_jungle
 				}
@@ -7045,23 +7053,40 @@ province_event = {
 			AND = {
 				continent = europe
 				OR = {
+					terrain = conifer_forest_mountains
 					terrain = deciduous_forest_mountains
+					terrain = forest
 					terrain = forested_farmland
 					terrain = hills
+					terrain = mountain
+					terrain = mountain_farmland
 				}
 			}
 			AND = {
 				continent = north_america
 				OR = {
 					terrain = dry_forest_hills
+					terrain = dry_forest_mountains
 					terrain = dry_grassland
+					terrain = forest
+					terrain = forested_farmland
+					terrain = hills
 					terrain = hilly_farmland
+					terrain = hilly_grassland
+					terrain = jungle
+					terrain = jungle_farmland
+					terrain = mountain
 					terrain = temperate_grassland
 				}
 			}
 			AND = {
 				continent = south_america
-				terrain = good_farmland
+				OR = {
+					terrain = desert
+					terrain = good_farmland
+					terrain = hills
+					terrain = semi_desert_hills
+				}
 			}
 		}
 	}
@@ -7363,17 +7388,25 @@ province_event = {
 				OR = {
 					terrain = desert
 					terrain = desert_hills
+					terrain = hills
 					terrain = hilly_grassland
 				}
 			}
 			AND = {
 				continent = asia
 				OR = {
+					terrain = boreal_forest_hills
 					terrain = desert
 					terrain = dry_grassland
+					terrain = floodplain_farmland
+					terrain = forest
+					terrain = hills
 					terrain = jungle
 					terrain = jungle_farmland
 					terrain = jungle_mountains
+					terrain = marginal_farmland
+					terrain = mountain
+					terrain = mountain_grassland
 					terrain = semi_desert_hills
 					terrain = swamp_jungle
 				}
@@ -7381,23 +7414,40 @@ province_event = {
 			AND = {
 				continent = europe
 				OR = {
+					terrain = conifer_forest_mountains
 					terrain = deciduous_forest_mountains
+					terrain = forest
 					terrain = forested_farmland
 					terrain = hills
+					terrain = mountain
+					terrain = mountain_farmland
 				}
 			}
 			AND = {
 				continent = north_america
 				OR = {
 					terrain = dry_forest_hills
+					terrain = dry_forest_mountains
 					terrain = dry_grassland
+					terrain = forest
+					terrain = forested_farmland
+					terrain = hills
 					terrain = hilly_farmland
+					terrain = hilly_grassland
+					terrain = jungle
+					terrain = jungle_farmland
+					terrain = mountain
 					terrain = temperate_grassland
 				}
 			}
 			AND = {
 				continent = south_america
-				terrain = good_farmland
+				OR = {
+					terrain = desert
+					terrain = good_farmland
+					terrain = hills
+					terrain = semi_desert_hills
+				}
 			}
 		}
 	}
@@ -8280,15 +8330,18 @@ province_event = {
 			AND = {
 				continent = africa
 				OR = {
+					terrain = desert
 					terrain = desert_hills
 					terrain = dry_grassland
 					terrain = good_farmland
+					terrain = hills
 					terrain = hilly_farmland
 					terrain = hilly_grassland
 					terrain = jungle
 					terrain = jungle_farmland
 					terrain = jungle_hills
 					terrain = jungle_mountains
+					terrain = mountain
 					terrain = seasonal_jungle
 					terrain = seasonal_jungle_hills
 					terrain = semi_desert
@@ -8301,6 +8354,7 @@ province_event = {
 				OR = {
 					terrain = floodplain_farmland
 					terrain = good_farmland
+					terrain = hills
 					terrain = jungle
 					terrain = jungle_farmland
 					terrain = jungle_hills
@@ -8320,6 +8374,7 @@ province_event = {
 				continent = south_america
 				OR = {
 					terrain = dry_forest
+					terrain = forest
 					terrain = jungle
 					terrain = marsh
 					terrain = seasonal_jungle
@@ -8627,15 +8682,18 @@ province_event = {
 			AND = {
 				continent = africa
 				OR = {
+					terrain = desert
 					terrain = desert_hills
 					terrain = dry_grassland
 					terrain = good_farmland
+					terrain = hills
 					terrain = hilly_farmland
 					terrain = hilly_grassland
 					terrain = jungle
 					terrain = jungle_farmland
 					terrain = jungle_hills
 					terrain = jungle_mountains
+					terrain = mountain
 					terrain = seasonal_jungle
 					terrain = seasonal_jungle_hills
 					terrain = semi_desert
@@ -8648,6 +8706,7 @@ province_event = {
 				OR = {
 					terrain = floodplain_farmland
 					terrain = good_farmland
+					terrain = hills
 					terrain = jungle
 					terrain = jungle_farmland
 					terrain = jungle_hills
@@ -8667,6 +8726,7 @@ province_event = {
 				continent = south_america
 				OR = {
 					terrain = dry_forest
+					terrain = forest
 					terrain = jungle
 					terrain = marsh
 					terrain = seasonal_jungle
