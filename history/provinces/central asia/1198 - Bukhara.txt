@@ -3,4 +3,4 @@ owner = BUK
 controller = BUK
 add_core = BUK
 trade_goods = wool
-life_rating = 36
+life_rating = 15

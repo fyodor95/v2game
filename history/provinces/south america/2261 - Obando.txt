@@ -4,4 +4,4 @@ controller = CLM
 add_core = CLM
 add_core = GCO
 trade_goods = timber
-life_rating = 25
+life_rating = 20

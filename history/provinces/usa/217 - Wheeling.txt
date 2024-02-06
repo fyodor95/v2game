@@ -1,5 +1,9 @@
 terrain = deciduous_forest_mountains
-owner = USAcontroller = USAadd_core = USA
+owner = USA
+controller = USA
+add_core = USA
 trade_goods = coal
-life_rating = 35
-1861.1.1 = { railroad = 2 }
+life_rating = 25
+1861.1.1 = {
+	railroad = 2
+}

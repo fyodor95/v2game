@@ -2,7 +2,6 @@ terrain = semi_desert_mountains
 add_core = CHI
 add_core = XIN
 trade_goods = sulphur
-life_rating = 32
-
+life_rating = 16
 owner = CHI
 controller = CHI

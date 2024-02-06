@@ -2,5 +2,5 @@ terrain = seasonal_jungle
 owner = ENG
 controller = ENG
 trade_goods = tropical_wood
-life_rating = 30
+life_rating = 25
 colonial = 2

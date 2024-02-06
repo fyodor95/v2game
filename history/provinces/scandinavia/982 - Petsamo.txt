@@ -4,4 +4,4 @@ controller = RUS
 add_core = RUS
 add_core = SWE
 trade_goods = iron
-life_rating = 16
+life_rating = 10

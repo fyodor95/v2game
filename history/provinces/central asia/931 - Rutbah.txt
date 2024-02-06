@@ -4,4 +4,4 @@ controller = TUR
 add_core = TUR
 add_core = IRQ
 trade_goods = sulphur
-life_rating = 17
+life_rating = 15

@@ -1,6 +1,6 @@
 terrain = dry_forest_mountains
 trade_goods = cattle
-life_rating = 30
+life_rating = 19
 owner = USA
 controller = USA
 add_core = USA

@@ -3,4 +3,4 @@ owner = NEP
 controller = NEP
 add_core = NEP
 trade_goods = tea
-life_rating = 33
+life_rating = 21

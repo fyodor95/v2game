@@ -1,6 +1,6 @@
 terrain = boreal_marsh
 trade_goods = cattle
-life_rating = 33
+life_rating = 20
 1861.1.1 = {
 	owner = ENG
 	controller = ENG

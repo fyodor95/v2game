@@ -1,7 +1,7 @@
 terrain = mountain_grassland
 owner = ARG
-controller = ARG
-add_core = BOL
-add_core = ARG
+controller = ARG
+add_core = BOL
+add_core = ARG
 trade_goods = wool
-life_rating = 35
+life_rating = 18

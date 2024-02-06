@@ -3,4 +3,4 @@ owner = AFG
 controller = AFG
 add_core = AFG
 trade_goods = wool
-life_rating = 17
+life_rating = 15

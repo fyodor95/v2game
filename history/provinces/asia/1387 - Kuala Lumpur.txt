@@ -3,4 +3,4 @@ owner = JOH
 controller = JOH
 add_core = JOH
 trade_goods = timber
-life_rating = 32
+life_rating = 20

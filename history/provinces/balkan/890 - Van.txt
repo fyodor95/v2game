@@ -4,4 +4,4 @@ controller = TUR
 add_core = TUR
 add_core = ARM
 trade_goods = iron
-life_rating = 36
+life_rating = 18

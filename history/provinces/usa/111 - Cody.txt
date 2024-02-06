@@ -3,8 +3,8 @@ owner = USA
 controller = USA
 add_core = USA
 trade_goods = coal
-life_rating = 30
+life_rating = 21
 colony = 2
 1861.1.1 = {
 	colony = 0
-	}
+}

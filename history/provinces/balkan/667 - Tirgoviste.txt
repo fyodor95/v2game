@@ -4,8 +4,7 @@ controller = WAL
 add_core = WAL
 add_core = ROM
 trade_goods = wool
-life_rating = 37
-
+life_rating = 21
 1861.1.1 = {
 	controller = ROM
 	owner = ROM

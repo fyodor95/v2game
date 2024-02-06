@@ -3,13 +3,13 @@ owner = CHI
 controller = CHI
 add_core = CHI
 trade_goods = tea
-life_rating = 33
+life_rating = 24
 1861.1.1 = {
 	owner = ENG
 	controller = ENG
 	colonial = 2
 }
-1861.1.1 = { 
+1861.1.1 = {
 	fort = 1
 	naval_base = 1
 }

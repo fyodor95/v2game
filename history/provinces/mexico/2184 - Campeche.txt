@@ -1,6 +1,6 @@
-terrain = jungle_farmland
-owner = MEX
+terrain = jungle_farmland
+owner = MEX
 controller = MEX
-add_core = MEX
+add_core = MEX
 trade_goods = timber
-life_rating = 34
+life_rating = 32

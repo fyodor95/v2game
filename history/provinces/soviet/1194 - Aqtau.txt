@@ -1,6 +1,6 @@
 terrain = desert
 trade_goods = opium
-life_rating = 37
+life_rating = 15
 1861.1.1 = {
 	owner = RUS
 	controller = RUS

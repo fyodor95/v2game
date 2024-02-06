@@ -2,5 +2,5 @@ terrain = tundra_mountains
 owner = RUS
 controller = RUS
 trade_goods = fish
-life_rating = 34
+life_rating = 10
 colonial = 2

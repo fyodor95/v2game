@@ -2,5 +2,5 @@ terrain = deciduous_forest_mountains
 owner = ENG
 controller = ENG
 trade_goods = cattle
-life_rating = 30
+life_rating = 25
 colonial = 2

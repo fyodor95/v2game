@@ -1,2 +1,6 @@
 terrain = desert
-owner = ARGcontroller = ARGadd_core = ARGtrade_goods = cattlelife_rating = 35
+owner = ARG
+controller = ARG
+add_core = ARG
+trade_goods = cattle
+life_rating = 15
