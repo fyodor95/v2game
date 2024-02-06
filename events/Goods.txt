@@ -74,6 +74,7 @@ province_event = {
 		name = "EVTOPTA1107"
 		trade_goods = rubber
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1108
@@ -137,6 +138,7 @@ province_event = {
 		name = "EVTOPTA1107"
 		trade_goods = rubber
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1109
@@ -178,6 +180,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1110
@@ -216,6 +219,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1111
@@ -254,6 +258,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1112
@@ -292,6 +297,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1113
@@ -330,6 +336,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1114
@@ -368,6 +375,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1115
@@ -406,6 +414,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1116
@@ -444,6 +453,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1117
@@ -482,6 +492,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1118
@@ -520,6 +531,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1119
@@ -562,6 +574,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1120
@@ -603,6 +616,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1121
@@ -646,6 +660,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1122
@@ -688,6 +703,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1123
@@ -726,6 +742,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1124
@@ -764,6 +781,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1125
@@ -805,6 +823,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1126
@@ -843,6 +862,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1127
@@ -886,6 +906,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1128
@@ -924,6 +945,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1129
@@ -962,6 +984,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1130
@@ -1000,6 +1023,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1131
@@ -1038,6 +1062,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1132
@@ -1083,6 +1108,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1133
@@ -1121,6 +1147,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1134
@@ -1159,6 +1186,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1135
@@ -1197,6 +1225,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1136
@@ -1235,6 +1264,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1137
@@ -1273,6 +1303,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
 province_event = {
 	id = 1138
@@ -1311,4 +1342,5 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 	}
+	fire_only_once = yes
 }
