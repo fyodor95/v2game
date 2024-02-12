@@ -77,9 +77,6 @@ reunification = {
 			factor = 0
 			NOT = {
 				cultural_union = {
-					THIS = {
-						brigades_compare = 4
-					}
 					NOT = {
 						AND = {
 							OR = {
