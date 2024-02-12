@@ -9,7 +9,9 @@ country_event = {
 		FROM = {
 			country_event = { id=76001 days=0 }
 		}
-		ai_chance = { factor = 100 }
+		ai_chance = {
+			factor = 100
+		}
 	}
 	option = {
 		name = "EVTOPTB76000"
@@ -25,7 +27,9 @@ country_event = {
 		FROM = {
 			country_event = { id=76002 days=0 }
 		}
-		ai_chance = { factor = 0 }
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 country_event = {
@@ -71,7 +75,9 @@ country_event = {
 		name = "EVTOPTA76003"
 		inherit = FROM
 		prestige = 10
-		ai_chance = { factor = 100 }
+		ai_chance = {
+			factor = 100
+		}
 	}
 	option = {
 		name = "EVTOPTB76003"
@@ -84,6 +90,8 @@ country_event = {
 		FROM = {
 			country_event = { id=76002 days=0 }
 		}
-		ai_chance = { factor = 0 }
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
