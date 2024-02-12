@@ -184,6 +184,9 @@ country_event = {
 		name = "EVTOPTA11108"
 		FROM = {
 			inherit = THIS
+			FROM = {
+				country_event = { id=11110 days=0 }
+			}
 		}
 		ai_chance = {
 			factor = 5
@@ -1303,5 +1306,17 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
+	}
+}
+country_event = {
+	id = 11110
+	title = "EVTNAME11110"
+	desc = "EVTDESC11110"
+	picture = "Celebration"
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPTA11110"
+		prestige = 10
+		change_tag = culture
 	}
 }

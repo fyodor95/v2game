@@ -18,6 +18,9 @@ EVTNAME11109;Раздор в $UNION_ADJ$ мире;X
 EVTDESC11109;Держава $FROMCOUNTRY$ отказывается признавать наше лидерство в $UNION_ADJ$ мире.;X
 EVTOPTA11109;Значит, придётся их заставить!;X
 EVTOPTB11109;Печально;X
+EVTNAME11110;Ветер перемен;X
+EVTDESC11110;Держава $FROMCOUNTRY$ признаёт наше лидерство в $UNION_ADJ$ мире.;X
+EVTOPTA11110;Да здравствует $UNION_ADJ$ народ!;X
 EVTNAME145002;100000;X
 EVTDESC145002;100000;X
 EVTOPTA145002;10000;X
