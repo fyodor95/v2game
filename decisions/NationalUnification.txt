@@ -4,32 +4,51 @@ political_decisions = {
 			is_greater_power = yes
 			primary_culture = south_german
 			NOT = {
-				exists = SGF
-				exists = GER
-				tag = AUS
-				tag = KUK
 				tag = SOV
+			}
+			OR = {
+				exists = SGF
+				NOT = {
+					OR = {
+						exists = SGF
+						exists = GER
+						tag = AUS
+						tag = KUK
+					}
+				}
 			}
 		}	
 		allow = {
 			war = no
-			GER = {
-				all_core = {
-					OR = {
-						OR = {
-							owned_by = THIS
-							province_id = 370
-							province_id = 371
-							province_id = 410
-							province_id = 409
-							province_id = 412
-							owner = {
-								in_sphere = THIS
+			OR = {
+				AND = {
+					NOT = {
+						exists = SGF
+					}
+					GER = {
+						all_core = {
+							OR = {
+								owned_by = THIS
+								province_id = 370
+								province_id = 371
+								province_id = 410
+								province_id = 409
+								province_id = 412
+								owner = {
+									in_sphere = THIS
+								}
+								NOT = {
+									culture = south_german
+								}
 							}
 						}
-						NOT = {
-							culture = south_german
-						}
+					}
+				}
+				AND = {
+					exists = SGF
+					SGF = {
+						is_vassal = no
+						in_sphere = THIS
 					}
 				}
 			}
@@ -39,7 +58,10 @@ political_decisions = {
 			prestige = 10
 			any_country = {
 				limit = {
-					primary_culture = south_german
+					OR = {
+						primary_culture = south_german
+						tag = SGF
+					}
 					in_sphere = THIS
 					NOT = {
 						tag = THIS
@@ -138,25 +160,44 @@ political_decisions = {
 			is_greater_power = yes
 			primary_culture = north_german
 			NOT = {
-				exists = GER
-				exists = NGF
 				tag = SOV
+			}
+			OR = {
+				exists = NGF
+				NOT = {
+					OR = {
+						exists = GER
+						exists = NGF
+					}
+				}
 			}
 		}	
 		allow = {
 			war = no
-			GER = {
-				all_core = {
-					OR = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
+			OR = {
+				AND = {
+					NOT = {
+						exists = NGF
+					}
+					GER = {
+						all_core = {
+							OR = {
+								owned_by = THIS
+								owner = {
+									in_sphere = THIS
+								}
+								NOT = {
+									culture = north_german
+								}
 							}
 						}
-						NOT = {
-							culture = north_german
-						}
+					}
+				}
+				AND = {
+					exists = NGF
+					NGF = {
+						is_vassal = no
+						in_sphere = THIS
 					}
 				}
 			}
@@ -169,6 +210,7 @@ political_decisions = {
 					OR = {
 						primary_culture = north_german
 						tag = SCH 
+						tag = NGF
 					}
 					in_sphere = THIS
 					NOT = {
