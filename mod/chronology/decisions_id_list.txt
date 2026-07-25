@@ -10078,6 +10078,7 @@ restore_austria_hungary
 restore_mexican_empire
 restore_usca
 return_to_portugal
+reunification
 reunification_of_china
 reunification_of_china_KMT
 reunification_of_china_communist

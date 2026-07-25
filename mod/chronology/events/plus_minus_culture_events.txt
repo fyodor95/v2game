@@ -7,13 +7,11 @@ country_event = {
 		accepted_culture = north_german
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = north_german
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = north_german
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -151,13 +149,11 @@ country_event = {
 		accepted_culture = south_german
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = south_german
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = south_german
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -295,13 +291,11 @@ country_event = {
 		accepted_culture = dutch
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = dutch
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = dutch
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -439,13 +433,11 @@ country_event = {
 		accepted_culture = flemish
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = flemish
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = flemish
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -583,13 +575,11 @@ country_event = {
 		accepted_culture = wallonian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = wallonian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = wallonian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -727,13 +717,11 @@ country_event = {
 		accepted_culture = swiss
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = swiss
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = swiss
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -871,13 +859,11 @@ country_event = {
 		accepted_culture = swedish
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = swedish
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = swedish
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -1015,13 +1001,11 @@ country_event = {
 		accepted_culture = danish
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = danish
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = danish
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -1159,13 +1143,11 @@ country_event = {
 		accepted_culture = norwegian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = norwegian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = norwegian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -1303,13 +1285,11 @@ country_event = {
 		accepted_culture = icelandic
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = icelandic
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = icelandic
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -1447,13 +1427,11 @@ country_event = {
 		accepted_culture = finnish
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = finnish
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = finnish
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -1591,13 +1569,11 @@ country_event = {
 		accepted_culture = sami
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = sami
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = sami
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -1735,13 +1711,11 @@ country_event = {
 		accepted_culture = english
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = english
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = english
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -1879,13 +1853,11 @@ country_event = {
 		accepted_culture = scottish
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = scottish
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = scottish
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -2023,13 +1995,11 @@ country_event = {
 		accepted_culture = welsh
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = welsh
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = welsh
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -2167,13 +2137,11 @@ country_event = {
 		accepted_culture = irish
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = irish
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = irish
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -2311,13 +2279,11 @@ country_event = {
 		accepted_culture = north_italian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = north_italian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = north_italian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -2455,13 +2421,11 @@ country_event = {
 		accepted_culture = south_italian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = south_italian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = south_italian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -2599,13 +2563,11 @@ country_event = {
 		accepted_culture = maltese
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = maltese
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = maltese
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -2743,13 +2705,11 @@ country_event = {
 		accepted_culture = basque
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = basque
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = basque
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -2887,13 +2847,11 @@ country_event = {
 		accepted_culture = spanish
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = spanish
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = spanish
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -3031,13 +2989,11 @@ country_event = {
 		accepted_culture = catalan
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = catalan
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = catalan
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -3175,13 +3131,11 @@ country_event = {
 		accepted_culture = portuguese
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = portuguese
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = portuguese
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -3319,13 +3273,11 @@ country_event = {
 		accepted_culture = french
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = french
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = french
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -3463,13 +3415,11 @@ country_event = {
 		accepted_culture = croat
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = croat
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = croat
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -3607,13 +3557,11 @@ country_event = {
 		accepted_culture = serb
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = serb
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = serb
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -3751,13 +3699,11 @@ country_event = {
 		accepted_culture = bulgarian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = bulgarian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = bulgarian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -3895,13 +3841,11 @@ country_event = {
 		accepted_culture = albanian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = albanian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = albanian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -4039,13 +3983,11 @@ country_event = {
 		accepted_culture = slovene
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = slovene
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = slovene
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -4183,13 +4125,11 @@ country_event = {
 		accepted_culture = bosniak
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = bosniak
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = bosniak
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -4327,13 +4267,11 @@ country_event = {
 		accepted_culture = romanian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = romanian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = romanian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -4471,13 +4409,11 @@ country_event = {
 		accepted_culture = hungarian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = hungarian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = hungarian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -4615,13 +4551,11 @@ country_event = {
 		accepted_culture = polish
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = polish
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = polish
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -4759,13 +4693,11 @@ country_event = {
 		accepted_culture = lithuanian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = lithuanian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = lithuanian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -4903,13 +4835,11 @@ country_event = {
 		accepted_culture = czech
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = czech
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = czech
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -5047,13 +4977,11 @@ country_event = {
 		accepted_culture = slovak
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = slovak
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = slovak
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -5191,13 +5119,11 @@ country_event = {
 		accepted_culture = russian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = russian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = russian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -5335,13 +5261,11 @@ country_event = {
 		accepted_culture = byelorussian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = byelorussian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = byelorussian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -5479,13 +5403,11 @@ country_event = {
 		accepted_culture = ukrainian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = ukrainian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = ukrainian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -5623,13 +5545,11 @@ country_event = {
 		accepted_culture = rusyns
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = rusyns
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = rusyns
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -5767,13 +5687,11 @@ country_event = {
 		accepted_culture = karelian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = karelian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = karelian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -5911,13 +5829,11 @@ country_event = {
 		accepted_culture = mari
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = mari
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = mari
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -6055,13 +5971,11 @@ country_event = {
 		accepted_culture = mordvin
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = mordvin
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = mordvin
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -6199,13 +6113,11 @@ country_event = {
 		accepted_culture = udmurt
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = udmurt
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = udmurt
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -6343,13 +6255,11 @@ country_event = {
 		accepted_culture = komi
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = komi
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = komi
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -6487,13 +6397,11 @@ country_event = {
 		accepted_culture = vepsian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = vepsian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = vepsian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -6631,13 +6539,11 @@ country_event = {
 		accepted_culture = latvian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = latvian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = latvian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -6775,13 +6681,11 @@ country_event = {
 		accepted_culture = estonian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = estonian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = estonian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -6919,13 +6823,11 @@ country_event = {
 		accepted_culture = ashkenazi
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = ashkenazi
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = ashkenazi
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -7063,13 +6965,11 @@ country_event = {
 		accepted_culture = sephardic
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = sephardic
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = sephardic
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -7207,13 +7107,11 @@ country_event = {
 		accepted_culture = greek
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = greek
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = greek
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -7351,13 +7249,11 @@ country_event = {
 		accepted_culture = georgian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = georgian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = georgian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -7495,13 +7391,11 @@ country_event = {
 		accepted_culture = armenian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = armenian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = armenian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -7639,13 +7533,11 @@ country_event = {
 		accepted_culture = azerbaijani
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = azerbaijani
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = azerbaijani
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -7783,13 +7675,11 @@ country_event = {
 		accepted_culture = abkhazian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = abkhazian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = abkhazian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -7927,13 +7817,11 @@ country_event = {
 		accepted_culture = avar
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = avar
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = avar
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -8071,13 +7959,11 @@ country_event = {
 		accepted_culture = circassian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = circassian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = circassian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -8215,13 +8101,11 @@ country_event = {
 		accepted_culture = chechen
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = chechen
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = chechen
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -8359,13 +8243,11 @@ country_event = {
 		accepted_culture = dargin
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = dargin
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = dargin
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -8503,13 +8385,11 @@ country_event = {
 		accepted_culture = ingush
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = ingush
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = ingush
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -8647,13 +8527,11 @@ country_event = {
 		accepted_culture = kumyk
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = kumyk
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = kumyk
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -8791,13 +8669,11 @@ country_event = {
 		accepted_culture = lezgian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = lezgian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = lezgian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -8935,13 +8811,11 @@ country_event = {
 		accepted_culture = lak
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = lak
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = lak
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -9079,13 +8953,11 @@ country_event = {
 		accepted_culture = nogais
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = nogais
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = nogais
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -9223,13 +9095,11 @@ country_event = {
 		accepted_culture = ossetians
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = ossetians
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = ossetians
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -9367,13 +9237,11 @@ country_event = {
 		accepted_culture = tabasaran
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = tabasaran
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = tabasaran
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -9511,13 +9379,11 @@ country_event = {
 		accepted_culture = turkish
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = turkish
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = turkish
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -9655,13 +9521,11 @@ country_event = {
 		accepted_culture = crimean_tatar
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = crimean_tatar
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = crimean_tatar
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -9799,13 +9663,11 @@ country_event = {
 		accepted_culture = maghrebi
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = maghrebi
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = maghrebi
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -9943,13 +9805,11 @@ country_event = {
 		accepted_culture = misri
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = misri
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = misri
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -10087,13 +9947,11 @@ country_event = {
 		accepted_culture = mashriqi
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = mashriqi
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = mashriqi
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -10231,13 +10089,11 @@ country_event = {
 		accepted_culture = bedouin
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = bedouin
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = bedouin
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -10375,13 +10231,11 @@ country_event = {
 		accepted_culture = berber
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = berber
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = berber
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -10519,13 +10373,11 @@ country_event = {
 		accepted_culture = persian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = persian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = persian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -10663,13 +10515,11 @@ country_event = {
 		accepted_culture = uzbek
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = uzbek
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = uzbek
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -10807,13 +10657,11 @@ country_event = {
 		accepted_culture = kazak
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = kazak
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = kazak
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -10951,13 +10799,11 @@ country_event = {
 		accepted_culture = karakalpak
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = karakalpak
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = karakalpak
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -11095,13 +10941,11 @@ country_event = {
 		accepted_culture = kirgiz
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = kirgiz
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = kirgiz
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -11239,13 +11083,11 @@ country_event = {
 		accepted_culture = tajik
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = tajik
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = tajik
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -11383,13 +11225,11 @@ country_event = {
 		accepted_culture = uighur
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = uighur
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = uighur
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -11527,13 +11367,11 @@ country_event = {
 		accepted_culture = pashtun
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = pashtun
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = pashtun
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -11671,13 +11509,11 @@ country_event = {
 		accepted_culture = baluchi
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = baluchi
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = baluchi
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -11815,13 +11651,11 @@ country_event = {
 		accepted_culture = hazara
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = hazara
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = hazara
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -11959,13 +11793,11 @@ country_event = {
 		accepted_culture = turkmen
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = turkmen
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = turkmen
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -12103,13 +11935,11 @@ country_event = {
 		accepted_culture = tatar
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = tatar
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = tatar
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -12247,13 +12077,11 @@ country_event = {
 		accepted_culture = bashkir
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = bashkir
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = bashkir
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -12391,13 +12219,11 @@ country_event = {
 		accepted_culture = chuvash
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = chuvash
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = chuvash
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -12535,13 +12361,11 @@ country_event = {
 		accepted_culture = altay
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = altay
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = altay
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -12679,13 +12503,11 @@ country_event = {
 		accepted_culture = kurdish
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = kurdish
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = kurdish
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -12823,13 +12645,11 @@ country_event = {
 		accepted_culture = yakut
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = yakut
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = yakut
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -12967,13 +12787,11 @@ country_event = {
 		accepted_culture = evenk
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = evenk
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = evenk
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -13111,13 +12929,11 @@ country_event = {
 		accepted_culture = nenets
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = nenets
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = nenets
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -13255,13 +13071,11 @@ country_event = {
 		accepted_culture = koryak
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = koryak
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = koryak
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -13399,13 +13213,11 @@ country_event = {
 		accepted_culture = chukchi
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = chukchi
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = chukchi
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -13543,13 +13355,11 @@ country_event = {
 		accepted_culture = buryat
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = buryat
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = buryat
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -13687,13 +13497,11 @@ country_event = {
 		accepted_culture = mongol
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = mongol
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = mongol
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -13831,13 +13639,11 @@ country_event = {
 		accepted_culture = kalmyk
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = kalmyk
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = kalmyk
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -13975,13 +13781,11 @@ country_event = {
 		accepted_culture = tibetan
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = tibetan
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = tibetan
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -14119,13 +13923,11 @@ country_event = {
 		accepted_culture = tuvan
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = tuvan
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = tuvan
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -14263,13 +14065,11 @@ country_event = {
 		accepted_culture = assamese
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = assamese
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = assamese
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -14407,13 +14207,11 @@ country_event = {
 		accepted_culture = bengali
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = bengali
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = bengali
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -14551,13 +14349,11 @@ country_event = {
 		accepted_culture = bihari
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = bihari
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = bihari
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -14695,13 +14491,11 @@ country_event = {
 		accepted_culture = manipuri
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = manipuri
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = manipuri
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -14839,13 +14633,11 @@ country_event = {
 		accepted_culture = nepali
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = nepali
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = nepali
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -14983,13 +14775,11 @@ country_event = {
 		accepted_culture = oriya
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = oriya
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = oriya
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -15127,13 +14917,11 @@ country_event = {
 		accepted_culture = sinhala
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = sinhala
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = sinhala
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -15271,13 +15059,11 @@ country_event = {
 		accepted_culture = avadhi
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = avadhi
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = avadhi
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -15415,13 +15201,11 @@ country_event = {
 		accepted_culture = kanauji
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = kanauji
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = kanauji
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -15559,13 +15343,11 @@ country_event = {
 		accepted_culture = panjabi
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = panjabi
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = panjabi
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -15703,13 +15485,11 @@ country_event = {
 		accepted_culture = kashmiri
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = kashmiri
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = kashmiri
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -15847,13 +15627,11 @@ country_event = {
 		accepted_culture = gujarati
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = gujarati
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = gujarati
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -15991,13 +15769,11 @@ country_event = {
 		accepted_culture = marathi
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = marathi
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = marathi
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -16135,13 +15911,11 @@ country_event = {
 		accepted_culture = sindi
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = sindi
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = sindi
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -16279,13 +16053,11 @@ country_event = {
 		accepted_culture = rajput
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = rajput
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = rajput
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -16423,13 +16195,11 @@ country_event = {
 		accepted_culture = kannada
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = kannada
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = kannada
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -16567,13 +16337,11 @@ country_event = {
 		accepted_culture = malayalam
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = malayalam
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = malayalam
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -16711,13 +16479,11 @@ country_event = {
 		accepted_culture = tamil
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = tamil
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = tamil
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -16855,13 +16621,11 @@ country_event = {
 		accepted_culture = telegu
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = telegu
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = telegu
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -16999,13 +16763,11 @@ country_event = {
 		accepted_culture = vietnamese
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = vietnamese
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = vietnamese
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -17143,13 +16905,11 @@ country_event = {
 		accepted_culture = khmer
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = khmer
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = khmer
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -17287,13 +17047,11 @@ country_event = {
 		accepted_culture = malay
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = malay
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = malay
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -17431,13 +17189,11 @@ country_event = {
 		accepted_culture = filipino
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = filipino
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = filipino
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -17575,13 +17331,11 @@ country_event = {
 		accepted_culture = javan
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = javan
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = javan
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -17719,13 +17473,11 @@ country_event = {
 		accepted_culture = moluccan
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = moluccan
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = moluccan
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -17863,13 +17615,11 @@ country_event = {
 		accepted_culture = thai
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = thai
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = thai
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -18007,13 +17757,11 @@ country_event = {
 		accepted_culture = lao
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = lao
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = lao
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -18151,13 +17899,11 @@ country_event = {
 		accepted_culture = shan
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = shan
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = shan
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -18295,13 +18041,11 @@ country_event = {
 		accepted_culture = burmese
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = burmese
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = burmese
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -18439,13 +18183,11 @@ country_event = {
 		accepted_culture = asian_minor
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = asian_minor
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = asian_minor
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -18583,13 +18325,11 @@ country_event = {
 		accepted_culture = kachin
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = kachin
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = kachin
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -18727,13 +18467,11 @@ country_event = {
 		accepted_culture = karen
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = karen
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = karen
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -18871,13 +18609,11 @@ country_event = {
 		accepted_culture = manchu
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = manchu
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = manchu
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -19015,13 +18751,11 @@ country_event = {
 		accepted_culture = beifaren
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = beifaren
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = beifaren
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -19159,13 +18893,11 @@ country_event = {
 		accepted_culture = nanfaren
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = nanfaren
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = nanfaren
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -19303,13 +19035,11 @@ country_event = {
 		accepted_culture = hakka
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = hakka
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = hakka
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -19447,13 +19177,11 @@ country_event = {
 		accepted_culture = miao
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = miao
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = miao
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -19591,13 +19319,11 @@ country_event = {
 		accepted_culture = min
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = min
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = min
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -19735,13 +19461,11 @@ country_event = {
 		accepted_culture = zhuang
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = zhuang
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = zhuang
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -19879,13 +19603,11 @@ country_event = {
 		accepted_culture = yi
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = yi
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = yi
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -20023,13 +19745,11 @@ country_event = {
 		accepted_culture = yue
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = yue
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = yue
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -20167,13 +19887,11 @@ country_event = {
 		accepted_culture = japanese
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = japanese
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = japanese
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -20311,13 +20029,11 @@ country_event = {
 		accepted_culture = korean
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = korean
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = korean
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -20455,13 +20171,11 @@ country_event = {
 		accepted_culture = ainu
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = ainu
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = ainu
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -20599,13 +20313,11 @@ country_event = {
 		accepted_culture = polynesian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = polynesian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = polynesian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -20743,13 +20455,11 @@ country_event = {
 		accepted_culture = hawaiian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = hawaiian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = hawaiian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -20887,13 +20597,11 @@ country_event = {
 		accepted_culture = maori
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = maori
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = maori
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -21031,13 +20739,11 @@ country_event = {
 		accepted_culture = aborigine
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = aborigine
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = aborigine
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -21175,13 +20881,11 @@ country_event = {
 		accepted_culture = melanesian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = melanesian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = melanesian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -21319,13 +21023,11 @@ country_event = {
 		accepted_culture = micronesian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = micronesian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = micronesian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -21463,13 +21165,11 @@ country_event = {
 		accepted_culture = zapotec
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = zapotec
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = zapotec
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -21607,13 +21307,11 @@ country_event = {
 		accepted_culture = mayan
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = mayan
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = mayan
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -21751,13 +21449,11 @@ country_event = {
 		accepted_culture = nahua
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = nahua
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = nahua
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -21895,13 +21591,11 @@ country_event = {
 		accepted_culture = tarascan
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = tarascan
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = tarascan
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -22039,13 +21733,11 @@ country_event = {
 		accepted_culture = quechua
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = quechua
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = quechua
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -22183,13 +21875,11 @@ country_event = {
 		accepted_culture = guarani
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = guarani
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = guarani
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -22327,13 +22017,11 @@ country_event = {
 		accepted_culture = aimara
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = aimara
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = aimara
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -22471,13 +22159,11 @@ country_event = {
 		accepted_culture = amazonian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = amazonian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = amazonian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -22615,13 +22301,11 @@ country_event = {
 		accepted_culture = patagonian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = patagonian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = patagonian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -22759,13 +22443,11 @@ country_event = {
 		accepted_culture = guajiro
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = guajiro
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = guajiro
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -22903,13 +22585,11 @@ country_event = {
 		accepted_culture = tupinamba
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = tupinamba
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = tupinamba
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -23047,13 +22727,11 @@ country_event = {
 		accepted_culture = metis
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = metis
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = metis
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -23191,13 +22869,11 @@ country_event = {
 		accepted_culture = dakota
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = dakota
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = dakota
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -23335,13 +23011,11 @@ country_event = {
 		accepted_culture = cherokee
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = cherokee
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = cherokee
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -23479,13 +23153,11 @@ country_event = {
 		accepted_culture = pueblo
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = pueblo
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = pueblo
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -23623,13 +23295,11 @@ country_event = {
 		accepted_culture = inuit
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = inuit
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = inuit
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -23767,13 +23437,11 @@ country_event = {
 		accepted_culture = cree
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = cree
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = cree
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -23911,13 +23579,11 @@ country_event = {
 		accepted_culture = navajo
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = navajo
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = navajo
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -24055,13 +23721,11 @@ country_event = {
 		accepted_culture = native_american_minor
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = native_american_minor
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = native_american_minor
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -24199,13 +23863,11 @@ country_event = {
 		accepted_culture = yankee
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = yankee
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = yankee
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -24343,13 +24005,11 @@ country_event = {
 		accepted_culture = dixie
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = dixie
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = dixie
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -24487,13 +24147,11 @@ country_event = {
 		accepted_culture = texan
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = texan
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = texan
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -24631,13 +24289,11 @@ country_event = {
 		accepted_culture = boer
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = boer
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = boer
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -24775,13 +24431,11 @@ country_event = {
 		accepted_culture = australian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = australian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = australian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -24919,13 +24573,11 @@ country_event = {
 		accepted_culture = anglo_canadian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = anglo_canadian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = anglo_canadian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -25063,13 +24715,11 @@ country_event = {
 		accepted_culture = french_canadian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = french_canadian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = french_canadian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -25207,13 +24857,11 @@ country_event = {
 		accepted_culture = mexican
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = mexican
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = mexican
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -25351,13 +24999,11 @@ country_event = {
 		accepted_culture = central_american
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = central_american
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = central_american
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -25495,13 +25141,11 @@ country_event = {
 		accepted_culture = caribeno
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = caribeno
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = caribeno
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -25639,13 +25283,11 @@ country_event = {
 		accepted_culture = north_andean
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = north_andean
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = north_andean
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -25783,13 +25425,11 @@ country_event = {
 		accepted_culture = south_andean
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = south_andean
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = south_andean
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -25927,13 +25567,11 @@ country_event = {
 		accepted_culture = platinean
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = platinean
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = platinean
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -26071,13 +25709,11 @@ country_event = {
 		accepted_culture = brazilian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = brazilian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = brazilian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -26215,13 +25851,11 @@ country_event = {
 		accepted_culture = afro_american
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = afro_american
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = afro_american
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -26359,13 +25993,11 @@ country_event = {
 		accepted_culture = afro_caribbean
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = afro_caribbean
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = afro_caribbean
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -26503,13 +26135,11 @@ country_event = {
 		accepted_culture = afro_caribeno
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = afro_caribeno
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = afro_caribeno
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -26647,13 +26277,11 @@ country_event = {
 		accepted_culture = afro_brazilian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = afro_brazilian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = afro_brazilian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -26791,13 +26419,11 @@ country_event = {
 		accepted_culture = afro_antillean
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = afro_antillean
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = afro_antillean
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -26935,13 +26561,11 @@ country_event = {
 		accepted_culture = akan
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = akan
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = akan
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -27079,13 +26703,11 @@ country_event = {
 		accepted_culture = bambara
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = bambara
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = bambara
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -27223,13 +26845,11 @@ country_event = {
 		accepted_culture = dyula
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = dyula
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = dyula
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -27367,13 +26987,11 @@ country_event = {
 		accepted_culture = edo
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = edo
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = edo
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -27511,13 +27129,11 @@ country_event = {
 		accepted_culture = ewe
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = ewe
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = ewe
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -27655,13 +27271,11 @@ country_event = {
 		accepted_culture = fon
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = fon
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = fon
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -27799,13 +27413,11 @@ country_event = {
 		accepted_culture = fulbe
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = fulbe
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = fulbe
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -27943,13 +27555,11 @@ country_event = {
 		accepted_culture = hausa
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = hausa
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = hausa
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -28087,13 +27697,11 @@ country_event = {
 		accepted_culture = ibibio
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = ibibio
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = ibibio
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -28231,13 +27839,11 @@ country_event = {
 		accepted_culture = ibo
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = ibo
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = ibo
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -28375,13 +27981,11 @@ country_event = {
 		accepted_culture = kru
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = kru
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = kru
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -28519,13 +28123,11 @@ country_event = {
 		accepted_culture = mande
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = mande
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = mande
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -28663,13 +28265,11 @@ country_event = {
 		accepted_culture = maures
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = maures
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = maures
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -28807,13 +28407,11 @@ country_event = {
 		accepted_culture = mossi
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = mossi
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = mossi
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -28951,13 +28549,11 @@ country_event = {
 		accepted_culture = senufo
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = senufo
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = senufo
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -29095,13 +28691,11 @@ country_event = {
 		accepted_culture = songhai
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = songhai
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = songhai
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -29239,13 +28833,11 @@ country_event = {
 		accepted_culture = tiv
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = tiv
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = tiv
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -29383,13 +28975,11 @@ country_event = {
 		accepted_culture = tuareg
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = tuareg
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = tuareg
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -29527,13 +29117,11 @@ country_event = {
 		accepted_culture = wolof
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = wolof
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = wolof
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -29671,13 +29259,11 @@ country_event = {
 		accepted_culture = yoruba
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = yoruba
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = yoruba
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -29815,13 +29401,11 @@ country_event = {
 		accepted_culture = bakongo
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = bakongo
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = bakongo
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -29959,13 +29543,11 @@ country_event = {
 		accepted_culture = baguirmi
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = baguirmi
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = baguirmi
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -30103,13 +29685,11 @@ country_event = {
 		accepted_culture = fang
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = fang
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = fang
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -30247,13 +29827,11 @@ country_event = {
 		accepted_culture = kanuri
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = kanuri
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = kanuri
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -30391,13 +29969,11 @@ country_event = {
 		accepted_culture = luba
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = luba
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = luba
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -30535,13 +30111,11 @@ country_event = {
 		accepted_culture = lunda
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = lunda
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = lunda
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -30679,13 +30253,11 @@ country_event = {
 		accepted_culture = mongo
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = mongo
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = mongo
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -30823,13 +30395,11 @@ country_event = {
 		accepted_culture = sara
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = sara
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = sara
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -30967,13 +30537,11 @@ country_event = {
 		accepted_culture = teda
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = teda
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = teda
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -31111,13 +30679,11 @@ country_event = {
 		accepted_culture = african_minor
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = african_minor
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = african_minor
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -31255,13 +30821,11 @@ country_event = {
 		accepted_culture = amhara
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = amhara
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = amhara
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -31399,13 +30963,11 @@ country_event = {
 		accepted_culture = afar
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = afar
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = afar
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -31543,13 +31105,11 @@ country_event = {
 		accepted_culture = azande
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = azande
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = azande
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -31687,13 +31247,11 @@ country_event = {
 		accepted_culture = baganda
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = baganda
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = baganda
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -31831,13 +31389,11 @@ country_event = {
 		accepted_culture = beja
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = beja
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = beja
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -31975,13 +31531,11 @@ country_event = {
 		accepted_culture = dinka
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = dinka
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = dinka
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -32119,13 +31673,11 @@ country_event = {
 		accepted_culture = fur
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = fur
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = fur
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -32263,13 +31815,11 @@ country_event = {
 		accepted_culture = kikuyu
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = kikuyu
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = kikuyu
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -32407,13 +31957,11 @@ country_event = {
 		accepted_culture = luo
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = luo
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = luo
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -32551,13 +32099,11 @@ country_event = {
 		accepted_culture = maasai
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = maasai
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = maasai
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -32695,13 +32241,11 @@ country_event = {
 		accepted_culture = nuer
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = nuer
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = nuer
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -32839,13 +32383,11 @@ country_event = {
 		accepted_culture = nuba
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = nuba
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = nuba
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -32983,13 +32525,11 @@ country_event = {
 		accepted_culture = oromo
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = oromo
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = oromo
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -33127,13 +32667,11 @@ country_event = {
 		accepted_culture = ruanda
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = ruanda
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = ruanda
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -33271,13 +32809,11 @@ country_event = {
 		accepted_culture = rundi
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = rundi
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = rundi
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -33415,13 +32951,11 @@ country_event = {
 		accepted_culture = sidama
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = sidama
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = sidama
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -33559,13 +33093,11 @@ country_event = {
 		accepted_culture = somali
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = somali
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = somali
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -33703,13 +33235,11 @@ country_event = {
 		accepted_culture = sudanese
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = sudanese
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = sudanese
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -33847,13 +33377,11 @@ country_event = {
 		accepted_culture = sukuma
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = sukuma
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = sukuma
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -33991,13 +33519,11 @@ country_event = {
 		accepted_culture = swahili
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = swahili
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = swahili
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -34135,13 +33661,11 @@ country_event = {
 		accepted_culture = tigray
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = tigray
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = tigray
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -34279,13 +33803,11 @@ country_event = {
 		accepted_culture = unyamwezi
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = unyamwezi
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = unyamwezi
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -34423,13 +33945,11 @@ country_event = {
 		accepted_culture = chewa
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = chewa
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = chewa
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -34567,13 +34087,11 @@ country_event = {
 		accepted_culture = herero
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = herero
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = herero
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -34711,13 +34229,11 @@ country_event = {
 		accepted_culture = khoisan
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = khoisan
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = khoisan
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -34855,13 +34371,11 @@ country_event = {
 		accepted_culture = lomwe
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = lomwe
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = lomwe
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -34999,13 +34513,11 @@ country_event = {
 		accepted_culture = makua
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = makua
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = makua
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -35143,13 +34655,11 @@ country_event = {
 		accepted_culture = malagasy
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = malagasy
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = malagasy
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -35287,13 +34797,11 @@ country_event = {
 		accepted_culture = nguni
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = nguni
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = nguni
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -35431,13 +34939,11 @@ country_event = {
 		accepted_culture = ovimbundu
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = ovimbundu
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = ovimbundu
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -35575,13 +35081,11 @@ country_event = {
 		accepted_culture = sena
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = sena
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = sena
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -35719,13 +35223,11 @@ country_event = {
 		accepted_culture = shona
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = shona
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = shona
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -35863,13 +35365,11 @@ country_event = {
 		accepted_culture = sotho
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = sotho
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = sotho
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -36007,13 +35507,11 @@ country_event = {
 		accepted_culture = tonga
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = tonga
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = tonga
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -36151,13 +35649,11 @@ country_event = {
 		accepted_culture = tswana
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = tswana
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = tswana
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -36295,13 +35791,11 @@ country_event = {
 		accepted_culture = xhosa
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = xhosa
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = xhosa
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -36439,13 +35933,11 @@ country_event = {
 		accepted_culture = yao
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = yao
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = yao
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -36583,13 +36075,11 @@ country_event = {
 		accepted_culture = zulu
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = zulu
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = zulu
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -36727,13 +36217,11 @@ country_event = {
 		accepted_culture = polar_bears
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = polar_bears
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = polar_bears
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -36871,13 +36359,11 @@ country_event = {
 		accepted_culture = british
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = british
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = british
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -37015,13 +36501,11 @@ country_event = {
 		accepted_culture = ugrian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = ugrian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = ugrian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -37159,13 +36643,11 @@ country_event = {
 		accepted_culture = north_caucasian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = north_caucasian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = north_caucasian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -37303,13 +36785,11 @@ country_event = {
 		accepted_culture = siberian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = siberian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = siberian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -37447,13 +36927,11 @@ country_event = {
 		accepted_culture = new_zelandian
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = new_zelandian
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = new_zelandian
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -37591,13 +37069,11 @@ country_event = {
 		accepted_culture = anglo_african
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = anglo_african
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = anglo_african
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
@@ -37735,13 +37211,11 @@ country_event = {
 		accepted_culture = cubans
 		NOT = {
 			any_owned_province = {
-				AND = {
-					culture = cubans
-					OR = {
-						is_colonial = no
-						owner = {
-							citizenship_policy = full_citizenship
-						}
+				culture = cubans
+				OR = {
+					is_colonial = no
+					owner = {
+						citizenship_policy = full_citizenship
 					}
 				}
 			}
