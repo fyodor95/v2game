@@ -135,7 +135,6 @@ party_issues = {
 	}
 	war_policy = {
 		jingoism = {
-			global_pop_militancy_modifier = 0.04
 			max_military_spending = 1.0
 			supply_consumption = 0.1
 			war_exhaustion_effect = 0.5
@@ -146,7 +145,6 @@ party_issues = {
 			reinforce_speed = 0.5
 		}
 		pro_military = {
-			global_pop_militancy_modifier = 0.02
 			max_military_spending = 1.0
 			war_exhaustion_effect = 0.7
 			cb_generation_speed_modifier = 0.2
@@ -164,7 +162,6 @@ party_issues = {
 			reinforce_speed = -0.25
 		}
 		pacifism = {
-			global_pop_militancy_modifier = -0.02
 			max_military_spending = 0.5
 			supply_consumption = -0.5
 			war_exhaustion_effect = 1.5
