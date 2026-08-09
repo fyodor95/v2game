@@ -1355,6 +1355,7 @@ act_1871
 act_zluky
 adams-onis_treaty
 alaskan_purchase
+allow_tag_changing
 an_elephant_for_america
 anglo-dutch_treaty
 annals_of_the_fulani_jihad
@@ -1773,6 +1774,7 @@ establish_united_nations_usa
 estonia_national_revival
 european_blitzkrieg
 fatherland_volunteers
+forbid_tag_changing
 forced_egyptological_excavations
 form_arabia
 form_byzantine_empire
