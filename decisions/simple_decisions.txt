@@ -1,4 +1,16 @@
 political_decisions = {
+allow_tag_changing = {
+	potential = {
+		has_country_flag = tag_changing_is_forbidden
+		ai = no
+	}
+	allow = {
+		ai = no
+	}
+	effect = {
+		clr_country_flag = tag_changing_is_forbidden
+	}
+}
 ban_animist_soldiers = {
 	potential = {
 		ai = no
@@ -40,6 +52,20 @@ ban_animist_soldiers = {
 				pop_type = labourers
 			}
 		}
+	}
+}
+forbid_tag_changing = {
+	potential = {
+		NOT = {
+			has_country_flag = tag_changing_is_forbidden
+		}
+		ai = no
+	}
+	allow = {
+		ai = no
+	}
+	effect = {
+		set_country_flag = tag_changing_is_forbidden
 	}
 }
 reunification = {

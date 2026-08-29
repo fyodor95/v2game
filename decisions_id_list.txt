@@ -1048,6 +1048,7 @@ acceptance_capital_zhuang
 acceptance_capital_zulu
 adopt_die_stem
 alaskan_purchase
+allow_tag_changing
 an_elephant_for_america
 annals_of_the_fulani_jihad
 annex_Krakow
@@ -1104,6 +1105,7 @@ establish_the_dar_al_funun
 establish_the_sovnarkom
 expand_motala_verkstad
 fatherland_volunteers
+forbid_tag_changing
 forced_egyptological_excavations
 form_Australia
 form_Australia2
