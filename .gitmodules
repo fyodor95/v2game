@@ -1,0 +1,4 @@
+[submodule "AGENTS"]
+	path = AGENTS
+	url = https://github.com/fyodor95/AGENTS.git
+	branch = main
