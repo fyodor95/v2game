@@ -6,17 +6,17 @@ NON_ACCEPTED_ONLY_RECRUITMENT;Только непризнанные культуры;X
 COLONIAL_ONLY_RECRUITMENT;Только колонии;X
 NON_COLONIAL_ONLY_RECRUITMENT;Только неколониальные области;X
 MOVE_POP_AMOUNT_EFFECT;Переместить §Y$AMOUNT$§! населения в провинцию §Y$WHERE$§W.;X
-PROV_NON_ACC_MIL_MODIFIER;Воинственность непризнанных культур в провинции;X
+PROV_NON_ACC_MIL_MODIFIER;Агрессивность непризнанных культур в провинции;X
 PROV_NON_ACC_CON_MODIFIER;Сознательность непризнанных культур в провинции;X
-PROV_PRIMARY_MIL_MODIFIER;Воинственность основной культуры в провинции;X
+PROV_PRIMARY_MIL_MODIFIER;Агрессивность основной культуры в провинции;X
 PROV_PRIMARY_CON_MODIFIER;Сознательность основной культуры в провинции;X
-PROV_ACC_MIL_MODIFIER;Воинственность признанных культур в провинции;X
+PROV_ACC_MIL_MODIFIER;Агрессивность признанных культур в провинции;X
 PROV_ACC_CON_MODIFIER;Сознательность признанных культур в провинции;X
-PRIMARY_POP_MILITANCY_MODIFIER;Воинственность основной культуры;X
+PRIMARY_POP_MILITANCY_MODIFIER;Агрессивность основной культуры;X
 PRIMARY_POP_CONSCIOUSNESS_MODIFIER;Сознательность основной культуры;X
-ACCEPTED_POP_MILITANCY_MODIFIER;Воинственность признанных культур;X
+ACCEPTED_POP_MILITANCY_MODIFIER;Агрессивность признанных культур;X
 ACCEPTED_POP_CONSCIOUSNESS_MODIFIER;Сознательность признанных культур;X
-COLONIAL_POP_MILITANCY_MODIFIER;Воинственность населения колоний;X
+COLONIAL_POP_MILITANCY_MODIFIER;Агрессивность населения колоний;X
 COLONIAL_POP_CONSCIOUSNESS_MODIFIER;Сознательность населения колоний;X
 CC_COUNTRY_RELIGION_IS;Государственная религия: ;X
 CC_COUNTRY_RELIGION_IS_NOT;Государственная религия не является: ;X
