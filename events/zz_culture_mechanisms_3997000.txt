@@ -1,0 +1,69 @@
+# MECHANISMS v2. One isolated event per file.
+country_event = {
+ id = 3997000
+ title = "MECHANISMS 3997000: START - fresh HAW game only"
+ desc = "Fresh 1836 game without a selected mod. Stay HAW. Run about 132 days. Click the intermediate PLAYER CHECK window normally. Save as culture_mechanisms_auto after the final notice."
+ picture = "Administration"
+ is_triggered_only = yes
+  option = { name = "OK"
+ any_owned = { limit = { province_id = 658 owner = { tag = HAW } NOT = { has_global_flag = csm2_started } } owner = { set_global_flag = csm2_started set_global_flag = csm2_running clr_global_flag = cspa1_running clr_global_flag = cspf1_running clr_global_flag = chain_probe_natural
+PRU = { country_event = { id = 3997100 days = 1 } }
+ENG = { country_event = { id = 3997101 days = 1 } }
+SWI = { country_event = { id = 3997102 days = 3 } }
+SWI = { country_event = { id = 3997103 days = 4 } }
+SWI = { country_event = { id = 3997104 days = 9 } }
+PRU = { country_event = { id = 3997119 days = 11 } }
+ENG = { country_event = { id = 3997120 days = 11 } }
+SWI = { country_event = { id = 3997121 days = 13 } }
+SWI = { country_event = { id = 3997122 days = 14 } }
+SWI = { country_event = { id = 3997123 days = 19 } }
+PRU = { country_event = { id = 3997138 days = 21 } }
+ENG = { country_event = { id = 3997139 days = 21 } }
+SWI = { country_event = { id = 3997140 days = 23 } }
+SWI = { country_event = { id = 3997141 days = 24 } }
+SWI = { country_event = { id = 3997142 days = 29 } }
+PRU = { country_event = { id = 3997157 days = 31 } }
+ENG = { country_event = { id = 3997158 days = 31 } }
+SWI = { country_event = { id = 3997159 days = 33 } }
+SWI = { country_event = { id = 3997160 days = 34 } }
+SWI = { country_event = { id = 3997161 days = 39 } }
+PRU = { country_event = { id = 3997176 days = 41 } }
+ENG = { country_event = { id = 3997177 days = 41 } }
+SWI = { country_event = { id = 3997178 days = 43 } }
+SWI = { country_event = { id = 3997179 days = 44 } }
+SWI = { country_event = { id = 3997180 days = 49 } }
+PRU = { country_event = { id = 3997195 days = 51 } }
+ENG = { country_event = { id = 3997196 days = 51 } }
+SWI = { country_event = { id = 3997197 days = 53 } }
+SWI = { country_event = { id = 3997198 days = 54 } }
+SWI = { country_event = { id = 3997199 days = 59 } }
+PRU = { country_event = { id = 3997214 days = 61 } }
+USA = { country_event = { id = 3997215 days = 61 } }
+SWI = { country_event = { id = 3997216 days = 63 } }
+SWI = { country_event = { id = 3997217 days = 64 } }
+SWI = { country_event = { id = 3997218 days = 69 } }
+PRU = { country_event = { id = 3997238 days = 71 } }
+USA = { country_event = { id = 3997239 days = 71 } }
+SWI = { country_event = { id = 3997240 days = 73 } }
+SWI = { country_event = { id = 3997241 days = 74 } }
+SWI = { country_event = { id = 3997242 days = 79 } }
+PRU = { country_event = { id = 3997262 days = 81 } }
+USA = { country_event = { id = 3997263 days = 81 } }
+SWI = { country_event = { id = 3997264 days = 83 } }
+SWI = { country_event = { id = 3997265 days = 84 } }
+SWI = { country_event = { id = 3997266 days = 89 } }
+SWI = { country_event = { id = 3997286 days = 91 } }
+SWI = { country_event = { id = 3997287 days = 93 } }
+SWI = { country_event = { id = 3997288 days = 98 } }
+SWI = { country_event = { id = 3997305 days = 100 } }
+SWI = { country_event = { id = 3997306 days = 102 } }
+SWI = { country_event = { id = 3997307 days = 107 } }
+SWI = { country_event = { id = 3997324 days = 109 } }
+SWI = { country_event = { id = 3997325 days = 111 } }
+SWI = { country_event = { id = 3997326 days = 116 } }
+SWI = { country_event = { id = 3997343 days = 118 } }
+SWI = { country_event = { id = 3997344 days = 126 } }
+SWI = { country_event = { id = 3997004 days = 1 } }
+SWI = { country_event = { id = 3997002 days = 132 } } } }
+ }
+}

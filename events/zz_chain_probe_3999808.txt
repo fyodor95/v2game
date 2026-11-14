@@ -1,0 +1,12 @@
+# CHAIN PROBE v1. TEST SAVE ONLY. One event per file.
+country_event = {
+    id = 3999808
+    title = "CHAIN 3999808: FRA accepts NG"
+    desc = "FRA accepts NG"
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run / OK"
+        FRA = { add_accepted_culture = north_german }
+    }
+}

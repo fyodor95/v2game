@@ -1,0 +1,13 @@
+# SEMIAUTO CHAIN PROBE v1. One event per file. TEST SAVE ONLY.
+country_event = {
+    id = 3999002
+    title = "AUTO 3999002: STOP future test stages"
+    desc = "Stops future preparations, but already queued source/helper events may still finish. Save this disposable game if diagnostics are needed."
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "OK"
+        clr_global_flag = cspa1_running
+        set_global_flag = cspa1_cancelled
+    }
+}

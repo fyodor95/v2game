@@ -1,0 +1,17 @@
+# MECHANISMS v2. One isolated event per file.
+country_event = {
+ id = 3997349
+ title = "MECHANISMS 3997349: AI immediate order"
+ desc = "MECHANISMS v2 diagnostic. Test save only. AI technical event."
+ picture = "Administration"
+ is_triggered_only = yes
+ immediate = { SWI = { any_owned = { limit = { province_id = 605 has_global_flag = csm2_running } owner = { set_global_flag = csm2_t_ai_immediate
+SWI = { any_owned = { limit = { province_id = 605 NOT = { has_global_flag = csm2_t_after_ai_call } } set_global_flag = csm2_t_ai_before_return_yes } }
+SWI = { any_owned = { limit = { province_id = 605 NOT = { NOT = { has_global_flag = csm2_t_after_ai_call } } } set_global_flag = csm2_t_ai_before_return_no } }
+set_global_flag = csm2_t_ai_immediate_done } } } }
+ option = { name = "OK"
+ SWI = { any_owned = { limit = { province_id = 605 has_global_flag = csm2_running } owner = { SWI = { any_owned = { limit = { province_id = 605 has_global_flag = csm2_t_ai_immediate } set_global_flag = csm2_t_ai_immediate_before_option_yes } }
+SWI = { any_owned = { limit = { province_id = 605 NOT = { has_global_flag = csm2_t_ai_immediate } } set_global_flag = csm2_t_ai_immediate_before_option_no } }
+set_global_flag = csm2_t_ai_option_done } } }
+ }
+}

@@ -1,0 +1,13 @@
+# CHAIN PROBE v1. TEST SAVE ONLY. One event per file.
+province_event = {
+    id = 3999831
+    title = "CHAIN 3999831: Province calls FRA"
+    desc = "Province calls FRA"
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run / OK"
+        owner = { FRA = { country_event = { id = 3999845 days = 0 } } }
+        303 = { add_core = SWE }
+    }
+}

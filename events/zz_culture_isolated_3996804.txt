@@ -1,0 +1,11 @@
+# ISOLATED v1. Requires MECHANISMS v2 files. Test campaign only.
+country_event = {
+ id = 3996804
+ title = "ISOLATED 3996804: ORDER ONLY - fresh HAW"
+ desc = "Independent 14-day run. No cultural A-phase or core B-phase tests. Click the intermediate PLAYER CHECK normally. Save isolation_order at the final notice."
+ picture = "Administration"
+ is_triggered_only = yes
+ option = { name = "OK"
+ any_owned = { limit = { province_id = 658 owner = { tag = HAW } NOT = { has_global_flag = csm2_started } } owner = { set_global_flag = csm2_started set_global_flag = csm2_running clr_global_flag = cspa1_running clr_global_flag = cspf1_running clr_global_flag = chain_probe_natural SWI = { country_event = { id = 3997004 days = 1 } } set_global_flag = csm2_iso_mode_order SWI = { country_event = { id = 3997343 days = 1 } } SWI = { country_event = { id = 3997344 days = 9 } } SWI = { country_event = { id = 3996810 days = 14 } } } }
+ }
+}

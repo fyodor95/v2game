@@ -1,0 +1,11 @@
+# MECHANISMS v2. One isolated event per file.
+country_event = {
+ id = 3997263
+ title = "MECHANISMS 3997263: csm2_a9_mixed_accepted preparation owner"
+ desc = "MECHANISMS v2 diagnostic. Test save only. AI technical event."
+ picture = "Administration"
+ is_triggered_only = yes
+  option = { name = "OK"
+ any_owned = { limit = { province_id = 149 has_global_flag = csm2_running } owner = { primary_culture = french set_global_flag = csm2_a9_mixed_accepted_owner_prep_done } }
+ }
+}

@@ -1,0 +1,13 @@
+# ISOLATED v1. Requires MECHANISMS v2 files. Test campaign only.
+country_event = {
+ id = 3996807
+ title = "ISOLATED 3996807: DISPATCH 3997106 ONLY"
+ desc = "The before-call and after-call flags describe scheduling, not successful completion of the candidate."
+ picture = "Administration"
+ is_triggered_only = yes
+ option = { name = "OK"
+ SWI = { any_owned = { limit = { province_id = 605 has_global_flag = csm2_running has_global_flag = csm2_iso_mode_106 NOT = { has_global_flag = csm2_iso_before_call } } owner = { set_global_flag = csm2_iso_before_call
+301 = { province_event = { id = 3997106 days = 0 } }
+set_global_flag = csm2_iso_after_call } } }
+ }
+}

@@ -1,0 +1,22 @@
+# CHAIN PROBE v1. TEST SAVE ONLY. One event per file.
+country_event = {
+    id = 3999846
+    title = "CHAIN 3999846: Guarded FROM helper"
+    desc = "SAX on 303 means guard passed; DEN on 303 means helper completed, including when guard failed. Loop deliberately uses known any_owned/limit, not limit inside FROM."
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run / OK"
+        any_owned = {
+            limit = {
+                FROM = {
+                    NOT = { owned_by = THIS }
+                    NOT = { is_core = THIS }
+                }
+            }
+            FROM = { add_core = THIS }
+            303 = { add_core = SAX }
+        }
+        303 = { add_core = DEN }
+    }
+}

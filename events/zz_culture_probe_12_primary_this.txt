@@ -1,0 +1,26 @@
+# Potentially unsupported syntax is isolated in this file.
+# Sweden core on 303 is a trailing completion marker, NOT a culture result.
+country_event = {
+    id = 3999912
+    title = "PROBE v2: primary THIS"
+    desc = "PRU markers should be 301 in phases A/B and 302 in C. A Sweden core on 303 MUST appear at the end. If it does not, do not interpret missing PRU cores as a false comparison."
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run this test"
+        301 = { remove_core = PRU }
+        302 = { remove_core = PRU }
+        303 = { remove_core = PRU }
+        303 = { remove_core = SWE }
+        ENG = {
+            any_owned = {
+                limit = {
+                    OR = { province_id = 301 province_id = 302 province_id = 303 }
+                    is_primary_culture = THIS
+                }
+                add_core = THIS
+            }
+        }
+        303 = { add_core = SWE }
+    }
+}

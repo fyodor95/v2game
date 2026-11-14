@@ -1,0 +1,47 @@
+# SEMIAUTO CHAIN PROBE v1. One event per file. TEST SAVE ONLY.
+province_event = {
+    id = 3999315
+    title = "AUTO 3999315: Stage 16: source"
+    desc = "Stage 16: source"
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "OK"
+        set_global_flag = cspa1_t16_source_entered
+        owner = { SWI = { any_owned = { limit = { PRU = { war = no } FRA = { war = no } ENG = { war = no } SWI = { war = no } HAW = { war = no } } set_global_flag = cspa1_t16_peaceful_source } } }
+        owner = { SWI = { any_owned = {
+            limit = { 301 = { owned_by = ENG culture = north_german }
+        302 = { owned_by = ENG culture = south_german }
+        303 = { owned_by = ENG culture = british }
+        PRU = { primary_culture = north_german }
+        FRA = { primary_culture = french accepted_culture = north_german }
+        ENG = { primary_culture = british NOT = { accepted_culture = north_german } } }
+            set_global_flag = cspa1_t16_env_ok
+        } } }
+        owner = { SWI = { any_owned = {
+            limit = { PRU = { is_greater_power = yes } }
+            set_global_flag = cspa1_t16_gp_pru
+        } } }
+        owner = { SWI = { any_owned = {
+            limit = { FRA = { is_greater_power = yes } }
+            set_global_flag = cspa1_t16_gp_fra
+        } } }
+        owner = { SWI = { any_owned = {
+            limit = { ENG = { is_greater_power = yes } }
+            set_global_flag = cspa1_t16_gp_eng
+        } } }
+        owner = { SWI = { any_owned = {
+            limit = { PRU = { is_core = THIS } }
+            set_global_flag = cspa1_t16_candidate_true
+        } } }
+        owner = { SWI = { any_owned = {
+            limit = { 301 = { is_core = PRU } }
+            set_global_flag = cspa1_t16_literal_true
+        } } }
+        set_global_flag = cspa1_t16_source_done
+        owner = { SWI = { any_owned = {
+            limit = { has_global_flag = cspa1_t16_collected }
+            set_global_flag = cspa1_t16_late
+        } } }
+    }
+}

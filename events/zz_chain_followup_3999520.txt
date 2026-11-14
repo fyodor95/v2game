@@ -1,0 +1,16 @@
+# FOLLOWUP v1. TEST SAVE ONLY. One event per file.
+country_event = {
+    id = 3999520
+    title = "FOLLOWUP 3999520: foreign literal ownership diagnostics"
+    desc = "foreign literal ownership diagnostics"
+    is_triggered_only = yes
+    option = {
+        name = "OK"
+        set_global_flag = cspf1_foreign_literal_helper_entered
+        any_owned = { limit = { FROM = { province_id = 301 } } set_global_flag = cspf1_foreign_from_matches }
+        any_owned = { limit = { FROM = { owner = { tag = PRU } } } set_global_flag = cspf1_foreign_from_owner_pru }
+        any_owned = { limit = { FROM = { owned_by = PRU } } set_global_flag = cspf1_foreign_literal_owned_by_pru }
+        any_owned = { limit = { FROM = { owned_by = THIS } } set_global_flag = cspf1_foreign_owned_by_this }
+        set_global_flag = cspf1_foreign_literal_helper_done
+    }
+}

@@ -1,0 +1,15 @@
+# MECHANISMS v2. One isolated event per file.
+province_event = {
+ id = 3997333
+ title = "MECHANISMS 3997333: csm2_b_removed province 301 source"
+ desc = "MECHANISMS v2 diagnostic. Test save only. AI technical event."
+ 
+ is_triggered_only = yes
+  option = { name = "OK"
+ owner = { SWI = { any_owned = { limit = { province_id = 605 has_global_flag = csm2_running } owner = { PRU = { country_event = { id = 3997334 days = 0 } }
+PRU = { country_event = { id = 3997335 days = 0 } }
+PRU = { country_event = { id = 3997336 days = 0 } }
+PRU = { country_event = { id = 3997337 days = 0 } }
+ } } } }
+ }
+}

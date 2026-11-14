@@ -1,0 +1,11 @@
+# ISOLATED v1. Requires MECHANISMS v2 files. Test campaign only.
+country_event = {
+ id = 3996816
+ title = "ISOLATED 3996816: NOT ARMED - save and report"
+ desc = "Checkpoint or preparation is missing or invalid. Do not start the full test. Pause, save isolation_setup_failed and tell the assistant. No suspect candidate was queued."
+ picture = "Administration"
+ is_triggered_only = yes
+ option = { name = "OK"
+ set_global_flag = csm2_iso_arm_failed
+ }
+}

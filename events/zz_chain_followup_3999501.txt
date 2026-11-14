@@ -1,0 +1,39 @@
+# FOLLOWUP v1. TEST SAVE ONLY. One event per file.
+country_event = {
+    id = 3999501
+    title = "FOLLOWUP 3999501: Restore proven preparation pattern"
+    desc = "Restore proven preparation pattern"
+    is_triggered_only = yes
+    option = {
+        name = "OK"
+        any_owned = {
+            limit = { province_id = 549 has_global_flag = cspf1_running }
+            owner = {
+        set_global_flag = cspf1_setup_entered
+        primary_culture = north_german
+        301 = { secede_province = PRU }
+        301 = { assimilate = yes }
+        primary_culture = south_german
+        302 = { secede_province = PRU }
+        302 = { assimilate = yes }
+        primary_culture = british
+        303 = { secede_province = PRU }
+        303 = { assimilate = yes }
+        primary_culture = north_german
+        remove_accepted_culture = north_german
+        remove_accepted_culture = south_german
+        remove_accepted_culture = british
+        add_accepted_culture = south_german
+        ENG = { primary_culture = british remove_accepted_culture = north_german remove_accepted_culture = south_german remove_accepted_culture = british }
+        FRA = { primary_culture = french remove_accepted_culture = north_german add_accepted_culture = north_german }
+        301 = { secede_province = ENG }
+        302 = { secede_province = ENG }
+        303 = { secede_province = ENG }
+        301 = { remove_core = PRU remove_core = FRA }
+        302 = { remove_core = PRU remove_core = FRA }
+        303 = { remove_core = PRU remove_core = FRA }
+        set_global_flag = cspf1_setup_done
+            }
+        }
+    }
+}

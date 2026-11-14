@@ -1,0 +1,19 @@
+# FOLLOWUP v1. TEST SAVE ONLY. One event per file.
+country_event = {
+    id = 3999506
+    title = "FOLLOWUP 3999506: own result snapshot"
+    desc = "own result snapshot"
+    is_triggered_only = yes
+    option = {
+        name = "OK"
+        any_owned = {
+            limit = { province_id = 605 has_global_flag = cspf1_running }
+            owner = {
+        set_global_flag = cspf1_own_collected
+        any_owned = { limit = { 303 = { is_core = PRU } } set_global_flag = cspf1_own_snapshot_core }
+        any_owned = { limit = { 303 = { owner = { tag = PRU } } } set_global_flag = cspf1_own_snapshot_owner_pru }
+        set_global_flag = cspf1_own_snapshot_done
+            }
+        }
+    }
+}

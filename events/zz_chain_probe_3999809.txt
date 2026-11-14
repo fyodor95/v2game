@@ -1,0 +1,12 @@
+# CHAIN PROBE v1. TEST SAVE ONLY. One event per file.
+country_event = {
+    id = 3999809
+    title = "CHAIN 3999809: PRU becomes French"
+    desc = "PRU becomes French"
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run / OK"
+        PRU = { primary_culture = french remove_accepted_culture = north_german remove_accepted_culture = south_german }
+    }
+}

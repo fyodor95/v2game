@@ -1,0 +1,17 @@
+# CHAIN PROBE v1. TEST SAVE ONLY. One event per file.
+province_event = {
+    id = 3999832
+    title = "CHAIN 3999832: Filtered GP dispatch"
+    desc = "Filtered GP dispatch"
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run / OK"
+        any_greater_power = {
+            limit = { OR = { tag = PRU tag = FRA tag = ENG }
+        OR = { primary_culture = north_german accepted_culture = north_german } }
+            country_event = { id = 3999845 days = 0 }
+        }
+        303 = { add_core = SWE }
+    }
+}

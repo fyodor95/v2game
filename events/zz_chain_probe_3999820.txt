@@ -1,0 +1,18 @@
+# CHAIN PROBE v1. TEST SAVE ONLY. One event per file.
+country_event = {
+    id = 3999820
+    title = "CHAIN 3999820: ARM natural probe"
+    desc = "Only AFTER manual tests pass. Setup with 3999800 first. Natural probe checks only 301; MTTH one day. Province event belongs to ENG. Switch to ENG to see it. Stop with 3999821."
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run / OK"
+        set_global_flag = chain_probe_natural
+        301 = { remove_core = BAV remove_core = SAX }
+        302 = { remove_core = BAV remove_core = SAX }
+        303 = { remove_core = BAV remove_core = SAX remove_core = SWE remove_core = DEN }
+        301 = { remove_core = PRU remove_core = FRA }
+        302 = { remove_core = PRU remove_core = FRA }
+        303 = { remove_core = PRU remove_core = FRA }
+    }
+}

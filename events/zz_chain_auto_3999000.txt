@@ -1,0 +1,41 @@
+# SEMIAUTO CHAIN PROBE v1. One event per file. TEST SAVE ONLY.
+country_event = {
+    id = 3999000
+    title = "AUTO 3999000: START 17 tests - HAW only"
+    desc = "TEST SAVE ONLY. Stay as HAW, run time for six months, then save as chain_auto_result. No manual probe commands during this run. Re-run only in a fresh game."
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "OK"
+        any_owned = {
+            limit = { province_id = 658 owner = { tag = HAW } NOT = { has_global_flag = cspa1_started } }
+            owner = {
+            set_global_flag = cspa1_started
+        set_global_flag = cspa1_running
+        clr_global_flag = chain_probe_natural
+        SWI = {
+            country_event = { id = 3999004 days = 1 }
+            country_event = { id = 3999100 days = 2 }
+            country_event = { id = 3999102 days = 12 }
+            country_event = { id = 3999104 days = 22 }
+            country_event = { id = 3999106 days = 32 }
+            country_event = { id = 3999108 days = 42 }
+            country_event = { id = 3999110 days = 52 }
+            country_event = { id = 3999112 days = 62 }
+            country_event = { id = 3999114 days = 72 }
+            country_event = { id = 3999116 days = 82 }
+            country_event = { id = 3999118 days = 92 }
+            country_event = { id = 3999120 days = 102 }
+            country_event = { id = 3999122 days = 112 }
+            country_event = { id = 3999124 days = 122 }
+            country_event = { id = 3999126 days = 132 }
+            country_event = { id = 3999128 days = 142 }
+            country_event = { id = 3999130 days = 152 }
+            country_event = { id = 3999132 days = 162 }
+            country_event = { id = 3999003 days = 174 }
+        }
+            }
+        
+        }
+    }
+}

@@ -1,0 +1,12 @@
+# CHAIN PROBE v1. TEST SAVE ONLY. One event per file.
+country_event = {
+    id = 3999810
+    title = "CHAIN 3999810: PRU accepts NG"
+    desc = "PRU accepts NG"
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run / OK"
+        PRU = { add_accepted_culture = north_german }
+    }
+}

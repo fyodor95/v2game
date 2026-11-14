@@ -1,0 +1,204 @@
+# Daily in-game war monitor. TEST SAVE ONLY.
+country_event = {
+    id = 3999004
+    title = "AUTO: daily environment monitor"
+    desc = "AI-only watchdog. Does not prevent or end wars."
+    is_triggered_only = yes
+    option = {
+        name = "OK"
+        any_owned = {
+            limit = { province_id = 605 has_global_flag = cspa1_running }
+            owner = {
+                set_global_flag = cspa1_watchdog_ran
+                any_owned = {
+                    limit = { has_global_flag = cspa1_t01_active }
+                    set_global_flag = cspa1_t01_watch_seen
+                }
+                any_owned = {
+                    limit = {
+                        has_global_flag = cspa1_t01_active
+                        OR = { PRU = { war = yes } FRA = { war = yes } ENG = { war = yes } SWI = { war = yes } HAW = { war = yes } }
+                    }
+                    set_global_flag = cspa1_t01_war_seen
+                }
+                any_owned = {
+                    limit = { has_global_flag = cspa1_t02_active }
+                    set_global_flag = cspa1_t02_watch_seen
+                }
+                any_owned = {
+                    limit = {
+                        has_global_flag = cspa1_t02_active
+                        OR = { PRU = { war = yes } FRA = { war = yes } ENG = { war = yes } SWI = { war = yes } HAW = { war = yes } }
+                    }
+                    set_global_flag = cspa1_t02_war_seen
+                }
+                any_owned = {
+                    limit = { has_global_flag = cspa1_t03_active }
+                    set_global_flag = cspa1_t03_watch_seen
+                }
+                any_owned = {
+                    limit = {
+                        has_global_flag = cspa1_t03_active
+                        OR = { PRU = { war = yes } FRA = { war = yes } ENG = { war = yes } SWI = { war = yes } HAW = { war = yes } }
+                    }
+                    set_global_flag = cspa1_t03_war_seen
+                }
+                any_owned = {
+                    limit = { has_global_flag = cspa1_t04_active }
+                    set_global_flag = cspa1_t04_watch_seen
+                }
+                any_owned = {
+                    limit = {
+                        has_global_flag = cspa1_t04_active
+                        OR = { PRU = { war = yes } FRA = { war = yes } ENG = { war = yes } SWI = { war = yes } HAW = { war = yes } }
+                    }
+                    set_global_flag = cspa1_t04_war_seen
+                }
+                any_owned = {
+                    limit = { has_global_flag = cspa1_t05_active }
+                    set_global_flag = cspa1_t05_watch_seen
+                }
+                any_owned = {
+                    limit = {
+                        has_global_flag = cspa1_t05_active
+                        OR = { PRU = { war = yes } FRA = { war = yes } ENG = { war = yes } SWI = { war = yes } HAW = { war = yes } }
+                    }
+                    set_global_flag = cspa1_t05_war_seen
+                }
+                any_owned = {
+                    limit = { has_global_flag = cspa1_t06_active }
+                    set_global_flag = cspa1_t06_watch_seen
+                }
+                any_owned = {
+                    limit = {
+                        has_global_flag = cspa1_t06_active
+                        OR = { PRU = { war = yes } FRA = { war = yes } ENG = { war = yes } SWI = { war = yes } HAW = { war = yes } }
+                    }
+                    set_global_flag = cspa1_t06_war_seen
+                }
+                any_owned = {
+                    limit = { has_global_flag = cspa1_t07_active }
+                    set_global_flag = cspa1_t07_watch_seen
+                }
+                any_owned = {
+                    limit = {
+                        has_global_flag = cspa1_t07_active
+                        OR = { PRU = { war = yes } FRA = { war = yes } ENG = { war = yes } SWI = { war = yes } HAW = { war = yes } }
+                    }
+                    set_global_flag = cspa1_t07_war_seen
+                }
+                any_owned = {
+                    limit = { has_global_flag = cspa1_t08_active }
+                    set_global_flag = cspa1_t08_watch_seen
+                }
+                any_owned = {
+                    limit = {
+                        has_global_flag = cspa1_t08_active
+                        OR = { PRU = { war = yes } FRA = { war = yes } ENG = { war = yes } SWI = { war = yes } HAW = { war = yes } }
+                    }
+                    set_global_flag = cspa1_t08_war_seen
+                }
+                any_owned = {
+                    limit = { has_global_flag = cspa1_t09_active }
+                    set_global_flag = cspa1_t09_watch_seen
+                }
+                any_owned = {
+                    limit = {
+                        has_global_flag = cspa1_t09_active
+                        OR = { PRU = { war = yes } FRA = { war = yes } ENG = { war = yes } SWI = { war = yes } HAW = { war = yes } }
+                    }
+                    set_global_flag = cspa1_t09_war_seen
+                }
+                any_owned = {
+                    limit = { has_global_flag = cspa1_t10_active }
+                    set_global_flag = cspa1_t10_watch_seen
+                }
+                any_owned = {
+                    limit = {
+                        has_global_flag = cspa1_t10_active
+                        OR = { PRU = { war = yes } FRA = { war = yes } ENG = { war = yes } SWI = { war = yes } HAW = { war = yes } }
+                    }
+                    set_global_flag = cspa1_t10_war_seen
+                }
+                any_owned = {
+                    limit = { has_global_flag = cspa1_t11_active }
+                    set_global_flag = cspa1_t11_watch_seen
+                }
+                any_owned = {
+                    limit = {
+                        has_global_flag = cspa1_t11_active
+                        OR = { PRU = { war = yes } FRA = { war = yes } ENG = { war = yes } SWI = { war = yes } HAW = { war = yes } }
+                    }
+                    set_global_flag = cspa1_t11_war_seen
+                }
+                any_owned = {
+                    limit = { has_global_flag = cspa1_t12_active }
+                    set_global_flag = cspa1_t12_watch_seen
+                }
+                any_owned = {
+                    limit = {
+                        has_global_flag = cspa1_t12_active
+                        OR = { PRU = { war = yes } FRA = { war = yes } ENG = { war = yes } SWI = { war = yes } HAW = { war = yes } }
+                    }
+                    set_global_flag = cspa1_t12_war_seen
+                }
+                any_owned = {
+                    limit = { has_global_flag = cspa1_t13_active }
+                    set_global_flag = cspa1_t13_watch_seen
+                }
+                any_owned = {
+                    limit = {
+                        has_global_flag = cspa1_t13_active
+                        OR = { PRU = { war = yes } FRA = { war = yes } ENG = { war = yes } SWI = { war = yes } HAW = { war = yes } }
+                    }
+                    set_global_flag = cspa1_t13_war_seen
+                }
+                any_owned = {
+                    limit = { has_global_flag = cspa1_t14_active }
+                    set_global_flag = cspa1_t14_watch_seen
+                }
+                any_owned = {
+                    limit = {
+                        has_global_flag = cspa1_t14_active
+                        OR = { PRU = { war = yes } FRA = { war = yes } ENG = { war = yes } SWI = { war = yes } HAW = { war = yes } }
+                    }
+                    set_global_flag = cspa1_t14_war_seen
+                }
+                any_owned = {
+                    limit = { has_global_flag = cspa1_t15_active }
+                    set_global_flag = cspa1_t15_watch_seen
+                }
+                any_owned = {
+                    limit = {
+                        has_global_flag = cspa1_t15_active
+                        OR = { PRU = { war = yes } FRA = { war = yes } ENG = { war = yes } SWI = { war = yes } HAW = { war = yes } }
+                    }
+                    set_global_flag = cspa1_t15_war_seen
+                }
+                any_owned = {
+                    limit = { has_global_flag = cspa1_t16_active }
+                    set_global_flag = cspa1_t16_watch_seen
+                }
+                any_owned = {
+                    limit = {
+                        has_global_flag = cspa1_t16_active
+                        OR = { PRU = { war = yes } FRA = { war = yes } ENG = { war = yes } SWI = { war = yes } HAW = { war = yes } }
+                    }
+                    set_global_flag = cspa1_t16_war_seen
+                }
+                any_owned = {
+                    limit = { has_global_flag = cspa1_t17_active }
+                    set_global_flag = cspa1_t17_watch_seen
+                }
+                any_owned = {
+                    limit = {
+                        has_global_flag = cspa1_t17_active
+                        OR = { PRU = { war = yes } FRA = { war = yes } ENG = { war = yes } SWI = { war = yes } HAW = { war = yes } }
+                    }
+                    set_global_flag = cspa1_t17_war_seen
+                }
+                country_event = { id = 3999004 days = 1 }
+            }
+        }
+    }
+}

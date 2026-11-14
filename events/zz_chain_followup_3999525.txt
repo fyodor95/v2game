@@ -1,0 +1,13 @@
+# FOLLOWUP v1. TEST SAVE ONLY. One event per file.
+country_event = {
+    id = 3999525
+    title = "FOLLOWUP 3999525: own original guard"
+    desc = "own original guard"
+    is_triggered_only = yes
+    option = {
+        name = "OK"
+        set_global_flag = cspf1_own_guard_helper_entered
+        any_owned = { limit = { FROM = { NOT = { owned_by = THIS } NOT = { is_core = THIS } } } FROM = { add_core = THIS } set_global_flag = cspf1_own_guard_passed }
+        set_global_flag = cspf1_own_guard_helper_done
+    }
+}

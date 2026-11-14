@@ -1,0 +1,12 @@
+# CHAIN PROBE v1. TEST SAVE ONLY. One event per file.
+country_event = {
+    id = 3999821
+    title = "CHAIN 3999821: STOP natural probe"
+    desc = "STOP natural probe"
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run / OK"
+        clr_global_flag = chain_probe_natural
+    }
+}

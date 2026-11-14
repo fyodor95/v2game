@@ -1,0 +1,26 @@
+# Potentially unsupported syntax is isolated in this file.
+# Denmark core on 303 is a trailing completion marker, NOT a culture result.
+country_event = {
+    id = 3999913
+    title = "PROBE v2: accepted THIS"
+    desc = "FRA markers should be 302 in phases A/B and 301 in C. A Denmark core on 303 MUST appear at the end. If it does not, do not interpret missing FRA cores as a false comparison."
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run this test"
+        301 = { remove_core = FRA }
+        302 = { remove_core = FRA }
+        303 = { remove_core = FRA }
+        303 = { remove_core = DEN }
+        ENG = {
+            any_owned = {
+                limit = {
+                    OR = { province_id = 301 province_id = 302 province_id = 303 }
+                    is_accepted_culture = THIS
+                }
+                add_core = FRA
+            }
+        }
+        303 = { add_core = DEN }
+    }
+}

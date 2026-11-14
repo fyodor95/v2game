@@ -1,0 +1,17 @@
+# FOLLOWUP v1. TEST SAVE ONLY. One event per file.
+country_event = {
+    id = 3999503
+    title = "FOLLOWUP 3999503: Dispatch foreign province"
+    desc = "Dispatch foreign province"
+    is_triggered_only = yes
+    option = {
+        name = "OK"
+        any_owned = {
+            limit = { province_id = 605 has_global_flag = cspf1_running }
+            owner = {
+        set_global_flag = cspf1_foreign_started
+        301 = { province_event = { id = 3999510 days = 0 } }
+            }
+        }
+    }
+}

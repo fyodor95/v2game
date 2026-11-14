@@ -1,0 +1,13 @@
+# MECHANISMS v2. One isolated event per file.
+country_event = {
+ id = 3997004
+ title = "MECHANISMS 3997004: Daily war observer"
+ desc = "MECHANISMS v2 diagnostic. Test save only. AI technical event."
+ picture = "Administration"
+ is_triggered_only = yes
+  option = { name = "OK"
+ SWI = { any_owned = { limit = { province_id = 605 has_global_flag = csm2_running } owner = { set_global_flag = csm2_watchdog_ran
+SWI = { any_owned = { limit = { province_id = 605 OR = { PRU = { war = yes } ENG = { war = yes } USA = { war = yes } FRA = { war = yes } SWI = { war = yes } HAW = { war = yes } } } set_global_flag = csm2_war_seen } }
+country_event = { id = 3997004 days = 1 } } } }
+ }
+}

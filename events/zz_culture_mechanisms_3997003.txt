@@ -1,0 +1,11 @@
+# MECHANISMS v2. One isolated event per file.
+country_event = {
+ id = 3997003
+ title = "MECHANISMS 3997003: SAVE AS culture_mechanisms_auto"
+ desc = "Click OK, pause and save a NEW file named culture_mechanisms_auto. Keep previous test saves. Tell the assistant the run is ready. Missing or failed checks are still useful."
+ picture = "Administration"
+ is_triggered_only = yes
+  option = { name = "OK"
+ set_global_flag = csm2_notice_seen
+ }
+}

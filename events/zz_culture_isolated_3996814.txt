@@ -1,0 +1,11 @@
+# ISOLATED v1. Requires MECHANISMS v2 files. Test campaign only.
+country_event = {
+ id = 3996814
+ title = "ISOLATED 3996814: SAVE isolation_cores"
+ desc = "Click OK, pause and save isolation_cores. Keep isolation_before unchanged. Tell the assistant whether the game crashed or completed. Preserve logs before another launch."
+ picture = "Administration"
+ is_triggered_only = yes
+ option = { name = "OK"
+ set_global_flag = csm2_iso_notice_seen
+ }
+}

@@ -1,0 +1,25 @@
+# MECHANISMS v2. One isolated event per file.
+country_event = {
+ id = 3997343
+ title = "MECHANISMS 3997343: Trigger and immediate caller"
+ desc = "MECHANISMS v2 diagnostic. Test save only. AI technical event."
+ picture = "Administration"
+ is_triggered_only = yes
+  option = { name = "OK"
+ SWI = { any_owned = { limit = { province_id = 605 has_global_flag = csm2_running } owner = { SWI = { any_owned = { limit = { province_id = 605 PRU = { war = no } ENG = { war = no } USA = { war = no } FRA = { war = no } SWI = { war = no } HAW = { war = no } SWI = { ai = yes owns = 605 } PRU = { ai = yes owns = 549 } HAW = { ai = no owns = 658 } } set_global_flag = csm2_t_env } }
+set_global_flag = csm2_t_caller_entered
+PRU = { country_event = { id = 3997345 days = 0 } }
+PRU = { country_event = { id = 3997346 days = 0 } }
+PRU = { country_event = { id = 3997347 days = 2 } }
+PRU = { country_event = { id = 3997348 days = 2 } }
+PRU = { country_event = { id = 3997349 days = 0 } }
+SWI = { any_owned = { limit = { province_id = 605 has_global_flag = csm2_t_ai_immediate } set_global_flag = csm2_t_ai_visible_on_return_yes } }
+SWI = { any_owned = { limit = { province_id = 605 NOT = { has_global_flag = csm2_t_ai_immediate } } set_global_flag = csm2_t_ai_visible_on_return_no } }
+set_global_flag = csm2_t_after_ai_call
+HAW = { country_event = { id = 3997005 days = 0 } }
+SWI = { any_owned = { limit = { province_id = 605 has_global_flag = csm2_t_human_immediate } set_global_flag = csm2_t_human_visible_on_return_yes } }
+SWI = { any_owned = { limit = { province_id = 605 NOT = { has_global_flag = csm2_t_human_immediate } } set_global_flag = csm2_t_human_visible_on_return_no } }
+set_global_flag = csm2_t_after_human_call
+set_global_flag = csm2_t_caller_done } } }
+ }
+}

@@ -1,0 +1,13 @@
+# CHAIN PROBE v1. TEST SAVE ONLY. One event per file.
+province_event = {
+    id = 3999834
+    title = "CHAIN 3999834: Province calls guarded PRU"
+    desc = "Province calls guarded PRU"
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run / OK"
+        owner = { PRU = { country_event = { id = 3999846 days = 0 } } }
+        303 = { add_core = SWE }
+    }
+}

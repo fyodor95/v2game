@@ -1,0 +1,11 @@
+# MECHANISMS v2. One isolated event per file.
+country_event = {
+ id = 3997324
+ title = "MECHANISMS 3997324: csm2_b_removed setup"
+ desc = "MECHANISMS v2 diagnostic. Test save only. AI technical event."
+ picture = "Administration"
+ is_triggered_only = yes
+  option = { name = "OK"
+ SWI = { any_owned = { limit = { province_id = 605 has_global_flag = csm2_running } owner = { PRU = { set_country_flag = csm2_claimant } FRA = { clr_country_flag = csm2_claimant } 301 = { remove_core = FRA remove_core = PRU } set_global_flag = csm2_b_removed_prep_done } } }
+ }
+}

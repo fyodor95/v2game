@@ -1,0 +1,11 @@
+# MECHANISMS v2. One isolated event per file.
+country_event = {
+ id = 3997001
+ title = "MECHANISMS 3997001: STOP this diagnostic run"
+ desc = "Stops new diagnostic effects. Already queued windows can still appear. This does not restore countries or cores; discard this test campaign."
+ picture = "Administration"
+ is_triggered_only = yes
+  option = { name = "OK"
+ clr_global_flag = csm2_running set_global_flag = csm2_cancelled
+ }
+}

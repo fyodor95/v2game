@@ -1,0 +1,12 @@
+# MECHANISMS v2. One isolated event per file.
+country_event = {
+ id = 3997002
+ title = "MECHANISMS 3997002: Finish diagnostic window"
+ desc = "MECHANISMS v2 diagnostic. Test save only. AI technical event."
+ picture = "Administration"
+ is_triggered_only = yes
+  option = { name = "OK"
+ SWI = { any_owned = { limit = { province_id = 605 has_global_flag = csm2_running } owner = { SWI = { any_owned = { limit = { province_id = 605 PRU = { war = no } ENG = { war = no } USA = { war = no } FRA = { war = no } SWI = { war = no } HAW = { war = no } } set_global_flag = csm2_peace_at_finish } }
+set_global_flag = csm2_finished clr_global_flag = csm2_running HAW = { country_event = { id = 3997003 days = 0 } } } } }
+ }
+}

@@ -1,0 +1,18 @@
+# CHAIN PROBE v1. TEST SAVE ONLY. One event per file.
+country_event = {
+    id = 3999815
+    title = "CHAIN 3999815: Prepare reverse-core test"
+    desc = "Prepare reverse-core test"
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run / OK"
+        clr_global_flag = chain_probe_natural
+        301 = { secede_province = ENG add_core = PRU }
+        302 = { secede_province = ENG remove_core = PRU }
+        303 = { secede_province = ENG }
+        301 = { remove_core = BAV remove_core = SAX }
+        302 = { remove_core = BAV remove_core = SAX }
+        303 = { remove_core = BAV remove_core = SAX remove_core = SWE remove_core = DEN }
+    }
+}

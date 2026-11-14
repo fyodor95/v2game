@@ -1,0 +1,11 @@
+# FOLLOWUP v1. TEST SAVE ONLY. One event per file.
+country_event = {
+    id = 3999508
+    title = "FOLLOWUP 3999508: SAVE AS chain_auto_followup"
+    desc = "Observation window ended, not a success verdict. Pause and save as chain_auto_followup; the assistant will analyze individual flags."
+    is_triggered_only = yes
+    option = {
+        name = "OK"
+        set_global_flag = cspf1_notice_seen
+    }
+}

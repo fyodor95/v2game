@@ -1,0 +1,28 @@
+# CHAIN PROBE v1. TEST SAVE ONLY. One event per file.
+province_event = {
+    id = 3999842
+    title = "CHAIN 3999842: Natural predicate diagnostic"
+    desc = "BAV on 301 means natural predicate currently true. No cores are granted to PRU/FRA. Requires ARM flag."
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run / OK"
+        owner = {
+            any_owned = {
+                limit = {
+                    province_id = 301
+                    has_global_flag = chain_probe_natural
+                    owned_by = ENG
+                    culture = north_german
+                    any_greater_power = {
+                        OR = { tag = PRU tag = FRA }
+                        OR = { primary_culture = north_german accepted_culture = north_german }
+                        NOT = { is_core = THIS }
+                    }
+                }
+                add_core = BAV
+            }
+        }
+        303 = { add_core = SWE }
+    }
+}

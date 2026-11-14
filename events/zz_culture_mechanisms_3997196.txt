@@ -1,0 +1,11 @@
+# MECHANISMS v2. One isolated event per file.
+country_event = {
+ id = 3997196
+ title = "MECHANISMS 3997196: csm2_a6_owner_changed preparation owner"
+ desc = "MECHANISMS v2 diagnostic. Test save only. AI technical event."
+ picture = "Administration"
+ is_triggered_only = yes
+  option = { name = "OK"
+ any_owned = { limit = { province_id = 301 has_global_flag = csm2_running } owner = { primary_culture = british set_global_flag = csm2_a6_owner_changed_owner_prep_done } }
+ }
+}

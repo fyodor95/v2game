@@ -1,0 +1,12 @@
+# FOLLOWUP v1. TEST SAVE ONLY. One event per file.
+country_event = {
+    id = 3999512
+    title = "FOLLOWUP 3999512: STOP FOLLOWUP"
+    desc = "STOP FOLLOWUP"
+    is_triggered_only = yes
+    option = {
+        name = "OK"
+        clr_global_flag = cspf1_running
+        set_global_flag = cspf1_cancelled
+    }
+}

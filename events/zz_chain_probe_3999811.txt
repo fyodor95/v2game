@@ -1,0 +1,18 @@
+# CHAIN PROBE v1. TEST SAVE ONLY. One event per file.
+country_event = {
+    id = 3999811
+    title = "CHAIN 3999811: Prepare three guard cases"
+    desc = "301 foreign/no PRU core; 302 foreign/PRU core; 303 owned by PRU/no PRU core. This does not reset cultures."
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run / OK"
+        clr_global_flag = chain_probe_natural
+        301 = { secede_province = ENG remove_core = PRU }
+        302 = { secede_province = ENG add_core = PRU }
+        303 = { secede_province = PRU remove_core = PRU }
+        301 = { remove_core = BAV remove_core = SAX }
+        302 = { remove_core = BAV remove_core = SAX }
+        303 = { remove_core = BAV remove_core = SAX remove_core = SWE remove_core = DEN }
+    }
+}

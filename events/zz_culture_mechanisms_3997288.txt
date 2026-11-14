@@ -1,0 +1,12 @@
+# MECHANISMS v2. One isolated event per file.
+country_event = {
+ id = 3997288
+ title = "MECHANISMS 3997288: csm2_b_pru snapshot"
+ desc = "MECHANISMS v2 diagnostic. Test save only. AI technical event."
+ picture = "Administration"
+ is_triggered_only = yes
+  option = { name = "OK"
+ SWI = { any_owned = { limit = { province_id = 605 has_global_flag = csm2_running } owner = { SWI = { any_owned = { limit = { province_id = 605 PRU = { war = no } ENG = { war = no } USA = { war = no } FRA = { war = no } SWI = { war = no } HAW = { war = no } SWI = { ai = yes owns = 605 } PRU = { ai = yes owns = 549 } HAW = { ai = no owns = 658 } 301 = { owned_by = ENG } 549 = { owned_by = PRU is_core = PRU } 301 = { is_core = PRU NOT = { is_core = FRA } } PRU = { has_country_flag = csm2_claimant } FRA = { NOT = { has_country_flag = csm2_claimant } } } set_global_flag = csm2_b_pru_snapshot_env } }
+set_global_flag = csm2_b_pru_collected } } }
+ }
+}

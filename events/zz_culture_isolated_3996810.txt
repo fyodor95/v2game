@@ -1,0 +1,18 @@
+# ISOLATED v1. Requires MECHANISMS v2 files. Test campaign only.
+country_event = {
+ id = 3996810
+ title = "ISOLATED 3996810: Finish selected run"
+ desc = "Ends the observer and sends the correct save-name notification."
+ picture = "Administration"
+ is_triggered_only = yes
+ option = { name = "OK"
+ SWI = { any_owned = { limit = { province_id = 605 has_global_flag = csm2_running  } owner = { set_global_flag = csm2_finished
+SWI = { any_owned = { limit = { province_id = 605 PRU = { war = no } ENG = { war = no } USA = { war = no } FRA = { war = no } SWI = { war = no } HAW = { war = no } } set_global_flag = csm2_peace_at_finish } }
+SWI = { any_owned = { limit = { province_id = 605 has_global_flag = csm2_iso_mode_106 } owner = { HAW = { country_event = { id = 3996811 days = 0 } } } } }
+SWI = { any_owned = { limit = { province_id = 605 has_global_flag = csm2_iso_mode_107 } owner = { HAW = { country_event = { id = 3996812 days = 0 } } } } }
+SWI = { any_owned = { limit = { province_id = 605 has_global_flag = csm2_iso_mode_baseline } owner = { HAW = { country_event = { id = 3996813 days = 0 } } } } }
+SWI = { any_owned = { limit = { province_id = 605 has_global_flag = csm2_iso_mode_cores } owner = { HAW = { country_event = { id = 3996814 days = 0 } } } } }
+SWI = { any_owned = { limit = { province_id = 605 has_global_flag = csm2_iso_mode_order } owner = { HAW = { country_event = { id = 3996815 days = 0 } } } } }
+clr_global_flag = csm2_running } } }
+ }
+}

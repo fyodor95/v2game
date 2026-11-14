@@ -1,0 +1,22 @@
+# CHAIN PROBE v1. TEST SAVE ONLY. One event per file.
+province_event = {
+    id = 3999840
+    title = "CHAIN 3999840: Country is_core THIS from 301"
+    desc = "UNVERIFIED country-side is_core=THIS. BAV on 301 = candidate true; SAX on 301 = literal control true. They must match. SWE on 303 = source completed."
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run / OK"
+        owner = {
+            any_owned = {
+                limit = { province_id = 301 PRU = { is_core = THIS } }
+                add_core = BAV
+            }
+            any_owned = {
+                limit = { province_id = 301 301 = { is_core = PRU } }
+                add_core = SAX
+            }
+        }
+        303 = { add_core = SWE }
+    }
+}

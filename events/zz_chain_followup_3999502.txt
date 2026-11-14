@@ -1,0 +1,39 @@
+# FOLLOWUP v1. TEST SAVE ONLY. One event per file.
+country_event = {
+    id = 3999502
+    title = "FOLLOWUP 3999502: Record each preparation component"
+    desc = "Record each preparation component"
+    is_triggered_only = yes
+    option = {
+        name = "OK"
+        any_owned = {
+            limit = { province_id = 605 has_global_flag = cspf1_running }
+            owner = {
+        set_global_flag = cspf1_inspection_entered
+        any_owned = { limit = { 301 = { culture = north_german } } set_global_flag = cspf1_prep_301_culture_north_german }
+        any_owned = { limit = { 301 = { culture = south_german } } set_global_flag = cspf1_prep_301_culture_south_german }
+        any_owned = { limit = { 301 = { culture = british } } set_global_flag = cspf1_prep_301_culture_british }
+        any_owned = { limit = { 301 = { owner = { tag = ENG } } } set_global_flag = cspf1_prep_301_owner_eng }
+        any_owned = { limit = { 301 = { owner = { tag = PRU } } } set_global_flag = cspf1_prep_301_owner_pru }
+        any_owned = { limit = { 301 = { owned_by = ENG } } set_global_flag = cspf1_prep_301_owned_by_eng }
+        any_owned = { limit = { 302 = { culture = north_german } } set_global_flag = cspf1_prep_302_culture_north_german }
+        any_owned = { limit = { 302 = { culture = south_german } } set_global_flag = cspf1_prep_302_culture_south_german }
+        any_owned = { limit = { 302 = { culture = british } } set_global_flag = cspf1_prep_302_culture_british }
+        any_owned = { limit = { 302 = { owner = { tag = ENG } } } set_global_flag = cspf1_prep_302_owner_eng }
+        any_owned = { limit = { 302 = { owner = { tag = PRU } } } set_global_flag = cspf1_prep_302_owner_pru }
+        any_owned = { limit = { 302 = { owned_by = ENG } } set_global_flag = cspf1_prep_302_owned_by_eng }
+        any_owned = { limit = { 303 = { culture = north_german } } set_global_flag = cspf1_prep_303_culture_north_german }
+        any_owned = { limit = { 303 = { culture = south_german } } set_global_flag = cspf1_prep_303_culture_south_german }
+        any_owned = { limit = { 303 = { culture = british } } set_global_flag = cspf1_prep_303_culture_british }
+        any_owned = { limit = { 303 = { owner = { tag = ENG } } } set_global_flag = cspf1_prep_303_owner_eng }
+        any_owned = { limit = { 303 = { owner = { tag = PRU } } } set_global_flag = cspf1_prep_303_owner_pru }
+        any_owned = { limit = { 303 = { owned_by = ENG } } set_global_flag = cspf1_prep_303_owned_by_eng }
+        any_owned = { limit = { PRU = { primary_culture = north_german } } set_global_flag = cspf1_prep_pru_primary_ng }
+        any_owned = { limit = { PRU = { accepted_culture = south_german } } set_global_flag = cspf1_prep_pru_accepts_sg }
+        any_owned = { limit = { ENG = { primary_culture = british } } set_global_flag = cspf1_prep_eng_primary_british }
+        any_owned = { limit = { FRA = { accepted_culture = north_german } } set_global_flag = cspf1_prep_fra_accepts_ng }
+        set_global_flag = cspf1_inspection_done
+            }
+        }
+    }
+}

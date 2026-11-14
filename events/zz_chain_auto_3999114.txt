@@ -1,0 +1,52 @@
+# SEMIAUTO CHAIN PROBE v1. One event per file. TEST SAVE ONLY.
+country_event = {
+    id = 3999114
+    title = "AUTO 3999114: Stage 8: prepare"
+    desc = "Stage 8: prepare"
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "OK"
+        any_owned = {
+            limit = { province_id = 605 has_global_flag = cspa1_running NOT = { has_global_flag = cspa1_t08_started } }
+            owner = {
+            set_global_flag = cspa1_t08_started
+            set_global_flag = cspa1_t08_active
+        country_event = { id = 3999115 days = 7 }
+        clr_global_flag = chain_probe_natural
+        PRU = { primary_culture = north_german }
+        301 = { secede_province = PRU assimilate = yes }
+        PRU = { primary_culture = south_german }
+        302 = { secede_province = PRU assimilate = yes }
+        PRU = { primary_culture = british }
+        303 = { secede_province = PRU assimilate = yes }
+        PRU = {
+            primary_culture = north_german
+            remove_accepted_culture = north_german
+            remove_accepted_culture = south_german
+            remove_accepted_culture = british
+            add_accepted_culture = south_german
+        }
+        FRA = {
+            primary_culture = french
+            remove_accepted_culture = north_german
+            remove_accepted_culture = south_german
+            remove_accepted_culture = british
+            add_accepted_culture = north_german
+        }
+        ENG = {
+            primary_culture = british
+            remove_accepted_culture = north_german
+            remove_accepted_culture = south_german
+            remove_accepted_culture = british
+        }
+        301 = { secede_province = ENG remove_core = PRU remove_core = FRA }
+        302 = { secede_province = ENG remove_core = PRU remove_core = FRA }
+        303 = { secede_province = ENG remove_core = PRU remove_core = FRA }
+        PRU = { primary_culture = french remove_accepted_culture = north_german }
+        301 = { province_event = { id = 3999307 days = 2 } }
+        set_global_flag = cspa1_t08_dispatched
+            }
+        }
+    }
+}

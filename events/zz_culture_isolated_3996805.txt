@@ -1,0 +1,12 @@
+# ISOLATED v1. Requires MECHANISMS v2 files. Test campaign only.
+country_event = {
+ id = 3996805
+ title = "ISOLATED 3996805: ARM baseline ONLY"
+ desc = "Requires saved isolation_before. Test: literal baseline. One candidate runs tomorrow; final notice about 6 days after arming. Reload the untouched checkpoint before another mode."
+ picture = "Administration"
+ is_triggered_only = yes
+ option = { name = "OK"
+ any_owned = { limit = { province_id = 658 owner = { tag = HAW } has_global_flag = csm2_running has_global_flag = csm2_iso_checkpoint has_global_flag = csm2_a1_primary_prep_done has_global_flag = csm2_a1_primary_owner_prep_done has_global_flag = csm2_a1_primary_inspected has_global_flag = csm2_a1_primary_env NOT = { has_global_flag = csm2_iso_armed } NOT = { has_global_flag = csm2_finished } } owner = { set_global_flag = csm2_iso_armed set_global_flag = csm2_iso_mode_baseline SWI = { country_event = { id = 3996809 days = 1 } } SWI = { country_event = { id = 3997104 days = 4 } } SWI = { country_event = { id = 3996810 days = 6 } } } }
+any_owned = { limit = { province_id = 658 NOT = { has_global_flag = csm2_iso_armed } } owner = { HAW = { country_event = { id = 3996816 days = 0 } } } }
+ }
+}

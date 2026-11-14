@@ -1,0 +1,13 @@
+# FOLLOWUP v1. TEST SAVE ONLY. One event per file.
+country_event = {
+    id = 3999524
+    title = "FOLLOWUP 3999524: own candidate owner tag THIS"
+    desc = "own candidate owner tag THIS"
+    is_triggered_only = yes
+    option = {
+        name = "OK"
+        set_global_flag = cspf1_own_owner_tag_helper_entered
+        any_owned = { limit = { FROM = { owner = { tag = THIS } } } set_global_flag = cspf1_own_owner_tag_this }
+        set_global_flag = cspf1_own_owner_tag_helper_done
+    }
+}

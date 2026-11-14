@@ -1,0 +1,21 @@
+# MECHANISMS v2. One isolated event per file.
+country_event = {
+ id = 3997141
+ title = "MECHANISMS 3997141: csm2_a3_neither dispatch isolated tests"
+ desc = "MECHANISMS v2 diagnostic. Test save only. AI technical event."
+ picture = "Administration"
+ is_triggered_only = yes
+  option = { name = "OK"
+ SWI = { any_owned = { limit = { province_id = 605 has_global_flag = csm2_running } owner = { set_global_flag = csm2_a3_neither_dispatched
+301 = { province_event = { id = 3997143 days = 0 } }
+301 = { province_event = { id = 3997144 days = 0 } }
+301 = { province_event = { id = 3997145 days = 0 } }
+301 = { province_event = { id = 3997146 days = 0 } }
+301 = { province_event = { id = 3997147 days = 0 } }
+301 = { province_event = { id = 3997148 days = 0 } }
+301 = { province_event = { id = 3997149 days = 0 } }
+301 = { province_event = { id = 3997150 days = 0 } }
+301 = { province_event = { id = 3997151 days = 0 } }
+ } } }
+ }
+}

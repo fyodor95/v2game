@@ -1,0 +1,182 @@
+# Victoria II HoD 3.04: dynamic culture comparison experiment.
+# Use a disposable new game as PRU. All events are console-only.
+# Read culture_scope_probe_README.md before running.
+# 3999900 = prepare/reset; 3999901 = measure; 3999902 = change ENG;
+# 3999903 = change PRU; 3999904 = apply the proposed combined core rule.
+# Marker cores: PRU = primary/THIS, FRA = accepted/THIS,
+# BAV = primary/yes (owner control), SAX = accepted/yes (owner control).
+
+country_event = {
+    id = 3999900
+    title = "CULTURE PROBE: prepare or reset"
+    desc = "TEST SAVE ONLY. This changes PRU and ENG cultures and assimilates provinces 301, 302 and 303. Run as Prussia. After accepting, advance one day, pause, and verify: 301 North German, 302 South German, 303 British; all owned by ENG. Then run event 3999901."
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Prepare the three test provinces"
+        PRU = { primary_culture = north_german }
+        301 = { secede_province = PRU }
+        301 = { assimilate = yes }
+        PRU = { primary_culture = south_german }
+        302 = { secede_province = PRU }
+        302 = { assimilate = yes }
+        PRU = { primary_culture = british }
+        303 = { secede_province = PRU }
+        303 = { assimilate = yes }
+
+        PRU = {
+            primary_culture = north_german
+            remove_accepted_culture = north_german
+            remove_accepted_culture = south_german
+            remove_accepted_culture = british
+            add_accepted_culture = south_german
+        }
+        ENG = {
+            primary_culture = british
+            remove_accepted_culture = north_german
+            remove_accepted_culture = south_german
+            remove_accepted_culture = british
+        }
+        301 = { secede_province = ENG }
+        302 = { secede_province = ENG }
+        303 = { secede_province = ENG }
+        301 = {
+            set_province_flag = v2_culture_scope_probe
+            remove_core = PRU
+            remove_core = FRA
+            remove_core = BAV
+            remove_core = SAX
+        }
+        302 = {
+            set_province_flag = v2_culture_scope_probe
+            remove_core = PRU
+            remove_core = FRA
+            remove_core = BAV
+            remove_core = SAX
+        }
+        303 = {
+            set_province_flag = v2_culture_scope_probe
+            remove_core = PRU
+            remove_core = FRA
+            remove_core = BAV
+            remove_core = SAX
+        }
+    }
+}
+
+country_event = {
+    id = 3999901
+    title = "CULTURE PROBE: measure"
+    desc = "Run as PRU after preparation. This clears and recalculates four marker cores. PRU means primary culture = THIS. FRA means accepted culture = THIS. BAV means primary culture = yes. SAX means accepted culture = yes. Inspect cores in provinces 301, 302 and 303 after accepting. Existing ENG cores are irrelevant."
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run all four comparisons"
+        ENG = {
+            any_owned = {
+                limit = { has_province_flag = v2_culture_scope_probe }
+                remove_core = PRU
+                remove_core = FRA
+                remove_core = BAV
+                remove_core = SAX
+            }
+            # THIS must remain the country receiving this event: PRU.
+            any_owned = {
+                limit = {
+                    has_province_flag = v2_culture_scope_probe
+                    is_primary_culture = THIS
+                }
+                add_core = THIS
+            }
+            any_owned = {
+                limit = {
+                    has_province_flag = v2_culture_scope_probe
+                    is_accepted_culture = THIS
+                }
+                add_core = FRA
+            }
+            # Positive controls compare to the province OWNER (ENG).
+            any_owned = {
+                limit = {
+                    has_province_flag = v2_culture_scope_probe
+                    is_primary_culture = yes
+                }
+                add_core = BAV
+            }
+            any_owned = {
+                limit = {
+                    has_province_flag = v2_culture_scope_probe
+                    is_accepted_culture = yes
+                }
+                add_core = SAX
+            }
+        }
+    }
+}
+
+country_event = {
+    id = 3999902
+    title = "CULTURE PROBE: phase B - change the owner"
+    desc = "ENG will now accept North German. PRU and the three province cultures stay as prepared. Advance one day and run event 3999901 again. A correct comparison against PRU must NOT change the FRA markers. If FRA appears on all three provinces, the comparison is reversed."
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Make ENG accept North German"
+        ENG = { add_accepted_culture = north_german }
+    }
+}
+
+country_event = {
+    id = 3999903
+    title = "CULTURE PROBE: phase C - change the claimant"
+    desc = "PRU will become South German and accept North German. ENG returns to the baseline and accepts neither German culture. Province cultures are unchanged. Advance one day and run event 3999901 again. A working dynamic comparison moves the PRU marker to 302 and the FRA marker to 301."
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Swap PRU primary and accepted cultures"
+        PRU = {
+            primary_culture = south_german
+            remove_accepted_culture = south_german
+            remove_accepted_culture = north_german
+            remove_accepted_culture = british
+            add_accepted_culture = north_german
+        }
+        ENG = {
+            primary_culture = british
+            remove_accepted_culture = north_german
+            remove_accepted_culture = south_german
+            remove_accepted_culture = british
+        }
+    }
+}
+
+country_event = {
+    id = 3999904
+    title = "CULTURE PROBE: test the combined core rule"
+    desc = "Run as PRU. This clears the four marker types, then adds PRU cores where primary = THIS OR accepted = THIS. The intended result is PRU cores on 301 and 302 only, in any of the three phases. This is a separate final test; record event 3999901 results first."
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Apply the candidate rule to the test provinces"
+        ENG = {
+            any_owned = {
+                limit = { has_province_flag = v2_culture_scope_probe }
+                remove_core = PRU
+                remove_core = FRA
+                remove_core = BAV
+                remove_core = SAX
+            }
+            any_owned = {
+                limit = {
+                    has_province_flag = v2_culture_scope_probe
+                    NOT = { is_core = THIS }
+                    OR = {
+                        is_primary_culture = THIS
+                        is_accepted_culture = THIS
+                    }
+                }
+                add_core = THIS
+            }
+        }
+    }
+}

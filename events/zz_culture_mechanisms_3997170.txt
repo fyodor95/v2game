@@ -1,0 +1,17 @@
+# MECHANISMS v2. One isolated event per file.
+province_event = {
+ id = 3997170
+ title = "MECHANISMS 3997170: csm2_a4_owner_primary FROM source"
+ desc = "MECHANISMS v2 diagnostic. Test save only. AI technical event."
+ 
+ is_triggered_only = yes
+  option = { name = "OK"
+ owner = { SWI = { any_owned = { limit = { province_id = 605 has_global_flag = csm2_running } owner = { set_global_flag = csm2_a4_owner_primary_from_source_entered
+PRU = { country_event = { id = 3997171 days = 0 } }
+PRU = { country_event = { id = 3997172 days = 0 } }
+PRU = { country_event = { id = 3997173 days = 0 } }
+PRU = { country_event = { id = 3997174 days = 0 } }
+PRU = { country_event = { id = 3997175 days = 0 } }
+set_global_flag = csm2_a4_owner_primary_from_source_done } } } }
+ }
+}

@@ -1,0 +1,23 @@
+# Owner-accepted control, isolated from all THIS comparisons.
+country_event = {
+    id = 3999911
+    title = "PROBE v2: owner accepted YES"
+    desc = "Saxony markers: none in phase A, 301 in phase B, none in phase C. Record separately if the owner's primary culture is also included."
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run this test"
+        301 = { remove_core = SAX }
+        302 = { remove_core = SAX }
+        303 = { remove_core = SAX }
+        ENG = {
+            any_owned = {
+                limit = {
+                    OR = { province_id = 301 province_id = 302 province_id = 303 }
+                    is_accepted_culture = yes
+                }
+                add_core = SAX
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+# SEMIAUTO CHAIN PROBE v1. One event per file. TEST SAVE ONLY.
+country_event = {
+    id = 3999401
+    title = "AUTO 3999401: Stage 2: helper"
+    desc = "Stage 2: helper"
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "OK"
+        set_global_flag = cspa1_t02_helper_entered
+        any_owned = {
+            limit = { owner = { tag = PRU } }
+            set_global_flag = cspa1_t02_recipient_pru
+        }
+        any_owned = {
+            limit = { owner = { tag = FRA } }
+            set_global_flag = cspa1_t02_recipient_fra
+        }
+        any_owned = {
+            limit = { owner = { tag = ENG } }
+            set_global_flag = cspa1_t02_recipient_eng
+        }
+        any_owned = {
+            limit = { owner = { NOT = { OR = { tag = PRU tag = FRA tag = ENG } } } }
+            set_global_flag = cspa1_t02_recipient_other
+        }
+        any_owned = {
+            limit = { FROM = { province_id = 301 } }
+            set_global_flag = cspa1_t02_from_301
+        }
+        any_owned = {
+            limit = { FROM = { province_id = 302 } }
+            set_global_flag = cspa1_t02_from_302
+        }
+        any_owned = {
+            limit = { FROM = { province_id = 303 } }
+            set_global_flag = cspa1_t02_from_303
+        }
+        FROM = { add_core = THIS }
+        set_global_flag = cspa1_t02_helper_done
+        any_owned = {
+            limit = { has_global_flag = cspa1_t02_collected }
+            set_global_flag = cspa1_t02_late
+        }
+    }
+}

@@ -1,0 +1,28 @@
+# Optional combined test. Run only after recording the separate comparisons.
+country_event = {
+    id = 3999904
+    title = "PROBE v2: combined candidate rule"
+    desc = "Expected PRU cores: 301 and 302 only. Denmark on 303 is a completion marker. Record separate tests first. This file is isolated because either THIS condition may be unsupported."
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run this test"
+        301 = { remove_core = PRU remove_core = FRA remove_core = BAV remove_core = SAX remove_core = SWE remove_core = DEN }
+        302 = { remove_core = PRU remove_core = FRA remove_core = BAV remove_core = SAX remove_core = SWE remove_core = DEN }
+        303 = { remove_core = PRU remove_core = FRA remove_core = BAV remove_core = SAX remove_core = SWE remove_core = DEN }
+        ENG = {
+            any_owned = {
+                limit = {
+                    OR = { province_id = 301 province_id = 302 province_id = 303 }
+                    NOT = { is_core = THIS }
+                    OR = {
+                        is_primary_culture = THIS
+                        is_accepted_culture = THIS
+                    }
+                }
+                add_core = THIS
+            }
+        }
+        303 = { add_core = DEN }
+    }
+}

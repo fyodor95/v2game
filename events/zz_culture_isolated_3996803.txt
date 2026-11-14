@@ -1,0 +1,20 @@
+# ISOLATED v1. Requires MECHANISMS v2 files. Test campaign only.
+country_event = {
+ id = 3996803
+ title = "ISOLATED 3996803: CORES ONLY - fresh HAW"
+ desc = "Independent 30-day run. No cultural A-phase candidates and no timing C-phase tests will be called. Save isolation_cores at the final notice."
+ picture = "Administration"
+ is_triggered_only = yes
+ option = { name = "OK"
+ any_owned = { limit = { province_id = 658 owner = { tag = HAW } NOT = { has_global_flag = csm2_started } } owner = { set_global_flag = csm2_started set_global_flag = csm2_running clr_global_flag = cspa1_running clr_global_flag = cspf1_running clr_global_flag = chain_probe_natural SWI = { country_event = { id = 3997004 days = 1 } } set_global_flag = csm2_iso_mode_cores SWI = { country_event = { id = 3997286 days = 1 } }
+SWI = { country_event = { id = 3997287 days = 3 } }
+SWI = { country_event = { id = 3997288 days = 8 } }
+SWI = { country_event = { id = 3997305 days = 10 } }
+SWI = { country_event = { id = 3997306 days = 12 } }
+SWI = { country_event = { id = 3997307 days = 17 } }
+SWI = { country_event = { id = 3997324 days = 19 } }
+SWI = { country_event = { id = 3997325 days = 21 } }
+SWI = { country_event = { id = 3997326 days = 26 } }
+SWI = { country_event = { id = 3996810 days = 30 } } } }
+ }
+}

@@ -1,0 +1,95 @@
+# Revision 2: only setup and unconditional controls belong in this file.
+# Four events must load. Risky comparisons are isolated in separate files.
+# Run all tests as PRU in a disposable game. See culture_scope_probe_README.md.
+
+country_event = {
+    id = 3999900
+    title = "PROBE v2: prepare or reset"
+    desc = "TEST SAVE ONLY. Prepare 301 North German, 302 South German, 303 British, all owned by ENG. Advance one day and verify the populations before testing."
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run this test"
+        PRU = { primary_culture = north_german }
+        301 = { secede_province = PRU }
+        301 = { assimilate = yes }
+        PRU = { primary_culture = south_german }
+        302 = { secede_province = PRU }
+        302 = { assimilate = yes }
+        PRU = { primary_culture = british }
+        303 = { secede_province = PRU }
+        303 = { assimilate = yes }
+        PRU = {
+            primary_culture = north_german
+            remove_accepted_culture = north_german
+            remove_accepted_culture = south_german
+            remove_accepted_culture = british
+            add_accepted_culture = south_german
+        }
+        ENG = {
+            primary_culture = british
+            remove_accepted_culture = north_german
+            remove_accepted_culture = south_german
+            remove_accepted_culture = british
+        }
+        301 = { secede_province = ENG }
+        302 = { secede_province = ENG }
+        303 = { secede_province = ENG }
+        301 = { remove_core = PRU remove_core = FRA remove_core = BAV remove_core = SAX remove_core = SWE remove_core = DEN }
+        302 = { remove_core = PRU remove_core = FRA remove_core = BAV remove_core = SAX remove_core = SWE remove_core = DEN }
+        303 = { remove_core = PRU remove_core = FRA remove_core = BAV remove_core = SAX remove_core = SWE remove_core = DEN }
+    }
+}
+
+country_event = {
+    id = 3999901
+    title = "PROBE v2: unconditional core control"
+    desc = "No culture checks or loops. Bavaria MUST receive cores on all three provinces after you press the button."
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run this test"
+        301 = { remove_core = BAV }
+        302 = { remove_core = BAV }
+        303 = { remove_core = BAV }
+        301 = { add_core = BAV }
+        302 = { add_core = BAV }
+        303 = { add_core = BAV }
+    }
+}
+
+country_event = {
+    id = 3999902
+    title = "PROBE v2: phase B"
+    desc = "ENG will accept North German. PRU cultures and province populations are unchanged. Advance one day and repeat tests 3999910 through 3999913."
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run this test"
+        ENG = { add_accepted_culture = north_german }
+    }
+}
+
+country_event = {
+    id = 3999903
+    title = "PROBE v2: phase C"
+    desc = "PRU becomes South German and accepts North German. ENG accepts neither German culture. Province populations are unchanged. Advance one day and repeat tests 3999910 through 3999913."
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run this test"
+        PRU = {
+            primary_culture = south_german
+            remove_accepted_culture = south_german
+            remove_accepted_culture = north_german
+            remove_accepted_culture = british
+            add_accepted_culture = north_german
+        }
+        ENG = {
+            primary_culture = british
+            remove_accepted_culture = north_german
+            remove_accepted_culture = south_german
+            remove_accepted_culture = british
+        }
+    }
+}

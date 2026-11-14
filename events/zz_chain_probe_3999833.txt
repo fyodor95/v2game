@@ -1,0 +1,16 @@
+# CHAIN PROBE v1. TEST SAVE ONLY. One event per file.
+province_event = {
+    id = 3999833
+    title = "CHAIN 3999833: Impossible GP dispatch"
+    desc = "No country can be both PRU and FRA. SWE on 303 must appear; DEN and result cores must NOT appear."
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run / OK"
+        any_greater_power = {
+            limit = { tag = PRU tag = FRA }
+            country_event = { id = 3999845 days = 0 }
+        }
+        303 = { add_core = SWE }
+    }
+}

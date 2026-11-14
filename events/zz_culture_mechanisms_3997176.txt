@@ -1,0 +1,20 @@
+# MECHANISMS v2. One isolated event per file.
+country_event = {
+ id = 3997176
+ title = "MECHANISMS 3997176: csm2_a5_owner_accepted preparation PRU"
+ desc = "MECHANISMS v2 diagnostic. Test save only. AI technical event."
+ picture = "Administration"
+ is_triggered_only = yes
+  option = { name = "OK"
+ any_owned = { limit = { province_id = 549 has_global_flag = csm2_running } owner = { primary_culture = north_german
+remove_accepted_culture = british
+remove_accepted_culture = north_german
+remove_accepted_culture = south_german
+remove_accepted_culture = french
+remove_accepted_culture = yankee
+remove_accepted_culture = dixie
+remove_accepted_culture = afro_american
+add_accepted_culture = french
+ set_global_flag = csm2_a5_owner_accepted_prep_done } }
+ }
+}

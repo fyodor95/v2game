@@ -1,0 +1,15 @@
+# CHAIN PROBE v1. TEST SAVE ONLY. One event per file.
+country_event = {
+    id = 3999816
+    title = "CHAIN 3999816: Reverse core: source 301"
+    desc = "Runs a province event through its owner. As PRU, finish all popup options and let ENG/FRA AI process their events. Wait up to 10 days."
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run / OK"
+        301 = { remove_core = BAV remove_core = SAX }
+        302 = { remove_core = BAV remove_core = SAX }
+        303 = { remove_core = BAV remove_core = SAX remove_core = SWE remove_core = DEN }
+        301 = { province_event = { id = 3999840 days = 0 } }
+    }
+}

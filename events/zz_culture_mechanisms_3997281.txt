@@ -1,0 +1,15 @@
+# MECHANISMS v2. One isolated event per file.
+country_event = {
+ id = 3997281
+ title = "MECHANISMS 3997281: csm2_a9_mixed_accepted_majority_yankee"
+ desc = "MECHANISMS v2 diagnostic. Test save only. AI technical event."
+ picture = "Administration"
+ is_triggered_only = yes
+  option = { name = "OK"
+ SWI = { any_owned = { limit = { province_id = 605 has_global_flag = csm2_running } owner = { set_global_flag = csm2_a9_mixed_accepted_majority_yankee_entered
+SWI = { any_owned = { limit = { province_id = 605 PRU = { war = no } ENG = { war = no } USA = { war = no } FRA = { war = no } SWI = { war = no } HAW = { war = no } SWI = { ai = yes owns = 605 } PRU = { ai = yes owns = 549 } HAW = { ai = no owns = 658 } 149 = { owned_by = USA controlled_by = USA } USA = { ai = yes primary_culture = french } PRU = { primary_culture = north_german NOT = { accepted_culture = british } NOT = { accepted_culture = south_german } NOT = { accepted_culture = french } accepted_culture = yankee NOT = { accepted_culture = dixie } NOT = { accepted_culture = afro_american } } NOT = { has_global_flag = csm2_a9_mixed_accepted_collected } } set_global_flag = csm2_a9_mixed_accepted_majority_yankee_env } }
+SWI = { any_owned = { limit = { province_id = 605 149 = { culture = yankee } } set_global_flag = csm2_a9_mixed_accepted_majority_yankee_yes } }
+SWI = { any_owned = { limit = { province_id = 605 NOT = { 149 = { culture = yankee } } } set_global_flag = csm2_a9_mixed_accepted_majority_yankee_no } }
+set_global_flag = csm2_a9_mixed_accepted_majority_yankee_done } } }
+ }
+}

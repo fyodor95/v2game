@@ -1,0 +1,12 @@
+# SEMIAUTO CHAIN PROBE v1. One event per file. TEST SAVE ONLY.
+country_event = {
+    id = 3999001
+    title = "AUTO 3999001: TEST WINDOW FINISHED - SAVE NOW"
+    desc = "The 174-day test window ended. This is NOT a success verdict. Pause and save as chain_auto_result. The assistant will read stage completion flags and outcomes."
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "OK"
+        set_global_flag = cspa1_notice_seen
+    }
+}

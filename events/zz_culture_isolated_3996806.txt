@@ -1,0 +1,11 @@
+# ISOLATED v1. Requires MECHANISMS v2 files. Test campaign only.
+country_event = {
+ id = 3996806
+ title = "ISOLATED 3996806: PAUSE AND SAVE isolation_before"
+ desc = "Click OK, PAUSE, then save isolation_before. Nothing risky is queued. After saving, enter event 3996801 to test ONLY 3997106. Resume time. Do not overwrite the checkpoint."
+ picture = "Administration"
+ is_triggered_only = yes
+ option = { name = "OK"
+ any_owned = { limit = { province_id = 658 has_global_flag = csm2_running has_global_flag = csm2_iso_preparing NOT = { has_global_flag = csm2_iso_armed } } set_global_flag = csm2_iso_checkpoint }
+ }
+}

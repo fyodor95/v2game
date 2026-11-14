@@ -1,0 +1,14 @@
+# SEMIAUTO CHAIN PROBE v1. One event per file. TEST SAVE ONLY.
+country_event = {
+    id = 3999003
+    title = "AUTO 3999003: Finish test window"
+    desc = "Finish test window"
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "OK"
+        clr_global_flag = cspa1_running
+        set_global_flag = cspa1_finished
+        HAW = { country_event = { id = 3999001 days = 0 } }
+    }
+}

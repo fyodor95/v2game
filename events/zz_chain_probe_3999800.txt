@@ -1,0 +1,47 @@
+# CHAIN PROBE v1. TEST SAVE ONLY. One event per file.
+country_event = {
+    id = 3999800
+    title = "CHAIN 3999800: RESET ALL"
+    desc = "Destroys test demographics and resets cultures, owners and markers. All 301-303 become ENG. PRU primary NG, accepted SG. FRA accepts NG. Advance one day."
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "Run / OK"
+        clr_global_flag = chain_probe_natural
+        PRU = { primary_culture = north_german }
+        301 = { secede_province = PRU assimilate = yes }
+        PRU = { primary_culture = south_german }
+        302 = { secede_province = PRU assimilate = yes }
+        PRU = { primary_culture = british }
+        303 = { secede_province = PRU assimilate = yes }
+        PRU = {
+            primary_culture = north_german
+            remove_accepted_culture = north_german
+            remove_accepted_culture = south_german
+            remove_accepted_culture = british
+            add_accepted_culture = south_german
+        }
+        FRA = {
+            primary_culture = french
+            remove_accepted_culture = north_german
+            remove_accepted_culture = south_german
+            remove_accepted_culture = british
+            add_accepted_culture = north_german
+        }
+        ENG = {
+            primary_culture = british
+            remove_accepted_culture = north_german
+            remove_accepted_culture = south_german
+            remove_accepted_culture = british
+        }
+        301 = { secede_province = ENG }
+        302 = { secede_province = ENG }
+        303 = { secede_province = ENG }
+        301 = { remove_core = BAV remove_core = SAX }
+        302 = { remove_core = BAV remove_core = SAX }
+        303 = { remove_core = BAV remove_core = SAX remove_core = SWE remove_core = DEN }
+        301 = { remove_core = PRU remove_core = FRA }
+        302 = { remove_core = PRU remove_core = FRA }
+        303 = { remove_core = PRU remove_core = FRA }
+    }
+}

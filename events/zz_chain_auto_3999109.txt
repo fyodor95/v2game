@@ -1,0 +1,123 @@
+# SEMIAUTO CHAIN PROBE v1. One event per file. TEST SAVE ONLY.
+country_event = {
+    id = 3999109
+    title = "AUTO 3999109: Stage 5: snapshot"
+    desc = "Stage 5: snapshot"
+    picture = "Administration"
+    is_triggered_only = yes
+    option = {
+        name = "OK"
+        set_global_flag = cspa1_t05_collector_entered
+        any_owned = {
+            limit = { province_id = 605 }
+            set_global_flag = cspa1_t05_recorder_positive
+        }
+        any_owned = {
+            limit = { province_id = 605 province_id = 606 }
+            set_global_flag = cspa1_t05_recorder_negative
+        }
+        any_owned = {
+            limit = { 301 = { is_core = PRU } }
+            set_global_flag = cspa1_t05_core_301_pru
+        }
+        any_owned = {
+            limit = { 301 = { is_core = FRA } }
+            set_global_flag = cspa1_t05_core_301_fra
+        }
+        any_owned = {
+            limit = { 302 = { is_core = PRU } }
+            set_global_flag = cspa1_t05_core_302_pru
+        }
+        any_owned = {
+            limit = { 302 = { is_core = FRA } }
+            set_global_flag = cspa1_t05_core_302_fra
+        }
+        any_owned = {
+            limit = { 303 = { is_core = PRU } }
+            set_global_flag = cspa1_t05_core_303_pru
+        }
+        any_owned = {
+            limit = { 303 = { is_core = FRA } }
+            set_global_flag = cspa1_t05_core_303_fra
+        }
+        any_owned = {
+            limit = { has_global_flag = cspa1_t05_source_entered }
+            set_global_flag = cspa1_t05_seen_source_entered
+        }
+        any_owned = {
+            limit = { has_global_flag = cspa1_t05_source_done }
+            set_global_flag = cspa1_t05_seen_source_done
+        }
+        any_owned = {
+            limit = { has_global_flag = cspa1_t05_env_ok }
+            set_global_flag = cspa1_t05_seen_env_ok
+        }
+        any_owned = {
+            limit = { has_global_flag = cspa1_t05_helper_entered }
+            set_global_flag = cspa1_t05_seen_helper_entered
+        }
+        any_owned = {
+            limit = { has_global_flag = cspa1_t05_helper_done }
+            set_global_flag = cspa1_t05_seen_helper_done
+        }
+        any_owned = {
+            limit = { has_global_flag = cspa1_t05_guard_passed }
+            set_global_flag = cspa1_t05_seen_guard_passed
+        }
+        any_owned = {
+            limit = { has_global_flag = cspa1_t05_candidate_true }
+            set_global_flag = cspa1_t05_seen_candidate_true
+        }
+        any_owned = {
+            limit = { has_global_flag = cspa1_t05_literal_true }
+            set_global_flag = cspa1_t05_seen_literal_true
+        }
+        any_owned = {
+            limit = { has_global_flag = cspa1_t05_gp_pru }
+            set_global_flag = cspa1_t05_seen_gp_pru
+        }
+        any_owned = {
+            limit = { has_global_flag = cspa1_t05_gp_fra }
+            set_global_flag = cspa1_t05_seen_gp_fra
+        }
+        any_owned = {
+            limit = { has_global_flag = cspa1_t05_gp_eng }
+            set_global_flag = cspa1_t05_seen_gp_eng
+        }
+        any_owned = {
+            limit = { has_global_flag = cspa1_t05_recipient_pru }
+            set_global_flag = cspa1_t05_seen_recipient_pru
+        }
+        any_owned = {
+            limit = { has_global_flag = cspa1_t05_recipient_fra }
+            set_global_flag = cspa1_t05_seen_recipient_fra
+        }
+        any_owned = {
+            limit = { has_global_flag = cspa1_t05_recipient_eng }
+            set_global_flag = cspa1_t05_seen_recipient_eng
+        }
+        any_owned = {
+            limit = { has_global_flag = cspa1_t05_recipient_other }
+            set_global_flag = cspa1_t05_seen_recipient_other
+        }
+        any_owned = {
+            limit = { has_global_flag = cspa1_t05_from_301 }
+            set_global_flag = cspa1_t05_seen_from_301
+        }
+        any_owned = {
+            limit = { has_global_flag = cspa1_t05_from_302 }
+            set_global_flag = cspa1_t05_seen_from_302
+        }
+        any_owned = {
+            limit = { has_global_flag = cspa1_t05_from_303 }
+            set_global_flag = cspa1_t05_seen_from_303
+        }
+        any_owned = { limit = { PRU = { war = no } FRA = { war = no } ENG = { war = no } SWI = { war = no } HAW = { war = no } } set_global_flag = cspa1_t05_peaceful_snapshot }
+        any_owned = { limit = { 301 = { owned_by = ENG controlled_by = ENG culture = north_german } 302 = { owned_by = ENG controlled_by = ENG culture = south_german } 303 = { owned_by = ENG controlled_by = ENG culture = british } PRU = { primary_culture = north_german  } FRA = { primary_culture = french accepted_culture = north_german } ENG = { primary_culture = british NOT = { accepted_culture = north_german } } } set_global_flag = cspa1_t05_snapshot_env_ok }
+        any_owned = { limit = { PRU = { is_greater_power = yes } } set_global_flag = cspa1_t05_snapshot_gp_pru }
+        any_owned = { limit = { FRA = { is_greater_power = yes } } set_global_flag = cspa1_t05_snapshot_gp_fra }
+        any_owned = { limit = { ENG = { is_greater_power = yes } } set_global_flag = cspa1_t05_snapshot_gp_eng }
+        clr_global_flag = cspa1_t05_active
+        set_global_flag = cspa1_t05_collected
+    }
+}

@@ -1,0 +1,13 @@
+# MECHANISMS v2. One isolated event per file.
+country_event = {
+ id = 3997345
+ title = "MECHANISMS 3997345: csm2_t_gate_d0_true"
+ desc = "MECHANISMS v2 diagnostic. Test save only. AI technical event."
+ picture = "Administration"
+ is_triggered_only = yes
+ trigger = { tag = PRU }
+immediate = { SWI = { any_owned = { limit = { province_id = 605 has_global_flag = csm2_running } owner = { set_global_flag = csm2_t_gate_d0_true_immediate } } } }
+ option = { name = "OK"
+ SWI = { any_owned = { limit = { province_id = 605 has_global_flag = csm2_running } owner = { set_global_flag = csm2_t_gate_d0_true_option } } }
+ }
+}

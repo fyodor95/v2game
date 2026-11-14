@@ -1,0 +1,15 @@
+# FOLLOWUP v1. TEST SAVE ONLY. One event per file.
+country_event = {
+    id = 3999509
+    title = "FOLLOWUP 3999509: Daily peace monitor"
+    desc = "Daily peace monitor"
+    is_triggered_only = yes
+    option = {
+        name = "OK"
+        any_owned = { limit = { province_id = 605 has_global_flag = cspf1_running } owner = {
+        set_global_flag = cspf1_watchdog_ran
+        any_owned = { limit = { OR = { PRU = { war = yes } FRA = { war = yes } ENG = { war = yes } SWI = { war = yes } HAW = { war = yes } } } set_global_flag = cspf1_war_seen }
+        country_event = { id = 3999509 days = 1 }
+        } }
+    }
+}
