@@ -1,0 +1,533 @@
+{
+  "upstream_commit": "7d9f9df9b356096cde475ebd550fbb0102fa1042",
+  "installed_artifacts": {
+    "creatinecore.dll": {
+      "sha256": "44961c340454cfe5d5c15036122a1c52ca3bdbdeaaa4a178aafd2a05e070f114",
+      "bytes": 499712,
+      "machine": "x86"
+    },
+    "dinput8.dll": {
+      "sha256": "80d6ac17897a1c85803a74996cf1520fba0366a58d6743633b2e8de0e318f97b",
+      "bytes": 89088,
+      "machine": "x86"
+    },
+    "eventmusic.dll": {
+      "sha256": "63b5a704ee2c515fa676ba55dd885684887b99f4aba67d7e9714c1d02dad4454",
+      "bytes": 610304,
+      "machine": "x86"
+    },
+    "ccore_script_fixes.dll": {
+      "sha256": "d7548808763b9ffb65513ae8209e2ebfb288534b6f8a984acd05b59599083453",
+      "bytes": 574464,
+      "machine": "x86"
+    }
+  },
+  "bridge_sha256": "74b356bce164f1dca37d9df7787c7c8eb81d2c31ecacb01817d7d1628eb2b0e9",
+  "python_unit_tests": {
+    "profile": 9,
+    "bridge": 7
+  },
+  "native_parser_test": "passed",
+  "native_executable_signature_sites": 11,
+  "country_scenario": {
+    "ok": true,
+    "results": [
+      {
+        "args": [
+          "pause"
+        ],
+        "result": {
+          "ok": true
+        },
+        "passed": true
+      },
+      {
+        "args": [
+          "snapshot",
+          "--tag",
+          "HAW"
+        ],
+        "result": {
+          "ok": true,
+          "treasury_raw": 19828781,
+          "treasury": 605.12637329
+        },
+        "passed": true
+      },
+      {
+        "args": [
+          "decision",
+          "check",
+          "--tag",
+          "HAW",
+          "--id",
+          "vic2test_smoke_decision"
+        ],
+        "result": {
+          "ok": true,
+          "potential": true,
+          "allow": true
+        },
+        "passed": true
+      },
+      {
+        "args": [
+          "event",
+          "--tag",
+          "HAW",
+          "--id",
+          "990001",
+          "--option",
+          "1"
+        ],
+        "result": {
+          "ok": true,
+          "queued": true,
+          "completed": false
+        },
+        "passed": true
+      },
+      {
+        "args": [
+          "decision",
+          "check",
+          "--tag",
+          "HAW",
+          "--id",
+          "vic2test_immediate_probe"
+        ],
+        "result": {
+          "ok": true,
+          "potential": true,
+          "allow": true
+        },
+        "passed": true
+      },
+      {
+        "args": [
+          "decision",
+          "check",
+          "--tag",
+          "HAW",
+          "--id",
+          "vic2test_one_probe"
+        ],
+        "result": {
+          "ok": true,
+          "potential": true,
+          "allow": true
+        },
+        "passed": true
+      },
+      {
+        "args": [
+          "decision",
+          "check",
+          "--tag",
+          "HAW",
+          "--id",
+          "vic2test_zero_probe"
+        ],
+        "result": {
+          "ok": true,
+          "potential": false,
+          "allow": true
+        },
+        "passed": true
+      },
+      {
+        "args": [
+          "snapshot",
+          "--tag",
+          "HAW"
+        ],
+        "result": {
+          "ok": true,
+          "treasury_raw": 23531565,
+          "treasury": 718.12637329
+        },
+        "passed": true
+      },
+      {
+        "args": [
+          "decision",
+          "execute",
+          "--tag",
+          "HAW",
+          "--id",
+          "vic2test_smoke_decision"
+        ],
+        "result": {
+          "ok": true,
+          "queued": true,
+          "completed": false
+        },
+        "passed": true
+      },
+      {
+        "args": [
+          "snapshot",
+          "--tag",
+          "HAW"
+        ],
+        "result": {
+          "ok": true,
+          "treasury_raw": 24088621,
+          "treasury": 735.12637329
+        },
+        "passed": true
+      },
+      {
+        "args": [
+          "decision",
+          "check",
+          "--tag",
+          "HAW",
+          "--id",
+          "vic2test_smoke_decision"
+        ],
+        "result": {
+          "ok": true,
+          "potential": false,
+          "allow": true
+        },
+        "passed": true
+      }
+    ]
+  },
+  "province_scenario": {
+    "ok": true,
+    "results": [
+      {
+        "args": [
+          "pause"
+        ],
+        "result": {
+          "ok": true
+        },
+        "passed": true
+      },
+      {
+        "args": [
+          "snapshot",
+          "--tag",
+          "HAW"
+        ],
+        "result": {
+          "ok": true,
+          "treasury_raw": 16125997,
+          "treasury": 492.12637329
+        },
+        "passed": true
+      },
+      {
+        "args": [
+          "event",
+          "--province",
+          "658",
+          "--id",
+          "990002",
+          "--option",
+          "1"
+        ],
+        "result": {
+          "ok": true,
+          "queued": true,
+          "completed": false
+        },
+        "passed": true
+      },
+      {
+        "args": [
+          "decision",
+          "check",
+          "--tag",
+          "HAW",
+          "--id",
+          "vic2test_province_immediate_probe"
+        ],
+        "result": {
+          "ok": true,
+          "potential": true,
+          "allow": true
+        },
+        "passed": true
+      },
+      {
+        "args": [
+          "decision",
+          "check",
+          "--tag",
+          "HAW",
+          "--id",
+          "vic2test_province_one_probe"
+        ],
+        "result": {
+          "ok": true,
+          "potential": true,
+          "allow": true
+        },
+        "passed": true
+      },
+      {
+        "args": [
+          "decision",
+          "check",
+          "--tag",
+          "HAW",
+          "--id",
+          "vic2test_province_zero_probe"
+        ],
+        "result": {
+          "ok": true,
+          "potential": false,
+          "allow": true
+        },
+        "passed": true
+      },
+      {
+        "args": [
+          "snapshot",
+          "--tag",
+          "HAW"
+        ],
+        "result": {
+          "ok": true,
+          "treasury_raw": 19828781,
+          "treasury": 605.12637329
+        },
+        "passed": true
+      }
+    ]
+  },
+  "save_runs": [
+    {
+      "source": "1841.v2",
+      "sha256": "12378f29e7502bc5254136d2ed9fe2110d33180078080243c44d13e33bef68d9",
+      "start": {
+        "ok": true,
+        "protocol": 1,
+        "campaign_loaded": true,
+        "date_raw": 59927160,
+        "pid": 6616,
+        "owner_thread": 10312,
+        "console_captured": true,
+        "advance_target": 0,
+        "paused": true
+      },
+      "advance": {
+        "ok": true,
+        "protocol": 1,
+        "campaign_loaded": true,
+        "date_raw": 59927880,
+        "pid": 6616,
+        "owner_thread": 10312,
+        "console_captured": true,
+        "advance_target": 0,
+        "paused": true,
+        "requested_target_date_raw": 59927880,
+        "completed": true
+      },
+      "save": {
+        "ok": true,
+        "completed": true,
+        "path": "D:\\v2game\\.work\\test-run\\userdata\\save games\\ccore_0.v2",
+        "sha256": "90c4d5c577497683895dae8d978646e8c09e9b9bca9f32ea3780496bf5a71f34",
+        "size": 24411538
+      },
+      "reload": {
+        "ok": true,
+        "protocol": 1,
+        "campaign_loaded": true,
+        "date_raw": 59927880,
+        "pid": 12536,
+        "owner_thread": 1636,
+        "console_captured": true,
+        "advance_target": 0,
+        "paused": true
+      },
+      "final": {
+        "ok": true,
+        "protocol": 1,
+        "campaign_loaded": true,
+        "date_raw": 59927904,
+        "pid": 12536,
+        "owner_thread": 1636,
+        "console_captured": true,
+        "advance_target": 0,
+        "paused": true,
+        "requested_target_date_raw": 59927904,
+        "completed": true
+      }
+    },
+    {
+      "source": "1891.v2",
+      "sha256": "a3030d8b26101ee7e040bcf138a0bc53b8ab1a6e1e0ce322da3d6e73eceab0e5",
+      "start": {
+        "ok": true,
+        "protocol": 1,
+        "campaign_loaded": true,
+        "date_raw": 60365160,
+        "pid": 18420,
+        "owner_thread": 15028,
+        "console_captured": true,
+        "advance_target": 0,
+        "paused": true
+      },
+      "advance": {
+        "ok": true,
+        "protocol": 1,
+        "campaign_loaded": true,
+        "date_raw": 60365880,
+        "pid": 18420,
+        "owner_thread": 15028,
+        "console_captured": true,
+        "advance_target": 0,
+        "paused": true,
+        "requested_target_date_raw": 60365880,
+        "completed": true
+      },
+      "save": {
+        "ok": true,
+        "completed": true,
+        "path": "D:\\v2game\\.work\\test-run\\userdata\\save games\\ccore_1.v2",
+        "sha256": "7baa6d66115d025560e9c48671f9ad4d9ceb7abcb59f2db810b9b58b82b92565",
+        "size": 41392700
+      },
+      "reload": {
+        "ok": true,
+        "protocol": 1,
+        "campaign_loaded": true,
+        "date_raw": 60365880,
+        "pid": 5660,
+        "owner_thread": 15684,
+        "console_captured": true,
+        "advance_target": 0,
+        "paused": true
+      },
+      "final": {
+        "ok": true,
+        "protocol": 1,
+        "campaign_loaded": true,
+        "date_raw": 60365904,
+        "pid": 5660,
+        "owner_thread": 15684,
+        "console_captured": true,
+        "advance_target": 0,
+        "paused": true,
+        "requested_target_date_raw": 60365904,
+        "completed": true
+      }
+    },
+    {
+      "source": "1931.v2",
+      "sha256": "ff936fe0e1f1ede2501c545bc95d3cb44aee52a7c3f32c7a2041a98ce56e936f",
+      "start": {
+        "ok": true,
+        "protocol": 1,
+        "campaign_loaded": true,
+        "date_raw": 60715560,
+        "pid": 9244,
+        "owner_thread": 17900,
+        "console_captured": true,
+        "advance_target": 0,
+        "paused": true,
+        "event_windows": 0,
+        "auto_events_selected": 0
+      },
+      "advance": {
+        "ok": true,
+        "protocol": 1,
+        "campaign_loaded": true,
+        "date_raw": 60717720,
+        "pid": 9244,
+        "owner_thread": 17900,
+        "console_captured": true,
+        "advance_target": 0,
+        "paused": true,
+        "event_windows": 0,
+        "auto_events_selected": 71,
+        "requested_target_date_raw": 60717720,
+        "completed": true
+      },
+      "save": {
+        "ok": true,
+        "completed": true,
+        "path": "D:\\v2game\\.work\\test-run\\userdata\\save games\\ccore_4d5e7ca4.v2",
+        "sha256": "6f74a4b20165e20d3909e1b0a0290b549cabc6b545788827042c848b44f56b91",
+        "size": 62147173
+      },
+      "reload": {
+        "ok": true,
+        "protocol": 1,
+        "campaign_loaded": true,
+        "date_raw": 60717720,
+        "pid": 5716,
+        "owner_thread": 11068,
+        "console_captured": true,
+        "advance_target": 0,
+        "paused": true,
+        "event_windows": 0,
+        "auto_events_selected": 0
+      },
+      "final": {
+        "ok": true,
+        "protocol": 1,
+        "campaign_loaded": true,
+        "date_raw": 60717744,
+        "pid": 5716,
+        "owner_thread": 11068,
+        "console_captured": true,
+        "advance_target": 0,
+        "paused": true,
+        "event_windows": 0,
+        "auto_events_selected": 0,
+        "requested_target_date_raw": 60717744,
+        "completed": true
+      }
+    }
+  ],
+  "final_save": {
+    "ok": true,
+    "completed": true,
+    "path": "D:\\v2game\\.work\\test-run\\userdata\\save games\\ccore_final.v2",
+    "sha256": "da55e90c1025a8b89158e8c3293bc2fe4a55831bad3bd420cdd52e763a3b913f",
+    "size": 19581522
+  },
+  "province_flag_after_reload": {
+    "ok": true,
+    "potential": true,
+    "allow": true
+  },
+  "final_reload_advance": {
+    "ok": true,
+    "protocol": 1,
+    "campaign_loaded": true,
+    "date_raw": 59883624,
+    "pid": 10336,
+    "owner_thread": 15348,
+    "console_captured": true,
+    "advance_target": 0,
+    "paused": true,
+    "event_windows": 0,
+    "auto_events_selected": 0,
+    "requested_target_date_raw": 59883624,
+    "completed": true
+  },
+  "original_saves_verified_unchanged": 46,
+  "initial_late_attempt": {
+    "result": "E_ADVANCE_TIMEOUT",
+    "reason": "pending interactive events",
+    "resolved_by": "explicit --auto-events in isolated test; 71 first options"
+  },
+  "deferred": [
+    "COMBAT_SECOND_LINE_DAMAGE_REDIRECT"
+  ],
+  "gui_windowed_budget": "verified .work/test-run/budget-final.png",
+  "main_install_load": "core and script fixes loaded; CreateSubstate=1 NewPopModifiers=1 ReserveStay=3/3",
+  "limits": [
+    "basic regression coverage; not exhaustive combat or transport scenarios",
+    "snapshot currently treasury; flags and conditions tested through native decision predicates",
+    "exclusive fullscreen screen capture not qualified; GUI verified in windowed isolated copy"
+  ]
+}

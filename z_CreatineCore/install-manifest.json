@@ -1,0 +1,36 @@
+{
+  "upstream_url": "https://github.com/artyom-kuznetsov/V2DLL_Victoria-2-Extension.git",
+  "upstream_commit": "7d9f9df9b356096cde475ebd550fbb0102fa1042",
+  "patch_sha256": "ffe84a6fb2d09f71d5778377a7f20726ec291db8b30f8acf497fc89a9afc1ac7",
+  "msbuild": "C:\\Program Files\\Microsoft Visual Studio\\2026\\BuildTools\\MSBuild\\Current\\Bin\\MSBuild.exe",
+  "configuration": "Release|Win32",
+  "artifacts": {
+    "creatinecore.dll": {
+      "sha256": "44961c340454cfe5d5c15036122a1c52ca3bdbdeaaa4a178aafd2a05e070f114",
+      "bytes": 499712,
+      "machine": "x86"
+    },
+    "dinput8.dll": {
+      "sha256": "80d6ac17897a1c85803a74996cf1520fba0366a58d6743633b2e8de0e318f97b",
+      "bytes": 89088,
+      "machine": "x86"
+    },
+    "eventmusic.dll": {
+      "sha256": "63b5a704ee2c515fa676ba55dd885684887b99f4aba67d7e9714c1d02dad4454",
+      "bytes": 610304,
+      "machine": "x86"
+    },
+    "ccore_script_fixes.dll": {
+      "sha256": "d7548808763b9ffb65513ae8209e2ebfb288534b6f8a984acd05b59599083453",
+      "bytes": 574464,
+      "machine": "x86"
+    }
+  },
+  "installed": {
+    "dinput8.dll": "80d6ac17897a1c85803a74996cf1520fba0366a58d6743633b2e8de0e318f97b",
+    "z_CreatineCore/creatinecore.dll": "44961c340454cfe5d5c15036122a1c52ca3bdbdeaaa4a178aafd2a05e070f114",
+    "z_CreatineCore/eventmusic.dll": "63b5a704ee2c515fa676ba55dd885684887b99f4aba67d7e9714c1d02dad4454",
+    "z_CreatineCore/dll_Submods/ccore_script_fixes.dll": "d7548808763b9ffb65513ae8209e2ebfb288534b6f8a984acd05b59599083453",
+    "z_CreatineCore/creatinecore_settings.ini": "5c7af2cbafec1671f6c54d71d85ea38dbf4c57fc85fa9ff4a721edf6760a6e29"
+  }
+}

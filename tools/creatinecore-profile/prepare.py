@@ -10,7 +10,7 @@ UPSTREAM = ROOT / ".work/creatinecore/upstream/CREATINECORE_LATEST_BUILD"
 ENABLED = set("""
 ARMY_FIX_BAD_REINFORCEMENT NAVY_FIX_BAD_REINFORCEMENT
 ARMY_BETTER_REINFORCE_ON_ALLIED_OWNED_LAND NAVY_ALLOW_USE_ALLY_TRANSPORTS
-COMBAT_SECOND_LINE_SUPPORT_UNIT_PRIORITY COMBAT_SECOND_LINE_DAMAGE_REDIRECT
+COMBAT_SECOND_LINE_SUPPORT_UNIT_PRIORITY
 TRADE_PRICE_DELTA_EXPONENTIAL FACTORY_AI_FACTORY_PRIORITY_RULESWAP
 POP_CARD_NEEDS_AFFECTED_BY_NEEDS_MODIFIERS_FIX POP_BUDGET_PAYOUT_NEEDS_SCALED
 POP_FIX_NEEDS_MODIFIERS ENABLE_VERSION_LABEL ENABLE_VASSAL_COLORS
@@ -118,6 +118,7 @@ def profile() -> str:
         raise ValueError(f"Неизвестные настройки: {sorted(ENABLED - set(keys))}")
     lines = ["; Профиль v2game для CreatineCore 6.43.",
              "; Все параметры заданы явно. Дополнительные DLL-оптимизаторы не устанавливаются.",
+             "; Перенаправление урона второй линии отложено: COMBAT_SECOND_LINE_DAMAGE_REDIRECT=0.",
              "; Расходы зданий не заданы; глобальная прибавка дохода POP равна нулю в defines_ccore.txt."]
     lines.extend(f"{key}={SPECIAL.get(key, '1' if key in ENABLED else '0')}" for key in keys)
     return "\n".join(lines) + "\n"
@@ -141,7 +142,7 @@ def output_files() -> dict[Path, bytes]:
     result = {
         ROOT / "tools/creatinecore-profile/creatinecore_settings.ini": profile().encode("cp1251"),
         ROOT / "common/defines_ccore.txt": DEFINES.replace("\n", "\r\n").encode("cp1251"),
-        ROOT / "localisation/creatinecore.csv": "".join(f"{key};{value};X\r\n" for key, value in TEXT.items()).encode("cp1251"),
+        ROOT / "localisation/creatinecore.csv": ("#CODE;ENGLISH;X\r\n" + "".join(f"{key};{value};X\r\n" for key, value in TEXT.items())).encode("cp1251"),
     }
     original = ROOT / "localisation/all_orig.csv"
     data = original.read_bytes().decode("cp1251")

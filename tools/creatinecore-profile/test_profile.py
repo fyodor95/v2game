@@ -20,6 +20,7 @@ class ProfileTests(unittest.TestCase):
         for key in PREPARE.ENABLED:
             self.assertEqual(values[key], "1", key)
         for key in ("PATCH_PARALLEL_EVENTS", "PATCH_PARALLEL_DECISIONS", "PATCH_FAST_AI_QUEUE",
+                    "COMBAT_SECOND_LINE_DAMAGE_REDIRECT",
                     "TRADE_PRICE_DELTA_PERCENTUAL", "TRADE_MAX_PRICE_20X_MULTIPLIER",
                     "POP_BUILD_INFRASTRUCTURE_RULE", "ENABLE_MINTING", "PATCH_STATE_SAVINGS_CAP"):
             self.assertEqual(values[key], "0", key)
@@ -41,6 +42,8 @@ class ProfileTests(unittest.TestCase):
         occurrences = {key: [] for key in PREPARE.TEXT | PREPARE.EXISTING_TEXT}
         for path in (PREPARE.ROOT / "localisation").glob("*.csv"):
             for line in path.read_bytes().decode("cp1251").splitlines():
+                if not line or line.startswith("#"):
+                    continue
                 key = line.split(";", 1)[0]
                 if key in occurrences:
                     occurrences[key].append(path.name)
@@ -52,6 +55,13 @@ class ProfileTests(unittest.TestCase):
             self.assertEqual(path.read_bytes(), expected, str(path))
         defines = (PREPARE.ROOT / "common/defines_ccore.txt").read_bytes().decode("cp1251")
         self.assertRegex(defines, r"(?m)^pop_salary_additional_multiplier = 0\r?$")
+
+    def test_localization_has_header_before_first_translation(self):
+        lines = (PREPARE.ROOT / "localisation/creatinecore.csv").read_bytes().decode("cp1251").splitlines()
+        self.assertEqual(lines[0], "#CODE;ENGLISH;X")
+        records = [line for line in lines if line and not line.startswith("#")]
+        self.assertEqual(len(records), len(PREPARE.TEXT))
+        self.assertEqual(records[0].split(";", 1)[0], "TRUE_EXIT")
 
     def test_budget_field_is_unique(self):
         gui = (PREPARE.ROOT / "interface/country_budget.gui").read_bytes().decode("cp1251")

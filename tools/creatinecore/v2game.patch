@@ -36,7 +36,7 @@ index d9caf42..4ad054c 100644
              ConstructEngineString(dest, text);
      }
 diff --git a/Source/V2/V2/V2TechButton.cpp b/Source/V2/V2/V2TechButton.cpp
-index 53efd12..00577ad 100644
+index 53efd12..98a5509 100644
 --- a/Source/V2/V2/V2TechButton.cpp
 +++ b/Source/V2/V2/V2TechButton.cpp
 @@ -1,4 +1,4 @@
@@ -115,6 +115,15 @@ index 53efd12..00577ad 100644
      FILE* f = 0;
      if (fopen_s(&f, path, "r") != 0 || !f)
      {
+@@ -11691,7 +11717,7 @@ static bool InstallReserveFrontline()
+     }
+ 
+     Log("ReserveFrontline: установлен на rva %06X (резервы во вторую линию: сначала support, пехота - когда support кончился); stay-патчи %d/3",
+-        RVA_RESERVE_DEPLOY);
++        RVA_RESERVE_DEPLOY, stayOk);
+     if (stayOk != 3)
+         Log("ReserveStay: предупреждение - применено только %d из 3 патчей", stayOk);
+     return true;
 @@ -22917,7 +22943,8 @@ static bool Install()
          // процесса) на MEM_IMAGE/MEM_MAPPED, где могли жить внутренние
          // данные видеодрайвера - в 2.60 это ограничение возвращено, снова
@@ -125,3 +134,24 @@ index 53efd12..00577ad 100644
      }
  
      if (g_settings.factoryAllowConstructionInColonial)
+@@ -23065,7 +23092,9 @@ static bool Install()
+     // The country-scope effect has its own independent setting.
+     if (g_settings.newCountryScopeEffects)
+     {
+-        if (InstallSubstateScriptEffects())
++        const bool substateOk = InstallSubstateScriptEffects();
++        Log("CreateSubstate: включено=1 зарегистрировано=%d", substateOk ? 1 : 0);
++        if (substateOk)
+             InstallCreateSubstateConsoleCommand();
+     }
+     SubstateUiStatus::Install();
+@@ -23091,7 +23120,8 @@ static bool Install()
+         ConfigureExtendedCountryPrimaryPopModifiers(g_settings.newPopModifiers);
+         ConfigureExtendedCountryAcceptedPopModifiers(g_settings.newPopModifiers);
+         ConfigureExtendedCountryColonialPopModifiers(g_settings.newPopModifiers);
+-        InstallNewPopModifiers();
++        const bool modifiersOk = InstallNewPopModifiers();
++        Log("NewPopModifiers: включено=1 установлено=%d", modifiersOk ? 1 : 0);
+     }
+ 
+     if (g_settings.fixProvinceFlags || g_settings.countryReligionTrigger)

@@ -1,0 +1,2 @@
+# Пустые строки контекста unified diff содержат обязательный пробел.
+tools/creatinecore/*.patch -whitespace
