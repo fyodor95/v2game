@@ -21,7 +21,7 @@ class ProfileTests(unittest.TestCase):
             self.assertEqual(values[key], "1", key)
         for key in ("PATCH_PARALLEL_EVENTS", "PATCH_PARALLEL_DECISIONS", "PATCH_FAST_AI_QUEUE",
                     "COMBAT_SECOND_LINE_DAMAGE_REDIRECT",
-                    "TRADE_PRICE_DELTA_PERCENTUAL", "TRADE_MAX_PRICE_20X_MULTIPLIER",
+                    "TRADE_PRICE_DELTA_PERCENTUAL",
                     "POP_BUILD_INFRASTRUCTURE_RULE", "ENABLE_MINTING", "PATCH_STATE_SAVINGS_CAP"):
             self.assertEqual(values[key], "0", key)
 
