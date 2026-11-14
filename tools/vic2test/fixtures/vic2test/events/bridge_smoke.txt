@@ -1,0 +1,46 @@
+country_event = {
+    id = 990001
+    title = "VIC2TEST_EVENT_TITLE"
+    desc = "VIC2TEST_EVENT_DESC"
+    is_triggered_only = yes
+    immediate = {
+        money = 100
+        set_country_flag = vic2test_immediate
+    }
+    option = {
+        name = "VIC2TEST_OPTION_ZERO"
+        money = 7
+        set_country_flag = vic2test_option_zero
+    }
+    option = {
+        name = "VIC2TEST_OPTION_ONE"
+        money = 13
+        set_country_flag = vic2test_option_one
+    }
+}
+province_event = {
+    id = 990002
+    title = "VIC2TEST_EVENT_TITLE"
+    desc = "VIC2TEST_EVENT_DESC"
+    is_triggered_only = yes
+    immediate = {
+        owner = {
+            money = 100
+            set_country_flag = vic2test_province_immediate
+        }
+    }
+    option = {
+        name = "VIC2TEST_OPTION_ZERO"
+        owner = {
+            money = 7
+            set_country_flag = vic2test_province_zero
+        }
+    }
+    option = {
+        name = "VIC2TEST_OPTION_ONE"
+        owner = {
+            money = 13
+            set_country_flag = vic2test_province_one
+        }
+    }
+}

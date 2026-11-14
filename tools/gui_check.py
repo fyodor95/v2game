@@ -13,6 +13,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--pid', type=int, required=True)
     parser.add_argument('--output', type=Path)
+    parser.add_argument('--show', action='store_true', help='Показать скрытое окно тестовой игры')
     parser.add_argument('--click', type=int, nargs=2, metavar=('X', 'Y'))
     parser.add_argument('--key', type=int, help='Код виртуальной клавиши Windows')
     args = parser.parse_args()
@@ -34,23 +35,47 @@ def main():
         if process:
             k.CloseHandle(process)
     windows = []
+    u.GetClassNameW.argtypes = [w.HWND, w.LPWSTR, c.c_int]
     callback_type = c.WINFUNCTYPE(w.BOOL, w.HWND, w.LPARAM)
     def visit(hwnd, unused):
         pid = w.DWORD()
         u.GetWindowThreadProcessId(hwnd, c.byref(pid))
-        if pid.value == args.pid and u.IsWindowVisible(hwnd):
+        class_name = c.create_unicode_buffer(128)
+        u.GetClassNameW(hwnd, class_name, len(class_name))
+        if pid.value == args.pid and class_name.value == 'Victoria 2' and (u.IsWindowVisible(hwnd) or args.show):
             windows.append(hwnd)
         return True
     u.EnumWindows(callback_type(visit), 0)
     if not windows:
         raise RuntimeError('У процесса нет видимого окна')
     hwnd = max(windows, key=lambda h: window_area(u, h))
+    if args.show:
+        u.ShowWindow.argtypes = [w.HWND, c.c_int]
+        u.ShowWindow(hwnd, 9)
     u.SetForegroundWindow.argtypes = [w.HWND]
     u.GetForegroundWindow.restype = w.HWND
     u.SetForegroundWindow(hwnd)
     time.sleep(.2)
     if u.GetForegroundWindow() != hwnd:
+        foreground = u.GetForegroundWindow()
+        foreground_thread = u.GetWindowThreadProcessId(foreground, None)
+        current_thread = k.GetCurrentThreadId()
+        u.AttachThreadInput.argtypes = [w.DWORD, w.DWORD, w.BOOL]
+        attached = u.AttachThreadInput(current_thread, foreground_thread, True)
+        try:
+            if attached:
+                u.BringWindowToTop.argtypes = [w.HWND]
+                u.BringWindowToTop(hwnd)
+                u.SetForegroundWindow(hwnd)
+        finally:
+            if attached:
+                u.AttachThreadInput(current_thread, foreground_thread, False)
+        time.sleep(.2)
+    if u.GetForegroundWindow() != hwnd:
         raise RuntimeError('Игра не получила фокус; ввод и снимок отменены')
+    def require_focus():
+        if u.GetForegroundWindow() != hwnd:
+            raise RuntimeError('Игра потеряла фокус; ввод отменён')
     rect = w.RECT()
     u.GetClientRect(hwnd, c.byref(rect))
     point = w.POINT(0, 0)
@@ -62,6 +87,7 @@ def main():
             raise ValueError('Координаты вне клиентской области игры')
         u.SetCursorPos(point.x + x, point.y + y)
         time.sleep(.25)
+        require_focus()
         u.mouse_event(2, 0, 0, 0, 0)
         time.sleep(.12)
         u.mouse_event(4, 0, 0, 0, 0)
@@ -69,11 +95,20 @@ def main():
     if args.key is not None:
         if not 1 <= args.key <= 254:
             raise ValueError('Неверный код клавиши')
+        require_focus()
         u.keybd_event(args.key, 0, 0, 0)
         time.sleep(.12)
         u.keybd_event(args.key, 0, 2, 0)
         time.sleep(.5)
     if args.output:
+        require_focus()
+        u.WindowFromPoint.argtypes = [w.POINT]
+        u.WindowFromPoint.restype = w.HWND
+        center = w.POINT(point.x + width // 2, point.y + height // 2)
+        covered_pid = w.DWORD()
+        u.GetWindowThreadProcessId(u.WindowFromPoint(center), c.byref(covered_pid))
+        if covered_pid.value != args.pid:
+            raise RuntimeError('Центр окна игры перекрыт другим приложением; снимок отменён')
         capture(u, g, point, width, height, args.output)
     print(json.dumps({'pid': args.pid, 'client_pixels': [width, height],
                       'output': str(args.output) if args.output else None}))

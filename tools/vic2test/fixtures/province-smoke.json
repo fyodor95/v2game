@@ -1,0 +1,11 @@
+{
+  "steps": [
+    {"args": ["pause"]},
+    {"args": ["snapshot", "--tag", "HAW"]},
+    {"args": ["event", "--province", "658", "--id", "990002", "--option", "1"]},
+    {"args": ["decision", "check", "--tag", "HAW", "--id", "vic2test_province_immediate_probe"], "expect": {"ok": true, "potential": true}},
+    {"args": ["decision", "check", "--tag", "HAW", "--id", "vic2test_province_one_probe"], "expect": {"ok": true, "potential": true}},
+    {"args": ["decision", "check", "--tag", "HAW", "--id", "vic2test_province_zero_probe"], "expect": {"ok": true, "potential": false}},
+    {"args": ["snapshot", "--tag", "HAW"], "delta": {"field": "treasury_raw", "from": 1, "value": 3702784}}
+  ]
+}

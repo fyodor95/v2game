@@ -1,0 +1,47 @@
+political_decisions = {
+    vic2test_province_immediate_probe = {
+        potential = { has_country_flag = vic2test_province_immediate }
+        allow = { always = yes }
+        effect = { }
+        ai_will_do = { factor = 0 }
+    }
+    vic2test_province_one_probe = {
+        potential = { has_country_flag = vic2test_province_one }
+        allow = { always = yes }
+        effect = { }
+        ai_will_do = { factor = 0 }
+    }
+    vic2test_province_zero_probe = {
+        potential = { has_country_flag = vic2test_province_zero }
+        allow = { always = yes }
+        effect = { }
+        ai_will_do = { factor = 0 }
+    }
+    vic2test_immediate_probe = {
+        potential = { has_country_flag = vic2test_immediate }
+        allow = { always = yes }
+        effect = { }
+        ai_will_do = { factor = 0 }
+    }
+    vic2test_zero_probe = {
+        potential = { has_country_flag = vic2test_option_zero }
+        allow = { always = yes }
+        effect = { }
+        ai_will_do = { factor = 0 }
+    }
+    vic2test_one_probe = {
+        potential = { has_country_flag = vic2test_option_one }
+        allow = { always = yes }
+        effect = { }
+        ai_will_do = { factor = 0 }
+    }
+    vic2test_smoke_decision = {
+        potential = { NOT = { has_country_flag = vic2test_decision_done } }
+        allow = { money = 1 }
+        effect = {
+            money = 17
+            set_country_flag = vic2test_decision_done
+        }
+        ai_will_do = { factor = 0 }
+    }
+}

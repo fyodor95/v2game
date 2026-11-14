@@ -1,0 +1,7 @@
+#CODE;ENGLISH;X
+VIC2TEST_EVENT_TITLE;Проверка нативного вызова события;X
+VIC2TEST_EVENT_DESC;Немедленный эффект добавляет 100 фунтов. Варианты добавляют 7 или 13 фунтов.;X
+VIC2TEST_OPTION_ZERO;Вариант ноль: добавить 7 фунтов;X
+VIC2TEST_OPTION_ONE;Вариант один: добавить 13 фунтов;X
+vic2test_smoke_decision_title;Проверка нативного решения;X
+vic2test_smoke_decision_desc;Добавляет 17 фунтов и запрещает повторное выполнение.;X

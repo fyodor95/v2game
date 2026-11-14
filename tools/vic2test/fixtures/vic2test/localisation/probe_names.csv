@@ -1,0 +1,12 @@
+vic2test_immediate_probe_title;Проверка немедленного эффекта события;X
+vic2test_immediate_probe_desc;Доступно после выполнения немедленного эффекта тестового события страны.;X
+vic2test_zero_probe_title;Проверка нулевого варианта события;X
+vic2test_zero_probe_desc;Доступно после выбора нулевого варианта события страны.;X
+vic2test_one_probe_title;Проверка первого варианта события;X
+vic2test_one_probe_desc;Доступно после выбора первого варианта события страны.;X
+vic2test_province_immediate_probe_title;Проверка немедленного эффекта провинции;X
+vic2test_province_immediate_probe_desc;Доступно после немедленного эффекта тестового события провинции.;X
+vic2test_province_zero_probe_title;Проверка нулевого варианта провинции;X
+vic2test_province_zero_probe_desc;Доступно после выбора нулевого варианта события провинции.;X
+vic2test_province_one_probe_title;Проверка первого варианта провинции;X
+vic2test_province_one_probe_desc;Доступно после выбора первого варианта события провинции.;X

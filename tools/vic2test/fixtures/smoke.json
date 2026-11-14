@@ -1,0 +1,15 @@
+{
+  "steps": [
+    {"args": ["pause"]},
+    {"args": ["snapshot", "--tag", "HAW"]},
+    {"args": ["decision", "check", "--tag", "HAW", "--id", "vic2test_smoke_decision"], "expect": {"ok": true, "potential": true, "allow": true}},
+    {"args": ["event", "--tag", "HAW", "--id", "990001", "--option", "1"]},
+    {"args": ["decision", "check", "--tag", "HAW", "--id", "vic2test_immediate_probe"], "expect": {"ok": true, "potential": true}},
+    {"args": ["decision", "check", "--tag", "HAW", "--id", "vic2test_one_probe"], "expect": {"ok": true, "potential": true}},
+    {"args": ["decision", "check", "--tag", "HAW", "--id", "vic2test_zero_probe"], "expect": {"ok": true, "potential": false}},
+    {"args": ["snapshot", "--tag", "HAW"], "delta": {"field": "treasury_raw", "from": 1, "value": 3702784}},
+    {"args": ["decision", "execute", "--tag", "HAW", "--id", "vic2test_smoke_decision"]},
+    {"args": ["snapshot", "--tag", "HAW"], "delta": {"field": "treasury_raw", "from": 7, "value": 557056}},
+    {"args": ["decision", "check", "--tag", "HAW", "--id", "vic2test_smoke_decision"], "expect": {"ok": true, "potential": false}}
+  ]
+}
