@@ -20,4 +20,4 @@ else:
     elif link.exists():
         raise RuntimeError('Существующий обычный файл не заменяется')
     os.symlink(str(target), str(link))
-print('AGENTS.md → AGENTS/AGENTS.md')
+print('AGENTS.md -> AGENTS/AGENTS.md')

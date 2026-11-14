@@ -1,0 +1,127 @@
+diff --git a/Source/V2/V2/CCore_ProvinceFlags.cpp b/Source/V2/V2/CCore_ProvinceFlags.cpp
+index d9caf42..4ad054c 100644
+--- a/Source/V2/V2/CCore_ProvinceFlags.cpp
++++ b/Source/V2/V2/CCore_ProvinceFlags.cpp
+@@ -1,4 +1,4 @@
+-// Shared script-trigger factory extensions for Victoria II.
++﻿// Shared script-trigger factory extensions for Victoria II.
+ // FIX_PROVINCE_FLAGS adds has_province_flag and its effects.
+ // NEW_COUNTRY_SCOPE_CONDITIONS adds country_religion and unit_enabled.
+ //
+@@ -493,6 +493,12 @@ static bool CountryReligionLocalizeKey(const char* key, char* output, unsigned o
+     }
+ }
+ 
++// Общий локализатор ядра для дополнительных скриптовых исправлений.
++extern "C" __declspec(dllexport) int __cdecl CCore_LocalizeKey(const char* key, char* output, unsigned capacity)
++{
++    return CountryReligionLocalizeKey(key, output, capacity) ? 1 : 0;
++}
++
+ static void* __fastcall ProvinceFlagTooltip(void* self, void* edx, void* dest, void* arg1, int negate, int arg3)
+ {
+     (void)edx; (void)arg1; (void)arg3;
+@@ -500,8 +506,11 @@ static void* __fastcall ProvinceFlagTooltip(void* self, void* edx, void* dest, v
+     {
+         char text[160];
+         const char* name = EngineString((char*)self + 0x1C);
+-        _snprintf_s(text, sizeof(text), _TRUNCATE, "%shas_province_flag '\xA7" "Y%s\xA7" "W'\n",
+-            (negate & 0xFF) ? "NOT " : "", name);
++        char prefix[160];
++        const char* key = (negate & 0xFF) ? "CC_PROVINCE_FLAG_IS_NOT" : "CC_PROVINCE_FLAG_IS";
++        if (!CountryReligionLocalizeKey(key, prefix, sizeof(prefix)))
++            strncpy_s(prefix, sizeof(prefix), key, _TRUNCATE);
++        _snprintf_s(text, sizeof(text), _TRUNCATE, "%s\xA7" "Y%s\xA7" "W\n", prefix, name);
+         if (dest)
+             ConstructEngineString(dest, text);
+     }
+diff --git a/Source/V2/V2/V2TechButton.cpp b/Source/V2/V2/V2TechButton.cpp
+index 53efd12..00577ad 100644
+--- a/Source/V2/V2/V2TechButton.cpp
++++ b/Source/V2/V2/V2TechButton.cpp
+@@ -1,4 +1,4 @@
+-// V2TechButton.cpp
++﻿// V2TechButton.cpp
+ //
+ // Мод для Victoria 2: кнопки, запускающие решения, скрытие этих
+ // решений из окна политики, процентное изменение цен, байтовые
+@@ -57,6 +57,7 @@ struct Settings
+     bool localModConfig = false;
+ 
+     bool log            = true;  // лог в Logs\v2dll.log (много записей на тик, для раздачи ставить 0)
++    bool patchFactoryDumpScan = false; // Сканер памяти включается только явной настройкой диагностики.
+     bool debugLog       = false; // DEBUG_LOG: отладочные записи (LogDbg) - см. определение рядом с Log
+     bool buttons        = true;   // кнопки, запускающие решения
+     bool decisionFilter = true;   // скрытие решений из окна политики
+@@ -4643,6 +4644,10 @@ static void ParseExtraWhitelist(const char* value)
+ 
+ static void SetExePatchEnabled(const char* name, bool v);
+ 
++static bool g_goodsConsumptionCanonicalSeen = false;
++static bool g_goodsConsumptionLegacySeen = false;
++static bool g_goodsConsumptionLegacyValue = false;
++
+ static void ApplySetting(const char* key, const char* value)
+ {
+     if (_stricmp(key, "PATCH_PARALLEL_DECISIONS") == 0)
+@@ -4678,6 +4683,7 @@ static void ApplySetting(const char* key, const char* value)
+     if (_stricmp(key, "LOCAL_MOD_CONFIG") == 0)             { g_settings.localModConfig = v; return; }
+ 
+     if (_stricmp(key, "ENABLE_LOG") == 0)                  { g_settings.log            = v; return; }
++    if (_stricmp(key, "PATCH_FACTORY_DUMP_SCAN") == 0) { g_settings.patchFactoryDumpScan = v; return; }
+     if (_stricmp(key, "DEBUG_LOG") == 0)                   { g_settings.debugLog       = v; return; }
+     if (_stricmp(key, "ENABLE_BUTTONS") == 0)               { g_settings.buttons        = v; return; }
+     if (_stricmp(key, "ENABLE_DECISION_FILTER") == 0)       { g_settings.decisionFilter = v; return; }
+@@ -4768,7 +4774,24 @@ static void ApplySetting(const char* key, const char* value)
+     if (_stricmp(key, "ENABLE_MINTING") == 0)                   { g_settings.minting                     = v; return; }
+     if (_stricmp(key, "POP_SALARY_ADDITIONAL_MULTIPLIER") == 0) { g_settings.popSalaryAdditionalMultiplier = v; return; }
+     if (_stricmp(key, "POP_BUILD_INFRASTRUCTURE_RULE") == 0)    { g_settings.popBuildInfrastructureRule = v; return; }
+-    if (_stricmp(key, "ENABLE_GOODS_CONSUMPTION") == 0)         { g_settings.goodsConsumption            = v; return; }
++    if (_stricmp(key, "BUILDING_GOODS_CONSUMPTION") == 0)
++    {
++        if (g_goodsConsumptionLegacySeen && g_goodsConsumptionLegacyValue != v)
++            Log("Конфликт настроек содержания зданий: используется BUILDING_GOODS_CONSUMPTION");
++        g_goodsConsumptionCanonicalSeen = true;
++        g_settings.goodsConsumption = v;
++        return;
++    }
++    if (_stricmp(key, "ENABLE_GOODS_CONSUMPTION") == 0)
++    {
++        g_goodsConsumptionLegacySeen = true;
++        g_goodsConsumptionLegacyValue = v;
++        if (!g_goodsConsumptionCanonicalSeen)
++            g_settings.goodsConsumption = v;
++        else if (g_settings.goodsConsumption != v)
++            Log("Конфликт настроек содержания зданий: используется BUILDING_GOODS_CONSUMPTION");
++        return;
++    }
+     if (_stricmp(key, "ENABLE_ASSIMILATE_BLOCK") == 0)          { g_settings.assimilateBlock             = v; return; }
+     if (_stricmp(key, "ENABLE_EXTENDED_UNIT_RECRUITMENT_RULES") == 0) { g_settings.extendedUnitRecruitmentRules = v; return; }
+     if (_stricmp(key, "NEW_POP_MODIFIERS") == 0) { g_settings.newPopModifiers = v; return; }
+@@ -5078,6 +5101,7 @@ static void WriteDefaultSettings(const char* path)
+         g_settings.mwTags,
+         (int)g_settings.mpHostHumanSync);
+ 
++    fprintf(f, "PATCH_FACTORY_DUMP_SCAN=%d\n", (int)g_settings.patchFactoryDumpScan);
+     fclose(f);
+ }
+ 
+@@ -5087,6 +5111,8 @@ static void WriteDefaultSettings(const char* path)
+ // Если файла по path нет - создаёт его со значениями по умолчанию.
+ static void LoadSettingsFrom(const char* path)
+ {
++    g_goodsConsumptionCanonicalSeen = false;
++    g_goodsConsumptionLegacySeen = false;
+     FILE* f = 0;
+     if (fopen_s(&f, path, "r") != 0 || !f)
+     {
+@@ -22917,7 +22943,8 @@ static bool Install()
+         // процесса) на MEM_IMAGE/MEM_MAPPED, где могли жить внутренние
+         // данные видеодрайвера - в 2.60 это ограничение возвращено, снова
+         // сканируем только MEM_PRIVATE, как в безотказных 2.55-2.57.
+-        InstallFactoryDumpScan();
++        if (g_settings.patchFactoryDumpScan)
++            InstallFactoryDumpScan();
+     }
+ 
+     if (g_settings.factoryAllowConstructionInColonial)

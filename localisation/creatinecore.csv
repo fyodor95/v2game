@@ -1,0 +1,48 @@
+TRUE_EXIT;Перезапустить игру;X
+PRIMARY_CULTURE_ONLY_RECRUITMENT;Только основная культура;X
+ACCEPTED_CULTURE_ONLY_RECRUITMENT;Только признанные культуры;X
+NON_ACCEPTED_ONLY_RECRUITMENT;Только непризнанные культуры;X
+COLONIAL_ONLY_RECRUITMENT;Только колонии;X
+NON_COLONIAL_ONLY_RECRUITMENT;Только неколониальные области;X
+MOVE_POP_AMOUNT_EFFECT;Переместить §Y$AMOUNT$§! населения в провинцию §Y$WHERE$§W.;X
+PROV_NON_ACC_MIL_MODIFIER;Воинственность непризнанных культур в провинции;X
+PROV_NON_ACC_CON_MODIFIER;Сознательность непризнанных культур в провинции;X
+PROV_PRIMARY_MIL_MODIFIER;Воинственность основной культуры в провинции;X
+PROV_PRIMARY_CON_MODIFIER;Сознательность основной культуры в провинции;X
+PROV_ACC_MIL_MODIFIER;Воинственность признанных культур в провинции;X
+PROV_ACC_CON_MODIFIER;Сознательность признанных культур в провинции;X
+PRIMARY_POP_MILITANCY_MODIFIER;Воинственность основной культуры;X
+PRIMARY_POP_CONSCIOUSNESS_MODIFIER;Сознательность основной культуры;X
+ACCEPTED_POP_MILITANCY_MODIFIER;Воинственность признанных культур;X
+ACCEPTED_POP_CONSCIOUSNESS_MODIFIER;Сознательность признанных культур;X
+COLONIAL_POP_MILITANCY_MODIFIER;Воинственность населения колоний;X
+COLONIAL_POP_CONSCIOUSNESS_MODIFIER;Сознательность населения колоний;X
+CC_COUNTRY_RELIGION_IS;Государственная религия: ;X
+CC_COUNTRY_RELIGION_IS_NOT;Государственная религия не является: ;X
+ASSIMILATE_CULTURE_EFFECT;Изменить культуру §Y$AMOUNT$§! населения на $CULTURE$.;X
+ASSIMILATE_RELIGION_EFFECT;Обратить §Y$AMOUNT$§! населения в $RELIGION$.;X
+DISABLE_UNIT_TECH;Запрещает формирование;X
+ACTIVATE_UNIT_EFFECT;Разрешить формирование: $UNIT$;X
+DEACTIVATE_UNIT_EFFECT;Запретить формирование: $UNIT$;X
+UNIT_ENABLED_IS;Доступен тип войск: ;X
+UNIT_ENABLED_NOT;Недоступен тип войск: ;X
+UNIT_WILL_BE_DEACTIVATED_BY_SOURCE;§Y$UNIT$§! станет недоступен для формирования после открытия §Y$SOURCE$§!;X
+CREATE_SUBSTATE_EFFECT;§Y$TARGET_COUNTRY$§W становится автономным подчинённым государством страны §Y$COUNTRY$§W.\n;X
+JOIN_WAR_SIDE_LINE;Вступить в войну на стороне страны $COUNTRY$;X
+JOIN_WAR_AGAINST_LINE;Вступить в войну против страны $COUNTRY$;X
+BUDGET_GOODS_CONS_HEADER;Товары для содержания зданий;X
+BUDGET_GOODS_CONS_LEVELS;уровней;X
+BUDGET_GOODS_CONS_TOTAL;Всего в день;X
+BUDGET_GOODS_CONS_BOUGHT;куплено;X
+BUDGET_GOODS_CONS_NEED;требуется;X
+BUDGET_GOODS_CONS_FILL;Закупки выполнены;X
+BUDGET_GOODS_CONS_LABEL;Содержание зданий;X
+GOODS_CONS_NAME_naval_base;Морские базы;X
+GOODS_CONS_NAME_railroad;Железные дороги;X
+GOODS_CONS_NAME_fort;Крепости;X
+TECH_FACTORY_MAINTENANCE;Содержание фабрик:;X
+CC_PROVINCE_FLAG_IS;В провинции установлен флаг ;X
+CC_PROVINCE_FLAG_IS_NOT;В провинции не установлен флаг ;X
+CC_DATE_AT_LEAST;Дата не ранее ;X
+CC_DATE_BEFORE;Дата раньше ;X
+CC_INVALID_MODIFIER;Неизвестный модификатор;X

@@ -1,0 +1,11 @@
+# Дополнительные настройки CreatineCore 6.43.
+# Параметры отключённых функций сохранены для предотвращения автодополнения.
+factory_unprofitable_close_days = 60
+minting_formula =
+ai_factory_expand_min_staffing = 90
+factory_closed_delete_days = 90
+ai_naval_base_max_provinces_per_state = 1
+factory_min_wage_per_10000 = 7
+# Нулевая глобальная прибавка; pop_income_modifier остаётся доступен скриптам.
+pop_salary_additional_multiplier = 0
+price_delta_exempt_goods =

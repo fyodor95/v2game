@@ -572,6 +572,25 @@ guiTypes = {
 			format = centre
 		}		
 		
+		instantTextBoxType = {
+			name = "building_maintenance_desc"
+			position = { x = 590 y = 432 }
+			font = "Arial12_black"
+			text = "BUDGET_GOODS_CONS_LABEL"
+			maxWidth = 160
+			maxHeight = 14
+			format = left
+		}
+		instantTextBoxType = {
+			name = "naval_base_expense"
+			position = { x = 760 y = 432 }
+			font = "Arial12_black"
+			text = "0¤"
+			maxWidth = 70
+			maxHeight = 14
+			format = right
+		}
+
 		instantTextBoxType = { 
 			name = "total_exp"
 			position = { x = 753 y = 437 }
