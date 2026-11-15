@@ -4,12 +4,14 @@ import hashlib
 import io
 import json
 from pathlib import Path
+import shutil
 import sys
 import tempfile
 import unittest
 from unittest.mock import patch
 
 import install
+import build as core_build
 
 
 class InstallTests(unittest.TestCase):
@@ -31,6 +33,10 @@ class InstallTests(unittest.TestCase):
             'z_CreatineCore/creatinecore.dll': b'new core artifact',
             'z_CreatineCore/eventmusic.dll': b'new music artifact',
             'z_CreatineCore/dll_Submods/ccore_script_fixes.dll': b'new script fixes artifact',
+            'z_CreatineCore/dll_Submods/ccore_great_power_culture_cores.dll': b'new GPC artifact',
+            'z_CreatineCore/great_power_culture_cores.ini': (
+                b'[GreatPowerCultureCores]\r\nENABLE_GREAT_POWER_CULTURE_CORES=0\r\n'
+                b'GREAT_POWER_CULTURE_CORES_MTTH_MONTHS=60\r\n'),
         }
         self.build = self.root / '.work/creatinecore/build'
         self.build.mkdir(parents=True)
@@ -43,6 +49,9 @@ class InstallTests(unittest.TestCase):
             json.dumps(self.build_manifest), encoding='utf-8')
         self.settings_relative = 'z_CreatineCore/creatinecore_settings.ini'
         self.settings = self.destination / self.settings_relative
+        self.gpc_settings_relative = 'z_CreatineCore/great_power_culture_cores.ini'
+        self.gpc_settings = self.destination / self.gpc_settings_relative
+        self.install_manifest_relative = 'z_CreatineCore/install-manifest.json'
         self.profile = self.root / 'tools/creatinecore-profile/creatinecore_settings.ini'
         self.profile.parent.mkdir(parents=True)
         self.profile_bytes = (
@@ -69,9 +78,13 @@ class InstallTests(unittest.TestCase):
         self.assertTrue(backup.is_dir())
         return backup
 
-    def assert_installed(self, settings_bytes):
+    def assert_installed(self, settings_bytes, gpc_settings_bytes=None):
+        if gpc_settings_bytes is None:
+            gpc_settings_bytes = self.artifacts[self.gpc_settings_relative]
         for relative, content in self.artifacts.items():
             with self.subTest(artifact=relative):
+                if relative == self.gpc_settings_relative:
+                    content = gpc_settings_bytes
                 self.assertEqual((self.destination / relative).read_bytes(), content)
         self.assertEqual(self.settings.read_bytes(), settings_bytes)
         manifest = json.loads(
@@ -79,6 +92,7 @@ class InstallTests(unittest.TestCase):
         self.assertEqual(manifest['artifacts'], self.build_manifest['artifacts'])
         expected = {relative: self.sha256(content) for relative, content in self.artifacts.items()}
         expected[self.settings_relative] = self.sha256(settings_bytes)
+        expected[self.gpc_settings_relative] = self.sha256(gpc_settings_bytes)
         self.assertEqual(manifest['installed'], expected)
 
     def test_update_preserves_existing_settings_bytes_and_backups(self):
@@ -99,10 +113,22 @@ class InstallTests(unittest.TestCase):
             content = ('old ' + relative).encode('ascii')
             path.write_bytes(content)
             previous[relative] = content
+        existing_gpc = (
+            '; Все настройки игрока сохраняются побайтно\r\n'
+            '[GreatPowerCultureCores]\r\n'
+            'ENABLE_GREAT_POWER_CULTURE_CORES=1\r\n'
+            'GREAT_POWER_CULTURE_CORES_MTTH_MONTHS=120\r\n'
+            'UNKNOWN_FUTURE_OPTION=значение'
+        ).encode('cp1251')
+        self.gpc_settings.write_bytes(existing_gpc)
+        previous[self.gpc_settings_relative] = existing_gpc
+        old_manifest = b'{"previous": "installation"}\n'
+        (self.destination / self.install_manifest_relative).write_bytes(old_manifest)
+        previous[self.install_manifest_relative] = old_manifest
 
         backup = self.run_installer()
 
-        self.assert_installed(existing)
+        self.assert_installed(existing, existing_gpc)
         self.assertEqual(self.profile.read_bytes(), self.profile_bytes)
         previous[self.settings_relative] = existing
         for relative, content in previous.items():
@@ -120,8 +146,156 @@ class InstallTests(unittest.TestCase):
         self.assertEqual(self.profile.read_bytes(), self.profile_bytes)
         before = json.loads((backup / 'before.json').read_text(encoding='utf-8'))
         self.assertEqual(before['files'], {
-            relative: None for relative in [*self.artifacts, self.settings_relative]})
+            relative: None for relative in [*self.artifacts, self.settings_relative,
+                                           self.install_manifest_relative]})
         self.assertFalse((backup / self.settings_relative).exists())
+        self.assertIn(b'ENABLE_GREAT_POWER_CULTURE_CORES=0', self.gpc_settings.read_bytes())
+
+    def test_changed_gpc_artifact_rejected_before_any_destination_write(self):
+        for name in ('ccore_great_power_culture_cores.dll', 'great_power_culture_cores.ini'):
+            with self.subTest(name=name):
+                path = self.build / name
+                original = path.read_bytes()
+                path.write_bytes(original + b' changed after manifest')
+                try:
+                    with self.assertRaisesRegex(RuntimeError, 'Хеш артефакта'):
+                        self.run_installer()
+                finally:
+                    path.write_bytes(original)
+                self.assertEqual([p.name for p in self.destination.iterdir()], ['v2game.exe'])
+                self.assertFalse((self.root / '.work/install-backups').exists())
+
+    def test_partial_install_keeps_complete_backup_and_failure_report(self):
+        previous = {}
+        for relative in [*self.artifacts, self.settings_relative, self.install_manifest_relative]:
+            path = self.destination / relative
+            path.parent.mkdir(parents=True, exist_ok=True)
+            previous[relative] = ('previous ' + relative).encode('ascii')
+            path.write_bytes(previous[relative])
+        # Имитируется сбой после первых обновлений, с частично записанной новой DLL.
+        target = self.destination / 'z_CreatineCore/dll_Submods/ccore_great_power_culture_cores.dll'
+        original_copy = install.shutil.copy2
+
+        def partial_copy(source, destination, *args, **kwargs):
+            if Path(destination) == target:
+                target.write_bytes(b'partial native DLL')
+                raise OSError('simulated write failure')
+            return original_copy(source, destination, *args, **kwargs)
+
+        with patch.object(install.shutil, 'copy2', side_effect=partial_copy):
+            with self.assertRaisesRegex(RuntimeError, 'резервная копия:'):
+                self.run_installer()
+        backups = list((self.root / '.work/install-backups').iterdir())
+        self.assertEqual(len(backups), 1)
+        backup = backups[0]
+        for relative, content in previous.items():
+            self.assertEqual((backup / relative).read_bytes(), content)
+        before = json.loads((backup / 'before.json').read_text(encoding='utf-8'))
+        self.assertEqual(before['files'], {
+            relative: self.sha256(content) for relative, content in previous.items()})
+        report = json.loads((backup / 'result.json').read_text(encoding='utf-8'))
+        self.assertFalse(report['ok'])
+        self.assertTrue(report['partial'])
+        self.assertIn(str(target.relative_to(self.destination)).replace('\\', '/'), report['attempted'])
+        self.assertEqual(self.settings.read_bytes(), previous[self.settings_relative])
+        self.assertEqual(self.gpc_settings.read_bytes(), previous[self.gpc_settings_relative])
+        self.assertEqual((self.destination / self.install_manifest_relative).read_bytes(),
+                         previous[self.install_manifest_relative])
+
+
+class GpcArtifactTests(unittest.TestCase):
+    def setUp(self):
+        temporary = tempfile.TemporaryDirectory(prefix='vic2-gpc-build-test-')
+        self.addCleanup(temporary.cleanup)
+        root = Path(temporary.name)
+        self.source, self.product, self.destination = (root / name for name in ('source', 'product', 'build'))
+        for path in (self.source, self.product, self.destination):
+            path.mkdir()
+        for name in ('runtime_status.h', 'scheduler.h', 'runtime.cpp', 'build_runtime.cmd', 'write_manifest.py'):
+            (self.source / name).write_bytes(('fake source: ' + name).encode('ascii'))
+        self.ini = b'[GreatPowerCultureCores]\nENABLE_GREAT_POWER_CULTURE_CORES=0\n'
+        (self.source / 'great_power_culture_cores.ini').write_bytes(self.ini)
+        binary = bytearray(128)
+        binary[:2] = b'MZ'
+        binary[60:64] = (64).to_bytes(4, 'little')
+        binary[64:68] = b'PE\0\0'
+        binary[68:70] = (0x14c).to_bytes(2, 'little')
+        self.binary = bytes(binary)
+        name = 'ccore_great_power_culture_cores.dll'
+        (self.product / name).write_bytes(self.binary)
+        self.record = {
+            'schema': 1, 'machine': 'x86', 'expected_exe_sha256': 'qualified-exe',
+            'head': 'informational-only',
+            'artifact': {'name': name, 'bytes': len(self.binary),
+                         'sha256': hashlib.sha256(self.binary).hexdigest()},
+            'sources': {path.name: hashlib.sha256(path.read_bytes()).hexdigest()
+                        for path in self.source.iterdir()},
+        }
+        (self.product / 'manifest.json').write_text(json.dumps(self.record), encoding='utf-8')
+
+    def stage(self):
+        return core_build.stage_gpc_artifacts(self.source, self.product, self.destination, 'qualified-exe')
+
+    def test_stages_verified_module_and_disabled_ini(self):
+        self.assertEqual(self.stage(), self.record)
+        self.assertEqual((self.destination / 'ccore_great_power_culture_cores.dll').read_bytes(), self.binary)
+        self.assertEqual((self.destination / 'great_power_culture_cores.ini').read_bytes(), self.ini)
+
+    def test_changed_status_header_rejects_stale_binary_before_staging(self):
+        (self.source / 'runtime_status.h').write_bytes(b'changed ABI after build')
+        with self.assertRaisesRegex(RuntimeError, 'Исходники GPC изменились'):
+            self.stage()
+        self.assertEqual(list(self.destination.iterdir()), [])
+
+    def test_wrong_binary_hash_rejected_before_staging(self):
+        path = self.product / 'ccore_great_power_culture_cores.dll'
+        path.write_bytes(self.binary + b'changed after manifest')
+        with self.assertRaisesRegex(RuntimeError, 'Артефакт GPC отличается'):
+            self.stage()
+        self.assertEqual(list(self.destination.iterdir()), [])
+
+    def test_main_build_manifest_contains_gpc_binary_ini_and_source_provenance(self):
+        # Проверяется общая оркестрация без Git, VS и исполнения fake DLL.
+        root = self.destination / 'repository'
+        work = root / '.work/creatinecore'
+        output = work / 'build'
+        upstream = work / 'upstream'
+        tools = root / 'tools/creatinecore'
+        source = tools / 'gpc'
+        output.mkdir(parents=True)
+        shutil.copytree(self.source, source)
+        product = root / '.work/gpc-build'
+        shutil.copytree(self.product, product)
+        executable = b'fake qualified executable; never executed'
+        (root / 'v2game.exe').write_bytes(executable)
+        record = {**self.record, 'expected_exe_sha256': hashlib.sha256(executable).hexdigest()}
+        (product / 'manifest.json').write_text(json.dumps(record), encoding='utf-8')
+        for name in ('creatinecore.dll', 'dinput8.dll', 'eventmusic.dll', 'ccore_script_fixes.dll'):
+            (output / name).write_bytes(self.binary)
+        api = upstream / 'Source/V2/V2/V2ModAPI.h'
+        api.parent.mkdir(parents=True)
+        api.write_bytes(b'fake build API')
+        (tools / 'v2game.patch').write_bytes(b'fake local patch')
+        (tools / 'script_fixes.vcxproj').write_bytes(b'fake project')
+        replacements = {'ROOT': root, 'WORK': work, 'UPSTREAM': upstream,
+                        'BUILD': output, '__file__': str(tools / 'build.py')}
+        with patch.multiple(core_build, **replacements), \
+                patch.object(core_build, 'prepare'), \
+                patch.object(core_build, 'msbuild_path', return_value=Path('fake-MSBuild.exe')), \
+                patch.object(core_build, 'core_project', return_value=tools / 'core.vcxproj'), \
+                patch.object(core_build, 'generate'), \
+                patch.object(core_build, 'run') as run, redirect_stdout(io.StringIO()):
+            core_build.build()
+        self.assertEqual(run.call_count, 5)
+        self.assertTrue(all(call.args[0] == 'fake-MSBuild.exe' for call in run.call_args_list[:4]))
+        self.assertEqual(run.call_args_list[-1].args,
+                         ('cmd.exe', '/d', '/c', str(source / 'build_runtime.cmd')))
+        aggregate = json.loads((output / 'manifest.json').read_text(encoding='utf-8'))
+        self.assertEqual(aggregate['great_power_culture_cores'], record)
+        self.assertEqual(aggregate['artifacts']['ccore_great_power_culture_cores.dll']['sha256'],
+                         hashlib.sha256(self.binary).hexdigest())
+        self.assertEqual(aggregate['artifacts']['great_power_culture_cores.ini']['sha256'],
+                         hashlib.sha256(self.ini).hexdigest())
 
 
 if __name__ == '__main__':

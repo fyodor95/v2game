@@ -64,6 +64,42 @@ def core_project() -> Path:
     return output
 
 
+def dll_artifact(path: Path) -> dict:
+    content = path.read_bytes()
+    pe = int.from_bytes(content[60:64], "little") if len(content) >= 64 else 0
+    if (content[:2] != b"MZ" or pe < 64 or pe + 6 > len(content)
+            or content[pe:pe + 4] != b"PE\0\0"
+            or int.from_bytes(content[pe + 4:pe + 6], "little") != 0x14C):
+        raise RuntimeError(f"Ожидалась x86 DLL: {path.name}")
+    return {"sha256": hashlib.sha256(content).hexdigest(), "bytes": len(content), "machine": "x86"}
+
+
+def stage_gpc_artifacts(source: Path, product: Path, destination: Path,
+                        expected_exe: str) -> dict:
+    """Проверить весь исходный образ GPC, затем перенести его в общую сборку."""
+    record = json.loads((product / "manifest.json").read_text(encoding="utf-8"))
+    if (record.get("schema") != 1 or record.get("machine") != "x86"
+            or record.get("expected_exe_sha256") != expected_exe):
+        raise RuntimeError("Манифест GPC не соответствует проверенному EXE/ABI")
+    files = sorted(source.glob("*.h")) + [source / name for name in
+        ("runtime.cpp", "build_runtime.cmd", "write_manifest.py", "great_power_culture_cores.ini")]
+    actual_sources = {path.name: hashlib.sha256(path.read_bytes()).hexdigest() for path in files}
+    if record.get("sources") != actual_sources:
+        raise RuntimeError("Исходники GPC изменились после сборки; требуется новая сборка")
+    binary = product / "ccore_great_power_culture_cores.dll"
+    artifact = dll_artifact(binary)
+    expected = {"name": binary.name, "sha256": artifact["sha256"], "bytes": artifact["bytes"]}
+    if record.get("artifact") != expected:
+        raise RuntimeError("Артефакт GPC отличается от его манифеста")
+    ini = source / "great_power_culture_cores.ini"
+    for path in (binary, ini):
+        target = destination / path.name
+        shutil.copy2(path, target)
+        if hashlib.sha256(target.read_bytes()).digest() != hashlib.sha256(path.read_bytes()).digest():
+            raise RuntimeError("Ошибка копирования артефакта GPC: " + path.name)
+    return record
+
+
 def build() -> None:
     prepare()
     BUILD.mkdir(exist_ok=True)
@@ -75,14 +111,17 @@ def build() -> None:
     projects.append((WORK / "script_fixes.vcxproj", "script-fixes"))
     for project, name in projects:
         run(tool, str(project), "/p:Configuration=Release", "/p:Platform=Win32", f"/p:OutDir={BUILD}\\", f"/p:IntDir={WORK / ('obj-' + name)}\\", "/m:1", "/v:minimal", "/nologo")
+    gpc_source = Path(__file__).with_name("gpc")
+    run("cmd.exe", "/d", "/c", str(gpc_source / "build_runtime.cmd"))
+    gpc = stage_gpc_artifacts(gpc_source, ROOT / ".work/gpc-build", BUILD,
+                              hashlib.sha256((ROOT / "v2game.exe").read_bytes()).hexdigest())
     artifacts = {}
-    for name in ("creatinecore.dll", "dinput8.dll", "eventmusic.dll", "ccore_script_fixes.dll"):
-        content = (BUILD / name).read_bytes()
-        pe = int.from_bytes(content[60:64], "little")
-        if int.from_bytes(content[pe + 4:pe + 6], "little") != 0x14C:
-            raise RuntimeError(f"Ожидалась x86 DLL: {name}")
-        artifacts[name] = {"sha256": hashlib.sha256(content).hexdigest(), "bytes": len(content), "machine": "x86"}
-    record = {"upstream_url": URL, "upstream_commit": COMMIT, "patch_sha256": hashlib.sha256(Path(__file__).with_name("v2game.patch").read_bytes()).hexdigest(), "msbuild": tool, "configuration": "Release|Win32", "artifacts": artifacts}
+    for name in ("creatinecore.dll", "dinput8.dll", "eventmusic.dll", "ccore_script_fixes.dll",
+                 "ccore_great_power_culture_cores.dll"):
+        artifacts[name] = dll_artifact(BUILD / name)
+    ini = BUILD / "great_power_culture_cores.ini"
+    artifacts[ini.name] = {"sha256": hashlib.sha256(ini.read_bytes()).hexdigest(), "bytes": ini.stat().st_size}
+    record = {"upstream_url": URL, "upstream_commit": COMMIT, "patch_sha256": hashlib.sha256(Path(__file__).with_name("v2game.patch").read_bytes()).hexdigest(), "msbuild": tool, "configuration": "Release|Win32", "artifacts": artifacts, "great_power_culture_cores": gpc}
     (BUILD / "manifest.json").write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print("Сборка завершена:", BUILD)
 
