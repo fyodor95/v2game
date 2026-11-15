@@ -1,7 +1,6 @@
-terrain = seasonal_jungle_hills
+terrain = jungle_hills
 owner = ENG
 controller = ENG
 trade_goods = fruit
 life_rating = 24
 colonial = 2
-terrain = plains

@@ -1,4 +1,4 @@
-terrain = deciduous_forest_hills
+terrain = forest
 owner = ENG
 controller = ENG
 trade_goods = fish

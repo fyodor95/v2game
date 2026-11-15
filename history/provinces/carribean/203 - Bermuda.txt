@@ -1,4 +1,4 @@
-terrain = temperate_grassland
+terrain = forest
 owner = ENG
 controller = ENG
 trade_goods = fish

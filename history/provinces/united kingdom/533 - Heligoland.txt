@@ -1,7 +1,6 @@
-terrain = hilly_farmland
+terrain = plains
 owner = ENG
 controller = ENG
 add_core = ENG
 trade_goods = fish
 life_rating = 35
-terrain = plains

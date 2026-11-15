@@ -1,4 +1,3 @@
-terrain = hills
 terrain = deciduous_forest_mountains
 owner = RUS
 controller = RUS

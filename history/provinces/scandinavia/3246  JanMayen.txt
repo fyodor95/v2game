@@ -7,4 +7,3 @@ add_core = NOR
 add_core = JAN
 trade_goods = fish
 life_rating = 10
-terrain = arctic
