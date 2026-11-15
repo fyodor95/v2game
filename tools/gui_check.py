@@ -16,8 +16,12 @@ def main():
     parser.add_argument('--output', type=Path)
     parser.add_argument('--show', action='store_true', help='Показать скрытое окно тестовой игры')
     parser.add_argument('--click', type=int, nargs=2, metavar=('X', 'Y'))
+    parser.add_argument('--input-offset', type=int, nargs=2, default=(0, 0), metavar=('DX', 'DY'),
+                        help='Поправка координат ввода после калибровки оконного режима игры')
     parser.add_argument('--key', type=int, help='Код виртуальной клавиши Windows')
     parser.add_argument('--text', help='Ввести ASCII-текст в активное поле тестовой игры')
+    parser.add_argument('--replace-text', action='store_true', help='Выделить прежний текст Ctrl+A перед вводом')
+    parser.add_argument('--backspaces', type=int, default=0, help='Удалить символы перед курсором в поле игры')
     args = parser.parse_args()
     u = c.WinDLL('user32', use_last_error=True)
     g = c.WinDLL('gdi32', use_last_error=True)
@@ -83,9 +87,35 @@ def main():
     def require_focus():
         if u.GetForegroundWindow() != hwnd:
             raise RuntimeError('Игра потеряла фокус; ввод отменён')
+    def key_event(key, up=False):
+        if not up:
+            require_focus()
+        scan = u.MapVirtualKeyW(key, 4)
+        flags = (2 if up else 0) | (1 if scan >> 8 == 0xE0 else 0)
+        u.keybd_event(key, scan & 255, flags, 0)
+    if not 0 <= args.backspaces <= 256:
+        raise ValueError('Число удаляемых символов: 0..256')
+    for _ in range(args.backspaces):
+        require_focus()
+        key_event(0x08)
+        time.sleep(.04)
+        key_event(0x08, up=True)
+        time.sleep(.04)
     if args.text:
         if not args.text.isascii() or any(ord(ch) < 32 for ch in args.text):
             raise ValueError('Для полей стенда разрешён только печатный ASCII-текст')
+        if args.replace_text:
+            require_focus()
+            key_event(0x11)
+            try:
+                time.sleep(.08)
+                key_event(0x41)
+                time.sleep(.08)
+            finally:
+                # Отпускаем уже нажатые клавиши даже при потере фокуса.
+                key_event(0x41, up=True)
+                key_event(0x11, up=True)
+            time.sleep(.1)
         for ch in args.text:
             require_focus()
             if not u.PostMessageW(hwnd, 0x0102, ord(ch), 0):
@@ -100,7 +130,10 @@ def main():
         x, y = args.click
         if not 0 <= x < width or not 0 <= y < height:
             raise ValueError('Координаты вне клиентской области игры')
-        u.SetCursorPos(point.x + x, point.y + y)
+        physical_x, physical_y = x + args.input_offset[0], y + args.input_offset[1]
+        if not 0 <= physical_x < width or not 0 <= physical_y < height:
+            raise ValueError('Скорректированные координаты вне окна игры')
+        u.SetCursorPos(point.x + physical_x, point.y + physical_y)
         time.sleep(.25)
         require_focus()
         u.mouse_event(2, 0, 0, 0, 0)
@@ -111,9 +144,9 @@ def main():
         if not 1 <= args.key <= 254:
             raise ValueError('Неверный код клавиши')
         require_focus()
-        u.keybd_event(args.key, 0, 0, 0)
+        key_event(args.key)
         time.sleep(.12)
-        u.keybd_event(args.key, 0, 2, 0)
+        key_event(args.key, up=True)
         time.sleep(.5)
     if args.output:
         require_focus()
