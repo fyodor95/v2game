@@ -55,10 +55,7 @@ CCC={primary_culture="c" technology={}}
         self.assertTrue(result['complete'])
         self.assertEqual(result['additions'], [
             {'province': 1, 'country': 'AAA'},
-            {'province': 2, 'country': 'BBB'},
-            {'province': 4, 'country': 'BBB'},
-            {'province': 7, 'country': 'AAA'},
-            {'province': 7, 'country': 'BBB'}])
+            {'province': 2, 'country': 'BBB'}])
         self.assertEqual(result['provinces'][0]['population'], {'a': 40, 'b': 35, 'c': 25})
         self.assertEqual(result['provinces'][0]['cores'], ['CCC'])
 
@@ -69,14 +66,53 @@ CCC={primary_culture="c" technology={}}
         self.write('technologies/culture.txt', 'other_technology={year=1850}')
         result = preview(save, self.root, ['AAA'])
         self.assertFalse(result['technology_present'])
-        self.assertEqual([p['province'] for p in result['additions']], [1, 7])
+        self.assertEqual([p['province'] for p in result['additions']], [1])
 
-    def test_tie_is_incomplete(self):
-        result = preview(self.scenario('8={owner="CCC" farmers={size=50 a=r} farmers={size=50 b=r}}'),
-                         self.root, ['AAA'])
-        self.assertFalse(result['complete'])
-        self.assertEqual(result['needs_qualification'], [{'province': 8, 'cultures': ['a', 'b']}])
-        self.assertNotIn(8, [p['province'] for p in result['additions']])
+    def test_all_tied_cultures_grant_once(self):
+        save = self.scenario('''
+DDD={primary_culture="c" technology={nationalism_n_imperialism={1 0}}}
+8={owner="CCC" farmers={size=50 a=r} farmers={size=50 b=r} farmers={size=40 c=r}}
+9={owner="CCC" farmers={size=50 b=r} farmers={size=50 c=r}}
+10={owner="CCC" farmers={size=50 a=r} farmers={size=50 c=r}}
+11={owner="DDD"}
+''')
+        result = preview(save, self.root, ['AAA', 'BBB', 'DDD'])
+        self.assertTrue(result['complete'])
+        self.assertTrue(result['ok'])
+        self.assertEqual(result['ties'], [
+            {'province': 8, 'cultures': ['a', 'b']},
+            {'province': 9, 'cultures': ['b', 'c']},
+            {'province': 10, 'cultures': ['a', 'c']}])
+        self.assertEqual([p for p in result['additions'] if p['province'] >= 8], [
+            {'province': 8, 'country': 'AAA'},
+            {'province': 9, 'country': 'BBB'},
+            {'province': 9, 'country': 'DDD'},
+            {'province': 10, 'country': 'AAA'},
+            {'province': 10, 'country': 'BBB'},
+            {'province': 10, 'country': 'DDD'}])
+
+    def test_primary_change_keeps_old_core_but_grants_no_new(self):
+        save = self.scenario()
+        before = preview(save, self.root, ['AAA'])
+        self.assertEqual(before['additions'], [{'province': 1, 'country': 'AAA'}])
+        text = save.read_bytes().decode('cp1251')
+        text = text.replace('primary_culture="a"', 'primary_culture="c"', 1)
+        text = text.replace('core="CCC" core="CCC"', 'core="CCC" core="CCC" core="AAA"', 1)
+        text += '8={owner="CCC" farmers={size=100 a=r}}'
+        save.write_bytes(text.encode('cp1251'))
+        after = preview(save, self.root, ['AAA'])
+        self.assertEqual(after['additions'], [{'province': 2, 'country': 'AAA'}])
+        self.assertIn('AAA', after['provinces'][0]['cores'])
+        self.assertIn('a', after['countries']['AAA']['accepted_cultures'])
+
+    def test_accepted_diagnostics_do_not_block_primary(self):
+        save = self.scenario()
+        text = save.read_bytes().decode('cp1251')
+        text = text.replace('culture={"a" "b" "b"}', 'culture=invalid', 1)
+        save.write_bytes(text.encode('cp1251'))
+        result = preview(save, self.root, ['AAA'])
+        self.assertEqual(result['additions'], [{'province': 1, 'country': 'AAA'}])
+        self.assertFalse(result['countries']['AAA']['accepted_cultures_diagnostic_valid'])
 
     def test_unknown_gp(self):
         with self.assertRaises(ValueError):

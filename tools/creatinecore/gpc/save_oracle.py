@@ -1,7 +1,8 @@
 """Независимый расчёт новых корок из CP1251-сохранения Victoria II.
 
 GP задаются явно: числовой great_nations в .v2 не интерпретируется без
-квалифицированного соответствия ID. Ничьи культур требуют проверки движка.
+квалифицированного соответствия ID. При ничьей учитываются все крупнейшие культуры.
+Получатели определяются исключительно по основной культуре, без признанных.
 Парсер сохраняет повторные присваивания и элементы списков, но не форматирование.
 """
 from __future__ import annotations
@@ -209,13 +210,21 @@ def preview(save: Path, game_root: Path, great_powers: list[str]):
             if entry.key in countries:
                 raise ValueError(f"Повторная страна {entry.key}")
             primary = entry.value.single('primary_culture')
-            accepted = entry.value.single('culture', Block([]))
-            if not isinstance(accepted, Block):
-                raise ValueError(f"Страна {entry.key}: неверный список признанных культур")
-            values = accepted.atoms()
-            if primary is not None and primary not in cultures or any(c not in cultures for c in values):
+            # Accepted — только диагностика. Ошибка этого поля не блокирует
+            # расчёт по primary и не превращается в дополнительный фильтр.
+            values = []
+            accepted_valid = True
+            for accepted in entry.value.values('culture'):
+                try:
+                    if not isinstance(accepted, Block):
+                        raise ValueError("Ожидался список")
+                    values.extend(accepted.atoms())
+                except ValueError:
+                    accepted_valid = False
+            if primary is not None and primary not in cultures:
                 raise ValueError(f"Страна {entry.key}: неизвестная культура")
             countries[entry.key] = {'primary_culture': primary, 'accepted_cultures': sorted(set(values)),
+                                    'accepted_cultures_diagnostic_valid': accepted_valid,
                                     'technology_researched': researched(entry.value)}
     unknown = sorted(set(great_powers) - countries.keys())
     if unknown:
@@ -233,14 +242,12 @@ def preview(save: Path, game_root: Path, great_powers: list[str]):
             raise ValueError(f"Не найден владелец провинции {p['id']}: {p['owner']}")
         if len(p['dominant_cultures']) > 1:
             ties.append({'province': p['id'], 'cultures': p['dominant_cultures']})
-            continue
-        culture = p['dominant_cultures'][0]
         for tag in sorted(great_powers):
             c = countries[tag]
             if (c['eligible'] and p['owner'] != tag and tag not in p['cores'] and
-                    (culture == c['primary_culture'] or culture in c['accepted_cultures'])):
+                    c['primary_culture'] in p['dominant_cultures']):
                 additions.append({'province': p['id'], 'country': tag})
-    return {'ok': not ties, 'complete': not ties, 'needs_qualification': ties,
+    return {'ok': True, 'complete': True, 'ties': ties,
             'save_sha256': hashlib.sha256(save.read_bytes()).hexdigest(), 'date': date,
             'great_powers_source': 'explicit_qualified_tags', 'great_powers': sorted(great_powers),
             'technology_present': technology_present,

@@ -30,10 +30,10 @@ static std::vector<CoreGrant> Reference(const std::vector<Country>& countries,
         if (!c.exists || !c.great_power ||
             (technology_present && !c.technology_researched)) continue;
         for (const auto& p : provinces) {
-            if (!p.owner || p.owner == c.id || !p.dominant_culture) continue;
-            bool accepted = c.primary_culture == *p.dominant_culture;
-            for (Id culture : c.accepted_cultures)
-                accepted = accepted || culture == *p.dominant_culture;
+            if (!p.owner || p.owner == c.id || p.dominant_cultures.empty()) continue;
+            bool accepted = false;
+            for (Id dominant : p.dominant_cultures)
+                accepted = accepted || c.primary_culture == dominant;
             if (!accepted) continue;
             bool core = false;
             for (Id tag : p.cores) core = core || tag == c.id;
@@ -53,24 +53,24 @@ static void Functional() {
         {5, true, true, true, 10, {}}
     };
     auto provinces = std::vector<Province>{
-        {9, 2, 10, {}},       // primary, два получателя
-        {8, 2, 20, {}},       // accepted, повтор не размножает выдачу
-        {7, 3, 10, {}},       // своя для 3, чужая для 5
-        {6, 2, 10, {3, 3}},   // существующая корка
-        {5, 0, 10, {}},       // нет владельца
-        {4, 2, std::nullopt, {}},
-        {3, 2, 99, {}},       // непризнанная
-        {2, 2, 30, {}},       // технология запрещает 1
-        {1, 1, 20, {}}
+        {9, 2, {10}, {}},       // primary, два получателя
+        {8, 2, {20}, {}},       // только accepted у 3, primary у 1 без технологии
+        {7, 3, {10}, {}},       // своя для 3, чужая для 5
+        {6, 2, {10}, {3, 3}},   // существующая корка
+        {5, 0, {10}, {}},       // нет владельца
+        {4, 2, {}, {}},
+        {3, 2, {99}, {}},       // непризнанная
+        {2, 2, {30}, {}},       // только accepted у 1, выдачи нет даже без tech gate
+        {1, 1, {20}, {}}
     };
     const auto expected = std::vector<CoreGrant>{
-        {1, 3}, {6, 5}, {7, 5}, {8, 3}, {9, 3}, {9, 5}
+        {6, 5}, {7, 5}, {9, 3}, {9, 5}
     };
     const auto actual = Calculate(countries, provinces, true);
-    Require(actual == expected, "Exact primary/accepted/core/owner/GP result");
+    Require(actual == expected, "Exact primary-only/core/owner/GP result");
     const auto without_tech = Calculate(countries, provinces, false);
     Require(without_tech == std::vector<CoreGrant>({
-        {1, 3}, {2, 1}, {6, 5}, {7, 5}, {8, 1}, {8, 3}, {9, 3}, {9, 5}
+        {6, 5}, {7, 5}, {8, 1}, {9, 3}, {9, 5}
     }), "Absent technology disables only technology gate");
     for (const auto& grant : actual)
         for (auto& p : provinces)
@@ -105,28 +105,30 @@ static void Functional() {
         auto invalid = countries; invalid.front().id = 0;
         Calculate(invalid, {}, true);
     }, "Zero country ID rejected");
-    Throws<std::invalid_argument>([&] {
-        auto invalid = countries; invalid.front().accepted_cultures.push_back(0);
-        Calculate(invalid, {}, true);
-    }, "Zero accepted culture rejected");
+    auto ignored_accepted = countries;
+    ignored_accepted.front().accepted_cultures = {0, 0, 10, 99};
+    auto fresh = provinces;
+    for (auto& province : fresh) province.cores.clear();
+    Require(Calculate(ignored_accepted, fresh, true) == Calculate(countries, fresh, true),
+            "Accepted culture data is neither used nor validated");
     Throws<std::invalid_argument>([&] {
         auto duplicate = provinces; duplicate.push_back(provinces.front());
         Calculate(countries, duplicate, true);
     }, "Duplicate province rejected");
     Throws<std::invalid_argument>([&] {
-        Calculate(countries, {{1, 99, 10, {}}}, true);
+        Calculate(countries, {{1, 99, {10}, {}}}, true);
     }, "Unknown owner rejected");
     Throws<std::invalid_argument>([&] {
-        Calculate(countries, {{1, 4, 10, {}}}, true);
+        Calculate(countries, {{1, 4, {10}, {}}}, true);
     }, "Extinct owner rejected");
     Throws<std::invalid_argument>([&] {
-        Calculate(countries, {{1, 2, 10, {99}}}, true);
+        Calculate(countries, {{1, 2, {10}, {99}}}, true);
     }, "Unknown core country rejected");
     Throws<std::invalid_argument>([&] {
-        Calculate(countries, {{0, 2, 10, {}}}, true);
+        Calculate(countries, {{0, 2, {10}, {}}}, true);
     }, "Zero province ID rejected");
     Throws<std::invalid_argument>([&] {
-        Calculate(countries, {{1, 2, Id{0}, {}}}, true);
+        Calculate(countries, {{1, 2, {Id{0}}, {}}}, true);
     }, "Zero dominant culture rejected");
 }
 
@@ -140,15 +142,16 @@ static void RandomWorlds() {
             Country c{id, exists, random() % 2 != 0, random() % 2 != 0,
                       static_cast<Id>(1 + random() % 7), {}};
             for (unsigned n = random() % 10; n; --n)
-                c.accepted_cultures.push_back(static_cast<Id>(1 + random() % 7));
+                c.accepted_cultures.push_back(static_cast<Id>(random() % 8));
             countries.push_back(c);
             if (exists) existing.push_back(id);
         }
         std::vector<Province> provinces;
         for (Id id = 1; id <= 30; ++id) {
             Province p{id, random() % 5 == 0 ? Id{0} : existing[random() % existing.size()],
-                       std::nullopt, {}};
-            if (random() % 5 != 0) p.dominant_culture = static_cast<Id>(1 + random() % 9);
+                       {}, {}};
+            for (unsigned n = random() % 5; n; --n)
+                p.dominant_cultures.push_back(static_cast<Id>(1 + random() % 9));
             for (unsigned n = random() % 6; n; --n)
                 p.cores.push_back(static_cast<Id>(1 + random() % 12));
             provinces.push_back(p);
@@ -160,15 +163,78 @@ static void RandomWorlds() {
         std::shuffle(provinces.begin(), provinces.end(), random);
         for (auto& c : countries)
             std::shuffle(c.accepted_cultures.begin(), c.accepted_cultures.end(), random);
-        for (auto& p : provinces) std::shuffle(p.cores.begin(), p.cores.end(), random);
+        for (auto& p : provinces) {
+            std::shuffle(p.cores.begin(), p.cores.end(), random);
+            std::shuffle(p.dominant_cultures.begin(), p.dominant_cultures.end(), random);
+        }
         Require(Calculate(countries, provinces, tech) == expected,
                 "Stable result after arbitrary input permutation");
     }
 }
 
+static void AllLargestCultures() {
+    const std::vector<Country> countries = {
+        {1, true, true, true, 10, {20}},
+        {2, true, true, true, 30, {20}},
+        {3, true, true, true, 20, {10}},
+        {4, true, true, true, 99, {}},
+        {5, true, false, true, 99, {}}
+    };
+    auto provinces = std::vector<Province>{
+        {1, 5, {20, 10, 20}, {}},
+        {2, 5, {30, 10}, {}},
+        {3, 5, {10, 20}, {1}},
+        {4, 1, {10, 20}, {}},
+        {5, 0, {10, 20}, {}},
+        {6, 5, {}, {}},
+        {7, 5, {99}, {}},
+        {8, 5, {40, 50}, {}}
+    };
+    const auto expected = std::vector<CoreGrant>{
+        {1, 1}, {1, 3},
+        {2, 1}, {2, 2},
+        {3, 3}, {4, 3}, {7, 4}
+    };
+    const auto grants = Calculate(countries, provinces, true);
+    Require(grants == expected,
+            "All tied cultures grant only to matching primary cultures");
+    Require(DominantCultures({{30, 20}, {20, 40}, {10, 20}, {10, 20}}) ==
+                std::vector<Id>({10, 20}),
+            "Tied maxima exclude a smaller third culture");
+    for (const auto& grant : grants)
+        for (auto& province : provinces)
+            if (province.id == grant.province) province.cores.push_back(grant.country);
+    Require(Calculate(countries, provinces, true).empty(), "Tie grants remain idempotent");
+    Throws<std::invalid_argument>([&] {
+        Calculate(countries, {{9, 5, {10, 0, 20}, {}}}, true);
+    }, "Zero in tied cultures rejected");
+}
+
+static void PrimaryChangePreservesOldCores() {
+    std::vector<Country> countries = {
+        {1, true, true, true, 10, {}},
+        {2, true, true, true, 20, {10}},
+        {3, true, false, true, 30, {}}
+    };
+    std::vector<Province> provinces = {{1, 3, {10}, {}}};
+    const auto original = Calculate(countries, provinces, true);
+    Require(original == std::vector<CoreGrant>({{1, 1}}),
+            "Accepted-only country never receives initial core");
+    provinces.front().cores.push_back(original.front().country);
+    countries.front().primary_culture = 30;
+    countries.front().accepted_cultures = {10};
+    provinces.push_back({2, 3, {10}, {}});
+    Require(Calculate(countries, provinces, true).empty(),
+            "Old primary remaining accepted does not grant new cores");
+    Require(provinces.front().cores == std::vector<Id>{1},
+            "Previously granted core survives primary culture change");
+}
+
 int main() {
     try {
         Functional();
+        AllLargestCultures();
+        PrimaryChangePreservesOldCores();
         RandomWorlds();
         std::cout << "PASS " << checks << " checks\n";
         return 0;
