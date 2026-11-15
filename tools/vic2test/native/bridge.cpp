@@ -32,6 +32,8 @@ static unsigned autoEventsSelected;
 static DWORD popups[256];
 static unsigned popupCount;
 static DWORD mainMenu, frontend;
+static void* originalBackendUpdate;
+static bool backendUpdateSafePoint;
 static void* originalMenuCtor;
 static void* originalFrontendCtor;
 static void* originalMenuDtor;
@@ -295,7 +297,7 @@ static bool DispatchSpReturn(const char* command) {
             acted = true;
         } else if (!strcmp(command, "sp-return-exit")) {
             if (spReturnStage != 2) { Error("E_SP_TRANSITION_STAGE"); return true; }
-            vic2_sp_frontend::ExitSummary(baseAddress, spReturnTicket);
+            vic2_sp_frontend::ExitSummary(baseAddress, spReturnTicket, backendUpdateSafePoint);
             spReturnStage = 3;
             acted = true;
         } else if (strcmp(command, "sp-return-state")) { Error("E_ARGUMENT"); return true; }
@@ -801,6 +803,11 @@ static void Dispatch() {
     ((void (__stdcall*)(void*))(baseAddress + 0x2DCE10))(element);
     strcpy_s(response, "{\"ok\":true,\"queued\":true,\"completed\":false}\n");
 }
+static bool PendingBackendExit() {
+    return InterlockedCompareExchange(&state, 0, 0) == 1 &&
+        !strncmp(request, "sp-return-exit", 14) &&
+        (request[14] == 0 || request[14] == '\r' || request[14] == '\n' || request[14] == ' ');
+}
 static void __cdecl PumpImpl() {
     if (!ownerThread) ownerThread = GetCurrentThreadId();
     if (ownerThread == GetCurrentThreadId() && advanceTarget) {
@@ -820,7 +827,13 @@ static void __cdecl PumpImpl() {
             if (Log) Log("vic2test: ошибка автоматического прогона, сессия повреждена");
         }
     }
-    if (ownerThread != GetCurrentThreadId() || InterlockedCompareExchange(&state, 2, 1) != 1) return;
+    if (ownerThread != GetCurrentThreadId()) return;
+    // Exit создаёт CFrontEnd синхронно и заменяет GUI registry. Его нельзя
+    // исполнять из Peek/GetMessage до завершения старого BackEnd Update:
+    // тот ещё выполнит lookup controls в уже заменённом GUI. Оставляем запрос
+    // в IPC-очереди до wrapper-хвоста Update, перед native pending activation.
+    if (!backendUpdateSafePoint && PendingBackendExit()) return;
+    if (InterlockedCompareExchange(&state, 2, 1) != 1) return;
     if (Log) Log("vic2test: выполнение, поток=%lu запрос=%s", GetCurrentThreadId(), request);
     if (InterlockedCompareExchange(&poisoned, 0, 0)) Error("E_SESSION_POISONED");
     else {
@@ -838,6 +851,15 @@ static void __cdecl Pump() {
     if (InterlockedCompareExchange(&pumping, 1, 0)) return;
     PumpImpl();
     InterlockedExchange(&pumping, 0);
+}
+static void __fastcall BackendUpdate(void* object, void*, unsigned tick) {
+    ((void (__thiscall*)(void*, unsigned))originalBackendUpdate)(object, tick);
+    if (GetCurrentThreadId() != ownerThread || !PendingBackendExit()) return;
+    // Native caller немедленно после этого virtual вызова проверяет pending
+    // idler (009DF966). Старый Update уже вернулся и больше не читает GUI.
+    backendUpdateSafePoint = true;
+    Pump();
+    backendUpdateSafePoint = false;
 }
 static BOOL WINAPI PollMessages(LPMSG message, HWND window, UINT first, UINT last, UINT remove) {
     BOOL result = originalPeekMessage(message, window, first, last, remove);
@@ -940,6 +962,17 @@ extern "C" __declspec(dllexport) int __cdecl V2Mod_Init(const V2ModAPI* api) {
     const BYTE dtor[] = { 0x55, 0x8b, 0xec, 0x56, 0x8b, 0xf1 };
     if (!api->StealToTrampoline(0x4A8F30, 5, popupTrampoline, 64, ctor, (void*)&PopupCtor, &originalPopupCtor, "vic2test event popup")) return 0;
     if (!api->PatchSlot(0xA2CDB8, 0, (void*)&PopupDelete, &originalPopupDelete)) return 0;
+    // CBackEndIdler::Update: точные vtable slot, пролог и callee-cleanup ABI.
+    const BYTE backendUpdateStart[] = {0x55,0x8b,0xec,0x83,0xe4,0xf8,0x6a,0xff};
+    const BYTE backendUpdateTail[] = {0x8b,0xe5,0x5d,0xc2,0x04,0x00};
+    const BYTE backendCaller[] = {0x8b,0x8f,0x84,0,0,0,0x85,0xc9,0x74,0x09,
+        0x8b,0x11,0x8b,0x42,0x04,0x6a,0x01,0xff,0xd0,0x80,0xbf,0x88,0,0,0,0};
+    if (Read(baseAddress + 0xA04CFC + 4) != baseAddress + 0x1F8470 ||
+        memcmp((void*)(baseAddress + 0x1F8470), backendUpdateStart, sizeof(backendUpdateStart)) ||
+        memcmp((void*)(baseAddress + 0x1F8A9F), backendUpdateTail, sizeof(backendUpdateTail)) ||
+        memcmp((void*)(baseAddress + 0x5DF953), backendCaller, sizeof(backendCaller))) return 0;
+    if (!api->PatchSlot(0xA04CFC, 1, (void*)&BackendUpdate, &originalBackendUpdate)) return 0;
+    api->Log("vic2test: SP return Exit поставлен после CBackEndIdler::Update");
     if (!api->StealToTrampoline(0x354A00, 5, frontendTrampolines[0], 64, ctor, (void*)&MenuCtor, &originalMenuCtor, "vic2test main menu")) return 0;
     if (!api->StealToTrampoline(0x36A2F0, 5, frontendTrampolines[1], 64, ctor, (void*)&FrontendCtor, &originalFrontendCtor, "vic2test frontend")) return 0;
     if (!api->StealToTrampoline(0x354DF0, 6, frontendTrampolines[2], 64, dtor, (void*)&MenuDtor, &originalMenuDtor, "vic2test main menu release")) return 0;

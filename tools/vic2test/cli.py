@@ -277,6 +277,23 @@ def prepare(destination: Path, saves: list[Path]) -> dict:
     return {"ok": True, **metadata, "campaign_loaded": False}
 
 
+def _publish_session(environment: Path, state: dict) -> None:
+    """Публикует целую session; до replace прежний файл остаётся неизменным."""
+    temporary = environment / ('.session-' + state['token'] + '.tmp')
+    created = False
+    try:
+        with temporary.open('x', encoding='utf-8', newline='\n') as stream:
+            created = True
+            json.dump(state, stream, indent=2)
+            stream.write('\n')
+        os.replace(temporary, environment / 'session.json')
+        created = False
+    finally:
+        # При конфликте имени open('x') не разрешает удалить чужой файл.
+        if created:
+            temporary.unlink(missing_ok=True)
+
+
 def start(environment: Path, hidden: bool, save: str | None = None, mods: list[str] | None = None) -> dict:
     metadata = json.loads((environment / "environment.json").read_text(encoding="utf-8"))
     game = Path(metadata["game"]).resolve()
@@ -321,10 +338,25 @@ def start(environment: Path, hidden: bool, save: str | None = None, mods: list[s
     history = archive_logs(environment, game, token)
     log = game / 'z_CreatineCore/Logs/v2dll.log'
     log_offsets = {'v2dll.log': log.stat().st_size if log.exists() else 0}
-    process = subprocess.Popen(arguments, cwd=game, env=env, startupinfo=startup)
-    state = {"pid": process.pid, "token": token, "game": str(game), "campaign_loaded": False,
-             "log_offsets": log_offsets, "log_history": history}
-    (environment / "session.json").write_text(json.dumps(state, indent=2), encoding="utf-8")
+    process = None
+    try:
+        process = subprocess.Popen(arguments, cwd=game, env=env, startupinfo=startup)
+        state = {"pid": process.pid, "token": token, "game": str(game), "campaign_loaded": False,
+                 "log_offsets": log_offsets, "log_history": history}
+        _publish_session(environment, state)
+    except BaseException as error:
+        if process is None:
+            raise
+        # До публикации session вызывающий ещё не знает владельца процесса.
+        # Popen удерживает настоящий handle: cleanup не переоткрывает PID.
+        try:
+            if process.poll() is None:
+                process.terminate()
+            process.wait(timeout=30)
+        except Exception as cleanup_error:
+            raise OSError('Не опубликована session; завершение созданного процесса '
+                          f'pid={process.pid} не подтверждено: {cleanup_error}') from error
+        raise
     if save:
         result = load_campaign(environment, save)
         if not result.get('ok'):

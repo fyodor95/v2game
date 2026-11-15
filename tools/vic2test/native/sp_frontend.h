@@ -182,8 +182,11 @@ static void ConfirmResign(DWORD base, const Ticket& ticket) {
     catch (...) { throw std::runtime_error("E_SP_FRONTEND_OUTCOME_UNKNOWN"); }
 }
 
-static void ExitSummary(DWORD base, const Ticket& ticket) {
+static void ExitSummary(DWORD base, const Ticket& ticket, bool afterSummaryUpdate = false) {
     using namespace detail;
+    // Синхронное создание CFrontEnd меняет общий GUI registry. Callback
+    // разрешён только после возврата исходного CBackEndIdler::Update.
+    if (!afterSummaryUpdate) throw std::runtime_error("E_SP_FRONTEND_UNSAFE_PHASE");
     if (!Inspect(base,ticket,0).summary) throw std::runtime_error("E_SP_FRONTEND_SUMMARY_REQUIRED");
     DWORD idler=Field(ticket.world+0xb24);
     if (Field(idler+0x5b4) != idler || Field(idler+0x5b8) != base+0x1fb560)

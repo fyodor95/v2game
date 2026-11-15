@@ -21,6 +21,7 @@ import sys
 import time
 
 import cli
+import mp_preflight
 from mp_session import OwnedProcess
 
 sys.path.insert(0, str(cli.ROOT / 'tools/creatinecore/gpc'))
@@ -146,6 +147,44 @@ def artifact_manifest(game: Path):
             for path in sorted(paths)}
 
 
+def input_fingerprint(environment: Path):
+    """Входы игры плюс настройки, которые MP-сравнение намеренно исключает."""
+    source = mp_preflight.fingerprint_environment(environment)
+    entries = {'game/' + name: entry for name, entry in source['entries'].items()}
+    extras = [('game', name) for name in mp_preflight.EXCLUDED_FILES]
+    extras += [('userdata', name) for name in ('settings.txt', 'messagetypes_custom.txt')]
+    for scope, name in extras:
+        directory = Path(source[scope])
+        path = directory / name
+        key = scope + '/' + name
+        try:
+            path.lstat()
+        except FileNotFoundError:
+            # Появление ранее отсутствовавшего override тоже меняет входы.
+            entries[key] = {'kind': 'missing'}
+            continue
+        mp_preflight._checked_path(path, directory)
+        info = mp_preflight._regular_stat(path)
+        require(path.is_file(), f'Ожидался файл настроек: {path}')
+        entries[key] = {'kind': 'file', 'size': info.st_size,
+                        'sha256': mp_preflight._sha256(path, info)}
+    payload = json.dumps({'schema': 1, 'entries': entries}, sort_keys=True,
+                         ensure_ascii=False, separators=(',', ':')).encode('utf-8')
+    return {'schema': 1, 'fingerprint': sha_bytes(payload), 'entries': entries,
+            'excluded': [item for item in source['excluded']
+                         if item['path'].casefold() not in mp_preflight.EXCLUDED_FILES]}
+
+
+def input_differences(baseline: dict, current: dict, *, config_path=None, config_bytes=None):
+    expected = dict(baseline['entries'])
+    if config_path is not None:
+        require(config_bytes is not None and config_path in expected, 'Неизвестный INI режима')
+        expected[config_path] = {'kind': 'file', 'size': len(config_bytes), 'sha256': sha_bytes(config_bytes)}
+    actual = current['entries']
+    return [{'path': name, 'before': expected.get(name), 'after': actual.get(name)}
+            for name in sorted(expected.keys() | actual.keys()) if expected.get(name) != actual.get(name)]
+
+
 def checked(result: dict, action: str):
     require(isinstance(result, dict) and result.get('ok') is True, f'{action}: {result}')
     return result
@@ -168,6 +207,7 @@ class Benchmark:
         self.save = None
         self.game = None
         self.common_start = None
+        self.input_baseline = None
         self.save_report()
 
     def save_report(self):
@@ -242,7 +282,17 @@ class Benchmark:
                            test_core_config={'path': str(settings_path), 'sha256': cli.digest(settings_path)},
                            process_environment={key: value for key, value in os.environ.items() if key.startswith('VIC2_')})
         self.record['tool_sources'] = {str(path.relative_to(cli.ROOT)): cli.digest(path)
-                                       for path in (Path(__file__), Path(cli.__file__), cli.ROOT / 'tools/vic2test/mp_session.py')}
+                                       for path in (Path(__file__), Path(cli.__file__), Path(mp_preflight.__file__),
+                                                    Path(schedule.__file__), cli.ROOT / 'tools/vic2test/mp_session.py')}
+        # start делает то же самое. Нормализация ДО baseline учитывает реальные
+        # настройки измерения и не маскирует последующие изменения этих файлов.
+        for directory in (self.game, userdata):
+            settings_file = directory / 'settings.txt'
+            if settings_file.exists() or settings_file.is_symlink():
+                safe_path(settings_file, directory, regular=True)
+        cli.mute_test_settings(self.environment)
+        self.input_baseline = input_fingerprint(self.environment)
+        self.record['input_fingerprint'] = self.input_baseline
         self.save_report()
 
     def session(self):
@@ -312,6 +362,13 @@ class Benchmark:
         expected_artifacts[self.config.relative_to(self.game).as_posix()] = {
             'sha256': mode['ini']['sha256'], 'bytes': mode['ini']['bytes']}
         require(mode['artifact_hashes'] == expected_artifacts, 'Другие DLL/config/EXE изменились до запуска режима')
+        mode['input_fingerprint'] = input_fingerprint(self.environment)
+        mode['input_differences'] = input_differences(
+            self.input_baseline, mode['input_fingerprint'],
+            config_path='game/' + self.config.relative_to(self.game).as_posix(),
+            config_bytes=mode_config(self.original_ini, enabled))
+        require(not mode['input_differences'], 'Изменились входы стенда до запуска режима: ' +
+                ', '.join(item['path'] for item in mode['input_differences'][:20]))
         previous = self.session()
         owned = None
         loaded_signature = None
@@ -419,8 +476,10 @@ class Benchmark:
                                      'overhead_percent': overhead, 'limit_percent': 5.0,
                                      'within_limit': overhead <= 5.0}
         self.record.update(complete=True, ok=overhead <= 5.0)
-        self.record['warnings'].append('Off может ответить до конца последнего дня; on ждёт GPC-барьер. '
-                                       'Разница границ до одного дня консервативно завышает on/off.')
+        self.record['boundary_uncertainty'] = {'direction': 'unknown', 'numeric_correction_applied': False}
+        self.record['warnings'].append('Off не подтверждает конец дня после прогрева и в конце замера; '
+                                       'on ждёт GPC-барьер. Остатки этих дней могут сдвигать отношение '
+                                       'on/off в обе стороны; численная поправка не применяется.')
 
     def run(self):
         try:
@@ -444,6 +503,13 @@ class Benchmark:
                         require(cli.digest(Path(expected['path'])) == expected['sha256'], f'Изменился {field}')
                     require(cli.digest(self.save) == self.record['source_save']['sha256'], 'Изменился исходный сейв')
                     require(artifact_manifest(self.game) == self.record['initial_artifacts'], 'DLL/config/EXE изменились во время бенча')
+                    if self.input_baseline is not None:
+                        final = input_fingerprint(self.environment)
+                        differences = input_differences(self.input_baseline, final)
+                        self.record['final_input_fingerprint'] = final
+                        self.record['final_input_differences'] = differences
+                        require(not differences, 'Входы игры или настройки изменились во время бенча: ' +
+                                ', '.join(item['path'] for item in differences[:20]))
                 except Exception as error:
                     self.record.update(ok=False, complete=False)
                     self.record['errors'].append({'stage': 'restore_or_integrity', 'error': str(error)})
