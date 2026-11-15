@@ -87,5 +87,11 @@
     "original_political": 10,
     "new_physical": 20,
     "new_political": 22
+  },
+  "user_map_cache_backup": {
+    "path": "D:\\Documents\\Paradox Interactive\\Victoria II\\map\\cache-before-terrain-20261115-193033",
+    "files_preserved": 909,
+    "ordinary_game_running_at_rename": false,
+    "saves_moved": false
   }
 }
