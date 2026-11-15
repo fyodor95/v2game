@@ -6,6 +6,9 @@
 #include <cstdio>
 #include "native_probe.h"
 #include "state_probe.h"
+#include "snapshot_probe.h"
+#include "notify_probe.h"
+#include "world_reader.h"
 struct V2ModAPI {
     uint32_t size, apiVersion, gameBase;
     const char* modFolder;
@@ -17,6 +20,21 @@ struct V2ModAPI {
 static DWORD base, originalLoop;
 static void (__cdecl* logger)(const char*, ...);
 static unsigned calls;
+static void PreviewWorld() {
+    if (!GetEnvironmentVariableA("VIC2_GPC_PROBE_PREVIEW", nullptr, 0)) return;
+    try {
+        const auto started = GetTickCount64();
+        const auto world = gpc_world_reader::ReadWorld(base, true);
+        const auto additions = gpc::Calculate(world.countries, world.provinces, world.technology_present);
+        logger("GPC preview: date=%lu countries=%zu provinces=%zu pops=%llu additions=%zu elapsed_ms=%llu",
+            world.date_raw, world.countries.size(), world.provinces.size(), static_cast<unsigned long long>(world.stats.pops),
+            additions.size(), GetTickCount64() - started);
+        for (const auto& pair : additions)
+            logger("GPC preview pair: province=%u tag=%s", pair.province, world.tags.at(pair.country).c_str());
+    } catch (const std::exception& error) {
+        logger("GPC preview: ERROR %s", error.what());
+    }
+}
 static DWORD Read(DWORD at) { return *(DWORD*)at; }
 static DWORD EventObject(unsigned id) {
     DWORD manager = Read(base + 0xE58A98);
@@ -58,6 +76,8 @@ static void __stdcall Observe() {
     if (world && calls == 1) {
         CheckMtth();
         GpcProbeObserve(base, logger, calls);
+        GpcProbeSnapshot(base, logger);
+        PreviewWorld();
     }
     if (world) ProbeSchedule(base, world, logger);
     if (world && calls <= 2) {
@@ -68,6 +88,11 @@ static void __stdcall Observe() {
                 GpcProbeAddCore(base, province, tag, logger);
             else logger("GPC qualification: неверная тестовая цель");
         }
+    }
+    if (world && calls == 1) {
+        char recipient[8] = {};
+        if (GetEnvironmentVariableA("VIC2_GPC_PROBE_NOTIFY_TAG", recipient, sizeof(recipient)))
+            GpcProbeNotify(base, recipient, 3997200, logger);
     }
 }
 static __declspec(naked) void EventLoop() {
@@ -99,6 +124,6 @@ extern "C" __declspec(dllexport) int __cdecl V2Mod_Init(const V2ModAPI* api) {
     DWORD ignored;
     VirtualProtect(site, 5, protect, &ignored);
     FlushInstructionCache(GetCurrentProcess(), site, 5);
-    logger("GPC qualification: after-events probe установлен, мутации мира отсутствуют");
+    logger("GPC qualification: after-events probe установлен; тестовые мутации требуют отдельных переменных среды");
     return 1;
 }

@@ -1,0 +1,9 @@
+# Уведомление после нативной выдачи национальных провинций.
+# Кнопка не изменяет мир. Пустые результаты не вызывают событие.
+country_event = {
+    id = 3997200
+    title = "CC_GPC_TITLE"
+    desc = "CC_GPC_DESC"
+    is_triggered_only = yes
+    option = { name = "CC_GPC_ACCEPT" }
+}

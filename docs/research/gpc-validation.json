@@ -1,0 +1,76 @@
+{
+  "complete": false,
+  "production_installed": false,
+  "multiplayer": "not_yet_tested",
+  "rules": {
+    "primary_only": true,
+    "all_largest_cultures_on_tie": true,
+    "mtth_months": 60
+  },
+  "exe_sha256": "62d48c204364dd706584777c2e2b3c7ab3c5f1dd0170872554943575d53d6648",
+  "runtime_dll_sha256": "ec2940ba6e006135fda80c60d39c2e4b43b7185dc3f4c261bd5818c533fac9d9",
+  "native_calculation_checks": 4030,
+  "native_schedule_checks": 32148,
+  "python_oracle_tests": 11,
+  "python_bridge_tests": 8,
+  "python_installer_tests": 2,
+  "native_mtth": {
+    "months_60": {
+      "base": 1800000,
+      "threshold": 555
+    },
+    "months_1": {
+      "base": 30000,
+      "threshold": 33333
+    },
+    "days_1": {
+      "base": 1000,
+      "threshold": 1000000
+    }
+  },
+  "world_snapshot": {
+    "provinces": 3248,
+    "mismatches": 0,
+    "path": ".work/gpc-probe2/userdata/gpc_snapshot_19528.json"
+  },
+  "core_delta": {
+    "ok": true,
+    "additions": 24,
+    "expected": 24,
+    "unexpected": [],
+    "missing": [],
+    "removed": [],
+    "remaining_candidates": 0,
+    "before_sha256": "68b04f831b9dec5de918d6707f74009f300f9ee73e3326285dfd73b510d871e7",
+    "after_sha256": "bebc5febb4963e71e857f4086039ec68fa6bf16bcc4c5f0a6e6475e46a39bc99"
+  },
+  "gui": {
+    "notification": ".work/gpc-artifacts/notification.png",
+    "accepted": ".work/gpc-artifacts/notification-accepted.png",
+    "note": "older text before primary-only clarification"
+  },
+  "original_1891_sha256": "a3030d8b26101ee7e040bcf138a0bc53b8ab1a6e1e0ce322da3d6e73eceab0e5",
+  "runtime_first_passes": [
+    {
+      "pass": 1,
+      "day": 690229,
+      "additions": 24,
+      "elapsed_ms": 485,
+      "rng": 1031869827
+    },
+    {
+      "pass": 2,
+      "day": 690231,
+      "additions": 0,
+      "elapsed_ms": 500,
+      "rng": 4179507579
+    },
+    {
+      "pass": 3,
+      "day": 690233,
+      "additions": 0,
+      "elapsed_ms": 485,
+      "rng": 4162423299
+    }
+  ]
+}

@@ -12,10 +12,12 @@ import zlib
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--pid', type=int, required=True)
+    parser.add_argument('--environment', type=Path, help='Проверить полный путь процесса по environment.json')
     parser.add_argument('--output', type=Path)
     parser.add_argument('--show', action='store_true', help='Показать скрытое окно тестовой игры')
     parser.add_argument('--click', type=int, nargs=2, metavar=('X', 'Y'))
     parser.add_argument('--key', type=int, help='Код виртуальной клавиши Windows')
+    parser.add_argument('--text', help='Ввести ASCII-текст в активное поле тестовой игры')
     args = parser.parse_args()
     u = c.WinDLL('user32', use_last_error=True)
     g = c.WinDLL('gdi32', use_last_error=True)
@@ -31,6 +33,11 @@ def main():
             raise RuntimeError('Не удалось проверить целевой процесс')
         if Path(name.value).name.lower() != 'v2game.exe':
             raise RuntimeError('Разрешено только окно v2game.exe')
+        if args.environment:
+            metadata = json.loads((args.environment / 'environment.json').read_text(encoding='utf-8'))
+            expected = (Path(metadata['game']) / 'v2game.exe').resolve()
+            if Path(name.value).resolve() != expected:
+                raise RuntimeError('Процесс не принадлежит указанной тестовой среде')
     finally:
         if process:
             k.CloseHandle(process)
@@ -76,6 +83,14 @@ def main():
     def require_focus():
         if u.GetForegroundWindow() != hwnd:
             raise RuntimeError('Игра потеряла фокус; ввод отменён')
+    if args.text:
+        if not args.text.isascii() or any(ord(ch) < 32 for ch in args.text):
+            raise ValueError('Для полей стенда разрешён только печатный ASCII-текст')
+        for ch in args.text:
+            require_focus()
+            if not u.PostMessageW(hwnd, 0x0102, ord(ch), 0):
+                raise RuntimeError('Не удалось отправить символ в окно игры')
+        time.sleep(.2)
     rect = w.RECT()
     u.GetClientRect(hwnd, c.byref(rect))
     point = w.POINT(0, 0)
