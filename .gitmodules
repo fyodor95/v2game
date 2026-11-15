@@ -2,3 +2,7 @@
 	path = AGENTS
 	url = https://github.com/fyodor95/AGENTS.git
 	branch = v2game
+[submodule "autogen"]
+	path = autogen
+	url = git@github.com:fyodor95/autogen.git
+	branch = master
