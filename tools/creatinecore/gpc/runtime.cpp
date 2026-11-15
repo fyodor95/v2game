@@ -12,6 +12,9 @@
 #include "seed_adapter.h"
 #include "runtime_status.h"
 #include "runtime_debug.h"
+#ifdef VIC2_GPC_PROFILE_PHASES
+#include "phase_profile.h"
+#endif
 
 // MSVC x86 добавляет '_' к C __cdecl symbol. У CLI есть стабильное имя export,
 // независимо от декорирования V2Mod_Init существующей сборочной цепочкой.
@@ -134,14 +137,24 @@ static PassEffects ApplyPass(DWORD world, const gpc_world_reader::WorldSnapshot&
     gpc::native_flags_detail::SetFlag(imageBase, world + 0x64, gpc::kScheduleWritingFlag, true);
     PassEffects effects;
     std::set<gpc::Id> recipients;
+#ifdef VIC2_GPC_PROFILE_PHASES
+    gpc_phase_profile::Next(gpc_phase_profile::Phase::GrantBatch);
+#endif
     for (const auto& grant : grants) {
         if (gpc_native_ops::ApplyCore(imageBase, snapshot, grant, logger)) {
             ++effects.added;
             recipients.insert(grant.country);
         }
     }
+#ifdef VIC2_GPC_PROFILE_PHASES
+    gpc_phase_profile::Recipients(recipients.size());
+    gpc_phase_profile::Next(gpc_phase_profile::Phase::NotificationDispatch);
+#endif
     for (auto country : recipients)
         gpc_native_ops::Notify(imageBase, snapshot, country, 3997200, logger);
+#ifdef VIC2_GPC_PROFILE_PHASES
+    gpc_phase_profile::Next(gpc_phase_profile::Phase::Digest);
+#endif
     effects.digest = CoreDigest(snapshot, grants);
     return effects;
 }
@@ -283,19 +296,43 @@ static void __stdcall OnDay() {
         std::size_t added = 0;
         ULONGLONG elapsed = 0;
         std::uint32_t digest = 0;
+#ifdef VIC2_GPC_PROFILE_PHASES
+        gpc_phase_profile::Session profile(tick.due);
+#endif
         if (tick.due) {
             auto started = GetTickCount64();
             const auto snapshot = gpc_world_reader::ReadWorld(imageBase);
+#ifdef VIC2_GPC_PROFILE_PHASES
+            profile.World(snapshot.stats.countries, snapshot.stats.provinces, snapshot.stats.pops,
+                          snapshot.stats.cultures, snapshot.stats.population);
+            gpc_phase_profile::Next(gpc_phase_profile::Phase::CandidateIndex);
+#endif
             const auto grants = gpc::Calculate(snapshot.countries, snapshot.provinces, snapshot.technology_present);
+#ifdef VIC2_GPC_PROFILE_PHASES
+            profile.Grants(grants.size());
+            gpc_phase_profile::Next(gpc_phase_profile::Phase::Preflight);
+#endif
             const auto effects = ApplyPass(world, snapshot, grants);
+#ifdef VIC2_GPC_PROFILE_PHASES
+            gpc_phase_profile::Next(gpc_phase_profile::Phase::PassFinalize);
+#endif
             added = effects.added;
             digest = effects.digest;
             elapsed = GetTickCount64() - started;
         }
+#ifdef VIC2_GPC_PROFILE_PHASES
+        profile.Next(gpc_phase_profile::Phase::SchedulePublish);
+#endif
         gpc::WriteScheduleFlags(imageBase, world, flags, gpc::EncodeSchedule(tick.next), tick.due);
         StatusCompleted(rawDate, tick.next, tick.due, digest);
+#ifdef VIC2_GPC_PROFILE_PHASES
+        profile.Finish();
+#endif
         if (tick.due) logger("GPC runtime: pass=%u day=%u additions=%zu elapsed_ms=%llu rng=%u cores=%08X state=%08X",
             tick.next.pass_sequence, today, added, elapsed, tick.next.rng, digest, gpc::ScheduleChecksum(tick.next));
+#ifdef VIC2_GPC_PROFILE_PHASES
+        profile.Report(logger, tick.next.pass_sequence, today, added);
+#endif
     } catch (const std::exception& error) {
         failed = true;
         StatusFailure();

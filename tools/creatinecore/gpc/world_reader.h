@@ -8,6 +8,9 @@
 #include "native_probe.h"
 #include "snapshot_probe.h"
 #include <utility>
+#ifdef VIC2_GPC_PROFILE_PHASES
+#include "phase_profile.h"
+#endif
 
 namespace gpc_world_reader {
 
@@ -123,6 +126,9 @@ inline WorldSnapshot ReadWorld(DWORD base, bool qualification_mode = false) {
         ++result.stats.countries;
     }
 
+#ifdef VIC2_GPC_PROFILE_PHASES
+    gpc_phase_profile::Next(gpc_phase_profile::Phase::SnapshotProvinces);
+#endif
     for (DWORD id = 1; id < world.provinceCount; ++id) {
         DWORD pointer = Read32(world.provinces + id * 4);
         if (!pointer) continue;

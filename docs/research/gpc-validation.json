@@ -1,14 +1,14 @@
 {
   "complete": false,
   "production_installed": true,
-  "multiplayer": "accelerated_and_mtth60_passed_final_bundle_regression_pending",
+  "multiplayer": "accelerated_mtth60_final_bundle_and_rehost_passed",
   "rules": {
     "primary_only": true,
     "all_largest_cultures_on_tie": true,
     "mtth_months": 60
   },
   "exe_sha256": "62d48c204364dd706584777c2e2b3c7ab3c5f1dd0170872554943575d53d6648",
-  "runtime_dll_sha256": "ec2940ba6e006135fda80c60d39c2e4b43b7185dc3f4c261bd5818c533fac9d9",
+  "runtime_dll_sha256": "f7ac480679a5008b8be3add48f385e1cf9e706e805d07d1235647dd639cba32b",
   "native_calculation_checks": 4030,
   "native_schedule_checks": 32148,
   "python_oracle_tests": 11,
@@ -333,5 +333,80 @@
     "reload_remaining": 0,
     "russian_notice_button_checked": true,
     "report": "docs/research/gpc-1836-validation.md"
-  }
+  },
+  "initial_sp_runtime_dll_sha256": "ec2940ba6e006135fda80c60d39c2e4b43b7185dc3f4c261bd5818c533fac9d9",
+  "multiplayer_final_bundle": {
+    "dll_sha256": "f7ac480679a5008b8be3add48f385e1cf9e706e805d07d1235647dd639cba32b",
+    "report": ".work/gpc-artifacts/mp-final-01.json",
+    "rehost": ".work/gpc-artifacts/mp-final-rehost-01.json",
+    "debug_api": ".work/gpc-artifacts/mp-final-debug-api-01.json",
+    "exact_delta": ".work/gpc-artifacts/delta-mp-final-01.json",
+    "rehost_inspection": ".work/gpc-artifacts/rehost-final-inspection.json",
+    "additions": 62,
+    "missing": 0,
+    "unexpected": 0,
+    "removed": 0,
+    "native_sync_days_each_run": 4,
+    "sync_mismatches": 0,
+    "rehost_roles_swapped": true,
+    "rehost_cores_unchanged": true,
+    "rehost_initialized": false,
+    "snapshot_equal": true,
+    "readonly_state_unchanged": true,
+    "forced_run_and_sp_return_blocked": true
+  },
+  "ordinary_performance": {
+    "report": ".work/gpc-artifacts/benchmark-ordinary-01.json",
+    "report_sha256": "e090159abe895752c9af04c48f92b735fe78184bb95e0091e75e967798ab4e1c",
+    "complete": true,
+    "ok": true,
+    "samples_per_mode": 3,
+    "days_per_sample": 100,
+    "comparison": {
+      "median_wall_seconds_per_day": {
+        "off": 0.9368471629999112,
+        "on": 0.95585098200012
+      },
+      "overhead_percent": 2.0284865825238807,
+      "limit_percent": 5.0,
+      "within_limit": true
+    },
+    "input_fingerprints_unchanged": true,
+    "boundary_uncertainty": "direction_unknown",
+    "numeric_correction_applied": false
+  },
+  "phase_performance": {
+    "report": ".work/gpc-artifacts/phase-performance-01.json",
+    "empty_report": ".work/gpc-artifacts/phase-empty-01.json",
+    "diagnostic_only": true,
+    "profile_dll_sha256": "de56e308ea1d4320790656e1d7c7276ad9e4082c7ac7b7d50609aea1f2c75f1c",
+    "production_restored": true,
+    "positive_samples": 3,
+    "additions_each": 56,
+    "recipients_each": 2,
+    "all_raw_tick_sums_match": true,
+    "total_ticks": [
+      2067360,
+      1692578,
+      1773545
+    ],
+    "frequency": 10000000,
+    "empty_ticks": 1324835,
+    "empty_additions": 0,
+    "exact_deltas_all_passed": true
+  },
+  "python_vic2test_suite": {
+    "run": 116,
+    "skipped": 1,
+    "ok": true
+  },
+  "original_saves_integrity": {
+    "report": ".work/gpc-artifacts/original-saves-integrity-20261116.json",
+    "all_sha256_unchanged": true
+  },
+  "remaining_acceptance": [
+    "production_multiyear_run_and_reload",
+    "native_notification_control",
+    "final_review_and_documentation"
+  ]
 }

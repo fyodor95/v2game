@@ -161,6 +161,16 @@ python -B tools/vic2test/benchmark_gpc.py --environment .work/gpc-probe2 --outpu
 checksum `789557587`, pass остаётся 2. Это проверка исходных условий,
 **не измерение производительности и не результат игрового прогона**.
 
+## Реальный прогон 16 ноября
+
+Сценарий выполнен: `.work/gpc-artifacts/benchmark-ordinary-01.json`,
+`complete=true`, `ok=true`. Три выборки off: 93,685 / 92,091 / 99,492 секунды;
+on: 94,721 / 96,362 / 95,585 секунды. Окончательные значения брать из raw JSON.
+Медианные накладные расходы — 2,0285%, порог 5% пройден. Все input fingerprints,
+артефакты и source-save SHA проверены после восстановления INI. Полный отчёт
+с CPU, фоновыми событиями и раздельными фазами —
+[gpc-performance-validation.md](../research/gpc-performance-validation.md).
+
 После исправлений ревью 16 ноября 2026 года прошли 35 проверок: 10 в
 [`test_start_session.py`](../../tools/vic2test/test_start_session.py), 7 в
 [`test_benchmark_gpc.py`](../../tools/vic2test/test_benchmark_gpc.py), 8 существующих

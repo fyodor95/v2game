@@ -12,6 +12,9 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <vector>
+#ifdef VIC2_GPC_PROFILE_PHASES
+#include "phase_profile.h"
+#endif
 
 namespace gpc {
 
@@ -99,6 +102,9 @@ inline std::vector<CoreGrant> Calculate(const std::vector<Country>& countries,
             by_culture[country.primary_culture].push_back(country.id);
     }
 
+#ifdef VIC2_GPC_PROFILE_PHASES
+    gpc_phase_profile::Next(gpc_phase_profile::Phase::CandidateScan);
+#endif
     std::unordered_set<Id> province_ids;
     std::vector<CoreGrant> result;
     // Ровно один проход по входным провинциям. Индекс не обходится целиком
