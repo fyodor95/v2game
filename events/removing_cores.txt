@@ -23,7 +23,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148001"
@@ -55,7 +55,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148002"
@@ -87,7 +87,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148003"
@@ -119,7 +119,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148004"
@@ -151,7 +151,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148005"
@@ -195,7 +195,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148006"
@@ -227,7 +227,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148007"
@@ -259,7 +259,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148008"
@@ -291,7 +291,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148009"
@@ -323,7 +323,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148010"
@@ -355,7 +355,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148011"
@@ -387,7 +387,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148012"
@@ -419,7 +419,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148013"
@@ -451,7 +451,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148014"
@@ -483,7 +483,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148015"
@@ -515,7 +515,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148016"
@@ -547,7 +547,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148017"
@@ -579,7 +579,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148018"
@@ -611,7 +611,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148019"
@@ -649,7 +649,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148020"
@@ -681,7 +681,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148021"
@@ -713,7 +713,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148022"
@@ -745,7 +745,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148023"
@@ -777,7 +777,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148024"
@@ -809,7 +809,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148025"
@@ -841,7 +841,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148026"
@@ -873,7 +873,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148027"
@@ -905,7 +905,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148028"
@@ -937,7 +937,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148029"
@@ -969,7 +969,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148030"
@@ -1001,7 +1001,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148031"
@@ -1033,7 +1033,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148032"
@@ -1065,7 +1065,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148033"
@@ -1097,7 +1097,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148034"
@@ -1129,7 +1129,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148035"
@@ -1161,7 +1161,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148036"
@@ -1193,7 +1193,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148037"
@@ -1225,7 +1225,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148038"
@@ -1257,7 +1257,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148039"
@@ -1289,7 +1289,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148040"
@@ -1321,7 +1321,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148041"
@@ -1353,7 +1353,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148042"
@@ -1391,7 +1391,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148043"
@@ -1423,7 +1423,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148044"
@@ -1455,7 +1455,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148045"
@@ -1497,7 +1497,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148046"
@@ -1529,7 +1529,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148047"
@@ -1561,7 +1561,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148048"
@@ -1593,7 +1593,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148049"
@@ -1625,7 +1625,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148050"
@@ -1657,7 +1657,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148051"
@@ -1689,7 +1689,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148052"
@@ -1721,7 +1721,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148053"
@@ -1753,7 +1753,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148054"
@@ -1785,7 +1785,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148055"
@@ -1817,7 +1817,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148056"
@@ -1849,7 +1849,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148057"
@@ -1881,7 +1881,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148058"
@@ -1919,7 +1919,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148059"
@@ -1951,7 +1951,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148060"
@@ -1983,7 +1983,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148061"
@@ -2015,7 +2015,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148062"
@@ -2047,7 +2047,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148063"
@@ -2079,7 +2079,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148064"
@@ -2111,7 +2111,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148065"
@@ -2143,7 +2143,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148066"
@@ -2175,7 +2175,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148067"
@@ -2215,7 +2215,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148068"
@@ -2247,7 +2247,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148069"
@@ -2279,7 +2279,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148070"
@@ -2311,7 +2311,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148071"
@@ -2343,7 +2343,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148072"
@@ -2375,7 +2375,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148073"
@@ -2407,7 +2407,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148074"
@@ -2439,7 +2439,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148075"
@@ -2471,7 +2471,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148076"
@@ -2509,7 +2509,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148077"
@@ -2541,7 +2541,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148078"
@@ -2573,7 +2573,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148079"
@@ -2605,7 +2605,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148080"
@@ -2637,7 +2637,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148081"
@@ -2669,7 +2669,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148082"
@@ -2701,7 +2701,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148083"
@@ -2733,7 +2733,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148084"
@@ -2765,7 +2765,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148085"
@@ -2797,7 +2797,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148086"
@@ -2829,7 +2829,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148087"
@@ -2861,7 +2861,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148088"
@@ -2933,7 +2933,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148089"
@@ -2965,7 +2965,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148090"
@@ -2997,7 +2997,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148091"
@@ -3029,7 +3029,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148092"
@@ -3061,7 +3061,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148093"
@@ -3093,7 +3093,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148094"
@@ -3125,7 +3125,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148095"
@@ -3157,7 +3157,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148096"
@@ -3189,7 +3189,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148097"
@@ -3221,7 +3221,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148098"
@@ -3259,7 +3259,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148099"
@@ -3299,7 +3299,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148100"
@@ -3331,7 +3331,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148101"
@@ -3363,7 +3363,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148102"
@@ -3395,7 +3395,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148103"
@@ -3427,7 +3427,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148104"
@@ -3459,7 +3459,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148105"
@@ -3491,7 +3491,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148106"
@@ -3523,7 +3523,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148107"
@@ -3555,7 +3555,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148108"
@@ -3587,7 +3587,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148109"
@@ -3619,7 +3619,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148110"
@@ -3651,7 +3651,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148111"
@@ -3683,7 +3683,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148112"
@@ -3715,7 +3715,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148113"
@@ -3747,7 +3747,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148114"
@@ -3779,7 +3779,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148115"
@@ -3811,7 +3811,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148116"
@@ -3843,7 +3843,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148117"
@@ -3875,7 +3875,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148118"
@@ -3907,7 +3907,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148119"
@@ -3939,7 +3939,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148120"
@@ -3993,7 +3993,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148121"
@@ -4025,7 +4025,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148122"
@@ -4057,7 +4057,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148123"
@@ -4089,7 +4089,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148124"
@@ -4121,7 +4121,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148125"
@@ -4153,7 +4153,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148126"
@@ -4185,7 +4185,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148127"
@@ -4217,7 +4217,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148128"
@@ -4249,7 +4249,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148129"
@@ -4281,7 +4281,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148130"
@@ -4313,7 +4313,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148131"
@@ -4345,7 +4345,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148132"
@@ -4377,7 +4377,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148133"
@@ -4409,7 +4409,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148134"
@@ -4441,7 +4441,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148135"
@@ -4473,7 +4473,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148136"
@@ -4505,7 +4505,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148137"
@@ -4537,7 +4537,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148138"
@@ -4569,7 +4569,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148139"
@@ -4601,7 +4601,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148140"
@@ -4633,7 +4633,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148141"
@@ -4665,7 +4665,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148142"
@@ -4697,7 +4697,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148143"
@@ -4729,7 +4729,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148144"
@@ -4761,7 +4761,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148145"
@@ -4793,7 +4793,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148146"
@@ -4825,7 +4825,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148147"
@@ -4857,7 +4857,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148148"
@@ -4889,7 +4889,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148149"
@@ -4921,7 +4921,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148150"
@@ -4953,7 +4953,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148151"
@@ -4985,7 +4985,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148152"
@@ -5017,7 +5017,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148153"
@@ -5049,7 +5049,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148154"
@@ -5081,7 +5081,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148155"
@@ -5113,7 +5113,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148156"
@@ -5145,7 +5145,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148157"
@@ -5177,7 +5177,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148158"
@@ -5209,7 +5209,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148159"
@@ -5241,7 +5241,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148160"
@@ -5273,7 +5273,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148161"
@@ -5305,7 +5305,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148162"
@@ -5337,7 +5337,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148163"
@@ -5369,7 +5369,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148164"
@@ -5401,7 +5401,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148165"
@@ -5433,7 +5433,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148166"
@@ -5465,7 +5465,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148167"
@@ -5497,7 +5497,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148168"
@@ -5529,7 +5529,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148169"
@@ -5567,7 +5567,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148170"
@@ -5599,7 +5599,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148171"
@@ -5631,7 +5631,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148172"
@@ -5663,7 +5663,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148173"
@@ -5695,7 +5695,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148174"
@@ -5727,7 +5727,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148175"
@@ -5759,7 +5759,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148176"
@@ -5791,7 +5791,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148177"
@@ -5823,7 +5823,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148178"
@@ -5865,7 +5865,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148179"
@@ -5897,7 +5897,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148180"
@@ -5929,7 +5929,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148181"
@@ -5961,7 +5961,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148182"
@@ -5993,7 +5993,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148183"
@@ -6041,7 +6041,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148184"
@@ -6073,7 +6073,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148185"
@@ -6105,7 +6105,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148186"
@@ -6137,7 +6137,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148187"
@@ -6169,7 +6169,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148188"
@@ -6201,7 +6201,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148189"
@@ -6233,7 +6233,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148190"
@@ -6265,7 +6265,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148191"
@@ -6297,7 +6297,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148192"
@@ -6329,7 +6329,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148193"
@@ -6361,7 +6361,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148194"
@@ -6393,7 +6393,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148195"
@@ -6425,7 +6425,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148196"
@@ -6457,7 +6457,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148197"
@@ -6489,7 +6489,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148198"
@@ -6521,7 +6521,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148199"
@@ -6553,7 +6553,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148200"
@@ -6585,7 +6585,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148201"
@@ -6617,7 +6617,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148202"
@@ -6649,7 +6649,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148203"
@@ -6681,7 +6681,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148204"
@@ -6713,7 +6713,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148205"
@@ -6745,7 +6745,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148206"
@@ -6777,7 +6777,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148207"
@@ -6809,7 +6809,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148208"
@@ -6841,7 +6841,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148209"
@@ -6873,7 +6873,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148210"
@@ -6905,7 +6905,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148211"
@@ -6937,7 +6937,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148212"
@@ -6969,7 +6969,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148213"
@@ -7001,7 +7001,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148214"
@@ -7033,7 +7033,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148215"
@@ -7065,7 +7065,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148216"
@@ -7103,7 +7103,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148217"
@@ -7135,7 +7135,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148218"
@@ -7167,7 +7167,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148219"
@@ -7199,7 +7199,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148220"
@@ -7239,7 +7239,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148221"
@@ -7271,7 +7271,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148222"
@@ -7303,7 +7303,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148223"
@@ -7335,7 +7335,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148224"
@@ -7367,7 +7367,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148225"
@@ -7399,7 +7399,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148226"
@@ -7431,7 +7431,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148227"
@@ -7463,7 +7463,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148228"
@@ -7495,7 +7495,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148229"
@@ -7527,7 +7527,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148230"
@@ -7559,7 +7559,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148231"
@@ -7591,7 +7591,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148232"
@@ -7623,7 +7623,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148233"
@@ -7655,7 +7655,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148234"
@@ -7701,7 +7701,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148235"
@@ -7733,7 +7733,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148236"
@@ -7765,7 +7765,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 1200
+		months = 60
 	}
 	option = {
 		name = "EVTOPTA148237"
