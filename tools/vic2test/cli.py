@@ -61,6 +61,32 @@ def emit(result: dict) -> int:
     return 0 if result.get("ok") else 1
 
 
+def archive_logs(environment: Path, game: Path, token: str) -> dict:
+    """Сохранить журналы завершённого экземпляра перед созданием нового."""
+    environment, game = environment.resolve(), game.resolve()
+    if game != environment / 'game' or not environment.is_relative_to((ROOT / '.work').resolve()):
+        raise ValueError('Архивировать можно только журналы изолированной тестовой среды')
+    history = environment / 'log-history' / token
+    if history.resolve().is_relative_to(environment) is False:
+        raise ValueError('Каталог истории журналов выходит из тестовой среды')
+    saved = {}
+    for name in ('v2dll.log', 'v2dll_oos.log'):
+        source = game / 'z_CreatineCore/Logs' / name
+        if not source.resolve().is_relative_to(game):
+            raise ValueError('Журнал находится вне тестовой копии')
+        if not source.exists():
+            continue
+        if not source.is_file():
+            raise ValueError('Журнал находится вне тестовой копии')
+        history.mkdir(parents=True, exist_ok=True)
+        target = history / name
+        if target.exists():
+            raise FileExistsError('Архив журнала уже существует')
+        source.rename(target)
+        saved[name] = str(target)
+    return saved
+
+
 def prepare(destination: Path, saves: list[Path]) -> dict:
     """Копирует данные, никогда не связывая их с оригиналами жёсткими ссылками."""
     destination = destination.resolve()
@@ -147,8 +173,12 @@ def start(environment: Path, hidden: bool, save: str | None = None, mods: list[s
     if hidden:
         startup.dwFlags |= subprocess.STARTF_USESHOWWINDOW
         startup.wShowWindow = 0
+    history = archive_logs(environment, game, token)
+    log = game / 'z_CreatineCore/Logs/v2dll.log'
+    log_offsets = {'v2dll.log': log.stat().st_size if log.exists() else 0}
     process = subprocess.Popen(arguments, cwd=game, env=env, startupinfo=startup)
-    state = {"pid": process.pid, "token": token, "game": str(game), "campaign_loaded": False}
+    state = {"pid": process.pid, "token": token, "game": str(game), "campaign_loaded": False,
+             "log_offsets": log_offsets, "log_history": history}
     (environment / "session.json").write_text(json.dumps(state, indent=2), encoding="utf-8")
     if save:
         result = wait_request(environment, "open-single-player", 600)
@@ -346,8 +376,9 @@ def main() -> int:
     p = commands.add_parser("status", help="Получить состояние от нативного плагина")
     p.add_argument("--environment", type=Path, required=True)
     p = commands.add_parser("culture-cores", help="Диагностика нативного модуля национальных провинций")
-    p.add_argument("operation", choices=["status"])
+    p.add_argument("operation", choices=["status", "preview", "snapshot", "run"])
     p.add_argument("--environment", type=Path, required=True)
+    p.add_argument("--name", help="Новое имя JSON; по умолчанию уникальное")
     p = commands.add_parser("mp", help="Штатные сетевые действия движка без мыши и клавиатуры")
     p.add_argument("operation", choices=["state", "open", "lobby", "front-state", "host", "join", "load", "country", "play", "ready", "pause", "speed", "events", "option", "save-menu", "save"])
     p.add_argument("--environment", type=Path, required=True)
@@ -400,7 +431,20 @@ def main() -> int:
         if args.command == "start":
             return emit(start(args.environment, args.hidden, args.save, args.mod))
         if args.command == "culture-cores":
-            return emit(request(args.environment, "culture-cores-status", 30))
+            if args.operation == 'status':
+                return emit(request(args.environment, "culture-cores-status", 30))
+            name = args.name or ('gpc_' + uuid.uuid4().hex)
+            if not re.fullmatch(r'[A-Za-z0-9_-]{1,48}', name):
+                raise ValueError('Имя GPC JSON: 1..48 ASCII-букв, цифр, дефисов или подчёркиваний')
+            result = request(args.environment, 'culture-cores-' + args.operation + ' ' + name, 180)
+            if result.get('ok'):
+                path = Path(result['path']).resolve()
+                metadata = json.loads((args.environment / 'environment.json').read_text(encoding='utf-8'))
+                allowed = (Path(metadata['userdata']) / 'gpc-debug').resolve()
+                if not path.is_relative_to(allowed) or not path.is_file():
+                    raise ValueError('Нативный снимок не найден в изолированном userdata')
+                result.update(sha256=digest(path), bytes=path.stat().st_size)
+            return emit(result)
         if args.command == "mp":
             fields = {"host": [args.player, args.name], "join": [args.player, args.address],
                       "load": [args.save], "country": [args.tag],

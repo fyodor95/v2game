@@ -1,7 +1,7 @@
 {
   "complete": false,
   "production_installed": false,
-  "multiplayer": "not_yet_tested",
+  "multiplayer": "accelerated_and_mtth60_passed_final_bundle_regression_pending",
   "rules": {
     "primary_only": true,
     "all_largest_cultures_on_tie": true,
@@ -13,7 +13,7 @@
   "native_schedule_checks": 32148,
   "python_oracle_tests": 11,
   "python_bridge_tests": 8,
-  "python_installer_tests": 2,
+  "python_installer_tests": 8,
   "native_mtth": {
     "months_60": {
       "base": 1800000,
@@ -157,5 +157,62 @@
     "skipped": 1
   },
   "python_fixture_tests": 7,
-  "python_mp_logcheck_tests": 17
+  "python_mp_logcheck_tests": 17,
+  "multiplayer_runtime_dll_sha256": "718557da4f634f256a3a774bda1e092d7c4190478304547709bf75df7a3d8c83",
+  "multiplayer_gpc": {
+    "shared_primary": {
+      "report": ".work/gpc-artifacts/mp-gpc-shared-01.json",
+      "delta": ".work/gpc-artifacts/delta-mp-shared.json",
+      "expected": 62,
+      "actual": 62,
+      "missing": 0,
+      "unexpected": 0,
+      "removed": 0,
+      "pass_count": 2
+    },
+    "notice_hold_long": {
+      "report": ".work/gpc-artifacts/mp-shared-notice-hold.json",
+      "pass_count": 22,
+      "total_additions": 62,
+      "days": 44,
+      "option_client_queued": true,
+      "option_state_unchanged": true,
+      "host_notice_held": true,
+      "sync_mismatches": 0,
+      "queued_pause_executing_true": true
+    },
+    "rehost": {
+      "report": ".work/gpc-artifacts/mp-gpc-rehost-01.json",
+      "gameplay_passed": true,
+      "pass_start": 22,
+      "pass_end": 24,
+      "total_additions": 0,
+      "roles_swapped": true,
+      "log_collection_failed_due_to_truncation": true,
+      "notification_restored": false
+    },
+    "production_mtth60": {
+      "report": ".work/gpc-artifacts/mp-gpc-mtth60-01.json",
+      "delta": ".work/gpc-artifacts/delta-mp-mtth60.json",
+      "forced_always": false,
+      "threshold": 555,
+      "seed": 4673603,
+      "first_rng": 1,
+      "pass_count": 1,
+      "additions": 62,
+      "host_tag": "ENG",
+      "client_tag": "NGF",
+      "host_notice": false,
+      "client_notice": true,
+      "strict_log_proof": true,
+      "initial_log_offsets": [
+        0,
+        0
+      ]
+    }
+  },
+  "python_mp_collection_tests": 7,
+  "python_log_history_tests": 10,
+  "python_delta_tests": 11,
+  "python_schedule_fixture_tests": 8
 }

@@ -11,10 +11,12 @@
 #include "native_operations.h"
 #include "seed_adapter.h"
 #include "runtime_status.h"
+#include "runtime_debug.h"
 
 // MSVC x86 добавляет '_' к C __cdecl symbol. У CLI есть стабильное имя export,
 // независимо от декорирования V2Mod_Init существующей сборочной цепочкой.
 #pragma comment(linker, "/EXPORT:V2Gpc_GetRuntimeStatus=_V2Gpc_GetRuntimeStatus")
+#pragma comment(linker, "/EXPORT:V2Gpc_Debug=_V2Gpc_Debug")
 
 struct V2ModAPI {
     uint32_t size, apiVersion, gameBase;
@@ -119,6 +121,126 @@ static std::uint32_t CoreDigest(gpc_world_reader::WorldSnapshot snapshot, const 
     return digest;
 }
 
+struct PassEffects {
+    std::size_t added = 0;
+    std::uint32_t digest = 0;
+};
+
+static PassEffects ApplyPass(DWORD world, const gpc_world_reader::WorldSnapshot& snapshot,
+                              const std::vector<gpc::CoreGrant>& grants) {
+    gpc_native_ops::Preflight(imageBase, snapshot, grants, 3997200);
+    gpc::ValidateScheduleWriteContracts(imageBase, world);
+    // И производственный, и debug-проход оставляют маркер при частичной ошибке.
+    gpc::native_flags_detail::SetFlag(imageBase, world + 0x64, gpc::kScheduleWritingFlag, true);
+    PassEffects effects;
+    std::set<gpc::Id> recipients;
+    for (const auto& grant : grants) {
+        if (gpc_native_ops::ApplyCore(imageBase, snapshot, grant, logger)) {
+            ++effects.added;
+            recipients.insert(grant.country);
+        }
+    }
+    for (auto country : recipients)
+        gpc_native_ops::Notify(imageBase, snapshot, country, 3997200, logger);
+    effects.digest = CoreDigest(snapshot, grants);
+    return effects;
+}
+
+static bool DebugCopy(const void* source, void* destination, size_t bytes) {
+    __try { std::memcpy(destination, source, bytes); }
+    __except (EXCEPTION_EXECUTE_HANDLER) { return false; }
+    return true;
+}
+
+static void DebugExecute(const V2GpcDebugRequest& request, V2GpcDebugResult& result) {
+    using namespace gpc_runtime_debug;
+    Validate(request);
+    V2GpcRuntimeStatus cache = {};
+    Require(V2Gpc_GetRuntimeStatus(&cache, sizeof(cache)) != 0,
+            V2_GPC_DEBUG_GUARD, "E_GPC_DEBUG_STATUS");
+    const bool force = request.operation == V2_GPC_DEBUG_RUN;
+    const Phase phase = Guard(imageBase, simulationThread, cache, force);
+    CallbackStatusGuard debugBusy;
+    const auto flags = gpc::ReadScheduleFlags(imageBase, phase.world);
+    const auto current = gpc::DecodeSchedule(flags);
+    Require(current.has_value() && current->last_day == gpc::ScheduleDayFromRaw(phase.raw_date) &&
+            current->pass_sequence == cache.pass && current->rng == cache.rng &&
+            gpc::ScheduleChecksum(*current) == cache.state_digest,
+            V2_GPC_DEBUG_GUARD, "E_GPC_DEBUG_SCHEDULE_CHANGED");
+    auto next = *current;
+    if (force) {
+        Require(next.pass_sequence != UINT32_MAX, V2_GPC_DEBUG_GUARD, "E_GPC_DEBUG_PASS_OVERFLOW");
+        ++next.pass_sequence;
+    }
+    const auto snapshot = gpc_world_reader::ReadWorld(imageBase);
+    Require(snapshot.date_raw == phase.raw_date, V2_GPC_DEBUG_GUARD, "E_GPC_DEBUG_DATE_CHANGED");
+    const auto grants = gpc::Calculate(snapshot.countries, snapshot.provinces, snapshot.technology_present);
+    Require(grants.size() <= UINT32_MAX, V2_GPC_DEBUG_NATIVE, "E_GPC_DEBUG_PAIR_COUNT");
+    result.pairs = static_cast<std::uint32_t>(grants.size());
+    result.raw_date = phase.raw_date;
+    result.pass = current->pass_sequence;
+    result.rng = current->rng;
+    result.state_digest = gpc::ScheduleChecksum(*current);
+    result.core_digest = CoreDigest(snapshot, {});
+    NewJson output(request.name);
+    strcpy_s(result.path, output.path.c_str());
+    // До мутаций уже есть новый полноценный input/proposal JSON. Его имя нельзя
+    // переиспользовать даже при ошибке native вызова или потере ответа IPC.
+    output.Write(Json(snapshot, grants, *current, result, request.operation, phase.multiplayer));
+    if (!force) return;
+    try {
+        const auto effects = ApplyPass(phase.world, snapshot, grants);
+        gpc::WriteScheduleFlags(imageBase, phase.world, flags, gpc::EncodeSchedule(next), true);
+        StatusCompleted(phase.raw_date, next, true, effects.digest);
+        result.committed = 1;
+        result.added = static_cast<std::uint32_t>(effects.added);
+        result.pass = next.pass_sequence;
+        result.rng = next.rng;
+        result.state_digest = gpc::ScheduleChecksum(next);
+        result.core_digest = effects.digest;
+        logger("GPC runtime: DEBUG FORCED pass=%u day=%u additions=%zu rng=%u cores=%08X state=%08X",
+            next.pass_sequence, next.last_day, effects.added, next.rng, effects.digest, result.state_digest);
+    } catch (const std::exception& error) {
+        failed = true;
+        StatusFailure();
+        logger("GPC runtime: DEBUG FORCED ERROR %s; автоматический повтор запрещён", error.what());
+        throw Error(V2_GPC_DEBUG_NATIVE, "E_GPC_DEBUG_NATIVE_OUTCOME_UNKNOWN");
+    } catch (...) {
+        failed = true;
+        StatusFailure();
+        logger("GPC runtime: DEBUG FORCED ERROR неизвестное исключение; автоматический повтор запрещён");
+        throw Error(V2_GPC_DEBUG_NATIVE, "E_GPC_DEBUG_NATIVE_OUTCOME_UNKNOWN");
+    }
+    // Ошибка вывода после commit отличается от native ошибки: committed=1,
+    // состояние механики уже опубликовано, повтор run запрещён.
+    output.Write(Json(snapshot, grants, *current, result, request.operation, phase.multiplayer));
+}
+
+extern "C" int __cdecl V2Gpc_Debug(const V2GpcDebugRequest* request, std::uint32_t requestSize,
+                                   V2GpcDebugResult* output, std::uint32_t outputSize) {
+    if (!request || !output || requestSize < sizeof(V2GpcDebugRequest) ||
+        outputSize < sizeof(V2GpcDebugResult)) return 0;
+    V2GpcDebugRequest input = {};
+    V2GpcDebugResult result = {};
+    result.size = sizeof(result);
+    result.version = V2_GPC_DEBUG_VERSION;
+    if (!DebugCopy(request, &input, sizeof(input)) || !DebugCopy(&result, output, sizeof(result))) return 0;
+    try {
+        DebugExecute(input, result);
+    } catch (const gpc_runtime_debug::Error& error) {
+        result.code = error.code;
+        strncpy_s(result.error, error.what(), _TRUNCATE);
+    } catch (const std::exception& error) {
+        result.code = V2_GPC_DEBUG_NATIVE;
+        strcpy_s(result.error, "E_GPC_DEBUG_READ_OR_OUTPUT_FAILED");
+        if (logger) logger("GPC runtime: debug read/output ERROR %s", error.what());
+    } catch (...) {
+        result.code = V2_GPC_DEBUG_NATIVE;
+        strcpy_s(result.error, "E_GPC_DEBUG_UNKNOWN_EXCEPTION");
+    }
+    return DebugCopy(&result, output, sizeof(result)) ? 1 : 0;
+}
+
 static unsigned Setting(const char* path, const char* key, unsigned fallback,
                         unsigned minimum, unsigned maximum) {
     char defaultValue[32], value[32];
@@ -165,20 +287,9 @@ static void __stdcall OnDay() {
             auto started = GetTickCount64();
             const auto snapshot = gpc_world_reader::ReadWorld(imageBase);
             const auto grants = gpc::Calculate(snapshot.countries, snapshot.provinces, snapshot.technology_present);
-            gpc_native_ops::Preflight(imageBase, snapshot, grants, 3997200);
-            gpc::ValidateScheduleWriteContracts(imageBase, world);
-            // Маркер остаётся активным при любой ошибке частичной выдачи.
-            gpc::native_flags_detail::SetFlag(imageBase, world + 0x64, gpc::kScheduleWritingFlag, true);
-            std::set<gpc::Id> recipients;
-            for (const auto& grant : grants) {
-                if (gpc_native_ops::ApplyCore(imageBase, snapshot, grant, logger)) {
-                    ++added;
-                    recipients.insert(grant.country);
-                }
-            }
-            for (auto country : recipients)
-                gpc_native_ops::Notify(imageBase, snapshot, country, 3997200, logger);
-            digest = CoreDigest(snapshot, grants);
+            const auto effects = ApplyPass(world, snapshot, grants);
+            added = effects.added;
+            digest = effects.digest;
             elapsed = GetTickCount64() - started;
         }
         gpc::WriteScheduleFlags(imageBase, world, flags, gpc::EncodeSchedule(tick.next), tick.due);

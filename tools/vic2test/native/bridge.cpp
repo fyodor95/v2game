@@ -274,6 +274,48 @@ static DWORD EventObject(unsigned id) {
 #include "mp_events.h"
 #include "mp_save.h"
 #include "../../creatinecore/gpc/runtime_status.h"
+#include "../../creatinecore/gpc/debug_api.h"
+static void JsonEscape(const char* source, char* output, size_t capacity) {
+    size_t used = 0;
+    for (size_t i = 0; source[i]; ++i) {
+        const unsigned char c = (unsigned char)source[i];
+        if (used + 7 >= capacity) throw std::runtime_error("E_GPC_RESPONSE_LIMIT");
+        if (c == '\\' || c == '"') { output[used++] = '\\'; output[used++] = (char)c; }
+        else if (c < 32) { sprintf_s(output + used, capacity - used, "\\u%04X", (unsigned)c); used += 6; }
+        else output[used++] = (char)c;
+    }
+    output[used] = 0;
+}
+static void GpcDebugResponse(const char* command) {
+    if (!InCampaign(Read(baseAddress + 0xE588E8))) { Error("E_NOT_READY"); return; }
+    if (GetEnvironmentVariableA("VIC2_TEST_READ_ONLY", nullptr, 0) && !strcmp(command, "culture-cores-run")) {
+        Error("E_READ_ONLY"); return;
+    }
+    V2GpcDebugRequest input = {};
+    input.size = sizeof(input); input.version = V2_GPC_DEBUG_VERSION;
+    input.operation = !strcmp(command, "culture-cores-preview") ? V2_GPC_DEBUG_PREVIEW :
+                      !strcmp(command, "culture-cores-snapshot") ? V2_GPC_DEBUG_SNAPSHOT : V2_GPC_DEBUG_RUN;
+    char extra[2] = {};
+    if (sscanf_s(request + strlen(command), "%63s %1s", input.name, (unsigned)sizeof(input.name), extra, (unsigned)sizeof(extra)) != 1) {
+        Error("E_ARGUMENT"); return;
+    }
+    HMODULE module = GetModuleHandleA("ccore_great_power_culture_cores.dll");
+    if (!module) { Error("E_GPC_NOT_INSTALLED"); return; }
+    const auto method = (V2GpcDebugFn)GetProcAddress(module, V2_GPC_DEBUG_EXPORT);
+    if (!method) { Error("E_GPC_DEBUG_API"); return; }
+    V2GpcDebugResult result = {};
+    if (!method(&input, sizeof(input), &result, sizeof(result)) || result.size != sizeof(result) ||
+        result.version != V2_GPC_DEBUG_VERSION) {
+        if (input.operation == V2_GPC_DEBUG_RUN) InterlockedExchange(&poisoned, 1);
+        Error("E_GPC_OUTCOME_UNKNOWN"); return;
+    }
+    if (result.code == V2_GPC_DEBUG_NATIVE) InterlockedExchange(&poisoned, 1);
+    char path[3072] = {}, error[600] = {};
+    JsonEscape(result.path, path, sizeof(path)); JsonEscape(result.error, error, sizeof(error));
+    sprintf_s(response, "{\"ok\":%s,\"error\":\"%s\",\"code\":%u,\"committed\":%u,\"pairs\":%u,\"added\":%u,\"date_raw\":%u,\"pass\":%u,\"rng\":%u,\"state_digest\":%u,\"core_digest\":%u,\"path\":\"%s\"}\n",
+        result.code == 0 ? "true" : "false", error, result.code, result.committed, result.pairs, result.added,
+        result.raw_date, result.pass, result.rng, result.state_digest, result.core_digest, path);
+}
 static bool GpcStatus(V2GpcRuntimeStatus* output) {
     HMODULE module = GetModuleHandleA("ccore_great_power_culture_cores.dll");
     if (!module) return false;
@@ -434,6 +476,11 @@ static void Dispatch() {
     sscanf_s(request, "%63s %7s %511s", command, (unsigned)sizeof(command),
         tag, (unsigned)sizeof(tag), name, (unsigned)sizeof(name));
     DWORD world = Read(baseAddress + 0xE588E8);
+    if (!strcmp(command, "culture-cores-preview") || !strcmp(command, "culture-cores-snapshot") || !strcmp(command, "culture-cores-run")) {
+        try { GpcDebugResponse(command); }
+        catch (const std::exception& error) { Log("vic2test GPC debug: %s", error.what()); Error("E_GPC_DEBUG_API"); }
+        return;
+    }
     if (!strcmp(command, "culture-cores-status")) {
         try { GpcStatusResponse(); }
         catch (const std::exception&) { Error("E_GPC_STATUS_API"); }

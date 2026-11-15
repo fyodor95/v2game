@@ -198,8 +198,15 @@ class Driver:
                     shutil.copy2(source, artifacts / (role + '-v2dll.full.log'))
                     session = json.loads((environment / 'session.json').read_text(encoding='utf-8'))
                     prefix = ('[' + str(session['pid']) + ']').encode('ascii')
-                    selected = b''.join(line for line in source.read_bytes().splitlines(keepends=True) if line.startswith(prefix))
-                    target.write_text(selected.decode('utf-8', errors='replace'), encoding='utf-8')
+                    raw = source.read_bytes()
+                    offset = session.get('log_offsets', {}).get(filename)
+                    if offset is None:
+                        self.record.setdefault('log_scope_warnings', []).append(role + ': только PID, исходная сессия создана до учёта byte-offset')
+                        offset = 0
+                    if type(offset) is not int or offset < 0 or offset > len(raw):
+                        raise RuntimeError('Нельзя выделить журнал текущей сессии: файл был усечён')
+                    selected = b''.join(line for line in raw[offset:].splitlines(keepends=True) if line.startswith(prefix))
+                    target.write_text(selected.decode('utf-8', errors='replace'), encoding='utf-8', newline='')
                 else:
                     shutil.copy2(source, target)
                 if filename == 'v2dll_oos.log':
