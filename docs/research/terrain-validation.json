@@ -1,0 +1,91 @@
+{
+  "source_commit": "ed4c7ac427bef98ac95734202c6146a27047ed54",
+  "autogen_commit": "56e881a3d696a4916a91c1be6289da2ff565ff66",
+  "native_new_campaigns": {
+    "1836": {
+      "ok": true,
+      "checked": 2703,
+      "failures": 0,
+      "source_sha256": "86b90eee6b71976f5cfa91b3a052b7d02d5c82bbf866001c56cfa2cffc89d16b",
+      "seconds": 31.89100000000326
+    },
+    "1861": {
+      "ok": true,
+      "checked": 2703,
+      "failures": 0,
+      "source_sha256": "32746a449b67207fdeff522eebd9661ad17bbbdaf4a06882de3bc9677c9f8c70",
+      "seconds": 44.64100000000326
+    }
+  },
+  "textures": {
+    "categories": 52,
+    "provinces": 2703,
+    "painted_provinces": 2703,
+    "changed_pixels": 4081724,
+    "atlas_size": 4096,
+    "variants_per_terrain": 4,
+    "unique_variants": 208,
+    "dds_bytes": 8388736,
+    "dds_linear_size": 8388608,
+    "dds_sha256": "9e10bdad03541ad8537d33d81ec73af3169620237584291dc55d0919aebefaa0",
+    "decoded_sha256": "b1847a7e91986b6135c9889182feb9e48fd52cab43cbccc81132eabe9b666c82",
+    "decoded_unique_variants": 208,
+    "compression": "DXT1 lossy"
+  },
+  "preview": {
+    "shader_sha256": "82157cf4e68d6cc725f4367abb62e43d979fe41414f8900f6e0bb175c167618d",
+    "world_extent": 128,
+    "pixels": 768,
+    "addressing": "mirrored per rotated/scaled/warped variant with half-texel clamp",
+    "blend": "permute289 value noise, domain warp, per-variant rotations/scales, noise smoothstep",
+    "note": "CPU-превью не включает освещение, colormap, переходы типов и сезон; rawgrid не доказывает бесшовность"
+  },
+  "final_sha256": {
+    "gfx/FX/terrain_2_0.fx": "82157cf4e68d6cc725f4367abb62e43d979fe41414f8900f6e0bb175c167618d",
+    "map/terrain.bmp": "56daab6378792ce472d7836615f9eba219f6265cdd7bd724463e186c312a0b06",
+    "map/terrain.txt": "3f4905cbd77b793703b3335b84a236488634d4468bbca7b1f0521ff006ca18f5",
+    "map/terrain/texturesheet.dds": "9e10bdad03541ad8537d33d81ec73af3169620237584291dc55d0919aebefaa0",
+    "map/terrain/texturesheet2.dds": "9e10bdad03541ad8537d33d81ec73af3169620237584291dc55d0919aebefaa0",
+    "tools/terrain_map.py": "5ef96a59018985dfb62ec4ecba2d073114c58c2974a1b490d7a55fede37b9a94",
+    "assets/terrain/tiles.json": "4a5f544ab4138b1ad2b09bcb817d57999ecaabca6ebc3cfeeea94c0e26fc8241",
+    "assets/terrain/prompts.json": "705d7c41c07c1cf2e63c2e5ce52826864877dbd75f34b071b813d2feb053ec86",
+    "assets/terrain/legend.png": "820730245ac06a6eb2d93d1df26ebf97d4929dbfa5499eea58a6b2936698eaf6"
+  },
+  "user_save_sources_unchanged": [
+    {
+      "source": "D:\\Documents\\Paradox Interactive\\Victoria II\\save games\\isolation_baseline.v2",
+      "sha256": "71482856b95e1823e8bae24385441ea808f31bab2aa617b7729e7571ceb05cd1",
+      "copy": "D:\\v2game\\.work\\terrain-test\\userdata\\save games\\isolation_baseline.v2"
+    },
+    {
+      "source": "D:\\Documents\\Paradox Interactive\\Victoria II\\save games\\1931.v2",
+      "copy": "D:\\v2game\\.work\\terrain-test\\userdata\\save games\\1931.v2",
+      "sha256": "ff936fe0e1f1ede2501c545bc95d3cb44aee52a7c3f32c7a2041a98ce56e936f"
+    }
+  ],
+  "legacy_save": {
+    "source": "1931.v2",
+    "loaded": true,
+    "advanced_days": 1,
+    "test_save": "terrain1931a.v2",
+    "test_save_sha256": "5cc30b89e2d6b58313e8f36eb1e0d63da7b4c3ee8c515686d214f6611e8c636d",
+    "reloaded_date_raw": 60715584
+  },
+  "graphics_review_sha256": "8dd93e32e131d90abb71630b536f1f469022c69061694605c70864fce13087a9",
+  "life_report_sha256": "a027de52519798ba74ddf4f9a3ddfc9e76a512ea9061c91deee102167aa04a3b",
+  "runtime_plugin_present": false,
+  "fps_benchmark": {
+    "qualified": false,
+    "reason": "Временный наблюдатель Present упал до первого записанного кадра и удалён. Равная частота кадров не заявляется."
+  },
+  "gui_evidence": [
+    "docs/images/terrain-physical.png",
+    "docs/images/terrain-political.png"
+  ],
+  "performance_texture_fetches": {
+    "original_physical": 8,
+    "original_political": 10,
+    "new_physical": 20,
+    "new_political": 22
+  }
+}

@@ -362,6 +362,44 @@ struct TILE_STRUCT
 };
 
 
+// Детерминированная перестановка целых координат; промежуточные значения точны в float.
+float4 TerrainHash( float4 x, float4 y )
+{
+    float4 n = y - floor( y / 289.0 ) * 289.0;
+    n = (n * 34.0 + 1.0) * n;
+    n -= floor( n / 289.0 ) * 289.0;
+    n += x;
+    n -= floor( n / 289.0 ) * 289.0;
+    n = (n * 34.0 + 1.0) * n;
+    n -= floor( n / 289.0 ) * 289.0;
+    return n / 289.0;
+}
+
+float TerrainValueNoise( float2 p )
+{
+    float2 cell = floor( p );
+    float2 t = frac( p );
+    t = t * t * (3.0 - 2.0 * t);
+    float4 corners = TerrainHash( cell.x + float4(0,1,0,1), cell.y + float4(0,0,1,1) );
+    return lerp( lerp(corners.x,corners.y,t.x), lerp(corners.z,corners.w,t.x), t.y );
+}
+
+float2 TerrainVariantUV( float2 p )
+{
+    float2 uv = 1.0 - abs( frac(p * 0.5) * 2.0 - 1.0 );
+    return clamp( uv / 16.0, 0.5 / 4096.0, 1.0 / 16.0 - 0.5 / 4096.0 );
+}
+
+float4 SampleTerrainVariants( float2 origin, float4 uvAB, float4 uvCD, float2 blend )
+{
+    float4 a = tex2D( TextureSheet, origin + uvAB.xy );
+    float4 b = tex2D( TextureSheet, origin + uvAB.zw + float2(1.0/16.0,0) );
+    float4 c = tex2D( TextureSheet, origin + uvCD.xy + float2(0,1.0/16.0) );
+    float4 d = tex2D( TextureSheet, origin + uvCD.zw + float2(1.0/16.0,1.0/16.0) );
+    return lerp( lerp(a,b,blend.x), lerp(c,d,blend.x), blend.y );
+}
+
+
 float4 GenerateTiles( TILE_STRUCT v )
 {
 	float4 IndexColor = tex2D( QuadIndexTexture, v.vTerrainIndexColor.xy ); //Coordinates for for quad texture of index colors
@@ -380,40 +418,45 @@ float4 GenerateTiles( TILE_STRUCT v )
 	IndexCoordY = trunc(IndexCoordY);
 	float4 vIndexCoordY = IndexCoordY * NUM_TILES_Y;
 	
-	float2 TexCoord = v.vColorTexCoord + 0.5;
-	TexCoord = frac( TexCoord ); // 0 => 1 range.. only thing we need is the decimal part.
-	TexCoord.x = 1.0 - TexCoord.x;
-	
-	float2 PixelTexCoord = v.vTexCoord0;
-	PixelTexCoord = frac( PixelTexCoord ); // 0 => 1 range.. only thing we need is the decimal part.
-	
-	TexCoord.x *= NUM_TILES_X;
-	TexCoord.y *= (NUM_TILES_Y - 0.001);
-	
-	TexCoord.x = clamp( TexCoord.x, 0.001, X_CLAMP );
-	TexCoord.y = clamp( TexCoord.y, 0.001, Y_CLAMP );
-	
+	// Общие мировые поля: фаза не зависит от провинции, берега или режима карты.
+	float2 p = v.vTexCoord0 / 16.0;
+	float2 warp = float2( TerrainValueNoise(p * 0.21 + float2(3.7,9.2)),
+	                     TerrainValueNoise(p * 0.173 + float2(21.3,6.4)) );
+	p += (warp - 0.5) * 0.65;
+	// Разные углы, масштабы и фазы разрушают общие оси зеркального орнамента.
+	float4 uvAB;
+	float4 uvCD;
+	uvAB.xy = TerrainVariantUV( float2(0.956304756*p.x-0.292371705*p.y,0.292371705*p.x+0.956304756*p.y) * 0.91 + float2(0.13,1.71) );
+	uvAB.zw = TerrainVariantUV( float2(0.292371705*p.x-0.956304756*p.y,0.956304756*p.x+0.292371705*p.y) * 1.07 + float2(2.23,-0.41) );
+	uvCD.xy = TerrainVariantUV( float2(-0.731353702*p.x-0.681998360*p.y,0.681998360*p.x-0.731353702*p.y) * 1.19 + float2(-1.37,3.11) );
+	uvCD.zw = TerrainVariantUV( float2(-0.754709580*p.x+0.656059029*p.y,-0.656059029*p.x-0.754709580*p.y) * 0.87 + float2(4.73,2.61) );
+	float2 VariantBlend = float2( TerrainValueNoise(p * 0.137 + float2(9.3,4.7)),
+	                             TerrainValueNoise(p * 0.119 + float2(31.1,17.9)) );
+	VariantBlend = saturate( (VariantBlend - 0.5) * 1.8 + 0.5 );
+	VariantBlend = VariantBlend * VariantBlend * (3.0 - 2.0 * VariantBlend);
+	float2 PixelTexCoord = frac( v.vTexCoord0 );
+
 	float2 uvThis;
 	uvThis.x = vIndexCoordX.x;
 	uvThis.y = vIndexCoordY.x;
 
-	float4 LeftTerrain = tex2D( TextureSheet, TexCoord + uvThis );
+	float4 LeftTerrain = SampleTerrainVariants( uvThis, uvAB, uvCD, VariantBlend );
 	
 	uvThis.x = vIndexCoordX.y;
 	uvThis.y = vIndexCoordY.y;
 	
-	float4 UpLeftTerrain = tex2D( TextureSheet, TexCoord + uvThis );
+	float4 UpLeftTerrain = SampleTerrainVariants( uvThis, uvAB, uvCD, VariantBlend );
 	
 	uvThis.x = vIndexCoordX.z;
 	uvThis.y = vIndexCoordY.z;
 
-	float4 Terrain = tex2D( TextureSheet, TexCoord + uvThis ); //->left
+	float4 Terrain = SampleTerrainVariants( uvThis, uvAB, uvCD, VariantBlend ); //->left
 	
 	//return Terrain;	
 	uvThis.x = vIndexCoordX.w;
 	uvThis.y = vIndexCoordY.w;
 	
-	float4 UpTerrain = tex2D( TextureSheet, TexCoord + uvThis ); //->upleft
+	float4 UpTerrain = SampleTerrainVariants( uvThis, uvAB, uvCD, VariantBlend ); //->upleft
 	
 	
 	
@@ -1018,8 +1061,8 @@ technique TerrainShader_Graphical
 {
 	pass p0
 	{
-		VertexShader = compile vs_1_1 VertexShader_Map();
-		PixelShader = compile ps_2_0 PixelShader_Map2_0();
+		VertexShader = compile vs_3_0 VertexShader_Map();
+		PixelShader = compile ps_3_0 PixelShader_Map2_0();
 	}
 }
 
@@ -1027,8 +1070,8 @@ technique TerrainShader_General
 {
 	pass p0
 	{
-		VertexShader = compile vs_1_1 VertexShader_Map_General();
-		PixelShader = compile ps_2_0 PixelShader_Map2_0_General();
+		VertexShader = compile vs_3_0 VertexShader_Map_General();
+		PixelShader = compile ps_3_0 PixelShader_Map2_0_General();
 	}
 }
 
@@ -1065,8 +1108,8 @@ technique BeachShader_Graphical
 		SrcBlend = SRCALPHA;
 		DestBlend = INVSRCALPHA;
 			
-		VertexShader = compile vs_1_1 VertexShader_Beach();
-		PixelShader = compile ps_2_0 PixelShader_Beach();
+		VertexShader = compile vs_3_0 VertexShader_Beach();
+		PixelShader = compile ps_3_0 PixelShader_Beach();
 	}
 }
 
@@ -1081,8 +1124,8 @@ technique BeachShader_General
 		//SrcBlend = SRCALPHA;
 		//§DestBlend = INVSRCALPHA;
 				
-		VertexShader = compile vs_1_1 VertexShader_Beach_General();
-		PixelShader = compile ps_2_0 PixelShader_Beach_General();
+		VertexShader = compile vs_3_0 VertexShader_Beach_General();
+		PixelShader = compile ps_3_0 PixelShader_Beach_General();
 	}
 }
 
