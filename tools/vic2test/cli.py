@@ -76,7 +76,7 @@ def prepare(destination: Path, saves: list[Path]) -> dict:
     game.mkdir()
     (user / "save games").mkdir(parents=True)
     for item in ROOT.iterdir():
-        if item.name in EXCLUDED:
+        if item.name in EXCLUDED or item.name.startswith("autogen"):
             continue
         target = game / item.name
         if item.is_dir():
@@ -185,7 +185,9 @@ def start(environment: Path, hidden: bool, save: str | None = None, mods: list[s
 def wait_request(environment: Path, command: str, timeout: float) -> dict:
     deadline = time.monotonic() + timeout
     while True:
-        result = request(environment, command, min(15, max(0.1, deadline - time.monotonic())))
+        # Первый запрос может ожидать завершения загрузки игровых данных.
+        # После доставки запрос нельзя повторять: истёкший срок отравляет сессию.
+        result = request(environment, command, max(0.1, deadline - time.monotonic()))
         if result.get("ok") or result.get("error") not in {"E_NO_PIPE", "E_NOT_READY"}:
             return result
         if time.monotonic() >= deadline:

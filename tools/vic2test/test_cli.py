@@ -18,6 +18,9 @@ class PreparationTests(unittest.TestCase):
             root = Path(directory) / "game"
             root.mkdir()
             (root / "v2game.exe").write_bytes(b"fixture executable")
+            generator = root / "autogen" / ".vs"
+            generator.mkdir(parents=True)
+            (generator / "locked.vsidx").write_bytes(b"source-only IDE cache")
             (root / "settings.txt").write_text('fullScreen=yes\nautosave="MONTHLY"\n', encoding="cp1251")
             (root / "messagetypes_custom.txt").write_text('notice={ popup=yes pausepopup = yes log=yes }', encoding="cp1251")
             source = Path(directory) / "original.v2"
@@ -27,6 +30,7 @@ class PreparationTests(unittest.TestCase):
                 result = cli.prepare(root / ".work" / "test", [source])
             copy = Path(result["sources"][0]["copy"])
             self.assertEqual(copy.read_bytes(), source.read_bytes())
+            self.assertFalse((Path(result["game"]) / "autogen").exists())
             copy.write_bytes(b"changed copy")
             self.assertEqual(source.read_bytes(), b'date="1836.1.1"')
             self.assertEqual((root / "settings.txt").read_text(encoding="cp1251"), 'fullScreen=yes\nautosave="MONTHLY"\n')
@@ -59,6 +63,11 @@ class ScriptTests(unittest.TestCase):
 
 
 class DeadlineTests(unittest.TestCase):
+    def test_initial_loading_uses_requested_deadline_without_short_retry(self):
+        with patch.object(cli, "request", return_value={"ok": True}) as exchange:
+            self.assertTrue(cli.wait_request(Path("unused"), "open-single-player", 600)["ok"])
+            self.assertGreater(exchange.call_args.args[2], 590)
+
     def test_stalled_exchange_is_bounded_and_poison_blocks_later_commands(self):
         with tempfile.TemporaryDirectory() as directory:
             environment = Path(directory)
