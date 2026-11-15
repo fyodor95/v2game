@@ -1,0 +1,25 @@
+# Только изолированный квалификационный стенд. В основную игру не устанавливать.
+country_event = {
+    id = 3997201
+    title = "MTTH60"
+    desc = "MTTH60"
+    is_triggered_only = yes
+    mean_time_to_happen = { months = 60 }
+    option = { name = "OK" }
+}
+country_event = {
+    id = 3997202
+    title = "MTTH1"
+    desc = "MTTH1"
+    is_triggered_only = yes
+    mean_time_to_happen = { months = 1 }
+    option = { name = "OK" }
+}
+country_event = {
+    id = 3997203
+    title = "MTTHday"
+    desc = "MTTHday"
+    is_triggered_only = yes
+    mean_time_to_happen = { days = 1 }
+    option = { name = "OK" }
+}
