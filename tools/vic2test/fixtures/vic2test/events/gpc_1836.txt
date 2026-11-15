@@ -1,0 +1,17 @@
+# “олько изолированный стенд: точечна€ выдача технологии дл€ проверки GPC в 1836 году.
+country_event = {
+    id = 3997210
+    title = "VIC2TEST_GPC_1836_TITLE"
+    desc = "VIC2TEST_GPC_1836_DESC"
+    is_triggered_only = yes
+
+    option = {
+        name = "VIC2TEST_GPC_1836_OPTION"
+        PRU = {
+            activate_technology = nationalism_n_imperialism
+        }
+        AUS = {
+            activate_technology = nationalism_n_imperialism
+        }
+    }
+}

@@ -259,6 +259,79 @@
       "NGF"
     ],
     "total_additions": 26,
-    "exact_delta_pending": true
+    "exact_delta": ".work/gpc-acceptance/.work/delta-tie.json",
+    "expected": 26,
+    "actual": 26,
+    "missing": 0,
+    "unexpected": 0,
+    "removed": 0,
+    "remaining": 0,
+    "before_sha256": "2168a5f84c802fe21cc2ca4f2ef84b2fe829c9e590953d93f395e256f3ef6b25",
+    "after_sha256": "583275e528dc1cc510386e683c269daffc497d4e811a7c5f6a6bbad48e91c22b"
+  },
+  "acceptance_environment": {
+    "worktree": "D:/v2game/.work/gpc-acceptance",
+    "branch": "codex/gpc-acceptance",
+    "base_commit": "8445009de6b8b80e1ff41ae2ac4b37898d4e58ef",
+    "environments": [
+      ".work/gpc-probe2",
+      ".work/gpc-mp-host",
+      ".work/gpc-mp-client"
+    ],
+    "sound_all_zero": true,
+    "startup_failure": {
+      "report": ".work/gpc-acceptance/.work/startup-diagnostic-02/result.json",
+      "stage": "Direct3D CreateDevice before main menu",
+      "cause_proven": false,
+      "test_process_stopped": true,
+      "user_game_untouched": true
+    },
+    "development_resumed_main": true,
+    "user_resumed_launch_permission": "2026-11-16"
+  },
+  "sp_return": {
+    "qualified": true,
+    "cycles": 3,
+    "process_id": 12536,
+    "campaigns": [
+      1836,
+      1931,
+      1841,
+      1836
+    ],
+    "report": ".work/gpc-artifacts/sp-return-qualification-02.json",
+    "tool_commit": "9f91c7fd",
+    "initial_failure_preserved": true
+  },
+  "invalid_state_runtime": {
+    "ok": true,
+    "cases": [
+      "unknown_version",
+      "partial_dual_rail"
+    ],
+    "failed": 1,
+    "rng": 0,
+    "pass": 0,
+    "reinitialized": false,
+    "forced_run_blocked": true,
+    "save_blocked": true,
+    "report": ".work/gpc-artifacts/native-invalid-state-01.json"
+  },
+  "sp1836": {
+    "production_dll_sha256": "f7ac480679a5008b8be3add48f385e1cf9e706e805d07d1235647dd639cba32b",
+    "negative_pairs": 0,
+    "technology_fixture_event": 3997210,
+    "accelerated_pass": 3,
+    "accelerated_additions": 56,
+    "pru_additions": 35,
+    "aus_additions": 21,
+    "repeat_additions": 0,
+    "paused_exact_delta": ".work/gpc-artifacts/delta1836paused.json",
+    "ambient_deltas_passed": false,
+    "ambient_removals_negative": 10,
+    "ambient_removals_positive": 1,
+    "reload_remaining": 0,
+    "russian_notice_button_checked": true,
+    "report": "docs/research/gpc-1836-validation.md"
   }
 }
