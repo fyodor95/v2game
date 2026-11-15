@@ -34,7 +34,8 @@ def main():
     backup = ROOT / '.work/install-backups' / stamp
     backup.mkdir(parents=True)
     sources = {name: build / source for name, source in files.items()}
-    sources['z_CreatineCore/creatinecore_settings.ini'] = ROOT / 'tools/creatinecore-profile/creatinecore_settings.ini'
+    settings = 'z_CreatineCore/creatinecore_settings.ini'
+    sources[settings] = ROOT / 'tools/creatinecore-profile/creatinecore_settings.ini'
     before = {}
     for relative in sources:
         path = destination / relative
@@ -45,6 +46,9 @@ def main():
             shutil.copy2(path, saved)
     (backup / 'before.json').write_text(json.dumps({'destination': str(destination), 'files': before}, indent=2), encoding='utf-8')
     for relative, source in sources.items():
+        # Существующие настройки пользователя сохраняются целиком, включая кодировку.
+        if relative == settings and before[relative] is not None:
+            continue
         path = destination / relative
         path.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source, path)
