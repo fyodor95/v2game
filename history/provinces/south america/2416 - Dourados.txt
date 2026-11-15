@@ -2,4 +2,4 @@ terrain = dry_forest
 owner = BRZ
 controller = BRZ
 add_core = BRZtrade_goods = fruit
-life_rating = 25
+life_rating = 38

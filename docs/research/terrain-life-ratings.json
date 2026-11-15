@@ -1,0 +1,360 @@
+{
+  "проверено_провинций": 2703,
+  "с_владельцем_в_базовой_записи": 2313,
+  "без_владельца_в_базовой_записи": 390,
+  "проверено_датированных_состояний": 916,
+  "изменено_файлов_истории": 1255,
+  "файлы_генерации_вне_истории": [
+    "events\\goods_changes.txt"
+  ],
+  "событий_goods_changes": 38,
+  "коэффициенты_и_база_сохранены": true,
+  "прочие_события_неизменны": true,
+  "прочие_байты_истории_сохранены": true,
+  "ошибки_пустых_строк": [],
+  "число_проверенных_хешей_исходных_файлов": 4493,
+  "значения_attrition": {
+    "ocean": {
+      "attrition": 0.0,
+      "double_times_10": "0.0",
+      "maxLifeRating": 40
+    },
+    "arctic": {
+      "attrition": 2.0,
+      "double_times_10": "20.0",
+      "maxLifeRating": 20
+    },
+    "farmlands": {
+      "attrition": 0.0,
+      "double_times_10": "0.0",
+      "maxLifeRating": 40
+    },
+    "forest": {
+      "attrition": 0.0,
+      "double_times_10": "0.0",
+      "maxLifeRating": 40
+    },
+    "hills": {
+      "attrition": 0.0,
+      "double_times_10": "0.0",
+      "maxLifeRating": 40
+    },
+    "woods": {
+      "attrition": 0.0,
+      "double_times_10": "0.0",
+      "maxLifeRating": 40
+    },
+    "mountain": {
+      "attrition": 2.0,
+      "double_times_10": "20.0",
+      "maxLifeRating": 20
+    },
+    "steppe": {
+      "attrition": 0.0,
+      "double_times_10": "0.0",
+      "maxLifeRating": 40
+    },
+    "plains": {
+      "attrition": 0.0,
+      "double_times_10": "0.0",
+      "maxLifeRating": 40
+    },
+    "jungle": {
+      "attrition": 2.0,
+      "double_times_10": "20.0",
+      "maxLifeRating": 20
+    },
+    "marsh": {
+      "attrition": 1.5,
+      "double_times_10": "15.0",
+      "maxLifeRating": 25
+    },
+    "desert": {
+      "attrition": 2.5,
+      "double_times_10": "25.0",
+      "maxLifeRating": 15
+    },
+    "good_farmland": {
+      "attrition": 0.0,
+      "double_times_10": "0.0",
+      "maxLifeRating": 40
+    },
+    "floodplain_farmland": {
+      "attrition": 0.5,
+      "double_times_10": "5.0",
+      "maxLifeRating": 35
+    },
+    "marginal_farmland": {
+      "attrition": 0.0,
+      "double_times_10": "0.0",
+      "maxLifeRating": 40
+    },
+    "hilly_farmland": {
+      "attrition": 0.0,
+      "double_times_10": "0.0",
+      "maxLifeRating": 40
+    },
+    "mountain_farmland": {
+      "attrition": 1.0,
+      "double_times_10": "10.0",
+      "maxLifeRating": 30
+    },
+    "forested_farmland": {
+      "attrition": 0.0,
+      "double_times_10": "0.0",
+      "maxLifeRating": 40
+    },
+    "jungle_farmland": {
+      "attrition": 0.8,
+      "double_times_10": "8.0",
+      "maxLifeRating": 32
+    },
+    "temperate_grassland": {
+      "attrition": 0.0,
+      "double_times_10": "0.0",
+      "maxLifeRating": 40
+    },
+    "dry_grassland": {
+      "attrition": 0.5,
+      "double_times_10": "5.0",
+      "maxLifeRating": 35
+    },
+    "hilly_grassland": {
+      "attrition": 0.6,
+      "double_times_10": "6.0",
+      "maxLifeRating": 34
+    },
+    "mountain_grassland": {
+      "attrition": 2.2,
+      "double_times_10": "22.0",
+      "maxLifeRating": 18
+    },
+    "semi_desert": {
+      "attrition": 1.5,
+      "double_times_10": "15.0",
+      "maxLifeRating": 25
+    },
+    "semi_desert_hills": {
+      "attrition": 1.4,
+      "double_times_10": "14.0",
+      "maxLifeRating": 26
+    },
+    "semi_desert_mountains": {
+      "attrition": 2.4,
+      "double_times_10": "24.0",
+      "maxLifeRating": 16
+    },
+    "desert_hills": {
+      "attrition": 2.0,
+      "double_times_10": "20.0",
+      "maxLifeRating": 20
+    },
+    "desert_mountains": {
+      "attrition": 2.6,
+      "double_times_10": "26.0",
+      "maxLifeRating": 14
+    },
+    "dry_forest": {
+      "attrition": 0.25,
+      "double_times_10": "2.5",
+      "maxLifeRating": 38
+    },
+    "dry_forest_hills": {
+      "attrition": 0.3,
+      "double_times_10": "3.0",
+      "maxLifeRating": 37
+    },
+    "dry_forest_mountains": {
+      "attrition": 2.1,
+      "double_times_10": "21.0",
+      "maxLifeRating": 19
+    },
+    "deciduous_forest": {
+      "attrition": 0.0,
+      "double_times_10": "0.0",
+      "maxLifeRating": 40
+    },
+    "deciduous_forest_hills": {
+      "attrition": 0.0,
+      "double_times_10": "0.0",
+      "maxLifeRating": 40
+    },
+    "deciduous_forest_mountains": {
+      "attrition": 1.5,
+      "double_times_10": "15.0",
+      "maxLifeRating": 25
+    },
+    "conifer_forest": {
+      "attrition": 0.0,
+      "double_times_10": "0.0",
+      "maxLifeRating": 40
+    },
+    "conifer_forest_hills": {
+      "attrition": 0.0,
+      "double_times_10": "0.0",
+      "maxLifeRating": 40
+    },
+    "conifer_forest_mountains": {
+      "attrition": 1.9,
+      "double_times_10": "19.0",
+      "maxLifeRating": 21
+    },
+    "boreal_forest": {
+      "attrition": 0.5,
+      "double_times_10": "5.0",
+      "maxLifeRating": 35
+    },
+    "boreal_forest_hills": {
+      "attrition": 0.6,
+      "double_times_10": "6.0",
+      "maxLifeRating": 34
+    },
+    "boreal_forest_mountains": {
+      "attrition": 2.5,
+      "double_times_10": "25.0",
+      "maxLifeRating": 15
+    },
+    "jungle_hills": {
+      "attrition": 2.2,
+      "double_times_10": "22.0",
+      "maxLifeRating": 18
+    },
+    "jungle_mountains": {
+      "attrition": 3.0,
+      "double_times_10": "30.0",
+      "maxLifeRating": 10
+    },
+    "seasonal_jungle": {
+      "attrition": 1.5,
+      "double_times_10": "15.0",
+      "maxLifeRating": 25
+    },
+    "seasonal_jungle_hills": {
+      "attrition": 1.6,
+      "double_times_10": "16.0",
+      "maxLifeRating": 24
+    },
+    "seasonal_jungle_mountains": {
+      "attrition": 2.4,
+      "double_times_10": "24.0",
+      "maxLifeRating": 16
+    },
+    "cold_desert": {
+      "attrition": 2.7,
+      "double_times_10": "27.0",
+      "maxLifeRating": 13
+    },
+    "cold_desert_hills": {
+      "attrition": 2.9,
+      "double_times_10": "29.0",
+      "maxLifeRating": 11
+    },
+    "cold_desert_mountains": {
+      "attrition": 2.8,
+      "double_times_10": "28.0",
+      "maxLifeRating": 12
+    },
+    "tundra": {
+      "attrition": 3.0,
+      "double_times_10": "30.0",
+      "maxLifeRating": 10
+    },
+    "tundra_hills": {
+      "attrition": 3.0,
+      "double_times_10": "30.0",
+      "maxLifeRating": 10
+    },
+    "tundra_mountains": {
+      "attrition": 3.5,
+      "double_times_10": "35.0",
+      "maxLifeRating": 10
+    },
+    "boreal_marsh": {
+      "attrition": 2.0,
+      "double_times_10": "20.0",
+      "maxLifeRating": 20
+    },
+    "swamp_jungle": {
+      "attrition": 2.5,
+      "double_times_10": "25.0",
+      "maxLifeRating": 15
+    }
+  },
+  "исходный_манифест_sha256": "83f92ae45c98079e54c099c6b77b95025fe84ead57cbbfe7ddcf3067572c366c",
+  "csv_sha256": "e5bc459f42097148cceda5d03fbb9d08386e97bb17911814885118c3c6482894",
+  "метод_побайтовой_проверки": "Заменены только числовые значения life_rating; удалены только добавленные строки/inline-поля; оставшиеся байты совпадают точно, с учётом scope и повторных дат.",
+  "проверяющий_скрипт_sha256": "07c41b27320b0efae4669c74e6668a9183402208dd2c5aa32a08566d1b63abd3",
+  "idempotency": {
+    "exit_code": 0,
+    "seconds": 80.3611523,
+    "started_utc": "2026-11-15T14:57:54.2686190Z",
+    "ended_utc": "2026-11-15T14:59:14.6354647Z",
+    "checked_files": 4495,
+    "baseline_manifest_files": 4493,
+    "service_files": [
+      "decisions_id_list.txt",
+      "events_id_list.txt"
+    ],
+    "changed": [],
+    "added": [],
+    "removed": [],
+    "root_transferred_files": 1256,
+    "root_transferred_mismatches": [],
+    "executable_sha256": "9aa6b84657296560299095df78fce23aeaeb6ce0cad8a8fac5893c0af2d0e685",
+    "snapshot_sha256": "5f7d80a05132edfd5be5668cf19be15c4268c66d53ac2a63c1927e5e781c2c2e",
+    "log": "D:/v2game/.work/terrain-generation/run-idempotency-verified.log",
+    "ok": true
+  },
+  "integration": {
+    "history_files": 1255,
+    "events": [
+      "events/goods_changes.txt"
+    ],
+    "total_files": 1256,
+    "source_hashes_verified_before_writes": true,
+    "output_hashes_verified_after_writes": true,
+    "service_lists_copied": false
+  },
+  "native_baseline": {
+    "ok": true,
+    "complete": true,
+    "provinces": 2703,
+    "requests": 4110,
+    "seconds": 117.34399999998277,
+    "unresolved": [],
+    "hypothesis_mismatches": [
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      72,
+      74,
+      75,
+      76,
+      77,
+      1689,
+      1745,
+      2592,
+      2594,
+      2595,
+      2596,
+      2597,
+      2598,
+      2625,
+      2626,
+      2627,
+      2628,
+      2629
+    ],
+    "source": {
+      "kind": "git",
+      "commit": "ed4c7ac427bef98ac95734202c6146a27047ed54"
+    },
+    "sha256": "12f3193d4940aded1806aa265f6ca206add8b7067bfe616f4e7e8cd5b9171a99"
+  }
+}

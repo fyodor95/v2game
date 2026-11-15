@@ -4,7 +4,7 @@ controller = DEN
 colonial = 2
 
 trade_goods = cattle
-life_rating = 15
+life_rating = 32
 1861.1.1 = {
 	owner = ENG
 	controller = ENG

@@ -2,5 +2,5 @@ terrain = boreal_forest_hills
 owner = RUS
 controller = RUS
 trade_goods = fish
-life_rating = 10
+life_rating = 34
 colonial = 2

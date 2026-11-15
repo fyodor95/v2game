@@ -2,5 +2,5 @@ terrain = conifer_forest_hills
 owner = ENG
 controller = ENG
 trade_goods = timber
-life_rating = 30
+life_rating = 40
 colonial = 2

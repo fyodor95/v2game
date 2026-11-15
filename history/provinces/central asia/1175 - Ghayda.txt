@@ -3,4 +3,4 @@ owner = YEM
 controller = YEM
 add_core = YEM
 trade_goods = opium
-life_rating = 17
+life_rating = 20

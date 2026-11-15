@@ -2,5 +2,5 @@ terrain = dry_forest
 owner = ENG
 controller = ENG
 trade_goods = cotton
-life_rating = 35
+life_rating = 38
 colonial = 2

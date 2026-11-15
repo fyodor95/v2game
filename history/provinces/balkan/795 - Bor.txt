@@ -4,4 +4,4 @@ controller = SER
 add_core = SER
 add_core = YUG
 trade_goods = grain
-life_rating = 37
+life_rating = 40

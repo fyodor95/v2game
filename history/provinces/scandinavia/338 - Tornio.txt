@@ -5,4 +5,4 @@ add_core = RUS
 add_core = FIN
 add_core = SWE
 trade_goods = iron
-life_rating = 16
+life_rating = 35

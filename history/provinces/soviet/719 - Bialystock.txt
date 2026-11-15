@@ -6,4 +6,4 @@ add_core = POL
 add_core = PLC
 add_core = BYE
 trade_goods = grain
-life_rating = 39
+life_rating = 40

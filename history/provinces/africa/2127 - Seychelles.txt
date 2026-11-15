@@ -2,5 +2,5 @@ terrain = jungle_hills
 owner = ENG
 controller = ENG
 trade_goods = fruit
-life_rating = 24
+life_rating = 18
 colonial = 2

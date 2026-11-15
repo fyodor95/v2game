@@ -4,4 +4,4 @@ controller = SWE
 add_core = SWE
 add_core = SCA
 trade_goods = iron
-life_rating = 17
+life_rating = 34

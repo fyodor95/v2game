@@ -2,5 +2,5 @@ terrain = deciduous_forest_hills
 owner = ENG
 controller = ENG
 trade_goods = wool
-life_rating = 35
+life_rating = 40
 colonial = 2

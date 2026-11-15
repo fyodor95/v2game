@@ -1,7 +1,7 @@
 terrain = deciduous_forest_hills
 trade_goods = cattle
 life_rating = 30
-1861.1.1 = { 
+1861.1.1 = { life_rating = 40  
 	owner = ENG
 	controller = ENG
 	colonial = 2

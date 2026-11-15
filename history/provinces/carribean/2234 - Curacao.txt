@@ -2,5 +2,5 @@ terrain = marginal_farmland
 owner = NET
 controller = NET
 trade_goods = tobacco
-life_rating = 35
+life_rating = 40
 colonial = 2

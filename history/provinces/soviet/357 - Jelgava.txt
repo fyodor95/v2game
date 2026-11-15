@@ -6,4 +6,4 @@ add_core = LAT
 add_core = UBD
 add_core = PLC
 trade_goods = cattle
-life_rating = 39
+life_rating = 40

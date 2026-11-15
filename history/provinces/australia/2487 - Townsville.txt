@@ -2,5 +2,5 @@ terrain = dry_forest_hills
 owner = ENG
 controller = ENG
 trade_goods = cattle
-life_rating = 30
+life_rating = 37
 colonial = 2

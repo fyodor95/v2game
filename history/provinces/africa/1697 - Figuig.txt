@@ -3,4 +3,4 @@ owner = MOR
 controller = MOR
 add_core = MOR
 trade_goods = fruit
-life_rating = 17
+life_rating = 20

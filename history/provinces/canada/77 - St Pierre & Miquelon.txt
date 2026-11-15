@@ -2,5 +2,5 @@ terrain = boreal_forest
 owner = FRA
 controller = FRA
 trade_goods = fish
-life_rating = 20
+life_rating = 35
 colonial = 2

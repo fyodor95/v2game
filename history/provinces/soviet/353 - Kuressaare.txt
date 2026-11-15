@@ -5,4 +5,4 @@ add_core = RUS
 add_core = EST
 add_core = UBD
 trade_goods = grain
-life_rating = 39
+life_rating = 40

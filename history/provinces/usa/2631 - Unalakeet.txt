@@ -2,6 +2,7 @@ terrain = boreal_forest_hills
 trade_goods = fish
 life_rating = 10
 1861.1.1 = {
+	life_rating = 34
 	owner = RUS
 	controller = RUS
 	colonial = 2
