@@ -345,6 +345,22 @@ def main() -> int:
     p.add_argument("--mod", action="append", default=[], help="Имя .mod в тестовом каталоге mod")
     p = commands.add_parser("status", help="Получить состояние от нативного плагина")
     p.add_argument("--environment", type=Path, required=True)
+    p = commands.add_parser("culture-cores", help="Диагностика нативного модуля национальных провинций")
+    p.add_argument("operation", choices=["status"])
+    p.add_argument("--environment", type=Path, required=True)
+    p = commands.add_parser("mp", help="Штатные сетевые действия движка без мыши и клавиатуры")
+    p.add_argument("operation", choices=["state", "open", "lobby", "front-state", "host", "join", "load", "country", "play", "ready", "pause", "speed", "events", "option", "save-menu", "save"])
+    p.add_argument("--environment", type=Path, required=True)
+    p.add_argument("--player")
+    p.add_argument("--name")
+    p.add_argument("--address")
+    p.add_argument("--save")
+    p.add_argument("--tag")
+    p.add_argument("--paused", choices=["yes", "no"])
+    p.add_argument("--level", type=int)
+    p.add_argument("--id", type=int)
+    p.add_argument("--option", type=int)
+    p.add_argument("--timeout", type=float, default=600)
     p = commands.add_parser("stop", help="Завершить только тестовую сессию без сохранения")
     p.add_argument("--environment", type=Path, required=True)
     p = commands.add_parser("save", help="Вызвать штатное сохранение в тестовом каталоге")
@@ -383,6 +399,20 @@ def main() -> int:
             return emit(prepare(args.destination, args.save))
         if args.command == "start":
             return emit(start(args.environment, args.hidden, args.save, args.mod))
+        if args.command == "culture-cores":
+            return emit(request(args.environment, "culture-cores-status", 30))
+        if args.command == "mp":
+            fields = {"host": [args.player, args.name], "join": [args.player, args.address],
+                      "load": [args.save], "country": [args.tag],
+                      "pause": [None if args.paused is None else ("1" if args.paused == "yes" else "0")],
+                      "option": [None if args.id is None else str(args.id), None if args.option is None else str(args.option)],
+                      "save": [args.name],
+                      "speed": [None if args.level is None else str(args.level)]}.get(args.operation, [])
+            if args.timeout <= 0:
+                raise ValueError("Срок сетевой команды должен быть положительным")
+            if any(not value or not re.fullmatch(r"[A-Za-z0-9_.-]{1,63}", value) for value in fields):
+                raise ValueError("Укажите необходимые аргументы сетевой команды; допустимы ASCII-слова без пробелов")
+            return emit(request(args.environment, " ".join(["mp-" + args.operation, *fields]), args.timeout))
         command = "status"
         if args.command == "stop":
             kernel = ctypes.WinDLL("kernel32", use_last_error=True)

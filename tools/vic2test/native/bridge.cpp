@@ -135,6 +135,10 @@ static bool InCampaign(DWORD world) {
     DWORD type = Read(locator + 0x0C);
     return type && strcmp((char*)(type + 8), ".?AVCInGameIdler@@") == 0;
 }
+static bool Multiplayer(DWORD world) {
+    // Тот же текущий флаг, который штатная консоль проверяет перед No cheats in MP.
+    return InCampaign(world) && *(BYTE*)(Read(world + 0xB24) + 0x5C) != 0;
+}
 static bool Pause(DWORD world, bool pause) {
     DWORD idler = Read(world + 0xB24);
     if (!idler || *(BYTE*)(idler + 0x1538) > 1) return false;
@@ -264,6 +268,159 @@ static DWORD EventObject(unsigned id) {
     }
     return event;
 }
+#include "mp_control.h"
+#include "mp_lobby.h"
+#include "mp_frontend.h"
+#include "mp_events.h"
+#include "mp_save.h"
+#include "../../creatinecore/gpc/runtime_status.h"
+static bool GpcStatus(V2GpcRuntimeStatus* output) {
+    HMODULE module = GetModuleHandleA("ccore_great_power_culture_cores.dll");
+    if (!module) return false;
+    const auto getter = (V2GpcGetRuntimeStatusFn)GetProcAddress(module, V2_GPC_RUNTIME_STATUS_EXPORT);
+    if (!getter || !getter(output, sizeof(*output)) || output->size != sizeof(*output) ||
+        output->version != V2_GPC_RUNTIME_STATUS_VERSION)
+        throw std::runtime_error("E_GPC_STATUS_API");
+    return true;
+}
+static void GpcStatusResponse() {
+    V2GpcRuntimeStatus snapshot = {};
+    if (!GpcStatus(&snapshot)) { strcpy_s(response, "{\"ok\":true,\"installed\":false}\n"); return; }
+    sprintf_s(response, "{\"ok\":true,\"installed\":true,\"version\":%u,\"enabled\":%u,\"failed\":%u,\"busy\":%u,\"has_schedule\":%u,\"completed_raw_date\":%u,\"callback_raw_date\":%u,\"pass\":%u,\"rng\":%u,\"core_digest\":%u,\"state_digest\":%u}\n",
+        snapshot.version, snapshot.enabled, snapshot.failed, snapshot.busy, snapshot.has_schedule,
+        snapshot.last_completed_raw_date, snapshot.last_callback_raw_date, snapshot.pass, snapshot.rng,
+        snapshot.core_digest, snapshot.state_digest);
+}
+static bool mpControlPending;
+static bool mpExpectedPaused;
+static unsigned mpExpectedSpeed;
+static bool mpPendingIsPause;
+static void MpStateResponse(const vic2_mp::State& current, bool queued = false) {
+    if (mpControlPending && (mpPendingIsPause ? current.paused == mpExpectedPaused : current.speed == mpExpectedSpeed))
+        mpControlPending = false;
+    const bool canStart = vic2_mp_frontend::CanStartWaiting(baseAddress, current.idler);
+    sprintf_s(response, "{\"ok\":true,\"multiplayer\":%s,\"host\":%s,\"network_ready\":%s,\"paused\":%s,\"speed\":%u,\"date_raw\":%lu,\"queued\":%s,\"pending\":%s,\"expected_paused\":%s,\"expected_speed\":%u,\"can_start\":%s,\"executing\":%s}\n",
+        current.mode == 1 ? "true" : "false", current.host ? "true" : "false", current.network_ready ? "true" : "false",
+        current.paused ? "true" : "false", current.speed, Read(current.world + 0xB0C), queued ? "true" : "false",
+        mpControlPending ? "true" : "false", mpExpectedPaused ? "true" : "false", mpExpectedSpeed,
+        canStart ? "true" : "false", current.executing ? "true" : "false");
+}
+static bool DispatchMp(const char* command) {
+    if (strncmp(command, "mp-", 3)) return false;
+    try {
+        if (GetEnvironmentVariableA("VIC2_TEST_READ_ONLY", nullptr, 0) &&
+            strcmp(command, "mp-state") && strcmp(command, "mp-lobby") && strcmp(command, "mp-front-state") && strcmp(command, "mp-events")) {
+            Error("E_READ_ONLY"); return true;
+        }
+        if (!strcmp(command, "mp-open") || !strcmp(command, "mp-lobby") ||
+            !strcmp(command, "mp-host") || !strcmp(command, "mp-join")) {
+            vic2_mp_lobby::State current;
+            if (!strcmp(command, "mp-open")) current = vic2_mp_lobby::Open(baseAddress, mainMenu);
+            else if (!strcmp(command, "mp-lobby")) current = vic2_mp_lobby::Inspect(baseAddress, mainMenu);
+            else {
+                char player[64] = {}, value[64] = {}, extra[2] = {};
+                if (sscanf_s(request + strlen(command), "%63s %63s %1s", player, (unsigned)sizeof(player), value, (unsigned)sizeof(value), extra, (unsigned)sizeof(extra)) != 2) {
+                    Error("E_ARGUMENT"); return true;
+                }
+                current = !strcmp(command, "mp-host") ? vic2_mp_lobby::Host(baseAddress, mainMenu, player, value)
+                                                       : vic2_mp_lobby::Join(baseAddress, mainMenu, player, value);
+            }
+            sprintf_s(response, "{\"ok\":true,\"ready\":%s,\"active\":%s,\"modal_available\":%s,\"screens\":%u,\"queued\":%s}\n",
+                current.ready ? "true" : "false", current.active ? "true" : "false", current.modal_available ? "true" : "false", current.screens,
+                strcmp(command, "mp-lobby") ? "true" : "false");
+            return true;
+        }
+        if (!strcmp(command, "mp-front-state")) {
+            auto current = vic2_mp_frontend::Inspect(baseAddress, frontend, mainMenu);
+            DWORD world = Read(baseAddress + 0xE588E8), tag = Read(world + 0xB5C);
+            char country[4] = {}; memcpy(country, &tag, 3);
+            sprintf_s(response, "{\"ok\":true,\"host\":%s,\"loading\":%s,\"loaded\":%s,\"date_raw\":%lu,\"country\":\"%s\"}\n",
+                current.host ? "true" : "false", current.loading ? "true" : "false", current.loaded ? "true" : "false", Read(world + 0xB0C), country);
+            return true;
+        }
+        if (!strcmp(command, "mp-load") || !strcmp(command, "mp-country") || !strcmp(command, "mp-play") || !strcmp(command, "mp-ready")) {
+            vic2_mp_frontend::Result result;
+            if (!strcmp(command, "mp-play")) result = vic2_mp_frontend::Play(baseAddress, frontend, mainMenu);
+            else if (!strcmp(command, "mp-ready")) result = vic2_mp_frontend::StartWaiting(baseAddress, Read(Read(baseAddress + 0xE588E8) + 0xB24));
+            else {
+                char argument[128] = {}, extra[2] = {};
+                if (sscanf_s(request + strlen(command), "%127s %1s", argument, (unsigned)sizeof(argument), extra, (unsigned)sizeof(extra)) != 1) { Error("E_ARGUMENT"); return true; }
+                result = !strcmp(command, "mp-load") ? vic2_mp_frontend::SelectSave(baseAddress, frontend, mainMenu, argument)
+                                                      : vic2_mp_frontend::SelectCountry(baseAddress, frontend, mainMenu, argument);
+            }
+            sprintf_s(response, "{\"ok\":true,\"queued\":%s,\"already\":%s,\"country_index\":%lu}\n",
+                result.queued ? "true" : "false", result.already ? "true" : "false", result.country_index);
+            return true;
+        }
+        auto current = vic2_mp::Inspect(baseAddress);
+        if (!strcmp(command, "mp-state")) { MpStateResponse(current); return true; }
+        if (!strcmp(command, "mp-save-menu") || !strcmp(command, "mp-save")) {
+            vic2_mp_save::Result result;
+            if (!strcmp(command, "mp-save-menu")) result = vic2_mp_save::OpenSaveMenu(baseAddress);
+            else {
+                char saveName[16] = {}, extra[2] = {};
+                if (sscanf_s(request + strlen(command), "%15s %1s", saveName, (unsigned)sizeof(saveName), extra, (unsigned)sizeof(extra)) != 1) {
+                    Error("E_ARGUMENT"); return true;
+                }
+                result = vic2_mp_save::Save(baseAddress, saveName);
+            }
+            sprintf_s(response, "{\"ok\":true,\"completed\":%s,\"menu_open\":%s,\"already\":%s,\"date_raw\":%lu,\"bytes\":%llu}\n",
+                result.completed ? "true" : "false", result.menu_open ? "true" : "false", result.already ? "true" : "false", result.date, result.bytes);
+            return true;
+        }
+        if (!strcmp(command, "mp-events") || !strcmp(command, "mp-option")) {
+            const auto popups = vic2_mp_events::List(baseAddress, Read(current.world + 0xB60));
+            if (!strcmp(command, "mp-option")) {
+                unsigned eventId = 0, option = 0; char extra[2] = {};
+                if (sscanf_s(request + strlen(command), "%u %u %1s", &eventId, &option, extra, (unsigned)sizeof(extra)) != 2) {
+                    Error("E_ARGUMENT"); return true;
+                }
+                const vic2_mp_events::PopupInfo* selected = nullptr;
+                for (const auto& popup : popups) if (popup.event_id == eventId) {
+                    if (selected) { Error("E_MP_EVENT_AMBIGUOUS"); return true; }
+                    selected = &popup;
+                }
+                if (!selected) { Error("E_MP_EVENT_MISSING"); return true; }
+                const auto result = vic2_mp_events::Pick(baseAddress, selected->popup, option, Read(current.world + 0xB60));
+                sprintf_s(response, "{\"ok\":true,\"queued\":%s,\"event_id\":%u,\"option\":%u}\n",
+                    result.queued ? "true" : "false", eventId, option);
+            } else {
+                strcpy_s(response, "{\"ok\":true,\"events\":[");
+                for (size_t i = 0; i < popups.size(); ++i) {
+                    char item[160]; sprintf_s(item, "%s{\"event_id\":%u,\"country\":\"%s\",\"options\":%u}",
+                        i ? "," : "", popups[i].event_id, popups[i].tag, popups[i].option_count);
+                    if (strlen(response) + strlen(item) + 5 >= sizeof(response)) { Error("E_MP_RESPONSE_LIMIT"); return true; }
+                    strcat_s(response, item);
+                }
+                strcat_s(response, "]}\n");
+            }
+            return true;
+        }
+        if (mpControlPending && (mpPendingIsPause ? current.paused == mpExpectedPaused : current.speed == mpExpectedSpeed)) mpControlPending = false;
+        if (mpControlPending) { Error("E_MP_PENDING"); return true; }
+        unsigned target = 0; char extra[2] = {};
+        if (sscanf_s(request + strlen(command), "%u %1s", &target, extra, (unsigned)sizeof(extra)) != 1) {
+            Error("E_ARGUMENT"); return true;
+        }
+        vic2_mp::RequestResult result;
+        if (!strcmp(command, "mp-pause") && target <= 1) result = vic2_mp::RequestPause(baseAddress, target != 0);
+        else if (!strcmp(command, "mp-speed") && target <= 4) result = vic2_mp::RequestSpeedStep(baseAddress, target);
+        else { Error("E_ARGUMENT"); return true; }
+        mpExpectedPaused = result.expected_paused; mpExpectedSpeed = result.expected_speed; mpControlPending = result.queued;
+        mpPendingIsPause = !strcmp(command, "mp-pause");
+        MpStateResponse(result.before, result.queued);
+    } catch (const std::exception& error) {
+        Log("vic2test mp: %s", error.what());
+        if (strstr(error.what(), "NATIVE_CALL") || strstr(error.what(), "NATIVE_EXCEPTION") || strstr(error.what(), "OUTCOME_UNKNOWN"))
+            InterlockedExchange(&poisoned, 1);
+        char code[64] = {};
+        unsigned length = 0;
+        while (length < sizeof(code) - 1 && (error.what()[length] == '_' ||
+               (error.what()[length] >= 'A' && error.what()[length] <= 'Z'))) { code[length] = error.what()[length]; ++length; }
+        Error(length > 2 && code[0] == 'E' && code[1] == '_' ? code : "E_MP_CONTROL");
+    }
+    return true;
+}
 static int EventKind(unsigned id) {
     DWORD event = EventObject(id), registry = Read(baseAddress + 0xF19B80);
     if (!event || !registry) return -1;
@@ -277,6 +434,16 @@ static void Dispatch() {
     sscanf_s(request, "%63s %7s %511s", command, (unsigned)sizeof(command),
         tag, (unsigned)sizeof(tag), name, (unsigned)sizeof(name));
     DWORD world = Read(baseAddress + 0xE588E8);
+    if (!strcmp(command, "culture-cores-status")) {
+        try { GpcStatusResponse(); }
+        catch (const std::exception&) { Error("E_GPC_STATUS_API"); }
+        return;
+    }
+    if (DispatchMp(command)) return;
+    if ((Multiplayer(world) || GetEnvironmentVariableA("VIC2_TEST_READ_ONLY", nullptr, 0)) &&
+        strcmp(command, "status") && strcmp(command, "snapshot") && strcmp(command, "frontend-status")) {
+        Error("E_MULTIPLAYER_READ_ONLY"); return;
+    }
     if (strcmp(command, "save-native") == 0) {
         if (!InCampaign(world)) { Error("E_NOT_READY"); return; }
         const char* argument = request + strlen("save-native ");
@@ -381,11 +548,12 @@ static void Dispatch() {
     }
     if (strcmp(command, "status") == 0) {
         DWORD idler = world ? Read(world + 0xB24) : 0;
-        sprintf_s(response, "{\"ok\":true,\"protocol\":1,\"campaign_loaded\":%s,\"date_raw\":%lu,\"pid\":%lu,\"owner_thread\":%lu,\"console_captured\":%s,\"advance_target\":%lu,\"paused\":%s,\"event_windows\":%u,\"auto_events_selected\":%u}\n",
+        sprintf_s(response, "{\"ok\":true,\"protocol\":1,\"campaign_loaded\":%s,\"date_raw\":%lu,\"pid\":%lu,\"owner_thread\":%lu,\"console_captured\":%s,\"advance_target\":%lu,\"paused\":%s,\"event_windows\":%u,\"auto_events_selected\":%u,\"multiplayer\":%s}\n",
             InCampaign(world) ? "true" : "false",
             world ? Read(world + 0xB0C) : 0, GetCurrentProcessId(), ownerThread,
             consoleManager ? "true" : "false", advanceTarget,
-            idler && *(BYTE*)(idler + 0x1538) ? "true" : "false", ActivePopupCount(), autoEventsSelected);
+            idler && *(BYTE*)(idler + 0x1538) ? "true" : "false", ActivePopupCount(), autoEventsSelected,
+            Multiplayer(world) ? "true" : "false");
         return;
     }
     if (strcmp(command, "snapshot") == 0) {

@@ -72,5 +72,90 @@
       "elapsed_ms": 485,
       "rng": 4162423299
     }
-  ]
+  ],
+  "long_run": {
+    "passes": 50,
+    "errors": [],
+    "total_additions": 0,
+    "first_pass": 3,
+    "last_pass": 52,
+    "auto_events_first_options": 3,
+    "source": "gpc_full_1891.v2",
+    "result": "gpc_long_1891.v2"
+  },
+  "multiplayer_baseline": {
+    "date_start_raw": 60365160,
+    "date_end_raw": 60367224,
+    "days": 86,
+    "mode_byte_host": 1,
+    "mode_byte_client": 1,
+    "records": [
+      {
+        "role": "host",
+        "sync_records": 86,
+        "last": [
+          "86",
+          "1891-03-27",
+          "857497",
+          "857497"
+        ],
+        "mismatched_sums": 0,
+        "first_real_oos": false
+      },
+      {
+        "role": "client",
+        "sync_records": 86,
+        "last": [
+          "86",
+          "1891-03-27",
+          "857497",
+          "857497"
+        ],
+        "mismatched_sums": 0,
+        "first_real_oos": false
+      }
+    ],
+    "new_module_loaded": false,
+    "controls": "native GUI actions; future runs use MP driver"
+  },
+  "native_mp_driver": {
+    "physical_input": false,
+    "baseline_days": 214,
+    "sync_mismatches": 0,
+    "first_real_oos": false,
+    "control_run_days": 20,
+    "final_raw_date": 60370296,
+    "negative_checks": 5,
+    "module_loaded": false,
+    "artifacts": [
+      ".work/gpc-artifacts/native-controls-02.json",
+      ".work/gpc-artifacts/native-negative-01.json",
+      ".work/gpc-artifacts/native-baseline-host-oos.log",
+      ".work/gpc-artifacts/native-baseline-client-oos.log"
+    ],
+    "automated_bootstrap": {
+      "report": ".work/gpc-artifacts/native-bootstrap-02.json",
+      "days": 20,
+      "final_raw_date": 60365640,
+      "save_sha256": "9a84383151924df83448769ad82ccc36c470b4ea1e63da44c2f28d506835a5c3",
+      "save_parsed_entries": 3963
+    },
+    "rehost": {
+      "report": ".work/gpc-artifacts/native-rehost-03.json",
+      "proof": ".work/gpc-artifacts/rehost-log-proof.json",
+      "roles_swapped": true,
+      "days": 4,
+      "final_raw_date": 60365736,
+      "module_loaded": true,
+      "enabled": false,
+      "save_sha256": "b9b71bd45fb25c83bfb97b1b2f7b1fc1f6b6e21d5affd92ae96bb67dbe63456c"
+    }
+  },
+  "python_mp_driver_tests": 15,
+  "python_preflight_tests": {
+    "passed": 14,
+    "skipped": 1
+  },
+  "python_fixture_tests": 7,
+  "python_mp_logcheck_tests": 17
 }
