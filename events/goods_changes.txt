@@ -159,111 +159,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = cattle
@@ -271,7 +271,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = cattle
 				has_province_modifier = extremely_low_immigration
@@ -292,7 +292,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = cattle
 				has_province_modifier = lower_immigration
@@ -312,7 +312,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = cattle
 				has_province_modifier = low_immigration
@@ -331,7 +331,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = cattle
 				has_province_modifier = medium_immigration
@@ -349,7 +349,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = cattle
 				has_province_modifier = high_immigration
@@ -366,7 +366,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = cattle
 				has_province_modifier = higher_immigration
@@ -382,7 +382,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = cattle
 				has_province_modifier = extremely_high_immigration
@@ -395,7 +395,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = cattle
 				has_province_modifier = highest_immigration
@@ -578,111 +578,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = cattle
@@ -690,7 +690,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = cattle
 				has_province_modifier = extremely_low_immigration
@@ -711,7 +711,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = cattle
 				has_province_modifier = lower_immigration
@@ -731,7 +731,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = cattle
 				has_province_modifier = low_immigration
@@ -750,7 +750,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = cattle
 				has_province_modifier = medium_immigration
@@ -768,7 +768,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = cattle
 				has_province_modifier = high_immigration
@@ -785,7 +785,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = cattle
 				has_province_modifier = higher_immigration
@@ -801,7 +801,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = cattle
 				has_province_modifier = extremely_high_immigration
@@ -814,7 +814,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = cattle
 				has_province_modifier = highest_immigration
@@ -953,111 +953,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = coal
@@ -1065,7 +1065,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = coal
 				has_province_modifier = extremely_low_immigration
@@ -1086,7 +1086,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = coal
 				has_province_modifier = lower_immigration
@@ -1106,7 +1106,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = coal
 				has_province_modifier = low_immigration
@@ -1125,7 +1125,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = coal
 				has_province_modifier = medium_immigration
@@ -1143,7 +1143,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = coal
 				has_province_modifier = high_immigration
@@ -1160,7 +1160,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = coal
 				has_province_modifier = higher_immigration
@@ -1176,7 +1176,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = coal
 				has_province_modifier = extremely_high_immigration
@@ -1189,7 +1189,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = coal
 				has_province_modifier = highest_immigration
@@ -1334,111 +1334,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = coal
@@ -1446,7 +1446,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = coal
 				has_province_modifier = extremely_low_immigration
@@ -1467,7 +1467,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = coal
 				has_province_modifier = lower_immigration
@@ -1487,7 +1487,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = coal
 				has_province_modifier = low_immigration
@@ -1506,7 +1506,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = coal
 				has_province_modifier = medium_immigration
@@ -1524,7 +1524,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = coal
 				has_province_modifier = high_immigration
@@ -1541,7 +1541,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = coal
 				has_province_modifier = higher_immigration
@@ -1557,7 +1557,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = coal
 				has_province_modifier = extremely_high_immigration
@@ -1570,7 +1570,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = coal
 				has_province_modifier = highest_immigration
@@ -1683,111 +1683,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = coffee
@@ -1795,7 +1795,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = coffee
 				has_province_modifier = extremely_low_immigration
@@ -1816,7 +1816,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = coffee
 				has_province_modifier = lower_immigration
@@ -1836,7 +1836,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = coffee
 				has_province_modifier = low_immigration
@@ -1855,7 +1855,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = coffee
 				has_province_modifier = medium_immigration
@@ -1873,7 +1873,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = coffee
 				has_province_modifier = high_immigration
@@ -1890,7 +1890,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = coffee
 				has_province_modifier = higher_immigration
@@ -1906,7 +1906,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = coffee
 				has_province_modifier = extremely_high_immigration
@@ -1919,7 +1919,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = coffee
 				has_province_modifier = highest_immigration
@@ -2042,111 +2042,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = coffee
@@ -2154,7 +2154,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = coffee
 				has_province_modifier = extremely_low_immigration
@@ -2175,7 +2175,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = coffee
 				has_province_modifier = lower_immigration
@@ -2195,7 +2195,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = coffee
 				has_province_modifier = low_immigration
@@ -2214,7 +2214,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = coffee
 				has_province_modifier = medium_immigration
@@ -2232,7 +2232,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = coffee
 				has_province_modifier = high_immigration
@@ -2249,7 +2249,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = coffee
 				has_province_modifier = higher_immigration
@@ -2265,7 +2265,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = coffee
 				has_province_modifier = extremely_high_immigration
@@ -2278,7 +2278,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = coffee
 				has_province_modifier = highest_immigration
@@ -2405,111 +2405,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = cotton
@@ -2517,7 +2517,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = cotton
 				has_province_modifier = extremely_low_immigration
@@ -2538,7 +2538,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = cotton
 				has_province_modifier = lower_immigration
@@ -2558,7 +2558,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = cotton
 				has_province_modifier = low_immigration
@@ -2577,7 +2577,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = cotton
 				has_province_modifier = medium_immigration
@@ -2595,7 +2595,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = cotton
 				has_province_modifier = high_immigration
@@ -2612,7 +2612,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = cotton
 				has_province_modifier = higher_immigration
@@ -2628,7 +2628,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = cotton
 				has_province_modifier = extremely_high_immigration
@@ -2641,7 +2641,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = cotton
 				has_province_modifier = highest_immigration
@@ -2778,111 +2778,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = cotton
@@ -2890,7 +2890,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = cotton
 				has_province_modifier = extremely_low_immigration
@@ -2911,7 +2911,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = cotton
 				has_province_modifier = lower_immigration
@@ -2931,7 +2931,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = cotton
 				has_province_modifier = low_immigration
@@ -2950,7 +2950,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = cotton
 				has_province_modifier = medium_immigration
@@ -2968,7 +2968,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = cotton
 				has_province_modifier = high_immigration
@@ -2985,7 +2985,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = cotton
 				has_province_modifier = higher_immigration
@@ -3001,7 +3001,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = cotton
 				has_province_modifier = extremely_high_immigration
@@ -3014,7 +3014,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = cotton
 				has_province_modifier = highest_immigration
@@ -3082,111 +3082,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = dye
@@ -3194,7 +3194,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = dye
 				has_province_modifier = extremely_low_immigration
@@ -3215,7 +3215,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = dye
 				has_province_modifier = lower_immigration
@@ -3235,7 +3235,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = dye
 				has_province_modifier = low_immigration
@@ -3254,7 +3254,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = dye
 				has_province_modifier = medium_immigration
@@ -3272,7 +3272,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = dye
 				has_province_modifier = high_immigration
@@ -3289,7 +3289,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = dye
 				has_province_modifier = higher_immigration
@@ -3305,7 +3305,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = dye
 				has_province_modifier = extremely_high_immigration
@@ -3318,7 +3318,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = dye
 				has_province_modifier = highest_immigration
@@ -3396,111 +3396,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = dye
@@ -3508,7 +3508,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = dye
 				has_province_modifier = extremely_low_immigration
@@ -3529,7 +3529,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = dye
 				has_province_modifier = lower_immigration
@@ -3549,7 +3549,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = dye
 				has_province_modifier = low_immigration
@@ -3568,7 +3568,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = dye
 				has_province_modifier = medium_immigration
@@ -3586,7 +3586,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = dye
 				has_province_modifier = high_immigration
@@ -3603,7 +3603,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = dye
 				has_province_modifier = higher_immigration
@@ -3619,7 +3619,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = dye
 				has_province_modifier = extremely_high_immigration
@@ -3632,7 +3632,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = dye
 				has_province_modifier = highest_immigration
@@ -3800,111 +3800,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = fish
@@ -3912,7 +3912,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = fish
 				has_province_modifier = extremely_low_immigration
@@ -3933,7 +3933,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = fish
 				has_province_modifier = lower_immigration
@@ -3953,7 +3953,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = fish
 				has_province_modifier = low_immigration
@@ -3972,7 +3972,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = fish
 				has_province_modifier = medium_immigration
@@ -3990,7 +3990,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = fish
 				has_province_modifier = high_immigration
@@ -4007,7 +4007,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = fish
 				has_province_modifier = higher_immigration
@@ -4023,7 +4023,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = fish
 				has_province_modifier = extremely_high_immigration
@@ -4036,7 +4036,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = fish
 				has_province_modifier = highest_immigration
@@ -4214,111 +4214,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = fish
@@ -4326,7 +4326,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = fish
 				has_province_modifier = extremely_low_immigration
@@ -4347,7 +4347,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = fish
 				has_province_modifier = lower_immigration
@@ -4367,7 +4367,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = fish
 				has_province_modifier = low_immigration
@@ -4386,7 +4386,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = fish
 				has_province_modifier = medium_immigration
@@ -4404,7 +4404,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = fish
 				has_province_modifier = high_immigration
@@ -4421,7 +4421,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = fish
 				has_province_modifier = higher_immigration
@@ -4437,7 +4437,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = fish
 				has_province_modifier = extremely_high_immigration
@@ -4450,7 +4450,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = fish
 				has_province_modifier = highest_immigration
@@ -4632,111 +4632,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = fruit
@@ -4744,7 +4744,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = fruit
 				has_province_modifier = extremely_low_immigration
@@ -4765,7 +4765,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = fruit
 				has_province_modifier = lower_immigration
@@ -4785,7 +4785,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = fruit
 				has_province_modifier = low_immigration
@@ -4804,7 +4804,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = fruit
 				has_province_modifier = medium_immigration
@@ -4822,7 +4822,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = fruit
 				has_province_modifier = high_immigration
@@ -4839,7 +4839,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = fruit
 				has_province_modifier = higher_immigration
@@ -4855,7 +4855,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = fruit
 				has_province_modifier = extremely_high_immigration
@@ -4868,7 +4868,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = fruit
 				has_province_modifier = highest_immigration
@@ -5060,111 +5060,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = fruit
@@ -5172,7 +5172,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = fruit
 				has_province_modifier = extremely_low_immigration
@@ -5193,7 +5193,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = fruit
 				has_province_modifier = lower_immigration
@@ -5213,7 +5213,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = fruit
 				has_province_modifier = low_immigration
@@ -5232,7 +5232,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = fruit
 				has_province_modifier = medium_immigration
@@ -5250,7 +5250,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = fruit
 				has_province_modifier = high_immigration
@@ -5267,7 +5267,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = fruit
 				has_province_modifier = higher_immigration
@@ -5283,7 +5283,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = fruit
 				has_province_modifier = extremely_high_immigration
@@ -5296,7 +5296,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = fruit
 				has_province_modifier = highest_immigration
@@ -5518,111 +5518,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = grain
@@ -5630,7 +5630,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = grain
 				has_province_modifier = extremely_low_immigration
@@ -5651,7 +5651,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = grain
 				has_province_modifier = lower_immigration
@@ -5671,7 +5671,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = grain
 				has_province_modifier = low_immigration
@@ -5690,7 +5690,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = grain
 				has_province_modifier = medium_immigration
@@ -5708,7 +5708,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = grain
 				has_province_modifier = high_immigration
@@ -5725,7 +5725,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = grain
 				has_province_modifier = higher_immigration
@@ -5741,7 +5741,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = grain
 				has_province_modifier = extremely_high_immigration
@@ -5754,7 +5754,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = grain
 				has_province_modifier = highest_immigration
@@ -5986,111 +5986,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = grain
@@ -6098,7 +6098,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = grain
 				has_province_modifier = extremely_low_immigration
@@ -6119,7 +6119,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = grain
 				has_province_modifier = lower_immigration
@@ -6139,7 +6139,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = grain
 				has_province_modifier = low_immigration
@@ -6158,7 +6158,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = grain
 				has_province_modifier = medium_immigration
@@ -6176,7 +6176,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = grain
 				has_province_modifier = high_immigration
@@ -6193,7 +6193,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = grain
 				has_province_modifier = higher_immigration
@@ -6209,7 +6209,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = grain
 				has_province_modifier = extremely_high_immigration
@@ -6222,7 +6222,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = grain
 				has_province_modifier = highest_immigration
@@ -6358,111 +6358,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = iron
@@ -6470,7 +6470,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = iron
 				has_province_modifier = extremely_low_immigration
@@ -6491,7 +6491,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = iron
 				has_province_modifier = lower_immigration
@@ -6511,7 +6511,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = iron
 				has_province_modifier = low_immigration
@@ -6530,7 +6530,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = iron
 				has_province_modifier = medium_immigration
@@ -6548,7 +6548,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = iron
 				has_province_modifier = high_immigration
@@ -6565,7 +6565,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = iron
 				has_province_modifier = higher_immigration
@@ -6581,7 +6581,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = iron
 				has_province_modifier = extremely_high_immigration
@@ -6594,7 +6594,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = iron
 				has_province_modifier = highest_immigration
@@ -6736,111 +6736,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = iron
@@ -6848,7 +6848,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = iron
 				has_province_modifier = extremely_low_immigration
@@ -6869,7 +6869,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = iron
 				has_province_modifier = lower_immigration
@@ -6889,7 +6889,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = iron
 				has_province_modifier = low_immigration
@@ -6908,7 +6908,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = iron
 				has_province_modifier = medium_immigration
@@ -6926,7 +6926,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = iron
 				has_province_modifier = high_immigration
@@ -6943,7 +6943,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = iron
 				has_province_modifier = higher_immigration
@@ -6959,7 +6959,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = iron
 				has_province_modifier = extremely_high_immigration
@@ -6972,7 +6972,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = iron
 				has_province_modifier = highest_immigration
@@ -7091,111 +7091,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = oil
@@ -7203,7 +7203,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = oil
 				has_province_modifier = extremely_low_immigration
@@ -7224,7 +7224,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = oil
 				has_province_modifier = lower_immigration
@@ -7244,7 +7244,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = oil
 				has_province_modifier = low_immigration
@@ -7263,7 +7263,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = oil
 				has_province_modifier = medium_immigration
@@ -7281,7 +7281,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = oil
 				has_province_modifier = high_immigration
@@ -7298,7 +7298,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = oil
 				has_province_modifier = higher_immigration
@@ -7314,7 +7314,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = oil
 				has_province_modifier = extremely_high_immigration
@@ -7327,7 +7327,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = oil
 				has_province_modifier = highest_immigration
@@ -7452,111 +7452,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = oil
@@ -7564,7 +7564,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = oil
 				has_province_modifier = extremely_low_immigration
@@ -7585,7 +7585,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = oil
 				has_province_modifier = lower_immigration
@@ -7605,7 +7605,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = oil
 				has_province_modifier = low_immigration
@@ -7624,7 +7624,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = oil
 				has_province_modifier = medium_immigration
@@ -7642,7 +7642,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = oil
 				has_province_modifier = high_immigration
@@ -7659,7 +7659,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = oil
 				has_province_modifier = higher_immigration
@@ -7675,7 +7675,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = oil
 				has_province_modifier = extremely_high_immigration
@@ -7688,7 +7688,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = oil
 				has_province_modifier = highest_immigration
@@ -7740,111 +7740,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = opium
@@ -7852,7 +7852,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = opium
 				has_province_modifier = extremely_low_immigration
@@ -7873,7 +7873,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = opium
 				has_province_modifier = lower_immigration
@@ -7893,7 +7893,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = opium
 				has_province_modifier = low_immigration
@@ -7912,7 +7912,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = opium
 				has_province_modifier = medium_immigration
@@ -7930,7 +7930,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = opium
 				has_province_modifier = high_immigration
@@ -7947,7 +7947,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = opium
 				has_province_modifier = higher_immigration
@@ -7963,7 +7963,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = opium
 				has_province_modifier = extremely_high_immigration
@@ -7976,7 +7976,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = opium
 				has_province_modifier = highest_immigration
@@ -8038,111 +8038,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = opium
@@ -8150,7 +8150,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = opium
 				has_province_modifier = extremely_low_immigration
@@ -8171,7 +8171,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = opium
 				has_province_modifier = lower_immigration
@@ -8191,7 +8191,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = opium
 				has_province_modifier = low_immigration
@@ -8210,7 +8210,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = opium
 				has_province_modifier = medium_immigration
@@ -8228,7 +8228,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = opium
 				has_province_modifier = high_immigration
@@ -8245,7 +8245,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = opium
 				has_province_modifier = higher_immigration
@@ -8261,7 +8261,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = opium
 				has_province_modifier = extremely_high_immigration
@@ -8274,7 +8274,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = opium
 				has_province_modifier = highest_immigration
@@ -8384,111 +8384,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = rubber
@@ -8496,7 +8496,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = rubber
 				has_province_modifier = extremely_low_immigration
@@ -8517,7 +8517,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = rubber
 				has_province_modifier = lower_immigration
@@ -8537,7 +8537,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = rubber
 				has_province_modifier = low_immigration
@@ -8556,7 +8556,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = rubber
 				has_province_modifier = medium_immigration
@@ -8574,7 +8574,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = rubber
 				has_province_modifier = high_immigration
@@ -8591,7 +8591,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = rubber
 				has_province_modifier = higher_immigration
@@ -8607,7 +8607,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = rubber
 				has_province_modifier = extremely_high_immigration
@@ -8620,7 +8620,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = rubber
 				has_province_modifier = highest_immigration
@@ -8736,111 +8736,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = rubber
@@ -8848,7 +8848,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = rubber
 				has_province_modifier = extremely_low_immigration
@@ -8869,7 +8869,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = rubber
 				has_province_modifier = lower_immigration
@@ -8889,7 +8889,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = rubber
 				has_province_modifier = low_immigration
@@ -8908,7 +8908,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = rubber
 				has_province_modifier = medium_immigration
@@ -8926,7 +8926,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = rubber
 				has_province_modifier = high_immigration
@@ -8943,7 +8943,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = rubber
 				has_province_modifier = higher_immigration
@@ -8959,7 +8959,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = rubber
 				has_province_modifier = extremely_high_immigration
@@ -8972,7 +8972,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = rubber
 				has_province_modifier = highest_immigration
@@ -9040,111 +9040,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = silk
@@ -9152,7 +9152,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = silk
 				has_province_modifier = extremely_low_immigration
@@ -9173,7 +9173,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = silk
 				has_province_modifier = lower_immigration
@@ -9193,7 +9193,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = silk
 				has_province_modifier = low_immigration
@@ -9212,7 +9212,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = silk
 				has_province_modifier = medium_immigration
@@ -9230,7 +9230,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = silk
 				has_province_modifier = high_immigration
@@ -9247,7 +9247,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = silk
 				has_province_modifier = higher_immigration
@@ -9263,7 +9263,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = silk
 				has_province_modifier = extremely_high_immigration
@@ -9276,7 +9276,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = silk
 				has_province_modifier = highest_immigration
@@ -9354,111 +9354,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = silk
@@ -9466,7 +9466,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = silk
 				has_province_modifier = extremely_low_immigration
@@ -9487,7 +9487,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = silk
 				has_province_modifier = lower_immigration
@@ -9507,7 +9507,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = silk
 				has_province_modifier = low_immigration
@@ -9526,7 +9526,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = silk
 				has_province_modifier = medium_immigration
@@ -9544,7 +9544,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = silk
 				has_province_modifier = high_immigration
@@ -9561,7 +9561,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = silk
 				has_province_modifier = higher_immigration
@@ -9577,7 +9577,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = silk
 				has_province_modifier = extremely_high_immigration
@@ -9590,7 +9590,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = silk
 				has_province_modifier = highest_immigration
@@ -9682,111 +9682,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = sulphur
@@ -9794,7 +9794,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = sulphur
 				has_province_modifier = extremely_low_immigration
@@ -9815,7 +9815,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = sulphur
 				has_province_modifier = lower_immigration
@@ -9835,7 +9835,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = sulphur
 				has_province_modifier = low_immigration
@@ -9854,7 +9854,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = sulphur
 				has_province_modifier = medium_immigration
@@ -9872,7 +9872,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = sulphur
 				has_province_modifier = high_immigration
@@ -9889,7 +9889,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = sulphur
 				has_province_modifier = higher_immigration
@@ -9905,7 +9905,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = sulphur
 				has_province_modifier = extremely_high_immigration
@@ -9918,7 +9918,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = sulphur
 				has_province_modifier = highest_immigration
@@ -10016,111 +10016,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = sulphur
@@ -10128,7 +10128,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = sulphur
 				has_province_modifier = extremely_low_immigration
@@ -10149,7 +10149,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = sulphur
 				has_province_modifier = lower_immigration
@@ -10169,7 +10169,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = sulphur
 				has_province_modifier = low_immigration
@@ -10188,7 +10188,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = sulphur
 				has_province_modifier = medium_immigration
@@ -10206,7 +10206,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = sulphur
 				has_province_modifier = high_immigration
@@ -10223,7 +10223,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = sulphur
 				has_province_modifier = higher_immigration
@@ -10239,7 +10239,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = sulphur
 				has_province_modifier = extremely_high_immigration
@@ -10252,7 +10252,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = sulphur
 				has_province_modifier = highest_immigration
@@ -10336,111 +10336,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = tea
@@ -10448,7 +10448,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = tea
 				has_province_modifier = extremely_low_immigration
@@ -10469,7 +10469,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = tea
 				has_province_modifier = lower_immigration
@@ -10489,7 +10489,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = tea
 				has_province_modifier = low_immigration
@@ -10508,7 +10508,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = tea
 				has_province_modifier = medium_immigration
@@ -10526,7 +10526,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = tea
 				has_province_modifier = high_immigration
@@ -10543,7 +10543,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = tea
 				has_province_modifier = higher_immigration
@@ -10559,7 +10559,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = tea
 				has_province_modifier = extremely_high_immigration
@@ -10572,7 +10572,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = tea
 				has_province_modifier = highest_immigration
@@ -10666,111 +10666,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = tea
@@ -10778,7 +10778,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = tea
 				has_province_modifier = extremely_low_immigration
@@ -10799,7 +10799,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = tea
 				has_province_modifier = lower_immigration
@@ -10819,7 +10819,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = tea
 				has_province_modifier = low_immigration
@@ -10838,7 +10838,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = tea
 				has_province_modifier = medium_immigration
@@ -10856,7 +10856,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = tea
 				has_province_modifier = high_immigration
@@ -10873,7 +10873,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = tea
 				has_province_modifier = higher_immigration
@@ -10889,7 +10889,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = tea
 				has_province_modifier = extremely_high_immigration
@@ -10902,7 +10902,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = tea
 				has_province_modifier = highest_immigration
@@ -11069,111 +11069,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = timber
@@ -11181,7 +11181,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = timber
 				has_province_modifier = extremely_low_immigration
@@ -11202,7 +11202,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = timber
 				has_province_modifier = lower_immigration
@@ -11222,7 +11222,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = timber
 				has_province_modifier = low_immigration
@@ -11241,7 +11241,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = timber
 				has_province_modifier = medium_immigration
@@ -11259,7 +11259,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = timber
 				has_province_modifier = high_immigration
@@ -11276,7 +11276,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = timber
 				has_province_modifier = higher_immigration
@@ -11292,7 +11292,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = timber
 				has_province_modifier = extremely_high_immigration
@@ -11305,7 +11305,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = timber
 				has_province_modifier = highest_immigration
@@ -11478,111 +11478,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = timber
@@ -11590,7 +11590,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = timber
 				has_province_modifier = extremely_low_immigration
@@ -11611,7 +11611,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = timber
 				has_province_modifier = lower_immigration
@@ -11631,7 +11631,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = timber
 				has_province_modifier = low_immigration
@@ -11650,7 +11650,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = timber
 				has_province_modifier = medium_immigration
@@ -11668,7 +11668,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = timber
 				has_province_modifier = high_immigration
@@ -11685,7 +11685,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = timber
 				has_province_modifier = higher_immigration
@@ -11701,7 +11701,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = timber
 				has_province_modifier = extremely_high_immigration
@@ -11714,7 +11714,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = timber
 				has_province_modifier = highest_immigration
@@ -11822,111 +11822,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = tobacco
@@ -11934,7 +11934,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = tobacco
 				has_province_modifier = extremely_low_immigration
@@ -11955,7 +11955,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = tobacco
 				has_province_modifier = lower_immigration
@@ -11975,7 +11975,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = tobacco
 				has_province_modifier = low_immigration
@@ -11994,7 +11994,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = tobacco
 				has_province_modifier = medium_immigration
@@ -12012,7 +12012,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = tobacco
 				has_province_modifier = high_immigration
@@ -12029,7 +12029,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = tobacco
 				has_province_modifier = higher_immigration
@@ -12045,7 +12045,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = tobacco
 				has_province_modifier = extremely_high_immigration
@@ -12058,7 +12058,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = tobacco
 				has_province_modifier = highest_immigration
@@ -12176,111 +12176,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = tobacco
@@ -12288,7 +12288,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = tobacco
 				has_province_modifier = extremely_low_immigration
@@ -12309,7 +12309,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = tobacco
 				has_province_modifier = lower_immigration
@@ -12329,7 +12329,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = tobacco
 				has_province_modifier = low_immigration
@@ -12348,7 +12348,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = tobacco
 				has_province_modifier = medium_immigration
@@ -12366,7 +12366,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = tobacco
 				has_province_modifier = high_immigration
@@ -12383,7 +12383,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = tobacco
 				has_province_modifier = higher_immigration
@@ -12399,7 +12399,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = tobacco
 				has_province_modifier = extremely_high_immigration
@@ -12412,7 +12412,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = tobacco
 				has_province_modifier = highest_immigration
@@ -12513,111 +12513,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = tropical_wood
@@ -12625,7 +12625,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = tropical_wood
 				has_province_modifier = extremely_low_immigration
@@ -12646,7 +12646,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = tropical_wood
 				has_province_modifier = lower_immigration
@@ -12666,7 +12666,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = tropical_wood
 				has_province_modifier = low_immigration
@@ -12685,7 +12685,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = tropical_wood
 				has_province_modifier = medium_immigration
@@ -12703,7 +12703,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = tropical_wood
 				has_province_modifier = high_immigration
@@ -12720,7 +12720,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = tropical_wood
 				has_province_modifier = higher_immigration
@@ -12736,7 +12736,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = tropical_wood
 				has_province_modifier = extremely_high_immigration
@@ -12749,7 +12749,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = tropical_wood
 				has_province_modifier = highest_immigration
@@ -12856,111 +12856,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = tropical_wood
@@ -12968,7 +12968,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = tropical_wood
 				has_province_modifier = extremely_low_immigration
@@ -12989,7 +12989,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = tropical_wood
 				has_province_modifier = lower_immigration
@@ -13009,7 +13009,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = tropical_wood
 				has_province_modifier = low_immigration
@@ -13028,7 +13028,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = tropical_wood
 				has_province_modifier = medium_immigration
@@ -13046,7 +13046,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = tropical_wood
 				has_province_modifier = high_immigration
@@ -13063,7 +13063,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = tropical_wood
 				has_province_modifier = higher_immigration
@@ -13079,7 +13079,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = tropical_wood
 				has_province_modifier = extremely_high_immigration
@@ -13092,7 +13092,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = tropical_wood
 				has_province_modifier = highest_immigration
@@ -13245,111 +13245,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = labourers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = wool
@@ -13357,7 +13357,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = wool
 				has_province_modifier = extremely_low_immigration
@@ -13378,7 +13378,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = wool
 				has_province_modifier = lower_immigration
@@ -13398,7 +13398,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = wool
 				has_province_modifier = low_immigration
@@ -13417,7 +13417,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = wool
 				has_province_modifier = medium_immigration
@@ -13435,7 +13435,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = wool
 				has_province_modifier = high_immigration
@@ -13452,7 +13452,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = wool
 				has_province_modifier = higher_immigration
@@ -13468,7 +13468,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = wool
 				has_province_modifier = extremely_high_immigration
@@ -13481,7 +13481,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = wool
 				has_province_modifier = highest_immigration
@@ -13644,111 +13644,111 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12000
+		months = 600
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.5
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.6
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.7
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.8
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 0.9
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			unemployment_by_type = {
 				type = farmers
 				value = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				freedom_of_trade = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_structure = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				business_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				market_regulations = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_responsibility = 1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				government_interventionism = 1
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			owner = {
 				economic_policy = planned_economy
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.25
 			owner = {
 				economic_policy = state_capitalism
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			owner = {
 				economic_policy = interventionism
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			owner = {
 				economic_policy = laissez_faire
 			}
 		}
 		modifier = {
-			factor = 256
+			factor = 6.3
 			NOT = {
 				any_neighbor_province = {
 					trade_goods = wool
@@ -13756,7 +13756,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 64
+			factor = 3.98
 			any_neighbor_province = {
 				trade_goods = wool
 				has_province_modifier = extremely_low_immigration
@@ -13777,7 +13777,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 16
+			factor = 2.51
 			any_neighbor_province = {
 				trade_goods = wool
 				has_province_modifier = lower_immigration
@@ -13797,7 +13797,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 1.58
 			any_neighbor_province = {
 				trade_goods = wool
 				has_province_modifier = low_immigration
@@ -13816,7 +13816,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.77
 			any_neighbor_province = {
 				trade_goods = wool
 				has_province_modifier = medium_immigration
@@ -13834,7 +13834,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.6
 			any_neighbor_province = {
 				trade_goods = wool
 				has_province_modifier = high_immigration
@@ -13851,7 +13851,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.47
 			any_neighbor_province = {
 				trade_goods = wool
 				has_province_modifier = higher_immigration
@@ -13867,7 +13867,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.06
+			factor = 0.35
 			any_neighbor_province = {
 				trade_goods = wool
 				has_province_modifier = extremely_high_immigration
@@ -13880,7 +13880,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.03
+			factor = 0.27
 			any_neighbor_province = {
 				trade_goods = wool
 				has_province_modifier = highest_immigration
