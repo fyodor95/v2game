@@ -93,5 +93,12 @@
     "files_preserved": 909,
     "ordinary_game_running_at_rename": false,
     "saves_moved": false
+  },
+  "napier_formatting_fix": {
+    "autogen_commit": "7edf084f9c49d6296ab2cb7cfde91fa3d64dc10f",
+    "tests_passed": 25,
+    "release_generation_changed_only_napier": true,
+    "game_tokens_unchanged": true,
+    "history_sha256": "ec0b501268a025fe5d178be6b01cd96474be206d7ff3c536a10144efa8828322"
   }
 }
