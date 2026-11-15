@@ -273,6 +273,54 @@ static DWORD EventObject(unsigned id) {
 #include "mp_frontend.h"
 #include "mp_events.h"
 #include "mp_save.h"
+#include "sp_frontend.h"
+static vic2_sp_frontend::Ticket spReturnTicket;
+static unsigned spReturnStage;
+static bool DispatchSpReturn(const char* command) {
+    if (strncmp(command, "sp-return-", 10)) return false;
+    bool acted = false;
+    try {
+        if (strcmp(command, "sp-return-state") && GetEnvironmentVariableA("VIC2_TEST_READ_ONLY", nullptr, 0)) {
+            Error("E_READ_ONLY"); return true;
+        }
+        if (!strcmp(command, "sp-return-resign")) {
+            if (spReturnStage || advanceTarget || requestedEventId) { Error("E_PENDING"); return true; }
+            spReturnTicket = vic2_sp_frontend::RequestResign(baseAddress);
+            spReturnStage = 1;
+            acted = true;
+        } else if (!strcmp(command, "sp-return-confirm")) {
+            if (spReturnStage != 1) { Error("E_SP_TRANSITION_STAGE"); return true; }
+            vic2_sp_frontend::ConfirmResign(baseAddress, spReturnTicket);
+            spReturnStage = 2;
+            acted = true;
+        } else if (!strcmp(command, "sp-return-exit")) {
+            if (spReturnStage != 2) { Error("E_SP_TRANSITION_STAGE"); return true; }
+            vic2_sp_frontend::ExitSummary(baseAddress, spReturnTicket);
+            spReturnStage = 3;
+            acted = true;
+        } else if (strcmp(command, "sp-return-state")) { Error("E_ARGUMENT"); return true; }
+        if (!spReturnStage) { Error("E_SP_NO_TRANSITION"); return true; }
+        const auto current = vic2_sp_frontend::Inspect(baseAddress, spReturnTicket, mainMenu);
+        if (current.main_menu) {
+            advanceTarget = 0; requestedEventId = 0; requestedProvince = 0; requestedEventTag[0] = 0;
+            eventPopup = 0; popupCount = 0; autoEventsEnabled = false; autoEventsSelected = 0;
+            consoleManager = 0;
+            spReturnTicket = {}; spReturnStage = 0;
+        }
+        sprintf_s(response, "{\"ok\":true,\"campaign\":%s,\"confirmation\":%s,\"summary\":%s,\"main_menu\":%s,\"resign_queued\":%s,\"pending\":%s}\n",
+            current.campaign ? "true" : "false", current.confirmation ? "true" : "false", current.summary ? "true" : "false",
+            current.main_menu ? "true" : "false", current.resign_queued ? "true" : "false", spReturnStage ? "true" : "false");
+    } catch (const std::exception& error) {
+        Log("vic2test SP return: %s", error.what());
+        if (acted) { InterlockedExchange(&poisoned, 1); Error("E_SP_FRONTEND_OUTCOME_UNKNOWN"); return true; }
+        if (strstr(error.what(), "OUTCOME_UNKNOWN") || strstr(error.what(), "NATIVE_EXCEPTION")) InterlockedExchange(&poisoned, 1);
+        char code[64] = {}; unsigned length = 0;
+        while (length < sizeof(code) - 1 && (error.what()[length] == '_' ||
+               (error.what()[length] >= 'A' && error.what()[length] <= 'Z'))) { code[length] = error.what()[length]; ++length; }
+        Error(length > 2 ? code : "E_SP_TRANSITION");
+    }
+    return true;
+}
 #include "../../creatinecore/gpc/runtime_status.h"
 #include "../../creatinecore/gpc/debug_api.h"
 static void JsonEscape(const char* source, char* output, size_t capacity) {
@@ -476,6 +524,7 @@ static void Dispatch() {
     sscanf_s(request, "%63s %7s %511s", command, (unsigned)sizeof(command),
         tag, (unsigned)sizeof(tag), name, (unsigned)sizeof(name));
     DWORD world = Read(baseAddress + 0xE588E8);
+    if (DispatchSpReturn(command)) return;
     if (!strcmp(command, "culture-cores-preview") || !strcmp(command, "culture-cores-snapshot") || !strcmp(command, "culture-cores-run")) {
         try { GpcDebugResponse(command); }
         catch (const std::exception& error) { Log("vic2test GPC debug: %s", error.what()); Error("E_GPC_DEBUG_API"); }

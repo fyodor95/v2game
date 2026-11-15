@@ -1,6 +1,6 @@
 {
   "complete": false,
-  "production_installed": false,
+  "production_installed": true,
   "multiplayer": "accelerated_and_mtth60_passed_final_bundle_regression_pending",
   "rules": {
     "primary_only": true,
@@ -214,5 +214,51 @@
   "python_mp_collection_tests": 7,
   "python_log_history_tests": 10,
   "python_delta_tests": 11,
-  "python_schedule_fixture_tests": 8
+  "python_schedule_fixture_tests": 8,
+  "production_activation": {
+    "ok": true,
+    "production_installed": true,
+    "enabled": true,
+    "mtth_months": 60,
+    "gpc_dll_sha256": "f7ac480679a5008b8be3add48f385e1cf9e706e805d07d1235647dd639cba32b",
+    "settings_preserved": {
+      "core_ini": "4d32e9c212ba638a07f440adca8ab091d121186ba03477af24584517a68f25a2",
+      "main_settings": "a5f50b2fee351a22f9a7962eb87131a75f112ece6bdc8cebaffd0f677c965b71"
+    },
+    "acceptance_pending": true
+  },
+  "remaining_tests_worktree": "D:/v2game/.work/gpc-acceptance",
+  "debug_abi": {
+    "scenarios": 82,
+    "checks": 1129
+  },
+  "sp1931": {
+    "expected": 25,
+    "actual": 25,
+    "delta": ".work/gpc-artifacts/delta-1931.json",
+    "rng_probe": 1,
+    "repeat_additions": 0,
+    "reload_pass": 2,
+    "reload_rng": 471728735,
+    "reload_remaining": 0
+  },
+  "sp1841": {
+    "expected": 0,
+    "actual": 0,
+    "all_gp_without_technology": true,
+    "delta": ".work/gpc-artifacts/delta-1841.json"
+  },
+  "tie_runtime": {
+    "province": 22,
+    "cultures": [
+      2,
+      3
+    ],
+    "recipients": [
+      "AUS",
+      "NGF"
+    ],
+    "total_additions": 26,
+    "exact_delta_pending": true
+  }
 }

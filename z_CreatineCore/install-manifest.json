@@ -21,16 +21,64 @@
       "machine": "x86"
     },
     "ccore_script_fixes.dll": {
-      "sha256": "d7548808763b9ffb65513ae8209e2ebfb288534b6f8a984acd05b59599083453",
+      "sha256": "5a7158fd02545686bbea55bfaedf3c8e05c899af0caafa1bbcc8d097a7af3b4a",
       "bytes": 574464,
       "machine": "x86"
+    },
+    "ccore_great_power_culture_cores.dll": {
+      "sha256": "f7ac480679a5008b8be3add48f385e1cf9e706e805d07d1235647dd639cba32b",
+      "bytes": 289792,
+      "machine": "x86"
+    },
+    "great_power_culture_cores.ini": {
+      "sha256": "5cb968b815c63544f4a81928e55609795723b9e1442bff4a36bb1d2fb5fac359",
+      "bytes": 341
+    }
+  },
+  "great_power_culture_cores": {
+    "schema": 1,
+    "machine": "x86",
+    "expected_exe_sha256": "62d48c204364dd706584777c2e2b3c7ab3c5f1dd0170872554943575d53d6648",
+    "head": "c6ba4772f8d8b0b24df7fddbd615d6d56016213f",
+    "artifact": {
+      "name": "ccore_great_power_culture_cores.dll",
+      "bytes": 289792,
+      "sha256": "f7ac480679a5008b8be3add48f385e1cf9e706e805d07d1235647dd639cba32b"
+    },
+    "sources": {
+      "build_runtime.cmd": "ebaef52b2c2c21ffa07cd83f3c0a3a2495e36f64f6bb83421016ad7d4101de4d",
+      "calculation.h": "95ca5d3215f50775f80287906d98345642d3118421e1a834c60b1507ca8bee54",
+      "debug_api.h": "0a832cf0df9e1bf65eb0f7f0c086bdb9daf7d8674b7ed098fcb62ef54303850d",
+      "great_power_culture_cores.ini": "5cb968b815c63544f4a81928e55609795723b9e1442bff4a36bb1d2fb5fac359",
+      "native_operations.h": "99f90d2405611c75bcb6dae3228b0b695bc4629b9c159e7aea4ff893ea3d697e",
+      "native_probe.h": "14ae99302bd284891aa1c5fdb7c397079126011c42a1cbe236cc57c613934d48",
+      "notify_probe.h": "26c3c89f8ad18abd94fb4203c194bcc6bfa1ae8405f7f472909fb9854164474d",
+      "productionflag_adapter.h": "e0f02e91998cd3f43bdccdb9fa900082dded5cc8c52e5c6b16a0ff628a626bf4",
+      "runtime.cpp": "67131e2986bdb76adb2cd2de9e6a67b974e2d581d592a90ead804da469fc3a65",
+      "runtime_debug.h": "2bbd02f9e865e09cf6abc0c34afba25f9494dd27ede421829d62b0cc11635842",
+      "runtime_status.h": "3f7d75e324c52ab0edd5cca4c4b75c5ecd86196f9f5b55a0e750216c0373c412",
+      "scheduler.h": "f0bc0e0a083a26db9edb5504cb5b6a78b37c9542ab8d10d9ef1dd37cb094fe12",
+      "seed_adapter.h": "8ac7adb46932c8734634d85a8e7704f3861a07e1ca6f7dddc566b9657262746d",
+      "snapshot_probe.h": "3708c740b4d0d6bfe7bda9466c4b35e5820d3a5a1ad12eaf23caccbd2c3fec37",
+      "state_probe.h": "d5f4e92ed48a658315d78685b9fc364cc8adf44e7aea6850fea9ef70377b91fc",
+      "world_reader.h": "231b238df4d6aeed43602c0ef4a256c5773cc16053e2dbc9c5e438cfe4fe50d9",
+      "write_manifest.py": "085f7a90fba77941233e8a127a34041540dca35cc4916588af5dcc3421dc35db"
     }
   },
   "installed": {
     "dinput8.dll": "80d6ac17897a1c85803a74996cf1520fba0366a58d6743633b2e8de0e318f97b",
     "z_CreatineCore/creatinecore.dll": "44961c340454cfe5d5c15036122a1c52ca3bdbdeaaa4a178aafd2a05e070f114",
     "z_CreatineCore/eventmusic.dll": "63b5a704ee2c515fa676ba55dd885684887b99f4aba67d7e9714c1d02dad4454",
-    "z_CreatineCore/dll_Submods/ccore_script_fixes.dll": "d7548808763b9ffb65513ae8209e2ebfb288534b6f8a984acd05b59599083453",
-    "z_CreatineCore/creatinecore_settings.ini": "56e23510ce293594392c64ee94c288946bde26ae5deec63d50f0e7e56822e737"
+    "z_CreatineCore/dll_Submods/ccore_script_fixes.dll": "5a7158fd02545686bbea55bfaedf3c8e05c899af0caafa1bbcc8d097a7af3b4a",
+    "z_CreatineCore/dll_Submods/ccore_great_power_culture_cores.dll": "f7ac480679a5008b8be3add48f385e1cf9e706e805d07d1235647dd639cba32b",
+    "z_CreatineCore/great_power_culture_cores.ini": "40a024fcb47d56b1208c44839d675f433cdde9be8421ffae6fb07f2bb9a51769",
+    "z_CreatineCore/creatinecore_settings.ini": "4d32e9c212ba638a07f440adca8ab091d121186ba03477af24584517a68f25a2"
+  },
+  "activation": {
+    "enabled": true,
+    "mtth_months": 60,
+    "acceptance_pending": true,
+    "remaining_tests_in_separate_worktree": true,
+    "user_authorized": true
   }
 }

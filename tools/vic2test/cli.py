@@ -87,6 +87,149 @@ def archive_logs(environment: Path, game: Path, token: str) -> dict:
     return saved
 
 
+def mute_test_settings(environment: Path) -> None:
+    """Новые тестовые процессы всегда без звука; основной профиль не меняется."""
+    environment = environment.resolve()
+    if not environment.is_relative_to((ROOT / '.work').resolve()):
+        raise ValueError('Отключать звук можно только в тестовой среде')
+    metadata = json.loads((environment / 'environment.json').read_text(encoding='utf-8'))
+    game, user = (Path(metadata[key]).resolve() for key in ('game', 'userdata'))
+    if game != environment / 'game' or user != environment / 'userdata':
+        raise ValueError('Некорректная изоляция настроек тестовой игры')
+    for directory in (game, user):
+        settings = directory / 'settings.txt'
+        if not settings.resolve().is_relative_to(environment):
+            raise ValueError('Настройки выходят из тестовой среды')
+        if not settings.is_file():
+            continue
+        content = settings.read_bytes()
+        newline = b'\r\n' if b'\r\n' in content else b'\n'
+        for field in (b'master_volume', b'music_volume', b'sound_fx_volume', b'ambient_volume'):
+            pattern = rb'(?m)^([ \t]*' + field + rb'[ \t]*=[ \t]*)[-+0-9.eE]+'
+            content, count = re.subn(pattern, rb'\g<1>0.000000', content)
+            if not count:
+                content = content.rstrip(b'\r\n') + newline + field + b'=0.000000' + newline
+        settings.write_bytes(content)
+
+
+def wait_gpc_phase(environment: Path, timeout: float) -> dict:
+    """Дождаться завершения GPC после ранней остановки календаря на паузе."""
+    deadline = time.monotonic() + timeout
+    while time.monotonic() < deadline:
+        snapshot = request(environment, 'culture-cores-status', max(.001, deadline - time.monotonic()))
+        if time.monotonic() >= deadline:
+            break
+        if not snapshot.get('ok'):
+            return snapshot
+        if snapshot.get('installed') is False:
+            return {'ok': True, 'gpc_phase_required': False}
+        if snapshot.get('installed') is not True or type(snapshot.get('enabled')) is not int or snapshot['enabled'] not in (0, 1):
+            return {'ok': False, 'error': 'E_GPC_STATUS_PROTOCOL'}
+        if type(snapshot.get('failed')) is not int or snapshot['failed'] not in (0, 1):
+            return {'ok': False, 'error': 'E_GPC_STATUS_PROTOCOL'}
+        if snapshot.get('failed'):
+            return {'ok': False, 'error': 'E_GPC_FAILED', 'gpc': snapshot}
+        if snapshot['enabled'] == 0:
+            return {'ok': True, 'gpc_phase_required': False}
+        current = request(environment, 'status', max(.001, deadline - time.monotonic()))
+        if time.monotonic() >= deadline:
+            break
+        if not current.get('ok'):
+            return current
+        if not current.get('campaign_loaded'):
+            return {'ok': False, 'error': 'E_NOT_READY'}
+        date = current.get('date_raw')
+        if (type(date) is int and date > 0
+                and type(snapshot.get('completed_raw_date')) is int
+                and type(snapshot.get('callback_raw_date')) is int
+                and snapshot.get('busy') == 0 and snapshot.get('has_schedule') == 1
+                and current.get('paused') is True
+                and snapshot.get('completed_raw_date') == current.get('date_raw')
+                and snapshot.get('callback_raw_date') == current.get('date_raw')):
+            return {'ok': True, 'gpc_phase_required': True, 'gpc': snapshot}
+        time.sleep(min(.2, max(0, deadline - time.monotonic())))
+    return {'ok': False, 'error': 'E_GPC_PHASE_TIMEOUT',
+            'message': 'Дата остановлена, завершение фазы GPC ещё не подтверждено'}
+
+
+def return_to_menu(environment: Path, timeout=180) -> dict:
+    if timeout <= 0:
+        raise ValueError('Срок возврата в меню должен быть положительным')
+    deadline = time.monotonic() + timeout
+    paused = request(environment, 'pause', max(.001, deadline - time.monotonic()))
+    if not paused.get('ok'):
+        return paused
+    phase = wait_gpc_phase(environment, max(.001, deadline - time.monotonic()))
+    if not phase.get('ok'):
+        return phase
+    for command, field in (('sp-return-resign', 'confirmation'), ('sp-return-confirm', 'summary'), ('sp-return-exit', 'main_menu')):
+        if time.monotonic() >= deadline:
+            return {'ok': False, 'error': 'E_SP_TRANSITION_TIMEOUT'}
+        result = request(environment, command, deadline - time.monotonic())
+        if not result.get('ok'):
+            return result
+        while result.get(field) is not True:
+            remaining = deadline - time.monotonic()
+            if remaining <= 0:
+                return {'ok': False, 'error': 'E_SP_TRANSITION_TIMEOUT', 'stage': command,
+                        'message': 'Отправленная команда не повторяется'}
+            time.sleep(min(.2, remaining))
+            if time.monotonic() >= deadline:
+                return {'ok': False, 'error': 'E_SP_TRANSITION_TIMEOUT', 'stage': command}
+            result = request(environment, 'sp-return-state', deadline - time.monotonic())
+            if not result.get('ok'):
+                return result
+    return {**result, 'campaign_discarded': True}
+
+
+def load_campaign(environment: Path, save: str, timeout=600) -> dict:
+    if timeout <= 0:
+        raise ValueError('Срок загрузки должен быть положительным')
+    deadline = time.monotonic() + timeout
+    metadata = json.loads((environment / 'environment.json').read_text(encoding='utf-8'))
+    if Path(save).name != save or not (Path(metadata['userdata']) / 'save games' / save).is_file():
+        raise ValueError('Копия сохранения не найдена в тестовом каталоге')
+    current = wait_request(environment, 'status', max(.001, deadline - time.monotonic()))
+    if not current.get('ok'):
+        return current
+    if current.get('campaign_loaded'):
+        raise ValueError('Сначала вернитесь в главное меню')
+    for command in ('open-single-player', 'load-save ' + save):
+        if time.monotonic() >= deadline:
+            return {'ok': False, 'error': 'E_LOAD_TIMEOUT'}
+        result = wait_request(environment, command, max(.001, deadline - time.monotonic()))
+        if not result.get('ok'):
+            return result
+    while time.monotonic() < deadline:
+        result = request(environment, 'frontend-status', max(.001, deadline - time.monotonic()))
+        if time.monotonic() >= deadline:
+            return {'ok': False, 'error': 'E_LOAD_TIMEOUT'}
+        if not result.get('ok'):
+            return result
+        if result.get('save_loaded'):
+            break
+        time.sleep(min(.2, max(0, deadline - time.monotonic())))
+    else:
+        return {'ok': False, 'error': 'E_LOAD_TIMEOUT'}
+    result = request(environment, 'play', max(.001, deadline - time.monotonic()))
+    if not result.get('ok'):
+        return result
+    while time.monotonic() < deadline:
+        result = request(environment, 'status', max(.001, deadline - time.monotonic()))
+        if time.monotonic() >= deadline:
+            return {'ok': False, 'error': 'E_START_TIMEOUT'}
+        if not result.get('ok'):
+            return result
+        if result.get('campaign_loaded'):
+            paused = request(environment, 'pause', max(.001, deadline - time.monotonic()))
+            combined = {**result, **paused, 'campaign_loaded': True}
+            if paused.get('ok'):
+                combined['paused'] = True
+            return combined
+        time.sleep(min(.2, max(0, deadline - time.monotonic())))
+    return {'ok': False, 'error': 'E_START_TIMEOUT'}
+
+
 def prepare(destination: Path, saves: list[Path]) -> dict:
     """Копирует данные, никогда не связывая их с оригиналами жёсткими ссылками."""
     destination = destination.resolve()
@@ -130,6 +273,7 @@ def prepare(destination: Path, saves: list[Path]) -> dict:
         (user / "messagetypes_custom.txt").write_bytes(quiet.encode("cp1251"))
     metadata = {"game": str(game), "userdata": str(user), "sources": original_saves}
     (destination / "environment.json").write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding="utf-8")
+    mute_test_settings(destination)
     return {"ok": True, **metadata, "campaign_loaded": False}
 
 
@@ -160,6 +304,7 @@ def start(environment: Path, hidden: bool, save: str | None = None, mods: list[s
     poison = environment / "poisoned.json"
     if poison.exists():
         poison.rename(environment / ("poisoned-" + uuid.uuid4().hex + ".json"))
+    mute_test_settings(environment)
     arguments = [str(game / "v2game.exe")]
     for mod in mods or []:
         descriptor = (game / "mod" / mod).resolve()
@@ -181,33 +326,11 @@ def start(environment: Path, hidden: bool, save: str | None = None, mods: list[s
              "log_offsets": log_offsets, "log_history": history}
     (environment / "session.json").write_text(json.dumps(state, indent=2), encoding="utf-8")
     if save:
-        result = wait_request(environment, "open-single-player", 600)
-        if not result.get("ok"):
+        result = load_campaign(environment, save)
+        if not result.get('ok'):
             return result
-        result = wait_request(environment, "load-save " + save, 60)
-        if not result.get("ok"):
-            return result
-        deadline = time.monotonic() + 600
-        while time.monotonic() < deadline:
-            result = request(environment, "frontend-status", 180)
-            if result.get("save_loaded"):
-                break
-            if not result.get("ok"):
-                return result
-            time.sleep(0.5)
-        else:
-            return {"ok": False, "error": "E_LOAD_TIMEOUT", "message": "Загрузка сохранения не завершилась"}
-        result = wait_request(environment, "play", 60)
-        if not result.get("ok"):
-            return result
-        deadline = time.monotonic() + 120
-        while time.monotonic() < deadline:
-            result = request(environment, "status", 15)
-            if result.get("campaign_loaded"):
-                visibility = hide_windows(process.pid) if hidden else {}
-                return {**request(environment, "pause", 15), **state, "campaign_loaded": True, **visibility}
-            time.sleep(0.5)
-        return {"ok": False, "error": "E_START_TIMEOUT", "message": "Не удалось войти в кампанию"}
+        visibility = hide_windows(process.pid) if hidden else {}
+        return {**state, **result, **visibility}
     visibility = hide_windows(process.pid) if hidden else {}
     return {"ok": True, **state, **visibility, "message": "Процесс запущен без автоматической загрузки кампании."}
 
@@ -375,6 +498,13 @@ def main() -> int:
     p.add_argument("--mod", action="append", default=[], help="Имя .mod в тестовом каталоге mod")
     p = commands.add_parser("status", help="Получить состояние от нативного плагина")
     p.add_argument("--environment", type=Path, required=True)
+    p = commands.add_parser("return-menu", help="Завершить одиночную тестовую партию и вернуться в меню без выхода из процесса")
+    p.add_argument("--environment", type=Path, required=True)
+    p.add_argument("--timeout", type=float, default=180)
+    p = commands.add_parser("load", help="Загрузить другой тестовый сейв из главного меню в текущем процессе")
+    p.add_argument("--environment", type=Path, required=True)
+    p.add_argument("--save", required=True)
+    p.add_argument("--timeout", type=float, default=600)
     p = commands.add_parser("culture-cores", help="Диагностика нативного модуля национальных провинций")
     p.add_argument("operation", choices=["status", "preview", "snapshot", "run"])
     p.add_argument("--environment", type=Path, required=True)
@@ -430,6 +560,10 @@ def main() -> int:
             return emit(prepare(args.destination, args.save))
         if args.command == "start":
             return emit(start(args.environment, args.hidden, args.save, args.mod))
+        if args.command == 'return-menu':
+            return emit(return_to_menu(args.environment, args.timeout))
+        if args.command == 'load':
+            return emit(load_campaign(args.environment, args.save, args.timeout))
         if args.command == "culture-cores":
             if args.operation == 'status':
                 return emit(request(args.environment, "culture-cores-status", 30))
@@ -484,6 +618,9 @@ def main() -> int:
             output = Path(metadata["userdata"]) / "save games" / (args.name + ".v2")
             if output.exists():
                 raise ValueError("Выходной файл уже существует; выберите новое имя")
+            phase = wait_gpc_phase(args.environment, 180)
+            if not phase.get('ok'):
+                return emit(phase)
             result = request(args.environment, "save-native " + args.name, 180)
             if result.get("ok"):
                 if not output.is_file() or not output.stat().st_size:
@@ -534,7 +671,11 @@ def main() -> int:
                 if not current.get("ok"):
                     return emit(current)
                 if current.get("advance_target") == 0 and current.get("paused"):
-                    return emit({**current, "requested_target_date_raw": result["target_date_raw"], "completed": True})
+                    phase = wait_gpc_phase(args.environment, max(.001, deadline - time.monotonic()))
+                    if not phase.get('ok'):
+                        return emit({**phase, 'state': current, 'completed': False})
+                    return emit({**current, "requested_target_date_raw": result["target_date_raw"], "completed": True,
+                                 "gpc_phase": phase})
                 if current.get("event_windows", 0) and not args.auto_events:
                     paused = request(args.environment, "pause", 15)
                     return emit({"ok": False, "error": "E_EVENT_BLOCKED", "cancelled": bool(paused.get("ok")),
