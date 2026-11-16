@@ -17,6 +17,8 @@ ROOT = Path(__file__).resolve().parents[2]
 WORK = ROOT / ".work/creatinecore"
 UPSTREAM = WORK / "upstream"
 BUILD = WORK / "build"
+GPC_RESOURCES = ("events/great_power_culture_cores.txt",
+                 "localisation/great_power_culture_cores.csv")
 
 
 def run(*args: str, cwd: Path = ROOT) -> None:
@@ -100,6 +102,27 @@ def stage_gpc_artifacts(source: Path, product: Path, destination: Path,
     return record
 
 
+def stage_gpc_resources(source: Path, destination: Path) -> dict:
+    """Зафиксировать событие и локализацию вместе с устанавливаемым пакетом."""
+    artifacts = {}
+    # Отсутствие любого ресурса обнаруживается до копирования первого файла.
+    for relative in GPC_RESOURCES:
+        path = source / relative
+        if not path.is_file():
+            raise RuntimeError("Отсутствует игровой ресурс GPC: " + relative)
+        content = path.read_bytes()
+        artifacts[relative] = {"sha256": hashlib.sha256(content).hexdigest(),
+                               "bytes": len(content)}
+    for relative, record in artifacts.items():
+        target = destination / relative
+        target.parent.mkdir(parents=True, exist_ok=True)
+        # Игровые CP1251/CRLF сохраняются без декодирования и преобразований.
+        shutil.copy2(source / relative, target)
+        if hashlib.sha256(target.read_bytes()).hexdigest() != record["sha256"]:
+            raise RuntimeError("Ошибка копирования игрового ресурса GPC: " + relative)
+    return artifacts
+
+
 def build() -> None:
     prepare()
     BUILD.mkdir(exist_ok=True)
@@ -121,6 +144,7 @@ def build() -> None:
         artifacts[name] = dll_artifact(BUILD / name)
     ini = BUILD / "great_power_culture_cores.ini"
     artifacts[ini.name] = {"sha256": hashlib.sha256(ini.read_bytes()).hexdigest(), "bytes": ini.stat().st_size}
+    artifacts.update(stage_gpc_resources(ROOT, BUILD))
     record = {"upstream_url": URL, "upstream_commit": COMMIT, "patch_sha256": hashlib.sha256(Path(__file__).with_name("v2game.patch").read_bytes()).hexdigest(), "msbuild": tool, "configuration": "Release|Win32", "artifacts": artifacts, "great_power_culture_cores": gpc}
     (BUILD / "manifest.json").write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print("Сборка завершена:", BUILD)

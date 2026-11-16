@@ -14,6 +14,16 @@ import install
 import build as core_build
 
 
+RESOURCE_BYTES = {
+    'events/great_power_culture_cores.txt': (
+        '# Уведомление о новых национальных провинциях\r\n'
+        'country_event = { id = 3997200 is_triggered_only = yes }\r\n').encode('cp1251'),
+    'localisation/great_power_culture_cores.csv': (
+        '#CODE;ENGLISH;FRENCH;GERMAN;POLISH;SPANISH;ITALIAN;SWEDISH;CZECH;HUNGARIAN;DUTCH;PORTUGESE;RUSSIAN;FINNISH;x\r\n'
+        'GPC_TITLE;Новые национальные провинции;;;;;;;;;;;;;x\r\n').encode('cp1251'),
+}
+
+
 class InstallTests(unittest.TestCase):
     def setUp(self):
         self.temporary = tempfile.TemporaryDirectory(prefix='vic2-install-test-')
@@ -37,14 +47,18 @@ class InstallTests(unittest.TestCase):
             'z_CreatineCore/great_power_culture_cores.ini': (
                 b'[GreatPowerCultureCores]\r\nENABLE_GREAT_POWER_CULTURE_CORES=0\r\n'
                 b'GREAT_POWER_CULTURE_CORES_MTTH_MONTHS=60\r\n'),
+            **RESOURCE_BYTES,
         }
         self.build = self.root / '.work/creatinecore/build'
         self.build.mkdir(parents=True)
         self.build_manifest = {'artifacts': {}}
         for relative, content in self.artifacts.items():
-            name = Path(relative).name
-            (self.build / name).write_bytes(content)
-            self.build_manifest['artifacts'][name] = {'sha256': self.sha256(content)}
+            name = relative if relative in RESOURCE_BYTES else Path(relative).name
+            path = self.build / name
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_bytes(content)
+            self.build_manifest['artifacts'][name] = {
+                'sha256': self.sha256(content), 'bytes': len(content)}
         (self.build / 'manifest.json').write_text(
             json.dumps(self.build_manifest), encoding='utf-8')
         self.settings_relative = 'z_CreatineCore/creatinecore_settings.ini'
@@ -125,8 +139,21 @@ class InstallTests(unittest.TestCase):
         old_manifest = b'{"previous": "installation"}\n'
         (self.destination / self.install_manifest_relative).write_bytes(old_manifest)
         previous[self.install_manifest_relative] = old_manifest
+        previous[self.settings_relative] = existing
 
-        backup = self.run_installer()
+        original_copy = install.shutil.copy2
+
+        def check_backup_before_destination_write(source, destination, *args, **kwargs):
+            if Path(destination).is_relative_to(self.destination):
+                backups = list((self.root / '.work/install-backups').iterdir())
+                self.assertEqual(len(backups), 1)
+                for relative, content in previous.items():
+                    self.assertEqual((backups[0] / relative).read_bytes(), content)
+                self.assertTrue((backups[0] / 'before.json').is_file())
+            return original_copy(source, destination, *args, **kwargs)
+
+        with patch.object(install.shutil, 'copy2', side_effect=check_backup_before_destination_write):
+            backup = self.run_installer()
 
         self.assert_installed(existing, existing_gpc)
         self.assertEqual(self.profile.read_bytes(), self.profile_bytes)
@@ -152,7 +179,8 @@ class InstallTests(unittest.TestCase):
         self.assertIn(b'ENABLE_GREAT_POWER_CULTURE_CORES=0', self.gpc_settings.read_bytes())
 
     def test_changed_gpc_artifact_rejected_before_any_destination_write(self):
-        for name in ('ccore_great_power_culture_cores.dll', 'great_power_culture_cores.ini'):
+        for name in ('ccore_great_power_culture_cores.dll', 'great_power_culture_cores.ini',
+                     *RESOURCE_BYTES):
             with self.subTest(name=name):
                 path = self.build / name
                 original = path.read_bytes()
@@ -164,6 +192,61 @@ class InstallTests(unittest.TestCase):
                     path.write_bytes(original)
                 self.assertEqual([p.name for p in self.destination.iterdir()], ['v2game.exe'])
                 self.assertFalse((self.root / '.work/install-backups').exists())
+
+    def test_missing_resource_rejected_before_any_destination_write(self):
+        for name in RESOURCE_BYTES:
+            with self.subTest(name=name):
+                path = self.build / name
+                content = path.read_bytes()
+                path.unlink()
+                try:
+                    with self.assertRaisesRegex(RuntimeError, 'В пакете отсутствует'):
+                        self.run_installer()
+                finally:
+                    path.write_bytes(content)
+                self.assertEqual([p.name for p in self.destination.iterdir()], ['v2game.exe'])
+                self.assertFalse((self.root / '.work/install-backups').exists())
+
+    def test_missing_resource_manifest_entry_rejects_legacy_package(self):
+        for name in RESOURCE_BYTES:
+            with self.subTest(name=name):
+                manifest = {'artifacts': dict(self.build_manifest['artifacts'])}
+                del manifest['artifacts'][name]
+                (self.build / 'manifest.json').write_text(json.dumps(manifest), encoding='utf-8')
+                with self.assertRaisesRegex(RuntimeError, 'В манифесте отсутствует'):
+                    self.run_installer()
+                self.assertEqual([p.name for p in self.destination.iterdir()], ['v2game.exe'])
+                self.assertFalse((self.root / '.work/install-backups').exists())
+
+    def test_resource_manifest_size_mismatch_rejected_before_write(self):
+        name = 'localisation/great_power_culture_cores.csv'
+        self.build_manifest['artifacts'][name]['bytes'] += 1
+        (self.build / 'manifest.json').write_text(json.dumps(self.build_manifest), encoding='utf-8')
+        with self.assertRaisesRegex(RuntimeError, 'Размер артефакта'):
+            self.run_installer()
+        self.assertEqual([p.name for p in self.destination.iterdir()], ['v2game.exe'])
+        self.assertFalse((self.root / '.work/install-backups').exists())
+
+    def test_resource_backup_failure_prevents_all_destination_writes(self):
+        previous = {}
+        for relative in [*self.artifacts, self.settings_relative, self.install_manifest_relative]:
+            path = self.destination / relative
+            path.parent.mkdir(parents=True, exist_ok=True)
+            previous[relative] = ('previous ' + relative).encode('ascii')
+            path.write_bytes(previous[relative])
+        target = self.destination / 'localisation/great_power_culture_cores.csv'
+        original_copy = install.shutil.copy2
+
+        def fail_resource_backup(source, destination, *args, **kwargs):
+            if Path(source) == target:
+                raise OSError('simulated resource backup failure')
+            return original_copy(source, destination, *args, **kwargs)
+
+        with patch.object(install.shutil, 'copy2', side_effect=fail_resource_backup):
+            with self.assertRaisesRegex(OSError, 'simulated resource backup failure'):
+                self.run_installer()
+        for relative, content in previous.items():
+            self.assertEqual((self.destination / relative).read_bytes(), content)
 
     def test_partial_install_keeps_complete_backup_and_failure_report(self):
         previous = {}
@@ -254,6 +337,48 @@ class GpcArtifactTests(unittest.TestCase):
             self.stage()
         self.assertEqual(list(self.destination.iterdir()), [])
 
+    def write_resources(self, root):
+        for relative, content in RESOURCE_BYTES.items():
+            path = root / relative
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_bytes(content)
+
+    def test_stages_resources_and_hashes_without_encoding_changes(self):
+        self.write_resources(self.source)
+        record = core_build.stage_gpc_resources(self.source, self.destination)
+        self.assertEqual(record, {
+            relative: {'sha256': hashlib.sha256(content).hexdigest(), 'bytes': len(content)}
+            for relative, content in RESOURCE_BYTES.items()})
+        for relative, content in RESOURCE_BYTES.items():
+            self.assertEqual((self.destination / relative).read_bytes(), content)
+            self.assertEqual((self.source / relative).read_bytes(), content)
+
+    def test_missing_resource_rejects_before_staging_first_file(self):
+        self.write_resources(self.source)
+        for relative, content in RESOURCE_BYTES.items():
+            with self.subTest(relative=relative):
+                path = self.source / relative
+                path.unlink()
+                try:
+                    with self.assertRaisesRegex(RuntimeError, 'Отсутствует игровой ресурс'):
+                        core_build.stage_gpc_resources(self.source, self.destination)
+                finally:
+                    path.write_bytes(content)
+                self.assertEqual(list(self.destination.iterdir()), [])
+
+    def test_resource_copy_corruption_rejects_staging(self):
+        self.write_resources(self.source)
+        original_copy = core_build.shutil.copy2
+
+        def corrupt_resource(source, destination, *args, **kwargs):
+            result = original_copy(source, destination, *args, **kwargs)
+            Path(destination).write_bytes(b'corrupted resource')
+            return result
+
+        with patch.object(core_build.shutil, 'copy2', side_effect=corrupt_resource):
+            with self.assertRaisesRegex(RuntimeError, 'Ошибка копирования игрового ресурса'):
+                core_build.stage_gpc_resources(self.source, self.destination)
+
     def test_main_build_manifest_contains_gpc_binary_ini_and_source_provenance(self):
         # Проверяется общая оркестрация без Git, VS и исполнения fake DLL.
         root = self.destination / 'repository'
@@ -268,6 +393,7 @@ class GpcArtifactTests(unittest.TestCase):
         shutil.copytree(self.product, product)
         executable = b'fake qualified executable; never executed'
         (root / 'v2game.exe').write_bytes(executable)
+        self.write_resources(root)
         record = {**self.record, 'expected_exe_sha256': hashlib.sha256(executable).hexdigest()}
         (product / 'manifest.json').write_text(json.dumps(record), encoding='utf-8')
         for name in ('creatinecore.dll', 'dinput8.dll', 'eventmusic.dll', 'ccore_script_fixes.dll'):
@@ -296,6 +422,10 @@ class GpcArtifactTests(unittest.TestCase):
                          hashlib.sha256(self.binary).hexdigest())
         self.assertEqual(aggregate['artifacts']['great_power_culture_cores.ini']['sha256'],
                          hashlib.sha256(self.ini).hexdigest())
+        for relative, content in RESOURCE_BYTES.items():
+            self.assertEqual((output / relative).read_bytes(), content)
+            self.assertEqual(aggregate['artifacts'][relative], {
+                'sha256': hashlib.sha256(content).hexdigest(), 'bytes': len(content)})
 
 
 if __name__ == '__main__':

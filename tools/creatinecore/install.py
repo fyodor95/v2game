@@ -28,10 +28,20 @@ def main():
              'z_CreatineCore/eventmusic.dll': 'eventmusic.dll',
              'z_CreatineCore/dll_Submods/ccore_script_fixes.dll': 'ccore_script_fixes.dll',
              'z_CreatineCore/dll_Submods/ccore_great_power_culture_cores.dll': 'ccore_great_power_culture_cores.dll',
-             'z_CreatineCore/great_power_culture_cores.ini': 'great_power_culture_cores.ini'}
+             'z_CreatineCore/great_power_culture_cores.ini': 'great_power_culture_cores.ini',
+             'events/great_power_culture_cores.txt': 'events/great_power_culture_cores.txt',
+             'localisation/great_power_culture_cores.csv': 'localisation/great_power_culture_cores.csv'}
     for name in files.values():
-        if digest(build / name) != manifest['artifacts'][name]['sha256']:
+        artifact = manifest.get('artifacts', {}).get(name)
+        if not isinstance(artifact, dict) or not artifact.get('sha256') or 'bytes' not in artifact:
+            raise RuntimeError('В манифесте отсутствует обязательный артефакт: ' + name)
+        path = build / name
+        if not path.is_file():
+            raise RuntimeError('В пакете отсутствует обязательный артефакт: ' + name)
+        if digest(path) != artifact['sha256']:
             raise RuntimeError('Хеш артефакта отличается от результата сборки: ' + name)
+        if path.stat().st_size != artifact['bytes']:
+            raise RuntimeError('Размер артефакта отличается от результата сборки: ' + name)
     stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
     backup = ROOT / '.work/install-backups' / stamp
     backup.mkdir(parents=True)
