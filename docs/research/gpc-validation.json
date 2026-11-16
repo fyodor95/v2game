@@ -1,5 +1,5 @@
 {
-  "complete": false,
+  "complete": true,
   "production_installed": true,
   "multiplayer": "accelerated_mtth60_final_bundle_and_rehost_passed",
   "rules": {
@@ -225,7 +225,7 @@
       "core_ini": "4d32e9c212ba638a07f440adca8ab091d121186ba03477af24584517a68f25a2",
       "main_settings": "a5f50b2fee351a22f9a7962eb87131a75f112ece6bdc8cebaffd0f677c965b71"
     },
-    "acceptance_pending": true
+    "acceptance_pending": false
   },
   "remaining_tests_worktree": "D:/v2game/.work/gpc-acceptance",
   "debug_abi": {
@@ -404,9 +404,70 @@
     "report": ".work/gpc-artifacts/original-saves-integrity-20261116.json",
     "all_sha256_unchanged": true
   },
-  "remaining_acceptance": [
-    "production_multiyear_run_and_reload",
-    "native_notification_control",
-    "final_review_and_documentation"
-  ]
+  "remaining_acceptance": [],
+  "acceptance_result": "passed_with_documented_native_ui_limitation",
+  "production_multiyear": {
+    "report": ".work/gpc-artifacts/production-five-years-01.json",
+    "days": 1825,
+    "years": 5,
+    "mtth_months": 60,
+    "test_always": false,
+    "annual_checks_passed": 5,
+    "active_flags_each": 193,
+    "final_pass": 2,
+    "final_rng": 495454733,
+    "final_checksum": 153482800,
+    "reload_report": ".work/gpc-artifacts/five-year-reload-and-notice-control-01.json",
+    "roundtrip_report": ".work/gpc-artifacts/five-year-roundtrip-inspection-01.json",
+    "roundtrip_core_pairs": 3492,
+    "roundtrip_core_sets_equal": true,
+    "roundtrip_flags_equal": true,
+    "reload_next_rng": 2247960905,
+    "reload_next_checksum": 3900285933
+  },
+  "distribution": {
+    "report": ".work/gpc-distribution-result-01.json",
+    "complete": true,
+    "ok": true,
+    "seeds": 32,
+    "calendar_days": 64000000,
+    "attempts": 32000000,
+    "checks_passed": 83,
+    "events": 17649,
+    "expected_events": 17760,
+    "event_z": -0.833147793048153,
+    "max_cdf_error": 0.00591989176485752
+  },
+  "packaging": {
+    "report": ".work/gpc-artifacts/packaging-install-01.json",
+    "resources": {
+      "events/great_power_culture_cores.txt": {
+        "sha256": "83c9e46505b1f7c15bac11d8ab6d931ae1d19d560a51da8aebc24852f52ff250",
+        "bytes": 291
+      },
+      "localisation/great_power_culture_cores.csv": {
+        "sha256": "07f1a61900d080b43f81832d6ca7cbfe6f9df37fb312b270905880b44550a246",
+        "bytes": 273
+      }
+    },
+    "real_artifact_install_passed": true,
+    "both_ini_preserved": true,
+    "full_backup_verified": true,
+    "main_production_untouched": true,
+    "installer_tests": 15
+  },
+  "limitations": [
+    {
+      "kind": "native_notification_window_not_restored",
+      "existing_event_control": 19032,
+      "gpc_disabled_control": true,
+      "window_after_save": 1,
+      "window_after_load": 0,
+      "button_after_load_verified": false,
+      "persistent_queue_added": false,
+      "report": "docs/research/gpc-notification-save-contracts.md"
+    }
+  ],
+  "final_report": "docs/research/gpc-acceptance.md",
+  "completed_utc": "2026-11-16T00:19:58.755082+00:00"
 }

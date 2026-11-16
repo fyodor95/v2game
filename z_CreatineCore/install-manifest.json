@@ -33,6 +33,14 @@
     "great_power_culture_cores.ini": {
       "sha256": "5cb968b815c63544f4a81928e55609795723b9e1442bff4a36bb1d2fb5fac359",
       "bytes": 341
+    },
+    "events/great_power_culture_cores.txt": {
+      "sha256": "83c9e46505b1f7c15bac11d8ab6d931ae1d19d560a51da8aebc24852f52ff250",
+      "bytes": 291
+    },
+    "localisation/great_power_culture_cores.csv": {
+      "sha256": "07f1a61900d080b43f81832d6ca7cbfe6f9df37fb312b270905880b44550a246",
+      "bytes": 273
     }
   },
   "great_power_culture_cores": {
@@ -72,13 +80,22 @@
     "z_CreatineCore/dll_Submods/ccore_script_fixes.dll": "5a7158fd02545686bbea55bfaedf3c8e05c899af0caafa1bbcc8d097a7af3b4a",
     "z_CreatineCore/dll_Submods/ccore_great_power_culture_cores.dll": "f7ac480679a5008b8be3add48f385e1cf9e706e805d07d1235647dd639cba32b",
     "z_CreatineCore/great_power_culture_cores.ini": "40a024fcb47d56b1208c44839d675f433cdde9be8421ffae6fb07f2bb9a51769",
-    "z_CreatineCore/creatinecore_settings.ini": "4d32e9c212ba638a07f440adca8ab091d121186ba03477af24584517a68f25a2"
+    "z_CreatineCore/creatinecore_settings.ini": "4d32e9c212ba638a07f440adca8ab091d121186ba03477af24584517a68f25a2",
+    "events/great_power_culture_cores.txt": "83c9e46505b1f7c15bac11d8ab6d931ae1d19d560a51da8aebc24852f52ff250",
+    "localisation/great_power_culture_cores.csv": "07f1a61900d080b43f81832d6ca7cbfe6f9df37fb312b270905880b44550a246"
   },
   "activation": {
     "enabled": true,
     "mtth_months": 60,
-    "acceptance_pending": true,
-    "remaining_tests_in_separate_worktree": true,
-    "user_authorized": true
+    "acceptance_pending": false,
+    "remaining_tests_in_separate_worktree": false,
+    "user_authorized": true,
+    "validation_report": "docs/research/gpc-acceptance.md",
+    "qualification": "passed_with_documented_native_ui_limitation"
+  },
+  "resource_packaging": {
+    "validated_report": ".work/gpc-artifacts/packaging-install-01.json",
+    "base_artifacts_unchanged": true,
+    "installer_commit": "b0cbe93a"
   }
 }
