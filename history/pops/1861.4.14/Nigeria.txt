@@ -425,37 +425,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = igala
 		religion = animist
 		size = 1133.0
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = igala
 		religion = animist
 		size = 566.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = igala
 		religion = animist
 		size = 2317.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = igala
 		religion = animist
 		size = 1592.25
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = igala
 		religion = animist
 		size = 36590.75
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = igala
 		religion = animist
 		size = 16480.0
 	}
@@ -499,37 +499,37 @@
 #Warri (616000/154000 POPS) african_minor includes Ijaw
 1931 = {
 	aristocrats = {
-		culture = african_minor
+		culture = ijaw
 		religion = animist
 		size = 3167.25
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = ijaw
 		religion = animist
 		size = 1596.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = ijaw
 		religion = animist
 		size = 6360.25
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = ijaw
 		religion = animist
 		size = 1596.5
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = ijaw
 		religion = animist
 		size = 105729.5
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = ijaw
 		religion = animist
 		size = 40170.0
 	}
@@ -604,37 +604,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = yoruba
 		religion = animist
 		size = 206.0
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = yoruba
 		religion = animist
 		size = 103.0
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = yoruba
 		religion = animist
 		size = 463.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = yoruba
 		religion = animist
 		size = 128.75
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = yoruba
 		religion = animist
 		size = 7338.75
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = yoruba
 		religion = animist
 		size = 3090.0
 	}
@@ -644,37 +644,37 @@
 #Bonny (112000/28000 POPS) african_minor includes Ijaw
 1932 = {
 	aristocrats = {
-		culture = african_minor
+		culture = ijaw
 		religion = animist
 		size = 566.5
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = ijaw
 		religion = animist
 		size = 283.25
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = ijaw
 		religion = animist
 		size = 1158.75
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = ijaw
 		religion = animist
 		size = 309.0
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = ijaw
 		religion = animist
 		size = 19312.5
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = ijaw
 		religion = animist
 		size = 7210.0
 	}
@@ -876,67 +876,67 @@
 #Bussa (56000/14000 POPS) #now part of Nigeria
 1938 = {
 	aristocrats = {
-		culture = african_minor
+		culture = nupe
 		religion = animist
 		size = 25.75
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = nupe
 		religion = animist
 		size = 51.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = nupe
 		religion = animist
 		size = 103.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = nupe
 		religion = animist
 		size = 25.75
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = nupe
 		religion = animist
 		size = 1854.0
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = nupe
 		religion = animist
 		size = 2060.0
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = nupe
 		religion = sunni
 		size = 231.75
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = nupe
 		religion = sunni
 		size = 128.75
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = nupe
 		religion = sunni
 		size = 515.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = nupe
 		religion = sunni
 		size = 128.75
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = nupe
 		religion = sunni
 		size = 9295.75
 	}
@@ -1066,37 +1066,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = gbagyi
 		religion = animist
 		size = 206.0
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = gbagyi
 		religion = animist
 		size = 103.0
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = gbagyi
 		religion = animist
 		size = 566.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = gbagyi
 		religion = animist
 		size = 128.75
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = gbagyi
 		religion = animist
 		size = 10325.75
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = gbagyi
 		religion = animist
 		size = 3090.0
 	}
@@ -1104,37 +1104,37 @@
 #Bida (68000/17000 POPS) #african_Minor includes Gwari
 1940 = {
 	aristocrats = {
-		culture = african_minor
+		culture = nupe
 		religion = animist
 		size = 334.75
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = nupe
 		religion = animist
 		size = 180.25
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = nupe
 		religion = animist
 		size = 721.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = nupe
 		religion = animist
 		size = 480.25
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = nupe
 		religion = animist
 		size = 11943.75
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = nupe
 		religion = animist
 		size = 5150.0
 	}
@@ -1160,37 +1160,37 @@
 #Abuja (64000/16000 POPS) #african_Minor includes Gwari and Chamba
 1941 = {
 	aristocrats = {
-		culture = african_minor
+		culture = gbagyi
 		religion = animist
 		size = 309.0
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = gbagyi
 		religion = animist
 		size = 154.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = gbagyi
 		religion = animist
 		size = 669.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = gbagyi
 		religion = animist
 		size = 1180.25
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = gbagyi
 		religion = animist
 		size = 11046.75
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = gbagyi
 		religion = animist
 		size = 4120.0
 	}
@@ -1326,67 +1326,67 @@
 #Jos (52000/13000 POPS) #african_Minor includes Chamba
 1943 = {
 	aristocrats = {
-		culture = african_minor
+		culture = plateau_peoples
 		religion = sunni
 		size = 128.75
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = plateau_peoples
 		religion = sunni
 		size = 77.25
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = plateau_peoples
 		religion = sunni
 		size = 309.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = plateau_peoples
 		religion = sunni
 		size = 77.25
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = plateau_peoples
 		religion = sunni
 		size = 4557.75
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = plateau_peoples
 		religion = animist
 		size = 103.0
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = plateau_peoples
 		religion = animist
 		size = 77.25
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = plateau_peoples
 		religion = animist
 		size = 309.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = plateau_peoples
 		religion = animist
 		size = 77.25
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = plateau_peoples
 		religion = animist
 		size = 5639.25
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = plateau_peoples
 		religion = animist
 		size = 2060.0
 	}
@@ -1394,67 +1394,67 @@
 #Gombe (48000/12000 POPS)
 1944 = {
 	aristocrats = {
-		culture = african_minor
+		culture = adamawa_peoples
 		religion = sunni
 		size = 180.25
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = adamawa_peoples
 		religion = sunni
 		size = 103.0
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = adamawa_peoples
 		religion = sunni
 		size = 412.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = adamawa_peoples
 		religion = sunni
 		size = 1103.0
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = adamawa_peoples
 		religion = sunni
 		size = 7441.75
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = adamawa_peoples
 		religion = animist
 		size = 25.75
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = adamawa_peoples
 		religion = animist
 		size = 51.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = adamawa_peoples
 		religion = animist
 		size = 103.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = adamawa_peoples
 		religion = animist
 		size = 25.75
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = adamawa_peoples
 		religion = animist
 		size = 1854.0
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = adamawa_peoples
 		religion = animist
 		size = 2060.0
 	}
@@ -2106,37 +2106,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = adamawa_peoples
 		religion = animist
 		size = 309.0
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = adamawa_peoples
 		religion = animist
 		size = 154.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = adamawa_peoples
 		religion = animist
 		size = 669.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = adamawa_peoples
 		religion = animist
 		size = 180.25
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = adamawa_peoples
 		religion = animist
 		size = 11046.75
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = adamawa_peoples
 		religion = animist
 		size = 7120.0
 	}

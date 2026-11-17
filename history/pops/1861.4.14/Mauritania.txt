@@ -83,7 +83,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = wolof
 		religion = animist
 		size = 5150.0
 	}
@@ -134,7 +134,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = maures
 		religion = animist
 		size = 6180.0
 	}
@@ -172,7 +172,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = fulbe
 		religion = animist
 		size = 3090.0
 	}

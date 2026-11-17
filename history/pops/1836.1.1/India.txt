@@ -3433,19 +3433,19 @@
 #Andaman Islands (14000/3500 POPS)
 1320 = {
 	clergymen = {
-		culture = asian_minor
+		culture = andamanese
 		religion = animist
 		size = 50
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = andamanese
 		religion = animist
 		size = 50
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = andamanese
 		religion = animist
 		size = 3400
 	}
@@ -3696,31 +3696,31 @@
 #Agartala (608000/152000 POPS)
 2566 = {
 	aristocrats = {
-		culture = asian_minor
+		culture = tripuri
 		religion = animist
 		size = 1100
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = tripuri
 		religion = animist
 		size = 875
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = tripuri
 		religion = animist
 		size = 5000
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = tripuri
 		religion = animist
 		size = 1100
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = tripuri
 		religion = animist
 		size = 89125
 	}
@@ -3928,31 +3928,31 @@
 	}
 
 	aristocrats = {
-		culture = asian_minor
+		culture = khond
 		religion = animist
 		size = 250
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = khond
 		religion = animist
 		size = 225
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = khond
 		religion = animist
 		size = 1050
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = khond
 		religion = animist
 		size = 250
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = khond
 		religion = animist
 		size = 21225
 	}
@@ -4670,31 +4670,31 @@
 	}
 
 	aristocrats = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 700
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 750
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 1500
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 650
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 59600
 	}
@@ -4774,31 +4774,31 @@
 	}
 
 	aristocrats = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 600
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 5050
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 1100
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 550
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 53700
 	}
@@ -5092,31 +5092,31 @@
 	}
 
 	aristocrats = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 1250
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 1225
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 3050
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 1250
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 114225
 	}
@@ -5154,31 +5154,31 @@
 	}
 
 	aristocrats = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 850
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 850
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 3400
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 850
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 80050
 	}
@@ -5304,31 +5304,31 @@
 	}
 
 	aristocrats = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 400
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 350
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 1100
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 400
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = gond
 		religion = animist
 		size = 33850
 	}

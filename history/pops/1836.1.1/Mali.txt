@@ -63,37 +63,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = bambara
 		religion = animist
 		size = 125
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = bambara
 		religion = animist
 		size = 75
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = bambara
 		religion = animist
 		size = 350
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = bambara
 		religion = animist
 		size = 75
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = bambara
 		religion = animist
 		size = 6375
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = bambara
 		religion = animist
 		size = 6000
 	}
@@ -173,37 +173,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = bambara
 		religion = animist
 		size = 150
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = bambara
 		religion = animist
 		size = 75
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = bambara
 		religion = animist
 		size = 450
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = bambara
 		religion = animist
 		size = 100
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = bambara
 		religion = animist
 		size = 8225
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = bambara
 		religion = animist
 		size = 10000
 	}
@@ -271,37 +271,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = bambara
 		religion = animist
 		size = 75
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = bambara
 		religion = animist
 		size = 50
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = bambara
 		religion = animist
 		size = 200
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = bambara
 		religion = animist
 		size = 50
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = bambara
 		religion = animist
 		size = 3625
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = bambara
 		religion = animist
 		size = 3000
 	}
@@ -370,37 +370,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = songhai
 		religion = animist
 		size = 150
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = songhai
 		religion = animist
 		size = 100
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = songhai
 		religion = animist
 		size = 500
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = songhai
 		religion = animist
 		size = 100
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = songhai
 		religion = animist
 		size = 9150
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = songhai
 		religion = animist
 		size = 6000
 	}
@@ -538,7 +538,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = fulbe
 		religion = animist
 		size = 6000
 	}
@@ -606,7 +606,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = mande
 		religion = animist
 		size = 6000
 	}
@@ -776,37 +776,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = senufo
 		religion = animist
 		size = 425
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = senufo
 		religion = animist
 		size = 225
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = senufo
 		religion = animist
 		size = 925
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = senufo
 		religion = animist
 		size = 225
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = senufo
 		religion = animist
 		size = 13200
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = senufo
 		religion = animist
 		size = 14000
 	}
@@ -956,37 +956,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = dogon
 		religion = animist
 		size = 325
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = dogon
 		religion = animist
 		size = 175
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = dogon
 		religion = animist
 		size = 850
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = dogon
 		religion = animist
 		size = 175
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = dogon
 		religion = animist
 		size = 15475
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = dogon
 		religion = animist
 		size = 5000
 	}
@@ -1192,7 +1192,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = tuareg
 		religion = animist
 		size = 1100
 	}

@@ -39,37 +39,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = fon
 		religion = animist
 		size = 283.25
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = fon
 		religion = animist
 		size = 154.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = fon
 		religion = animist
 		size = 772.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = fon
 		religion = animist
 		size = 154.5
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = fon
 		religion = animist
 		size = 14085.25
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = fon
 		religion = animist
 		size = 13390.0
 	}
@@ -237,67 +237,67 @@
 #Nikki (48000/12000 POPS)
 1921 = {
 	aristocrats = {
-		culture = african_minor
+		culture = bariba
 		religion = animist
 		size = 51.5
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = bariba
 		religion = animist
 		size = 77.25
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = bariba
 		religion = animist
 		size = 154.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = bariba
 		religion = animist
 		size = 25.75
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = bariba
 		religion = animist
 		size = 2781.0
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = bariba
 		religion = animist
 		size = 1030.0
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = bariba
 		religion = sunni
 		size = 180.25
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = bariba
 		religion = sunni
 		size = 103.0
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = bariba
 		religion = sunni
 		size = 386.25
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = bariba
 		religion = sunni
 		size = 103.0
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = bariba
 		religion = sunni
 		size = 7467.5
 	}
@@ -305,61 +305,61 @@
 #Jugu (28000/7000 POPS)
 1922 = {
 	aristocrats = {
-		culture = african_minor
+		culture = bariba
 		religion = animist
 		size = 77.25
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = bariba
 		religion = animist
 		size = 51.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = bariba
 		religion = animist
 		size = 257.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = bariba
 		religion = animist
 		size = 51.5
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = bariba
 		religion = animist
 		size = 4712.25
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = bariba
 		religion = sunni
 		size = 25.75
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = bariba
 		religion = sunni
 		size = 51.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = bariba
 		religion = sunni
 		size = 103.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = bariba
 		religion = sunni
 		size = 25.75
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = bariba
 		religion = sunni
 		size = 1854.0
 	}

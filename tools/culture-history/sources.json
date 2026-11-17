@@ -1,0 +1,67 @@
+{
+  "india1901": {
+    "title": "Переписи Центральных провинций и Андаманских островов; исследование трипури",
+    "urls": ["https://censusindia.gov.in/nada/index.php/catalog/28374/download/31556/20185_1901_ADM.pdf", "https://censusindia.gov.in/nada/index.php/catalog/31820", "https://trci.tripura.gov.in/sites/default/files/2023-12/Treatise_on_Traditional_Social_Institutions_of_the_Tripuri_Community.pdf"],
+    "use": "Гондские и кхондские ареалы Центральной Индии; островное объединение андаманцев; отдельные трипури. Перепись 1901 года позже обоих стартов; её численности не переносились. Провинции объединяют несколько локальных общностей."
+  },
+  "maldives": {
+    "title": "Maldives Bureau of Statistics: население и язык дивехи",
+    "urls": ["https://statisticsmaldives.gov.mv/mbs/wp-content/uploads/2025/05/Edu_Census_2022_12525.pdf"],
+    "use": "Идентификация мальдивцев и языка дивехи; современный источник не используется для численности XIX века. Провинция1325 — Мальдивы, хотя POP-файл называется Ceylon."
+  },
+  "china_bai": {
+    "title": "Baijie and the Bai: Gender and Ethnic Religion in Dali, Yunnan; Academia Sinica",
+    "urls": ["https://asianethnology.org/article/149693-baijie-and-the-bai-gender-and-ethnic-religion-in-dali-yunnan", "https://ethno.ihp.sinica.edu.tw/en/southwest/main_BA-01.html"],
+    "use": "Историческая идентичность населения Дали: в источниках Мин/Цин также миньцзя. Используется устойчивое современное русское название бай; не предполагается неизменность официальной классификации с XIX века."
+  },
+  "indonesia": {
+    "title": "Правительственный справочник этнических групп Индонезии",
+    "urls": ["https://indonesia.go.id/profile/sukubangsa"],
+    "use": "Проверка региональной идентификации батаков, ниасцев, минангкабау, малайцев и реджангов. Ареалы агрегированы до игровых провинций; современные доли не применяются."
+  },
+  "borneo": {
+    "title": "Sarawak Museum Journal и государственное этнографическое исследование земель коренных народов",
+    "urls": ["https://museum.sarawak.gov.my/web/subpage/webpage_view/540", "https://www.forestpeoples.org/fileadmin/uploads/fpp/migration/publication/2013/08/suhakam-bi-finalcd.pdf", "https://indonesia.go.id/profile/sukubangsa"],
+    "use": "Ибаны/бидаю разделены; каяны-кенья и дусуны-муруты явно местные объединения. Нгаджу относятся к внутреннему югу Борнео. Файл Malaysia содержит Борнео, а не полуостров. Современная этнография не доказывает исторические проценты."
+  },
+  "indochina": {
+    "title": "Library of Congress: Laos, a country study; историческая карта нагорий Дега",
+    "urls": ["https://www.loc.gov/resource/gdcmassbookdig.laoscountrystudy00sava_0/", "https://deganation.org/knowledgebase/the-dega-people/map-of-the-highlands"],
+    "use": "Кхму северного Лаоса, катуйские группы юга Лаоса и Аннамских гор, бахнары-зярай центральных нагорий. Крупные прибрежные провинции включают внутренние нагорья; существующие lao/vietnamese POP сохранены. Численные оценки не заимствуются."
+  },
+  "palawan": {
+    "title": "National Commission for Culture and the Arts: Tagbanwa",
+    "urls": ["https://ncca.gov.ph/about-culture-and-arts/culture-profile/glimpses-peoples-of-the-philippines/tagbanwa/", "https://ncca.gov.ph/wp-content/uploads/2018/10/GLIMPSES-Peoples-of-the-Philippines.pdf"],
+    "use": "Одна крупная островная провинция объединяет палаванцев и тагбанва; отдельные фиктивные доли не задаются. Современные числа источника не используются."
+  },
+  "africa_map": {
+    "title": "Murdock: Africa, its peoples and their culture history (1959), исторические ареалы; Polyglotta Africana (1854)",
+    "urls": ["https://www.loc.gov/item/96680239/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4118452/", "https://polyglottaafricana.clld.org/", "https://stat-guinebissau.com/Menu_principal/IV_RGPH/rgph1/caracteristicas_socio_cultural.pdf"],
+    "use": "Региональная игровая модель по этнографическим ареалам, не точная перепись провинций. Карта Мёрдока реконструирует главным образом середину/конец XIX века; цифровая карта CIA1996 использует её как основной источник. Кёлле — свидетельства языков близкой эпохи, не карта численности. Перепись Гвинеи-Бисау подтверждает прибрежные папел/баланта; её современные доли не перенесены. Существующие конкретные культуры сохранены и переиспользованы; местные объединения названы явно."
+  },
+  "islands": {
+    "title": "История островного населения и креольских сообществ",
+    "urls": ["https://www.govmu.org/EN/Pages/exploremauritius.aspx", "https://apics-online.info/surveys/55", "https://www.nation.sc/articles/15689/we-the-people-of-seychelles", "https://ich.unesco.org/fr/USL/le-sega-tambour-des-chagos-01490", "https://www.loc.gov/item/96680239/"],
+    "use": "Местные креольские общности не подменяются одним материковым народом. Мадагаскар использует существующий malagasy; Коморы и Сокотра отдельны. Не меняются профессии/религии, в том числе у рабов. Справочники не используются для новых процентов."
+  },
+  "north_america": {
+    "title": "US Census1890, Report on Indians; Powell1891, Indian linguistic families",
+    "urls": ["https://www2.census.gov/library/publications/decennial/1890/volume-10/1890-report-indians-part01.pdf", "https://www.loc.gov/item/2001620496/"],
+    "use": "Исторические этнографические и языковые ареалы сопоставлены с крупными игровыми провинциями. Сведения1890 отражают переселения и не трактуются как прямые доли1836. Существующие Cree/Dakota/Pueblo/Navajo/Cherokee/Inuit сохраняются; там, где сведения не позволяют делить POP количественно, используются явно именованные соседние объединения."
+  },
+  "mexico": {
+    "title": "INPI: Atlas de los Pueblos Indígenas de México",
+    "urls": ["https://atlas.inpi.gob.mx/distribucion-por-entidad-federativa/", "https://atlas.inpi.gob.mx/yaquis-etnografia/", "https://www.inpi.gob.mx/planes-de-justicia/"],
+    "use": "Исторические местные ареалы и идентификация яки/майо, рарамури, кора/уичоли, тотонаков, уастеков; северные провинции также используют соседние оодхам/кумеяай/коауильтекское объединение. Современные административные доли не перенесены."
+  },
+  "colombia_panama": {
+    "title": "История Тунхи; этнографический справочник Панамы",
+    "urls": ["https://situr.boyaca.gov.co/centro/municipio-de-tunja/", "https://www.loc.gov/item/88600486/"],
+    "use": "Тунха — исторический муискский ареал; Дарьен — местное объединение эмбера/уонан. Модель сохраняет уже заданный игрой объём коренного населения, не утверждая, что оно сохранило доколониальный язык или численность."
+  },
+  "australia": {
+    "title": "AIATSIS Map of Indigenous Australia; рукописная коллекция A.W.Howitt",
+    "urls": ["https://aiatsis.gov.au/explore/map-indigenous-australia", "https://aiatsis.gov.au/sites/default/files/catalogue_resources/MS69.htm"],
+    "use": "Пять явно территориальных игровых объединений: юго-восток, северо-восток, юго-запад, пустыни, север. Это компромисс масштаба, а не пять однородных народов. Карта имеет приблизительные и оспариваемые границы. Численность не заимствуется. Материк/Тасмания отклонено: в исходных POP Тасмании aborigine нет."
+  }
+}

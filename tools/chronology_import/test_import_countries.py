@@ -6,6 +6,27 @@ import unittest
 from tools.chronology_import import import_countries as ci
 
 
+class HistoryOverrideTests(unittest.TestCase):
+    def test_gbs_override_preserves_other_fields(self):
+        source = dict(primary_culture="african_minor", religion="catholic", civilized="no")
+        result, fixes = ci.history_overrides("GBS", source, {"african_minor", "papel_balanta"})
+        self.assertEqual(result, dict(primary_culture="papel_balanta", religion="catholic", civilized="no"))
+        self.assertEqual(source["primary_culture"], "african_minor")
+        self.assertEqual(len(fixes), 1)
+
+    def test_missing_override_culture_rejected(self):
+        with self.assertRaises(AssertionError):
+            ci.history_overrides("GBS", {"primary_culture":"african_minor"}, {"african_minor"})
+
+    def test_changed_upstream_primary_requires_review(self):
+        with self.assertRaises(AssertionError):
+            ci.history_overrides("GBS", {"primary_culture":"portuguese"}, {"papel_balanta"})
+
+    def test_unrelated_country_unchanged(self):
+        source = {"primary_culture":"hausa"}
+        self.assertEqual(ci.history_overrides("SOK", source, {"hausa"}), (source, []))
+
+
 class ImportedDataTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

@@ -533,7 +533,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = bedouin
 		religion = animist
 		size = 3000
 	}
@@ -805,7 +805,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = teda
 		religion = animist
 		size = 1100
 	}
@@ -941,7 +941,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = tuareg
 		religion = animist
 		size = 1100
 	}
@@ -1009,7 +1009,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = berber
 		religion = animist
 		size = 2000
 	}

@@ -237,37 +237,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = dagomba
 		religion = animist
 		size = 334.75
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = dagomba
 		religion = animist
 		size = 180.25
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = dagomba
 		religion = animist
 		size = 875.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = dagomba
 		religion = animist
 		size = 180.25
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = dagomba
 		religion = animist
 		size = 15939.25
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = dagomba
 		religion = animist
 		size = 3090.0
 	}
@@ -305,37 +305,37 @@
 #Tamale (60000/15000 POPS)
 1913 = {
 	aristocrats = {
-		culture = african_minor
+		culture = dagomba
 		religion = animist
 		size = 103.0
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = dagomba
 		religion = animist
 		size = 51.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = dagomba
 		religion = animist
 		size = 309.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = dagomba
 		religion = animist
 		size = 77.25
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = dagomba
 		religion = animist
 		size = 5639.25
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = dagomba
 		religion = animist
 		size = 3090.0
 	}
@@ -450,37 +450,37 @@
 #Yendi (36000/9000 POPS)
 1916 = {
 	aristocrats = {
-		culture = african_minor
+		culture = dagomba
 		religion = animist
 		size = 128.75
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = dagomba
 		religion = animist
 		size = 77.25
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = dagomba
 		religion = animist
 		size = 386.25
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = dagomba
 		religion = animist
 		size = 103.0
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = dagomba
 		religion = animist
 		size = 6514.75
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = dagomba
 		religion = animist
 		size = 2060.0
 	}

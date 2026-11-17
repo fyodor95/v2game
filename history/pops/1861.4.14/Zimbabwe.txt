@@ -159,31 +159,31 @@
 #Kariba (36000/9000 POPS)
 2635 = {
 	aristocrats = {
-		culture = african_minor
+		culture = tonga
 		religion = animist
 		size = 77.25
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = tonga
 		religion = animist
 		size = 51.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = tonga
 		religion = animist
 		size = 309.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = tonga
 		religion = animist
 		size = 51.5
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = tonga
 		religion = animist
 		size = 5690.75
 	}
@@ -375,31 +375,31 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = nguni
 		religion = animist
 		size = 77.25
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = nguni
 		religion = animist
 		size = 51.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = nguni
 		religion = animist
 		size = 257.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = nguni
 		religion = animist
 		size = 51.5
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = nguni
 		religion = animist
 		size = 4712.25
 	}
@@ -467,31 +467,31 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = shona
 		religion = animist
 		size = 309.0
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = shona
 		religion = animist
 		size = 154.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = shona
 		religion = animist
 		size = 824.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = shona
 		religion = animist
 		size = 180.25
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = shona
 		religion = animist
 		size = 15012.25
 	}

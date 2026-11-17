@@ -3,31 +3,31 @@
 #Palembang (540400/135100 POPS)
 1399 = {
 	aristocrats = {
-		culture = asian_minor
+		culture = malay
 		religion = animist
 		size = 700
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = malay
 		religion = animist
 		size = 325
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = malay
 		religion = animist
 		size = 1500
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = malay
 		religion = animist
 		size = 350
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = malay
 		religion = animist
 		size = 32125
 	}
@@ -391,31 +391,31 @@
 	}
 
 	aristocrats = {
-		culture = asian_minor
+		culture = malay
 		religion = animist
 		size = 15 
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = malay
 		religion = animist
 		size = 25 
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = malay
 		religion = animist
 		size = 75
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = malay
 		religion = animist
 		size = 25  
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = malay
 		religion = animist
 		size = 1360 
 	}
@@ -553,31 +553,31 @@
 	}
 
 	aristocrats = {
-		culture = asian_minor
+		culture = malay
 		religion = animist
 		size = 100
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = malay
 		religion = animist
 		size = 75
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = malay
 		religion = animist
 		size = 150
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = malay
 		religion = animist
 		size = 75
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = malay
 		religion = animist
 		size = 7575
 	}
@@ -784,31 +784,31 @@
 	}
 
 	aristocrats = {
-		culture = asian_minor
+		culture = batak
 		religion = animist
 		size = 150
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = batak
 		religion = animist
 		size = 125
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = batak
 		religion = animist
 		size = 250
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = batak
 		religion = animist
 		size = 150
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = batak
 		religion = animist
 		size = 13325
 	}
@@ -852,31 +852,31 @@
 	}
 
 	aristocrats = {
-		culture = asian_minor
+		culture = batak
 		religion = animist
 		size = 150
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = batak
 		religion = animist
 		size = 125
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = batak
 		religion = animist
 		size = 200
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = batak
 		religion = animist
 		size = 100
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = batak
 		religion = animist
 		size = 14425
 	}
@@ -946,31 +946,31 @@
 	}
 
 	aristocrats = {
-		culture = asian_minor
+		culture = minangkabau
 		religion = animist
 		size = 200
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = minangkabau
 		religion = animist
 		size = 125
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = minangkabau
 		religion = animist
 		size = 100
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = minangkabau
 		religion = animist
 		size = 150
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = minangkabau
 		religion = animist
 		size = 18425
 	}
@@ -978,31 +978,31 @@
 #Sibolga (528000/132000 POPS)
 1409 = {
 	aristocrats = {
-		culture = asian_minor
+		culture = batak
 		religion = animist
 		size = 400
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = batak
 		religion = animist
 		size = 250
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = batak
 		religion = animist
 		size = 1250
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = batak
 		religion = animist
 		size = 350
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = batak
 		religion = animist
 		size = 33750
 	}
@@ -1064,31 +1064,31 @@
 #Bencoolen (120000/30000 POPS)
 1410 = {
 	aristocrats = {
-		culture = asian_minor
+		culture = rejang
 		religion = animist
 		size = 100
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = rejang
 		religion = animist
 		size = 60
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = rejang
 		religion = animist
 		size = 30
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = rejang
 		religion = animist
 		size = 100
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = rejang
 		religion = animist
 		size = 11710
 	}
@@ -1186,31 +1186,31 @@
 #Gunungsitoli (68000/17000 POPS)
 1411 = {
 	aristocrats = {
-		culture = asian_minor
+		culture = nias
 		religion = animist
 		size = 300
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = nias
 		religion = animist
 		size = 150
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = nias
 		religion = animist
 		size = 700
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = nias
 		religion = animist
 		size = 200
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = nias
 		religion = animist
 		size = 15650
 	}
@@ -2041,31 +2041,31 @@
 #Muraleve (96000/24000 POPS)
 1422 = {
 	aristocrats = {
-		culture = asian_minor
+		culture = ngaju
 		religion = animist
 		size = 300
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = ngaju
 		religion = animist
 		size = 250
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = ngaju
 		religion = animist
 		size = 1250
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = ngaju
 		religion = animist
 		size = 250
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = ngaju
 		religion = animist
 		size = 21950
 	}
@@ -2135,31 +2135,31 @@
 #Tarakan (96000/24000 POPS)
 1425 = {
 	aristocrats = {
-		culture = asian_minor
+		culture = kayan_kenyah
 		religion = animist
 		size = 200
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = kayan_kenyah
 		religion = animist
 		size = 175
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = kayan_kenyah
 		religion = animist
 		size = 200
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = kayan_kenyah
 		religion = animist
 		size = 150
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = kayan_kenyah
 		religion = animist
 		size = 16275
 	}
@@ -2227,31 +2227,31 @@
 #Samarinda (120000/30000 POPS)
 1429 = {
 	aristocrats = {
-		culture = asian_minor
+		culture = kayan_kenyah
 		religion = animist
 		size = 300
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = kayan_kenyah
 		religion = animist
 		size = 250
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = kayan_kenyah
 		religion = animist
 		size = 700
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = kayan_kenyah
 		religion = animist
 		size = 250
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = kayan_kenyah
 		religion = animist
 		size = 23500
 	}
@@ -2451,31 +2451,31 @@
 #Sintang (68000/17000 POPS)
 1428 = {
 	aristocrats = {
-		culture = asian_minor
+		culture = iban
 		religion = animist
 		size = 250
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = iban
 		religion = animist
 		size = 175
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = iban
 		religion = animist
 		size = 750
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = iban
 		religion = animist
 		size = 250
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = iban
 		religion = animist
 		size = 15575
 	}

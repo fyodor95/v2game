@@ -1461,7 +1461,7 @@
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 250
 	}
@@ -1501,13 +1501,13 @@
 	}
 
 	artisans = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 100
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 1975
 	}
@@ -1527,19 +1527,19 @@
 	}
 
 	artisans = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 50
 	}
 
 	soldiers = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 50
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 1775
 	}
@@ -1590,19 +1590,19 @@
 	}
 
 	artisans = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 100
 	}
 
 	soldiers = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 25
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 1125
 	}
@@ -1617,25 +1617,25 @@
 	}
 
 	clergymen = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 25
 	}
 
 	artisans = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 50
 	}
 
 	soldiers = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 100
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 2360
 	}
@@ -1643,25 +1643,25 @@
 #Cooktown (10000/2500 POPS)
 2488 = {
 	clergymen = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 25
 	}
 
 	artisans = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 50
 	}
 
 	soldiers = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 100
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 2325
 	}
@@ -1670,25 +1670,25 @@
 2489 = {
 
 	clergymen = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 15
 	}
 
 	artisans = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 25
 	}
 
 	soldiers = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 50
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 1160
 	}
@@ -1715,13 +1715,13 @@
 	}
 
 	soldiers = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 50
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 1200
 	}
@@ -1731,25 +1731,25 @@
 2604 = {
 
 	clergymen = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 25
 	}
 
 	artisans = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 40
 	}
 
 	soldiers = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 100
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_northeast
 		religion = animist
 		size = 1835
 	}
@@ -1953,7 +1953,7 @@
 		size = 1025
 	}
 	farmers = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 205
 	}
@@ -1974,19 +1974,19 @@
 	}
 
 	clergymen = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 15
 	}
 
 	artisans = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 20
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 550
 	}
@@ -1995,25 +1995,25 @@
 2496 = {
 
 	clergymen = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 15
 	}
 
 	artisans = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 25
 	}
 
 	soldiers = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 15
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 695
 	}
@@ -2074,13 +2074,13 @@
 	}
 
 	artisans = {
-		culture = aborigine
+		culture = australian_southwest
 		religion = animist
 		size = 100
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_southwest
 		religion = animist
 		size = 1450
 	}
@@ -2101,19 +2101,19 @@
 	}
 
 	artisans = {
-		culture = aborigine
+		culture = australian_southwest
 		religion = animist
 		size = 30
 	}
 
 	soldiers = {
-		culture = aborigine
+		culture = australian_southwest
 		religion = animist
 		size = 25
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_southwest
 		religion = animist
 		size = 1195
 	}
@@ -2123,25 +2123,25 @@
 2499 = {
 
 	clergymen = {
-		culture = aborigine
+		culture = australian_southwest
 		religion = animist
 		size = 25
 	}
 
 	artisans = {
-		culture = aborigine
+		culture = australian_southwest
 		religion = animist
 		size = 100
 	}
 
 	soldiers = {
-		culture = aborigine
+		culture = australian_southwest
 		religion = animist
 		size = 25
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_southwest
 		religion = animist
 		size = 1600
 	}
@@ -2150,25 +2150,25 @@
 2500 = {
 
 	clergymen = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 15
 	}
 
 	artisans = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 50
 	}
 
 	soldiers = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 25
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 910
 	}
@@ -2177,25 +2177,25 @@
 2501 = {
 
 	clergymen = {
-		culture = aborigine
+		culture = australian_north
 		religion = animist
 		size = 25
 	}
 
 	artisans = {
-		culture = aborigine
+		culture = australian_north
 		religion = animist
 		size = 100
 	}
 
 	soldiers = {
-		culture = aborigine
+		culture = australian_north
 		religion = animist
 		size = 25
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_north
 		religion = animist
 		size = 1600
 	}
@@ -2204,25 +2204,25 @@
 2502 = {
 
 	clergymen = {
-		culture = aborigine
+		culture = australian_north
 		religion = animist
 		size = 10
 	}
 
 	artisans = {
-		culture = aborigine
+		culture = australian_north
 		religion = animist
 		size = 25
 	}
 
 	soldiers = {
-		culture = aborigine
+		culture = australian_north
 		religion = animist
 		size = 10
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_north
 		religion = animist
 		size = 455
 	}
@@ -2231,25 +2231,25 @@
 2503 = {
 
 	clergymen = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 15
 	}
 
 	artisans = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 35
 	}
 
 	soldiers = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 15
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 635
 	}
@@ -2258,25 +2258,25 @@
 2504 = {
 
 	clergymen = {
-		culture = aborigine
+		culture = australian_southwest
 		religion = animist
 		size = 20
 	}
 
 	artisans = {
-		culture = aborigine
+		culture = australian_southwest
 		religion = animist
 		size = 50
 	}
 
 	soldiers = {
-		culture = aborigine
+		culture = australian_southwest
 		religion = animist
 		size = 20
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_southwest
 		religion = animist
 		size = 910
 	}
@@ -2286,19 +2286,19 @@
 2601 = {
 
 	clergymen = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 10
 	}
 
 	artisans = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 25
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 465
 	}
@@ -2307,19 +2307,19 @@
 2602 = {
 
 	clergymen = {
-		culture = aborigine
+		culture = australian_north
 		religion = animist
 		size = 10
 	}
 
 	artisans = {
-		culture = aborigine
+		culture = australian_north
 		religion = animist
 		size = 25
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_north
 		religion = animist
 		size = 465
 	}
@@ -2328,19 +2328,19 @@
 2605 = {
 
 	clergymen = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 15
 	}
 
 	artisans = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 50
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 735
 	}
@@ -2350,31 +2350,31 @@
 #Palmerston (24000/6000 POPS)
 2505 = {
 	aristocrats = {
-		culture = aborigine
+		culture = australian_north
 		religion = animist
 		size = 40
 	}
 
 	clergymen = {
-		culture = aborigine
+		culture = australian_north
 		religion = animist
 		size = 60
 	}
 
 	artisans = {
-		culture = aborigine
+		culture = australian_north
 		religion = animist
 		size = 150
 	}
 
 	soldiers = {
-		culture = aborigine
+		culture = australian_north
 		religion = animist
 		size = 150
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_north
 		religion = animist
 		size = 5600
 	}
@@ -2383,25 +2383,25 @@
 2506 = {
 
 	clergymen = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 35
 	}
 
 	artisans = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 150
 	}
 
 	soldiers = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 100
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 2840
 	}
@@ -2410,25 +2410,25 @@
 2507 = {
 
 	clergymen = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 15
 	}
 
 	artisans = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 30
 	}
 
 	soldiers = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 30
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 1425
 	}
@@ -2438,25 +2438,25 @@
 2603 = {
 
 	clergymen = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 15
 	}
 
 	artisans = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 30
 	}
 
 	soldiers = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 30
 	}
 
 	farmers = {
-		culture = aborigine
+		culture = australian_desert
 		religion = animist
 		size = 1425
 	}

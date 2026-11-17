@@ -216,25 +216,25 @@
 	}
 
 	clergymen = {
-		culture = native_american_minor
+		culture = muisca
 		religion = catholic
 		size = 75
 	}
 
 	artisans = {
-		culture = native_american_minor
+		culture = muisca
 		religion = catholic
 		size = 775
 	}
 
 	soldiers = {
-		culture = native_american_minor
+		culture = muisca
 		religion = catholic
 		size = 150
 	}
 
 	farmers = {
-		culture = native_american_minor
+		culture = muisca
 		religion = catholic
 		size = 8000
 	}

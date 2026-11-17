@@ -1727,31 +1727,31 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = venda
 		religion = animist
 		size = 51.5
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = venda
 		religion = animist
 		size = 77.25
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = venda
 		religion = animist
 		size = 154.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = venda
 		religion = animist
 		size = 25.75
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = venda
 		religion = animist
 		size = 4611.0
 	}

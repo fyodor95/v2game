@@ -479,31 +479,31 @@
 #Maldives (24000/6000 POPS) #now independent
 1325 = {
 	aristocrats = {
-		culture = asian_minor
+		culture = dhivehi
 		religion = sunni
 		size = 51.5
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = dhivehi
 		religion = sunni
 		size = 51.5
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = dhivehi
 		religion = sunni
 		size = 515.0
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = dhivehi
 		religion = sunni
 		size = 77.25
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = dhivehi
 		religion = sunni
 		size = 5484.75
 	}

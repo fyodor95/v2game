@@ -89,37 +89,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = mossi
 		religion = animist
 		size = 669.5
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = mossi
 		religion = animist
 		size = 334.75
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = mossi
 		religion = animist
 		size = 1699.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = mossi
 		religion = animist
 		size = 334.75
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = mossi
 		religion = animist
 		size = 30951.5
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = mossi
 		religion = animist
 		size = 8240.0
 	}
@@ -163,37 +163,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = fulbe
 		religion = animist
 		size = 669.5
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = fulbe
 		religion = animist
 		size = 360.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = fulbe
 		religion = animist
 		size = 1751.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = fulbe
 		religion = animist
 		size = 360.5
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = fulbe
 		religion = animist
 		size = 31878.5
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = fulbe
 		religion = animist
 		size = 12360.0
 	}
@@ -471,37 +471,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = lobi
 		religion = animist
 		size = 128.75
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = lobi
 		religion = animist
 		size = 77.25
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = lobi
 		religion = animist
 		size = 360.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = lobi
 		religion = animist
 		size = 77.25
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = lobi
 		religion = animist
 		size = 6566.25
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = lobi
 		religion = animist
 		size = 6180.0
 	}

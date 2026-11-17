@@ -217,31 +217,31 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = massa
 		religion = animist
 		size = 128.75
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = massa
 		religion = animist
 		size = 77.25
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = massa
 		religion = animist
 		size = 360.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = massa
 		religion = animist
 		size = 77.25
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = massa
 		religion = animist
 		size = 6566.25
 	}
@@ -601,7 +601,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = kanuri
 		religion = animist
 		size = 12360.0
 	}

@@ -521,31 +521,31 @@
 	}
 
 	aristocrats = {
-		culture = asian_minor
+		culture = bidayuh
 		religion = animist
 		size = 128.75
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = bidayuh
 		religion = animist
 		size = 103.0
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = bidayuh
 		religion = animist
 		size = 540.75
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = bidayuh
 		religion = animist
 		size = 1128.75
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = bidayuh
 		religion = animist
 		size = 10428.75
 	}
@@ -601,31 +601,31 @@
 	}
 
 	aristocrats = {
-		culture = asian_minor
+		culture = kayan_kenyah
 		religion = animist
 		size = 103.0
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = kayan_kenyah
 		religion = animist
 		size = 77.25
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = kayan_kenyah
 		religion = animist
 		size = 360.5
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = kayan_kenyah
 		religion = animist
 		size = 103.0
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = kayan_kenyah
 		religion = animist
 		size = 8596.25
 	}
@@ -633,31 +633,31 @@
 #Api (56000/14000 POPS)
 1396 = {
 	aristocrats = {
-		culture = asian_minor
+		culture = dusun_murut
 		religion = animist
 		size = 51.5
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = dusun_murut
 		religion = animist
 		size = 51.5
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = dusun_murut
 		religion = animist
 		size = 257.5
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = dusun_murut
 		religion = animist
 		size = 77.25
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = dusun_murut
 		religion = animist
 		size = 5742.25
 	}
@@ -714,31 +714,31 @@
 #Sandakan (40000/10000 POPS)
 1397 = {
 	aristocrats = {
-		culture = asian_minor
+		culture = dusun_murut
 		religion = animist
 		size = 77.25
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = dusun_murut
 		religion = animist
 		size = 77.25
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = dusun_murut
 		religion = animist
 		size = 309.0
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = dusun_murut
 		religion = animist
 		size = 77.25
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = dusun_murut
 		religion = animist
 		size = 6669.25
 	}

@@ -687,31 +687,31 @@
 	}
 
 	aristocrats = {
-		culture = asian_minor
+		culture = katuic
 		religion = animist
 		size = 463.5
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = katuic
 		religion = animist
 		size = 231.75
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = katuic
 		religion = animist
 		size = 1133.0
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = katuic
 		religion = animist
 		size = 231.75
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = katuic
 		religion = animist
 		size = 20574.25
 	}
@@ -823,31 +823,31 @@
 	}
 
 	aristocrats = {
-		culture = asian_minor
+		culture = bahnar_jarai
 		religion = animist
 		size = 515.0
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = bahnar_jarai
 		religion = animist
 		size = 231.75
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = bahnar_jarai
 		religion = animist
 		size = 1236.0
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = bahnar_jarai
 		religion = animist
 		size = 257.5
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = bahnar_jarai
 		religion = animist
 		size = 22479.75
 	}

@@ -1,5 +1,5 @@
 # ћинимальное определение отсутствующей страны; сценарные данные не перенесены.
-primary_culture = african_minor
+primary_culture = papel_balanta
 religion = catholic
 government = presidential_dictatorship
 nationalvalue = nv_order

@@ -51,37 +51,37 @@
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = mascarene_creole
 		religion = protestant
 		size = 135
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = mascarene_creole
 		religion = protestant
 		size = 1565
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = mascarene_creole
 		religion = protestant
 		size = 500
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = mascarene_creole
 		religion = protestant
 		size = 1295
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = mascarene_creole
 		religion = catholic
 		size = 200
 	}
 	
 	farmers = {
-		culture = african_minor
+		culture = mascarene_creole
 		religion = catholic
 		size = 31190
 	}
@@ -132,7 +132,7 @@
 #Diego Garcia (720/180 POPS) #remains under British Rule
 2128 = {
 	farmers = {
-		culture = african_minor
+		culture = chagossian
 		religion = catholic
 		size = 180
 	}

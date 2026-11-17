@@ -84,37 +84,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = somali
 		religion = animist
 		size = 75
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = somali
 		religion = animist
 		size = 50
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = somali
 		religion = animist
 		size = 250
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = somali
 		religion = animist
 		size = 50
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = somali
 		religion = animist
 		size = 4575
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = somali
 		religion = animist
 		size = 1100
 	}

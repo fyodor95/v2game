@@ -323,31 +323,31 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = kpelle
 		religion = animist
 		size = 437.75
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = kpelle
 		religion = animist
 		size = 231.75
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = kpelle
 		religion = animist
 		size = 1133.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = kpelle
 		religion = animist
 		size = 231.75
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = kpelle
 		religion = animist
 		size = 20625.75
 	}
@@ -385,31 +385,31 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = kru
 		religion = animist
 		size = 360.5
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = kru
 		religion = animist
 		size = 206.0
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = kru
 		religion = animist
 		size = 978.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = kru
 		religion = animist
 		size = 206.0
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = kru
 		religion = animist
 		size = 17819.0
 	}

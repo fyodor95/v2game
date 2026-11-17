@@ -10959,37 +10959,37 @@
 	}
 
 	aristocrats = {
-		culture = asian_minor
+		culture = bai
 		religion = animist
 		size = 5400
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = bai
 		religion = animist
 		size = 2750
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = bai
 		religion = animist
 		size = 10000
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = bai
 		religion = animist
 		size = 3500
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = bai
 		religion = animist
 		size = 2700
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = bai
 		religion = animist
 		size = 245650
 	}

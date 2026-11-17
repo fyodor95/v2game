@@ -33,37 +33,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = ewe
 		religion = animist
 		size = 283.25
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = ewe
 		religion = animist
 		size = 154.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = ewe
 		religion = animist
 		size = 618.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = ewe
 		religion = animist
 		size = 154.5
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = ewe
 		religion = animist
 		size = 12179.75
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = ewe
 		religion = animist
 		size = 7210.0
 	}
@@ -169,61 +169,61 @@
 #Sokode (24000/6000 POPS)
 1918 = {
 	aristocrats = {
-		culture = african_minor
+		culture = kabye_tem
 		religion = animist
 		size = 51.5
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = kabye_tem
 		religion = animist
 		size = 51.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = kabye_tem
 		religion = animist
 		size = 206.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = kabye_tem
 		religion = animist
 		size = 51.5
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = kabye_tem
 		religion = animist
 		size = 3759.5
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = kabye_tem
 		religion = sunni
 		size = 25.75
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = kabye_tem
 		religion = sunni
 		size = 51.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = kabye_tem
 		religion = sunni
 		size = 103.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = kabye_tem
 		religion = sunni
 		size = 25.75
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = kabye_tem
 		religion = sunni
 		size = 1854.0
 	}

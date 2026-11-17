@@ -51,61 +51,61 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = krio
 		religion = sunni
 		size = 901.25
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = krio
 		religion = sunni
 		size = 463.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = krio
 		religion = sunni
 		size = 2369.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = krio
 		religion = sunni
 		size = 463.5
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = krio
 		religion = sunni
 		size = 43285.75
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = krio
 		religion = animist
 		size = 257.5
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = krio
 		religion = animist
 		size = 154.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = krio
 		religion = animist
 		size = 721.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = krio
 		religion = animist
 		size = 154.5
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = krio
 		religion = animist
 		size = 13132.5
 	}
@@ -144,37 +144,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = mende
 		religion = animist
 		size = 824.0
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = mende
 		religion = animist
 		size = 412.0
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = mende
 		religion = animist
 		size = 2060.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = mende
 		religion = animist
 		size = 437.75
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = mende
 		religion = animist
 		size = 38496.25
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = mende
 		religion = animist
 		size = 7210.0
 	}
@@ -214,67 +214,67 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = temne_limba
 		religion = sunni
 		size = 824.0
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = temne_limba
 		religion = sunni
 		size = 412.0
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = temne_limba
 		religion = sunni
 		size = 1699.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = temne_limba
 		religion = sunni
 		size = 437.75
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = temne_limba
 		religion = sunni
 		size = 32676.75
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = temne_limba
 		religion = animist
 		size = 128.75
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = temne_limba
 		religion = animist
 		size = 77.25
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = temne_limba
 		religion = animist
 		size = 412.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = temne_limba
 		religion = animist
 		size = 103.0
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = temne_limba
 		religion = animist
 		size = 7519.0
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = temne_limba
 		religion = animist
 		size = 13390.0
 	}

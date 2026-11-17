@@ -112,37 +112,37 @@
 #Kaolack (80000/20000 POPS) #kingdom of the Sereer
 1788 = {
 	aristocrats = {
-		culture = african_minor
+		culture = serer
 		religion = animist
 		size = 386.25
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = serer
 		religion = animist
 		size = 206.0
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = serer
 		religion = animist
 		size = 1030.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = serer
 		religion = animist
 		size = 206.0
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = serer
 		religion = animist
 		size = 14651.75
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = serer
 		religion = animist
 		size = 4120.0
 	}
@@ -192,7 +192,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = wolof
 		religion = animist
 		size = 7210.0
 	}
@@ -300,31 +300,31 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = mande
 		religion = animist
 		size = 154.5
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = mande
 		religion = animist
 		size = 77.25
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = mande
 		religion = animist
 		size = 412.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = mande
 		religion = animist
 		size = 77.25
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = mande
 		religion = animist
 		size = 7493.25
 	}
@@ -414,7 +414,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = fulbe
 		religion = animist
 		size = 5150.0
 	}
@@ -486,37 +486,37 @@
 #Ziguinchour (120000/30000 POPS)
 1792 = {
 	aristocrats = {
-		culture = african_minor
+		culture = jola
 		religion = animist
 		size = 592.25
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = jola
 		religion = animist
 		size = 309.0
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = jola
 		religion = animist
 		size = 1236.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = jola
 		religion = animist
 		size = 309.0
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = jola
 		religion = animist
 		size = 21243.75
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = jola
 		religion = animist
 		size = 7210.0
 	}
@@ -524,37 +524,37 @@
 #Velingara (104000/26000 POPS
 1793 = {
 	aristocrats = {
-		culture = african_minor
+		culture = fulbe
 		religion = animist
 		size = 515.0
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = fulbe
 		religion = animist
 		size = 257.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = fulbe
 		religion = animist
 		size = 1081.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = fulbe
 		religion = animist
 		size = 283.25
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = fulbe
 		religion = animist
 		size = 20522.75
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = fulbe
 		religion = animist
 		size = 4120.0
 	}

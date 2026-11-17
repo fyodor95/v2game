@@ -30,6 +30,23 @@ LOC_FIXES = {
     "KMT_reactionary_2": "Националистическая фракция", "TGA_liberal_2": "Либеральная партия",
 }
 
+# Исторические уточнения текущей сборки не должны теряться при повторном импорте.
+# Реестр и источники: docs/research/culture-history.md.
+HISTORY_OVERRIDES = {
+    "GBS": {"primary_culture": "papel_balanta"},
+}
+
+
+def history_overrides(tag, history, cultures):
+    result = dict(history)
+    fixes = []
+    for key, value in HISTORY_OVERRIDES.get(tag, {}).items():
+        assert key == "primary_culture" and value in cultures, (tag, key, value)
+        assert tag != "GBS" or history.get(key) == "african_minor", (tag, history)
+        result[key] = value
+        fixes.append(f"Историческое уточнение {key}: {history.get(key)} → {value}; реестр culture-history")
+    return result, fixes
+
 
 def git(*args):
     return subprocess.check_output(["git", "-C", str(ROOT), *args])
@@ -127,6 +144,10 @@ def make_import():
     current = vals(parse(baseline.decode("cp1251")))
     source = vals(parse(blob(PREFIX + "common/countries.txt").decode("cp1251")))
     cultures = {c.key for g in nodes("common/cultures.txt") for c in g.children if c.children}
+    # Состав импорта закреплён на исходном наборе культур. Добавление новых
+    # культур в игру не должно незаметно импортировать ранее исключённые страны.
+    qualification_cultures = {c.key for g in parse(blob("common/cultures.txt", BASE).decode("cp1251"))
+                              for c in g.children if c.children}
     governments = {g.key: {n.key for n in g.children if n.value == "yes"} for g in nodes("common/governments.txt")}
     source_loc = localisation([p for p in paths if p.startswith(PREFIX + "localisation/") and p.endswith(".csv")], blob)
     current_loc = localisation(sorted(p for p in (ROOT / "localisation").glob("*.csv") if p.name != "chronology_countries.csv"), Path.read_bytes)
@@ -158,12 +179,14 @@ def make_import():
         history_path = histories.get(tag)
         history = vals(parse(blob(history_path).decode("cp1251"))) if history_path else {}
         culture = history.get("primary_culture")
-        if culture not in cultures:
+        if culture not in qualification_cultures:
             excluded.append({"tag": tag, "primary_culture": culture, "reason": "Основная культура отсутствует в текущей сборке"})
             continue
         raw = blob(PREFIX + "common/" + path)
         text = raw.decode("cp1251").replace("\r\n", "\n")
-        fixes = []
+        history, fixes = history_overrides(tag, history, cultures)
+        culture = history["primary_culture"]
+        assert culture in cultures, (tag, culture)
         if tag == "ERM":
             text, count = re.subn(r'(color\s*=\s*\{\s*)259\b', r'\g<1>255', text)
             assert count == 1

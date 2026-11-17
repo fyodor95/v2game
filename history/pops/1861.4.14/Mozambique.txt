@@ -484,37 +484,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = lomwe
 		religion = animist
 		size = 77.25
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = lomwe
 		religion = animist
 		size = 77.25
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = lomwe
 		religion = animist
 		size = 360.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = lomwe
 		religion = animist
 		size = 77.25
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = lomwe
 		religion = animist
 		size = 1467.75
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = lomwe
 		religion = animist
 		size = 5150.0
 	}
@@ -559,37 +559,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = sena
 		religion = animist
 		size = 77.25
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = sena
 		religion = animist
 		size = 77.25
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = sena
 		religion = animist
 		size = 412.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = sena
 		religion = animist
 		size = 103.0
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = sena
 		religion = animist
 		size = 4995.5
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = sena
 		religion = animist
 		size = 2575.0
 	}
@@ -665,37 +665,37 @@
 #Zombo (104000/26000 POPS)
 2056 = {
 	aristocrats = {
-		culture = african_minor
+		culture = tonga
 		religion = animist
 		size = 103.0
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = tonga
 		religion = animist
 		size = 103.0
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = tonga
 		religion = animist
 		size = 515.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = tonga
 		religion = animist
 		size = 103.0
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = tonga
 		religion = animist
 		size = 7313.0
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = tonga
 		religion = animist
 		size = 2163.0
 	}
@@ -835,37 +835,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = sena
 		religion = animist
 		size = 154.5
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = sena
 		religion = animist
 		size = 154.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = sena
 		religion = animist
 		size = 721.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = sena
 		religion = animist
 		size = 154.5
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = sena
 		religion = animist
 		size = 8085.5
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = sena
 		religion = animist
 		size = 6180.0
 	}
@@ -1316,7 +1316,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = yao
 		religion = animist
 		size = 15450.0
 	}

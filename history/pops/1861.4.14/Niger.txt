@@ -251,37 +251,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = songhai
 		religion = animist
 		size = 77.25
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = songhai
 		religion = animist
 		size = 51.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = songhai
 		religion = animist
 		size = 206.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = songhai
 		religion = animist
 		size = 51.5
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = songhai
 		religion = animist
 		size = 3733.75
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = songhai
 		religion = animist
 		size = 2060.0
 	}
@@ -477,37 +477,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = hausa
 		religion = animist
 		size = 154.5
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = hausa
 		religion = animist
 		size = 77.25
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = hausa
 		religion = animist
 		size = 412.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = hausa
 		religion = animist
 		size = 77.25
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = hausa
 		religion = animist
 		size = 7519.0
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = hausa
 		religion = animist
 		size = 4120.0
 	}
@@ -607,7 +607,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = tuareg
 		religion = animist
 		size = 6180.0
 	}
@@ -677,7 +677,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = teda
 		religion = animist
 		size = 4120.0
 	}
@@ -717,37 +717,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = hausa
 		religion = animist
 		size = 334.75
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = hausa
 		religion = animist
 		size = 180.25
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = hausa
 		religion = animist
 		size = 927.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = hausa
 		religion = animist
 		size = 1107.25
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = hausa
 		religion = animist
 		size = 10737.75
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = hausa
 		religion = animist
 		size = 6180.0
 	}
@@ -846,7 +846,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = teda
 		religion = animist
 		size = 7210.0
 	}

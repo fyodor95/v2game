@@ -949,13 +949,14 @@
     },
     {
       "tag": "GBS",
-      "primary_culture": "african_minor",
+      "primary_culture": "papel_balanta",
       "common": "common/countries/Guinea Bissau.txt",
       "history": "history/countries/GBS - Guinea Bissau.txt",
       "source_common_sha256": "c91f8d7e5a0e0ba94557ff9d5e29d5afa0432873098030f10ad7dc80bd51edb5",
       "source_history_sha256": "b84196bb7176ac924f3f7876f095ec9cfdf043a977c25691308dd6e40d409aa6",
       "translated_unit_names": 0,
       "fixes": [
+        "Историческое уточнение primary_culture: african_minor → papel_balanta; реестр culture-history",
         "Недопустимая начальная партия GBS_conservative заменена на GBS_reactionary"
       ]
     },
@@ -4543,7 +4544,7 @@
       "bytes": 232
     },
     "history/countries/GBS - Guinea Bissau.txt": {
-      "sha256": "da91f95d1e778b7374c9d8eb4792d8e8b941fbc4f6106af8ee2b7db0f8a599d7",
+      "sha256": "8d181aa0d97a1fa60b6a04e67a68bef6055f7f3390e1c98e6eda6f1169e543c7",
       "bytes": 249
     },
     "history/countries/GDL - Guadeloupe.txt": {

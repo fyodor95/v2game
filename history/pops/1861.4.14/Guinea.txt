@@ -3,37 +3,37 @@
 #Boffa (96000/24000 POPS) #now part of Guinea
 1879 = {
 	aristocrats = {
-		culture = african_minor
+		culture = susu
 		religion = animist
 		size = 463.5
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = susu
 		religion = animist
 		size = 257.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = susu
 		religion = animist
 		size = 978.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = susu
 		religion = animist
 		size = 257.5
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = susu
 		religion = animist
 		size = 19673.0
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = susu
 		religion = animist
 		size = 3090.0
 	}
@@ -85,37 +85,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = fulbe
 		religion = animist
 		size = 1236.0
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = fulbe
 		religion = animist
 		size = 669.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = fulbe
 		religion = animist
 		size = 3296.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = fulbe
 		religion = animist
 		size = 669.5
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = fulbe
 		religion = animist
 		size = 60049.0
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = fulbe
 		religion = animist
 		size = 4120.0
 	}

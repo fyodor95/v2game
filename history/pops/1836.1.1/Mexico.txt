@@ -45,31 +45,31 @@
 	}
 
 	aristocrats = {
-		culture = native_american_minor
+		culture = yaqui_mayo
 		religion = animist
 		size = 125
 	}
 
 	clergymen = {
-		culture = native_american_minor
+		culture = yaqui_mayo
 		religion = animist
 		size = 75
 	}
 
 	artisans = {
-		culture = native_american_minor
+		culture = yaqui_mayo
 		religion = animist
 		size = 400
 	}
 
 	soldiers = {
-		culture = native_american_minor
+		culture = yaqui_mayo
 		religion = animist
 		size = 75
 	}
 
 	farmers = {
-		culture = native_american_minor
+		culture = yaqui_mayo
 		religion = animist
 		size = 7325
 	}
@@ -107,31 +107,31 @@
 	}
 
 	aristocrats = {
-		culture = native_american_minor
+		culture = oodham
 		religion = animist
 		size = 25
 	}
 
 	clergymen = {
-		culture = native_american_minor
+		culture = oodham
 		religion = animist
 		size = 50
 	}
 
 	artisans = {
-		culture = native_american_minor
+		culture = oodham
 		religion = animist
 		size = 100
 	}
 
 	soldiers = {
-		culture = native_american_minor
+		culture = oodham
 		religion = animist
 		size = 25
 	}
 
 	farmers = {
-		culture = native_american_minor
+		culture = oodham
 		religion = animist
 		size = 1800
 	}
@@ -277,31 +277,31 @@
 	}
 
 	aristocrats = {
-		culture = native_american_minor
+		culture = kumeyaay
 		religion = animist
 		size = 25
 	}
 
 	clergymen = {
-		culture = native_american_minor
+		culture = kumeyaay
 		religion = animist
 		size = 50
 	}
 
 	artisans = {
-		culture = native_american_minor
+		culture = kumeyaay
 		religion = animist
 		size = 100
 	}
 
 	soldiers = {
-		culture = native_american_minor
+		culture = kumeyaay
 		religion = animist
 		size = 25
 	}
 
 	farmers = {
-		culture = native_american_minor
+		culture = kumeyaay
 		religion = animist
 		size = 1800
 	}
@@ -479,31 +479,31 @@
 	}
 
 	aristocrats = {
-		culture = native_american_minor
+		culture = raramuri
 		religion = animist
 		size = 50
 	}
 
 	clergymen = {
-		culture = native_american_minor
+		culture = raramuri
 		religion = animist
 		size = 75
 	}
 
 	artisans = {
-		culture = native_american_minor
+		culture = raramuri
 		religion = animist
 		size = 150
 	}
 
 	soldiers = {
-		culture = native_american_minor
+		culture = raramuri
 		religion = animist
 		size = 25
 	}
 
 	farmers = {
-		culture = native_american_minor
+		culture = raramuri
 		religion = animist
 		size = 2700
 	}
@@ -587,25 +587,25 @@
 	}
 
 	clergymen = {
-		culture = native_american_minor
+		culture = coahuiltecan
 		religion = animist
 		size = 75
 	}
 
 	artisans = {
-		culture = native_american_minor
+		culture = coahuiltecan
 		religion = animist
 		size = 150
 	}
 
 	soldiers = {
-		culture = native_american_minor
+		culture = coahuiltecan
 		religion = animist
 		size = 25
 	}
 
 	farmers = {
-		culture = native_american_minor
+		culture = coahuiltecan
 		religion = animist
 		size = 2750
 	}
@@ -745,25 +745,25 @@
 	}
 
 	clergymen = {
-		culture = native_american_minor
+		culture = coahuiltecan
 		religion = animist
 		size = 75
 	}
 
 	artisans = {
-		culture = native_american_minor
+		culture = coahuiltecan
 		religion = animist
 		size = 350
 	}
 
 	soldiers = {
-		culture = native_american_minor
+		culture = coahuiltecan
 		religion = animist
 		size = 75
 	}
 
 	farmers = {
-		culture = native_american_minor
+		culture = coahuiltecan
 		religion = animist
 		size = 6500
 	}
@@ -1477,25 +1477,25 @@
 	}
 
 	clergymen = {
-		culture = native_american_minor
+		culture = totonac
 		religion = catholic
 		size = 50
 	}
 
 	artisans = {
-		culture = native_american_minor
+		culture = totonac
 		religion = catholic
 		size = 500
 	}
 
 	soldiers = {
-		culture = native_american_minor
+		culture = totonac
 		religion = catholic
 		size = 100
 	}
 
 	farmers = {
-		culture = native_american_minor
+		culture = totonac
 		religion = catholic
 		size = 9350
 	}
@@ -1533,25 +1533,25 @@
 	}
 
 	clergymen = {
-		culture = native_american_minor
+		culture = huastec
 		religion = catholic
 		size = 50
 	}
 
 	artisans = {
-		culture = native_american_minor
+		culture = huastec
 		religion = catholic
 		size = 900
 	}
 
 	soldiers = {
-		culture = native_american_minor
+		culture = huastec
 		religion = catholic
 		size = 200
 	}
 
 	farmers = {
-		culture = native_american_minor
+		culture = huastec
 		religion = catholic
 		size = 16850
 	}
@@ -1777,25 +1777,25 @@
 	}
 
 	clergymen = {
-		culture = native_american_minor
+		culture = cora_huichol
 		religion = catholic
 		size = 50
 	}
 
 	artisans = {
-		culture = native_american_minor
+		culture = cora_huichol
 		religion = catholic
 		size = 650
 	}
 
 	soldiers = {
-		culture = native_american_minor
+		culture = cora_huichol
 		religion = catholic
 		size = 150
 	}
 
 	farmers = {
-		culture = native_american_minor
+		culture = cora_huichol
 		religion = catholic
 		size = 12125
 	}

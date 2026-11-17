@@ -265,37 +265,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = amhara
 		religion = animist
 		size = 1050
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = amhara
 		religion = animist
 		size = 550
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = amhara
 		religion = animist
 		size = 2225
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = amhara
 		religion = animist
 		size = 550
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = amhara
 		religion = animist
 		size = 46600
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = amhara
 		religion = animist
 		size = 4000
 	}
@@ -827,37 +827,37 @@
 #Bonga (368000/92000 POPS)
 1862 = {
 	aristocrats = {
-		culture = african_minor
+		culture = kafa
 		religion = animist
 		size = 1800
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = kafa
 		religion = animist
 		size = 925
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = kafa
 		religion = animist
 		size = 3650
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = kafa
 		religion = animist
 		size = 925
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = kafa
 		religion = animist
 		size = 71700
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = kafa
 		religion = animist
 		size = 13000
 	}
@@ -1045,43 +1045,43 @@
 #Harer (384000/96000 POPS)
 1865 = {
 	aristocrats = {
-		culture = african_minor
+		culture = harari
 		religion = sunni
 		size = 800
 	}
 
 	bureaucrats = {
-		culture = african_minor
+		culture = harari
 		religion = sunni
 		size = 15
 	}
 
 	officers = {
-		culture = african_minor
+		culture = harari
 		religion = sunni
 		size = 10
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = harari
 		religion = sunni
 		size = 425
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = harari
 		religion = sunni
 		size = 1675
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = harari
 		religion = sunni
 		size = 400
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = harari
 		religion = sunni
 		size = 25675
 	}
@@ -1147,7 +1147,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = harari
 		religion = animist
 		size = 11000
 	}
@@ -1156,37 +1156,37 @@
 #Goba (296000/74000 POPS)
 1866 = {
 	aristocrats = {
-		culture = african_minor
+		culture = oromo
 		religion = animist
 		size = 500
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = oromo
 		religion = animist
 		size = 275
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = oromo
 		religion = animist
 		size = 1075
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = oromo
 		religion = animist
 		size = 275
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = oromo
 		religion = animist
 		size = 19875
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = oromo
 		religion = animist
 		size = 5000
 	}

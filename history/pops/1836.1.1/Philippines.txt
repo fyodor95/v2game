@@ -350,25 +350,25 @@
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = palawan
 		religion = animist
 		size = 75
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = palawan
 		religion = animist
 		size = 450
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = palawan
 		religion = animist
 		size = 100
 	}
 
 	farmers = {
-		culture = asian_minor
+		culture = palawan
 		religion = animist
 		size = 9375
 	}

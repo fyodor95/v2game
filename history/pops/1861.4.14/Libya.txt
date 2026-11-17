@@ -527,7 +527,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = bedouin
 		religion = animist
 		size = 3090.0
 	}
@@ -991,7 +991,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = berber
 		religion = animist
 		size = 2060.0
 	}

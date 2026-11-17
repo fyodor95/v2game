@@ -99,37 +99,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = mbundu
 		religion = animist
 		size = 103.0
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = mbundu
 		religion = animist
 		size = 103.0
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = mbundu
 		religion = animist
 		size = 103.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = mbundu
 		religion = animist
 		size = 103.0
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = mbundu
 		religion = animist
 		size = 7828.0
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = mbundu
 		religion = animist
 		size = 3090.0
 	}
@@ -204,37 +204,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = bakongo
 		religion = animist
 		size = 206.0
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = bakongo
 		religion = animist
 		size = 154.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = bakongo
 		religion = animist
 		size = 721.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = bakongo
 		religion = animist
 		size = 206.0
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = bakongo
 		religion = animist
 		size = 13647.5
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = bakongo
 		religion = animist
 		size = 3605.0
 	}
@@ -242,37 +242,37 @@
 #Quibala (120000/30000 POPS)
 2002 = {
 	aristocrats = {
-		culture = african_minor
+		culture = mbundu
 		religion = animist
 		size = 309.0
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = mbundu
 		religion = animist
 		size = 257.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = mbundu
 		religion = animist
 		size = 1236.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = mbundu
 		religion = animist
 		size = 309.0
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = mbundu
 		religion = animist
 		size = 22608.5
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = mbundu
 		religion = animist
 		size = 6180.0
 	}
@@ -393,37 +393,37 @@
 #Mocamedes (116000/29000 POPS)
 2004 = {
 	aristocrats = {
-		culture = african_minor
+		culture = herero
 		religion = animist
 		size = 309.0
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = herero
 		religion = animist
 		size = 618.0
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = herero
 		religion = animist
 		size = 772.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = herero
 		religion = animist
 		size = 309.0
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = herero
 		religion = animist
 		size = 21887.5
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = herero
 		religion = animist
 		size = 5974.0
 	}
@@ -546,37 +546,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = chokwe
 		religion = animist
 		size = 180.25
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = chokwe
 		religion = animist
 		size = 180.25
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = chokwe
 		religion = animist
 		size = 824.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = chokwe
 		religion = animist
 		size = 206.0
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = chokwe
 		religion = animist
 		size = 11793.5
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = chokwe
 		religion = animist
 		size = 3296.0
 	}
@@ -620,37 +620,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = ovambo
 		religion = animist
 		size = 51.5
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = ovambo
 		religion = animist
 		size = 77.25
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = ovambo
 		religion = animist
 		size = 309.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = ovambo
 		religion = animist
 		size = 77.25
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = ovambo
 		religion = animist
 		size = 4403.25
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = ovambo
 		religion = animist
 		size = 1287.5
 	}
@@ -661,37 +661,37 @@
 #Malanje (44000/11000 POPS)
 2009 = {
 	aristocrats = {
-		culture = african_minor
+		culture = mbundu
 		religion = animist
 		size = 77.25
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = mbundu
 		religion = animist
 		size = 51.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = mbundu
 		religion = animist
 		size = 257.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = mbundu
 		religion = animist
 		size = 77.25
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = mbundu
 		religion = animist
 		size = 4480.5
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = mbundu
 		religion = animist
 		size = 1236.0
 	}
@@ -881,37 +881,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = chokwe
 		religion = animist
 		size = 51.5
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = chokwe
 		religion = animist
 		size = 51.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = chokwe
 		religion = animist
 		size = 257.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = chokwe
 		religion = animist
 		size = 51.5
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = chokwe
 		religion = animist
 		size = 3708.0
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = chokwe
 		religion = animist
 		size = 1030.0
 	}

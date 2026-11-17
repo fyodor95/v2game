@@ -95,31 +95,31 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = khoisan
 		religion = animist
 		size = 51.5
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = khoisan
 		religion = animist
 		size = 51.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = khoisan
 		religion = animist
 		size = 206.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = khoisan
 		religion = animist
 		size = 51.5
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = khoisan
 		religion = animist
 		size = 3759.5
 	}
@@ -127,31 +127,31 @@
 #Tsumeb (24000/6000 POPS)
 2080 = {
 	aristocrats = {
-		culture = african_minor
+		culture = ovambo
 		religion = animist
 		size = 103.0
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = ovambo
 		religion = animist
 		size = 51.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = ovambo
 		religion = animist
 		size = 309.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = ovambo
 		religion = animist
 		size = 77.25
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = ovambo
 		religion = animist
 		size = 5639.25
 	}
@@ -189,31 +189,31 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = herero
 		religion = animist
 		size = 77.25
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = herero
 		religion = animist
 		size = 51.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = herero
 		religion = animist
 		size = 257.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = herero
 		religion = animist
 		size = 51.5
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = herero
 		religion = animist
 		size = 4712.25
 	}
@@ -223,31 +223,31 @@
 #Linyati (16000/4000 POPS)
 2081 = {
 	aristocrats = {
-		culture = african_minor
+		culture = lozi
 		religion = animist
 		size = 51.5
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = lozi
 		religion = animist
 		size = 77.25
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = lozi
 		religion = animist
 		size = 154.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = lozi
 		religion = animist
 		size = 25.75
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = lozi
 		religion = animist
 		size = 2781.0
 	}

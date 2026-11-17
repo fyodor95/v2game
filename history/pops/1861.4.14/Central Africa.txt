@@ -3,31 +3,31 @@
 #Bangui (104000/26000 POPS)
 1965 = {
 	aristocrats = {
-		culture = african_minor
+		culture = banda
 		religion = animist
 		size = 515.0
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = banda
 		religion = animist
 		size = 257.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = banda
 		religion = animist
 		size = 1339.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = banda
 		religion = animist
 		size = 283.25
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = banda
 		religion = animist
 		size = 24385.25
 	}
@@ -35,31 +35,31 @@
 #Nola (40000/10000 POPS)
 1966 = {
 	aristocrats = {
-		culture = african_minor
+		culture = gbaya
 		religion = animist
 		size = 77.25
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = gbaya
 		religion = animist
 		size = 103.0
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = gbaya
 		religion = animist
 		size = 515.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = gbaya
 		religion = animist
 		size = 103.0
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = gbaya
 		religion = animist
 		size = 9398.75
 	}
@@ -68,31 +68,31 @@
 #Bouar (28000/7000 POPS)
 1967 = {
 	aristocrats = {
-		culture = african_minor
+		culture = gbaya
 		religion = animist
 		size = 128.75
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = gbaya
 		religion = animist
 		size = 77.25
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = gbaya
 		religion = animist
 		size = 360.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = gbaya
 		religion = animist
 		size = 77.25
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = gbaya
 		religion = animist
 		size = 6566.25
 	}
@@ -100,31 +100,31 @@
 #Bossangoa (56000/14000 POPS)
 1968 = {
 	aristocrats = {
-		culture = african_minor
+		culture = gbaya
 		religion = animist
 		size = 77.25
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = gbaya
 		religion = animist
 		size = 103.0
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = gbaya
 		religion = animist
 		size = 515.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = gbaya
 		religion = animist
 		size = 103.0
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = gbaya
 		religion = animist
 		size = 9398.75
 	}
@@ -224,31 +224,31 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = azande
 		religion = animist
 		size = 77.25
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = azande
 		religion = animist
 		size = 51.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = azande
 		religion = animist
 		size = 257.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = azande
 		religion = animist
 		size = 51.5
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = azande
 		religion = animist
 		size = 4712.25
 	}
@@ -286,31 +286,31 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = azande
 		religion = animist
 		size = 231.75
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = azande
 		religion = animist
 		size = 154.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = azande
 		religion = animist
 		size = 669.5
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = azande
 		religion = animist
 		size = 154.5
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = azande
 		religion = animist
 		size = 12231.25
 	}
@@ -349,31 +349,31 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = banda
 		religion = animist
 		size = 103.0
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = banda
 		religion = animist
 		size = 51.5
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = banda
 		religion = animist
 		size = 309.0
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = banda
 		religion = animist
 		size = 77.25
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = banda
 		religion = animist
 		size = 5639.25
 	}
