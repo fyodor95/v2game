@@ -23,6 +23,19 @@ class ValidationTests(unittest.TestCase):
     def check(self, first=None, spread=SPREAD):
         (self.root/'events/adding_cores.txt').write_bytes(((self.first if first is None else first)+spread).encode('cp1251'))
         with patch.object(v,'build_model',return_value=self.model): return v.validate(self.root)
+    def test_reserved_country_scope_requires_quotes(self):
+        self.row.update(main='PHI',first=['PHI']);self.model['spread']={('north_german','PHI')}
+        self.model['countries']={'PHI':dict(religion='protestant',civilized=False)}
+        first=self.first.replace('SAX','PHI');spread=SPREAD.replace('SAX','PHI')
+        self.assertFalse(self.check(first,spread)['ok'])
+        self.assertTrue(self.check(first.replace('PHI = {','"PHI" = {'),spread.replace('PHI = {','"PHI" = {'))['ok'])
+    def test_country_event_rejected(self):
+        self.assertFalse(self.check(self.first.replace('province_event','country_event'))['ok'])
+    def test_triggered_only_rejected(self):
+        self.assertFalse(self.check(self.first.replace('id = 24001','is_triggered_only = yes id = 24001'))['ok'])
+    def test_localization_references_checked(self):
+        for name in ('EVTNAME','EVTDESC','EVTOPTA'):
+            self.assertFalse(self.check(self.first.replace(name+'24001',name+'wrong'))['ok'])
     def test_valid(self): self.assertTrue(self.check()['ok'])
     def test_religion_missing(self): self.assertFalse(self.check(self.first.replace('pop_majority_religion = protestant',''))['ok'])
     def test_changed_country_religion_guard_missing(self): self.assertFalse(self.check(self.first.replace('country_religion = protestant',''))['ok'])

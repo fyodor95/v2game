@@ -1,4 +1,4 @@
-﻿"""Изолированная двойная генерация с проверкой исходных файлов перед установкой."""
+"""Изолированная двойная генерация с проверкой исходных файлов перед установкой."""
 from __future__ import annotations
 import argparse
 import hashlib
@@ -8,6 +8,7 @@ import shutil
 import subprocess
 
 ROOT=Path(__file__).resolve().parents[2]
+ROOT_FILES=('autogen.cfg','events_id_list.txt','decisions_id_list.txt')
 FOLDERS=('common','history','map','poptypes','technologies','inventions','events','decisions','localisation','units')
 def sha(path): return hashlib.sha256(path.read_bytes()).hexdigest()
 def hashes(root): return {p.relative_to(root).as_posix():sha(p) for p in root.rglob('*') if p.is_file()}
@@ -21,7 +22,7 @@ def prepare(destination):
     if destination.exists(): raise ValueError('Каталог уже существует')
     game=destination/'game'
     for folder in FOLDERS: shutil.copytree(ROOT/folder,game/folder)
-    for rel in ('autogen.cfg','events_id_list.txt','decisions_id_list.txt'):
+    for rel in ROOT_FILES:
         shutil.copy2(ROOT/rel,game/rel)
     config=destination/'config';(config/'run').mkdir(parents=True)
     (config/'autogen.cfg').write_text('game_path = "'+game.as_posix()+'"\n',encoding='utf-8')
@@ -35,7 +36,7 @@ def run(destination,generator):
     results=[]
     for number in (1,2):
         with (destination/f'run-{number}.log').open('xb') as log:
-            subprocess.run([str(generator.resolve())],cwd=destination/'config/run',stdout=log,stderr=subprocess.STDOUT,check=True)
+            subprocess.run([str(generator.resolve())],cwd=destination/'config/run',stdout=log,stderr=subprocess.STDOUT,check=True,timeout=600)
         result=hashes(game); results.append(result)
         (destination/f'after-{number}.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
     if results[0]!=results[1]: raise ValueError('Повторная генерация отличается')
@@ -53,6 +54,13 @@ def install(destination):
     report=json.loads((destination/'result.json').read_text(encoding='utf-8'))
     if not report['ok'] or hashes(game)!=after: raise ValueError('Генерация не прошла проверку либо изменена')
     # Проверяем всё до первой записи, включая входы, которые сам генератор не изменял.
+    current={}
+    for folder in FOLDERS:
+        current.update({folder+'/'+rel:checksum for rel,checksum in hashes(ROOT/folder).items()})
+    current.update({rel:sha(ROOT/rel) for rel in ROOT_FILES if (ROOT/rel).is_file()})
+    if current!=before:
+        delta=sorted(rel for rel in current.keys()|before.keys() if current.get(rel)!=before.get(rel))
+        raise ValueError('Изменён набор исходных данных: '+str(delta))
     for rel,checksum in before.items():
         if not (ROOT/rel).is_file() or sha(ROOT/rel)!=checksum: raise ValueError('Исходный файл изменён: '+rel)
     for rel in set(after)-set(before):

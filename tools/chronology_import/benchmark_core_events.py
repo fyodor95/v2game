@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import argparse
 import ctypes
+import hashlib
 from ctypes import wintypes
 import json
 import os
@@ -27,11 +28,48 @@ from benchmark_gpc import (BenchmarkError, checked, input_fingerprint, integer_s
                            mode_config, process_times, require, safe_path, sha_bytes, utc)
 from tools.chronology_import.validate_core_events import parse, reconstruct_map, validate_events
 from tools.chronology_import import native_event_probe
+from tools.chronology_import.engine_acceptance import Spans
+from tools.culture_religion.native_acceptance import wait_initialisation
 
 EVENT = 'events/adding_cores.txt'
 CORE_INI = 'z_CreatineCore/creatinecore_settings.ini'
 GPC_INI = 'z_CreatineCore/great_power_culture_cores.ini'
 OLD_COMMIT = '88c23775'
+STARTUP_TIMEOUT = 900
+
+
+def quote_country_scope_keys(raw):
+    """Экранировать PHI/PAN только в ключах блоков, сохранив остальные байты."""
+    text = raw.decode('cp1251')
+    edits, counts = [], {'PHI': 0, 'PAN': 0}
+
+    def visit(node):
+        if not isinstance(node.value, list):
+            return
+        if node.key in counts and text[node.key_start:node.key_end] == node.key:
+            edits.append((node.key_start, node.key_end, '"' + node.key + '"'))
+            counts[node.key] += 1
+        for child in node.value:
+            visit(child)
+
+    for node in Spans(text).roots():
+        visit(node)
+    for start, end, replacement in sorted(edits, reverse=True):
+        text = text[:start] + replacement + text[end:]
+    return text.encode('cp1251'), counts
+
+
+def model_inputs(root):
+    """Все исходные определения модели должны совпадать со стендом."""
+    result = {}
+    for folder in ('common', 'history'):
+        for path in (root / folder).rglob('*'):
+            if path.is_file():
+                result[path.relative_to(root).as_posix()] = hashlib.sha256(path.read_bytes()).hexdigest()
+    config = root / 'autogen.cfg'
+    require(config.is_file(), 'В стенде нет исходной конфигурации autogen.cfg')
+    result['autogen.cfg'] = hashlib.sha256(config.read_bytes()).hexdigest()
+    return result
 
 
 def compact(fingerprint):
@@ -106,7 +144,8 @@ class Benchmark:
                            started_utc=utc(), parameters=vars(args).copy(), modes=[], errors=[])
         self.record['parameters'] = {key: str(value) if isinstance(value, Path) else value
                                      for key, value in self.record['parameters'].items()}
-        self.record['parameters'].update(warmup_days=args.warmup_days, load_timeout=1200, advance_timeout=600, gpc_enabled=0)
+        self.record['parameters'].update(warmup_days=args.warmup_days, startup_timeout=STARTUP_TIMEOUT,
+                                         load_timeout=1200, advance_timeout=600, gpc_enabled=0)
         self.originals = {}
         self.baseline = None
         self.stream = None
@@ -165,10 +204,20 @@ class Benchmark:
         require(re.fullmatch('[0-9a-f]{40}', revision), 'Неверный baseline commit')
         old = subprocess.run(['git', 'show', revision + ':' + EVENT], cwd=ROOT,
                              capture_output=True, check=True).stdout
+        old_source = old
+        old_scope_quotes = {'PHI': 0, 'PAN': 0}
+        quote_old = getattr(self.args, 'quote_old_country_scopes', False)
+        if quote_old:
+            old, old_scope_quotes = quote_country_scope_keys(old)
+        self.record['old_event_source'] = dict(sha256=sha_bytes(old_source), effective_sha256=sha_bytes(old),
+                                              quote_country_scopes=quote_old, replacements=old_scope_quotes,
+                                              replacement_count=sum(old_scope_quotes.values()))
         new_path = safe_path(self.args.new_events.absolute(), work, regular=True)
         new = new_path.read_bytes()
         if b'pop_majority_religion' in new:
             from tools.culture_religion.validate import validate as validate_pairs
+            require(model_inputs(self.game) == model_inputs(new_path.parents[1]),
+                    'Данные модели новой генерации отличаются от игрового стенда')
             pair_result = validate_pairs(new_path.parents[1])
             validation = dict(ok=pair_result['ok'], issues=pair_result['errors'],
                               counts=dict(first=pair_result['first_count'], spread=pair_result['spread_count']),
@@ -190,7 +239,9 @@ class Benchmark:
                            tool_hashes={str(path.relative_to(ROOT)): cli.digest(path) for path in (
                                Path(__file__), Path(cli.__file__), Path(mp_preflight.__file__),
                                ROOT / 'tools/vic2test/benchmark_gpc.py', ROOT / 'tools/vic2test/mp_session.py',
-                               Path(native_event_probe.__file__), Path(native_event_probe.engine.__file__))})
+                               Path(native_event_probe.__file__), Path(native_event_probe.engine.__file__),
+                               Path(sys.modules[Spans.__module__].__file__),
+                               Path(sys.modules[wait_initialisation.__module__].__file__))})
 
     def verify_saves(self):
         require({name: cli.digest(path) for name, path in self.save_paths.items()} == self.save_hashes,
@@ -255,6 +306,7 @@ class Benchmark:
         previous, owned = session(self.environment), None
         self.checkpoint(name + ':start')
         try:
+            started_at = time.time()
             try:
                 mode['start'] = cli.start(self.environment, hidden=not self.args.visible)  # load: отдельный timeout1200.
             finally:
@@ -271,6 +323,15 @@ class Benchmark:
                         raise
             checked(mode['start'], 'start')
             require(owned is not None, 'Не создан собственный процесс')
+            mode['initialisation'] = dict(started_at=started_at, complete=False)
+            self.checkpoint(name + ':initialisation')
+            began = time.perf_counter()
+            try:
+                wait_initialisation(self.environment, started_at, STARTUP_TIMEOUT)
+                mode['initialisation']['complete'] = True
+            finally:
+                mode['initialisation']['wait_seconds'] = time.perf_counter() - began
+                self.checkpoint(name + ':initialisation-finished')
             for save in self.args.saves:
                 for index in range(self.args.samples):
                     sample = dict(save=save, index=index + 1, complete=False, warmup={}, advance={})
@@ -337,7 +398,7 @@ class Benchmark:
         self.preflight()
         if self.args.dry_run:
             return {'ok': True, 'dry_run': True, **{key: self.record[key] for key in
-                    ('parameters', 'source_commit', 'event_sets', 'new_validation', 'saves')}}, 0
+                    ('parameters', 'source_commit', 'event_sets', 'old_event_source', 'new_validation', 'saves')}}, 0
         with self.output.open('x', encoding='utf-8', newline='\n') as self.stream:
             try:
                 self.artifacts.mkdir(exist_ok=False)
@@ -387,7 +448,9 @@ class Benchmark:
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--environment', type=Path, default=ROOT / '.work/chronology-cores/engine')
-    parser.add_argument('--old-commit', default=OLD_COMMIT, help='???????????? ??????????? ??????? ???????')
+    parser.add_argument('--old-commit', default=OLD_COMMIT, help='Закреплённая контрольная ревизия событий')
+    parser.add_argument('--quote-old-country-scopes', action='store_true',
+                        help='Явно экранировать PHI/PAN scope keys старого набора без изменения механики')
     parser.add_argument('--new-events', type=Path, default=ROOT / '.work/chronology-cores/generated-game/events/adding_cores.txt')
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--saves', nargs=2, default=['gpc36_start.v2', 'chr_new.v2'])

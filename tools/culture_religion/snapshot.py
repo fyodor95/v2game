@@ -42,6 +42,10 @@ def capture(environment,session,owned,tags):
     try:
         module=process.main_module();base=module['base']
         pe=probe.pe_identity(process.read,base,executable.read_bytes())
+        u32=lambda at:struct.unpack('<I',process.read(at,4))[0]
+        world=u32(base+0xe588e8);require(world,'Нет загруженного мира')
+        date=u32(world+0xb0c)
         state=inspect(process.read,base,tags)
-        return dict(read_only=True,atomic_snapshot=False,pid=owned.pid,session_token=session['token'],pe=pe,countries=state)
+        require(u32(base+0xe588e8)==world and u32(world+0xb0c)==date,'Мир или дата изменились во время снимка')
+        return dict(date_raw=date,read_only=True,atomic_snapshot=False,pid=owned.pid,session_token=session['token'],pe=pe,countries=state)
     finally: process.close()

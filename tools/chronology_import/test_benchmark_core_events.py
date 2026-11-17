@@ -18,10 +18,79 @@ def arguments(root):
     return argparse.Namespace(environment=root / 'environment', output=root / 'report.json',
                               saves=['normal.v2', 'rebels.v2'], samples=3, days=100, dry_run=False,
                               order='old-new', new_events=root / 'new.txt', visible=False, warmup_days=33,
-                              rebel_save=None, rebel_province=546)
+                              rebel_save=None, rebel_province=546, quote_old_country_scopes=False)
 
 
 class BenchmarkTests(unittest.TestCase):
+    def test_country_scope_quotes_preserve_scalars_strings_comments_and_other_tags(self):
+        source = (b'# PHI = { PAN = {\r\n'
+                  b'province_event = { trigger = { owner = { PHI = { exists = no } '
+                  b'PAN\r\n =\t{ primary_culture = panjabi } PRU = { always = yes } } } '
+                  b'title = "PHI = { PAN = {" option = { add_core = PHI tag = PAN '
+                  b'"PAN" = { add_core = PHI } } }\r\n')
+        quoted, counts = b.quote_country_scope_keys(source)
+        expected = source.replace(b'owner = { PHI = {', b'owner = { "PHI" = {')
+        expected = expected.replace(b'PAN\r\n =\t{', b'"PAN"\r\n =\t{')
+        self.assertEqual(quoted, expected)
+        self.assertEqual(counts, {'PHI': 1, 'PAN': 1})
+        self.assertEqual(b.quote_country_scope_keys(quoted), (quoted, {'PHI': 0, 'PAN': 0}))
+
+    def test_startup_wait_precedes_load_and_failure_stops_owned_process(self):
+        for waiting_fails in (False, True):
+            with self.subTest(waiting_fails=waiting_fails), tempfile.TemporaryDirectory() as temporary:
+                root = Path(temporary)
+                runner = b.Benchmark(arguments(root))
+                runner.game, runner.exe = root / 'game', root / 'game/v2game.exe'
+                (runner.game / 'events').mkdir(parents=True)
+                (runner.game / 'z_CreatineCore').mkdir()
+                runner.events, runner.disabled_gpc = {'old': b'old'}, b'off'
+                runner.verify_inputs, runner.verify_saves = Mock(return_value={}), Mock()
+                current = {'token': 'b' * 32, 'pid': 123, 'game': str(runner.game)}
+                owned, calls = Mock(), []
+
+                def start(*args, **kwargs):
+                    calls.append('start')
+                    return dict(ok=True)
+
+                def wait(environment, started_at, timeout):
+                    self.assertEqual((environment, started_at, timeout),
+                                     (runner.environment, 123.0, 900))
+                    calls.append('wait')
+                    if waiting_fails:
+                        raise RuntimeError('startup failed')
+
+                def load(*args, **kwargs):
+                    calls.append('load')
+                    raise RuntimeError('load reached')
+
+                with patch.object(b, 'require_idle'), patch.object(b, 'session', side_effect=[None, current]), \
+                        patch.object(b.cli, 'start', side_effect=start), patch.object(b.time, 'time', return_value=123.0), \
+                        patch.object(b, 'wait_initialisation', side_effect=wait), \
+                        patch.object(b.cli, 'load_campaign', side_effect=load), \
+                        patch.object(b, 'OwnedProcess', return_value=owned):
+                    with self.assertRaisesRegex(RuntimeError, 'startup failed' if waiting_fails else 'load reached'):
+                        runner.run_mode('old')
+                self.assertEqual(calls, ['start', 'wait'] if waiting_fails else ['start', 'wait', 'load'])
+                owned.stop.assert_called_once()
+                mode = runner.record['modes'][0]
+                self.assertTrue(mode['process_stopped'])
+                self.assertEqual(mode['initialisation']['complete'], not waiting_fails)
+                self.assertGreaterEqual(mode['initialisation']['wait_seconds'], 0)
+
+    def test_model_input_snapshot_detects_changed_or_new_population(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            (root/'common').mkdir(); (root/'history/pops').mkdir(parents=True)
+            (root/'autogen.cfg').write_text('configuration')
+            source = root/'history/pops/a.txt'; source.write_text('population')
+            original = b.model_inputs(root)
+            source.write_text('other population')
+            self.assertNotEqual(original, b.model_inputs(root))
+            source.write_text('population')
+            self.assertEqual(original, b.model_inputs(root))
+            (root/'history/pops/new.txt').write_text('new input')
+            self.assertNotEqual(original, b.model_inputs(root))
+
     def test_rebel_control_guard_records_actual_state_and_rejects_retake(self):
         runner = b.Benchmark(arguments(Path('fixture')))
         runner.args.rebel_save = 'rebels.v2'

@@ -20,7 +20,7 @@ def find_events(raw,dynamic_culture=None):
         tag=old.scalar(guard,'add_core'); trigger=old.one(event,'trigger')
         culture=old.scalar(trigger,'culture'); religion=old.scalar(trigger,'pop_majority_religion')
         limit=old.one(guard,'limit')
-        old.require(re.sub(r'\s+','',text[trigger.start:trigger.end])==re.sub(r'\s+','',text[limit.start:limit.end]),'Guard ?????????? ?? trigger')
+        old.require(re.sub(r'\s+','',text[trigger.start:trigger.end])==re.sub(r'\s+','',text[limit.start:limit.end]),'Guard отличается от trigger')
         if religion is None: raise ValueError('Требуется новая генерация с религиями')
         record=dict(id=int(old.scalar(event,'id')),tag=tag,culture=culture,religion=religion,
                     trigger=text[trigger.start:trigger.end])
@@ -66,6 +66,13 @@ def fixture_cases(events):
 
 
 class Runner(old.Runner):
+    def checked(self,response,operation):
+        result=super().checked(response,operation)
+        if operation=='start':
+            from tools.culture_religion.native_acceptance import wait_initialisation
+            wait_initialisation(self.environment,(self.environment/'session.json').stat().st_mtime)
+        return result
+
     def save(self,name):
         path=super().save(name)
         # Дополнительная независимая фиксация культур/религий всех D в каждом сейве.

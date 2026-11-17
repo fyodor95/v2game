@@ -4,7 +4,7 @@
 #include <algorithm>
 #include <vector>
 
-// Выбор существующего странового события локального игрока. Оба участника MP
+// Выбор существующего события страны/провинции локального игрока. Участники MP
 // используют штатный callback и очередь; события и scope этот адаптер не создаёт.
 // Вызывающий мост проверяет owner thread и дедупликацию запросов.
 namespace vic2_mp_events {
@@ -14,6 +14,7 @@ struct PopupInfo {
     std::uint32_t event = 0;
     unsigned event_id = 0;
     unsigned country = 0;
+    unsigned province = 0;  // 0 — страновое окно; country/tag всегда локальный игрок.
     char tag[4]{};
     unsigned option_count = 0;
 };
@@ -74,6 +75,18 @@ inline void Signatures(Address base) {
         0x85, 0xC9, 0x74, 0x09, 0x89, 0x47, 0x08, 0x5F, 0x5B, 0x5D,
         0xC2, 0x04, 0x00, 0x89, 0x46, 0x60
     };
+    // Province scope сохраняется в общей команде, получатель — текущий владелец.
+    static const unsigned char province_recipient[] = {
+        0x8B, 0x5E, 0x10, 0x8B, 0x04, 0x98, 0x8B, 0x98, 0x28, 0x01, 0x00, 0x00,
+        0x89, 0x5C, 0x24, 0x18, 0x8B, 0x98, 0x2C, 0x01, 0x00, 0x00
+    };
+    static const unsigned char copy_province[] = {0x8B, 0x51, 0x10, 0x89, 0x50, 0x10};
+    static const unsigned char command_province[] = {0x8B, 0x46, 0x78, 0x3B, 0xC3};
+    static const unsigned char command_province_owner[] = {
+        0x8B, 0x8A, 0xCC, 0x0A, 0x00, 0x00, 0x8B, 0x0C, 0x81,
+        0x39, 0x99, 0x2C, 0x01, 0x00, 0x00
+    };
+    static const unsigned char callback_return[] = {0x5B, 0x8B, 0xE5, 0x5D, 0xC3};
     Signature(base, 0x4AE150, prologue);
     Signature(base, 0x4AE190, select);
     Signature(base, 0x4AE1CE, create);
@@ -86,6 +99,11 @@ inline void Signatures(Address base) {
     Signature(base, 0x2480E3, register_head);
     Signature(base, 0x24810C, register_node);
     Signature(base, 0x248120, register_tail);
+    Signature(base, 0x4A816C, province_recipient);
+    Signature(base, 0x4A88E9, copy_province);
+    Signature(base, 0x508001, command_province);
+    Signature(base, 0x508012, command_province_owner);
+    Signature(base, 0x4AE222, callback_return);
     Value(Add(base, 0xA333BC + 0x18), Add(base, 0x507E00));
 }
 
@@ -157,11 +175,27 @@ inline std::vector<Address> Registered(const Context& context) {
 }
 
 inline bool OwnPending(const Context& context, Address popup) {
-    return Read<Address>(popup) == Add(context.base, 0xA2CDB8) &&
-        Read<unsigned>(Add(popup, 0x1C)) == context.country &&
-        Read<std::uint32_t>(Add(popup, 0x18)) == context.tag &&
-        Read<unsigned>(Add(popup, 0x20)) == 0 &&
-        Flag(Add(popup, 0x58)) && !Flag(Add(popup, 0xCC));
+    if (Read<Address>(popup) != Add(context.base, 0xA2CDB8) ||
+        !Flag(Add(popup, 0x58)) || Flag(Add(popup, 0xCC)))
+        return false;
+    const auto country = Read<unsigned>(Add(popup, 0x1C));
+    const auto tag = Read<std::uint32_t>(Add(popup, 0x18));
+    const auto province = Read<unsigned>(Add(popup, 0x20));
+    if (!province)
+        return country == context.country && tag == context.tag;
+    // Нативный province scope имеет пустые country index/tag. Получателя
+    // определяем по canonical province, не подменяя содержимое scope окна.
+    if (country || tag != 0x002D2D2D)
+        return false;
+    const Address begin = Pointer(Add(context.state.world, 0xACC));
+    const Address end = Read<Address>(Add(context.state.world, 0xAD0));
+    if (end <= begin || end - begin > 100000 * 4 || ((end - begin) & 3) ||
+        province >= (end - begin) / 4)
+        throw std::runtime_error("E_MP_LAYOUT: недопустимая провинция события");
+    const Address object = Pointer(Add(begin, province * 4));
+    Value(Add(object, 0x58), province);
+    return Read<unsigned>(Add(object, 0x12C)) == context.country &&
+        Read<std::uint32_t>(Add(object, 0x128)) == context.tag;
 }
 
 inline void CheckObserver(Address control, Address popup) {
@@ -184,7 +218,7 @@ struct Validated {
 
 inline Validated Validate(const Context& context, Address popup) {
     if (!OwnPending(context, popup))
-        throw std::runtime_error("E_MP_EVENT_MISMATCH: нет ожидающего странового окна локального игрока");
+        throw std::runtime_error("E_MP_EVENT_MISMATCH: нет ожидающего окна страны/провинции локального игрока");
     const Address base = context.base;
     Value(Add(popup, 8), context.state.idler);
     Value(Add(popup, 0x10), Add(base, 0xA2C904));
@@ -195,6 +229,7 @@ inline Validated Validate(const Context& context, Address popup) {
     Validated result;
     result.info.popup = popup;
     result.info.country = context.country;
+    result.info.province = Read<unsigned>(Add(popup, 0x20));
     std::memcpy(result.info.tag, &context.tag, sizeof(result.info.tag));
     result.info.event = Pointer(Add(popup, 0x0C));
     Value(Add(result.info.event, 8), 0x27);

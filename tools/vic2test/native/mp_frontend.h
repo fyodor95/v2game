@@ -188,7 +188,8 @@ static Result SelectCountry(DWORD base, DWORD frontend, DWORD mainMenu, const ch
     if (!tag || strnlen_s(tag, 4) != 3) throw std::runtime_error("E_MP_ARGUMENT");
     DWORD packed = 0;
     for (unsigned i = 0; i < 3; ++i) {
-        if (tag[i] < 'A' || tag[i] > 'Z') throw std::runtime_error("E_MP_ARGUMENT");
+        if ((tag[i] < 'A' || tag[i] > 'Z') && (tag[i] < '0' || tag[i] > '9'))
+            throw std::runtime_error("E_MP_ARGUMENT");
         packed |= (DWORD)(unsigned char)tag[i] << (i * 8);
     }
     const State state = Inspect(base, frontend, mainMenu);

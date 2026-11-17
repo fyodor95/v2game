@@ -474,13 +474,15 @@ static bool DispatchMp(const char* command) {
                 }
                 if (!selected) { Error("E_MP_EVENT_MISSING"); return true; }
                 const auto result = vic2_mp_events::Pick(baseAddress, selected->popup, option, Read(current.world + 0xB60));
-                sprintf_s(response, "{\"ok\":true,\"queued\":%s,\"event_id\":%u,\"option\":%u}\n",
-                    result.queued ? "true" : "false", eventId, option);
+                sprintf_s(response, "{\"ok\":true,\"queued\":%s,\"event_id\":%u,\"option\":%u,\"country\":\"%s\",\"scope\":\"%s\",\"province\":%u}\n",
+                    result.queued ? "true" : "false", eventId, option, result.before.tag,
+                    result.before.province ? "province" : "country", result.before.province);
             } else {
                 strcpy_s(response, "{\"ok\":true,\"events\":[");
                 for (size_t i = 0; i < popups.size(); ++i) {
-                    char item[160]; sprintf_s(item, "%s{\"event_id\":%u,\"country\":\"%s\",\"options\":%u}",
-                        i ? "," : "", popups[i].event_id, popups[i].tag, popups[i].option_count);
+                    char item[192]; sprintf_s(item, "%s{\"event_id\":%u,\"country\":\"%s\",\"options\":%u,\"scope\":\"%s\",\"province\":%u}",
+                        i ? "," : "", popups[i].event_id, popups[i].tag, popups[i].option_count,
+                        popups[i].province ? "province" : "country", popups[i].province);
                     if (strlen(response) + strlen(item) + 5 >= sizeof(response)) { Error("E_MP_RESPONSE_LIMIT"); return true; }
                     strcat_s(response, item);
                 }
@@ -624,7 +626,7 @@ static bool EventCheckReadVector(DWORD address, DWORD target, DWORD limit, Event
         if (Read(begin + index * 4) == target) result.contains = true;
     return true;
 }
-struct EventCheckTriggerType { DWORD vtable, evaluate; const char* name; bool children; };
+struct EventCheckTriggerType { DWORD vtable, evaluate; const char* name; bool children; bool core = false; };
 static const EventCheckTriggerType eventCheckTypes[] = {
     { 0x9F9994, 0x4B8260, "and", true },
     { 0xA2FB70, 0x4B88A0, "or", true },
@@ -637,20 +639,92 @@ static const EventCheckTriggerType eventCheckTypes[] = {
     { 0xA315E8, 0x4E2A70, "primary_culture", false },
     { 0xA30628, 0x4C3A80, "exists", false },
     { 0xA301C8, 0x4BDE30, "is_core", false },
-    { 0xA30C80, 0x4D4000, "tag", false }
+    { 0xA30C80, 0x4D4000, "tag", false },
+    { 0xA31C40, 0x4ECA90, "civilized", false },
+    { 0xA31F88, 0x4F1320, "pop_majority_religion", false },
+    { 0xE3B3CC, 0x033BC0, "country_religion", false, true }
 };
+static const BYTE countryReligionEvaluateBytes[] = {
+    0x55,0x8B,0xEC,0x6A,0xFE,0x68,0x90,0x77,0x07,0x10,0x68,0xF0,0xF2,0x03,0x10,0x64,
+    0xA1,0x00,0x00,0x00,0x00,0x50,0x83,0xEC,0x0C,0x53,0x56,0x57,0xA1,0x40,0xA0,0x07,
+    0x10,0x31,0x45,0xF8,0x33,0xC5,0x50,0x8D,0x45,0xF0,0x64,0xA3,0x00,0x00,0x00,0x00,
+    0x89,0x65,0xE8,0x8B,0xF1,0x33,0xDB,0x89,0x5D,0xFC,0x8B,0x4D,0x08,0x85,0xC9,0x74,
+    0x2E,0x8B,0x49,0x0C,0xE8,0x97,0xFE,0xFF,0xFF,0x8B,0xC8,0x8B,0x46,0x1C,0x85,0xC9,
+    0x74,0x1D,0x85,0xC0,0x74,0x19,0x39,0x81,0x68,0x0E,0x00,0x00,0x0F,0x94,0xC3,0xEB,
+    0x0B,0xB8,0x01,0x00,0x00,0x00,0xC3,0x8B,0x65,0xE8,0x33,0xDB,0x89,0x5D,0xE4,0xC7,
+    0x45,0xFC,0xFE,0xFF,0xFF,0xFF,0x8B,0xC3,0x8B,0x4D,0xF0,0x64,0x89,0x0D,0x00,0x00,
+    0x00,0x00,0x59,0x5F,0x5E,0x5B,0x8B,0xE5,0x5D,0xC2,0x04,0x00,
+};
+static const unsigned countryReligionEvaluateRelocations[] = { 6, 11, 29 };
+static const BYTE countryReligionLookupBytes[] = {
+    0xA1,0x10,0xC4,0x07,0x10,0x8B,0x90,0xE4,0x87,0xE5,0x00,0x85,0xD2,0x74,0x23,0x8B,
+    0x42,0x04,0x8B,0x52,0x08,0x85,0xC0,0x74,0x19,0x85,0xD2,0x74,0x15,0x85,0xC9,0x74,
+    0x11,0x3B,0xC2,0x77,0x0D,0x2B,0xD0,0xC1,0xFA,0x02,0x3B,0xCA,0x73,0x04,0x8B,0x04,
+    0x88,0xC3,0x33,0xC0,0xC3,
+};
+static const unsigned countryReligionLookupRelocations[] = { 1 };
+// Полные тела квалифицированной сборки ядра; HIGHLOW исправляются по ASLR, а не игнорируются.
+// Другая компиляция отклоняется до повторного ревью этих двух функций чтения.
+template<size_t N, size_t M>
+static bool EventCheckCoreBytes(DWORD core, DWORD rva, const BYTE (&bytes)[N], const unsigned (&fixups)[M]) {
+    BYTE expected[N]; memcpy(expected, bytes, N);
+    for (unsigned at : fixups) {
+        if (at > N || N - at < sizeof(DWORD)) return false;
+        DWORD address = 0; memcpy(&address, expected + at, sizeof(address));
+        if (address < 0x10000000) return false;
+        address = core + (address - 0x10000000);
+        memcpy(expected + at, &address, sizeof(address));
+    }
+    return EventCheckReadable(core + rva, N) && !memcmp((void*)(core + rva), expected, N);
+}
+static bool EventCheckCountryReligion(DWORD core, DWORD vtable) {
+    if (!core || !EventCheckReadable(vtable - 4, 17 * sizeof(DWORD)) ||
+        !EventCheckReadable(core + 0x7C410, 4) || Read(core + 0x7C410) != baseAddress ||
+        Read(vtable + 0x28) != core + 0x34270 ||
+        !EventCheckCoreBytes(core, 0x33BC0, countryReligionEvaluateBytes, countryReligionEvaluateRelocations) ||
+        !EventCheckCoreBytes(core, 0x33AA0, countryReligionLookupBytes, countryReligionLookupRelocations)) return false;
+    // CCore_ProvinceFlags клонирует CPopMajorityReligionTrigger, меняя только Evaluate/Tooltip.
+    DWORD original = baseAddress + 0xA31F88;
+    if (Read(vtable - 4) != Read(original - 4)) return false;
+    for (unsigned slot = 0; slot < 16; ++slot)
+        if (slot != 6 && slot != 10 && Read(vtable + slot * 4) != Read(original + slot * 4)) return false;
+    return true;
+}
+static bool EventCheckReligionRegistry(DWORD trigger) {
+    // 00969210 может лениво создать manager/default; заполненный справочник исключает обе ветки.
+    DWORD count = Read(baseAddress + 0xE58A1C), manager = Read(baseAddress + 0xE5EA24);
+    if (!count || count > 1024 || !EventCheckReadable(manager, 0x20)) return false;
+    DWORD table = Read(manager + 0x1C), wanted = Read(trigger + 0x1C);
+    if (!wanted || !EventCheckReadable(table, count * 4)) return false;
+    bool found = false;
+    for (DWORD index = 0; index < count; ++index) {
+        DWORD religion = Read(table + index * 4);
+        if (!religion) return false;
+        if (religion == wanted) found = true;
+    }
+    return found;
+}
 static const EventCheckTriggerType* EventCheckType(DWORD trigger) {
     if (!EventCheckReadable(trigger, 0x20)) return nullptr;
     DWORD vtable = Read(trigger);
-    for (const auto& type : eventCheckTypes)
-        if (vtable == baseAddress + type.vtable && Read(vtable + 0x18) == baseAddress + type.evaluate) return &type;
+    for (const auto& type : eventCheckTypes) {
+        DWORD image = type.core ? (DWORD)GetModuleHandleW(L"creatinecore.dll") : baseAddress;
+        if (image && vtable == image + type.vtable && EventCheckReadable(vtable, 0x1C) &&
+            Read(vtable + 0x18) == image + type.evaluate) return &type;
+    }
     return nullptr;
 }
-static bool EventCheckQualifyTrigger(DWORD trigger, unsigned depth, unsigned& remaining) {
+static bool EventCheckQualifyTrigger(DWORD trigger, unsigned depth, unsigned& remaining, bool countryScope = false) {
     if (depth > 16 || !remaining) return false;
     --remaining;
     const EventCheckTriggerType* type = EventCheckType(trigger);
     if (!type) return false;
+    if (type->core && (!countryScope || !EventCheckCountryReligion(
+        (DWORD)GetModuleHandleW(L"creatinecore.dll"), Read(trigger)))) return false;
+    // Квалифицирована только страновая ветка civilized, без запасного виртуального метода POP.
+    if (type->vtable == 0xA31C40 && (!countryScope || *(BYTE*)(trigger + 0x1C) > 1)) return false;
+    if (type->vtable == 0xA31F88 && !EventCheckReligionRegistry(trigger)) return false;
+    bool childCountryScope = countryScope;
     if (type->vtable == 0xA2FBE0) {
         // 00876240: только явная страна или owner (token295), без случайных scopes.
         DWORD context = Read(trigger + 0x1C);
@@ -663,6 +737,7 @@ static bool EventCheckQualifyTrigger(DWORD trigger, unsigned depth, unsigned& re
             if (!EventCheckReadable(country, 0x24) || Read(country + 0x20) != countryIndex ||
                 memcmp((void*)(country + 0x1C), (void*)(context + 0x108), 3)) return false;
         } else if (Read(context) != 0x295) return false;
+        childCountryScope = true;
     }
     if (!type->children) return true;
     EventCheckVector children = {};
@@ -670,8 +745,9 @@ static bool EventCheckQualifyTrigger(DWORD trigger, unsigned depth, unsigned& re
     // Первая корка использует any_core={always=yes}; другие обходы здесь не квалифицированы.
     if (type->vtable == 0xA30A88 && (children.count != 1 ||
         !EventCheckReadable(Read(children.begin), 4) || Read(Read(children.begin)) != baseAddress + 0xA2FE80)) return false;
+    if (type->vtable == 0xA30A88) childCountryScope = false;
     for (DWORD index = 0; index < children.count; ++index)
-        if (!EventCheckQualifyTrigger(Read(children.begin + index * 4), depth + 1, remaining)) return false;
+        if (!EventCheckQualifyTrigger(Read(children.begin + index * 4), depth + 1, remaining, childCountryScope)) return false;
     return true;
 }
 static void EventCheckScope(unsigned char* scope, unsigned province) {

@@ -1,4 +1,4 @@
-﻿"""Независимая проверка религиозных первых корок и сохранности распространения."""
+"""Независимая проверка религиозных первых корок и сохранности распространения."""
 from __future__ import annotations
 import argparse
 from collections import Counter
@@ -84,20 +84,29 @@ def first_trigger(row, tag, countries):
     return result
 
 def canonical(nodes):
-    return tuple(sorted((n.key, n.value or '', canonical(n.children)) for n in nodes))
+    return tuple(sorted((n.key[1:-1] if n.key in ('"PHI"','"PAN"') else n.key, n.value or '', canonical(n.children)) for n in nodes))
 
 def validate(root):
     model = build_model(root)
     expected = {(r['culture'], r['religion'], t): r for r in model['rows'] for t in r['first']}
     seen, spread_seen, ids, errors = Counter(), Counter(), set(), []
     loc = Counter(line.split(';', 1)[0] for line in read(root / 'localisation/adding_cores.csv').splitlines())
+    loc_values={line.split(';',2)[0]:line.split(';',2)[1] for line in read(root / 'localisation/adding_cores.csv').splitlines() if ';' in line}
     for event in parse(read(root / 'events/adding_cores.txt')):
         event_id = '?'
         try:
+            assert event.key=='province_event', 'Требуется провинциальное событие'
             body = event.children; event_id = one(body, 'id').value
+            pending=list(body)
+            while pending:
+                node=pending.pop();pending.extend(node.children)
+                assert not (node.children and node.key in ('PHI','PAN')), 'Зарезервированный тэг страны должен быть в кавычках'
+            assert Counter(n.key for n in body)==Counter({k:1 for k in ('id','title','desc','trigger','mean_time_to_happen','option')}), 'Изменено расписание или структура события'
+            assert one(body,'title').value=='EVTNAME'+event_id and one(body,'desc').value=='EVTDESC'+event_id, 'Неверные ссылки title/desc'
             assert event_id not in ids, 'Повторный ID'
             ids.add(event_id)
             trigger = one(body, 'trigger').children; option = one(body, 'option').children
+            assert one(option,'name').value=='EVTOPTA'+event_id, 'Неверная ссылка опции'
             guarded = [n for n in option if n.key == 'if']
             effects = one(option, 'if').children if guarded else option
             tag = one(effects, 'add_core').value
@@ -124,7 +133,7 @@ def validate(root):
             mtth = one(body, 'mean_time_to_happen').children
             assert len(mtth) == 1 and Decimal(one(mtth, 'months').value) == months, 'Нормировка MTTH'
             for prefix in ('EVTNAME', 'EVTDESC', 'EVTOPTA'):
-                assert loc[prefix + event_id] == 1, 'Локализация'
+                assert loc[prefix + event_id] == 1 and re.search('[А-Яа-яЁё]',loc_values.get(prefix+event_id,'')), 'Локализация'
         except (AssertionError, ValueError, KeyError) as error:
             errors.append(f'{event_id}: {error}')
     errors += [f'Первая корка {key}: {seen[key]}' for key in expected if seen[key] != 1]
