@@ -14,6 +14,18 @@ def event(tag, culture, number):
 
 
 class FixtureTests(unittest.TestCase):
+    def test_selects_explicit_dynamic_culture_and_refuses_missing_or_ambiguous(self):
+        raw = ''.join(event(tag, culture, number) for number, (tag, culture) in enumerate([
+            ('OBO', 'north_german'), ('SAX', 'north_german'), ('GER', 'south_german'),
+            ('D36', 'aborigine'), ('D46', 'basque')], 24001)).encode()
+        self.assertEqual(subject.find_events(raw)['dynamic']['culture'], 'aborigine')
+        preferred = subject.find_events(raw, 'basque')['dynamic']
+        self.assertEqual((preferred['tag'], preferred['culture'], preferred['id']), ('D46', 'basque', 24005))
+        with self.assertRaisesRegex(ValueError, 'unknown'):
+            subject.find_events(raw, 'unknown')
+        with self.assertRaisesRegex(ValueError, 'basque'):
+            subject.find_events(raw + event('D47', 'basque', 24006).encode(), 'basque')
+
     def test_extracts_real_ids_and_rejects_old_or_divergent_guard(self):
         raw = ''.join(event(tag, culture, number) for number, (tag, culture) in enumerate([
             ('OBO', 'north_german'), ('SAX', 'north_german'), ('GER', 'south_german'), ('D36', 'aborigine')], 24001)).encode()

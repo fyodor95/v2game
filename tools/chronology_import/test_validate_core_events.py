@@ -91,11 +91,13 @@ class CoreValidationTests(unittest.TestCase):
         extra_loc = LOC + "\n" + LOC.replace("24001", "24003").split("EVTNAME24002")[0]
         self.assertFalse(validate_events(parse(FIRST + SPREAD + duplicate), extra_loc, MODEL)["ok"])
 
-    def test_no_first_for_accepted_only(self):
+    def test_culture_without_any_first_candidate_is_rejected(self):
         model = copy.deepcopy(MODEL)
         model["rows"][0]["first"] = []
         self.assertFalse(validate_events(parse(FIRST + SPREAD), LOC, model)["ok"])
-        self.assertTrue(validate_events(parse(SPREAD), LOC, model)["ok"])
+        result = validate_events(parse(SPREAD), LOC, model)
+        self.assertFalse(result["ok"])
+        self.assertTrue(any("Нет кандидата первой корки" in issue for issue in result["issues"]))
 
     def test_wrong_order_and_unguarded_effect(self):
         events = parse(FIRST + SPREAD)
@@ -155,6 +157,31 @@ class CoreValidationTests(unittest.TestCase):
             self.assertEqual(len(rows["north_german"]["first"]), 4)
             self.assertIn("FRA", rows["north_german"]["spread"])
             self.assertEqual(rows["south_german"]["first"], ["D02", "GER"])
+
+    def test_nine_accepted_only_cultures_receive_fallback_and_keep_spread(self):
+        names = ['basque', 'uighur', 'moluccan', 'afro_caribeno', 'kru', 'tiv', 'tuareg', 'oromo', 'sotho']
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'common').mkdir()
+            (root / 'history/countries').mkdir(parents=True)
+            (root / 'common/cultures.txt').write_text(
+                'ordinary = { ' + ' '.join(name + ' = { color = { 1 1 1 } }' for name in names + ['empty', 'french']) + ' }',
+                encoding='ascii')
+            (root / 'common/countries.txt').write_text('dynamic_tags = yes\nD01 = "a"\nD02 = "b"', encoding='ascii')
+            (root / 'autogen.cfg').write_text('countries_without_culture = {}', encoding='ascii')
+            for tag in ['D01', 'D02', 'FRA']:
+                text = 'primary_culture = french\ncivilized = yes\n'
+                if tag == 'FRA':
+                    text += '\n'.join('culture = ' + name for name in names)
+                (root / 'history/countries' / (tag + '.txt')).write_text(text, encoding='ascii')
+            rows = {row['culture']: row for row in reconstruct_map(root)['rows']}
+            for index, name in enumerate(names):
+                expected = 'D01' if index % 2 == 0 else 'D02'
+                self.assertEqual(rows[name]['main'], expected)
+                self.assertEqual(rows[name]['first'], [expected])
+                self.assertEqual(rows[name]['spread'], [expected, 'FRA'])
+            self.assertEqual(rows['empty']['first'], ['D02'])
+            self.assertTrue(all(row['first'] for row in rows.values()))
 
 
 if __name__ == "__main__":

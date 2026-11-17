@@ -35,6 +35,38 @@ province_event = {
 	title = "EVTNAME148002"
 	desc = "EVTDESC148002"
 	trigger = {
+		is_core = ADR
+		NOT = {
+			culture = catalan
+		}
+		ADR = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = ADR
+				}
+				NOT = {
+					culture = catalan
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148002"
+		remove_core = ADR
+	}
+}
+province_event = {
+	id = 148003
+	title = "EVTNAME148003"
+	desc = "EVTDESC148003"
+	trigger = {
 		is_core = AFG
 		NOT = {
 			culture = pashtun
@@ -58,14 +90,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148002"
+		name = "EVTOPTA148003"
 		remove_core = AFG
 	}
 }
 province_event = {
-	id = 148003
-	title = "EVTNAME148003"
-	desc = "EVTDESC148003"
+	id = 148004
+	title = "EVTNAME148004"
+	desc = "EVTDESC148004"
+	trigger = {
+		is_core = AIN
+		NOT = {
+			culture = ainu
+		}
+		AIN = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = AIN
+				}
+				NOT = {
+					culture = ainu
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148004"
+		remove_core = AIN
+	}
+}
+province_event = {
+	id = 148005
+	title = "EVTNAME148005"
+	desc = "EVTDESC148005"
 	trigger = {
 		is_core = ALB
 		NOT = {
@@ -90,14 +154,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148003"
+		name = "EVTOPTA148005"
 		remove_core = ALB
 	}
 }
 province_event = {
-	id = 148004
-	title = "EVTNAME148004"
-	desc = "EVTDESC148004"
+	id = 148006
+	title = "EVTNAME148006"
+	desc = "EVTDESC148006"
 	trigger = {
 		is_core = ALD
 		NOT = {
@@ -122,14 +186,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148004"
+		name = "EVTOPTA148006"
 		remove_core = ALD
 	}
 }
 province_event = {
-	id = 148005
-	title = "EVTNAME148005"
-	desc = "EVTDESC148005"
+	id = 148007
+	title = "EVTNAME148007"
+	desc = "EVTDESC148007"
+	trigger = {
+		is_core = ANG
+		NOT = {
+			culture = bakongo
+		}
+		ANG = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = ANG
+				}
+				NOT = {
+					culture = bakongo
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148007"
+		remove_core = ANG
+	}
+}
+province_event = {
+	id = 148008
+	title = "EVTNAME148008"
+	desc = "EVTDESC148008"
 	trigger = {
 		is_core = ANH
 		NOT = {
@@ -154,14 +250,78 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148005"
+		name = "EVTOPTA148008"
 		remove_core = ANH
 	}
 }
 province_event = {
-	id = 148006
-	title = "EVTNAME148006"
-	desc = "EVTDESC148006"
+	id = 148009
+	title = "EVTNAME148009"
+	desc = "EVTDESC148009"
+	trigger = {
+		is_core = ANT
+		NOT = {
+			culture = afro_caribbean
+		}
+		ANT = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = ANT
+				}
+				NOT = {
+					culture = afro_caribbean
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148009"
+		remove_core = ANT
+	}
+}
+province_event = {
+	id = 148010
+	title = "EVTNAME148010"
+	desc = "EVTDESC148010"
+	trigger = {
+		is_core = ANU
+		NOT = {
+			culture = manchu
+		}
+		ANU = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = ANU
+				}
+				NOT = {
+					culture = manchu
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148010"
+		remove_core = ANU
+	}
+}
+province_event = {
+	id = 148011
+	title = "EVTNAME148011"
+	desc = "EVTDESC148011"
 	trigger = {
 		is_core = ARA
 		NOT = {
@@ -198,14 +358,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148006"
+		name = "EVTOPTA148011"
 		remove_core = ARA
 	}
 }
 province_event = {
-	id = 148007
-	title = "EVTNAME148007"
-	desc = "EVTDESC148007"
+	id = 148012
+	title = "EVTNAME148012"
+	desc = "EVTDESC148012"
 	trigger = {
 		is_core = ARG
 		NOT = {
@@ -230,14 +390,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148007"
+		name = "EVTOPTA148012"
 		remove_core = ARG
 	}
 }
 province_event = {
-	id = 148008
-	title = "EVTNAME148008"
-	desc = "EVTDESC148008"
+	id = 148013
+	title = "EVTNAME148013"
+	desc = "EVTDESC148013"
 	trigger = {
 		is_core = ARM
 		NOT = {
@@ -262,14 +422,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148008"
+		name = "EVTOPTA148013"
 		remove_core = ARM
 	}
 }
 province_event = {
-	id = 148009
-	title = "EVTNAME148009"
-	desc = "EVTDESC148009"
+	id = 148014
+	title = "EVTNAME148014"
+	desc = "EVTDESC148014"
+	trigger = {
+		is_core = ARU
+		NOT = {
+			culture = afro_caribbean
+		}
+		ARU = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = ARU
+				}
+				NOT = {
+					culture = afro_caribbean
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148014"
+		remove_core = ARU
+	}
+}
+province_event = {
+	id = 148015
+	title = "EVTNAME148015"
+	desc = "EVTDESC148015"
 	trigger = {
 		is_core = ASM
 		NOT = {
@@ -294,14 +486,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148009"
+		name = "EVTOPTA148015"
 		remove_core = ASM
 	}
 }
 province_event = {
-	id = 148010
-	title = "EVTNAME148010"
-	desc = "EVTDESC148010"
+	id = 148016
+	title = "EVTNAME148016"
+	desc = "EVTDESC148016"
 	trigger = {
 		is_core = AST
 		NOT = {
@@ -326,14 +518,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148010"
+		name = "EVTOPTA148016"
 		remove_core = AST
 	}
 }
 province_event = {
-	id = 148011
-	title = "EVTNAME148011"
-	desc = "EVTDESC148011"
+	id = 148017
+	title = "EVTNAME148017"
+	desc = "EVTDESC148017"
 	trigger = {
 		is_core = ATJ
 		NOT = {
@@ -358,14 +550,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148011"
+		name = "EVTOPTA148017"
 		remove_core = ATJ
 	}
 }
 province_event = {
-	id = 148012
-	title = "EVTNAME148012"
-	desc = "EVTDESC148012"
+	id = 148018
+	title = "EVTNAME148018"
+	desc = "EVTDESC148018"
 	trigger = {
 		is_core = AUS
 		NOT = {
@@ -390,14 +582,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148012"
+		name = "EVTOPTA148018"
 		remove_core = AUS
 	}
 }
 province_event = {
-	id = 148013
-	title = "EVTNAME148013"
-	desc = "EVTDESC148013"
+	id = 148019
+	title = "EVTNAME148019"
+	desc = "EVTDESC148019"
 	trigger = {
 		is_core = AWA
 		NOT = {
@@ -422,14 +614,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148013"
+		name = "EVTOPTA148019"
 		remove_core = AWA
 	}
 }
 province_event = {
-	id = 148014
-	title = "EVTNAME148014"
-	desc = "EVTDESC148014"
+	id = 148020
+	title = "EVTNAME148020"
+	desc = "EVTDESC148020"
 	trigger = {
 		is_core = AZB
 		NOT = {
@@ -454,14 +646,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148014"
+		name = "EVTOPTA148020"
 		remove_core = AZB
 	}
 }
 province_event = {
-	id = 148015
-	title = "EVTNAME148015"
-	desc = "EVTDESC148015"
+	id = 148021
+	title = "EVTNAME148021"
+	desc = "EVTDESC148021"
 	trigger = {
 		is_core = BAB
 		NOT = {
@@ -486,14 +678,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148015"
+		name = "EVTOPTA148021"
 		remove_core = BAB
 	}
 }
 province_event = {
-	id = 148016
-	title = "EVTNAME148016"
-	desc = "EVTDESC148016"
+	id = 148022
+	title = "EVTNAME148022"
+	desc = "EVTDESC148022"
 	trigger = {
 		is_core = BAD
 		NOT = {
@@ -518,14 +710,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148016"
+		name = "EVTOPTA148022"
 		remove_core = BAD
 	}
 }
 province_event = {
-	id = 148017
-	title = "EVTNAME148017"
-	desc = "EVTDESC148017"
+	id = 148023
+	title = "EVTNAME148023"
+	desc = "EVTDESC148023"
 	trigger = {
 		is_core = BAL
 		NOT = {
@@ -550,14 +742,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148017"
+		name = "EVTOPTA148023"
 		remove_core = BAL
 	}
 }
 province_event = {
-	id = 148018
-	title = "EVTNAME148018"
-	desc = "EVTDESC148018"
+	id = 148024
+	title = "EVTNAME148024"
+	desc = "EVTDESC148024"
+	trigger = {
+		is_core = BAR
+		NOT = {
+			culture = afro_caribbean
+		}
+		BAR = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = BAR
+				}
+				NOT = {
+					culture = afro_caribbean
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148024"
+		remove_core = BAR
+	}
+}
+province_event = {
+	id = 148025
+	title = "EVTNAME148025"
+	desc = "EVTDESC148025"
 	trigger = {
 		is_core = BAS
 		NOT = {
@@ -582,14 +806,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148018"
+		name = "EVTOPTA148025"
 		remove_core = BAS
 	}
 }
 province_event = {
-	id = 148019
-	title = "EVTNAME148019"
-	desc = "EVTDESC148019"
+	id = 148026
+	title = "EVTNAME148026"
+	desc = "EVTDESC148026"
 	trigger = {
 		is_core = BAV
 		NOT = {
@@ -614,14 +838,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148019"
+		name = "EVTOPTA148026"
 		remove_core = BAV
 	}
 }
 province_event = {
-	id = 148020
-	title = "EVTNAME148020"
-	desc = "EVTDESC148020"
+	id = 148027
+	title = "EVTNAME148027"
+	desc = "EVTDESC148027"
 	trigger = {
 		is_core = BEL
 		NOT = {
@@ -652,14 +876,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148020"
+		name = "EVTOPTA148027"
 		remove_core = BEL
 	}
 }
 province_event = {
-	id = 148021
-	title = "EVTNAME148021"
-	desc = "EVTDESC148021"
+	id = 148028
+	title = "EVTNAME148028"
+	desc = "EVTDESC148028"
+	trigger = {
+		is_core = BEN
+		NOT = {
+			culture = edo
+		}
+		BEN = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = BEN
+				}
+				NOT = {
+					culture = edo
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148028"
+		remove_core = BEN
+	}
+}
+province_event = {
+	id = 148029
+	title = "EVTNAME148029"
+	desc = "EVTDESC148029"
 	trigger = {
 		is_core = BER
 		NOT = {
@@ -684,14 +940,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148021"
+		name = "EVTOPTA148029"
 		remove_core = BER
 	}
 }
 province_event = {
-	id = 148022
-	title = "EVTNAME148022"
-	desc = "EVTDESC148022"
+	id = 148030
+	title = "EVTNAME148030"
+	desc = "EVTDESC148030"
 	trigger = {
 		is_core = BHO
 		NOT = {
@@ -716,14 +972,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148022"
+		name = "EVTOPTA148030"
 		remove_core = BHO
 	}
 }
 province_event = {
-	id = 148023
-	title = "EVTNAME148023"
-	desc = "EVTDESC148023"
+	id = 148031
+	title = "EVTNAME148031"
+	desc = "EVTDESC148031"
+	trigger = {
+		is_core = BHR
+		NOT = {
+			culture = bedouin
+		}
+		BHR = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = BHR
+				}
+				NOT = {
+					culture = bedouin
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148031"
+		remove_core = BHR
+	}
+}
+province_event = {
+	id = 148032
+	title = "EVTNAME148032"
+	desc = "EVTDESC148032"
 	trigger = {
 		is_core = BHU
 		NOT = {
@@ -748,14 +1036,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148023"
+		name = "EVTOPTA148032"
 		remove_core = BHU
 	}
 }
 province_event = {
-	id = 148024
-	title = "EVTNAME148024"
-	desc = "EVTDESC148024"
+	id = 148033
+	title = "EVTNAME148033"
+	desc = "EVTDESC148033"
 	trigger = {
 		is_core = BIH
 		NOT = {
@@ -780,14 +1068,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148024"
+		name = "EVTOPTA148033"
 		remove_core = BIH
 	}
 }
 province_event = {
-	id = 148025
-	title = "EVTNAME148025"
-	desc = "EVTDESC148025"
+	id = 148034
+	title = "EVTNAME148034"
+	desc = "EVTDESC148034"
 	trigger = {
 		is_core = BIK
 		NOT = {
@@ -812,14 +1100,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148025"
+		name = "EVTOPTA148034"
 		remove_core = BIK
 	}
 }
 province_event = {
-	id = 148026
-	title = "EVTNAME148026"
-	desc = "EVTDESC148026"
+	id = 148035
+	title = "EVTNAME148035"
+	desc = "EVTDESC148035"
 	trigger = {
 		is_core = BMG
 		NOT = {
@@ -844,14 +1132,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148026"
+		name = "EVTOPTA148035"
 		remove_core = BMG
 	}
 }
 province_event = {
-	id = 148027
-	title = "EVTNAME148027"
-	desc = "EVTDESC148027"
+	id = 148036
+	title = "EVTNAME148036"
+	desc = "EVTDESC148036"
 	trigger = {
 		is_core = BNG
 		NOT = {
@@ -876,14 +1164,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148027"
+		name = "EVTOPTA148036"
 		remove_core = BNG
 	}
 }
 province_event = {
-	id = 148028
-	title = "EVTNAME148028"
-	desc = "EVTDESC148028"
+	id = 148037
+	title = "EVTNAME148037"
+	desc = "EVTDESC148037"
 	trigger = {
 		is_core = BOH
 		NOT = {
@@ -908,14 +1196,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148028"
+		name = "EVTOPTA148037"
 		remove_core = BOH
 	}
 }
 province_event = {
-	id = 148029
-	title = "EVTNAME148029"
-	desc = "EVTDESC148029"
+	id = 148038
+	title = "EVTNAME148038"
+	desc = "EVTDESC148038"
 	trigger = {
 		is_core = BOL
 		NOT = {
@@ -940,14 +1228,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148029"
+		name = "EVTOPTA148038"
 		remove_core = BOL
 	}
 }
 province_event = {
-	id = 148030
-	title = "EVTNAME148030"
-	desc = "EVTDESC148030"
+	id = 148039
+	title = "EVTNAME148039"
+	desc = "EVTDESC148039"
 	trigger = {
 		is_core = BOS
 		NOT = {
@@ -972,14 +1260,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148030"
+		name = "EVTOPTA148039"
 		remove_core = BOS
 	}
 }
 province_event = {
-	id = 148031
-	title = "EVTNAME148031"
-	desc = "EVTDESC148031"
+	id = 148040
+	title = "EVTNAME148040"
+	desc = "EVTDESC148040"
 	trigger = {
 		is_core = BRA
 		NOT = {
@@ -1004,14 +1292,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148031"
+		name = "EVTOPTA148040"
 		remove_core = BRA
 	}
 }
 province_event = {
-	id = 148032
-	title = "EVTNAME148032"
-	desc = "EVTDESC148032"
+	id = 148041
+	title = "EVTNAME148041"
+	desc = "EVTDESC148041"
+	trigger = {
+		is_core = BRD
+		NOT = {
+			culture = rundi
+		}
+		BRD = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = BRD
+				}
+				NOT = {
+					culture = rundi
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148041"
+		remove_core = BRD
+	}
+}
+province_event = {
+	id = 148042
+	title = "EVTNAME148042"
+	desc = "EVTDESC148042"
 	trigger = {
 		is_core = BRE
 		NOT = {
@@ -1036,14 +1356,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148032"
+		name = "EVTOPTA148042"
 		remove_core = BRE
 	}
 }
 province_event = {
-	id = 148033
-	title = "EVTNAME148033"
-	desc = "EVTDESC148033"
+	id = 148043
+	title = "EVTNAME148043"
+	desc = "EVTDESC148043"
 	trigger = {
 		is_core = BRU
 		NOT = {
@@ -1068,14 +1388,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148033"
+		name = "EVTOPTA148043"
 		remove_core = BRU
 	}
 }
 province_event = {
-	id = 148034
-	title = "EVTNAME148034"
-	desc = "EVTDESC148034"
+	id = 148044
+	title = "EVTNAME148044"
+	desc = "EVTDESC148044"
 	trigger = {
 		is_core = BRZ
 		NOT = {
@@ -1100,14 +1420,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148034"
+		name = "EVTOPTA148044"
 		remove_core = BRZ
 	}
 }
 province_event = {
-	id = 148035
-	title = "EVTNAME148035"
-	desc = "EVTDESC148035"
+	id = 148045
+	title = "EVTNAME148045"
+	desc = "EVTDESC148045"
 	trigger = {
 		is_core = BUK
 		NOT = {
@@ -1132,14 +1452,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148035"
+		name = "EVTOPTA148045"
 		remove_core = BUK
 	}
 }
 province_event = {
-	id = 148036
-	title = "EVTNAME148036"
-	desc = "EVTDESC148036"
+	id = 148046
+	title = "EVTNAME148046"
+	desc = "EVTDESC148046"
 	trigger = {
 		is_core = BUL
 		NOT = {
@@ -1164,14 +1484,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148036"
+		name = "EVTOPTA148046"
 		remove_core = BUL
 	}
 }
 province_event = {
-	id = 148037
-	title = "EVTNAME148037"
-	desc = "EVTDESC148037"
+	id = 148047
+	title = "EVTNAME148047"
+	desc = "EVTDESC148047"
 	trigger = {
 		is_core = BUN
 		NOT = {
@@ -1196,14 +1516,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148037"
+		name = "EVTOPTA148047"
 		remove_core = BUN
 	}
 }
 province_event = {
-	id = 148038
-	title = "EVTNAME148038"
-	desc = "EVTDESC148038"
+	id = 148048
+	title = "EVTNAME148048"
+	desc = "EVTDESC148048"
 	trigger = {
 		is_core = BUR
 		NOT = {
@@ -1228,14 +1548,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148038"
+		name = "EVTOPTA148048"
 		remove_core = BUR
 	}
 }
 province_event = {
-	id = 148039
-	title = "EVTNAME148039"
-	desc = "EVTDESC148039"
+	id = 148049
+	title = "EVTNAME148049"
+	desc = "EVTDESC148049"
 	trigger = {
 		is_core = BYE
 		NOT = {
@@ -1260,14 +1580,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148039"
+		name = "EVTOPTA148049"
 		remove_core = BYE
 	}
 }
 province_event = {
-	id = 148040
-	title = "EVTNAME148040"
-	desc = "EVTDESC148040"
+	id = 148050
+	title = "EVTNAME148050"
+	desc = "EVTDESC148050"
 	trigger = {
 		is_core = BYZ
 		NOT = {
@@ -1292,14 +1612,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148040"
+		name = "EVTOPTA148050"
 		remove_core = BYZ
 	}
 }
 province_event = {
-	id = 148041
-	title = "EVTNAME148041"
-	desc = "EVTDESC148041"
+	id = 148051
+	title = "EVTNAME148051"
+	desc = "EVTDESC148051"
 	trigger = {
 		is_core = CAL
 		NOT = {
@@ -1324,14 +1644,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148041"
+		name = "EVTOPTA148051"
 		remove_core = CAL
 	}
 }
 province_event = {
-	id = 148042
-	title = "EVTNAME148042"
-	desc = "EVTDESC148042"
+	id = 148052
+	title = "EVTNAME148052"
+	desc = "EVTDESC148052"
 	trigger = {
 		is_core = CAM
 		NOT = {
@@ -1356,14 +1676,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148042"
+		name = "EVTOPTA148052"
 		remove_core = CAM
 	}
 }
 province_event = {
-	id = 148043
-	title = "EVTNAME148043"
-	desc = "EVTDESC148043"
+	id = 148053
+	title = "EVTNAME148053"
+	desc = "EVTDESC148053"
 	trigger = {
 		is_core = CAN
 		NOT = {
@@ -1394,14 +1714,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148043"
+		name = "EVTOPTA148053"
 		remove_core = CAN
 	}
 }
 province_event = {
-	id = 148044
-	title = "EVTNAME148044"
-	desc = "EVTDESC148044"
+	id = 148054
+	title = "EVTNAME148054"
+	desc = "EVTDESC148054"
+	trigger = {
+		is_core = CAR
+		NOT = {
+			culture = sara
+		}
+		CAR = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = CAR
+				}
+				NOT = {
+					culture = sara
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148054"
+		remove_core = CAR
+	}
+}
+province_event = {
+	id = 148055
+	title = "EVTNAME148055"
+	desc = "EVTDESC148055"
 	trigger = {
 		is_core = CAT
 		NOT = {
@@ -1426,14 +1778,142 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148044"
+		name = "EVTOPTA148055"
 		remove_core = CAT
 	}
 }
 province_event = {
-	id = 148045
-	title = "EVTNAME148045"
-	desc = "EVTDESC148045"
+	id = 148056
+	title = "EVTNAME148056"
+	desc = "EVTDESC148056"
+	trigger = {
+		is_core = CAY
+		NOT = {
+			culture = afro_caribbean
+		}
+		CAY = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = CAY
+				}
+				NOT = {
+					culture = afro_caribbean
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148056"
+		remove_core = CAY
+	}
+}
+province_event = {
+	id = 148057
+	title = "EVTNAME148057"
+	desc = "EVTDESC148057"
+	trigger = {
+		is_core = CGO
+		NOT = {
+			culture = bakongo
+		}
+		CGO = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = CGO
+				}
+				NOT = {
+					culture = bakongo
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148057"
+		remove_core = CGO
+	}
+}
+province_event = {
+	id = 148058
+	title = "EVTNAME148058"
+	desc = "EVTDESC148058"
+	trigger = {
+		is_core = CHA
+		NOT = {
+			culture = lao
+		}
+		CHA = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = CHA
+				}
+				NOT = {
+					culture = lao
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148058"
+		remove_core = CHA
+	}
+}
+province_event = {
+	id = 148059
+	title = "EVTNAME148059"
+	desc = "EVTDESC148059"
+	trigger = {
+		is_core = CHD
+		NOT = {
+			culture = sara
+		}
+		CHD = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = CHD
+				}
+				NOT = {
+					culture = sara
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148059"
+		remove_core = CHD
+	}
+}
+province_event = {
+	id = 148060
+	title = "EVTNAME148060"
+	desc = "EVTDESC148060"
 	trigger = {
 		is_core = CHE
 		NOT = {
@@ -1458,14 +1938,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148045"
+		name = "EVTOPTA148060"
 		remove_core = CHE
 	}
 }
 province_event = {
-	id = 148046
-	title = "EVTNAME148046"
-	desc = "EVTDESC148046"
+	id = 148061
+	title = "EVTNAME148061"
+	desc = "EVTDESC148061"
 	trigger = {
 		is_core = CHI
 		NOT = {
@@ -1500,14 +1980,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148046"
+		name = "EVTOPTA148061"
 		remove_core = CHI
 	}
 }
 province_event = {
-	id = 148047
-	title = "EVTNAME148047"
-	desc = "EVTDESC148047"
+	id = 148062
+	title = "EVTNAME148062"
+	desc = "EVTDESC148062"
+	trigger = {
+		is_core = CHK
+		NOT = {
+			culture = lao
+		}
+		CHK = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = CHK
+				}
+				NOT = {
+					culture = lao
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148062"
+		remove_core = CHK
+	}
+}
+province_event = {
+	id = 148063
+	title = "EVTNAME148063"
+	desc = "EVTDESC148063"
 	trigger = {
 		is_core = CHL
 		NOT = {
@@ -1532,14 +2044,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148047"
+		name = "EVTOPTA148063"
 		remove_core = CHL
 	}
 }
 province_event = {
-	id = 148048
-	title = "EVTNAME148048"
-	desc = "EVTDESC148048"
+	id = 148064
+	title = "EVTNAME148064"
+	desc = "EVTDESC148064"
+	trigger = {
+		is_core = CHO
+		NOT = {
+			culture = japanese
+		}
+		CHO = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = CHO
+				}
+				NOT = {
+					culture = japanese
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148064"
+		remove_core = CHO
+	}
+}
+province_event = {
+	id = 148065
+	title = "EVTNAME148065"
+	desc = "EVTDESC148065"
 	trigger = {
 		is_core = CLM
 		NOT = {
@@ -1564,14 +2108,78 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148048"
+		name = "EVTOPTA148065"
 		remove_core = CLM
 	}
 }
 province_event = {
-	id = 148049
-	title = "EVTNAME148049"
-	desc = "EVTDESC148049"
+	id = 148066
+	title = "EVTNAME148066"
+	desc = "EVTDESC148066"
+	trigger = {
+		is_core = CLR
+		NOT = {
+			culture = russian
+		}
+		CLR = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = CLR
+				}
+				NOT = {
+					culture = russian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148066"
+		remove_core = CLR
+	}
+}
+province_event = {
+	id = 148067
+	title = "EVTNAME148067"
+	desc = "EVTDESC148067"
+	trigger = {
+		is_core = CMR
+		NOT = {
+			culture = fang
+		}
+		CMR = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = CMR
+				}
+				NOT = {
+					culture = fang
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148067"
+		remove_core = CMR
+	}
+}
+province_event = {
+	id = 148068
+	title = "EVTNAME148068"
+	desc = "EVTDESC148068"
 	trigger = {
 		is_core = CNG
 		NOT = {
@@ -1596,14 +2204,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148049"
+		name = "EVTOPTA148068"
 		remove_core = CNG
 	}
 }
 province_event = {
-	id = 148050
-	title = "EVTNAME148050"
-	desc = "EVTDESC148050"
+	id = 148069
+	title = "EVTNAME148069"
+	desc = "EVTDESC148069"
 	trigger = {
 		is_core = COB
 		NOT = {
@@ -1628,14 +2236,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148050"
+		name = "EVTOPTA148069"
 		remove_core = COB
 	}
 }
 province_event = {
-	id = 148051
-	title = "EVTNAME148051"
-	desc = "EVTDESC148051"
+	id = 148070
+	title = "EVTNAME148070"
+	desc = "EVTDESC148070"
+	trigger = {
+		is_core = COD
+		NOT = {
+			culture = afro_caribbean
+		}
+		COD = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = COD
+				}
+				NOT = {
+					culture = afro_caribbean
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148070"
+		remove_core = COD
+	}
+}
+province_event = {
+	id = 148071
+	title = "EVTNAME148071"
+	desc = "EVTDESC148071"
 	trigger = {
 		is_core = COL
 		NOT = {
@@ -1660,14 +2300,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148051"
+		name = "EVTOPTA148071"
 		remove_core = COL
 	}
 }
 province_event = {
-	id = 148052
-	title = "EVTNAME148052"
-	desc = "EVTDESC148052"
+	id = 148072
+	title = "EVTNAME148072"
+	desc = "EVTDESC148072"
 	trigger = {
 		is_core = COS
 		NOT = {
@@ -1692,14 +2332,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148052"
+		name = "EVTOPTA148072"
 		remove_core = COS
 	}
 }
 province_event = {
-	id = 148053
-	title = "EVTNAME148053"
-	desc = "EVTDESC148053"
+	id = 148073
+	title = "EVTNAME148073"
+	desc = "EVTDESC148073"
 	trigger = {
 		is_core = CRE
 		NOT = {
@@ -1724,14 +2364,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148053"
+		name = "EVTOPTA148073"
 		remove_core = CRE
 	}
 }
 province_event = {
-	id = 148054
-	title = "EVTNAME148054"
-	desc = "EVTDESC148054"
+	id = 148074
+	title = "EVTNAME148074"
+	desc = "EVTDESC148074"
 	trigger = {
 		is_core = CRI
 		NOT = {
@@ -1756,14 +2396,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148054"
+		name = "EVTOPTA148074"
 		remove_core = CRI
 	}
 }
 province_event = {
-	id = 148055
-	title = "EVTNAME148055"
-	desc = "EVTDESC148055"
+	id = 148075
+	title = "EVTNAME148075"
+	desc = "EVTDESC148075"
 	trigger = {
 		is_core = CRO
 		NOT = {
@@ -1788,14 +2428,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148055"
+		name = "EVTOPTA148075"
 		remove_core = CRO
 	}
 }
 province_event = {
-	id = 148056
-	title = "EVTNAME148056"
-	desc = "EVTDESC148056"
+	id = 148076
+	title = "EVTNAME148076"
+	desc = "EVTDESC148076"
 	trigger = {
 		is_core = CSA
 		NOT = {
@@ -1820,14 +2460,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148056"
+		name = "EVTOPTA148076"
 		remove_core = CSA
 	}
 }
 province_event = {
-	id = 148057
-	title = "EVTNAME148057"
-	desc = "EVTDESC148057"
+	id = 148077
+	title = "EVTNAME148077"
+	desc = "EVTDESC148077"
 	trigger = {
 		is_core = CUB
 		NOT = {
@@ -1852,14 +2492,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148057"
+		name = "EVTOPTA148077"
 		remove_core = CUB
 	}
 }
 province_event = {
-	id = 148058
-	title = "EVTNAME148058"
-	desc = "EVTDESC148058"
+	id = 148078
+	title = "EVTNAME148078"
+	desc = "EVTDESC148078"
+	trigger = {
+		is_core = CUR
+		NOT = {
+			culture = afro_caribbean
+		}
+		CUR = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = CUR
+				}
+				NOT = {
+					culture = afro_caribbean
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148078"
+		remove_core = CUR
+	}
+}
+province_event = {
+	id = 148079
+	title = "EVTNAME148079"
+	desc = "EVTDESC148079"
 	trigger = {
 		is_core = CYP
 		NOT = {
@@ -1884,14 +2556,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148058"
+		name = "EVTOPTA148079"
 		remove_core = CYP
 	}
 }
 province_event = {
-	id = 148059
-	title = "EVTNAME148059"
-	desc = "EVTDESC148059"
+	id = 148080
+	title = "EVTNAME148080"
+	desc = "EVTDESC148080"
 	trigger = {
 		is_core = CZH
 		NOT = {
@@ -1922,14 +2594,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148059"
+		name = "EVTOPTA148080"
 		remove_core = CZH
 	}
 }
 province_event = {
-	id = 148060
-	title = "EVTNAME148060"
-	desc = "EVTDESC148060"
+	id = 148081
+	title = "EVTNAME148081"
+	desc = "EVTDESC148081"
 	trigger = {
 		is_core = DAI
 		NOT = {
@@ -1954,14 +2626,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148060"
+		name = "EVTOPTA148081"
 		remove_core = DAI
 	}
 }
 province_event = {
-	id = 148061
-	title = "EVTNAME148061"
-	desc = "EVTDESC148061"
+	id = 148082
+	title = "EVTNAME148082"
+	desc = "EVTDESC148082"
 	trigger = {
 		is_core = DEN
 		NOT = {
@@ -1986,14 +2658,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148061"
+		name = "EVTOPTA148082"
 		remove_core = DEN
 	}
 }
 province_event = {
-	id = 148062
-	title = "EVTNAME148062"
-	desc = "EVTDESC148062"
+	id = 148083
+	title = "EVTNAME148083"
+	desc = "EVTDESC148083"
 	trigger = {
 		is_core = DES
 		NOT = {
@@ -2018,14 +2690,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148062"
+		name = "EVTOPTA148083"
 		remove_core = DES
 	}
 }
 province_event = {
-	id = 148063
-	title = "EVTNAME148063"
-	desc = "EVTDESC148063"
+	id = 148084
+	title = "EVTNAME148084"
+	desc = "EVTDESC148084"
+	trigger = {
+		is_core = DJI
+		NOT = {
+			culture = afar
+		}
+		DJI = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = DJI
+				}
+				NOT = {
+					culture = afar
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148084"
+		remove_core = DJI
+	}
+}
+province_event = {
+	id = 148085
+	title = "EVTNAME148085"
+	desc = "EVTDESC148085"
 	trigger = {
 		is_core = DOM
 		NOT = {
@@ -2050,14 +2754,78 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148063"
+		name = "EVTOPTA148085"
 		remove_core = DOM
 	}
 }
 province_event = {
-	id = 148064
-	title = "EVTNAME148064"
-	desc = "EVTDESC148064"
+	id = 148086
+	title = "EVTNAME148086"
+	desc = "EVTDESC148086"
+	trigger = {
+		is_core = DON
+		NOT = {
+			culture = russian
+		}
+		DON = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = DON
+				}
+				NOT = {
+					culture = russian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148086"
+		remove_core = DON
+	}
+}
+province_event = {
+	id = 148087
+	title = "EVTNAME148087"
+	desc = "EVTDESC148087"
+	trigger = {
+		is_core = DUB
+		NOT = {
+			culture = bedouin
+		}
+		DUB = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = DUB
+				}
+				NOT = {
+					culture = bedouin
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148087"
+		remove_core = DUB
+	}
+}
+province_event = {
+	id = 148088
+	title = "EVTNAME148088"
+	desc = "EVTDESC148088"
 	trigger = {
 		is_core = DZG
 		NOT = {
@@ -2082,14 +2850,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148064"
+		name = "EVTOPTA148088"
 		remove_core = DZG
 	}
 }
 province_event = {
-	id = 148065
-	title = "EVTNAME148065"
-	desc = "EVTDESC148065"
+	id = 148089
+	title = "EVTNAME148089"
+	desc = "EVTDESC148089"
 	trigger = {
 		is_core = ECU
 		NOT = {
@@ -2114,14 +2882,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148065"
+		name = "EVTOPTA148089"
 		remove_core = ECU
 	}
 }
 province_event = {
-	id = 148066
-	title = "EVTNAME148066"
-	desc = "EVTDESC148066"
+	id = 148090
+	title = "EVTNAME148090"
+	desc = "EVTDESC148090"
 	trigger = {
 		is_core = EGY
 		NOT = {
@@ -2146,14 +2914,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148066"
+		name = "EVTOPTA148090"
 		remove_core = EGY
 	}
 }
 province_event = {
-	id = 148067
-	title = "EVTNAME148067"
-	desc = "EVTDESC148067"
+	id = 148091
+	title = "EVTNAME148091"
+	desc = "EVTDESC148091"
 	trigger = {
 		is_core = ELS
 		NOT = {
@@ -2178,14 +2946,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148067"
+		name = "EVTOPTA148091"
 		remove_core = ELS
 	}
 }
 province_event = {
-	id = 148068
-	title = "EVTNAME148068"
-	desc = "EVTDESC148068"
+	id = 148092
+	title = "EVTNAME148092"
+	desc = "EVTDESC148092"
 	trigger = {
 		is_core = ENG
 		NOT = {
@@ -2218,14 +2986,110 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148068"
+		name = "EVTOPTA148092"
 		remove_core = ENG
 	}
 }
 province_event = {
-	id = 148069
-	title = "EVTNAME148069"
-	desc = "EVTDESC148069"
+	id = 148093
+	title = "EVTNAME148093"
+	desc = "EVTDESC148093"
+	trigger = {
+		is_core = EQG
+		NOT = {
+			culture = fang
+		}
+		EQG = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = EQG
+				}
+				NOT = {
+					culture = fang
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148093"
+		remove_core = EQG
+	}
+}
+province_event = {
+	id = 148094
+	title = "EVTNAME148094"
+	desc = "EVTDESC148094"
+	trigger = {
+		is_core = ERM
+		NOT = {
+			culture = bulgarian
+		}
+		ERM = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = ERM
+				}
+				NOT = {
+					culture = bulgarian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148094"
+		remove_core = ERM
+	}
+}
+province_event = {
+	id = 148095
+	title = "EVTNAME148095"
+	desc = "EVTDESC148095"
+	trigger = {
+		is_core = ERT
+		NOT = {
+			culture = tigray
+		}
+		ERT = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = ERT
+				}
+				NOT = {
+					culture = tigray
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148095"
+		remove_core = ERT
+	}
+}
+province_event = {
+	id = 148096
+	title = "EVTNAME148096"
+	desc = "EVTDESC148096"
 	trigger = {
 		is_core = EST
 		NOT = {
@@ -2250,14 +3114,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148069"
+		name = "EVTOPTA148096"
 		remove_core = EST
 	}
 }
 province_event = {
-	id = 148070
-	title = "EVTNAME148070"
-	desc = "EVTDESC148070"
+	id = 148097
+	title = "EVTNAME148097"
+	desc = "EVTDESC148097"
 	trigger = {
 		is_core = ETH
 		NOT = {
@@ -2282,14 +3146,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148070"
+		name = "EVTOPTA148097"
 		remove_core = ETH
 	}
 }
 province_event = {
-	id = 148071
-	title = "EVTNAME148071"
-	desc = "EVTDESC148071"
+	id = 148098
+	title = "EVTNAME148098"
+	desc = "EVTDESC148098"
 	trigger = {
 		is_core = FIN
 		NOT = {
@@ -2314,14 +3178,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148071"
+		name = "EVTOPTA148098"
 		remove_core = FIN
 	}
 }
 province_event = {
-	id = 148072
-	title = "EVTNAME148072"
-	desc = "EVTDESC148072"
+	id = 148099
+	title = "EVTNAME148099"
+	desc = "EVTDESC148099"
+	trigger = {
+		is_core = FJN
+		NOT = {
+			culture = min
+		}
+		FJN = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = FJN
+				}
+				NOT = {
+					culture = min
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148099"
+		remove_core = FJN
+	}
+}
+province_event = {
+	id = 148100
+	title = "EVTNAME148100"
+	desc = "EVTDESC148100"
 	trigger = {
 		is_core = FLA
 		NOT = {
@@ -2346,14 +3242,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148072"
+		name = "EVTOPTA148100"
 		remove_core = FLA
 	}
 }
 province_event = {
-	id = 148073
-	title = "EVTNAME148073"
-	desc = "EVTDESC148073"
+	id = 148101
+	title = "EVTNAME148101"
+	desc = "EVTDESC148101"
 	trigger = {
 		is_core = FRA
 		NOT = {
@@ -2378,14 +3274,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148073"
+		name = "EVTOPTA148101"
 		remove_core = FRA
 	}
 }
 province_event = {
-	id = 148074
-	title = "EVTNAME148074"
-	desc = "EVTDESC148074"
+	id = 148102
+	title = "EVTNAME148102"
+	desc = "EVTDESC148102"
 	trigger = {
 		is_core = FRM
 		NOT = {
@@ -2410,14 +3306,174 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148074"
+		name = "EVTOPTA148102"
 		remove_core = FRM
 	}
 }
 province_event = {
-	id = 148075
-	title = "EVTNAME148075"
-	desc = "EVTDESC148075"
+	id = 148103
+	title = "EVTNAME148103"
+	desc = "EVTDESC148103"
+	trigger = {
+		is_core = FUJ
+		NOT = {
+			culture = bedouin
+		}
+		FUJ = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = FUJ
+				}
+				NOT = {
+					culture = bedouin
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148103"
+		remove_core = FUJ
+	}
+}
+province_event = {
+	id = 148104
+	title = "EVTNAME148104"
+	desc = "EVTDESC148104"
+	trigger = {
+		is_core = FWI
+		NOT = {
+			culture = afro_caribbean
+		}
+		FWI = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = FWI
+				}
+				NOT = {
+					culture = afro_caribbean
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148104"
+		remove_core = FWI
+	}
+}
+province_event = {
+	id = 148105
+	title = "EVTNAME148105"
+	desc = "EVTDESC148105"
+	trigger = {
+		is_core = GAB
+		NOT = {
+			culture = fang
+		}
+		GAB = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = GAB
+				}
+				NOT = {
+					culture = fang
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148105"
+		remove_core = GAB
+	}
+}
+province_event = {
+	id = 148106
+	title = "EVTNAME148106"
+	desc = "EVTDESC148106"
+	trigger = {
+		is_core = GAN
+		NOT = {
+			culture = akan
+		}
+		GAN = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = GAN
+				}
+				NOT = {
+					culture = akan
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148106"
+		remove_core = GAN
+	}
+}
+province_event = {
+	id = 148107
+	title = "EVTNAME148107"
+	desc = "EVTDESC148107"
+	trigger = {
+		is_core = GBS
+		NOT = {
+			culture = african_minor
+		}
+		GBS = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = GBS
+				}
+				NOT = {
+					culture = african_minor
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148107"
+		remove_core = GBS
+	}
+}
+province_event = {
+	id = 148108
+	title = "EVTNAME148108"
+	desc = "EVTDESC148108"
 	trigger = {
 		is_core = GCO
 		NOT = {
@@ -2442,14 +3498,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148075"
+		name = "EVTOPTA148108"
 		remove_core = GCO
 	}
 }
 province_event = {
-	id = 148076
-	title = "EVTNAME148076"
-	desc = "EVTDESC148076"
+	id = 148109
+	title = "EVTNAME148109"
+	desc = "EVTDESC148109"
+	trigger = {
+		is_core = GDL
+		NOT = {
+			culture = afro_antillean
+		}
+		GDL = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = GDL
+				}
+				NOT = {
+					culture = afro_antillean
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148109"
+		remove_core = GDL
+	}
+}
+province_event = {
+	id = 148110
+	title = "EVTNAME148110"
+	desc = "EVTDESC148110"
 	trigger = {
 		is_core = GEO
 		NOT = {
@@ -2474,14 +3562,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148076"
+		name = "EVTOPTA148110"
 		remove_core = GEO
 	}
 }
 province_event = {
-	id = 148077
-	title = "EVTNAME148077"
-	desc = "EVTDESC148077"
+	id = 148111
+	title = "EVTNAME148111"
+	desc = "EVTDESC148111"
 	trigger = {
 		is_core = GER
 		NOT = {
@@ -2512,14 +3600,142 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148077"
+		name = "EVTOPTA148111"
 		remove_core = GER
 	}
 }
 province_event = {
-	id = 148078
-	title = "EVTNAME148078"
-	desc = "EVTDESC148078"
+	id = 148112
+	title = "EVTNAME148112"
+	desc = "EVTDESC148112"
+	trigger = {
+		is_core = GMB
+		NOT = {
+			culture = mande
+		}
+		GMB = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = GMB
+				}
+				NOT = {
+					culture = mande
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148112"
+		remove_core = GMB
+	}
+}
+province_event = {
+	id = 148113
+	title = "EVTNAME148113"
+	desc = "EVTDESC148113"
+	trigger = {
+		is_core = GMJ
+		NOT = {
+			culture = beifaren
+		}
+		GMJ = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = GMJ
+				}
+				NOT = {
+					culture = beifaren
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148113"
+		remove_core = GMJ
+	}
+}
+province_event = {
+	id = 148114
+	title = "EVTNAME148114"
+	desc = "EVTDESC148114"
+	trigger = {
+		is_core = GNE
+		NOT = {
+			culture = fulbe
+		}
+		GNE = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = GNE
+				}
+				NOT = {
+					culture = fulbe
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148114"
+		remove_core = GNE
+	}
+}
+province_event = {
+	id = 148115
+	title = "EVTNAME148115"
+	desc = "EVTDESC148115"
+	trigger = {
+		is_core = GNG
+		NOT = {
+			culture = yue
+		}
+		GNG = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = GNG
+				}
+				NOT = {
+					culture = yue
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148115"
+		remove_core = GNG
+	}
+}
+province_event = {
+	id = 148116
+	title = "EVTNAME148116"
+	desc = "EVTDESC148116"
 	trigger = {
 		is_core = GRE
 		NOT = {
@@ -2544,14 +3760,78 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148078"
+		name = "EVTOPTA148116"
 		remove_core = GRE
 	}
 }
 province_event = {
-	id = 148079
-	title = "EVTNAME148079"
-	desc = "EVTDESC148079"
+	id = 148117
+	title = "EVTNAME148117"
+	desc = "EVTDESC148117"
+	trigger = {
+		is_core = GRL
+		NOT = {
+			culture = inuit
+		}
+		GRL = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = GRL
+				}
+				NOT = {
+					culture = inuit
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148117"
+		remove_core = GRL
+	}
+}
+province_event = {
+	id = 148118
+	title = "EVTNAME148118"
+	desc = "EVTDESC148118"
+	trigger = {
+		is_core = GRN
+		NOT = {
+			culture = afro_caribbean
+		}
+		GRN = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = GRN
+				}
+				NOT = {
+					culture = afro_caribbean
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148118"
+		remove_core = GRN
+	}
+}
+province_event = {
+	id = 148119
+	title = "EVTNAME148119"
+	desc = "EVTDESC148119"
 	trigger = {
 		is_core = GUA
 		NOT = {
@@ -2576,14 +3856,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148079"
+		name = "EVTOPTA148119"
 		remove_core = GUA
 	}
 }
 province_event = {
-	id = 148080
-	title = "EVTNAME148080"
-	desc = "EVTDESC148080"
+	id = 148120
+	title = "EVTNAME148120"
+	desc = "EVTDESC148120"
 	trigger = {
 		is_core = GWA
 		NOT = {
@@ -2608,14 +3888,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148080"
+		name = "EVTOPTA148120"
 		remove_core = GWA
 	}
 }
 province_event = {
-	id = 148081
-	title = "EVTNAME148081"
-	desc = "EVTDESC148081"
+	id = 148121
+	title = "EVTNAME148121"
+	desc = "EVTDESC148121"
 	trigger = {
 		is_core = GXI
 		NOT = {
@@ -2640,14 +3920,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148081"
+		name = "EVTOPTA148121"
 		remove_core = GXI
 	}
 }
 province_event = {
-	id = 148082
-	title = "EVTNAME148082"
-	desc = "EVTDESC148082"
+	id = 148122
+	title = "EVTNAME148122"
+	desc = "EVTDESC148122"
 	trigger = {
 		is_core = HAI
 		NOT = {
@@ -2672,14 +3952,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148082"
+		name = "EVTOPTA148122"
 		remove_core = HAI
 	}
 }
 province_event = {
-	id = 148083
-	title = "EVTNAME148083"
-	desc = "EVTDESC148083"
+	id = 148123
+	title = "EVTNAME148123"
+	desc = "EVTDESC148123"
 	trigger = {
 		is_core = HAM
 		NOT = {
@@ -2704,14 +3984,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148083"
+		name = "EVTOPTA148123"
 		remove_core = HAM
 	}
 }
 province_event = {
-	id = 148084
-	title = "EVTNAME148084"
-	desc = "EVTDESC148084"
+	id = 148124
+	title = "EVTNAME148124"
+	desc = "EVTDESC148124"
 	trigger = {
 		is_core = HAN
 		NOT = {
@@ -2736,14 +4016,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148084"
+		name = "EVTOPTA148124"
 		remove_core = HAN
 	}
 }
 province_event = {
-	id = 148085
-	title = "EVTNAME148085"
-	desc = "EVTDESC148085"
+	id = 148125
+	title = "EVTNAME148125"
+	desc = "EVTDESC148125"
 	trigger = {
 		is_core = HAW
 		NOT = {
@@ -2768,14 +4048,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148085"
+		name = "EVTOPTA148125"
 		remove_core = HAW
 	}
 }
 province_event = {
-	id = 148086
-	title = "EVTNAME148086"
-	desc = "EVTDESC148086"
+	id = 148126
+	title = "EVTNAME148126"
+	desc = "EVTDESC148126"
 	trigger = {
 		is_core = HDJ
 		NOT = {
@@ -2800,14 +4080,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148086"
+		name = "EVTOPTA148126"
 		remove_core = HDJ
 	}
 }
 province_event = {
-	id = 148087
-	title = "EVTNAME148087"
-	desc = "EVTDESC148087"
+	id = 148127
+	title = "EVTNAME148127"
+	desc = "EVTDESC148127"
 	trigger = {
 		is_core = HEK
 		NOT = {
@@ -2832,14 +4112,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148087"
+		name = "EVTOPTA148127"
 		remove_core = HEK
 	}
 }
 province_event = {
-	id = 148088
-	title = "EVTNAME148088"
-	desc = "EVTDESC148088"
+	id = 148128
+	title = "EVTNAME148128"
+	desc = "EVTDESC148128"
 	trigger = {
 		is_core = HES
 		NOT = {
@@ -2864,14 +4144,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148088"
+		name = "EVTOPTA148128"
 		remove_core = HES
 	}
 }
 province_event = {
-	id = 148089
-	title = "EVTNAME148089"
-	desc = "EVTDESC148089"
+	id = 148129
+	title = "EVTNAME148129"
+	desc = "EVTDESC148129"
 	trigger = {
 		is_core = HND
 		NOT = {
@@ -2936,14 +4216,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148089"
+		name = "EVTOPTA148129"
 		remove_core = HND
 	}
 }
 province_event = {
-	id = 148090
-	title = "EVTNAME148090"
-	desc = "EVTDESC148090"
+	id = 148130
+	title = "EVTNAME148130"
+	desc = "EVTDESC148130"
+	trigger = {
+		is_core = HNN
+		NOT = {
+			culture = nanfaren
+		}
+		HNN = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = HNN
+				}
+				NOT = {
+					culture = nanfaren
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148130"
+		remove_core = HNN
+	}
+}
+province_event = {
+	id = 148131
+	title = "EVTNAME148131"
+	desc = "EVTDESC148131"
 	trigger = {
 		is_core = HOL
 		NOT = {
@@ -2968,14 +4280,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148090"
+		name = "EVTOPTA148131"
 		remove_core = HOL
 	}
 }
 province_event = {
-	id = 148091
-	title = "EVTNAME148091"
-	desc = "EVTDESC148091"
+	id = 148132
+	title = "EVTNAME148132"
+	desc = "EVTDESC148132"
 	trigger = {
 		is_core = HON
 		NOT = {
@@ -3000,14 +4312,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148091"
+		name = "EVTOPTA148132"
 		remove_core = HON
 	}
 }
 province_event = {
-	id = 148092
-	title = "EVTNAME148092"
-	desc = "EVTDESC148092"
+	id = 148133
+	title = "EVTNAME148133"
+	desc = "EVTDESC148133"
+	trigger = {
+		is_core = HSM
+		NOT = {
+			culture = mashriqi
+		}
+		HSM = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = HSM
+				}
+				NOT = {
+					culture = mashriqi
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148133"
+		remove_core = HSM
+	}
+}
+province_event = {
+	id = 148134
+	title = "EVTNAME148134"
+	desc = "EVTDESC148134"
 	trigger = {
 		is_core = HUN
 		NOT = {
@@ -3032,14 +4376,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148092"
+		name = "EVTOPTA148134"
 		remove_core = HUN
 	}
 }
 province_event = {
-	id = 148093
-	title = "EVTNAME148093"
-	desc = "EVTDESC148093"
+	id = 148135
+	title = "EVTNAME148135"
+	desc = "EVTDESC148135"
 	trigger = {
 		is_core = HYD
 		NOT = {
@@ -3064,14 +4408,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148093"
+		name = "EVTOPTA148135"
 		remove_core = HYD
 	}
 }
 province_event = {
-	id = 148094
-	title = "EVTNAME148094"
-	desc = "EVTDESC148094"
+	id = 148136
+	title = "EVTNAME148136"
+	desc = "EVTDESC148136"
 	trigger = {
 		is_core = ICL
 		NOT = {
@@ -3096,14 +4440,78 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148094"
+		name = "EVTOPTA148136"
 		remove_core = ICL
 	}
 }
 province_event = {
-	id = 148095
-	title = "EVTNAME148095"
-	desc = "EVTDESC148095"
+	id = 148137
+	title = "EVTNAME148137"
+	desc = "EVTDESC148137"
+	trigger = {
+		is_core = IDF
+		NOT = {
+			culture = french
+		}
+		IDF = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = IDF
+				}
+				NOT = {
+					culture = french
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148137"
+		remove_core = IDF
+	}
+}
+province_event = {
+	id = 148138
+	title = "EVTNAME148138"
+	desc = "EVTDESC148138"
+	trigger = {
+		is_core = IMP
+		NOT = {
+			culture = japanese
+		}
+		IMP = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = IMP
+				}
+				NOT = {
+					culture = japanese
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148138"
+		remove_core = IMP
+	}
+}
+province_event = {
+	id = 148139
+	title = "EVTNAME148139"
+	desc = "EVTDESC148139"
 	trigger = {
 		is_core = IND
 		NOT = {
@@ -3128,14 +4536,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148095"
+		name = "EVTOPTA148139"
 		remove_core = IND
 	}
 }
 province_event = {
-	id = 148096
-	title = "EVTNAME148096"
-	desc = "EVTDESC148096"
+	id = 148140
+	title = "EVTNAME148140"
+	desc = "EVTDESC148140"
+	trigger = {
+		is_core = INO
+		NOT = {
+			culture = javan
+		}
+		INO = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = INO
+				}
+				NOT = {
+					culture = javan
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148140"
+		remove_core = INO
+	}
+}
+province_event = {
+	id = 148141
+	title = "EVTNAME148141"
+	desc = "EVTDESC148141"
 	trigger = {
 		is_core = ION
 		NOT = {
@@ -3160,14 +4600,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148096"
+		name = "EVTOPTA148141"
 		remove_core = ION
 	}
 }
 province_event = {
-	id = 148097
-	title = "EVTNAME148097"
-	desc = "EVTDESC148097"
+	id = 148142
+	title = "EVTNAME148142"
+	desc = "EVTDESC148142"
 	trigger = {
 		is_core = IRE
 		NOT = {
@@ -3192,14 +4632,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148097"
+		name = "EVTOPTA148142"
 		remove_core = IRE
 	}
 }
 province_event = {
-	id = 148098
-	title = "EVTNAME148098"
-	desc = "EVTDESC148098"
+	id = 148143
+	title = "EVTNAME148143"
+	desc = "EVTDESC148143"
 	trigger = {
 		is_core = IRQ
 		NOT = {
@@ -3224,14 +4664,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148098"
+		name = "EVTOPTA148143"
 		remove_core = IRQ
 	}
 }
 province_event = {
-	id = 148099
-	title = "EVTNAME148099"
-	desc = "EVTDESC148099"
+	id = 148144
+	title = "EVTNAME148144"
+	desc = "EVTDESC148144"
 	trigger = {
 		is_core = ISR
 		NOT = {
@@ -3262,14 +4702,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148099"
+		name = "EVTOPTA148144"
 		remove_core = ISR
 	}
 }
 province_event = {
-	id = 148100
-	title = "EVTNAME148100"
-	desc = "EVTDESC148100"
+	id = 148145
+	title = "EVTNAME148145"
+	desc = "EVTDESC148145"
 	trigger = {
 		is_core = ITA
 		NOT = {
@@ -3302,14 +4742,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148100"
+		name = "EVTOPTA148145"
 		remove_core = ITA
 	}
 }
 province_event = {
-	id = 148101
-	title = "EVTNAME148101"
-	desc = "EVTDESC148101"
+	id = 148146
+	title = "EVTNAME148146"
+	desc = "EVTDESC148146"
+	trigger = {
+		is_core = IVC
+		NOT = {
+			culture = akan
+		}
+		IVC = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = IVC
+				}
+				NOT = {
+					culture = akan
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148146"
+		remove_core = IVC
+	}
+}
+province_event = {
+	id = 148147
+	title = "EVTNAME148147"
+	desc = "EVTDESC148147"
 	trigger = {
 		is_core = JAI
 		NOT = {
@@ -3334,14 +4806,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148101"
+		name = "EVTOPTA148147"
 		remove_core = JAI
 	}
 }
 province_event = {
-	id = 148102
-	title = "EVTNAME148102"
-	desc = "EVTDESC148102"
+	id = 148148
+	title = "EVTNAME148148"
+	desc = "EVTDESC148148"
+	trigger = {
+		is_core = JAM
+		NOT = {
+			culture = afro_caribbean
+		}
+		JAM = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = JAM
+				}
+				NOT = {
+					culture = afro_caribbean
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148148"
+		remove_core = JAM
+	}
+}
+province_event = {
+	id = 148149
+	title = "EVTNAME148149"
+	desc = "EVTDESC148149"
 	trigger = {
 		is_core = JAN
 		NOT = {
@@ -3366,14 +4870,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148102"
+		name = "EVTOPTA148149"
 		remove_core = JAN
 	}
 }
 province_event = {
-	id = 148103
-	title = "EVTNAME148103"
-	desc = "EVTDESC148103"
+	id = 148150
+	title = "EVTNAME148150"
+	desc = "EVTDESC148150"
 	trigger = {
 		is_core = JAP
 		NOT = {
@@ -3398,14 +4902,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148103"
+		name = "EVTOPTA148150"
 		remove_core = JAP
 	}
 }
 province_event = {
-	id = 148104
-	title = "EVTNAME148104"
-	desc = "EVTDESC148104"
+	id = 148151
+	title = "EVTNAME148151"
+	desc = "EVTDESC148151"
 	trigger = {
 		is_core = JAS
 		NOT = {
@@ -3430,14 +4934,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148104"
+		name = "EVTOPTA148151"
 		remove_core = JAS
 	}
 }
 province_event = {
-	id = 148105
-	title = "EVTNAME148105"
-	desc = "EVTDESC148105"
+	id = 148152
+	title = "EVTNAME148152"
+	desc = "EVTDESC148152"
 	trigger = {
 		is_core = JAV
 		NOT = {
@@ -3462,14 +4966,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148105"
+		name = "EVTOPTA148152"
 		remove_core = JAV
 	}
 }
 province_event = {
-	id = 148106
-	title = "EVTNAME148106"
-	desc = "EVTDESC148106"
+	id = 148153
+	title = "EVTNAME148153"
+	desc = "EVTDESC148153"
 	trigger = {
 		is_core = JOD
 		NOT = {
@@ -3494,14 +4998,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148106"
+		name = "EVTOPTA148153"
 		remove_core = JOD
 	}
 }
 province_event = {
-	id = 148107
-	title = "EVTNAME148107"
-	desc = "EVTDESC148107"
+	id = 148154
+	title = "EVTNAME148154"
+	desc = "EVTDESC148154"
 	trigger = {
 		is_core = JOH
 		NOT = {
@@ -3526,14 +5030,110 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148107"
+		name = "EVTOPTA148154"
 		remove_core = JOH
 	}
 }
 province_event = {
-	id = 148108
-	title = "EVTNAME148108"
-	desc = "EVTDESC148108"
+	id = 148155
+	title = "EVTNAME148155"
+	desc = "EVTDESC148155"
+	trigger = {
+		is_core = JOR
+		NOT = {
+			culture = bedouin
+		}
+		JOR = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = JOR
+				}
+				NOT = {
+					culture = bedouin
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148155"
+		remove_core = JOR
+	}
+}
+province_event = {
+	id = 148156
+	title = "EVTNAME148156"
+	desc = "EVTDESC148156"
+	trigger = {
+		is_core = JSH
+		NOT = {
+			culture = bedouin
+		}
+		JSH = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = JSH
+				}
+				NOT = {
+					culture = bedouin
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148156"
+		remove_core = JSH
+	}
+}
+province_event = {
+	id = 148157
+	title = "EVTNAME148157"
+	desc = "EVTDESC148157"
+	trigger = {
+		is_core = KAG
+		NOT = {
+			culture = japanese
+		}
+		KAG = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = KAG
+				}
+				NOT = {
+					culture = japanese
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148157"
+		remove_core = KAG
+	}
+}
+province_event = {
+	id = 148158
+	title = "EVTNAME148158"
+	desc = "EVTDESC148158"
 	trigger = {
 		is_core = KAL
 		NOT = {
@@ -3558,14 +5158,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148108"
+		name = "EVTOPTA148158"
 		remove_core = KAL
 	}
 }
 province_event = {
-	id = 148109
-	title = "EVTNAME148109"
-	desc = "EVTDESC148109"
+	id = 148159
+	title = "EVTNAME148159"
+	desc = "EVTDESC148159"
 	trigger = {
 		is_core = KAS
 		NOT = {
@@ -3590,14 +5190,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148109"
+		name = "EVTOPTA148159"
 		remove_core = KAS
 	}
 }
 province_event = {
-	id = 148110
-	title = "EVTNAME148110"
-	desc = "EVTDESC148110"
+	id = 148160
+	title = "EVTNAME148160"
+	desc = "EVTDESC148160"
 	trigger = {
 		is_core = KAZ
 		NOT = {
@@ -3622,14 +5222,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148110"
+		name = "EVTOPTA148160"
 		remove_core = KAZ
 	}
 }
 province_event = {
-	id = 148111
-	title = "EVTNAME148111"
-	desc = "EVTDESC148111"
+	id = 148161
+	title = "EVTNAME148161"
+	desc = "EVTDESC148161"
 	trigger = {
 		is_core = KHI
 		NOT = {
@@ -3654,14 +5254,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148111"
+		name = "EVTOPTA148161"
 		remove_core = KHI
 	}
 }
 province_event = {
-	id = 148112
-	title = "EVTNAME148112"
-	desc = "EVTDESC148112"
+	id = 148162
+	title = "EVTNAME148162"
+	desc = "EVTDESC148162"
 	trigger = {
 		is_core = KMK
 		NOT = {
@@ -3686,14 +5286,78 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148112"
+		name = "EVTOPTA148162"
 		remove_core = KMK
 	}
 }
 province_event = {
-	id = 148113
-	title = "EVTNAME148113"
-	desc = "EVTDESC148113"
+	id = 148163
+	title = "EVTNAME148163"
+	desc = "EVTDESC148163"
+	trigger = {
+		is_core = KMT
+		NOT = {
+			culture = nanfaren
+		}
+		KMT = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = KMT
+				}
+				NOT = {
+					culture = nanfaren
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148163"
+		remove_core = KMT
+	}
+}
+province_event = {
+	id = 148164
+	title = "EVTNAME148164"
+	desc = "EVTDESC148164"
+	trigger = {
+		is_core = KNY
+		NOT = {
+			culture = swahili
+		}
+		KNY = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = KNY
+				}
+				NOT = {
+					culture = swahili
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148164"
+		remove_core = KNY
+	}
+}
+province_event = {
+	id = 148165
+	title = "EVTNAME148165"
+	desc = "EVTDESC148165"
 	trigger = {
 		is_core = KOK
 		NOT = {
@@ -3718,14 +5382,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148113"
+		name = "EVTOPTA148165"
 		remove_core = KOK
 	}
 }
 province_event = {
-	id = 148114
-	title = "EVTNAME148114"
-	desc = "EVTDESC148114"
+	id = 148166
+	title = "EVTNAME148166"
+	desc = "EVTDESC148166"
 	trigger = {
 		is_core = KOR
 		NOT = {
@@ -3750,14 +5414,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148114"
+		name = "EVTOPTA148166"
 		remove_core = KOR
 	}
 }
 province_event = {
-	id = 148115
-	title = "EVTNAME148115"
-	desc = "EVTDESC148115"
+	id = 148167
+	title = "EVTNAME148167"
+	desc = "EVTDESC148167"
 	trigger = {
 		is_core = KRA
 		NOT = {
@@ -3782,14 +5446,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148115"
+		name = "EVTOPTA148167"
 		remove_core = KRA
 	}
 }
 province_event = {
-	id = 148116
-	title = "EVTNAME148116"
-	desc = "EVTDESC148116"
+	id = 148168
+	title = "EVTNAME148168"
+	desc = "EVTDESC148168"
 	trigger = {
 		is_core = KRD
 		NOT = {
@@ -3814,14 +5478,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148116"
+		name = "EVTOPTA148168"
 		remove_core = KRD
 	}
 }
 province_event = {
-	id = 148117
-	title = "EVTNAME148117"
-	desc = "EVTDESC148117"
+	id = 148169
+	title = "EVTNAME148169"
+	desc = "EVTDESC148169"
 	trigger = {
 		is_core = KUK
 		NOT = {
@@ -3846,14 +5510,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148117"
+		name = "EVTOPTA148169"
 		remove_core = KUK
 	}
 }
 province_event = {
-	id = 148118
-	title = "EVTNAME148118"
-	desc = "EVTDESC148118"
+	id = 148170
+	title = "EVTNAME148170"
+	desc = "EVTDESC148170"
 	trigger = {
 		is_core = KUT
 		NOT = {
@@ -3878,14 +5542,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148118"
+		name = "EVTOPTA148170"
 		remove_core = KUT
 	}
 }
 province_event = {
-	id = 148119
-	title = "EVTNAME148119"
-	desc = "EVTDESC148119"
+	id = 148171
+	title = "EVTNAME148171"
+	desc = "EVTDESC148171"
+	trigger = {
+		is_core = KWT
+		NOT = {
+			culture = bedouin
+		}
+		KWT = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = KWT
+				}
+				NOT = {
+					culture = bedouin
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148171"
+		remove_core = KWT
+	}
+}
+province_event = {
+	id = 148172
+	title = "EVTNAME148172"
+	desc = "EVTDESC148172"
 	trigger = {
 		is_core = KYR
 		NOT = {
@@ -3910,14 +5606,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148119"
+		name = "EVTOPTA148172"
 		remove_core = KYR
 	}
 }
 province_event = {
-	id = 148120
-	title = "EVTNAME148120"
-	desc = "EVTDESC148120"
+	id = 148173
+	title = "EVTNAME148173"
+	desc = "EVTDESC148173"
 	trigger = {
 		is_core = LAD
 		NOT = {
@@ -3942,14 +5638,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148120"
+		name = "EVTOPTA148173"
 		remove_core = LAD
 	}
 }
 province_event = {
-	id = 148121
-	title = "EVTNAME148121"
-	desc = "EVTDESC148121"
+	id = 148174
+	title = "EVTNAME148174"
+	desc = "EVTDESC148174"
 	trigger = {
 		is_core = LAF
 		NOT = {
@@ -3996,14 +5692,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148121"
+		name = "EVTOPTA148174"
 		remove_core = LAF
 	}
 }
 province_event = {
-	id = 148122
-	title = "EVTNAME148122"
-	desc = "EVTDESC148122"
+	id = 148175
+	title = "EVTNAME148175"
+	desc = "EVTDESC148175"
+	trigger = {
+		is_core = LAL
+		NOT = {
+			culture = central_american
+		}
+		LAL = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = LAL
+				}
+				NOT = {
+					culture = central_american
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148175"
+		remove_core = LAL
+	}
+}
+province_event = {
+	id = 148176
+	title = "EVTNAME148176"
+	desc = "EVTDESC148176"
 	trigger = {
 		is_core = LAT
 		NOT = {
@@ -4028,14 +5756,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148122"
+		name = "EVTOPTA148176"
 		remove_core = LAT
 	}
 }
 province_event = {
-	id = 148123
-	title = "EVTNAME148123"
-	desc = "EVTDESC148123"
+	id = 148177
+	title = "EVTNAME148177"
+	desc = "EVTDESC148177"
+	trigger = {
+		is_core = LBN
+		NOT = {
+			culture = mashriqi
+		}
+		LBN = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = LBN
+				}
+				NOT = {
+					culture = mashriqi
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148177"
+		remove_core = LBN
+	}
+}
+province_event = {
+	id = 148178
+	title = "EVTNAME148178"
+	desc = "EVTDESC148178"
 	trigger = {
 		is_core = LIB
 		NOT = {
@@ -4060,14 +5820,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148123"
+		name = "EVTOPTA148178"
 		remove_core = LIB
 	}
 }
 province_event = {
-	id = 148124
-	title = "EVTNAME148124"
-	desc = "EVTDESC148124"
+	id = 148179
+	title = "EVTNAME148179"
+	desc = "EVTDESC148179"
+	trigger = {
+		is_core = LIE
+		NOT = {
+			culture = south_german
+		}
+		LIE = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = LIE
+				}
+				NOT = {
+					culture = south_german
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148179"
+		remove_core = LIE
+	}
+}
+province_event = {
+	id = 148180
+	title = "EVTNAME148180"
+	desc = "EVTDESC148180"
 	trigger = {
 		is_core = LIP
 		NOT = {
@@ -4092,14 +5884,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148124"
+		name = "EVTOPTA148180"
 		remove_core = LIP
 	}
 }
 province_event = {
-	id = 148125
-	title = "EVTNAME148125"
-	desc = "EVTDESC148125"
+	id = 148181
+	title = "EVTNAME148181"
+	desc = "EVTDESC148181"
 	trigger = {
 		is_core = LIT
 		NOT = {
@@ -4124,14 +5916,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148125"
+		name = "EVTOPTA148181"
 		remove_core = LIT
 	}
 }
 province_event = {
-	id = 148126
-	title = "EVTNAME148126"
-	desc = "EVTDESC148126"
+	id = 148182
+	title = "EVTNAME148182"
+	desc = "EVTDESC148182"
+	trigger = {
+		is_core = LIV
+		NOT = {
+			culture = bedouin
+		}
+		LIV = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = LIV
+				}
+				NOT = {
+					culture = bedouin
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148182"
+		remove_core = LIV
+	}
+}
+province_event = {
+	id = 148183
+	title = "EVTNAME148183"
+	desc = "EVTDESC148183"
 	trigger = {
 		is_core = LOM
 		NOT = {
@@ -4156,14 +5980,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148126"
+		name = "EVTOPTA148183"
 		remove_core = LOM
 	}
 }
 province_event = {
-	id = 148127
-	title = "EVTNAME148127"
-	desc = "EVTDESC148127"
+	id = 148184
+	title = "EVTNAME148184"
+	desc = "EVTDESC148184"
+	trigger = {
+		is_core = LPL
+		NOT = {
+			culture = platinean
+		}
+		LPL = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = LPL
+				}
+				NOT = {
+					culture = platinean
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148184"
+		remove_core = LPL
+	}
+}
+province_event = {
+	id = 148185
+	title = "EVTNAME148185"
+	desc = "EVTDESC148185"
 	trigger = {
 		is_core = LUA
 		NOT = {
@@ -4188,14 +6044,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148127"
+		name = "EVTOPTA148185"
 		remove_core = LUA
 	}
 }
 province_event = {
-	id = 148128
-	title = "EVTNAME148128"
-	desc = "EVTDESC148128"
+	id = 148186
+	title = "EVTNAME148186"
+	desc = "EVTDESC148186"
 	trigger = {
 		is_core = LUB
 		NOT = {
@@ -4220,14 +6076,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148128"
+		name = "EVTOPTA148186"
 		remove_core = LUB
 	}
 }
 province_event = {
-	id = 148129
-	title = "EVTNAME148129"
-	desc = "EVTDESC148129"
+	id = 148187
+	title = "EVTNAME148187"
+	desc = "EVTDESC148187"
 	trigger = {
 		is_core = LUC
 		NOT = {
@@ -4252,14 +6108,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148129"
+		name = "EVTOPTA148187"
 		remove_core = LUC
 	}
 }
 province_event = {
-	id = 148130
-	title = "EVTNAME148130"
-	desc = "EVTDESC148130"
+	id = 148188
+	title = "EVTNAME148188"
+	desc = "EVTDESC148188"
 	trigger = {
 		is_core = LUX
 		NOT = {
@@ -4284,14 +6140,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148130"
+		name = "EVTOPTA148188"
 		remove_core = LUX
 	}
 }
 province_event = {
-	id = 148131
-	title = "EVTNAME148131"
-	desc = "EVTDESC148131"
+	id = 148189
+	title = "EVTNAME148189"
+	desc = "EVTDESC148189"
 	trigger = {
 		is_core = MAD
 		NOT = {
@@ -4316,14 +6172,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148131"
+		name = "EVTOPTA148189"
 		remove_core = MAD
 	}
 }
 province_event = {
-	id = 148132
-	title = "EVTNAME148132"
-	desc = "EVTDESC148132"
+	id = 148190
+	title = "EVTNAME148190"
+	desc = "EVTDESC148190"
+	trigger = {
+		is_core = MAH
+		NOT = {
+			culture = marathi
+		}
+		MAH = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = MAH
+				}
+				NOT = {
+					culture = marathi
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148190"
+		remove_core = MAH
+	}
+}
+province_event = {
+	id = 148191
+	title = "EVTNAME148191"
+	desc = "EVTDESC148191"
 	trigger = {
 		is_core = MAK
 		NOT = {
@@ -4348,14 +6236,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148132"
+		name = "EVTOPTA148191"
 		remove_core = MAK
 	}
 }
 province_event = {
-	id = 148133
-	title = "EVTNAME148133"
-	desc = "EVTDESC148133"
+	id = 148192
+	title = "EVTNAME148192"
+	desc = "EVTDESC148192"
 	trigger = {
 		is_core = MAN
 		NOT = {
@@ -4380,14 +6268,78 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148133"
+		name = "EVTOPTA148192"
 		remove_core = MAN
 	}
 }
 province_event = {
-	id = 148134
-	title = "EVTNAME148134"
-	desc = "EVTDESC148134"
+	id = 148193
+	title = "EVTNAME148193"
+	desc = "EVTDESC148193"
+	trigger = {
+		is_core = MAR
+		NOT = {
+			culture = afro_antillean
+		}
+		MAR = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = MAR
+				}
+				NOT = {
+					culture = afro_antillean
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148193"
+		remove_core = MAR
+	}
+}
+province_event = {
+	id = 148194
+	title = "EVTNAME148194"
+	desc = "EVTDESC148194"
+	trigger = {
+		is_core = MAU
+		NOT = {
+			culture = maures
+		}
+		MAU = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = MAU
+				}
+				NOT = {
+					culture = maures
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148194"
+		remove_core = MAU
+	}
+}
+province_event = {
+	id = 148195
+	title = "EVTNAME148195"
+	desc = "EVTDESC148195"
 	trigger = {
 		is_core = MCK
 		NOT = {
@@ -4412,14 +6364,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148134"
+		name = "EVTOPTA148195"
 		remove_core = MCK
 	}
 }
 province_event = {
-	id = 148135
-	title = "EVTNAME148135"
-	desc = "EVTDESC148135"
+	id = 148196
+	title = "EVTNAME148196"
+	desc = "EVTDESC148196"
 	trigger = {
 		is_core = MEC
 		NOT = {
@@ -4444,14 +6396,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148135"
+		name = "EVTOPTA148196"
 		remove_core = MEC
 	}
 }
 province_event = {
-	id = 148136
-	title = "EVTNAME148136"
-	desc = "EVTDESC148136"
+	id = 148197
+	title = "EVTNAME148197"
+	desc = "EVTDESC148197"
 	trigger = {
 		is_core = MEI
 		NOT = {
@@ -4476,14 +6428,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148136"
+		name = "EVTOPTA148197"
 		remove_core = MEI
 	}
 }
 province_event = {
-	id = 148137
-	title = "EVTNAME148137"
-	desc = "EVTDESC148137"
+	id = 148198
+	title = "EVTNAME148198"
+	desc = "EVTDESC148198"
 	trigger = {
 		is_core = MEW
 		NOT = {
@@ -4508,14 +6460,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148137"
+		name = "EVTOPTA148198"
 		remove_core = MEW
 	}
 }
 province_event = {
-	id = 148138
-	title = "EVTNAME148138"
-	desc = "EVTDESC148138"
+	id = 148199
+	title = "EVTNAME148199"
+	desc = "EVTDESC148199"
 	trigger = {
 		is_core = MEX
 		NOT = {
@@ -4540,14 +6492,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148138"
+		name = "EVTOPTA148199"
 		remove_core = MEX
 	}
 }
 province_event = {
-	id = 148139
-	title = "EVTNAME148139"
-	desc = "EVTDESC148139"
+	id = 148200
+	title = "EVTNAME148200"
+	desc = "EVTDESC148200"
 	trigger = {
 		is_core = MGL
 		NOT = {
@@ -4572,14 +6524,78 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148139"
+		name = "EVTOPTA148200"
 		remove_core = MGL
 	}
 }
 province_event = {
-	id = 148140
-	title = "EVTNAME148140"
-	desc = "EVTDESC148140"
+	id = 148201
+	title = "EVTNAME148201"
+	desc = "EVTDESC148201"
+	trigger = {
+		is_core = MLI
+		NOT = {
+			culture = fulbe
+		}
+		MLI = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = MLI
+				}
+				NOT = {
+					culture = fulbe
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148201"
+		remove_core = MLI
+	}
+}
+province_event = {
+	id = 148202
+	title = "EVTNAME148202"
+	desc = "EVTDESC148202"
+	trigger = {
+		is_core = MLW
+		NOT = {
+			culture = chewa
+		}
+		MLW = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = MLW
+				}
+				NOT = {
+					culture = chewa
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148202"
+		remove_core = MLW
+	}
+}
+province_event = {
+	id = 148203
+	title = "EVTNAME148203"
+	desc = "EVTDESC148203"
 	trigger = {
 		is_core = MLY
 		NOT = {
@@ -4604,14 +6620,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148140"
+		name = "EVTOPTA148203"
 		remove_core = MLY
 	}
 }
 province_event = {
-	id = 148141
-	title = "EVTNAME148141"
-	desc = "EVTDESC148141"
+	id = 148204
+	title = "EVTNAME148204"
+	desc = "EVTDESC148204"
 	trigger = {
 		is_core = MOD
 		NOT = {
@@ -4636,14 +6652,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148141"
+		name = "EVTOPTA148204"
 		remove_core = MOD
 	}
 }
 province_event = {
-	id = 148142
-	title = "EVTNAME148142"
-	desc = "EVTDESC148142"
+	id = 148205
+	title = "EVTNAME148205"
+	desc = "EVTDESC148205"
 	trigger = {
 		is_core = MOL
 		NOT = {
@@ -4668,14 +6684,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148142"
+		name = "EVTOPTA148205"
 		remove_core = MOL
 	}
 }
 province_event = {
-	id = 148143
-	title = "EVTNAME148143"
-	desc = "EVTDESC148143"
+	id = 148206
+	title = "EVTNAME148206"
+	desc = "EVTDESC148206"
 	trigger = {
 		is_core = MON
 		NOT = {
@@ -4700,14 +6716,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148143"
+		name = "EVTOPTA148206"
 		remove_core = MON
 	}
 }
 province_event = {
-	id = 148144
-	title = "EVTNAME148144"
-	desc = "EVTDESC148144"
+	id = 148207
+	title = "EVTNAME148207"
+	desc = "EVTDESC148207"
 	trigger = {
 		is_core = MOR
 		NOT = {
@@ -4732,14 +6748,110 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148144"
+		name = "EVTOPTA148207"
 		remove_core = MOR
 	}
 }
 province_event = {
-	id = 148145
-	title = "EVTNAME148145"
-	desc = "EVTDESC148145"
+	id = 148208
+	title = "EVTNAME148208"
+	desc = "EVTDESC148208"
+	trigger = {
+		is_core = MOZ
+		NOT = {
+			culture = nguni
+		}
+		MOZ = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = MOZ
+				}
+				NOT = {
+					culture = nguni
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148208"
+		remove_core = MOZ
+	}
+}
+province_event = {
+	id = 148209
+	title = "EVTNAME148209"
+	desc = "EVTDESC148209"
+	trigger = {
+		is_core = MRT
+		NOT = {
+			culture = marathi
+		}
+		MRT = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = MRT
+				}
+				NOT = {
+					culture = marathi
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148209"
+		remove_core = MRT
+	}
+}
+province_event = {
+	id = 148210
+	title = "EVTNAME148210"
+	desc = "EVTDESC148210"
+	trigger = {
+		is_core = MSR
+		NOT = {
+			culture = afro_caribbean
+		}
+		MSR = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = MSR
+				}
+				NOT = {
+					culture = afro_caribbean
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148210"
+		remove_core = MSR
+	}
+}
+province_event = {
+	id = 148211
+	title = "EVTNAME148211"
+	desc = "EVTDESC148211"
 	trigger = {
 		is_core = MTC
 		NOT = {
@@ -4764,14 +6876,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148145"
+		name = "EVTOPTA148211"
 		remove_core = MTC
 	}
 }
 province_event = {
-	id = 148146
-	title = "EVTNAME148146"
-	desc = "EVTDESC148146"
+	id = 148212
+	title = "EVTNAME148212"
+	desc = "EVTDESC148212"
 	trigger = {
 		is_core = MUG
 		NOT = {
@@ -4796,14 +6908,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148146"
+		name = "EVTOPTA148212"
 		remove_core = MUG
 	}
 }
 province_event = {
-	id = 148147
-	title = "EVTNAME148147"
-	desc = "EVTDESC148147"
+	id = 148213
+	title = "EVTNAME148213"
+	desc = "EVTDESC148213"
 	trigger = {
 		is_core = MYS
 		NOT = {
@@ -4828,14 +6940,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148147"
+		name = "EVTOPTA148213"
 		remove_core = MYS
 	}
 }
 province_event = {
-	id = 148148
-	title = "EVTNAME148148"
-	desc = "EVTDESC148148"
+	id = 148214
+	title = "EVTNAME148214"
+	desc = "EVTDESC148214"
 	trigger = {
 		is_core = NAG
 		NOT = {
@@ -4860,14 +6972,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148148"
+		name = "EVTOPTA148214"
 		remove_core = NAG
 	}
 }
 province_event = {
-	id = 148149
-	title = "EVTNAME148149"
-	desc = "EVTDESC148149"
+	id = 148215
+	title = "EVTNAME148215"
+	desc = "EVTDESC148215"
 	trigger = {
 		is_core = NAL
 		NOT = {
@@ -4892,14 +7004,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148149"
+		name = "EVTOPTA148215"
 		remove_core = NAL
 	}
 }
 province_event = {
-	id = 148150
-	title = "EVTNAME148150"
-	desc = "EVTDESC148150"
+	id = 148216
+	title = "EVTNAME148216"
+	desc = "EVTDESC148216"
+	trigger = {
+		is_core = NAM
+		NOT = {
+			culture = herero
+		}
+		NAM = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = NAM
+				}
+				NOT = {
+					culture = herero
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148216"
+		remove_core = NAM
+	}
+}
+province_event = {
+	id = 148217
+	title = "EVTNAME148217"
+	desc = "EVTDESC148217"
 	trigger = {
 		is_core = NAS
 		NOT = {
@@ -4924,14 +7068,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148150"
+		name = "EVTOPTA148217"
 		remove_core = NAS
 	}
 }
 province_event = {
-	id = 148151
-	title = "EVTNAME148151"
-	desc = "EVTDESC148151"
+	id = 148218
+	title = "EVTNAME148218"
+	desc = "EVTDESC148218"
 	trigger = {
 		is_core = NEJ
 		NOT = {
@@ -4956,14 +7100,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148151"
+		name = "EVTOPTA148218"
 		remove_core = NEJ
 	}
 }
 province_event = {
-	id = 148152
-	title = "EVTNAME148152"
-	desc = "EVTDESC148152"
+	id = 148219
+	title = "EVTNAME148219"
+	desc = "EVTDESC148219"
 	trigger = {
 		is_core = NEN
 		NOT = {
@@ -4988,14 +7132,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148152"
+		name = "EVTOPTA148219"
 		remove_core = NEN
 	}
 }
 province_event = {
-	id = 148153
-	title = "EVTNAME148153"
-	desc = "EVTDESC148153"
+	id = 148220
+	title = "EVTNAME148220"
+	desc = "EVTDESC148220"
 	trigger = {
 		is_core = NEP
 		NOT = {
@@ -5020,14 +7164,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148153"
+		name = "EVTOPTA148220"
 		remove_core = NEP
 	}
 }
 province_event = {
-	id = 148154
-	title = "EVTNAME148154"
-	desc = "EVTDESC148154"
+	id = 148221
+	title = "EVTNAME148221"
+	desc = "EVTDESC148221"
 	trigger = {
 		is_core = NET
 		NOT = {
@@ -5052,14 +7196,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148154"
+		name = "EVTOPTA148221"
 		remove_core = NET
 	}
 }
 province_event = {
-	id = 148155
-	title = "EVTNAME148155"
-	desc = "EVTDESC148155"
+	id = 148222
+	title = "EVTNAME148222"
+	desc = "EVTDESC148222"
 	trigger = {
 		is_core = NEW
 		NOT = {
@@ -5084,14 +7228,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148155"
+		name = "EVTOPTA148222"
 		remove_core = NEW
 	}
 }
 province_event = {
-	id = 148156
-	title = "EVTNAME148156"
-	desc = "EVTDESC148156"
+	id = 148223
+	title = "EVTNAME148223"
+	desc = "EVTDESC148223"
 	trigger = {
 		is_core = NGF
 		NOT = {
@@ -5116,14 +7260,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148156"
+		name = "EVTOPTA148223"
 		remove_core = NGF
 	}
 }
 province_event = {
-	id = 148157
-	title = "EVTNAME148157"
-	desc = "EVTDESC148157"
+	id = 148224
+	title = "EVTNAME148224"
+	desc = "EVTDESC148224"
+	trigger = {
+		is_core = NGR
+		NOT = {
+			culture = yoruba
+		}
+		NGR = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = NGR
+				}
+				NOT = {
+					culture = yoruba
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148224"
+		remove_core = NGR
+	}
+}
+province_event = {
+	id = 148225
+	title = "EVTNAME148225"
+	desc = "EVTDESC148225"
 	trigger = {
 		is_core = NIC
 		NOT = {
@@ -5148,14 +7324,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148157"
+		name = "EVTOPTA148225"
 		remove_core = NIC
 	}
 }
 province_event = {
-	id = 148158
-	title = "EVTNAME148158"
-	desc = "EVTDESC148158"
+	id = 148226
+	title = "EVTNAME148226"
+	desc = "EVTDESC148226"
+	trigger = {
+		is_core = NIG
+		NOT = {
+			culture = songhai
+		}
+		NIG = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = NIG
+				}
+				NOT = {
+					culture = songhai
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148226"
+		remove_core = NIG
+	}
+}
+province_event = {
+	id = 148227
+	title = "EVTNAME148227"
+	desc = "EVTDESC148227"
 	trigger = {
 		is_core = NOR
 		NOT = {
@@ -5180,14 +7388,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148158"
+		name = "EVTOPTA148227"
 		remove_core = NOR
 	}
 }
 province_event = {
-	id = 148159
-	title = "EVTNAME148159"
-	desc = "EVTDESC148159"
+	id = 148228
+	title = "EVTNAME148228"
+	desc = "EVTDESC148228"
 	trigger = {
 		is_core = NZL
 		NOT = {
@@ -5212,14 +7420,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148159"
+		name = "EVTOPTA148228"
 		remove_core = NZL
 	}
 }
 province_event = {
-	id = 148160
-	title = "EVTNAME148160"
-	desc = "EVTDESC148160"
+	id = 148229
+	title = "EVTNAME148229"
+	desc = "EVTDESC148229"
+	trigger = {
+		is_core = OBO
+		NOT = {
+			culture = north_german
+		}
+		OBO = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = OBO
+				}
+				NOT = {
+					culture = north_german
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148229"
+		remove_core = OBO
+	}
+}
+province_event = {
+	id = 148230
+	title = "EVTNAME148230"
+	desc = "EVTDESC148230"
 	trigger = {
 		is_core = OLD
 		NOT = {
@@ -5244,14 +7484,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148160"
+		name = "EVTOPTA148230"
 		remove_core = OLD
 	}
 }
 province_event = {
-	id = 148161
-	title = "EVTNAME148161"
-	desc = "EVTDESC148161"
+	id = 148231
+	title = "EVTNAME148231"
+	desc = "EVTDESC148231"
 	trigger = {
 		is_core = OMA
 		NOT = {
@@ -5276,14 +7516,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148161"
+		name = "EVTOPTA148231"
 		remove_core = OMA
 	}
 }
 province_event = {
-	id = 148162
-	title = "EVTNAME148162"
-	desc = "EVTDESC148162"
+	id = 148232
+	title = "EVTNAME148232"
+	desc = "EVTDESC148232"
 	trigger = {
 		is_core = ORA
 		NOT = {
@@ -5308,14 +7548,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148162"
+		name = "EVTOPTA148232"
 		remove_core = ORA
 	}
 }
 province_event = {
-	id = 148163
-	title = "EVTNAME148163"
-	desc = "EVTDESC148163"
+	id = 148233
+	title = "EVTNAME148233"
+	desc = "EVTDESC148233"
 	trigger = {
 		is_core = ORI
 		NOT = {
@@ -5340,14 +7580,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148163"
+		name = "EVTOPTA148233"
 		remove_core = ORI
 	}
 }
 province_event = {
-	id = 148164
-	title = "EVTNAME148164"
-	desc = "EVTDESC148164"
+	id = 148234
+	title = "EVTNAME148234"
+	desc = "EVTDESC148234"
+	trigger = {
+		is_core = PAK
+		NOT = {
+			culture = panjabi
+		}
+		PAK = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = PAK
+				}
+				NOT = {
+					culture = panjabi
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148234"
+		remove_core = PAK
+	}
+}
+province_event = {
+	id = 148235
+	title = "EVTNAME148235"
+	desc = "EVTDESC148235"
 	trigger = {
 		is_core = PAN
 		NOT = {
@@ -5372,14 +7644,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148164"
+		name = "EVTOPTA148235"
 		remove_core = PAN
 	}
 }
 province_event = {
-	id = 148165
-	title = "EVTNAME148165"
-	desc = "EVTDESC148165"
+	id = 148236
+	title = "EVTNAME148236"
+	desc = "EVTDESC148236"
 	trigger = {
 		is_core = PAP
 		NOT = {
@@ -5404,14 +7676,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148165"
+		name = "EVTOPTA148236"
 		remove_core = PAP
 	}
 }
 province_event = {
-	id = 148166
-	title = "EVTNAME148166"
-	desc = "EVTDESC148166"
+	id = 148237
+	title = "EVTNAME148237"
+	desc = "EVTDESC148237"
 	trigger = {
 		is_core = PAR
 		NOT = {
@@ -5436,14 +7708,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148166"
+		name = "EVTOPTA148237"
 		remove_core = PAR
 	}
 }
 province_event = {
-	id = 148167
-	title = "EVTNAME148167"
-	desc = "EVTDESC148167"
+	id = 148238
+	title = "EVTNAME148238"
+	desc = "EVTDESC148238"
+	trigger = {
+		is_core = PBC
+		NOT = {
+			culture = south_andean
+		}
+		PBC = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = PBC
+				}
+				NOT = {
+					culture = south_andean
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148238"
+		remove_core = PBC
+	}
+}
+province_event = {
+	id = 148239
+	title = "EVTNAME148239"
+	desc = "EVTDESC148239"
 	trigger = {
 		is_core = PER
 		NOT = {
@@ -5468,14 +7772,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148167"
+		name = "EVTOPTA148239"
 		remove_core = PER
 	}
 }
 province_event = {
-	id = 148168
-	title = "EVTNAME148168"
-	desc = "EVTDESC148168"
+	id = 148240
+	title = "EVTNAME148240"
+	desc = "EVTDESC148240"
 	trigger = {
 		is_core = PEU
 		NOT = {
@@ -5500,14 +7804,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148168"
+		name = "EVTOPTA148240"
 		remove_core = PEU
 	}
 }
 province_event = {
-	id = 148169
-	title = "EVTNAME148169"
-	desc = "EVTDESC148169"
+	id = 148241
+	title = "EVTNAME148241"
+	desc = "EVTDESC148241"
 	trigger = {
 		is_core = PHI
 		NOT = {
@@ -5532,14 +7836,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148169"
+		name = "EVTOPTA148241"
 		remove_core = PHI
 	}
 }
 province_event = {
-	id = 148170
-	title = "EVTNAME148170"
-	desc = "EVTDESC148170"
+	id = 148242
+	title = "EVTNAME148242"
+	desc = "EVTDESC148242"
 	trigger = {
 		is_core = PLC
 		NOT = {
@@ -5570,14 +7874,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148170"
+		name = "EVTOPTA148242"
 		remove_core = PLC
 	}
 }
 province_event = {
-	id = 148171
-	title = "EVTNAME148171"
-	desc = "EVTDESC148171"
+	id = 148243
+	title = "EVTNAME148243"
+	desc = "EVTDESC148243"
+	trigger = {
+		is_core = PLS
+		NOT = {
+			culture = mashriqi
+		}
+		PLS = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = PLS
+				}
+				NOT = {
+					culture = mashriqi
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148243"
+		remove_core = PLS
+	}
+}
+province_event = {
+	id = 148244
+	title = "EVTNAME148244"
+	desc = "EVTDESC148244"
 	trigger = {
 		is_core = PNM
 		NOT = {
@@ -5602,14 +7938,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148171"
+		name = "EVTOPTA148244"
 		remove_core = PNM
 	}
 }
 province_event = {
-	id = 148172
-	title = "EVTNAME148172"
-	desc = "EVTDESC148172"
+	id = 148245
+	title = "EVTNAME148245"
+	desc = "EVTDESC148245"
 	trigger = {
 		is_core = POL
 		NOT = {
@@ -5634,14 +7970,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148172"
+		name = "EVTOPTA148245"
 		remove_core = POL
 	}
 }
 province_event = {
-	id = 148173
-	title = "EVTNAME148173"
-	desc = "EVTDESC148173"
+	id = 148246
+	title = "EVTNAME148246"
+	desc = "EVTDESC148246"
 	trigger = {
 		is_core = POR
 		NOT = {
@@ -5666,14 +8002,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148173"
+		name = "EVTOPTA148246"
 		remove_core = POR
 	}
 }
 province_event = {
-	id = 148174
-	title = "EVTNAME148174"
-	desc = "EVTDESC148174"
+	id = 148247
+	title = "EVTNAME148247"
+	desc = "EVTDESC148247"
 	trigger = {
 		is_core = PRG
 		NOT = {
@@ -5698,14 +8034,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148174"
+		name = "EVTOPTA148247"
 		remove_core = PRG
 	}
 }
 province_event = {
-	id = 148175
-	title = "EVTNAME148175"
-	desc = "EVTDESC148175"
+	id = 148248
+	title = "EVTNAME148248"
+	desc = "EVTDESC148248"
 	trigger = {
 		is_core = PRU
 		NOT = {
@@ -5730,14 +8066,78 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148175"
+		name = "EVTOPTA148248"
 		remove_core = PRU
 	}
 }
 province_event = {
-	id = 148176
-	title = "EVTNAME148176"
-	desc = "EVTDESC148176"
+	id = 148249
+	title = "EVTNAME148249"
+	desc = "EVTDESC148249"
+	trigger = {
+		is_core = PUE
+		NOT = {
+			culture = caribeno
+		}
+		PUE = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = PUE
+				}
+				NOT = {
+					culture = caribeno
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148249"
+		remove_core = PUE
+	}
+}
+province_event = {
+	id = 148250
+	title = "EVTNAME148250"
+	desc = "EVTDESC148250"
+	trigger = {
+		is_core = QAT
+		NOT = {
+			culture = bedouin
+		}
+		QAT = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = QAT
+				}
+				NOT = {
+					culture = bedouin
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148250"
+		remove_core = QAT
+	}
+}
+province_event = {
+	id = 148251
+	title = "EVTNAME148251"
+	desc = "EVTDESC148251"
 	trigger = {
 		is_core = QUE
 		NOT = {
@@ -5762,14 +8162,78 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148176"
+		name = "EVTOPTA148251"
 		remove_core = QUE
 	}
 }
 province_event = {
-	id = 148177
-	title = "EVTNAME148177"
-	desc = "EVTDESC148177"
+	id = 148252
+	title = "EVTNAME148252"
+	desc = "EVTDESC148252"
+	trigger = {
+		is_core = RAK
+		NOT = {
+			culture = bedouin
+		}
+		RAK = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = RAK
+				}
+				NOT = {
+					culture = bedouin
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148252"
+		remove_core = RAK
+	}
+}
+province_event = {
+	id = 148253
+	title = "EVTNAME148253"
+	desc = "EVTDESC148253"
+	trigger = {
+		is_core = RGR
+		NOT = {
+			culture = mexican
+		}
+		RGR = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = RGR
+				}
+				NOT = {
+					culture = mexican
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148253"
+		remove_core = RGR
+	}
+}
+province_event = {
+	id = 148254
+	title = "EVTNAME148254"
+	desc = "EVTDESC148254"
 	trigger = {
 		is_core = RHO
 		NOT = {
@@ -5794,14 +8258,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148177"
+		name = "EVTOPTA148254"
 		remove_core = RHO
 	}
 }
 province_event = {
-	id = 148178
-	title = "EVTNAME148178"
-	desc = "EVTDESC148178"
+	id = 148255
+	title = "EVTNAME148255"
+	desc = "EVTDESC148255"
+	trigger = {
+		is_core = RHV
+		NOT = {
+			culture = mossi
+		}
+		RHV = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = RHV
+				}
+				NOT = {
+					culture = mossi
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148255"
+		remove_core = RHV
+	}
+}
+province_event = {
+	id = 148256
+	title = "EVTNAME148256"
+	desc = "EVTDESC148256"
 	trigger = {
 		is_core = ROM
 		NOT = {
@@ -5826,14 +8322,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148178"
+		name = "EVTOPTA148256"
 		remove_core = ROM
 	}
 }
 province_event = {
-	id = 148179
-	title = "EVTNAME148179"
-	desc = "EVTDESC148179"
+	id = 148257
+	title = "EVTNAME148257"
+	desc = "EVTDESC148257"
+	trigger = {
+		is_core = RSR
+		NOT = {
+			culture = russian
+		}
+		RSR = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = RSR
+				}
+				NOT = {
+					culture = russian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148257"
+		remove_core = RSR
+	}
+}
+province_event = {
+	id = 148258
+	title = "EVTNAME148258"
+	desc = "EVTDESC148258"
 	trigger = {
 		is_core = RUS
 		NOT = {
@@ -5868,14 +8396,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148179"
+		name = "EVTOPTA148258"
 		remove_core = RUS
 	}
 }
 province_event = {
-	id = 148180
-	title = "EVTNAME148180"
-	desc = "EVTDESC148180"
+	id = 148259
+	title = "EVTNAME148259"
+	desc = "EVTDESC148259"
 	trigger = {
 		is_core = RUT
 		NOT = {
@@ -5900,14 +8428,78 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148180"
+		name = "EVTOPTA148259"
 		remove_core = RUT
 	}
 }
 province_event = {
-	id = 148181
-	title = "EVTNAME148181"
-	desc = "EVTDESC148181"
+	id = 148260
+	title = "EVTNAME148260"
+	desc = "EVTDESC148260"
+	trigger = {
+		is_core = RWA
+		NOT = {
+			culture = ruanda
+		}
+		RWA = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = RWA
+				}
+				NOT = {
+					culture = ruanda
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148260"
+		remove_core = RWA
+	}
+}
+province_event = {
+	id = 148261
+	title = "EVTNAME148261"
+	desc = "EVTDESC148261"
+	trigger = {
+		is_core = RYU
+		NOT = {
+			culture = japanese
+		}
+		RYU = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = RYU
+				}
+				NOT = {
+					culture = japanese
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148261"
+		remove_core = RYU
+	}
+}
+province_event = {
+	id = 148262
+	title = "EVTNAME148262"
+	desc = "EVTDESC148262"
 	trigger = {
 		is_core = SAF
 		NOT = {
@@ -5932,14 +8524,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148181"
+		name = "EVTOPTA148262"
 		remove_core = SAF
 	}
 }
 province_event = {
-	id = 148182
-	title = "EVTNAME148182"
-	desc = "EVTDESC148182"
+	id = 148263
+	title = "EVTNAME148263"
+	desc = "EVTDESC148263"
 	trigger = {
 		is_core = SAR
 		NOT = {
@@ -5964,14 +8556,78 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148182"
+		name = "EVTOPTA148263"
 		remove_core = SAR
 	}
 }
 province_event = {
-	id = 148183
-	title = "EVTNAME148183"
-	desc = "EVTDESC148183"
+	id = 148264
+	title = "EVTNAME148264"
+	desc = "EVTDESC148264"
+	trigger = {
+		is_core = SAT
+		NOT = {
+			culture = japanese
+		}
+		SAT = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = SAT
+				}
+				NOT = {
+					culture = japanese
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148264"
+		remove_core = SAT
+	}
+}
+province_event = {
+	id = 148265
+	title = "EVTNAME148265"
+	desc = "EVTDESC148265"
+	trigger = {
+		is_core = SAU
+		NOT = {
+			culture = bedouin
+		}
+		SAU = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = SAU
+				}
+				NOT = {
+					culture = bedouin
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148265"
+		remove_core = SAU
+	}
+}
+province_event = {
+	id = 148266
+	title = "EVTNAME148266"
+	desc = "EVTDESC148266"
 	trigger = {
 		is_core = SAX
 		NOT = {
@@ -5996,14 +8652,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148183"
+		name = "EVTOPTA148266"
 		remove_core = SAX
 	}
 }
 province_event = {
-	id = 148184
-	title = "EVTNAME148184"
-	desc = "EVTDESC148184"
+	id = 148267
+	title = "EVTNAME148267"
+	desc = "EVTDESC148267"
 	trigger = {
 		is_core = SCA
 		NOT = {
@@ -6044,14 +8700,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148184"
+		name = "EVTOPTA148267"
 		remove_core = SCA
 	}
 }
 province_event = {
-	id = 148185
-	title = "EVTNAME148185"
-	desc = "EVTDESC148185"
+	id = 148268
+	title = "EVTNAME148268"
+	desc = "EVTDESC148268"
 	trigger = {
 		is_core = SCH
 		NOT = {
@@ -6076,14 +8732,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148185"
+		name = "EVTOPTA148268"
 		remove_core = SCH
 	}
 }
 province_event = {
-	id = 148186
-	title = "EVTNAME148186"
-	desc = "EVTDESC148186"
+	id = 148269
+	title = "EVTNAME148269"
+	desc = "EVTDESC148269"
 	trigger = {
 		is_core = SCO
 		NOT = {
@@ -6108,14 +8764,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148186"
+		name = "EVTOPTA148269"
 		remove_core = SCO
 	}
 }
 province_event = {
-	id = 148187
-	title = "EVTNAME148187"
-	desc = "EVTDESC148187"
+	id = 148270
+	title = "EVTNAME148270"
+	desc = "EVTDESC148270"
+	trigger = {
+		is_core = SEN
+		NOT = {
+			culture = japanese
+		}
+		SEN = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = SEN
+				}
+				NOT = {
+					culture = japanese
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148270"
+		remove_core = SEN
+	}
+}
+province_event = {
+	id = 148271
+	title = "EVTNAME148271"
+	desc = "EVTDESC148271"
 	trigger = {
 		is_core = SER
 		NOT = {
@@ -6140,14 +8828,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148187"
+		name = "EVTOPTA148271"
 		remove_core = SER
 	}
 }
 province_event = {
-	id = 148188
-	title = "EVTNAME148188"
-	desc = "EVTDESC148188"
+	id = 148272
+	title = "EVTNAME148272"
+	desc = "EVTDESC148272"
 	trigger = {
 		is_core = SGF
 		NOT = {
@@ -6172,14 +8860,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148188"
+		name = "EVTOPTA148272"
 		remove_core = SGF
 	}
 }
 province_event = {
-	id = 148189
-	title = "EVTNAME148189"
-	desc = "EVTDESC148189"
+	id = 148273
+	title = "EVTNAME148273"
+	desc = "EVTDESC148273"
+	trigger = {
+		is_core = SHA
+		NOT = {
+			culture = bedouin
+		}
+		SHA = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = SHA
+				}
+				NOT = {
+					culture = bedouin
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148273"
+		remove_core = SHA
+	}
+}
+province_event = {
+	id = 148274
+	title = "EVTNAME148274"
+	desc = "EVTDESC148274"
 	trigger = {
 		is_core = SHI
 		NOT = {
@@ -6204,14 +8924,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148189"
+		name = "EVTOPTA148274"
 		remove_core = SHI
 	}
 }
 province_event = {
-	id = 148190
-	title = "EVTNAME148190"
-	desc = "EVTDESC148190"
+	id = 148275
+	title = "EVTNAME148275"
+	desc = "EVTDESC148275"
 	trigger = {
 		is_core = SIA
 		NOT = {
@@ -6236,14 +8956,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148190"
+		name = "EVTOPTA148275"
 		remove_core = SIA
 	}
 }
 province_event = {
-	id = 148191
-	title = "EVTNAME148191"
-	desc = "EVTDESC148191"
+	id = 148276
+	title = "EVTNAME148276"
+	desc = "EVTDESC148276"
 	trigger = {
 		is_core = SIC
 		NOT = {
@@ -6268,14 +8988,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148191"
+		name = "EVTOPTA148276"
 		remove_core = SIC
 	}
 }
 province_event = {
-	id = 148192
-	title = "EVTNAME148192"
-	desc = "EVTDESC148192"
+	id = 148277
+	title = "EVTNAME148277"
+	desc = "EVTDESC148277"
 	trigger = {
 		is_core = SIE
 		NOT = {
@@ -6300,14 +9020,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148192"
+		name = "EVTOPTA148277"
 		remove_core = SIE
 	}
 }
 province_event = {
-	id = 148193
-	title = "EVTNAME148193"
-	desc = "EVTDESC148193"
+	id = 148278
+	title = "EVTNAME148278"
+	desc = "EVTDESC148278"
+	trigger = {
+		is_core = SIG
+		NOT = {
+			culture = south_german
+		}
+		SIG = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = SIG
+				}
+				NOT = {
+					culture = south_german
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148278"
+		remove_core = SIG
+	}
+}
+province_event = {
+	id = 148279
+	title = "EVTNAME148279"
+	desc = "EVTDESC148279"
 	trigger = {
 		is_core = SIK
 		NOT = {
@@ -6332,14 +9084,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148193"
+		name = "EVTOPTA148279"
 		remove_core = SIK
 	}
 }
 province_event = {
-	id = 148194
-	title = "EVTNAME148194"
-	desc = "EVTDESC148194"
+	id = 148280
+	title = "EVTNAME148280"
+	desc = "EVTDESC148280"
 	trigger = {
 		is_core = SIN
 		NOT = {
@@ -6364,14 +9116,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148194"
+		name = "EVTOPTA148280"
 		remove_core = SIN
 	}
 }
 province_event = {
-	id = 148195
-	title = "EVTNAME148195"
-	desc = "EVTDESC148195"
+	id = 148281
+	title = "EVTNAME148281"
+	desc = "EVTDESC148281"
+	trigger = {
+		is_core = SLE
+		NOT = {
+			culture = mande
+		}
+		SLE = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = SLE
+				}
+				NOT = {
+					culture = mande
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148281"
+		remove_core = SLE
+	}
+}
+province_event = {
+	id = 148282
+	title = "EVTNAME148282"
+	desc = "EVTDESC148282"
 	trigger = {
 		is_core = SLO
 		NOT = {
@@ -6396,14 +9180,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148195"
+		name = "EVTOPTA148282"
 		remove_core = SLO
 	}
 }
 province_event = {
-	id = 148196
-	title = "EVTNAME148196"
-	desc = "EVTDESC148196"
+	id = 148283
+	title = "EVTNAME148283"
+	desc = "EVTDESC148283"
 	trigger = {
 		is_core = SLV
 		NOT = {
@@ -6428,14 +9212,110 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148196"
+		name = "EVTOPTA148283"
 		remove_core = SLV
 	}
 }
 province_event = {
-	id = 148197
-	title = "EVTNAME148197"
-	desc = "EVTDESC148197"
+	id = 148284
+	title = "EVTNAME148284"
+	desc = "EVTDESC148284"
+	trigger = {
+		is_core = SMR
+		NOT = {
+			culture = north_italian
+		}
+		SMR = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = SMR
+				}
+				NOT = {
+					culture = north_italian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148284"
+		remove_core = SMR
+	}
+}
+province_event = {
+	id = 148285
+	title = "EVTNAME148285"
+	desc = "EVTDESC148285"
+	trigger = {
+		is_core = SNG
+		NOT = {
+			culture = wolof
+		}
+		SNG = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = SNG
+				}
+				NOT = {
+					culture = wolof
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148285"
+		remove_core = SNG
+	}
+}
+province_event = {
+	id = 148286
+	title = "EVTNAME148286"
+	desc = "EVTDESC148286"
+	trigger = {
+		is_core = SNR
+		NOT = {
+			culture = sudanese
+		}
+		SNR = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = SNR
+				}
+				NOT = {
+					culture = sudanese
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148286"
+		remove_core = SNR
+	}
+}
+province_event = {
+	id = 148287
+	title = "EVTNAME148287"
+	desc = "EVTDESC148287"
 	trigger = {
 		is_core = SOK
 		NOT = {
@@ -6460,14 +9340,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148197"
+		name = "EVTOPTA148287"
 		remove_core = SOK
 	}
 }
 province_event = {
-	id = 148198
-	title = "EVTNAME148198"
-	desc = "EVTDESC148198"
+	id = 148288
+	title = "EVTNAME148288"
+	desc = "EVTDESC148288"
+	trigger = {
+		is_core = SOM
+		NOT = {
+			culture = somali
+		}
+		SOM = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = SOM
+				}
+				NOT = {
+					culture = somali
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148288"
+		remove_core = SOM
+	}
+}
+province_event = {
+	id = 148289
+	title = "EVTNAME148289"
+	desc = "EVTDESC148289"
 	trigger = {
 		is_core = SPA
 		NOT = {
@@ -6492,14 +9404,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148198"
+		name = "EVTOPTA148289"
 		remove_core = SPA
 	}
 }
 province_event = {
-	id = 148199
-	title = "EVTNAME148199"
-	desc = "EVTDESC148199"
+	id = 148290
+	title = "EVTNAME148290"
+	desc = "EVTDESC148290"
 	trigger = {
 		is_core = SRI
 		NOT = {
@@ -6524,14 +9436,174 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148199"
+		name = "EVTOPTA148290"
 		remove_core = SRI
 	}
 }
 province_event = {
-	id = 148200
-	title = "EVTNAME148200"
-	desc = "EVTDESC148200"
+	id = 148291
+	title = "EVTNAME148291"
+	desc = "EVTDESC148291"
+	trigger = {
+		is_core = STK
+		NOT = {
+			culture = afro_caribbean
+		}
+		STK = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = STK
+				}
+				NOT = {
+					culture = afro_caribbean
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148291"
+		remove_core = STK
+	}
+}
+province_event = {
+	id = 148292
+	title = "EVTNAME148292"
+	desc = "EVTDESC148292"
+	trigger = {
+		is_core = STL
+		NOT = {
+			culture = afro_caribbean
+		}
+		STL = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = STL
+				}
+				NOT = {
+					culture = afro_caribbean
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148292"
+		remove_core = STL
+	}
+}
+province_event = {
+	id = 148293
+	title = "EVTNAME148293"
+	desc = "EVTDESC148293"
+	trigger = {
+		is_core = STV
+		NOT = {
+			culture = afro_caribbean
+		}
+		STV = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = STV
+				}
+				NOT = {
+					culture = afro_caribbean
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148293"
+		remove_core = STV
+	}
+}
+province_event = {
+	id = 148294
+	title = "EVTNAME148294"
+	desc = "EVTDESC148294"
+	trigger = {
+		is_core = SUD
+		NOT = {
+			culture = sudanese
+		}
+		SUD = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = SUD
+				}
+				NOT = {
+					culture = sudanese
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148294"
+		remove_core = SUD
+	}
+}
+province_event = {
+	id = 148295
+	title = "EVTNAME148295"
+	desc = "EVTDESC148295"
+	trigger = {
+		is_core = SUL
+		NOT = {
+			culture = malay
+		}
+		SUL = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = SUL
+				}
+				NOT = {
+					culture = malay
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148295"
+		remove_core = SUL
+	}
+}
+province_event = {
+	id = 148296
+	title = "EVTNAME148296"
+	desc = "EVTDESC148296"
 	trigger = {
 		is_core = SWE
 		NOT = {
@@ -6556,14 +9628,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148200"
+		name = "EVTOPTA148296"
 		remove_core = SWE
 	}
 }
 province_event = {
-	id = 148201
-	title = "EVTNAME148201"
-	desc = "EVTDESC148201"
+	id = 148297
+	title = "EVTNAME148297"
+	desc = "EVTDESC148297"
 	trigger = {
 		is_core = SWI
 		NOT = {
@@ -6588,14 +9660,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148201"
+		name = "EVTOPTA148297"
 		remove_core = SWI
 	}
 }
 province_event = {
-	id = 148202
-	title = "EVTNAME148202"
-	desc = "EVTDESC148202"
+	id = 148298
+	title = "EVTNAME148298"
+	desc = "EVTDESC148298"
 	trigger = {
 		is_core = SXI
 		NOT = {
@@ -6620,14 +9692,110 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148202"
+		name = "EVTOPTA148298"
 		remove_core = SXI
 	}
 }
 province_event = {
-	id = 148203
-	title = "EVTNAME148203"
-	desc = "EVTDESC148203"
+	id = 148299
+	title = "EVTNAME148299"
+	desc = "EVTDESC148299"
+	trigger = {
+		is_core = SYR
+		NOT = {
+			culture = mashriqi
+		}
+		SYR = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = SYR
+				}
+				NOT = {
+					culture = mashriqi
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148299"
+		remove_core = SYR
+	}
+}
+province_event = {
+	id = 148300
+	title = "EVTNAME148300"
+	desc = "EVTDESC148300"
+	trigger = {
+		is_core = SZC
+		NOT = {
+			culture = nanfaren
+		}
+		SZC = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = SZC
+				}
+				NOT = {
+					culture = nanfaren
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148300"
+		remove_core = SZC
+	}
+}
+province_event = {
+	id = 148301
+	title = "EVTNAME148301"
+	desc = "EVTDESC148301"
+	trigger = {
+		is_core = TAI
+		NOT = {
+			culture = min
+		}
+		TAI = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = TAI
+				}
+				NOT = {
+					culture = min
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148301"
+		remove_core = TAI
+	}
+}
+province_event = {
+	id = 148302
+	title = "EVTNAME148302"
+	desc = "EVTDESC148302"
 	trigger = {
 		is_core = TAJ
 		NOT = {
@@ -6652,14 +9820,78 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148203"
+		name = "EVTOPTA148302"
 		remove_core = TAJ
 	}
 }
 province_event = {
-	id = 148204
-	title = "EVTNAME148204"
-	desc = "EVTDESC148204"
+	id = 148303
+	title = "EVTNAME148303"
+	desc = "EVTDESC148303"
+	trigger = {
+		is_core = TCR
+		NOT = {
+			culture = georgian
+		}
+		TCR = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = TCR
+				}
+				NOT = {
+					culture = georgian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148303"
+		remove_core = TCR
+	}
+}
+province_event = {
+	id = 148304
+	title = "EVTNAME148304"
+	desc = "EVTDESC148304"
+	trigger = {
+		is_core = TDT
+		NOT = {
+			culture = afro_caribbean
+		}
+		TDT = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = TDT
+				}
+				NOT = {
+					culture = afro_caribbean
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148304"
+		remove_core = TDT
+	}
+}
+province_event = {
+	id = 148305
+	title = "EVTNAME148305"
+	desc = "EVTDESC148305"
 	trigger = {
 		is_core = TEX
 		NOT = {
@@ -6684,14 +9916,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148204"
+		name = "EVTOPTA148305"
 		remove_core = TEX
 	}
 }
 province_event = {
-	id = 148205
-	title = "EVTNAME148205"
-	desc = "EVTDESC148205"
+	id = 148306
+	title = "EVTNAME148306"
+	desc = "EVTDESC148306"
+	trigger = {
+		is_core = TGA
+		NOT = {
+			culture = polynesian
+		}
+		TGA = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = TGA
+				}
+				NOT = {
+					culture = polynesian
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148306"
+		remove_core = TGA
+	}
+}
+province_event = {
+	id = 148307
+	title = "EVTNAME148307"
+	desc = "EVTDESC148307"
 	trigger = {
 		is_core = TIB
 		NOT = {
@@ -6716,14 +9980,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148205"
+		name = "EVTOPTA148307"
 		remove_core = TIB
 	}
 }
 province_event = {
-	id = 148206
-	title = "EVTNAME148206"
-	desc = "EVTDESC148206"
+	id = 148308
+	title = "EVTNAME148308"
+	desc = "EVTDESC148308"
+	trigger = {
+		is_core = TKG
+		NOT = {
+			culture = japanese
+		}
+		TKG = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = TKG
+				}
+				NOT = {
+					culture = japanese
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148308"
+		remove_core = TKG
+	}
+}
+province_event = {
+	id = 148309
+	title = "EVTNAME148309"
+	desc = "EVTDESC148309"
 	trigger = {
 		is_core = TKM
 		NOT = {
@@ -6748,14 +10044,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148206"
+		name = "EVTOPTA148309"
 		remove_core = TKM
 	}
 }
 province_event = {
-	id = 148207
-	title = "EVTNAME148207"
-	desc = "EVTDESC148207"
+	id = 148310
+	title = "EVTNAME148310"
+	desc = "EVTDESC148310"
+	trigger = {
+		is_core = TKS
+		NOT = {
+			culture = uzbek
+		}
+		TKS = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = TKS
+				}
+				NOT = {
+					culture = uzbek
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148310"
+		remove_core = TKS
+	}
+}
+province_event = {
+	id = 148311
+	title = "EVTNAME148311"
+	desc = "EVTDESC148311"
 	trigger = {
 		is_core = TNT
 		NOT = {
@@ -6780,14 +10108,110 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148207"
+		name = "EVTOPTA148311"
 		remove_core = TNT
 	}
 }
 province_event = {
-	id = 148208
-	title = "EVTNAME148208"
-	desc = "EVTDESC148208"
+	id = 148312
+	title = "EVTNAME148312"
+	desc = "EVTDESC148312"
+	trigger = {
+		is_core = TNZ
+		NOT = {
+			culture = unyamwezi
+		}
+		TNZ = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = TNZ
+				}
+				NOT = {
+					culture = unyamwezi
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148312"
+		remove_core = TNZ
+	}
+}
+province_event = {
+	id = 148313
+	title = "EVTNAME148313"
+	desc = "EVTDESC148313"
+	trigger = {
+		is_core = TOG
+		NOT = {
+			culture = ewe
+		}
+		TOG = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = TOG
+				}
+				NOT = {
+					culture = ewe
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148313"
+		remove_core = TOG
+	}
+}
+province_event = {
+	id = 148314
+	title = "EVTNAME148314"
+	desc = "EVTDESC148314"
+	trigger = {
+		is_core = TOS
+		NOT = {
+			culture = japanese
+		}
+		TOS = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = TOS
+				}
+				NOT = {
+					culture = japanese
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148314"
+		remove_core = TOS
+	}
+}
+province_event = {
+	id = 148315
+	title = "EVTNAME148315"
+	desc = "EVTDESC148315"
 	trigger = {
 		is_core = TPG
 		NOT = {
@@ -6812,14 +10236,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148208"
+		name = "EVTOPTA148315"
 		remove_core = TPG
 	}
 }
 province_event = {
-	id = 148209
-	title = "EVTNAME148209"
-	desc = "EVTDESC148209"
+	id = 148316
+	title = "EVTNAME148316"
+	desc = "EVTDESC148316"
 	trigger = {
 		is_core = TRA
 		NOT = {
@@ -6844,14 +10268,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148209"
+		name = "EVTOPTA148316"
 		remove_core = TRA
 	}
 }
 province_event = {
-	id = 148210
-	title = "EVTNAME148210"
-	desc = "EVTDESC148210"
+	id = 148317
+	title = "EVTNAME148317"
+	desc = "EVTDESC148317"
 	trigger = {
 		is_core = TRE
 		NOT = {
@@ -6876,14 +10300,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148210"
+		name = "EVTOPTA148317"
 		remove_core = TRE
 	}
 }
 province_event = {
-	id = 148211
-	title = "EVTNAME148211"
-	desc = "EVTDESC148211"
+	id = 148318
+	title = "EVTNAME148318"
+	desc = "EVTDESC148318"
 	trigger = {
 		is_core = TRI
 		NOT = {
@@ -6908,14 +10332,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148211"
+		name = "EVTOPTA148318"
 		remove_core = TRI
 	}
 }
 province_event = {
-	id = 148212
-	title = "EVTNAME148212"
-	desc = "EVTDESC148212"
+	id = 148319
+	title = "EVTNAME148319"
+	desc = "EVTDESC148319"
 	trigger = {
 		is_core = TRN
 		NOT = {
@@ -6940,14 +10364,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148212"
+		name = "EVTOPTA148319"
 		remove_core = TRN
 	}
 }
 province_event = {
-	id = 148213
-	title = "EVTNAME148213"
-	desc = "EVTDESC148213"
+	id = 148320
+	title = "EVTNAME148320"
+	desc = "EVTDESC148320"
+	trigger = {
+		is_core = TSW
+		NOT = {
+			culture = tswana
+		}
+		TSW = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = TSW
+				}
+				NOT = {
+					culture = tswana
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148320"
+		remove_core = TSW
+	}
+}
+province_event = {
+	id = 148321
+	title = "EVTNAME148321"
+	desc = "EVTDESC148321"
 	trigger = {
 		is_core = TTT
 		NOT = {
@@ -6972,14 +10428,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148213"
+		name = "EVTOPTA148321"
 		remove_core = TTT
 	}
 }
 province_event = {
-	id = 148214
-	title = "EVTNAME148214"
-	desc = "EVTDESC148214"
+	id = 148322
+	title = "EVTNAME148322"
+	desc = "EVTDESC148322"
 	trigger = {
 		is_core = TUN
 		NOT = {
@@ -7004,14 +10460,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148214"
+		name = "EVTOPTA148322"
 		remove_core = TUN
 	}
 }
 province_event = {
-	id = 148215
-	title = "EVTNAME148215"
-	desc = "EVTDESC148215"
+	id = 148323
+	title = "EVTNAME148323"
+	desc = "EVTDESC148323"
 	trigger = {
 		is_core = TUR
 		NOT = {
@@ -7036,14 +10492,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148215"
+		name = "EVTOPTA148323"
 		remove_core = TUR
 	}
 }
 province_event = {
-	id = 148216
-	title = "EVTNAME148216"
-	desc = "EVTDESC148216"
+	id = 148324
+	title = "EVTNAME148324"
+	desc = "EVTDESC148324"
 	trigger = {
 		is_core = TUS
 		NOT = {
@@ -7068,14 +10524,78 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148216"
+		name = "EVTOPTA148324"
 		remove_core = TUS
 	}
 }
 province_event = {
-	id = 148217
-	title = "EVTNAME148217"
-	desc = "EVTDESC148217"
+	id = 148325
+	title = "EVTNAME148325"
+	desc = "EVTDESC148325"
+	trigger = {
+		is_core = UAE
+		NOT = {
+			culture = bedouin
+		}
+		UAE = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = UAE
+				}
+				NOT = {
+					culture = bedouin
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148325"
+		remove_core = UAE
+	}
+}
+province_event = {
+	id = 148326
+	title = "EVTNAME148326"
+	desc = "EVTDESC148326"
+	trigger = {
+		is_core = UAQ
+		NOT = {
+			culture = bedouin
+		}
+		UAQ = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = UAQ
+				}
+				NOT = {
+					culture = bedouin
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148326"
+		remove_core = UAQ
+	}
+}
+province_event = {
+	id = 148327
+	title = "EVTNAME148327"
+	desc = "EVTDESC148327"
 	trigger = {
 		is_core = UBD
 		NOT = {
@@ -7106,14 +10626,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148217"
+		name = "EVTOPTA148327"
 		remove_core = UBD
 	}
 }
 province_event = {
-	id = 148218
-	title = "EVTNAME148218"
-	desc = "EVTDESC148218"
+	id = 148328
+	title = "EVTNAME148328"
+	desc = "EVTDESC148328"
 	trigger = {
 		is_core = UCA
 		NOT = {
@@ -7138,14 +10658,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148218"
+		name = "EVTOPTA148328"
 		remove_core = UCA
 	}
 }
 province_event = {
-	id = 148219
-	title = "EVTNAME148219"
-	desc = "EVTDESC148219"
+	id = 148329
+	title = "EVTNAME148329"
+	desc = "EVTDESC148329"
+	trigger = {
+		is_core = UGA
+		NOT = {
+			culture = baganda
+		}
+		UGA = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = UGA
+				}
+				NOT = {
+					culture = baganda
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148329"
+		remove_core = UGA
+	}
+}
+province_event = {
+	id = 148330
+	title = "EVTNAME148330"
+	desc = "EVTDESC148330"
 	trigger = {
 		is_core = UKR
 		NOT = {
@@ -7170,14 +10722,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148219"
+		name = "EVTOPTA148330"
 		remove_core = UKR
 	}
 }
 province_event = {
-	id = 148220
-	title = "EVTNAME148220"
-	desc = "EVTDESC148220"
+	id = 148331
+	title = "EVTNAME148331"
+	desc = "EVTDESC148331"
 	trigger = {
 		is_core = URU
 		NOT = {
@@ -7202,14 +10754,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148220"
+		name = "EVTOPTA148331"
 		remove_core = URU
 	}
 }
 province_event = {
-	id = 148221
-	title = "EVTNAME148221"
-	desc = "EVTDESC148221"
+	id = 148332
+	title = "EVTNAME148332"
+	desc = "EVTDESC148332"
 	trigger = {
 		is_core = USA
 		NOT = {
@@ -7242,14 +10794,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148221"
+		name = "EVTOPTA148332"
 		remove_core = USA
 	}
 }
 province_event = {
-	id = 148222
-	title = "EVTNAME148222"
-	desc = "EVTDESC148222"
+	id = 148333
+	title = "EVTNAME148333"
+	desc = "EVTDESC148333"
 	trigger = {
 		is_core = UZB
 		NOT = {
@@ -7274,14 +10826,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148222"
+		name = "EVTOPTA148333"
 		remove_core = UZB
 	}
 }
 province_event = {
-	id = 148223
-	title = "EVTNAME148223"
-	desc = "EVTDESC148223"
+	id = 148334
+	title = "EVTNAME148334"
+	desc = "EVTDESC148334"
 	trigger = {
 		is_core = VEN
 		NOT = {
@@ -7306,14 +10858,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148223"
+		name = "EVTOPTA148334"
 		remove_core = VEN
 	}
 }
 province_event = {
-	id = 148224
-	title = "EVTNAME148224"
-	desc = "EVTDESC148224"
+	id = 148335
+	title = "EVTNAME148335"
+	desc = "EVTDESC148335"
 	trigger = {
 		is_core = VNZ
 		NOT = {
@@ -7338,14 +10890,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148224"
+		name = "EVTOPTA148335"
 		remove_core = VNZ
 	}
 }
 province_event = {
-	id = 148225
-	title = "EVTNAME148225"
-	desc = "EVTDESC148225"
+	id = 148336
+	title = "EVTNAME148336"
+	desc = "EVTDESC148336"
 	trigger = {
 		is_core = WAL
 		NOT = {
@@ -7370,14 +10922,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148225"
+		name = "EVTOPTA148336"
 		remove_core = WAL
 	}
 }
 province_event = {
-	id = 148226
-	title = "EVTNAME148226"
-	desc = "EVTDESC148226"
+	id = 148337
+	title = "EVTNAME148337"
+	desc = "EVTDESC148337"
 	trigger = {
 		is_core = WEI
 		NOT = {
@@ -7402,14 +10954,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148226"
+		name = "EVTOPTA148337"
 		remove_core = WEI
 	}
 }
 province_event = {
-	id = 148227
-	title = "EVTNAME148227"
-	desc = "EVTDESC148227"
+	id = 148338
+	title = "EVTNAME148338"
+	desc = "EVTDESC148338"
 	trigger = {
 		is_core = WIA
 		NOT = {
@@ -7434,14 +10986,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148227"
+		name = "EVTOPTA148338"
 		remove_core = WIA
 	}
 }
 province_event = {
-	id = 148228
-	title = "EVTNAME148228"
-	desc = "EVTDESC148228"
+	id = 148339
+	title = "EVTNAME148339"
+	desc = "EVTDESC148339"
 	trigger = {
 		is_core = WLL
 		NOT = {
@@ -7466,14 +11018,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148228"
+		name = "EVTOPTA148339"
 		remove_core = WLL
 	}
 }
 province_event = {
-	id = 148229
-	title = "EVTNAME148229"
-	desc = "EVTDESC148229"
+	id = 148340
+	title = "EVTNAME148340"
+	desc = "EVTDESC148340"
 	trigger = {
 		is_core = WUR
 		NOT = {
@@ -7498,14 +11050,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148229"
+		name = "EVTOPTA148340"
 		remove_core = WUR
 	}
 }
 province_event = {
-	id = 148230
-	title = "EVTNAME148230"
-	desc = "EVTDESC148230"
+	id = 148341
+	title = "EVTNAME148341"
+	desc = "EVTDESC148341"
 	trigger = {
 		is_core = XBI
 		NOT = {
@@ -7530,14 +11082,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148230"
+		name = "EVTOPTA148341"
 		remove_core = XBI
 	}
 }
 province_event = {
-	id = 148231
-	title = "EVTNAME148231"
-	desc = "EVTDESC148231"
+	id = 148342
+	title = "EVTNAME148342"
+	desc = "EVTDESC148342"
 	trigger = {
 		is_core = XIN
 		NOT = {
@@ -7562,14 +11114,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148231"
+		name = "EVTOPTA148342"
 		remove_core = XIN
 	}
 }
 province_event = {
-	id = 148232
-	title = "EVTNAME148232"
-	desc = "EVTDESC148232"
+	id = 148343
+	title = "EVTNAME148343"
+	desc = "EVTDESC148343"
 	trigger = {
 		is_core = YAK
 		NOT = {
@@ -7594,14 +11146,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148232"
+		name = "EVTOPTA148343"
 		remove_core = YAK
 	}
 }
 province_event = {
-	id = 148233
-	title = "EVTNAME148233"
-	desc = "EVTDESC148233"
+	id = 148344
+	title = "EVTNAME148344"
+	desc = "EVTDESC148344"
 	trigger = {
 		is_core = YEM
 		NOT = {
@@ -7626,14 +11178,14 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148233"
+		name = "EVTOPTA148344"
 		remove_core = YEM
 	}
 }
 province_event = {
-	id = 148234
-	title = "EVTNAME148234"
-	desc = "EVTDESC148234"
+	id = 148345
+	title = "EVTNAME148345"
+	desc = "EVTDESC148345"
 	trigger = {
 		is_core = YNN
 		NOT = {
@@ -7658,14 +11210,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148234"
+		name = "EVTOPTA148345"
 		remove_core = YNN
 	}
 }
 province_event = {
-	id = 148235
-	title = "EVTNAME148235"
-	desc = "EVTDESC148235"
+	id = 148346
+	title = "EVTNAME148346"
+	desc = "EVTDESC148346"
+	trigger = {
+		is_core = YUC
+		NOT = {
+			culture = mayan
+		}
+		YUC = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = YUC
+				}
+				NOT = {
+					culture = mayan
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148346"
+		remove_core = YUC
+	}
+}
+province_event = {
+	id = 148347
+	title = "EVTNAME148347"
+	desc = "EVTDESC148347"
 	trigger = {
 		is_core = YUG
 		NOT = {
@@ -7704,14 +11288,78 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148235"
+		name = "EVTOPTA148347"
 		remove_core = YUG
 	}
 }
 province_event = {
-	id = 148236
-	title = "EVTNAME148236"
-	desc = "EVTDESC148236"
+	id = 148348
+	title = "EVTNAME148348"
+	desc = "EVTDESC148348"
+	trigger = {
+		is_core = YZW
+		NOT = {
+			culture = japanese
+		}
+		YZW = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = YZW
+				}
+				NOT = {
+					culture = japanese
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148348"
+		remove_core = YZW
+	}
+}
+province_event = {
+	id = 148349
+	title = "EVTNAME148349"
+	desc = "EVTDESC148349"
+	trigger = {
+		is_core = ZAM
+		NOT = {
+			culture = lunda
+		}
+		ZAM = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = ZAM
+				}
+				NOT = {
+					culture = lunda
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148349"
+		remove_core = ZAM
+	}
+}
+province_event = {
+	id = 148350
+	title = "EVTNAME148350"
+	desc = "EVTDESC148350"
 	trigger = {
 		is_core = ZAN
 		NOT = {
@@ -7736,14 +11384,46 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148236"
+		name = "EVTOPTA148350"
 		remove_core = ZAN
 	}
 }
 province_event = {
-	id = 148237
-	title = "EVTNAME148237"
-	desc = "EVTDESC148237"
+	id = 148351
+	title = "EVTNAME148351"
+	desc = "EVTDESC148351"
+	trigger = {
+		is_core = ZHI
+		NOT = {
+			culture = manchu
+		}
+		ZHI = {
+			exists = no
+		}
+		OR = {
+			port = yes
+			any_neighbor_province = {
+				NOT = {
+					is_core = ZHI
+				}
+				NOT = {
+					culture = manchu
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA148351"
+		remove_core = ZHI
+	}
+}
+province_event = {
+	id = 148352
+	title = "EVTNAME148352"
+	desc = "EVTDESC148352"
 	trigger = {
 		is_core = ZUL
 		NOT = {
@@ -7768,7 +11448,7 @@ province_event = {
 		months = 60
 	}
 	option = {
-		name = "EVTOPTA148237"
+		name = "EVTOPTA148352"
 		remove_core = ZUL
 	}
 }

@@ -1,0 +1,273 @@
+"""Естественное срабатывание первой корки в изолированном стенде; запуск только явный."""
+from __future__ import annotations
+
+import argparse
+from contextlib import contextmanager
+from decimal import Decimal
+import json
+from pathlib import Path
+import re
+import sys
+import time
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from tools.chronology_import import engine_acceptance as engine
+
+
+def accelerate(raw):
+    """Сохранить условия и эффект; изменить только MTTH и участие других первых событий."""
+    text = raw.decode('cp1251')
+    source = engine.find_events(raw)['new']
+    first, target, candidates = [], None, set()
+    for event in engine.Spans(text).roots():
+        if event.key != 'province_event':
+            continue
+        option = engine.one(event, 'option')
+        guard = option.single('if')
+        if guard is None:
+            continue
+        first.append(event)
+        trigger = engine.one(event, 'trigger')
+        if engine.scalar(trigger, 'culture') == source['culture']:
+            candidates.add(engine.scalar(guard, 'add_core'))
+        if int(engine.scalar(event, 'id')) == source['id']:
+            engine.require(target is None, 'Повторный ID события OBO')
+            target = event
+    engine.require(target is not None and None not in candidates, 'Не найдены первые кандидаты')
+    mtth = engine.one(target, 'mean_time_to_happen')
+    months = engine.one(mtth, 'months')
+    engine.require(Decimal(months.value) == 4 * len(candidates), 'Исходный MTTH OBO не равен 4n')
+    engine.require(not target.fields('is_triggered_only'), 'OBO уже исключено из случайных событий')
+    changes = [(months.start, months.end, '0.01')]
+    newline = '\r\n' if '\r\n' in text else '\n'
+    disabled = []
+    for event in first:
+        if event is target:
+            continue
+        triggered = event.single('is_triggered_only')
+        if triggered:
+            changes.append((triggered.start, triggered.end, 'yes'))
+        else:
+            changes.append((event.start + 1, event.start + 1, newline + '\tis_triggered_only = yes'))
+        disabled.append(int(engine.scalar(event, 'id')))
+    patched = text
+    for begin, end, replacement in sorted(changes, reverse=True):
+        patched = patched[:begin] + replacement + patched[end:]
+    result = patched.encode('cp1251')
+    engine.require(engine.find_events(result)['new'] == source, 'Изменились ID/trigger OBO')
+    return result, {'event': source, 'source_months': months.value, 'test_months': '0.01',
+                    'unique_candidates': sorted(candidates), 'n': len(candidates),
+                    'disabled_first_event_ids': disabled, 'source_sha256': engine.sha(raw),
+                    'test_sha256': engine.sha(result)}
+
+
+def auto_selected_ids(raw):
+    """Отличать именно автоопцию от упоминания ID в консольной команде или локализации."""
+    phrase = r'vic2test: автоматический выбор первой опции события id=(\d+), всего=\d+'
+    for encoding in ('utf-8', 'cp1251'):
+        # Последняя запись журнала может быть дописана посреди многобайтовой буквы.
+        text = raw.decode(encoding, errors='replace')
+        values = [int(value) for value in re.findall(phrase, text)]
+        if values:
+            return values
+    return []
+
+
+@contextmanager
+def temporary_files(changes, artifacts, record):
+    """Исходные байты сохраняются до первой записи; выход восстанавливает даже частичную запись."""
+    originals = []
+    try:
+        for index, (path, modified) in enumerate(changes):
+            original = path.read_bytes()
+            (artifacts / f'original-{index}-{path.name}').write_bytes(original)
+            (artifacts / f'test-{index}-{path.name}').write_bytes(modified)
+            originals.append((path, original))
+            path.write_bytes(modified)
+        yield
+    finally:
+        errors = []
+        for path, original in reversed(originals):
+            try:
+                path.write_bytes(original)
+                engine.require(path.read_bytes() == original, 'Байты не восстановлены')
+                record.setdefault('restored_files', {})[str(path)] = engine.sha(original)
+            except BaseException as error:
+                errors.append(f'{path}: {error}')
+        engine.require(not errors, '; '.join(errors))
+
+
+class NaturalRunner(engine.Runner):
+    def __init__(self, environment, fixtures, stream, artifacts):
+        super().__init__(environment, fixtures, stream, ['new'], visible=True)
+        self.artifacts = engine.work_path(artifacts)
+        self.record.update(test='natural_first_core', probability_measurement=False,
+                           interpretation='Естественный планировщик при ускоренном MTTH; не оценка частоты 4n')
+
+    def advance(self, days):
+        initial = self.request('status')
+        self.record['steps'].append({'advance_days': days})
+        result = self.request(f'advance-auto {days}', 15)
+        target = result['target_date_raw']
+        engine.require(target == initial['date_raw'] + days * 24, 'Некорректная целевая дата')
+        deadline = time.monotonic() + 300
+        while True:
+            current = self.request('status', 15)
+            if current.get('advance_target') == 0 and current.get('paused') is True:
+                engine.require(current['date_raw'] == target, 'Прогон остановился на другой дате')
+                return current
+            engine.require(time.monotonic() < deadline, 'Истёк срок естественного прогона')
+            time.sleep(.2)
+
+    def start_owned(self, game, previous):
+        try:
+            result = engine.cli.start(self.environment, hidden=False)
+        finally:
+            path = self.environment / 'session.json'
+            session = json.loads(path.read_text(encoding='utf-8')) if path.exists() else None
+            if session and session.get('token') != (previous or {}).get('token'):
+                engine.require(Path(session['game']).resolve() == game and
+                               re.fullmatch('[0-9a-f]{32}', session['token']), 'Чужая session')
+                self.record.update(session=session, cleanup_unconfirmed=True)
+                self.owned = engine.OwnedProcess(session['pid'], game / 'v2game.exe')
+                self.record['cleanup_unconfirmed'] = False
+        self.checked(result, 'start-visible')
+        engine.require(self.owned is not None, 'Нет собственного процесса')
+
+    def run(self):
+        try:
+            manifest, game, previous = self.preflight()
+            path = game / 'events/adding_cores.txt'
+            config = game / 'z_CreatineCore/great_power_culture_cores.ini'
+            for candidate in (path, config):
+                engine.require(candidate.resolve().is_relative_to(self.environment) and
+                               candidate.stat().st_nlink == 1, 'Файл стенда не изолирован')
+            raw = path.read_bytes()
+            production = engine.ROOT / 'events/adding_cores.txt'
+            engine.require(production.read_bytes() == raw, 'Стенд не совпадает с текущим основным adding_cores')
+            modified, details = accelerate(raw)
+            engine.require(details['event']['id'] == manifest['events']['new']['id'], 'Другой ID OBO в фикстуре')
+            self.record['event_patch'] = details
+            self.record['production_sha256'] = engine.cli.digest(production)
+            self.record['tool_sources'][str(Path(__file__).relative_to(engine.ROOT))] = engine.cli.digest(Path(__file__))
+            disabled, count = re.subn(rb'(?m)^(\s*ENABLE_GREAT_POWER_CULTURE_CORES\s*=\s*)[01]',
+                                      rb'\g<1>0', config.read_bytes())
+            engine.require(count == 1, 'Не найден единственный переключатель GPC')
+            self.checkpoint()
+            with temporary_files([(path, modified), (config, disabled)], self.artifacts, self.record):
+                try:
+                    self.start_owned(game, previous)
+                    case = next(case for case in manifest['cases'] if case['name'] == 'new')
+                    self.checked(engine.cli.load_campaign(self.environment, case['save'], 1200), 'load ' + case['save'])
+                    engine.require(self.request('culture-cores-status').get('enabled') == 0, 'GPC не отключён')
+                    status = self.request('status')
+                    engine.require(status.get('paused') is True and status.get('multiplayer') is False,
+                                   'Нужна одиночная кампания на паузе')
+                    prefix = self.record['save_prefix']
+                    before = engine.core_pairs(self.save(prefix + '_before'))
+                    engine.require(not any(tag == 'OBO' for _, tag in before), 'OBO уже имеет корки')
+                    self.decision(manifest['events']['new']['decision'], True)
+                    log = game / 'z_CreatineCore/Logs/v2dll.log'
+                    offset = log.stat().st_size
+                    selected, found, total_selected = [], False, 0
+                    for day in (2, 4):
+                        state = self.advance(2)
+                        total_selected += state.get('auto_events_selected', 0)
+                        if state.get('event_windows') == 0:
+                            self.settle()
+                        saved = self.save(prefix + f'_day{day}')
+                        after = engine.core_pairs(saved)
+                        log_bytes = log.read_bytes()
+                        engine.require(len(log_bytes) >= offset, 'Журнал усечён во время прогона')
+                        delta = log_bytes[offset:]
+                        (self.artifacts / f'native-day{day}.log').write_bytes(delta)
+                        selected = auto_selected_ids(delta)
+                        observation = {'day': day, 'save': str(saved), 'state': state,
+                                       'total_auto_selected': total_selected,
+                                       'auto_selected_ids': selected, 'added': sorted(after - before),
+                                       'removed': sorted(before - after),
+                                       'obo_cores': sorted(number for number, tag in after if tag == 'OBO')}
+                        self.record.setdefault('observations', []).append(observation)
+                        self.checkpoint()
+                        found = (manifest['province'], 'OBO') in after
+                        if found:
+                            engine.require(details['event']['id'] in selected and total_selected > 0,
+                                           'Корка есть, но естественная автоопция не подтверждена')
+                            engine.require(observation['obo_cores'] == [manifest['province']],
+                                           'Обнаружены неожиданные дополнительные OBO-корки')
+                            self.decision(manifest['events']['new']['decision'], False)
+                            break
+                    engine.require(found, 'За четыре дня OBO-корка не появилась')
+                    self.record.update(ok=True, complete=True)
+                finally:
+                    if self.owned:
+                        self.owned.stop()
+                        self.record['process_stopped'] = True
+        except BaseException as error:
+            self.record.update(ok=False, complete=False)
+            self.record['errors'].append({'type': type(error).__name__, 'message': str(error)})
+        finally:
+            self.checkpoint()
+        return self.record['ok']
+
+
+def prepare_snr(game_root, output, province=546):
+    """Только пакет для последующего показа флага главным агентом, без запуска и установки."""
+    game_root, output = Path(game_root).resolve(), engine.work_path(output)
+    engine.require(province > 0, 'Некорректная провинция')
+    engine.require(not output.exists(), 'Каталог пакета уже существует')
+    number = 3997301
+    for path in (game_root / 'events').glob('*.txt'):
+        engine.require(not re.search(rb'(?<![A-Za-z0-9_])id\s*=\s*' + str(number).encode() + rb'\b', path.read_bytes()),
+                       'ID тестового события уже занят')
+    text = (f'country_event = {{\r\n\tid = {number}\r\n\tis_triggered_only = yes\r\n'
+            '\ttitle = "CHR_SNR_SETUP_TITLE"\r\n\tdesc = "CHR_SNR_SETUP_DESC"\r\n'
+            '\toption = {\r\n\t\tname = "CHR_SNR_SETUP_OPTION"\r\n'
+            '\t\tif = {\r\n\t\t\tlimit = { tag = PRU NOT = { exists = SNR } }\r\n'
+            f'\t\t\t{province} = {{ add_core = SNR secede_province = SNR }}\r\n'
+            '\t\t}\r\n\t}\r\n}\r\n')
+    rows = {'CHR_SNR_SETUP_TITLE': 'Проверка страны Сеннар',
+            'CHR_SNR_SETUP_DESC': 'Испытание новой страны и её флага в изолированной среде.',
+            'CHR_SNR_SETUP_OPTION': 'Создать Сеннар для проверки'}
+    localisation = ''.join(key + ';' + value + ';' * 13 + 'x\r\n' for key, value in rows.items())
+    files = {'events/chronology_snr_test.txt': text.encode('cp1251'),
+             'localisation/chronology_snr_test.csv': localisation.encode('cp1251')}
+    manifest = {'event_id': number, 'country': 'SNR', 'province': province, 'invoke_as': 'PRU',
+                'game_root': str(game_root), 'files': {name: engine.sha(raw) for name, raw in files.items()},
+                'interpretation': 'Только подготовка фикстуры; GUI и эффект ещё не проверены'}
+    output.mkdir(parents=True)
+    for name, raw in files.items():
+        path = output / name
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(raw)
+    (output / 'manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    return manifest
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    commands = parser.add_subparsers(dest='command', required=True)
+    run = commands.add_parser('run', help='Явно запустить видимый бесшумный стенд и восстановить его файлы')
+    run.add_argument('--environment', required=True, type=Path)
+    run.add_argument('--fixtures', required=True, type=Path)
+    run.add_argument('--output', required=True, type=Path, help='Новый каталог отчёта и резервных копий в .work')
+    prepare = commands.add_parser('prepare-snr', help='Только новый пакет для GUI-проверки SNR')
+    prepare.add_argument('--game-root', required=True, type=Path)
+    prepare.add_argument('--output', required=True, type=Path)
+    args = parser.parse_args()
+    if args.command == 'prepare-snr':
+        print(json.dumps(prepare_snr(args.game_root, args.output), ensure_ascii=False))
+        return 0
+    output, environment = engine.work_path(args.output), engine.work_path(args.environment)
+    engine.require(not output.is_relative_to(environment) and not output.exists(),
+                   'Нужен новый каталог вне тестовой среды')
+    output.mkdir(parents=True)
+    with (output / 'report.json').open('x', encoding='utf-8') as stream:
+        runner = NaturalRunner(environment, args.fixtures, stream, output)
+        ok = runner.run()
+    print(json.dumps({'ok': ok, 'report': str(output / 'report.json'), 'errors': runner.record['errors']}, ensure_ascii=False))
+    return 0 if ok else 1
+
+
+if __name__ == '__main__':
+    raise SystemExit(main())

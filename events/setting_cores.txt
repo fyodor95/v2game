@@ -21,10 +21,10 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
-					culture = afro_american
+					culture = afar
 					total_pops = 40000
 				}
-				add_core = LIB
+				add_core = DJI
 			}
 		}
 		any_country = {
@@ -37,10 +37,26 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
-					culture = afro_antillean
+					culture = african_minor
 					total_pops = 40000
 				}
-				add_core = HAI
+				add_core = GBS
+			}
+		}
+		any_country = {
+			limit = {
+				is_greater_power = no
+				NOT = {
+					rank = 16
+				}
+				civilized = yes
+			}
+			any_owned = {
+				limit = {
+					culture = afro_american
+					total_pops = 40000
+				}
+				add_core = LIB
 			}
 		}
 		any_country = {
@@ -58,22 +74,6 @@ country_event = {
 				}
 				add_core = BRZ
 				add_core = LAF
-			}
-		}
-		any_country = {
-			limit = {
-				is_greater_power = no
-				NOT = {
-					rank = 16
-				}
-				civilized = yes
-			}
-			any_owned = {
-				limit = {
-					culture = afro_caribeno
-					total_pops = 40000
-				}
-				add_core = HAI
 			}
 		}
 		any_country = {
@@ -105,7 +105,23 @@ country_event = {
 					culture = ainu
 					total_pops = 40000
 				}
-				add_core = JAP
+				add_core = AIN
+			}
+		}
+		any_country = {
+			limit = {
+				is_greater_power = no
+				NOT = {
+					rank = 16
+				}
+				civilized = yes
+			}
+			any_owned = {
+				limit = {
+					culture = akan
+					total_pops = 40000
+				}
+				add_core = IVC
 			}
 		}
 		any_country = {
@@ -280,26 +296,10 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
-					culture = bakongo
+					culture = baganda
 					total_pops = 40000
 				}
-				add_core = CNG
-			}
-		}
-		any_country = {
-			limit = {
-				is_greater_power = no
-				NOT = {
-					rank = 16
-				}
-				civilized = yes
-			}
-			any_owned = {
-				limit = {
-					culture = basque
-					total_pops = 40000
-				}
-				add_core = SPA
+				add_core = UGA
 			}
 		}
 		any_country = {
@@ -331,6 +331,7 @@ country_event = {
 					culture = beifaren
 					total_pops = 40000
 				}
+				add_core = GMJ
 				add_core = CHI
 			}
 		}
@@ -511,22 +512,6 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
-					culture = caribeno
-					total_pops = 40000
-				}
-				add_core = DOM
-			}
-		}
-		any_country = {
-			limit = {
-				is_greater_power = no
-				NOT = {
-					rank = 16
-				}
-				civilized = yes
-			}
-			any_owned = {
-				limit = {
 					culture = catalan
 					total_pops = 40000
 				}
@@ -563,6 +548,22 @@ country_event = {
 					total_pops = 40000
 				}
 				add_core = CHE
+			}
+		}
+		any_country = {
+			limit = {
+				is_greater_power = no
+				NOT = {
+					rank = 16
+				}
+				civilized = yes
+			}
+			any_owned = {
+				limit = {
+					culture = chewa
+					total_pops = 40000
+				}
+				add_core = MLW
 			}
 		}
 		any_country = {
@@ -690,11 +691,43 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
+					culture = edo
+					total_pops = 40000
+				}
+				add_core = BEN
+			}
+		}
+		any_country = {
+			limit = {
+				is_greater_power = no
+				NOT = {
+					rank = 16
+				}
+				civilized = yes
+			}
+			any_owned = {
+				limit = {
 					culture = estonian
 					total_pops = 40000
 				}
 				add_core = EST
 				add_core = UBD
+			}
+		}
+		any_country = {
+			limit = {
+				is_greater_power = no
+				NOT = {
+					rank = 16
+				}
+				civilized = yes
+			}
+			any_owned = {
+				limit = {
+					culture = ewe
+					total_pops = 40000
+				}
+				add_core = TOG
 			}
 		}
 		any_country = {
@@ -757,22 +790,6 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
-					culture = french
-					total_pops = 40000
-				}
-				add_core = FRA
-			}
-		}
-		any_country = {
-			limit = {
-				is_greater_power = no
-				NOT = {
-					rank = 16
-				}
-				civilized = yes
-			}
-			any_owned = {
-				limit = {
 					culture = french_canadian
 					total_pops = 40000
 				}
@@ -793,7 +810,7 @@ country_event = {
 					culture = fulbe
 					total_pops = 40000
 				}
-				add_core = SOK
+				add_core = GNE
 			}
 		}
 		any_country = {
@@ -888,6 +905,22 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
+					culture = herero
+					total_pops = 40000
+				}
+				add_core = NAM
+			}
+		}
+		any_country = {
+			limit = {
+				is_greater_power = no
+				NOT = {
+					rank = 16
+				}
+				civilized = yes
+			}
+			any_owned = {
+				limit = {
 					culture = hungarian
 					total_pops = 40000
 				}
@@ -910,6 +943,22 @@ country_event = {
 				}
 				add_core = ICL
 				add_core = SCA
+			}
+		}
+		any_country = {
+			limit = {
+				is_greater_power = no
+				NOT = {
+					rank = 16
+				}
+				civilized = yes
+			}
+			any_owned = {
+				limit = {
+					culture = inuit
+					total_pops = 40000
+				}
+				add_core = GRL
 			}
 		}
 		any_country = {
@@ -1102,22 +1151,6 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
-					culture = kru
-					total_pops = 40000
-				}
-				add_core = LIB
-			}
-		}
-		any_country = {
-			limit = {
-				is_greater_power = no
-				NOT = {
-					rank = 16
-				}
-				civilized = yes
-			}
-			any_owned = {
-				limit = {
 					culture = kurdish
 					total_pops = 40000
 				}
@@ -1156,6 +1189,22 @@ country_event = {
 				}
 				add_core = LIT
 				add_core = PLC
+			}
+		}
+		any_country = {
+			limit = {
+				is_greater_power = no
+				NOT = {
+					rank = 16
+				}
+				civilized = yes
+			}
+			any_owned = {
+				limit = {
+					culture = lunda
+					total_pops = 40000
+				}
+				add_core = ZAM
 			}
 		}
 		any_country = {
@@ -1252,7 +1301,6 @@ country_event = {
 					culture = manchu
 					total_pops = 40000
 				}
-				add_core = MCK
 				add_core = CHI
 			}
 		}
@@ -1314,6 +1362,38 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
+					culture = maures
+					total_pops = 40000
+				}
+				add_core = MAU
+			}
+		}
+		any_country = {
+			limit = {
+				is_greater_power = no
+				NOT = {
+					rank = 16
+				}
+				civilized = yes
+			}
+			any_owned = {
+				limit = {
+					culture = mayan
+					total_pops = 40000
+				}
+				add_core = YUC
+			}
+		}
+		any_country = {
+			limit = {
+				is_greater_power = no
+				NOT = {
+					rank = 16
+				}
+				civilized = yes
+			}
+			any_owned = {
+				limit = {
 					culture = metis
 					total_pops = 40000
 				}
@@ -1363,10 +1443,10 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
-					culture = moluccan
+					culture = mongol
 					total_pops = 40000
 				}
-				add_core = BAL
+				add_core = MGL
 			}
 		}
 		any_country = {
@@ -1379,10 +1459,10 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
-					culture = mongol
+					culture = mossi
 					total_pops = 40000
 				}
-				add_core = MGL
+				add_core = RHV
 			}
 		}
 		any_country = {
@@ -1447,7 +1527,7 @@ country_event = {
 					culture = nguni
 					total_pops = 40000
 				}
-				add_core = ZUL
+				add_core = MOZ
 			}
 		}
 		any_country = {
@@ -1530,22 +1610,6 @@ country_event = {
 				}
 				add_core = ORI
 				add_core = HND
-			}
-		}
-		any_country = {
-			limit = {
-				is_greater_power = no
-				NOT = {
-					rank = 16
-				}
-				civilized = yes
-			}
-			any_owned = {
-				limit = {
-					culture = oromo
-					total_pops = 40000
-				}
-				add_core = ETH
 			}
 		}
 		any_country = {
@@ -1673,22 +1737,6 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
-					culture = polynesian
-					total_pops = 40000
-				}
-				add_core = HAW
-			}
-		}
-		any_country = {
-			limit = {
-				is_greater_power = no
-				NOT = {
-					rank = 16
-				}
-				civilized = yes
-			}
-			any_owned = {
-				limit = {
 					culture = portuguese
 					total_pops = 40000
 				}
@@ -1741,6 +1789,38 @@ country_event = {
 					total_pops = 40000
 				}
 				add_core = ROM
+			}
+		}
+		any_country = {
+			limit = {
+				is_greater_power = no
+				NOT = {
+					rank = 16
+				}
+				civilized = yes
+			}
+			any_owned = {
+				limit = {
+					culture = ruanda
+					total_pops = 40000
+				}
+				add_core = RWA
+			}
+		}
+		any_country = {
+			limit = {
+				is_greater_power = no
+				NOT = {
+					rank = 16
+				}
+				civilized = yes
+			}
+			any_owned = {
+				limit = {
+					culture = rundi
+					total_pops = 40000
+				}
+				add_core = BRD
 			}
 		}
 		any_country = {
@@ -1903,10 +1983,26 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
-					culture = sotho
+					culture = somali
 					total_pops = 40000
 				}
-				add_core = ZUL
+				add_core = SOM
+			}
+		}
+		any_country = {
+			limit = {
+				is_greater_power = no
+				NOT = {
+					rank = 16
+				}
+				civilized = yes
+			}
+			any_owned = {
+				limit = {
+					culture = songhai
+					total_pops = 40000
+				}
+				add_core = NIG
 			}
 		}
 		any_country = {
@@ -1983,10 +2079,26 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
+					culture = sudanese
+					total_pops = 40000
+				}
+				add_core = SUD
+			}
+		}
+		any_country = {
+			limit = {
+				is_greater_power = no
+				NOT = {
+					rank = 16
+				}
+				civilized = yes
+			}
+			any_owned = {
+				limit = {
 					culture = swahili
 					total_pops = 40000
 				}
-				add_core = ZAN
+				add_core = KNY
 			}
 		}
 		any_country = {
@@ -2147,10 +2259,10 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
-					culture = tiv
+					culture = tigray
 					total_pops = 40000
 				}
-				add_core = SOK
+				add_core = ERT
 			}
 		}
 		any_country = {
@@ -2163,10 +2275,10 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
-					culture = tuareg
+					culture = tswana
 					total_pops = 40000
 				}
-				add_core = TRI
+				add_core = TSW
 			}
 		}
 		any_country = {
@@ -2243,10 +2355,11 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
-					culture = uighur
+					culture = ukrainian
 					total_pops = 40000
 				}
-				add_core = XIN
+				add_core = UKR
+				add_core = RUS
 			}
 		}
 		any_country = {
@@ -2259,11 +2372,10 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
-					culture = ukrainian
+					culture = unyamwezi
 					total_pops = 40000
 				}
-				add_core = UKR
-				add_core = RUS
+				add_core = TNZ
 			}
 		}
 		any_country = {
@@ -2325,6 +2437,22 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
+					culture = wolof
+					total_pops = 40000
+				}
+				add_core = SNG
+			}
+		}
+		any_country = {
+			limit = {
+				is_greater_power = no
+				NOT = {
+					rank = 16
+				}
+				civilized = yes
+			}
+			any_owned = {
+				limit = {
 					culture = yakut
 					total_pops = 40000
 				}
@@ -2345,6 +2473,38 @@ country_event = {
 					total_pops = 40000
 				}
 				add_core = USA
+			}
+		}
+		any_country = {
+			limit = {
+				is_greater_power = no
+				NOT = {
+					rank = 16
+				}
+				civilized = yes
+			}
+			any_owned = {
+				limit = {
+					culture = yoruba
+					total_pops = 40000
+				}
+				add_core = NGR
+			}
+		}
+		any_country = {
+			limit = {
+				is_greater_power = no
+				NOT = {
+					rank = 16
+				}
+				civilized = yes
+			}
+			any_owned = {
+				limit = {
+					culture = yue
+					total_pops = 40000
+				}
+				add_core = GNG
 			}
 		}
 		any_country = {

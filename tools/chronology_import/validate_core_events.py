@@ -91,6 +91,10 @@ def reconstruct_map(root: Path) -> dict:
                 dynamic_index += 1
             extend(primary, None, main)
             extend(accepted, None if union in primary else union)
+        elif not union:
+            main = dynamic[dynamic_index % len(dynamic)]
+            dynamic_index += 1
+            extend(accepted, None)
         elif len(accepted) == 1:
             main = accepted[0]
             extend(accepted, union, main)
@@ -149,6 +153,8 @@ def validate_events(events, localisation: str, model: dict) -> dict:
     expected = {(row["culture"], tag, kind): row for row in model["rows"]
                 for kind in ("first", "spread") for tag in row[kind]}
     actual, ids, issues, checks = Counter(), set(), [], 0
+    issues.extend(f"Нет кандидата первой корки для культуры {row['culture']}"
+                  for row in model['rows'] if not row['first'])
     localised = Counter(line.split(";", 1)[0] for line in localisation.splitlines() if ";" in line)
     values = {line.split(";", 2)[0]: line.split(";", 2)[1]
               for line in localisation.splitlines() if ";" in line}

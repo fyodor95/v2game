@@ -52,6 +52,54 @@ country_event = {
 	desc = "EVTDESC6002"
 	picture = "Rebellion"
 	trigger = {
+		ADR = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = ADR
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = ADR
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = ADR
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6002"
+		release = ADR
+		ADR = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = ADR
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6003
+	title = "EVTNAME6003"
+	desc = "EVTDESC6003"
+	picture = "Rebellion"
+	trigger = {
 		AFG = {
 			exists = no
 		}
@@ -74,7 +122,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6002"
+		name = "EVTOPTA6003"
 		release = AFG
 		AFG = {
 			any_pop = {
@@ -95,9 +143,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6003
-	title = "EVTNAME6003"
-	desc = "EVTDESC6003"
+	id = 6004
+	title = "EVTNAME6004"
+	desc = "EVTDESC6004"
+	picture = "Rebellion"
+	trigger = {
+		AIN = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = AIN
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = AIN
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = AIN
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6004"
+		release = AIN
+		AIN = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = AIN
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6005
+	title = "EVTNAME6005"
+	desc = "EVTDESC6005"
 	picture = "Rebellion"
 	trigger = {
 		ALB = {
@@ -122,7 +218,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6003"
+		name = "EVTOPTA6005"
 		release = ALB
 		ALB = {
 			any_pop = {
@@ -143,9 +239,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6004
-	title = "EVTNAME6004"
-	desc = "EVTDESC6004"
+	id = 6006
+	title = "EVTNAME6006"
+	desc = "EVTDESC6006"
 	picture = "Rebellion"
 	trigger = {
 		ALD = {
@@ -170,7 +266,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6004"
+		name = "EVTOPTA6006"
 		release = ALD
 		ALD = {
 			any_pop = {
@@ -191,9 +287,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6005
-	title = "EVTNAME6005"
-	desc = "EVTDESC6005"
+	id = 6007
+	title = "EVTNAME6007"
+	desc = "EVTDESC6007"
+	picture = "Rebellion"
+	trigger = {
+		ANG = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = ANG
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = ANG
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = ANG
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6007"
+		release = ANG
+		ANG = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = ANG
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6008
+	title = "EVTNAME6008"
+	desc = "EVTDESC6008"
 	picture = "Rebellion"
 	trigger = {
 		ANH = {
@@ -218,7 +362,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6005"
+		name = "EVTOPTA6008"
 		release = ANH
 		ANH = {
 			any_pop = {
@@ -239,9 +383,105 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6006
-	title = "EVTNAME6006"
-	desc = "EVTDESC6006"
+	id = 6009
+	title = "EVTNAME6009"
+	desc = "EVTDESC6009"
+	picture = "Rebellion"
+	trigger = {
+		ANT = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = ANT
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = ANT
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = ANT
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6009"
+		release = ANT
+		ANT = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = ANT
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6010
+	title = "EVTNAME6010"
+	desc = "EVTDESC6010"
+	picture = "Rebellion"
+	trigger = {
+		ANU = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = ANU
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = ANU
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = ANU
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6010"
+		release = ANU
+		ANU = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = ANU
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6011
+	title = "EVTNAME6011"
+	desc = "EVTDESC6011"
 	picture = "Rebellion"
 	trigger = {
 		ARG = {
@@ -266,7 +506,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6006"
+		name = "EVTOPTA6011"
 		release = ARG
 		ARG = {
 			any_pop = {
@@ -287,9 +527,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6007
-	title = "EVTNAME6007"
-	desc = "EVTDESC6007"
+	id = 6012
+	title = "EVTNAME6012"
+	desc = "EVTDESC6012"
 	picture = "Rebellion"
 	trigger = {
 		ARM = {
@@ -314,7 +554,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6007"
+		name = "EVTOPTA6012"
 		release = ARM
 		ARM = {
 			any_pop = {
@@ -335,9 +575,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6008
-	title = "EVTNAME6008"
-	desc = "EVTDESC6008"
+	id = 6013
+	title = "EVTNAME6013"
+	desc = "EVTDESC6013"
+	picture = "Rebellion"
+	trigger = {
+		ARU = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = ARU
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = ARU
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = ARU
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6013"
+		release = ARU
+		ARU = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = ARU
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6014
+	title = "EVTNAME6014"
+	desc = "EVTDESC6014"
 	picture = "Rebellion"
 	trigger = {
 		ASM = {
@@ -362,7 +650,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6008"
+		name = "EVTOPTA6014"
 		release = ASM
 		ASM = {
 			any_pop = {
@@ -383,9 +671,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6009
-	title = "EVTNAME6009"
-	desc = "EVTDESC6009"
+	id = 6015
+	title = "EVTNAME6015"
+	desc = "EVTDESC6015"
 	picture = "Rebellion"
 	trigger = {
 		AST = {
@@ -410,7 +698,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6009"
+		name = "EVTOPTA6015"
 		release = AST
 		AST = {
 			any_pop = {
@@ -431,9 +719,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6010
-	title = "EVTNAME6010"
-	desc = "EVTDESC6010"
+	id = 6016
+	title = "EVTNAME6016"
+	desc = "EVTDESC6016"
 	picture = "Rebellion"
 	trigger = {
 		ATJ = {
@@ -458,7 +746,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6010"
+		name = "EVTOPTA6016"
 		release = ATJ
 		ATJ = {
 			any_pop = {
@@ -479,9 +767,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6011
-	title = "EVTNAME6011"
-	desc = "EVTDESC6011"
+	id = 6017
+	title = "EVTNAME6017"
+	desc = "EVTDESC6017"
 	picture = "Rebellion"
 	trigger = {
 		AUS = {
@@ -506,7 +794,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6011"
+		name = "EVTOPTA6017"
 		release = AUS
 		AUS = {
 			any_pop = {
@@ -527,9 +815,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6012
-	title = "EVTNAME6012"
-	desc = "EVTDESC6012"
+	id = 6018
+	title = "EVTNAME6018"
+	desc = "EVTDESC6018"
 	picture = "Rebellion"
 	trigger = {
 		AWA = {
@@ -554,7 +842,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6012"
+		name = "EVTOPTA6018"
 		release = AWA
 		AWA = {
 			any_pop = {
@@ -575,9 +863,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6013
-	title = "EVTNAME6013"
-	desc = "EVTDESC6013"
+	id = 6019
+	title = "EVTNAME6019"
+	desc = "EVTDESC6019"
 	picture = "Rebellion"
 	trigger = {
 		AZB = {
@@ -602,7 +890,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6013"
+		name = "EVTOPTA6019"
 		release = AZB
 		AZB = {
 			any_pop = {
@@ -623,9 +911,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6014
-	title = "EVTNAME6014"
-	desc = "EVTDESC6014"
+	id = 6020
+	title = "EVTNAME6020"
+	desc = "EVTDESC6020"
 	picture = "Rebellion"
 	trigger = {
 		BAB = {
@@ -650,7 +938,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6014"
+		name = "EVTOPTA6020"
 		release = BAB
 		BAB = {
 			any_pop = {
@@ -671,9 +959,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6015
-	title = "EVTNAME6015"
-	desc = "EVTDESC6015"
+	id = 6021
+	title = "EVTNAME6021"
+	desc = "EVTDESC6021"
 	picture = "Rebellion"
 	trigger = {
 		BAD = {
@@ -698,7 +986,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6015"
+		name = "EVTOPTA6021"
 		release = BAD
 		BAD = {
 			any_pop = {
@@ -719,9 +1007,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6016
-	title = "EVTNAME6016"
-	desc = "EVTDESC6016"
+	id = 6022
+	title = "EVTNAME6022"
+	desc = "EVTDESC6022"
 	picture = "Rebellion"
 	trigger = {
 		BAL = {
@@ -746,7 +1034,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6016"
+		name = "EVTOPTA6022"
 		release = BAL
 		BAL = {
 			any_pop = {
@@ -767,9 +1055,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6017
-	title = "EVTNAME6017"
-	desc = "EVTDESC6017"
+	id = 6023
+	title = "EVTNAME6023"
+	desc = "EVTDESC6023"
+	picture = "Rebellion"
+	trigger = {
+		BAR = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = BAR
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = BAR
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = BAR
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6023"
+		release = BAR
+		BAR = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = BAR
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6024
+	title = "EVTNAME6024"
+	desc = "EVTDESC6024"
 	picture = "Rebellion"
 	trigger = {
 		BAS = {
@@ -794,7 +1130,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6017"
+		name = "EVTOPTA6024"
 		release = BAS
 		BAS = {
 			any_pop = {
@@ -815,9 +1151,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6018
-	title = "EVTNAME6018"
-	desc = "EVTDESC6018"
+	id = 6025
+	title = "EVTNAME6025"
+	desc = "EVTDESC6025"
 	picture = "Rebellion"
 	trigger = {
 		BAV = {
@@ -842,7 +1178,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6018"
+		name = "EVTOPTA6025"
 		release = BAV
 		BAV = {
 			any_pop = {
@@ -863,9 +1199,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6019
-	title = "EVTNAME6019"
-	desc = "EVTDESC6019"
+	id = 6026
+	title = "EVTNAME6026"
+	desc = "EVTDESC6026"
+	picture = "Rebellion"
+	trigger = {
+		BEN = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = BEN
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = BEN
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = BEN
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6026"
+		release = BEN
+		BEN = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = BEN
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6027
+	title = "EVTNAME6027"
+	desc = "EVTDESC6027"
 	picture = "Rebellion"
 	trigger = {
 		BER = {
@@ -890,7 +1274,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6019"
+		name = "EVTOPTA6027"
 		release = BER
 		BER = {
 			any_pop = {
@@ -911,9 +1295,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6020
-	title = "EVTNAME6020"
-	desc = "EVTDESC6020"
+	id = 6028
+	title = "EVTNAME6028"
+	desc = "EVTDESC6028"
 	picture = "Rebellion"
 	trigger = {
 		BHO = {
@@ -938,7 +1322,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6020"
+		name = "EVTOPTA6028"
 		release = BHO
 		BHO = {
 			any_pop = {
@@ -959,9 +1343,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6021
-	title = "EVTNAME6021"
-	desc = "EVTDESC6021"
+	id = 6029
+	title = "EVTNAME6029"
+	desc = "EVTDESC6029"
+	picture = "Rebellion"
+	trigger = {
+		BHR = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = BHR
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = BHR
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = BHR
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6029"
+		release = BHR
+		BHR = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = BHR
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6030
+	title = "EVTNAME6030"
+	desc = "EVTDESC6030"
 	picture = "Rebellion"
 	trigger = {
 		BHU = {
@@ -986,7 +1418,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6021"
+		name = "EVTOPTA6030"
 		release = BHU
 		BHU = {
 			any_pop = {
@@ -1007,9 +1439,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6022
-	title = "EVTNAME6022"
-	desc = "EVTDESC6022"
+	id = 6031
+	title = "EVTNAME6031"
+	desc = "EVTDESC6031"
 	picture = "Rebellion"
 	trigger = {
 		BIH = {
@@ -1034,7 +1466,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6022"
+		name = "EVTOPTA6031"
 		release = BIH
 		BIH = {
 			any_pop = {
@@ -1055,9 +1487,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6023
-	title = "EVTNAME6023"
-	desc = "EVTDESC6023"
+	id = 6032
+	title = "EVTNAME6032"
+	desc = "EVTDESC6032"
 	picture = "Rebellion"
 	trigger = {
 		BIK = {
@@ -1082,7 +1514,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6023"
+		name = "EVTOPTA6032"
 		release = BIK
 		BIK = {
 			any_pop = {
@@ -1103,9 +1535,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6024
-	title = "EVTNAME6024"
-	desc = "EVTDESC6024"
+	id = 6033
+	title = "EVTNAME6033"
+	desc = "EVTDESC6033"
 	picture = "Rebellion"
 	trigger = {
 		BMG = {
@@ -1130,7 +1562,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6024"
+		name = "EVTOPTA6033"
 		release = BMG
 		BMG = {
 			any_pop = {
@@ -1151,9 +1583,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6025
-	title = "EVTNAME6025"
-	desc = "EVTDESC6025"
+	id = 6034
+	title = "EVTNAME6034"
+	desc = "EVTDESC6034"
 	picture = "Rebellion"
 	trigger = {
 		BNG = {
@@ -1178,7 +1610,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6025"
+		name = "EVTOPTA6034"
 		release = BNG
 		BNG = {
 			any_pop = {
@@ -1199,9 +1631,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6026
-	title = "EVTNAME6026"
-	desc = "EVTDESC6026"
+	id = 6035
+	title = "EVTNAME6035"
+	desc = "EVTDESC6035"
 	picture = "Rebellion"
 	trigger = {
 		BOH = {
@@ -1226,7 +1658,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6026"
+		name = "EVTOPTA6035"
 		release = BOH
 		BOH = {
 			any_pop = {
@@ -1247,9 +1679,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6027
-	title = "EVTNAME6027"
-	desc = "EVTDESC6027"
+	id = 6036
+	title = "EVTNAME6036"
+	desc = "EVTDESC6036"
 	picture = "Rebellion"
 	trigger = {
 		BOL = {
@@ -1274,7 +1706,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6027"
+		name = "EVTOPTA6036"
 		release = BOL
 		BOL = {
 			any_pop = {
@@ -1295,9 +1727,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6028
-	title = "EVTNAME6028"
-	desc = "EVTDESC6028"
+	id = 6037
+	title = "EVTNAME6037"
+	desc = "EVTDESC6037"
 	picture = "Rebellion"
 	trigger = {
 		BOS = {
@@ -1322,7 +1754,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6028"
+		name = "EVTOPTA6037"
 		release = BOS
 		BOS = {
 			any_pop = {
@@ -1343,9 +1775,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6029
-	title = "EVTNAME6029"
-	desc = "EVTDESC6029"
+	id = 6038
+	title = "EVTNAME6038"
+	desc = "EVTDESC6038"
 	picture = "Rebellion"
 	trigger = {
 		BRA = {
@@ -1370,7 +1802,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6029"
+		name = "EVTOPTA6038"
 		release = BRA
 		BRA = {
 			any_pop = {
@@ -1391,9 +1823,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6030
-	title = "EVTNAME6030"
-	desc = "EVTDESC6030"
+	id = 6039
+	title = "EVTNAME6039"
+	desc = "EVTDESC6039"
+	picture = "Rebellion"
+	trigger = {
+		BRD = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = BRD
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = BRD
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = BRD
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6039"
+		release = BRD
+		BRD = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = BRD
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6040
+	title = "EVTNAME6040"
+	desc = "EVTDESC6040"
 	picture = "Rebellion"
 	trigger = {
 		BRE = {
@@ -1418,7 +1898,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6030"
+		name = "EVTOPTA6040"
 		release = BRE
 		BRE = {
 			any_pop = {
@@ -1439,9 +1919,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6031
-	title = "EVTNAME6031"
-	desc = "EVTDESC6031"
+	id = 6041
+	title = "EVTNAME6041"
+	desc = "EVTDESC6041"
 	picture = "Rebellion"
 	trigger = {
 		BRU = {
@@ -1466,7 +1946,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6031"
+		name = "EVTOPTA6041"
 		release = BRU
 		BRU = {
 			any_pop = {
@@ -1487,9 +1967,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6032
-	title = "EVTNAME6032"
-	desc = "EVTDESC6032"
+	id = 6042
+	title = "EVTNAME6042"
+	desc = "EVTDESC6042"
 	picture = "Rebellion"
 	trigger = {
 		BRZ = {
@@ -1514,7 +1994,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6032"
+		name = "EVTOPTA6042"
 		release = BRZ
 		BRZ = {
 			any_pop = {
@@ -1535,9 +2015,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6033
-	title = "EVTNAME6033"
-	desc = "EVTDESC6033"
+	id = 6043
+	title = "EVTNAME6043"
+	desc = "EVTDESC6043"
 	picture = "Rebellion"
 	trigger = {
 		BUK = {
@@ -1562,7 +2042,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6033"
+		name = "EVTOPTA6043"
 		release = BUK
 		BUK = {
 			any_pop = {
@@ -1583,9 +2063,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6034
-	title = "EVTNAME6034"
-	desc = "EVTDESC6034"
+	id = 6044
+	title = "EVTNAME6044"
+	desc = "EVTDESC6044"
 	picture = "Rebellion"
 	trigger = {
 		BUL = {
@@ -1610,7 +2090,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6034"
+		name = "EVTOPTA6044"
 		release = BUL
 		BUL = {
 			any_pop = {
@@ -1631,9 +2111,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6035
-	title = "EVTNAME6035"
-	desc = "EVTDESC6035"
+	id = 6045
+	title = "EVTNAME6045"
+	desc = "EVTDESC6045"
 	picture = "Rebellion"
 	trigger = {
 		BUN = {
@@ -1658,7 +2138,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6035"
+		name = "EVTOPTA6045"
 		release = BUN
 		BUN = {
 			any_pop = {
@@ -1679,9 +2159,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6036
-	title = "EVTNAME6036"
-	desc = "EVTDESC6036"
+	id = 6046
+	title = "EVTNAME6046"
+	desc = "EVTDESC6046"
 	picture = "Rebellion"
 	trigger = {
 		BUR = {
@@ -1706,7 +2186,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6036"
+		name = "EVTOPTA6046"
 		release = BUR
 		BUR = {
 			any_pop = {
@@ -1727,9 +2207,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6037
-	title = "EVTNAME6037"
-	desc = "EVTDESC6037"
+	id = 6047
+	title = "EVTNAME6047"
+	desc = "EVTDESC6047"
 	picture = "Rebellion"
 	trigger = {
 		BYE = {
@@ -1754,7 +2234,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6037"
+		name = "EVTOPTA6047"
 		release = BYE
 		BYE = {
 			any_pop = {
@@ -1775,9 +2255,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6038
-	title = "EVTNAME6038"
-	desc = "EVTDESC6038"
+	id = 6048
+	title = "EVTNAME6048"
+	desc = "EVTDESC6048"
 	picture = "Rebellion"
 	trigger = {
 		CAL = {
@@ -1802,7 +2282,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6038"
+		name = "EVTOPTA6048"
 		release = CAL
 		CAL = {
 			any_pop = {
@@ -1823,9 +2303,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6039
-	title = "EVTNAME6039"
-	desc = "EVTDESC6039"
+	id = 6049
+	title = "EVTNAME6049"
+	desc = "EVTDESC6049"
 	picture = "Rebellion"
 	trigger = {
 		CAM = {
@@ -1850,7 +2330,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6039"
+		name = "EVTOPTA6049"
 		release = CAM
 		CAM = {
 			any_pop = {
@@ -1871,9 +2351,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6040
-	title = "EVTNAME6040"
-	desc = "EVTDESC6040"
+	id = 6050
+	title = "EVTNAME6050"
+	desc = "EVTDESC6050"
+	picture = "Rebellion"
+	trigger = {
+		CAR = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = CAR
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = CAR
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = CAR
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6050"
+		release = CAR
+		CAR = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = CAR
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6051
+	title = "EVTNAME6051"
+	desc = "EVTDESC6051"
 	picture = "Rebellion"
 	trigger = {
 		CAT = {
@@ -1898,7 +2426,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6040"
+		name = "EVTOPTA6051"
 		release = CAT
 		CAT = {
 			any_pop = {
@@ -1919,9 +2447,201 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6041
-	title = "EVTNAME6041"
-	desc = "EVTDESC6041"
+	id = 6052
+	title = "EVTNAME6052"
+	desc = "EVTDESC6052"
+	picture = "Rebellion"
+	trigger = {
+		CAY = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = CAY
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = CAY
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = CAY
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6052"
+		release = CAY
+		CAY = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = CAY
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6053
+	title = "EVTNAME6053"
+	desc = "EVTDESC6053"
+	picture = "Rebellion"
+	trigger = {
+		CGO = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = CGO
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = CGO
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = CGO
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6053"
+		release = CGO
+		CGO = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = CGO
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6054
+	title = "EVTNAME6054"
+	desc = "EVTDESC6054"
+	picture = "Rebellion"
+	trigger = {
+		CHA = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = CHA
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = CHA
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = CHA
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6054"
+		release = CHA
+		CHA = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = CHA
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6055
+	title = "EVTNAME6055"
+	desc = "EVTDESC6055"
+	picture = "Rebellion"
+	trigger = {
+		CHD = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = CHD
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = CHD
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = CHD
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6055"
+		release = CHD
+		CHD = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = CHD
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6056
+	title = "EVTNAME6056"
+	desc = "EVTDESC6056"
 	picture = "Rebellion"
 	trigger = {
 		CHE = {
@@ -1946,7 +2666,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6041"
+		name = "EVTOPTA6056"
 		release = CHE
 		CHE = {
 			any_pop = {
@@ -1967,9 +2687,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6042
-	title = "EVTNAME6042"
-	desc = "EVTDESC6042"
+	id = 6057
+	title = "EVTNAME6057"
+	desc = "EVTDESC6057"
+	picture = "Rebellion"
+	trigger = {
+		CHK = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = CHK
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = CHK
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = CHK
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6057"
+		release = CHK
+		CHK = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = CHK
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6058
+	title = "EVTNAME6058"
+	desc = "EVTDESC6058"
 	picture = "Rebellion"
 	trigger = {
 		CHL = {
@@ -1994,7 +2762,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6042"
+		name = "EVTOPTA6058"
 		release = CHL
 		CHL = {
 			any_pop = {
@@ -2015,9 +2783,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6043
-	title = "EVTNAME6043"
-	desc = "EVTDESC6043"
+	id = 6059
+	title = "EVTNAME6059"
+	desc = "EVTDESC6059"
+	picture = "Rebellion"
+	trigger = {
+		CHO = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = CHO
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = CHO
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = CHO
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6059"
+		release = CHO
+		CHO = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = CHO
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6060
+	title = "EVTNAME6060"
+	desc = "EVTDESC6060"
 	picture = "Rebellion"
 	trigger = {
 		CLM = {
@@ -2042,7 +2858,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6043"
+		name = "EVTOPTA6060"
 		release = CLM
 		CLM = {
 			any_pop = {
@@ -2063,9 +2879,105 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6044
-	title = "EVTNAME6044"
-	desc = "EVTDESC6044"
+	id = 6061
+	title = "EVTNAME6061"
+	desc = "EVTDESC6061"
+	picture = "Rebellion"
+	trigger = {
+		CLR = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = CLR
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = CLR
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = CLR
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6061"
+		release = CLR
+		CLR = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = CLR
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6062
+	title = "EVTNAME6062"
+	desc = "EVTDESC6062"
+	picture = "Rebellion"
+	trigger = {
+		CMR = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = CMR
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = CMR
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = CMR
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6062"
+		release = CMR
+		CMR = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = CMR
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6063
+	title = "EVTNAME6063"
+	desc = "EVTDESC6063"
 	picture = "Rebellion"
 	trigger = {
 		CNG = {
@@ -2090,7 +3002,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6044"
+		name = "EVTOPTA6063"
 		release = CNG
 		CNG = {
 			any_pop = {
@@ -2111,9 +3023,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6045
-	title = "EVTNAME6045"
-	desc = "EVTDESC6045"
+	id = 6064
+	title = "EVTNAME6064"
+	desc = "EVTDESC6064"
 	picture = "Rebellion"
 	trigger = {
 		COB = {
@@ -2138,7 +3050,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6045"
+		name = "EVTOPTA6064"
 		release = COB
 		COB = {
 			any_pop = {
@@ -2159,9 +3071,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6046
-	title = "EVTNAME6046"
-	desc = "EVTDESC6046"
+	id = 6065
+	title = "EVTNAME6065"
+	desc = "EVTDESC6065"
+	picture = "Rebellion"
+	trigger = {
+		COD = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = COD
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = COD
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = COD
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6065"
+		release = COD
+		COD = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = COD
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6066
+	title = "EVTNAME6066"
+	desc = "EVTDESC6066"
 	picture = "Rebellion"
 	trigger = {
 		COL = {
@@ -2186,7 +3146,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6046"
+		name = "EVTOPTA6066"
 		release = COL
 		COL = {
 			any_pop = {
@@ -2207,9 +3167,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6047
-	title = "EVTNAME6047"
-	desc = "EVTDESC6047"
+	id = 6067
+	title = "EVTNAME6067"
+	desc = "EVTDESC6067"
 	picture = "Rebellion"
 	trigger = {
 		COS = {
@@ -2234,7 +3194,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6047"
+		name = "EVTOPTA6067"
 		release = COS
 		COS = {
 			any_pop = {
@@ -2255,9 +3215,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6048
-	title = "EVTNAME6048"
-	desc = "EVTDESC6048"
+	id = 6068
+	title = "EVTNAME6068"
+	desc = "EVTDESC6068"
 	picture = "Rebellion"
 	trigger = {
 		CRE = {
@@ -2282,7 +3242,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6048"
+		name = "EVTOPTA6068"
 		release = CRE
 		CRE = {
 			any_pop = {
@@ -2303,9 +3263,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6049
-	title = "EVTNAME6049"
-	desc = "EVTDESC6049"
+	id = 6069
+	title = "EVTNAME6069"
+	desc = "EVTDESC6069"
 	picture = "Rebellion"
 	trigger = {
 		CRI = {
@@ -2330,7 +3290,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6049"
+		name = "EVTOPTA6069"
 		release = CRI
 		CRI = {
 			any_pop = {
@@ -2351,9 +3311,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6050
-	title = "EVTNAME6050"
-	desc = "EVTDESC6050"
+	id = 6070
+	title = "EVTNAME6070"
+	desc = "EVTDESC6070"
 	picture = "Rebellion"
 	trigger = {
 		CRO = {
@@ -2378,7 +3338,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6050"
+		name = "EVTOPTA6070"
 		release = CRO
 		CRO = {
 			any_pop = {
@@ -2399,9 +3359,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6051
-	title = "EVTNAME6051"
-	desc = "EVTDESC6051"
+	id = 6071
+	title = "EVTNAME6071"
+	desc = "EVTDESC6071"
 	picture = "Rebellion"
 	trigger = {
 		CSA = {
@@ -2426,7 +3386,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6051"
+		name = "EVTOPTA6071"
 		release = CSA
 		CSA = {
 			any_pop = {
@@ -2447,9 +3407,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6052
-	title = "EVTNAME6052"
-	desc = "EVTDESC6052"
+	id = 6072
+	title = "EVTNAME6072"
+	desc = "EVTDESC6072"
 	picture = "Rebellion"
 	trigger = {
 		CUB = {
@@ -2474,7 +3434,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6052"
+		name = "EVTOPTA6072"
 		release = CUB
 		CUB = {
 			any_pop = {
@@ -2495,9 +3455,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6053
-	title = "EVTNAME6053"
-	desc = "EVTDESC6053"
+	id = 6073
+	title = "EVTNAME6073"
+	desc = "EVTDESC6073"
+	picture = "Rebellion"
+	trigger = {
+		CUR = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = CUR
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = CUR
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = CUR
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6073"
+		release = CUR
+		CUR = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = CUR
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6074
+	title = "EVTNAME6074"
+	desc = "EVTDESC6074"
 	picture = "Rebellion"
 	trigger = {
 		CYP = {
@@ -2522,7 +3530,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6053"
+		name = "EVTOPTA6074"
 		release = CYP
 		CYP = {
 			any_pop = {
@@ -2543,9 +3551,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6054
-	title = "EVTNAME6054"
-	desc = "EVTDESC6054"
+	id = 6075
+	title = "EVTNAME6075"
+	desc = "EVTDESC6075"
 	picture = "Rebellion"
 	trigger = {
 		D01 = {
@@ -2570,7 +3578,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6054"
+		name = "EVTOPTA6075"
 		release = D01
 		D01 = {
 			any_pop = {
@@ -2591,9 +3599,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6055
-	title = "EVTNAME6055"
-	desc = "EVTDESC6055"
+	id = 6076
+	title = "EVTNAME6076"
+	desc = "EVTDESC6076"
 	picture = "Rebellion"
 	trigger = {
 		D02 = {
@@ -2618,7 +3626,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6055"
+		name = "EVTOPTA6076"
 		release = D02
 		D02 = {
 			any_pop = {
@@ -2639,9 +3647,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6056
-	title = "EVTNAME6056"
-	desc = "EVTDESC6056"
+	id = 6077
+	title = "EVTNAME6077"
+	desc = "EVTDESC6077"
 	picture = "Rebellion"
 	trigger = {
 		D03 = {
@@ -2666,7 +3674,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6056"
+		name = "EVTOPTA6077"
 		release = D03
 		D03 = {
 			any_pop = {
@@ -2687,9 +3695,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6057
-	title = "EVTNAME6057"
-	desc = "EVTDESC6057"
+	id = 6078
+	title = "EVTNAME6078"
+	desc = "EVTDESC6078"
 	picture = "Rebellion"
 	trigger = {
 		D04 = {
@@ -2714,7 +3722,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6057"
+		name = "EVTOPTA6078"
 		release = D04
 		D04 = {
 			any_pop = {
@@ -2735,9 +3743,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6058
-	title = "EVTNAME6058"
-	desc = "EVTDESC6058"
+	id = 6079
+	title = "EVTNAME6079"
+	desc = "EVTDESC6079"
 	picture = "Rebellion"
 	trigger = {
 		D05 = {
@@ -2762,7 +3770,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6058"
+		name = "EVTOPTA6079"
 		release = D05
 		D05 = {
 			any_pop = {
@@ -2783,9 +3791,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6059
-	title = "EVTNAME6059"
-	desc = "EVTDESC6059"
+	id = 6080
+	title = "EVTNAME6080"
+	desc = "EVTDESC6080"
 	picture = "Rebellion"
 	trigger = {
 		D06 = {
@@ -2810,7 +3818,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6059"
+		name = "EVTOPTA6080"
 		release = D06
 		D06 = {
 			any_pop = {
@@ -2831,9 +3839,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6060
-	title = "EVTNAME6060"
-	desc = "EVTDESC6060"
+	id = 6081
+	title = "EVTNAME6081"
+	desc = "EVTDESC6081"
 	picture = "Rebellion"
 	trigger = {
 		D07 = {
@@ -2858,7 +3866,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6060"
+		name = "EVTOPTA6081"
 		release = D07
 		D07 = {
 			any_pop = {
@@ -2879,9 +3887,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6061
-	title = "EVTNAME6061"
-	desc = "EVTDESC6061"
+	id = 6082
+	title = "EVTNAME6082"
+	desc = "EVTDESC6082"
 	picture = "Rebellion"
 	trigger = {
 		D08 = {
@@ -2906,7 +3914,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6061"
+		name = "EVTOPTA6082"
 		release = D08
 		D08 = {
 			any_pop = {
@@ -2927,9 +3935,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6062
-	title = "EVTNAME6062"
-	desc = "EVTDESC6062"
+	id = 6083
+	title = "EVTNAME6083"
+	desc = "EVTDESC6083"
 	picture = "Rebellion"
 	trigger = {
 		D09 = {
@@ -2954,7 +3962,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6062"
+		name = "EVTOPTA6083"
 		release = D09
 		D09 = {
 			any_pop = {
@@ -2975,9 +3983,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6063
-	title = "EVTNAME6063"
-	desc = "EVTDESC6063"
+	id = 6084
+	title = "EVTNAME6084"
+	desc = "EVTDESC6084"
 	picture = "Rebellion"
 	trigger = {
 		D10 = {
@@ -3002,7 +4010,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6063"
+		name = "EVTOPTA6084"
 		release = D10
 		D10 = {
 			any_pop = {
@@ -3023,9 +4031,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6064
-	title = "EVTNAME6064"
-	desc = "EVTDESC6064"
+	id = 6085
+	title = "EVTNAME6085"
+	desc = "EVTDESC6085"
 	picture = "Rebellion"
 	trigger = {
 		D11 = {
@@ -3050,7 +4058,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6064"
+		name = "EVTOPTA6085"
 		release = D11
 		D11 = {
 			any_pop = {
@@ -3071,9 +4079,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6065
-	title = "EVTNAME6065"
-	desc = "EVTDESC6065"
+	id = 6086
+	title = "EVTNAME6086"
+	desc = "EVTDESC6086"
 	picture = "Rebellion"
 	trigger = {
 		D12 = {
@@ -3098,7 +4106,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6065"
+		name = "EVTOPTA6086"
 		release = D12
 		D12 = {
 			any_pop = {
@@ -3119,9 +4127,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6066
-	title = "EVTNAME6066"
-	desc = "EVTDESC6066"
+	id = 6087
+	title = "EVTNAME6087"
+	desc = "EVTDESC6087"
 	picture = "Rebellion"
 	trigger = {
 		D13 = {
@@ -3146,7 +4154,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6066"
+		name = "EVTOPTA6087"
 		release = D13
 		D13 = {
 			any_pop = {
@@ -3167,9 +4175,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6067
-	title = "EVTNAME6067"
-	desc = "EVTDESC6067"
+	id = 6088
+	title = "EVTNAME6088"
+	desc = "EVTDESC6088"
 	picture = "Rebellion"
 	trigger = {
 		D14 = {
@@ -3194,7 +4202,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6067"
+		name = "EVTOPTA6088"
 		release = D14
 		D14 = {
 			any_pop = {
@@ -3215,9 +4223,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6068
-	title = "EVTNAME6068"
-	desc = "EVTDESC6068"
+	id = 6089
+	title = "EVTNAME6089"
+	desc = "EVTDESC6089"
 	picture = "Rebellion"
 	trigger = {
 		D15 = {
@@ -3242,7 +4250,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6068"
+		name = "EVTOPTA6089"
 		release = D15
 		D15 = {
 			any_pop = {
@@ -3263,9 +4271,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6069
-	title = "EVTNAME6069"
-	desc = "EVTDESC6069"
+	id = 6090
+	title = "EVTNAME6090"
+	desc = "EVTDESC6090"
 	picture = "Rebellion"
 	trigger = {
 		D16 = {
@@ -3290,7 +4298,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6069"
+		name = "EVTOPTA6090"
 		release = D16
 		D16 = {
 			any_pop = {
@@ -3311,9 +4319,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6070
-	title = "EVTNAME6070"
-	desc = "EVTDESC6070"
+	id = 6091
+	title = "EVTNAME6091"
+	desc = "EVTDESC6091"
 	picture = "Rebellion"
 	trigger = {
 		D17 = {
@@ -3338,7 +4346,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6070"
+		name = "EVTOPTA6091"
 		release = D17
 		D17 = {
 			any_pop = {
@@ -3359,9 +4367,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6071
-	title = "EVTNAME6071"
-	desc = "EVTDESC6071"
+	id = 6092
+	title = "EVTNAME6092"
+	desc = "EVTDESC6092"
 	picture = "Rebellion"
 	trigger = {
 		D18 = {
@@ -3386,7 +4394,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6071"
+		name = "EVTOPTA6092"
 		release = D18
 		D18 = {
 			any_pop = {
@@ -3407,9 +4415,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6072
-	title = "EVTNAME6072"
-	desc = "EVTDESC6072"
+	id = 6093
+	title = "EVTNAME6093"
+	desc = "EVTDESC6093"
 	picture = "Rebellion"
 	trigger = {
 		D19 = {
@@ -3434,7 +4442,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6072"
+		name = "EVTOPTA6093"
 		release = D19
 		D19 = {
 			any_pop = {
@@ -3455,9 +4463,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6073
-	title = "EVTNAME6073"
-	desc = "EVTDESC6073"
+	id = 6094
+	title = "EVTNAME6094"
+	desc = "EVTDESC6094"
 	picture = "Rebellion"
 	trigger = {
 		D20 = {
@@ -3482,7 +4490,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6073"
+		name = "EVTOPTA6094"
 		release = D20
 		D20 = {
 			any_pop = {
@@ -3503,9 +4511,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6074
-	title = "EVTNAME6074"
-	desc = "EVTDESC6074"
+	id = 6095
+	title = "EVTNAME6095"
+	desc = "EVTDESC6095"
 	picture = "Rebellion"
 	trigger = {
 		D21 = {
@@ -3530,7 +4538,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6074"
+		name = "EVTOPTA6095"
 		release = D21
 		D21 = {
 			any_pop = {
@@ -3551,9 +4559,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6075
-	title = "EVTNAME6075"
-	desc = "EVTDESC6075"
+	id = 6096
+	title = "EVTNAME6096"
+	desc = "EVTDESC6096"
 	picture = "Rebellion"
 	trigger = {
 		D22 = {
@@ -3578,7 +4586,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6075"
+		name = "EVTOPTA6096"
 		release = D22
 		D22 = {
 			any_pop = {
@@ -3599,9 +4607,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6076
-	title = "EVTNAME6076"
-	desc = "EVTDESC6076"
+	id = 6097
+	title = "EVTNAME6097"
+	desc = "EVTDESC6097"
 	picture = "Rebellion"
 	trigger = {
 		D23 = {
@@ -3626,7 +4634,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6076"
+		name = "EVTOPTA6097"
 		release = D23
 		D23 = {
 			any_pop = {
@@ -3647,9 +4655,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6077
-	title = "EVTNAME6077"
-	desc = "EVTDESC6077"
+	id = 6098
+	title = "EVTNAME6098"
+	desc = "EVTDESC6098"
 	picture = "Rebellion"
 	trigger = {
 		D24 = {
@@ -3674,7 +4682,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6077"
+		name = "EVTOPTA6098"
 		release = D24
 		D24 = {
 			any_pop = {
@@ -3695,9 +4703,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6078
-	title = "EVTNAME6078"
-	desc = "EVTDESC6078"
+	id = 6099
+	title = "EVTNAME6099"
+	desc = "EVTDESC6099"
 	picture = "Rebellion"
 	trigger = {
 		D25 = {
@@ -3722,7 +4730,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6078"
+		name = "EVTOPTA6099"
 		release = D25
 		D25 = {
 			any_pop = {
@@ -3743,9 +4751,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6079
-	title = "EVTNAME6079"
-	desc = "EVTDESC6079"
+	id = 6100
+	title = "EVTNAME6100"
+	desc = "EVTDESC6100"
 	picture = "Rebellion"
 	trigger = {
 		D26 = {
@@ -3770,7 +4778,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6079"
+		name = "EVTOPTA6100"
 		release = D26
 		D26 = {
 			any_pop = {
@@ -3791,9 +4799,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6080
-	title = "EVTNAME6080"
-	desc = "EVTDESC6080"
+	id = 6101
+	title = "EVTNAME6101"
+	desc = "EVTDESC6101"
 	picture = "Rebellion"
 	trigger = {
 		D27 = {
@@ -3818,7 +4826,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6080"
+		name = "EVTOPTA6101"
 		release = D27
 		D27 = {
 			any_pop = {
@@ -3839,9 +4847,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6081
-	title = "EVTNAME6081"
-	desc = "EVTDESC6081"
+	id = 6102
+	title = "EVTNAME6102"
+	desc = "EVTDESC6102"
 	picture = "Rebellion"
 	trigger = {
 		D28 = {
@@ -3866,7 +4874,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6081"
+		name = "EVTOPTA6102"
 		release = D28
 		D28 = {
 			any_pop = {
@@ -3887,9 +4895,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6082
-	title = "EVTNAME6082"
-	desc = "EVTDESC6082"
+	id = 6103
+	title = "EVTNAME6103"
+	desc = "EVTDESC6103"
 	picture = "Rebellion"
 	trigger = {
 		D29 = {
@@ -3914,7 +4922,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6082"
+		name = "EVTOPTA6103"
 		release = D29
 		D29 = {
 			any_pop = {
@@ -3935,9 +4943,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6083
-	title = "EVTNAME6083"
-	desc = "EVTDESC6083"
+	id = 6104
+	title = "EVTNAME6104"
+	desc = "EVTDESC6104"
 	picture = "Rebellion"
 	trigger = {
 		D30 = {
@@ -3962,7 +4970,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6083"
+		name = "EVTOPTA6104"
 		release = D30
 		D30 = {
 			any_pop = {
@@ -3983,9 +4991,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6084
-	title = "EVTNAME6084"
-	desc = "EVTDESC6084"
+	id = 6105
+	title = "EVTNAME6105"
+	desc = "EVTDESC6105"
 	picture = "Rebellion"
 	trigger = {
 		D31 = {
@@ -4010,7 +5018,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6084"
+		name = "EVTOPTA6105"
 		release = D31
 		D31 = {
 			any_pop = {
@@ -4031,9 +5039,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6085
-	title = "EVTNAME6085"
-	desc = "EVTDESC6085"
+	id = 6106
+	title = "EVTNAME6106"
+	desc = "EVTDESC6106"
 	picture = "Rebellion"
 	trigger = {
 		D32 = {
@@ -4058,7 +5066,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6085"
+		name = "EVTOPTA6106"
 		release = D32
 		D32 = {
 			any_pop = {
@@ -4079,9 +5087,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6086
-	title = "EVTNAME6086"
-	desc = "EVTDESC6086"
+	id = 6107
+	title = "EVTNAME6107"
+	desc = "EVTDESC6107"
 	picture = "Rebellion"
 	trigger = {
 		D33 = {
@@ -4106,7 +5114,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6086"
+		name = "EVTOPTA6107"
 		release = D33
 		D33 = {
 			any_pop = {
@@ -4127,9 +5135,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6087
-	title = "EVTNAME6087"
-	desc = "EVTDESC6087"
+	id = 6108
+	title = "EVTNAME6108"
+	desc = "EVTDESC6108"
 	picture = "Rebellion"
 	trigger = {
 		D34 = {
@@ -4154,7 +5162,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6087"
+		name = "EVTOPTA6108"
 		release = D34
 		D34 = {
 			any_pop = {
@@ -4175,9 +5183,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6088
-	title = "EVTNAME6088"
-	desc = "EVTDESC6088"
+	id = 6109
+	title = "EVTNAME6109"
+	desc = "EVTDESC6109"
 	picture = "Rebellion"
 	trigger = {
 		D35 = {
@@ -4202,7 +5210,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6088"
+		name = "EVTOPTA6109"
 		release = D35
 		D35 = {
 			any_pop = {
@@ -4223,9 +5231,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6089
-	title = "EVTNAME6089"
-	desc = "EVTDESC6089"
+	id = 6110
+	title = "EVTNAME6110"
+	desc = "EVTDESC6110"
 	picture = "Rebellion"
 	trigger = {
 		D36 = {
@@ -4250,7 +5258,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6089"
+		name = "EVTOPTA6110"
 		release = D36
 		D36 = {
 			any_pop = {
@@ -4271,9 +5279,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6090
-	title = "EVTNAME6090"
-	desc = "EVTDESC6090"
+	id = 6111
+	title = "EVTNAME6111"
+	desc = "EVTDESC6111"
 	picture = "Rebellion"
 	trigger = {
 		D37 = {
@@ -4298,7 +5306,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6090"
+		name = "EVTOPTA6111"
 		release = D37
 		D37 = {
 			any_pop = {
@@ -4319,9 +5327,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6091
-	title = "EVTNAME6091"
-	desc = "EVTDESC6091"
+	id = 6112
+	title = "EVTNAME6112"
+	desc = "EVTDESC6112"
 	picture = "Rebellion"
 	trigger = {
 		D38 = {
@@ -4346,7 +5354,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6091"
+		name = "EVTOPTA6112"
 		release = D38
 		D38 = {
 			any_pop = {
@@ -4367,9 +5375,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6092
-	title = "EVTNAME6092"
-	desc = "EVTDESC6092"
+	id = 6113
+	title = "EVTNAME6113"
+	desc = "EVTDESC6113"
 	picture = "Rebellion"
 	trigger = {
 		D39 = {
@@ -4394,7 +5402,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6092"
+		name = "EVTOPTA6113"
 		release = D39
 		D39 = {
 			any_pop = {
@@ -4415,9 +5423,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6093
-	title = "EVTNAME6093"
-	desc = "EVTDESC6093"
+	id = 6114
+	title = "EVTNAME6114"
+	desc = "EVTDESC6114"
 	picture = "Rebellion"
 	trigger = {
 		D40 = {
@@ -4442,7 +5450,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6093"
+		name = "EVTOPTA6114"
 		release = D40
 		D40 = {
 			any_pop = {
@@ -4463,9 +5471,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6094
-	title = "EVTNAME6094"
-	desc = "EVTDESC6094"
+	id = 6115
+	title = "EVTNAME6115"
+	desc = "EVTDESC6115"
 	picture = "Rebellion"
 	trigger = {
 		D41 = {
@@ -4490,7 +5498,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6094"
+		name = "EVTOPTA6115"
 		release = D41
 		D41 = {
 			any_pop = {
@@ -4511,9 +5519,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6095
-	title = "EVTNAME6095"
-	desc = "EVTDESC6095"
+	id = 6116
+	title = "EVTNAME6116"
+	desc = "EVTDESC6116"
 	picture = "Rebellion"
 	trigger = {
 		D42 = {
@@ -4538,7 +5546,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6095"
+		name = "EVTOPTA6116"
 		release = D42
 		D42 = {
 			any_pop = {
@@ -4559,9 +5567,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6096
-	title = "EVTNAME6096"
-	desc = "EVTDESC6096"
+	id = 6117
+	title = "EVTNAME6117"
+	desc = "EVTDESC6117"
 	picture = "Rebellion"
 	trigger = {
 		D43 = {
@@ -4586,7 +5594,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6096"
+		name = "EVTOPTA6117"
 		release = D43
 		D43 = {
 			any_pop = {
@@ -4607,9 +5615,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6097
-	title = "EVTNAME6097"
-	desc = "EVTDESC6097"
+	id = 6118
+	title = "EVTNAME6118"
+	desc = "EVTDESC6118"
 	picture = "Rebellion"
 	trigger = {
 		D44 = {
@@ -4634,7 +5642,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6097"
+		name = "EVTOPTA6118"
 		release = D44
 		D44 = {
 			any_pop = {
@@ -4655,9 +5663,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6098
-	title = "EVTNAME6098"
-	desc = "EVTDESC6098"
+	id = 6119
+	title = "EVTNAME6119"
+	desc = "EVTDESC6119"
 	picture = "Rebellion"
 	trigger = {
 		D45 = {
@@ -4682,7 +5690,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6098"
+		name = "EVTOPTA6119"
 		release = D45
 		D45 = {
 			any_pop = {
@@ -4703,9 +5711,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6099
-	title = "EVTNAME6099"
-	desc = "EVTDESC6099"
+	id = 6120
+	title = "EVTNAME6120"
+	desc = "EVTDESC6120"
 	picture = "Rebellion"
 	trigger = {
 		D46 = {
@@ -4730,7 +5738,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6099"
+		name = "EVTOPTA6120"
 		release = D46
 		D46 = {
 			any_pop = {
@@ -4751,9 +5759,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6100
-	title = "EVTNAME6100"
-	desc = "EVTDESC6100"
+	id = 6121
+	title = "EVTNAME6121"
+	desc = "EVTDESC6121"
 	picture = "Rebellion"
 	trigger = {
 		D47 = {
@@ -4778,7 +5786,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6100"
+		name = "EVTOPTA6121"
 		release = D47
 		D47 = {
 			any_pop = {
@@ -4799,9 +5807,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6101
-	title = "EVTNAME6101"
-	desc = "EVTDESC6101"
+	id = 6122
+	title = "EVTNAME6122"
+	desc = "EVTDESC6122"
 	picture = "Rebellion"
 	trigger = {
 		D48 = {
@@ -4826,7 +5834,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6101"
+		name = "EVTOPTA6122"
 		release = D48
 		D48 = {
 			any_pop = {
@@ -4847,9 +5855,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6102
-	title = "EVTNAME6102"
-	desc = "EVTDESC6102"
+	id = 6123
+	title = "EVTNAME6123"
+	desc = "EVTDESC6123"
 	picture = "Rebellion"
 	trigger = {
 		D49 = {
@@ -4874,7 +5882,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6102"
+		name = "EVTOPTA6123"
 		release = D49
 		D49 = {
 			any_pop = {
@@ -4895,9 +5903,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6103
-	title = "EVTNAME6103"
-	desc = "EVTDESC6103"
+	id = 6124
+	title = "EVTNAME6124"
+	desc = "EVTDESC6124"
 	picture = "Rebellion"
 	trigger = {
 		D50 = {
@@ -4922,7 +5930,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6103"
+		name = "EVTOPTA6124"
 		release = D50
 		D50 = {
 			any_pop = {
@@ -4943,9 +5951,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6104
-	title = "EVTNAME6104"
-	desc = "EVTDESC6104"
+	id = 6125
+	title = "EVTNAME6125"
+	desc = "EVTDESC6125"
 	picture = "Rebellion"
 	trigger = {
 		DAI = {
@@ -4970,7 +5978,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6104"
+		name = "EVTOPTA6125"
 		release = DAI
 		DAI = {
 			any_pop = {
@@ -4991,9 +5999,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6105
-	title = "EVTNAME6105"
-	desc = "EVTDESC6105"
+	id = 6126
+	title = "EVTNAME6126"
+	desc = "EVTDESC6126"
 	picture = "Rebellion"
 	trigger = {
 		DEN = {
@@ -5018,7 +6026,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6105"
+		name = "EVTOPTA6126"
 		release = DEN
 		DEN = {
 			any_pop = {
@@ -5039,9 +6047,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6106
-	title = "EVTNAME6106"
-	desc = "EVTDESC6106"
+	id = 6127
+	title = "EVTNAME6127"
+	desc = "EVTDESC6127"
 	picture = "Rebellion"
 	trigger = {
 		DES = {
@@ -5066,7 +6074,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6106"
+		name = "EVTOPTA6127"
 		release = DES
 		DES = {
 			any_pop = {
@@ -5087,9 +6095,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6107
-	title = "EVTNAME6107"
-	desc = "EVTDESC6107"
+	id = 6128
+	title = "EVTNAME6128"
+	desc = "EVTDESC6128"
+	picture = "Rebellion"
+	trigger = {
+		DJI = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = DJI
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = DJI
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = DJI
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6128"
+		release = DJI
+		DJI = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = DJI
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6129
+	title = "EVTNAME6129"
+	desc = "EVTDESC6129"
 	picture = "Rebellion"
 	trigger = {
 		DOM = {
@@ -5114,7 +6170,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6107"
+		name = "EVTOPTA6129"
 		release = DOM
 		DOM = {
 			any_pop = {
@@ -5135,9 +6191,105 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6108
-	title = "EVTNAME6108"
-	desc = "EVTDESC6108"
+	id = 6130
+	title = "EVTNAME6130"
+	desc = "EVTDESC6130"
+	picture = "Rebellion"
+	trigger = {
+		DON = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = DON
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = DON
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = DON
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6130"
+		release = DON
+		DON = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = DON
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6131
+	title = "EVTNAME6131"
+	desc = "EVTDESC6131"
+	picture = "Rebellion"
+	trigger = {
+		DUB = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = DUB
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = DUB
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = DUB
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6131"
+		release = DUB
+		DUB = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = DUB
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6132
+	title = "EVTNAME6132"
+	desc = "EVTDESC6132"
 	picture = "Rebellion"
 	trigger = {
 		DZG = {
@@ -5162,7 +6314,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6108"
+		name = "EVTOPTA6132"
 		release = DZG
 		DZG = {
 			any_pop = {
@@ -5183,9 +6335,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6109
-	title = "EVTNAME6109"
-	desc = "EVTDESC6109"
+	id = 6133
+	title = "EVTNAME6133"
+	desc = "EVTDESC6133"
 	picture = "Rebellion"
 	trigger = {
 		ECU = {
@@ -5210,7 +6362,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6109"
+		name = "EVTOPTA6133"
 		release = ECU
 		ECU = {
 			any_pop = {
@@ -5231,9 +6383,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6110
-	title = "EVTNAME6110"
-	desc = "EVTDESC6110"
+	id = 6134
+	title = "EVTNAME6134"
+	desc = "EVTDESC6134"
 	picture = "Rebellion"
 	trigger = {
 		EGY = {
@@ -5258,7 +6410,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6110"
+		name = "EVTOPTA6134"
 		release = EGY
 		EGY = {
 			any_pop = {
@@ -5279,9 +6431,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6111
-	title = "EVTNAME6111"
-	desc = "EVTDESC6111"
+	id = 6135
+	title = "EVTNAME6135"
+	desc = "EVTDESC6135"
 	picture = "Rebellion"
 	trigger = {
 		ELS = {
@@ -5306,7 +6458,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6111"
+		name = "EVTOPTA6135"
 		release = ELS
 		ELS = {
 			any_pop = {
@@ -5327,9 +6479,153 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6112
-	title = "EVTNAME6112"
-	desc = "EVTDESC6112"
+	id = 6136
+	title = "EVTNAME6136"
+	desc = "EVTDESC6136"
+	picture = "Rebellion"
+	trigger = {
+		EQG = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = EQG
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = EQG
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = EQG
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6136"
+		release = EQG
+		EQG = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = EQG
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6137
+	title = "EVTNAME6137"
+	desc = "EVTDESC6137"
+	picture = "Rebellion"
+	trigger = {
+		ERM = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = ERM
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = ERM
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = ERM
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6137"
+		release = ERM
+		ERM = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = ERM
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6138
+	title = "EVTNAME6138"
+	desc = "EVTDESC6138"
+	picture = "Rebellion"
+	trigger = {
+		ERT = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = ERT
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = ERT
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = ERT
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6138"
+		release = ERT
+		ERT = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = ERT
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6139
+	title = "EVTNAME6139"
+	desc = "EVTDESC6139"
 	picture = "Rebellion"
 	trigger = {
 		EST = {
@@ -5354,7 +6650,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6112"
+		name = "EVTOPTA6139"
 		release = EST
 		EST = {
 			any_pop = {
@@ -5375,9 +6671,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6113
-	title = "EVTNAME6113"
-	desc = "EVTDESC6113"
+	id = 6140
+	title = "EVTNAME6140"
+	desc = "EVTDESC6140"
 	picture = "Rebellion"
 	trigger = {
 		ETH = {
@@ -5402,7 +6698,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6113"
+		name = "EVTOPTA6140"
 		release = ETH
 		ETH = {
 			any_pop = {
@@ -5423,9 +6719,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6114
-	title = "EVTNAME6114"
-	desc = "EVTDESC6114"
+	id = 6141
+	title = "EVTNAME6141"
+	desc = "EVTDESC6141"
 	picture = "Rebellion"
 	trigger = {
 		FIN = {
@@ -5450,7 +6746,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6114"
+		name = "EVTOPTA6141"
 		release = FIN
 		FIN = {
 			any_pop = {
@@ -5471,9 +6767,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6115
-	title = "EVTNAME6115"
-	desc = "EVTDESC6115"
+	id = 6142
+	title = "EVTNAME6142"
+	desc = "EVTDESC6142"
+	picture = "Rebellion"
+	trigger = {
+		FJN = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = FJN
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = FJN
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = FJN
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6142"
+		release = FJN
+		FJN = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = FJN
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6143
+	title = "EVTNAME6143"
+	desc = "EVTDESC6143"
 	picture = "Rebellion"
 	trigger = {
 		FLA = {
@@ -5498,7 +6842,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6115"
+		name = "EVTOPTA6143"
 		release = FLA
 		FLA = {
 			any_pop = {
@@ -5519,9 +6863,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6116
-	title = "EVTNAME6116"
-	desc = "EVTDESC6116"
+	id = 6144
+	title = "EVTNAME6144"
+	desc = "EVTDESC6144"
 	picture = "Rebellion"
 	trigger = {
 		FRA = {
@@ -5546,7 +6890,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6116"
+		name = "EVTOPTA6144"
 		release = FRA
 		FRA = {
 			any_pop = {
@@ -5567,9 +6911,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6117
-	title = "EVTNAME6117"
-	desc = "EVTDESC6117"
+	id = 6145
+	title = "EVTNAME6145"
+	desc = "EVTDESC6145"
 	picture = "Rebellion"
 	trigger = {
 		FRM = {
@@ -5594,7 +6938,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6117"
+		name = "EVTOPTA6145"
 		release = FRM
 		FRM = {
 			any_pop = {
@@ -5615,9 +6959,249 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6118
-	title = "EVTNAME6118"
-	desc = "EVTDESC6118"
+	id = 6146
+	title = "EVTNAME6146"
+	desc = "EVTDESC6146"
+	picture = "Rebellion"
+	trigger = {
+		FUJ = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = FUJ
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = FUJ
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = FUJ
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6146"
+		release = FUJ
+		FUJ = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = FUJ
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6147
+	title = "EVTNAME6147"
+	desc = "EVTDESC6147"
+	picture = "Rebellion"
+	trigger = {
+		FWI = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = FWI
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = FWI
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = FWI
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6147"
+		release = FWI
+		FWI = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = FWI
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6148
+	title = "EVTNAME6148"
+	desc = "EVTDESC6148"
+	picture = "Rebellion"
+	trigger = {
+		GAB = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = GAB
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = GAB
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = GAB
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6148"
+		release = GAB
+		GAB = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = GAB
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6149
+	title = "EVTNAME6149"
+	desc = "EVTDESC6149"
+	picture = "Rebellion"
+	trigger = {
+		GAN = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = GAN
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = GAN
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = GAN
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6149"
+		release = GAN
+		GAN = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = GAN
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6150
+	title = "EVTNAME6150"
+	desc = "EVTDESC6150"
+	picture = "Rebellion"
+	trigger = {
+		GBS = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = GBS
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = GBS
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = GBS
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6150"
+		release = GBS
+		GBS = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = GBS
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6151
+	title = "EVTNAME6151"
+	desc = "EVTDESC6151"
 	picture = "Rebellion"
 	trigger = {
 		GCO = {
@@ -5642,7 +7226,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6118"
+		name = "EVTOPTA6151"
 		release = GCO
 		GCO = {
 			any_pop = {
@@ -5663,9 +7247,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6119
-	title = "EVTNAME6119"
-	desc = "EVTDESC6119"
+	id = 6152
+	title = "EVTNAME6152"
+	desc = "EVTDESC6152"
+	picture = "Rebellion"
+	trigger = {
+		GDL = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = GDL
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = GDL
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = GDL
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6152"
+		release = GDL
+		GDL = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = GDL
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6153
+	title = "EVTNAME6153"
+	desc = "EVTDESC6153"
 	picture = "Rebellion"
 	trigger = {
 		GEO = {
@@ -5690,7 +7322,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6119"
+		name = "EVTOPTA6153"
 		release = GEO
 		GEO = {
 			any_pop = {
@@ -5711,9 +7343,201 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6120
-	title = "EVTNAME6120"
-	desc = "EVTDESC6120"
+	id = 6154
+	title = "EVTNAME6154"
+	desc = "EVTDESC6154"
+	picture = "Rebellion"
+	trigger = {
+		GMB = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = GMB
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = GMB
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = GMB
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6154"
+		release = GMB
+		GMB = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = GMB
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6155
+	title = "EVTNAME6155"
+	desc = "EVTDESC6155"
+	picture = "Rebellion"
+	trigger = {
+		GMJ = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = GMJ
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = GMJ
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = GMJ
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6155"
+		release = GMJ
+		GMJ = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = GMJ
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6156
+	title = "EVTNAME6156"
+	desc = "EVTDESC6156"
+	picture = "Rebellion"
+	trigger = {
+		GNE = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = GNE
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = GNE
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = GNE
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6156"
+		release = GNE
+		GNE = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = GNE
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6157
+	title = "EVTNAME6157"
+	desc = "EVTDESC6157"
+	picture = "Rebellion"
+	trigger = {
+		GNG = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = GNG
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = GNG
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = GNG
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6157"
+		release = GNG
+		GNG = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = GNG
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6158
+	title = "EVTNAME6158"
+	desc = "EVTDESC6158"
 	picture = "Rebellion"
 	trigger = {
 		GRE = {
@@ -5738,7 +7562,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6120"
+		name = "EVTOPTA6158"
 		release = GRE
 		GRE = {
 			any_pop = {
@@ -5759,9 +7583,105 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6121
-	title = "EVTNAME6121"
-	desc = "EVTDESC6121"
+	id = 6159
+	title = "EVTNAME6159"
+	desc = "EVTDESC6159"
+	picture = "Rebellion"
+	trigger = {
+		GRL = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = GRL
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = GRL
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = GRL
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6159"
+		release = GRL
+		GRL = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = GRL
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6160
+	title = "EVTNAME6160"
+	desc = "EVTDESC6160"
+	picture = "Rebellion"
+	trigger = {
+		GRN = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = GRN
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = GRN
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = GRN
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6160"
+		release = GRN
+		GRN = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = GRN
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6161
+	title = "EVTNAME6161"
+	desc = "EVTDESC6161"
 	picture = "Rebellion"
 	trigger = {
 		GUA = {
@@ -5786,7 +7706,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6121"
+		name = "EVTOPTA6161"
 		release = GUA
 		GUA = {
 			any_pop = {
@@ -5807,9 +7727,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6122
-	title = "EVTNAME6122"
-	desc = "EVTDESC6122"
+	id = 6162
+	title = "EVTNAME6162"
+	desc = "EVTDESC6162"
 	picture = "Rebellion"
 	trigger = {
 		GWA = {
@@ -5834,7 +7754,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6122"
+		name = "EVTOPTA6162"
 		release = GWA
 		GWA = {
 			any_pop = {
@@ -5855,9 +7775,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6123
-	title = "EVTNAME6123"
-	desc = "EVTDESC6123"
+	id = 6163
+	title = "EVTNAME6163"
+	desc = "EVTDESC6163"
 	picture = "Rebellion"
 	trigger = {
 		GXI = {
@@ -5882,7 +7802,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6123"
+		name = "EVTOPTA6163"
 		release = GXI
 		GXI = {
 			any_pop = {
@@ -5903,9 +7823,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6124
-	title = "EVTNAME6124"
-	desc = "EVTDESC6124"
+	id = 6164
+	title = "EVTNAME6164"
+	desc = "EVTDESC6164"
 	picture = "Rebellion"
 	trigger = {
 		HAI = {
@@ -5930,7 +7850,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6124"
+		name = "EVTOPTA6164"
 		release = HAI
 		HAI = {
 			any_pop = {
@@ -5951,9 +7871,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6125
-	title = "EVTNAME6125"
-	desc = "EVTDESC6125"
+	id = 6165
+	title = "EVTNAME6165"
+	desc = "EVTDESC6165"
 	picture = "Rebellion"
 	trigger = {
 		HAM = {
@@ -5978,7 +7898,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6125"
+		name = "EVTOPTA6165"
 		release = HAM
 		HAM = {
 			any_pop = {
@@ -5999,9 +7919,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6126
-	title = "EVTNAME6126"
-	desc = "EVTDESC6126"
+	id = 6166
+	title = "EVTNAME6166"
+	desc = "EVTDESC6166"
 	picture = "Rebellion"
 	trigger = {
 		HAN = {
@@ -6026,7 +7946,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6126"
+		name = "EVTOPTA6166"
 		release = HAN
 		HAN = {
 			any_pop = {
@@ -6047,9 +7967,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6127
-	title = "EVTNAME6127"
-	desc = "EVTDESC6127"
+	id = 6167
+	title = "EVTNAME6167"
+	desc = "EVTDESC6167"
 	picture = "Rebellion"
 	trigger = {
 		HAW = {
@@ -6074,7 +7994,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6127"
+		name = "EVTOPTA6167"
 		release = HAW
 		HAW = {
 			any_pop = {
@@ -6095,9 +8015,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6128
-	title = "EVTNAME6128"
-	desc = "EVTDESC6128"
+	id = 6168
+	title = "EVTNAME6168"
+	desc = "EVTDESC6168"
 	picture = "Rebellion"
 	trigger = {
 		HDJ = {
@@ -6122,7 +8042,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6128"
+		name = "EVTOPTA6168"
 		release = HDJ
 		HDJ = {
 			any_pop = {
@@ -6143,9 +8063,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6129
-	title = "EVTNAME6129"
-	desc = "EVTDESC6129"
+	id = 6169
+	title = "EVTNAME6169"
+	desc = "EVTDESC6169"
 	picture = "Rebellion"
 	trigger = {
 		HEK = {
@@ -6170,7 +8090,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6129"
+		name = "EVTOPTA6169"
 		release = HEK
 		HEK = {
 			any_pop = {
@@ -6191,9 +8111,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6130
-	title = "EVTNAME6130"
-	desc = "EVTDESC6130"
+	id = 6170
+	title = "EVTNAME6170"
+	desc = "EVTDESC6170"
 	picture = "Rebellion"
 	trigger = {
 		HES = {
@@ -6218,7 +8138,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6130"
+		name = "EVTOPTA6170"
 		release = HES
 		HES = {
 			any_pop = {
@@ -6239,9 +8159,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6131
-	title = "EVTNAME6131"
-	desc = "EVTDESC6131"
+	id = 6171
+	title = "EVTNAME6171"
+	desc = "EVTDESC6171"
+	picture = "Rebellion"
+	trigger = {
+		HNN = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = HNN
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = HNN
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = HNN
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6171"
+		release = HNN
+		HNN = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = HNN
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6172
+	title = "EVTNAME6172"
+	desc = "EVTDESC6172"
 	picture = "Rebellion"
 	trigger = {
 		HOL = {
@@ -6266,7 +8234,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6131"
+		name = "EVTOPTA6172"
 		release = HOL
 		HOL = {
 			any_pop = {
@@ -6287,9 +8255,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6132
-	title = "EVTNAME6132"
-	desc = "EVTDESC6132"
+	id = 6173
+	title = "EVTNAME6173"
+	desc = "EVTDESC6173"
 	picture = "Rebellion"
 	trigger = {
 		HON = {
@@ -6314,7 +8282,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6132"
+		name = "EVTOPTA6173"
 		release = HON
 		HON = {
 			any_pop = {
@@ -6335,9 +8303,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6133
-	title = "EVTNAME6133"
-	desc = "EVTDESC6133"
+	id = 6174
+	title = "EVTNAME6174"
+	desc = "EVTDESC6174"
+	picture = "Rebellion"
+	trigger = {
+		HSM = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = HSM
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = HSM
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = HSM
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6174"
+		release = HSM
+		HSM = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = HSM
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6175
+	title = "EVTNAME6175"
+	desc = "EVTDESC6175"
 	picture = "Rebellion"
 	trigger = {
 		HYD = {
@@ -6362,7 +8378,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6133"
+		name = "EVTOPTA6175"
 		release = HYD
 		HYD = {
 			any_pop = {
@@ -6383,9 +8399,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6134
-	title = "EVTNAME6134"
-	desc = "EVTDESC6134"
+	id = 6176
+	title = "EVTNAME6176"
+	desc = "EVTDESC6176"
 	picture = "Rebellion"
 	trigger = {
 		ICL = {
@@ -6410,7 +8426,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6134"
+		name = "EVTOPTA6176"
 		release = ICL
 		ICL = {
 			any_pop = {
@@ -6431,9 +8447,105 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6135
-	title = "EVTNAME6135"
-	desc = "EVTDESC6135"
+	id = 6177
+	title = "EVTNAME6177"
+	desc = "EVTDESC6177"
+	picture = "Rebellion"
+	trigger = {
+		IDF = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = IDF
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = IDF
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = IDF
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6177"
+		release = IDF
+		IDF = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = IDF
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6178
+	title = "EVTNAME6178"
+	desc = "EVTDESC6178"
+	picture = "Rebellion"
+	trigger = {
+		IMP = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = IMP
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = IMP
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = IMP
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6178"
+		release = IMP
+		IMP = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = IMP
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6179
+	title = "EVTNAME6179"
+	desc = "EVTDESC6179"
 	picture = "Rebellion"
 	trigger = {
 		IND = {
@@ -6458,7 +8570,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6135"
+		name = "EVTOPTA6179"
 		release = IND
 		IND = {
 			any_pop = {
@@ -6479,9 +8591,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6136
-	title = "EVTNAME6136"
-	desc = "EVTDESC6136"
+	id = 6180
+	title = "EVTNAME6180"
+	desc = "EVTDESC6180"
+	picture = "Rebellion"
+	trigger = {
+		INO = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = INO
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = INO
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = INO
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6180"
+		release = INO
+		INO = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = INO
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6181
+	title = "EVTNAME6181"
+	desc = "EVTDESC6181"
 	picture = "Rebellion"
 	trigger = {
 		ION = {
@@ -6506,7 +8666,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6136"
+		name = "EVTOPTA6181"
 		release = ION
 		ION = {
 			any_pop = {
@@ -6527,9 +8687,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6137
-	title = "EVTNAME6137"
-	desc = "EVTDESC6137"
+	id = 6182
+	title = "EVTNAME6182"
+	desc = "EVTDESC6182"
 	picture = "Rebellion"
 	trigger = {
 		IRE = {
@@ -6554,7 +8714,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6137"
+		name = "EVTOPTA6182"
 		release = IRE
 		IRE = {
 			any_pop = {
@@ -6575,9 +8735,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6138
-	title = "EVTNAME6138"
-	desc = "EVTDESC6138"
+	id = 6183
+	title = "EVTNAME6183"
+	desc = "EVTDESC6183"
 	picture = "Rebellion"
 	trigger = {
 		IRQ = {
@@ -6602,7 +8762,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6138"
+		name = "EVTOPTA6183"
 		release = IRQ
 		IRQ = {
 			any_pop = {
@@ -6623,9 +8783,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6139
-	title = "EVTNAME6139"
-	desc = "EVTDESC6139"
+	id = 6184
+	title = "EVTNAME6184"
+	desc = "EVTDESC6184"
+	picture = "Rebellion"
+	trigger = {
+		IVC = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = IVC
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = IVC
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = IVC
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6184"
+		release = IVC
+		IVC = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = IVC
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6185
+	title = "EVTNAME6185"
+	desc = "EVTDESC6185"
 	picture = "Rebellion"
 	trigger = {
 		JAI = {
@@ -6650,7 +8858,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6139"
+		name = "EVTOPTA6185"
 		release = JAI
 		JAI = {
 			any_pop = {
@@ -6671,9 +8879,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6140
-	title = "EVTNAME6140"
-	desc = "EVTDESC6140"
+	id = 6186
+	title = "EVTNAME6186"
+	desc = "EVTDESC6186"
+	picture = "Rebellion"
+	trigger = {
+		JAM = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = JAM
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = JAM
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = JAM
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6186"
+		release = JAM
+		JAM = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = JAM
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6187
+	title = "EVTNAME6187"
+	desc = "EVTDESC6187"
 	picture = "Rebellion"
 	trigger = {
 		JAN = {
@@ -6698,7 +8954,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6140"
+		name = "EVTOPTA6187"
 		release = JAN
 		JAN = {
 			any_pop = {
@@ -6719,9 +8975,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6141
-	title = "EVTNAME6141"
-	desc = "EVTDESC6141"
+	id = 6188
+	title = "EVTNAME6188"
+	desc = "EVTDESC6188"
 	picture = "Rebellion"
 	trigger = {
 		JAP = {
@@ -6746,7 +9002,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6141"
+		name = "EVTOPTA6188"
 		release = JAP
 		JAP = {
 			any_pop = {
@@ -6767,9 +9023,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6142
-	title = "EVTNAME6142"
-	desc = "EVTDESC6142"
+	id = 6189
+	title = "EVTNAME6189"
+	desc = "EVTDESC6189"
 	picture = "Rebellion"
 	trigger = {
 		JAS = {
@@ -6794,7 +9050,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6142"
+		name = "EVTOPTA6189"
 		release = JAS
 		JAS = {
 			any_pop = {
@@ -6815,9 +9071,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6143
-	title = "EVTNAME6143"
-	desc = "EVTDESC6143"
+	id = 6190
+	title = "EVTNAME6190"
+	desc = "EVTDESC6190"
 	picture = "Rebellion"
 	trigger = {
 		JAV = {
@@ -6842,7 +9098,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6143"
+		name = "EVTOPTA6190"
 		release = JAV
 		JAV = {
 			any_pop = {
@@ -6863,9 +9119,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6144
-	title = "EVTNAME6144"
-	desc = "EVTDESC6144"
+	id = 6191
+	title = "EVTNAME6191"
+	desc = "EVTDESC6191"
 	picture = "Rebellion"
 	trigger = {
 		JOD = {
@@ -6890,7 +9146,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6144"
+		name = "EVTOPTA6191"
 		release = JOD
 		JOD = {
 			any_pop = {
@@ -6911,9 +9167,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6145
-	title = "EVTNAME6145"
-	desc = "EVTDESC6145"
+	id = 6192
+	title = "EVTNAME6192"
+	desc = "EVTDESC6192"
 	picture = "Rebellion"
 	trigger = {
 		JOH = {
@@ -6938,7 +9194,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6145"
+		name = "EVTOPTA6192"
 		release = JOH
 		JOH = {
 			any_pop = {
@@ -6959,9 +9215,153 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6146
-	title = "EVTNAME6146"
-	desc = "EVTDESC6146"
+	id = 6193
+	title = "EVTNAME6193"
+	desc = "EVTDESC6193"
+	picture = "Rebellion"
+	trigger = {
+		JOR = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = JOR
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = JOR
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = JOR
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6193"
+		release = JOR
+		JOR = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = JOR
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6194
+	title = "EVTNAME6194"
+	desc = "EVTDESC6194"
+	picture = "Rebellion"
+	trigger = {
+		JSH = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = JSH
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = JSH
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = JSH
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6194"
+		release = JSH
+		JSH = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = JSH
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6195
+	title = "EVTNAME6195"
+	desc = "EVTDESC6195"
+	picture = "Rebellion"
+	trigger = {
+		KAG = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = KAG
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = KAG
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = KAG
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6195"
+		release = KAG
+		KAG = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = KAG
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6196
+	title = "EVTNAME6196"
+	desc = "EVTDESC6196"
 	picture = "Rebellion"
 	trigger = {
 		KAL = {
@@ -6986,7 +9386,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6146"
+		name = "EVTOPTA6196"
 		release = KAL
 		KAL = {
 			any_pop = {
@@ -7007,9 +9407,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6147
-	title = "EVTNAME6147"
-	desc = "EVTDESC6147"
+	id = 6197
+	title = "EVTNAME6197"
+	desc = "EVTDESC6197"
 	picture = "Rebellion"
 	trigger = {
 		KAS = {
@@ -7034,7 +9434,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6147"
+		name = "EVTOPTA6197"
 		release = KAS
 		KAS = {
 			any_pop = {
@@ -7055,9 +9455,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6148
-	title = "EVTNAME6148"
-	desc = "EVTDESC6148"
+	id = 6198
+	title = "EVTNAME6198"
+	desc = "EVTDESC6198"
 	picture = "Rebellion"
 	trigger = {
 		KAZ = {
@@ -7082,7 +9482,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6148"
+		name = "EVTOPTA6198"
 		release = KAZ
 		KAZ = {
 			any_pop = {
@@ -7103,9 +9503,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6149
-	title = "EVTNAME6149"
-	desc = "EVTDESC6149"
+	id = 6199
+	title = "EVTNAME6199"
+	desc = "EVTDESC6199"
 	picture = "Rebellion"
 	trigger = {
 		KHI = {
@@ -7130,7 +9530,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6149"
+		name = "EVTOPTA6199"
 		release = KHI
 		KHI = {
 			any_pop = {
@@ -7151,9 +9551,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6150
-	title = "EVTNAME6150"
-	desc = "EVTDESC6150"
+	id = 6200
+	title = "EVTNAME6200"
+	desc = "EVTDESC6200"
 	picture = "Rebellion"
 	trigger = {
 		KMK = {
@@ -7178,7 +9578,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6150"
+		name = "EVTOPTA6200"
 		release = KMK
 		KMK = {
 			any_pop = {
@@ -7199,9 +9599,105 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6151
-	title = "EVTNAME6151"
-	desc = "EVTDESC6151"
+	id = 6201
+	title = "EVTNAME6201"
+	desc = "EVTDESC6201"
+	picture = "Rebellion"
+	trigger = {
+		KMT = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = KMT
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = KMT
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = KMT
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6201"
+		release = KMT
+		KMT = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = KMT
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6202
+	title = "EVTNAME6202"
+	desc = "EVTDESC6202"
+	picture = "Rebellion"
+	trigger = {
+		KNY = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = KNY
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = KNY
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = KNY
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6202"
+		release = KNY
+		KNY = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = KNY
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6203
+	title = "EVTNAME6203"
+	desc = "EVTDESC6203"
 	picture = "Rebellion"
 	trigger = {
 		KOK = {
@@ -7226,7 +9722,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6151"
+		name = "EVTOPTA6203"
 		release = KOK
 		KOK = {
 			any_pop = {
@@ -7247,9 +9743,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6152
-	title = "EVTNAME6152"
-	desc = "EVTDESC6152"
+	id = 6204
+	title = "EVTNAME6204"
+	desc = "EVTDESC6204"
 	picture = "Rebellion"
 	trigger = {
 		KOR = {
@@ -7274,7 +9770,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6152"
+		name = "EVTOPTA6204"
 		release = KOR
 		KOR = {
 			any_pop = {
@@ -7295,9 +9791,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6153
-	title = "EVTNAME6153"
-	desc = "EVTDESC6153"
+	id = 6205
+	title = "EVTNAME6205"
+	desc = "EVTDESC6205"
 	picture = "Rebellion"
 	trigger = {
 		KRA = {
@@ -7322,7 +9818,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6153"
+		name = "EVTOPTA6205"
 		release = KRA
 		KRA = {
 			any_pop = {
@@ -7343,9 +9839,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6154
-	title = "EVTNAME6154"
-	desc = "EVTDESC6154"
+	id = 6206
+	title = "EVTNAME6206"
+	desc = "EVTDESC6206"
 	picture = "Rebellion"
 	trigger = {
 		KRD = {
@@ -7370,7 +9866,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6154"
+		name = "EVTOPTA6206"
 		release = KRD
 		KRD = {
 			any_pop = {
@@ -7391,9 +9887,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6155
-	title = "EVTNAME6155"
-	desc = "EVTDESC6155"
+	id = 6207
+	title = "EVTNAME6207"
+	desc = "EVTDESC6207"
 	picture = "Rebellion"
 	trigger = {
 		KUK = {
@@ -7418,7 +9914,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6155"
+		name = "EVTOPTA6207"
 		release = KUK
 		KUK = {
 			any_pop = {
@@ -7439,9 +9935,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6156
-	title = "EVTNAME6156"
-	desc = "EVTDESC6156"
+	id = 6208
+	title = "EVTNAME6208"
+	desc = "EVTDESC6208"
 	picture = "Rebellion"
 	trigger = {
 		KUT = {
@@ -7466,7 +9962,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6156"
+		name = "EVTOPTA6208"
 		release = KUT
 		KUT = {
 			any_pop = {
@@ -7487,9 +9983,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6157
-	title = "EVTNAME6157"
-	desc = "EVTDESC6157"
+	id = 6209
+	title = "EVTNAME6209"
+	desc = "EVTDESC6209"
+	picture = "Rebellion"
+	trigger = {
+		KWT = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = KWT
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = KWT
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = KWT
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6209"
+		release = KWT
+		KWT = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = KWT
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6210
+	title = "EVTNAME6210"
+	desc = "EVTDESC6210"
 	picture = "Rebellion"
 	trigger = {
 		KYR = {
@@ -7514,7 +10058,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6157"
+		name = "EVTOPTA6210"
 		release = KYR
 		KYR = {
 			any_pop = {
@@ -7535,9 +10079,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6158
-	title = "EVTNAME6158"
-	desc = "EVTDESC6158"
+	id = 6211
+	title = "EVTNAME6211"
+	desc = "EVTDESC6211"
 	picture = "Rebellion"
 	trigger = {
 		LAD = {
@@ -7562,7 +10106,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6158"
+		name = "EVTOPTA6211"
 		release = LAD
 		LAD = {
 			any_pop = {
@@ -7583,9 +10127,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6159
-	title = "EVTNAME6159"
-	desc = "EVTDESC6159"
+	id = 6212
+	title = "EVTNAME6212"
+	desc = "EVTDESC6212"
+	picture = "Rebellion"
+	trigger = {
+		LAL = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = LAL
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = LAL
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = LAL
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6212"
+		release = LAL
+		LAL = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = LAL
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6213
+	title = "EVTNAME6213"
+	desc = "EVTDESC6213"
 	picture = "Rebellion"
 	trigger = {
 		LAT = {
@@ -7610,7 +10202,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6159"
+		name = "EVTOPTA6213"
 		release = LAT
 		LAT = {
 			any_pop = {
@@ -7631,9 +10223,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6160
-	title = "EVTNAME6160"
-	desc = "EVTDESC6160"
+	id = 6214
+	title = "EVTNAME6214"
+	desc = "EVTDESC6214"
+	picture = "Rebellion"
+	trigger = {
+		LBN = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = LBN
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = LBN
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = LBN
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6214"
+		release = LBN
+		LBN = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = LBN
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6215
+	title = "EVTNAME6215"
+	desc = "EVTDESC6215"
 	picture = "Rebellion"
 	trigger = {
 		LIB = {
@@ -7658,7 +10298,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6160"
+		name = "EVTOPTA6215"
 		release = LIB
 		LIB = {
 			any_pop = {
@@ -7679,9 +10319,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6161
-	title = "EVTNAME6161"
-	desc = "EVTDESC6161"
+	id = 6216
+	title = "EVTNAME6216"
+	desc = "EVTDESC6216"
+	picture = "Rebellion"
+	trigger = {
+		LIE = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = LIE
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = LIE
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = LIE
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6216"
+		release = LIE
+		LIE = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = LIE
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6217
+	title = "EVTNAME6217"
+	desc = "EVTDESC6217"
 	picture = "Rebellion"
 	trigger = {
 		LIP = {
@@ -7706,7 +10394,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6161"
+		name = "EVTOPTA6217"
 		release = LIP
 		LIP = {
 			any_pop = {
@@ -7727,9 +10415,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6162
-	title = "EVTNAME6162"
-	desc = "EVTDESC6162"
+	id = 6218
+	title = "EVTNAME6218"
+	desc = "EVTDESC6218"
 	picture = "Rebellion"
 	trigger = {
 		LIT = {
@@ -7754,7 +10442,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6162"
+		name = "EVTOPTA6218"
 		release = LIT
 		LIT = {
 			any_pop = {
@@ -7775,9 +10463,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6163
-	title = "EVTNAME6163"
-	desc = "EVTDESC6163"
+	id = 6219
+	title = "EVTNAME6219"
+	desc = "EVTDESC6219"
+	picture = "Rebellion"
+	trigger = {
+		LIV = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = LIV
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = LIV
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = LIV
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6219"
+		release = LIV
+		LIV = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = LIV
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6220
+	title = "EVTNAME6220"
+	desc = "EVTDESC6220"
 	picture = "Rebellion"
 	trigger = {
 		LOM = {
@@ -7802,7 +10538,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6163"
+		name = "EVTOPTA6220"
 		release = LOM
 		LOM = {
 			any_pop = {
@@ -7823,9 +10559,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6164
-	title = "EVTNAME6164"
-	desc = "EVTDESC6164"
+	id = 6221
+	title = "EVTNAME6221"
+	desc = "EVTDESC6221"
+	picture = "Rebellion"
+	trigger = {
+		LPL = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = LPL
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = LPL
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = LPL
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6221"
+		release = LPL
+		LPL = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = LPL
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6222
+	title = "EVTNAME6222"
+	desc = "EVTDESC6222"
 	picture = "Rebellion"
 	trigger = {
 		LUA = {
@@ -7850,7 +10634,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6164"
+		name = "EVTOPTA6222"
 		release = LUA
 		LUA = {
 			any_pop = {
@@ -7871,9 +10655,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6165
-	title = "EVTNAME6165"
-	desc = "EVTDESC6165"
+	id = 6223
+	title = "EVTNAME6223"
+	desc = "EVTDESC6223"
 	picture = "Rebellion"
 	trigger = {
 		LUB = {
@@ -7898,7 +10682,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6165"
+		name = "EVTOPTA6223"
 		release = LUB
 		LUB = {
 			any_pop = {
@@ -7919,9 +10703,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6166
-	title = "EVTNAME6166"
-	desc = "EVTDESC6166"
+	id = 6224
+	title = "EVTNAME6224"
+	desc = "EVTDESC6224"
 	picture = "Rebellion"
 	trigger = {
 		LUC = {
@@ -7946,7 +10730,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6166"
+		name = "EVTOPTA6224"
 		release = LUC
 		LUC = {
 			any_pop = {
@@ -7967,9 +10751,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6167
-	title = "EVTNAME6167"
-	desc = "EVTDESC6167"
+	id = 6225
+	title = "EVTNAME6225"
+	desc = "EVTDESC6225"
 	picture = "Rebellion"
 	trigger = {
 		LUX = {
@@ -7994,7 +10778,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6167"
+		name = "EVTOPTA6225"
 		release = LUX
 		LUX = {
 			any_pop = {
@@ -8015,9 +10799,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6168
-	title = "EVTNAME6168"
-	desc = "EVTDESC6168"
+	id = 6226
+	title = "EVTNAME6226"
+	desc = "EVTDESC6226"
 	picture = "Rebellion"
 	trigger = {
 		MAD = {
@@ -8042,7 +10826,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6168"
+		name = "EVTOPTA6226"
 		release = MAD
 		MAD = {
 			any_pop = {
@@ -8063,9 +10847,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6169
-	title = "EVTNAME6169"
-	desc = "EVTDESC6169"
+	id = 6227
+	title = "EVTNAME6227"
+	desc = "EVTDESC6227"
+	picture = "Rebellion"
+	trigger = {
+		MAH = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = MAH
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = MAH
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = MAH
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6227"
+		release = MAH
+		MAH = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = MAH
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6228
+	title = "EVTNAME6228"
+	desc = "EVTDESC6228"
 	picture = "Rebellion"
 	trigger = {
 		MAK = {
@@ -8090,7 +10922,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6169"
+		name = "EVTOPTA6228"
 		release = MAK
 		MAK = {
 			any_pop = {
@@ -8111,9 +10943,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6170
-	title = "EVTNAME6170"
-	desc = "EVTDESC6170"
+	id = 6229
+	title = "EVTNAME6229"
+	desc = "EVTDESC6229"
 	picture = "Rebellion"
 	trigger = {
 		MAN = {
@@ -8138,7 +10970,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6170"
+		name = "EVTOPTA6229"
 		release = MAN
 		MAN = {
 			any_pop = {
@@ -8159,9 +10991,105 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6171
-	title = "EVTNAME6171"
-	desc = "EVTDESC6171"
+	id = 6230
+	title = "EVTNAME6230"
+	desc = "EVTDESC6230"
+	picture = "Rebellion"
+	trigger = {
+		MAR = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = MAR
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = MAR
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = MAR
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6230"
+		release = MAR
+		MAR = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = MAR
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6231
+	title = "EVTNAME6231"
+	desc = "EVTDESC6231"
+	picture = "Rebellion"
+	trigger = {
+		MAU = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = MAU
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = MAU
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = MAU
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6231"
+		release = MAU
+		MAU = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = MAU
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6232
+	title = "EVTNAME6232"
+	desc = "EVTDESC6232"
 	picture = "Rebellion"
 	trigger = {
 		MCK = {
@@ -8186,7 +11114,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6171"
+		name = "EVTOPTA6232"
 		release = MCK
 		MCK = {
 			any_pop = {
@@ -8207,9 +11135,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6172
-	title = "EVTNAME6172"
-	desc = "EVTDESC6172"
+	id = 6233
+	title = "EVTNAME6233"
+	desc = "EVTDESC6233"
 	picture = "Rebellion"
 	trigger = {
 		MEC = {
@@ -8234,7 +11162,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6172"
+		name = "EVTOPTA6233"
 		release = MEC
 		MEC = {
 			any_pop = {
@@ -8255,9 +11183,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6173
-	title = "EVTNAME6173"
-	desc = "EVTDESC6173"
+	id = 6234
+	title = "EVTNAME6234"
+	desc = "EVTDESC6234"
 	picture = "Rebellion"
 	trigger = {
 		MEI = {
@@ -8282,7 +11210,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6173"
+		name = "EVTOPTA6234"
 		release = MEI
 		MEI = {
 			any_pop = {
@@ -8303,9 +11231,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6174
-	title = "EVTNAME6174"
-	desc = "EVTDESC6174"
+	id = 6235
+	title = "EVTNAME6235"
+	desc = "EVTDESC6235"
 	picture = "Rebellion"
 	trigger = {
 		MEW = {
@@ -8330,7 +11258,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6174"
+		name = "EVTOPTA6235"
 		release = MEW
 		MEW = {
 			any_pop = {
@@ -8351,9 +11279,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6175
-	title = "EVTNAME6175"
-	desc = "EVTDESC6175"
+	id = 6236
+	title = "EVTNAME6236"
+	desc = "EVTDESC6236"
 	picture = "Rebellion"
 	trigger = {
 		MEX = {
@@ -8378,7 +11306,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6175"
+		name = "EVTOPTA6236"
 		release = MEX
 		MEX = {
 			any_pop = {
@@ -8399,9 +11327,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6176
-	title = "EVTNAME6176"
-	desc = "EVTDESC6176"
+	id = 6237
+	title = "EVTNAME6237"
+	desc = "EVTDESC6237"
 	picture = "Rebellion"
 	trigger = {
 		MGL = {
@@ -8426,7 +11354,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6176"
+		name = "EVTOPTA6237"
 		release = MGL
 		MGL = {
 			any_pop = {
@@ -8447,9 +11375,105 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6177
-	title = "EVTNAME6177"
-	desc = "EVTDESC6177"
+	id = 6238
+	title = "EVTNAME6238"
+	desc = "EVTDESC6238"
+	picture = "Rebellion"
+	trigger = {
+		MLI = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = MLI
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = MLI
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = MLI
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6238"
+		release = MLI
+		MLI = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = MLI
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6239
+	title = "EVTNAME6239"
+	desc = "EVTDESC6239"
+	picture = "Rebellion"
+	trigger = {
+		MLW = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = MLW
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = MLW
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = MLW
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6239"
+		release = MLW
+		MLW = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = MLW
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6240
+	title = "EVTNAME6240"
+	desc = "EVTDESC6240"
 	picture = "Rebellion"
 	trigger = {
 		MOD = {
@@ -8474,7 +11498,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6177"
+		name = "EVTOPTA6240"
 		release = MOD
 		MOD = {
 			any_pop = {
@@ -8495,9 +11519,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6178
-	title = "EVTNAME6178"
-	desc = "EVTDESC6178"
+	id = 6241
+	title = "EVTNAME6241"
+	desc = "EVTDESC6241"
 	picture = "Rebellion"
 	trigger = {
 		MOL = {
@@ -8522,7 +11546,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6178"
+		name = "EVTOPTA6241"
 		release = MOL
 		MOL = {
 			any_pop = {
@@ -8543,9 +11567,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6179
-	title = "EVTNAME6179"
-	desc = "EVTDESC6179"
+	id = 6242
+	title = "EVTNAME6242"
+	desc = "EVTDESC6242"
 	picture = "Rebellion"
 	trigger = {
 		MON = {
@@ -8570,7 +11594,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6179"
+		name = "EVTOPTA6242"
 		release = MON
 		MON = {
 			any_pop = {
@@ -8591,9 +11615,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6180
-	title = "EVTNAME6180"
-	desc = "EVTDESC6180"
+	id = 6243
+	title = "EVTNAME6243"
+	desc = "EVTDESC6243"
 	picture = "Rebellion"
 	trigger = {
 		MOR = {
@@ -8618,7 +11642,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6180"
+		name = "EVTOPTA6243"
 		release = MOR
 		MOR = {
 			any_pop = {
@@ -8639,9 +11663,153 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6181
-	title = "EVTNAME6181"
-	desc = "EVTDESC6181"
+	id = 6244
+	title = "EVTNAME6244"
+	desc = "EVTDESC6244"
+	picture = "Rebellion"
+	trigger = {
+		MOZ = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = MOZ
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = MOZ
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = MOZ
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6244"
+		release = MOZ
+		MOZ = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = MOZ
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6245
+	title = "EVTNAME6245"
+	desc = "EVTDESC6245"
+	picture = "Rebellion"
+	trigger = {
+		MRT = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = MRT
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = MRT
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = MRT
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6245"
+		release = MRT
+		MRT = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = MRT
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6246
+	title = "EVTNAME6246"
+	desc = "EVTDESC6246"
+	picture = "Rebellion"
+	trigger = {
+		MSR = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = MSR
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = MSR
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = MSR
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6246"
+		release = MSR
+		MSR = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = MSR
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6247
+	title = "EVTNAME6247"
+	desc = "EVTDESC6247"
 	picture = "Rebellion"
 	trigger = {
 		MTC = {
@@ -8666,7 +11834,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6181"
+		name = "EVTOPTA6247"
 		release = MTC
 		MTC = {
 			any_pop = {
@@ -8687,9 +11855,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6182
-	title = "EVTNAME6182"
-	desc = "EVTDESC6182"
+	id = 6248
+	title = "EVTNAME6248"
+	desc = "EVTDESC6248"
 	picture = "Rebellion"
 	trigger = {
 		MUG = {
@@ -8714,7 +11882,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6182"
+		name = "EVTOPTA6248"
 		release = MUG
 		MUG = {
 			any_pop = {
@@ -8735,9 +11903,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6183
-	title = "EVTNAME6183"
-	desc = "EVTDESC6183"
+	id = 6249
+	title = "EVTNAME6249"
+	desc = "EVTDESC6249"
 	picture = "Rebellion"
 	trigger = {
 		MYS = {
@@ -8762,7 +11930,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6183"
+		name = "EVTOPTA6249"
 		release = MYS
 		MYS = {
 			any_pop = {
@@ -8783,9 +11951,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6184
-	title = "EVTNAME6184"
-	desc = "EVTDESC6184"
+	id = 6250
+	title = "EVTNAME6250"
+	desc = "EVTDESC6250"
 	picture = "Rebellion"
 	trigger = {
 		NAG = {
@@ -8810,7 +11978,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6184"
+		name = "EVTOPTA6250"
 		release = NAG
 		NAG = {
 			any_pop = {
@@ -8831,9 +11999,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6185
-	title = "EVTNAME6185"
-	desc = "EVTDESC6185"
+	id = 6251
+	title = "EVTNAME6251"
+	desc = "EVTDESC6251"
 	picture = "Rebellion"
 	trigger = {
 		NAL = {
@@ -8858,7 +12026,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6185"
+		name = "EVTOPTA6251"
 		release = NAL
 		NAL = {
 			any_pop = {
@@ -8879,9 +12047,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6186
-	title = "EVTNAME6186"
-	desc = "EVTDESC6186"
+	id = 6252
+	title = "EVTNAME6252"
+	desc = "EVTDESC6252"
+	picture = "Rebellion"
+	trigger = {
+		NAM = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = NAM
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = NAM
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = NAM
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6252"
+		release = NAM
+		NAM = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = NAM
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6253
+	title = "EVTNAME6253"
+	desc = "EVTDESC6253"
 	picture = "Rebellion"
 	trigger = {
 		NAS = {
@@ -8906,7 +12122,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6186"
+		name = "EVTOPTA6253"
 		release = NAS
 		NAS = {
 			any_pop = {
@@ -8927,9 +12143,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6187
-	title = "EVTNAME6187"
-	desc = "EVTDESC6187"
+	id = 6254
+	title = "EVTNAME6254"
+	desc = "EVTDESC6254"
 	picture = "Rebellion"
 	trigger = {
 		NEJ = {
@@ -8954,7 +12170,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6187"
+		name = "EVTOPTA6254"
 		release = NEJ
 		NEJ = {
 			any_pop = {
@@ -8975,9 +12191,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6188
-	title = "EVTNAME6188"
-	desc = "EVTDESC6188"
+	id = 6255
+	title = "EVTNAME6255"
+	desc = "EVTDESC6255"
 	picture = "Rebellion"
 	trigger = {
 		NEN = {
@@ -9002,7 +12218,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6188"
+		name = "EVTOPTA6255"
 		release = NEN
 		NEN = {
 			any_pop = {
@@ -9023,9 +12239,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6189
-	title = "EVTNAME6189"
-	desc = "EVTDESC6189"
+	id = 6256
+	title = "EVTNAME6256"
+	desc = "EVTDESC6256"
 	picture = "Rebellion"
 	trigger = {
 		NEP = {
@@ -9050,7 +12266,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6189"
+		name = "EVTOPTA6256"
 		release = NEP
 		NEP = {
 			any_pop = {
@@ -9071,9 +12287,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6190
-	title = "EVTNAME6190"
-	desc = "EVTDESC6190"
+	id = 6257
+	title = "EVTNAME6257"
+	desc = "EVTDESC6257"
 	picture = "Rebellion"
 	trigger = {
 		NET = {
@@ -9098,7 +12314,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6190"
+		name = "EVTOPTA6257"
 		release = NET
 		NET = {
 			any_pop = {
@@ -9119,9 +12335,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6191
-	title = "EVTNAME6191"
-	desc = "EVTDESC6191"
+	id = 6258
+	title = "EVTNAME6258"
+	desc = "EVTDESC6258"
 	picture = "Rebellion"
 	trigger = {
 		NEW = {
@@ -9146,7 +12362,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6191"
+		name = "EVTOPTA6258"
 		release = NEW
 		NEW = {
 			any_pop = {
@@ -9167,9 +12383,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6192
-	title = "EVTNAME6192"
-	desc = "EVTDESC6192"
+	id = 6259
+	title = "EVTNAME6259"
+	desc = "EVTDESC6259"
 	picture = "Rebellion"
 	trigger = {
 		NGF = {
@@ -9194,7 +12410,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6192"
+		name = "EVTOPTA6259"
 		release = NGF
 		NGF = {
 			any_pop = {
@@ -9215,9 +12431,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6193
-	title = "EVTNAME6193"
-	desc = "EVTDESC6193"
+	id = 6260
+	title = "EVTNAME6260"
+	desc = "EVTDESC6260"
+	picture = "Rebellion"
+	trigger = {
+		NGR = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = NGR
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = NGR
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = NGR
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6260"
+		release = NGR
+		NGR = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = NGR
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6261
+	title = "EVTNAME6261"
+	desc = "EVTDESC6261"
 	picture = "Rebellion"
 	trigger = {
 		NIC = {
@@ -9242,7 +12506,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6193"
+		name = "EVTOPTA6261"
 		release = NIC
 		NIC = {
 			any_pop = {
@@ -9263,9 +12527,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6194
-	title = "EVTNAME6194"
-	desc = "EVTDESC6194"
+	id = 6262
+	title = "EVTNAME6262"
+	desc = "EVTDESC6262"
+	picture = "Rebellion"
+	trigger = {
+		NIG = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = NIG
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = NIG
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = NIG
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6262"
+		release = NIG
+		NIG = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = NIG
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6263
+	title = "EVTNAME6263"
+	desc = "EVTDESC6263"
 	picture = "Rebellion"
 	trigger = {
 		NOR = {
@@ -9290,7 +12602,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6194"
+		name = "EVTOPTA6263"
 		release = NOR
 		NOR = {
 			any_pop = {
@@ -9311,9 +12623,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6195
-	title = "EVTNAME6195"
-	desc = "EVTDESC6195"
+	id = 6264
+	title = "EVTNAME6264"
+	desc = "EVTDESC6264"
 	picture = "Rebellion"
 	trigger = {
 		NZL = {
@@ -9338,7 +12650,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6195"
+		name = "EVTOPTA6264"
 		release = NZL
 		NZL = {
 			any_pop = {
@@ -9359,9 +12671,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6196
-	title = "EVTNAME6196"
-	desc = "EVTDESC6196"
+	id = 6265
+	title = "EVTNAME6265"
+	desc = "EVTDESC6265"
+	picture = "Rebellion"
+	trigger = {
+		OBO = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = OBO
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = OBO
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = OBO
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6265"
+		release = OBO
+		OBO = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = OBO
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6266
+	title = "EVTNAME6266"
+	desc = "EVTDESC6266"
 	picture = "Rebellion"
 	trigger = {
 		OLD = {
@@ -9386,7 +12746,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6196"
+		name = "EVTOPTA6266"
 		release = OLD
 		OLD = {
 			any_pop = {
@@ -9407,9 +12767,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6197
-	title = "EVTNAME6197"
-	desc = "EVTDESC6197"
+	id = 6267
+	title = "EVTNAME6267"
+	desc = "EVTDESC6267"
 	picture = "Rebellion"
 	trigger = {
 		OMA = {
@@ -9434,7 +12794,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6197"
+		name = "EVTOPTA6267"
 		release = OMA
 		OMA = {
 			any_pop = {
@@ -9455,9 +12815,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6198
-	title = "EVTNAME6198"
-	desc = "EVTDESC6198"
+	id = 6268
+	title = "EVTNAME6268"
+	desc = "EVTDESC6268"
 	picture = "Rebellion"
 	trigger = {
 		ORA = {
@@ -9482,7 +12842,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6198"
+		name = "EVTOPTA6268"
 		release = ORA
 		ORA = {
 			any_pop = {
@@ -9503,9 +12863,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6199
-	title = "EVTNAME6199"
-	desc = "EVTDESC6199"
+	id = 6269
+	title = "EVTNAME6269"
+	desc = "EVTDESC6269"
 	picture = "Rebellion"
 	trigger = {
 		ORI = {
@@ -9530,7 +12890,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6199"
+		name = "EVTOPTA6269"
 		release = ORI
 		ORI = {
 			any_pop = {
@@ -9551,9 +12911,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6200
-	title = "EVTNAME6200"
-	desc = "EVTDESC6200"
+	id = 6270
+	title = "EVTNAME6270"
+	desc = "EVTDESC6270"
+	picture = "Rebellion"
+	trigger = {
+		PAK = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = PAK
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = PAK
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = PAK
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6270"
+		release = PAK
+		PAK = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = PAK
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6271
+	title = "EVTNAME6271"
+	desc = "EVTDESC6271"
 	picture = "Rebellion"
 	trigger = {
 		PAN = {
@@ -9578,7 +12986,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6200"
+		name = "EVTOPTA6271"
 		release = PAN
 		PAN = {
 			any_pop = {
@@ -9599,9 +13007,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6201
-	title = "EVTNAME6201"
-	desc = "EVTDESC6201"
+	id = 6272
+	title = "EVTNAME6272"
+	desc = "EVTDESC6272"
 	picture = "Rebellion"
 	trigger = {
 		PAP = {
@@ -9626,7 +13034,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6201"
+		name = "EVTOPTA6272"
 		release = PAP
 		PAP = {
 			any_pop = {
@@ -9647,9 +13055,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6202
-	title = "EVTNAME6202"
-	desc = "EVTDESC6202"
+	id = 6273
+	title = "EVTNAME6273"
+	desc = "EVTDESC6273"
 	picture = "Rebellion"
 	trigger = {
 		PAR = {
@@ -9674,7 +13082,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6202"
+		name = "EVTOPTA6273"
 		release = PAR
 		PAR = {
 			any_pop = {
@@ -9695,9 +13103,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6203
-	title = "EVTNAME6203"
-	desc = "EVTDESC6203"
+	id = 6274
+	title = "EVTNAME6274"
+	desc = "EVTDESC6274"
+	picture = "Rebellion"
+	trigger = {
+		PBC = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = PBC
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = PBC
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = PBC
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6274"
+		release = PBC
+		PBC = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = PBC
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6275
+	title = "EVTNAME6275"
+	desc = "EVTDESC6275"
 	picture = "Rebellion"
 	trigger = {
 		PER = {
@@ -9722,7 +13178,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6203"
+		name = "EVTOPTA6275"
 		release = PER
 		PER = {
 			any_pop = {
@@ -9743,9 +13199,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6204
-	title = "EVTNAME6204"
-	desc = "EVTDESC6204"
+	id = 6276
+	title = "EVTNAME6276"
+	desc = "EVTDESC6276"
 	picture = "Rebellion"
 	trigger = {
 		PEU = {
@@ -9770,7 +13226,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6204"
+		name = "EVTOPTA6276"
 		release = PEU
 		PEU = {
 			any_pop = {
@@ -9791,9 +13247,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6205
-	title = "EVTNAME6205"
-	desc = "EVTDESC6205"
+	id = 6277
+	title = "EVTNAME6277"
+	desc = "EVTDESC6277"
 	picture = "Rebellion"
 	trigger = {
 		PHI = {
@@ -9818,7 +13274,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6205"
+		name = "EVTOPTA6277"
 		release = PHI
 		PHI = {
 			any_pop = {
@@ -9839,9 +13295,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6206
-	title = "EVTNAME6206"
-	desc = "EVTDESC6206"
+	id = 6278
+	title = "EVTNAME6278"
+	desc = "EVTDESC6278"
+	picture = "Rebellion"
+	trigger = {
+		PLS = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = PLS
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = PLS
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = PLS
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6278"
+		release = PLS
+		PLS = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = PLS
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6279
+	title = "EVTNAME6279"
+	desc = "EVTDESC6279"
 	picture = "Rebellion"
 	trigger = {
 		PNM = {
@@ -9866,7 +13370,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6206"
+		name = "EVTOPTA6279"
 		release = PNM
 		PNM = {
 			any_pop = {
@@ -9887,9 +13391,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6207
-	title = "EVTNAME6207"
-	desc = "EVTDESC6207"
+	id = 6280
+	title = "EVTNAME6280"
+	desc = "EVTDESC6280"
 	picture = "Rebellion"
 	trigger = {
 		POL = {
@@ -9914,7 +13418,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6207"
+		name = "EVTOPTA6280"
 		release = POL
 		POL = {
 			any_pop = {
@@ -9935,9 +13439,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6208
-	title = "EVTNAME6208"
-	desc = "EVTDESC6208"
+	id = 6281
+	title = "EVTNAME6281"
+	desc = "EVTDESC6281"
 	picture = "Rebellion"
 	trigger = {
 		POR = {
@@ -9962,7 +13466,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6208"
+		name = "EVTOPTA6281"
 		release = POR
 		POR = {
 			any_pop = {
@@ -9983,9 +13487,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6209
-	title = "EVTNAME6209"
-	desc = "EVTDESC6209"
+	id = 6282
+	title = "EVTNAME6282"
+	desc = "EVTDESC6282"
 	picture = "Rebellion"
 	trigger = {
 		PRG = {
@@ -10010,7 +13514,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6209"
+		name = "EVTOPTA6282"
 		release = PRG
 		PRG = {
 			any_pop = {
@@ -10031,9 +13535,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6210
-	title = "EVTNAME6210"
-	desc = "EVTDESC6210"
+	id = 6283
+	title = "EVTNAME6283"
+	desc = "EVTDESC6283"
 	picture = "Rebellion"
 	trigger = {
 		PRU = {
@@ -10058,7 +13562,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6210"
+		name = "EVTOPTA6283"
 		release = PRU
 		PRU = {
 			any_pop = {
@@ -10079,9 +13583,105 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6211
-	title = "EVTNAME6211"
-	desc = "EVTDESC6211"
+	id = 6284
+	title = "EVTNAME6284"
+	desc = "EVTDESC6284"
+	picture = "Rebellion"
+	trigger = {
+		PUE = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = PUE
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = PUE
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = PUE
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6284"
+		release = PUE
+		PUE = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = PUE
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6285
+	title = "EVTNAME6285"
+	desc = "EVTDESC6285"
+	picture = "Rebellion"
+	trigger = {
+		QAT = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = QAT
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = QAT
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = QAT
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6285"
+		release = QAT
+		QAT = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = QAT
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6286
+	title = "EVTNAME6286"
+	desc = "EVTDESC6286"
 	picture = "Rebellion"
 	trigger = {
 		QUE = {
@@ -10106,7 +13706,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6211"
+		name = "EVTOPTA6286"
 		release = QUE
 		QUE = {
 			any_pop = {
@@ -10127,9 +13727,105 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6212
-	title = "EVTNAME6212"
-	desc = "EVTDESC6212"
+	id = 6287
+	title = "EVTNAME6287"
+	desc = "EVTDESC6287"
+	picture = "Rebellion"
+	trigger = {
+		RAK = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = RAK
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = RAK
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = RAK
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6287"
+		release = RAK
+		RAK = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = RAK
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6288
+	title = "EVTNAME6288"
+	desc = "EVTDESC6288"
+	picture = "Rebellion"
+	trigger = {
+		RGR = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = RGR
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = RGR
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = RGR
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6288"
+		release = RGR
+		RGR = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = RGR
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6289
+	title = "EVTNAME6289"
+	desc = "EVTDESC6289"
 	picture = "Rebellion"
 	trigger = {
 		RHO = {
@@ -10154,7 +13850,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6212"
+		name = "EVTOPTA6289"
 		release = RHO
 		RHO = {
 			any_pop = {
@@ -10175,9 +13871,105 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6213
-	title = "EVTNAME6213"
-	desc = "EVTDESC6213"
+	id = 6290
+	title = "EVTNAME6290"
+	desc = "EVTDESC6290"
+	picture = "Rebellion"
+	trigger = {
+		RHV = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = RHV
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = RHV
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = RHV
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6290"
+		release = RHV
+		RHV = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = RHV
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6291
+	title = "EVTNAME6291"
+	desc = "EVTDESC6291"
+	picture = "Rebellion"
+	trigger = {
+		RSR = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = RSR
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = RSR
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = RSR
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6291"
+		release = RSR
+		RSR = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = RSR
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6292
+	title = "EVTNAME6292"
+	desc = "EVTDESC6292"
 	picture = "Rebellion"
 	trigger = {
 		RUT = {
@@ -10202,7 +13994,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6213"
+		name = "EVTOPTA6292"
 		release = RUT
 		RUT = {
 			any_pop = {
@@ -10223,9 +14015,105 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6214
-	title = "EVTNAME6214"
-	desc = "EVTDESC6214"
+	id = 6293
+	title = "EVTNAME6293"
+	desc = "EVTDESC6293"
+	picture = "Rebellion"
+	trigger = {
+		RWA = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = RWA
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = RWA
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = RWA
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6293"
+		release = RWA
+		RWA = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = RWA
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6294
+	title = "EVTNAME6294"
+	desc = "EVTDESC6294"
+	picture = "Rebellion"
+	trigger = {
+		RYU = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = RYU
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = RYU
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = RYU
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6294"
+		release = RYU
+		RYU = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = RYU
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6295
+	title = "EVTNAME6295"
+	desc = "EVTDESC6295"
 	picture = "Rebellion"
 	trigger = {
 		SAF = {
@@ -10250,7 +14138,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6214"
+		name = "EVTOPTA6295"
 		release = SAF
 		SAF = {
 			any_pop = {
@@ -10271,9 +14159,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6215
-	title = "EVTNAME6215"
-	desc = "EVTDESC6215"
+	id = 6296
+	title = "EVTNAME6296"
+	desc = "EVTDESC6296"
 	picture = "Rebellion"
 	trigger = {
 		SAR = {
@@ -10298,7 +14186,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6215"
+		name = "EVTOPTA6296"
 		release = SAR
 		SAR = {
 			any_pop = {
@@ -10319,9 +14207,105 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6216
-	title = "EVTNAME6216"
-	desc = "EVTDESC6216"
+	id = 6297
+	title = "EVTNAME6297"
+	desc = "EVTDESC6297"
+	picture = "Rebellion"
+	trigger = {
+		SAT = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = SAT
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = SAT
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = SAT
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6297"
+		release = SAT
+		SAT = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = SAT
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6298
+	title = "EVTNAME6298"
+	desc = "EVTDESC6298"
+	picture = "Rebellion"
+	trigger = {
+		SAU = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = SAU
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = SAU
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = SAU
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6298"
+		release = SAU
+		SAU = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = SAU
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6299
+	title = "EVTNAME6299"
+	desc = "EVTDESC6299"
 	picture = "Rebellion"
 	trigger = {
 		SAX = {
@@ -10346,7 +14330,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6216"
+		name = "EVTOPTA6299"
 		release = SAX
 		SAX = {
 			any_pop = {
@@ -10367,9 +14351,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6217
-	title = "EVTNAME6217"
-	desc = "EVTDESC6217"
+	id = 6300
+	title = "EVTNAME6300"
+	desc = "EVTDESC6300"
 	picture = "Rebellion"
 	trigger = {
 		SCH = {
@@ -10394,7 +14378,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6217"
+		name = "EVTOPTA6300"
 		release = SCH
 		SCH = {
 			any_pop = {
@@ -10415,9 +14399,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6218
-	title = "EVTNAME6218"
-	desc = "EVTDESC6218"
+	id = 6301
+	title = "EVTNAME6301"
+	desc = "EVTDESC6301"
 	picture = "Rebellion"
 	trigger = {
 		SCO = {
@@ -10442,7 +14426,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6218"
+		name = "EVTOPTA6301"
 		release = SCO
 		SCO = {
 			any_pop = {
@@ -10463,9 +14447,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6219
-	title = "EVTNAME6219"
-	desc = "EVTDESC6219"
+	id = 6302
+	title = "EVTNAME6302"
+	desc = "EVTDESC6302"
+	picture = "Rebellion"
+	trigger = {
+		SEN = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = SEN
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = SEN
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = SEN
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6302"
+		release = SEN
+		SEN = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = SEN
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6303
+	title = "EVTNAME6303"
+	desc = "EVTDESC6303"
 	picture = "Rebellion"
 	trigger = {
 		SER = {
@@ -10490,7 +14522,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6219"
+		name = "EVTOPTA6303"
 		release = SER
 		SER = {
 			any_pop = {
@@ -10511,9 +14543,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6220
-	title = "EVTNAME6220"
-	desc = "EVTDESC6220"
+	id = 6304
+	title = "EVTNAME6304"
+	desc = "EVTDESC6304"
 	picture = "Rebellion"
 	trigger = {
 		SGF = {
@@ -10538,7 +14570,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6220"
+		name = "EVTOPTA6304"
 		release = SGF
 		SGF = {
 			any_pop = {
@@ -10559,9 +14591,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6221
-	title = "EVTNAME6221"
-	desc = "EVTDESC6221"
+	id = 6305
+	title = "EVTNAME6305"
+	desc = "EVTDESC6305"
+	picture = "Rebellion"
+	trigger = {
+		SHA = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = SHA
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = SHA
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = SHA
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6305"
+		release = SHA
+		SHA = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = SHA
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6306
+	title = "EVTNAME6306"
+	desc = "EVTDESC6306"
 	picture = "Rebellion"
 	trigger = {
 		SHI = {
@@ -10586,7 +14666,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6221"
+		name = "EVTOPTA6306"
 		release = SHI
 		SHI = {
 			any_pop = {
@@ -10607,9 +14687,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6222
-	title = "EVTNAME6222"
-	desc = "EVTDESC6222"
+	id = 6307
+	title = "EVTNAME6307"
+	desc = "EVTDESC6307"
 	picture = "Rebellion"
 	trigger = {
 		SIA = {
@@ -10634,7 +14714,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6222"
+		name = "EVTOPTA6307"
 		release = SIA
 		SIA = {
 			any_pop = {
@@ -10655,9 +14735,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6223
-	title = "EVTNAME6223"
-	desc = "EVTDESC6223"
+	id = 6308
+	title = "EVTNAME6308"
+	desc = "EVTDESC6308"
 	picture = "Rebellion"
 	trigger = {
 		SIC = {
@@ -10682,7 +14762,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6223"
+		name = "EVTOPTA6308"
 		release = SIC
 		SIC = {
 			any_pop = {
@@ -10703,9 +14783,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6224
-	title = "EVTNAME6224"
-	desc = "EVTDESC6224"
+	id = 6309
+	title = "EVTNAME6309"
+	desc = "EVTDESC6309"
 	picture = "Rebellion"
 	trigger = {
 		SIE = {
@@ -10730,7 +14810,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6224"
+		name = "EVTOPTA6309"
 		release = SIE
 		SIE = {
 			any_pop = {
@@ -10751,9 +14831,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6225
-	title = "EVTNAME6225"
-	desc = "EVTDESC6225"
+	id = 6310
+	title = "EVTNAME6310"
+	desc = "EVTDESC6310"
+	picture = "Rebellion"
+	trigger = {
+		SIG = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = SIG
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = SIG
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = SIG
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6310"
+		release = SIG
+		SIG = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = SIG
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6311
+	title = "EVTNAME6311"
+	desc = "EVTDESC6311"
 	picture = "Rebellion"
 	trigger = {
 		SIK = {
@@ -10778,7 +14906,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6225"
+		name = "EVTOPTA6311"
 		release = SIK
 		SIK = {
 			any_pop = {
@@ -10799,9 +14927,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6226
-	title = "EVTNAME6226"
-	desc = "EVTDESC6226"
+	id = 6312
+	title = "EVTNAME6312"
+	desc = "EVTDESC6312"
 	picture = "Rebellion"
 	trigger = {
 		SIN = {
@@ -10826,7 +14954,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6226"
+		name = "EVTOPTA6312"
 		release = SIN
 		SIN = {
 			any_pop = {
@@ -10847,9 +14975,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6227
-	title = "EVTNAME6227"
-	desc = "EVTDESC6227"
+	id = 6313
+	title = "EVTNAME6313"
+	desc = "EVTDESC6313"
+	picture = "Rebellion"
+	trigger = {
+		SLE = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = SLE
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = SLE
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = SLE
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6313"
+		release = SLE
+		SLE = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = SLE
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6314
+	title = "EVTNAME6314"
+	desc = "EVTDESC6314"
 	picture = "Rebellion"
 	trigger = {
 		SLO = {
@@ -10874,7 +15050,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6227"
+		name = "EVTOPTA6314"
 		release = SLO
 		SLO = {
 			any_pop = {
@@ -10895,9 +15071,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6228
-	title = "EVTNAME6228"
-	desc = "EVTDESC6228"
+	id = 6315
+	title = "EVTNAME6315"
+	desc = "EVTDESC6315"
 	picture = "Rebellion"
 	trigger = {
 		SLV = {
@@ -10922,7 +15098,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6228"
+		name = "EVTOPTA6315"
 		release = SLV
 		SLV = {
 			any_pop = {
@@ -10943,9 +15119,153 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6229
-	title = "EVTNAME6229"
-	desc = "EVTDESC6229"
+	id = 6316
+	title = "EVTNAME6316"
+	desc = "EVTDESC6316"
+	picture = "Rebellion"
+	trigger = {
+		SMR = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = SMR
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = SMR
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = SMR
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6316"
+		release = SMR
+		SMR = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = SMR
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6317
+	title = "EVTNAME6317"
+	desc = "EVTDESC6317"
+	picture = "Rebellion"
+	trigger = {
+		SNG = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = SNG
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = SNG
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = SNG
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6317"
+		release = SNG
+		SNG = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = SNG
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6318
+	title = "EVTNAME6318"
+	desc = "EVTDESC6318"
+	picture = "Rebellion"
+	trigger = {
+		SNR = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = SNR
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = SNR
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = SNR
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6318"
+		release = SNR
+		SNR = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = SNR
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6319
+	title = "EVTNAME6319"
+	desc = "EVTDESC6319"
 	picture = "Rebellion"
 	trigger = {
 		SOK = {
@@ -10970,7 +15290,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6229"
+		name = "EVTOPTA6319"
 		release = SOK
 		SOK = {
 			any_pop = {
@@ -10991,9 +15311,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6230
-	title = "EVTNAME6230"
-	desc = "EVTDESC6230"
+	id = 6320
+	title = "EVTNAME6320"
+	desc = "EVTDESC6320"
+	picture = "Rebellion"
+	trigger = {
+		SOM = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = SOM
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = SOM
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = SOM
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6320"
+		release = SOM
+		SOM = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = SOM
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6321
+	title = "EVTNAME6321"
+	desc = "EVTDESC6321"
 	picture = "Rebellion"
 	trigger = {
 		SOV = {
@@ -11018,7 +15386,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6230"
+		name = "EVTOPTA6321"
 		release = SOV
 		SOV = {
 			any_pop = {
@@ -11039,9 +15407,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6231
-	title = "EVTNAME6231"
-	desc = "EVTDESC6231"
+	id = 6322
+	title = "EVTNAME6322"
+	desc = "EVTDESC6322"
 	picture = "Rebellion"
 	trigger = {
 		SPA = {
@@ -11066,7 +15434,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6231"
+		name = "EVTOPTA6322"
 		release = SPA
 		SPA = {
 			any_pop = {
@@ -11087,9 +15455,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6232
-	title = "EVTNAME6232"
-	desc = "EVTDESC6232"
+	id = 6323
+	title = "EVTNAME6323"
+	desc = "EVTDESC6323"
 	picture = "Rebellion"
 	trigger = {
 		SRI = {
@@ -11114,7 +15482,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6232"
+		name = "EVTOPTA6323"
 		release = SRI
 		SRI = {
 			any_pop = {
@@ -11135,9 +15503,249 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6233
-	title = "EVTNAME6233"
-	desc = "EVTDESC6233"
+	id = 6324
+	title = "EVTNAME6324"
+	desc = "EVTDESC6324"
+	picture = "Rebellion"
+	trigger = {
+		STK = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = STK
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = STK
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = STK
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6324"
+		release = STK
+		STK = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = STK
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6325
+	title = "EVTNAME6325"
+	desc = "EVTDESC6325"
+	picture = "Rebellion"
+	trigger = {
+		STL = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = STL
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = STL
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = STL
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6325"
+		release = STL
+		STL = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = STL
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6326
+	title = "EVTNAME6326"
+	desc = "EVTDESC6326"
+	picture = "Rebellion"
+	trigger = {
+		STV = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = STV
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = STV
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = STV
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6326"
+		release = STV
+		STV = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = STV
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6327
+	title = "EVTNAME6327"
+	desc = "EVTDESC6327"
+	picture = "Rebellion"
+	trigger = {
+		SUD = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = SUD
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = SUD
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = SUD
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6327"
+		release = SUD
+		SUD = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = SUD
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6328
+	title = "EVTNAME6328"
+	desc = "EVTDESC6328"
+	picture = "Rebellion"
+	trigger = {
+		SUL = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = SUL
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = SUL
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = SUL
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6328"
+		release = SUL
+		SUL = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = SUL
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6329
+	title = "EVTNAME6329"
+	desc = "EVTDESC6329"
 	picture = "Rebellion"
 	trigger = {
 		SWE = {
@@ -11162,7 +15770,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6233"
+		name = "EVTOPTA6329"
 		release = SWE
 		SWE = {
 			any_pop = {
@@ -11183,9 +15791,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6234
-	title = "EVTNAME6234"
-	desc = "EVTDESC6234"
+	id = 6330
+	title = "EVTNAME6330"
+	desc = "EVTDESC6330"
 	picture = "Rebellion"
 	trigger = {
 		SWI = {
@@ -11210,7 +15818,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6234"
+		name = "EVTOPTA6330"
 		release = SWI
 		SWI = {
 			any_pop = {
@@ -11231,9 +15839,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6235
-	title = "EVTNAME6235"
-	desc = "EVTDESC6235"
+	id = 6331
+	title = "EVTNAME6331"
+	desc = "EVTDESC6331"
 	picture = "Rebellion"
 	trigger = {
 		SXI = {
@@ -11258,7 +15866,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6235"
+		name = "EVTOPTA6331"
 		release = SXI
 		SXI = {
 			any_pop = {
@@ -11279,9 +15887,153 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6236
-	title = "EVTNAME6236"
-	desc = "EVTDESC6236"
+	id = 6332
+	title = "EVTNAME6332"
+	desc = "EVTDESC6332"
+	picture = "Rebellion"
+	trigger = {
+		SYR = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = SYR
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = SYR
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = SYR
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6332"
+		release = SYR
+		SYR = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = SYR
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6333
+	title = "EVTNAME6333"
+	desc = "EVTDESC6333"
+	picture = "Rebellion"
+	trigger = {
+		SZC = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = SZC
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = SZC
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = SZC
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6333"
+		release = SZC
+		SZC = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = SZC
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6334
+	title = "EVTNAME6334"
+	desc = "EVTDESC6334"
+	picture = "Rebellion"
+	trigger = {
+		TAI = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = TAI
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = TAI
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = TAI
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6334"
+		release = TAI
+		TAI = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = TAI
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6335
+	title = "EVTNAME6335"
+	desc = "EVTDESC6335"
 	picture = "Rebellion"
 	trigger = {
 		TAJ = {
@@ -11306,7 +16058,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6236"
+		name = "EVTOPTA6335"
 		release = TAJ
 		TAJ = {
 			any_pop = {
@@ -11327,9 +16079,105 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6237
-	title = "EVTNAME6237"
-	desc = "EVTDESC6237"
+	id = 6336
+	title = "EVTNAME6336"
+	desc = "EVTDESC6336"
+	picture = "Rebellion"
+	trigger = {
+		TCR = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = TCR
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = TCR
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = TCR
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6336"
+		release = TCR
+		TCR = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = TCR
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6337
+	title = "EVTNAME6337"
+	desc = "EVTDESC6337"
+	picture = "Rebellion"
+	trigger = {
+		TDT = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = TDT
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = TDT
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = TDT
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6337"
+		release = TDT
+		TDT = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = TDT
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6338
+	title = "EVTNAME6338"
+	desc = "EVTDESC6338"
 	picture = "Rebellion"
 	trigger = {
 		TEX = {
@@ -11354,7 +16202,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6237"
+		name = "EVTOPTA6338"
 		release = TEX
 		TEX = {
 			any_pop = {
@@ -11375,9 +16223,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6238
-	title = "EVTNAME6238"
-	desc = "EVTDESC6238"
+	id = 6339
+	title = "EVTNAME6339"
+	desc = "EVTDESC6339"
+	picture = "Rebellion"
+	trigger = {
+		TGA = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = TGA
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = TGA
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = TGA
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6339"
+		release = TGA
+		TGA = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = TGA
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6340
+	title = "EVTNAME6340"
+	desc = "EVTDESC6340"
 	picture = "Rebellion"
 	trigger = {
 		TIB = {
@@ -11402,7 +16298,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6238"
+		name = "EVTOPTA6340"
 		release = TIB
 		TIB = {
 			any_pop = {
@@ -11423,9 +16319,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6239
-	title = "EVTNAME6239"
-	desc = "EVTDESC6239"
+	id = 6341
+	title = "EVTNAME6341"
+	desc = "EVTDESC6341"
+	picture = "Rebellion"
+	trigger = {
+		TKG = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = TKG
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = TKG
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = TKG
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6341"
+		release = TKG
+		TKG = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = TKG
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6342
+	title = "EVTNAME6342"
+	desc = "EVTDESC6342"
 	picture = "Rebellion"
 	trigger = {
 		TKM = {
@@ -11450,7 +16394,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6239"
+		name = "EVTOPTA6342"
 		release = TKM
 		TKM = {
 			any_pop = {
@@ -11471,9 +16415,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6240
-	title = "EVTNAME6240"
-	desc = "EVTDESC6240"
+	id = 6343
+	title = "EVTNAME6343"
+	desc = "EVTDESC6343"
+	picture = "Rebellion"
+	trigger = {
+		TKS = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = TKS
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = TKS
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = TKS
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6343"
+		release = TKS
+		TKS = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = TKS
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6344
+	title = "EVTNAME6344"
+	desc = "EVTDESC6344"
 	picture = "Rebellion"
 	trigger = {
 		TNT = {
@@ -11498,7 +16490,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6240"
+		name = "EVTOPTA6344"
 		release = TNT
 		TNT = {
 			any_pop = {
@@ -11519,9 +16511,153 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6241
-	title = "EVTNAME6241"
-	desc = "EVTDESC6241"
+	id = 6345
+	title = "EVTNAME6345"
+	desc = "EVTDESC6345"
+	picture = "Rebellion"
+	trigger = {
+		TNZ = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = TNZ
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = TNZ
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = TNZ
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6345"
+		release = TNZ
+		TNZ = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = TNZ
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6346
+	title = "EVTNAME6346"
+	desc = "EVTDESC6346"
+	picture = "Rebellion"
+	trigger = {
+		TOG = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = TOG
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = TOG
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = TOG
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6346"
+		release = TOG
+		TOG = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = TOG
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6347
+	title = "EVTNAME6347"
+	desc = "EVTDESC6347"
+	picture = "Rebellion"
+	trigger = {
+		TOS = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = TOS
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = TOS
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = TOS
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6347"
+		release = TOS
+		TOS = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = TOS
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6348
+	title = "EVTNAME6348"
+	desc = "EVTDESC6348"
 	picture = "Rebellion"
 	trigger = {
 		TPG = {
@@ -11546,7 +16682,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6241"
+		name = "EVTOPTA6348"
 		release = TPG
 		TPG = {
 			any_pop = {
@@ -11567,9 +16703,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6242
-	title = "EVTNAME6242"
-	desc = "EVTDESC6242"
+	id = 6349
+	title = "EVTNAME6349"
+	desc = "EVTDESC6349"
 	picture = "Rebellion"
 	trigger = {
 		TRA = {
@@ -11594,7 +16730,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6242"
+		name = "EVTOPTA6349"
 		release = TRA
 		TRA = {
 			any_pop = {
@@ -11615,9 +16751,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6243
-	title = "EVTNAME6243"
-	desc = "EVTDESC6243"
+	id = 6350
+	title = "EVTNAME6350"
+	desc = "EVTDESC6350"
 	picture = "Rebellion"
 	trigger = {
 		TRE = {
@@ -11642,7 +16778,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6243"
+		name = "EVTOPTA6350"
 		release = TRE
 		TRE = {
 			any_pop = {
@@ -11663,9 +16799,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6244
-	title = "EVTNAME6244"
-	desc = "EVTDESC6244"
+	id = 6351
+	title = "EVTNAME6351"
+	desc = "EVTDESC6351"
 	picture = "Rebellion"
 	trigger = {
 		TRI = {
@@ -11690,7 +16826,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6244"
+		name = "EVTOPTA6351"
 		release = TRI
 		TRI = {
 			any_pop = {
@@ -11711,9 +16847,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6245
-	title = "EVTNAME6245"
-	desc = "EVTDESC6245"
+	id = 6352
+	title = "EVTNAME6352"
+	desc = "EVTDESC6352"
 	picture = "Rebellion"
 	trigger = {
 		TRN = {
@@ -11738,7 +16874,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6245"
+		name = "EVTOPTA6352"
 		release = TRN
 		TRN = {
 			any_pop = {
@@ -11759,9 +16895,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6246
-	title = "EVTNAME6246"
-	desc = "EVTDESC6246"
+	id = 6353
+	title = "EVTNAME6353"
+	desc = "EVTDESC6353"
+	picture = "Rebellion"
+	trigger = {
+		TSW = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = TSW
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = TSW
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = TSW
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6353"
+		release = TSW
+		TSW = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = TSW
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6354
+	title = "EVTNAME6354"
+	desc = "EVTDESC6354"
 	picture = "Rebellion"
 	trigger = {
 		TTT = {
@@ -11786,7 +16970,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6246"
+		name = "EVTOPTA6354"
 		release = TTT
 		TTT = {
 			any_pop = {
@@ -11807,9 +16991,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6247
-	title = "EVTNAME6247"
-	desc = "EVTDESC6247"
+	id = 6355
+	title = "EVTNAME6355"
+	desc = "EVTDESC6355"
 	picture = "Rebellion"
 	trigger = {
 		TUN = {
@@ -11834,7 +17018,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6247"
+		name = "EVTOPTA6355"
 		release = TUN
 		TUN = {
 			any_pop = {
@@ -11855,9 +17039,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6248
-	title = "EVTNAME6248"
-	desc = "EVTDESC6248"
+	id = 6356
+	title = "EVTNAME6356"
+	desc = "EVTDESC6356"
 	picture = "Rebellion"
 	trigger = {
 		TUR = {
@@ -11882,7 +17066,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6248"
+		name = "EVTOPTA6356"
 		release = TUR
 		TUR = {
 			any_pop = {
@@ -11903,9 +17087,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6249
-	title = "EVTNAME6249"
-	desc = "EVTDESC6249"
+	id = 6357
+	title = "EVTNAME6357"
+	desc = "EVTDESC6357"
 	picture = "Rebellion"
 	trigger = {
 		TUS = {
@@ -11930,7 +17114,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6249"
+		name = "EVTOPTA6357"
 		release = TUS
 		TUS = {
 			any_pop = {
@@ -11951,9 +17135,153 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6250
-	title = "EVTNAME6250"
-	desc = "EVTDESC6250"
+	id = 6358
+	title = "EVTNAME6358"
+	desc = "EVTDESC6358"
+	picture = "Rebellion"
+	trigger = {
+		UAE = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = UAE
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = UAE
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = UAE
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6358"
+		release = UAE
+		UAE = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = UAE
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6359
+	title = "EVTNAME6359"
+	desc = "EVTDESC6359"
+	picture = "Rebellion"
+	trigger = {
+		UAQ = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = UAQ
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = UAQ
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = UAQ
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6359"
+		release = UAQ
+		UAQ = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = UAQ
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6360
+	title = "EVTNAME6360"
+	desc = "EVTDESC6360"
+	picture = "Rebellion"
+	trigger = {
+		UGA = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = UGA
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = UGA
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = UGA
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6360"
+		release = UGA
+		UGA = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = UGA
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6361
+	title = "EVTNAME6361"
+	desc = "EVTDESC6361"
 	picture = "Rebellion"
 	trigger = {
 		UKR = {
@@ -11978,7 +17306,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6250"
+		name = "EVTOPTA6361"
 		release = UKR
 		UKR = {
 			any_pop = {
@@ -11999,9 +17327,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6251
-	title = "EVTNAME6251"
-	desc = "EVTDESC6251"
+	id = 6362
+	title = "EVTNAME6362"
+	desc = "EVTDESC6362"
 	picture = "Rebellion"
 	trigger = {
 		URU = {
@@ -12026,7 +17354,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6251"
+		name = "EVTOPTA6362"
 		release = URU
 		URU = {
 			any_pop = {
@@ -12047,9 +17375,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6252
-	title = "EVTNAME6252"
-	desc = "EVTDESC6252"
+	id = 6363
+	title = "EVTNAME6363"
+	desc = "EVTDESC6363"
 	picture = "Rebellion"
 	trigger = {
 		VEN = {
@@ -12074,7 +17402,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6252"
+		name = "EVTOPTA6363"
 		release = VEN
 		VEN = {
 			any_pop = {
@@ -12095,9 +17423,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6253
-	title = "EVTNAME6253"
-	desc = "EVTDESC6253"
+	id = 6364
+	title = "EVTNAME6364"
+	desc = "EVTDESC6364"
 	picture = "Rebellion"
 	trigger = {
 		VNZ = {
@@ -12122,7 +17450,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6253"
+		name = "EVTOPTA6364"
 		release = VNZ
 		VNZ = {
 			any_pop = {
@@ -12143,9 +17471,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6254
-	title = "EVTNAME6254"
-	desc = "EVTDESC6254"
+	id = 6365
+	title = "EVTNAME6365"
+	desc = "EVTDESC6365"
 	picture = "Rebellion"
 	trigger = {
 		WAL = {
@@ -12170,7 +17498,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6254"
+		name = "EVTOPTA6365"
 		release = WAL
 		WAL = {
 			any_pop = {
@@ -12191,9 +17519,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6255
-	title = "EVTNAME6255"
-	desc = "EVTDESC6255"
+	id = 6366
+	title = "EVTNAME6366"
+	desc = "EVTDESC6366"
 	picture = "Rebellion"
 	trigger = {
 		WEI = {
@@ -12218,7 +17546,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6255"
+		name = "EVTOPTA6366"
 		release = WEI
 		WEI = {
 			any_pop = {
@@ -12239,9 +17567,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6256
-	title = "EVTNAME6256"
-	desc = "EVTDESC6256"
+	id = 6367
+	title = "EVTNAME6367"
+	desc = "EVTDESC6367"
 	picture = "Rebellion"
 	trigger = {
 		WIA = {
@@ -12266,7 +17594,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6256"
+		name = "EVTOPTA6367"
 		release = WIA
 		WIA = {
 			any_pop = {
@@ -12287,9 +17615,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6257
-	title = "EVTNAME6257"
-	desc = "EVTDESC6257"
+	id = 6368
+	title = "EVTNAME6368"
+	desc = "EVTDESC6368"
 	picture = "Rebellion"
 	trigger = {
 		WLL = {
@@ -12314,7 +17642,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6257"
+		name = "EVTOPTA6368"
 		release = WLL
 		WLL = {
 			any_pop = {
@@ -12335,9 +17663,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6258
-	title = "EVTNAME6258"
-	desc = "EVTDESC6258"
+	id = 6369
+	title = "EVTNAME6369"
+	desc = "EVTDESC6369"
 	picture = "Rebellion"
 	trigger = {
 		WUR = {
@@ -12362,7 +17690,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6258"
+		name = "EVTOPTA6369"
 		release = WUR
 		WUR = {
 			any_pop = {
@@ -12383,9 +17711,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6259
-	title = "EVTNAME6259"
-	desc = "EVTDESC6259"
+	id = 6370
+	title = "EVTNAME6370"
+	desc = "EVTDESC6370"
 	picture = "Rebellion"
 	trigger = {
 		XBI = {
@@ -12410,7 +17738,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6259"
+		name = "EVTOPTA6370"
 		release = XBI
 		XBI = {
 			any_pop = {
@@ -12431,9 +17759,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6260
-	title = "EVTNAME6260"
-	desc = "EVTDESC6260"
+	id = 6371
+	title = "EVTNAME6371"
+	desc = "EVTDESC6371"
 	picture = "Rebellion"
 	trigger = {
 		XIN = {
@@ -12458,7 +17786,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6260"
+		name = "EVTOPTA6371"
 		release = XIN
 		XIN = {
 			any_pop = {
@@ -12479,9 +17807,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6261
-	title = "EVTNAME6261"
-	desc = "EVTDESC6261"
+	id = 6372
+	title = "EVTNAME6372"
+	desc = "EVTDESC6372"
 	picture = "Rebellion"
 	trigger = {
 		YAK = {
@@ -12506,7 +17834,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6261"
+		name = "EVTOPTA6372"
 		release = YAK
 		YAK = {
 			any_pop = {
@@ -12527,9 +17855,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6262
-	title = "EVTNAME6262"
-	desc = "EVTDESC6262"
+	id = 6373
+	title = "EVTNAME6373"
+	desc = "EVTDESC6373"
 	picture = "Rebellion"
 	trigger = {
 		YEM = {
@@ -12554,7 +17882,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6262"
+		name = "EVTOPTA6373"
 		release = YEM
 		YEM = {
 			any_pop = {
@@ -12575,9 +17903,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6263
-	title = "EVTNAME6263"
-	desc = "EVTDESC6263"
+	id = 6374
+	title = "EVTNAME6374"
+	desc = "EVTDESC6374"
 	picture = "Rebellion"
 	trigger = {
 		YNN = {
@@ -12602,7 +17930,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6263"
+		name = "EVTOPTA6374"
 		release = YNN
 		YNN = {
 			any_pop = {
@@ -12623,9 +17951,153 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6264
-	title = "EVTNAME6264"
-	desc = "EVTDESC6264"
+	id = 6375
+	title = "EVTNAME6375"
+	desc = "EVTDESC6375"
+	picture = "Rebellion"
+	trigger = {
+		YUC = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = YUC
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = YUC
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = YUC
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6375"
+		release = YUC
+		YUC = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = YUC
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6376
+	title = "EVTNAME6376"
+	desc = "EVTDESC6376"
+	picture = "Rebellion"
+	trigger = {
+		YZW = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = YZW
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = YZW
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = YZW
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6376"
+		release = YZW
+		YZW = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = YZW
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6377
+	title = "EVTNAME6377"
+	desc = "EVTDESC6377"
+	picture = "Rebellion"
+	trigger = {
+		ZAM = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = ZAM
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = ZAM
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = ZAM
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6377"
+		release = ZAM
+		ZAM = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = ZAM
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6378
+	title = "EVTNAME6378"
+	desc = "EVTDESC6378"
 	picture = "Rebellion"
 	trigger = {
 		ZAN = {
@@ -12650,7 +18122,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6264"
+		name = "EVTOPTA6378"
 		release = ZAN
 		ZAN = {
 			any_pop = {
@@ -12671,9 +18143,57 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6265
-	title = "EVTNAME6265"
-	desc = "EVTDESC6265"
+	id = 6379
+	title = "EVTNAME6379"
+	desc = "EVTDESC6379"
+	picture = "Rebellion"
+	trigger = {
+		ZHI = {
+			exists = no
+		}
+		any_owned_province = {
+			is_core = ZHI
+		}
+		any_owned_province = {
+			NOT = {
+				is_core = ZHI
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				is_core = ZHI
+				controlled_by_rebels = no
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA6379"
+		release = ZHI
+		ZHI = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				militancy = -10
+			}
+		}
+		casus_belli = {
+			target = ZHI
+			type = conquest_for_all
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 6380
+	title = "EVTNAME6380"
+	desc = "EVTDESC6380"
 	picture = "Rebellion"
 	trigger = {
 		ZUL = {
@@ -12698,7 +18218,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA6265"
+		name = "EVTOPTA6380"
 		release = ZUL
 		ZUL = {
 			any_pop = {

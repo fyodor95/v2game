@@ -43,7 +43,7 @@ def one(node, key):
     return result
 
 
-def find_events(raw):
+def find_events(raw, dynamic_culture=None):
     """Извлечь исходные блоки нового генератора без повторной сериализации."""
     text = raw.decode('cp1251')
     matches = {}
@@ -70,6 +70,9 @@ def find_events(raw):
         if tag and re.fullmatch(r'D\d\d', tag):
             dynamic.append(record)
     require(len(matches) == 3 and dynamic, 'Нет новых первых событий OBO/SAX/GER/D; генерация ещё не завершена')
+    if dynamic_culture is not None:
+        dynamic = [record for record in dynamic if record['culture'] == dynamic_culture]
+        require(len(dynamic) == 1, 'Не найдено единственное D-событие культуры ' + dynamic_culture)
     return {'new': matches['OBO', 'north_german'], 'old': matches['SAX', 'north_german'],
             'union': matches['GER', 'south_german'], 'dynamic': dynamic[0]}
 
@@ -162,11 +165,11 @@ def make_save(text, provinces, selected, foreign, sax, case, tags):
     return output.encode('cp1251'), len(edits)
 
 
-def prepare(game_root, source_save, output):
+def prepare(game_root, source_save, output, dynamic_culture=None):
     game_root, source_save, output = Path(game_root).resolve(), Path(source_save).resolve(), work_path(output)
     require(not output.exists(), 'Каталог результата уже существует')
     event_raw = (game_root / 'events/adding_cores.txt').read_bytes()
-    events = find_events(event_raw)
+    events = find_events(event_raw, dynamic_culture)
     raw = source_save.read_bytes()
     text, provinces, selected, foreign, sax = inspect_source(raw, game_root)
     cases = fixture_cases(events)
@@ -200,6 +203,8 @@ def prepare(game_root, source_save, output):
     manifest = {'source_save': str(source_save), 'source_sha256': sha(raw), 'game_root': str(game_root),
                 'adding_cores_sha256': sha(event_raw), 'province': selected, 'foreign_province': foreign,
                 'foreign_owner': provinces[foreign]['owner'], 'events': events, 'cases': cases, 'files': {}}
+    if dynamic_culture is not None:
+        manifest['requested_dynamic_culture'] = dynamic_culture
     # Все варианты строятся в памяти до появления выходного каталога.
     for case in cases:
         data, edits = make_save(text, provinces, selected, foreign, sax, case, tags)
@@ -582,6 +587,7 @@ def main():
     prep.add_argument('--game-root', required=True, type=Path)
     prep.add_argument('--source-save', required=True, type=Path)
     prep.add_argument('--output', required=True, type=Path)
+    prep.add_argument('--dynamic-culture', help='Выбрать D-fallback конкретной культуры; по умолчанию первый в файле')
     diagnostic = sub.add_parser('prepare-diagnostics', help='Отдельный пакет булевых проверок существующей фикстуры')
     diagnostic.add_argument('--fixtures', required=True, type=Path)
     diagnostic.add_argument('--output', required=True, type=Path)
@@ -594,7 +600,7 @@ def main():
     run.add_argument('--visible', action='store_true', help='По явному указанию root оставить тестовое окно видимым')
     args = parser.parse_args()
     if args.command == 'prepare':
-        print(json.dumps(prepare(args.game_root, args.source_save, args.output), ensure_ascii=False))
+        print(json.dumps(prepare(args.game_root, args.source_save, args.output, args.dynamic_culture), ensure_ascii=False))
         return 0
     if args.command == 'prepare-diagnostics':
         print(json.dumps(prepare_diagnostics(args.fixtures, args.output), ensure_ascii=False))
