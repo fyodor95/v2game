@@ -1,0 +1,90 @@
+{
+  "exe_sha256": "62d48c204364dd706584777c2e2b3c7ab3c5f1dd0170872554943575d53d6648",
+  "image_base": "0x400000",
+  "ranges": {
+    "civilize": {
+      "va": "0x542370",
+      "rva": "0x142370",
+      "bytes": 2120,
+      "sha256": "1528ec6991d93702d30f72fb7c32736b23c17cbf11706c833a52a4d1d9011dda"
+    },
+    "reform_fractions": {
+      "va": "0x547030",
+      "rva": "0x147030",
+      "bytes": 404,
+      "sha256": "9197566f79afec259dfee257e4d4f82fb8f209116a328a1c2b1a3ab6bc73d345"
+    },
+    "research_setter": {
+      "va": "0x5366f0",
+      "rva": "0x1366f0",
+      "bytes": 118,
+      "sha256": "76318f40f109e54402661961719f3d817aac4d3deca966a92078d5cee3c15cc5"
+    },
+    "research_update": {
+      "va": "0x507770",
+      "rva": "0x107770",
+      "bytes": 2994,
+      "sha256": "52e7d5a21a98a541102ad80e36bd58531400465757ed9c81e67b41fe1e9fd251"
+    },
+    "research_daily": {
+      "va": "0x538150",
+      "rva": "0x138150",
+      "bytes": 163,
+      "sha256": "725559e4d07837b62738544a53189ae8d506f811048879926361ba9dc14b5ddb"
+    },
+    "research_project": {
+      "va": "0x579ee0",
+      "rva": "0x179ee0",
+      "bytes": 154,
+      "sha256": "7f56fe89a2c5b847e0be1ac51e38dac438a6ef78b4c56c94ac497e0a1283e096"
+    },
+    "research_start": {
+      "va": "0x513930",
+      "rva": "0x113930",
+      "bytes": 246,
+      "sha256": "eb2ee0d767a7aa4c14c76a592443ba843354db780403cb57fb8f206e00b59786"
+    },
+    "great_power_list": {
+      "va": "0x68c5c0",
+      "rva": "0x28c5c0",
+      "bytes": 976,
+      "sha256": "9e7fe3a3211a8cbc712b203cce188fb75fdd52ff6c57f3d82366ed59c7a26a82"
+    },
+    "signed_division": {
+      "va": "0xac02a0",
+      "rva": "0x6c02a0",
+      "bytes": 176,
+      "sha256": "6883b20fa3ffbd7d6d7bb775784fb0ba73b71f690daf0565dfe4900e34c2b371"
+    },
+    "floor_float": {
+      "va": "0x401000",
+      "rva": "0x1000",
+      "bytes": 38,
+      "sha256": "12ee5b07d8066fe50d50e2ab147e7b9b02bf835e25633d6b355bcf90db29318b"
+    },
+    "float_to_integer": {
+      "va": "0xb31c00",
+      "rva": "0x731c00",
+      "bytes": 176,
+      "sha256": "6109a42a23e353173199b0daa92baa4bff9f196ece31533f66600d293dc64e06"
+    }
+  },
+  "constants": {
+    "0xe45660": 1000.0,
+    "0xe45840": 0.0005000000237487257,
+    "0xe45e74_float": 365000.5
+  },
+  "inputs": {
+    "common/defines.lua": "955ef0e2b17d5bd636413c5e890d661781bb2379801508aae01a42410a12b3ff",
+    "common/issues.txt": "b75543b82fe564811b3d11015f9d875d96b4d17d7b933b21906ad6358cb76399",
+    "common/technology.txt": "a61d20e7ca9332fa51ae4ba908dd2dee07dfc34ed4bf61ecf625f6dba1ba5cd6",
+    "common/on_actions.txt": "15d4a72d3c792871d4461aa1d9de521e075e3ed6214fbadd91d3600d5ba95d6f",
+    "z_CreatineCore/creatinecore_settings.ini": "4d32e9c212ba638a07f440adca8ab091d121186ba03477af24584517a68f25a2",
+    "z_CreatineCore/creatinecore.dll": "73857f40e2b6cde65fe35efe61db6d3d82ff2af037136f5e099101d50f960068",
+    "technologies/army_tech.txt": "e1462a7ffaa285331e7abb974e850ea3de008e988db1f78ef66ab46720319c49",
+    "technologies/commerce_tech.txt": "aef89a78bc3737afe3a1e0ffd390073471cbdd7ad37be22ea09cd2b93a1e0ad5",
+    "technologies/culture_tech.txt": "385d20626bd522a6fe55345ed4fc9c994fabba732d65e80d12fe11ba7a8eb70b",
+    "technologies/industry_tech.txt": "70a3bd68107b745da80813f43f81a699817e1e7f1e32e80013790ecd585b3fe2",
+    "technologies/navy_tech.txt": "dd9b202816a4574f3398a18454edeb5ac4d6f00d87936fabfb840bec304579da"
+  }
+}
