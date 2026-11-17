@@ -257,6 +257,9 @@ def add_cultures(raw, colors):
         additions[group].append(newline.join(['\t'+code+' = {', '\t\tcolor = { '+color+' }', *fields, '\t}', '']))
     for group in sorted(additions, key=lambda g: groups[g].end, reverse=True):
         point = groups[group].end - 1
+        union = groups[group].single('union')
+        if union:
+            point = text.rfind('\n', 0, union.key_start) + 1
         block = newline + '\t# Местные культуры: tools/culture-history/assignments.py' + newline
         block += newline.join(additions[group])
         text = text[:point] + block + text[point:]

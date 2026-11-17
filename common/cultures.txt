@@ -941,7 +941,6 @@ arab = {
 			radicalism = 10
 	}
 	
-	union = ARA
 
 	# Местные культуры: tools/culture-history/assignments.py
 	socotri = {
@@ -960,6 +959,7 @@ arab = {
 			"аль-Наджди" "аль-Хиджази"   
 			}
 	}
+	union = ARA
 }
 
 uzbek_culture_group = {
@@ -1373,7 +1373,6 @@ south_asian = {
                
 		}
 	}
-	union = HND
 
 	# Местные культуры: tools/culture-history/assignments.py
 	andamanese = {
@@ -1426,6 +1425,7 @@ south_asian = {
                
 		}
 	}
+	union = HND
 }
 
 malay_culture_group = {
