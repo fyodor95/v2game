@@ -3,12 +3,36 @@ import tempfile
 from pathlib import Path
 import unittest
 from unittest.mock import patch
+from unittest.mock import Mock
 
 from tools.chronology_import import natural_spawn as subject
 from tools.chronology_import.test_engine_acceptance import event
 
 
 class NaturalPreparationTests(unittest.TestCase):
+    def test_observes_false_allow_and_actual_lost_rebel_control_without_failing(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'common').mkdir()
+            (root / 'poptypes').mkdir()
+            (root / 'common/cultures.txt').write_text('germanic={north_german={}}')
+            (root / 'common/religion.txt').write_text('christian={protestant={}}')
+            (root / 'poptypes/farmers.txt').write_text('')
+            saved = root / 'after.v2'
+            saved.write_text('546={owner="PRU" controller="PRU" '
+                             'farmers={size=100 north_german=protestant}}\n'
+                             'OBO={primary_culture="north_german" culture={}}\n}\n')
+            runner = object.__new__(subject.NaturalRunner)
+            runner.request = Mock(return_value={'ok': True, 'potential': True, 'allow': False})
+            manifest = {'province': 546, 'events': {'new': {'decision': 'chr_check_new'}}}
+            observation = runner.observe_conditions(saved, root, manifest)
+            self.assertFalse(observation['conditions_held'])
+            self.assertFalse(observation['native_condition']['allow'])
+            self.assertEqual(observation['saved_state']['province']['controller'], 'PRU')
+            self.assertEqual(observation['saved_state']['province']['largest_cultures'], ['north_german'])
+            self.assertEqual(observation['saved_state']['primary_culture'], 'north_german')
+            runner.request.assert_called_once_with('decision-check PRU chr_check_new')
+
     def source(self):
         values = [('OBO', 'north_german'), ('SAX', 'north_german'),
                   ('GER', 'south_german'), ('D36', 'aborigine')]

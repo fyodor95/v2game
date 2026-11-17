@@ -13,6 +13,8 @@ import time
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from tools.chronology_import import engine_acceptance as engine
 
+ADVANCE_STEPS = (2, 2, 12, 16)
+
 
 def accelerate(raw):
     """Сохранить условия и эффект; изменить только MTTH и участие других первых событий."""
@@ -102,7 +104,17 @@ class NaturalRunner(engine.Runner):
         super().__init__(environment, fixtures, stream, ['new'], visible=True)
         self.artifacts = engine.work_path(artifacts)
         self.record.update(test='natural_first_core', probability_measurement=False,
+                           advance_steps_days=list(ADVANCE_STEPS), advance_timeout_seconds=300,
                            interpretation='Естественный планировщик при ускоренном MTTH; не оценка частоты 4n')
+
+    def observe_conditions(self, saved, game, manifest):
+        # Ложное условие — результат диагностики, а не отказ чтения состояния.
+        native = self.request('decision-check PRU ' + manifest['events']['new']['decision'])
+        engine.require(type(native.get('potential')) is bool and type(native.get('allow')) is bool,
+                       'Нативное условие события не вычислено')
+        return {'native_condition': native,
+                'conditions_held': native['potential'] and native['allow'],
+                'saved_state': engine.saved_diagnostic_state(saved, game, manifest['province'], 'OBO')}
 
     def advance(self, days):
         initial = self.request('status')
@@ -169,9 +181,10 @@ class NaturalRunner(engine.Runner):
                     self.decision(manifest['events']['new']['decision'], True)
                     log = game / 'z_CreatineCore/Logs/v2dll.log'
                     offset = log.stat().st_size
-                    selected, found, total_selected = [], False, 0
-                    for day in (2, 4):
-                        state = self.advance(2)
+                    selected, found, total_selected, day = [], False, 0, 0
+                    for step_days in ADVANCE_STEPS:
+                        state = self.advance(step_days)
+                        day += step_days
                         total_selected += state.get('auto_events_selected', 0)
                         if state.get('event_windows') == 0:
                             self.settle()
@@ -189,6 +202,8 @@ class NaturalRunner(engine.Runner):
                                        'obo_cores': sorted(number for number, tag in after if tag == 'OBO')}
                         self.record.setdefault('observations', []).append(observation)
                         self.checkpoint()
+                        observation.update(self.observe_conditions(saved, game, manifest))
+                        self.checkpoint()
                         found = (manifest['province'], 'OBO') in after
                         if found:
                             engine.require(details['event']['id'] in selected and total_selected > 0,
@@ -197,7 +212,7 @@ class NaturalRunner(engine.Runner):
                                            'Обнаружены неожиданные дополнительные OBO-корки')
                             self.decision(manifest['events']['new']['decision'], False)
                             break
-                    engine.require(found, 'За четыре дня OBO-корка не появилась')
+                    engine.require(found, f'За {sum(ADVANCE_STEPS)} дня OBO-корка не появилась')
                     self.record.update(ok=True, complete=True)
                 finally:
                     if self.owned:

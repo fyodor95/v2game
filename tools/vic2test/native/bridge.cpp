@@ -645,9 +645,11 @@ static void Dispatch() {
         strcpy_s(response, "{\"ok\":true,\"queued\":true,\"completed\":false}\n"); return;
     }
     if (strcmp(command, "status") == 0) {
-        DWORD idler = world ? Read(world + 0xB24) : 0;
+        const bool inCampaign = InCampaign(world);
+        // В меню текущий idler имеет другой класс и не содержит поля паузы CInGameIdler.
+        DWORD idler = inCampaign ? Read(world + 0xB24) : 0;
         sprintf_s(response, "{\"ok\":true,\"protocol\":1,\"campaign_loaded\":%s,\"date_raw\":%lu,\"pid\":%lu,\"owner_thread\":%lu,\"console_captured\":%s,\"advance_target\":%lu,\"paused\":%s,\"event_windows\":%u,\"auto_events_selected\":%u,\"multiplayer\":%s}\n",
-            InCampaign(world) ? "true" : "false",
+            inCampaign ? "true" : "false",
             world ? Read(world + 0xB0C) : 0, GetCurrentProcessId(), ownerThread,
             consoleManager ? "true" : "false", advanceTarget,
             idler && *(BYTE*)(idler + 0x1538) ? "true" : "false", ActivePopupCount(), autoEventsSelected,
