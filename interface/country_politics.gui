@@ -88,9 +88,25 @@ guiTypes = {
 		}	
 		
 		iconType = {
+			name = "state_religion"
+			spriteType = "GFX_icon_religion"
+			position = { x = 30 y = 47 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "state_religion_name"
+			position = { x = 63 y = 49 }
+			font = "Arial10_black"
+			text = "CC_STATE_RELIGION_UNKNOWN"
+			maxWidth = 66
+			maxHeight = 30
+		}
+
+		iconType = {
 			name = "national_value"
 			spriteType = "GFX_politics_nationalvalue"
-			position = { x = 30 y = 47 }
+			position = { x = 130 y = 47 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -98,39 +114,39 @@ guiTypes = {
 		
 		instantTextBoxType = { 
 			name = "government_desc"
-			position = { x = 63 y = 49 }
-			font = "Arial12_black"
+			position = { x = 163 y = 49 }
+			font = "Arial10_black"
 			text = "GOVERNMENT_DESC"	
-			maxWidth = 200
+			maxWidth = 161
 			maxHeight = 30	
 		}
 		
 		iconType = {
 			name = "plurality"
 			spriteType = "GFX_politics_pluralism"
-			position = { x = 245 y = 52 }
+			position = { x = 325 y = 52 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		instantTextBoxType = { 
 			name = "plurality_value"
-			position = { x = 270 y = 55 }
-			font = "vic_18_black"
+			position = { x = 350 y = 55 }
+			font = "Arial10_black"
 			text = "100%"	
-			maxWidth = 40
+			maxWidth = 24
 			maxHeight = 30	
 		}	
 
 		iconType = {
 			name = "revanchism"
 			spriteType = "GFX_politics_revanchism"
-			position = { x = 308 y = 51 }
+			position = { x = -10000 y = -10000 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		instantTextBoxType = { 
 			name = "revanchism_value"
-			position = { x = 330 y = 55 }
+			position = { x = -10000 y = -10000 }
 			font = "vic_18_black"
 			text = "100%"	
 			maxWidth = 40

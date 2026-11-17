@@ -19,6 +19,9 @@ UPSTREAM = WORK / "upstream"
 BUILD = WORK / "build"
 GPC_RESOURCES = ("events/great_power_culture_cores.txt",
                  "localisation/great_power_culture_cores.csv")
+RELIGION_RESOURCES = ("interface/country_politics.gui",
+                      "localisation/country_state_religion.csv")
+PATCHES = ("v2game.patch", "religion.patch")
 
 
 def run(*args: str, cwd: Path = ROOT) -> None:
@@ -35,13 +38,14 @@ def prepare() -> None:
     actual = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=UPSTREAM, text=True).strip()
     if actual != COMMIT:
         raise RuntimeError("Рабочее дерево исходников относится к другому коммиту")
-    patch = Path(__file__).with_name("v2game.patch")
-    clean = subprocess.run(["git", "apply", "--check", str(patch)], cwd=UPSTREAM, capture_output=True)
-    if clean.returncode == 0:
-        run("git", "apply", str(patch), cwd=UPSTREAM)
-    else:
-        # Повторный запуск разрешён только для уже применённого патча.
-        run("git", "apply", "--reverse", "--check", str(patch), cwd=UPSTREAM)
+    for name in PATCHES:
+        patch = Path(__file__).with_name(name)
+        clean = subprocess.run(["git", "apply", "--check", str(patch)], cwd=UPSTREAM, capture_output=True)
+        if clean.returncode == 0:
+            run("git", "apply", str(patch), cwd=UPSTREAM)
+        else:
+            # Повторный запуск разрешён только для уже применённого патча.
+            run("git", "apply", "--reverse", "--check", str(patch), cwd=UPSTREAM)
 
 
 def msbuild_path() -> Path:
@@ -61,6 +65,12 @@ def core_project() -> Path:
     # Вспомогательные проекты собираются отдельно, с собственными obj-каталогами.
     for target in list(tree.getroot().findall("m:Target", ns)):
         tree.getroot().remove(target)
+    namespace = "{http://schemas.microsoft.com/developer/msbuild/2003}"
+    group = ET.SubElement(tree.getroot(), namespace + "ItemGroup")
+    for name in ("calculation.cpp", "effect.cpp", "native.cpp"):
+        item = ET.SubElement(group, namespace + "ClCompile", {
+            "Include": str(Path(__file__).with_name("religion") / name)})
+        ET.SubElement(item, namespace + "AdditionalOptions").text = "/utf-8 %(AdditionalOptions)"
     output = original.with_name("V2.v2game.vcxproj")
     tree.write(output, encoding="utf-8", xml_declaration=True)
     return output
@@ -102,14 +112,14 @@ def stage_gpc_artifacts(source: Path, product: Path, destination: Path,
     return record
 
 
-def stage_gpc_resources(source: Path, destination: Path) -> dict:
-    """Зафиксировать событие и локализацию вместе с устанавливаемым пакетом."""
+def stage_resources(source: Path, destination: Path, resources: tuple[str, ...]) -> dict:
+    """Зафиксировать игровые ресурсы вместе с устанавливаемым пакетом."""
     artifacts = {}
     # Отсутствие любого ресурса обнаруживается до копирования первого файла.
-    for relative in GPC_RESOURCES:
+    for relative in resources:
         path = source / relative
         if not path.is_file():
-            raise RuntimeError("Отсутствует игровой ресурс GPC: " + relative)
+            raise RuntimeError("Отсутствует игровой ресурс: " + relative)
         content = path.read_bytes()
         artifacts[relative] = {"sha256": hashlib.sha256(content).hexdigest(),
                                "bytes": len(content)}
@@ -119,12 +129,23 @@ def stage_gpc_resources(source: Path, destination: Path) -> dict:
         # Игровые CP1251/CRLF сохраняются без декодирования и преобразований.
         shutil.copy2(source / relative, target)
         if hashlib.sha256(target.read_bytes()).hexdigest() != record["sha256"]:
-            raise RuntimeError("Ошибка копирования игрового ресурса GPC: " + relative)
+            raise RuntimeError("Ошибка копирования игрового ресурса: " + relative)
     return artifacts
+
+
+def stage_gpc_resources(source: Path, destination: Path) -> dict:
+    return stage_resources(source, destination, GPC_RESOURCES)
+
+
+def religion_sources() -> dict:
+    source = Path(__file__).with_name("religion")
+    return {path.name: hashlib.sha256(path.read_bytes()).hexdigest()
+            for path in sorted(source.iterdir()) if path.is_file()}
 
 
 def build() -> None:
     prepare()
+    religion_inputs = religion_sources()
     BUILD.mkdir(exist_ok=True)
     tool = str(msbuild_path())
     projects = [(core_project(), "core"), (UPSTREAM / "Source/V2/V2/V2Proxy.vcxproj", "proxy"), (UPSTREAM / "Source/V2/V2/EventMusic.vcxproj", "music")]
@@ -132,20 +153,27 @@ def build() -> None:
     shutil.copyfile(UPSTREAM / "Source/V2/V2/V2ModAPI.h", WORK / "V2ModAPI.h")
     shutil.copyfile(Path(__file__).with_name("script_fixes.vcxproj"), WORK / "script_fixes.vcxproj")
     projects.append((WORK / "script_fixes.vcxproj", "script-fixes"))
+    projects.append((Path(__file__).with_name("religion") / "ui.vcxproj", "religion-ui"))
     for project, name in projects:
-        run(tool, str(project), "/p:Configuration=Release", "/p:Platform=Win32", f"/p:OutDir={BUILD}\\", f"/p:IntDir={WORK / ('obj-' + name)}\\", "/m:1", "/v:minimal", "/nologo")
+        run(tool, str(project), "/t:Rebuild", "/p:Configuration=Release", "/p:Platform=Win32", f"/p:OutDir={BUILD}\\", f"/p:IntDir={WORK / ('obj-' + name)}\\", "/m:1", "/v:minimal", "/nologo")
     gpc_source = Path(__file__).with_name("gpc")
     run("cmd.exe", "/d", "/c", str(gpc_source / "build_runtime.cmd"))
     gpc = stage_gpc_artifacts(gpc_source, ROOT / ".work/gpc-build", BUILD,
                               hashlib.sha256((ROOT / "v2game.exe").read_bytes()).hexdigest())
     artifacts = {}
     for name in ("creatinecore.dll", "dinput8.dll", "eventmusic.dll", "ccore_script_fixes.dll",
-                 "ccore_great_power_culture_cores.dll"):
+                 "ccore_great_power_culture_cores.dll", "ccore_state_religion_ui.dll"):
         artifacts[name] = dll_artifact(BUILD / name)
     ini = BUILD / "great_power_culture_cores.ini"
     artifacts[ini.name] = {"sha256": hashlib.sha256(ini.read_bytes()).hexdigest(), "bytes": ini.stat().st_size}
     artifacts.update(stage_gpc_resources(ROOT, BUILD))
+    artifacts.update(stage_resources(ROOT, BUILD, RELIGION_RESOURCES))
     record = {"upstream_url": URL, "upstream_commit": COMMIT, "patch_sha256": hashlib.sha256(Path(__file__).with_name("v2game.patch").read_bytes()).hexdigest(), "msbuild": tool, "configuration": "Release|Win32", "artifacts": artifacts, "great_power_culture_cores": gpc}
+    record["patches"] = {name: hashlib.sha256(Path(__file__).with_name(name).read_bytes()).hexdigest()
+                         for name in PATCHES}
+    if religion_sources() != religion_inputs:
+        raise RuntimeError("Исходники религии изменились во время сборки")
+    record["state_religion_sources"] = religion_inputs
     (BUILD / "manifest.json").write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print("Сборка завершена:", BUILD)
 

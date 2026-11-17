@@ -1,0 +1,37 @@
+diff --git a/Source/V2/V2/CCore_AssimilateBlock.cpp b/Source/V2/V2/CCore_AssimilateBlock.cpp
+--- a/Source/V2/V2/CCore_AssimilateBlock.cpp
++++ b/Source/V2/V2/CCore_AssimilateBlock.cpp
+@@ -1250,6 +1250,9 @@
+     if (CaptureSubstateScriptEffect(self, edx, ctx, keyId, g_origEffectFactory))
+         return;
+ 
++    if (CapturePrimaryCultureReligionEffect(self, edx, ctx, keyId, g_origEffectFactory))
++        return;
++
+     if (CaptureUnitScriptEffect(self, edx, ctx, keyId, g_origEffectFactory))
+         return;
+ 
+diff --git a/Source/V2/V2/CCore_Shared.h b/Source/V2/V2/CCore_Shared.h
+--- a/Source/V2/V2/CCore_Shared.h
++++ b/Source/V2/V2/CCore_Shared.h
+@@ -25,6 +25,9 @@
+ void*  CoreFindTooltipEventScope(uintptr_t a1, uintptr_t a2, uintptr_t a3, uintptr_t a4, uintptr_t a5, uintptr_t a6, uintptr_t a7, uintptr_t a8, uintptr_t a9, uintptr_t a10);
+ void   CoreFreeGameString(void* gameString);
+ bool   InstallEffectFactoryHook(bool quietFailure = false);       // shared router of the block-form script effects
++bool InstallPrimaryCultureReligionEffect();
++bool CapturePrimaryCultureReligionEffect(void* self, void* edx, void* ctx, int keyId,
++                                         tCoreEffectFactory originalFactory);
+ bool   InstallExtendedUnitRecruitmentRules();
+ 
+ bool   InitializeUnitLookup();
+diff --git a/Source/V2/V2/V2TechButton.cpp b/Source/V2/V2/V2TechButton.cpp
+--- a/Source/V2/V2/V2TechButton.cpp
++++ b/Source/V2/V2/V2TechButton.cpp
+@@ -23234,6 +23234,7 @@
+         Log("ModLoader: %d mod(s) activo(s) en la linea de comandos", modsSeen);
+     }
+     // z_CreatineCore\dll_Submods\*.dll: any other patch DLLs, loaded automatically, whatever mod runs.
++    InstallPrimaryCultureReligionEffect();
+     LoadV2Submods();
+     LogConfigFingerprint();
+ 

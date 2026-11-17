@@ -15,6 +15,9 @@ import build as core_build
 
 
 RESOURCE_BYTES = {
+    'interface/country_politics.gui': b'guiTypes = { windowType = { name = "country_politics" } }\r\n',
+    'localisation/country_state_religion.csv': (
+        'CC_STATE_RELIGION_catholic;Католицизм;;;;;;;;;;;;;x\r\n').encode('cp1251'),
     'events/great_power_culture_cores.txt': (
         '# Уведомление о новых национальных провинциях\r\n'
         'country_event = { id = 3997200 is_triggered_only = yes }\r\n').encode('cp1251'),
@@ -44,6 +47,7 @@ class InstallTests(unittest.TestCase):
             'z_CreatineCore/eventmusic.dll': b'new music artifact',
             'z_CreatineCore/dll_Submods/ccore_script_fixes.dll': b'new script fixes artifact',
             'z_CreatineCore/dll_Submods/ccore_great_power_culture_cores.dll': b'new GPC artifact',
+            'z_CreatineCore/dll_Submods/ccore_state_religion_ui.dll': b'new religion UI artifact',
             'z_CreatineCore/great_power_culture_cores.ini': (
                 b'[GreatPowerCultureCores]\r\nENABLE_GREAT_POWER_CULTURE_CORES=0\r\n'
                 b'GREAT_POWER_CULTURE_CORES_MTTH_MONTHS=60\r\n'),
@@ -179,7 +183,7 @@ class InstallTests(unittest.TestCase):
         self.assertIn(b'ENABLE_GREAT_POWER_CULTURE_CORES=0', self.gpc_settings.read_bytes())
 
     def test_changed_gpc_artifact_rejected_before_any_destination_write(self):
-        for name in ('ccore_great_power_culture_cores.dll', 'great_power_culture_cores.ini',
+        for name in ('ccore_great_power_culture_cores.dll', 'ccore_state_religion_ui.dll', 'great_power_culture_cores.ini',
                      *RESOURCE_BYTES):
             with self.subTest(name=name):
                 path = self.build / name
@@ -194,7 +198,7 @@ class InstallTests(unittest.TestCase):
                 self.assertFalse((self.root / '.work/install-backups').exists())
 
     def test_missing_resource_rejected_before_any_destination_write(self):
-        for name in RESOURCE_BYTES:
+        for name in (*RESOURCE_BYTES, 'ccore_state_religion_ui.dll'):
             with self.subTest(name=name):
                 path = self.build / name
                 content = path.read_bytes()
@@ -208,7 +212,7 @@ class InstallTests(unittest.TestCase):
                 self.assertFalse((self.root / '.work/install-backups').exists())
 
     def test_missing_resource_manifest_entry_rejects_legacy_package(self):
-        for name in RESOURCE_BYTES:
+        for name in (*RESOURCE_BYTES, 'ccore_state_religion_ui.dll'):
             with self.subTest(name=name):
                 manifest = {'artifacts': dict(self.build_manifest['artifacts'])}
                 del manifest['artifacts'][name]
@@ -345,7 +349,7 @@ class GpcArtifactTests(unittest.TestCase):
 
     def test_stages_resources_and_hashes_without_encoding_changes(self):
         self.write_resources(self.source)
-        record = core_build.stage_gpc_resources(self.source, self.destination)
+        record = core_build.stage_resources(self.source, self.destination, tuple(RESOURCE_BYTES))
         self.assertEqual(record, {
             relative: {'sha256': hashlib.sha256(content).hexdigest(), 'bytes': len(content)}
             for relative, content in RESOURCE_BYTES.items()})
@@ -361,7 +365,7 @@ class GpcArtifactTests(unittest.TestCase):
                 path.unlink()
                 try:
                     with self.assertRaisesRegex(RuntimeError, 'Отсутствует игровой ресурс'):
-                        core_build.stage_gpc_resources(self.source, self.destination)
+                        core_build.stage_resources(self.source, self.destination, tuple(RESOURCE_BYTES))
                 finally:
                     path.write_bytes(content)
                 self.assertEqual(list(self.destination.iterdir()), [])
@@ -396,12 +400,16 @@ class GpcArtifactTests(unittest.TestCase):
         self.write_resources(root)
         record = {**self.record, 'expected_exe_sha256': hashlib.sha256(executable).hexdigest()}
         (product / 'manifest.json').write_text(json.dumps(record), encoding='utf-8')
-        for name in ('creatinecore.dll', 'dinput8.dll', 'eventmusic.dll', 'ccore_script_fixes.dll'):
+        for name in ('creatinecore.dll', 'dinput8.dll', 'eventmusic.dll', 'ccore_script_fixes.dll',
+                     'ccore_state_religion_ui.dll'):
             (output / name).write_bytes(self.binary)
         api = upstream / 'Source/V2/V2/V2ModAPI.h'
         api.parent.mkdir(parents=True)
         api.write_bytes(b'fake build API')
         (tools / 'v2game.patch').write_bytes(b'fake local patch')
+        (tools / 'religion.patch').write_bytes(b'fake religion patch')
+        (tools / 'religion').mkdir()
+        (tools / 'religion/native.cpp').write_bytes(b'fake native religion source')
         (tools / 'script_fixes.vcxproj').write_bytes(b'fake project')
         replacements = {'ROOT': root, 'WORK': work, 'UPSTREAM': upstream,
                         'BUILD': output, '__file__': str(tools / 'build.py')}
@@ -412,12 +420,16 @@ class GpcArtifactTests(unittest.TestCase):
                 patch.object(core_build, 'generate'), \
                 patch.object(core_build, 'run') as run, redirect_stdout(io.StringIO()):
             core_build.build()
-        self.assertEqual(run.call_count, 5)
-        self.assertTrue(all(call.args[0] == 'fake-MSBuild.exe' for call in run.call_args_list[:4]))
+        self.assertEqual(run.call_count, 6)
+        self.assertTrue(all(call.args[0] == 'fake-MSBuild.exe' for call in run.call_args_list[:5]))
         self.assertEqual(run.call_args_list[-1].args,
                          ('cmd.exe', '/d', '/c', str(source / 'build_runtime.cmd')))
         aggregate = json.loads((output / 'manifest.json').read_text(encoding='utf-8'))
         self.assertEqual(aggregate['great_power_culture_cores'], record)
+        self.assertEqual(aggregate['state_religion_sources'], {
+            'native.cpp': hashlib.sha256(b'fake native religion source').hexdigest()})
+        self.assertEqual(aggregate['patches']['religion.patch'],
+                         hashlib.sha256(b'fake religion patch').hexdigest())
         self.assertEqual(aggregate['artifacts']['ccore_great_power_culture_cores.dll']['sha256'],
                          hashlib.sha256(self.binary).hexdigest())
         self.assertEqual(aggregate['artifacts']['great_power_culture_cores.ini']['sha256'],

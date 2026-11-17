@@ -1,0 +1,18 @@
+#CODE;ENGLISH;FRENCH;GERMAN;POLISH;SPANISH;ITALIAN;SWEDISH;CZECH;HUNGARIAN;DUTCH;PORTUGESE;RUSSIAN;FINNISH;x
+CC_SET_RELIGION_FROM_PRIMARY_CULTURE;Государственной религией станет наиболее многочисленная религия населения основной культуры страны.;;;;;;;;;;;;;x
+CC_STATE_RELIGION_UNKNOWN;Не указана;;;;;;;;;;;;;x
+CC_STATE_RELIGION_TITLE;Государственная религия;;;;;;;;;;;;;x
+CC_STATE_RELIGION_catholic;Католицизм;;;;;;;;;;;;;x
+CC_STATE_RELIGION_protestant;Протестантизм;;;;;;;;;;;;;x
+CC_STATE_RELIGION_orthodox;Православие;;;;;;;;;;;;;x
+CC_STATE_RELIGION_coptic;Коптская церковь;;;;;;;;;;;;;x
+CC_STATE_RELIGION_sunni;Суннизм;;;;;;;;;;;;;x
+CC_STATE_RELIGION_shiite;Шиизм;;;;;;;;;;;;;x
+CC_STATE_RELIGION_jewish;Иудаизм;;;;;;;;;;;;;x
+CC_STATE_RELIGION_mahayana;Махаяна;;;;;;;;;;;;;x
+CC_STATE_RELIGION_gelugpa;Гелугпа;;;;;;;;;;;;;x
+CC_STATE_RELIGION_theravada;Тхеравада;;;;;;;;;;;;;x
+CC_STATE_RELIGION_hindu;Индуизм;;;;;;;;;;;;;x
+CC_STATE_RELIGION_shinto;Синтоизм;;;;;;;;;;;;;x
+CC_STATE_RELIGION_sikh;Сикхизм;;;;;;;;;;;;;x
+CC_STATE_RELIGION_animist;Анимизм;;;;;;;;;;;;;x

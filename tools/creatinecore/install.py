@@ -28,9 +28,12 @@ def main():
              'z_CreatineCore/eventmusic.dll': 'eventmusic.dll',
              'z_CreatineCore/dll_Submods/ccore_script_fixes.dll': 'ccore_script_fixes.dll',
              'z_CreatineCore/dll_Submods/ccore_great_power_culture_cores.dll': 'ccore_great_power_culture_cores.dll',
+             'z_CreatineCore/dll_Submods/ccore_state_religion_ui.dll': 'ccore_state_religion_ui.dll',
              'z_CreatineCore/great_power_culture_cores.ini': 'great_power_culture_cores.ini',
              'events/great_power_culture_cores.txt': 'events/great_power_culture_cores.txt',
-             'localisation/great_power_culture_cores.csv': 'localisation/great_power_culture_cores.csv'}
+             'localisation/great_power_culture_cores.csv': 'localisation/great_power_culture_cores.csv',
+             'interface/country_politics.gui': 'interface/country_politics.gui',
+             'localisation/country_state_religion.csv': 'localisation/country_state_religion.csv'}
     for name in files.values():
         artifact = manifest.get('artifacts', {}).get(name)
         if not isinstance(artifact, dict) or not artifact.get('sha256') or 'bytes' not in artifact:
