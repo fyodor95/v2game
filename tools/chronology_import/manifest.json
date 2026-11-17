@@ -1,0 +1,4882 @@
+{
+  "source_revision": "01004f77b55bddc9ff969ef25fcf7f4f38f8eaff",
+  "source_directory": "mod/chronology/",
+  "baseline_revision": "88c23775e49fec12a8ed21da85de0ad19dc9bc19",
+  "imported_count": 115,
+  "excluded": [
+    {
+      "tag": "NCI",
+      "primary_culture": "chechen",
+      "reason": "Основная культура отсутствует в текущей сборке"
+    },
+    {
+      "tag": "CRC",
+      "primary_culture": "circassian",
+      "reason": "Основная культура отсутствует в текущей сборке"
+    },
+    {
+      "tag": "WHA",
+      "primary_culture": "welsh",
+      "reason": "Основная культура отсутствует в текущей сборке"
+    },
+    {
+      "tag": "ENL",
+      "primary_culture": "english",
+      "reason": "Основная культура отсутствует в текущей сборке"
+    },
+    {
+      "tag": "KRK",
+      "primary_culture": "karakalpak",
+      "reason": "Основная культура отсутствует в текущей сборке"
+    }
+  ],
+  "countries": [
+    {
+      "tag": "ERM",
+      "primary_culture": "bulgarian",
+      "common": "common/countries/Eastern Rumelia.txt",
+      "history": "history/countries/ERM - Eastern Rumelia.txt",
+      "source_common_sha256": "6001d12719165845cdbfe17466a35286d677c9da215dbb836b30798e82da50b4",
+      "source_history_sha256": "5c4dc2ae029be4b4421d51bbf8041b35285eb65a8ae46ba5e9d7ee4c6364e920",
+      "translated_unit_names": 35,
+      "fixes": [
+        "Красный канал RGB 259 ограничен допустимым максимумом 255"
+      ]
+    },
+    {
+      "tag": "IMP",
+      "primary_culture": "japanese",
+      "common": "common/countries/Jap Imperor.txt",
+      "history": "history/countries/IMP - Jap Imperor.txt",
+      "source_common_sha256": "94dd95fb490d12525dbb02a820a7c51e8857cf9586caacf33bfd3c1cabefa0d0",
+      "source_history_sha256": "b47674a771b2bf472f7c10d15ee0646b75da4a8983ad003b1960ac38ffb64cb0",
+      "translated_unit_names": 117,
+      "fixes": []
+    },
+    {
+      "tag": "PUE",
+      "primary_culture": "caribeno",
+      "common": "common/countries/Puerto Rico.txt",
+      "history": "history/countries/PUE - Puerto Rico.txt",
+      "source_common_sha256": "3aaccb875a63f1b580b7d2eeec66d4ecd5dfd4b5547bfdfc940fb57eb210ece4",
+      "source_history_sha256": "7cd1c2038140cab45743e9d11cf58a0ab486ad91583a5848e150884b54154857",
+      "translated_unit_names": 110,
+      "fixes": []
+    },
+    {
+      "tag": "JAM",
+      "primary_culture": "afro_caribbean",
+      "common": "common/countries/Jamaica.txt",
+      "history": "history/countries/JAM - Jamaica.txt",
+      "source_common_sha256": "46a1db4a9ad8a06081a8add1a85433d64eebde7fbd2d14ab856262c0a684adfc",
+      "source_history_sha256": "d15a401fa662f9030ee667e0472f98eef37d825856c1700b956d006aa879abc3",
+      "translated_unit_names": 98,
+      "fixes": []
+    },
+    {
+      "tag": "TDT",
+      "primary_culture": "afro_caribbean",
+      "common": "common/countries/Trinidad and Tobago.txt",
+      "history": "history/countries/TDT - Trinidad and Tobago.txt",
+      "source_common_sha256": "0114fb27ed705b9965964c3c30ba747d6bc1d4bd0e48b0b09afc6e83be4cab6d",
+      "source_history_sha256": "4517565ea49dd3bcfd063cf3fbf2ddb7ec86570a2e56547bf4ca01777cd759bb",
+      "translated_unit_names": 98,
+      "fixes": []
+    },
+    {
+      "tag": "COD",
+      "primary_culture": "afro_caribbean",
+      "common": "common/countries/Commonwealth of Dominica.txt",
+      "history": "history/countries/COD - Commonwealth of Dominica.txt",
+      "source_common_sha256": "a314b5844ccf5f758db24b5fa843439202fca76c5925b0884fc7043a0580a53d",
+      "source_history_sha256": "344d8e56a85bb7ee33f045d095391eec3962ad1bc71f3c5ab187ac0d342ba350",
+      "translated_unit_names": 98,
+      "fixes": []
+    },
+    {
+      "tag": "STL",
+      "primary_culture": "afro_caribbean",
+      "common": "common/countries/Saint Lucia.txt",
+      "history": "history/countries/STL - Saint Lucia.txt",
+      "source_common_sha256": "49e3ccc588cd93e1631aad12ec5f38471b07920e0ae563d8462d5bda84b44ab4",
+      "source_history_sha256": "d948d2ac85c7e08e84752080325705856688bc56905dd4f36d3f2b427cb353c3",
+      "translated_unit_names": 95,
+      "fixes": []
+    },
+    {
+      "tag": "STV",
+      "primary_culture": "afro_caribbean",
+      "common": "common/countries/Saint Vincent and the Grenadines.txt",
+      "history": "history/countries/STV - Saint Vincent and the Grenadines.txt",
+      "source_common_sha256": "11987e993277e04d04076b336cbbdcee4e21420493888672478a94c4e93b9b85",
+      "source_history_sha256": "61769538f2a341e0db9eb074fcb87e5a00b097e19d64f0b3190e4940578a6526",
+      "translated_unit_names": 95,
+      "fixes": []
+    },
+    {
+      "tag": "BAR",
+      "primary_culture": "afro_caribbean",
+      "common": "common/countries/Barbados.txt",
+      "history": "history/countries/BAR - Barbados.txt",
+      "source_common_sha256": "d40a32bcbe6dbc90238e07659c5791406124b1646697e9e6159ae4957d608352",
+      "source_history_sha256": "7b45157f3320f510bd67344897d4ebe495a25013a6ae5509fc30ab37e6de4df3",
+      "translated_unit_names": 95,
+      "fixes": []
+    },
+    {
+      "tag": "GRN",
+      "primary_culture": "afro_caribbean",
+      "common": "common/countries/Grenada.txt",
+      "history": "history/countries/GRN - Grenada.txt",
+      "source_common_sha256": "1da139684e1a16409faf9d172bd628fbc40b1e2b7cd8a42de4ed31a7b5054477",
+      "source_history_sha256": "4c621ab41921d90f0ac90df3bbecdd1003fba02a6b8a86e2c05981aa49ca5c23",
+      "translated_unit_names": 88,
+      "fixes": []
+    },
+    {
+      "tag": "ANT",
+      "primary_culture": "afro_caribbean",
+      "common": "common/countries/Antigua and Barbuda.txt",
+      "history": "history/countries/ANT - Antigua and Barbuda.txt",
+      "source_common_sha256": "2466ed41eac4bba4c293a13ebc4140f437cbe3f29c49b92b26ca55b09fe87353",
+      "source_history_sha256": "5792cf1fe914de2cd86aabd676440a432a4fe3b22bd2052efeb510dfd1ab7663",
+      "translated_unit_names": 86,
+      "fixes": []
+    },
+    {
+      "tag": "STK",
+      "primary_culture": "afro_caribbean",
+      "common": "common/countries/Saint Kitts and Nevis.txt",
+      "history": "history/countries/STK - Saint Kitts and Nevis.txt",
+      "source_common_sha256": "77d720c5a72df6a694c43f353034087716d9cd273cea6b47f1c4ce435b20705e",
+      "source_history_sha256": "aba5d49fea556762091c0615d065d3d46c126970468729a510730246cb0697a4",
+      "translated_unit_names": 79,
+      "fixes": []
+    },
+    {
+      "tag": "MSR",
+      "primary_culture": "afro_caribbean",
+      "common": "common/countries/Montserrat.txt",
+      "history": "history/countries/MSR - Montserrat.txt",
+      "source_common_sha256": "e52a245c2809d2e3fcfd65027295026334395e9bb81e798cf5cca411ca8c8bd0",
+      "source_history_sha256": "1019efc22b6c4b4db07e3e42610c543ee89a306ffc50cba23342504c76ba50ff",
+      "translated_unit_names": 79,
+      "fixes": []
+    },
+    {
+      "tag": "CUR",
+      "primary_culture": "afro_caribbean",
+      "common": "common/countries/Curacao.txt",
+      "history": "history/countries/CUR - Curacao.txt",
+      "source_common_sha256": "4321184f250da0b80cb2900a46b49ed8f2918c9e077a5de0dae0fc0c843103ec",
+      "source_history_sha256": "226ecfb4679bfc26bd2a6581a694856b65d7dd902c218b78e9f2a7409d11fcde",
+      "translated_unit_names": 98,
+      "fixes": []
+    },
+    {
+      "tag": "ARU",
+      "primary_culture": "afro_caribbean",
+      "common": "common/countries/Aruba.txt",
+      "history": "history/countries/ARU - Aruba.txt",
+      "source_common_sha256": "0326a7173b2171fffb4c74a98639a0078f89be7bfe1eb3596d9c3e7890f7cc01",
+      "source_history_sha256": "8aea2541fe390088c324324a632681882ae767edb791f34f2b6ee0e2770241e6",
+      "translated_unit_names": 98,
+      "fixes": []
+    },
+    {
+      "tag": "CAY",
+      "primary_culture": "afro_caribbean",
+      "common": "common/countries/Cayman Islands.txt",
+      "history": "history/countries/CAY - Cayman Islands.txt",
+      "source_common_sha256": "1ad84bb59011e33384fd7495df24e7ba5a703cfbcc62a998e75cf006efc0934c",
+      "source_history_sha256": "f7ab655adfe8bccdabd8f0e10fe87863d1f6cf9ccbcf377fbde79d8d3f8870a2",
+      "translated_unit_names": 65,
+      "fixes": []
+    },
+    {
+      "tag": "GDL",
+      "primary_culture": "afro_antillean",
+      "common": "common/countries/Guadeloupe.txt",
+      "history": "history/countries/GDL - Guadeloupe.txt",
+      "source_common_sha256": "c4a742529a7d386b30fe707331b5557e5fc31e1fe780ff6b219f8f82e270a5a0",
+      "source_history_sha256": "c07fc4d4cc7311203931a29b88f3b36095fd911d5ddaed277a7cd3731ca3d8b4",
+      "translated_unit_names": 196,
+      "fixes": []
+    },
+    {
+      "tag": "MAR",
+      "primary_culture": "afro_antillean",
+      "common": "common/countries/Martinique.txt",
+      "history": "history/countries/MAR - Martinique.txt",
+      "source_common_sha256": "ec95c76a28bc88ae112432e84c5083d7dc69150e767b6ff1a5ce7e901298ba37",
+      "source_history_sha256": "0f75eb2eb2c861a18a4b8192f64b7c14c6dab38ba2d0118bad14305b5dd3c355",
+      "translated_unit_names": 196,
+      "fixes": [
+        "Недопустимая начальная партия GDL_liberal заменена на MAR_liberal"
+      ]
+    },
+    {
+      "tag": "RSR",
+      "primary_culture": "russian",
+      "common": "common/countries/Communist Russia.txt",
+      "history": "history/countries/RSR - Communist Russia.txt",
+      "source_common_sha256": "05cad619a4d83519e32a5d2c38f3b0e6a3147ce1b705820ed328ce2755fe3c70",
+      "source_history_sha256": "c0a40b3e6091f9f13926e65d0497eea3fddb8967fa03a126c6383cb6167a4e95",
+      "translated_unit_names": 0,
+      "fixes": [
+        "Первая коммунистическая партия доступна с 1830 года для инициализации пролетарской диктатуры",
+        "Недопустимая начальная партия RUS_conservative заменена на RUS_communist"
+      ]
+    },
+    {
+      "tag": "DON",
+      "primary_culture": "russian",
+      "common": "common/countries/Don Republic.txt",
+      "history": "history/countries/DON - Don Republic.txt",
+      "source_common_sha256": "4edc2d13781f3917cb0fe13ffa9485487c9c60d79d75e30448470867e4385d9c",
+      "source_history_sha256": "10a60039bc91ad38124535c3a0d5af2c17afef458d271206c91ba886bd45cdff",
+      "translated_unit_names": 0,
+      "fixes": []
+    },
+    {
+      "tag": "TCR",
+      "primary_culture": "georgian",
+      "common": "common/countries/Transcaucasian.txt",
+      "history": "history/countries/TCR - Transcaucasian.txt",
+      "source_common_sha256": "636be647c55e6f288d72ea5e512dfad4672d3a9d1a10446d20ad342762100a09",
+      "source_history_sha256": "90aae7cdbfc49ca702572b4ea314fbde563a11c7b4e219ae43070804c3def9c6",
+      "translated_unit_names": 0,
+      "fixes": []
+    },
+    {
+      "tag": "SMR",
+      "primary_culture": "north_italian",
+      "common": "common/countries/San-Marino.txt",
+      "history": "history/countries/SMR - San-Marino.txt",
+      "source_common_sha256": "6fd946e5ecd218e68b79ffa3aa8dcd6278678e6498fee264a41e169c8eca9a85",
+      "source_history_sha256": "78186d4f7373329c6a5e1b585d71fa846919e13f955104ec84c334fce98fb389",
+      "translated_unit_names": 1,
+      "fixes": []
+    },
+    {
+      "tag": "ADR",
+      "primary_culture": "catalan",
+      "common": "common/countries/Andorra.txt",
+      "history": "history/countries/ADR - Andorra.txt",
+      "source_common_sha256": "3bdc84e5d525effcf07e334cef6804de9208713f00fa38330201abea3c42dea3",
+      "source_history_sha256": "34cfa1fc49ed30bb7232cad56d211ee97ee69973f3fcd03345a9e398866afe28",
+      "translated_unit_names": 0,
+      "fixes": []
+    },
+    {
+      "tag": "LIE",
+      "primary_culture": "south_german",
+      "common": "common/countries/Liechtenstein.txt",
+      "history": "history/countries/LIE - Liechtenstein.txt",
+      "source_common_sha256": "22e2d400f6477eaabd31b9dcbe523095c2f431171ea6c1b3b22de318ae113606",
+      "source_history_sha256": "e644f43b2d3ac455fd2bc383df9fe5832ff004c2c164c4a1305049a7c1d3b134",
+      "translated_unit_names": 0,
+      "fixes": []
+    },
+    {
+      "tag": "SAU",
+      "primary_culture": "bedouin",
+      "common": "common/countries/Saudi Arabia.txt",
+      "history": "history/countries/SAU - Saudi Arabia.txt",
+      "source_common_sha256": "5bf2d28d8eeff0023d3d5cdabab5c7552a0ff8b08940a45ca25be3a16056c5cf",
+      "source_history_sha256": "65948fd6c34ec3868f58c1b9e0f4a5ddb592fd079280cc0f267c251a524d49f7",
+      "translated_unit_names": 0,
+      "fixes": []
+    },
+    {
+      "tag": "SUD",
+      "primary_culture": "sudanese",
+      "common": "common/countries/Sudan.txt",
+      "history": "history/countries/SUD - Sudan.txt",
+      "source_common_sha256": "67b50c14dc39945ad75339a2666d06935255b952850721bb56a9f7ea33ff27bb",
+      "source_history_sha256": "e2e0e62907e5f7ede1249dc7e58c1b12e56ffb61b104aba83fb2325991f912fb",
+      "translated_unit_names": 0,
+      "fixes": []
+    },
+    {
+      "tag": "KWT",
+      "primary_culture": "bedouin",
+      "common": "common/countries/Kuwait.txt",
+      "history": "history/countries/KWT - Kuwait.txt",
+      "source_common_sha256": "505a678d581be18969379ddccd8a46cb45e3deea27438944efc05c79c807da84",
+      "source_history_sha256": "cfb3155f41023139426db28d23354e7c16093bff1eb1904bd96992c23dc0ff89",
+      "translated_unit_names": 119,
+      "fixes": []
+    },
+    {
+      "tag": "OBO",
+      "primary_culture": "north_german",
+      "common": "common/countries/Ober Ost.txt",
+      "history": "history/countries/OBO - Ober Ost.txt",
+      "source_common_sha256": "b6b524909e1b3cbc264a79e93026b4ac5288d76daa46db01f39daa1dd959308d",
+      "source_history_sha256": "163e3e420cdcde8a925e045f79d837bf3909ee68b292020246cc54d62e8f6a11",
+      "translated_unit_names": 98,
+      "fixes": []
+    },
+    {
+      "tag": "LIV",
+      "primary_culture": "bedouin",
+      "common": "common/countries/Libya.txt",
+      "history": "history/countries/LIV - Libya.txt",
+      "source_common_sha256": "84453a58641fc4a52d6dc8b98befb7990f985f7393d561bd725739bd29c480f9",
+      "source_history_sha256": "a7baee9b5e53f7b5f4ae89646ba6235a216229cf584227669d9dca5893a91e99",
+      "translated_unit_names": 0,
+      "fixes": [
+        "Исправлена опечатка pro_militarity → pro_military"
+      ]
+    },
+    {
+      "tag": "PAK",
+      "primary_culture": "panjabi",
+      "common": "common/countries/Pakistan.txt",
+      "history": "history/countries/PAK - Pakistan.txt",
+      "source_common_sha256": "5c9de54dde921c5cfa09a0824563fbf655266e06c845e4905eec34380cd1df03",
+      "source_history_sha256": "1f22592bb4dabcd4dcd5fd0cc498510a26559d5bd52e84f009a6cd096785813a",
+      "translated_unit_names": 0,
+      "fixes": [
+        "Недопустимая начальная партия PAK_conservative заменена на PAK_reactionary"
+      ]
+    },
+    {
+      "tag": "IDF",
+      "primary_culture": "french",
+      "common": "common/countries/Ile-de-France.txt",
+      "history": "history/countries/IDF - Ile-de-France.txt",
+      "source_common_sha256": "353bc41283a659a749ea450aa921da3aa6dac35b5514d465d803ce15a4c4e4ba",
+      "source_history_sha256": "105ccbf021b2499f5cfa67a6abfca7fce7072f981ce58b161c684624c7919140",
+      "translated_unit_names": 1,
+      "fixes": [
+        "Исправлена опечатка pro_militarity → pro_military"
+      ]
+    },
+    {
+      "tag": "SYR",
+      "primary_culture": "mashriqi",
+      "common": "common/countries/Syria.txt",
+      "history": "history/countries/SYR - Syria.txt",
+      "source_common_sha256": "88e5153882e47e91e6b49c2c141e520f7fd6f7507f364734053f9262660e039a",
+      "source_history_sha256": "9156b0c9af8388c51f44657ccb991f1e90ef026bea36bec061bd46f8427f9153",
+      "translated_unit_names": 0,
+      "fixes": []
+    },
+    {
+      "tag": "AIN",
+      "primary_culture": "ainu",
+      "common": "common/countries/Ainu.txt",
+      "history": "history/countries/AIN - Ainu.txt",
+      "source_common_sha256": "038d3bad9a9dee6669436a6ece8709a37f56e3468016b87448d9fa0052c1cfb1",
+      "source_history_sha256": "eedee27b175c84cc15312364e03aaaa3b574acc74890d831816d349e133782ec",
+      "translated_unit_names": 91,
+      "fixes": []
+    },
+    {
+      "tag": "CHO",
+      "primary_culture": "japanese",
+      "common": "common/countries/Choshu.txt",
+      "history": "history/countries/CHO - Choshu.txt",
+      "source_common_sha256": "29d5df062ee54d1508c34dea1e61bc405109f28da88764c183172a261dcb9f48",
+      "source_history_sha256": "0b92b1b4f2ee7d79ba2f2ef3398180c3dc5a78d8196d1d2c88e09d379b521803",
+      "translated_unit_names": 117,
+      "fixes": []
+    },
+    {
+      "tag": "KAG",
+      "primary_culture": "japanese",
+      "common": "common/countries/Kaga.txt",
+      "history": "history/countries/KAG - Kaga.txt",
+      "source_common_sha256": "3cc863ccfadc4ac928b178c582f0ff26dd76de9bbd473dd767214bf508434157",
+      "source_history_sha256": "90c9ec304271ab0747713bd32fc421e48a307c98628bcfc69039df7ede6a6055",
+      "translated_unit_names": 117,
+      "fixes": []
+    },
+    {
+      "tag": "RYU",
+      "primary_culture": "japanese",
+      "common": "common/countries/Ryukyu.txt",
+      "history": "history/countries/RYU - Ryukyu.txt",
+      "source_common_sha256": "40eaa111a39f39fd7e5c4426fabb5263590fab346f68b36948471299609edfec",
+      "source_history_sha256": "1b0a71e6b6ee52d4c93fc7f54e8ab744eeb3131c37835dddeaa301a61639d83b",
+      "translated_unit_names": 203,
+      "fixes": []
+    },
+    {
+      "tag": "SAT",
+      "primary_culture": "japanese",
+      "common": "common/countries/Satsuma.txt",
+      "history": "history/countries/SAT - Satsuma.txt",
+      "source_common_sha256": "c3d3fa0a6a420a4bc4cc8209a6534a48c804aa007468001f3211dc0c588740b4",
+      "source_history_sha256": "973f8e15a849e07890e3e8ab77db22f35e55ef4b98f39f1d45707598848d6c95",
+      "translated_unit_names": 117,
+      "fixes": []
+    },
+    {
+      "tag": "SEN",
+      "primary_culture": "japanese",
+      "common": "common/countries/Sendai.txt",
+      "history": "history/countries/SEN - Sendai.txt",
+      "source_common_sha256": "3674a14b88a28af61a8b380a3d94fed8961de03cc96b28376ce7f11694e3d56b",
+      "source_history_sha256": "02ef04e3cf0745e5c8fe24f8303f48204a94b10da7b473825ee8952bc8c28411",
+      "translated_unit_names": 117,
+      "fixes": []
+    },
+    {
+      "tag": "TKG",
+      "primary_culture": "japanese",
+      "common": "common/countries/Tokugawa.txt",
+      "history": "history/countries/TKG - Tokugawa.txt",
+      "source_common_sha256": "49dfc45b4a8e46bfe31991488af5a5ec22478a98963a038621343ff110b41632",
+      "source_history_sha256": "6540d591fb4de19a9ca613c31168519dc87c672afe500a0bd96209b3f6f07581",
+      "translated_unit_names": 117,
+      "fixes": []
+    },
+    {
+      "tag": "TOS",
+      "primary_culture": "japanese",
+      "common": "common/countries/Tosa.txt",
+      "history": "history/countries/TOS - Tosa.txt",
+      "source_common_sha256": "ce8467f50310cd2fb9952297590dde04bd5ac27215d6eee885574ffb8a8a9034",
+      "source_history_sha256": "df9a52b838c937daa6d1cdbf803e207df64a3344fe8d8b032a54113dccd7ff43",
+      "translated_unit_names": 117,
+      "fixes": []
+    },
+    {
+      "tag": "YZW",
+      "primary_culture": "japanese",
+      "common": "common/countries/Yonezawa.txt",
+      "history": "history/countries/YZW - Yonezawa.txt",
+      "source_common_sha256": "bbacd0073128a0e97c73f340771c4d3f66ed839e23aeadbcd9b756c60250adec",
+      "source_history_sha256": "f128ddf717f3e7b8c17f2e8088f8ba518fddf40f7bfb68d36b5895613d7a58a6",
+      "translated_unit_names": 117,
+      "fixes": []
+    },
+    {
+      "tag": "MAH",
+      "primary_culture": "marathi",
+      "common": "common/countries/Maharashtra.txt",
+      "history": "history/countries/MAH - Maharashtra.txt",
+      "source_common_sha256": "7d80c15d82238ad4783456d5f6361b5597a0c8e93a087d613f4c3b3d9988383d",
+      "source_history_sha256": "fb14130cd172af432dde92b7593eaed37eef2d46e5f01c0705914e6fbac76930",
+      "translated_unit_names": 0,
+      "fixes": []
+    },
+    {
+      "tag": "RGR",
+      "primary_culture": "mexican",
+      "common": "common/countries/Rio Grande.txt",
+      "history": "history/countries/RGR - Rio Grande.txt",
+      "source_common_sha256": "9ef977d44e6dc59a13c6baad0acdee6b8d65942aa2e625674279f42e4b4b60c8",
+      "source_history_sha256": "742765e4458bfe06d69183c14dbbdc2ae78916beb3894a753c31cf8000215401",
+      "translated_unit_names": 106,
+      "fixes": []
+    },
+    {
+      "tag": "YUC",
+      "primary_culture": "mayan",
+      "common": "common/countries/Yucatan.txt",
+      "history": "history/countries/YUC - Yucatan.txt",
+      "source_common_sha256": "3b00b6bfd37754811d23c9578e61a77da70e4bc19a14c5df96b1e3a5118fb579",
+      "source_history_sha256": "da56fd56b68ed09141e2e36a8dd19652705151f68e2b764931b565d9dc277acc",
+      "translated_unit_names": 106,
+      "fixes": []
+    },
+    {
+      "tag": "TKS",
+      "primary_culture": "uzbek",
+      "common": "common/countries/Turkestan.txt",
+      "history": "history/countries/TKS - Turkestan.txt",
+      "source_common_sha256": "55a37abd9361dbb2067a7a20d1d4ad0ff7b5528358e7d2d6168acc8491a754d6",
+      "source_history_sha256": "9992ace72fb7e8f9918b15e152408dbeace97ed50d2ce7319500fb178f715db6",
+      "translated_unit_names": 133,
+      "fixes": []
+    },
+    {
+      "tag": "GNG",
+      "primary_culture": "yue",
+      "common": "common/countries/Guangdong.txt",
+      "history": "history/countries/GNG - Guangdong.txt",
+      "source_common_sha256": "40c535a88619e173a8deb402f36e6804de7688ab5579e4854a37a462ac687b04",
+      "source_history_sha256": "f0b94ec8d5e4bf1f357b30b05f707368876d2cb44266a362bb57bff92addad46",
+      "translated_unit_names": 91,
+      "fixes": [
+        "Недопустимая начальная партия GNG_conservative заменена на GNG_reactionary"
+      ]
+    },
+    {
+      "tag": "HNN",
+      "primary_culture": "nanfaren",
+      "common": "common/countries/Hunan.txt",
+      "history": "history/countries/HNN - Hunan.txt",
+      "source_common_sha256": "b7e9d12d769d3bc268e24509f6b78917d273d5db58c90f77d2670a509e81630f",
+      "source_history_sha256": "741b8a07096c6d9c0ca4f059208c7a6143e2ce682f284d8266e0b0ff67236511",
+      "translated_unit_names": 91,
+      "fixes": [
+        "Недопустимая начальная партия HNN_conservative заменена на HNN_reactionary"
+      ]
+    },
+    {
+      "tag": "ANU",
+      "primary_culture": "manchu",
+      "common": "common/countries/Anhui.txt",
+      "history": "history/countries/ANU - Anhui.txt",
+      "source_common_sha256": "11a7f45e9e56cae3d579c4d0c52a5619ed61bd6084309825d070f1683367fcdf",
+      "source_history_sha256": "3ec4528323736b27e448350e97813201d61598e5dc4efcdd96e32c23304a6d09",
+      "translated_unit_names": 175,
+      "fixes": [
+        "Отсутствующая military_clique заменена на presidential_dictatorship",
+        "Недопустимая начальная партия ANU_conservative заменена на ANU_reactionary"
+      ]
+    },
+    {
+      "tag": "KMT",
+      "primary_culture": "nanfaren",
+      "common": "common/countries/Nationalist China.txt",
+      "history": "history/countries/KMT - Nationalist China.txt",
+      "source_common_sha256": "c9d5d3c0ebd48509a9ed82e6f143fd3ced990d4693799c9a135654ffdb858694",
+      "source_history_sha256": "b9684bc0f0278c9b67e50c03fab8a668fafaff4465a2c331bc7d03b584ea9667",
+      "translated_unit_names": 175,
+      "fixes": [
+        "Недопустимая начальная партия KMT_liberal_2 заменена на KMT_reactionary_2"
+      ]
+    },
+    {
+      "tag": "SZC",
+      "primary_culture": "nanfaren",
+      "common": "common/countries/Sichuan.txt",
+      "history": "history/countries/SZC - Sichuan.txt",
+      "source_common_sha256": "36a37492827044ee387091e8684eba56a549834a23c7ea95bd995ca492c7194e",
+      "source_history_sha256": "c5a4c4ef13984f0fb09664ef30fa899cc2a973cfce3cb4cd0678ec3c2a615bf1",
+      "translated_unit_names": 91,
+      "fixes": [
+        "Недопустимая начальная партия SZC_conservative заменена на SZC_reactionary"
+      ]
+    },
+    {
+      "tag": "FJN",
+      "primary_culture": "min",
+      "common": "common/countries/Fujian.txt",
+      "history": "history/countries/FJN - Fujian.txt",
+      "source_common_sha256": "056b1234441e6566cb927d788e10191524fb5ab91ea9f7c5514439f42a0138f2",
+      "source_history_sha256": "a6519fd82ab563096e3cd821b6f975eb22891aa2a469c47122f1ce4591a5e361",
+      "translated_unit_names": 175,
+      "fixes": [
+        "Отсутствующая nv_tradition заменена на nv_order",
+        "Недопустимая начальная партия FJN_conservative заменена на FJN_reactionary"
+      ]
+    },
+    {
+      "tag": "GMJ",
+      "primary_culture": "beifaren",
+      "common": "common/countries/Guominjun.txt",
+      "history": "history/countries/GMJ - Guominjun.txt",
+      "source_common_sha256": "a1226135dd1ecac6dae671c4541fe892ef04d523bb20d2df44185b0a74acd773",
+      "source_history_sha256": "fa382f0011f90fe683117a55f3d7d7c6903cbabc2232f61cd66d99d854dfc365",
+      "translated_unit_names": 175,
+      "fixes": [
+        "Недопустимая начальная партия GMJ_socialist заменена на GMJ_reactionary"
+      ]
+    },
+    {
+      "tag": "ZHI",
+      "primary_culture": "manchu",
+      "common": "common/countries/Zhili.txt",
+      "history": "history/countries/ZHI - Zhili.txt",
+      "source_common_sha256": "f804d0d45e2627754e10ee7f4f7f34816bd6c794a60e2ea30f2f8a31f0831869",
+      "source_history_sha256": "5b991ba2d36ced03008e4d3899e4352362c6ee79c4205f6a9c4b1c407ba01162",
+      "translated_unit_names": 175,
+      "fixes": [
+        "Отсутствующая military_clique заменена на presidential_dictatorship",
+        "Недопустимая начальная партия ZHI_conservative заменена на ZHI_reactionary"
+      ]
+    },
+    {
+      "tag": "TAI",
+      "primary_culture": "min",
+      "common": "common/countries/Taiwan.txt",
+      "history": "history/countries/TAI - Taiwan.txt",
+      "source_common_sha256": "6736021cbc795a76a0bbf18ca58c572b50f08a65cf20b7c0ab7e13c8575d564c",
+      "source_history_sha256": "1683bc8920f45853331dfa784e99e0d4376f5755753fc16ac90b9703867d1798",
+      "translated_unit_names": 175,
+      "fixes": []
+    },
+    {
+      "tag": "ANG",
+      "primary_culture": "bakongo",
+      "common": "common/countries/Angola.txt",
+      "history": "history/countries/ANG - Angola.txt",
+      "source_common_sha256": "b1865687fd75a23e72db365a2aaad302023fd7438b902f3e7eb090c819e97e30",
+      "source_history_sha256": "e46a5bd9e4b5f0d7d84fe58c991ac0b8431c5614d8721d624681d628559d398a",
+      "translated_unit_names": 92,
+      "fixes": [
+        "Недопустимая начальная партия ANG_conservative заменена на ANG_reactionary"
+      ]
+    },
+    {
+      "tag": "BEN",
+      "primary_culture": "edo",
+      "common": "common/countries/Benin.txt",
+      "history": "history/countries/BEN - Benin.txt",
+      "source_common_sha256": "00df9a90a0b058b153eec0e30778c599cb4ed041858f967cfa930411c1b95800",
+      "source_history_sha256": "c9f7894baf5b490ad63e110751b9e7fcec9a3f62fcfb3456fc5e62fa22a94a74",
+      "translated_unit_names": 70,
+      "fixes": [
+        "Отсутствующая nv_tradition заменена на nv_order"
+      ]
+    },
+    {
+      "tag": "BRD",
+      "primary_culture": "rundi",
+      "common": "common/countries/Urundi.txt",
+      "history": "history/countries/BRD - Urundi.txt",
+      "source_common_sha256": "2c29491ef6259f13795081fd704b4aae2cb8626c7fa3e0b7c9ca439d1f1e273b",
+      "source_history_sha256": "d17861e02729e1d00847fbf69a66b7c43dfc51fe2df5a944843e49a6bc5f82ba",
+      "translated_unit_names": 98,
+      "fixes": [
+        "Отсутствующая nv_tradition заменена на nv_order"
+      ]
+    },
+    {
+      "tag": "UGA",
+      "primary_culture": "baganda",
+      "common": "common/countries/Uganda.txt",
+      "history": "history/countries/UGA - Uganda.txt",
+      "source_common_sha256": "9a94df0cbd4bd592baf6d8f79b49cf102de39468fcfadb47cfa54d2577458221",
+      "source_history_sha256": "dfee24973681cc0760c269d94d08643b4e1766cd4c70c16c72a0369cfa65f0f2",
+      "translated_unit_names": 98,
+      "fixes": [
+        "Отсутствующая nv_tradition заменена на nv_order"
+      ]
+    },
+    {
+      "tag": "CAR",
+      "primary_culture": "sara",
+      "common": "common/countries/Central African Republic.txt",
+      "history": "history/countries/CAR - Central African Republic.txt",
+      "source_common_sha256": "de507eb4a314136043cae4484ac6f5b20794e3c295ee84960386ac42ecd45178",
+      "source_history_sha256": "2c8284b9f2f08443c3a8e3eb88512a6eb9d3c4c6efb3eb4a0ad542eff5e82f09",
+      "translated_unit_names": 98,
+      "fixes": []
+    },
+    {
+      "tag": "CGO",
+      "primary_culture": "bakongo",
+      "common": "common/countries/Congo-Brazzaville.txt",
+      "history": "history/countries/CGO - Congo-Brazzaville.txt",
+      "source_common_sha256": "56c8924b8f39611914b36d4df53d3e7d99ee91e0c818333e2869292c3ee0b812",
+      "source_history_sha256": "6c1f5cca2834e2f05ad2be9a7f9c5f59d041ee09d2a7030db4331486f4261498",
+      "translated_unit_names": 74,
+      "fixes": []
+    },
+    {
+      "tag": "CHD",
+      "primary_culture": "sara",
+      "common": "common/countries/Chad.txt",
+      "history": "history/countries/CHD - Chad.txt",
+      "source_common_sha256": "867056c5613dea787d4ed936b48ac073d273dc01d13347c64bdd1d92969c9dfc",
+      "source_history_sha256": "c11d8097e26c131d57c5adc2a951e6b46d0fefbe5c93c2e5f3b1f2524ac0824e",
+      "translated_unit_names": 70,
+      "fixes": []
+    },
+    {
+      "tag": "CMR",
+      "primary_culture": "fang",
+      "common": "common/countries/Cameroon.txt",
+      "history": "history/countries/CMR - Cameroon.txt",
+      "source_common_sha256": "27a689ecc93cca621baaa0b9bd5f389bbc5a8830f73dc88a6a13f224689f1c3f",
+      "source_history_sha256": "65a10056b7b44e2efa939737230236cab104be691ae8960be73ea3a7e26a6ed2",
+      "translated_unit_names": 70,
+      "fixes": []
+    },
+    {
+      "tag": "ERT",
+      "primary_culture": "tigray",
+      "common": "common/countries/Eritrea.txt",
+      "history": "history/countries/ERT - Eritrea.txt",
+      "source_common_sha256": "68dc9a08087b8b34197f43e76feb7bd66f59f371a71fa6c690c887b6c967e238",
+      "source_history_sha256": "e668b52bf2554f4b83a954ab186a3c5bee30947fea880e03af8dd6a66b931e11",
+      "translated_unit_names": 77,
+      "fixes": [
+        "Отсутствующая nv_tradition заменена на nv_order"
+      ]
+    },
+    {
+      "tag": "GAB",
+      "primary_culture": "fang",
+      "common": "common/countries/Gabon.txt",
+      "history": "history/countries/GAB - Gabon.txt",
+      "source_common_sha256": "cb9859841450549b45e72bcea9bf649a80f7a23673bf8ce03a0286bda9c6f12f",
+      "source_history_sha256": "081377a417cde6bc7c271e2561616c2624cbe93800ba6409276b9b55cf2cd2e1",
+      "translated_unit_names": 70,
+      "fixes": []
+    },
+    {
+      "tag": "GMB",
+      "primary_culture": "mande",
+      "common": "common/countries/Gambia.txt",
+      "history": "history/countries/GMB - Gambia.txt",
+      "source_common_sha256": "9df46fc1bae14cb7594b1e0b461502349d0b18086fe9a163dca22a36b6971321",
+      "source_history_sha256": "18ff80fff051d621ada65d218b29fbcedda1ee9654ffca9b1fbe19c4e28ae0f8",
+      "translated_unit_names": 70,
+      "fixes": []
+    },
+    {
+      "tag": "GNE",
+      "primary_culture": "fulbe",
+      "common": "common/countries/Guinea.txt",
+      "history": "history/countries/GNE - Guinea.txt",
+      "source_common_sha256": "42167d1d3cd7564477b7934afb48f4c86e235c56d69e951405bbdfa5c9428d7c",
+      "source_history_sha256": "4568fbaccbc7fcdb46aa9390a0233c490c7e7cd22a21b94911975443e876ee19",
+      "translated_unit_names": 70,
+      "fixes": []
+    },
+    {
+      "tag": "IVC",
+      "primary_culture": "akan",
+      "common": "common/countries/Ivory Coast.txt",
+      "history": "history/countries/IVC - Ivory Coast.txt",
+      "source_common_sha256": "34fa008fb3732ed379e9ca282b6b01530edbccafcd08c6ab904a5dbf977aa6a9",
+      "source_history_sha256": "25b8db6a329d924567362c18c67ee8aaacad1ba88b635463786f1518aa2318b3",
+      "translated_unit_names": 70,
+      "fixes": []
+    },
+    {
+      "tag": "KNY",
+      "primary_culture": "swahili",
+      "common": "common/countries/Kenya.txt",
+      "history": "history/countries/KNY - Kenya.txt",
+      "source_common_sha256": "78e1cd0a1666328da73751bb9b666600a6ed0fe85ddf1b02220ceb0ab63f8a71",
+      "source_history_sha256": "889a68daa02039af66c8422555e0eb1affe5cfdf847bbe30a37efff94d803f06",
+      "translated_unit_names": 98,
+      "fixes": []
+    },
+    {
+      "tag": "MLI",
+      "primary_culture": "fulbe",
+      "common": "common/countries/Mali.txt",
+      "history": "history/countries/MLI - Mali.txt",
+      "source_common_sha256": "ebad6c6d391811889c346bd3c2e96a56653c7ad7b9650c75710e314fb1800cf9",
+      "source_history_sha256": "2cd252e7ebfe6aed34e7bd820db28060e9a1c36d933c17cd88c1b43760a289b7",
+      "translated_unit_names": 70,
+      "fixes": [
+        "Отсутствующая nv_tradition заменена на nv_order"
+      ]
+    },
+    {
+      "tag": "MLW",
+      "primary_culture": "chewa",
+      "common": "common/countries/Malawi.txt",
+      "history": "history/countries/MLW - Malawi.txt",
+      "source_common_sha256": "d5e250ccc41d17156aa294ea99b588e298a7f2f5d04317a564cd3c905741e69e",
+      "source_history_sha256": "cf90d2c9e8ea0569d69a6a401d14ad00147edafcd74e9a2376cd2be530321fa6",
+      "translated_unit_names": 70,
+      "fixes": []
+    },
+    {
+      "tag": "MOZ",
+      "primary_culture": "nguni",
+      "common": "common/countries/Mozambique.txt",
+      "history": "history/countries/MOZ - Mozambique.txt",
+      "source_common_sha256": "4506c6f31fd089087fe693e1451e7748bf4ccb9ad172a20f7033e8ad3eaa7ed5",
+      "source_history_sha256": "776ca343eb54f08b96121a8fcd9360a8c774180e1be249143d00b3cc37a18466",
+      "translated_unit_names": 92,
+      "fixes": [
+        "Недопустимая начальная партия MOZ_conservative заменена на MOZ_reactionary"
+      ]
+    },
+    {
+      "tag": "NGR",
+      "primary_culture": "yoruba",
+      "common": "common/countries/Nigeria.txt",
+      "history": "history/countries/NGR - Nigeria.txt",
+      "source_common_sha256": "67d8e0a06c786cfddf391441cd54fcea8256fad4a9555fa2eabb7d22ca87133d",
+      "source_history_sha256": "d7332a3199637693779542c9b85110d59908b3ae6e56a128a1e20908718d494c",
+      "translated_unit_names": 70,
+      "fixes": []
+    },
+    {
+      "tag": "NIG",
+      "primary_culture": "songhai",
+      "common": "common/countries/Niger.txt",
+      "history": "history/countries/NIG - Niger.txt",
+      "source_common_sha256": "ef76c33d83c2634e6f3c85bb174b4798fd9e310df497bca3becb83ff59c06631",
+      "source_history_sha256": "de93f20e5aece5ba6dfa1625c1d507c01e651dff13d032155958331a6cfeef82",
+      "translated_unit_names": 70,
+      "fixes": []
+    },
+    {
+      "tag": "RWA",
+      "primary_culture": "ruanda",
+      "common": "common/countries/Ruanda.txt",
+      "history": "history/countries/RWA - Ruanda.txt",
+      "source_common_sha256": "ea2be51759beb75908564dffa6587e15b09cd392bb85377f9e14ca2e81a8b978",
+      "source_history_sha256": "ddd06b0ab7566172439335c9ecb3f1bec971589c8005a7fb1702181c7294d51e",
+      "translated_unit_names": 98,
+      "fixes": [
+        "Отсутствующая nv_tradition заменена на nv_order"
+      ]
+    },
+    {
+      "tag": "SLE",
+      "primary_culture": "mande",
+      "common": "common/countries/Sierra Leone.txt",
+      "history": "history/countries/SLE - Sierra Leone.txt",
+      "source_common_sha256": "8949c1ee378db3f1f65bf9f06e4c37f5d9d8377fa6789ff1ed2e6c79a80e38f1",
+      "source_history_sha256": "b32f6243e332dbf41a039e6036985d8066b9ef1a9c6b6346c54750bf5f6f149b",
+      "translated_unit_names": 70,
+      "fixes": []
+    },
+    {
+      "tag": "SNG",
+      "primary_culture": "wolof",
+      "common": "common/countries/Senegal.txt",
+      "history": "history/countries/SNG - Senegal.txt",
+      "source_common_sha256": "ab17fe9c44fd4bcad9d1e9193f75d4d108d8e36adc4dde416374ffb6596f956d",
+      "source_history_sha256": "d06b18361ea03e76969d6b1c2cb4299c7bbee942779617677d6188425259208d",
+      "translated_unit_names": 70,
+      "fixes": []
+    },
+    {
+      "tag": "SOM",
+      "primary_culture": "somali",
+      "common": "common/countries/Somalia.txt",
+      "history": "history/countries/SOM - Somalia.txt",
+      "source_common_sha256": "2365a8a638063c6e4d1b1d48248a9c78d8c00659a3aecbb5bc951cbb685680ba",
+      "source_history_sha256": "d4e11e6c9964a408eb8c89f061d0dec8b808943881fb6a660464b688afdd219f",
+      "translated_unit_names": 122,
+      "fixes": [
+        "Отсутствующая nv_tradition заменена на nv_order"
+      ]
+    },
+    {
+      "tag": "TNZ",
+      "primary_culture": "unyamwezi",
+      "common": "common/countries/Tanzania.txt",
+      "history": "history/countries/TNZ - Tanzania.txt",
+      "source_common_sha256": "a0754af93feeba9b60a1fb78399f2d29e8670e4eedb8f7dde0b4a34b6c230942",
+      "source_history_sha256": "c6f124cb52250b1af54860a2382543484017024d3aa3647c79b1fbf28f708a50",
+      "translated_unit_names": 98,
+      "fixes": []
+    },
+    {
+      "tag": "TOG",
+      "primary_culture": "ewe",
+      "common": "common/countries/Togo.txt",
+      "history": "history/countries/TOG - Togo.txt",
+      "source_common_sha256": "329fcee39ed6ef686b1764ce09a780f19bfa9987eb6df320ce709e6a76bb80ac",
+      "source_history_sha256": "a3d2f0ed1b315417fb72ed6ef7053df6244fd11093ce82c28df4cbe205d9f8f3",
+      "translated_unit_names": 70,
+      "fixes": []
+    },
+    {
+      "tag": "TSW",
+      "primary_culture": "tswana",
+      "common": "common/countries/Botswana.txt",
+      "history": "history/countries/TSW - Botswana.txt",
+      "source_common_sha256": "2e90368ca75643bd6aff889ef8b695857e54fd4b2ce235ae243ef6c57fbe7d46",
+      "source_history_sha256": "51856ac4325a946031db8c223a90d314b895a317a6ab02423acb0b916a23c029",
+      "translated_unit_names": 98,
+      "fixes": [
+        "Отсутствующая nv_tradition заменена на nv_order"
+      ]
+    },
+    {
+      "tag": "ZAM",
+      "primary_culture": "lunda",
+      "common": "common/countries/Zambia.txt",
+      "history": "history/countries/ZAM - Zambia.txt",
+      "source_common_sha256": "76dabd9c9fab8574d69d86f8aefe5fa5c13b21b3ccb969f4855f01d1b309b82f",
+      "source_history_sha256": "fc52893a942812e527276a7c808dbad0cdad7f88bd5fa3c872c349794812d4a3",
+      "translated_unit_names": 70,
+      "fixes": []
+    },
+    {
+      "tag": "MAU",
+      "primary_culture": "maures",
+      "common": "common/countries/Mauretania.txt",
+      "history": "history/countries/MAU - Mauretania.txt",
+      "source_common_sha256": "36574327d0d3db0fbf3098999ae2ad1c97d3c7292e847c000470bdf190dfaf99",
+      "source_history_sha256": "7072249725686a9c96e74742648d03939230f58fb3b3cb9a82edce29ff38c358",
+      "translated_unit_names": 0,
+      "fixes": []
+    },
+    {
+      "tag": "NAM",
+      "primary_culture": "herero",
+      "common": "common/countries/Namibia.txt",
+      "history": "history/countries/NAM - Namibia.txt",
+      "source_common_sha256": "94823f249e2338634141a4d0a403486f208ffb4957118185a036db024eac8110",
+      "source_history_sha256": "9cbd7b4167aed318a7b4cc4aa9c3d0cf4d961e67364283c5017f4056e77e8990",
+      "translated_unit_names": 0,
+      "fixes": [
+        "Недопустимая начальная партия NAM_conservative заменена на NAM_reactionary"
+      ]
+    },
+    {
+      "tag": "RHV",
+      "primary_culture": "mossi",
+      "common": "common/countries/Haute-Volta.txt",
+      "history": "history/countries/RHV - Haute-Volta.txt",
+      "source_common_sha256": "01e993c4bb7d7102d9f3ed69f1ab0875dbcdac9caf1f28968eb13c6b2bf5eb48",
+      "source_history_sha256": "f7667e1e1a6a7cd97532a6f62f6139ad53c6247f25f427afaf11eb157236bb14",
+      "translated_unit_names": 70,
+      "fixes": [
+        "Отсутствующая nv_tradition заменена на nv_order"
+      ]
+    },
+    {
+      "tag": "GAN",
+      "primary_culture": "akan",
+      "common": "common/countries/Gana.txt",
+      "history": "history/countries/GAN - Gana.txt",
+      "source_common_sha256": "5d7612224fda73c5b172083fc5443bb2991b55161d3ba06dae07564fc48cd33f",
+      "source_history_sha256": "3de79f2ffb7b1bf591f71a1db7e0ee559e8ec0b1af5fbd1244f6f37833d6b7ba",
+      "translated_unit_names": 70,
+      "fixes": []
+    },
+    {
+      "tag": "EQG",
+      "primary_culture": "fang",
+      "common": "common/countries/Equatorial Guinea.txt",
+      "history": "history/countries/EQG - Equatorial Guinea.txt",
+      "source_common_sha256": "116fcc5dd04e0e7e8bab5c26995e78beb9d65aa909de6686dfb6acabff18140a",
+      "source_history_sha256": "563dca7b718f797939aebe90a41e3451a3725c2989281e623d6fec050175b1d6",
+      "translated_unit_names": 0,
+      "fixes": []
+    },
+    {
+      "tag": "GBS",
+      "primary_culture": "african_minor",
+      "common": "common/countries/Guinea Bissau.txt",
+      "history": "history/countries/GBS - Guinea Bissau.txt",
+      "source_common_sha256": "c91f8d7e5a0e0ba94557ff9d5e29d5afa0432873098030f10ad7dc80bd51edb5",
+      "source_history_sha256": "b84196bb7176ac924f3f7876f095ec9cfdf043a977c25691308dd6e40d409aa6",
+      "translated_unit_names": 0,
+      "fixes": [
+        "Недопустимая начальная партия GBS_conservative заменена на GBS_reactionary"
+      ]
+    },
+    {
+      "tag": "DJI",
+      "primary_culture": "afar",
+      "common": "common/countries/Djibuti.txt",
+      "history": "history/countries/DJI - Djibuti.txt",
+      "source_common_sha256": "b70fc19e07b4d0dd329fc7edf85105e3bd179fbc115055f8bf9475c5be74055c",
+      "source_history_sha256": "de8b376988b31d0b09b77054ab37b9ca9862cc5a5ee957cb3a290227a33b82a9",
+      "translated_unit_names": 77,
+      "fixes": []
+    },
+    {
+      "tag": "FWI",
+      "primary_culture": "afro_caribbean",
+      "common": "common/countries/West Indian Federation.txt",
+      "history": "history/countries/FWI - West Indian Federation.txt",
+      "source_common_sha256": "33a26608cdbba0e0c7726d6313cba99f3b3abb25b28ae2c7d6ba114bf1dbe1dd",
+      "source_history_sha256": "9966b175afcefb21c5fdf4a0ddf5725e915b1f5bf918c630ca6b3b9ff2dff20a",
+      "translated_unit_names": 98,
+      "fixes": []
+    },
+    {
+      "tag": "INO",
+      "primary_culture": "javan",
+      "common": "common/countries/Indonesia.txt",
+      "history": "history/countries/INO - Indonesia.txt",
+      "source_common_sha256": "6e1a450aea6ca56cf064b92286972f24afbabd41866e36d3592b23792490870f",
+      "source_history_sha256": "8c5fb6a4904af32b13aca67fa4489c0718fb66f06263619ba62198804a6719c1",
+      "translated_unit_names": 119,
+      "fixes": []
+    },
+    {
+      "tag": "JOR",
+      "primary_culture": "bedouin",
+      "common": "common/countries/Jordan.txt",
+      "history": "history/countries/JOR - Jordan.txt",
+      "source_common_sha256": "0aa9dceb63feb8e200a9200042ea0f60a9dc01862303f71c42f2478a459dda14",
+      "source_history_sha256": "57e4fda7ad64cc30882e119f124b3602aa856027f34334c3c76cc31c401b2814",
+      "translated_unit_names": 169,
+      "fixes": [
+        "Отсутствующая nv_tradition заменена на nv_order"
+      ]
+    },
+    {
+      "tag": "LBN",
+      "primary_culture": "mashriqi",
+      "common": "common/countries/Lebanon.txt",
+      "history": "history/countries/LBN - Lebanon.txt",
+      "source_common_sha256": "b1e5068c4d142e30f3dc4ad0885eacd630e95d73ac4a23870553ea0781736bf2",
+      "source_history_sha256": "16bd2fdff5789ab1a0129fad39921c44907444594bea3e0134196038c8264198",
+      "translated_unit_names": 155,
+      "fixes": [
+        "Отсутствующая nv_tradition заменена на nv_order"
+      ]
+    },
+    {
+      "tag": "PLS",
+      "primary_culture": "mashriqi",
+      "common": "common/countries/Palestine.txt",
+      "history": "history/countries/PLS - Palestine.txt",
+      "source_common_sha256": "99dc5f3867dce55d60705f70a30497b93f7d40f008bd355c1aa04b4575045f8e",
+      "source_history_sha256": "dad761356f58887ce388538c91ba9fdab5672f669fd1d4caeb9b0297ac199e4f",
+      "translated_unit_names": 155,
+      "fixes": [
+        "Отсутствующая nv_tradition заменена на nv_order"
+      ]
+    },
+    {
+      "tag": "UAE",
+      "primary_culture": "bedouin",
+      "common": "common/countries/United Arab Emirates.txt",
+      "history": "history/countries/UAE - United Arab Emirates.txt",
+      "source_common_sha256": "692f573fd19650257258b595de2df8e7a3d29a66157cd23e94157c5b482a553e",
+      "source_history_sha256": "e9736f3d2ae3d4ec5978953f09c1bdf3ebfd0569dececfe5d607cf6da6602de2",
+      "translated_unit_names": 0,
+      "fixes": []
+    },
+    {
+      "tag": "BHR",
+      "primary_culture": "bedouin",
+      "common": "common/countries/Bahrain.txt",
+      "history": "history/countries/BHR - Bahrain.txt",
+      "source_common_sha256": "349d1fb7a8731c9b7a716a6dfa4cb5f7f6679a2dbf6fe6e21b05144c19854986",
+      "source_history_sha256": "bf0a26bb5f76c6f31c45c66f7f0ca42acdd62b354d919010a92632967fd9f27a",
+      "translated_unit_names": 113,
+      "fixes": [
+        "Восстановлены Ghalib/Khalid/Khalis, повреждённые заменой HAL → BHR внутри имён"
+      ]
+    },
+    {
+      "tag": "QAT",
+      "primary_culture": "bedouin",
+      "common": "common/countries/Qatar.txt",
+      "history": "history/countries/QAT - Qatar.txt",
+      "source_common_sha256": "e5b89a3065ebde70342cb7de07685e5334a735354efe02d51ee9acc44ed2bfdd",
+      "source_history_sha256": "6a1e03edcf11d5198cb755cfa4ef0c62c21d3f2e52b72a085abf8fd1a61eebda",
+      "translated_unit_names": 113,
+      "fixes": [
+        "Восстановлены Ghalib/Khalid/Khalis, повреждённые заменой HAL → BHR внутри имён"
+      ]
+    },
+    {
+      "tag": "JSH",
+      "primary_culture": "bedouin",
+      "common": "common/countries/Jabal Shammar.txt",
+      "history": "history/countries/JSH - Jabal Shammar.txt",
+      "source_common_sha256": "6113bb3eef6bbf3a6e75727aecaf25c09d1240fea4332d2b4aeecc66950690c8",
+      "source_history_sha256": "c0f464cf26b12c181aa633fe3d161b831faee2b9c0c0dce3e20d7538b4ba593d",
+      "translated_unit_names": 113,
+      "fixes": [
+        "Отсутствующая nv_tradition заменена на nv_order"
+      ]
+    },
+    {
+      "tag": "DUB",
+      "primary_culture": "bedouin",
+      "common": "common/countries/Dubai.txt",
+      "history": "history/countries/DUB - Dubai.txt",
+      "source_common_sha256": "f2320a1993e386056552d3e18d8cc14f09509e64bfaccd89a2d20608cc575ffa",
+      "source_history_sha256": "22b5ed1100c0c823833ab0689b26c31d6342c95ef2234e8f251ec961a07e4662",
+      "translated_unit_names": 0,
+      "fixes": []
+    },
+    {
+      "tag": "FUJ",
+      "primary_culture": "bedouin",
+      "common": "common/countries/Fujairah.txt",
+      "history": "history/countries/FUJ - Fujairah.txt",
+      "source_common_sha256": "0c9d7c038a43a9eaa89430d8e73f087bd77e4fd448658decc1aa76783e9efc83",
+      "source_history_sha256": "015499124088122d0a3021d6a84fce8a5b9c734a9e401e2dcebb62ffd6a100ed",
+      "translated_unit_names": 0,
+      "fixes": []
+    },
+    {
+      "tag": "RAK",
+      "primary_culture": "bedouin",
+      "common": "common/countries/Ras al-Khaimah.txt",
+      "history": "history/countries/RAK - Ras al-Khaimah.txt",
+      "source_common_sha256": "457c833e9c8fe1a9cd583a06d6eee56f6d1ba9f55ca8808a82d2a50985c248a6",
+      "source_history_sha256": "54658967b2c2fe0edf46883584f993d8ffa0fa0b4a48c8555cf16e7b9cc2a9ea",
+      "translated_unit_names": 0,
+      "fixes": []
+    },
+    {
+      "tag": "UAQ",
+      "primary_culture": "bedouin",
+      "common": "common/countries/Umm al-Quwain.txt",
+      "history": "history/countries/UAQ - Umm al-Quwain.txt",
+      "source_common_sha256": "7c97f9315d2ec8a6d5cbdd61489b2ad64624e58ae19ba9b65e26e81a802ef9d2",
+      "source_history_sha256": "b7eaa150b7e919a1b8d6ad93fe5574b149efe4a53b89131cf153162c9cab6b12",
+      "translated_unit_names": 0,
+      "fixes": []
+    },
+    {
+      "tag": "SHA",
+      "primary_culture": "bedouin",
+      "common": "common/countries/Sharjah.txt",
+      "history": "history/countries/SHA - Sharjah.txt",
+      "source_common_sha256": "8f54fa0d590271796b475be81fb0a2f51a28ee24912bb8b6ad78faea96344d19",
+      "source_history_sha256": "3f7002265df842f529746a7297194244a9251509d66bd0c89140bd528106d44e",
+      "translated_unit_names": 0,
+      "fixes": []
+    },
+    {
+      "tag": "GRL",
+      "primary_culture": "inuit",
+      "common": "common/countries/Greenland.txt",
+      "history": "history/countries/GRL - Greenland.txt",
+      "source_common_sha256": "e1adef8216ff3ebe7dc04f7ca23bf51cd55291609500c7763b7476c89b8400eb",
+      "source_history_sha256": "5ad0989333353b01a131843dbded4019f5fc4ec6ba3244143be4cbb9de85bb31",
+      "translated_unit_names": 0,
+      "fixes": []
+    },
+    {
+      "tag": "LPL",
+      "primary_culture": "platinean",
+      "common": "common/countries/La Plata.txt",
+      "history": "history/countries/LPL - La Plata.txt",
+      "source_common_sha256": "7334965868e3e803fc3206fe881e684865bad32942c9fb3bd222c63d4b803436",
+      "source_history_sha256": "eb472ca5a7f15278cd29acfa76158de93202ea793fc78ace34c665166a21c88a",
+      "translated_unit_names": 222,
+      "fixes": [
+        "Недопустимая начальная партия ARG_conservative заменена на ARG_reactionary"
+      ]
+    },
+    {
+      "tag": "MRT",
+      "primary_culture": "marathi",
+      "common": "common/countries/Marathas.txt",
+      "history": "history/countries/MRT - Marathas.txt",
+      "source_common_sha256": "42f8afb2ad130d3734d0af042536401736de5d5c6414198261c2d5c3f208bff5",
+      "source_history_sha256": "fa8c788d6e2113205ff5f6141b473f0696cc368a770d8d8d2703dd6d4411300b",
+      "translated_unit_names": 160,
+      "fixes": [
+        "Отсутствующая nv_tradition заменена на nv_order"
+      ]
+    },
+    {
+      "tag": "CHK",
+      "primary_culture": "lao",
+      "common": "common/countries/Champasak.txt",
+      "history": "history/countries/CHK - Champasak.txt",
+      "source_common_sha256": "1280e138ecaac11cc5493d15c4ff4489bb31da8e264d185415c917774c4946ef",
+      "source_history_sha256": "e435f5ec596bd600d94c7663292bf9e609493abacedac1645cef44a90dde2004",
+      "translated_unit_names": 88,
+      "fixes": [
+        "Отсутствующая nv_tradition заменена на nv_order"
+      ]
+    },
+    {
+      "tag": "SUL",
+      "primary_culture": "malay",
+      "common": "common/countries/Sulu.txt",
+      "history": "history/countries/SUL - Sulu.txt",
+      "source_common_sha256": "d892b2dd7b193fc220ec458742f6cb941f6bbed0c94402d1542de62dd2137341",
+      "source_history_sha256": "b24f4d3b6430f3ffb5442e45368173d55ea6e1c92168748ed23228bfd7fb4759",
+      "translated_unit_names": 120,
+      "fixes": [
+        "Отсутствующая nv_tradition заменена на nv_order"
+      ]
+    },
+    {
+      "tag": "CHA",
+      "primary_culture": "lao",
+      "common": "common/countries/Champa.txt",
+      "history": "history/countries/CHA - Champa.txt",
+      "source_common_sha256": "16306fb30d543a9254a189a9c13dd6e2f9b98c942b2eea7a3f247480067b5231",
+      "source_history_sha256": "a239e4f4a188c5ae171670c230e4b0e9fcf6750a9c0c6e75d7fd1e1bc279cdb1",
+      "translated_unit_names": 88,
+      "fixes": [
+        "Отсутствующая nv_tradition заменена на nv_order"
+      ]
+    },
+    {
+      "tag": "SIG",
+      "primary_culture": "south_german",
+      "common": "common/countries/Hohenzollern-Sigmaringen.txt",
+      "history": "history/countries/SIG - Hohenzollern-Sigmaringen.txt",
+      "source_common_sha256": "1b68f823a3746285e21127892ea16a318d845e7cce3b648bc48c20e8753a7178",
+      "source_history_sha256": "f7596883281b9344de83f6165fad97e80484c1cf8e1801ad42dea674ed5321c1",
+      "translated_unit_names": 0,
+      "fixes": []
+    },
+    {
+      "tag": "PBC",
+      "primary_culture": "south_andean",
+      "common": "common/countries/Peru-Bolivia Confederation.txt",
+      "history": "history/countries/PBC - Peru-Bolivian Confederation.txt",
+      "source_common_sha256": "42753e0b79f6d5d8059d550bc6d3bfc1cfde24c3924443a65fed59f6ed8d2168",
+      "source_history_sha256": "1aa62f5b396982108c6a134614aa4800bd74836a1b17e1880ee285b3a6fc5dad",
+      "translated_unit_names": 120,
+      "fixes": [
+        "Недопустимая начальная партия PEU_conservative заменена на PEU_reactionary"
+      ]
+    },
+    {
+      "tag": "LAL",
+      "primary_culture": "central_american",
+      "common": "common/countries/Los Altos.txt",
+      "history": "history/countries/LAL - Los Altos.txt",
+      "source_common_sha256": "81c39a1cfd2f8c1a36310c1b9fbc7f6e1ab2c7ef8f036b490a4d2b79239452d8",
+      "source_history_sha256": "5babd069491e8191dd1cc253f242548964f937a37653d819c935340a403f18a6",
+      "translated_unit_names": 0,
+      "fixes": [
+        "Недопустимая начальная партия LAL_liberal заменена на LAL_reactionary"
+      ]
+    },
+    {
+      "tag": "SNR",
+      "primary_culture": "sudanese",
+      "common": "common/countries/Sennar.txt",
+      "history": "history/countries/SNR - Sennar.txt",
+      "source_common_sha256": "fbb7067a91b30ad332e5ca1228583a34fce682a8dbe24014db91617ae01ace6f",
+      "source_history_sha256": "01206ea1a26a3a6bf9d5e4f60d8ed6661d00969bd24b1b9012fcca678b4718d6",
+      "translated_unit_names": 0,
+      "fixes": []
+    },
+    {
+      "tag": "CLR",
+      "primary_culture": "russian",
+      "common": "common/countries/Russian Columbia.txt",
+      "history": "history/countries/CLR - Russian Columbia.txt",
+      "source_common_sha256": "469d712fc2f3e914551188bf5ad4ce30bfca49c5ee65c890cb556764b7ac560d",
+      "source_history_sha256": "efe3cb1140defb6b78ffae4436a22e0722fff74abb59ebd41e1298671f257007",
+      "translated_unit_names": 0,
+      "fixes": []
+    },
+    {
+      "tag": "HSM",
+      "primary_culture": "mashriqi",
+      "common": "common/countries/Hashemite Arabia.txt",
+      "history": "history/countries/HSM - Hashemite Arabia.txt",
+      "source_common_sha256": "9bf7a4ceec313583e76dd6b063596f77cbacef73f09c273ad3ab0e882e1f4f6d",
+      "source_history_sha256": "b29806be04236ef2265eefdf2f9666a7c547dc60ac48a9e58dd9b0400c0855ea",
+      "translated_unit_names": 0,
+      "fixes": [
+        "Недопустимая начальная партия SAU_conservative заменена на HSM_conservative"
+      ]
+    },
+    {
+      "tag": "TGA",
+      "primary_culture": "polynesian",
+      "common": "common/countries/Tonga.txt",
+      "history": "history/countries/TGA - Tonga.txt",
+      "source_common_sha256": "d769d4176c49988bf82cd1ab193bf0e51c0bf033cb86a32370a5e345e466df36",
+      "source_history_sha256": "5cc209fab1b9786bc3829e276b235d5a6f47360d0071e40c7de78f0bd68c41bf",
+      "translated_unit_names": 104,
+      "fixes": []
+    }
+  ],
+  "localisation_rows": 982,
+  "reused_localisations": {
+    "NIP_reactionary": [
+      [
+        "localisation/all_orig.csv",
+        "Сторонники сёгуната"
+      ]
+    ],
+    "NIP_conservative": [
+      [
+        "localisation/all_orig.csv",
+        "Партия императорского двора"
+      ]
+    ],
+    "NIP_conservative_2": [
+      [
+        "localisation/all_orig.csv",
+        "Общество вишни"
+      ]
+    ],
+    "NIP_reactionary_2": [
+      [
+        "localisation/all_orig.csv",
+        "Общество белого дракона"
+      ]
+    ],
+    "NIP_conservative_3": [
+      [
+        "localisation/all_orig.csv",
+        "Общество государственных основ"
+      ]
+    ],
+    "NIP_liberal": [
+      [
+        "localisation/all_orig.csv",
+        "Общество белого волка"
+      ]
+    ],
+    "NIP_socialist": [
+      [
+        "localisation/all_orig.csv",
+        "Общество трудящихся"
+      ]
+    ],
+    "NIP_anarcho_liberal": [
+      [
+        "localisation/all_orig.csv",
+        "Общество гильотины"
+      ]
+    ],
+    "NIP_communist": [
+      [
+        "localisation/all_orig.csv",
+        "Фракция твёрдого ядра"
+      ]
+    ],
+    "NIP_fascist": [
+      [
+        "localisation/all_orig.csv",
+        "Общество правого действия"
+      ]
+    ],
+    "RUS_conservative": [
+      [
+        "localisation/all_orig.csv",
+        "Партия славянофилов"
+      ]
+    ],
+    "RUS_liberal": [
+      [
+        "localisation/all_orig.csv",
+        "Партия западников"
+      ]
+    ],
+    "RUS_communist": [
+      [
+        "localisation/all_orig.csv",
+        "РСДРП(м)"
+      ]
+    ],
+    "SOV_communist_2": [
+      [
+        "localisation/newCountries.csv",
+        "Злые коммунисты"
+      ]
+    ],
+    "RUS_socialist": [
+      [
+        "localisation/all_orig.csv",
+        "Эсеры-максималисты"
+      ]
+    ],
+    "RUS_reactionary": [
+      [
+        "localisation/all_orig.csv",
+        "Фракция Панславистов"
+      ]
+    ],
+    "RUS_liberal_2": [
+      [
+        "localisation/all_orig.csv",
+        "Конституционно-демократическая партия"
+      ]
+    ],
+    "RUS_conservative_2": [
+      [
+        "localisation/all_orig.csv",
+        "Союз 17 октября"
+      ]
+    ],
+    "RUS_socialist_2": [
+      [
+        "localisation/all_orig.csv",
+        "Народно-социалистическая партия"
+      ]
+    ],
+    "RUS_socialist_3": [
+      [
+        "localisation/all_orig.csv",
+        "Трудовая группа"
+      ]
+    ],
+    "RUS_anarcho_liberal": [
+      [
+        "localisation/all_orig.csv",
+        "Правые эсеры"
+      ]
+    ],
+    "RUS_fascist": [
+      [
+        "localisation/all_orig.csv",
+        "Всероссийская фашистская партия"
+      ]
+    ],
+    "AUS_reactionary": [
+      [
+        "localisation/all_orig.csv",
+        "Неоабсолютисты"
+      ]
+    ],
+    "AUS_socialist": [
+      [
+        "localisation/all_orig.csv",
+        "Радикальная партия"
+      ]
+    ],
+    "AUS_liberal": [
+      [
+        "localisation/all_orig.csv",
+        "Федералистская партия"
+      ]
+    ],
+    "AUS_communist": [
+      [
+        "localisation/all_orig.csv",
+        "Коммунистическая партия"
+      ]
+    ],
+    "AUS_anarcho_liberal": [
+      [
+        "localisation/all_orig.csv",
+        "Радикальная партия"
+      ]
+    ],
+    "AUS_fascist": [
+      [
+        "localisation/all_orig.csv",
+        "НСДАП"
+      ]
+    ],
+    "LIV_conservative": [
+      [
+        "localisation/all_orig.csv",
+        "Партия роялистов"
+      ]
+    ],
+    "LIV_liberal": [
+      [
+        "localisation/all_orig.csv",
+        "Либеральная партия"
+      ]
+    ],
+    "LIV_reactionary": [
+      [
+        "localisation/all_orig.csv",
+        "Националистическая партия"
+      ]
+    ],
+    "LIV_anarcho_liberal": [
+      [
+        "localisation/all_orig.csv",
+        "Радикальная партия"
+      ]
+    ],
+    "LIV_socialist": [
+      [
+        "localisation/all_orig.csv",
+        "Социалистическая партия"
+      ]
+    ],
+    "LIV_communist": [
+      [
+        "localisation/all_orig.csv",
+        "Коммунистическая партия"
+      ]
+    ],
+    "LIV_fascist": [
+      [
+        "localisation/all_orig.csv",
+        "Фашистская партия"
+      ]
+    ],
+    "INO_conservative": [
+      [
+        "localisation/newCountries.csv",
+        "Консервативная партия"
+      ]
+    ],
+    "INO_liberal": [
+      [
+        "localisation/newCountries.csv",
+        "Либеральная партия"
+      ]
+    ],
+    "INO_reactionary": [
+      [
+        "localisation/newCountries.csv",
+        "Реакционная партия"
+      ]
+    ],
+    "INO_anarcho_liberal": [
+      [
+        "localisation/newCountries.csv",
+        "Радикальная партия"
+      ]
+    ],
+    "INO_socialist": [
+      [
+        "localisation/newCountries.csv",
+        "Социалистическая партия"
+      ]
+    ],
+    "INO_communist": [
+      [
+        "localisation/newCountries.csv",
+        "Коммунистическая партия"
+      ]
+    ],
+    "INO_fascist": [
+      [
+        "localisation/newCountries.csv",
+        "Фашистская партия"
+      ]
+    ],
+    "ARG_liberal": [
+      [
+        "localisation/all_orig.csv",
+        "Либеральная партия"
+      ]
+    ],
+    "ARG_liberal_2": [
+      [
+        "localisation/all_orig.csv",
+        "Унитарная партия"
+      ]
+    ],
+    "ARG_conservative": [
+      [
+        "localisation/all_orig.csv",
+        "Федеральная партия"
+      ]
+    ],
+    "ARG_conservative_2": [
+      [
+        "localisation/all_orig.csv",
+        "Католическая партия"
+      ]
+    ],
+    "ARG_conservative_3": [
+      [
+        "localisation/all_orig.csv",
+        "Национальная автономистская партия"
+      ]
+    ],
+    "ARG_conservative_4": [
+      [
+        "localisation/all_orig.csv",
+        "Автономистская партия"
+      ]
+    ],
+    "ARG_liberal_3": [
+      [
+        "localisation/all_orig.csv",
+        "Гражданский союз"
+      ]
+    ],
+    "ARG_socialist": [
+      [
+        "localisation/all_orig.csv",
+        "Социалистическая партия"
+      ]
+    ],
+    "ARG_conservative_5": [
+      [
+        "localisation/all_orig.csv",
+        "Национальный гражданский союз"
+      ]
+    ],
+    "ARG_liberal_4": [
+      [
+        "localisation/all_orig.csv",
+        "Национальный радикальный союз"
+      ]
+    ],
+    "ARG_reactionary": [
+      [
+        "localisation/all_orig.csv",
+        "Союз офицеров"
+      ]
+    ],
+    "ARG_anarcho_liberal": [
+      [
+        "localisation/all_orig.csv",
+        "Радикальная правая партия"
+      ]
+    ],
+    "ARG_communist": [
+      [
+        "localisation/all_orig.csv",
+        "Коммунистическая партия"
+      ]
+    ],
+    "ARG_fascist": [
+      [
+        "localisation/all_orig.csv",
+        "Хуастиалистская партия"
+      ]
+    ],
+    "PEU_conservative": [
+      [
+        "localisation/all_orig.csv",
+        "Общенародная партия"
+      ]
+    ],
+    "PEU_liberal": [
+      [
+        "localisation/all_orig.csv",
+        "Либеральная партия"
+      ]
+    ],
+    "PEU_reactionary": [
+      [
+        "localisation/all_orig.csv",
+        "Националистическая партия"
+      ]
+    ],
+    "PEU_anarcho_liberal": [
+      [
+        "localisation/all_orig.csv",
+        "Радикальная партия"
+      ]
+    ],
+    "PEU_socialist": [
+      [
+        "localisation/all_orig.csv",
+        "Социалистическая партия"
+      ]
+    ],
+    "PEU_communist": [
+      [
+        "localisation/all_orig.csv",
+        "Коммунистическая партия"
+      ]
+    ],
+    "PEU_fascist": [
+      [
+        "localisation/all_orig.csv",
+        "Фашистская партия"
+      ]
+    ]
+  },
+  "files": {
+    "common/countries.txt": {
+      "sha256": "7e1857b24c956381d4c904134bd702a5b9911aa894cb3512ce550466a9b05567",
+      "bytes": 13660
+    },
+    "common/countries/Ainu.txt": {
+      "sha256": "f8654595e349224d5112325db620856aabbf83fc69af00bebd8c7f5a69c23bcf",
+      "bytes": 3646
+    },
+    "common/countries/Andorra.txt": {
+      "sha256": "037028f4e447f69fbb9c683a192f9992b3318b483dee7e358e3de310e3b426f9",
+      "bytes": 7382
+    },
+    "common/countries/Angola.txt": {
+      "sha256": "833bc7bf7d2638d6ad2590345fa2d877e9b51c3881af3aaffeffa8dbcdd9bfc9",
+      "bytes": 3480
+    },
+    "common/countries/Anhui.txt": {
+      "sha256": "3a00c1bd2e4ae0aecd6100bb67e5c75b99fa268e92efaae9cc711609cc3f3667",
+      "bytes": 3881
+    },
+    "common/countries/Antigua and Barbuda.txt": {
+      "sha256": "8ee53398a06cc24b203f67d312271f19c8bcaf7de437cc30d39ca08899df2f49",
+      "bytes": 3323
+    },
+    "common/countries/Aruba.txt": {
+      "sha256": "074946ac936da1f20ff7b0d5e5b19671c57fbe1dd103966cafa62c6769b8d9ac",
+      "bytes": 3455
+    },
+    "common/countries/Bahrain.txt": {
+      "sha256": "6f2b1b269b71fc9cbaba100aa60dca87a683aabaa5d09276cf432e035a801bce",
+      "bytes": 3526
+    },
+    "common/countries/Barbados.txt": {
+      "sha256": "85279483d9ca9af926f04d7b260f3a59c0cf24fd7098071cb9edba93062a428b",
+      "bytes": 3572
+    },
+    "common/countries/Benin.txt": {
+      "sha256": "5ce82a7f49284a09870445596800a571ee7151042c990c284482948d219e1447",
+      "bytes": 2803
+    },
+    "common/countries/Botswana.txt": {
+      "sha256": "ba071abf0b7f7d0ab7558955a98dc45e55e902951728a5e78de1bc94d42a9f68",
+      "bytes": 3229
+    },
+    "common/countries/Cameroon.txt": {
+      "sha256": "24561b2b90a0661a4dac50595708be1033673e46972f8086768451b9f79f3a73",
+      "bytes": 2793
+    },
+    "common/countries/Cayman Islands.txt": {
+      "sha256": "5733388414349c0de1bff5c77baa770338e804bf48adb30159637f759c624ab2",
+      "bytes": 3092
+    },
+    "common/countries/Central African Republic.txt": {
+      "sha256": "d23b9426b250998b7b75905f77b9fe67ed581abb4db5a1242161ec7a3d85e8e5",
+      "bytes": 3197
+    },
+    "common/countries/Chad.txt": {
+      "sha256": "cce31008150d1f61b79f1d51d9dd8cf85aca459d7d9c2b13a377635ed413e101",
+      "bytes": 2787
+    },
+    "common/countries/Champa.txt": {
+      "sha256": "21b14d30b763c9bd72dd384313398b084032e22a73b871058a88bad38ee90518",
+      "bytes": 3277
+    },
+    "common/countries/Champasak.txt": {
+      "sha256": "d7f1d4c8ab9432165ba47a0a02a643573ce62f489cb523d71d5352f86dc7631e",
+      "bytes": 3279
+    },
+    "common/countries/Choshu.txt": {
+      "sha256": "eee59bf0d475fb44f550532b233ab684ca6939ff407562bca64a600ba5faeadf",
+      "bytes": 4124
+    },
+    "common/countries/Commonwealth of Dominica.txt": {
+      "sha256": "dfdb65084b24af1a73d52af97111a37972be35fd7266efe21abb66b805af5691",
+      "bytes": 3526
+    },
+    "common/countries/Communist Russia.txt": {
+      "sha256": "e4158c8f0890ba13372c36f831eed4fc7d272a582bfaeefb99888238ab8a6f63",
+      "bytes": 6927
+    },
+    "common/countries/Congo-Brazzaville.txt": {
+      "sha256": "01c7f24736a968ab889716145163c58a2640ced9babd2e37b1a49336fa567be0",
+      "bytes": 3321
+    },
+    "common/countries/Curacao.txt": {
+      "sha256": "6a83f73541d48f608c1199ac05cca234d882a15d6a8191ca6e9a40a9359ef640",
+      "bytes": 3460
+    },
+    "common/countries/Djibuti.txt": {
+      "sha256": "d0dda5f93f64cd875b8ebb06de0f50f49d291cb0b8d83fd69533cf3a103b24cf",
+      "bytes": 3152
+    },
+    "common/countries/Don Republic.txt": {
+      "sha256": "adb4fc93f48860fab73cad3af677608e4c92d9ecc2e7c26c0d5c8a2c97ff1aec",
+      "bytes": 2643
+    },
+    "common/countries/Dubai.txt": {
+      "sha256": "532adf4f24715dc3245046241b314cca88f05c8f1199bf6b792c074651902b0a",
+      "bytes": 3687
+    },
+    "common/countries/Eastern Rumelia.txt": {
+      "sha256": "db4acd2fe80827ecd3f1cd210a5f43f776773f0474b91db4b5395b8919e47348",
+      "bytes": 2642
+    },
+    "common/countries/Equatorial Guinea.txt": {
+      "sha256": "ceee38cc8b08cda664fb9341b550ad6b92fdae6e27af00149fc62c9c35236475",
+      "bytes": 1996
+    },
+    "common/countries/Eritrea.txt": {
+      "sha256": "e781a2381db8181824893fb37edd92f342fab2f22098ab51b6d339f7f47f675a",
+      "bytes": 3151
+    },
+    "common/countries/Fujairah.txt": {
+      "sha256": "c856ede5fe1618c49cecf14cb269e701050844d75673ef7e09ca7a888146e632",
+      "bytes": 3684
+    },
+    "common/countries/Fujian.txt": {
+      "sha256": "839c505bb79aa26b8a86e7c57493e7f6e3b660e53cedbed3ea326c2cbdbae1be",
+      "bytes": 3881
+    },
+    "common/countries/Gabon.txt": {
+      "sha256": "bbee33e249ab410222516163d1a3dc51aa09b9df4302401c54de1e01e0767540",
+      "bytes": 2793
+    },
+    "common/countries/Gambia.txt": {
+      "sha256": "3e127a743c0acb8b6741d150291b9b3d9aa820da7db70362108256eeb235bdc1",
+      "bytes": 2803
+    },
+    "common/countries/Gana.txt": {
+      "sha256": "174afe8b23a06d7ceabbc981a31648e3a4c6610bc842ea3c4e3d324870087e7f",
+      "bytes": 2800
+    },
+    "common/countries/Greenland.txt": {
+      "sha256": "a232ac93ef8f96eb769e0f48c7bd577ac34fe2eff6e237460a86d2d6c5a85044",
+      "bytes": 2007
+    },
+    "common/countries/Grenada.txt": {
+      "sha256": "5b5b76ddb905bab5bd4a863d6391387e7b6f3b6e2ec533987123ca20c0db91ba",
+      "bytes": 3480
+    },
+    "common/countries/Guadeloupe.txt": {
+      "sha256": "103908a0d193714064afdb0254c104f289ba1adc8a83a8078b64bab1f9fc1b11",
+      "bytes": 4406
+    },
+    "common/countries/Guangdong.txt": {
+      "sha256": "0f5278471f46479885f651c7f538c2d461c2077e4b0e5d5d748f8c07f16e592b",
+      "bytes": 3085
+    },
+    "common/countries/Guinea Bissau.txt": {
+      "sha256": "4cb4aa609de456ce6c26dd457a511ba1caf71895cc538a400df32f5dfc3e7886",
+      "bytes": 2003
+    },
+    "common/countries/Guinea.txt": {
+      "sha256": "24f3a9811a62a6921993ea434c9b2d766b814eaa1605a0055f7cbd996ddc8218",
+      "bytes": 2802
+    },
+    "common/countries/Guominjun.txt": {
+      "sha256": "083161c09e3df945cf3143e47e977c28fed4ca0a1cb8a18c98929f713f568791",
+      "bytes": 3882
+    },
+    "common/countries/Hashemite Arabia.txt": {
+      "sha256": "916a93b9513d1d3c1243f4c8e00b08db392e7a43a3bda497544f1c3a26465349",
+      "bytes": 3674
+    },
+    "common/countries/Haute-Volta.txt": {
+      "sha256": "b795f9bcce785b5a2d339a78ab8daf134d9217807a0de39d74d59fc820f4f0f5",
+      "bytes": 2794
+    },
+    "common/countries/Hohenzollern-Sigmaringen.txt": {
+      "sha256": "45d84642d6e2bde73b6d4422a39869dcd2da28b4b6bd17dd10e54d9383af4e6c",
+      "bytes": 3301
+    },
+    "common/countries/Hunan.txt": {
+      "sha256": "3b67cafc2a32727e9f6a63941c5654c64e96c1b1facaf55bf226b8c14095e71b",
+      "bytes": 3086
+    },
+    "common/countries/Ile-de-France.txt": {
+      "sha256": "8ef44d0e442d2c41c24f127677b4f3e429869aa31f149928bb7ee4f1eb1500ad",
+      "bytes": 5950
+    },
+    "common/countries/Indonesia.txt": {
+      "sha256": "63bb519fc1ae86322437d094032c9915e0c432d0622c58c0ec00b1be430b74d7",
+      "bytes": 3523
+    },
+    "common/countries/Ivory Coast.txt": {
+      "sha256": "2c8600c79f30bd3e39abc3fcdf69e9ba2cc96214ec020f3eb2edabb5f4ecff79",
+      "bytes": 2800
+    },
+    "common/countries/Jabal Shammar.txt": {
+      "sha256": "e555111a4e394121a5d34424f7a8ad1f42d767a2f03e1afe9cc9fd974083b8a3",
+      "bytes": 3527
+    },
+    "common/countries/Jamaica.txt": {
+      "sha256": "764dc1db8357431023fb3fb1639cec3befe3f6648460c06a9332c3f59365e9fb",
+      "bytes": 3499
+    },
+    "common/countries/Jap Imperor.txt": {
+      "sha256": "f0abe5a77355f2b47373f037e8c6fa51cc86337ba4bacc3af954e657981aa350",
+      "bytes": 4127
+    },
+    "common/countries/Jordan.txt": {
+      "sha256": "24c3011ba0c89fa542fe998f17da4facdefd83a4739b06dce41e1ac34f75e897",
+      "bytes": 4226
+    },
+    "common/countries/Kaga.txt": {
+      "sha256": "90da50193c3433e3e2f7cc785fab4b5998a457d0fc64a9f6c08295663fbc9c06",
+      "bytes": 4124
+    },
+    "common/countries/Kenya.txt": {
+      "sha256": "24f1cc812475907096b694a83233a420d48ddb324ba647313b63230ba72befbb",
+      "bytes": 3224
+    },
+    "common/countries/Kuwait.txt": {
+      "sha256": "82f3e96fb9b99902b0b6d25764a9ca9833a5d2362077f56668c12e8807d9bd97",
+      "bytes": 3485
+    },
+    "common/countries/La Plata.txt": {
+      "sha256": "010ace7f07b28b700aacfe659e8b8a6d1191b2d29b2a5678d0fb1794665d4c3f",
+      "bytes": 6766
+    },
+    "common/countries/Lebanon.txt": {
+      "sha256": "707918d4fb267559d0f70e0df69f191b1feafe4d49150118fa38eb4854646ad8",
+      "bytes": 3893
+    },
+    "common/countries/Libya.txt": {
+      "sha256": "ce972264cf0a00866c68b83442887df670b49ed7b44b171974e934bf1a446eff",
+      "bytes": 2005
+    },
+    "common/countries/Liechtenstein.txt": {
+      "sha256": "d48396e06d17ff10b774c9e0dda1a1fd924cd6a796df18d5a4daba72f8ca4cd9",
+      "bytes": 4560
+    },
+    "common/countries/Los Altos.txt": {
+      "sha256": "ae8fde0e86a93e027e9249b9f65f18a45130a0ac98f8a132b05450630cc09550",
+      "bytes": 3768
+    },
+    "common/countries/Maharashtra.txt": {
+      "sha256": "37c3aea556830b4b50e999c8cca4acda79429add0af1367b4441d7aa90b9a1d7",
+      "bytes": 1997
+    },
+    "common/countries/Malawi.txt": {
+      "sha256": "0bf2569070e464b50f7bd53bdc169dd0e381185a3a48b1567909dd4825510462",
+      "bytes": 2797
+    },
+    "common/countries/Mali.txt": {
+      "sha256": "193511ce8c143efb91a7efab79102b6c7d625a9d6fa4014443f6e97fffbf693f",
+      "bytes": 2792
+    },
+    "common/countries/Marathas.txt": {
+      "sha256": "736c51ca42fbcea9e92120ea785a7c875faeb368bc0613c3181bf609261bff61",
+      "bytes": 3992
+    },
+    "common/countries/Martinique.txt": {
+      "sha256": "fe3bc4ba3e8180329a788aa73ca5b6bfb7d10aa639b080ad0aef72cdaaf99a38",
+      "bytes": 4407
+    },
+    "common/countries/Mauretania.txt": {
+      "sha256": "735ebdf8a5218842bfbc3ca0099f77009b1531723f727752955be75f8615b5eb",
+      "bytes": 2000
+    },
+    "common/countries/Montserrat.txt": {
+      "sha256": "8aa9dedc2c2155fe1bbfa8de428d67dd0984cd32f11eebee64a57d8eed1c5643",
+      "bytes": 3240
+    },
+    "common/countries/Mozambique.txt": {
+      "sha256": "823aa29e1b34394076d2fe95f1b80d5c20eb7d40b78a79fb6547e26898425248",
+      "bytes": 3480
+    },
+    "common/countries/Namibia.txt": {
+      "sha256": "f53e0c21fe29a92f5039265c888b9d09c7c12f1c2dc34334c93b186ab4493432",
+      "bytes": 2011
+    },
+    "common/countries/Nationalist China.txt": {
+      "sha256": "f1135d9af6b78c1a6e5d289a208d6472324c4483abfd9e695126b152d0e93265",
+      "bytes": 4723
+    },
+    "common/countries/Niger.txt": {
+      "sha256": "997bb52149056bd75e11dd98b38ca546eecb21863dbd25f9dd6fed092f0be36f",
+      "bytes": 2802
+    },
+    "common/countries/Nigeria.txt": {
+      "sha256": "6be53e8c600832e095013914fa9dedc5813747d4aaab2f84fd2b75ef9917eb88",
+      "bytes": 2793
+    },
+    "common/countries/Ober Ost.txt": {
+      "sha256": "9214b267baf480b8e09cbdc43bdd5e6508c150e4e57da56862e8e8644dd79d14",
+      "bytes": 3461
+    },
+    "common/countries/Pakistan.txt": {
+      "sha256": "56f4dc55863642cf19a7e80bdf59ab36205e00dce5f36727b7878f4cb4b907e3",
+      "bytes": 3609
+    },
+    "common/countries/Palestine.txt": {
+      "sha256": "91f14eee88a90414342c8d4a1ab02cd3e5c1cf09ab8376de1823cf96c9019292",
+      "bytes": 3895
+    },
+    "common/countries/Peru-Bolivia Confederation.txt": {
+      "sha256": "3ed0a93ee01c053695100b4ea14ae2b19e69dd14b5360e76cdf7838cdde7eb67",
+      "bytes": 3729
+    },
+    "common/countries/Puerto Rico.txt": {
+      "sha256": "c33bedda993096caf1c0aaacb86bdc56bd75bd223112bb506b090b67bc11919c",
+      "bytes": 3642
+    },
+    "common/countries/Qatar.txt": {
+      "sha256": "f299dee0855b5e2382df782ea34bb0b70c8edf33094d32c1095c2029f6a8284e",
+      "bytes": 3527
+    },
+    "common/countries/Ras al-Khaimah.txt": {
+      "sha256": "c4e3d702e2a3d46272c1a1d3f047e1a74712b0df7fd3ffb3afd9c4fb20079c4f",
+      "bytes": 3687
+    },
+    "common/countries/Rio Grande.txt": {
+      "sha256": "633bbb73681da6402849b6106b94ae4b5a7aaa5479e03de40c3d5af56e5be06e",
+      "bytes": 4957
+    },
+    "common/countries/Ruanda.txt": {
+      "sha256": "7ceea121d51b300ac70b041d159ad70e65e25e31d139e73cee81b71bdbeb0556",
+      "bytes": 3225
+    },
+    "common/countries/Russian Columbia.txt": {
+      "sha256": "6c07d27646723d836efff2debca6ed23b91c47e63bc1379a44a4abfb0cfb487e",
+      "bytes": 5832
+    },
+    "common/countries/Ryukyu.txt": {
+      "sha256": "a1bf3280ee3892a8662d69cd6e330772f83353d6248165386ba145a643ce4afa",
+      "bytes": 4205
+    },
+    "common/countries/Saint Kitts and Nevis.txt": {
+      "sha256": "129c1dde23403217b3ec43d72ca8e82a03887492d42150c5cb6d3a340cdc7c80",
+      "bytes": 3227
+    },
+    "common/countries/Saint Lucia.txt": {
+      "sha256": "9a0b0f6260e85c47c1390a83b746e811ddddf351ec4672b9b8459fbfee1c79a1",
+      "bytes": 3530
+    },
+    "common/countries/Saint Vincent and the Grenadines.txt": {
+      "sha256": "0746814bfa48593c042740ced1e09ff4d5685383e1e8d487c61ab1e7aa2d5a72",
+      "bytes": 3573
+    },
+    "common/countries/San-Marino.txt": {
+      "sha256": "d6dee8a3b31f523657a166ab00d6441363749213dad1b97f8d90cef1a6582a99",
+      "bytes": 4887
+    },
+    "common/countries/Satsuma.txt": {
+      "sha256": "49c96a42a59f86c76f525704774a96eba216695d929817c714b002641c9eba22",
+      "bytes": 4124
+    },
+    "common/countries/Saudi Arabia.txt": {
+      "sha256": "dbaccb090d6ab1c01ad0330dd863a3e9f248e4230baaff1ad3c49a1aa463b421",
+      "bytes": 3688
+    },
+    "common/countries/Sendai.txt": {
+      "sha256": "90cf4f278499161433e387e7443be3e2eeefdddaf7642ec3b9f621b58e90bfc3",
+      "bytes": 4124
+    },
+    "common/countries/Senegal.txt": {
+      "sha256": "b586299f881bc5ae294dd0eab89cf2c1db4c08510162b356d104ee7751126ec9",
+      "bytes": 2801
+    },
+    "common/countries/Sennar.txt": {
+      "sha256": "76191e07f5ebd3ef2e3e462f7a975e67b1150d2f18743f3d90b4b7ad2e3ba766",
+      "bytes": 2004
+    },
+    "common/countries/Sharjah.txt": {
+      "sha256": "b26ddaf66ebe9690ba1986b4238e57b7cb88e02b0930f75cd1e5cbf22cd04aac",
+      "bytes": 3687
+    },
+    "common/countries/Sichuan.txt": {
+      "sha256": "ecb9d0138b59183469da8f9f36d757ed3d5aeae22b427ee07b20dbecb135a491",
+      "bytes": 3085
+    },
+    "common/countries/Sierra Leone.txt": {
+      "sha256": "cd50d7eb7324ef935567ae69ee0d7d5cd01b33f6e360c950803f08e18cf65731",
+      "bytes": 2787
+    },
+    "common/countries/Somalia.txt": {
+      "sha256": "4756521afcaec9052a921c10e9e547124f86a072914dabd812a92dba8a4f16d2",
+      "bytes": 3627
+    },
+    "common/countries/Sudan.txt": {
+      "sha256": "c820295ecf5c2d2fa86eb7ea803ce21fdd9abc38896cb958e70791cbb4a53aa7",
+      "bytes": 2005
+    },
+    "common/countries/Sulu.txt": {
+      "sha256": "e44be725626095a800a515a1b94a7f11dcbf07826cd490795e4b8baa4b3428e4",
+      "bytes": 3778
+    },
+    "common/countries/Syria.txt": {
+      "sha256": "7f5285689efdc68536240a63ab2a2fb7747c4b5427a88d87d163e30d21d88020",
+      "bytes": 2014
+    },
+    "common/countries/Taiwan.txt": {
+      "sha256": "e9a793b3db69b3f5ee553a7dc85a6551372f25a137feae51051e234559d3efac",
+      "bytes": 3885
+    },
+    "common/countries/Tanzania.txt": {
+      "sha256": "7e3f3359a19cd19da34b8a844a7c5dc4f0eb2c26d2b56180918a810f9cb69e81",
+      "bytes": 3224
+    },
+    "common/countries/Togo.txt": {
+      "sha256": "a4ece72546064e92d72fbe3300cbfe901f6e9d569d57cdb8eb9682e76c5d13d5",
+      "bytes": 2790
+    },
+    "common/countries/Tokugawa.txt": {
+      "sha256": "429a66f6d64be7fdedb410ccbaadae2d85a1846c18acfccc449dbaf2a50a2c3e",
+      "bytes": 4124
+    },
+    "common/countries/Tonga.txt": {
+      "sha256": "ec18c43a77490b9b0d3f4d7c298e37979a40782cd6ce687425c80e3cdcf42117",
+      "bytes": 4149
+    },
+    "common/countries/Tosa.txt": {
+      "sha256": "b1c8446563fd505e742a6e8db6583ef0675f973453098cdeecd22c847562b707",
+      "bytes": 4124
+    },
+    "common/countries/Transcaucasian.txt": {
+      "sha256": "e6ce4f72e146f9ca026d54aa3272e768c4f556500bad414a6d058433623e7d18",
+      "bytes": 7875
+    },
+    "common/countries/Trinidad and Tobago.txt": {
+      "sha256": "6a14edf06e0c8020a49987ca5d49c61e8fd65aa578512023fc46032e90e780fc",
+      "bytes": 3548
+    },
+    "common/countries/Turkestan.txt": {
+      "sha256": "8308a79a693068b7262d046f1ab6a5ec97b918ea5b4a09d8cf2b3d1e4ad93a1d",
+      "bytes": 3858
+    },
+    "common/countries/Uganda.txt": {
+      "sha256": "ee54d32d546bc65d5556ed0ade5b4c75f1efdeecc29a5d9b102cd705b13f17a9",
+      "bytes": 3221
+    },
+    "common/countries/Umm al-Quwain.txt": {
+      "sha256": "163bf54cc34d8284b12a33ad3186c94c074723bd8dc78c3292a598e424d469ce",
+      "bytes": 3686
+    },
+    "common/countries/United Arab Emirates.txt": {
+      "sha256": "794342d10722ddfd513202c7c2e2bd9737c31153d6db12fa46d5c4216bf54699",
+      "bytes": 3688
+    },
+    "common/countries/Urundi.txt": {
+      "sha256": "3acc8673365f3a9ef965f6cd2d5aa406559ff1fd4e81112b081f99204218acd5",
+      "bytes": 3222
+    },
+    "common/countries/West Indian Federation.txt": {
+      "sha256": "df30dffe150a9c26b79ff2e90c4dc35114df25d21394a51dcdeffa5b88a8da67",
+      "bytes": 3547
+    },
+    "common/countries/Yonezawa.txt": {
+      "sha256": "daf3c3ade17d92a3e419a04009b5da5df561ea02a7c6d156474ead7eeea77ca8",
+      "bytes": 4124
+    },
+    "common/countries/Yucatan.txt": {
+      "sha256": "fa8c2f277280432ba78c529bfc9d7ff6addf6b5c3705b29044418937480adb51",
+      "bytes": 3570
+    },
+    "common/countries/Zambia.txt": {
+      "sha256": "14ee21dc3f4b3f26cdcec77aaf4c396e598ec48cf4f09fa11a76c27e31a2f0dc",
+      "bytes": 2796
+    },
+    "common/countries/Zhili.txt": {
+      "sha256": "2a0eb086755c362cdc4e383394d1fcf23c97c4557ef9f788083eb77fd7b4bc76",
+      "bytes": 3881
+    },
+    "gfx/flags/ADR.tga": {
+      "sha256": "b3e3b1184ac9cf0d73495240a4b4da429a3300a321d48d3b11cc7f7ebe4804b2",
+      "bytes": 7114
+    },
+    "gfx/flags/ADR_communist.tga": {
+      "sha256": "b3e3b1184ac9cf0d73495240a4b4da429a3300a321d48d3b11cc7f7ebe4804b2",
+      "bytes": 7114
+    },
+    "gfx/flags/ADR_fascist.tga": {
+      "sha256": "b3e3b1184ac9cf0d73495240a4b4da429a3300a321d48d3b11cc7f7ebe4804b2",
+      "bytes": 7114
+    },
+    "gfx/flags/ADR_monarchy.tga": {
+      "sha256": "b3e3b1184ac9cf0d73495240a4b4da429a3300a321d48d3b11cc7f7ebe4804b2",
+      "bytes": 7114
+    },
+    "gfx/flags/ADR_republic.tga": {
+      "sha256": "0baa5824786d784d7bb90e4f36435ca62156dd534f10e6caf0e7aa0edabfe8bd",
+      "bytes": 3736
+    },
+    "gfx/flags/AIN.tga": {
+      "sha256": "325593bfe689256a29559c5cf923fce7465f64918165af0ae18b443c7c723662",
+      "bytes": 9629
+    },
+    "gfx/flags/AIN_communist.tga": {
+      "sha256": "0d8eaa7bb94d88d6dfbe044240377bfca23625aa02a1d11ff01d53ce2a135142",
+      "bytes": 3606
+    },
+    "gfx/flags/AIN_fascist.tga": {
+      "sha256": "00cd3ef115ec3abf8e412772aec84f7c5a608c06c3b3d774243c5340900ca280",
+      "bytes": 3942
+    },
+    "gfx/flags/AIN_monarchy.tga": {
+      "sha256": "325593bfe689256a29559c5cf923fce7465f64918165af0ae18b443c7c723662",
+      "bytes": 9629
+    },
+    "gfx/flags/AIN_republic.tga": {
+      "sha256": "02f535720a237104e8ec6e29792c78fde7370f129d08be853bdbdb0e6f76107c",
+      "bytes": 3730
+    },
+    "gfx/flags/ANG.tga": {
+      "sha256": "7dfed0c03d22caf93d135d691a4f3d77849aa5840e9095090ac6d39feabead51",
+      "bytes": 1160
+    },
+    "gfx/flags/ANG_communist.tga": {
+      "sha256": "311d9fc1c825eee883ab6b715a7b1c81b2d4483edbc43fc81d0e6929b435b277",
+      "bytes": 1894
+    },
+    "gfx/flags/ANG_fascist.tga": {
+      "sha256": "2861f4b3596f2cfc3f140cd83306707ffa1e97362030266633a1f213feec5d98",
+      "bytes": 3912
+    },
+    "gfx/flags/ANG_monarchy.tga": {
+      "sha256": "2f4f84a5cdc42f0160237faa198b39707ac27450c3ebe0057c7e7270a775d970",
+      "bytes": 3674
+    },
+    "gfx/flags/ANG_republic.tga": {
+      "sha256": "9b809b6a0fee6751e8fd2b304d256271d0df5a76a26bcdd2045930ce69e5018c",
+      "bytes": 2934
+    },
+    "gfx/flags/ANT.tga": {
+      "sha256": "baa84cd5c8cdda61c57ccd3a61446c2723d6189d184e8569f634911b94a86e6b",
+      "bytes": 4674
+    },
+    "gfx/flags/ANT_communist.tga": {
+      "sha256": "48021e2e0d222d87ca0443cdfd9bd07fe19379a9e18139503b6b7f452ae40b97",
+      "bytes": 4410
+    },
+    "gfx/flags/ANT_fascist.tga": {
+      "sha256": "f5cc9ed564be6914034014641a916ee7979ce5ccdce0c5cf28a4c1ba27b1dc3f",
+      "bytes": 364
+    },
+    "gfx/flags/ANT_monarchy.tga": {
+      "sha256": "baa84cd5c8cdda61c57ccd3a61446c2723d6189d184e8569f634911b94a86e6b",
+      "bytes": 4674
+    },
+    "gfx/flags/ANT_republic.tga": {
+      "sha256": "f0b95fafdf0055ba78a5a11dad92f00a6ff3415faa467f53adb7699e312bbd31",
+      "bytes": 9718
+    },
+    "gfx/flags/ANU.tga": {
+      "sha256": "c90dfa8c4660c5d0e210c6e43b87890ba8527deaf01eabbc7046e0a5012c0d87",
+      "bytes": 3261
+    },
+    "gfx/flags/ANU_communist.tga": {
+      "sha256": "bbd2ec5165df6f0ee7dcf9123894efe0cc4d32c294e8fb56f30f834c155cf77d",
+      "bytes": 4560
+    },
+    "gfx/flags/ANU_fascist.tga": {
+      "sha256": "c90dfa8c4660c5d0e210c6e43b87890ba8527deaf01eabbc7046e0a5012c0d87",
+      "bytes": 3261
+    },
+    "gfx/flags/ANU_monarchy.tga": {
+      "sha256": "55058cdf2445fb094e941fec464710eabac4873d7d4df0a71ad6314fd2d462d2",
+      "bytes": 6326
+    },
+    "gfx/flags/ANU_republic.tga": {
+      "sha256": "c24a6fe7278b2a2d070a8ce7e103440c2aca69cdb4ebdc8f307b1ace8b6611ac",
+      "bytes": 632
+    },
+    "gfx/flags/ARU.tga": {
+      "sha256": "9ccd8c591e1584b11889cca069d6f62b173e36e18c7267a1e2fb1a462de2acaf",
+      "bytes": 1820
+    },
+    "gfx/flags/ARU_communist.tga": {
+      "sha256": "c5764d254d6909d97144e7c67f4443bed64578a5a92e4184ad61b613a6fe4fb4",
+      "bytes": 10678
+    },
+    "gfx/flags/ARU_fascist.tga": {
+      "sha256": "7b7598c5909fbda22490464f88947072e7f6e9e7309c37b32e0a0b3b4841d5ae",
+      "bytes": 11656
+    },
+    "gfx/flags/ARU_monarchy.tga": {
+      "sha256": "b4a09f7a9630ff499ba783554022eed90aba9df555eee61fa5b92cdeea5b2c6c",
+      "bytes": 20003
+    },
+    "gfx/flags/ARU_republic.tga": {
+      "sha256": "9ccd8c591e1584b11889cca069d6f62b173e36e18c7267a1e2fb1a462de2acaf",
+      "bytes": 1820
+    },
+    "gfx/flags/BAR.tga": {
+      "sha256": "44f32420f0d2250b58b4bea1256139acf7adb5eddde7c160588439bcc1264ee5",
+      "bytes": 4906
+    },
+    "gfx/flags/BAR_communist.tga": {
+      "sha256": "d2b8a885f49423b9d26db46cc24f6e783414dc2a1aeef7ab7ad16d73487532aa",
+      "bytes": 14046
+    },
+    "gfx/flags/BAR_fascist.tga": {
+      "sha256": "5b6cd20d9055d0cd162257c1cf423b0c1213790adf1a94e7492079e2a27468c4",
+      "bytes": 7212
+    },
+    "gfx/flags/BAR_monarchy.tga": {
+      "sha256": "44f32420f0d2250b58b4bea1256139acf7adb5eddde7c160588439bcc1264ee5",
+      "bytes": 4906
+    },
+    "gfx/flags/BAR_republic.tga": {
+      "sha256": "af2c941754eb80a8e6409ade76e2ed13ae04d4c0114814a3a09ff6b7d1f08d7c",
+      "bytes": 18205
+    },
+    "gfx/flags/BEN.tga": {
+      "sha256": "1f3e28bcfcf41a8280076727fe10b0cb9c46460efec4fad5a710b1da61502c46",
+      "bytes": 17900
+    },
+    "gfx/flags/BEN_communist.tga": {
+      "sha256": "af8f01d8c8df5061c33c164158746f010eb24674a7ff516f203f9ffdad0bcaf4",
+      "bytes": 17900
+    },
+    "gfx/flags/BEN_fascist.tga": {
+      "sha256": "a132be5837c6cf7fea0906ef2de82a1c9845d81be6219e6e91b948f492aa1aaa",
+      "bytes": 17900
+    },
+    "gfx/flags/BEN_monarchy.tga": {
+      "sha256": "72adda5252e61b34ab83a8c4a7555d2f1d99320217269b78c15fa844bf82853c",
+      "bytes": 17900
+    },
+    "gfx/flags/BEN_republic.tga": {
+      "sha256": "34631deac75a12309350f07d79062acc3ab0ad110a0566536a8cfde49195525b",
+      "bytes": 17900
+    },
+    "gfx/flags/BHR.tga": {
+      "sha256": "0dd7cdf970836bb6b6d637cc20911de93180c487b1ce399ae967aa0d109b2cf5",
+      "bytes": 2038
+    },
+    "gfx/flags/BHR_communist.tga": {
+      "sha256": "b52638b55f942420ee6a031b8391d98936bca0f2ab130e9cbeb1b4b1d25ca254",
+      "bytes": 2599
+    },
+    "gfx/flags/BHR_fascist.tga": {
+      "sha256": "15a3dd8d3bea4a1453637efe7dc57f5f76863ae7556fef264268baf9108537e1",
+      "bytes": 4987
+    },
+    "gfx/flags/BHR_monarchy.tga": {
+      "sha256": "0dd7cdf970836bb6b6d637cc20911de93180c487b1ce399ae967aa0d109b2cf5",
+      "bytes": 2038
+    },
+    "gfx/flags/BHR_republic.tga": {
+      "sha256": "0dd7cdf970836bb6b6d637cc20911de93180c487b1ce399ae967aa0d109b2cf5",
+      "bytes": 2038
+    },
+    "gfx/flags/BRD.tga": {
+      "sha256": "80450318a09a9367fc1c9850b4b072f12a92172846d99a62a2334c1011d04101",
+      "bytes": 5217
+    },
+    "gfx/flags/BRD_communist.tga": {
+      "sha256": "11e8e2ab9ab36bb218fdf2dbb6337b14d73c1a248609ff2e6d834537fe37c3a0",
+      "bytes": 1705
+    },
+    "gfx/flags/BRD_fascist.tga": {
+      "sha256": "1915117da02a929562e06a142dcd3e30eb5816fbf00975695d1d8446ab0a60e6",
+      "bytes": 3353
+    },
+    "gfx/flags/BRD_monarchy.tga": {
+      "sha256": "dc8381844685f31cae64de82397af4aadc15059de2978a9222bfa6d27808c974",
+      "bytes": 4859
+    },
+    "gfx/flags/BRD_republic.tga": {
+      "sha256": "80450318a09a9367fc1c9850b4b072f12a92172846d99a62a2334c1011d04101",
+      "bytes": 5217
+    },
+    "gfx/flags/CAR.tga": {
+      "sha256": "0c16eead35069f0864cc1955bbdb5b73c079cf7960e6059db99d20d5c1d92946",
+      "bytes": 1769
+    },
+    "gfx/flags/CAR_communist.tga": {
+      "sha256": "38a245d30af0ac44388bb961412bb0040e861342c5fc6696c24852ac5399a17a",
+      "bytes": 2224
+    },
+    "gfx/flags/CAR_fascist.tga": {
+      "sha256": "903b127bce810fce4ffadad083176a6a4f4e15bcf2613bef9daf27159897a81b",
+      "bytes": 6283
+    },
+    "gfx/flags/CAR_monarchy.tga": {
+      "sha256": "0c16eead35069f0864cc1955bbdb5b73c079cf7960e6059db99d20d5c1d92946",
+      "bytes": 1769
+    },
+    "gfx/flags/CAR_republic.tga": {
+      "sha256": "0c16eead35069f0864cc1955bbdb5b73c079cf7960e6059db99d20d5c1d92946",
+      "bytes": 1769
+    },
+    "gfx/flags/CAY.tga": {
+      "sha256": "3610691248158f620d73c127dc3542fe889efd8c2e311df4661166f1360a47e3",
+      "bytes": 11103
+    },
+    "gfx/flags/CAY_communist.tga": {
+      "sha256": "6ff976b068c99b758370474199e616d4c62d300c5c23887c2cb148e5ab294f4d",
+      "bytes": 19525
+    },
+    "gfx/flags/CAY_fascist.tga": {
+      "sha256": "9fb31835f64eb3cd7dc967c5308643ad80cc8813d5373ac9eddd63f7a64e95c1",
+      "bytes": 11271
+    },
+    "gfx/flags/CAY_monarchy.tga": {
+      "sha256": "3610691248158f620d73c127dc3542fe889efd8c2e311df4661166f1360a47e3",
+      "bytes": 11103
+    },
+    "gfx/flags/CAY_republic.tga": {
+      "sha256": "0141eac5291d17c36dd3ae7be1a9b8f5445be3412967b48408d238e2d2f8460e",
+      "bytes": 11778
+    },
+    "gfx/flags/CGO.tga": {
+      "sha256": "da3036c8400202963a165731dda12d646f754c634359bf784846c265d7f3df96",
+      "bytes": 1789
+    },
+    "gfx/flags/CGO_communist.tga": {
+      "sha256": "7890cdfa7981643570384114a04141bf023317ba17e6024c973bbd85cba69933",
+      "bytes": 2544
+    },
+    "gfx/flags/CGO_fascist.tga": {
+      "sha256": "9dfa7b567481db15cb78aacaecbcb31e28eb8418010ddce04f988b3b471fe47c",
+      "bytes": 3731
+    },
+    "gfx/flags/CGO_monarchy.tga": {
+      "sha256": "da3036c8400202963a165731dda12d646f754c634359bf784846c265d7f3df96",
+      "bytes": 1789
+    },
+    "gfx/flags/CGO_republic.tga": {
+      "sha256": "da3036c8400202963a165731dda12d646f754c634359bf784846c265d7f3df96",
+      "bytes": 1789
+    },
+    "gfx/flags/CHA.tga": {
+      "sha256": "b99a595b1721c316af64e7e304f75d132d5a2777b914723ebea322f3d6db24c3",
+      "bytes": 5299
+    },
+    "gfx/flags/CHA_communist.tga": {
+      "sha256": "b99a595b1721c316af64e7e304f75d132d5a2777b914723ebea322f3d6db24c3",
+      "bytes": 5299
+    },
+    "gfx/flags/CHA_fascist.tga": {
+      "sha256": "b99a595b1721c316af64e7e304f75d132d5a2777b914723ebea322f3d6db24c3",
+      "bytes": 5299
+    },
+    "gfx/flags/CHA_monarchy.tga": {
+      "sha256": "b99a595b1721c316af64e7e304f75d132d5a2777b914723ebea322f3d6db24c3",
+      "bytes": 5299
+    },
+    "gfx/flags/CHA_republic.tga": {
+      "sha256": "b99a595b1721c316af64e7e304f75d132d5a2777b914723ebea322f3d6db24c3",
+      "bytes": 5299
+    },
+    "gfx/flags/CHD.tga": {
+      "sha256": "8dd8f07c22f4408397e55dffeb379544c99506bbf9362a64493896ca4d7807cb",
+      "bytes": 1900
+    },
+    "gfx/flags/CHD_communist.tga": {
+      "sha256": "00bf815ca1b1602f83ab4f072bc715b75350942040911f1a8cb472324f023403",
+      "bytes": 3222
+    },
+    "gfx/flags/CHD_fascist.tga": {
+      "sha256": "78bcf07a2e129962c483794d59eb47594d25e8e77d069548cb266392c7f85ddb",
+      "bytes": 4367
+    },
+    "gfx/flags/CHD_monarchy.tga": {
+      "sha256": "8dd8f07c22f4408397e55dffeb379544c99506bbf9362a64493896ca4d7807cb",
+      "bytes": 1900
+    },
+    "gfx/flags/CHD_republic.tga": {
+      "sha256": "8dd8f07c22f4408397e55dffeb379544c99506bbf9362a64493896ca4d7807cb",
+      "bytes": 1900
+    },
+    "gfx/flags/CHK.tga": {
+      "sha256": "513d4fe6b79e6be250ba2297391b5def47c56e2e71bca502aa0ad3e6b2d96b1c",
+      "bytes": 1750
+    },
+    "gfx/flags/CHK_communist.tga": {
+      "sha256": "513d4fe6b79e6be250ba2297391b5def47c56e2e71bca502aa0ad3e6b2d96b1c",
+      "bytes": 1750
+    },
+    "gfx/flags/CHK_fascist.tga": {
+      "sha256": "513d4fe6b79e6be250ba2297391b5def47c56e2e71bca502aa0ad3e6b2d96b1c",
+      "bytes": 1750
+    },
+    "gfx/flags/CHK_monarchy.tga": {
+      "sha256": "513d4fe6b79e6be250ba2297391b5def47c56e2e71bca502aa0ad3e6b2d96b1c",
+      "bytes": 1750
+    },
+    "gfx/flags/CHK_republic.tga": {
+      "sha256": "513d4fe6b79e6be250ba2297391b5def47c56e2e71bca502aa0ad3e6b2d96b1c",
+      "bytes": 1750
+    },
+    "gfx/flags/CHO.tga": {
+      "sha256": "c799501a36723607ed81240ff4f092383f4b6d4669eb5b15e028553fa3d72fea",
+      "bytes": 2852
+    },
+    "gfx/flags/CHO_communist.tga": {
+      "sha256": "c796c356e49d5f08fcdffc0bc6ec8969c82e3e7357e84913ab31282274f0dd5e",
+      "bytes": 4052
+    },
+    "gfx/flags/CHO_fascist.tga": {
+      "sha256": "0388d89d5aa93d3af2d1e82617331c79305bfc064699501beb4e61cfe59097bb",
+      "bytes": 4611
+    },
+    "gfx/flags/CHO_monarchy.tga": {
+      "sha256": "c799501a36723607ed81240ff4f092383f4b6d4669eb5b15e028553fa3d72fea",
+      "bytes": 2852
+    },
+    "gfx/flags/CHO_republic.tga": {
+      "sha256": "5f05e5fff0a33adb6f86d49b34788edc40ebcd4a596ccb0df5b78119241ffb60",
+      "bytes": 2771
+    },
+    "gfx/flags/CLR.tga": {
+      "sha256": "7b31b36d62b593c37a9307379a857f76796a457aea09fad219d3fdc0092bb109",
+      "bytes": 11452
+    },
+    "gfx/flags/CLR_communist.tga": {
+      "sha256": "a8d526cd3ab3191ce9a975f886ba5ec134d32777fe40d898763e8a8ec6dc6101",
+      "bytes": 5476
+    },
+    "gfx/flags/CLR_fascist.tga": {
+      "sha256": "7b31b36d62b593c37a9307379a857f76796a457aea09fad219d3fdc0092bb109",
+      "bytes": 11452
+    },
+    "gfx/flags/CLR_monarchy.tga": {
+      "sha256": "b407a6b4d094b6fa1dff45f0ae3930df54dab1b14538a4d7076d4a12cb2beb97",
+      "bytes": 10110
+    },
+    "gfx/flags/CLR_republic.tga": {
+      "sha256": "7b31b36d62b593c37a9307379a857f76796a457aea09fad219d3fdc0092bb109",
+      "bytes": 11452
+    },
+    "gfx/flags/CMR.tga": {
+      "sha256": "28eef98aa9dc799dd3d2f3ac81e811107f0b52e81c5b73e2839d78818a561a62",
+      "bytes": 1900
+    },
+    "gfx/flags/CMR_communist.tga": {
+      "sha256": "99d4cf0f842c2f92d23774d9af57553a7328acacac37f200fdc8da19fab9b97b",
+      "bytes": 3585
+    },
+    "gfx/flags/CMR_fascist.tga": {
+      "sha256": "28eef98aa9dc799dd3d2f3ac81e811107f0b52e81c5b73e2839d78818a561a62",
+      "bytes": 1900
+    },
+    "gfx/flags/CMR_monarchy.tga": {
+      "sha256": "ddfae62328de8c51346375b7d816d7f29f33ccc8904508ea5c4b180ddde7d166",
+      "bytes": 4884
+    },
+    "gfx/flags/CMR_republic.tga": {
+      "sha256": "28eef98aa9dc799dd3d2f3ac81e811107f0b52e81c5b73e2839d78818a561a62",
+      "bytes": 1900
+    },
+    "gfx/flags/COD.tga": {
+      "sha256": "1c9685ecceaf2453a4028a04cdc249a16c2a6db3f92952d42d2a793234cc693a",
+      "bytes": 6176
+    },
+    "gfx/flags/COD_communist.tga": {
+      "sha256": "b1a84491915124acda9e0150a51363cfcec36f81c8fce709b273b68df27c7ed5",
+      "bytes": 5891
+    },
+    "gfx/flags/COD_fascist.tga": {
+      "sha256": "0941957937338eb3165fe2a3f506cbabcebd7a644abf3fc080efcf3e7c509d90",
+      "bytes": 364
+    },
+    "gfx/flags/COD_monarchy.tga": {
+      "sha256": "1c9685ecceaf2453a4028a04cdc249a16c2a6db3f92952d42d2a793234cc693a",
+      "bytes": 6176
+    },
+    "gfx/flags/COD_republic.tga": {
+      "sha256": "dcdf13f236fe5ee0e0f2a2c3280375e8e7ebaaea487e820a1c97809acdd2f4ef",
+      "bytes": 10456
+    },
+    "gfx/flags/CUR.tga": {
+      "sha256": "e2293c5176c159ce7bec7aa2cb42e37135fb35baea6a2a5c6b22d59c833770e0",
+      "bytes": 1938
+    },
+    "gfx/flags/CUR_communist.tga": {
+      "sha256": "ee266d89a28dfcb87b52e92d141a228548f7d0485e3becb624638a609f833854",
+      "bytes": 3924
+    },
+    "gfx/flags/CUR_fascist.tga": {
+      "sha256": "1949a01fa7c6d48f4460d4830b53292f42ee16244fa89aba632b3775066dc5db",
+      "bytes": 8468
+    },
+    "gfx/flags/CUR_monarchy.tga": {
+      "sha256": "cd499096f6bd01674325c3b91b9dba5bb9d9c57947b6cd36db56a52ba53a90f5",
+      "bytes": 7304
+    },
+    "gfx/flags/CUR_republic.tga": {
+      "sha256": "e2293c5176c159ce7bec7aa2cb42e37135fb35baea6a2a5c6b22d59c833770e0",
+      "bytes": 1938
+    },
+    "gfx/flags/DJI.tga": {
+      "sha256": "e5e0b330a3c0664627626ccc1c1ce789c957eb4cdc36da3eacbeab4de2308605",
+      "bytes": 23826
+    },
+    "gfx/flags/DJI_communist.tga": {
+      "sha256": "a34223e2186a3bc8098e4372791caf0d042e08120b36758fb59d1618f4d43701",
+      "bytes": 23826
+    },
+    "gfx/flags/DJI_fascist.tga": {
+      "sha256": "1207d6d826f75c6511007ccb69391fab6743092263197857d9f000d3ace11251",
+      "bytes": 23826
+    },
+    "gfx/flags/DJI_monarchy.tga": {
+      "sha256": "e5e0b330a3c0664627626ccc1c1ce789c957eb4cdc36da3eacbeab4de2308605",
+      "bytes": 23826
+    },
+    "gfx/flags/DJI_republic.tga": {
+      "sha256": "0e3b5c48ed19cc83c9afc0c5f648744914763b3b6d1dc692c3555fc88ee19154",
+      "bytes": 23826
+    },
+    "gfx/flags/DON.tga": {
+      "sha256": "8ad5c56ca627080d7708a0848a6e19ba15aa4f08fb0c78446cf109501c0b8698",
+      "bytes": 364
+    },
+    "gfx/flags/DON_communist.tga": {
+      "sha256": "8ad5c56ca627080d7708a0848a6e19ba15aa4f08fb0c78446cf109501c0b8698",
+      "bytes": 364
+    },
+    "gfx/flags/DON_fascist.tga": {
+      "sha256": "8ad5c56ca627080d7708a0848a6e19ba15aa4f08fb0c78446cf109501c0b8698",
+      "bytes": 364
+    },
+    "gfx/flags/DON_monarchy.tga": {
+      "sha256": "8ad5c56ca627080d7708a0848a6e19ba15aa4f08fb0c78446cf109501c0b8698",
+      "bytes": 364
+    },
+    "gfx/flags/DON_republic.tga": {
+      "sha256": "8ad5c56ca627080d7708a0848a6e19ba15aa4f08fb0c78446cf109501c0b8698",
+      "bytes": 364
+    },
+    "gfx/flags/DUB.tga": {
+      "sha256": "3afccd66eadb5f23bc33bb7a4c5285e89604730b3dbe7ff6c399d18a91357d98",
+      "bytes": 1196
+    },
+    "gfx/flags/DUB_communist.tga": {
+      "sha256": "3afccd66eadb5f23bc33bb7a4c5285e89604730b3dbe7ff6c399d18a91357d98",
+      "bytes": 1196
+    },
+    "gfx/flags/DUB_fascist.tga": {
+      "sha256": "3afccd66eadb5f23bc33bb7a4c5285e89604730b3dbe7ff6c399d18a91357d98",
+      "bytes": 1196
+    },
+    "gfx/flags/DUB_monarchy.tga": {
+      "sha256": "3afccd66eadb5f23bc33bb7a4c5285e89604730b3dbe7ff6c399d18a91357d98",
+      "bytes": 1196
+    },
+    "gfx/flags/DUB_republic.tga": {
+      "sha256": "3afccd66eadb5f23bc33bb7a4c5285e89604730b3dbe7ff6c399d18a91357d98",
+      "bytes": 1196
+    },
+    "gfx/flags/EQG.tga": {
+      "sha256": "ddc23ce0a267c706649faa66f888e9481eea7a756909971148e908c22d4c5c9f",
+      "bytes": 23826
+    },
+    "gfx/flags/EQG_communist.tga": {
+      "sha256": "950f7e791153a6fedc57806fa5ad34b25324b14396cfde602b9928e383dc0038",
+      "bytes": 23826
+    },
+    "gfx/flags/EQG_fascist.tga": {
+      "sha256": "b879a4201a57a9a49e4b33961be2b2f41305ad7fd17fea32b6071fe60d5a0f7f",
+      "bytes": 23826
+    },
+    "gfx/flags/EQG_monarchy.tga": {
+      "sha256": "ddc23ce0a267c706649faa66f888e9481eea7a756909971148e908c22d4c5c9f",
+      "bytes": 23826
+    },
+    "gfx/flags/EQG_republic.tga": {
+      "sha256": "8c644aaede3b846153b8a63021ef61fe74ee963320cbb3703976082f4e48c418",
+      "bytes": 23826
+    },
+    "gfx/flags/ERM.tga": {
+      "sha256": "580f753c547851045a8b380f87d8845055a2fe6bc2f3a6385c727525fd182c12",
+      "bytes": 3203
+    },
+    "gfx/flags/ERM_communist.tga": {
+      "sha256": "1b4ea29db89938d2417b00b1487cd7c82f96636cbf432b6e4362326669b98edd",
+      "bytes": 2004
+    },
+    "gfx/flags/ERM_fascist.tga": {
+      "sha256": "8ba9d9c622ad1ef502ece40599627aad9bb787e19a224b8b88208054a7f8aa59",
+      "bytes": 1419
+    },
+    "gfx/flags/ERM_monarchy.tga": {
+      "sha256": "580f753c547851045a8b380f87d8845055a2fe6bc2f3a6385c727525fd182c12",
+      "bytes": 3203
+    },
+    "gfx/flags/ERM_republic.tga": {
+      "sha256": "168e8d4ca5418fee8b1412be7857a6108e1da029eb101b665aef038fe94f0acd",
+      "bytes": 364
+    },
+    "gfx/flags/ERT.tga": {
+      "sha256": "3d16588585585e05ba6e7cfaa762eff42dcdb380e61cdcb0a694b6ae8f223c41",
+      "bytes": 4363
+    },
+    "gfx/flags/ERT_communist.tga": {
+      "sha256": "cd02c98c341450ba69d6c273ce81e73389aa9b87b1b4c9ce51a08806f0a24960",
+      "bytes": 4902
+    },
+    "gfx/flags/ERT_fascist.tga": {
+      "sha256": "d1ed024742ae14266699ffa3f719333138818de3d6fc210e65555c2f3a151a21",
+      "bytes": 3431
+    },
+    "gfx/flags/ERT_monarchy.tga": {
+      "sha256": "3d16588585585e05ba6e7cfaa762eff42dcdb380e61cdcb0a694b6ae8f223c41",
+      "bytes": 4363
+    },
+    "gfx/flags/ERT_republic.tga": {
+      "sha256": "bd6f40980bab0645523f0d17e2b078917dd73489118118bc9c689b6e951ce0a0",
+      "bytes": 6565
+    },
+    "gfx/flags/FJN.tga": {
+      "sha256": "083905d0f92e44adc1adff591f91d88ff69519da028d050e7da8d0c859928395",
+      "bytes": 1605
+    },
+    "gfx/flags/FJN_communist.tga": {
+      "sha256": "b925c3c227d9127e7703bf907ae8af515cfb342a340d450d06483fe214f84b78",
+      "bytes": 6723
+    },
+    "gfx/flags/FJN_fascist.tga": {
+      "sha256": "25ce37223ecaec5c41db8c2d6232e81872c77bf31c8ff89af4c43a84f7429684",
+      "bytes": 3098
+    },
+    "gfx/flags/FJN_monarchy.tga": {
+      "sha256": "33764e2f7bf23eb74295a8ed80f866bc02e32c6a4e5394d31781b4b809e7e560",
+      "bytes": 8075
+    },
+    "gfx/flags/FJN_republic.tga": {
+      "sha256": "083905d0f92e44adc1adff591f91d88ff69519da028d050e7da8d0c859928395",
+      "bytes": 1605
+    },
+    "gfx/flags/FUJ.tga": {
+      "sha256": "2acf9ddb562d92aae3edaf54137539a9895f31e638a48338e045c1d584bd6b39",
+      "bytes": 556
+    },
+    "gfx/flags/FUJ_communist.tga": {
+      "sha256": "2acf9ddb562d92aae3edaf54137539a9895f31e638a48338e045c1d584bd6b39",
+      "bytes": 556
+    },
+    "gfx/flags/FUJ_fascist.tga": {
+      "sha256": "2acf9ddb562d92aae3edaf54137539a9895f31e638a48338e045c1d584bd6b39",
+      "bytes": 556
+    },
+    "gfx/flags/FUJ_monarchy.tga": {
+      "sha256": "2acf9ddb562d92aae3edaf54137539a9895f31e638a48338e045c1d584bd6b39",
+      "bytes": 556
+    },
+    "gfx/flags/FUJ_republic.tga": {
+      "sha256": "2acf9ddb562d92aae3edaf54137539a9895f31e638a48338e045c1d584bd6b39",
+      "bytes": 556
+    },
+    "gfx/flags/FWI.tga": {
+      "sha256": "bbe17058e69411f00c9e3da58237c36d6fc081d973e7dccf430cdc02bd2db3bb",
+      "bytes": 9514
+    },
+    "gfx/flags/FWI_communist.tga": {
+      "sha256": "bbe17058e69411f00c9e3da58237c36d6fc081d973e7dccf430cdc02bd2db3bb",
+      "bytes": 9514
+    },
+    "gfx/flags/FWI_fascist.tga": {
+      "sha256": "bbe17058e69411f00c9e3da58237c36d6fc081d973e7dccf430cdc02bd2db3bb",
+      "bytes": 9514
+    },
+    "gfx/flags/FWI_monarchy.tga": {
+      "sha256": "bbe17058e69411f00c9e3da58237c36d6fc081d973e7dccf430cdc02bd2db3bb",
+      "bytes": 9514
+    },
+    "gfx/flags/FWI_republic.tga": {
+      "sha256": "bbe17058e69411f00c9e3da58237c36d6fc081d973e7dccf430cdc02bd2db3bb",
+      "bytes": 9514
+    },
+    "gfx/flags/GAB.tga": {
+      "sha256": "46db9572636abd3767527d48776c4f807a556b66cb4a3888b3173b01772caf1b",
+      "bytes": 300
+    },
+    "gfx/flags/GAB_communist.tga": {
+      "sha256": "5dfdabf775f614794a4c59f74501abbe97347a5f38165be4848ef9b7cccea72b",
+      "bytes": 1537
+    },
+    "gfx/flags/GAB_fascist.tga": {
+      "sha256": "46db9572636abd3767527d48776c4f807a556b66cb4a3888b3173b01772caf1b",
+      "bytes": 300
+    },
+    "gfx/flags/GAB_monarchy.tga": {
+      "sha256": "29c07386a5da102424ad4cb7c37743da58d78c1fcbc25884d5af6a845c14646b",
+      "bytes": 4059
+    },
+    "gfx/flags/GAB_republic.tga": {
+      "sha256": "46db9572636abd3767527d48776c4f807a556b66cb4a3888b3173b01772caf1b",
+      "bytes": 300
+    },
+    "gfx/flags/GAN.tga": {
+      "sha256": "43ef9d8d7e855983abd53a01678d852d6e4a101302dd2f99e828b9d823800fa0",
+      "bytes": 23826
+    },
+    "gfx/flags/GAN_communist.tga": {
+      "sha256": "186cf882895c5b17b151c142ac3222fcc88c1a38dd10aaa463419ca309920e94",
+      "bytes": 23826
+    },
+    "gfx/flags/GAN_fascist.tga": {
+      "sha256": "3dda3a78e09f114cb163471a1cb0de690cbacf81ddbbf7965114b7c5bba1e622",
+      "bytes": 23826
+    },
+    "gfx/flags/GAN_monarchy.tga": {
+      "sha256": "43ef9d8d7e855983abd53a01678d852d6e4a101302dd2f99e828b9d823800fa0",
+      "bytes": 23826
+    },
+    "gfx/flags/GAN_republic.tga": {
+      "sha256": "0d4696d04a1cf8d0879bcf7a225104ddf960298f8c53365e18fd2a5225bda56c",
+      "bytes": 23826
+    },
+    "gfx/flags/GBS.tga": {
+      "sha256": "107c4c9ead29183c65ff66a5c785dbd7870c4a87b0c6f4697f23df156263e739",
+      "bytes": 23826
+    },
+    "gfx/flags/GBS_communist.tga": {
+      "sha256": "3fa18760fb5a3e7b3f1b908e4964c9fc849e3493adcb3b8b68ceb132dd1e840a",
+      "bytes": 23826
+    },
+    "gfx/flags/GBS_fascist.tga": {
+      "sha256": "b468fca2385dbd1e4892402d2878e947f3096c0093cbd3209b45493ecd806e51",
+      "bytes": 23826
+    },
+    "gfx/flags/GBS_monarchy.tga": {
+      "sha256": "107c4c9ead29183c65ff66a5c785dbd7870c4a87b0c6f4697f23df156263e739",
+      "bytes": 23826
+    },
+    "gfx/flags/GBS_republic.tga": {
+      "sha256": "970bc8af6c60048a4521f3ce8f1cc72e15682b148f3685d6e21c9d5988990d7b",
+      "bytes": 23826
+    },
+    "gfx/flags/GDL.tga": {
+      "sha256": "70f6d1cd3f353cd9ed07af5a1a62d96436824ddcc1729377abf94afe928f0fc3",
+      "bytes": 1004
+    },
+    "gfx/flags/GDL_communist.tga": {
+      "sha256": "5cb8c26bcd4ff76bc449280896daae3d4778c6b8f165ff6ad263d9e9e186d856",
+      "bytes": 3208
+    },
+    "gfx/flags/GDL_fascist.tga": {
+      "sha256": "004a35fa5cb90d58a4efd4db5d4bdbeaf44d9f1d0e86d33ea5018d1b5d780070",
+      "bytes": 8276
+    },
+    "gfx/flags/GDL_monarchy.tga": {
+      "sha256": "cb4a324b73d6fff34710c1d8f8f8864af3071627c107ba828554ae69d0ec733f",
+      "bytes": 9046
+    },
+    "gfx/flags/GDL_republic.tga": {
+      "sha256": "70f6d1cd3f353cd9ed07af5a1a62d96436824ddcc1729377abf94afe928f0fc3",
+      "bytes": 1004
+    },
+    "gfx/flags/GMB.tga": {
+      "sha256": "5516f7798e57db0c25446f2939d33c0afaedfab1f8f83c106745060a65fc8a5b",
+      "bytes": 300
+    },
+    "gfx/flags/GMB_communist.tga": {
+      "sha256": "9cc8b78248168cd2ded294204a4ba5cb09a2c1a478181d27c042525ad0a74b0b",
+      "bytes": 1058
+    },
+    "gfx/flags/GMB_fascist.tga": {
+      "sha256": "3ef0ee1eb23a2a22a07984917b08e2c9d174371e49e578e8ed9d08ab7e6fee65",
+      "bytes": 5518
+    },
+    "gfx/flags/GMB_monarchy.tga": {
+      "sha256": "52be5e19361ada8f254e6eb8973a3d1632f4debbcc8b034c7131012fd4cb2c95",
+      "bytes": 4866
+    },
+    "gfx/flags/GMB_republic.tga": {
+      "sha256": "5516f7798e57db0c25446f2939d33c0afaedfab1f8f83c106745060a65fc8a5b",
+      "bytes": 300
+    },
+    "gfx/flags/GMJ.tga": {
+      "sha256": "1ae01c6d70bdfff4b840e24e92af4cd0a9c231bd169c662e81d64a4da03f2126",
+      "bytes": 3071
+    },
+    "gfx/flags/GMJ_communist.tga": {
+      "sha256": "f041d3f618e5e6c553780a7e639e41afec8610a4468dc4a4122fad86699ed9ac",
+      "bytes": 3643
+    },
+    "gfx/flags/GMJ_fascist.tga": {
+      "sha256": "787eedf609c3b1429abc1f7e75216047bc83c65c34b235421e61535d6f17af6c",
+      "bytes": 7591
+    },
+    "gfx/flags/GMJ_monarchy.tga": {
+      "sha256": "408c361adb1ab974e36d485de81f85d7c6d143df67d05e5dd0d9fd248d0f4f50",
+      "bytes": 8811
+    },
+    "gfx/flags/GMJ_republic.tga": {
+      "sha256": "1ae01c6d70bdfff4b840e24e92af4cd0a9c231bd169c662e81d64a4da03f2126",
+      "bytes": 3071
+    },
+    "gfx/flags/GNE.tga": {
+      "sha256": "358f007c272c6b37c026a55113e78ab1255d571ac133899781275854338f9e48",
+      "bytes": 1900
+    },
+    "gfx/flags/GNE_communist.tga": {
+      "sha256": "bb93aaf68e9c8531083054dd3df52e21a609a220255e1ea53c561b445c87502d",
+      "bytes": 3114
+    },
+    "gfx/flags/GNE_fascist.tga": {
+      "sha256": "50df805f4fd61bc155d397108a53578f7352a6e84bece9305fd83902a0a2dad4",
+      "bytes": 1833
+    },
+    "gfx/flags/GNE_monarchy.tga": {
+      "sha256": "358f007c272c6b37c026a55113e78ab1255d571ac133899781275854338f9e48",
+      "bytes": 1900
+    },
+    "gfx/flags/GNE_republic.tga": {
+      "sha256": "358f007c272c6b37c026a55113e78ab1255d571ac133899781275854338f9e48",
+      "bytes": 1900
+    },
+    "gfx/flags/GNG.tga": {
+      "sha256": "fdb20c09abcf4ee8b308538074300304c11f5f7090f1ea7b1b1bff3784168cba",
+      "bytes": 2882
+    },
+    "gfx/flags/GNG_communist.tga": {
+      "sha256": "176af3c961ce85d1d6e6e2d13801d09370fb26ca12c62abcb7628f5850d94d50",
+      "bytes": 3276
+    },
+    "gfx/flags/GNG_fascist.tga": {
+      "sha256": "65747d84caafa1ec828bc866d1bafd830e5a27995a6e00971fc49e3023b15cbd",
+      "bytes": 8599
+    },
+    "gfx/flags/GNG_monarchy.tga": {
+      "sha256": "62b98feb5fa212ca284d36d26db825f6ec15a17674ea72a76bb42a4c3f37b60f",
+      "bytes": 4053
+    },
+    "gfx/flags/GNG_republic.tga": {
+      "sha256": "fdb20c09abcf4ee8b308538074300304c11f5f7090f1ea7b1b1bff3784168cba",
+      "bytes": 2882
+    },
+    "gfx/flags/GRL.tga": {
+      "sha256": "1381c8953e9f8334763a24a2b8606e6319c71034a7cd1d9cb557684005e75466",
+      "bytes": 23826
+    },
+    "gfx/flags/GRL_communist.tga": {
+      "sha256": "160ba2f89cf90a5fe861eadf0f0cc5e8ffcf85be6d894f8069dcb363738b9e37",
+      "bytes": 23826
+    },
+    "gfx/flags/GRL_fascist.tga": {
+      "sha256": "d23e19d73e5b8bcfa8300215d949f3ab88a122b00a222475a154e5a9a886f6e7",
+      "bytes": 23826
+    },
+    "gfx/flags/GRL_monarchy.tga": {
+      "sha256": "1381c8953e9f8334763a24a2b8606e6319c71034a7cd1d9cb557684005e75466",
+      "bytes": 23826
+    },
+    "gfx/flags/GRL_republic.tga": {
+      "sha256": "07e4012c45c0a16761d91f7a31df4ab5274e2c43713dfe174e56048ceaff8c2d",
+      "bytes": 23826
+    },
+    "gfx/flags/GRN.tga": {
+      "sha256": "55a5028c74c65cf15aa2934c010fc65a6355cbce203db6b127e1ff7dd3665c15",
+      "bytes": 11217
+    },
+    "gfx/flags/GRN_communist.tga": {
+      "sha256": "c62dce825b78fbefb55906e9e708fd1d49e22e3bf313a9da993b352fc58e84fe",
+      "bytes": 8961
+    },
+    "gfx/flags/GRN_fascist.tga": {
+      "sha256": "20e79438b5921cbe9d991d4b77e88b00a4f4c2bf0de82c3f4a031a169b7b590e",
+      "bytes": 364
+    },
+    "gfx/flags/GRN_monarchy.tga": {
+      "sha256": "55a5028c74c65cf15aa2934c010fc65a6355cbce203db6b127e1ff7dd3665c15",
+      "bytes": 11217
+    },
+    "gfx/flags/GRN_republic.tga": {
+      "sha256": "ed35f66abb3adae8d9ea131ea5aaba977f0f66d884885ec823f7540e9f279834",
+      "bytes": 16240
+    },
+    "gfx/flags/HNN.tga": {
+      "sha256": "26dc24c7f7639cbf8a825db1425e063552435768abf5349b9735bf36842f753f",
+      "bytes": 3035
+    },
+    "gfx/flags/HNN_communist.tga": {
+      "sha256": "137cabe6b2506e5b82aa87d3edbdbff8c73bf8c252a632b170437fe6022d02ed",
+      "bytes": 4550
+    },
+    "gfx/flags/HNN_fascist.tga": {
+      "sha256": "42c80d3b73c12fd05dccccd1d068e4eb5f9104156bc415604a2a03c182f0cef9",
+      "bytes": 2623
+    },
+    "gfx/flags/HNN_monarchy.tga": {
+      "sha256": "1fe501890b25379a4a1bb27e9f0d62d35912e31d4f42d3bea3747ac1b5ae0917",
+      "bytes": 9638
+    },
+    "gfx/flags/HNN_republic.tga": {
+      "sha256": "26dc24c7f7639cbf8a825db1425e063552435768abf5349b9735bf36842f753f",
+      "bytes": 3035
+    },
+    "gfx/flags/HSM.tga": {
+      "sha256": "014d5b8efd8b8358dcfdd656c79e68d66777da595d458728367553a6385e3ee5",
+      "bytes": 2258
+    },
+    "gfx/flags/HSM_communist.tga": {
+      "sha256": "014d5b8efd8b8358dcfdd656c79e68d66777da595d458728367553a6385e3ee5",
+      "bytes": 2258
+    },
+    "gfx/flags/HSM_fascist.tga": {
+      "sha256": "014d5b8efd8b8358dcfdd656c79e68d66777da595d458728367553a6385e3ee5",
+      "bytes": 2258
+    },
+    "gfx/flags/HSM_monarchy.tga": {
+      "sha256": "3718adc5eef9b4b59e8090bdbeb10582f94e8f4723ec3eb42c271bdd388ac256",
+      "bytes": 9436
+    },
+    "gfx/flags/HSM_republic.tga": {
+      "sha256": "014d5b8efd8b8358dcfdd656c79e68d66777da595d458728367553a6385e3ee5",
+      "bytes": 2258
+    },
+    "gfx/flags/IDF.tga": {
+      "sha256": "8f5c0a337def6da6cee1f5f815873f63e570346d7e7b0abd5b210bc66ecbdd58",
+      "bytes": 2988
+    },
+    "gfx/flags/IDF_communist.tga": {
+      "sha256": "a58b0fdb0827957e4b1d87ea0b905c23e5beb1795b410f031d477a3540befa8e",
+      "bytes": 3796
+    },
+    "gfx/flags/IDF_fascist.tga": {
+      "sha256": "b21d0f5760c20907b24bca742d7ce21c1075595766b2faea64f2a49faf6ab9b4",
+      "bytes": 5680
+    },
+    "gfx/flags/IDF_monarchy.tga": {
+      "sha256": "ac165f8270207705da56ad04e3b13d80fd010f18754b17292f48e0a30b47f037",
+      "bytes": 4250
+    },
+    "gfx/flags/IDF_republic.tga": {
+      "sha256": "8f5c0a337def6da6cee1f5f815873f63e570346d7e7b0abd5b210bc66ecbdd58",
+      "bytes": 2988
+    },
+    "gfx/flags/IMP.tga": {
+      "sha256": "649d72cd37cbfa96d0b84c3ae3f1bfd4b673a0a1796226bc67a2f82475cd1296",
+      "bytes": 6827
+    },
+    "gfx/flags/IMP_communist.tga": {
+      "sha256": "649d72cd37cbfa96d0b84c3ae3f1bfd4b673a0a1796226bc67a2f82475cd1296",
+      "bytes": 6827
+    },
+    "gfx/flags/IMP_fascist.tga": {
+      "sha256": "649d72cd37cbfa96d0b84c3ae3f1bfd4b673a0a1796226bc67a2f82475cd1296",
+      "bytes": 6827
+    },
+    "gfx/flags/IMP_monarchy.tga": {
+      "sha256": "649d72cd37cbfa96d0b84c3ae3f1bfd4b673a0a1796226bc67a2f82475cd1296",
+      "bytes": 6827
+    },
+    "gfx/flags/IMP_republic.tga": {
+      "sha256": "649d72cd37cbfa96d0b84c3ae3f1bfd4b673a0a1796226bc67a2f82475cd1296",
+      "bytes": 6827
+    },
+    "gfx/flags/INO.tga": {
+      "sha256": "4767ec3549a3a32071e2cd1ea1ffbe7d91ea19587ac74be29c247528a2303fdc",
+      "bytes": 274
+    },
+    "gfx/flags/INO_communist.tga": {
+      "sha256": "fe6bec43fc9873f8dee3e3ce962a97d8bbebbf72a8c54fb826fd754e8dc352da",
+      "bytes": 2335
+    },
+    "gfx/flags/INO_fascist.tga": {
+      "sha256": "219ba5abe581f3d7fd84a504544fe23941a42eb346f8eb766975e1723f53c9f1",
+      "bytes": 2447
+    },
+    "gfx/flags/INO_monarchy.tga": {
+      "sha256": "1075f52e0fa130b5158f2f8842b8bcce4b3bf1d2ee550cb30f71f849bf69e766",
+      "bytes": 4208
+    },
+    "gfx/flags/INO_republic.tga": {
+      "sha256": "4767ec3549a3a32071e2cd1ea1ffbe7d91ea19587ac74be29c247528a2303fdc",
+      "bytes": 274
+    },
+    "gfx/flags/IVC.tga": {
+      "sha256": "25a183814e0151e4d6ebdd70d1c3beb30c8106e40366efa442250174be1f69f0",
+      "bytes": 2604
+    },
+    "gfx/flags/IVC_communist.tga": {
+      "sha256": "f69c6b3c226dda0ccd07ff07cd271f93d70ea06aee377bf8df1f637e7d16fc67",
+      "bytes": 4933
+    },
+    "gfx/flags/IVC_fascist.tga": {
+      "sha256": "feb21c09d66797831aaab34c56b0f418723e4d539c71e0e1eed65936a8ff507c",
+      "bytes": 5514
+    },
+    "gfx/flags/IVC_monarchy.tga": {
+      "sha256": "d252e64d2cb209ae8410e2fffde2339eed4f1d3719f8f4a8fefcd8c0a34fffe5",
+      "bytes": 5079
+    },
+    "gfx/flags/IVC_republic.tga": {
+      "sha256": "25a183814e0151e4d6ebdd70d1c3beb30c8106e40366efa442250174be1f69f0",
+      "bytes": 2604
+    },
+    "gfx/flags/JAM.tga": {
+      "sha256": "5e791fee5f9bdb70674016465a8e4022ea136e584b5a7c5308cbdd15d92f6a27",
+      "bytes": 6396
+    },
+    "gfx/flags/JAM_communist.tga": {
+      "sha256": "154fcdbce8d0589ac56a36738f99d5e19e5608c0ed9f3f7e16b65f377f5d071d",
+      "bytes": 7279
+    },
+    "gfx/flags/JAM_fascist.tga": {
+      "sha256": "aeec2ab29a23dd494e9d94661350e214b1d2d83bfa7d3c07721f42e53aeabdfb",
+      "bytes": 364
+    },
+    "gfx/flags/JAM_monarchy.tga": {
+      "sha256": "5e791fee5f9bdb70674016465a8e4022ea136e584b5a7c5308cbdd15d92f6a27",
+      "bytes": 6396
+    },
+    "gfx/flags/JAM_republic.tga": {
+      "sha256": "18d345d7a3a24e87a053b5313874f147007eb01ee5b4459cfb8ffb882612d163",
+      "bytes": 15331
+    },
+    "gfx/flags/JOR.tga": {
+      "sha256": "57e9ff35d7e7add3c6a70231acc9378e2501f64c2a465185837120e5c8e75e8d",
+      "bytes": 2326
+    },
+    "gfx/flags/JOR_communist.tga": {
+      "sha256": "f92586d9b4e9940ffef14b904d25a922d51ce144de91951ec8f0937c49417942",
+      "bytes": 3192
+    },
+    "gfx/flags/JOR_fascist.tga": {
+      "sha256": "abcd42028039b9812c873ce6042dd6040678593ac956bab1a254bcf5400ba596",
+      "bytes": 3030
+    },
+    "gfx/flags/JOR_monarchy.tga": {
+      "sha256": "04ba8b7f6e586a454592a563c7c800f02c8246c91e33a53890ecff4713057651",
+      "bytes": 4410
+    },
+    "gfx/flags/JOR_republic.tga": {
+      "sha256": "57e9ff35d7e7add3c6a70231acc9378e2501f64c2a465185837120e5c8e75e8d",
+      "bytes": 2326
+    },
+    "gfx/flags/JSH.tga": {
+      "sha256": "d959023ecb0ced0f579950c8406a97acdd75a3bf34a9db0d9dc019f67fa1ca5a",
+      "bytes": 3530
+    },
+    "gfx/flags/JSH_communist.tga": {
+      "sha256": "9b0e5e2f716add32d3a02ba26899d6075e703f691259aa09348cd4122a935d70",
+      "bytes": 5613
+    },
+    "gfx/flags/JSH_fascist.tga": {
+      "sha256": "e38fcaa9ff92d5cdf88b0a65e0e778fe83b02b9d123f6f3848eb2b9a5625ce3f",
+      "bytes": 3552
+    },
+    "gfx/flags/JSH_monarchy.tga": {
+      "sha256": "d959023ecb0ced0f579950c8406a97acdd75a3bf34a9db0d9dc019f67fa1ca5a",
+      "bytes": 3530
+    },
+    "gfx/flags/JSH_republic.tga": {
+      "sha256": "c67c0da7da7e2c831aa7c00ae98729a337ced3097ae689200d498bbe2632b95c",
+      "bytes": 1830
+    },
+    "gfx/flags/KAG.tga": {
+      "sha256": "3ea248b9a8fe366d31cec990540d5a962d6e7c1f35621d32df6874e5367eafea",
+      "bytes": 6138
+    },
+    "gfx/flags/KAG_communist.tga": {
+      "sha256": "285cf359d0f1776ee36c10eb18e8cf35352579fcdf7a002a2ab477c89cea59da",
+      "bytes": 3303
+    },
+    "gfx/flags/KAG_fascist.tga": {
+      "sha256": "193c350d2397be54e889585a273341586b8b55eaabf5eff189cb98f2d5b5c5d5",
+      "bytes": 7696
+    },
+    "gfx/flags/KAG_monarchy.tga": {
+      "sha256": "3ea248b9a8fe366d31cec990540d5a962d6e7c1f35621d32df6874e5367eafea",
+      "bytes": 6138
+    },
+    "gfx/flags/KAG_republic.tga": {
+      "sha256": "885673e47427a019f0e9abfc076d11a485b17942537d7f030d8f2c2fc9666de3",
+      "bytes": 4101
+    },
+    "gfx/flags/KMT.tga": {
+      "sha256": "fd15bc54e78b7f29393924a4cb784e75cc5309762c978f4541efc801c8608b54",
+      "bytes": 2510
+    },
+    "gfx/flags/KMT_communist.tga": {
+      "sha256": "afa218c8eac59dcf7938e98de618cfb78de6a9c9040e28bdfc32026f82ad54bc",
+      "bytes": 17874
+    },
+    "gfx/flags/KMT_fascist.tga": {
+      "sha256": "b123fee45895d9aaa8735c9ecfeab06c5236c39bd7916f350cbe487c3155237d",
+      "bytes": 17874
+    },
+    "gfx/flags/KMT_monarchy.tga": {
+      "sha256": "5f573b86646030f6715099d4a700fd9fcf2bbf03b9f35d07c237e64a00aaee3d",
+      "bytes": 9744
+    },
+    "gfx/flags/KMT_republic.tga": {
+      "sha256": "fd15bc54e78b7f29393924a4cb784e75cc5309762c978f4541efc801c8608b54",
+      "bytes": 2510
+    },
+    "gfx/flags/KNY.tga": {
+      "sha256": "193a16002ba5fd2f86322ebc1611749c1efbbeb831f80a5613f678fd9c26f087",
+      "bytes": 4365
+    },
+    "gfx/flags/KNY_communist.tga": {
+      "sha256": "d3529489598167cbd46e748880ed759d088cee870314f649cb59feba239809d3",
+      "bytes": 2483
+    },
+    "gfx/flags/KNY_fascist.tga": {
+      "sha256": "6a8dd2f429ab87c0c6f185fa7447ac4c2e6feca986a626b50271689948e5622d",
+      "bytes": 8310
+    },
+    "gfx/flags/KNY_monarchy.tga": {
+      "sha256": "30d4f4c008ac2b79be59318c903e6cc8fc2c3e597da0a881c2aa1cbaa8bd2e3c",
+      "bytes": 3393
+    },
+    "gfx/flags/KNY_republic.tga": {
+      "sha256": "193a16002ba5fd2f86322ebc1611749c1efbbeb831f80a5613f678fd9c26f087",
+      "bytes": 4365
+    },
+    "gfx/flags/KWT.tga": {
+      "sha256": "bdcb5d7b23a9a540286ecfba6d66bc99928526ac1c237fbf2aaa23ed3a2a7ce4",
+      "bytes": 1060
+    },
+    "gfx/flags/KWT_communist.tga": {
+      "sha256": "75bcaa54c9e530892b88bd780403473839fcfc242017cc7ef1204ebc193ed15f",
+      "bytes": 1678
+    },
+    "gfx/flags/KWT_fascist.tga": {
+      "sha256": "bf73338fe4d3c6c902e6183bb989212f509611d8298739a88e3369eb5fd2e99d",
+      "bytes": 6198
+    },
+    "gfx/flags/KWT_monarchy.tga": {
+      "sha256": "bdcb5d7b23a9a540286ecfba6d66bc99928526ac1c237fbf2aaa23ed3a2a7ce4",
+      "bytes": 1060
+    },
+    "gfx/flags/KWT_republic.tga": {
+      "sha256": "19f4dd5f861d9d5dcfd8f6e2fd33259dbafb7c63784b8cbba7ecfacedb1e844f",
+      "bytes": 1678
+    },
+    "gfx/flags/LAL.tga": {
+      "sha256": "dc612b715a8053ea3e7010f9a977af2989d234d72f808b009afdd7cd95c86ff6",
+      "bytes": 364
+    },
+    "gfx/flags/LAL_communist.tga": {
+      "sha256": "dc612b715a8053ea3e7010f9a977af2989d234d72f808b009afdd7cd95c86ff6",
+      "bytes": 364
+    },
+    "gfx/flags/LAL_fascist.tga": {
+      "sha256": "dc612b715a8053ea3e7010f9a977af2989d234d72f808b009afdd7cd95c86ff6",
+      "bytes": 364
+    },
+    "gfx/flags/LAL_monarchy.tga": {
+      "sha256": "dc612b715a8053ea3e7010f9a977af2989d234d72f808b009afdd7cd95c86ff6",
+      "bytes": 364
+    },
+    "gfx/flags/LAL_republic.tga": {
+      "sha256": "dc612b715a8053ea3e7010f9a977af2989d234d72f808b009afdd7cd95c86ff6",
+      "bytes": 364
+    },
+    "gfx/flags/LBN.tga": {
+      "sha256": "6284b6382f370161c67e7823c9e5d6a4c97d374a732bc132e1063ac5e3761d3a",
+      "bytes": 1718
+    },
+    "gfx/flags/LBN_communist.tga": {
+      "sha256": "309de13babc16f6833fc234d59098dbad33c20da1daf77199a67f2b4c6fb0185",
+      "bytes": 2056
+    },
+    "gfx/flags/LBN_fascist.tga": {
+      "sha256": "26debb8bfa6758af7976f3b701ba3710256d3f3c0e5faa5bb1c0dd0c1043ea07",
+      "bytes": 8423
+    },
+    "gfx/flags/LBN_monarchy.tga": {
+      "sha256": "7bb37208a01b88c0a562d0d2385c2953d121739033b5ef0180ace2f3a0b26760",
+      "bytes": 4352
+    },
+    "gfx/flags/LBN_republic.tga": {
+      "sha256": "6284b6382f370161c67e7823c9e5d6a4c97d374a732bc132e1063ac5e3761d3a",
+      "bytes": 1718
+    },
+    "gfx/flags/LIE.tga": {
+      "sha256": "a0a0a0342ecb9d4d52d88008d8929ac88fe42138f92fbfb0ae1a22b1f0ab96c7",
+      "bytes": 1004
+    },
+    "gfx/flags/LIE_communist.tga": {
+      "sha256": "21144bcb04a49085505b63c32bf0e103125b0ce90a4dad2e56dcdf44b5575af7",
+      "bytes": 364
+    },
+    "gfx/flags/LIE_fascist.tga": {
+      "sha256": "21144bcb04a49085505b63c32bf0e103125b0ce90a4dad2e56dcdf44b5575af7",
+      "bytes": 364
+    },
+    "gfx/flags/LIE_monarchy.tga": {
+      "sha256": "21144bcb04a49085505b63c32bf0e103125b0ce90a4dad2e56dcdf44b5575af7",
+      "bytes": 364
+    },
+    "gfx/flags/LIE_republic.tga": {
+      "sha256": "261cf240fa6556ef621e5cbc220723d634c4a510f3016800f4e89f8cf8524808",
+      "bytes": 364
+    },
+    "gfx/flags/LIV.tga": {
+      "sha256": "c6ecb2501a68891786ff46bf3a2f5173826b7c5cc4a049a2a1265b4002dfa5a4",
+      "bytes": 1148
+    },
+    "gfx/flags/LIV_communist.tga": {
+      "sha256": "c4b684ff0f66b85b5cc58e5ac8d1329e2ade9ce5c0be959529a81211f69ac773",
+      "bytes": 364
+    },
+    "gfx/flags/LIV_fascist.tga": {
+      "sha256": "709b17aa708843d723985b77ce02dbcdf070140f1ee4ce62dbb8fc1160bf7181",
+      "bytes": 4886
+    },
+    "gfx/flags/LIV_monarchy.tga": {
+      "sha256": "c6ecb2501a68891786ff46bf3a2f5173826b7c5cc4a049a2a1265b4002dfa5a4",
+      "bytes": 1148
+    },
+    "gfx/flags/LIV_republic.tga": {
+      "sha256": "0cd71c6a9ac73c05c4dbe1a83d95003cbd386bff8f2cc3a0a8f690d20d99a8c0",
+      "bytes": 364
+    },
+    "gfx/flags/LPL.tga": {
+      "sha256": "cc6135627516c44567b085d57271f6d3464b8f6262849ef0b72bd806e6e49d18",
+      "bytes": 3687
+    },
+    "gfx/flags/LPL_communist.tga": {
+      "sha256": "437670193b6f0ade280d80e39c34d9cfcfb5d5212e242874d00884ced2b099bd",
+      "bytes": 2046
+    },
+    "gfx/flags/LPL_fascist.tga": {
+      "sha256": "3a2180202db27be481b0e6499502378cacb80fbe154febb2483c16e2493c9423",
+      "bytes": 2076
+    },
+    "gfx/flags/LPL_monarchy.tga": {
+      "sha256": "fd46943fd80a3da680cd3b9f2ee8ad58e707ce7e66432256e7d47f40ee8997ca",
+      "bytes": 4419
+    },
+    "gfx/flags/LPL_republic.tga": {
+      "sha256": "cc6135627516c44567b085d57271f6d3464b8f6262849ef0b72bd806e6e49d18",
+      "bytes": 3687
+    },
+    "gfx/flags/MAH.tga": {
+      "sha256": "c34996eba532d88ee8c42e60d714e70af36cdae9b5b3507f3b37e7a123bfe049",
+      "bytes": 766
+    },
+    "gfx/flags/MAH_communist.tga": {
+      "sha256": "f88debf7995d4b99664654669110df0d760d28e4b1150204b74d4a72794d3b7b",
+      "bytes": 2682
+    },
+    "gfx/flags/MAH_fascist.tga": {
+      "sha256": "b413042a8cd0f781afd51452a4ac8531d908e54230f7291ea3117ec62cbc2c26",
+      "bytes": 2599
+    },
+    "gfx/flags/MAH_monarchy.tga": {
+      "sha256": "527e9a587832ffe4935c34652829d782cfbfb5a655ad869c626515e53593d465",
+      "bytes": 2360
+    },
+    "gfx/flags/MAH_republic.tga": {
+      "sha256": "c34996eba532d88ee8c42e60d714e70af36cdae9b5b3507f3b37e7a123bfe049",
+      "bytes": 766
+    },
+    "gfx/flags/MAR.tga": {
+      "sha256": "7f1b3aa91e66ddb4bb0da312567543107d302aee30f8cdc693aa60ff6c0e010b",
+      "bytes": 1932
+    },
+    "gfx/flags/MAR_communist.tga": {
+      "sha256": "3d4b67435b9fc5df061019774f136498a8eb75aa48fd0f0c3f0052965b06901a",
+      "bytes": 8746
+    },
+    "gfx/flags/MAR_fascist.tga": {
+      "sha256": "b17737fc10ab330274e7c468621356f2922d723da0afd1ac99d0c287d0d7f9f1",
+      "bytes": 3955
+    },
+    "gfx/flags/MAR_monarchy.tga": {
+      "sha256": "3d1f1b2a745ef815a191212fe6522bb344b42635dbb5b4f7f28659233694ee3d",
+      "bytes": 8106
+    },
+    "gfx/flags/MAR_republic.tga": {
+      "sha256": "7f1b3aa91e66ddb4bb0da312567543107d302aee30f8cdc693aa60ff6c0e010b",
+      "bytes": 1932
+    },
+    "gfx/flags/MAU.tga": {
+      "sha256": "02fbc6016a7af0f8bca72575241fdc1e3f25445fdbb53baa9c93688bf61c8c45",
+      "bytes": 23826
+    },
+    "gfx/flags/MAU_communist.tga": {
+      "sha256": "5a2087402cc7884aecde3208b1e2ddfb116f18c42326e82cf700978842389e1a",
+      "bytes": 1183
+    },
+    "gfx/flags/MAU_fascist.tga": {
+      "sha256": "e2868616e2cdaf8d209198b71927bc0c06135c7e7095dc09ebb84e72456bd981",
+      "bytes": 5811
+    },
+    "gfx/flags/MAU_monarchy.tga": {
+      "sha256": "02fbc6016a7af0f8bca72575241fdc1e3f25445fdbb53baa9c93688bf61c8c45",
+      "bytes": 23826
+    },
+    "gfx/flags/MAU_republic.tga": {
+      "sha256": "81c76387414976eb1defd42aa874ab327d9fb5a52b3a6736f29f207f4360a627",
+      "bytes": 1456
+    },
+    "gfx/flags/MLI.tga": {
+      "sha256": "06b1079363acb4c82ada8c89fd35b8c1a6a2efc906b2db6adaf02a11d4301152",
+      "bytes": 17900
+    },
+    "gfx/flags/MLI_communist.tga": {
+      "sha256": "b81e81413c0d12e31a1b73b1ea96a681f27265000d9e8c376268b684dece0704",
+      "bytes": 17900
+    },
+    "gfx/flags/MLI_fascist.tga": {
+      "sha256": "f13995931c42fb9ae1ab265ba4aef46a660d396b98c5436ba27fac2938d69857",
+      "bytes": 17900
+    },
+    "gfx/flags/MLI_monarchy.tga": {
+      "sha256": "2d6304c99eed024da5c4009da715645eca2d17b68747d0c775d3ac6361f500e4",
+      "bytes": 2119
+    },
+    "gfx/flags/MLI_republic.tga": {
+      "sha256": "62ea21bae049d9db5eadf7fb1e69c6cf163a290c4827c2be10301af46d3b5b07",
+      "bytes": 17900
+    },
+    "gfx/flags/MLW.tga": {
+      "sha256": "26d15f48bdd0c333d903c548f3713ad2e53bca5c0ec05a6299c786c1a583aa2a",
+      "bytes": 1816
+    },
+    "gfx/flags/MLW_communist.tga": {
+      "sha256": "7c873a50e5c9b7694888f415437df871e79db33d01b92a01bbb8ab4e6c5a6e02",
+      "bytes": 1979
+    },
+    "gfx/flags/MLW_fascist.tga": {
+      "sha256": "a7f685f330301c4890f7bf1f647558ad904f50ea4016b479b113d150c08b181a",
+      "bytes": 3302
+    },
+    "gfx/flags/MLW_monarchy.tga": {
+      "sha256": "a82859ea49791d56f72790b7516f4c77ae4ce6f4c1fd3d9c33b71a82e805a87a",
+      "bytes": 4230
+    },
+    "gfx/flags/MLW_republic.tga": {
+      "sha256": "26d15f48bdd0c333d903c548f3713ad2e53bca5c0ec05a6299c786c1a583aa2a",
+      "bytes": 1816
+    },
+    "gfx/flags/MOZ.tga": {
+      "sha256": "a6eeee7a34035c60e1e068a60d5c42515be3e4e1bd14e079c21f27dcd9b8e772",
+      "bytes": 1963
+    },
+    "gfx/flags/MOZ_communist.tga": {
+      "sha256": "68f5a182a44bd0c4aa12a7e42562f9f65f70a263321eae54abbaa3c0294f8f00",
+      "bytes": 3978
+    },
+    "gfx/flags/MOZ_fascist.tga": {
+      "sha256": "81dffba03587d12798943d054fd6892cb6885dd518190c5c6649b7e2c98e0179",
+      "bytes": 5344
+    },
+    "gfx/flags/MOZ_monarchy.tga": {
+      "sha256": "6ee5d277852f2c7b7eacbbc4e935eba84c2b5b5609fb050270ae9f2d750efe69",
+      "bytes": 3810
+    },
+    "gfx/flags/MOZ_republic.tga": {
+      "sha256": "a6eeee7a34035c60e1e068a60d5c42515be3e4e1bd14e079c21f27dcd9b8e772",
+      "bytes": 1963
+    },
+    "gfx/flags/MRT.tga": {
+      "sha256": "afde0c5514ff073e966dae572a24ebe511524c0285ff0cf1411bc4206631d933",
+      "bytes": 2384
+    },
+    "gfx/flags/MRT_communist.tga": {
+      "sha256": "4689931497c4ac7c25eb2085a6163eaa270d034c862dc4e89f1a889decbbd080",
+      "bytes": 3667
+    },
+    "gfx/flags/MRT_fascist.tga": {
+      "sha256": "8f332c84dda2fac22d2a0af5cff4594c00d2c0f5329d4b502a436c3002b33c69",
+      "bytes": 3953
+    },
+    "gfx/flags/MRT_monarchy.tga": {
+      "sha256": "2549013898d5612c41a8e246e5567e2b86afc94a203f8a841563b9565ac6ab6e",
+      "bytes": 5190
+    },
+    "gfx/flags/MRT_republic.tga": {
+      "sha256": "afde0c5514ff073e966dae572a24ebe511524c0285ff0cf1411bc4206631d933",
+      "bytes": 2384
+    },
+    "gfx/flags/MSR.tga": {
+      "sha256": "c35bf7b1e4207404abbc7f5cc6dcdf4b7d671c90a1443efdb8dc2a5bc4ff56c1",
+      "bytes": 11838
+    },
+    "gfx/flags/MSR_communist.tga": {
+      "sha256": "c356a79e1b2f992a17aadaba154a7d04f1c7a131de98f38a338881ed842e1b9f",
+      "bytes": 364
+    },
+    "gfx/flags/MSR_fascist.tga": {
+      "sha256": "88306925368505779fd5bd58b0a95066eacca457430619ad585045cf25547a54",
+      "bytes": 6486
+    },
+    "gfx/flags/MSR_monarchy.tga": {
+      "sha256": "e06b0cc1315c7b57192e71685d8290c0ca88f83e0bb768cd41df8d80d1f1694a",
+      "bytes": 2652
+    },
+    "gfx/flags/MSR_republic.tga": {
+      "sha256": "f2db615f4dfe882c62c6c0c6f14992c31983fbfcdd2b4feeea6fe933e0cce6f7",
+      "bytes": 5029
+    },
+    "gfx/flags/NAM.tga": {
+      "sha256": "5dd63cda8321f03de1f51f93a80c853a1b06ea31a3f844dc4a2e21baf513d8c5",
+      "bytes": 23826
+    },
+    "gfx/flags/NAM_communist.tga": {
+      "sha256": "63ce7cef89db1c58c0a8bf49ce21820fbc3cc520db7137f39cadc7503b306acd",
+      "bytes": 23826
+    },
+    "gfx/flags/NAM_fascist.tga": {
+      "sha256": "00a7bc1d689d76ee56a78eef646aaebb073596413313f0bf618d690d7f2e0819",
+      "bytes": 23826
+    },
+    "gfx/flags/NAM_monarchy.tga": {
+      "sha256": "5dd63cda8321f03de1f51f93a80c853a1b06ea31a3f844dc4a2e21baf513d8c5",
+      "bytes": 23826
+    },
+    "gfx/flags/NAM_republic.tga": {
+      "sha256": "8f9e08051d3003eddd65ed23b7cae7ed93bca069f63d4ab94011481bd9cdf7e8",
+      "bytes": 23826
+    },
+    "gfx/flags/NGR.tga": {
+      "sha256": "d9ab552a760c82aa08c95d9d0cd487e49267c5fb1125f015ca81bcda6282e747",
+      "bytes": 1708
+    },
+    "gfx/flags/NGR_communist.tga": {
+      "sha256": "fabde97521a8d8a771dda110e999559bfc5a00f9b4f5f62dc2a32684476a14a8",
+      "bytes": 3328
+    },
+    "gfx/flags/NGR_fascist.tga": {
+      "sha256": "c0166f2db1d295bfe0cc8c989a783ed1272193fe2d995ae5fef0b3d73ef6493b",
+      "bytes": 812
+    },
+    "gfx/flags/NGR_monarchy.tga": {
+      "sha256": "4bca9f3d8686feba5d5b9e751243670fddfa6cc2339cd636ab1225b048ccbc0a",
+      "bytes": 4227
+    },
+    "gfx/flags/NGR_republic.tga": {
+      "sha256": "d9ab552a760c82aa08c95d9d0cd487e49267c5fb1125f015ca81bcda6282e747",
+      "bytes": 1708
+    },
+    "gfx/flags/NIG.tga": {
+      "sha256": "1ae8c5ac4381e9dcb46aa9d5f57f49edfb9f7c9212863f9c28d6d20ab8bb1dd5",
+      "bytes": 970
+    },
+    "gfx/flags/NIG_communist.tga": {
+      "sha256": "b246a342e4008ecb3fc216ccac3ddcd42f335ffa61fc51c8de379a98f6439bac",
+      "bytes": 1412
+    },
+    "gfx/flags/NIG_fascist.tga": {
+      "sha256": "76aaa9d9049983622da5d8b7d184b354a47c2c28a36b354dd561604965f78cb6",
+      "bytes": 5464
+    },
+    "gfx/flags/NIG_monarchy.tga": {
+      "sha256": "1ae8c5ac4381e9dcb46aa9d5f57f49edfb9f7c9212863f9c28d6d20ab8bb1dd5",
+      "bytes": 970
+    },
+    "gfx/flags/NIG_republic.tga": {
+      "sha256": "1ae8c5ac4381e9dcb46aa9d5f57f49edfb9f7c9212863f9c28d6d20ab8bb1dd5",
+      "bytes": 970
+    },
+    "gfx/flags/OBO.tga": {
+      "sha256": "f6388f9ffd1ee85ec53eb4122966fc9516207e0327e90c67eb3df6b666dd6174",
+      "bytes": 1004
+    },
+    "gfx/flags/OBO_communist.tga": {
+      "sha256": "f6388f9ffd1ee85ec53eb4122966fc9516207e0327e90c67eb3df6b666dd6174",
+      "bytes": 1004
+    },
+    "gfx/flags/OBO_fascist.tga": {
+      "sha256": "f6388f9ffd1ee85ec53eb4122966fc9516207e0327e90c67eb3df6b666dd6174",
+      "bytes": 1004
+    },
+    "gfx/flags/OBO_monarchy.tga": {
+      "sha256": "f6388f9ffd1ee85ec53eb4122966fc9516207e0327e90c67eb3df6b666dd6174",
+      "bytes": 1004
+    },
+    "gfx/flags/OBO_republic.tga": {
+      "sha256": "f6388f9ffd1ee85ec53eb4122966fc9516207e0327e90c67eb3df6b666dd6174",
+      "bytes": 1004
+    },
+    "gfx/flags/PAK.tga": {
+      "sha256": "5f085c8e245341178986af2c8931c57a24a0339ce3b263873086747b21ba54df",
+      "bytes": 1216
+    },
+    "gfx/flags/PAK_communist.tga": {
+      "sha256": "9463854e2e347417efa2f738e072cd54806acd1abf03a7d02857871c780826bf",
+      "bytes": 2734
+    },
+    "gfx/flags/PAK_fascist.tga": {
+      "sha256": "4bc70185e7903bbe7d2d9074a5d5b5260e57c91ce254571458e051c44cfec13c",
+      "bytes": 4913
+    },
+    "gfx/flags/PAK_monarchy.tga": {
+      "sha256": "5f085c8e245341178986af2c8931c57a24a0339ce3b263873086747b21ba54df",
+      "bytes": 1216
+    },
+    "gfx/flags/PAK_republic.tga": {
+      "sha256": "5d7f9615c205068395d877b6858651c551ee97a2e9dfd47e90301174796efd67",
+      "bytes": 2148
+    },
+    "gfx/flags/PBC.tga": {
+      "sha256": "e0d19570a83e316d2b4a2e1c65caea068613bcd8705c65800e03c88353dc664d",
+      "bytes": 2641
+    },
+    "gfx/flags/PBC_communist.tga": {
+      "sha256": "600a2510140e513926f3d2fa2ac0af2063977519efce813b266c80b16eb4afbc",
+      "bytes": 1262
+    },
+    "gfx/flags/PBC_fascist.tga": {
+      "sha256": "0e676325a4272f1664111676aab85d56349393525f310485de591680a2d8cf1a",
+      "bytes": 7647
+    },
+    "gfx/flags/PBC_monarchy.tga": {
+      "sha256": "608f1980d7cd54da22286892383f3467d007a00e53627cc7298c7cf78cb8aa24",
+      "bytes": 3675
+    },
+    "gfx/flags/PBC_republic.tga": {
+      "sha256": "6113c5fdbb5d477c5644a4a4596e9c8160cb96b269c9f658b394eede787046d3",
+      "bytes": 3254
+    },
+    "gfx/flags/PLS.tga": {
+      "sha256": "92503ffb75e9cf7508cacb538abf9995f0d37b8c10d46d9f4a324822018b6c1c",
+      "bytes": 1262
+    },
+    "gfx/flags/PLS_communist.tga": {
+      "sha256": "e1c0e6a6eda23e7992d87bd931055c2643c50c7d63fee3a4c830d7480098e4fb",
+      "bytes": 3097
+    },
+    "gfx/flags/PLS_fascist.tga": {
+      "sha256": "3dc1a21adc6aaac7cac57ee3d76ed098c5ba4755d97b7cba5cd2cae08be311ad",
+      "bytes": 3932
+    },
+    "gfx/flags/PLS_monarchy.tga": {
+      "sha256": "2aed895d95dd1f1159161e09683f1a39ae67fb830d34dea36836038c84879c6c",
+      "bytes": 2190
+    },
+    "gfx/flags/PLS_republic.tga": {
+      "sha256": "92503ffb75e9cf7508cacb538abf9995f0d37b8c10d46d9f4a324822018b6c1c",
+      "bytes": 1262
+    },
+    "gfx/flags/PUE.tga": {
+      "sha256": "b4a6f413fa11f1b35316101a038124de1d72a4da1195f119da87e51200275962",
+      "bytes": 1935
+    },
+    "gfx/flags/PUE_communist.tga": {
+      "sha256": "1df2ba64ee7602f7d197d29682b2603c963f6488d3d47e9d25c87d7b31f2725b",
+      "bytes": 8470
+    },
+    "gfx/flags/PUE_fascist.tga": {
+      "sha256": "1043ddbc3d89d9c538dd73a3e1d2fecd29244029d6286de1a996849961bfb063",
+      "bytes": 15252
+    },
+    "gfx/flags/PUE_monarchy.tga": {
+      "sha256": "ca8ca901a903bc50991b0f20cd8e1300539d262182a9f378c338b685b85f698b",
+      "bytes": 9576
+    },
+    "gfx/flags/PUE_republic.tga": {
+      "sha256": "b4a6f413fa11f1b35316101a038124de1d72a4da1195f119da87e51200275962",
+      "bytes": 1935
+    },
+    "gfx/flags/QAT.tga": {
+      "sha256": "d656edd362623b0765a98f591978995daf2ede9d684ed1408c126925a34896ec",
+      "bytes": 2222
+    },
+    "gfx/flags/QAT_communist.tga": {
+      "sha256": "d656edd362623b0765a98f591978995daf2ede9d684ed1408c126925a34896ec",
+      "bytes": 2222
+    },
+    "gfx/flags/QAT_fascist.tga": {
+      "sha256": "d656edd362623b0765a98f591978995daf2ede9d684ed1408c126925a34896ec",
+      "bytes": 2222
+    },
+    "gfx/flags/QAT_monarchy.tga": {
+      "sha256": "d656edd362623b0765a98f591978995daf2ede9d684ed1408c126925a34896ec",
+      "bytes": 2222
+    },
+    "gfx/flags/QAT_republic.tga": {
+      "sha256": "d656edd362623b0765a98f591978995daf2ede9d684ed1408c126925a34896ec",
+      "bytes": 2222
+    },
+    "gfx/flags/RAK.tga": {
+      "sha256": "a9438b0f00e9dee029b37a94a22ed4d39eca13fddf55bfb4ef19e76051cfe936",
+      "bytes": 556
+    },
+    "gfx/flags/RAK_communist.tga": {
+      "sha256": "a9438b0f00e9dee029b37a94a22ed4d39eca13fddf55bfb4ef19e76051cfe936",
+      "bytes": 556
+    },
+    "gfx/flags/RAK_fascist.tga": {
+      "sha256": "a9438b0f00e9dee029b37a94a22ed4d39eca13fddf55bfb4ef19e76051cfe936",
+      "bytes": 556
+    },
+    "gfx/flags/RAK_monarchy.tga": {
+      "sha256": "a9438b0f00e9dee029b37a94a22ed4d39eca13fddf55bfb4ef19e76051cfe936",
+      "bytes": 556
+    },
+    "gfx/flags/RAK_republic.tga": {
+      "sha256": "a9438b0f00e9dee029b37a94a22ed4d39eca13fddf55bfb4ef19e76051cfe936",
+      "bytes": 556
+    },
+    "gfx/flags/RGR.tga": {
+      "sha256": "dc1a9e0d86812b07b269b860f2fb0e4671d1dae9608643012f0a2bc8cf0f4669",
+      "bytes": 2594
+    },
+    "gfx/flags/RGR_communist.tga": {
+      "sha256": "c1e9bfd71a314b34029064c40ae73a69dc3ece679286def471102743909c4bf4",
+      "bytes": 1472
+    },
+    "gfx/flags/RGR_fascist.tga": {
+      "sha256": "43d347b883922ec082a647a1e1f77228e3a02e12670bf43074ad795eed11a293",
+      "bytes": 2053
+    },
+    "gfx/flags/RGR_monarchy.tga": {
+      "sha256": "80846060a4a92ecf647e676d4831823cba8832fc70799c368259e213af062571",
+      "bytes": 2924
+    },
+    "gfx/flags/RGR_republic.tga": {
+      "sha256": "f2f6f0e05b92db7687f2739cb07e1dd95caa5d59a5962fc25f1c0acc7c064f3a",
+      "bytes": 1994
+    },
+    "gfx/flags/RHV.tga": {
+      "sha256": "f2ed58373010f099aa3dfc17b04f6eb11d34910aa776915d1306ad66dbca5047",
+      "bytes": 23826
+    },
+    "gfx/flags/RHV_communist.tga": {
+      "sha256": "a9376544058df63d75ce87285b38621abba6cfa6cf4381216347e3bf5f1f90f0",
+      "bytes": 23826
+    },
+    "gfx/flags/RHV_fascist.tga": {
+      "sha256": "e76876ba838ea51e8fd116f58f7142b4c85520850db1b6f17cc3ce8ce7afded4",
+      "bytes": 23826
+    },
+    "gfx/flags/RHV_monarchy.tga": {
+      "sha256": "81e69cea073fddfea84cf5b3ce1312e833a0ad02db236d75ec789b5c3b3acacc",
+      "bytes": 23826
+    },
+    "gfx/flags/RHV_republic.tga": {
+      "sha256": "f2ed58373010f099aa3dfc17b04f6eb11d34910aa776915d1306ad66dbca5047",
+      "bytes": 23826
+    },
+    "gfx/flags/RSR.tga": {
+      "sha256": "cb5e578a0a4389f263849050839fd258f9756641f0a09691bd57165312c47a28",
+      "bytes": 5599
+    },
+    "gfx/flags/RSR_communist.tga": {
+      "sha256": "cb5e578a0a4389f263849050839fd258f9756641f0a09691bd57165312c47a28",
+      "bytes": 5599
+    },
+    "gfx/flags/RSR_fascist.tga": {
+      "sha256": "cb5e578a0a4389f263849050839fd258f9756641f0a09691bd57165312c47a28",
+      "bytes": 5599
+    },
+    "gfx/flags/RSR_monarchy.tga": {
+      "sha256": "cb5e578a0a4389f263849050839fd258f9756641f0a09691bd57165312c47a28",
+      "bytes": 5599
+    },
+    "gfx/flags/RSR_republic.tga": {
+      "sha256": "cb5e578a0a4389f263849050839fd258f9756641f0a09691bd57165312c47a28",
+      "bytes": 5599
+    },
+    "gfx/flags/RWA.tga": {
+      "sha256": "bd2dad79b2c098756516ef9fa6682c8e92504c9fa76a5ebc24436dc702fa01f4",
+      "bytes": 1839
+    },
+    "gfx/flags/RWA_communist.tga": {
+      "sha256": "08935ad88d3c09a4001b1454d4accad3c12659815d80be190cd84bc11042cec6",
+      "bytes": 3274
+    },
+    "gfx/flags/RWA_fascist.tga": {
+      "sha256": "93c985fd91755cea4d7a9ae9e08a709e2e9d63591f221bed600e6cbca9500647",
+      "bytes": 2588
+    },
+    "gfx/flags/RWA_monarchy.tga": {
+      "sha256": "bd2dad79b2c098756516ef9fa6682c8e92504c9fa76a5ebc24436dc702fa01f4",
+      "bytes": 1839
+    },
+    "gfx/flags/RWA_republic.tga": {
+      "sha256": "cf7d4cf0864bafa16dd9c0b0188a45d8c802bae998e2ddc5a868e62558ec2b47",
+      "bytes": 1509
+    },
+    "gfx/flags/RYU.tga": {
+      "sha256": "950ed8c98f3a78178b68b8fa9c3ff166735b4daee5a5aaaa87a8f34dd9401e1d",
+      "bytes": 2118
+    },
+    "gfx/flags/RYU_communist.tga": {
+      "sha256": "7619d4a18d06593f0952786b873ada076fa7823dad06290a39337a60c59edba2",
+      "bytes": 4800
+    },
+    "gfx/flags/RYU_fascist.tga": {
+      "sha256": "33bb14b7d1afbe9ddbec2d0b4fab49f873de01299c1fb998c0079857f70ffaaf",
+      "bytes": 2008
+    },
+    "gfx/flags/RYU_monarchy.tga": {
+      "sha256": "950ed8c98f3a78178b68b8fa9c3ff166735b4daee5a5aaaa87a8f34dd9401e1d",
+      "bytes": 2118
+    },
+    "gfx/flags/RYU_republic.tga": {
+      "sha256": "f0adda94c81204276f1e56f5950f42b0f5fc5a6aa24ddfacbbae304350c55006",
+      "bytes": 2752
+    },
+    "gfx/flags/SAT.tga": {
+      "sha256": "54ec2835ecfe6f2089dd3ddbaef91c422ac2315cbbec0a9f915bedb988ae0762",
+      "bytes": 5122
+    },
+    "gfx/flags/SAT_communist.tga": {
+      "sha256": "8d785c28fb7fc2562ca13e4dbe74e3e5ea4c05d463d301200b4f147f702a7488",
+      "bytes": 6462
+    },
+    "gfx/flags/SAT_fascist.tga": {
+      "sha256": "ceb07cc4a6af4f803449bdff2109e8bddaa296bae909471e890e8d74f09510de",
+      "bytes": 1183
+    },
+    "gfx/flags/SAT_monarchy.tga": {
+      "sha256": "54ec2835ecfe6f2089dd3ddbaef91c422ac2315cbbec0a9f915bedb988ae0762",
+      "bytes": 5122
+    },
+    "gfx/flags/SAT_republic.tga": {
+      "sha256": "f8a142bcc93735b555e58a10fa528476aaac82ff4dd1693f43c5407a4419ad55",
+      "bytes": 6562
+    },
+    "gfx/flags/SAU.tga": {
+      "sha256": "1ca7e5df8f69dd13664c4ea959b128a4dce42360546801159806827f0f1dcb17",
+      "bytes": 5026
+    },
+    "gfx/flags/SAU_communist.tga": {
+      "sha256": "1ca7e5df8f69dd13664c4ea959b128a4dce42360546801159806827f0f1dcb17",
+      "bytes": 5026
+    },
+    "gfx/flags/SAU_fascist.tga": {
+      "sha256": "1ca7e5df8f69dd13664c4ea959b128a4dce42360546801159806827f0f1dcb17",
+      "bytes": 5026
+    },
+    "gfx/flags/SAU_monarchy.tga": {
+      "sha256": "1ca7e5df8f69dd13664c4ea959b128a4dce42360546801159806827f0f1dcb17",
+      "bytes": 5026
+    },
+    "gfx/flags/SAU_republic.tga": {
+      "sha256": "1ca7e5df8f69dd13664c4ea959b128a4dce42360546801159806827f0f1dcb17",
+      "bytes": 5026
+    },
+    "gfx/flags/SEN.tga": {
+      "sha256": "730e5b0fb53acee7069309102912a33a4879df97fee0fc42e92e919bef280879",
+      "bytes": 5376
+    },
+    "gfx/flags/SEN_communist.tga": {
+      "sha256": "1dcafba27afbf8df690bef58b1310fa52b79b46ba67c9ffc58d7a9a1f1328034",
+      "bytes": 2787
+    },
+    "gfx/flags/SEN_fascist.tga": {
+      "sha256": "0ee8bdf10a13e8a54e6e6a8c4ca93d7de182af4e8fc3a6937be656741ff361ae",
+      "bytes": 3650
+    },
+    "gfx/flags/SEN_monarchy.tga": {
+      "sha256": "749b67f703cad7ef4225deb5952a190bcbf69f485f4e35385fe378a0c6ef3bcd",
+      "bytes": 7923
+    },
+    "gfx/flags/SEN_republic.tga": {
+      "sha256": "13d2e761148b15de8d07b1b8100e60d9ce807e387befea54a0a4675b80f31065",
+      "bytes": 4240
+    },
+    "gfx/flags/SHA.tga": {
+      "sha256": "a9438b0f00e9dee029b37a94a22ed4d39eca13fddf55bfb4ef19e76051cfe936",
+      "bytes": 556
+    },
+    "gfx/flags/SHA_communist.tga": {
+      "sha256": "a9438b0f00e9dee029b37a94a22ed4d39eca13fddf55bfb4ef19e76051cfe936",
+      "bytes": 556
+    },
+    "gfx/flags/SHA_fascist.tga": {
+      "sha256": "a9438b0f00e9dee029b37a94a22ed4d39eca13fddf55bfb4ef19e76051cfe936",
+      "bytes": 556
+    },
+    "gfx/flags/SHA_monarchy.tga": {
+      "sha256": "a9438b0f00e9dee029b37a94a22ed4d39eca13fddf55bfb4ef19e76051cfe936",
+      "bytes": 556
+    },
+    "gfx/flags/SHA_republic.tga": {
+      "sha256": "a9438b0f00e9dee029b37a94a22ed4d39eca13fddf55bfb4ef19e76051cfe936",
+      "bytes": 556
+    },
+    "gfx/flags/SIG.tga": {
+      "sha256": "93131da9c29f754dbf65650b782676108e28e3039eede0b81f40c84ba9e7b3db",
+      "bytes": 23826
+    },
+    "gfx/flags/SIG_communist.tga": {
+      "sha256": "636c5114a4345cbebde3ddfc800764319cbbecb75ab92ab17e16d42fea099c20",
+      "bytes": 23826
+    },
+    "gfx/flags/SIG_fascist.tga": {
+      "sha256": "98454623d2c31ef74bd4edcf03efe0820950f1d0f8d924e405fa3c7a9131a67e",
+      "bytes": 23826
+    },
+    "gfx/flags/SIG_monarchy.tga": {
+      "sha256": "93131da9c29f754dbf65650b782676108e28e3039eede0b81f40c84ba9e7b3db",
+      "bytes": 23826
+    },
+    "gfx/flags/SIG_republic.tga": {
+      "sha256": "57b42f42c5f445379d92d19a310d11c33a8bf185b009b529dd0c6f31a712a124",
+      "bytes": 23826
+    },
+    "gfx/flags/SLE.tga": {
+      "sha256": "2d9b9c14f25ecb8da31c53cc7417034749f1a18010cbd1ade828567d6d35048b",
+      "bytes": 300
+    },
+    "gfx/flags/SLE_communist.tga": {
+      "sha256": "7e5dc97d46bcfaf22f7546e4b15d15b4b56e6083b02ed7b4ec0156faf5b7b6f3",
+      "bytes": 1162
+    },
+    "gfx/flags/SLE_fascist.tga": {
+      "sha256": "49793bc819ff70fc9746d2f9a3374ad8601fcd6e6447a66bfcd8a6bc55512f95",
+      "bytes": 812
+    },
+    "gfx/flags/SLE_monarchy.tga": {
+      "sha256": "b6d84c38d48eed6281f317025df4494cd1cb516966bb1e5efac62cb35e6b0806",
+      "bytes": 1359
+    },
+    "gfx/flags/SLE_republic.tga": {
+      "sha256": "2d9b9c14f25ecb8da31c53cc7417034749f1a18010cbd1ade828567d6d35048b",
+      "bytes": 300
+    },
+    "gfx/flags/SMR.tga": {
+      "sha256": "e9eddaeda52d4c14774f363a052ed0d08cf599809cd73ea420432ee1bd3a42de",
+      "bytes": 5484
+    },
+    "gfx/flags/SMR_communist.tga": {
+      "sha256": "e9eddaeda52d4c14774f363a052ed0d08cf599809cd73ea420432ee1bd3a42de",
+      "bytes": 5484
+    },
+    "gfx/flags/SMR_fascist.tga": {
+      "sha256": "e9eddaeda52d4c14774f363a052ed0d08cf599809cd73ea420432ee1bd3a42de",
+      "bytes": 5484
+    },
+    "gfx/flags/SMR_monarchy.tga": {
+      "sha256": "e9eddaeda52d4c14774f363a052ed0d08cf599809cd73ea420432ee1bd3a42de",
+      "bytes": 5484
+    },
+    "gfx/flags/SMR_republic.tga": {
+      "sha256": "e9eddaeda52d4c14774f363a052ed0d08cf599809cd73ea420432ee1bd3a42de",
+      "bytes": 5484
+    },
+    "gfx/flags/SNG.tga": {
+      "sha256": "1b14c6da49b9658a69793bf681cfaee919c1a38c20e5188ea03a9a41e0427de1",
+      "bytes": 1119
+    },
+    "gfx/flags/SNG_communist.tga": {
+      "sha256": "6043f6ad2b4d29cfbee663a8eb49e4d8f0c585de2684ab1dc01dd497fd8942a1",
+      "bytes": 1138
+    },
+    "gfx/flags/SNG_fascist.tga": {
+      "sha256": "8ee456539644313ecae276940fa4cc0744745c589c6fc7bbaacd545e916b14ba",
+      "bytes": 2472
+    },
+    "gfx/flags/SNG_monarchy.tga": {
+      "sha256": "1b14c6da49b9658a69793bf681cfaee919c1a38c20e5188ea03a9a41e0427de1",
+      "bytes": 1119
+    },
+    "gfx/flags/SNG_republic.tga": {
+      "sha256": "8ee456539644313ecae276940fa4cc0744745c589c6fc7bbaacd545e916b14ba",
+      "bytes": 2472
+    },
+    "gfx/flags/SNR.tga": {
+      "sha256": "273a6633fc3f65a4292ea3461cd01e288f80d15b74bd6dc728afc0eefa1d0e2c",
+      "bytes": 2077
+    },
+    "gfx/flags/SNR_communist.tga": {
+      "sha256": "273a6633fc3f65a4292ea3461cd01e288f80d15b74bd6dc728afc0eefa1d0e2c",
+      "bytes": 2077
+    },
+    "gfx/flags/SNR_fascist.tga": {
+      "sha256": "273a6633fc3f65a4292ea3461cd01e288f80d15b74bd6dc728afc0eefa1d0e2c",
+      "bytes": 2077
+    },
+    "gfx/flags/SNR_monarchy.tga": {
+      "sha256": "273a6633fc3f65a4292ea3461cd01e288f80d15b74bd6dc728afc0eefa1d0e2c",
+      "bytes": 2077
+    },
+    "gfx/flags/SNR_republic.tga": {
+      "sha256": "273a6633fc3f65a4292ea3461cd01e288f80d15b74bd6dc728afc0eefa1d0e2c",
+      "bytes": 2077
+    },
+    "gfx/flags/SOM.tga": {
+      "sha256": "17dc2aaacae3b915f739d3948b6b5e06e8c3d9adcbc3504ef21799a6b4a41eb3",
+      "bytes": 1358
+    },
+    "gfx/flags/SOM_communist.tga": {
+      "sha256": "91cd8e5f4f81b8fd7291806b77d9141f0e145bf771654bb2606ea37a88dc941f",
+      "bytes": 2159
+    },
+    "gfx/flags/SOM_fascist.tga": {
+      "sha256": "f1bc4cb8792d24c1fd33f565aed3ef57d451bac5ff18accf7bcf41965ecbfbf7",
+      "bytes": 2576
+    },
+    "gfx/flags/SOM_monarchy.tga": {
+      "sha256": "b616f1866fdce6db358e5b1fd34581acf8ea568920a1c02d6df4f0521500b7fe",
+      "bytes": 8665
+    },
+    "gfx/flags/SOM_republic.tga": {
+      "sha256": "17dc2aaacae3b915f739d3948b6b5e06e8c3d9adcbc3504ef21799a6b4a41eb3",
+      "bytes": 1358
+    },
+    "gfx/flags/STK.tga": {
+      "sha256": "1ea0667debd7f4ad119531083e184f998f28ba9d7ac6e5cdb2cf29fa7d4de7e6",
+      "bytes": 6396
+    },
+    "gfx/flags/STK_communist.tga": {
+      "sha256": "7214c29d4b056e2f6c30ef9618c0582d63337765c7d36c1dbe2285d5b8578c8e",
+      "bytes": 3246
+    },
+    "gfx/flags/STK_fascist.tga": {
+      "sha256": "7e2909f1181090963869a81a15a30a831d87abaa3f13303b46e1c47d9eadf8f7",
+      "bytes": 364
+    },
+    "gfx/flags/STK_monarchy.tga": {
+      "sha256": "1ea0667debd7f4ad119531083e184f998f28ba9d7ac6e5cdb2cf29fa7d4de7e6",
+      "bytes": 6396
+    },
+    "gfx/flags/STK_republic.tga": {
+      "sha256": "24ddb7caacec619d9bd31f66db4b7c5bc6ce2211bea7c625b1e83651a774020a",
+      "bytes": 17874
+    },
+    "gfx/flags/STL.tga": {
+      "sha256": "e3d05093354f3d504ac713dbce4da3968b3b037f8259b112bf33f367a5c727bf",
+      "bytes": 3992
+    },
+    "gfx/flags/STL_communist.tga": {
+      "sha256": "d18d560c6348d970fc6b3ede032af675c57937d5fcd2ab280e951b6960af82f1",
+      "bytes": 6517
+    },
+    "gfx/flags/STL_fascist.tga": {
+      "sha256": "0b6c3d4ae014ea050786e118863b51ded7159876959afc9ac2b559ff4672da22",
+      "bytes": 7233
+    },
+    "gfx/flags/STL_monarchy.tga": {
+      "sha256": "e3d05093354f3d504ac713dbce4da3968b3b037f8259b112bf33f367a5c727bf",
+      "bytes": 3992
+    },
+    "gfx/flags/STL_republic.tga": {
+      "sha256": "39bf0ad92767f3c645d7b35208189d3cd9f836d98940bc8ac0b9e2e6a724c7e8",
+      "bytes": 10772
+    },
+    "gfx/flags/STV.tga": {
+      "sha256": "200952fb19dbbcdd6278ecfc90e4f6ae64fd58e0e9e7388b3ea18c8040f03cae",
+      "bytes": 7092
+    },
+    "gfx/flags/STV_communist.tga": {
+      "sha256": "74c4473abefc6ba931f284dec3886ff103dc444e0c6d29fa402d5df0140ba1d6",
+      "bytes": 6548
+    },
+    "gfx/flags/STV_fascist.tga": {
+      "sha256": "55b8fa788b3af3257037823aebe70d03c1106b18606ad9136ad3b60c9e863e73",
+      "bytes": 563
+    },
+    "gfx/flags/STV_monarchy.tga": {
+      "sha256": "200952fb19dbbcdd6278ecfc90e4f6ae64fd58e0e9e7388b3ea18c8040f03cae",
+      "bytes": 7092
+    },
+    "gfx/flags/STV_republic.tga": {
+      "sha256": "19666afb4c9ed5f3731b985f1b32dc0645ed23feba993fe3c6dd465e2775c9ee",
+      "bytes": 15783
+    },
+    "gfx/flags/SUD.tga": {
+      "sha256": "3959fabaf503d4f78d6c8437a025ad1c353d48bba0262958b0ed23b87a607283",
+      "bytes": 4146
+    },
+    "gfx/flags/SUD_communist.tga": {
+      "sha256": "89d5e375797a067357e16f1c151d23771bad812628d947001554d345875f0c69",
+      "bytes": 1425
+    },
+    "gfx/flags/SUD_fascist.tga": {
+      "sha256": "15233e2f2d00741ba2fb36a0c1b53b6b9c570ac40c8176d63f98d887fa60596e",
+      "bytes": 954
+    },
+    "gfx/flags/SUD_monarchy.tga": {
+      "sha256": "3959fabaf503d4f78d6c8437a025ad1c353d48bba0262958b0ed23b87a607283",
+      "bytes": 4146
+    },
+    "gfx/flags/SUD_republic.tga": {
+      "sha256": "f41b671cbf3ce22eb6c308913e0cabd1ddf3d3f1897a03c889b6e41b5cbcb5ad",
+      "bytes": 274
+    },
+    "gfx/flags/SUL.tga": {
+      "sha256": "2a5fcb870901cec6b5ceabb120b3dea952705cd51d0eba0dbad619d9ebb2a8f3",
+      "bytes": 6102
+    },
+    "gfx/flags/SUL_communist.tga": {
+      "sha256": "bcb26924627572a5afca1e29853662213df04c94633680333a2e3fb859dceced",
+      "bytes": 2087
+    },
+    "gfx/flags/SUL_fascist.tga": {
+      "sha256": "0e4087f05dce9b76f9e434e948bfad89faaa4426a8dccbc406cd4a5183375919",
+      "bytes": 4640
+    },
+    "gfx/flags/SUL_monarchy.tga": {
+      "sha256": "2a5fcb870901cec6b5ceabb120b3dea952705cd51d0eba0dbad619d9ebb2a8f3",
+      "bytes": 6102
+    },
+    "gfx/flags/SUL_republic.tga": {
+      "sha256": "42f831d7eff94136bc071f0b610b67317714d03c99ed602a6d676726d05b5288",
+      "bytes": 4159
+    },
+    "gfx/flags/SYR.tga": {
+      "sha256": "9f8d6adf0afa0ba40282ade04857afc5e93c5ec551a2bd4a90d5a1715b162db1",
+      "bytes": 2168
+    },
+    "gfx/flags/SYR_communist.tga": {
+      "sha256": "8f228fbad44a993d847c6a723137c6d5d0508b1885eb59a60f6891e904bef0e8",
+      "bytes": 2078
+    },
+    "gfx/flags/SYR_fascist.tga": {
+      "sha256": "7990b685e66305a06693a2324f1d1f47b9e45db972bafc81bb3760675593053b",
+      "bytes": 3124
+    },
+    "gfx/flags/SYR_monarchy.tga": {
+      "sha256": "9f8d6adf0afa0ba40282ade04857afc5e93c5ec551a2bd4a90d5a1715b162db1",
+      "bytes": 2168
+    },
+    "gfx/flags/SYR_republic.tga": {
+      "sha256": "259f7d7f7de928d81fc4423b888f61472a68826066ad5f2b95e1a102313aff6b",
+      "bytes": 2070
+    },
+    "gfx/flags/SZC.tga": {
+      "sha256": "753db4067bf09811e736f10089e6ea06bb3ccb921dff2832146951fcc5bb1106",
+      "bytes": 3429
+    },
+    "gfx/flags/SZC_communist.tga": {
+      "sha256": "67e81ce3a8985020ce83ef0f30e9af3bc1ed2a4d4cfa64cdf149e9446f4ec1ce",
+      "bytes": 3907
+    },
+    "gfx/flags/SZC_fascist.tga": {
+      "sha256": "2974a92caffe85486d77cd3c983cb268a6915633710a197a313a79446ccf22e9",
+      "bytes": 4064
+    },
+    "gfx/flags/SZC_monarchy.tga": {
+      "sha256": "e979b921253ade08781afa534bd2f292a4e1433f4bf77d032da472e32ccc60ec",
+      "bytes": 8028
+    },
+    "gfx/flags/SZC_republic.tga": {
+      "sha256": "753db4067bf09811e736f10089e6ea06bb3ccb921dff2832146951fcc5bb1106",
+      "bytes": 3429
+    },
+    "gfx/flags/TAI.tga": {
+      "sha256": "1413323976191cf1f8993c07c5903c26a118784d8528eb5ef30d0a609343e896",
+      "bytes": 9493
+    },
+    "gfx/flags/TAI_communist.tga": {
+      "sha256": "208aedec7f0670217eb7bb8e81b5f253e766be6ffe1fb5f2b21e4c3457b148ca",
+      "bytes": 3745
+    },
+    "gfx/flags/TAI_fascist.tga": {
+      "sha256": "e3068f0d2b274989c9efe391be3e317fd6c2078cf0d29e844ea844e5ea829182",
+      "bytes": 3035
+    },
+    "gfx/flags/TAI_monarchy.tga": {
+      "sha256": "c431d61b6dca9f473f9c7918952d0cb7b22ed64fc9553b833f6ae94ef161fb9c",
+      "bytes": 4627
+    },
+    "gfx/flags/TAI_republic.tga": {
+      "sha256": "1413323976191cf1f8993c07c5903c26a118784d8528eb5ef30d0a609343e896",
+      "bytes": 9493
+    },
+    "gfx/flags/TCR.tga": {
+      "sha256": "9df6dd5fde1de1783f9ab7178bc1c6db7a3fa4348cb38bc2545dcf05952f5f02",
+      "bytes": 364
+    },
+    "gfx/flags/TCR_communist.tga": {
+      "sha256": "5d0698ad23a15be8406694bc290365b1d5135a94f45b138ccaf886dc12d3646f",
+      "bytes": 4337
+    },
+    "gfx/flags/TCR_fascist.tga": {
+      "sha256": "fe3005b6fea2399e7042494354949e729f78a221d2bd41fd4c84a83c38f8efe5",
+      "bytes": 12167
+    },
+    "gfx/flags/TCR_monarchy.tga": {
+      "sha256": "a11d4c1930aeee6bfe12685802401ab644e9e3855071659957d9fe28af803e07",
+      "bytes": 16639
+    },
+    "gfx/flags/TCR_republic.tga": {
+      "sha256": "9df6dd5fde1de1783f9ab7178bc1c6db7a3fa4348cb38bc2545dcf05952f5f02",
+      "bytes": 364
+    },
+    "gfx/flags/TDT.tga": {
+      "sha256": "bc820eaad515a1967fd069ec3c19eb1aba193c2160ad8a03b95aab20a96bad5e",
+      "bytes": 4452
+    },
+    "gfx/flags/TDT_communist.tga": {
+      "sha256": "fbf6d06a87ad3b4720f4d17b6414c49e19a50b8553178c464a00fe79b406dd02",
+      "bytes": 6906
+    },
+    "gfx/flags/TDT_fascist.tga": {
+      "sha256": "2ea75136e09652e28d76b1535450a8b481521a6622f218f34092aa9a7b456a30",
+      "bytes": 12733
+    },
+    "gfx/flags/TDT_monarchy.tga": {
+      "sha256": "bc820eaad515a1967fd069ec3c19eb1aba193c2160ad8a03b95aab20a96bad5e",
+      "bytes": 4452
+    },
+    "gfx/flags/TDT_republic.tga": {
+      "sha256": "62b6a62ff30daf7ff3986fef89271d2505e040dd8adabadae834419e71f464ed",
+      "bytes": 22363
+    },
+    "gfx/flags/TGA.tga": {
+      "sha256": "96700ffa80720e9499d95f4312c1c601015e600ce2fb850335d6c627d539f610",
+      "bytes": 1018
+    },
+    "gfx/flags/TGA_communist.tga": {
+      "sha256": "913353100721f6d8565503d6f669ce852a6e37c5e468d6f81631f6e969206882",
+      "bytes": 1367
+    },
+    "gfx/flags/TGA_fascist.tga": {
+      "sha256": "810224369f9d7fa3eac4af393a34960c9df731603cf3edd78aa736ab06f9aab7",
+      "bytes": 5712
+    },
+    "gfx/flags/TGA_monarchy.tga": {
+      "sha256": "96700ffa80720e9499d95f4312c1c601015e600ce2fb850335d6c627d539f610",
+      "bytes": 1018
+    },
+    "gfx/flags/TGA_republic.tga": {
+      "sha256": "1740e1ae831deb217befd62e4f3e71c63ab8c9ed13c96ea6be466f10b5c634af",
+      "bytes": 4343
+    },
+    "gfx/flags/TKG.tga": {
+      "sha256": "28f1099da0ff02c6cc487aff8afb1c75ac88b0ceae815871ff94111ed7edc03d",
+      "bytes": 7172
+    },
+    "gfx/flags/TKG_communist.tga": {
+      "sha256": "403bf001b4323507d5a76814642b524174cdec17221b6f906fc3a7a8e4339a75",
+      "bytes": 4846
+    },
+    "gfx/flags/TKG_fascist.tga": {
+      "sha256": "7136ab6913ce84c334bdee56c611174e973f1a44a7c28b2794116fcc74b39d8d",
+      "bytes": 23826
+    },
+    "gfx/flags/TKG_monarchy.tga": {
+      "sha256": "28f1099da0ff02c6cc487aff8afb1c75ac88b0ceae815871ff94111ed7edc03d",
+      "bytes": 7172
+    },
+    "gfx/flags/TKG_republic.tga": {
+      "sha256": "d4de284a63d7a4903100ca6eb076817f2faa3b07163cbe39926a0ad710ec8c29",
+      "bytes": 3798
+    },
+    "gfx/flags/TKS.tga": {
+      "sha256": "1e2cc145622f5bc33f5f75eb8bb95560bd789e5a9b7ab0ce0603047f58cfcaaa",
+      "bytes": 15885
+    },
+    "gfx/flags/TKS_communist.tga": {
+      "sha256": "75546f8944b8c69f4147eb936dd5791f1f4acb3212fda37b6300454e61e52f6d",
+      "bytes": 3068
+    },
+    "gfx/flags/TKS_fascist.tga": {
+      "sha256": "6ba10b6952be00e6170a89ec38f128187bf170a73a79c98f723ea4d72ca0750c",
+      "bytes": 2816
+    },
+    "gfx/flags/TKS_monarchy.tga": {
+      "sha256": "c0bc6f4ceddec9ffc3a612f0efa70a6af769c7b9d7a0febfe236b1fedb084ee0",
+      "bytes": 5648
+    },
+    "gfx/flags/TKS_republic.tga": {
+      "sha256": "1e2cc145622f5bc33f5f75eb8bb95560bd789e5a9b7ab0ce0603047f58cfcaaa",
+      "bytes": 15885
+    },
+    "gfx/flags/TNZ.tga": {
+      "sha256": "045f4223f48105e2f7ec7d01734924b7040218f42244b77f9a5d7cef6b65d55a",
+      "bytes": 300
+    },
+    "gfx/flags/TNZ_communist.tga": {
+      "sha256": "ebd931fd0a96f4334c284bd1f5e7156e75dcb7016fdd037454ec647784ba8c2e",
+      "bytes": 1959
+    },
+    "gfx/flags/TNZ_fascist.tga": {
+      "sha256": "f59efa7b68875cefa90b8905195b4bd8fdce058343e3d1b60d6d79130a3fd1f0",
+      "bytes": 4792
+    },
+    "gfx/flags/TNZ_monarchy.tga": {
+      "sha256": "95be230c8b3b31a5d9ad9b1f75d317748fab3778989771f1dbbea0b56d5d6fdf",
+      "bytes": 300
+    },
+    "gfx/flags/TNZ_republic.tga": {
+      "sha256": "95be230c8b3b31a5d9ad9b1f75d317748fab3778989771f1dbbea0b56d5d6fdf",
+      "bytes": 300
+    },
+    "gfx/flags/TOG.tga": {
+      "sha256": "aa2d9a705e87351a63afcaa9e9a2c23a70a84bc404a3b31333104ec17e1b8231",
+      "bytes": 1229
+    },
+    "gfx/flags/TOG_communist.tga": {
+      "sha256": "ef7ae0ba1f4c7bd5ff4175ba31df3e506992f764e9d352571ce5e4d2a0ce343f",
+      "bytes": 2472
+    },
+    "gfx/flags/TOG_fascist.tga": {
+      "sha256": "025437ce6d534b74237fabe9e2aa62c3f28610ba2d75d0ec3537728b1c63462e",
+      "bytes": 1712
+    },
+    "gfx/flags/TOG_monarchy.tga": {
+      "sha256": "aa2d9a705e87351a63afcaa9e9a2c23a70a84bc404a3b31333104ec17e1b8231",
+      "bytes": 1229
+    },
+    "gfx/flags/TOG_republic.tga": {
+      "sha256": "025437ce6d534b74237fabe9e2aa62c3f28610ba2d75d0ec3537728b1c63462e",
+      "bytes": 1712
+    },
+    "gfx/flags/TOS.tga": {
+      "sha256": "c83b6add5c9a969a6522867b4bbe1e5c5dff49536464c57ccca299a83cdc12a6",
+      "bytes": 17900
+    },
+    "gfx/flags/TOS_communist.tga": {
+      "sha256": "cff60828994fcfadb9f04b69b44a108631a2e57b0e764c01350bab4617ec140e",
+      "bytes": 1895
+    },
+    "gfx/flags/TOS_fascist.tga": {
+      "sha256": "f2577725bf13a8fd2e823289ee4170f24c1790714fc8c430320d784ad2a5541f",
+      "bytes": 1022
+    },
+    "gfx/flags/TOS_monarchy.tga": {
+      "sha256": "d29ac1588a611563fcbf3832d0dfe9aa7e6422495ebe2d5c46877a10c11f2244",
+      "bytes": 7980
+    },
+    "gfx/flags/TOS_republic.tga": {
+      "sha256": "f2577725bf13a8fd2e823289ee4170f24c1790714fc8c430320d784ad2a5541f",
+      "bytes": 1022
+    },
+    "gfx/flags/TSW.tga": {
+      "sha256": "50ef3d83ba15c741bf2b1b028978aed5e84d39542bf06d424eeb620214c2d7f6",
+      "bytes": 8125
+    },
+    "gfx/flags/TSW_communist.tga": {
+      "sha256": "c132bc12a804d8752372b073d42a67781a1d52b924becf1b48abe5fe079ce0bc",
+      "bytes": 3808
+    },
+    "gfx/flags/TSW_fascist.tga": {
+      "sha256": "1ee949b083b8c96d6329cc063b560dd91e0aac5d5ba829029060a15a3f1fccaa",
+      "bytes": 3804
+    },
+    "gfx/flags/TSW_monarchy.tga": {
+      "sha256": "50ef3d83ba15c741bf2b1b028978aed5e84d39542bf06d424eeb620214c2d7f6",
+      "bytes": 8125
+    },
+    "gfx/flags/TSW_republic.tga": {
+      "sha256": "345164fdb363677fd42ca5512ba42a17f78b7d662fa92e5d08e5489cb90612b5",
+      "bytes": 274
+    },
+    "gfx/flags/UAE.tga": {
+      "sha256": "19122573e020cb536735bcf878f5ec814f13d410bc83519a697eb2928f6e7708",
+      "bytes": 1259
+    },
+    "gfx/flags/UAE_communist.tga": {
+      "sha256": "19122573e020cb536735bcf878f5ec814f13d410bc83519a697eb2928f6e7708",
+      "bytes": 1259
+    },
+    "gfx/flags/UAE_fascist.tga": {
+      "sha256": "19122573e020cb536735bcf878f5ec814f13d410bc83519a697eb2928f6e7708",
+      "bytes": 1259
+    },
+    "gfx/flags/UAE_monarchy.tga": {
+      "sha256": "19122573e020cb536735bcf878f5ec814f13d410bc83519a697eb2928f6e7708",
+      "bytes": 1259
+    },
+    "gfx/flags/UAE_republic.tga": {
+      "sha256": "19122573e020cb536735bcf878f5ec814f13d410bc83519a697eb2928f6e7708",
+      "bytes": 1259
+    },
+    "gfx/flags/UAQ.tga": {
+      "sha256": "18d98e54aa7e4876b88d49db97749c9ce561bfe784515f70c72ad5a116b3bda6",
+      "bytes": 2790
+    },
+    "gfx/flags/UAQ_communist.tga": {
+      "sha256": "18d98e54aa7e4876b88d49db97749c9ce561bfe784515f70c72ad5a116b3bda6",
+      "bytes": 2790
+    },
+    "gfx/flags/UAQ_fascist.tga": {
+      "sha256": "18d98e54aa7e4876b88d49db97749c9ce561bfe784515f70c72ad5a116b3bda6",
+      "bytes": 2790
+    },
+    "gfx/flags/UAQ_monarchy.tga": {
+      "sha256": "18d98e54aa7e4876b88d49db97749c9ce561bfe784515f70c72ad5a116b3bda6",
+      "bytes": 2790
+    },
+    "gfx/flags/UAQ_republic.tga": {
+      "sha256": "18d98e54aa7e4876b88d49db97749c9ce561bfe784515f70c72ad5a116b3bda6",
+      "bytes": 2790
+    },
+    "gfx/flags/UGA.tga": {
+      "sha256": "8a67b6530828017264b338d3010b0bded4047810028c06eff0bab9495f8f2a87",
+      "bytes": 1273
+    },
+    "gfx/flags/UGA_communist.tga": {
+      "sha256": "20a28faf126a574702937aece70c6791d790a366010c9466e1141645a82cf2f0",
+      "bytes": 1784
+    },
+    "gfx/flags/UGA_fascist.tga": {
+      "sha256": "0f945f983b7177d065a5f8d991d614e83a7b05ce245136d834438407f3e9d875",
+      "bytes": 5219
+    },
+    "gfx/flags/UGA_monarchy.tga": {
+      "sha256": "1ac2fffb0095ad78d2b123bd0bf3d29e2701481f01ec4fed31f76ceecbc920e7",
+      "bytes": 4545
+    },
+    "gfx/flags/UGA_republic.tga": {
+      "sha256": "6348152e731da187da18f7d4b817a02f46b53aefbed8edacc01ff605dd5c7ad7",
+      "bytes": 7606
+    },
+    "gfx/flags/YUC.tga": {
+      "sha256": "4534c3158ee79b72e91f12d4c0e1a89b357709b0fab2c4f06ba424aebeab7785",
+      "bytes": 1858
+    },
+    "gfx/flags/YUC_communist.tga": {
+      "sha256": "4bc2f9375a8acb4c2a9bc9615550afb5a6362ec9904e96c90e0afb85299b63e2",
+      "bytes": 2309
+    },
+    "gfx/flags/YUC_fascist.tga": {
+      "sha256": "bae523187e192c632807b585853691f3e0fdbbde477bd87bdb62387cb009b677",
+      "bytes": 11635
+    },
+    "gfx/flags/YUC_monarchy.tga": {
+      "sha256": "cc0c571f323cdd5b83e3a6ff944a8b4847d76c67adb6351a01a0ad43500bff8e",
+      "bytes": 7253
+    },
+    "gfx/flags/YUC_republic.tga": {
+      "sha256": "ec1c18be590e783a954c6ae893da4d2313fbbb8ff9c203b3ef9a10b635b0a10a",
+      "bytes": 786
+    },
+    "gfx/flags/YZW.tga": {
+      "sha256": "c417875ec9d0160b3014be78f2f065d8de51cb756c85b0cad28021a55abf7474",
+      "bytes": 4708
+    },
+    "gfx/flags/YZW_communist.tga": {
+      "sha256": "f10c26657eac75d848e3f5bc28ef94e5c08299f0346c0c773c4ff0b1f7124fd0",
+      "bytes": 5207
+    },
+    "gfx/flags/YZW_fascist.tga": {
+      "sha256": "e6dad0ce8fb932ca3487b5968dce7531e56cb88ba86e965a402b7e5e5341b14e",
+      "bytes": 5232
+    },
+    "gfx/flags/YZW_monarchy.tga": {
+      "sha256": "c417875ec9d0160b3014be78f2f065d8de51cb756c85b0cad28021a55abf7474",
+      "bytes": 4708
+    },
+    "gfx/flags/YZW_republic.tga": {
+      "sha256": "f10c26657eac75d848e3f5bc28ef94e5c08299f0346c0c773c4ff0b1f7124fd0",
+      "bytes": 5207
+    },
+    "gfx/flags/ZAM.tga": {
+      "sha256": "c9a4a3ae371bc652067ede0db7a709b2d8a5512b81c2119b9e00523dfb317f90",
+      "bytes": 2905
+    },
+    "gfx/flags/ZAM_communist.tga": {
+      "sha256": "5280e8188ba265c3d749e4790d6c5bc32a3730186e85fa37d126e67c11508839",
+      "bytes": 2246
+    },
+    "gfx/flags/ZAM_fascist.tga": {
+      "sha256": "48c2c754ba77a7b2fb8db3e7b3428a7f8f448a25dcd383b1fa70d40e71c1d5d7",
+      "bytes": 3737
+    },
+    "gfx/flags/ZAM_monarchy.tga": {
+      "sha256": "e498ca91c9cb51248c5ae437875f08e33253b8e49ae0a24f023c007bfa8634a4",
+      "bytes": 6020
+    },
+    "gfx/flags/ZAM_republic.tga": {
+      "sha256": "c9a4a3ae371bc652067ede0db7a709b2d8a5512b81c2119b9e00523dfb317f90",
+      "bytes": 2905
+    },
+    "gfx/flags/ZHI.tga": {
+      "sha256": "c6769da6525bbc5da31715e11b63329871204d9eb93230ae17d85477a3a3dcdc",
+      "bytes": 1476
+    },
+    "gfx/flags/ZHI_communist.tga": {
+      "sha256": "1f1171292453f82bbbb0d2338553be103a4b202df34eda97a72409e60924d963",
+      "bytes": 2762
+    },
+    "gfx/flags/ZHI_fascist.tga": {
+      "sha256": "187313ff925806900ac34e807fbb61ca690f0cfc1496fcd8bdb2bc388c90aadb",
+      "bytes": 3030
+    },
+    "gfx/flags/ZHI_monarchy.tga": {
+      "sha256": "5ef987fe880917de5541e64da323da60f17171a030ae0960ed0ab25bceadb7a2",
+      "bytes": 3968
+    },
+    "gfx/flags/ZHI_republic.tga": {
+      "sha256": "c24a6fe7278b2a2d070a8ce7e103440c2aca69cdb4ebdc8f307b1ace8b6611ac",
+      "bytes": 632
+    },
+    "history/countries/ADR - Andorra.txt": {
+      "sha256": "a01d8e9a0649434f3948d074863ff0f1e1886ecbe8d8da8008e539d9e31f60cb",
+      "bytes": 240
+    },
+    "history/countries/AIN - Ainu.txt": {
+      "sha256": "ba2f19daca2123a070bad2c069191498b33bb9b424fd379075d8a41b5ef44ad1",
+      "bytes": 231
+    },
+    "history/countries/ANG - Angola.txt": {
+      "sha256": "c7fa09b8d8e8e7391e10b81c4b14d6d4572aff38cc25fa1898916d97afca331c",
+      "bytes": 244
+    },
+    "history/countries/ANT - Antigua and Barbuda.txt": {
+      "sha256": "c08455fcddf0e6241be0442567b63732c0734b3bfed077e21ae64f825050222f",
+      "bytes": 240
+    },
+    "history/countries/ANU - Anhui.txt": {
+      "sha256": "7c43f4ef2b30fbfa7f54d984ee7fe640f4cf5b1cce5e89f9a799f82d53c8dca6",
+      "bytes": 242
+    },
+    "history/countries/ARU - Aruba.txt": {
+      "sha256": "1bb0ac4d9e4c4ae1f22029ec3b4d361c033f4ea8558da8b49164b06180623839",
+      "bytes": 240
+    },
+    "history/countries/BAR - Barbados.txt": {
+      "sha256": "bcfc7be60b85ab1e99b8af4171a09c9e7972ab8fb6b58a9abb5d821fa8cbf220",
+      "bytes": 240
+    },
+    "history/countries/BEN - Benin.txt": {
+      "sha256": "a91a245c05039b5dac77df0fe2f2f4131b69df56f0a0d49b57c4b15886917758",
+      "bytes": 231
+    },
+    "history/countries/BHR - Bahrain.txt": {
+      "sha256": "53657d06f55f8721b3e5910d0b27d983cc960716fbd071a14d0a79f12710fd0a",
+      "bytes": 233
+    },
+    "history/countries/BRD - Urundi.txt": {
+      "sha256": "69d2320734387ffc72f52b0bf748c657c0ad81edbb89ebac20f8a8660435674f",
+      "bytes": 233
+    },
+    "history/countries/CAR - Central African Republic.txt": {
+      "sha256": "60f500731820eb3a0bd32ec49720b526bda1505dd8012cf13f84d6815fdada96",
+      "bytes": 226
+    },
+    "history/countries/CAY - Cayman Islands.txt": {
+      "sha256": "f38b718febe378227eb80b94b49020a5a9341c0e8e610bce34f40ce953a6127c",
+      "bytes": 240
+    },
+    "history/countries/CGO - Congo-Brazzaville.txt": {
+      "sha256": "adc43cabc1eca469cfe892547b677f143b25e6fdf15e790bb2a89bdc4b581378",
+      "bytes": 229
+    },
+    "history/countries/CHA - Champa.txt": {
+      "sha256": "1ecfad04c4f4c6ea64a1fc49b7b8fa9952a3cba7e45a1314cf902c3c0c14c0da",
+      "bytes": 233
+    },
+    "history/countries/CHD - Chad.txt": {
+      "sha256": "7d5c272052c37906562f2d4dceaf16d1229a3179be6f73f475fb2205a558dcf6",
+      "bytes": 223
+    },
+    "history/countries/CHK - Champasak.txt": {
+      "sha256": "615c900166f6722fb70e2e7bc0387741d6ba2385c597632362f3e477150798b4",
+      "bytes": 233
+    },
+    "history/countries/CHO - Choshu.txt": {
+      "sha256": "afee58861d2ddf5fd27ab3769900d61b46d5c9493215b132cca627eb135a2f4b",
+      "bytes": 235
+    },
+    "history/countries/CLR - Russian Columbia.txt": {
+      "sha256": "c721ec482c3002a765eef582078fb9e3db73e578b8c85319117305d541e3cd54",
+      "bytes": 237
+    },
+    "history/countries/CMR - Cameroon.txt": {
+      "sha256": "a05062022d705d19371b85b3c9634faffc0b559abe59e708fa420f5348567cc9",
+      "bytes": 228
+    },
+    "history/countries/COD - Commonwealth of Dominica.txt": {
+      "sha256": "e8cfc3ba90d0ddbf86dc7d904ec9e91bf9cbd8493a270686086a61cf26ce5ca8",
+      "bytes": 240
+    },
+    "history/countries/CUR - Curacao.txt": {
+      "sha256": "37caced3626036e00a516e46fab0d851f4702e314c46b34d9079c4f51ac00f44",
+      "bytes": 240
+    },
+    "history/countries/DJI - Djibuti.txt": {
+      "sha256": "ef2986dbe4ff30613693d330c86fce775dd5ff705171aebc66bd282c6dafc0de",
+      "bytes": 237
+    },
+    "history/countries/DON - Don Republic.txt": {
+      "sha256": "2f4679a95c73d73c045454456506f489eb695ade1bdda522f7a29ee1d4e8aaa7",
+      "bytes": 231
+    },
+    "history/countries/DUB - Dubai.txt": {
+      "sha256": "19ab3b894c56c99f42176378814fd7efbb387d4ad6e042ca2a4d99bff87684a3",
+      "bytes": 234
+    },
+    "history/countries/EQG - Equatorial Guinea.txt": {
+      "sha256": "04b50ba8101405b97b4b0d88b9feb1a45e5e9fc44cef6e3f170a99bec23bf80c",
+      "bytes": 239
+    },
+    "history/countries/ERM - Eastern Rumelia.txt": {
+      "sha256": "ae6e752682e9aee04835089f2730bb53074e0d14a6af58d810b25a7b83c0b11d",
+      "bytes": 236
+    },
+    "history/countries/ERT - Eritrea.txt": {
+      "sha256": "57ce6d30f81b5aafd5f3a07979a401d8b06e32ab4364d65ed0efe6579f4d3be9",
+      "bytes": 233
+    },
+    "history/countries/FJN - Fujian.txt": {
+      "sha256": "14a1bafc7b087db8542751b0155f546ee6b63535927cfeeda92542d97f10461a",
+      "bytes": 239
+    },
+    "history/countries/FUJ - Fujairah.txt": {
+      "sha256": "ae445e45f7c846ab257e95de066c2549dc14650c887fc36aaa14f7a82166194d",
+      "bytes": 234
+    },
+    "history/countries/FWI - West Indian Federation.txt": {
+      "sha256": "3f8007d3889fcb21f42ee64193790243ea10b0749e3167ce6a9a220d7c89d775",
+      "bytes": 240
+    },
+    "history/countries/GAB - Gabon.txt": {
+      "sha256": "ed74772ae6b536337b359b75cb13b1bf895553a031df5583cda65f63b78bf01f",
+      "bytes": 226
+    },
+    "history/countries/GAN - Gana.txt": {
+      "sha256": "561c940b9e9f7c0c20a27a8c9b98cf4f5ac06303262dd6c775b0850df8d98bc6",
+      "bytes": 232
+    },
+    "history/countries/GBS - Guinea Bissau.txt": {
+      "sha256": "da91f95d1e778b7374c9d8eb4792d8e8b941fbc4f6106af8ee2b7db0f8a599d7",
+      "bytes": 249
+    },
+    "history/countries/GDL - Guadeloupe.txt": {
+      "sha256": "9816b08865de3ca4795947f6c9cb9ad7bf8570a20ca9eb4da9953ba7d2d6917e",
+      "bytes": 235
+    },
+    "history/countries/GMB - Gambia.txt": {
+      "sha256": "6c9ef8494774c22ca0e6a9428f060684003e35b5c36cc0c3291b51b751219da4",
+      "bytes": 229
+    },
+    "history/countries/GMJ - Guominjun.txt": {
+      "sha256": "cbb659ce0d9edcba0ad3be650e7b6d0461b79af055a29c2332097813d136694f",
+      "bytes": 250
+    },
+    "history/countries/GNE - Guinea.txt": {
+      "sha256": "53f593490aa0789061c6fede6f84aaddf6d168b4aae716a3d9d38e412f33992b",
+      "bytes": 227
+    },
+    "history/countries/GNG - Guangdong.txt": {
+      "sha256": "7d6a371c38689a94bf93741317aa2b0a5843f2bedd41493eb7232069a79219d7",
+      "bytes": 239
+    },
+    "history/countries/GRL - Greenland.txt": {
+      "sha256": "7913243c948f7e81bf1bf63283cdcbf2339843ddfe6f69ad9137e3f3d066ba06",
+      "bytes": 231
+    },
+    "history/countries/GRN - Grenada.txt": {
+      "sha256": "378b2eadde041f55bf335aed0da5fa262bd1e23216351e9b2aee234ffc8087ca",
+      "bytes": 240
+    },
+    "history/countries/HNN - Hunan.txt": {
+      "sha256": "1ef080208dbc2c42333b5869cb4cfc08541dd3ac7001e8503b0783e557bdc4d5",
+      "bytes": 245
+    },
+    "history/countries/HSM - Hashemite Arabia.txt": {
+      "sha256": "5fda646b1fd1097c41c5474b4ae44ecb402225c22a4b6b52340968659bdffe0a",
+      "bytes": 235
+    },
+    "history/countries/IDF - Ile-de-France.txt": {
+      "sha256": "5f06d17e22dfdf9f3c581c2bdb7043ae05ac0c482348ba1f812f8a7b6a9a2ae7",
+      "bytes": 225
+    },
+    "history/countries/IMP - Jap Imperor.txt": {
+      "sha256": "38414082f04dd1d7a29a1ae161b14ab4a0ebe05fc03596130661209803976fe3",
+      "bytes": 236
+    },
+    "history/countries/INO - Indonesia.txt": {
+      "sha256": "c56223ebdd91bab471ae5ad9e3e1af78a381bdaf982651da9774986e7c258539",
+      "bytes": 226
+    },
+    "history/countries/IVC - Ivory Coast.txt": {
+      "sha256": "0fb252ac40a8f731a8155442c484d0d7fc48ef2b35a6d0b1afff71ff46a7eea3",
+      "bytes": 228
+    },
+    "history/countries/JAM - Jamaica.txt": {
+      "sha256": "fb4476aa9e18688fa3a3b6e7c18d27a5e80ff6c91f17aea7d2e1f3e7247042ff",
+      "bytes": 240
+    },
+    "history/countries/JOR - Jordan.txt": {
+      "sha256": "47f26b963e65bc027e30cbaf1899d801bb7bd6374737686fccb310c2cadad0d3",
+      "bytes": 233
+    },
+    "history/countries/JSH - Jabal Shammar.txt": {
+      "sha256": "31d03776e8a1949c319b27058c400818024f3a80d5ef52d3bab005179bacdccd",
+      "bytes": 233
+    },
+    "history/countries/KAG - Kaga.txt": {
+      "sha256": "afee58861d2ddf5fd27ab3769900d61b46d5c9493215b132cca627eb135a2f4b",
+      "bytes": 235
+    },
+    "history/countries/KMT - Nationalist China.txt": {
+      "sha256": "79c855245c18d05a95cc22326c3deeda07970ad7ca00ff3e55ba466ce7649ea6",
+      "bytes": 247
+    },
+    "history/countries/KNY - Kenya.txt": {
+      "sha256": "b2f93f08e4f8638dadfb19c6e152c01e08b7686a82de6422b78fc43c6a150da5",
+      "bytes": 231
+    },
+    "history/countries/KWT - Kuwait.txt": {
+      "sha256": "a5e9a746457e7eb9a3b2ca2d0f8d1702cb1fe7ae6e9c339deca1dcee66ddfdba",
+      "bytes": 233
+    },
+    "history/countries/LAL - Los Altos.txt": {
+      "sha256": "4f2c95321511090ec0087c5d96afa8d1d3a33089726ac4f595773e7e9d76d0a9",
+      "bytes": 253
+    },
+    "history/countries/LBN - Lebanon.txt": {
+      "sha256": "0da8c0882223ad8b86503e1bb9fe5aaea7d73cd5932db637721ef8125e984d98",
+      "bytes": 234
+    },
+    "history/countries/LIE - Liechtenstein.txt": {
+      "sha256": "9283d46065a81de87ad5f87e82e4dc72c845c451e0e7c092c8cc8c49d997b5a1",
+      "bytes": 242
+    },
+    "history/countries/LIV - Libya.txt": {
+      "sha256": "1478b68f51d99d370cf5d87e4aaf23af7fc63db957e33ad124d73c57ede940fa",
+      "bytes": 233
+    },
+    "history/countries/LPL - La Plata.txt": {
+      "sha256": "00e814f7f0a5147a578e0f37904ec9502682b9f5999fb36476ee237a5c887e2c",
+      "bytes": 248
+    },
+    "history/countries/MAH - Maharashtra.txt": {
+      "sha256": "86cd4f1af4b00704440a532593734fa9a0d7c068f2f4e00fbd783f7396213960",
+      "bytes": 233
+    },
+    "history/countries/MAR - Martinique.txt": {
+      "sha256": "3ac164f2723b0db050f84976e7627cb830c5a4e7ecf8b4a83ac09bca709b7767",
+      "bytes": 235
+    },
+    "history/countries/MAU - Mauretania.txt": {
+      "sha256": "bbc94703847b421ebe4cf2a5d09dde7ee5be0cda9db2784a4e9f5077e7242ed6",
+      "bytes": 232
+    },
+    "history/countries/MLI - Mali.txt": {
+      "sha256": "6f5b8206ec00e7c4d155cc19bb8379e2db294583ee615970f4a9460d2b8a3d5f",
+      "bytes": 230
+    },
+    "history/countries/MLW - Malawi.txt": {
+      "sha256": "bdfd16f03c311cac596730730e5fa15cd4dfa4009f4d6d485d8121d12f86c2b5",
+      "bytes": 229
+    },
+    "history/countries/MOZ - Mozambique.txt": {
+      "sha256": "d943d0f7d23dd5bb1f4116619975f26f15c2bc8426528b753055335da1aad5dc",
+      "bytes": 242
+    },
+    "history/countries/MRT - Marathas.txt": {
+      "sha256": "79820dd3309bb1334d48b37ee6b6aaa9de6eb156d55816741fb210bf1aaec932",
+      "bytes": 233
+    },
+    "history/countries/MSR - Montserrat.txt": {
+      "sha256": "8d8dcf236ac9a040cb56ef0c6c24cd8af439221bbfb391839c51b8f3a6ea8bce",
+      "bytes": 240
+    },
+    "history/countries/NAM - Namibia.txt": {
+      "sha256": "2e1f3a73209057e55997b185b2fca166d013ed0fb9999d597651de0c875c28a8",
+      "bytes": 244
+    },
+    "history/countries/NGR - Nigeria.txt": {
+      "sha256": "737cfb66011911df206fe47e472146717cced6ce25309b125c09954b58be6dfa",
+      "bytes": 230
+    },
+    "history/countries/NIG - Niger.txt": {
+      "sha256": "1d8c65b7cb57fbcfcba02017686f701bd07dd76e4bc2ab4b19b0bc9b3c14872a",
+      "bytes": 226
+    },
+    "history/countries/OBO - Ober Ost.txt": {
+      "sha256": "629ea8e9fd688e896f0979462dd5e0cf62d56ec3e10fc83a9689a927254cc081",
+      "bytes": 244
+    },
+    "history/countries/PAK - Pakistan.txt": {
+      "sha256": "4daf816c0a73fb375b569bf59ebf713dc9d09eafd0923acfc233f5b9b9ed31a6",
+      "bytes": 240
+    },
+    "history/countries/PBC - Peru-Bolivian Confederation.txt": {
+      "sha256": "b3fc4c67639a0de09b22636740ffac0ba6e477d523308a6536c383688f715601",
+      "bytes": 249
+    },
+    "history/countries/PLS - Palestine.txt": {
+      "sha256": "3214ab9aece6c46f7d203181b0e6db804fe7ddea509e1d4648bf4d7c3cffcda2",
+      "bytes": 234
+    },
+    "history/countries/PUE - Puerto Rico.txt": {
+      "sha256": "893484727ba59efac293cf0ba2940b1e84c5fcf916e9d9ecbcdd6d9849b4a730",
+      "bytes": 232
+    },
+    "history/countries/QAT - Qatar.txt": {
+      "sha256": "a92edd1231bb8d2ee09dc5b48c020d4dffe3622a29ddfe32365bbb90aa460ef4",
+      "bytes": 233
+    },
+    "history/countries/RAK - Ras al-Khaimah.txt": {
+      "sha256": "7a4be8975560e39ebc1527ddfb1fa3f6214e5fb03a1d9cfc3e7339f839c47410",
+      "bytes": 234
+    },
+    "history/countries/RGR - Rio Grande.txt": {
+      "sha256": "f415ca541c2d35ef9dbb69f262f9c8ff0c2efc4fecdb4acd22dba06f6ac2e4ac",
+      "bytes": 226
+    },
+    "history/countries/RHV - Haute-Volta.txt": {
+      "sha256": "82e528081c0c2e27ebfb5aad4c50b1ed3d6c1d8085ef393908ac9f026d798da9",
+      "bytes": 233
+    },
+    "history/countries/RSR - Communist Russia.txt": {
+      "sha256": "ffb123dc56cc931acf165ebaaa39b92dea1a582cb08d9cda3fde9af90f56ef66",
+      "bytes": 241
+    },
+    "history/countries/RWA - Ruanda.txt": {
+      "sha256": "a0a89c2c36a8bf8d8fe6022bf0a218d3594c218ed17b25330dc6e95a57451d0a",
+      "bytes": 234
+    },
+    "history/countries/RYU - Ryukyu.txt": {
+      "sha256": "2f99c958a40fe0e086b34a503cd8e71f5652d47c26904d630de8eb7b10736cda",
+      "bytes": 236
+    },
+    "history/countries/SAT - Satsuma.txt": {
+      "sha256": "afee58861d2ddf5fd27ab3769900d61b46d5c9493215b132cca627eb135a2f4b",
+      "bytes": 235
+    },
+    "history/countries/SAU - Saudi Arabia.txt": {
+      "sha256": "ec7e71947cd44b5ad52b5b2f4631d307e45f7b3b6302774cf70ff4831e5ada62",
+      "bytes": 234
+    },
+    "history/countries/SEN - Sendai.txt": {
+      "sha256": "1a9c50337a02a83278e13fec1541b833592d13f9d1d361c6c07f05cb66281407",
+      "bytes": 234
+    },
+    "history/countries/SHA - Sharjah.txt": {
+      "sha256": "07138d68ab617428491e0dafc7c4330ef8809575ca2fdd4ab144b173e566d50a",
+      "bytes": 234
+    },
+    "history/countries/SIG - Hohenzollern-Sigmaringen.txt": {
+      "sha256": "ddf1e1377c3bfaf6e080a34572b045a4cd26893319d8ae91933ff4baaef99444",
+      "bytes": 242
+    },
+    "history/countries/SLE - Sierra Leone.txt": {
+      "sha256": "c1c11e8f5a537298e9ef5c5a734b8692d81f195d38b10aac06ce39687f3e1e26",
+      "bytes": 229
+    },
+    "history/countries/SMR - San-Marino.txt": {
+      "sha256": "e38f76f1bd7b3b2797b3e1f7a3dfb949ae16be16f15c6891d64c904ad4e83839",
+      "bytes": 235
+    },
+    "history/countries/SNG - Senegal.txt": {
+      "sha256": "5975f58675428755829c28a1738d538a12f0f382da1b85e4798f66a79d57da89",
+      "bytes": 229
+    },
+    "history/countries/SNR - Sennar.txt": {
+      "sha256": "97b0ecf8aba2b30236b3f3843a4a6bd94f731d0717823037a2f3550c20e532f7",
+      "bytes": 234
+    },
+    "history/countries/SOM - Somalia.txt": {
+      "sha256": "e0d7de616a29ff3c09e9d53577791cbb749ed011173834508224db510772c871",
+      "bytes": 232
+    },
+    "history/countries/STK - Saint Kitts and Nevis.txt": {
+      "sha256": "2b3a6702005c73f0d62ca5077730e6d830baa3311d7465eb3f836514fc9dac9a",
+      "bytes": 240
+    },
+    "history/countries/STL - Saint Lucia.txt": {
+      "sha256": "a4a82327849bc1455ed3cd99ef429cf603dc40e49a0e2bddcfaa7976b79a058a",
+      "bytes": 240
+    },
+    "history/countries/STV - Saint Vincent and the Grenadines.txt": {
+      "sha256": "307ad423980bfec5d5c5e0e9af356d9c7f92eff92f9aac2c4de0f512586aa0d9",
+      "bytes": 240
+    },
+    "history/countries/SUD - Sudan.txt": {
+      "sha256": "d2c89186b989556f5f6b485d41b0736347be63dad47be373f9fa1b169de98a6d",
+      "bytes": 234
+    },
+    "history/countries/SUL - Sulu.txt": {
+      "sha256": "9a55b4828166ba892a52b7dc0af32b9d279e13a2102907e3fa9e81df58eaa4a8",
+      "bytes": 231
+    },
+    "history/countries/SYR - Syria.txt": {
+      "sha256": "f01a46345efdfe9aaac0c2b5e11bf84a4c073bb105a94ee9894f470589c1f4ec",
+      "bytes": 234
+    },
+    "history/countries/SZC - Sichuan.txt": {
+      "sha256": "b1e95539fcb066a20aa894f94e427dcd8dd473eef6b447298046c34979117657",
+      "bytes": 244
+    },
+    "history/countries/TAI - Taiwan.txt": {
+      "sha256": "4f0dfb8a4ba4c2e344047d190b1c656b678f18d3091ceca6ded0ca268061d4b4",
+      "bytes": 224
+    },
+    "history/countries/TCR - Transcaucasian.txt": {
+      "sha256": "b655c70276e04a70cc6a984dd9b3e8fc48bdb07c165b38a5ee4b55833b4b64e2",
+      "bytes": 230
+    },
+    "history/countries/TDT - Trinidad and Tobago.txt": {
+      "sha256": "3d7652b610398feb250b2a90931875a64591e936f0142faf1878f90ae261a96b",
+      "bytes": 235
+    },
+    "history/countries/TGA - Tonga.txt": {
+      "sha256": "5477687e50642817a999368551982fb95c71602d1944fcda6991f9db1681340d",
+      "bytes": 241
+    },
+    "history/countries/TKG - Tokugawa.txt": {
+      "sha256": "38414082f04dd1d7a29a1ae161b14ab4a0ebe05fc03596130661209803976fe3",
+      "bytes": 236
+    },
+    "history/countries/TKS - Turkestan.txt": {
+      "sha256": "410e834dc8b8109b3cc325649c75cdc2df0083c53bf68e941b62d8b4fee151cf",
+      "bytes": 232
+    },
+    "history/countries/TNZ - Tanzania.txt": {
+      "sha256": "98518f2084f2633c9dbde4816d12f2b2d619ef6d06d80eb94194cc7ffebc3288",
+      "bytes": 233
+    },
+    "history/countries/TOG - Togo.txt": {
+      "sha256": "cc0cad17cf7855fc471f248e0ad8c83c047bb6eaba2b4452b7793d20bb80815b",
+      "bytes": 225
+    },
+    "history/countries/TOS - Tosa.txt": {
+      "sha256": "afee58861d2ddf5fd27ab3769900d61b46d5c9493215b132cca627eb135a2f4b",
+      "bytes": 235
+    },
+    "history/countries/TSW - Botswana.txt": {
+      "sha256": "5f46e83b55e0adf87e9087f18d8e9f2fa82be78ad0165ed67dd9cb0e5846cde3",
+      "bytes": 234
+    },
+    "history/countries/UAE - United Arab Emirates.txt": {
+      "sha256": "61d16c269d9e83d968c0dd7b73a301ee9b339f6aa2a5e1cf0ed44a51b51bef58",
+      "bytes": 235
+    },
+    "history/countries/UAQ - Umm al-Quwain.txt": {
+      "sha256": "d93697f06c26af50a019fbf8bae292153e69672cad81076f4f47eb754a4ca8ee",
+      "bytes": 234
+    },
+    "history/countries/UGA - Uganda.txt": {
+      "sha256": "3178bd8e228549f779b78176466e2b452d5f2752113b1d7227eca90139d388dc",
+      "bytes": 235
+    },
+    "history/countries/YUC - Yucatan.txt": {
+      "sha256": "b5e3b6a98b53cae890e157d806b55472014babd53a7368ce5f2f1aa5a7a9d207",
+      "bytes": 224
+    },
+    "history/countries/YZW - Yonezawa.txt": {
+      "sha256": "1a9c50337a02a83278e13fec1541b833592d13f9d1d361c6c07f05cb66281407",
+      "bytes": 234
+    },
+    "history/countries/ZAM - Zambia.txt": {
+      "sha256": "324f54ea4d8ee4a3934d0b134abc1ac6b776d9d0191620a79634ac26b0700d57",
+      "bytes": 229
+    },
+    "history/countries/ZHI - Zhili.txt": {
+      "sha256": "272caaa31a80a52b76edd5109f669b82662025e11d5944b105a968f11cbeb996",
+      "bytes": 242
+    },
+    "localisation/chronology_countries.csv": {
+      "sha256": "0214492c377d9fb30ad111d4138e9f78af8434f9c09b082d8fda128cb8dd9e13",
+      "bytes": 45520
+    }
+  }
+}

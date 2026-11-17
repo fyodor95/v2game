@@ -1,0 +1,7 @@
+# ћинимальное определение отсутствующей страны; сценарные данные не перенесены.
+primary_culture = bedouin
+religion = sunni
+government = absolute_monarchy
+nationalvalue = nv_order
+civilized = no
+ruling_party = LIV_conservative

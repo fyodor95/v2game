@@ -1,0 +1,7 @@
+# ћинимальное определение отсутствующей страны; сценарные данные не перенесены.
+primary_culture = russian
+religion = orthodox
+government = democracy
+nationalvalue = nv_liberty
+civilized = yes
+ruling_party = DON_conservative

@@ -1,0 +1,7 @@
+# ћинимальное определение отсутствующей страны; сценарные данные не перенесены.
+primary_culture = bakongo
+religion = catholic
+government = democracy
+nationalvalue = nv_order
+civilized = yes
+ruling_party = CGO_conservative

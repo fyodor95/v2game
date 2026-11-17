@@ -1,0 +1,7 @@
+# ћинимальное определение отсутствующей страны; сценарные данные не перенесены.
+primary_culture = javan
+religion = sunni
+government = democracy
+nationalvalue = nv_equality
+civilized = no
+ruling_party = INO_conservative

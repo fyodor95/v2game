@@ -1,0 +1,7 @@
+# ћинимальное определение отсутствующей страны; сценарные данные не перенесены.
+primary_culture = maures
+religion = sunni
+government = absolute_monarchy
+nationalvalue = nv_order
+civilized = no
+ruling_party = MAU_conservative

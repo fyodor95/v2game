@@ -1,0 +1,7 @@
+# ћинимальное определение отсутствующей страны; сценарные данные не перенесены.
+primary_culture = panjabi
+religion = sunni
+government = presidential_dictatorship
+nationalvalue = nv_order
+civilized = no
+ruling_party = PAK_reactionary

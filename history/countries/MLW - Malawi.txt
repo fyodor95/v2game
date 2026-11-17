@@ -1,0 +1,7 @@
+# ћинимальное определение отсутствующей страны; сценарные данные не перенесены.
+primary_culture = chewa
+religion = protestant
+government = democracy
+nationalvalue = nv_order
+civilized = yes
+ruling_party = MLW_conservative
