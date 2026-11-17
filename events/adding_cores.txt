@@ -12666,7 +12666,7 @@ province_event = {
 				tag = PHI
 			}
 			civilized = yes
-			PHI = {
+			"PHI" = {
 				exists = no
 				primary_culture = filipino
 				country_religion = catholic
@@ -12696,7 +12696,7 @@ province_event = {
 						tag = PHI
 					}
 					civilized = yes
-					PHI = {
+					"PHI" = {
 						exists = no
 						primary_culture = filipino
 						country_religion = catholic
@@ -32669,7 +32669,7 @@ province_event = {
 			NOT = {
 				tag = PAN
 			}
-			PAN = {
+			"PAN" = {
 				exists = no
 				primary_culture = panjabi
 				country_religion = sikh
@@ -32698,7 +32698,7 @@ province_event = {
 					NOT = {
 						tag = PAN
 					}
-					PAN = {
+					"PAN" = {
 						exists = no
 						primary_culture = panjabi
 						country_religion = sikh
@@ -57276,7 +57276,7 @@ province_event = {
 			NOT = {
 				tag = PHI
 			}
-			PHI = {
+			"PHI" = {
 				OR = {
 					accepted_culture = filipino
 					primary_culture = filipino
@@ -73796,7 +73796,7 @@ province_event = {
 			NOT = {
 				tag = PAN
 			}
-			PAN = {
+			"PAN" = {
 				OR = {
 					accepted_culture = panjabi
 					primary_culture = panjabi

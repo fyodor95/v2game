@@ -7637,7 +7637,7 @@ province_event = {
 		NOT = {
 			culture = panjabi
 		}
-		PAN = {
+		"PAN" = {
 			exists = no
 		}
 		OR = {
@@ -7829,7 +7829,7 @@ province_event = {
 		NOT = {
 			culture = filipino
 		}
-		PHI = {
+		"PHI" = {
 			exists = no
 		}
 		OR = {
