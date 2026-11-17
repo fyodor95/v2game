@@ -6,28 +6,33 @@
   "configuration": "Release|Win32",
   "artifacts": {
     "creatinecore.dll": {
-      "sha256": "44961c340454cfe5d5c15036122a1c52ca3bdbdeaaa4a178aafd2a05e070f114",
-      "bytes": 499712,
+      "sha256": "73857f40e2b6cde65fe35efe61db6d3d82ff2af037136f5e099101d50f960068",
+      "bytes": 524800,
       "machine": "x86"
     },
     "dinput8.dll": {
-      "sha256": "80d6ac17897a1c85803a74996cf1520fba0366a58d6743633b2e8de0e318f97b",
+      "sha256": "7dde89c94507975a9abebf54f0309f37e8eb25c486bc833fe4ce9d21fa4e2ac5",
       "bytes": 89088,
       "machine": "x86"
     },
     "eventmusic.dll": {
-      "sha256": "63b5a704ee2c515fa676ba55dd885684887b99f4aba67d7e9714c1d02dad4454",
+      "sha256": "66644c0490085f97f8b0e9a7646881bcb2ba784c78566661798a0deac90e53ef",
       "bytes": 610304,
       "machine": "x86"
     },
     "ccore_script_fixes.dll": {
-      "sha256": "5a7158fd02545686bbea55bfaedf3c8e05c899af0caafa1bbcc8d097a7af3b4a",
+      "sha256": "0fd355e28515e4856c71f64fcabbdb0a7870c5ea496a3b16ddd839a361199b4c",
       "bytes": 574464,
       "machine": "x86"
     },
     "ccore_great_power_culture_cores.dll": {
-      "sha256": "f7ac480679a5008b8be3add48f385e1cf9e706e805d07d1235647dd639cba32b",
+      "sha256": "8de512225cf8c581fe547bd22644b75f7daf64bec28df71218d3644d609000c7",
       "bytes": 289792,
+      "machine": "x86"
+    },
+    "ccore_state_religion_ui.dll": {
+      "sha256": "2d01a87d835c0853e8f113b7fa74061028bb4c1adba7ece056dabef4ad58ad63",
+      "bytes": 858112,
       "machine": "x86"
     },
     "great_power_culture_cores.ini": {
@@ -41,61 +46,77 @@
     "localisation/great_power_culture_cores.csv": {
       "sha256": "07f1a61900d080b43f81832d6ca7cbfe6f9df37fb312b270905880b44550a246",
       "bytes": 273
+    },
+    "interface/country_politics.gui": {
+      "sha256": "5cada36b01f8ecdbe03f7ecccbdfb81fdd4aed2cdf831d35e75f9833c76b7a98",
+      "bytes": 49786
+    },
+    "localisation/country_state_religion.csv": {
+      "sha256": "68cc55751e5e44eba3bf26a38572f3149dc75a67d3cebe4e18fc9bb54965af76",
+      "bytes": 1083
     }
   },
   "great_power_culture_cores": {
     "schema": 1,
     "machine": "x86",
     "expected_exe_sha256": "62d48c204364dd706584777c2e2b3c7ab3c5f1dd0170872554943575d53d6648",
-    "head": "c6ba4772f8d8b0b24df7fddbd615d6d56016213f",
+    "head": "a6bfdff7f9c470a282e980548acab44ea58e58c7",
     "artifact": {
       "name": "ccore_great_power_culture_cores.dll",
       "bytes": 289792,
-      "sha256": "f7ac480679a5008b8be3add48f385e1cf9e706e805d07d1235647dd639cba32b"
+      "sha256": "8de512225cf8c581fe547bd22644b75f7daf64bec28df71218d3644d609000c7"
     },
     "sources": {
       "build_runtime.cmd": "ebaef52b2c2c21ffa07cd83f3c0a3a2495e36f64f6bb83421016ad7d4101de4d",
-      "calculation.h": "95ca5d3215f50775f80287906d98345642d3118421e1a834c60b1507ca8bee54",
+      "calculation.h": "14e3a26018979f9d984ab61216018066285cb9b4c80fd77ec5041769ff5e187d",
       "debug_api.h": "0a832cf0df9e1bf65eb0f7f0c086bdb9daf7d8674b7ed098fcb62ef54303850d",
       "great_power_culture_cores.ini": "5cb968b815c63544f4a81928e55609795723b9e1442bff4a36bb1d2fb5fac359",
       "native_operations.h": "99f90d2405611c75bcb6dae3228b0b695bc4629b9c159e7aea4ff893ea3d697e",
       "native_probe.h": "14ae99302bd284891aa1c5fdb7c397079126011c42a1cbe236cc57c613934d48",
       "notify_probe.h": "26c3c89f8ad18abd94fb4203c194bcc6bfa1ae8405f7f472909fb9854164474d",
+      "phase_profile.h": "76e29cd514fce20f438605e2a1176db5b126ca4e4b8d919900c2a5e605e0d31e",
       "productionflag_adapter.h": "e0f02e91998cd3f43bdccdb9fa900082dded5cc8c52e5c6b16a0ff628a626bf4",
-      "runtime.cpp": "67131e2986bdb76adb2cd2de9e6a67b974e2d581d592a90ead804da469fc3a65",
+      "runtime.cpp": "057f476e1d5a88a597fc55b1c876cf9aa8b84081903e398d09ffdd7f7432ce08",
       "runtime_debug.h": "2bbd02f9e865e09cf6abc0c34afba25f9494dd27ede421829d62b0cc11635842",
       "runtime_status.h": "3f7d75e324c52ab0edd5cca4c4b75c5ecd86196f9f5b55a0e750216c0373c412",
       "scheduler.h": "f0bc0e0a083a26db9edb5504cb5b6a78b37c9542ab8d10d9ef1dd37cb094fe12",
       "seed_adapter.h": "8ac7adb46932c8734634d85a8e7704f3861a07e1ca6f7dddc566b9657262746d",
       "snapshot_probe.h": "3708c740b4d0d6bfe7bda9466c4b35e5820d3a5a1ad12eaf23caccbd2c3fec37",
       "state_probe.h": "d5f4e92ed48a658315d78685b9fc364cc8adf44e7aea6850fea9ef70377b91fc",
-      "world_reader.h": "231b238df4d6aeed43602c0ef4a256c5773cc16053e2dbc9c5e438cfe4fe50d9",
+      "world_reader.h": "183fc77ca01e505b893ff630169fb76da6d391b14c9ff97eab1acafc3e235884",
       "write_manifest.py": "085f7a90fba77941233e8a127a34041540dca35cc4916588af5dcc3421dc35db"
     }
   },
+  "patches": {
+    "v2game.patch": "ffe84a6fb2d09f71d5778377a7f20726ec291db8b30f8acf497fc89a9afc1ac7",
+    "religion.patch": "71fb4da75b28d29653e5f2937c8150b5d3ea2256d051a55b7ec6479739d93fc4"
+  },
+  "state_religion_sources": {
+    "build_native.py": "45f4ea7527d3a862642c9b2ecd0957289f933dd35abf068b7b9ca2f8a503ab86",
+    "calculation.cpp": "66ab06875e62989b4359b955fa09291a474113721e0afe78d23ed2c2a7cd22f6",
+    "calculation.h": "c301dd8cd696f8333183c123f781c9c1057d801d8f3be246b44fd88d3f329585",
+    "calculation_test.cpp": "d2a5a693306c234307b3dfbd26c687c34e7bcfa4f041f5698cf46361f7a60652",
+    "effect.cpp": "d0417bd22bc47a662fc2505bdf8dedc121fc5392da87cd2017732b83cb28f911",
+    "factory_test.cpp": "7adec019488baab7e7fd33e438e2d593ef7a941fd006bf3b4658a26f40f9d7cc",
+    "native.cpp": "bb583f8bfcc46f03ad53a0193bd0ac6b0b917d7f955b9971e30772bd0fb169f3",
+    "native.h": "f8cf9363ecbe3947ec3cf57ef99ff546d73395bff82f311f244385cf3612cd7c",
+    "native_reader_test.cpp": "36a9a292599c4f785bb2b328a76e9de21c3cb452295347e8c7aa3eb02c2f00a5",
+    "README.md": "5ab757303ec88088b0d932752fdbb4ac90672644feeb3e3660837d560fea8621",
+    "ui.cpp": "f81074ec2394333e051fac06a886abded147e11bb07bd2374bb1f1937a746344",
+    "ui.vcxproj": "c7cea33536e4215d747555420520c85defa3281e48724a021c21635cb71d2886"
+  },
   "installed": {
-    "dinput8.dll": "80d6ac17897a1c85803a74996cf1520fba0366a58d6743633b2e8de0e318f97b",
-    "z_CreatineCore/creatinecore.dll": "44961c340454cfe5d5c15036122a1c52ca3bdbdeaaa4a178aafd2a05e070f114",
-    "z_CreatineCore/eventmusic.dll": "63b5a704ee2c515fa676ba55dd885684887b99f4aba67d7e9714c1d02dad4454",
-    "z_CreatineCore/dll_Submods/ccore_script_fixes.dll": "5a7158fd02545686bbea55bfaedf3c8e05c899af0caafa1bbcc8d097a7af3b4a",
-    "z_CreatineCore/dll_Submods/ccore_great_power_culture_cores.dll": "f7ac480679a5008b8be3add48f385e1cf9e706e805d07d1235647dd639cba32b",
+    "dinput8.dll": "7dde89c94507975a9abebf54f0309f37e8eb25c486bc833fe4ce9d21fa4e2ac5",
+    "z_CreatineCore/creatinecore.dll": "73857f40e2b6cde65fe35efe61db6d3d82ff2af037136f5e099101d50f960068",
+    "z_CreatineCore/eventmusic.dll": "66644c0490085f97f8b0e9a7646881bcb2ba784c78566661798a0deac90e53ef",
+    "z_CreatineCore/dll_Submods/ccore_script_fixes.dll": "0fd355e28515e4856c71f64fcabbdb0a7870c5ea496a3b16ddd839a361199b4c",
+    "z_CreatineCore/dll_Submods/ccore_great_power_culture_cores.dll": "8de512225cf8c581fe547bd22644b75f7daf64bec28df71218d3644d609000c7",
+    "z_CreatineCore/dll_Submods/ccore_state_religion_ui.dll": "2d01a87d835c0853e8f113b7fa74061028bb4c1adba7ece056dabef4ad58ad63",
     "z_CreatineCore/great_power_culture_cores.ini": "40a024fcb47d56b1208c44839d675f433cdde9be8421ffae6fb07f2bb9a51769",
-    "z_CreatineCore/creatinecore_settings.ini": "4d32e9c212ba638a07f440adca8ab091d121186ba03477af24584517a68f25a2",
     "events/great_power_culture_cores.txt": "83c9e46505b1f7c15bac11d8ab6d931ae1d19d560a51da8aebc24852f52ff250",
-    "localisation/great_power_culture_cores.csv": "07f1a61900d080b43f81832d6ca7cbfe6f9df37fb312b270905880b44550a246"
-  },
-  "activation": {
-    "enabled": true,
-    "mtth_months": 60,
-    "acceptance_pending": false,
-    "remaining_tests_in_separate_worktree": false,
-    "user_authorized": true,
-    "validation_report": "docs/research/gpc-acceptance.md",
-    "qualification": "passed_with_documented_native_ui_limitation"
-  },
-  "resource_packaging": {
-    "validated_report": ".work/gpc-artifacts/packaging-install-01.json",
-    "base_artifacts_unchanged": true,
-    "installer_commit": "b0cbe93a"
+    "localisation/great_power_culture_cores.csv": "07f1a61900d080b43f81832d6ca7cbfe6f9df37fb312b270905880b44550a246",
+    "interface/country_politics.gui": "5cada36b01f8ecdbe03f7ecccbdfb81fdd4aed2cdf831d35e75f9833c76b7a98",
+    "localisation/country_state_religion.csv": "68cc55751e5e44eba3bf26a38572f3149dc75a67d3cebe4e18fc9bb54965af76",
+    "z_CreatineCore/creatinecore_settings.ini": "4d32e9c212ba638a07f440adca8ab091d121186ba03477af24584517a68f25a2"
   }
 }
