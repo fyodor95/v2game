@@ -75,7 +75,8 @@ def accelerate(raw):
             continue
         first.append(event)
         trigger = engine.one(event, 'trigger')
-        if engine.scalar(trigger, 'culture') == source['culture']:
+        if (engine.scalar(trigger, 'culture') == source['culture'] and
+                engine.scalar(trigger, 'pop_majority_religion') == source.get('religion')):
             candidates.add(engine.scalar(guard, 'add_core'))
         if int(engine.scalar(event, 'id')) == source['id']:
             engine.require(target is None, 'Повторный ID события OBO')

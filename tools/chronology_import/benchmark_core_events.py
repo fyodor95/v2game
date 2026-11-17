@@ -160,16 +160,23 @@ class Benchmark:
             require(self.args.rebel_save in self.save_paths and 0 < self.args.rebel_province <= 99999,
                     'Контролируемая повстанческая провинция должна относиться к одному из сейвов')
         self.save_hashes = {name: cli.digest(path) for name, path in self.save_paths.items()}
-        revision = subprocess.run(['git', 'rev-parse', '--verify', OLD_COMMIT + '^{commit}'],
+        revision = subprocess.run(['git', 'rev-parse', '--verify', getattr(self.args, 'old_commit', OLD_COMMIT) + '^{commit}'],
                                   cwd=ROOT, capture_output=True, check=True).stdout.decode('ascii').strip()
         require(re.fullmatch('[0-9a-f]{40}', revision), 'Неверный baseline commit')
         old = subprocess.run(['git', 'show', revision + ':' + EVENT], cwd=ROOT,
                              capture_output=True, check=True).stdout
         new_path = safe_path(self.args.new_events.absolute(), work, regular=True)
         new = new_path.read_bytes()
-        model = reconstruct_map(self.game)
-        validation = validate_events(parse(new.decode('cp1251')),
-                                     (new_path.parents[1] / 'localisation/adding_cores.csv').read_bytes().decode('cp1251'), model)
+        if b'pop_majority_religion' in new:
+            from tools.culture_religion.validate import validate as validate_pairs
+            pair_result = validate_pairs(new_path.parents[1])
+            validation = dict(ok=pair_result['ok'], issues=pair_result['errors'],
+                              counts=dict(first=pair_result['first_count'], spread=pair_result['spread_count']),
+                              checked_events=pair_result['first_count'] + pair_result['spread_count'])
+        else:
+            model = reconstruct_map(self.game)
+            validation = validate_events(parse(new.decode('cp1251')),
+                                         (new_path.parents[1] / 'localisation/adding_cores.csv').read_bytes().decode('cp1251'), model)
         require(validation['ok'], f'Новый выход не прошёл валидатор MTTH4*n: {validation["issues"][:10]}')
         require(old != new, 'Одинаковые наборы событий')
         self.events = {'old': old, 'new': new}
@@ -380,6 +387,7 @@ class Benchmark:
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--environment', type=Path, default=ROOT / '.work/chronology-cores/engine')
+    parser.add_argument('--old-commit', default=OLD_COMMIT, help='???????????? ??????????? ??????? ???????')
     parser.add_argument('--new-events', type=Path, default=ROOT / '.work/chronology-cores/generated-game/events/adding_cores.txt')
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--saves', nargs=2, default=['gpc36_start.v2', 'chr_new.v2'])
