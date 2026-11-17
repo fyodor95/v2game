@@ -4839,6 +4839,94 @@ acceptance_capital_berber = {
 		add_accepted_culture = berber
 	}
 }
+acceptance_capital_socotri = {
+	potential = {
+		capital_scope = {
+			culture = socotri
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = socotri
+				primary_culture = socotri
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = socotri
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = socotri
+	}
+}
 acceptance_capital_uzbek = {
 	potential = {
 		capital_scope = {
@@ -8095,6 +8183,446 @@ acceptance_capital_telegu = {
 		add_accepted_culture = telegu
 	}
 }
+acceptance_capital_andamanese = {
+	potential = {
+		capital_scope = {
+			culture = andamanese
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = andamanese
+				primary_culture = andamanese
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = andamanese
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = andamanese
+	}
+}
+acceptance_capital_dhivehi = {
+	potential = {
+		capital_scope = {
+			culture = dhivehi
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = dhivehi
+				primary_culture = dhivehi
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = dhivehi
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = dhivehi
+	}
+}
+acceptance_capital_gond = {
+	potential = {
+		capital_scope = {
+			culture = gond
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = gond
+				primary_culture = gond
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = gond
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = gond
+	}
+}
+acceptance_capital_khond = {
+	potential = {
+		capital_scope = {
+			culture = khond
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = khond
+				primary_culture = khond
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = khond
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = khond
+	}
+}
+acceptance_capital_tripuri = {
+	potential = {
+		capital_scope = {
+			culture = tripuri
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = tripuri
+				primary_culture = tripuri
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = tripuri
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = tripuri
+	}
+}
 acceptance_capital_malay = {
 	potential = {
 		capital_scope = {
@@ -9239,6 +9767,1150 @@ acceptance_capital_karen = {
 		add_accepted_culture = karen
 	}
 }
+acceptance_capital_bahnar_jarai = {
+	potential = {
+		capital_scope = {
+			culture = bahnar_jarai
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = bahnar_jarai
+				primary_culture = bahnar_jarai
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = bahnar_jarai
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = bahnar_jarai
+	}
+}
+acceptance_capital_batak = {
+	potential = {
+		capital_scope = {
+			culture = batak
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = batak
+				primary_culture = batak
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = batak
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = batak
+	}
+}
+acceptance_capital_bidayuh = {
+	potential = {
+		capital_scope = {
+			culture = bidayuh
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = bidayuh
+				primary_culture = bidayuh
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = bidayuh
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = bidayuh
+	}
+}
+acceptance_capital_dusun_murut = {
+	potential = {
+		capital_scope = {
+			culture = dusun_murut
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = dusun_murut
+				primary_culture = dusun_murut
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = dusun_murut
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = dusun_murut
+	}
+}
+acceptance_capital_iban = {
+	potential = {
+		capital_scope = {
+			culture = iban
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = iban
+				primary_culture = iban
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = iban
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = iban
+	}
+}
+acceptance_capital_katuic = {
+	potential = {
+		capital_scope = {
+			culture = katuic
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = katuic
+				primary_culture = katuic
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = katuic
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = katuic
+	}
+}
+acceptance_capital_kayan_kenyah = {
+	potential = {
+		capital_scope = {
+			culture = kayan_kenyah
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = kayan_kenyah
+				primary_culture = kayan_kenyah
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = kayan_kenyah
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = kayan_kenyah
+	}
+}
+acceptance_capital_khmu = {
+	potential = {
+		capital_scope = {
+			culture = khmu
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = khmu
+				primary_culture = khmu
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = khmu
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = khmu
+	}
+}
+acceptance_capital_minangkabau = {
+	potential = {
+		capital_scope = {
+			culture = minangkabau
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = minangkabau
+				primary_culture = minangkabau
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = minangkabau
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = minangkabau
+	}
+}
+acceptance_capital_ngaju = {
+	potential = {
+		capital_scope = {
+			culture = ngaju
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = ngaju
+				primary_culture = ngaju
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = ngaju
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = ngaju
+	}
+}
+acceptance_capital_nias = {
+	potential = {
+		capital_scope = {
+			culture = nias
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = nias
+				primary_culture = nias
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = nias
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = nias
+	}
+}
+acceptance_capital_palawan = {
+	potential = {
+		capital_scope = {
+			culture = palawan
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = palawan
+				primary_culture = palawan
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = palawan
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = palawan
+	}
+}
+acceptance_capital_rejang = {
+	potential = {
+		capital_scope = {
+			culture = rejang
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = rejang
+				primary_culture = rejang
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = rejang
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = rejang
+	}
+}
 acceptance_capital_japanese = {
 	potential = {
 		capital_scope = {
@@ -10029,6 +11701,94 @@ acceptance_capital_yue = {
 	effect = {
 		prestige = 1
 		add_accepted_culture = yue
+	}
+}
+acceptance_capital_bai = {
+	potential = {
+		capital_scope = {
+			culture = bai
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = bai
+				primary_culture = bai
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = bai
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = bai
 	}
 }
 acceptance_capital_manchu = {
@@ -10909,6 +12669,358 @@ acceptance_capital_micronesian = {
 	effect = {
 		prestige = 1
 		add_accepted_culture = micronesian
+	}
+}
+acceptance_capital_australian_desert = {
+	potential = {
+		capital_scope = {
+			culture = australian_desert
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = australian_desert
+				primary_culture = australian_desert
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = australian_desert
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = australian_desert
+	}
+}
+acceptance_capital_australian_north = {
+	potential = {
+		capital_scope = {
+			culture = australian_north
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = australian_north
+				primary_culture = australian_north
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = australian_north
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = australian_north
+	}
+}
+acceptance_capital_australian_northeast = {
+	potential = {
+		capital_scope = {
+			culture = australian_northeast
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = australian_northeast
+				primary_culture = australian_northeast
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = australian_northeast
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = australian_northeast
+	}
+}
+acceptance_capital_australian_southwest = {
+	potential = {
+		capital_scope = {
+			culture = australian_southwest
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = australian_southwest
+				primary_culture = australian_southwest
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = australian_southwest
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = australian_southwest
 	}
 }
 acceptance_capital_zapotec = {
@@ -12141,6 +14253,3526 @@ acceptance_capital_native_american_minor = {
 	effect = {
 		prestige = 1
 		add_accepted_culture = native_american_minor
+	}
+}
+acceptance_capital_alutiiq = {
+	potential = {
+		capital_scope = {
+			culture = alutiiq
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = alutiiq
+				primary_culture = alutiiq
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = alutiiq
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = alutiiq
+	}
+}
+acceptance_capital_apache = {
+	potential = {
+		capital_scope = {
+			culture = apache
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = apache
+				primary_culture = apache
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = apache
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = apache
+	}
+}
+acceptance_capital_assiniboine = {
+	potential = {
+		capital_scope = {
+			culture = assiniboine
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = assiniboine
+				primary_culture = assiniboine
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = assiniboine
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = assiniboine
+	}
+}
+acceptance_capital_blackfoot = {
+	potential = {
+		capital_scope = {
+			culture = blackfoot
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = blackfoot
+				primary_culture = blackfoot
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = blackfoot
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = blackfoot
+	}
+}
+acceptance_capital_caddo = {
+	potential = {
+		capital_scope = {
+			culture = caddo
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = caddo
+				primary_culture = caddo
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = caddo
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = caddo
+	}
+}
+acceptance_capital_cheyenne_arapaho = {
+	potential = {
+		capital_scope = {
+			culture = cheyenne_arapaho
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = cheyenne_arapaho
+				primary_culture = cheyenne_arapaho
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = cheyenne_arapaho
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = cheyenne_arapaho
+	}
+}
+acceptance_capital_chinook = {
+	potential = {
+		capital_scope = {
+			culture = chinook
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = chinook
+				primary_culture = chinook
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = chinook
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = chinook
+	}
+}
+acceptance_capital_chumash_tongva = {
+	potential = {
+		capital_scope = {
+			culture = chumash_tongva
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = chumash_tongva
+				primary_culture = chumash_tongva
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = chumash_tongva
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = chumash_tongva
+	}
+}
+acceptance_capital_coahuiltecan = {
+	potential = {
+		capital_scope = {
+			culture = coahuiltecan
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = coahuiltecan
+				primary_culture = coahuiltecan
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = coahuiltecan
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = coahuiltecan
+	}
+}
+acceptance_capital_comanche = {
+	potential = {
+		capital_scope = {
+			culture = comanche
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = comanche
+				primary_culture = comanche
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = comanche
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = comanche
+	}
+}
+acceptance_capital_cora_huichol = {
+	potential = {
+		capital_scope = {
+			culture = cora_huichol
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = cora_huichol
+				primary_culture = cora_huichol
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = cora_huichol
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = cora_huichol
+	}
+}
+acceptance_capital_crow = {
+	potential = {
+		capital_scope = {
+			culture = crow
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = crow
+				primary_culture = crow
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = crow
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = crow
+	}
+}
+acceptance_capital_dene = {
+	potential = {
+		capital_scope = {
+			culture = dene
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = dene
+				primary_culture = dene
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = dene
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = dene
+	}
+}
+acceptance_capital_embera_wounaan = {
+	potential = {
+		capital_scope = {
+			culture = embera_wounaan
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = embera_wounaan
+				primary_culture = embera_wounaan
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = embera_wounaan
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = embera_wounaan
+	}
+}
+acceptance_capital_huastec = {
+	potential = {
+		capital_scope = {
+			culture = huastec
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = huastec
+				primary_culture = huastec
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = huastec
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = huastec
+	}
+}
+acceptance_capital_kiowa = {
+	potential = {
+		capital_scope = {
+			culture = kiowa
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = kiowa
+				primary_culture = kiowa
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = kiowa
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = kiowa
+	}
+}
+acceptance_capital_klamath = {
+	potential = {
+		capital_scope = {
+			culture = klamath
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = klamath
+				primary_culture = klamath
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = klamath
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = klamath
+	}
+}
+acceptance_capital_kumeyaay = {
+	potential = {
+		capital_scope = {
+			culture = kumeyaay
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = kumeyaay
+				primary_culture = kumeyaay
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = kumeyaay
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = kumeyaay
+	}
+}
+acceptance_capital_muisca = {
+	potential = {
+		capital_scope = {
+			culture = muisca
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = muisca
+				primary_culture = muisca
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = muisca
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = muisca
+	}
+}
+acceptance_capital_muscogee = {
+	potential = {
+		capital_scope = {
+			culture = muscogee
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = muscogee
+				primary_culture = muscogee
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = muscogee
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = muscogee
+	}
+}
+acceptance_capital_ohlone_miwok = {
+	potential = {
+		capital_scope = {
+			culture = ohlone_miwok
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = ohlone_miwok
+				primary_culture = ohlone_miwok
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = ohlone_miwok
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = ohlone_miwok
+	}
+}
+acceptance_capital_ojibwe = {
+	potential = {
+		capital_scope = {
+			culture = ojibwe
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = ojibwe
+				primary_culture = ojibwe
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = ojibwe
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = ojibwe
+	}
+}
+acceptance_capital_oodham = {
+	potential = {
+		capital_scope = {
+			culture = oodham
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = oodham
+				primary_culture = oodham
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = oodham
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = oodham
+	}
+}
+acceptance_capital_osage = {
+	potential = {
+		capital_scope = {
+			culture = osage
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = osage
+				primary_culture = osage
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = osage
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = osage
+	}
+}
+acceptance_capital_paiute = {
+	potential = {
+		capital_scope = {
+			culture = paiute
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = paiute
+				primary_culture = paiute
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = paiute
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = paiute
+	}
+}
+acceptance_capital_pawnee = {
+	potential = {
+		capital_scope = {
+			culture = pawnee
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = pawnee
+				primary_culture = pawnee
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = pawnee
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = pawnee
+	}
+}
+acceptance_capital_raramuri = {
+	potential = {
+		capital_scope = {
+			culture = raramuri
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = raramuri
+				primary_culture = raramuri
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = raramuri
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = raramuri
+	}
+}
+acceptance_capital_sahaptin = {
+	potential = {
+		capital_scope = {
+			culture = sahaptin
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = sahaptin
+				primary_culture = sahaptin
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = sahaptin
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = sahaptin
+	}
+}
+acceptance_capital_salish = {
+	potential = {
+		capital_scope = {
+			culture = salish
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = salish
+				primary_culture = salish
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = salish
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = salish
+	}
+}
+acceptance_capital_seminole = {
+	potential = {
+		capital_scope = {
+			culture = seminole
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = seminole
+				primary_culture = seminole
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = seminole
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = seminole
+	}
+}
+acceptance_capital_shoshone = {
+	potential = {
+		capital_scope = {
+			culture = shoshone
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = shoshone
+				primary_culture = shoshone
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = shoshone
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = shoshone
+	}
+}
+acceptance_capital_tlingit = {
+	potential = {
+		capital_scope = {
+			culture = tlingit
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = tlingit
+				primary_culture = tlingit
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = tlingit
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = tlingit
+	}
+}
+acceptance_capital_totonac = {
+	potential = {
+		capital_scope = {
+			culture = totonac
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = totonac
+				primary_culture = totonac
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = totonac
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = totonac
+	}
+}
+acceptance_capital_tsimshian = {
+	potential = {
+		capital_scope = {
+			culture = tsimshian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = tsimshian
+				primary_culture = tsimshian
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = tsimshian
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = tsimshian
+	}
+}
+acceptance_capital_ute = {
+	potential = {
+		capital_scope = {
+			culture = ute
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = ute
+				primary_culture = ute
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = ute
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = ute
+	}
+}
+acceptance_capital_wakashan = {
+	potential = {
+		capital_scope = {
+			culture = wakashan
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = wakashan
+				primary_culture = wakashan
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = wakashan
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = wakashan
+	}
+}
+acceptance_capital_yaqui_mayo = {
+	potential = {
+		capital_scope = {
+			culture = yaqui_mayo
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = yaqui_mayo
+				primary_culture = yaqui_mayo
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = yaqui_mayo
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = yaqui_mayo
+	}
+}
+acceptance_capital_yokuts = {
+	potential = {
+		capital_scope = {
+			culture = yokuts
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = yokuts
+				primary_culture = yokuts
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = yokuts
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = yokuts
+	}
+}
+acceptance_capital_yupik = {
+	potential = {
+		capital_scope = {
+			culture = yupik
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = yupik
+				primary_culture = yupik
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = yupik
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = yupik
+	}
+}
+acceptance_capital_yurok_hupa = {
+	potential = {
+		capital_scope = {
+			culture = yurok_hupa
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = yurok_hupa
+				primary_culture = yurok_hupa
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = yurok_hupa
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = yurok_hupa
 	}
 }
 acceptance_capital_yankee = {
@@ -16279,6 +21911,1678 @@ acceptance_capital_yoruba = {
 		add_accepted_culture = yoruba
 	}
 }
+acceptance_capital_bariba = {
+	potential = {
+		capital_scope = {
+			culture = bariba
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = bariba
+				primary_culture = bariba
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = bariba
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = bariba
+	}
+}
+acceptance_capital_cape_verdean = {
+	potential = {
+		capital_scope = {
+			culture = cape_verdean
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = cape_verdean
+				primary_culture = cape_verdean
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = cape_verdean
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = cape_verdean
+	}
+}
+acceptance_capital_dagomba = {
+	potential = {
+		capital_scope = {
+			culture = dagomba
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = dagomba
+				primary_culture = dagomba
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = dagomba
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = dagomba
+	}
+}
+acceptance_capital_dogon = {
+	potential = {
+		capital_scope = {
+			culture = dogon
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = dogon
+				primary_culture = dogon
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = dogon
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = dogon
+	}
+}
+acceptance_capital_gbagyi = {
+	potential = {
+		capital_scope = {
+			culture = gbagyi
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = gbagyi
+				primary_culture = gbagyi
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = gbagyi
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = gbagyi
+	}
+}
+acceptance_capital_igala = {
+	potential = {
+		capital_scope = {
+			culture = igala
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = igala
+				primary_culture = igala
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = igala
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = igala
+	}
+}
+acceptance_capital_ijaw = {
+	potential = {
+		capital_scope = {
+			culture = ijaw
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = ijaw
+				primary_culture = ijaw
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = ijaw
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = ijaw
+	}
+}
+acceptance_capital_jola = {
+	potential = {
+		capital_scope = {
+			culture = jola
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = jola
+				primary_culture = jola
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = jola
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = jola
+	}
+}
+acceptance_capital_kabye_tem = {
+	potential = {
+		capital_scope = {
+			culture = kabye_tem
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = kabye_tem
+				primary_culture = kabye_tem
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = kabye_tem
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = kabye_tem
+	}
+}
+acceptance_capital_kpelle = {
+	potential = {
+		capital_scope = {
+			culture = kpelle
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = kpelle
+				primary_culture = kpelle
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = kpelle
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = kpelle
+	}
+}
+acceptance_capital_krio = {
+	potential = {
+		capital_scope = {
+			culture = krio
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = krio
+				primary_culture = krio
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = krio
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = krio
+	}
+}
+acceptance_capital_lobi = {
+	potential = {
+		capital_scope = {
+			culture = lobi
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = lobi
+				primary_culture = lobi
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = lobi
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = lobi
+	}
+}
+acceptance_capital_mende = {
+	potential = {
+		capital_scope = {
+			culture = mende
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = mende
+				primary_culture = mende
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = mende
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = mende
+	}
+}
+acceptance_capital_nupe = {
+	potential = {
+		capital_scope = {
+			culture = nupe
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = nupe
+				primary_culture = nupe
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = nupe
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = nupe
+	}
+}
+acceptance_capital_papel_balanta = {
+	potential = {
+		capital_scope = {
+			culture = papel_balanta
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = papel_balanta
+				primary_culture = papel_balanta
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = papel_balanta
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = papel_balanta
+	}
+}
+acceptance_capital_plateau_peoples = {
+	potential = {
+		capital_scope = {
+			culture = plateau_peoples
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = plateau_peoples
+				primary_culture = plateau_peoples
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = plateau_peoples
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = plateau_peoples
+	}
+}
+acceptance_capital_serer = {
+	potential = {
+		capital_scope = {
+			culture = serer
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = serer
+				primary_culture = serer
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = serer
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = serer
+	}
+}
+acceptance_capital_susu = {
+	potential = {
+		capital_scope = {
+			culture = susu
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = susu
+				primary_culture = susu
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = susu
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = susu
+	}
+}
+acceptance_capital_temne_limba = {
+	potential = {
+		capital_scope = {
+			culture = temne_limba
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = temne_limba
+				primary_culture = temne_limba
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = temne_limba
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = temne_limba
+	}
+}
 acceptance_capital_bakongo = {
 	potential = {
 		capital_scope = {
@@ -17157,6 +24461,1414 @@ acceptance_capital_african_minor = {
 	effect = {
 		prestige = 1
 		add_accepted_culture = african_minor
+	}
+}
+acceptance_capital_adamawa_peoples = {
+	potential = {
+		capital_scope = {
+			culture = adamawa_peoples
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = adamawa_peoples
+				primary_culture = adamawa_peoples
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = adamawa_peoples
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = adamawa_peoples
+	}
+}
+acceptance_capital_bamileke = {
+	potential = {
+		capital_scope = {
+			culture = bamileke
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = bamileke
+				primary_culture = bamileke
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = bamileke
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = bamileke
+	}
+}
+acceptance_capital_banda = {
+	potential = {
+		capital_scope = {
+			culture = banda
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = banda
+				primary_culture = banda
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = banda
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = banda
+	}
+}
+acceptance_capital_beti_bulu = {
+	potential = {
+		capital_scope = {
+			culture = beti_bulu
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = beti_bulu
+				primary_culture = beti_bulu
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = beti_bulu
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = beti_bulu
+	}
+}
+acceptance_capital_duala = {
+	potential = {
+		capital_scope = {
+			culture = duala
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = duala
+				primary_culture = duala
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = duala
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = duala
+	}
+}
+acceptance_capital_gbaya = {
+	potential = {
+		capital_scope = {
+			culture = gbaya
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = gbaya
+				primary_culture = gbaya
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = gbaya
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = gbaya
+	}
+}
+acceptance_capital_grassfields = {
+	potential = {
+		capital_scope = {
+			culture = grassfields
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = grassfields
+				primary_culture = grassfields
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = grassfields
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = grassfields
+	}
+}
+acceptance_capital_kuba = {
+	potential = {
+		capital_scope = {
+			culture = kuba
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = kuba
+				primary_culture = kuba
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = kuba
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = kuba
+	}
+}
+acceptance_capital_lega = {
+	potential = {
+		capital_scope = {
+			culture = lega
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = lega
+				primary_culture = lega
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = lega
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = lega
+	}
+}
+acceptance_capital_lokele = {
+	potential = {
+		capital_scope = {
+			culture = lokele
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = lokele
+				primary_culture = lokele
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = lokele
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = lokele
+	}
+}
+acceptance_capital_mandara_peoples = {
+	potential = {
+		capital_scope = {
+			culture = mandara_peoples
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = mandara_peoples
+				primary_culture = mandara_peoples
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = mandara_peoples
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = mandara_peoples
+	}
+}
+acceptance_capital_mangbetu = {
+	potential = {
+		capital_scope = {
+			culture = mangbetu
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = mangbetu
+				primary_culture = mangbetu
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = mangbetu
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = mangbetu
+	}
+}
+acceptance_capital_massa = {
+	potential = {
+		capital_scope = {
+			culture = massa
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = massa
+				primary_culture = massa
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = massa
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = massa
+	}
+}
+acceptance_capital_punu_kota = {
+	potential = {
+		capital_scope = {
+			culture = punu_kota
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = punu_kota
+				primary_culture = punu_kota
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = punu_kota
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = punu_kota
+	}
+}
+acceptance_capital_sao_tomean = {
+	potential = {
+		capital_scope = {
+			culture = sao_tomean
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = sao_tomean
+				primary_culture = sao_tomean
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = sao_tomean
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = sao_tomean
+	}
+}
+acceptance_capital_teke = {
+	potential = {
+		capital_scope = {
+			culture = teke
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = teke
+				primary_culture = teke
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = teke
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = teke
 	}
 }
 acceptance_capital_amhara = {
@@ -19095,6 +27807,1678 @@ acceptance_capital_unyamwezi = {
 		add_accepted_culture = unyamwezi
 	}
 }
+acceptance_capital_banyankole = {
+	potential = {
+		capital_scope = {
+			culture = banyankole
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = banyankole
+				primary_culture = banyankole
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = banyankole
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = banyankole
+	}
+}
+acceptance_capital_banyoro = {
+	potential = {
+		capital_scope = {
+			culture = banyoro
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = banyoro
+				primary_culture = banyoro
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = banyoro
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = banyoro
+	}
+}
+acceptance_capital_basoga = {
+	potential = {
+		capital_scope = {
+			culture = basoga
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = basoga
+				primary_culture = basoga
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = basoga
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = basoga
+	}
+}
+acceptance_capital_borana_gabra = {
+	potential = {
+		capital_scope = {
+			culture = borana_gabra
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = borana_gabra
+				primary_culture = borana_gabra
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = borana_gabra
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = borana_gabra
+	}
+}
+acceptance_capital_chagga = {
+	potential = {
+		capital_scope = {
+			culture = chagga
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = chagga
+				primary_culture = chagga
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = chagga
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = chagga
+	}
+}
+acceptance_capital_chagossian = {
+	potential = {
+		capital_scope = {
+			culture = chagossian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = chagossian
+				primary_culture = chagossian
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = chagossian
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = chagossian
+	}
+}
+acceptance_capital_comorian = {
+	potential = {
+		capital_scope = {
+			culture = comorian
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = comorian
+				primary_culture = comorian
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = comorian
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = comorian
+	}
+}
+acceptance_capital_ha = {
+	potential = {
+		capital_scope = {
+			culture = ha
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = ha
+				primary_culture = ha
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = ha
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = ha
+	}
+}
+acceptance_capital_harari = {
+	potential = {
+		capital_scope = {
+			culture = harari
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = harari
+				primary_culture = harari
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = harari
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = harari
+	}
+}
+acceptance_capital_hehe_bena = {
+	potential = {
+		capital_scope = {
+			culture = hehe_bena
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = hehe_bena
+				primary_culture = hehe_bena
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = hehe_bena
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = hehe_bena
+	}
+}
+acceptance_capital_kafa = {
+	potential = {
+		capital_scope = {
+			culture = kafa
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = kafa
+				primary_culture = kafa
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = kafa
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = kafa
+	}
+}
+acceptance_capital_kalenjin = {
+	potential = {
+		capital_scope = {
+			culture = kalenjin
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = kalenjin
+				primary_culture = kalenjin
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = kalenjin
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = kalenjin
+	}
+}
+acceptance_capital_luguru_zaramo = {
+	potential = {
+		capital_scope = {
+			culture = luguru_zaramo
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = luguru_zaramo
+				primary_culture = luguru_zaramo
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = luguru_zaramo
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = luguru_zaramo
+	}
+}
+acceptance_capital_makonde = {
+	potential = {
+		capital_scope = {
+			culture = makonde
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = makonde
+				primary_culture = makonde
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = makonde
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = makonde
+	}
+}
+acceptance_capital_mascarene_creole = {
+	potential = {
+		capital_scope = {
+			culture = mascarene_creole
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = mascarene_creole
+				primary_culture = mascarene_creole
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = mascarene_creole
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = mascarene_creole
+	}
+}
+acceptance_capital_mijikenda = {
+	potential = {
+		capital_scope = {
+			culture = mijikenda
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = mijikenda
+				primary_culture = mijikenda
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = mijikenda
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = mijikenda
+	}
+}
+acceptance_capital_seychellois = {
+	potential = {
+		capital_scope = {
+			culture = seychellois
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = seychellois
+				primary_culture = seychellois
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = seychellois
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = seychellois
+	}
+}
+acceptance_capital_shilluk = {
+	potential = {
+		capital_scope = {
+			culture = shilluk
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = shilluk
+				primary_culture = shilluk
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = shilluk
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = shilluk
+	}
+}
+acceptance_capital_turkana = {
+	potential = {
+		capital_scope = {
+			culture = turkana
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = turkana
+				primary_culture = turkana
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = turkana
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = turkana
+	}
+}
 acceptance_capital_chewa = {
 	potential = {
 		capital_scope = {
@@ -20501,6 +30885,622 @@ acceptance_capital_zulu = {
 	effect = {
 		prestige = 1
 		add_accepted_culture = zulu
+	}
+}
+acceptance_capital_bemba = {
+	potential = {
+		capital_scope = {
+			culture = bemba
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = bemba
+				primary_culture = bemba
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = bemba
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = bemba
+	}
+}
+acceptance_capital_chokwe = {
+	potential = {
+		capital_scope = {
+			culture = chokwe
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = chokwe
+				primary_culture = chokwe
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = chokwe
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = chokwe
+	}
+}
+acceptance_capital_kaonde = {
+	potential = {
+		capital_scope = {
+			culture = kaonde
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = kaonde
+				primary_culture = kaonde
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = kaonde
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = kaonde
+	}
+}
+acceptance_capital_lozi = {
+	potential = {
+		capital_scope = {
+			culture = lozi
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = lozi
+				primary_culture = lozi
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = lozi
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = lozi
+	}
+}
+acceptance_capital_mbundu = {
+	potential = {
+		capital_scope = {
+			culture = mbundu
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = mbundu
+				primary_culture = mbundu
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = mbundu
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = mbundu
+	}
+}
+acceptance_capital_ovambo = {
+	potential = {
+		capital_scope = {
+			culture = ovambo
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = ovambo
+				primary_culture = ovambo
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = ovambo
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = ovambo
+	}
+}
+acceptance_capital_venda = {
+	potential = {
+		capital_scope = {
+			culture = venda
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = south_america
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				accepted_culture = venda
+				primary_culture = venda
+				AND = {
+					primary_culture = british
+					OR = {
+						tag = D01
+						tag = D02
+						tag = D03
+						tag = D04
+						tag = D05
+						tag = D06
+						tag = D07
+						tag = D08
+						tag = D09
+						tag = D10
+						tag = D11
+						tag = D12
+						tag = D13
+						tag = D14
+						tag = D15
+						tag = D16
+						tag = D17
+						tag = D18
+						tag = D19
+						tag = D20
+						tag = D21
+						tag = D22
+						tag = D23
+						tag = D24
+						tag = D25
+						tag = D26
+						tag = D27
+						tag = D28
+						tag = D29
+						tag = D30
+						tag = D31
+						tag = D32
+						tag = D33
+						tag = D34
+						tag = D35
+						tag = D36
+						tag = D37
+						tag = D38
+						tag = D39
+						tag = D40
+						tag = D41
+						tag = D42
+						tag = D43
+						tag = D44
+						tag = D45
+						tag = D46
+						tag = D47
+						tag = D48
+						tag = D49
+						tag = D50
+					}
+				}
+			}
+		}
+	}
+	allow = {
+		NOT = {
+			citizenship_policy = residency
+		}
+		capital_scope = {
+			culture = venda
+			total_pops = 20000
+		}
+	}
+	effect = {
+		prestige = 1
+		add_accepted_culture = venda
 	}
 }
 acceptance_capital_polar_bears = {

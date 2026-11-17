@@ -331,6 +331,7 @@ province_event = {
 				culture = mashriqi
 				culture = bedouin
 				culture = berber
+				culture = socotri
 			}
 		}
 		ARA = {
@@ -349,6 +350,7 @@ province_event = {
 						culture = mashriqi
 						culture = bedouin
 						culture = berber
+						culture = socotri
 					}
 				}
 			}
@@ -3445,7 +3447,7 @@ province_event = {
 	trigger = {
 		is_core = GBS
 		NOT = {
-			culture = african_minor
+			culture = papel_balanta
 		}
 		GBS = {
 			exists = no
@@ -3457,7 +3459,7 @@ province_event = {
 					is_core = GBS
 				}
 				NOT = {
-					culture = african_minor
+					culture = papel_balanta
 				}
 			}
 		}
@@ -4175,6 +4177,11 @@ province_event = {
 				culture = malayalam
 				culture = tamil
 				culture = telegu
+				culture = andamanese
+				culture = dhivehi
+				culture = gond
+				culture = khond
+				culture = tripuri
 			}
 		}
 		HND = {
@@ -4207,6 +4214,11 @@ province_event = {
 						culture = malayalam
 						culture = tamil
 						culture = telegu
+						culture = andamanese
+						culture = dhivehi
+						culture = gond
+						culture = khond
+						culture = tripuri
 					}
 				}
 			}
