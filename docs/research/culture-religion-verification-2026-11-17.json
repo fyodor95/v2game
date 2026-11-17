@@ -1,0 +1,447 @@
+{
+  "schema": 1,
+  "date": "2026-11-17",
+  "executable_sha256": "62d48c204364dd706584777c2e2b3c7ab3c5f1dd0170872554943575d53d6648",
+  "production_artifacts": {
+    "creatinecore.dll": {
+      "sha256": "73857f40e2b6cde65fe35efe61db6d3d82ff2af037136f5e099101d50f960068",
+      "bytes": 524800,
+      "machine": "x86"
+    },
+    "dinput8.dll": {
+      "sha256": "7dde89c94507975a9abebf54f0309f37e8eb25c486bc833fe4ce9d21fa4e2ac5",
+      "bytes": 89088,
+      "machine": "x86"
+    },
+    "eventmusic.dll": {
+      "sha256": "66644c0490085f97f8b0e9a7646881bcb2ba784c78566661798a0deac90e53ef",
+      "bytes": 610304,
+      "machine": "x86"
+    },
+    "ccore_script_fixes.dll": {
+      "sha256": "0fd355e28515e4856c71f64fcabbdb0a7870c5ea496a3b16ddd839a361199b4c",
+      "bytes": 574464,
+      "machine": "x86"
+    },
+    "ccore_great_power_culture_cores.dll": {
+      "sha256": "8de512225cf8c581fe547bd22644b75f7daf64bec28df71218d3644d609000c7",
+      "bytes": 289792,
+      "machine": "x86"
+    },
+    "ccore_state_religion_ui.dll": {
+      "sha256": "2d01a87d835c0853e8f113b7fa74061028bb4c1adba7ece056dabef4ad58ad63",
+      "bytes": 858112,
+      "machine": "x86"
+    },
+    "great_power_culture_cores.ini": {
+      "sha256": "5cb968b815c63544f4a81928e55609795723b9e1442bff4a36bb1d2fb5fac359",
+      "bytes": 341
+    },
+    "events/great_power_culture_cores.txt": {
+      "sha256": "83c9e46505b1f7c15bac11d8ab6d931ae1d19d560a51da8aebc24852f52ff250",
+      "bytes": 291
+    },
+    "localisation/great_power_culture_cores.csv": {
+      "sha256": "07f1a61900d080b43f81832d6ca7cbfe6f9df37fb312b270905880b44550a246",
+      "bytes": 273
+    },
+    "interface/country_politics.gui": {
+      "sha256": "5cada36b01f8ecdbe03f7ecccbdfb81fdd4aed2cdf831d35e75f9833c76b7a98",
+      "bytes": 49786
+    },
+    "localisation/country_state_religion.csv": {
+      "sha256": "68cc55751e5e44eba3bf26a38572f3149dc75a67d3cebe4e18fc9bb54965af76",
+      "bytes": 1083
+    }
+  },
+  "autogen_commit": "daa545e",
+  "generation": {
+    "ok": true,
+    "files": 4843,
+    "changed": [
+      "decisions/peaceful_settlement_PAN.txt",
+      "decisions/peaceful_settlement_PHI.txt",
+      "events/adding_cores.txt",
+      "events/removing_cores.txt",
+      "events/super_nationalism.txt"
+    ],
+    "generator": "D:\\v2game\\.work\\culture-religion-autogen\\build\\x64\\Release\\run_program.exe",
+    "generator_sha256": "a8de053b669c536e792eea396d21d3d03f9446d07458e58e8164446cc88af40b"
+  },
+  "model": {
+    "cultures": 359,
+    "new_cultures": 125,
+    "pairs1836": 498,
+    "pairs1861": 492,
+    "first": 744,
+    "spread": 1124,
+    "dynamic_assignments": 371
+  },
+  "checks": {
+    "registry": {
+      "ok": true
+    },
+    "effect_weighted": {
+      "ok": true
+    },
+    "effect_ties_gui": {
+      "ok": true
+    },
+    "decision": {
+      "ok": true
+    },
+    "core_cases": {
+      "ok": true
+    },
+    "lifecycle": {
+      "ok": true
+    },
+    "british_decision": {
+      "ok": true
+    },
+    "natural": {
+      "ok": true
+    },
+    "culture_gui": {
+      "ok": true
+    },
+    "mp": {
+      "ok": true
+    },
+    "mp_proof": {
+      "ok": true
+    },
+    "benchmark": {
+      "ok": true
+    },
+    "save_compatibility": {
+      "ok": true
+    },
+    "reserved_country_scopes": {
+      "ok": true,
+      "source": "lifecycle-result-02.json",
+      "scope": "?????? ??????????? phi/pan; ????? stale-??????02 ?? ????????? ????????"
+    },
+    "python_units": {
+      "culture_religion": 77,
+      "vic2test": 123,
+      "vic2test_skipped": 1,
+      "benchmark": 10,
+      "install": 15
+    }
+  },
+  "sp_cases": [
+    "new",
+    "old",
+    "union",
+    "dynamic",
+    "controller",
+    "culture",
+    "exists",
+    "foreign",
+    "accepted",
+    "guard",
+    "religion",
+    "state_religion",
+    "civilization"
+  ],
+  "lifecycle_cases": [
+    "phi",
+    "pan",
+    "stale",
+    "reuse",
+    "formation",
+    "british_decision"
+  ],
+  "natural": {
+    "event": 24495,
+    "found_day": 34,
+    "accelerated_only": true
+  },
+  "mp": {
+    "physical_input": false,
+    "date_raw": 59884176,
+    "expected": {
+      "D45": {
+        "primary": "aborigine",
+        "religion": "animist"
+      },
+      "D50": {
+        "primary": "north_german",
+        "religion": "catholic"
+      }
+    },
+    "gpc_passes": 17,
+    "sync_dates": [
+      "1836-01-01 00:00",
+      "1836-01-02 00:00",
+      "1836-01-03 00:00",
+      "1836-01-04 00:00",
+      "1836-01-05 00:00",
+      "1836-01-06 00:00",
+      "1836-01-07 00:00",
+      "1836-01-08 00:00",
+      "1836-01-09 00:00",
+      "1836-01-10 00:00",
+      "1836-01-11 00:00",
+      "1836-01-12 00:00",
+      "1836-01-13 00:00",
+      "1836-01-14 00:00",
+      "1836-01-15 00:00",
+      "1836-01-16 00:00",
+      "1836-01-17 00:00",
+      "1836-01-18 00:00",
+      "1836-01-19 00:00",
+      "1836-01-20 00:00",
+      "1836-01-21 00:00",
+      "1836-01-22 00:00",
+      "1836-01-23 00:00",
+      "1836-01-24 00:00",
+      "1836-01-25 00:00",
+      "1836-01-26 00:00",
+      "1836-01-27 00:00",
+      "1836-01-28 00:00",
+      "1836-01-29 00:00",
+      "1836-01-30 00:00",
+      "1836-01-31 00:00",
+      "1836-02-01 00:00",
+      "1836-02-02 00:00",
+      "1836-02-03 00:00"
+    ],
+    "saved": {
+      "path": "D:\\v2game\\.work\\culture-religion\\mp-host\\userdata\\save games\\crmp_4a8d045a.v2",
+      "sha256": "c196152fb95ea3c113dfc240a22f44329614f9fa6cc90d83c12b1b9837eedb20",
+      "size": 23113373
+    },
+    "proof_complete": true,
+    "test_always": true
+  },
+  "benchmark": {
+    "parameters": {
+      "environment": ".work\\culture-religion\\engine",
+      "old_commit": "9703eb6f4f2fd156897422e816b89f682fe19884",
+      "quote_old_country_scopes": true,
+      "new_events": ".work\\culture-religion\\engine\\game\\events\\adding_cores.txt",
+      "output": ".work\\culture-religion\\benchmark-current-01.json",
+      "saves": [
+        "cr_bench_plain.v2",
+        "cr_bench_rebel.v2"
+      ],
+      "days": 100,
+      "samples": 3,
+      "warmup_days": 33,
+      "rebel_save": "cr_bench_rebel.v2",
+      "rebel_province": 546,
+      "order": "old-new",
+      "visible": true,
+      "dry_run": false,
+      "startup_timeout": 900,
+      "load_timeout": 1200,
+      "advance_timeout": 600,
+      "gpc_enabled": 0
+    },
+    "event_sets": {
+      "old": {
+        "sha256": "dbd0c84b691d339a464ea900707b23452947dfc8771055744c78584757e4000b",
+        "events": 1147
+      },
+      "new": {
+        "sha256": "10db29bb8c1536ac4581a24657db5c098f8c61ef45d05cf7a75a363df31a0959",
+        "events": 1868
+      }
+    },
+    "old_event_source": {
+      "sha256": "bbc2972cbe7ca0b733aa2dc27ccd07651f5f4ad43255ef5cc569e7a8be57224d",
+      "effective_sha256": "dbd0c84b691d339a464ea900707b23452947dfc8771055744c78584757e4000b",
+      "quote_country_scopes": true,
+      "replacements": {
+        "PHI": 3,
+        "PAN": 3
+      },
+      "replacement_count": 6
+    },
+    "comparison": {
+      "cr_bench_plain.v2": {
+        "medians": {
+          "old": {
+            "wall_seconds_per_day": 0.38444782900012797,
+            "cpu_seconds_per_day": 0.42171875
+          },
+          "new": {
+            "wall_seconds_per_day": 0.3956030749998172,
+            "cpu_seconds_per_day": 0.43765625
+          }
+        },
+        "change_percent": {
+          "wall_seconds_per_day": 2.9016280385044,
+          "cpu_seconds_per_day": 3.7791774731382066
+        }
+      },
+      "cr_bench_rebel.v2": {
+        "medians": {
+          "old": {
+            "wall_seconds_per_day": 0.37844352499989325,
+            "cpu_seconds_per_day": 0.42359375
+          },
+          "new": {
+            "wall_seconds_per_day": 0.39959518999996363,
+            "cpu_seconds_per_day": 0.443125
+          }
+        },
+        "change_percent": {
+          "wall_seconds_per_day": 5.589120596019281,
+          "cpu_seconds_per_day": 4.610844706750283
+        }
+      }
+    },
+    "samples": [
+      {
+        "mode": "old",
+        "save": "cr_bench_plain.v2",
+        "index": 1,
+        "wall_seconds": 38.869979200011585,
+        "cpu_seconds": 42.484375,
+        "days": 100,
+        "all_events": 2614,
+        "random_events": 2598
+      },
+      {
+        "mode": "old",
+        "save": "cr_bench_plain.v2",
+        "index": 2,
+        "wall_seconds": 38.4447829000128,
+        "cpu_seconds": 42.171875,
+        "days": 100,
+        "all_events": 2614,
+        "random_events": 2598
+      },
+      {
+        "mode": "old",
+        "save": "cr_bench_plain.v2",
+        "index": 3,
+        "wall_seconds": 37.10422430001199,
+        "cpu_seconds": 41.515625,
+        "days": 100,
+        "all_events": 2614,
+        "random_events": 2598
+      },
+      {
+        "mode": "old",
+        "save": "cr_bench_rebel.v2",
+        "index": 1,
+        "wall_seconds": 37.69943509998848,
+        "cpu_seconds": 42.796875,
+        "days": 100,
+        "all_events": 2614,
+        "random_events": 2598
+      },
+      {
+        "mode": "old",
+        "save": "cr_bench_rebel.v2",
+        "index": 2,
+        "wall_seconds": 37.84435249998933,
+        "cpu_seconds": 42.34375,
+        "days": 100,
+        "all_events": 2614,
+        "random_events": 2598
+      },
+      {
+        "mode": "old",
+        "save": "cr_bench_rebel.v2",
+        "index": 3,
+        "wall_seconds": 38.38810999999987,
+        "cpu_seconds": 42.359375,
+        "days": 100,
+        "all_events": 2614,
+        "random_events": 2598
+      },
+      {
+        "mode": "new",
+        "save": "cr_bench_plain.v2",
+        "index": 1,
+        "wall_seconds": 39.56030749998172,
+        "cpu_seconds": 43.765625,
+        "days": 100,
+        "all_events": 3335,
+        "random_events": 3319
+      },
+      {
+        "mode": "new",
+        "save": "cr_bench_plain.v2",
+        "index": 2,
+        "wall_seconds": 39.17130799998995,
+        "cpu_seconds": 43.109375,
+        "days": 100,
+        "all_events": 3335,
+        "random_events": 3319
+      },
+      {
+        "mode": "new",
+        "save": "cr_bench_plain.v2",
+        "index": 3,
+        "wall_seconds": 39.912995599996066,
+        "cpu_seconds": 44.109375,
+        "days": 100,
+        "all_events": 3335,
+        "random_events": 3319
+      },
+      {
+        "mode": "new",
+        "save": "cr_bench_rebel.v2",
+        "index": 1,
+        "wall_seconds": 39.95951899999636,
+        "cpu_seconds": 44.3125,
+        "days": 100,
+        "all_events": 3335,
+        "random_events": 3319
+      },
+      {
+        "mode": "new",
+        "save": "cr_bench_rebel.v2",
+        "index": 2,
+        "wall_seconds": 40.324393299990334,
+        "cpu_seconds": 44.34375,
+        "days": 100,
+        "all_events": 3335,
+        "random_events": 3319
+      },
+      {
+        "mode": "new",
+        "save": "cr_bench_rebel.v2",
+        "index": 3,
+        "wall_seconds": 39.81825609999942,
+        "cpu_seconds": 43.1875,
+        "days": 100,
+        "all_events": 3335,
+        "random_events": 3319
+      }
+    ]
+  },
+  "culture_gui": {
+    "reviewed": true,
+    "frames": [
+      {
+        "path": "D:\\v2game\\.work\\culture-religion\\culture-map-02\\00-loaded.png",
+        "sha256": "76db609d289e565de9a9da9be4a1691f382323a426ebdedc571000e70e2dc4f1"
+      },
+      {
+        "path": "D:\\v2game\\.work\\culture-religion\\culture-map-02\\01-nationality.png",
+        "sha256": "a4429ee24aad476a2167ef15af8f4e7e163ef2606708df7d713a49c0b47b2dba"
+      },
+      {
+        "path": "D:\\v2game\\.work\\culture-religion\\culture-map-02\\02-africa.png",
+        "sha256": "0a463f54371b39d6df4b44956f436dad4737e5726522213061cbeb772398149b"
+      },
+      {
+        "path": "D:\\v2game\\.work\\culture-religion\\culture-map-02\\03-wide.png",
+        "sha256": "d15b0b2461e9b4a2ff062329f04fb0cb170af0a59c6f9185e44127a7ae446539"
+      }
+    ]
+  },
+  "population_review": {
+    "source_bytes_conserved_except_culture": true,
+    "native_initialization_exact_match": false,
+    "details": "population-validation.json; population-baseline-comparison.json"
+  },
+  "artifact_root": ".work/culture-religion"
+}
