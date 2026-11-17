@@ -17,10 +17,40 @@ def fingerprint(files):
 def arguments(root):
     return argparse.Namespace(environment=root / 'environment', output=root / 'report.json',
                               saves=['normal.v2', 'rebels.v2'], samples=3, days=100, dry_run=False,
-                              order='old-new', new_events=root / 'new.txt', visible=False)
+                              order='old-new', new_events=root / 'new.txt', visible=False, warmup_days=33,
+                              rebel_save=None, rebel_province=546)
 
 
 class BenchmarkTests(unittest.TestCase):
+    def test_rebel_control_guard_records_actual_state_and_rejects_retake(self):
+        runner = b.Benchmark(arguments(Path('fixture')))
+        runner.args.rebel_save = 'rebels.v2'
+        process = Mock(pid=123)
+        province = dict(id=546, owner='PRU', controller='REB', candidate_vector={'count': 215})
+        probe = dict(complete=True, province=province, world={'date_raw': 59884152})
+        with patch.object(b, 'session', return_value={}), patch.object(b.native_event_probe, 'capture', return_value=probe) as capture:
+            self.assertIsNone(runner.rebel_control(process, 'normal.v2'))
+            capture.assert_not_called()
+            self.assertEqual(runner.rebel_control(process, 'rebels.v2')['controller'], 'REB')
+            province['controller'] = 'PRU'
+            with self.assertRaisesRegex(b.BenchmarkError, 'повстанцами'):
+                runner.rebel_control(process, 'rebels.v2')
+
+    def test_empty_or_unqualified_event_registry_rejects_measurement(self):
+        runner = b.Benchmark(arguments(Path('fixture')))
+        status = dict(ok=True, pid=123, multiplayer=False, campaign_loaded=True, paused=True,
+                      advance_target=0, date_raw=59883360, auto_events_selected=0,
+                      all_province_events=2362, random_province_events=2343)
+        gpc = dict(ok=True, installed=True, enabled=0, failed=0, busy=0)
+        with patch.object(b.cli, 'request', side_effect=[status, gpc]):
+            self.assertEqual(runner.state(Mock(pid=123)), status)
+        for total, random in [(2362, 0), (None, None), (2362, None), (0, 1), (2362, True)]:
+            with self.subTest(total=total, random=random):
+                invalid = dict(status, all_province_events=total, random_province_events=random)
+                with patch.object(b.cli, 'request', side_effect=[invalid, gpc]):
+                    with self.assertRaisesRegex(b.BenchmarkError, 'реестр'):
+                        runner.state(Mock(pid=123))
+
     def test_compact_report_does_not_publish_manifest(self):
         source = fingerprint({'data': b'bytes'})
         result = b.compact(source)

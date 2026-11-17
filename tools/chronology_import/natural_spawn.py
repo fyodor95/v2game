@@ -9,11 +9,56 @@ from pathlib import Path
 import re
 import sys
 import time
+import uuid
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from tools.chronology_import import engine_acceptance as engine
+from tools.chronology_import import native_event_probe
 
-ADVANCE_STEPS = (2, 2, 12, 16)
+ADVANCE_STEPS = (2, 2, 12, 16, 2, 2)
+
+
+def relocate_prussian_armies(raw, province):
+    """Убрать только army.location PRU из повстанческой провинции искусственного сейва."""
+    text = raw.decode('cp1251')
+    country, source, destinations = None, None, {}
+    for node in engine.Spans(text).roots():
+        if node.key == 'PRU':
+            engine.require(country is None, 'Повторный блок PRU')
+            country = node
+        if not node.key or not node.key.isdigit() or not isinstance(node.value, list):
+            continue
+        number = int(node.key)
+        owner, controller = engine.scalar(node, 'owner'), engine.scalar(node, 'controller')
+        if number == province:
+            source = {'owner': owner, 'controller': controller}
+        # У морских провинций нет сухопутного life_rating. Не выбираем просто свободный ID.
+        life_rating = node.single('life_rating')
+        if number != province and owner == controller == 'PRU' and life_rating is not None:
+            destinations[number] = {'owner': owner, 'controller': controller, 'life_rating': life_rating.value}
+    engine.require(country is not None, 'Нет блока PRU')
+    engine.require(source == {'owner': 'PRU', 'controller': 'REB'}, 'Исходная провинция должна принадлежать PRU и контролироваться REB')
+    replacements = []
+    for index, army in enumerate(country.fields('army')):
+        location = army.single('location')
+        if location is not None and location.value == str(province):
+            engine.require(destinations, 'Нет другой сухопутной провинции под владением и контролем PRU')
+            destination = 549 if 549 in destinations else min(destinations)
+            before = text[location.start:location.end]
+            engine.require(before.isascii() and before.isdigit(), 'location армии не является числовым ID')
+            replacements.append({'army_index': index, 'army_name': engine.scalar(army, 'name'),
+                                 'start': location.start, 'end': location.end,
+                                 'before': before, 'after': str(destination)})
+    modified = text
+    for replacement in sorted(replacements, key=lambda value: value['start'], reverse=True):
+        modified = (modified[:replacement['start']] + replacement['after'] +
+                    modified[replacement['end']:])
+    destination = int(replacements[0]['after']) if replacements else None
+    return modified.encode('cp1251'), {
+        'source_province': province, 'destination_province': destination,
+        'destination_validation': destinations[destination] if destination is not None else None,
+        'army_count': len(country.fields('army')), 'moved_army_count': len(replacements),
+        'replacements': replacements, 'offsets': 'Исходные byte offsets CP1251; end не включён'}
 
 
 def accelerate(raw):
@@ -39,8 +84,9 @@ def accelerate(raw):
     mtth = engine.one(target, 'mean_time_to_happen')
     months = engine.one(mtth, 'months')
     engine.require(Decimal(months.value) == 4 * len(candidates), 'Исходный MTTH OBO не равен 4n')
+    engine.require(not mtth.fields('days'), 'В исходном MTTH уже есть days')
     engine.require(not target.fields('is_triggered_only'), 'OBO уже исключено из случайных событий')
-    changes = [(months.start, months.end, '0.01')]
+    changes = [(months.key_start, months.key_end, 'days'), (months.start, months.end, '1')]
     newline = '\r\n' if '\r\n' in text else '\n'
     disabled = []
     for event in first:
@@ -57,7 +103,7 @@ def accelerate(raw):
         patched = patched[:begin] + replacement + patched[end:]
     result = patched.encode('cp1251')
     engine.require(engine.find_events(result)['new'] == source, 'Изменились ID/trigger OBO')
-    return result, {'event': source, 'source_months': months.value, 'test_months': '0.01',
+    return result, {'event': source, 'source_months': months.value, 'test_days': '1',
                     'unique_candidates': sorted(candidates), 'n': len(candidates),
                     'disabled_first_event_ids': disabled, 'source_sha256': engine.sha(raw),
                     'test_sha256': engine.sha(result)}
@@ -114,7 +160,51 @@ class NaturalRunner(engine.Runner):
                        'Нативное условие события не вычислено')
         return {'native_condition': native,
                 'conditions_held': native['potential'] and native['allow'],
+                'actual_event': self.event_condition(manifest),
                 'saved_state': engine.saved_diagnostic_state(saved, game, manifest['province'], 'OBO')}
+
+    def event_condition(self, manifest):
+        event_id = manifest['events']['new']['id']
+        command = f'event-check-province {manifest["province"]} {event_id}'
+        deadline = time.monotonic() + 30
+        while True:
+            result = engine.cli.request(self.environment, command, 15)
+            if result.get('error') != 'E_DAY_BUSY':
+                break
+            # Повторяется только read-only запрос: дата могла измениться до окончания дневной фазы.
+            self.record['steps'].append({'operation': command, 'response': result})
+            self.checkpoint()
+            engine.require(time.monotonic() < deadline, 'Не завершилась дневная фаза перед event-check')
+            time.sleep(.1)
+        self.checked(result, command)
+        engine.require(result.get('read_only') is True and result.get('event_id') == event_id and
+                       result.get('province') == manifest['province'] and type(result.get('trigger')) is bool,
+                       'Не подтверждён native event-check нужного события')
+        return result
+
+    def prepare_save(self, manifest, case):
+        directory = self.environment / 'userdata/save games'
+        source = directory / case['save']
+        engine.require(source.resolve().is_relative_to(directory.resolve()) and source.stat().st_nlink == 1,
+                       'Исходная фикстура не изолирована')
+        original = source.read_bytes()
+        expected = manifest['files']['save games/' + case['save']]['sha256']
+        engine.require(engine.sha(original) == expected, 'Исходная фикстура изменилась после preflight')
+        modified, details = relocate_prussian_armies(original, manifest['province'])
+        stem = 'n' + uuid.uuid4().hex[:12]
+        target = directory / (stem + '.v2')
+        engine.require(len(stem) <= 15 and re.fullmatch('[a-z0-9]+', stem), 'Некорректное имя нового сейва')
+        engine.require(target.resolve().is_relative_to(self.environment) and not target.exists(),
+                       'Целевой сейв не изолирован или уже существует')
+        engine.require(source.read_bytes() == original, 'Исходная фикстура изменилась во время подготовки')
+        with target.open('xb') as stream:
+            stream.write(modified)
+        engine.require(target.stat().st_nlink == 1 and target.read_bytes() == modified, 'Новая копия не подтверждена')
+        engine.require(source.read_bytes() == original, 'Исходная фикстура изменилась после подготовки')
+        self.record['natural_save'] = dict(details, source_path=str(source), source_sha256=expected,
+                                           path=str(target), sha256=engine.sha(modified))
+        self.checkpoint()
+        return target.name
 
     def advance(self, days):
         initial = self.request('status')
@@ -162,6 +252,10 @@ class NaturalRunner(engine.Runner):
             self.record['event_patch'] = details
             self.record['production_sha256'] = engine.cli.digest(production)
             self.record['tool_sources'][str(Path(__file__).relative_to(engine.ROOT))] = engine.cli.digest(Path(__file__))
+            probe_source = Path(native_event_probe.__file__)
+            self.record['tool_sources'][str(probe_source.relative_to(engine.ROOT))] = engine.cli.digest(probe_source)
+            case = next(case for case in manifest['cases'] if case['name'] == 'new')
+            natural_save = self.prepare_save(manifest, case)
             disabled, count = re.subn(rb'(?m)^(\s*ENABLE_GREAT_POWER_CULTURE_CORES\s*=\s*)[01]',
                                       rb'\g<1>0', config.read_bytes())
             engine.require(count == 1, 'Не найден единственный переключатель GPC')
@@ -169,8 +263,7 @@ class NaturalRunner(engine.Runner):
             with temporary_files([(path, modified), (config, disabled)], self.artifacts, self.record):
                 try:
                     self.start_owned(game, previous)
-                    case = next(case for case in manifest['cases'] if case['name'] == 'new')
-                    self.checked(engine.cli.load_campaign(self.environment, case['save'], 1200), 'load ' + case['save'])
+                    self.checked(engine.cli.load_campaign(self.environment, natural_save, 1200), 'load ' + natural_save)
                     engine.require(self.request('culture-cores-status').get('enabled') == 0, 'GPC не отключён')
                     status = self.request('status')
                     engine.require(status.get('paused') is True and status.get('multiplayer') is False,
@@ -179,6 +272,13 @@ class NaturalRunner(engine.Runner):
                     before = engine.core_pairs(self.save(prefix + '_before'))
                     engine.require(not any(tag == 'OBO' for _, tag in before), 'OBO уже имеет корки')
                     self.decision(manifest['events']['new']['decision'], True)
+                    actual = self.event_condition(manifest)
+                    self.record['initial_actual_event'] = actual
+                    self.record['initial_province_cache_empty'] = actual['cached']['count'] == 0
+                    self.checkpoint()
+                    engine.require(actual['trigger'], 'Настоящий trigger события ложен до продвижения')
+                    # Native load может пропустить начальную месячную обработку (world+D10).
+                    # Наблюдаем пустой список, затем проверяем штатный переход месяца.
                     log = game / 'z_CreatineCore/Logs/v2dll.log'
                     offset = log.stat().st_size
                     selected, found, total_selected, day = [], False, 0, 0
@@ -186,8 +286,9 @@ class NaturalRunner(engine.Runner):
                         state = self.advance(step_days)
                         day += step_days
                         total_selected += state.get('auto_events_selected', 0)
-                        if state.get('event_windows') == 0:
-                            self.settle()
+                        # Поздний popup может появиться уже после raw-date остановки.
+                        # Следующий advance-auto выберет его; отдельный decision-barrier
+                        # здесь не нужен: успех доказывают опция в логе и корка в сейве.
                         saved = self.save(prefix + f'_day{day}')
                         after = engine.core_pairs(saved)
                         log_bytes = log.read_bytes()
@@ -216,8 +317,19 @@ class NaturalRunner(engine.Runner):
                     self.record.update(ok=True, complete=True)
                 finally:
                     if self.owned:
-                        self.owned.stop()
-                        self.record['process_stopped'] = True
+                        try:
+                            if not self.record['ok']:
+                                try:
+                                    self.record['native_event_probe'] = native_event_probe.capture(
+                                        self.environment, self.record['session'], self.owned,
+                                        manifest['province'], details['event']['id'])
+                                except BaseException as error:
+                                    self.record['native_event_probe'] = {'complete': False, 'read_only': True,
+                                                                        'errors': [{'type': type(error).__name__, 'message': str(error)}]}
+                                self.checkpoint()
+                        finally:
+                            self.owned.stop()
+                            self.record['process_stopped'] = True
         except BaseException as error:
             self.record.update(ok=False, complete=False)
             self.record['errors'].append({'type': type(error).__name__, 'message': str(error)})

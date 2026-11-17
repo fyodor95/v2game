@@ -581,6 +581,10 @@ def main() -> int:
     scope.add_argument("--province", type=int, help="Номер провинции игрока для province_event")
     p.add_argument("--id", required=True)
     p.add_argument("--option", type=int, help="Номер опции с нуля; поддерживается для события страны игрока")
+    p = commands.add_parser("event-check", help="Проверить настоящее провинциальное событие без запуска")
+    p.add_argument("--environment", type=Path, required=True)
+    p.add_argument("--province", type=int, required=True)
+    p.add_argument("--id", required=True)
     args = parser.parse_args()
     try:
         if args.command == "run":
@@ -663,6 +667,12 @@ def main() -> int:
             if not re.fullmatch(r"[A-Z0-9]{3}", args.tag) or not re.fullmatch(r"[A-Za-z0-9_]{1,500}", args.id):
                 raise ValueError("Неверный тег страны или идентификатор решения")
             command = f"decision-{args.operation} {args.tag} {args.id}"
+        if args.command == "event-check":
+            if not re.fullmatch(r"[0-9]{1,10}", args.id) or not 1 <= int(args.id) <= 2147483647:
+                raise ValueError("Неверный номер события")
+            if not 1 <= args.province <= 99999:
+                raise ValueError("Номер провинции должен находиться в пределах 1..99999")
+            command = f"event-check-province {args.province} {int(args.id)}"
         if args.command == "event":
             if not re.fullmatch(r"[0-9]{1,10}", args.id) or not 1 <= int(args.id) <= 2147483647:
                 raise ValueError("Неверный номер события")

@@ -1,5 +1,6 @@
 """Автономные регрессии подготовки естественного прогона; игра не запускается."""
 import tempfile
+import io
 from pathlib import Path
 import unittest
 from unittest.mock import patch
@@ -10,6 +11,32 @@ from tools.chronology_import.test_engine_acceptance import event
 
 
 class NaturalPreparationTests(unittest.TestCase):
+    def test_moves_only_matching_prussian_army_locations_and_preserves_other_bytes(self):
+        raw = (b'546={owner=PRU controller=REB life_rating=40 farmers={size=100 north_german=protestant}}\r\n'
+               b'549={owner=PRU controller=PRU life_rating=40}\r\n'
+               b'600={owner=PRU controller=REB life_rating=40}\r\n'
+               b'700={owner=PRU controller=PRU}\r\n'
+               b'PRU={army={name="first" location=546 regiment={home=546 location=546}}\r\n'
+               b'army={name="second" location=546 regiment={pop={id=546}}}\r\n'
+               b'army={name="third" location=549} navy={location=546}}\r\n'
+               b'AUS={army={location=546 regiment={home=546}}}\r\n}\r\n')
+        modified, report = subject.relocate_prussian_armies(raw, 546)
+        expected = raw.replace(b'name="first" location=546', b'name="first" location=549')
+        expected = expected.replace(b'name="second" location=546', b'name="second" location=549')
+        self.assertEqual(modified, expected)
+        self.assertEqual(report['army_count'], 3)
+        self.assertEqual(report['moved_army_count'], 2)
+        self.assertEqual(report['destination_province'], 549)
+        for replacement in report['replacements']:
+            self.assertEqual(raw[replacement['start']:replacement['end']], b'546')
+        no_target = raw.replace(b'549={owner=PRU controller=PRU life_rating=40}',
+                                b'549={owner=PRU controller=AUS life_rating=40}')
+        with self.assertRaisesRegex(ValueError, 'сухопутной'):
+            subject.relocate_prussian_armies(no_target, 546)
+        with self.assertRaisesRegex(ValueError, 'контролироваться REB'):
+            subject.relocate_prussian_armies(raw.replace(b'546={owner=PRU controller=REB',
+                                                        b'546={owner=PRU controller=PRU'), 546)
+
     def test_observes_false_allow_and_actual_lost_rebel_control_without_failing(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -24,6 +51,7 @@ class NaturalPreparationTests(unittest.TestCase):
                              'OBO={primary_culture="north_german" culture={}}\n}\n')
             runner = object.__new__(subject.NaturalRunner)
             runner.request = Mock(return_value={'ok': True, 'potential': True, 'allow': False})
+            runner.event_condition = Mock(return_value={'trigger': False, 'random': {'contains': True}})
             manifest = {'province': 546, 'events': {'new': {'decision': 'chr_check_new'}}}
             observation = runner.observe_conditions(saved, root, manifest)
             self.assertFalse(observation['conditions_held'])
@@ -31,7 +59,24 @@ class NaturalPreparationTests(unittest.TestCase):
             self.assertEqual(observation['saved_state']['province']['controller'], 'PRU')
             self.assertEqual(observation['saved_state']['province']['largest_cultures'], ['north_german'])
             self.assertEqual(observation['saved_state']['primary_culture'], 'north_german')
+            self.assertFalse(observation['actual_event']['trigger'])
             runner.request.assert_called_once_with('decision-check PRU chr_check_new')
+            runner.event_condition.assert_called_once_with(manifest)
+
+    def test_actual_event_check_waits_for_busy_day_using_only_read_only_requests(self):
+        runner = object.__new__(subject.NaturalRunner)
+        runner.environment, runner.record, runner.stream = Path('unused'), {'steps': []}, io.StringIO()
+        manifest = {'province': 546, 'events': {'new': {'id': 24754}}}
+        actual = {'ok': True, 'read_only': True, 'event_id': 24754, 'province': 546,
+                  'trigger': True, 'random': {'count': 0, 'contains': False},
+                  'cached': {'count': 0, 'contains': False}}
+        with patch.object(subject.engine.cli, 'request', side_effect=[{'ok': False, 'error': 'E_DAY_BUSY'}, actual]) as request:
+            with patch.object(subject.time, 'sleep'):
+                result = runner.event_condition(manifest)
+        self.assertIs(result, actual)
+        self.assertFalse(result['random']['contains'])
+        self.assertEqual(request.call_count, 2)
+        self.assertTrue(all(call.args[1] == 'event-check-province 546 24754' for call in request.call_args_list))
 
     def source(self):
         values = [('OBO', 'north_german'), ('SAX', 'north_german'),
@@ -53,7 +98,10 @@ class NaturalPreparationTests(unittest.TestCase):
                 before, after = subject.engine.one(left, key), subject.engine.one(right, key)
                 self.assertEqual(raw[before.start:before.end], modified[after.start:after.end])
         self.assertFalse(actual[0].fields('is_triggered_only'))
-        self.assertEqual(subject.engine.scalar(subject.engine.one(actual[0], 'mean_time_to_happen'), 'months'), '0.01')
+        actual_mtth = subject.engine.one(actual[0], 'mean_time_to_happen')
+        self.assertFalse(actual_mtth.fields('months'))
+        self.assertEqual(subject.engine.scalar(actual_mtth, 'days'), '1')
+        self.assertEqual(report['test_days'], '1')
         for item in actual[1:]:
             self.assertEqual(subject.engine.scalar(item, 'is_triggered_only'), 'yes')
 

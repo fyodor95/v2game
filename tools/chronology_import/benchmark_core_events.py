@@ -26,6 +26,7 @@ from mp_session import OwnedProcess
 from benchmark_gpc import (BenchmarkError, checked, input_fingerprint, integer_setting,
                            mode_config, process_times, require, safe_path, sha_bytes, utc)
 from tools.chronology_import.validate_core_events import parse, reconstruct_map, validate_events
+from tools.chronology_import import native_event_probe
 
 EVENT = 'events/adding_cores.txt'
 CORE_INI = 'z_CreatineCore/creatinecore_settings.ini'
@@ -105,7 +106,7 @@ class Benchmark:
                            started_utc=utc(), parameters=vars(args).copy(), modes=[], errors=[])
         self.record['parameters'] = {key: str(value) if isinstance(value, Path) else value
                                      for key, value in self.record['parameters'].items()}
-        self.record['parameters'].update(warmup_days=1, load_timeout=1200, advance_timeout=600, gpc_enabled=0)
+        self.record['parameters'].update(warmup_days=args.warmup_days, load_timeout=1200, advance_timeout=600, gpc_enabled=0)
         self.originals = {}
         self.baseline = None
         self.stream = None
@@ -155,6 +156,9 @@ class Benchmark:
             require(re.fullmatch(r'[A-Za-z0-9_-]{1,64}\.v2', save), 'Неверное имя копии сейва')
             self.save_paths[save] = safe_path(self.userdata / 'save games' / save, self.userdata, regular=True)
         require(len(self.save_paths) == 2, 'Нужны два разных сейва')
+        if self.args.rebel_save:
+            require(self.args.rebel_save in self.save_paths and 0 < self.args.rebel_province <= 99999,
+                    'Контролируемая повстанческая провинция должна относиться к одному из сейвов')
         self.save_hashes = {name: cli.digest(path) for name, path in self.save_paths.items()}
         revision = subprocess.run(['git', 'rev-parse', '--verify', OLD_COMMIT + '^{commit}'],
                                   cwd=ROOT, capture_output=True, check=True).stdout.decode('ascii').strip()
@@ -178,7 +182,8 @@ class Benchmark:
                            root_ini_hashes=self.root_ini_hashes,
                            tool_hashes={str(path.relative_to(ROOT)): cli.digest(path) for path in (
                                Path(__file__), Path(cli.__file__), Path(mp_preflight.__file__),
-                               ROOT / 'tools/vic2test/benchmark_gpc.py', ROOT / 'tools/vic2test/mp_session.py')})
+                               ROOT / 'tools/vic2test/benchmark_gpc.py', ROOT / 'tools/vic2test/mp_session.py',
+                               Path(native_event_probe.__file__), Path(native_event_probe.engine.__file__))})
 
     def verify_saves(self):
         require({name: cli.digest(path) for name, path in self.save_paths.items()} == self.save_hashes,
@@ -214,9 +219,24 @@ class Benchmark:
                 status.get('advance_target') == 0, 'Не подтверждена пауза собственной SP-кампании')
         require(type(status.get('date_raw')) is int and type(status.get('auto_events_selected')) is int,
                 'Неверный протокол даты/опций')
+        total, random = status.get('all_province_events'), status.get('random_province_events')
+        require(type(total) is int and type(random) is int and 0 < random <= total,
+                'Не подтверждён заполненный нативный реестр случайных провинциальных событий')
         require(gpc.get('installed') is True and gpc.get('enabled') == 0 and
                 gpc.get('failed') == 0 and gpc.get('busy') == 0, 'GPC не отключён или неисправен')
         return status
+
+    def rebel_control(self, process, save):
+        if save != self.args.rebel_save:
+            return None
+        probe = native_event_probe.capture(self.environment, session(self.environment), process,
+                                          self.args.rebel_province, 24001)
+        require(probe['complete'], 'Не прочитано состояние повстанческой провинции')
+        province = probe['province']
+        require(province['owner'] == 'PRU' and province['controller'] == 'REB',
+                'Испытательная провинция больше не контролируется повстанцами')
+        return {key: province[key] for key in ('id', 'owner', 'controller')} | {
+            'date_raw': probe['world']['date_raw'], 'cache_count': province['candidate_vector']['count']}
 
     def run_mode(self, name):
         require_idle(self.environment)
@@ -256,8 +276,9 @@ class Benchmark:
                     require(session(self.environment)['token'] == mode['session']['token'], 'Сменилась session')
                     if not self.args.visible:
                         cli.hide_windows(owned.pid)
-                    self.advance(1, sample['warmup'])
+                    self.advance(self.args.warmup_days, sample['warmup'])
                     start = self.state(owned)
+                    sample['rebel_control_start'] = self.rebel_control(owned, save)
                     self.dates.setdefault(save, start['date_raw'])
                     require(start['date_raw'] == self.dates[save], 'Неодинаковый начальный календарный интервал')
                     sample.update(start=start, cpu_start=process_times(owned))
@@ -269,6 +290,7 @@ class Benchmark:
                         sample['wall_seconds'] = time.perf_counter() - began
                     sample['cpu_end'] = process_times(owned)
                     end = self.state(owned)
+                    sample['rebel_control_end'] = self.rebel_control(owned, save)
                     require(end['date_raw'] - start['date_raw'] == self.args.days * 24 and
                             advanced.get('date_raw') == end['date_raw'] and
                             advanced.get('requested_target_date_raw') == end['date_raw'], 'Неверный интервал advance')
@@ -363,12 +385,17 @@ def main():
     parser.add_argument('--saves', nargs=2, default=['gpc36_start.v2', 'chr_new.v2'])
     parser.add_argument('--days', type=int, default=100)
     parser.add_argument('--samples', type=int, default=3)
+    parser.add_argument('--warmup-days', type=int, default=33,
+                        help='Одинаковый прогрев до замера;33 дня включают следующую месячную перестройку')
+    parser.add_argument('--rebel-save', help='Для этого сейва проверять PRU/REB в начале и конце каждой выборки')
+    parser.add_argument('--rebel-province', type=int, default=546)
     parser.add_argument('--order', choices=('old-new', 'new-old'), default='old-new')
     parser.add_argument('--visible', action='store_true', help='Явно оставить собственное тестовое окно видимым; ввод остаётся через CLI')
     parser.add_argument('--dry-run', action='store_true')
     args = parser.parse_args()
     try:
         require(1 <= args.days <= 365 and 3 <= args.samples <= 9, 'Нужны 1..365 дней и 3..9 выборок')
+        require(1 <= args.warmup_days <= 365, 'Нужны 1..365 дней прогрева')
         result, code = Benchmark(args).run()
         print(json.dumps(result, ensure_ascii=False, indent=2))
         return code

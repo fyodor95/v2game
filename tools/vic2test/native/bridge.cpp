@@ -521,6 +521,231 @@ static int EventKind(unsigned id) {
     for (DWORD item = begin; item < end; item += 4) if (Read(item) == event) return 1;
     return 0;
 }
+static bool SpSaveReady(DWORD* playButton = nullptr) {
+    using namespace vic2_mp_frontend::detail;
+    using vic2_mp_lobby::Field;
+    if (!frontend || !mainMenu || Field(frontend) != baseAddress + 0xA14ED0 ||
+        Field(mainMenu) != baseAddress + 0xA13DBC || Field(frontend + 4) != mainMenu ||
+        Field(baseAddress + 0xE589AC) != 0) throw std::runtime_error("E_NOT_READY");
+    if (Flag(frontend + 0x5BC) || !Flag(frontend + 0x5BD)) return false;
+    DWORD button = vic2_mp_lobby::Control(baseAddress, Field(frontend + 0x278), 0x34, "play_button");
+    DWORD status = 0;
+    if (!TryGet(vic2_mp_lobby::Method(baseAddress, button, 0xB0), button, &status) || status > 3)
+        throw std::runtime_error("E_NATIVE_LAYOUT");
+    if (playButton) *playButton = button;
+    // Native getter состояния кнопки:3 — недоступна; тот же контракт, что MP Play.
+    return status != 3;
+}
+static void SpSelectSave(const char* basename) {
+    using namespace vic2_mp_frontend::detail;
+    using vic2_mp_lobby::Field;
+    using vic2_mp_lobby::Control;
+    using vic2_mp_lobby::Method;
+    if (!frontend || !mainMenu || Field(frontend) != baseAddress + 0xA14ED0 ||
+        Field(mainMenu) != baseAddress + 0xA13DBC || Field(frontend + 4) != mainMenu ||
+        Field(baseAddress + 0xE589AC) != 0) throw std::runtime_error("E_NOT_READY");
+    if (Flag(frontend + 0x5BC) || Flag(frontend + 0x5BD)) throw std::runtime_error("E_ALREADY_SELECTED");
+    const unsigned char callback[] = { 0x55,0x8B,0xEC,0x6A,0xFF,0x68 };
+    const unsigned char listContract[] = { 0x8B,0x10,0x8B,0xC8,0x8B,0x42,0x2C,0xFF,0xD0 };
+    const unsigned char rowContract[] = { 0x8B,0x16,0x8B,0x4A,0x20,0x8B,0x01,0x8B,0x40,0x48 };
+    Signature(baseAddress, 0x377DB0, callback);
+    Signature(baseAddress, 0x377E8D, listContract);
+    Signature(baseAddress, 0x377F75, rowContract);
+    DWORD window = Control(baseAddress, Field(frontend + 0x278), 0x6C, "bookmarks");
+    DWORD list = Control(baseAddress, window, 0x7C, "bookmarks_list"), header = 0;
+    if (!TryGet(Method(baseAddress, list, 0x2C), list, &header)) throw std::runtime_error("E_NATIVE_LAYOUT");
+    DWORD checkbox = 0;
+    std::set<DWORD> seen;
+    for (DWORD node = Field(header); node; node = Field(node + 8)) {
+        if (seen.size() >= 8192 || !seen.insert(node).second) throw std::runtime_error("E_NATIVE_LAYOUT");
+        DWORD row = Field(node);
+        if (Field(row) != baseAddress + 0xA15190 || Text(row + 0x28) != basename) continue;
+        if (checkbox) throw std::runtime_error("E_AMBIGUOUS_SAVE");
+        checkbox = Control(baseAddress, Field(row + 0x20), 0x48, "save_game");
+    }
+    if (!checkbox) throw std::runtime_error("E_SAVE_NOT_LISTED");
+    // 00777DB0 ставит CClearBookmark в очередь и запускает штатный выбор/загрузку.
+    // Прямое присваивание filename/5BC обходило эту часть фронтенда.
+    if (!TrySave(baseAddress + 0x377DB0, frontend, checkbox)) {
+        InterlockedExchange(&poisoned, 1);
+        throw std::runtime_error("E_NATIVE_OUTCOME_UNKNOWN");
+    }
+}
+static void SpLoadResponse(const char* command) {
+    try {
+        if (!strcmp(command, "frontend-status")) {
+            bool ready = SpSaveReady();
+            sprintf_s(response, "{\"ok\":true,\"load_pending\":%s,\"save_loaded\":%s}\n",
+                *(BYTE*)(frontend + 0x5BC) ? "true" : "false", ready ? "true" : "false");
+        } else if (!strcmp(command, "play")) {
+            DWORD button = 0;
+            if (!SpSaveReady(&button)) { Error("E_NOT_READY"); return; }
+            if (!Signal(button)) { Error("E_NATIVE_SIGNAL"); return; }
+            strcpy_s(response, "{\"ok\":true,\"queued\":true,\"completed\":false}\n");
+        } else {
+            const char* basename = request + strlen("load-save");
+            while (*basename == ' ') ++basename;
+            size_t length = strcspn(basename, "\r\n");
+            char filename[260] = {};
+            if (length < 4 || length >= sizeof(filename)) { Error("E_ARGUMENT"); return; }
+            memcpy(filename, basename, length);
+            if (strpbrk(filename, "\\/:") ||
+                strcmp(filename + length - 3, ".v2")) { Error("E_ARGUMENT"); return; }
+            SpSelectSave(filename);
+            strcpy_s(response, "{\"ok\":true,\"queued\":true,\"completed\":false}\n");
+        }
+    } catch (const std::exception& error) {
+        Log("vic2test SP load: %s", error.what());
+        // Общие qualified getter helpers используют MP-коды для ошибок layout.
+        Error(!strncmp(error.what(), "E_MP_", 5) ? "E_NATIVE_LAYOUT" : error.what());
+    }
+}
+static bool EventCheckReadable(DWORD address, DWORD size) {
+    if (!address || address + size < address) return false;
+    const DWORD end = address + size;
+    while (address < end) {
+        MEMORY_BASIC_INFORMATION memory = {};
+        if (!VirtualQuery((void*)address, &memory, sizeof(memory)) || memory.State != MEM_COMMIT ||
+            (memory.Protect & (PAGE_NOACCESS | PAGE_GUARD))) return false;
+        DWORD next = (DWORD)memory.BaseAddress + (DWORD)memory.RegionSize;
+        if (next <= address) return false;
+        address = next;
+    }
+    return true;
+}
+struct EventCheckVector { DWORD begin, count; bool contains; };
+static bool EventCheckReadVector(DWORD address, DWORD target, DWORD limit, EventCheckVector& result) {
+    if (!EventCheckReadable(address, 8)) return false;
+    DWORD begin = Read(address), end = Read(address + 4);
+    if (end < begin || ((end - begin) & 3) || ((begin | end) & 3) || (end - begin) / 4 > limit ||
+        (begin != end && !EventCheckReadable(begin, end - begin))) return false;
+    result = { begin, (end - begin) / 4, false };
+    for (DWORD index = 0; target && index < result.count; ++index)
+        if (Read(begin + index * 4) == target) result.contains = true;
+    return true;
+}
+struct EventCheckTriggerType { DWORD vtable, evaluate; const char* name; bool children; };
+static const EventCheckTriggerType eventCheckTypes[] = {
+    { 0x9F9994, 0x4B8260, "and", true },
+    { 0xA2FB70, 0x4B88A0, "or", true },
+    { 0xA2FBA8, 0x4B9240, "not", true },
+    { 0xA2FBE0, 0x4B94B0, "context", true },
+    { 0xA30A88, 0x4D1750, "any_core", true },
+    { 0xA2FE80, 0x4BB4F0, "always", false },
+    { 0xA30E78, 0x4C9D80, "controlled_by_rebels", false },
+    { 0xA31578, 0x4E21C0, "culture", false },
+    { 0xA315E8, 0x4E2A70, "primary_culture", false },
+    { 0xA30628, 0x4C3A80, "exists", false },
+    { 0xA301C8, 0x4BDE30, "is_core", false },
+    { 0xA30C80, 0x4D4000, "tag", false }
+};
+static const EventCheckTriggerType* EventCheckType(DWORD trigger) {
+    if (!EventCheckReadable(trigger, 0x20)) return nullptr;
+    DWORD vtable = Read(trigger);
+    for (const auto& type : eventCheckTypes)
+        if (vtable == baseAddress + type.vtable && Read(vtable + 0x18) == baseAddress + type.evaluate) return &type;
+    return nullptr;
+}
+static bool EventCheckQualifyTrigger(DWORD trigger, unsigned depth, unsigned& remaining) {
+    if (depth > 16 || !remaining) return false;
+    --remaining;
+    const EventCheckTriggerType* type = EventCheckType(trigger);
+    if (!type) return false;
+    if (type->vtable == 0xA2FBE0) {
+        // 00876240: только явная страна или owner (token295), без случайных scopes.
+        DWORD context = Read(trigger + 0x1C);
+        if (!EventCheckReadable(context, 0x110)) return false;
+        DWORD countryIndex = Read(context + 0x10C);
+        if (countryIndex) {
+            DWORD countries = Read(baseAddress + 0xE587E4);
+            if (!countries || countryIndex >= Read(countries) || Read(countries) > 10000) return false;
+            DWORD country = Read(Read(countries + 4) + countryIndex * 4);
+            if (!EventCheckReadable(country, 0x24) || Read(country + 0x20) != countryIndex ||
+                memcmp((void*)(country + 0x1C), (void*)(context + 0x108), 3)) return false;
+        } else if (Read(context) != 0x295) return false;
+    }
+    if (!type->children) return true;
+    EventCheckVector children = {};
+    if (!EventCheckReadVector(trigger + 8, 0, 32, children)) return false;
+    // Первая корка использует any_core={always=yes}; другие обходы здесь не квалифицированы.
+    if (type->vtable == 0xA30A88 && (children.count != 1 ||
+        !EventCheckReadable(Read(children.begin), 4) || Read(Read(children.begin)) != baseAddress + 0xA2FE80)) return false;
+    for (DWORD index = 0; index < children.count; ++index)
+        if (!EventCheckQualifyTrigger(Read(children.begin + index * 4), depth + 1, remaining)) return false;
+    return true;
+}
+static void EventCheckScope(unsigned char* scope, unsigned province) {
+    // Естественный province scan оставляет country=---/0, province находится в +10.
+    ((void* (__fastcall*)(void*, void*, void*))(baseAddress + 0x4A8650))(scope, 0, 0);
+    *(DWORD*)(scope + 0x10) = province;
+}
+static bool EventCheckEvaluate(DWORD trigger, unsigned province) {
+    unsigned char scope[0x60] = {};
+    EventCheckScope(scope, province);
+    return ((char (__fastcall*)(void*, void*, void*))Read(Read(trigger) + 0x18))((void*)trigger, 0, scope) != 0;
+}
+static void EventCheckProvince(DWORD world) {
+    unsigned provinceId = 0, eventId = 0; char extra[2] = {};
+    if (sscanf_s(request + strlen("event-check-province"), "%u %u %1s", &provinceId, &eventId,
+        extra, (unsigned)sizeof(extra)) != 2 || !provinceId || provinceId > 99999 || !eventId || eventId > 2147483647u) {
+        Error("E_ARGUMENT"); return;
+    }
+    if (!InCampaign(world)) { Error("E_NOT_READY"); return; }
+    if (Multiplayer(world)) { Error("E_MULTIPLAYER_READ_ONLY"); return; }
+    DWORD idler = Read(world + 0xB24);
+    if (!idler || *(BYTE*)(idler + 0x1538) != 1 || advanceTarget) { Error("E_PAUSE_REQUIRED"); return; }
+    if (*(BYTE*)(world + 0xB20)) { Error("E_DAY_BUSY"); return; }
+    EventCheckVector provinces = {};
+    if (!EventCheckReadVector(world + 0xACC, 0, 100000, provinces)) { Error("E_NATIVE_LAYOUT"); return; }
+    if (provinceId >= provinces.count) { Error("E_NOT_FOUND"); return; }
+    DWORD province = Read(provinces.begin + provinceId * 4);
+    if (!EventCheckReadable(province, 0x138)) { Error("E_NATIVE_LAYOUT"); return; }
+    if (!Read(world + 0xB60) || Read(province + 0x12C) != Read(world + 0xB60) ||
+        memcmp((void*)(province + 0x128), (void*)(world + 0xB5C), 3)) { Error("E_PLAYER_ONLY"); return; }
+    DWORD event = EventObject(eventId), registry = Read(baseAddress + 0xF19B80);
+    if (!event || !registry) { Error("E_NOT_FOUND"); return; }
+    if (!EventCheckReadable(event, 0x1A4) || Read(event) != baseAddress + 0xA2C834) { Error("E_NATIVE_LAYOUT"); return; }
+    EventCheckVector all = {}, random = {}, cached = {}, options = {}, modifiers = {}, children = {};
+    if (!EventCheckReadVector(registry + 0x20, event, 1000000, all) ||
+        !EventCheckReadVector(registry + 0x30, event, 1000000, random) ||
+        !EventCheckReadVector(province + 0x14, event, 1000000, cached) ||
+        !EventCheckReadVector(event + 0xB0, 0, 100, options) ||
+        !EventCheckReadVector(event + 0xCC, 0, 1000, modifiers) ||
+        !EventCheckReadVector(event + 0x38, 0, 16, children)) { Error("E_NATIVE_LAYOUT"); return; }
+    if (!all.contains || EventKind(eventId) != 1) { Error("E_EVENT_SCOPE"); return; }
+    const BYTE scopeSignature[] = { 0x55, 0x8B, 0xEC, 0x6A, 0xFF, 0x68 };
+    const BYTE mtthSignature[] = { 0x55, 0x8B, 0xEC, 0x83, 0xEC, 0x08, 0x8B, 0x45, 0x08, 0x53, 0x8B, 0x58, 0x08 };
+    const BYTE andSignature[] = { 0x55, 0x8B, 0xEC, 0x53, 0x56, 0x8B, 0xD9, 0x8B, 0x73, 0x0C };
+    unsigned remaining = 256;
+    if (memcmp((void*)(baseAddress + 0x4A8650), scopeSignature, sizeof(scopeSignature)) ||
+        Read(baseAddress + 0x4A8656) != baseAddress + 0x79F88B ||
+        memcmp((void*)(baseAddress + 0x4AE380), mtthSignature, sizeof(mtthSignature)) ||
+        memcmp((void*)(baseAddress + 0x4B8260), andSignature, sizeof(andSignature)) ||
+        Read(event + 0x30) != baseAddress + 0x9F9994 || modifiers.count || !Read(baseAddress + 0xE58A10) ||
+        !EventCheckQualifyTrigger(event + 0x30, 0, remaining)) { Error("E_NATIVE_LAYOUT"); return; }
+    // Все отказы по layout выше: далее только детерминированные predicates, без Run/RNG/refresh.
+    bool trigger = EventCheckEvaluate(event + 0x30, provinceId);
+    unsigned char scope[0x60] = {};
+    EventCheckScope(scope, provinceId);
+    int chance = ((int (__stdcall*)(void*, void*, int))(baseAddress + 0x4AE380))((void*)(event + 0xC0), scope, 2);
+    sprintf_s(response, "{\"ok\":true,\"read_only\":true,\"event_id\":%u,\"province\":%u,\"date_raw\":%lu,"
+        "\"tutorial\":%u,\"day_busy\":0,\"triggered_only\":%u,\"fire_only_once\":%u,\"options\":%lu,"
+        "\"all\":{\"count\":%lu,\"contains\":true},\"random\":{\"count\":%lu,\"contains\":%s},"
+        "\"cached\":{\"count\":%lu,\"contains\":%s},\"mtth\":{\"days_fixed\":%ld,\"modifiers\":0,\"multiplier\":2,\"threshold\":%d},"
+        "\"trigger\":%s,\"children\":[", eventId, provinceId, Read(world + 0xB0C),
+        (unsigned)*(BYTE*)(world + 0xD11), (unsigned)*(BYTE*)(event + 0x1A0), (unsigned)*(BYTE*)(event + 0x1A3), options.count,
+        all.count, random.count, random.contains ? "true" : "false", cached.count, cached.contains ? "true" : "false",
+        (LONG)Read(event + 0xC8), chance, trigger ? "true" : "false");
+    for (DWORD index = 0; index < children.count; ++index) {
+        DWORD child = Read(children.begin + index * 4);
+        const EventCheckTriggerType* type = EventCheckType(child);
+        char item[160];
+        sprintf_s(item, "%s{\"index\":%lu,\"type\":\"%s\",\"vtable_rva\":%lu,\"result\":%s}",
+            index ? "," : "", index, type->name, type->vtable, EventCheckEvaluate(child, provinceId) ? "true" : "false");
+        strcat_s(response, item);
+    }
+    strcat_s(response, "]}\n");
+}
 static void Dispatch() {
     char command[64] = {}, tag[8] = {}, name[512] = {};
     sscanf_s(request, "%63s %7s %511s", command, (unsigned)sizeof(command),
@@ -538,6 +763,8 @@ static void Dispatch() {
         return;
     }
     if (DispatchMp(command)) return;
+    // Диагностика разрешена в read-only SP, но сама отвергает MP и непоставленную на паузу кампанию.
+    if (!strcmp(command, "event-check-province")) { EventCheckProvince(world); return; }
     if ((Multiplayer(world) || GetEnvironmentVariableA("VIC2_TEST_READ_ONLY", nullptr, 0)) &&
         strcmp(command, "status") && strcmp(command, "snapshot") && strcmp(command, "frontend-status")) {
         Error("E_MULTIPLAYER_READ_ONLY"); return;
@@ -626,34 +853,27 @@ static void Dispatch() {
         strcpy_s(response, "{\"ok\":true}\n"); return;
     }
     if (strcmp(command, "load-save") == 0 || strcmp(command, "play") == 0 || strcmp(command, "frontend-status") == 0) {
-        if (!frontend || Read(frontend) != baseAddress + 0xA14ED0) { Error("E_NOT_READY"); return; }
-        if (strcmp(command, "frontend-status") == 0) {
-            sprintf_s(response, "{\"ok\":true,\"load_pending\":%s,\"save_loaded\":%s}\n",
-                *(BYTE*)(frontend + 0x5BC) ? "true" : "false", *(BYTE*)(frontend + 0x5BD) ? "true" : "false"); return;
-        }
-        if (strcmp(command, "play") == 0) {
-            bool ok = *(BYTE*)(frontend + 0x5BD) && Signal(FindControl(Read(frontend + 0x278), 0x34, "play_button"));
-            sprintf_s(response, "{\"ok\":%s}\n", ok ? "true" : "false"); return;
-        }
-        const char* basename = request + strlen("load-save ");
-        char filename[260]; strcpy_s(filename, basename);
-        filename[strcspn(filename, "\r\n")] = 0;
-        if (!filename[0] || strpbrk(filename, "\\/:")) { Error("E_ARGUMENT"); return; }
-        if (*(BYTE*)(frontend + 0x5BC) || *(BYTE*)(frontend + 0x5BD)) { Error("E_ALREADY_SELECTED"); return; }
-        ((void* (__thiscall*)(void*, const char*, unsigned))(baseAddress + 0x9350))((void*)(frontend + 0x590), filename, (unsigned)strlen(filename));
-        *(BYTE*)(frontend + 0x5BC) = 1;
-        strcpy_s(response, "{\"ok\":true,\"queued\":true,\"completed\":false}\n"); return;
+        SpLoadResponse(command); return;
     }
     if (strcmp(command, "status") == 0) {
         const bool inCampaign = InCampaign(world);
         // В меню текущий idler имеет другой класс и не содержит поля паузы CInGameIdler.
         DWORD idler = inCampaign ? Read(world + 0xB24) : 0;
-        sprintf_s(response, "{\"ok\":true,\"protocol\":1,\"campaign_loaded\":%s,\"date_raw\":%lu,\"pid\":%lu,\"owner_thread\":%lu,\"console_captured\":%s,\"advance_target\":%lu,\"paused\":%s,\"event_windows\":%u,\"auto_events_selected\":%u,\"multiplayer\":%s}\n",
+        char allCount[16] = "null", randomCount[16] = "null";
+        if (inCampaign) {
+            DWORD registry = Read(baseAddress + 0xF19B80);
+            EventCheckVector all = {}, random = {};
+            if (registry && EventCheckReadVector(registry + 0x20, 0, 1000000, all) &&
+                EventCheckReadVector(registry + 0x30, 0, 1000000, random)) {
+                sprintf_s(allCount, "%lu", all.count); sprintf_s(randomCount, "%lu", random.count);
+            }
+        }
+        sprintf_s(response, "{\"ok\":true,\"protocol\":1,\"campaign_loaded\":%s,\"date_raw\":%lu,\"pid\":%lu,\"owner_thread\":%lu,\"console_captured\":%s,\"advance_target\":%lu,\"paused\":%s,\"event_windows\":%u,\"auto_events_selected\":%u,\"multiplayer\":%s,\"all_province_events\":%s,\"random_province_events\":%s}\n",
             inCampaign ? "true" : "false",
             world ? Read(world + 0xB0C) : 0, GetCurrentProcessId(), ownerThread,
             consoleManager ? "true" : "false", advanceTarget,
             idler && *(BYTE*)(idler + 0x1538) ? "true" : "false", ActivePopupCount(), autoEventsSelected,
-            Multiplayer(world) ? "true" : "false");
+            Multiplayer(world) ? "true" : "false", allCount, randomCount);
         return;
     }
     if (strcmp(command, "snapshot") == 0) {
