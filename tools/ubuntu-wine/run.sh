@@ -27,6 +27,13 @@ export WINEDEBUG=${WINEDEBUG:--all,err+all}
 exec 9>"$runtime_dir/launch.lock"
 flock -n 9 || fail "Victoria II уже запущена с префиксом $WINEPREFIX"
 
+# Игра переводит подписи карты в верхний регистр через ANSI-кодировку Wine.
+if LC_ALL=ru_RU.UTF-8 locale charmap >/dev/null 2>&1; then
+    export LC_ALL=ru_RU.UTF-8
+else
+    printf '%s\n' 'Локаль ru_RU.UTF-8 недоступна. См. docs/ubuntu-wine.md для исправления подписей на карте.' >&2
+fi
+
 if [[ ! -f "$WINEPREFIX/.v2game-ready" ]]; then
     WINEDLLOVERRIDES='mscoree,mshtml=' wineboot -u 9>&-
     # Wine может записать реестр и завершить настройку после выхода wineboot.
